@@ -39,16 +39,24 @@ chapters:
         word_glosses:
           - word: चितिः
             iast: citiḥ
-            gloss_en: "Consciousness, the absolute Awareness"
-            morph: "f.nom.sg"
+            gloss_en: Consciousness, the absolute Awareness
+            morph: nom. sg. f.
           - word: स्वतन्त्रा
             iast: svatantrā
-            gloss_en: "independent, autonomous, free"
-            morph: "f.nom.sg adj"
-          - word: विश्वसिद्धिहेतुः
-            iast: viśvasiddhihetuḥ
-            gloss_en: "the cause of the accomplishment (manifestation) of the universe"
-            morph: "m.nom.sg cpd (viśva-siddhi-hetu)"
+            gloss_en: self-dependent, free, autonomous
+            morph: nom. sg. f. adj.
+          - word: विश्व
+            iast: viśva
+            gloss_en: the universe, the all
+            morph: stem in cpd.
+          - word: सिद्धि
+            iast: siddhi
+            gloss_en: accomplishment, manifestation, establishment
+            morph: stem in cpd.
+          - word: हेतुः
+            iast: hetuḥ
+            gloss_en: the cause
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -64,22 +72,22 @@ chapters:
         iast: "svecchayā svabhittau viśvam unmīlayati"
         meter: sūtra
         word_glosses:
-          - word: स्वेच्छया
-            iast: svecchayā
-            gloss_en: "by her own will"
-            morph: "f.ins.sg"
-          - word: स्वभित्तौ
-            iast: svabhittau
-            gloss_en: "on her own canvas/wall (i.e., on the screen of her own Self)"
-            morph: "f.loc.sg"
+          - word: स्व-इच्छया
+            iast: sva-icchayā
+            gloss_en: by her own will
+            morph: inst. sg. f.
+          - word: स्व-भित्तौ
+            iast: sva-bhittau
+            gloss_en: on her own canvas (screen of the Self)
+            morph: loc. sg. f.
           - word: विश्वम्
             iast: viśvam
-            gloss_en: "the universe"
-            morph: "n.acc.sg"
+            gloss_en: the universe
+            morph: acc. sg. n.
           - word: उन्मीलयति
             iast: unmīlayati
-            gloss_en: "unfolds, makes manifest, opens out"
-            morph: "verb 3.sg.pres.caus"
+            gloss_en: unfolds, makes manifest (lit. 'opens out')
+            morph: 3sg. pres. caus. √mīl
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -97,20 +105,28 @@ chapters:
         word_glosses:
           - word: तत्
             iast: tat
-            gloss_en: "that (universe)"
-            morph: "n.nom.sg pron"
+            gloss_en: that (universe)
+            morph: nom. sg. n.
           - word: नाना
             iast: nānā
-            gloss_en: "manifold, various"
-            morph: "indecl"
+            gloss_en: manifold, various
+            morph: indecl.
           - word: अनुरूप
             iast: anurūpa
-            gloss_en: "corresponding, conforming"
-            morph: "adj cpd"
-          - word: ग्राह्यग्राहकभेदात्
-            iast: grāhya-grāhaka-bhedāt
-            gloss_en: "from the differentiation into object and subject (the grasped and the grasper)"
-            morph: "m.abl.sg cpd"
+            gloss_en: corresponding, conformable
+            morph: stem in cpd.
+          - word: ग्राह्य
+            iast: grāhya
+            gloss_en: the perceivable (object)
+            morph: stem in cpd.
+          - word: ग्राहक
+            iast: grāhaka
+            gloss_en: the perceiver (subject)
+            morph: stem in cpd.
+          - word: भेदात्
+            iast: bhedāt
+            gloss_en: by reason of the differentiation
+            morph: abl. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -126,22 +142,26 @@ chapters:
         iast: "citi-saṃkocātmā cetano 'pi saṅkucita-viśvamayaḥ"
         meter: sūtra
         word_glosses:
-          - word: चितिसंकोचात्मा
-            iast: citi-saṃkocātmā
-            gloss_en: "having as its essence the contraction of Consciousness"
-            morph: "m.nom.sg cpd"
+          - word: चिति-सङ्कोच-आत्मा
+            iast: citi-saṃkoca-ātmā
+            gloss_en: having a contraction of Consciousness as its essence
+            morph: nom. sg. m. cpd.
           - word: चेतनः
             iast: cetanaḥ
-            gloss_en: "the experiencing subject, individual self"
-            morph: "m.nom.sg"
+            gloss_en: the sentient being, the experient
+            morph: nom. sg. m.
           - word: अपि
             iast: api
-            gloss_en: "even, also"
-            morph: "indecl"
-          - word: सङ्कुचितविश्वमयः
-            iast: saṅkucita-viśvamayaḥ
-            gloss_en: "consisting of the contracted universe"
-            morph: "m.nom.sg cpd"
+            gloss_en: even, also
+            morph: ptcl.
+          - word: सङ्कुचित
+            iast: saṅkucita
+            gloss_en: contracted, narrowed
+            morph: ppp. stem in cpd.
+          - word: विश्व-मयः
+            iast: viśva-mayaḥ
+            gloss_en: made of the universe, identical with the universe
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -159,28 +179,28 @@ chapters:
         word_glosses:
           - word: चितिः
             iast: citiḥ
-            gloss_en: "Consciousness"
-            morph: "f.nom.sg"
+            gloss_en: Consciousness itself
+            morph: nom. sg. f.
           - word: एव
             iast: eva
-            gloss_en: "itself, alone"
-            morph: "indecl"
-          - word: चेतनपदात्
+            gloss_en: indeed, alone
+            morph: ptcl. emph.
+          - word: चेतन-पदात्
             iast: cetana-padāt
-            gloss_en: "from the state of the conscious subject"
-            morph: "n.abl.sg cpd"
+            gloss_en: from the level of the (free) experient
+            morph: abl. sg. n. cpd.
           - word: अवरूढा
             iast: avarūḍhā
-            gloss_en: "descended, fallen"
-            morph: "f.nom.sg ppl"
-          - word: चेत्यसङ्कोचिनी
+            gloss_en: descended, fallen
+            morph: ppp. nom. sg. f.
+          - word: चेत्य-सङ्कोचिनी
             iast: cetya-saṅkocinī
-            gloss_en: "contracting (itself) by the object-of-cognition"
-            morph: "f.nom.sg adj"
+            gloss_en: contracting itself to the knowable (object)
+            morph: nom. sg. f. cpd.
           - word: चित्तम्
             iast: cittam
-            gloss_en: "the mind, individual mind-stuff"
-            morph: "n.nom.sg"
+            gloss_en: is (called) citta — the individualized mind
+            morph: nom. sg. n.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -196,14 +216,14 @@ chapters:
         iast: "tan-mayo māyā-pramātā"
         meter: sūtra
         word_glosses:
-          - word: तन्मयः
-            iast: tan-mayaḥ
-            gloss_en: "consisting of that (mind)"
-            morph: "m.nom.sg cpd"
-          - word: मायाप्रमाता
+          - word: तत्-मयः
+            iast: tat-mayaḥ
+            gloss_en: made of that (citta)
+            morph: nom. sg. m. cpd.
+          - word: माया-प्रमाता
             iast: māyā-pramātā
-            gloss_en: "the experiencer/subject under māyā"
-            morph: "m.nom.sg cpd"
+            gloss_en: is the māyic experient (the soul bound by māyā)
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -221,28 +241,36 @@ chapters:
         word_glosses:
           - word: सः
             iast: saḥ
-            gloss_en: "he (the experiencer)"
-            morph: "m.nom.sg pron"
+            gloss_en: he (the experient)
+            morph: nom. sg. m.
+          - word: च
+            iast: ca
+            gloss_en: and
+            morph: conj.
           - word: एकः
             iast: ekaḥ
-            gloss_en: "one"
-            morph: "m.nom.sg"
-          - word: द्विरूपः
+            gloss_en: one (in essence)
+            morph: nom. sg. m.
+          - word: द्वि-रूपः
             iast: dvi-rūpaḥ
-            gloss_en: "having two forms (prakāśa and vimarśa)"
-            morph: "m.nom.sg cpd"
-          - word: त्रिमयः
+            gloss_en: of two forms (Śiva–Śakti)
+            morph: nom. sg. m. cpd.
+          - word: त्रि-मयः
             iast: tri-mayaḥ
-            gloss_en: "having three (āṇava, śākta, śāmbhava — or the three malas)"
-            morph: "m.nom.sg cpd"
-          - word: चतुरात्मा
+            gloss_en: consisting of three (āṇava/śākta/śāmbhava or three malas)
+            morph: nom. sg. m. cpd.
+          - word: चतुर्-आत्मा
             iast: catur-ātmā
-            gloss_en: "having four selves (the four states of consciousness)"
-            morph: "m.nom.sg cpd"
-          - word: सप्तपञ्चकस्वभावः
-            iast: sapta-pañcaka-svabhāvaḥ
-            gloss_en: "whose nature is the seven pentads (the 35 tattvas grouped as 5×7)"
-            morph: "m.nom.sg cpd"
+            gloss_en: having four selves (the four states of consciousness)
+            morph: nom. sg. m. cpd.
+          - word: सप्त-पञ्चक
+            iast: sapta-pañcaka
+            gloss_en: the seven pentads
+            morph: stem in cpd.
+          - word: स्वभावः
+            iast: svabhāvaḥ
+            gloss_en: is of that own nature
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -258,14 +286,22 @@ chapters:
         iast: "tad-bhūmikāḥ sarva-darśana-sthitayaḥ"
         meter: sūtra
         word_glosses:
-          - word: तद्भूमिकाः
-            iast: tad-bhūmikāḥ
-            gloss_en: "the stages/roles of that (one experiencer)"
-            morph: "f.nom.pl cpd"
-          - word: सर्वदर्शनस्थितयः
-            iast: sarva-darśana-sthitayaḥ
-            gloss_en: "the standpoints of all philosophical systems"
-            morph: "f.nom.pl cpd"
+          - word: तत्-भूमिकाः
+            iast: tat-bhūmikāḥ
+            gloss_en: roles/stages of that (one Consciousness)
+            morph: nom. pl. f. cpd.
+          - word: सर्व
+            iast: sarva
+            gloss_en: all
+            morph: adj. stem
+          - word: दर्शन
+            iast: darśana
+            gloss_en: philosophical view, system
+            morph: stem in cpd.
+          - word: स्थितयः
+            iast: sthitayaḥ
+            gloss_en: are the standpoints
+            morph: nom. pl. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -281,22 +317,22 @@ chapters:
         iast: "cid-vat tac-chakti-saṅkocān malāvṛtaḥ saṃsārī"
         meter: sūtra
         word_glosses:
-          - word: चिद्वत्
-            iast: cid-vat
-            gloss_en: "like Consciousness (the universal Self)"
-            morph: "indecl"
-          - word: तच्छक्तिसङ्कोचात्
-            iast: tac-chakti-saṅkocāt
-            gloss_en: "owing to the contraction of his powers"
-            morph: "m.abl.sg cpd"
-          - word: मलावृतः
-            iast: malāvṛtaḥ
-            gloss_en: "covered by the impurities (malas)"
-            morph: "m.nom.sg cpd"
+          - word: चित्-वत्
+            iast: cit-vat
+            gloss_en: though of the nature of Consciousness
+            morph: adv./adj. cpd.
+          - word: तत्-शक्ति-सङ्कोचात्
+            iast: tat-śakti-saṅkocāt
+            gloss_en: owing to the contraction of his own powers
+            morph: abl. sg. m. cpd.
+          - word: मल-आवृतः
+            iast: mala-āvṛtaḥ
+            gloss_en: covered by the impurities (malas)
+            morph: nom. sg. m. cpd.
           - word: संसारी
             iast: saṃsārī
-            gloss_en: "the transmigrating individual"
-            morph: "m.nom.sg"
+            gloss_en: becomes the transmigrant
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -314,20 +350,20 @@ chapters:
         word_glosses:
           - word: तथापि
             iast: tathāpi
-            gloss_en: "even so"
-            morph: "indecl"
-          - word: तद्वत्
+            gloss_en: yet even so
+            morph: conj.
+          - word: तत्-वत्
             iast: tad-vat
-            gloss_en: "like Him (Śiva)"
-            morph: "indecl"
-          - word: पञ्चकृत्यानि
+            gloss_en: like Him (Śiva)
+            morph: adv.
+          - word: पञ्च-कृत्यानि
             iast: pañca-kṛtyāni
-            gloss_en: "the five cosmic acts (creation, maintenance, dissolution, concealment, grace)"
-            morph: "n.acc.pl cpd"
+            gloss_en: the five acts (sṛṣṭi, sthiti, saṃhāra, tirodhāna, anugraha)
+            morph: acc. pl. n. cpd.
           - word: करोति
             iast: karoti
-            gloss_en: "performs"
-            morph: "verb 3.sg.pres"
+            gloss_en: performs
+            morph: 3sg. pres. √kṛ
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -345,28 +381,28 @@ chapters:
         word_glosses:
           - word: आभासन
             iast: ābhāsana
-            gloss_en: "manifesting (sṛṣṭi — creation)"
-            morph: "n cpd-stem"
+            gloss_en: manifesting (= sṛṣṭi, emission)
+            morph: stem in cpd.
           - word: रक्ति
             iast: rakti
-            gloss_en: "relishing/attachment (sthiti — preservation)"
-            morph: "f cpd-stem"
+            gloss_en: relishing (= sthiti, maintenance)
+            morph: stem in cpd.
           - word: विमर्शन
             iast: vimarśana
-            gloss_en: "reflective awareness (saṃhāra — withdrawal)"
-            morph: "n cpd-stem"
-          - word: बीजावस्थापन
-            iast: bījāvasthāpana
-            gloss_en: "depositing as seed (tirodhāna — concealment)"
-            morph: "n cpd-stem"
+            gloss_en: reflective grasp (= saṃhāra, withdrawal)
+            morph: stem in cpd.
+          - word: बीज-अवस्थापन
+            iast: bīja-avasthāpana
+            gloss_en: placing in seed-form (= tirodhāna, concealment)
+            morph: stem in cpd.
           - word: विलापनतः
             iast: vilāpanataḥ
-            gloss_en: "from dissolving (anugraha — grace)"
-            morph: "indecl abl-sense"
+            gloss_en: and dissolving (= anugraha, grace) — by these
+            morph: abl. sg. n. cpd.
           - word: तानि
             iast: tāni
-            gloss_en: "those (five acts)"
-            morph: "n.acc.pl pron"
+            gloss_en: those five acts (are accomplished)
+            morph: acc. pl. n.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -382,22 +418,22 @@ chapters:
         iast: "tad-aparijñāne sva-śaktibhir vyāmohitatā saṃsāritvam"
         meter: sūtra
         word_glosses:
-          - word: तदपरिज्ञाने
-            iast: tad-aparijñāne
-            gloss_en: "in the non-recognition of that (one's own nature)"
-            morph: "n.loc.sg cpd"
-          - word: स्वशक्तिभिः
+          - word: तत्-अपरिज्ञाने
+            iast: tat-aparijñāne
+            gloss_en: when there is non-recognition of that (true nature)
+            morph: loc. sg. n. cpd.
+          - word: स्व-शक्तिभिः
             iast: sva-śaktibhiḥ
-            gloss_en: "by one's own powers"
-            morph: "f.ins.pl cpd"
+            gloss_en: by one's own powers
+            morph: inst. pl. f. cpd.
           - word: व्यामोहितता
             iast: vyāmohitatā
-            gloss_en: "the state of being deluded"
-            morph: "f.nom.sg"
+            gloss_en: the state of being utterly deluded
+            morph: nom. sg. f.
           - word: संसारित्वम्
             iast: saṃsāritvam
-            gloss_en: "the condition of being a transmigrant"
-            morph: "n.nom.sg"
+            gloss_en: is transmigratory existence
+            morph: nom. sg. n.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -413,30 +449,30 @@ chapters:
         iast: "tat-parijñāne cittam eva antarmukhī-bhāvena cetana-padādhyārohāc citiḥ"
         meter: sūtra
         word_glosses:
-          - word: तत्परिज्ञाने
+          - word: तत्-परिज्ञाने
             iast: tat-parijñāne
-            gloss_en: "in the recognition of that"
-            morph: "n.loc.sg cpd"
+            gloss_en: when there is full recognition of that
+            morph: loc. sg. n. cpd.
           - word: चित्तम्
             iast: cittam
-            gloss_en: "the mind"
-            morph: "n.nom.sg"
+            gloss_en: the (limited) mind
+            morph: nom. sg. n.
           - word: एव
             iast: eva
-            gloss_en: "itself"
-            morph: "indecl"
-          - word: अन्तर्मुखीभावेन
+            gloss_en: itself
+            morph: ptcl. emph.
+          - word: अन्तर्मुखी-भावेन
             iast: antarmukhī-bhāvena
-            gloss_en: "by becoming inward-facing"
-            morph: "m.ins.sg cpd"
-          - word: चेतनपदाध्यारोहात्
-            iast: cetana-padādhyārohāt
-            gloss_en: "by ascending to the plane of the conscious subject"
-            morph: "n.abl.sg cpd"
+            gloss_en: by becoming inward-facing
+            morph: inst. sg. m. cpd.
+          - word: चेतन-पद-अध्यारोहात्
+            iast: cetana-pada-adhyārohāt
+            gloss_en: through ascent to the level of the (free) experient
+            morph: abl. sg. m. cpd.
           - word: चितिः
             iast: citiḥ
-            gloss_en: "(becomes) Consciousness"
-            morph: "f.nom.sg"
+            gloss_en: becomes Citi (universal Consciousness)
+            morph: nom. sg. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -452,34 +488,34 @@ chapters:
         iast: "citi-vahnir avaroha-pade channo 'pi mātrayā meyendhanaṃ pluṣyati"
         meter: sūtra
         word_glosses:
-          - word: चितिवह्निः
+          - word: चिति-वह्निः
             iast: citi-vahniḥ
-            gloss_en: "the fire of Consciousness"
-            morph: "m.nom.sg cpd"
-          - word: अवरोहपदे
+            gloss_en: the fire of Consciousness
+            morph: nom. sg. m. cpd.
+          - word: अवरोह-पदे
             iast: avaroha-pade
-            gloss_en: "in the descended state"
-            morph: "n.loc.sg cpd"
+            gloss_en: at the level of descent (= the bound state)
+            morph: loc. sg. n. cpd.
           - word: छन्नः
             iast: channaḥ
-            gloss_en: "concealed, covered"
-            morph: "m.nom.sg ppl"
+            gloss_en: though concealed
+            morph: nom. sg. m. ppp.
           - word: अपि
             iast: api
-            gloss_en: "even though"
-            morph: "indecl"
+            gloss_en: even
+            morph: ptcl.
           - word: मात्रया
             iast: mātrayā
-            gloss_en: "partially, to a measure"
-            morph: "f.ins.sg"
-          - word: मेयेन्धनम्
-            iast: meyendhanam
-            gloss_en: "the fuel of objects-of-knowledge"
-            morph: "n.acc.sg cpd"
+            gloss_en: partially
+            morph: inst. sg. f.
+          - word: मेय-इन्धनम्
+            iast: meya-indhanam
+            gloss_en: the fuel of objects of knowledge
+            morph: acc. sg. n. cpd.
           - word: प्लुष्यति
             iast: pluṣyati
-            gloss_en: "burns, consumes"
-            morph: "verb 3.sg.pres"
+            gloss_en: burns up
+            morph: 3sg. pres. √pluṣ
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -495,22 +531,22 @@ chapters:
         iast: "bala-lābhe viśvam ātmasāt karoti"
         meter: sūtra
         word_glosses:
-          - word: बललाभे
+          - word: बल-लाभे
             iast: bala-lābhe
-            gloss_en: "upon gaining strength/power"
-            morph: "m.loc.sg cpd"
+            gloss_en: on attaining the power (of Citi)
+            morph: loc. sg. m. cpd.
           - word: विश्वम्
             iast: viśvam
-            gloss_en: "the universe"
-            morph: "n.acc.sg"
+            gloss_en: the universe
+            morph: acc. sg. n.
           - word: आत्मसात्
             iast: ātmasāt
-            gloss_en: "(to) one's own Self"
-            morph: "indecl"
+            gloss_en: as one's own self
+            morph: indecl. (sāc-affix)
           - word: करोति
             iast: karoti
-            gloss_en: "makes"
-            morph: "verb 3.sg.pres"
+            gloss_en: one makes
+            morph: 3sg. pres. √kṛ
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -526,30 +562,30 @@ chapters:
         iast: "cid-ānanda-lābhe dehādiṣu cetyamāneṣv api cid-aikātmya-pratipatti-dārḍhyaṃ jīvan-muktiḥ"
         meter: sūtra
         word_glosses:
-          - word: चिदानन्दलाभे
-            iast: cid-ānanda-lābhe
-            gloss_en: "upon gaining the bliss of Consciousness"
-            morph: "m.loc.sg cpd"
-          - word: देहादिषु
-            iast: dehādiṣu
-            gloss_en: "in body and the rest (mind, prāṇa, etc.)"
-            morph: "m.loc.pl cpd"
+          - word: चित्-आनन्द-लाभे
+            iast: cit-ānanda-lābhe
+            gloss_en: on attaining the bliss of Consciousness
+            morph: loc. sg. m. cpd.
+          - word: देह-आदिषु
+            iast: deha-ādiṣu
+            gloss_en: in the body and other objects
+            morph: loc. pl. m. cpd.
           - word: चेत्यमानेषु
             iast: cetyamāneṣu
-            gloss_en: "even while they are being cognized as objects"
-            morph: "m.loc.pl ppl"
+            gloss_en: while being objectified
+            morph: loc. pl. n. pass. part.
           - word: अपि
             iast: api
-            gloss_en: "even, also"
-            morph: "indecl"
-          - word: चिदैकात्म्यप्रतिपत्तिदार्ढ्यम्
-            iast: cid-aikātmya-pratipatti-dārḍhyam
-            gloss_en: "the firmness of the conviction of identity with Consciousness"
-            morph: "n.nom.sg cpd"
-          - word: जीवन्मुक्तिः
+            gloss_en: even
+            morph: ptcl.
+          - word: चित्-ऐकात्म्य-प्रतिपत्ति-दार्ढ्यम्
+            iast: cit-aikātmya-pratipatti-dārḍhyam
+            gloss_en: the firm conviction of one’s identity with Consciousness
+            morph: nom. sg. n. cpd.
+          - word: जीवन्-मुक्तिः
             iast: jīvan-muktiḥ
-            gloss_en: "liberation while still living"
-            morph: "f.nom.sg cpd"
+            gloss_en: is liberation-while-living
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -565,14 +601,14 @@ chapters:
         iast: "madhya-vikāsāc cid-ānanda-lābhaḥ"
         meter: sūtra
         word_glosses:
-          - word: मध्यविकासात्
+          - word: मध्य-विकासात्
             iast: madhya-vikāsāt
-            gloss_en: "from the unfolding/expansion of the central (channel / Consciousness)"
-            morph: "m.abl.sg cpd"
-          - word: चिदानन्दलाभः
-            iast: cid-ānanda-lābhaḥ
-            gloss_en: "the attainment of the bliss of Consciousness"
-            morph: "m.nom.sg cpd"
+            gloss_en: by unfoldment of the centre (the central channel)
+            morph: abl. sg. m. cpd.
+          - word: चित्-आनन्द-लाभः
+            iast: cit-ānanda-lābhaḥ
+            gloss_en: is the attainment of the bliss of Consciousness
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -588,34 +624,38 @@ chapters:
         iast: "vikalpa-kṣaya-śakti-saṅkoca-vikāsa-vāha-cchedādy-antakoṭi-nibhālanādaya ihopāyāḥ"
         meter: sūtra
         word_glosses:
-          - word: विकल्पक्षय
+          - word: विकल्प-क्षय
             iast: vikalpa-kṣaya
-            gloss_en: "the dissolution of mental constructs"
-            morph: "n cpd-stem"
-          - word: शक्तिसङ्कोचविकास
+            gloss_en: dissolution of thought-constructs
+            morph: stem in cpd.
+          - word: शक्ति-सङ्कोच-विकास
             iast: śakti-saṅkoca-vikāsa
-            gloss_en: "the contraction and expansion of the powers (of sense)"
-            morph: "n cpd-stem"
-          - word: वाहच्छेद
-            iast: vāha-cchedā
-            gloss_en: "the cutting of the (prāṇa/apāna) currents"
-            morph: "n cpd-stem"
-          - word: आद्यन्तकोटिनिभालन
-            iast: ādy-antakoṭi-nibhālana
-            gloss_en: "the contemplation of the beginning and end points (of breath/thought)"
-            morph: "n cpd-stem"
+            gloss_en: contraction and expansion of powers
+            morph: stem in cpd.
+          - word: वाह-च्छेद
+            iast: vāha-ccheda
+            gloss_en: cutting the flow (of prāṇa/apāna)
+            morph: stem in cpd.
+          - word: आदि
+            iast: ādi
+            gloss_en: and so forth
+            morph: ptcl. in cpd.
+          - word: अन्त-कोटि-निभालन
+            iast: anta-koṭi-nibhālana
+            gloss_en: attentive watching of the two end-points
+            morph: stem in cpd.
           - word: आदयः
             iast: ādayaḥ
-            gloss_en: "and so forth"
-            morph: "m.nom.pl"
+            gloss_en: etc. (these and similar)
+            morph: nom. pl. m.
           - word: इह
             iast: iha
-            gloss_en: "here (in this teaching)"
-            morph: "indecl"
+            gloss_en: here (in this teaching)
+            morph: adv.
           - word: उपायाः
             iast: upāyāḥ
-            gloss_en: "the means"
-            morph: "m.nom.pl"
+            gloss_en: are the means
+            morph: nom. pl. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -631,26 +671,26 @@ chapters:
         iast: "samādhi-saṃskāravati vyutthāne bhūyo bhūyaś cid-aikyāmarśān nityodita-samādhi-lābhaḥ"
         meter: sūtra
         word_glosses:
-          - word: समाधिसंस्कारवति
+          - word: समाधि-संस्कारवति
             iast: samādhi-saṃskāravati
-            gloss_en: "in the post-samādhi state still bearing the impressions of samādhi"
-            morph: "n.loc.sg cpd"
+            gloss_en: in the post-samādhi state still bearing its impression
+            morph: loc. sg. n. cpd.
           - word: व्युत्थाने
             iast: vyutthāne
-            gloss_en: "in the (state of) emergence from samādhi"
-            morph: "n.loc.sg"
+            gloss_en: during emergence (return to outer activity)
+            morph: loc. sg. n.
           - word: भूयो भूयः
             iast: bhūyo bhūyaḥ
-            gloss_en: "again and again"
-            morph: "indecl"
-          - word: चिदैक्यामर्शात्
-            iast: cid-aikyāmarśāt
-            gloss_en: "from the reflective awareness of unity with Consciousness"
-            morph: "m.abl.sg cpd"
-          - word: नित्योदितसमाधिलाभः
-            iast: nityodita-samādhi-lābhaḥ
-            gloss_en: "the attainment of perpetually-arisen samādhi"
-            morph: "m.nom.sg cpd"
+            gloss_en: again and again
+            morph: adv.
+          - word: चित्-ऐक्य-आमर्शात्
+            iast: cit-aikya-āmarśāt
+            gloss_en: by reflective awareness of identity with Consciousness
+            morph: abl. sg. m. cpd.
+          - word: नित्य-उदित-समाधि-लाभः
+            iast: nitya-udita-samādhi-lābhaḥ
+            gloss_en: comes the attainment of ever-arising samādhi
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -668,36 +708,36 @@ chapters:
         word_glosses:
           - word: तदा
             iast: tadā
-            gloss_en: "then"
-            morph: "indecl"
-          - word: प्रकाशानन्दसार
-            iast: prakāśānanda-sāra
-            gloss_en: "whose essence is the bliss of luminous Consciousness"
-            morph: "cpd-stem"
-          - word: महामन्त्रवीर्यात्मक
-            iast: mahā-mantra-vīryātmaka
-            gloss_en: "consisting of the potency of the great Mantra (I-AM)"
-            morph: "cpd-stem"
-          - word: पूर्णाहन्तावेशात्
-            iast: pūrṇāhantā-veśāt
-            gloss_en: "from absorption in the full I-consciousness"
-            morph: "m.abl.sg cpd"
-          - word: सर्वसर्गसंहारकारि
-            iast: sarva-sarga-saṃhāra-kāri
-            gloss_en: "which performs all creation and dissolution"
-            morph: "cpd-stem adj"
-          - word: निजसंविद्देवताचक्रेश्वरताप्राप्तिः
-            iast: nija-saṃvid-devatā-cakreśvaratā-prāptiḥ
-            gloss_en: "attainment of lordship over the wheel of deities of one's own Consciousness"
-            morph: "f.nom.sg cpd"
+            gloss_en: then
+            morph: adv.
+          - word: प्रकाश-आनन्द-सार
+            iast: prakāśa-ānanda-sāra
+            gloss_en: whose essence is light and bliss
+            morph: stem in cpd.
+          - word: महा-मन्त्र-वीर्य-आत्मक
+            iast: mahā-mantra-vīrya-ātmaka
+            gloss_en: constituted of the potency of the great mantra (Aham)
+            morph: stem in cpd.
+          - word: पूर्ण-अहन्ता-वेशात्
+            iast: pūrṇa-ahantā-veśāt
+            gloss_en: through entry into the perfect ‘I-ness’
+            morph: abl. sg. m. cpd.
+          - word: सदा सर्व-सर्ग-संहार-कारि
+            iast: sadā sarva-sarga-saṃhāra-kāri
+            gloss_en: ever performing all creation and dissolution
+            morph: stem in cpd.
+          - word: निज-संविद्-देवता-चक्र-ईश्वरता-प्राप्तिः
+            iast: nija-saṃvid-devatā-cakra-īśvaratā-prāptiḥ
+            gloss_en: comes the attainment of lordship over the wheel of one’s own deities of Consciousness
+            morph: nom. sg. f. cpd.
           - word: भवति
             iast: bhavati
-            gloss_en: "occurs, comes about"
-            morph: "verb 3.sg.pres"
+            gloss_en: arises
+            morph: 3sg. pres. √bhū
           - word: इति शिवम्
             iast: iti śivam
-            gloss_en: "thus, may there be auspiciousness (Śiva)"
-            morph: "indecl"
+            gloss_en: thus, all is auspicious
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"

@@ -84,28 +84,44 @@ chapters:
         word_glosses:
           - word: यत्र
             iast: yatra
-            gloss_en: "in which"
-            morph: "indecl"
+            gloss_en: in whom
+            morph: loc. rel.
           - word: स्थितम्
             iast: sthitam
-            gloss_en: "abides"
-            morph: "n.nom.sg ppl"
+            gloss_en: stands established
+            morph: ppp. nom. sg. n.
+          - word: इदं सर्वम्
+            iast: idaṃ sarvam
+            gloss_en: all this
+            morph: nom. sg. n.
           - word: कार्यम्
             iast: kāryam
-            gloss_en: "effect, world of effects"
-            morph: "n.nom.sg"
-          - word: निर्गतम्
-            iast: nirgatam
-            gloss_en: "issued forth"
-            morph: "n.nom.sg ppl"
-          - word: अनावृतरूपत्वात्
+            gloss_en: effect, the to-be-done
+            morph: nom. sg. n.
+          - word: यस्मात्
+            iast: yasmāt
+            gloss_en: from whom
+            morph: abl. rel.
+          - word: च निर्गतम्
+            iast: ca nirgatam
+            gloss_en: and (everything) has issued forth
+            morph: phrase
+          - word: तस्य
+            iast: tasya
+            gloss_en: for him
+            morph: gen. sg. m.
+          - word: अनावृत-रूपत्वात्
             iast: anāvṛta-rūpatvāt
-            gloss_en: "owing to (its) unveiled nature"
-            morph: "n.abl.sg cpd"
-          - word: निरोधः
-            iast: nirodhaḥ
-            gloss_en: "obstruction"
-            morph: "m.nom.sg"
+            gloss_en: owing to (his) uncovered nature
+            morph: abl. sg. n. cpd.
+          - word: न निरोधः अस्ति
+            iast: na nirodhaḥ asti
+            gloss_en: there is no obstruction
+            morph: phrase
+          - word: कुत्रचित्
+            iast: kutracit
+            gloss_en: anywhere
+            morph: indef. adv.
         translations:
           - lang: en
             translator: "public-domain composite"

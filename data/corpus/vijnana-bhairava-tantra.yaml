@@ -34,16 +34,44 @@ chapters:
         word_glosses:
           - word: śrīdevī
             iast: śrīdevī
-            gloss_en: "the Goddess (Bhairavī)"
-            morph: "nom. sg. f."
-          - word: rudrayāmala
-            iast: rudrayāmala
-            gloss_en: "the Rudra-yāmala Tantra (source text)"
-            morph: "stem in cpd."
-          - word: trika-bheda
-            iast: trika-bheda
-            gloss_en: "the divisions of the Trika"
-            morph: "acc. sg. m."
+            gloss_en: the blessed Goddess (Bhairavī)
+            morph: nom. sg. f.
+          - word: uvāca
+            iast: uvāca
+            gloss_en: said
+            morph: 3sg. pf. √vac
+          - word: śrutam
+            iast: śrutam
+            gloss_en: heard
+            morph: ppp. nom. sg. n.
+          - word: deva
+            iast: deva
+            gloss_en: O Lord
+            morph: voc. sg. m.
+          - word: mayā
+            iast: mayā
+            gloss_en: by me
+            morph: inst. sg.
+          - word: sarvam
+            iast: sarvam
+            gloss_en: everything, the whole
+            morph: acc. sg. n.
+          - word: rudrayāmala-sambhavam
+            iast: rudrayāmala-sambhavam
+            gloss_en: originating from the Rudra-yāmala Tantra
+            morph: acc. sg. n. cpd.
+          - word: trika-bhedam
+            iast: trika-bhedam
+            gloss_en: the divisions of the Trika
+            morph: acc. sg. m. cpd.
+          - word: aśeṣeṇa
+            iast: aśeṣeṇa
+            gloss_en: without remainder, completely
+            morph: inst. sg. n.
+          - word: sārāt sāra-vibhāgaśaḥ
+            iast: sārāt sāra-vibhāgaśaḥ
+            gloss_en: distinguished from the essence of the essence
+            morph: adv. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -59,18 +87,50 @@ chapters:
         iast: "adyāpi na nivṛtto me saṃśayaḥ parameśvara | kiṃ rūpaṃ tattvato deva śabdarāśikalāmayam"
         meter: anuṣṭubh
         word_glosses:
+          - word: adya api
+            iast: adya api
+            gloss_en: even today
+            morph: adv. + ptcl.
+          - word: na
+            iast: na
+            gloss_en: not
+            morph: neg.
+          - word: nivṛttaḥ
+            iast: nivṛttaḥ
+            gloss_en: ceased, dispelled
+            morph: ppp. nom. sg. m.
+          - word: me
+            iast: me
+            gloss_en: my, of me
+            morph: gen. sg.
           - word: saṃśayaḥ
             iast: saṃśayaḥ
-            gloss_en: "doubt"
-            morph: "nom. sg. m."
+            gloss_en: doubt
+            morph: nom. sg. m.
           - word: parameśvara
             iast: parameśvara
-            gloss_en: "Supreme Lord"
-            morph: "voc. sg. m."
-          - word: śabdarāśi-kalā-mayam
-            iast: śabdarāśi-kalā-mayam
-            gloss_en: "consisting of the totality of phonemes and the kalās"
-            morph: "acc. sg. n., bahuvrīhi"
+            gloss_en: O Supreme Lord
+            morph: voc. sg. m.
+          - word: kim
+            iast: kim
+            gloss_en: what?
+            morph: interrog.
+          - word: rūpam
+            iast: rūpam
+            gloss_en: form, nature
+            morph: nom. sg. n.
+          - word: tattvataḥ
+            iast: tattvataḥ
+            gloss_en: in reality, truly
+            morph: adv.
+          - word: deva
+            iast: deva
+            gloss_en: O God
+            morph: voc. sg. m.
+          - word: śabda-rāśi-kalā-mayam
+            iast: śabda-rāśi-kalā-mayam
+            gloss_en: consisting of the totality of phonemes and the kalās
+            morph: nom. sg. n. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -86,18 +146,38 @@ chapters:
         iast: "kiṃ vā navātmabhedena bhairave bhairavākṛtau | triśirobhedabhinnaṃ vā kiṃ vā śaktitrayātmakam"
         meter: anuṣṭubh
         word_glosses:
+          - word: kim vā
+            iast: kim vā
+            gloss_en: or is it?
+            morph: interrog. + ptcl.
           - word: navātma-bhedena
             iast: navātma-bhedena
-            gloss_en: "by the ninefold division (of the nine selves)"
-            morph: "inst. sg. m."
-          - word: triśiro-bheda
-            iast: triśiro-bheda
-            gloss_en: "the threefold division (Triśirobhairava system)"
-            morph: "stem in cpd."
+            gloss_en: by the division of the nine selves
+            morph: inst. sg. m. cpd.
+          - word: bhairave
+            iast: bhairave
+            gloss_en: in Bhairava
+            morph: loc. sg. m.
+          - word: bhairavākṛtau
+            iast: bhairavākṛtau
+            gloss_en: in the form of Bhairava
+            morph: loc. sg. f. cpd.
+          - word: triśiraḥ-bheda-bhinnam
+            iast: triśiraḥ-bheda-bhinnam
+            gloss_en: divided by the three-headed division
+            morph: nom. sg. n. cpd.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: kim vā
+            iast: kim vā
+            gloss_en: or is it
+            morph: interrog.
           - word: śakti-trayātmakam
             iast: śakti-trayātmakam
-            gloss_en: "consisting of the three Śaktis (parā, parāparā, aparā)"
-            morph: "nom. sg. n., bahuvrīhi"
+            gloss_en: consisting of the triad of Powers
+            morph: nom. sg. n. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -115,16 +195,40 @@ chapters:
         word_glosses:
           - word: nāda-bindu-mayam
             iast: nāda-bindu-mayam
-            gloss_en: "consisting of nāda and bindu (sound and point)"
-            morph: "nom. sg. n., bahuvrīhi"
-          - word: candrārdha-nirodhikāḥ
-            iast: candrārdha-nirodhikāḥ
-            gloss_en: "the half-moon and the obstructress (subtle phonic stages)"
-            morph: "nom. pl. f."
-          - word: cakrārūḍha
-            iast: cakrārūḍha
-            gloss_en: "mounted on the wheel (of phonemes)"
-            morph: "nom. sg. n."
+            gloss_en: consisting of nāda and bindu
+            morph: nom. sg. n. cpd.
+          - word: vā api
+            iast: vā api
+            gloss_en: or even
+            morph: ptcl.
+          - word: kim
+            iast: kim
+            gloss_en: is it?
+            morph: interrog.
+          - word: candra-ardha-nirodhikāḥ
+            iast: candra-ardha-nirodhikāḥ
+            gloss_en: the half-moon and the restraining (forms)
+            morph: nom. pl. f. cpd.
+          - word: cakra-ārūḍham
+            iast: cakra-ārūḍham
+            gloss_en: mounted on the wheel
+            morph: nom. sg. n. cpd.
+          - word: anackam
+            iast: anackam
+            gloss_en: the vowel-less (i.e. pure consonant)
+            morph: nom. sg. n.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: kim vā
+            iast: kim vā
+            gloss_en: or is it
+            morph: interrog.
+          - word: śakti-svarūpakam
+            iast: śakti-svarūpakam
+            gloss_en: of the very nature of Śakti
+            morph: nom. sg. n. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -140,18 +244,54 @@ chapters:
         iast: "parāparāyāḥ sakalam aparāyāś ca vā punaḥ | parāyāḥ yadi tadvat syāt paratvaṃ tad virudhyate"
         meter: anuṣṭubh
         word_glosses:
-          - word: parāparā
-            iast: parāparā
-            gloss_en: "the supreme-yet-non-supreme (middle Śakti)"
-            morph: "gen. sg. f."
-          - word: aparā
-            iast: aparā
-            gloss_en: "the non-supreme (lower Śakti)"
-            morph: "gen. sg. f."
+          - word: parāparāyāḥ
+            iast: parāparāyāḥ
+            gloss_en: of parāparā (the intermediate Goddess)
+            morph: gen. sg. f.
+          - word: sakalam
+            iast: sakalam
+            gloss_en: the manifest, with-parts (state)
+            morph: nom./acc. sg. n.
+          - word: aparāyāḥ
+            iast: aparāyāḥ
+            gloss_en: of aparā (the lower Goddess)
+            morph: gen. sg. f.
+          - word: ca vā
+            iast: ca vā
+            gloss_en: or and
+            morph: conj.
+          - word: punaḥ
+            iast: punaḥ
+            gloss_en: again
+            morph: adv.
+          - word: parāyāḥ
+            iast: parāyāḥ
+            gloss_en: of parā (the highest Goddess)
+            morph: gen. sg. f.
+          - word: yadi
+            iast: yadi
+            gloss_en: if
+            morph: conj.
+          - word: tadvat
+            iast: tadvat
+            gloss_en: in the same way
+            morph: adv.
+          - word: syāt
+            iast: syāt
+            gloss_en: would be
+            morph: 3sg. opt. √as
           - word: paratvam
             iast: paratvam
-            gloss_en: "supreme-ness, transcendence"
-            morph: "nom. sg. n."
+            gloss_en: the state of supremacy
+            morph: nom. sg. n.
+          - word: tat
+            iast: tat
+            gloss_en: that
+            morph: nom. sg. n.
+          - word: virudhyate
+            iast: virudhyate
+            gloss_en: is contradicted
+            morph: 3sg. pres. pass.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -167,18 +307,42 @@ chapters:
         iast: "na hi varṇavibhedena dehabhedena vā bhavet | paratvaṃ niṣkalatvena sakalatve na tad bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: varṇa-vibheda
-            iast: varṇa-vibheda
-            gloss_en: "division by phonemes"
-            morph: "inst. sg. m."
+          - word: na hi
+            iast: na hi
+            gloss_en: for not
+            morph: neg. + ptcl.
+          - word: varṇa-vibhedena
+            iast: varṇa-vibhedena
+            gloss_en: by distinction of letters/colors
+            morph: inst. sg. m. cpd.
+          - word: deha-bhedena
+            iast: deha-bhedena
+            gloss_en: by distinction of bodies
+            morph: inst. sg. m. cpd.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: bhavet
+            iast: bhavet
+            gloss_en: could be
+            morph: 3sg. opt. √bhū
+          - word: paratvam
+            iast: paratvam
+            gloss_en: supremacy
+            morph: nom. sg. n.
           - word: niṣkalatvena
             iast: niṣkalatvena
-            gloss_en: "by partlessness, indivisibility"
-            morph: "inst. sg. n."
+            gloss_en: by partlessness
+            morph: inst. sg. n.
           - word: sakalatve
             iast: sakalatve
-            gloss_en: "in the state of having parts"
-            morph: "loc. sg. n."
+            gloss_en: in the with-parts state
+            morph: loc. sg. n.
+          - word: na tad bhavet
+            iast: na tad bhavet
+            gloss_en: that cannot be
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -196,16 +360,52 @@ chapters:
         word_glosses:
           - word: prasādam
             iast: prasādam
-            gloss_en: "grace, favor"
-            morph: "acc. sg. m."
+            gloss_en: favour, grace
+            morph: acc. sg. m.
+          - word: kuru
+            iast: kuru
+            gloss_en: do, bestow
+            morph: 2sg. impv. √kṛ
+          - word: me
+            iast: me
+            gloss_en: to me
+            morph: gen./dat. sg.
+          - word: nātha
+            iast: nātha
+            gloss_en: O Lord
+            morph: voc. sg. m.
+          - word: niḥśeṣam
+            iast: niḥśeṣam
+            gloss_en: without remainder, completely
+            morph: adv.
+          - word: chindhi
+            iast: chindhi
+            gloss_en: cut, sever
+            morph: 2sg. impv. √chid
           - word: saṃśayam
             iast: saṃśayam
-            gloss_en: "doubt"
-            morph: "acc. sg. m."
+            gloss_en: doubt
+            morph: acc. sg. m.
+          - word: bhairavaḥ uvāca
+            iast: bhairavaḥ uvāca
+            gloss_en: Bhairava said
+            morph: phrase
+          - word: sādhu sādhu
+            iast: sādhu sādhu
+            gloss_en: well, well!
+            morph: interj.
+          - word: tvayā pṛṣṭam
+            iast: tvayā pṛṣṭam
+            gloss_en: asked by you
+            morph: phrase
           - word: tantra-sāram
             iast: tantra-sāram
-            gloss_en: "the essence of the Tantra"
-            morph: "nom. sg. n."
+            gloss_en: the essence of tantra
+            morph: acc. sg. n. cpd.
+          - word: idam priye
+            iast: idam priye
+            gloss_en: this, O beloved
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -223,16 +423,44 @@ chapters:
         word_glosses:
           - word: guhyātiguhya-goptṛ
             iast: guhyātiguhya-goptṛ
-            gloss_en: "guardian of the most secret of secrets"
-            morph: "voc. sg. f."
+            gloss_en: O guardian of the secret-of-secrets
+            morph: voc. sg. f.
+          - word: tvam
+            iast: tvam
+            gloss_en: you
+            morph: nom. sg.
+          - word: yadi api
+            iast: yadi api
+            gloss_en: although
+            morph: conj.
+          - word: idam
+            iast: idam
+            gloss_en: this
+            morph: nom. sg. n.
           - word: varānane
             iast: varānane
-            gloss_en: "O fair-faced one"
-            morph: "voc. sg. f."
+            gloss_en: O fair-faced one
+            morph: voc. sg. f.
+          - word: tathā api
+            iast: tathā api
+            gloss_en: yet even so
+            morph: conj.
           - word: kathayiṣyāmi
             iast: kathayiṣyāmi
-            gloss_en: "I shall declare"
-            morph: "1 sg. fut."
+            gloss_en: I shall tell
+            morph: 1sg. fut. √kath
+          - word: yathā
+            iast: yathā
+            gloss_en: as
+            morph: adv.
+          - word: vetsi
+            iast: vetsi
+            gloss_en: you know
+            morph: 2sg. pres. √vid
+          - word: tathā śṛṇu
+            iast: tathā śṛṇu
+            gloss_en: thus listen
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -248,18 +476,50 @@ chapters:
         iast: "yat paraṃ niṣkalaṃ devi sarvatattvātigocaram | tat tu śakyaṃ na teneha vaktuṃ śakyaṃ tad icchayā"
         meter: anuṣṭubh
         word_glosses:
+          - word: yat
+            iast: yat
+            gloss_en: that which
+            morph: rel. nom. sg. n.
+          - word: param
+            iast: param
+            gloss_en: is supreme
+            morph: nom. sg. n.
           - word: niṣkalam
             iast: niṣkalam
-            gloss_en: "partless, undivided"
-            morph: "acc. sg. n."
-          - word: sarva-tattvātigocaram
-            iast: sarva-tattvātigocaram
-            gloss_en: "beyond the range of all categories"
-            morph: "acc. sg. n."
+            gloss_en: partless
+            morph: nom. sg. n.
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
+          - word: sarva-tattvāti-gocaram
+            iast: sarva-tattvāti-gocaram
+            gloss_en: beyond the range of all the tattvas
+            morph: nom. sg. n. cpd.
+          - word: tat tu śakyam na
+            iast: tat tu śakyam na
+            gloss_en: that surely cannot be
+            morph: phrase
+          - word: tena
+            iast: tena
+            gloss_en: by him
+            morph: inst. sg. m.
+          - word: iha
+            iast: iha
+            gloss_en: here (in words)
+            morph: adv.
+          - word: vaktum
+            iast: vaktum
+            gloss_en: to be told
+            morph: inf. √vac
+          - word: śakyam tat
+            iast: śakyam tat
+            gloss_en: is that which can be
+            morph: phrase
           - word: icchayā
             iast: icchayā
-            gloss_en: "by will (alone)"
-            morph: "inst. sg. f."
+            gloss_en: by mere wish
+            morph: inst. sg. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -275,18 +535,42 @@ chapters:
         iast: "devi prakṛtirūpā yā tasyāḥ kiṃ rūpam ucyate | sakalatve vikalpānāṃ sakalādvaitakalpanā"
         meter: anuṣṭubh
         word_glosses:
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
           - word: prakṛti-rūpā
             iast: prakṛti-rūpā
-            gloss_en: "having the form of Prakṛti"
-            morph: "nom. sg. f."
+            gloss_en: having the form of prakṛti
+            morph: nom. sg. f. cpd.
+          - word: yā
+            iast: yā
+            gloss_en: she who
+            morph: rel. nom. sg. f.
+          - word: tasyāḥ
+            iast: tasyāḥ
+            gloss_en: her
+            morph: gen. sg. f.
+          - word: kim rūpam
+            iast: kim rūpam
+            gloss_en: what form?
+            morph: interrog.
+          - word: ucyate
+            iast: ucyate
+            gloss_en: is said
+            morph: 3sg. pres. pass. √vac
+          - word: sakalatve
+            iast: sakalatve
+            gloss_en: in the with-parts state
+            morph: loc. sg. n.
           - word: vikalpānām
             iast: vikalpānām
-            gloss_en: "of conceptual constructs"
-            morph: "gen. pl. m."
-          - word: sakalādvaita-kalpanā
-            iast: sakalādvaita-kalpanā
-            gloss_en: "the imagining of non-duality with parts"
-            morph: "nom. sg. f."
+            gloss_en: of thought-constructs
+            morph: gen. pl. m.
+          - word: sakala-advaita-kalpanā
+            iast: sakala-advaita-kalpanā
+            gloss_en: an imagined non-duality of the manifest
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -302,18 +586,38 @@ chapters:
         iast: "tadā tasmin mahāvyomni pralīne śaśibhāskare | magnavat tāmasī nidrā babhūva khilagocare"
         meter: anuṣṭubh
         word_glosses:
-          - word: mahā-vyomni
-            iast: mahā-vyomni
-            gloss_en: "in the great void / supreme space"
-            morph: "loc. sg. n."
+          - word: tadā
+            iast: tadā
+            gloss_en: then
+            morph: adv.
+          - word: tasmin mahā-vyomni
+            iast: tasmin mahā-vyomni
+            gloss_en: in that great void
+            morph: loc. sg. n. cpd.
+          - word: pralīne
+            iast: pralīne
+            gloss_en: when dissolved
+            morph: loc. sg. m. ppp.
           - word: śaśi-bhāskare
             iast: śaśi-bhāskare
-            gloss_en: "moon and sun (idā-piṅgalā / prāṇa-apāna)"
-            morph: "loc. dual m."
+            gloss_en: (when) moon and sun (dissolve)
+            morph: loc. du. m. cpd.
+          - word: magna-vat
+            iast: magna-vat
+            gloss_en: as if submerged
+            morph: adv.
           - word: tāmasī nidrā
             iast: tāmasī nidrā
-            gloss_en: "tamasic sleep"
-            morph: "nom. sg. f."
+            gloss_en: a dark sleep
+            morph: nom. sg. f. cpd.
+          - word: babhūva
+            iast: babhūva
+            gloss_en: arose, became
+            morph: 3sg. pf. √bhū
+          - word: khila-gocare
+            iast: khila-gocare
+            gloss_en: in the empty sphere
+            morph: loc. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -329,18 +633,38 @@ chapters:
         iast: "evaṃvidhā bhairavasya yāvasthā parigīyate | sā parā pararūpeṇa parā devī prakīrtitā"
         meter: anuṣṭubh
         word_glosses:
-          - word: evaṃvidhā
-            iast: evaṃvidhā
-            gloss_en: "of such a kind"
-            morph: "nom. sg. f."
-          - word: avasthā
-            iast: avasthā
-            gloss_en: "state, condition"
-            morph: "nom. sg. f."
+          - word: evam-vidhā
+            iast: evam-vidhā
+            gloss_en: of such a kind
+            morph: nom. sg. f.
+          - word: bhairavasya
+            iast: bhairavasya
+            gloss_en: of Bhairava
+            morph: gen. sg. m.
+          - word: yā avasthā
+            iast: yā avasthā
+            gloss_en: which state
+            morph: rel. nom. sg. f.
+          - word: parigīyate
+            iast: parigīyate
+            gloss_en: is celebrated
+            morph: 3sg. pres. pass.
+          - word: sā parā
+            iast: sā parā
+            gloss_en: she is supreme
+            morph: phrase
+          - word: para-rūpeṇa
+            iast: para-rūpeṇa
+            gloss_en: in the form of the Supreme
+            morph: inst. sg. n. cpd.
           - word: parā devī
             iast: parā devī
-            gloss_en: "the Supreme Goddess"
-            morph: "nom. sg. f."
+            gloss_en: the supreme Goddess
+            morph: nom. sg. f.
+          - word: prakīrtitā
+            iast: prakīrtitā
+            gloss_en: is proclaimed
+            morph: ppp. nom. sg. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -358,16 +682,40 @@ chapters:
         word_glosses:
           - word: śakti-śaktimatoḥ
             iast: śakti-śaktimatoḥ
-            gloss_en: "of Power and the Power-holder"
-            morph: "gen. dual m."
+            gloss_en: of Śakti and the holder of Śakti
+            morph: gen. du. m. cpd.
+          - word: yadvat
+            iast: yadvat
+            gloss_en: as much as
+            morph: adv.
           - word: abhedaḥ
             iast: abhedaḥ
-            gloss_en: "non-difference"
-            morph: "nom. sg. m."
-          - word: dharma-dharmitvāt
-            iast: dharma-dharmitvāt
-            gloss_en: "from the relation of attribute and attribute-holder"
-            morph: "abl. sg. n."
+            gloss_en: non-difference
+            morph: nom. sg. m.
+          - word: sarvadā
+            iast: sarvadā
+            gloss_en: always
+            morph: adv.
+          - word: sthitaḥ
+            iast: sthitaḥ
+            gloss_en: stands established
+            morph: ppp. nom. sg. m.
+          - word: ataḥ
+            iast: ataḥ
+            gloss_en: therefore
+            morph: adv.
+          - word: tat-dharma-dharmitvāt
+            iast: tat-dharma-dharmitvāt
+            gloss_en: by virtue of bearing his attributes
+            morph: abl. sg. n. cpd.
+          - word: parā śaktiḥ
+            iast: parā śaktiḥ
+            gloss_en: supreme Śakti
+            morph: nom. sg. f.
+          - word: parātmanaḥ
+            iast: parātmanaḥ
+            gloss_en: of the supreme Self
+            morph: gen. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -383,18 +731,42 @@ chapters:
         iast: "na vahner dāhikā śaktir vyatiriktā vibhāvyate | kevalaṃ jñānasattāyāṃ prārambho'yaṃ praveśane"
         meter: anuṣṭubh
         word_glosses:
+          - word: na
+            iast: na
+            gloss_en: not
+            morph: neg.
           - word: vahneḥ
             iast: vahneḥ
-            gloss_en: "of fire"
-            morph: "gen. sg. m."
+            gloss_en: from fire
+            morph: gen./abl. sg. m.
           - word: dāhikā śaktiḥ
             iast: dāhikā śaktiḥ
-            gloss_en: "the burning power"
-            morph: "nom. sg. f."
+            gloss_en: the burning power
+            morph: nom. sg. f. cpd.
           - word: vyatiriktā
             iast: vyatiriktā
-            gloss_en: "separate, distinct"
-            morph: "nom. sg. f."
+            gloss_en: separate
+            morph: ppp. nom. sg. f.
+          - word: vibhāvyate
+            iast: vibhāvyate
+            gloss_en: is conceived
+            morph: 3sg. pres. pass.
+          - word: kevalam
+            iast: kevalam
+            gloss_en: merely
+            morph: adv.
+          - word: jñāna-sattāyām
+            iast: jñāna-sattāyām
+            gloss_en: in the existence of knowledge
+            morph: loc. sg. f. cpd.
+          - word: prārambhaḥ ayam
+            iast: prārambhaḥ ayam
+            gloss_en: this is the beginning
+            morph: phrase
+          - word: praveśane
+            iast: praveśane
+            gloss_en: in the entering (i.e. the door of entry)
+            morph: loc. sg. n.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -410,22 +782,46 @@ chapters:
         iast: "śaktyavasthāpraviṣṭasya nirvibhāgena bhāvanā | tadāsau śivarūpī syāt śaivī mukham ihocyate"
         meter: anuṣṭubh
         word_glosses:
-          - word: śaktyavasthā
-            iast: śaktyavasthā
-            gloss_en: "the state of Śakti"
-            morph: "stem in cpd."
+          - word: śakti-avasthā-praviṣṭasya
+            iast: śakti-avasthā-praviṣṭasya
+            gloss_en: for one who has entered the state of Śakti
+            morph: gen. sg. m. cpd.
+          - word: nirvibhāgena
+            iast: nirvibhāgena
+            gloss_en: without any division
+            morph: inst. sg. m.
           - word: bhāvanā
             iast: bhāvanā
-            gloss_en: "contemplative realization"
-            morph: "nom. sg. f."
-          - word: śaivī mukham
-            iast: śaivī mukham
-            gloss_en: "the Face of Śiva (entrance to Śiva)"
-            morph: "nom. sg. n."
-          - word: śivarūpī
-            iast: śivarūpī
-            gloss_en: "having the form of Śiva"
-            morph: "nom. sg. m."
+            gloss_en: is the contemplation
+            morph: nom. sg. f.
+          - word: tadā
+            iast: tadā
+            gloss_en: then
+            morph: adv.
+          - word: asau
+            iast: asau
+            gloss_en: he
+            morph: nom. sg. m.
+          - word: śiva-rūpī syāt
+            iast: śiva-rūpī syāt
+            gloss_en: becomes of the form of Śiva
+            morph: phrase
+          - word: śaivī
+            iast: śaivī
+            gloss_en: the way of Śakti (Śaivī mukha)
+            morph: nom. sg. f.
+          - word: mukham
+            iast: mukham
+            gloss_en: is the door, mouth
+            morph: nom. sg. n.
+          - word: iha
+            iast: iha
+            gloss_en: here, in this teaching
+            morph: adv.
+          - word: ucyate
+            iast: ucyate
+            gloss_en: is called
+            morph: 3sg. pres. pass.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -441,18 +837,46 @@ chapters:
         iast: "yathālokena dīpasya kiraṇair bhāskarasya ca | jñāyate digvibhāgādi tadvac chaktyā śivaḥ priye"
         meter: anuṣṭubh
         word_glosses:
-          - word: ālokena
-            iast: ālokena
-            gloss_en: "by the light"
-            morph: "inst. sg. m."
-          - word: kiraṇaiḥ
-            iast: kiraṇaiḥ
-            gloss_en: "by the rays"
-            morph: "inst. pl. m."
-          - word: digvibhāga
-            iast: digvibhāga
-            gloss_en: "the division of directions"
-            morph: "stem in cpd."
+          - word: yathā
+            iast: yathā
+            gloss_en: just as
+            morph: adv.
+          - word: ālokena dīpasya
+            iast: ālokena dīpasya
+            gloss_en: by the light of a lamp
+            morph: inst. sg. m. cpd.
+          - word: kiraṇaiḥ bhāskarasya
+            iast: kiraṇaiḥ bhāskarasya
+            gloss_en: by the rays of the sun
+            morph: inst. pl. m. cpd.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: jñāyate
+            iast: jñāyate
+            gloss_en: is known
+            morph: 3sg. pres. pass. √jñā
+          - word: diś-vibhāga-ādi
+            iast: diś-vibhāga-ādi
+            gloss_en: the partitions of directions, etc.
+            morph: nom. sg. n. cpd.
+          - word: tadvat
+            iast: tadvat
+            gloss_en: in the same way
+            morph: adv.
+          - word: śaktyā
+            iast: śaktyā
+            gloss_en: by Śakti
+            morph: inst. sg. f.
+          - word: śivaḥ
+            iast: śivaḥ
+            gloss_en: Śiva (is known)
+            morph: nom. sg. m.
+          - word: priye
+            iast: priye
+            gloss_en: O beloved
+            morph: voc. sg. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -468,18 +892,34 @@ chapters:
         iast: "śrīdevy uvāca | devadeva triśūlāṅka kapālakṛtabhūṣaṇa | digdeśakālaśūnyā ca vyapadeśavivarjitā"
         meter: anuṣṭubh
         word_glosses:
-          - word: triśūlāṅka
-            iast: triśūlāṅka
-            gloss_en: "bearing the trident as emblem"
-            morph: "voc. sg. m."
+          - word: śrīdevī uvāca
+            iast: śrīdevī uvāca
+            gloss_en: the blessed Goddess said
+            morph: phrase
+          - word: devadeva
+            iast: devadeva
+            gloss_en: O God of gods
+            morph: voc. sg. m.
+          - word: triśūla-aṅka
+            iast: triśūla-aṅka
+            gloss_en: marked by the trident
+            morph: voc. sg. m. cpd.
           - word: kapāla-kṛta-bhūṣaṇa
             iast: kapāla-kṛta-bhūṣaṇa
-            gloss_en: "adorned with skulls"
-            morph: "voc. sg. m."
-          - word: dik-deśa-kāla-śūnyā
-            iast: dik-deśa-kāla-śūnyā
-            gloss_en: "empty of direction, place, and time"
-            morph: "nom. sg. f."
+            gloss_en: ornamented with skulls
+            morph: voc. sg. m. cpd.
+          - word: diś-deśa-kāla-śūnyā
+            iast: diś-deśa-kāla-śūnyā
+            gloss_en: free of direction, place, and time
+            morph: nom. sg. f. cpd.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: vyapadeśa-vivarjitā
+            iast: vyapadeśa-vivarjitā
+            gloss_en: devoid of designation
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -495,18 +935,42 @@ chapters:
         iast: "yāvasthā bharitākārā bhairavasyopalabhyate | kair upāyair mukhaṃ tasya parā devī kathaṃ bhavet | yathā samyag ahaṃ vedmi tathā me brūhi bhairava"
         meter: anuṣṭubh (extended)
         word_glosses:
-          - word: bharitākārā
-            iast: bharitākārā
-            gloss_en: "having the form of plenitude"
-            morph: "nom. sg. f."
-          - word: upāyaiḥ
-            iast: upāyaiḥ
-            gloss_en: "by means"
-            morph: "inst. pl. m."
-          - word: mukham
-            iast: mukham
-            gloss_en: "the face, entry"
-            morph: "nom. sg. n."
+          - word: yā avasthā
+            iast: yā avasthā
+            gloss_en: which state
+            morph: rel. nom. sg. f.
+          - word: bharita-ākārā
+            iast: bharita-ākārā
+            gloss_en: of a filled-up nature
+            morph: nom. sg. f. cpd.
+          - word: bhairavasya upalabhyate
+            iast: bhairavasya upalabhyate
+            gloss_en: is apprehended in Bhairava
+            morph: phrase
+          - word: kaiḥ upāyaiḥ
+            iast: kaiḥ upāyaiḥ
+            gloss_en: by which means?
+            morph: inst. pl. m.
+          - word: mukham tasya
+            iast: mukham tasya
+            gloss_en: is the door to him
+            morph: phrase
+          - word: parā devī
+            iast: parā devī
+            gloss_en: the supreme Goddess
+            morph: nom. sg. f.
+          - word: katham bhavet
+            iast: katham bhavet
+            gloss_en: how does she come to be?
+            morph: phrase
+          - word: yathā samyak aham vedmi
+            iast: yathā samyak aham vedmi
+            gloss_en: so that I rightly may know
+            morph: phrase
+          - word: tathā me brūhi bhairava
+            iast: tathā me brūhi bhairava
+            gloss_en: thus tell me, O Bhairava
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -522,22 +986,42 @@ chapters:
         iast: "bhairava uvāca | ūrdhve prāṇo hyadho jīvo visargātmā paroccaret | utpattidvitayasthāne bharaṇād bharitā sthitiḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: prāṇa
-            iast: prāṇa
-            gloss_en: "outgoing breath"
-            morph: "nom. sg. m."
-          - word: jīva (apāna)
-            iast: jīva
-            gloss_en: "the life-breath / incoming breath"
-            morph: "nom. sg. m."
-          - word: visarga
-            iast: visarga
-            gloss_en: "emission / the visarga sound (ḥ)"
-            morph: "stem in cpd."
+          - word: bhairavaḥ uvāca
+            iast: bhairavaḥ uvāca
+            gloss_en: Bhairava said
+            morph: phrase
+          - word: ūrdhve prāṇaḥ
+            iast: ūrdhve prāṇaḥ
+            gloss_en: above is the out-breath
+            morph: phrase
+          - word: hi
+            iast: hi
+            gloss_en: indeed
+            morph: ptcl.
+          - word: adhaḥ jīvaḥ
+            iast: adhaḥ jīvaḥ
+            gloss_en: below is the in-breath (jīva)
+            morph: phrase
+          - word: visarga-ātmā
+            iast: visarga-ātmā
+            gloss_en: of the nature of emission (visarga)
+            morph: nom. sg. m. cpd.
+          - word: para uccaret
+            iast: para uccaret
+            gloss_en: the Supreme should rise
+            morph: phrase
+          - word: utpatti-dvitaya-sthāne
+            iast: utpatti-dvitaya-sthāne
+            gloss_en: in the place of the two arisings
+            morph: loc. sg. n. cpd.
+          - word: bharaṇāt
+            iast: bharaṇāt
+            gloss_en: from filling
+            morph: abl. sg. n.
           - word: bharitā sthitiḥ
             iast: bharitā sthitiḥ
-            gloss_en: "the state of plenitude"
-            morph: "nom. sg. f."
+            gloss_en: the fullness-state (is reached)
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -555,16 +1039,40 @@ chapters:
         word_glosses:
           - word: marutaḥ
             iast: marutaḥ
-            gloss_en: "of the breath / winds"
-            morph: "gen. sg. m."
-          - word: viyadyugmā
-            iast: viyadyugmā
-            gloss_en: "the pair of voids"
-            morph: "nom. sg. f."
+            gloss_en: the breath, the wind
+            morph: nom. sg. m.
+          - word: antaḥ bahir vā api
+            iast: antaḥ bahir vā api
+            gloss_en: either inside or outside
+            morph: phrase
+          - word: viyat-yugmā
+            iast: viyat-yugmā
+            gloss_en: the pair of voids (between in- and out-breath)
+            morph: nom. sg. f. cpd.
+          - word: nivartanāt
+            iast: nivartanāt
+            gloss_en: from cessation
+            morph: abl. sg. n.
+          - word: bhairavyā bhairavasya
+            iast: bhairavyā bhairavasya
+            gloss_en: of Bhairavī, of Bhairava
+            morph: gen. sg. f./m.
+          - word: ittham
+            iast: ittham
+            gloss_en: in this way
+            morph: adv.
+          - word: bhairavi
+            iast: bhairavi
+            gloss_en: O Bhairavī
+            morph: voc. sg. f.
+          - word: vyajyate
+            iast: vyajyate
+            gloss_en: is manifested
+            morph: 3sg. pres. pass.
           - word: vapuḥ
             iast: vapuḥ
-            gloss_en: "body, form"
-            morph: "nom. sg. n."
+            gloss_en: the form, body
+            morph: nom. sg. n.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -580,18 +1088,42 @@ chapters:
         iast: "na vrajen na viśec chaktir marudrūpā vikāsite | nirvikalpatayā madhye tayā bhairavarūpatā"
         meter: anuṣṭubh
         word_glosses:
-          - word: marud-rūpā śaktiḥ
-            iast: marud-rūpā śaktiḥ
-            gloss_en: "Śakti in the form of breath"
-            morph: "nom. sg. f."
+          - word: na vrajet
+            iast: na vrajet
+            gloss_en: should not go out
+            morph: phrase
+          - word: na viśet
+            iast: na viśet
+            gloss_en: nor enter
+            morph: phrase
+          - word: śaktiḥ
+            iast: śaktiḥ
+            gloss_en: the (breath-)power
+            morph: nom. sg. f.
+          - word: marud-rūpā
+            iast: marud-rūpā
+            gloss_en: having the form of wind
+            morph: nom. sg. f. cpd.
+          - word: vikāsite
+            iast: vikāsite
+            gloss_en: when expanded
+            morph: loc. sg. n. ppp.
           - word: nirvikalpatayā
             iast: nirvikalpatayā
-            gloss_en: "by non-conceptual state"
-            morph: "inst. sg. f."
-          - word: bhairavarūpatā
-            iast: bhairavarūpatā
-            gloss_en: "the nature of Bhairava"
-            morph: "nom. sg. f."
+            gloss_en: by thought-free awareness
+            morph: inst. sg. f.
+          - word: madhye
+            iast: madhye
+            gloss_en: in the middle (the central state)
+            morph: loc. sg. n.
+          - word: tayā
+            iast: tayā
+            gloss_en: by her
+            morph: inst. sg. f.
+          - word: bhairava-rūpatā
+            iast: bhairava-rūpatā
+            gloss_en: is identity with the form of Bhairava
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -609,16 +1141,48 @@ chapters:
         word_glosses:
           - word: kumbhitā
             iast: kumbhitā
-            gloss_en: "held in (kumbhaka)"
-            morph: "nom. sg. f."
+            gloss_en: (when the breath is) retained
+            morph: ppp. nom. sg. f.
           - word: recitā
             iast: recitā
-            gloss_en: "exhaled out"
-            morph: "nom. sg. f."
+            gloss_en: exhaled
+            morph: ppp. nom. sg. f.
+          - word: vā api
+            iast: vā api
+            gloss_en: or even
+            morph: conj.
           - word: pūritā
             iast: pūritā
-            gloss_en: "inhaled in, filled"
-            morph: "nom. sg. f."
+            gloss_en: inhaled, filled
+            morph: ppp. nom. sg. f.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: yadā bhavet
+            iast: yadā bhavet
+            gloss_en: whenever it is
+            morph: phrase
+          - word: tad-ante
+            iast: tad-ante
+            gloss_en: at its end
+            morph: loc. sg. m. cpd.
+          - word: śāntanāmā asau
+            iast: śāntanāmā asau
+            gloss_en: that called the Peaceful (state)
+            morph: phrase
+          - word: śaktyā
+            iast: śaktyā
+            gloss_en: through that Śakti
+            morph: inst. sg. f.
+          - word: śāntaḥ
+            iast: śāntaḥ
+            gloss_en: the Peaceful One
+            morph: nom. sg. m.
+          - word: prakāśate
+            iast: prakāśate
+            gloss_en: shines forth
+            morph: 3sg. pres. √kāś
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -634,18 +1198,38 @@ chapters:
         iast: "āmūlāt kiraṇābhāsāṃ sūkṣmāt sūkṣmatarātmikām | cintayet tāṃ dviṣaṭkānte śāmyantīṃ bhairavodayaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: āmūlāt
-            iast: āmūlāt
-            gloss_en: "from the root (mūlādhāra)"
-            morph: "abl. sg. n."
-          - word: kiraṇābhāsām
-            iast: kiraṇābhāsām
-            gloss_en: "appearing as rays"
-            morph: "acc. sg. f."
-          - word: dviṣaṭkānte
-            iast: dviṣaṭkānte
-            gloss_en: "at the end of twelve (dvādaśānta)"
-            morph: "loc. sg. n."
+          - word: ā-mūlāt
+            iast: ā-mūlāt
+            gloss_en: from the root (mūlādhāra)
+            morph: abl. sg. m.
+          - word: kiraṇa-ābhāsām
+            iast: kiraṇa-ābhāsām
+            gloss_en: appearing as a ray
+            morph: acc. sg. f. cpd.
+          - word: sūkṣmāt sūkṣmatara-ātmikām
+            iast: sūkṣmāt sūkṣmatara-ātmikām
+            gloss_en: subtler than the subtle
+            morph: acc. sg. f. cpd.
+          - word: cintayet
+            iast: cintayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. √cint
+          - word: tām
+            iast: tām
+            gloss_en: her
+            morph: acc. sg. f.
+          - word: dvi-ṣaṭka-ante
+            iast: dvi-ṣaṭka-ante
+            gloss_en: at the end of the twelve (finger-breadths)
+            morph: loc. sg. m. cpd.
+          - word: śāmyantīm
+            iast: śāmyantīm
+            gloss_en: (her) growing quiescent
+            morph: acc. sg. f. pres. part.
+          - word: bhairava-udayaḥ
+            iast: bhairava-udayaḥ
+            gloss_en: the arising of Bhairava (occurs)
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -661,18 +1245,38 @@ chapters:
         iast: "udgacchantīṃ taḍidrūpāṃ praticakraṃ kramāt kramam | ūrdhvaṃ muṣṭitrayāvadhi yāvat tad bhairavodayaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: udgacchantīm
-            iast: udgacchantīm
-            gloss_en: "rising up"
-            morph: "acc. sg. f. pres. part."
-          - word: taḍidrūpām
-            iast: taḍidrūpām
-            gloss_en: "having the form of lightning"
-            morph: "acc. sg. f."
-          - word: pratichakram
-            iast: pratichakram
-            gloss_en: "at each cakra"
-            morph: "acc. sg. m."
+          - word: ud-gacchantīm
+            iast: ud-gacchantīm
+            gloss_en: rising upward
+            morph: acc. sg. f. pres. part.
+          - word: taḍit-rūpām
+            iast: taḍit-rūpām
+            gloss_en: of the form of lightning
+            morph: acc. sg. f. cpd.
+          - word: prati-cakram
+            iast: prati-cakram
+            gloss_en: in each cakra
+            morph: adv.
+          - word: kramāt kramam
+            iast: kramāt kramam
+            gloss_en: step by step
+            morph: adv.
+          - word: ūrdhvam
+            iast: ūrdhvam
+            gloss_en: upward
+            morph: adv.
+          - word: muṣṭi-traya-avadhi
+            iast: muṣṭi-traya-avadhi
+            gloss_en: up to the limit of three fists
+            morph: adv. cpd.
+          - word: yāvat
+            iast: yāvat
+            gloss_en: until
+            morph: conj.
+          - word: tat bhairava-udayaḥ
+            iast: tat bhairava-udayaḥ
+            gloss_en: that is the arising of Bhairava
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -690,16 +1294,32 @@ chapters:
         word_glosses:
           - word: krama-dvādaśakam
             iast: krama-dvādaśakam
-            gloss_en: "the twelvefold sequence"
-            morph: "acc. sg. n."
-          - word: dvādaśākṣara
-            iast: dvādaśākṣara
-            gloss_en: "the twelve syllables / phonic stages"
-            morph: "stem in cpd."
-          - word: sthūla-sūkṣma-para
-            iast: sthūla-sūkṣma-para
-            gloss_en: "gross, subtle, supreme"
-            morph: "stem in cpd."
+            gloss_en: the sequence of twelve (stations)
+            morph: acc. sg. n. cpd.
+          - word: samyak
+            iast: samyak
+            gloss_en: rightly
+            morph: adv.
+          - word: dvādaśa-akṣara-bheditam
+            iast: dvādaśa-akṣara-bheditam
+            gloss_en: differentiated by the twelve syllables
+            morph: acc. sg. n. cpd.
+          - word: sthūla-sūkṣma-para-sthityā
+            iast: sthūla-sūkṣma-para-sthityā
+            gloss_en: by the gross, subtle, and supreme states
+            morph: inst. sg. f. cpd.
+          - word: muktvā muktvā
+            iast: muktvā muktvā
+            gloss_en: abandoning and abandoning (each)
+            morph: adv. ger.
+          - word: antataḥ
+            iast: antataḥ
+            gloss_en: finally
+            morph: adv.
+          - word: śivaḥ
+            iast: śivaḥ
+            gloss_en: Śiva (is attained)
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -715,18 +1335,46 @@ chapters:
         iast: "tayāpūryāśu mūrdhāntaṃ bhaṅktvā bhrūkṣepasetunā | nirvikalpaṃ manaḥ kṛtvā sarvordhve sarvagodgamaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: mūrdhāntam
-            iast: mūrdhāntam
-            gloss_en: "the top of the head (brahmarandhra)"
-            morph: "acc. sg. m."
-          - word: bhrūkṣepa-setunā
-            iast: bhrūkṣepa-setunā
-            gloss_en: "by the bridge of the brow-contraction"
-            morph: "inst. sg. m."
-          - word: nirvikalpam manaḥ
-            iast: nirvikalpam manaḥ
-            gloss_en: "the mind free of thought-construct"
-            morph: "acc. sg. n."
+          - word: tayā
+            iast: tayā
+            gloss_en: by her (the rising Śakti)
+            morph: inst. sg. f.
+          - word: āpūrya
+            iast: āpūrya
+            gloss_en: having filled
+            morph: ger. √pṛ
+          - word: āśu
+            iast: āśu
+            gloss_en: quickly
+            morph: adv.
+          - word: mūrdha-antam
+            iast: mūrdha-antam
+            gloss_en: to the top of the head
+            morph: acc. sg. m. cpd.
+          - word: bhaṅktvā
+            iast: bhaṅktvā
+            gloss_en: having broken
+            morph: ger. √bhañj
+          - word: bhrū-kṣepa-setunā
+            iast: bhrū-kṣepa-setunā
+            gloss_en: by the bridge of raising the eyebrows
+            morph: inst. sg. m. cpd.
+          - word: nirvikalpam
+            iast: nirvikalpam
+            gloss_en: free of thought-constructs
+            morph: acc. sg. n.
+          - word: manaḥ kṛtvā
+            iast: manaḥ kṛtvā
+            gloss_en: having made the mind
+            morph: phrase
+          - word: sarva-ūrdhve
+            iast: sarva-ūrdhve
+            gloss_en: in the all-above (the supreme above)
+            morph: loc. sg. m.
+          - word: sarvaga-udgamaḥ
+            iast: sarvaga-udgamaḥ
+            gloss_en: is the rising of the All-going (Śiva)
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -744,16 +1392,44 @@ chapters:
         word_glosses:
           - word: śikhi-pakṣaiḥ
             iast: śikhi-pakṣaiḥ
-            gloss_en: "with peacock-feathers"
-            morph: "inst. pl. m."
+            gloss_en: with peacock's feathers
+            morph: inst. pl. m. cpd.
+          - word: citra-rūpaiḥ
+            iast: citra-rūpaiḥ
+            gloss_en: of variegated forms
+            morph: inst. pl. m. cpd.
+          - word: maṇḍalaiḥ
+            iast: maṇḍalaiḥ
+            gloss_en: with circles
+            morph: inst. pl. m.
           - word: śūnya-pañcakam
             iast: śūnya-pañcakam
-            gloss_en: "the fivefold void (five senses)"
-            morph: "acc. sg. n."
-          - word: anuttare śūnye
-            iast: anuttare śūnye
-            gloss_en: "in the highest void"
-            morph: "loc. sg. n."
+            gloss_en: the pentad of voids
+            morph: acc. sg. n. cpd.
+          - word: dhyāyataḥ
+            iast: dhyāyataḥ
+            gloss_en: for one meditating
+            morph: gen. sg. m. pres. part.
+          - word: anuttare
+            iast: anuttare
+            gloss_en: in the Unsurpassed (anuttara)
+            morph: loc. sg. m.
+          - word: śūnye
+            iast: śūnye
+            gloss_en: in the void
+            morph: loc. sg. n.
+          - word: praveśaḥ
+            iast: praveśaḥ
+            gloss_en: entry
+            morph: nom. sg. m.
+          - word: hṛdaye
+            iast: hṛdaye
+            gloss_en: in the heart
+            morph: loc. sg. n.
+          - word: bhavet
+            iast: bhavet
+            gloss_en: may arise
+            morph: 3sg. opt. √bhū
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -769,22 +1445,46 @@ chapters:
         iast: "īdṛśena krameṇaiva yatra kutrāpi cintanā | śūnye kuḍye pare pātre svayaṃ līnā varapradā"
         meter: anuṣṭubh
         word_glosses:
+          - word: īdṛśena krameṇa
+            iast: īdṛśena krameṇa
+            gloss_en: by such a sequence
+            morph: inst. sg. m. cpd.
+          - word: eva
+            iast: eva
+            gloss_en: alone
+            morph: ptcl.
+          - word: yatra kutra api
+            iast: yatra kutra api
+            gloss_en: wherever at all
+            morph: adv.
           - word: cintanā
             iast: cintanā
-            gloss_en: "contemplation, thought"
-            morph: "nom. sg. f."
+            gloss_en: contemplation (occurs)
+            morph: nom. sg. f.
           - word: śūnye
             iast: śūnye
-            gloss_en: "in the void"
-            morph: "loc. sg. n."
+            gloss_en: in the void
+            morph: loc. sg. n.
           - word: kuḍye
             iast: kuḍye
-            gloss_en: "on a wall"
-            morph: "loc. sg. n."
+            gloss_en: on a wall
+            morph: loc. sg. n.
+          - word: pare
+            iast: pare
+            gloss_en: in a supreme (object)
+            morph: loc. sg. n.
           - word: pātre
             iast: pātre
-            gloss_en: "on a worthy person"
-            morph: "loc. sg. n."
+            gloss_en: in a vessel
+            morph: loc. sg. n.
+          - word: svayam līnā
+            iast: svayam līnā
+            gloss_en: spontaneously dissolved (the mind)
+            morph: phrase
+          - word: vara-pradā
+            iast: vara-pradā
+            gloss_en: becomes the bestower of the boon
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -800,18 +1500,38 @@ chapters:
         iast: "kapālāntar mano nyasya tiṣṭhan mīlitalocanaḥ | krameṇa manaso dārḍhyāt lakṣayel lakṣyam uttamam"
         meter: anuṣṭubh
         word_glosses:
-          - word: kapālāntaḥ
-            iast: kapālāntaḥ
-            gloss_en: "within the skull"
-            morph: "adverbial"
+          - word: kapāla-antaḥ
+            iast: kapāla-antaḥ
+            gloss_en: within the skull
+            morph: adv.
+          - word: manaḥ nyasya
+            iast: manaḥ nyasya
+            gloss_en: having placed the mind
+            morph: phrase
+          - word: tiṣṭhan
+            iast: tiṣṭhan
+            gloss_en: remaining
+            morph: nom. sg. m. pres. part.
           - word: mīlita-locanaḥ
             iast: mīlita-locanaḥ
-            gloss_en: "with eyes closed"
-            morph: "nom. sg. m."
+            gloss_en: with closed eyes
+            morph: nom. sg. m. cpd.
+          - word: krameṇa
+            iast: krameṇa
+            gloss_en: gradually
+            morph: adv.
+          - word: manasaḥ dārḍhyāt
+            iast: manasaḥ dārḍhyāt
+            gloss_en: by the firmness of the mind
+            morph: abl. sg. n. cpd.
+          - word: lakṣayet
+            iast: lakṣayet
+            gloss_en: one should perceive
+            morph: 3sg. opt. caus. √lakṣ
           - word: lakṣyam uttamam
             iast: lakṣyam uttamam
-            gloss_en: "the supreme target"
-            morph: "acc. sg. n."
+            gloss_en: the highest goal
+            morph: acc. sg. n. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -829,16 +1549,40 @@ chapters:
         word_glosses:
           - word: madhya-nāḍī
             iast: madhya-nāḍī
-            gloss_en: "the central channel (suṣumnā)"
-            morph: "nom. sg. f."
-          - word: bisa-sūtrābha-rūpayā
-            iast: bisa-sūtrābha-rūpayā
-            gloss_en: "having the form of a lotus-fibre"
-            morph: "inst. sg. f."
+            gloss_en: the central channel (suṣumnā)
+            morph: nom. sg. f. cpd.
+          - word: madhya-saṃsthā
+            iast: madhya-saṃsthā
+            gloss_en: abiding in the middle
+            morph: nom. sg. f. cpd.
+          - word: bisa-sūtra-ābha-rūpayā
+            iast: bisa-sūtra-ābha-rūpayā
+            gloss_en: of a form like a lotus-fiber thread
+            morph: inst. sg. f. cpd.
+          - word: dhyātā
+            iast: dhyātā
+            gloss_en: (being) meditated upon
+            morph: ppp. nom. sg. f.
           - word: antar-vyomayā
             iast: antar-vyomayā
-            gloss_en: "having inner space as her body"
-            morph: "inst. sg. f."
+            gloss_en: with the inner void
+            morph: inst. sg. f. cpd.
+          - word: devyā
+            iast: devyā
+            gloss_en: by the Goddess
+            morph: inst. sg. f.
+          - word: tayā
+            iast: tayā
+            gloss_en: by her
+            morph: inst. sg. f.
+          - word: devaḥ
+            iast: devaḥ
+            gloss_en: the God (Śiva)
+            morph: nom. sg. m.
+          - word: prakāśate
+            iast: prakāśate
+            gloss_en: shines forth
+            morph: 3sg. pres. √kāś
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -854,18 +1598,34 @@ chapters:
         iast: "kararuddhadṛgastreṇa bhrūbhedād dvārarodhanāt | dṛṣṭe bindau kramāl līne tanmadhye paramā sthitiḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: kararuddha-dṛk
-            iast: kararuddha-dṛk
-            gloss_en: "sight stopped by the hands"
-            morph: "stem in cpd."
-          - word: astreṇa
-            iast: astreṇa
-            gloss_en: "as a weapon / means"
-            morph: "inst. sg. n."
-          - word: bindau
-            iast: bindau
-            gloss_en: "in the dot/point"
-            morph: "loc. sg. m."
+          - word: kara-ruddha-dṛk-astreṇa
+            iast: kara-ruddha-dṛk-astreṇa
+            gloss_en: with the weapon of the gaze restrained by the hand
+            morph: inst. sg. m. cpd.
+          - word: bhrū-bhedāt
+            iast: bhrū-bhedāt
+            gloss_en: by piercing the brow
+            morph: abl. sg. m. cpd.
+          - word: dvāra-rodhanāt
+            iast: dvāra-rodhanāt
+            gloss_en: by blocking the doors (of the senses)
+            morph: abl. sg. n. cpd.
+          - word: dṛṣṭe bindau
+            iast: dṛṣṭe bindau
+            gloss_en: when the bindu is seen
+            morph: loc. abs.
+          - word: kramāt līne
+            iast: kramāt līne
+            gloss_en: gradually dissolving
+            morph: loc. abs.
+          - word: tat-madhye
+            iast: tat-madhye
+            gloss_en: in its midst
+            morph: loc. sg. m./n.
+          - word: paramā sthitiḥ
+            iast: paramā sthitiḥ
+            gloss_en: is the supreme state
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -881,18 +1641,38 @@ chapters:
         iast: "dhāmāntaḥkṣobhasambhūtasūkṣmāgnitilakākṛtim | binduṃ śikhānte hṛdaye layānte dhyāyato layaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: sūkṣma-agni-tilakākṛtim
-            iast: sūkṣma-agni-tilakākṛtim
-            gloss_en: "in the form of a subtle fiery dot"
-            morph: "acc. sg. m."
-          - word: śikhānte
-            iast: śikhānte
-            gloss_en: "at the end of the flame / top of the head"
-            morph: "loc. sg. m."
+          - word: dhāma-antaḥ-kṣobha-sambhūta
+            iast: dhāma-antaḥ-kṣobha-sambhūta
+            gloss_en: arisen from the agitation within the (inner) abode
+            morph: stem in cpd.
+          - word: sūkṣma-agni-tilaka-ākṛtim
+            iast: sūkṣma-agni-tilaka-ākṛtim
+            gloss_en: the form of a subtle fire-mark (tilaka)
+            morph: acc. sg. f. cpd.
+          - word: bindum
+            iast: bindum
+            gloss_en: the bindu
+            morph: acc. sg. m.
+          - word: śikhā-ante
+            iast: śikhā-ante
+            gloss_en: at the tip of the flame
+            morph: loc. sg. m. cpd.
+          - word: hṛdaye
+            iast: hṛdaye
+            gloss_en: in the heart
+            morph: loc. sg. n.
+          - word: laya-ante
+            iast: laya-ante
+            gloss_en: at the end of dissolution
+            morph: loc. sg. m. cpd.
+          - word: dhyāyataḥ
+            iast: dhyāyataḥ
+            gloss_en: for one meditating
+            morph: gen. sg. m. pres. part.
           - word: layaḥ
             iast: layaḥ
-            gloss_en: "dissolution, absorption"
-            morph: "nom. sg. m."
+            gloss_en: absorption (occurs)
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -910,16 +1690,36 @@ chapters:
         word_glosses:
           - word: anāhate
             iast: anāhate
-            gloss_en: "in the unstruck (sound)"
-            morph: "loc. sg. m."
+            gloss_en: in the unstruck (sound)
+            morph: loc. sg. n.
+          - word: pātra-karṇe
+            iast: pātra-karṇe
+            gloss_en: in the ear that is a fit vessel
+            morph: loc. sg. n. cpd.
+          - word: abhagna-śabde
+            iast: abhagna-śabde
+            gloss_en: in the unbroken sound
+            morph: loc. sg. m. cpd.
+          - word: sarit-drute
+            iast: sarit-drute
+            gloss_en: flowing like a river
+            morph: loc. sg. m. cpd.
           - word: śabda-brahmaṇi
             iast: śabda-brahmaṇi
-            gloss_en: "in Word-Brahman"
-            morph: "loc. sg. n."
-          - word: sariddrute
-            iast: sariddrute
-            gloss_en: "flowing like a river"
-            morph: "loc. sg. m."
+            gloss_en: in the sound-brahman
+            morph: loc. sg. n. cpd.
+          - word: niṣṇātaḥ
+            iast: niṣṇātaḥ
+            gloss_en: immersed
+            morph: ppp. nom. sg. m.
+          - word: param brahma
+            iast: param brahma
+            gloss_en: the supreme brahman
+            morph: acc. sg. n.
+          - word: adhigacchati
+            iast: adhigacchati
+            gloss_en: attains
+            morph: 3sg. pres. √gam
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -935,18 +1735,30 @@ chapters:
         iast: "praṇavādisamuccārāt plutānte śūnyabhāvanāt | śūnyayā parayā śaktyā śūnyatām eti bhairavi"
         meter: anuṣṭubh
         word_glosses:
-          - word: praṇavādi
-            iast: praṇavādi
-            gloss_en: "OM and the like"
-            morph: "stem in cpd."
-          - word: plutānte
-            iast: plutānte
-            gloss_en: "at the end of the prolonged sound"
-            morph: "loc. sg. m."
-          - word: śūnyatām
-            iast: śūnyatām
-            gloss_en: "the state of void"
-            morph: "acc. sg. f."
+          - word: praṇava-ādi-samuccārāt
+            iast: praṇava-ādi-samuccārāt
+            gloss_en: by uttering OM etc.
+            morph: abl. sg. m. cpd.
+          - word: pluta-ante
+            iast: pluta-ante
+            gloss_en: at the prolated end
+            morph: loc. sg. m. cpd.
+          - word: śūnya-bhāvanāt
+            iast: śūnya-bhāvanāt
+            gloss_en: by contemplating the void
+            morph: abl. sg. m. cpd.
+          - word: śūnyayā parayā śaktyā
+            iast: śūnyayā parayā śaktyā
+            gloss_en: by the supreme Power of voidness
+            morph: inst. sg. f. cpd.
+          - word: śūnyatām eti
+            iast: śūnyatām eti
+            gloss_en: one attains voidness
+            morph: phrase
+          - word: bhairavi
+            iast: bhairavi
+            gloss_en: O Bhairavī
+            morph: voc. sg. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -962,18 +1774,30 @@ chapters:
         iast: "yasya kasyāpi varṇasya pūrvāntāv anubhāvayet | śūnyayā śūnyabhūto'sau śūnyākāraḥ pumān bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: varṇasya
-            iast: varṇasya
-            gloss_en: "of any phoneme"
-            morph: "gen. sg. m."
+          - word: yasya kasya api varṇasya
+            iast: yasya kasya api varṇasya
+            gloss_en: of whichever phoneme
+            morph: gen. sg. m.
           - word: pūrva-antau
             iast: pūrva-antau
-            gloss_en: "the beginning and end"
-            morph: "acc. dual m."
-          - word: śūnyākāraḥ
-            iast: śūnyākāraḥ
-            gloss_en: "of the form of void"
-            morph: "nom. sg. m."
+            gloss_en: the beginning and the end
+            morph: acc. du. m. cpd.
+          - word: anubhāvayet
+            iast: anubhāvayet
+            gloss_en: one should experience
+            morph: 3sg. opt. caus. √bhū
+          - word: śūnyayā
+            iast: śūnyayā
+            gloss_en: through voidness
+            morph: inst. sg. f.
+          - word: śūnya-bhūtaḥ asau
+            iast: śūnya-bhūtaḥ asau
+            gloss_en: becoming void himself
+            morph: phrase
+          - word: śūnya-ākāraḥ pumān bhavet
+            iast: śūnya-ākāraḥ pumān bhavet
+            gloss_en: the person becomes of void form
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -989,18 +1813,30 @@ chapters:
         iast: "tantryādivādyaśabdeṣu dīrgheṣu kramasaṃsthiteḥ | ananyacetāḥ pratyante paravyomavapur bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: tantryādi-vādya
-            iast: tantryādi-vādya
-            gloss_en: "stringed and other instruments"
-            morph: "stem in cpd."
+          - word: tantrī-ādi-vādya-śabdeṣu
+            iast: tantrī-ādi-vādya-śabdeṣu
+            gloss_en: in the sounds of stringed and other instruments
+            morph: loc. pl. m. cpd.
+          - word: dīrgheṣu
+            iast: dīrgheṣu
+            gloss_en: prolonged
+            morph: loc. pl. m.
+          - word: krama-saṃsthiteḥ
+            iast: krama-saṃsthiteḥ
+            gloss_en: owing to the gradual abiding (in them)
+            morph: abl. sg. f. cpd.
           - word: ananya-cetāḥ
             iast: ananya-cetāḥ
-            gloss_en: "with mind undistracted"
-            morph: "nom. sg. m."
-          - word: para-vyoma-vapuḥ
-            iast: para-vyoma-vapuḥ
-            gloss_en: "having the body of the supreme sky"
-            morph: "nom. sg. m."
+            gloss_en: with mind one-pointed (not turned elsewhere)
+            morph: nom. sg. m. cpd.
+          - word: pratyante
+            iast: pratyante
+            gloss_en: at the end (of the sound)
+            morph: loc. sg. m.
+          - word: para-vyoma-vapuḥ bhavet
+            iast: para-vyoma-vapuḥ bhavet
+            gloss_en: one becomes embodied as the supreme void
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1016,18 +1852,30 @@ chapters:
         iast: "piṇḍamantrasya sarvasya sthūlavarṇakrameṇa tu | ardhendubindunādāntaḥ śūnyoccārād bhavec chivaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: piṇḍamantrasya
-            iast: piṇḍamantrasya
-            gloss_en: "of a clustered mantra"
-            morph: "gen. sg. m."
-          - word: ardhendu-bindu-nāda
-            iast: ardhendu-bindu-nāda
-            gloss_en: "the half-moon, bindu, and nāda"
-            morph: "stem in cpd."
-          - word: śūnyoccārāt
-            iast: śūnyoccārāt
-            gloss_en: "from the void-uttering"
-            morph: "abl. sg. m."
+          - word: piṇḍa-mantrasya
+            iast: piṇḍa-mantrasya
+            gloss_en: of a seed-mantra
+            morph: gen. sg. m. cpd.
+          - word: sarvasya
+            iast: sarvasya
+            gloss_en: of every (mantra)
+            morph: gen. sg. m.
+          - word: sthūla-varṇa-krameṇa tu
+            iast: sthūla-varṇa-krameṇa tu
+            gloss_en: but by the gross sequence of phonemes
+            morph: inst. sg. m. cpd.
+          - word: ardha-indu-bindu-nāda-antaḥ
+            iast: ardha-indu-bindu-nāda-antaḥ
+            gloss_en: the (silent) end of half-moon, bindu, and nāda
+            morph: nom. sg. m. cpd.
+          - word: śūnya-uccārāt
+            iast: śūnya-uccārāt
+            gloss_en: by voiding the utterance
+            morph: abl. sg. m. cpd.
+          - word: bhavet śivaḥ
+            iast: bhavet śivaḥ
+            gloss_en: one becomes Śiva
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1043,18 +1891,38 @@ chapters:
         iast: "nijadehe sarvadikkaṃ yugapad bhāvayed viyat | nirvikalpamanās tasya viyat sarvaṃ pravartate"
         meter: anuṣṭubh
         word_glosses:
-          - word: nijadehe
-            iast: nijadehe
-            gloss_en: "in one's own body"
-            morph: "loc. sg. m."
+          - word: nija-dehe
+            iast: nija-dehe
+            gloss_en: in one's own body
+            morph: loc. sg. m. cpd.
+          - word: sarva-dikkam
+            iast: sarva-dikkam
+            gloss_en: in all directions
+            morph: acc. sg. m. cpd.
+          - word: yugapad
+            iast: yugapad
+            gloss_en: simultaneously
+            morph: adv.
+          - word: bhāvayet
+            iast: bhāvayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. caus. √bhū
           - word: viyat
             iast: viyat
-            gloss_en: "sky, ether, void"
-            morph: "acc. sg. n."
+            gloss_en: the void
+            morph: acc. sg. n.
           - word: nirvikalpa-manāḥ
             iast: nirvikalpa-manāḥ
-            gloss_en: "with mind free of vikalpa"
-            morph: "nom. sg. m."
+            gloss_en: with mind free of thought-constructs
+            morph: nom. sg. m. cpd.
+          - word: tasya
+            iast: tasya
+            gloss_en: for him
+            morph: gen. sg. m.
+          - word: viyat sarvam pravartate
+            iast: viyat sarvam pravartate
+            gloss_en: the entire void rolls forth
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1072,16 +1940,32 @@ chapters:
         word_glosses:
           - word: pṛṣṭha-śūnyam
             iast: pṛṣṭha-śūnyam
-            gloss_en: "void at the back"
-            morph: "acc. sg. n."
+            gloss_en: the void behind
+            morph: acc. sg. n. cpd.
           - word: mūla-śūnyam
             iast: mūla-śūnyam
-            gloss_en: "void at the root"
-            morph: "acc. sg. n."
-          - word: śūnya-manāḥ
-            iast: śūnya-manāḥ
-            gloss_en: "having a mind of voidness"
-            morph: "nom. sg. m."
+            gloss_en: the void at the base
+            morph: acc. sg. n. cpd.
+          - word: yugapad bhāvayet
+            iast: yugapad bhāvayet
+            gloss_en: should simultaneously contemplate
+            morph: phrase
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: yaḥ
+            iast: yaḥ
+            gloss_en: whoever
+            morph: nom. sg. m. rel.
+          - word: śarīra-nirapekṣiṇyā śaktyā
+            iast: śarīra-nirapekṣiṇyā śaktyā
+            gloss_en: by the Power independent of the body
+            morph: inst. sg. f. cpd.
+          - word: śūnya-manāḥ bhavet
+            iast: śūnya-manāḥ bhavet
+            gloss_en: becomes void-minded
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1097,18 +1981,34 @@ chapters:
         iast: "pṛṣṭhaśūnyaṃ mūlaśūnyaṃ hṛcchūnyaṃ bhāvayet sthiram | yugapannirvikalpatvān nirvikalpodayas tataḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: hṛc-chūnyam
-            iast: hṛc-chūnyam
-            gloss_en: "void in the heart"
-            morph: "acc. sg. n."
-          - word: yugapat
-            iast: yugapat
-            gloss_en: "simultaneously"
-            morph: "indecl."
-          - word: nirvikalpodayaḥ
-            iast: nirvikalpodayaḥ
-            gloss_en: "the arising of non-conceptual awareness"
-            morph: "nom. sg. m."
+          - word: pṛṣṭha-śūnyam
+            iast: pṛṣṭha-śūnyam
+            gloss_en: void behind
+            morph: acc. sg. n. cpd.
+          - word: mūla-śūnyam
+            iast: mūla-śūnyam
+            gloss_en: void at the base
+            morph: acc. sg. n. cpd.
+          - word: hṛt-śūnyam
+            iast: hṛt-śūnyam
+            gloss_en: void in the heart
+            morph: acc. sg. n. cpd.
+          - word: bhāvayet sthiram
+            iast: bhāvayet sthiram
+            gloss_en: should contemplate steadily
+            morph: phrase
+          - word: yugapad
+            iast: yugapad
+            gloss_en: simultaneously
+            morph: adv.
+          - word: nirvikalpatvāt
+            iast: nirvikalpatvāt
+            gloss_en: from being thought-free
+            morph: abl. sg. n.
+          - word: nirvikalpa-udayaḥ tataḥ
+            iast: nirvikalpa-udayaḥ tataḥ
+            gloss_en: the arising of the thought-free state follows
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1124,18 +2024,34 @@ chapters:
         iast: "tanūdeśe śūnyataiva kṣaṇamātraṃ vibhāvayet | nirvikalpaṃ nirvikalpo nirvikalpasvarūpabhāk"
         meter: anuṣṭubh
         word_glosses:
-          - word: tanū-deśe
-            iast: tanū-deśe
-            gloss_en: "in any part of the body"
-            morph: "loc. sg. m."
-          - word: śūnyatā
-            iast: śūnyatā
-            gloss_en: "voidness"
-            morph: "nom. sg. f."
+          - word: tanu-deśe
+            iast: tanu-deśe
+            gloss_en: in some region of the body
+            morph: loc. sg. m. cpd.
+          - word: śūnyatā eva
+            iast: śūnyatā eva
+            gloss_en: voidness alone
+            morph: phrase
           - word: kṣaṇa-mātram
             iast: kṣaṇa-mātram
-            gloss_en: "for a single moment"
-            morph: "acc. sg. n."
+            gloss_en: for just a moment
+            morph: acc. sg. n. cpd.
+          - word: vibhāvayet
+            iast: vibhāvayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. caus. √bhū
+          - word: nirvikalpam
+            iast: nirvikalpam
+            gloss_en: thought-free
+            morph: acc. sg. n.
+          - word: nirvikalpaḥ
+            iast: nirvikalpaḥ
+            gloss_en: (becomes) thought-free
+            morph: nom. sg. m.
+          - word: nirvikalpa-svarūpa-bhāk
+            iast: nirvikalpa-svarūpa-bhāk
+            gloss_en: a sharer in the thought-free nature
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1151,18 +2067,34 @@ chapters:
         iast: "sarvaṃ dehagataṃ dravyaṃ viyadvyāptaṃ mṛgekṣaṇe | vibhāvayet tatas tasya bhāvanā sā sthirā bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: dehagatam dravyam
-            iast: dehagatam dravyam
-            gloss_en: "the substance located in the body"
-            morph: "acc. sg. n."
+          - word: sarvam deha-gatam dravyam
+            iast: sarvam deha-gatam dravyam
+            gloss_en: every substance in the body
+            morph: phrase
           - word: viyad-vyāptam
             iast: viyad-vyāptam
-            gloss_en: "pervaded by ether/sky"
-            morph: "acc. sg. n."
-          - word: mṛgekṣaṇe
-            iast: mṛgekṣaṇe
-            gloss_en: "O fawn-eyed one"
-            morph: "voc. sg. f."
+            gloss_en: as pervaded by the void
+            morph: acc. sg. n. cpd.
+          - word: mṛga-īkṣaṇe
+            iast: mṛga-īkṣaṇe
+            gloss_en: O doe-eyed one
+            morph: voc. sg. f. cpd.
+          - word: vibhāvayet
+            iast: vibhāvayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. caus. √bhū
+          - word: tataḥ tasya
+            iast: tataḥ tasya
+            gloss_en: thereupon for him
+            morph: phrase
+          - word: bhāvanā sā
+            iast: bhāvanā sā
+            gloss_en: that contemplation
+            morph: phrase
+          - word: sthirā bhavet
+            iast: sthirā bhavet
+            gloss_en: becomes steady
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1178,18 +2110,34 @@ chapters:
         iast: "dehāntare tvagvibhāgaṃ bhittibhūtaṃ vicintayet | na kiñcid antare tasya dhyāyann adhyeyabhāg bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: tvag-vibhāgam
-            iast: tvag-vibhāgam
-            gloss_en: "the skin-boundary"
-            morph: "acc. sg. m."
+          - word: deha-antare
+            iast: deha-antare
+            gloss_en: within the body
+            morph: loc. sg. m. cpd.
+          - word: tvak-vibhāgam
+            iast: tvak-vibhāgam
+            gloss_en: the partition of the skin
+            morph: acc. sg. m. cpd.
           - word: bhitti-bhūtam
             iast: bhitti-bhūtam
-            gloss_en: "as a mere wall"
-            morph: "acc. sg. m."
-          - word: adhyeya-bhāk
-            iast: adhyeya-bhāk
-            gloss_en: "sharing in the unthinkable"
-            morph: "nom. sg. m."
+            gloss_en: as if a wall
+            morph: acc. sg. n. cpd.
+          - word: vicintayet
+            iast: vicintayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. √cint
+          - word: na kiñcid antare tasya
+            iast: na kiñcid antare tasya
+            gloss_en: for him, nothing is inside
+            morph: phrase
+          - word: dhyāyan
+            iast: dhyāyan
+            gloss_en: while meditating
+            morph: nom. sg. m. pres. part.
+          - word: adhyeya-bhāk bhavet
+            iast: adhyeya-bhāk bhavet
+            gloss_en: becomes a sharer in the un-meditatable
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1207,16 +2155,28 @@ chapters:
         word_glosses:
           - word: hṛd-ākāśe
             iast: hṛd-ākāśe
-            gloss_en: "in the space of the heart"
-            morph: "loc. sg. n."
-          - word: padma-sampuṭa-madhyagaḥ
-            iast: padma-sampuṭa-madhyagaḥ
-            gloss_en: "settled in the midst of the closed lotus"
-            morph: "nom. sg. m."
-          - word: paraṃ saubhāgyam
-            iast: paraṃ saubhāgyam
-            gloss_en: "the supreme felicity"
-            morph: "acc. sg. n."
+            gloss_en: in the space of the heart
+            morph: loc. sg. n. cpd.
+          - word: nilīna-akṣaḥ
+            iast: nilīna-akṣaḥ
+            gloss_en: with senses absorbed
+            morph: nom. sg. m. cpd.
+          - word: padma-sampuṭa-madhya-gaḥ
+            iast: padma-sampuṭa-madhya-gaḥ
+            gloss_en: abiding within the closed-lotus calyx
+            morph: nom. sg. m. cpd.
+          - word: ananya-cetāḥ
+            iast: ananya-cetāḥ
+            gloss_en: with one-pointed mind
+            morph: nom. sg. m. cpd.
+          - word: su-bhage
+            iast: su-bhage
+            gloss_en: O fortunate one
+            morph: voc. sg. f. cpd.
+          - word: param saubhāgyam āpnuyāt
+            iast: param saubhāgyam āpnuyāt
+            gloss_en: would obtain the supreme good-fortune
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1232,18 +2192,38 @@ chapters:
         iast: "sarvataḥ svaśarīrasya dvādaśānte manolayāt | dṛḍhabuddher dṛḍhībhūtaṃ tattvalakṣyaṃ pravartate"
         meter: anuṣṭubh
         word_glosses:
-          - word: dvādaśānte
-            iast: dvādaśānte
-            gloss_en: "at the dvādaśānta (the twelve-finger point)"
-            morph: "loc. sg. m."
-          - word: mano-layāt
-            iast: mano-layāt
-            gloss_en: "by absorption of the mind"
-            morph: "abl. sg. m."
+          - word: sarvataḥ
+            iast: sarvataḥ
+            gloss_en: on all sides
+            morph: adv.
+          - word: sva-śarīrasya
+            iast: sva-śarīrasya
+            gloss_en: of one's own body
+            morph: gen. sg. n. cpd.
+          - word: dvādaśa-ante
+            iast: dvādaśa-ante
+            gloss_en: at the twelve-end (dvādaśānta)
+            morph: loc. sg. m. cpd.
+          - word: manas-layāt
+            iast: manas-layāt
+            gloss_en: by absorption of the mind
+            morph: abl. sg. m. cpd.
+          - word: dṛḍha-buddheḥ
+            iast: dṛḍha-buddheḥ
+            gloss_en: for one of firm intellect
+            morph: gen. sg. m. cpd.
+          - word: dṛḍhī-bhūtam
+            iast: dṛḍhī-bhūtam
+            gloss_en: becomes firmly established
+            morph: ppp. nom. sg. n.
           - word: tattva-lakṣyam
             iast: tattva-lakṣyam
-            gloss_en: "the target of Reality"
-            morph: "nom. sg. n."
+            gloss_en: the goal of Reality
+            morph: nom. sg. n. cpd.
+          - word: pravartate
+            iast: pravartate
+            gloss_en: rolls forth
+            morph: 3sg. pres. √vṛt
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1261,16 +2241,36 @@ chapters:
         word_glosses:
           - word: yathā tathā
             iast: yathā tathā
-            gloss_en: "in any way whatever"
-            morph: "adv."
+            gloss_en: in whatever way
+            morph: adv.
+          - word: yatra tatra
+            iast: yatra tatra
+            gloss_en: in whatever place
+            morph: adv.
+          - word: dvādaśa-ante
+            iast: dvādaśa-ante
+            gloss_en: at the dvādaśānta
+            morph: loc. sg. m. cpd.
+          - word: manaḥ kṣipet
+            iast: manaḥ kṣipet
+            gloss_en: one should cast the mind
+            morph: phrase
+          - word: prati-kṣaṇam
+            iast: prati-kṣaṇam
+            gloss_en: moment by moment
+            morph: adv.
           - word: kṣīṇa-vṛtteḥ
             iast: kṣīṇa-vṛtteḥ
-            gloss_en: "of one whose mental modifications have decreased"
-            morph: "gen. sg. m."
+            gloss_en: for him whose modifications have dwindled
+            morph: gen. sg. m. cpd.
           - word: vailakṣaṇyam
             iast: vailakṣaṇyam
-            gloss_en: "a distinct extraordinary state"
-            morph: "nom. sg. n."
+            gloss_en: a (luminous) distinctness
+            morph: nom. sg. n.
+          - word: dinaiḥ bhavet
+            iast: dinaiḥ bhavet
+            gloss_en: comes within (a few) days
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1288,24 +2288,48 @@ chapters:
         word_glosses:
           - word: yatra yatra
             iast: yatra yatra
-            gloss_en: "wherever"
-            morph: "adv."
-          - word: bāhye / abhyantare
-            iast: bāhye / abhyantare
-            gloss_en: "outside / inside"
-            morph: "loc. sg. n."
-          - word: śivāvasthā
-            iast: śivāvasthā
-            gloss_en: "the state of Śiva"
-            morph: "nom. sg. f."
+            gloss_en: wherever
+            morph: adv. correlative
+          - word: manaḥ
+            iast: manaḥ
+            gloss_en: the mind
+            morph: nom. sg. n.
+          - word: yāti
+            iast: yāti
+            gloss_en: goes
+            morph: 3sg. pres. √yā
+          - word: bāhye
+            iast: bāhye
+            gloss_en: outwardly
+            morph: loc. sg. n.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: abhyantare
+            iast: abhyantare
+            gloss_en: inwardly
+            morph: loc. sg. n.
+          - word: api vā
+            iast: api vā
+            gloss_en: or even
+            morph: ptcl.
+          - word: tatra tatra
+            iast: tatra tatra
+            gloss_en: there, in every such place
+            morph: adv. correlative
+          - word: śiva-avasthā
+            iast: śiva-avasthā
+            gloss_en: the state of Śiva (abides)
+            morph: nom. sg. f. cpd.
           - word: vyāpakatvāt
             iast: vyāpakatvāt
-            gloss_en: "because of all-pervasiveness"
-            morph: "abl. sg. n."
+            gloss_en: owing to (his) all-pervasiveness
+            morph: abl. sg. n.
           - word: kva yāsyati
             iast: kva yāsyati
-            gloss_en: "where can it (the mind) go?"
-            morph: "interrog. + 3 sg. fut."
+            gloss_en: where could it possibly go?
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1321,22 +2345,42 @@ chapters:
         iast: "yatra yatrākṣamārgeṇa caitanyaṃ vyajyate vibhoḥ | tasya tanmātradharmitvāc cillayād bharitātmatā"
         meter: anuṣṭubh
         word_glosses:
+          - word: yatra yatra
+            iast: yatra yatra
+            gloss_en: wherever
+            morph: adv. correlative
           - word: akṣa-mārgeṇa
             iast: akṣa-mārgeṇa
-            gloss_en: "through the path of the senses"
-            morph: "inst. sg. m."
+            gloss_en: through the path of the senses
+            morph: inst. sg. m. cpd.
           - word: caitanyam
             iast: caitanyam
-            gloss_en: "consciousness"
-            morph: "nom. sg. n."
-          - word: cil-layāt
-            iast: cil-layāt
-            gloss_en: "from absorption into consciousness"
-            morph: "abl. sg. m."
-          - word: bharitātmatā
-            iast: bharitātmatā
-            gloss_en: "the state of fullness of Self"
-            morph: "nom. sg. f."
+            gloss_en: the Consciousness
+            morph: nom. sg. n.
+          - word: vyajyate
+            iast: vyajyate
+            gloss_en: is manifested
+            morph: 3sg. pres. pass.
+          - word: vibhoḥ
+            iast: vibhoḥ
+            gloss_en: of the all-pervading (Lord)
+            morph: gen. sg. m.
+          - word: tasya
+            iast: tasya
+            gloss_en: of him (the yogin)
+            morph: gen. sg. m.
+          - word: tat-mātra-dharmitvāt
+            iast: tat-mātra-dharmitvāt
+            gloss_en: since he bears only that attribute
+            morph: abl. sg. n. cpd.
+          - word: cit-layāt
+            iast: cit-layāt
+            gloss_en: from absorption into Consciousness
+            morph: abl. sg. m. cpd.
+          - word: bharita-ātmatā
+            iast: bharita-ātmatā
+            gloss_en: comes fullness of Self
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1352,18 +2396,42 @@ chapters:
         iast: "kṣutādyante bhaye śoke gahvare vā raṇād drute | kutūhale kṣudhādyante brahmasattāsamīpagā"
         meter: anuṣṭubh
         word_glosses:
-          - word: kṣutādi
-            iast: kṣutādi
-            gloss_en: "sneezing and so on"
-            morph: "stem in cpd."
-          - word: bhaye śoke
-            iast: bhaye śoke
-            gloss_en: "in fear, in grief"
-            morph: "loc. sg. m./n."
-          - word: brahma-sattā-samīpagā
-            iast: brahma-sattā-samīpagā
-            gloss_en: "going near the very being of Brahman"
-            morph: "nom. sg. f."
+          - word: kṣut-ādi-ante
+            iast: kṣut-ādi-ante
+            gloss_en: at the end of hunger and such (urges)
+            morph: loc. sg. m. cpd.
+          - word: bhaye
+            iast: bhaye
+            gloss_en: in fear
+            morph: loc. sg. n.
+          - word: śoke
+            iast: śoke
+            gloss_en: in grief
+            morph: loc. sg. m.
+          - word: gahvare
+            iast: gahvare
+            gloss_en: in a deep cavern (of doubt)
+            morph: loc. sg. m.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: raṇāt drute
+            iast: raṇāt drute
+            gloss_en: fleeing from battle
+            morph: loc. abs.
+          - word: kutūhale
+            iast: kutūhale
+            gloss_en: in curiosity, in wonder
+            morph: loc. sg. m.
+          - word: kṣudhā-ādi-ante
+            iast: kṣudhā-ādi-ante
+            gloss_en: at the end of hunger and such
+            morph: loc. sg. m. cpd.
+          - word: brahma-sattā-samīpa-gā
+            iast: brahma-sattā-samīpa-gā
+            gloss_en: (one comes) near to the being of brahman
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1379,18 +2447,30 @@ chapters:
         iast: "vastuṣu smaryamāṇeṣu dṛṣṭe deśe manas tyajet | svaśarīraṃ nirādhāraṃ kṛtvā prasarati prabhuḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: smaryamāṇeṣu vastuṣu
-            iast: smaryamāṇeṣu vastuṣu
-            gloss_en: "when objects are remembered"
-            morph: "loc. pl. n."
-          - word: nirādhāram
-            iast: nirādhāram
-            gloss_en: "without support"
-            morph: "acc. sg. n."
-          - word: prabhuḥ
-            iast: prabhuḥ
-            gloss_en: "the Lord"
-            morph: "nom. sg. m."
+          - word: vastuṣu smaryamāṇeṣu
+            iast: vastuṣu smaryamāṇeṣu
+            gloss_en: when things are being remembered
+            morph: loc. abs.
+          - word: dṛṣṭe deśe
+            iast: dṛṣṭe deśe
+            gloss_en: in the place seen
+            morph: loc. abs.
+          - word: manas tyajet
+            iast: manas tyajet
+            gloss_en: should release the mind
+            morph: phrase
+          - word: sva-śarīram
+            iast: sva-śarīram
+            gloss_en: one's own body
+            morph: acc. sg. n. cpd.
+          - word: nirādhāram kṛtvā
+            iast: nirādhāram kṛtvā
+            gloss_en: making (it) without support
+            morph: phrase
+          - word: prasarati prabhuḥ
+            iast: prasarati prabhuḥ
+            gloss_en: the Lord spreads forth
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1406,18 +2486,42 @@ chapters:
         iast: "kvacid vastuni vinyasya śanair dṛṣṭiṃ nivartayet | tajjñānaṃ cittasahitaṃ devi śūnyālayo bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: vastuni
-            iast: vastuni
-            gloss_en: "on an object"
-            morph: "loc. sg. n."
-          - word: dṛṣṭim nivartayet
-            iast: dṛṣṭim nivartayet
-            gloss_en: "should withdraw the gaze"
-            morph: "acc. + 3 sg. opt."
-          - word: śūnyālayaḥ
-            iast: śūnyālayaḥ
-            gloss_en: "abode of the void"
-            morph: "nom. sg. m."
+          - word: kvacit vastuni
+            iast: kvacit vastuni
+            gloss_en: on some object
+            morph: loc. sg. n.
+          - word: vinyasya
+            iast: vinyasya
+            gloss_en: having placed
+            morph: ger. √ny-as
+          - word: śanaiḥ
+            iast: śanaiḥ
+            gloss_en: gradually
+            morph: adv.
+          - word: dṛṣṭim
+            iast: dṛṣṭim
+            gloss_en: the gaze
+            morph: acc. sg. f.
+          - word: nivartayet
+            iast: nivartayet
+            gloss_en: should withdraw
+            morph: 3sg. opt. caus. √vṛt
+          - word: tat-jñānam
+            iast: tat-jñānam
+            gloss_en: that knowledge
+            morph: nom. sg. n. cpd.
+          - word: citta-sahitam
+            iast: citta-sahitam
+            gloss_en: together with mind
+            morph: acc. sg. n. cpd.
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
+          - word: śūnya-ālayaḥ bhavet
+            iast: śūnya-ālayaḥ bhavet
+            gloss_en: (the yogin) becomes the abode of the Void
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1433,18 +2537,42 @@ chapters:
         iast: "bhaktyudrekād viraktasya yādṛśī jāyate matiḥ | sā śaktiḥ śāṅkarī nityaṃ bhavayet tāṃ tataḥ śivaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: bhakty-udrekāt
-            iast: bhakty-udrekāt
-            gloss_en: "from the surge of devotion"
-            morph: "abl. sg. m."
+          - word: bhakti-udrekāt
+            iast: bhakti-udrekāt
+            gloss_en: from an upsurge of devotion
+            morph: abl. sg. m. cpd.
           - word: viraktasya
             iast: viraktasya
-            gloss_en: "of one detached"
-            morph: "gen. sg. m."
-          - word: śāṅkarī śaktiḥ
-            iast: śāṅkarī śaktiḥ
-            gloss_en: "the Śakti of Śaṅkara"
-            morph: "nom. sg. f."
+            gloss_en: of one who is dispassionate
+            morph: gen. sg. m. ppp.
+          - word: yādṛśī
+            iast: yādṛśī
+            gloss_en: whatever kind of
+            morph: nom. sg. f. rel.
+          - word: jāyate
+            iast: jāyate
+            gloss_en: arises
+            morph: 3sg. pres. √jan
+          - word: matiḥ
+            iast: matiḥ
+            gloss_en: thought/conviction
+            morph: nom. sg. f.
+          - word: sā śaktiḥ śāṅkarī
+            iast: sā śaktiḥ śāṅkarī
+            gloss_en: that is the Power of Śaṅkara
+            morph: phrase
+          - word: nityam
+            iast: nityam
+            gloss_en: always
+            morph: adv.
+          - word: bhavayet tām
+            iast: bhavayet tām
+            gloss_en: one should cultivate her
+            morph: phrase
+          - word: tataḥ śivaḥ
+            iast: tataḥ śivaḥ
+            gloss_en: thence (one becomes) Śiva
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1460,18 +2588,34 @@ chapters:
         iast: "vastvantare vedyamāne sarvavastuṣu śūnyatā | tām eva manasā dhyātvā vidito'pi praśāmyati"
         meter: anuṣṭubh
         word_glosses:
-          - word: vastvantare
-            iast: vastvantare
-            gloss_en: "in another object"
-            morph: "loc. sg. n."
+          - word: vastu-antare
+            iast: vastu-antare
+            gloss_en: in another object
+            morph: loc. sg. n. cpd.
           - word: vedyamāne
             iast: vedyamāne
-            gloss_en: "while being known"
-            morph: "loc. sg. n., pass. part."
+            gloss_en: when being known
+            morph: loc. abs.
+          - word: sarva-vastuṣu
+            iast: sarva-vastuṣu
+            gloss_en: in all things
+            morph: loc. pl. n. cpd.
           - word: śūnyatā
             iast: śūnyatā
-            gloss_en: "voidness"
-            morph: "nom. sg. f."
+            gloss_en: (there is) voidness
+            morph: nom. sg. f.
+          - word: tām eva
+            iast: tām eva
+            gloss_en: her alone
+            morph: acc. sg. f.
+          - word: manasā dhyātvā
+            iast: manasā dhyātvā
+            gloss_en: having contemplated with mind
+            morph: phrase
+          - word: viditaḥ api praśāmyati
+            iast: viditaḥ api praśāmyati
+            gloss_en: (the knower), even though known, comes to rest
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1487,18 +2631,38 @@ chapters:
         iast: "kiñcijjñair yā smṛtā śuddhiḥ sā śuddhiḥ śambhudarśane | na śucir hy aśucis tasmān nirvikalpaḥ sukhī bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: kiñcij-jñaiḥ
-            iast: kiñcij-jñaiḥ
-            gloss_en: "by those of little knowledge"
-            morph: "inst. pl. m."
-          - word: śuddhiḥ
-            iast: śuddhiḥ
-            gloss_en: "purity"
-            morph: "nom. sg. f."
-          - word: nirvikalpaḥ
-            iast: nirvikalpaḥ
-            gloss_en: "free of thought-construct"
-            morph: "nom. sg. m."
+          - word: kiñcit-jñaiḥ
+            iast: kiñcit-jñaiḥ
+            gloss_en: by those who know little
+            morph: inst. pl. m. cpd.
+          - word: yā smṛtā śuddhiḥ
+            iast: yā smṛtā śuddhiḥ
+            gloss_en: what is regarded as purity
+            morph: phrase
+          - word: sā śuddhiḥ
+            iast: sā śuddhiḥ
+            gloss_en: that purity
+            morph: phrase
+          - word: śambhu-darśane
+            iast: śambhu-darśane
+            gloss_en: in the doctrine of Śambhu
+            morph: loc. sg. n. cpd.
+          - word: na śuciḥ
+            iast: na śuciḥ
+            gloss_en: is not pure
+            morph: phrase
+          - word: hi
+            iast: hi
+            gloss_en: indeed
+            morph: ptcl.
+          - word: aśuciḥ tasmāt
+            iast: aśuciḥ tasmāt
+            gloss_en: therefore impure
+            morph: phrase
+          - word: nirvikalpaḥ sukhī bhavet
+            iast: nirvikalpaḥ sukhī bhavet
+            gloss_en: the thought-free one becomes happy
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1516,16 +2680,40 @@ chapters:
         word_glosses:
           - word: sarvatra
             iast: sarvatra
-            gloss_en: "everywhere"
-            morph: "adv."
+            gloss_en: everywhere
+            morph: adv.
           - word: bhairavaḥ bhāvaḥ
             iast: bhairavaḥ bhāvaḥ
-            gloss_en: "the Bhairava-state"
-            morph: "nom. sg. m."
+            gloss_en: the Being is Bhairava
+            morph: phrase
+          - word: sāmānyeṣu
+            iast: sāmānyeṣu
+            gloss_en: in common things
+            morph: loc. pl. n.
+          - word: api
+            iast: api
+            gloss_en: even
+            morph: ptcl.
+          - word: gocaraḥ
+            iast: gocaraḥ
+            gloss_en: is the object (of awareness)
+            morph: nom. sg. m.
+          - word: na ca
+            iast: na ca
+            gloss_en: and not
+            morph: neg.
+          - word: tat-vyatirekeṇa
+            iast: tat-vyatirekeṇa
+            gloss_en: apart from him
+            morph: inst. sg. m. cpd.
+          - word: paraḥ asti iti
+            iast: paraḥ asti iti
+            gloss_en: another exists — so
+            morph: phrase
           - word: advayā gatiḥ
             iast: advayā gatiḥ
-            gloss_en: "the non-dual path"
-            morph: "nom. sg. f."
+            gloss_en: is the non-dual way
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1543,16 +2731,28 @@ chapters:
         word_glosses:
           - word: samaḥ
             iast: samaḥ
-            gloss_en: "equal, the same"
-            morph: "nom. sg. m."
-          - word: mānāvamānayoḥ
-            iast: mānāvamānayoḥ
-            gloss_en: "in honor and dishonor"
-            morph: "loc. dual m."
-          - word: pari-pūrṇatvāt
-            iast: pari-pūrṇatvāt
-            gloss_en: "because of (its) being totally full"
-            morph: "abl. sg. n."
+            gloss_en: equal
+            morph: nom. sg. m.
+          - word: śatrau ca mitre ca
+            iast: śatrau ca mitre ca
+            gloss_en: to enemy and to friend
+            morph: loc. sg. m.
+          - word: samaḥ mānāvamānayoḥ
+            iast: samaḥ mānāvamānayoḥ
+            gloss_en: equal in honor and dishonor
+            morph: phrase
+          - word: brahmaṇaḥ paripūrṇatvāt
+            iast: brahmaṇaḥ paripūrṇatvāt
+            gloss_en: owing to the completeness of brahman
+            morph: abl. sg. n. cpd.
+          - word: iti jñātvā
+            iast: iti jñātvā
+            gloss_en: having known thus
+            morph: phrase
+          - word: sukhī bhavet
+            iast: sukhī bhavet
+            gloss_en: one becomes happy
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1568,18 +2768,42 @@ chapters:
         iast: "na dveṣaṃ bhāvayet kvāpi na rāgaṃ bhāvayet kvacit | rāgadveṣavinirmuktau madhye brahma prasarpati"
         meter: anuṣṭubh
         word_glosses:
-          - word: dveṣam
-            iast: dveṣam
-            gloss_en: "hatred"
-            morph: "acc. sg. m."
-          - word: rāgam
-            iast: rāgam
-            gloss_en: "attachment"
-            morph: "acc. sg. m."
-          - word: madhye
-            iast: madhye
-            gloss_en: "in the middle, between them"
-            morph: "loc. sg. n."
+          - word: na dveṣam
+            iast: na dveṣam
+            gloss_en: no aversion
+            morph: phrase
+          - word: bhāvayet
+            iast: bhāvayet
+            gloss_en: should cultivate
+            morph: 3sg. opt. caus. √bhū
+          - word: kva api
+            iast: kva api
+            gloss_en: for anything
+            morph: adv.
+          - word: na rāgam
+            iast: na rāgam
+            gloss_en: no attachment
+            morph: phrase
+          - word: bhāvayet
+            iast: bhāvayet
+            gloss_en: should cultivate
+            morph: 3sg. opt. caus. √bhū
+          - word: kvacit
+            iast: kvacit
+            gloss_en: for anything
+            morph: adv.
+          - word: rāga-dveṣa-vinirmuktau
+            iast: rāga-dveṣa-vinirmuktau
+            gloss_en: in freedom from attachment and aversion
+            morph: loc. sg. m. cpd.
+          - word: madhye brahma
+            iast: madhye brahma
+            gloss_en: in the middle, brahman
+            morph: phrase
+          - word: prasarpati
+            iast: prasarpati
+            gloss_en: creeps forth, glides in
+            morph: 3sg. pres. √sṛp
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1595,18 +2819,38 @@ chapters:
         iast: "yad avedyaṃ yad agrāhyaṃ yac chūnyaṃ yad abhāvagam | tat sarvaṃ bhairavaṃ bhāvyaṃ tadante bodhasambhavaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: avedyam
-            iast: avedyam
-            gloss_en: "unknowable"
-            morph: "nom. sg. n."
-          - word: agrāhyam
-            iast: agrāhyam
-            gloss_en: "ungraspable"
-            morph: "nom. sg. n."
-          - word: abhāva-gam
-            iast: abhāva-gam
-            gloss_en: "going (as if) to non-being"
-            morph: "nom. sg. n."
+          - word: yat avedyam
+            iast: yat avedyam
+            gloss_en: what cannot be known
+            morph: phrase
+          - word: yat agrāhyam
+            iast: yat agrāhyam
+            gloss_en: what cannot be grasped
+            morph: phrase
+          - word: yat śūnyam
+            iast: yat śūnyam
+            gloss_en: what is void
+            morph: phrase
+          - word: yat abhāva-gam
+            iast: yat abhāva-gam
+            gloss_en: what reaches into non-existence
+            morph: phrase
+          - word: tat sarvam bhairavam
+            iast: tat sarvam bhairavam
+            gloss_en: all that is Bhairava
+            morph: phrase
+          - word: bhāvyam
+            iast: bhāvyam
+            gloss_en: is to be contemplated
+            morph: fpp. nom. sg. n.
+          - word: tad-ante
+            iast: tad-ante
+            gloss_en: at its end
+            morph: loc. sg. m.
+          - word: bodha-sambhavaḥ
+            iast: bodha-sambhavaḥ
+            gloss_en: the arising of awakening
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1622,18 +2866,42 @@ chapters:
         iast: "nitye vibhau nirādhāre vyāpake cākhilātmani | iti bhairavam anusmaran pumān mucyate"
         meter: anuṣṭubh (irregular)
         word_glosses:
-          - word: nitye vibhau
-            iast: nitye vibhau
-            gloss_en: "in the eternal, all-pervading"
-            morph: "loc. sg. m."
+          - word: nitye
+            iast: nitye
+            gloss_en: in the eternal
+            morph: loc. sg. m.
+          - word: vibhau
+            iast: vibhau
+            gloss_en: in the all-pervading
+            morph: loc. sg. m.
           - word: nirādhāre
             iast: nirādhāre
-            gloss_en: "without support"
-            morph: "loc. sg. m."
+            gloss_en: in the supportless
+            morph: loc. sg. m.
+          - word: vyāpake
+            iast: vyāpake
+            gloss_en: in the pervasive
+            morph: loc. sg. m.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: akhila-ātmani
+            iast: akhila-ātmani
+            gloss_en: in the Self of all
+            morph: loc. sg. m. cpd.
+          - word: iti bhairavam
+            iast: iti bhairavam
+            gloss_en: on Bhairava thus
+            morph: phrase
           - word: anusmaran
             iast: anusmaran
-            gloss_en: "constantly remembering"
-            morph: "nom. sg. m. pres. part."
+            gloss_en: continuously remembering
+            morph: nom. sg. m. pres. part.
+          - word: pumān mucyate
+            iast: pumān mucyate
+            gloss_en: the person is liberated
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1651,16 +2919,32 @@ chapters:
         word_glosses:
           - word: nirādhāram
             iast: nirādhāram
-            gloss_en: "supportless"
-            morph: "acc. sg. n."
+            gloss_en: supportless
+            morph: acc. sg. n.
+          - word: saṃśayena varjitam
+            iast: saṃśayena varjitam
+            gloss_en: free of doubt
+            morph: phrase
           - word: khyāti-varjitam
             iast: khyāti-varjitam
-            gloss_en: "free of (objective) appearance"
-            morph: "acc. sg. n."
-          - word: tanmayaḥ
-            iast: tanmayaḥ
-            gloss_en: "identified with That"
-            morph: "nom. sg. m."
+            gloss_en: free of cognition (of duality)
+            morph: acc. sg. n. cpd.
+          - word: brahma tat paramam
+            iast: brahma tat paramam
+            gloss_en: that supreme brahman
+            morph: phrase
+          - word: proktam
+            iast: proktam
+            gloss_en: is declared
+            morph: ppp. nom. sg. n.
+          - word: bhāvayet
+            iast: bhāvayet
+            gloss_en: one should contemplate
+            morph: 3sg. opt. caus. √bhū
+          - word: tan-mayaḥ bhavet
+            iast: tan-mayaḥ bhavet
+            gloss_en: and becomes identified with it
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1676,18 +2960,34 @@ chapters:
         iast: "yathā tathopadeśena kriyate marutāṃ layaḥ | tathā tathā mano jñeyaṃ tadavasthāpadaṃ vrajet"
         meter: anuṣṭubh
         word_glosses:
-          - word: marutām layaḥ
-            iast: marutām layaḥ
-            gloss_en: "dissolution of the breaths"
-            morph: "nom. sg. m."
+          - word: yathā tathā
+            iast: yathā tathā
+            gloss_en: in whatever way
+            morph: adv.
           - word: upadeśena
             iast: upadeśena
-            gloss_en: "by instruction"
-            morph: "inst. sg. m."
-          - word: tadavasthā-padam
-            iast: tadavasthā-padam
-            gloss_en: "the place of that state"
-            morph: "acc. sg. n."
+            gloss_en: by instruction
+            morph: inst. sg. m.
+          - word: kriyate
+            iast: kriyate
+            gloss_en: is brought about
+            morph: 3sg. pres. pass. √kṛ
+          - word: marutām layaḥ
+            iast: marutām layaḥ
+            gloss_en: the dissolution of the breaths
+            morph: phrase
+          - word: tathā tathā
+            iast: tathā tathā
+            gloss_en: in that very way
+            morph: adv.
+          - word: manaḥ jñeyam
+            iast: manaḥ jñeyam
+            gloss_en: the mind is to be known
+            morph: phrase
+          - word: tat-avasthā-padam vrajet
+            iast: tat-avasthā-padam vrajet
+            gloss_en: (the yogin) goes to the seat of that state
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1703,18 +3003,34 @@ chapters:
         iast: "amūlaṃ mūlanāḍīnāṃ vāyupūrṇāṃ suṣumṇikām | dvādaśānte sthitāṃ dhyātvā amūlaṃ bhairavaṃ vrajet"
         meter: anuṣṭubh
         word_glosses:
+          - word: a-mūlam
+            iast: a-mūlam
+            gloss_en: rootless (the rootless source)
+            morph: acc. sg. n.
           - word: mūla-nāḍīnām
             iast: mūla-nāḍīnām
-            gloss_en: "of the root-channels"
-            morph: "gen. pl. f."
+            gloss_en: of the root-channels
+            morph: gen. pl. f. cpd.
+          - word: vāyu-pūrṇām
+            iast: vāyu-pūrṇām
+            gloss_en: filled with breath
+            morph: acc. sg. f. cpd.
           - word: suṣumṇikām
             iast: suṣumṇikām
-            gloss_en: "the Suṣumnā channel"
-            morph: "acc. sg. f."
-          - word: amūlam bhairavam
-            iast: amūlam bhairavam
-            gloss_en: "the rootless Bhairava"
-            morph: "acc. sg. m."
+            gloss_en: the suṣumnā channel
+            morph: acc. sg. f.
+          - word: dvādaśa-ante sthitām
+            iast: dvādaśa-ante sthitām
+            gloss_en: abiding at the dvādaśānta
+            morph: phrase
+          - word: dhyātvā
+            iast: dhyātvā
+            gloss_en: having meditated
+            morph: ger. √dhyai
+          - word: a-mūlam bhairavam vrajet
+            iast: a-mūlam bhairavam vrajet
+            gloss_en: one goes to the rootless Bhairava
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1730,18 +3046,38 @@ chapters:
         iast: "kapālāntar manas tadvad dhyāyato na cirāt prabho | nimīlanādijāṃ siddhiṃ cinmayasya prajāyate"
         meter: anuṣṭubh
         word_glosses:
-          - word: kapālāntar
-            iast: kapālāntar
-            gloss_en: "within the skull"
-            morph: "adv."
-          - word: nimīlanād
-            iast: nimīlanād
-            gloss_en: "from closure (of the eyes)"
-            morph: "abl. sg. n."
-          - word: cinmayasya
-            iast: cinmayasya
-            gloss_en: "of one made of consciousness"
-            morph: "gen. sg. m."
+          - word: kapāla-antaḥ
+            iast: kapāla-antaḥ
+            gloss_en: within the skull
+            morph: adv.
+          - word: manaḥ tadvat
+            iast: manaḥ tadvat
+            gloss_en: the mind similarly (placed)
+            morph: phrase
+          - word: dhyāyataḥ
+            iast: dhyāyataḥ
+            gloss_en: for one meditating
+            morph: gen. sg. m. pres. part.
+          - word: na cirāt
+            iast: na cirāt
+            gloss_en: not long thereafter
+            morph: adv.
+          - word: prabho
+            iast: prabho
+            gloss_en: O Lord
+            morph: voc. sg. m.
+          - word: nimīlana-ādi-jām siddhim
+            iast: nimīlana-ādi-jām siddhim
+            gloss_en: attainment born of eye-closing and the rest
+            morph: phrase
+          - word: cit-mayasya
+            iast: cit-mayasya
+            gloss_en: for the one whose nature is Consciousness
+            morph: gen. sg. m. cpd.
+          - word: prajāyate
+            iast: prajāyate
+            gloss_en: arises
+            morph: 3sg. pres. √jan
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1759,16 +3095,36 @@ chapters:
         word_glosses:
           - word: madhya-jihve
             iast: madhya-jihve
-            gloss_en: "with tongue in the middle (raised)"
-            morph: "loc. sg. f."
-          - word: sphāritāsye
-            iast: sphāritāsye
-            gloss_en: "with mouth open"
-            morph: "loc. sg. n."
-          - word: ho-uccāram
-            iast: ho-uccāram
-            gloss_en: "the utterance of 'ha'"
-            morph: "acc. sg. m."
+            gloss_en: in the middle of the tongue
+            morph: loc. sg. f. cpd.
+          - word: sphārita-āsye
+            iast: sphārita-āsye
+            gloss_en: with mouth opened wide
+            morph: loc. sg. m. cpd.
+          - word: madhye nikṣipya
+            iast: madhye nikṣipya
+            gloss_en: having cast into the middle
+            morph: phrase
+          - word: cetanām
+            iast: cetanām
+            gloss_en: the awareness
+            morph: acc. sg. f.
+          - word: ha-uccāram
+            iast: ha-uccāram
+            gloss_en: the utterance of HA
+            morph: acc. sg. m. cpd.
+          - word: manasā kurvan
+            iast: manasā kurvan
+            gloss_en: performing with the mind
+            morph: phrase
+          - word: tataḥ śānte
+            iast: tataḥ śānte
+            gloss_en: thereupon, in the Peaceful (state)
+            morph: phrase
+          - word: pralīyate
+            iast: pralīyate
+            gloss_en: (the yogin) dissolves
+            morph: 3sg. pres. pass. √lī
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1784,18 +3140,38 @@ chapters:
         iast: "āsane śayane sthitvā nirādhāraṃ vibhāvayan | svadehaṃ manasi kṣīṇe kṣaṇāt kṣīṇāśayo bhavet"
         meter: anuṣṭubh
         word_glosses:
+          - word: āsane śayane
+            iast: āsane śayane
+            gloss_en: while seated or lying
+            morph: loc. sg. n.
+          - word: sthitvā
+            iast: sthitvā
+            gloss_en: having abided
+            morph: ger. √sthā
           - word: nirādhāram
             iast: nirādhāram
-            gloss_en: "without support"
-            morph: "acc. sg. m."
-          - word: kṣīṇa-āśayaḥ
-            iast: kṣīṇa-āśayaḥ
-            gloss_en: "with subsided latent impressions"
-            morph: "nom. sg. m."
+            gloss_en: supportless
+            morph: acc. sg. n.
+          - word: vibhāvayan
+            iast: vibhāvayan
+            gloss_en: contemplating
+            morph: nom. sg. m. pres. part.
+          - word: sva-deham
+            iast: sva-deham
+            gloss_en: one's own body
+            morph: acc. sg. m. cpd.
           - word: manasi kṣīṇe
             iast: manasi kṣīṇe
-            gloss_en: "when the mind is exhausted"
-            morph: "loc. sg. n."
+            gloss_en: when the mind is dwindled
+            morph: loc. abs.
+          - word: kṣaṇāt
+            iast: kṣaṇāt
+            gloss_en: in a moment
+            morph: abl. sg. m.
+          - word: kṣīṇa-āśayaḥ bhavet
+            iast: kṣīṇa-āśayaḥ bhavet
+            gloss_en: one becomes free of (mental) residues
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1813,16 +3189,36 @@ chapters:
         word_glosses:
           - word: cala-āsane
             iast: cala-āsane
-            gloss_en: "on a moving seat (a vehicle)"
-            morph: "loc. sg. n."
+            gloss_en: on a moving seat
+            morph: loc. sg. n. cpd.
+          - word: sthitasya atha
+            iast: sthitasya atha
+            gloss_en: for one seated, then
+            morph: phrase
+          - word: śanaiḥ vā
+            iast: śanaiḥ vā
+            gloss_en: or gently
+            morph: adv.
           - word: deha-cālanāt
             iast: deha-cālanāt
-            gloss_en: "from the swaying of the body"
-            morph: "abl. sg. n."
-          - word: divya-augha
-            iast: divya-augha
-            gloss_en: "the divine current/lineage"
-            morph: "acc. sg. m."
+            gloss_en: by shaking the body
+            morph: abl. sg. n. cpd.
+          - word: praśānte mānase bhāve
+            iast: praśānte mānase bhāve
+            gloss_en: when the mental state is pacified
+            morph: loc. abs.
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
+          - word: divya-augham
+            iast: divya-augham
+            gloss_en: the divine flood (of bliss)
+            morph: acc. sg. m. cpd.
+          - word: āpnuyāt
+            iast: āpnuyāt
+            gloss_en: one would obtain
+            morph: 3sg. opt. √āp
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1840,16 +3236,36 @@ chapters:
         word_glosses:
           - word: ākāśam vimalam
             iast: ākāśam vimalam
-            gloss_en: "the spotless sky"
-            morph: "acc. sg. n."
-          - word: nirantarām dṛṣṭim
-            iast: nirantarām dṛṣṭim
-            gloss_en: "unwavering gaze"
-            morph: "acc. sg. f."
+            gloss_en: the unstained sky
+            morph: phrase
+          - word: paśyan
+            iast: paśyan
+            gloss_en: gazing at
+            morph: nom. sg. m. pres. part.
+          - word: kṛtvā dṛṣṭim nirantarām
+            iast: kṛtvā dṛṣṭim nirantarām
+            gloss_en: having made the gaze unbroken
+            morph: phrase
+          - word: stabdha-ātmā
+            iast: stabdha-ātmā
+            gloss_en: self-stilled
+            morph: nom. sg. m. cpd.
+          - word: tat-kṣaṇāt
+            iast: tat-kṣaṇāt
+            gloss_en: at that very moment
+            morph: abl. sg. m.
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
           - word: bhairavam vapuḥ
             iast: bhairavam vapuḥ
-            gloss_en: "the body of Bhairava"
-            morph: "acc. sg. n."
+            gloss_en: the form of Bhairava
+            morph: phrase
+          - word: āpnuyāt
+            iast: āpnuyāt
+            gloss_en: one would attain
+            morph: 3sg. opt. √āp
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1865,18 +3281,38 @@ chapters:
         iast: "līnaṃ mūrdhni viyat sarvaṃ bhairavatvena bhāvayet | tat sarvaṃ bhairavākāratejastattvaṃ samāviśet"
         meter: anuṣṭubh
         word_glosses:
-          - word: līnam viyat
-            iast: līnam viyat
-            gloss_en: "all the sky dissolved"
-            morph: "acc. sg. n."
+          - word: līnam
+            iast: līnam
+            gloss_en: dissolved
+            morph: ppp. acc. sg. n.
           - word: mūrdhni
             iast: mūrdhni
-            gloss_en: "in the head/crown"
-            morph: "loc. sg. n."
-          - word: bhairavākāra-tejas-tattvam
-            iast: bhairavākāra-tejas-tattvam
-            gloss_en: "the brilliance-reality having the form of Bhairava"
-            morph: "acc. sg. n."
+            gloss_en: in the head
+            morph: loc. sg. m.
+          - word: viyat
+            iast: viyat
+            gloss_en: the (sky-like) void
+            morph: acc. sg. n.
+          - word: sarvam
+            iast: sarvam
+            gloss_en: everything
+            morph: acc. sg. n.
+          - word: bhairavatvena bhāvayet
+            iast: bhairavatvena bhāvayet
+            gloss_en: should contemplate as Bhairava-hood
+            morph: phrase
+          - word: tat sarvam
+            iast: tat sarvam
+            gloss_en: all that
+            morph: phrase
+          - word: bhairava-ākāra-tejas-tattvam
+            iast: bhairava-ākāra-tejas-tattvam
+            gloss_en: the principle of Bhairava-formed radiance
+            morph: acc. sg. n. cpd.
+          - word: samāviśet
+            iast: samāviśet
+            gloss_en: one should fully enter
+            morph: 3sg. opt. √sam-ā-viś
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1892,18 +3328,38 @@ chapters:
         iast: "kiñcijjñātaṃ dvaitadāyi bāhyālokas tamaḥ punaḥ | viśvādi bhairavaṃ rūpaṃ jñātvānantaprakāśabhṛt"
         meter: anuṣṭubh
         word_glosses:
-          - word: kiñcij-jñātam
-            iast: kiñcij-jñātam
-            gloss_en: "a little known (knowledge)"
-            morph: "nom. sg. n."
+          - word: kiñcit-jñātam
+            iast: kiñcit-jñātam
+            gloss_en: the slightly-known
+            morph: acc. sg. n. cpd.
           - word: dvaita-dāyi
             iast: dvaita-dāyi
-            gloss_en: "giving duality"
-            morph: "nom. sg. n."
+            gloss_en: duality-causing
+            morph: acc. sg. n. cpd.
+          - word: bāhya-ālokaḥ
+            iast: bāhya-ālokaḥ
+            gloss_en: external light
+            morph: nom. sg. m. cpd.
+          - word: tamaḥ punaḥ
+            iast: tamaḥ punaḥ
+            gloss_en: and (so is) darkness again
+            morph: phrase
+          - word: viśva-ādi
+            iast: viśva-ādi
+            gloss_en: the universe and so on
+            morph: acc. sg. n. cpd.
+          - word: bhairavam rūpam
+            iast: bhairavam rūpam
+            gloss_en: as the form of Bhairava
+            morph: phrase
+          - word: jñātvā
+            iast: jñātvā
+            gloss_en: having known
+            morph: ger. √jñā
           - word: ananta-prakāśa-bhṛt
             iast: ananta-prakāśa-bhṛt
-            gloss_en: "bearing infinite light"
-            morph: "nom. sg. m."
+            gloss_en: one bears the endless light
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1919,18 +3375,38 @@ chapters:
         iast: "evam eva durniśāyāṃ kṛṣṇapakṣāgame ciram | taimiraṃ bhāvayan rūpaṃ bhairavaṃ rūpam eṣyati"
         meter: anuṣṭubh
         word_glosses:
-          - word: durniśāyām
-            iast: durniśāyām
-            gloss_en: "in a bad/dark night"
-            morph: "loc. sg. f."
+          - word: evam eva
+            iast: evam eva
+            gloss_en: in just this way
+            morph: adv.
+          - word: dur-niśāyām
+            iast: dur-niśāyām
+            gloss_en: on a moonless night
+            morph: loc. sg. f. cpd.
           - word: kṛṣṇa-pakṣa-āgame
             iast: kṛṣṇa-pakṣa-āgame
-            gloss_en: "at the coming of the dark fortnight"
-            morph: "loc. sg. m."
+            gloss_en: at the coming of the dark fortnight
+            morph: loc. sg. m. cpd.
+          - word: ciram
+            iast: ciram
+            gloss_en: for long
+            morph: adv.
           - word: taimiram
             iast: taimiram
-            gloss_en: "darkness"
-            morph: "acc. sg. n."
+            gloss_en: the darkness
+            morph: acc. sg. n.
+          - word: bhāvayan
+            iast: bhāvayan
+            gloss_en: contemplating
+            morph: nom. sg. m. pres. part.
+          - word: rūpam bhairavam
+            iast: rūpam bhairavam
+            gloss_en: as the form of Bhairava
+            morph: phrase
+          - word: rūpam eṣyati
+            iast: rūpam eṣyati
+            gloss_en: one reaches the Form
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1946,18 +3422,42 @@ chapters:
         iast: "evam eva nimīlyādau netre kṛṣṇābham agrataḥ | prasārya bhairavaṃ rūpaṃ bhāvayaṃs tanmayo bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: nimīlya
-            iast: nimīlya
-            gloss_en: "closing"
-            morph: "abs."
-          - word: kṛṣṇābham
-            iast: kṛṣṇābham
-            gloss_en: "the dark appearance"
-            morph: "acc. sg. n."
-          - word: tanmayaḥ
-            iast: tanmayaḥ
-            gloss_en: "identified with That"
-            morph: "nom. sg. m."
+          - word: evam eva
+            iast: evam eva
+            gloss_en: in just this way
+            morph: adv.
+          - word: nimīlya ādau
+            iast: nimīlya ādau
+            gloss_en: having first closed
+            morph: phrase
+          - word: netre
+            iast: netre
+            gloss_en: the two eyes
+            morph: acc. du. n.
+          - word: kṛṣṇa-ābham
+            iast: kṛṣṇa-ābham
+            gloss_en: of dark color
+            morph: acc. sg. n. cpd.
+          - word: agrataḥ
+            iast: agrataḥ
+            gloss_en: in front
+            morph: adv.
+          - word: prasārya
+            iast: prasārya
+            gloss_en: having spread out
+            morph: ger. √pra-sṛ
+          - word: bhairavam rūpam
+            iast: bhairavam rūpam
+            gloss_en: the Bhairava-form
+            morph: phrase
+          - word: bhāvayan
+            iast: bhāvayan
+            gloss_en: contemplating
+            morph: nom. sg. m. pres. part.
+          - word: tan-mayaḥ bhavet
+            iast: tan-mayaḥ bhavet
+            gloss_en: one becomes identified with it
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1973,18 +3473,38 @@ chapters:
         iast: "yasya kasyendriyasyāpi vyāghātāc ca nirodhataḥ | praviṣṭasyādvaye śūnye tatraivātmā prakāśate"
         meter: anuṣṭubh
         word_glosses:
+          - word: yasya kasya indriyasya api
+            iast: yasya kasya indriyasya api
+            gloss_en: of whichever sense
+            morph: phrase
           - word: vyāghātāt
             iast: vyāghātāt
-            gloss_en: "by obstruction"
-            morph: "abl. sg. m."
+            gloss_en: by an obstruction
+            morph: abl. sg. m.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
           - word: nirodhataḥ
             iast: nirodhataḥ
-            gloss_en: "by blocking"
-            morph: "abl. sg. m."
+            gloss_en: by restraint
+            morph: adv.
+          - word: praviṣṭasya
+            iast: praviṣṭasya
+            gloss_en: of one who has entered
+            morph: gen. sg. m. ppp.
           - word: advaye śūnye
             iast: advaye śūnye
-            gloss_en: "in non-dual void"
-            morph: "loc. sg. n."
+            gloss_en: into the non-dual void
+            morph: loc. sg. n. cpd.
+          - word: tatra eva
+            iast: tatra eva
+            gloss_en: right there
+            morph: adv.
+          - word: ātmā prakāśate
+            iast: ātmā prakāśate
+            gloss_en: the Self shines forth
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2000,18 +3520,42 @@ chapters:
         iast: "abindum avisargaṃ ca akāraṃ japato mahān | udeti devi sahasā jñānaughaḥ parameśvaraḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: abindum
-            iast: abindum
-            gloss_en: "without bindu"
-            morph: "acc. sg. m."
-          - word: avisargam
-            iast: avisargam
-            gloss_en: "without visarga"
-            morph: "acc. sg. m."
-          - word: jñāna-aughaḥ
-            iast: jñāna-aughaḥ
-            gloss_en: "flood of knowledge"
-            morph: "nom. sg. m."
+          - word: a-bindum
+            iast: a-bindum
+            gloss_en: without the bindu
+            morph: acc. sg. m.
+          - word: a-visargam
+            iast: a-visargam
+            gloss_en: without the visarga
+            morph: acc. sg. m.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: a-kāram
+            iast: a-kāram
+            gloss_en: the letter A
+            morph: acc. sg. m. cpd.
+          - word: japataḥ
+            iast: japataḥ
+            gloss_en: for one reciting
+            morph: gen. sg. m. pres. part.
+          - word: mahān udeti
+            iast: mahān udeti
+            gloss_en: great (knowledge) arises
+            morph: phrase
+          - word: devi
+            iast: devi
+            gloss_en: O Goddess
+            morph: voc. sg. f.
+          - word: sahasā
+            iast: sahasā
+            gloss_en: suddenly
+            morph: adv.
+          - word: jñāna-oghaḥ parameśvaraḥ
+            iast: jñāna-oghaḥ parameśvaraḥ
+            gloss_en: the flood of knowledge that is the Supreme Lord
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2027,18 +3571,26 @@ chapters:
         iast: "varṇasya savisargasya visargāntaṃ citiṃ kuru | nirādhāreṇa cittena spṛśed brahma sanātanam"
         meter: anuṣṭubh
         word_glosses:
+          - word: varṇasya sa-visargasya
+            iast: varṇasya sa-visargasya
+            gloss_en: of a letter with its visarga
+            morph: phrase
           - word: visarga-antam
             iast: visarga-antam
-            gloss_en: "the end of the visarga"
-            morph: "acc. sg. m."
-          - word: citim
-            iast: citim
-            gloss_en: "consciousness"
-            morph: "acc. sg. f."
-          - word: brahma sanātanam
-            iast: brahma sanātanam
-            gloss_en: "the eternal Brahman"
-            morph: "acc. sg. n."
+            gloss_en: to the end of the visarga
+            morph: acc. sg. m. cpd.
+          - word: citim kuru
+            iast: citim kuru
+            gloss_en: make the consciousness
+            morph: phrase
+          - word: nirādhāreṇa cittena
+            iast: nirādhāreṇa cittena
+            gloss_en: with a supportless mind
+            morph: inst. sg. n. cpd.
+          - word: spṛśet brahma sanātanam
+            iast: spṛśet brahma sanātanam
+            gloss_en: one would touch the eternal brahman
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2054,18 +3606,38 @@ chapters:
         iast: "vyomākāraṃ svam ātmānaṃ dhyāyed digbhir anāvṛtam | nirāśrayā citiḥ śaktiḥ svarūpaṃ darśayet tadā"
         meter: anuṣṭubh
         word_glosses:
-          - word: vyomākāram
-            iast: vyomākāram
-            gloss_en: "of sky-form"
-            morph: "acc. sg. m."
-          - word: digbhir anāvṛtam
-            iast: digbhir anāvṛtam
-            gloss_en: "uncovered by any direction"
-            morph: "acc. sg. m."
-          - word: nirāśrayā citiḥ śaktiḥ
-            iast: nirāśrayā citiḥ śaktiḥ
-            gloss_en: "supportless Consciousness-Power"
-            morph: "nom. sg. f."
+          - word: vyoma-ākāram
+            iast: vyoma-ākāram
+            gloss_en: of the form of the void
+            morph: acc. sg. n. cpd.
+          - word: svam ātmānam
+            iast: svam ātmānam
+            gloss_en: one's own Self
+            morph: acc. sg. m.
+          - word: dhyāyet
+            iast: dhyāyet
+            gloss_en: should meditate on
+            morph: 3sg. opt. √dhyai
+          - word: digbhiḥ anāvṛtam
+            iast: digbhiḥ anāvṛtam
+            gloss_en: uncovered by directions
+            morph: phrase
+          - word: nir-āśrayā
+            iast: nir-āśrayā
+            gloss_en: (then) supportless
+            morph: nom. sg. f.
+          - word: citiḥ śaktiḥ
+            iast: citiḥ śaktiḥ
+            gloss_en: Consciousness-Power
+            morph: phrase
+          - word: sva-rūpam darśayet
+            iast: sva-rūpam darśayet
+            gloss_en: would reveal her own nature
+            morph: phrase
+          - word: tadā
+            iast: tadā
+            gloss_en: then
+            morph: adv.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2081,18 +3653,38 @@ chapters:
         iast: "kiñcidaṅgaṃ vibhidyādau tīkṣṇasūcyādinā tataḥ | tatraiva cetanāṃ yuktvā bhairave nirmalā gatiḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: kiñcidaṅgam
-            iast: kiñcidaṅgam
-            gloss_en: "some part of the body"
-            morph: "acc. sg. n."
-          - word: tīkṣṇa-sūcyādinā
-            iast: tīkṣṇa-sūcyādinā
-            gloss_en: "with a sharp needle, etc."
-            morph: "inst. sg. f."
+          - word: kiñcit-aṅgam
+            iast: kiñcit-aṅgam
+            gloss_en: some limb
+            morph: acc. sg. n. cpd.
+          - word: vibhidya ādau
+            iast: vibhidya ādau
+            gloss_en: having first pierced
+            morph: phrase
+          - word: tīkṣṇa-sūcī-ādinā
+            iast: tīkṣṇa-sūcī-ādinā
+            gloss_en: with a sharp needle or the like
+            morph: inst. sg. m. cpd.
+          - word: tataḥ
+            iast: tataḥ
+            gloss_en: then
+            morph: adv.
+          - word: tatra eva
+            iast: tatra eva
+            gloss_en: right there
+            morph: adv.
+          - word: cetanām yuktvā
+            iast: cetanām yuktvā
+            gloss_en: having yoked the awareness
+            morph: phrase
+          - word: bhairave
+            iast: bhairave
+            gloss_en: in Bhairava
+            morph: loc. sg. m.
           - word: nirmalā gatiḥ
             iast: nirmalā gatiḥ
-            gloss_en: "the pure path"
-            morph: "nom. sg. f."
+            gloss_en: the spotless way
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2108,18 +3700,30 @@ chapters:
         iast: "cittādyantaḥkṛtir nāsti mamāntar bhāvayed iti | vikalpānām abhāvena vikalpair ujjhito bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: antaḥ-kṛtiḥ
-            iast: antaḥ-kṛtiḥ
-            gloss_en: "inner instrument (mind, intellect, ego)"
-            morph: "nom. sg. f."
+          - word: citta-ādi-antaḥkṛtiḥ
+            iast: citta-ādi-antaḥkṛtiḥ
+            gloss_en: the inner faculty beginning with citta
+            morph: nom. sg. f. cpd.
+          - word: na asti
+            iast: na asti
+            gloss_en: does not exist
+            morph: phrase
+          - word: mama antaḥ
+            iast: mama antaḥ
+            gloss_en: within me
+            morph: phrase
+          - word: bhāvayet iti
+            iast: bhāvayet iti
+            gloss_en: one should contemplate thus
+            morph: phrase
           - word: vikalpānām abhāvena
             iast: vikalpānām abhāvena
-            gloss_en: "through the absence of thought-constructs"
-            morph: "inst. sg. m."
-          - word: ujjhitaḥ
-            iast: ujjhitaḥ
-            gloss_en: "abandoned"
-            morph: "nom. sg. m."
+            gloss_en: by absence of thought-constructs
+            morph: inst. sg. m. cpd.
+          - word: vikalpaiḥ ujjhitaḥ bhavet
+            iast: vikalpaiḥ ujjhitaḥ bhavet
+            gloss_en: one becomes abandoned by thought-constructs
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2135,18 +3739,38 @@ chapters:
         iast: "māyā vimohinī nāma kalāyāḥ kalanaṃ sthitam | ityādidharmaṃ tattvānāṃ kalayan na pṛthag bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: māyā vimohinī
-            iast: māyā vimohinī
-            gloss_en: "Māyā, the deluder"
-            morph: "nom. sg. f."
+          - word: māyā vimohinī nāma
+            iast: māyā vimohinī nāma
+            gloss_en: māyā called the Deluder
+            morph: phrase
+          - word: kalāyāḥ
+            iast: kalāyāḥ
+            gloss_en: of kalā (limited agency)
+            morph: gen. sg. f.
           - word: kalanam
             iast: kalanam
-            gloss_en: "the impelling/measuring"
-            morph: "nom. sg. n."
-          - word: pṛthak
-            iast: pṛthak
-            gloss_en: "separate"
-            morph: "adv."
+            gloss_en: the limiting act
+            morph: nom. sg. n.
+          - word: sthitam
+            iast: sthitam
+            gloss_en: stands
+            morph: ppp. nom. sg. n.
+          - word: iti-ādi-dharmam
+            iast: iti-ādi-dharmam
+            gloss_en: such and similar attributes
+            morph: acc. sg. m. cpd.
+          - word: tattvānām
+            iast: tattvānām
+            gloss_en: of the tattvas
+            morph: gen. pl. n.
+          - word: kalayan
+            iast: kalayan
+            gloss_en: while reckoning
+            morph: nom. sg. m. pres. part.
+          - word: na pṛthag bhavet
+            iast: na pṛthag bhavet
+            gloss_en: one would not be separate
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2164,16 +3788,28 @@ chapters:
         word_glosses:
           - word: jhagiti
             iast: jhagiti
-            gloss_en: "all at once, suddenly"
-            morph: "adv."
+            gloss_en: suddenly
+            morph: adv.
           - word: icchām samutpannām
             iast: icchām samutpannām
-            gloss_en: "a desire that has just arisen"
-            morph: "acc. sg. f."
-          - word: śamam
-            iast: śamam
-            gloss_en: "tranquillity"
-            morph: "acc. sg. m."
+            gloss_en: a desire arisen
+            morph: phrase
+          - word: avalokya
+            iast: avalokya
+            gloss_en: having observed
+            morph: ger. √ava-lok
+          - word: śamam nayet
+            iast: śamam nayet
+            gloss_en: one should lead it to quiescence
+            morph: phrase
+          - word: yataḥ eva samudbhūtā
+            iast: yataḥ eva samudbhūtā
+            gloss_en: from where alone it arose
+            morph: phrase
+          - word: tataḥ tatra eva līyate
+            iast: tataḥ tatra eva līyate
+            gloss_en: there it dissolves
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2189,18 +3825,34 @@ chapters:
         iast: "yadā mamecchā notpannā jñānaṃ vā kas tadāsmy aham | tattvato'haṃ tathābhūtas tallīnas tanmanā bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: icchā / jñānam
-            iast: icchā / jñānam
-            gloss_en: "desire / cognition"
-            morph: "nom. sg."
-          - word: kaḥ asmi
-            iast: kaḥ asmi
-            gloss_en: "who am I?"
-            morph: "interrog. + 1 sg."
-          - word: tallīnaḥ tanmanāḥ
-            iast: tallīnaḥ tanmanāḥ
-            gloss_en: "absorbed in That, mind-on-That"
-            morph: "nom. sg. m."
+          - word: yadā mama icchā
+            iast: yadā mama icchā
+            gloss_en: when my desire
+            morph: phrase
+          - word: na utpannā
+            iast: na utpannā
+            gloss_en: has not arisen
+            morph: phrase
+          - word: jñānam vā
+            iast: jñānam vā
+            gloss_en: or knowledge (has not arisen)
+            morph: phrase
+          - word: kaḥ tadā asmi aham
+            iast: kaḥ tadā asmi aham
+            gloss_en: who am I then?
+            morph: phrase
+          - word: tattvataḥ aham tathā-bhūtaḥ
+            iast: tattvataḥ aham tathā-bhūtaḥ
+            gloss_en: truly I am of that nature
+            morph: phrase
+          - word: tat-līnaḥ
+            iast: tat-līnaḥ
+            gloss_en: absorbed in that
+            morph: nom. sg. m. cpd.
+          - word: tat-manāḥ bhavet
+            iast: tat-manāḥ bhavet
+            gloss_en: one becomes of that mind
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2218,16 +3870,28 @@ chapters:
         word_glosses:
           - word: icchāyām
             iast: icchāyām
-            gloss_en: "in a desire"
-            morph: "loc. sg. f."
-          - word: ātma-buddhyā
-            iast: ātma-buddhyā
-            gloss_en: "with the awareness 'this is the Self'"
-            morph: "inst. sg. f."
-          - word: tattvārtha-darśanam
-            iast: tattvārtha-darśanam
-            gloss_en: "the seeing of the meaning of Reality"
-            morph: "nom. sg. n."
+            gloss_en: in desire
+            morph: loc. sg. f.
+          - word: athavā jñāne
+            iast: athavā jñāne
+            gloss_en: or in knowledge
+            morph: phrase
+          - word: jāte
+            iast: jāte
+            gloss_en: when (it has) arisen
+            morph: loc. abs.
+          - word: cittam niveśayet
+            iast: cittam niveśayet
+            gloss_en: one should fix the mind
+            morph: phrase
+          - word: ātma-buddhi-ananya-cetāḥ
+            iast: ātma-buddhi-ananya-cetāḥ
+            gloss_en: with mind devoted only to Self-awareness
+            morph: nom. sg. m. cpd.
+          - word: tataḥ tattva-artha-darśanam
+            iast: tataḥ tattva-artha-darśanam
+            gloss_en: then comes the seeing of the reality
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2243,18 +3907,30 @@ chapters:
         iast: "nirnimittaṃ bhavej jñānaṃ nirādhāraṃ bhramātmakam | tattvataḥ kasyacin naitad evaṃbhāvī śivaḥ priye"
         meter: anuṣṭubh
         word_glosses:
-          - word: nirnimittam
-            iast: nirnimittam
-            gloss_en: "causeless"
-            morph: "nom. sg. n."
-          - word: bhramātmakam
-            iast: bhramātmakam
-            gloss_en: "of the nature of confusion"
-            morph: "nom. sg. n."
-          - word: evaṃbhāvī
-            iast: evaṃbhāvī
-            gloss_en: "one who contemplates thus"
-            morph: "nom. sg. m."
+          - word: nir-nimittam
+            iast: nir-nimittam
+            gloss_en: causeless
+            morph: acc. sg. n.
+          - word: bhavet jñānam
+            iast: bhavet jñānam
+            gloss_en: knowledge may arise
+            morph: phrase
+          - word: nir-ādhāram
+            iast: nir-ādhāram
+            gloss_en: supportless
+            morph: acc. sg. n.
+          - word: bhrama-ātmakam
+            iast: bhrama-ātmakam
+            gloss_en: delusory in nature
+            morph: acc. sg. n. cpd.
+          - word: tattvataḥ kasyacit na etat
+            iast: tattvataḥ kasyacit na etat
+            gloss_en: truly this belongs to no one
+            morph: phrase
+          - word: evam-bhāvī śivaḥ priye
+            iast: evam-bhāvī śivaḥ priye
+            gloss_en: (one) of such contemplation (becomes) Śiva, O beloved
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2270,18 +3946,34 @@ chapters:
         iast: "ciddharmā sarvadeheṣu viśeṣo nāsti kutracit | ataś ca tanmayaṃ sarvaṃ bhāvayan bhavajij janaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: cid-dharmā
-            iast: cid-dharmā
-            gloss_en: "having consciousness as its nature"
-            morph: "nom. sg. m."
-          - word: viśeṣaḥ
-            iast: viśeṣaḥ
-            gloss_en: "distinction"
-            morph: "nom. sg. m."
-          - word: bhava-jit
-            iast: bhava-jit
-            gloss_en: "conqueror of becoming"
-            morph: "nom. sg. m."
+          - word: cit-dharmā
+            iast: cit-dharmā
+            gloss_en: having Consciousness as their nature
+            morph: nom. sg. m. cpd.
+          - word: sarva-deheṣu
+            iast: sarva-deheṣu
+            gloss_en: in all bodies
+            morph: loc. pl. m. cpd.
+          - word: viśeṣaḥ na asti kutracit
+            iast: viśeṣaḥ na asti kutracit
+            gloss_en: there is no distinction anywhere
+            morph: phrase
+          - word: ataḥ ca
+            iast: ataḥ ca
+            gloss_en: and from this
+            morph: phrase
+          - word: tat-mayam sarvam
+            iast: tat-mayam sarvam
+            gloss_en: all is of that nature
+            morph: phrase
+          - word: bhāvayan
+            iast: bhāvayan
+            gloss_en: contemplating
+            morph: nom. sg. m. pres. part.
+          - word: bhava-jit janaḥ
+            iast: bhava-jit janaḥ
+            gloss_en: a person becomes conqueror of saṃsāra
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2297,18 +3989,18 @@ chapters:
         iast: "kāmakrodhalobhamohamadamātsaryagocare | buddhiṃ nistimitāṃ kṛtvā tat tattvam avaśiṣyate"
         meter: anuṣṭubh
         word_glosses:
-          - word: kāma-krodha-lobha-moha-mada-mātsarya
-            iast: kāma-krodha-lobha-moha-mada-mātsarya
-            gloss_en: "lust, anger, greed, delusion, pride, envy"
-            morph: "stem in cpd."
-          - word: nistimitām
-            iast: nistimitām
-            gloss_en: "perfectly still"
-            morph: "acc. sg. f."
-          - word: avaśiṣyate
-            iast: avaśiṣyate
-            gloss_en: "remains over"
-            morph: "3 sg. pres. pass."
+          - word: kāma-krodha-lobha-moha-mada-mātsarya-gocare
+            iast: kāma-krodha-lobha-moha-mada-mātsarya-gocare
+            gloss_en: in the sphere of lust, anger, greed, delusion, pride, envy
+            morph: loc. sg. m. cpd.
+          - word: buddhim nistimitām kṛtvā
+            iast: buddhim nistimitām kṛtvā
+            gloss_en: having made the intellect stilled
+            morph: phrase
+          - word: tat tattvam avaśiṣyate
+            iast: tat tattvam avaśiṣyate
+            gloss_en: that Reality alone remains
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2324,18 +4016,42 @@ chapters:
         iast: "indrajālamayaṃ viśvaṃ vyastaṃ vā citrakarmavat | bhramadvā dhyāyataḥ sarvaṃ paśyataś ca sukhodayaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: indrajāla-mayam
-            iast: indrajāla-mayam
-            gloss_en: "made of magic-illusion"
-            morph: "acc. sg. n."
+          - word: indrajāla-mayam viśvam
+            iast: indrajāla-mayam viśvam
+            gloss_en: the universe (seen) as a magical display
+            morph: phrase
+          - word: vyastam
+            iast: vyastam
+            gloss_en: scattered
+            morph: acc. sg. n.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
           - word: citra-karma-vat
             iast: citra-karma-vat
-            gloss_en: "like a painting"
-            morph: "adv."
+            gloss_en: like a painting
+            morph: adv. cpd.
+          - word: bhramat
+            iast: bhramat
+            gloss_en: whirling
+            morph: acc. sg. n. pres. part.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: dhyāyataḥ
+            iast: dhyāyataḥ
+            gloss_en: for one meditating
+            morph: gen. sg. m. pres. part.
+          - word: sarvam paśyataḥ ca
+            iast: sarvam paśyataḥ ca
+            gloss_en: and seeing all
+            morph: phrase
           - word: sukha-udayaḥ
             iast: sukha-udayaḥ
-            gloss_en: "rise of bliss"
-            morph: "nom. sg. m."
+            gloss_en: (there is) the arising of joy
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2351,18 +4067,26 @@ chapters:
         iast: "na cittaṃ nikṣiped duḥkhe na sukhe vā parikṣipet | bhairavi jñāyatāṃ madhye kiṃ tattvam avaśiṣyate"
         meter: anuṣṭubh
         word_glosses:
-          - word: nikṣipet
-            iast: nikṣipet
-            gloss_en: "should fix"
-            morph: "3 sg. opt."
-          - word: madhye
-            iast: madhye
-            gloss_en: "in the middle"
-            morph: "loc. sg. n."
-          - word: avaśiṣyate
-            iast: avaśiṣyate
-            gloss_en: "remains over"
-            morph: "3 sg. pres."
+          - word: na cittam nikṣipet duḥkhe
+            iast: na cittam nikṣipet duḥkhe
+            gloss_en: let one not cast the mind into pain
+            morph: phrase
+          - word: na sukhe vā parikṣipet
+            iast: na sukhe vā parikṣipet
+            gloss_en: nor into pleasure
+            morph: phrase
+          - word: bhairavi
+            iast: bhairavi
+            gloss_en: O Bhairavī
+            morph: voc. sg. f.
+          - word: jñāyatām madhye
+            iast: jñāyatām madhye
+            gloss_en: let it be known in the middle
+            morph: phrase
+          - word: kim tattvam avaśiṣyate
+            iast: kim tattvam avaśiṣyate
+            gloss_en: what reality remains?
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2378,18 +4102,38 @@ chapters:
         iast: "vihāya nijadehāsthāṃ sarvatrāsmīti bhāvayan | dṛḍhena manasā dṛṣṭyā nānyekṣiṇyā sukhī bhavet"
         meter: anuṣṭubh
         word_glosses:
+          - word: vihāya
+            iast: vihāya
+            gloss_en: having abandoned
+            morph: ger. √vi-hā
           - word: nija-deha-āsthām
             iast: nija-deha-āsthām
-            gloss_en: "attachment to one's own body"
-            morph: "acc. sg. f."
-          - word: sarvatra asmi
-            iast: sarvatra asmi
-            gloss_en: "'I am everywhere'"
-            morph: "1 sg. pres."
-          - word: dṛṣṭyā nānyekṣiṇyā
-            iast: dṛṣṭyā nānyekṣiṇyā
-            gloss_en: "with a gaze that beholds nothing else"
-            morph: "inst. sg. f."
+            gloss_en: attachment to one's body
+            morph: acc. sg. f. cpd.
+          - word: sarvatra asmi iti
+            iast: sarvatra asmi iti
+            gloss_en: I am everywhere — thus
+            morph: phrase
+          - word: bhāvayan
+            iast: bhāvayan
+            gloss_en: contemplating
+            morph: nom. sg. m. pres. part.
+          - word: dṛḍhena manasā
+            iast: dṛḍhena manasā
+            gloss_en: with a firm mind
+            morph: phrase
+          - word: dṛṣṭyā
+            iast: dṛṣṭyā
+            gloss_en: with the gaze
+            morph: inst. sg. f.
+          - word: na anya-īkṣiṇyā
+            iast: na anya-īkṣiṇyā
+            gloss_en: looking at nothing else
+            morph: phrase
+          - word: sukhī bhavet
+            iast: sukhī bhavet
+            gloss_en: one becomes happy
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2405,18 +4149,26 @@ chapters:
         iast: "ghaṭādau yac ca vijñānam icchādyaṃ vā mamāntare | naiva sarvagataṃ jātaṃ bhāvayann iti sarvagaḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: ghaṭādau
-            iast: ghaṭādau
-            gloss_en: "in pot and other (objects)"
-            morph: "loc. sg. m."
-          - word: vijñānam
-            iast: vijñānam
-            gloss_en: "knowledge, cognition"
-            morph: "nom. sg. n."
-          - word: sarvagaḥ
-            iast: sarvagaḥ
-            gloss_en: "all-pervading"
-            morph: "nom. sg. m."
+          - word: ghaṭa-ādau
+            iast: ghaṭa-ādau
+            gloss_en: in a pot and the like
+            morph: loc. sg. m. cpd.
+          - word: yat ca vijñānam
+            iast: yat ca vijñānam
+            gloss_en: whatever cognition
+            morph: phrase
+          - word: icchā-ādyam vā mama antare
+            iast: icchā-ādyam vā mama antare
+            gloss_en: or desire, etc., within me
+            morph: phrase
+          - word: na eva sarva-gatam jātam
+            iast: na eva sarva-gatam jātam
+            gloss_en: it is not at all become all-pervading
+            morph: phrase
+          - word: bhāvayan iti sarva-gaḥ
+            iast: bhāvayan iti sarva-gaḥ
+            gloss_en: one who contemplates thus becomes all-pervading
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2434,16 +4186,28 @@ chapters:
         word_glosses:
           - word: grāhya-grāhaka-saṃvittiḥ
             iast: grāhya-grāhaka-saṃvittiḥ
-            gloss_en: "the cognition of object and subject"
-            morph: "nom. sg. f."
+            gloss_en: awareness of object and subject
+            morph: nom. sg. f. cpd.
           - word: sāmānyā
             iast: sāmānyā
-            gloss_en: "common"
-            morph: "nom. sg. f."
-          - word: sāvadhānatā
-            iast: sāvadhānatā
-            gloss_en: "the (yogic) attentiveness"
-            morph: "nom. sg. f."
+            gloss_en: is common
+            morph: nom. sg. f.
+          - word: sarva-dehinām
+            iast: sarva-dehinām
+            gloss_en: to all embodied beings
+            morph: gen. pl. m. cpd.
+          - word: yogināṃ tu viśeṣaḥ asti
+            iast: yogināṃ tu viśeṣaḥ asti
+            gloss_en: but for yogins there is a distinction
+            morph: phrase
+          - word: sambandhe
+            iast: sambandhe
+            gloss_en: in the connection
+            morph: loc. sg. m.
+          - word: sa-avadhānatā
+            iast: sa-avadhānatā
+            gloss_en: is attentiveness
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2459,18 +4223,30 @@ chapters:
         iast: "svavad anyaśarīre'pi saṃvittim anubhāvayet | apekṣāṃ svaśarīrasya tyaktvā vyāpī dinair bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: svavat
-            iast: svavat
-            gloss_en: "like one's own"
-            morph: "adv."
-          - word: anya-śarīre
-            iast: anya-śarīre
-            gloss_en: "in another's body"
-            morph: "loc. sg. n."
-          - word: vyāpī
-            iast: vyāpī
-            gloss_en: "all-pervading"
-            morph: "nom. sg. m."
+          - word: sva-vat
+            iast: sva-vat
+            gloss_en: as in one's own (body)
+            morph: adv.
+          - word: anya-śarīre api
+            iast: anya-śarīre api
+            gloss_en: even in another's body
+            morph: phrase
+          - word: saṃvittim anubhāvayet
+            iast: saṃvittim anubhāvayet
+            gloss_en: one should experience the awareness
+            morph: phrase
+          - word: apekṣām sva-śarīrasya
+            iast: apekṣām sva-śarīrasya
+            gloss_en: regard for one's own body
+            morph: phrase
+          - word: tyaktvā
+            iast: tyaktvā
+            gloss_en: having abandoned
+            morph: ger. √tyaj
+          - word: vyāpī dinaiḥ bhavet
+            iast: vyāpī dinaiḥ bhavet
+            gloss_en: in (a few) days one becomes pervasive
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2486,18 +4262,22 @@ chapters:
         iast: "nirādhāraṃ manaḥ kṛtvā vikalpān na vikalpayet | tadātmaparamātmatve bhairavo mṛgalocane"
         meter: anuṣṭubh
         word_glosses:
-          - word: nirādhāram manaḥ
-            iast: nirādhāram manaḥ
-            gloss_en: "supportless mind"
-            morph: "acc. sg. n."
-          - word: vikalpayet
-            iast: vikalpayet
-            gloss_en: "should construct/imagine"
-            morph: "3 sg. opt."
-          - word: ātma-paramātmatve
-            iast: ātma-paramātmatve
-            gloss_en: "in the identity of self and supreme Self"
-            morph: "loc. sg. n."
+          - word: nirādhāram manaḥ kṛtvā
+            iast: nirādhāram manaḥ kṛtvā
+            gloss_en: having made the mind supportless
+            morph: phrase
+          - word: vikalpān na vikalpayet
+            iast: vikalpān na vikalpayet
+            gloss_en: one should not construct thought-constructs
+            morph: phrase
+          - word: tadā ātma-parama-ātma-tve
+            iast: tadā ātma-parama-ātma-tve
+            gloss_en: then, in the state of self-being-supreme-Self
+            morph: phrase
+          - word: bhairavaḥ mṛga-locane
+            iast: bhairavaḥ mṛga-locane
+            gloss_en: is Bhairava, O doe-eyed one
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2513,18 +4293,34 @@ chapters:
         iast: "sarvajñaḥ sarvakartā ca vyāpakaḥ parameśvaraḥ | sa evāhaṃ śaivadharmā iti dārḍhyāc chivo bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: sarvajñaḥ sarvakartā
-            iast: sarvajñaḥ sarvakartā
-            gloss_en: "all-knowing, all-doing"
-            morph: "nom. sg. m."
+          - word: sarvajñaḥ
+            iast: sarvajñaḥ
+            gloss_en: all-knowing
+            morph: nom. sg. m.
+          - word: sarva-kartā ca
+            iast: sarva-kartā ca
+            gloss_en: and all-doer
+            morph: phrase
+          - word: vyāpakaḥ parameśvaraḥ
+            iast: vyāpakaḥ parameśvaraḥ
+            gloss_en: the all-pervading Supreme Lord
+            morph: phrase
+          - word: saḥ eva aham
+            iast: saḥ eva aham
+            gloss_en: I am he
+            morph: phrase
           - word: śaiva-dharmā
             iast: śaiva-dharmā
-            gloss_en: "having the nature of Śiva"
-            morph: "nom. sg. m."
-          - word: dārḍhyāt
-            iast: dārḍhyāt
-            gloss_en: "from steady firmness"
-            morph: "abl. sg. n."
+            gloss_en: having the nature of Śiva
+            morph: nom. sg. m. cpd.
+          - word: iti dārḍhyāt
+            iast: iti dārḍhyāt
+            gloss_en: from firmness in this conviction
+            morph: phrase
+          - word: śivaḥ bhavet
+            iast: śivaḥ bhavet
+            gloss_en: one becomes Śiva
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2540,18 +4336,34 @@ chapters:
         iast: "jalasyevormayo vahner jvālābhaṅgyaḥ prabhā raveḥ | mamaiva bhairavasyaitā viśvabhaṅgyo vibheditāḥ"
         meter: anuṣṭubh
         word_glosses:
+          - word: jalasya iva
+            iast: jalasya iva
+            gloss_en: as of water
+            morph: phrase
           - word: ūrmayaḥ
             iast: ūrmayaḥ
-            gloss_en: "waves"
-            morph: "nom. pl. f."
-          - word: jvālā-bhaṅgyaḥ
-            iast: jvālā-bhaṅgyaḥ
-            gloss_en: "tongues of flame"
-            morph: "nom. pl. f."
-          - word: viśva-bhaṅgyaḥ
-            iast: viśva-bhaṅgyaḥ
-            gloss_en: "the varied modes of the universe"
-            morph: "nom. pl. f."
+            gloss_en: (are) the waves
+            morph: nom. pl. m.
+          - word: vahneḥ jvālā-bhaṅgyaḥ
+            iast: vahneḥ jvālā-bhaṅgyaḥ
+            gloss_en: of fire, the breaks of flame
+            morph: phrase
+          - word: prabhā raveḥ
+            iast: prabhā raveḥ
+            gloss_en: the light of the sun
+            morph: phrase
+          - word: mama eva bhairavasya
+            iast: mama eva bhairavasya
+            gloss_en: of me, Bhairava, alone
+            morph: phrase
+          - word: etāḥ viśva-bhaṅgyaḥ
+            iast: etāḥ viśva-bhaṅgyaḥ
+            gloss_en: these are the wave-breaks of the universe
+            morph: phrase
+          - word: vibheditāḥ
+            iast: vibheditāḥ
+            gloss_en: (seemingly) differentiated
+            morph: ppp. nom. pl. f.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2569,16 +4381,28 @@ chapters:
         word_glosses:
           - word: bhrāntvā bhrāntvā
             iast: bhrāntvā bhrāntvā
-            gloss_en: "having whirled and whirled"
-            morph: "abs."
+            gloss_en: having whirled and whirled
+            morph: ger. √bhram
+          - word: śarīreṇa
+            iast: śarīreṇa
+            gloss_en: with the body
+            morph: inst. sg. n.
+          - word: tvaritam
+            iast: tvaritam
+            gloss_en: quickly
+            morph: adv.
+          - word: bhuvi pātanāt
+            iast: bhuvi pātanāt
+            gloss_en: by falling on the ground
+            morph: abl. sg. n.
           - word: kṣobha-śakti-virāmeṇa
             iast: kṣobha-śakti-virāmeṇa
-            gloss_en: "by the cessation of agitation-energy"
-            morph: "inst. sg. m."
-          - word: parā daśā
-            iast: parā daśā
-            gloss_en: "the supreme state"
-            morph: "nom. sg. f."
+            gloss_en: by the cessation of the agitating Power
+            morph: inst. sg. m. cpd.
+          - word: parā saṃjāyate daśā
+            iast: parā saṃjāyate daśā
+            gloss_en: the supreme state arises
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2596,16 +4420,32 @@ chapters:
         word_glosses:
           - word: ādhāreṣu
             iast: ādhāreṣu
-            gloss_en: "in the supports (cakras)"
-            morph: "loc. pl. m."
-          - word: śakti-saṃśobhe
-            iast: śakti-saṃśobhe
-            gloss_en: "when the Śakti is agitated"
-            morph: "loc. sg. m."
-          - word: śānte paścāt
-            iast: śānte paścāt
-            gloss_en: "after it is appeased"
-            morph: "loc. + adv."
+            gloss_en: on supports
+            morph: loc. pl. m.
+          - word: athavā aśaktyā
+            iast: athavā aśaktyā
+            gloss_en: or through inability
+            morph: phrase
+          - word: jñānāt
+            iast: jñānāt
+            gloss_en: from knowledge
+            morph: abl. sg. n.
+          - word: vā
+            iast: vā
+            gloss_en: or
+            morph: conj.
+          - word: deśa-kalpanāt
+            iast: deśa-kalpanāt
+            gloss_en: from imagining a place
+            morph: abl. sg. m. cpd.
+          - word: ujjāte śakti-saṃśobhe
+            iast: ujjāte śakti-saṃśobhe
+            gloss_en: when the splendor of Śakti has arisen
+            morph: loc. abs.
+          - word: śānte paścāt tadā bhavet
+            iast: śānte paścāt tadā bhavet
+            gloss_en: afterward, when (it is) pacified, then (the supreme state) arises
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2621,18 +4461,38 @@ chapters:
         iast: "upaviśyāsane samyag bāhū kṛtvārdhakuñcitau | kakṣavyomni manaḥ kurvan śamam āyāti tallayāt"
         meter: anuṣṭubh
         word_glosses:
-          - word: ardha-kuñcitau bāhū
-            iast: ardha-kuñcitau bāhū
-            gloss_en: "the two arms half-bent"
-            morph: "acc. dual m."
+          - word: upaviśya
+            iast: upaviśya
+            gloss_en: having sat down
+            morph: ger. √upa-viś
+          - word: āsane samyak
+            iast: āsane samyak
+            gloss_en: rightly on a seat
+            morph: phrase
+          - word: bāhū kṛtvā
+            iast: bāhū kṛtvā
+            gloss_en: having made the arms
+            morph: phrase
+          - word: ardha-kuñcitau
+            iast: ardha-kuñcitau
+            gloss_en: half-bent
+            morph: acc. du. m. cpd.
           - word: kakṣa-vyomni
             iast: kakṣa-vyomni
-            gloss_en: "in the void of the armpits"
-            morph: "loc. sg. n."
-          - word: śamam
-            iast: śamam
-            gloss_en: "tranquillity"
-            morph: "acc. sg. m."
+            gloss_en: in the void of the armpits
+            morph: loc. sg. n. cpd.
+          - word: manaḥ kurvan
+            iast: manaḥ kurvan
+            gloss_en: placing the mind
+            morph: phrase
+          - word: śamam āyāti
+            iast: śamam āyāti
+            gloss_en: (one) comes to peace
+            morph: phrase
+          - word: tat-layāt
+            iast: tat-layāt
+            gloss_en: by absorption in that
+            morph: abl. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2650,16 +4510,28 @@ chapters:
         word_glosses:
           - word: sthūla-rūpasya bhāvasya
             iast: sthūla-rūpasya bhāvasya
-            gloss_en: "of an object of gross form"
-            morph: "gen. sg. m."
-          - word: stabdhām dṛṣṭim
-            iast: stabdhām dṛṣṭim
-            gloss_en: "motionless gaze"
-            morph: "acc. sg. f."
-          - word: śivaṃ vrajet
-            iast: śivaṃ vrajet
-            gloss_en: "should go to Śiva"
-            morph: "acc. + 3 sg. opt."
+            gloss_en: of a gross-formed object
+            morph: phrase
+          - word: stabdhām dṛṣṭim nipātya
+            iast: stabdhām dṛṣṭim nipātya
+            gloss_en: having cast a steady gaze
+            morph: phrase
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: acireṇa
+            iast: acireṇa
+            gloss_en: soon
+            morph: adv.
+          - word: nirādhāram manaḥ kṛtvā
+            iast: nirādhāram manaḥ kṛtvā
+            gloss_en: having made the mind supportless
+            morph: phrase
+          - word: śivam vrajet
+            iast: śivam vrajet
+            gloss_en: one goes to Śiva
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2677,16 +4549,28 @@ chapters:
         word_glosses:
           - word: madhya-jihve
             iast: madhya-jihve
-            gloss_en: "with tongue in the middle (raised to the palate)"
-            morph: "loc. sg. f."
-          - word: mantram uccaran
-            iast: mantram uccaran
-            gloss_en: "uttering the mantra"
-            morph: "acc. + nom. sg. m. part."
+            gloss_en: in the middle of the tongue
+            morph: loc. sg. f. cpd.
+          - word: sphārita-āsye
+            iast: sphārita-āsye
+            gloss_en: with mouth opened wide
+            morph: loc. sg. m. cpd.
+          - word: madhye nikṣipya cetanām
+            iast: madhye nikṣipya cetanām
+            gloss_en: casting awareness in the middle
+            morph: phrase
+          - word: uccaran manasā mantram
+            iast: uccaran manasā mantram
+            gloss_en: uttering the mantra mentally
+            morph: phrase
+          - word: śivaḥ dhyāyan
+            iast: śivaḥ dhyāyan
+            gloss_en: meditating on Śiva
+            morph: phrase
           - word: praśāmyati
             iast: praśāmyati
-            gloss_en: "becomes wholly pacified"
-            morph: "3 sg. pres."
+            gloss_en: (the yogin) comes to perfect rest
+            morph: 3sg. pres. √śam
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2945,18 +4829,26 @@ chapters:
         iast: "gītādiviṣayāsvādāsamasaukhyaikatātmanaḥ | yoginas tanmayatvena manorūḍhes tadātmatā"
         meter: anuṣṭubh
         word_glosses:
-          - word: gītādi-viṣaya-āsvāda
-            iast: gītādi-viṣaya-āsvāda
-            gloss_en: "the relishing of song and other objects"
-            morph: "stem in cpd."
-          - word: asama-saukhya
-            iast: asama-saukhya
-            gloss_en: "unmatched joy"
-            morph: "stem in cpd."
-          - word: tadātmatā
-            iast: tadātmatā
-            gloss_en: "identity with That"
-            morph: "nom. sg. f."
+          - word: gītā-ādi-viṣaya-āsvāda-asama-saukhya-ekatā-ātmanaḥ
+            iast: gītā-ādi-viṣaya-āsvāda-asama-saukhya-ekatā-ātmanaḥ
+            gloss_en: of one whose nature is the singular bliss of relishing song, etc.
+            morph: gen. sg. m. cpd.
+          - word: yoginaḥ
+            iast: yoginaḥ
+            gloss_en: for the yogin
+            morph: gen. sg. m.
+          - word: tan-mayatvena
+            iast: tan-mayatvena
+            gloss_en: by identification with that
+            morph: inst. sg. n. cpd.
+          - word: manaḥ-rūḍheḥ
+            iast: manaḥ-rūḍheḥ
+            gloss_en: owing to the ascent of the mind
+            morph: abl. sg. f. cpd.
+          - word: tat-ātmatā
+            iast: tat-ātmatā
+            gloss_en: is identity with That
+            morph: nom. sg. f. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -2972,18 +4864,38 @@ chapters:
         iast: "yatra yatrātmanas tuṣṭir manas tatraiva dhārayet | tatra tatra parānandasvarūpaṃ sampravartate"
         meter: anuṣṭubh
         word_glosses:
+          - word: yatra yatra
+            iast: yatra yatra
+            gloss_en: wherever
+            morph: adv. correlative
           - word: ātmanaḥ tuṣṭiḥ
             iast: ātmanaḥ tuṣṭiḥ
-            gloss_en: "satisfaction of the self"
-            morph: "nom. sg. f."
+            gloss_en: satisfaction of the Self (occurs)
+            morph: phrase
+          - word: manaḥ
+            iast: manaḥ
+            gloss_en: the mind
+            morph: nom. sg. n.
+          - word: tatra eva
+            iast: tatra eva
+            gloss_en: right there
+            morph: adv.
           - word: dhārayet
             iast: dhārayet
-            gloss_en: "should hold"
-            morph: "3 sg. opt."
-          - word: parānanda-svarūpam
-            iast: parānanda-svarūpam
-            gloss_en: "the form of supreme bliss"
-            morph: "nom. sg. n."
+            gloss_en: one should hold
+            morph: 3sg. opt. √dhṛ
+          - word: tatra tatra
+            iast: tatra tatra
+            gloss_en: there, in every such place
+            morph: adv. correlative
+          - word: para-ānanda-svarūpam
+            iast: para-ānanda-svarūpam
+            gloss_en: the own-nature of supreme bliss
+            morph: nom. sg. n. cpd.
+          - word: sampravartate
+            iast: sampravartate
+            gloss_en: rolls forth fully
+            morph: 3sg. pres. √vṛt
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -3001,16 +4913,24 @@ chapters:
         word_glosses:
           - word: anāgatāyām nidrāyām
             iast: anāgatāyām nidrāyām
-            gloss_en: "when sleep is not yet come"
-            morph: "loc. abs."
-          - word: pranaṣṭe bāhyagocare
-            iast: pranaṣṭe bāhyagocare
-            gloss_en: "when the outer field has vanished"
-            morph: "loc. abs."
-          - word: parā devī
-            iast: parā devī
-            gloss_en: "the Supreme Goddess"
-            morph: "nom. sg. f."
+            gloss_en: when sleep has not yet come
+            morph: loc. abs.
+          - word: pranaṣṭe bāhya-gocare
+            iast: pranaṣṭe bāhya-gocare
+            gloss_en: when the external sphere has vanished
+            morph: loc. abs.
+          - word: sā avasthā
+            iast: sā avasthā
+            gloss_en: that state
+            morph: phrase
+          - word: manasā gamyā
+            iast: manasā gamyā
+            gloss_en: is to be reached by the mind
+            morph: phrase
+          - word: parā devī prakāśate
+            iast: parā devī prakāśate
+            gloss_en: the supreme Goddess shines forth
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -3026,18 +4946,30 @@ chapters:
         iast: "tejasā sūryadīpāder ākāśe śabalīkṛte | dṛṣṭe svātmani bhāyukte saccidānandagocaraḥ"
         meter: anuṣṭubh
         word_glosses:
-          - word: sūrya-dīpa-ādeḥ tejasā
-            iast: sūrya-dīpa-ādeḥ tejasā
-            gloss_en: "by the brilliance of sun, lamp, etc."
-            morph: "inst. sg. n."
-          - word: śabalī-kṛte
-            iast: śabalī-kṛte
-            gloss_en: "made variegated"
-            morph: "loc. sg. n."
-          - word: sac-cid-ānanda-gocaraḥ
-            iast: sac-cid-ānanda-gocaraḥ
-            gloss_en: "the range of being-consciousness-bliss"
-            morph: "nom. sg. m."
+          - word: tejasā
+            iast: tejasā
+            gloss_en: with light
+            morph: inst. sg. n.
+          - word: sūrya-dīpa-ādeḥ
+            iast: sūrya-dīpa-ādeḥ
+            gloss_en: of the sun, a lamp, etc.
+            morph: gen. sg. m. cpd.
+          - word: ākāśe śabalī-kṛte
+            iast: ākāśe śabalī-kṛte
+            gloss_en: when the space has been variegated
+            morph: loc. abs.
+          - word: dṛṣṭe sva-ātmani
+            iast: dṛṣṭe sva-ātmani
+            gloss_en: when one's own Self is seen
+            morph: loc. abs.
+          - word: bhā-yukte
+            iast: bhā-yukte
+            gloss_en: endowed with that radiance
+            morph: loc. sg. m. cpd.
+          - word: sat-cit-ānanda-gocaraḥ
+            iast: sat-cit-ānanda-gocaraḥ
+            gloss_en: (arises) the sphere of being-consciousness-bliss
+            morph: nom. sg. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -3053,18 +4985,42 @@ chapters:
         iast: "karaṅkiṇyā krodhanayā bhairavyā lelihānayā | khecaryā dṛṣṭikāle ca parāvāptiḥ prakāśate"
         meter: anuṣṭubh
         word_glosses:
-          - word: karaṅkiṇyā / krodhanayā / lelihānayā / khecaryā
-            iast: karaṅkiṇyā / krodhanayā / lelihānayā / khecaryā
-            gloss_en: "the five mudrās (named for postures)"
-            morph: "inst. sg. f."
+          - word: karaṅkiṇyā
+            iast: karaṅkiṇyā
+            gloss_en: by Karaṅkiṇī
+            morph: inst. sg. f.
+          - word: krodhanayā
+            iast: krodhanayā
+            gloss_en: by Krodhanā
+            morph: inst. sg. f.
+          - word: bhairavyā
+            iast: bhairavyā
+            gloss_en: by Bhairavī
+            morph: inst. sg. f.
+          - word: lelihānayā
+            iast: lelihānayā
+            gloss_en: by Lelihānā
+            morph: inst. sg. f.
+          - word: khecaryā
+            iast: khecaryā
+            gloss_en: by Khecarī
+            morph: inst. sg. f.
           - word: dṛṣṭi-kāle
             iast: dṛṣṭi-kāle
-            gloss_en: "at the time of (the practice of) gaze"
-            morph: "loc. sg. m."
-          - word: parā-āptiḥ
-            iast: parā-āptiḥ
-            gloss_en: "attainment of the Supreme"
-            morph: "nom. sg. f."
+            gloss_en: at the time of the gaze
+            morph: loc. sg. m. cpd.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
+          - word: para-āvāptiḥ
+            iast: para-āvāptiḥ
+            gloss_en: the supreme attainment
+            morph: nom. sg. f. cpd.
+          - word: prakāśate
+            iast: prakāśate
+            gloss_en: shines forth
+            morph: 3sg. pres. √kāś
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -3080,18 +5036,30 @@ chapters:
         iast: "mṛdvāsane sphijaikena hastapādau nirāśrayau | nidhāya tatprasaṅgena parā pūrṇā matir bhavet"
         meter: anuṣṭubh
         word_glosses:
-          - word: mṛdv-āsane
-            iast: mṛdv-āsane
-            gloss_en: "on a soft seat"
-            morph: "loc. sg. n."
-          - word: sphija-ekena
-            iast: sphija-ekena
-            gloss_en: "with one buttock"
-            morph: "inst. sg. m."
-          - word: parā pūrṇā matiḥ
-            iast: parā pūrṇā matiḥ
-            gloss_en: "the supreme, full insight"
-            morph: "nom. sg. f."
+          - word: mṛdu-āsane
+            iast: mṛdu-āsane
+            gloss_en: on a soft seat
+            morph: loc. sg. n. cpd.
+          - word: sphijā ekena
+            iast: sphijā ekena
+            gloss_en: with a single hip (uneven seat)
+            morph: phrase
+          - word: hasta-pādau nir-āśrayau
+            iast: hasta-pādau nir-āśrayau
+            gloss_en: the hand and foot without support
+            morph: phrase
+          - word: nidhāya
+            iast: nidhāya
+            gloss_en: having placed
+            morph: ger. √ni-dhā
+          - word: tat-prasaṅgena
+            iast: tat-prasaṅgena
+            gloss_en: by virtue of this
+            morph: inst. sg. m.
+          - word: parā pūrṇā matiḥ bhavet
+            iast: parā pūrṇā matiḥ bhavet
+            gloss_en: supreme full insight arises
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4052,18 +6020,26 @@ chapters:
         iast: "yasya kasyāpi dehe'smin pratyayo'haṃkṛto bhavet | tasyaiva kṣudrasaṃvitter bhairavatvaṃ prakāśate"
         meter: anuṣṭubh
         word_glosses:
-          - word: pratyayaḥ
-            iast: pratyayaḥ
-            gloss_en: "notion, conviction"
-            morph: "nom. sg. m."
-          - word: ahaṃkṛtaḥ
-            iast: ahaṃkṛtaḥ
-            gloss_en: "made into 'I'"
-            morph: "nom. sg. m."
-          - word: bhairavatvam
-            iast: bhairavatvam
-            gloss_en: "the state of Bhairava"
-            morph: "nom. sg. n."
+          - word: yasya kasya api dehe asmin
+            iast: yasya kasya api dehe asmin
+            gloss_en: of whoever, in this body
+            morph: phrase
+          - word: pratyayaḥ aham-kṛtaḥ bhavet
+            iast: pratyayaḥ aham-kṛtaḥ bhavet
+            gloss_en: the conviction 'I am' arises
+            morph: phrase
+          - word: tasya eva
+            iast: tasya eva
+            gloss_en: for him alone
+            morph: phrase
+          - word: kṣudra-saṃvitteḥ
+            iast: kṣudra-saṃvitteḥ
+            gloss_en: from a tiny awareness
+            morph: abl. sg. f. cpd.
+          - word: bhairavatvam prakāśate
+            iast: bhairavatvam prakāśate
+            gloss_en: Bhairava-hood shines forth
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4079,18 +6055,26 @@ chapters:
         iast: "śrīdevy uvāca | devadeva mahādeva paripūrṇo'si me prabho | śaṅkarasya tvam evātmā śaktir jagati śāśvatī"
         meter: anuṣṭubh
         word_glosses:
-          - word: paripūrṇaḥ
-            iast: paripūrṇaḥ
-            gloss_en: "wholly fulfilled"
-            morph: "nom. sg. m."
-          - word: ātmā
-            iast: ātmā
-            gloss_en: "the very Self"
-            morph: "nom. sg. m."
-          - word: śāśvatī śaktiḥ
-            iast: śāśvatī śaktiḥ
-            gloss_en: "the eternal Power"
-            morph: "nom. sg. f."
+          - word: śrīdevī uvāca
+            iast: śrīdevī uvāca
+            gloss_en: the blessed Goddess said
+            morph: phrase
+          - word: devadeva mahādeva
+            iast: devadeva mahādeva
+            gloss_en: O God of gods, Great God
+            morph: voc. cpd.
+          - word: paripūrṇaḥ asi me prabho
+            iast: paripūrṇaḥ asi me prabho
+            gloss_en: you are wholly fulfilled for me, O Lord
+            morph: phrase
+          - word: śaṅkarasya tvam eva ātmā
+            iast: śaṅkarasya tvam eva ātmā
+            gloss_en: you alone are the Self of Śaṅkara
+            morph: phrase
+          - word: śaktiḥ jagati śāśvatī
+            iast: śaktiḥ jagati śāśvatī
+            gloss_en: the eternal Power in the world
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4106,18 +6090,34 @@ chapters:
         iast: "yathā tvayā kṛpāviṣṭam idaṃ rahasyam uddhṛtam | tathaiva kasyāpi vacyaṃ śrotre pātre na tat kṣipet"
         meter: anuṣṭubh
         word_glosses:
-          - word: kṛpā-āviṣṭam
-            iast: kṛpā-āviṣṭam
-            gloss_en: "filled with compassion"
-            morph: "acc. sg. n."
-          - word: rahasyam uddhṛtam
-            iast: rahasyam uddhṛtam
-            gloss_en: "the secret brought up"
-            morph: "acc. sg. n."
-          - word: pātre / na pātre
-            iast: pātre / na pātre
-            gloss_en: "to a worthy / to an unworthy ear"
-            morph: "loc. sg. n."
+          - word: yathā tvayā kṛpā-āviṣṭam
+            iast: yathā tvayā kṛpā-āviṣṭam
+            gloss_en: as, filled with grace by you
+            morph: phrase
+          - word: idam rahasyam
+            iast: idam rahasyam
+            gloss_en: this secret
+            morph: phrase
+          - word: uddhṛtam
+            iast: uddhṛtam
+            gloss_en: (has been) revealed
+            morph: ppp. nom. sg. n.
+          - word: tathā eva
+            iast: tathā eva
+            gloss_en: in that same way
+            morph: adv.
+          - word: kasya api vacyam
+            iast: kasya api vacyam
+            gloss_en: to anyone it is to be spoken (cautiously)
+            morph: phrase
+          - word: śrotre pātre
+            iast: śrotre pātre
+            gloss_en: into a fitting ear
+            morph: loc. sg. n.
+          - word: na tat kṣipet
+            iast: na tat kṣipet
+            gloss_en: should not cast it
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4133,18 +6133,30 @@ chapters:
         iast: "idaṃ vijñānam uditaṃ jarāmaraṇanāśanam | brahmādidevavandyasya manthānabhairavasya ca"
         meter: anuṣṭubh
         word_glosses:
+          - word: idam vijñānam
+            iast: idam vijñānam
+            gloss_en: this gnosis
+            morph: phrase
+          - word: uditam
+            iast: uditam
+            gloss_en: has arisen
+            morph: ppp. nom. sg. n.
           - word: jarā-maraṇa-nāśanam
             iast: jarā-maraṇa-nāśanam
-            gloss_en: "destroyer of old age and death"
-            morph: "nom. sg. n."
+            gloss_en: destroyer of old age and death
+            morph: nom. sg. n. cpd.
           - word: brahma-ādi-deva-vandyasya
             iast: brahma-ādi-deva-vandyasya
-            gloss_en: "of him who is praised by Brahmā and other gods"
-            morph: "gen. sg. m."
-          - word: manthāna-bhairava
-            iast: manthāna-bhairava
-            gloss_en: "the Churning Bhairava"
-            morph: "stem in cpd."
+            gloss_en: of the one venerated by Brahmā and the gods
+            morph: gen. sg. m. cpd.
+          - word: manthāna-bhairavasya
+            iast: manthāna-bhairavasya
+            gloss_en: of Manthāna-Bhairava
+            morph: gen. sg. m.
+          - word: ca
+            iast: ca
+            gloss_en: and
+            morph: conj.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4160,18 +6172,26 @@ chapters:
         iast: "anākhyātam idaṃ tantraṃ bhogamokṣavidhāyakam | anākhyātam idaṃ tantraṃ tebhyo dattaṃ hi līlayā"
         meter: anuṣṭubh
         word_glosses:
-          - word: anākhyātam
-            iast: anākhyātam
-            gloss_en: "unproclaimed (hitherto)"
-            morph: "nom. sg. n."
+          - word: anākhyātam idam tantram
+            iast: anākhyātam idam tantram
+            gloss_en: this is the unspoken Tantra
+            morph: phrase
           - word: bhoga-mokṣa-vidhāyakam
             iast: bhoga-mokṣa-vidhāyakam
-            gloss_en: "bestowing both worldly enjoyment and liberation"
-            morph: "nom. sg. n."
-          - word: līlayā
-            iast: līlayā
-            gloss_en: "in play"
-            morph: "inst. sg. f."
+            gloss_en: bestower of enjoyment and liberation
+            morph: nom. sg. n. cpd.
+          - word: anākhyātam idam tantram
+            iast: anākhyātam idam tantram
+            gloss_en: this unspoken Tantra
+            morph: phrase
+          - word: tebhyaḥ dattam
+            iast: tebhyaḥ dattam
+            gloss_en: is given to them
+            morph: phrase
+          - word: hi līlayā
+            iast: hi līlayā
+            gloss_en: indeed, as a play
+            morph: adv.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4214,18 +6234,34 @@ chapters:
         iast: "yatra yatra kathañcit tu kartṛkarmaviviktatā | tatra tatra śivāvasthā vyāpakatvāt kva yāsyati"
         meter: anuṣṭubh
         word_glosses:
+          - word: yatra yatra
+            iast: yatra yatra
+            gloss_en: wherever
+            morph: adv. correlative
+          - word: kathañcit tu
+            iast: kathañcit tu
+            gloss_en: in any manner whatsoever
+            morph: adv.
           - word: kartṛ-karma-viviktatā
             iast: kartṛ-karma-viviktatā
-            gloss_en: "separation of doer and deed"
-            morph: "nom. sg. f."
+            gloss_en: discrimination of agent from action arises
+            morph: nom. sg. f. cpd.
+          - word: tatra tatra
+            iast: tatra tatra
+            gloss_en: there, in every such case
+            morph: adv. correlative
           - word: śiva-avasthā
             iast: śiva-avasthā
-            gloss_en: "the Śiva-state"
-            morph: "nom. sg. f."
+            gloss_en: the state of Śiva
+            morph: nom. sg. f. cpd.
           - word: vyāpakatvāt
             iast: vyāpakatvāt
-            gloss_en: "due to all-pervasiveness"
-            morph: "abl. sg. n."
+            gloss_en: owing to (his) all-pervasiveness
+            morph: abl. sg. n.
+          - word: kva yāsyati
+            iast: kva yāsyati
+            gloss_en: where could it possibly go?
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4241,18 +6277,26 @@ chapters:
         iast: "evaṃ vijñānam ālambya yogino jāyate śivaḥ | tīrthādiṣu ca jātyo'pi snānādiṣu na kāraṇam"
         meter: anuṣṭubh
         word_glosses:
-          - word: vijñānam ālambya
-            iast: vijñānam ālambya
-            gloss_en: "depending on this knowledge"
-            morph: "acc. + abs."
+          - word: evam vijñānam ālambya
+            iast: evam vijñānam ālambya
+            gloss_en: relying on this gnosis
+            morph: phrase
+          - word: yoginaḥ jāyate śivaḥ
+            iast: yoginaḥ jāyate śivaḥ
+            gloss_en: the yogin becomes Śiva
+            morph: phrase
           - word: tīrtha-ādiṣu
             iast: tīrtha-ādiṣu
-            gloss_en: "in pilgrimage-places, etc."
-            morph: "loc. pl. m."
-          - word: snāna-ādiṣu
-            iast: snāna-ādiṣu
-            gloss_en: "in ritual bathing, etc."
-            morph: "loc. pl. n."
+            gloss_en: in pilgrimage places, etc.
+            morph: loc. pl. n. cpd.
+          - word: ca jātyaḥ api
+            iast: ca jātyaḥ api
+            gloss_en: even if of (some) caste-birth
+            morph: phrase
+          - word: snāna-ādiṣu na kāraṇam
+            iast: snāna-ādiṣu na kāraṇam
+            gloss_en: in bathing etc., (there is) no requirement
+            morph: phrase
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -4430,22 +6474,30 @@ chapters:
         iast: "iti vijñānabhairave śrīdevyā stavanātmakam | śataikaṃ dvādaśādhikam uktaṃ bhedavivarjitam"
         meter: anuṣṭubh
         word_glosses:
-          - word: vijñāna-bhairave
-            iast: vijñāna-bhairave
-            gloss_en: "in (the text) Vijñāna-Bhairava"
-            morph: "loc. sg. m."
-          - word: stavana-ātmakam
-            iast: stavana-ātmakam
-            gloss_en: "of the nature of praise"
-            morph: "nom. sg. n."
-          - word: śataikam dvādaśādhikam
-            iast: śataikam dvādaśādhikam
-            gloss_en: "one hundred plus twelve (= 112)"
-            morph: "nom. sg. n."
+          - word: iti vijñāna-bhairave
+            iast: iti vijñāna-bhairave
+            gloss_en: thus in the Vijñāna Bhairava
+            morph: phrase
+          - word: śrīdevyā stavana-ātmakam
+            iast: śrīdevyā stavana-ātmakam
+            gloss_en: consisting of the praise by the Goddess
+            morph: phrase
+          - word: śatam ekam
+            iast: śatam ekam
+            gloss_en: one hundred
+            morph: phrase
+          - word: dvādaśa-adhikam
+            iast: dvādaśa-adhikam
+            gloss_en: with twelve added
+            morph: adj. cpd.
+          - word: uktam
+            iast: uktam
+            gloss_en: is declared
+            morph: ppp. nom. sg. n.
           - word: bheda-vivarjitam
             iast: bheda-vivarjitam
-            gloss_en: "free of division"
-            morph: "nom. sg. n."
+            gloss_en: free of division
+            morph: acc. sg. n. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"

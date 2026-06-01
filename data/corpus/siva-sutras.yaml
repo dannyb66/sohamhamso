@@ -481,18 +481,18 @@ chapters:
         iast: "bhūta-sandhāna-bhūta-pṛthaktva-viśva-saṅghaṭṭāḥ"
         meter: sūtra
         word_glosses:
-          - word: bhūta-sandhāna
-            iast: bhūta-sandhāna
-            gloss_en: "joining (separated) elements/beings"
-            morph: "n., tatpuruṣa cpd. (stem)"
+          - word: bhūta-saṃdhāna
+            iast: bhūta-saṃdhāna
+            gloss_en: joining the elements (to their essence)
+            morph: stem in cpd.
           - word: bhūta-pṛthaktva
             iast: bhūta-pṛthaktva
-            gloss_en: "separating (joined) elements/beings"
-            morph: "n., tatpuruṣa cpd. (stem)"
-          - word: viśva-saṅghaṭṭāḥ
-            iast: viśva-saṅghaṭṭāḥ
-            gloss_en: "and unifying the entire universe (with oneself)"
-            morph: "nom. pl. m., tatpuruṣa cpd."
+            gloss_en: separating the elements (from disease etc.)
+            morph: stem in cpd.
+          - word: viśva-saṃghaṭṭāḥ
+            iast: viśva-saṃghaṭṭāḥ
+            gloss_en: and the conjoinings of (parts of) the world (= the siddhis)
+            morph: nom. pl. m. cpd.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -709,10 +709,14 @@ chapters:
         iast: "mātṛkā-cakra-sambodhaḥ"
         meter: sūtra
         word_glosses:
-          - word: mātṛkā-cakra-sambodhaḥ
-            iast: mātṛkā-cakra-sambodhaḥ
-            gloss_en: "(comes from the guru:) full awakening to the wheel of the Mātṛkā (matrix of phonemes)"
-            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: mātṛkā-cakra
+            iast: mātṛkā-cakra
+            gloss_en: the wheel of mātṛkā (the alphabet-goddess)
+            morph: stem in cpd.
+          - word: saṃbodhaḥ
+            iast: saṃbodhaḥ
+            gloss_en: (comes) the full awakening
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
@@ -1458,12 +1462,12 @@ chapters:
         word_glosses:
           - word: kathā
             iast: kathā
-            gloss_en: "(ordinary) speech"
-            morph: "nom. sg. f."
+            gloss_en: talk (the yogin's speech)
+            morph: nom. sg. f.
           - word: japaḥ
             iast: japaḥ
-            gloss_en: "(is his) japa/recitation"
-            morph: "nom. sg. m."
+            gloss_en: becomes japa (mantric recitation)
+            morph: nom. sg. m.
         translations:
           - lang: en
             translator: "public-domain composite"
