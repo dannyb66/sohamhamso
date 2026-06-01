@@ -10,10 +10,11 @@
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import VerseAnatomy from "../../../../components/VerseAnatomy.astro";
 import AIAssistedBadge from "../../../../components/AIAssistedBadge.astro";
+import ParallelChip from "../../../../components/ParallelChip.astro";
 import ScriptSwitcher from "../../../../components/ScriptSwitcher.solid";
 import WordSheet from "../../../../components/WordSheet.solid";
 import TranslationDrawer from "../../../../components/TranslationDrawer.solid";
-import { listTexts, listAllVerses, getVerse, getVerseTranslations } from "../../../../lib/db";
+import { listTexts, listAllVerses, getVerse, getVerseTranslations, getDb } from "../../../../lib/db";
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -64,7 +65,39 @@ const pageDescription =
   translations[0]?.translation_text?.slice(0, 160) ??
   `${textRow.title_en}, verse ${chapterNum}.${verseNum} — Sanskrit verse anatomy with word-by-word translation.`;
 
+// Compute "more occurrences in this text" counts for each lemma in this
+// verse's glosses. Counts DISTINCT verses (excluding the current verse)
+// where the same lemma_iast appears across the same text. Used by the
+// WordSheet's "N more occurrences →" link. Single SQL round-trip; empty
+// lemma rows are skipped.
+const lemmaIasts = Array.from(
+  new Set(wordGlosses.map((g) => g.lemma_iast).filter((s): s is string => !!s)),
+);
+const occurrenceCounts = new Map<string, number>();
+if (lemmaIasts.length > 0) {
+  const db = getDb();
+  const placeholders = lemmaIasts.map(() => "?").join(",");
+  const rows = db
+    .query<{ lemma_iast: string; n: number }, (string | number)[]>(`
+      SELECT g.lemma_iast AS lemma_iast, COUNT(DISTINCT g.verse_id) AS n
+      FROM word_glosses g
+      JOIN verses v ON v.id = g.verse_id
+      WHERE v.text_id = ?
+        AND g.verse_id != ?
+        AND g.lemma_iast IN (${placeholders})
+      GROUP BY g.lemma_iast
+    `)
+    .all(textRow.id, verseRow.id, ...lemmaIasts);
+  for (const r of rows) {
+    occurrenceCounts.set(r.lemma_iast, r.n);
+  }
+}
+
 // Group glosses by verse_id for the WordSheet's window.__wordGlosses lookup.
+// `occurrence_count` is the number of *other* verses in this text that
+// contain the same lemma; 0/undefined hides the "more occurrences" link.
+// `text_slug` is injected once so WordSheet can build search URLs without
+// needing additional payload.
 const glossesPayload = {
   [String(verseRow.id)]: wordGlosses.map((g) => ({
     word_idx: g.word_idx,
@@ -73,6 +106,10 @@ const glossesPayload = {
     lemma_iast: g.lemma_iast,
     gloss_text: g.gloss_text,
     morph: g.morph,
+    occurrence_count: g.lemma_iast
+      ? occurrenceCounts.get(g.lemma_iast) ?? 0
+      : 0,
+    text_slug: textRow.slug,
   })),
 };
 
@@ -133,11 +170,7 @@ const translationsPayload = allTranslations.map((t) => ({
             generatedAt={t.reviewed_at}
           />
         ))}
-        {parallels.length > 0 ? (
-          <span class="chip chip--parallels" aria-label={`${parallels.length} parallels`}>
-            📜 parallels ({parallels.length})
-          </span>
-        ) : null}
+        <ParallelChip parallels={parallels} />
       </Fragment>
 
       <Fragment slot="footer">

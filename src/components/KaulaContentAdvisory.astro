@@ -1,0 +1,88 @@
+---
+/**
+ * KaulaContentAdvisory — inline scholarly-context notice for Kaula texts.
+ *
+ * Renders only when the text's `school` field is "kaula" (case-insensitive).
+ * V1 corpus contains no Kaula texts; this component lies dormant until
+ * Phase 2/3 Kulārṇava + Krama-corpus material lands.
+ *
+ * Per the design plan: NOT a modal. Anti-pattern. Renders as a calm,
+ * inline notice block at the top of text-overview pages — never on
+ * verse pages (would be too noisy when scrolling).
+ *
+ * Copy is locked by the plan; do not paraphrase without product sign-off.
+ */
+interface Props {
+  school?: string | null;
+}
+
+const { school } = Astro.props;
+const isKaula = typeof school === "string" && school.toLowerCase().includes("kaula");
+---
+
+{isKaula ? (
+  <aside class="kaula-advisory" role="note" aria-label="Scholarly access notice">
+    <div class="kaula-advisory__icon" aria-hidden="true">⚠</div>
+    <div class="kaula-advisory__body">
+      <p class="kaula-advisory__title">Scholarly access</p>
+      <p class="kaula-advisory__text">
+        These texts traditionally require dīkṣā (initiation) and lineage
+        transmission for full study. They are published here for scholarly
+        access. Engage with appropriate context.
+      </p>
+    </div>
+  </aside>
+) : null}
+
+<style>
+  .kaula-advisory {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-3);
+    align-items: start;
+    margin-block: var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
+    border-inline-start: 3px solid #B45309; /* warm-amber rule */
+    background: #FFFBEB; /* amber-50 */
+    border-radius: 0 6px 6px 0;
+    max-width: var(--width-reader);
+  }
+  .kaula-advisory__icon {
+    font-size: var(--text-md);
+    line-height: 1.4;
+    color: #B45309;
+  }
+  .kaula-advisory__body {
+    min-width: 0;
+  }
+  .kaula-advisory__title {
+    margin: 0 0 4px 0;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #78350F;
+  }
+  .kaula-advisory__text {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+
+  :root[data-theme="dark"] .kaula-advisory,
+  :root[data-theme="oled"] .kaula-advisory {
+    background: #3F2A0A;
+    border-inline-start-color: #FCD34D;
+  }
+  :root[data-theme="dark"] .kaula-advisory__icon,
+  :root[data-theme="oled"] .kaula-advisory__icon {
+    color: #FCD34D;
+  }
+  :root[data-theme="dark"] .kaula-advisory__title,
+  :root[data-theme="oled"] .kaula-advisory__title {
+    color: #FCD34D;
+  }
+</style>

@@ -17,6 +17,7 @@
 import { Database } from "bun:sqlite";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
+import { existsSync } from "node:fs";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -137,13 +138,19 @@ let _db: Database | null = null;
 
 /**
  * Resolve the SQLite file path. Defaults to `<repo>/db/sohamhamso.db`.
- * Resolved relative to this source file so it works both in `astro dev`
- * and `astro build` regardless of cwd.
+ * Priority order:
+ *   1. SOHAMHAMSO_DB_PATH env var (explicit override)
+ *   2. <cwd>/db/sohamhamso.db (works during `astro build` — cwd is the project root)
+ *   3. <source-relative>/../../db/sohamhamso.db (works during `astro dev` and tests)
+ * The cwd fallback exists because `astro build` bundles this module under
+ * `dist/_worker.js/chunks/...`, so `import.meta.url` resolves to the wrong
+ * place during getStaticPaths execution.
  */
 function dbPath(): string {
-  // ESM-safe __dirname
+  if (process.env.SOHAMHAMSO_DB_PATH) return process.env.SOHAMHAMSO_DB_PATH;
+  const cwdPath = resolve(process.cwd(), "db", "sohamhamso.db");
+  if (existsSync(cwdPath)) return cwdPath;
   const here = dirname(fileURLToPath(import.meta.url));
-  // src/lib/db.ts → ../../db/sohamhamso.db
   return resolve(here, "..", "..", "db", "sohamhamso.db");
 }
 

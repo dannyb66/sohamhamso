@@ -21,6 +21,10 @@ interface GlossEntry {
   lemma_iast?: string | null;
   gloss_text: string;
   morph?: string | null;
+  /** Number of other verses in the same text containing this lemma. */
+  occurrence_count?: number;
+  /** Slug of the text the gloss belongs to — used to scope the search link. */
+  text_slug?: string;
 }
 
 declare global {
@@ -168,6 +172,17 @@ export default function WordSheet() {
             </div>
           </Show>
 
+          <Show when={(gloss()?.occurrence_count ?? 0) > 0 && gloss()?.lemma_iast}>
+            <p class="word-sheet__occurrences">
+              <a
+                class="word-sheet__occurrences-link"
+                href={`/search?q=${encodeURIComponent(gloss()?.lemma_iast ?? "")}`}
+              >
+                {gloss()?.occurrence_count} more occurrence{gloss()?.occurrence_count === 1 ? "" : "s"} in this text →
+              </a>
+            </p>
+          </Show>
+
           <p class="word-sheet__cologne">
             <a
               href={`https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/indexcaller.php?key=${encodeURIComponent(
@@ -303,6 +318,18 @@ export default function WordSheet() {
           margin: 0;
           font-family: var(--font-chrome);
           font-size: var(--text-sm);
+        }
+        .word-sheet__occurrences {
+          margin: 0;
+          font-family: var(--font-chrome);
+          font-size: var(--text-sm);
+        }
+        .word-sheet__occurrences-link {
+          color: var(--color-ink);
+          text-decoration: none;
+        }
+        .word-sheet__occurrences-link:hover {
+          text-decoration: underline;
         }
       `}</style>
     </Show>
