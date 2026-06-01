@@ -57,7 +57,7 @@ test.describe('ISSUE-004 — script switcher drives reader-language', () => {
     expect(translationLang).toBe('ta');
   });
 
-  test('picking IAST resets the reader-language to English', async ({ page }) => {
+  test('picking English resets the reader-language to English', async ({ page }) => {
     await page.goto('/trika/siva-sutras/1/1');
     await page.evaluate(() => {
       localStorage.setItem('sohamhamso:reader-lang', 'kn');
@@ -72,13 +72,16 @@ test.describe('ISSUE-004 — script switcher drives reader-language', () => {
     }
     await trigger.click();
 
-    // IAST is the romanization scheme; mapped to English in the unified contract.
-    const iast = page.locator('.script-switcher__row:has-text("IAST")').first();
-    if (!(await iast.count())) {
-      test.info().annotations.push({ type: 'skip', description: 'IAST row not present' });
+    // Post-2026-06-01: the picker is a unified "reading mode" picker.
+    // The English row binds langCode='en' + scriptId='iast' (IAST is the
+    // Latin transliteration scheme — the catalogue collapsed the old
+    // separate "IAST" row into the English reading mode).
+    const english = page.locator('.script-switcher__row:has-text("English")').first();
+    if (!(await english.count())) {
+      test.info().annotations.push({ type: 'skip', description: 'English row not present' });
       return;
     }
-    await iast.click();
+    await english.click();
     await page.waitForTimeout(300);
 
     const readerLang = await page.evaluate(() =>

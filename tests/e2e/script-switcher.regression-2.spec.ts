@@ -105,10 +105,17 @@ test.describe('ISSUE-005 — verse-anatomy script layout contract', () => {
     expect(line2, 'line 2 must contain Tamil glyphs').toMatch(TAMIL_RANGE);
   });
 
-  test('Devanāgarī mode: line 2 stays IAST (effective script = iast fallback)', async ({
+  test('Hindi mode: line 2 stays IAST (effective script = iast fallback)', async ({
     page,
   }) => {
-    // Start in Bengali to verify switching BACK to Devanāgarī restores IAST line 2.
+    // Post-2026-06-01: the unified READING_MODES catalogue is lang-keyed,
+    // so there is no standalone "Devanāgarī" row anymore — Hindi
+    // (scriptId='devanagari', langCode='hi') and Marathi
+    // (scriptId='devanagari', langCode='mr') both ride Devanāgarī.
+    // The Devanāgarī → IAST line-2 fallback is the same regardless of
+    // which Devanāgarī-bearing language is picked; this test exercises
+    // it via Hindi. Reader-lang must end at 'hi' (not 'en' as in the
+    // pre-catalogue build).
     await page.goto('/trika/siva-sutras/1/1');
     await page.evaluate(() => {
       localStorage.setItem('sohamhamso:script', 'bengali');
@@ -118,24 +125,24 @@ test.describe('ISSUE-005 — verse-anatomy script layout contract', () => {
     await page.waitForLoadState('networkidle');
 
     await page.locator('.script-switcher__trigger').first().click();
-    const devaRow = page.locator('.script-switcher__row:has-text("Devanāgarī")').first();
-    if (!(await devaRow.count())) {
-      test.info().annotations.push({ type: 'skip', description: 'Devanāgarī row not present' });
+    const hindiRow = page.locator('.script-switcher__row:has-text("Hindi")').first();
+    if (!(await hindiRow.count())) {
+      test.info().annotations.push({ type: 'skip', description: 'Hindi row not present' });
       return;
     }
-    await devaRow.click();
+    await hindiRow.click();
     await page.waitForTimeout(300);
 
     const line2 = await page.locator('.verse-iast').first().textContent();
-    // Devanāgarī mode → line 2 must be IAST (Latin), NOT Devanāgarī.
+    // Devanāgarī-bearing mode → line 2 must be IAST (Latin), NOT Devanāgarī.
     expect(line2 ?? '').toMatch(/[a-zA-Z]/);
     expect(line2 ?? '').not.toMatch(DEVANAGARI_LETTERS);
     expect(line2 ?? '').not.toMatch(BENGALI_RANGE);
 
-    // The script→language map should have set reader-lang to 'en'.
+    // The Hindi reading mode persists reader-lang='hi'.
     const readerLang = await page.evaluate(() =>
       localStorage.getItem('sohamhamso:reader-lang'),
     );
-    expect(readerLang).toBe('en');
+    expect(readerLang).toBe('hi');
   });
 });
