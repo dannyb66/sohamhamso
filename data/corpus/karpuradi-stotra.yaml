@@ -1,0 +1,997 @@
+text:
+  id: karpuradi-stotra
+  slug: karpuradi-stotra
+  title_sa: कर्पूरादिस्तोत्रम्
+  title_en: Karpūrādi Stotra
+  title_iast: Karpūrādi-stotra
+  author: null
+  tradition: shakta
+  school: kaula
+  era: "circa 8th-10th century CE"
+  source: "sanskritdocuments.org (encoded by Mike Magee); reference translation: John Woodroffe (Arthur Avalon), 'Hymn to Kali: Karpūrādi-stotra' (1922), public domain"
+  source_url: "https://sanskritdocuments.org/doc_devii/karpuuraadi.html"
+  source_revision: "2000-08-23"
+  license: CC-BY-SA
+  parent_text_id: null
+  manuscript_url: null
+  description: |
+    Karpūrādi Stotra ("Hymn beginning with the syllable Karpūra") — a
+    Śākta Tantric hymn to the Goddess Dakṣiṇa-Kālī, structured around
+    her twenty-two-syllable mantra. Each verse describes the esoteric
+    realisation of a single syllable, encoded in a deliberately
+    obscure "twilight language" (sandhyā-bhāṣā). Famously translated
+    and published by John Woodroffe (Arthur Avalon) in 1922 as "Hymn
+    to Kali", which serves as our reference anchor (now public domain).
+    Twenty-two verses plus a closing colophon attributing the hymn to
+    Mahā-Kālī herself.
+
+chapters:
+  - chapter: 1
+    title_sa: कर्पूरादिस्तोत्रम्
+    title_iast: Karpūrādi-stotram
+    title_en: Karpūrādi Stotra
+    verses:
+      - verse: 1
+        devanagari: |
+          कर्पूरं मध्यमान्त्यस्वरपरिरहितं सेन्दुवामाक्षियुक्तं
+          बीजं ते मातरेतत्त्रिपुरहरवधु त्रिःकृतं ये जपन्ति ।
+          तेषां गद्यानि पद्यानि च मुखकुहरादुल्लसन्त्येव वाचः
+          स्वच्छन्दं ध्वान्तधाराधररुचिरुचिरे सर्वसिद्धिं गतानाम् ॥ १॥
+        iast: "karpūraṃ madhyamāntyasvaraparirahitaṃ sendu-vāmākṣi-yuktaṃ / bījaṃ te mātar etat tripura-hara-vadhu triḥkṛtaṃ ye japanti / teṣāṃ gadyāni padyāni ca mukha-kuhārād ullasanty eva vācaḥ / svacchandaṃ dhvānta-dhārā-dhara-ruci-rucire sarva-siddhiṃ gatānām // 1 //"
+        meter: śārdūlavikrīḍita
+        word_glosses:
+          - word: कर्पूरम्
+            iast: karpūram
+            gloss_en: camphor (i.e. the syllable Kraṃ — first syllable of the Kālī mantra)
+            morph: nom. sg. n.
+          - word: बीजम्
+            iast: bījam
+            gloss_en: seed-syllable (of the mantra)
+            morph: nom. sg. n.
+          - word: मातर्
+            iast: mātar
+            gloss_en: O Mother
+            morph: voc. sg. f.
+          - word: त्रिपुरहरवधु
+            iast: tripura-hara-vadhu
+            gloss_en: O Spouse of the Slayer of the three cities (Śiva)
+            morph: voc. sg. f. cpd.
+          - word: त्रिःकृतम्
+            iast: triḥ-kṛtam
+            gloss_en: repeated thrice
+            morph: acc. sg. n.
+          - word: जपन्ति
+            iast: japanti
+            gloss_en: they recite (silently)
+            morph: 3pl. pres. √jap
+          - word: सर्वसिद्धिम्
+            iast: sarva-siddhim
+            gloss_en: every attainment, perfect accomplishment
+            morph: acc. sg. f. cpd.
+          - word: ध्वान्तधाराधर
+            iast: dhvānta-dhārā-dhara
+            gloss_en: dark as a rain-laden cloud
+            morph: epithet cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother and Spouse of the Slayer of the three cities — they who recite, three times repeated, this Thy seed-syllable (Karpūra, without its middle and final vowels, joined with the half-moon and the left eye), upon them, O Thou whose beauty is that of a rain-cloud at twilight, prose and verse flow at will from the cavern of the mouth, and all perfections come to them."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 2
+        devanagari: |
+          ईशानः सेन्दुवामश्रवणपरिगतो बीजमन्यन्महेशि
+          द्वन्द्वं ते मन्दचेता यदि जपति जनो वारमेकं कदाचित् ।
+          जित्वा वाचामधीशं धनमपि च चिरं मोहयन्नम्बुजाक्षीवृन्दं
+          चन्द्रार्धचूडे प्रभवति स महाघोरबालावतंसे ॥ २॥
+        iast: "īśānaḥ sendu-vāma-śravaṇa-parigato bījam anyan maheśi / dvandvaṃ te manda-cetā yadi japati jano vāram ekaṃ kadācit / jitvā vācām adhīśaṃ dhanam api ca ciraṃ mohayann ambujākṣī-vṛndaṃ / candrārdha-cūḍe prabhavati sa mahāghora-bālāvataṃse // 2 //"
+        meter: śārdūlavikrīḍita
+        word_glosses:
+          - word: ईशानः
+            iast: īśānaḥ
+            gloss_en: "the syllable Hūṃ (lit. 'lord', a coded name for Ha)"
+            morph: nom. sg. m.
+          - word: महेशि
+            iast: maheśi
+            gloss_en: O great Goddess
+            morph: voc. sg. f.
+          - word: मन्दचेताः
+            iast: manda-cetāḥ
+            gloss_en: of dull or undeveloped mind
+            morph: nom. sg. m. cpd.
+          - word: जपति
+            iast: japati
+            gloss_en: recites
+            morph: 3sg. pres. √jap
+          - word: चन्द्रार्धचूडे
+            iast: candrārdha-cūḍe
+            gloss_en: O Thou with the crescent moon as crest
+            morph: voc. sg. f. cpd.
+          - word: महाघोरबालावतंसे
+            iast: mahāghora-bālāvataṃse
+            gloss_en: O Thou wearing terrible children (skulls) as ornaments
+            morph: voc. sg. f. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Great Goddess crowned with the crescent moon and adorned with the dreadful skulls of children — should even a dull-minded man recite even once Thy second pair of seed-syllables (Īśāna joined with the half-moon and the left ear, a doubled bīja), he conquers the Lord of Speech, gains lasting wealth, and bewitches the host of lotus-eyed women."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 3
+        devanagari: |
+          ईशो वैश्वानरस्थः शशधरविलसद्वामनेत्रेण युक्तो
+          बीजं ते द्वन्द्वमन्यद् विगलितचिकुरे कालिके ये जपन्ति ।
+          द्वेष्टारं घ्नन्ति ते च त्रिभुवनमपि ते वश्यभावं नयन्ति
+          सृक्कद्वन्द्वास्रधाराद्वयधरवदने दक्षिणे त्र्यक्षरेति ॥ ३॥
+        iast: "īśo vaiśvānara-sthaḥ śaśadhara-vilasad-vāma-netreṇa yukto / bījaṃ te dvandvam anyad vigalita-cikure kālike ye japanti / dveṣṭāraṃ ghnanti te ca tribhuvanam api te vaśya-bhāvaṃ nayanti / sṛkka-dvandvāsra-dhārā-dvaya-dhara-vadane dakṣiṇe tryakṣareti // 3 //"
+        meter: śārdūlavikrīḍita
+        word_glosses:
+          - word: कालिके
+            iast: kālike
+            gloss_en: O Kālikā
+            morph: voc. sg. f.
+          - word: विगलितचिकुरे
+            iast: vigalita-cikure
+            gloss_en: O Thou with loosened hair
+            morph: voc. sg. f. cpd.
+          - word: द्वेष्टारम्
+            iast: dveṣṭāram
+            gloss_en: enemy, hater
+            morph: acc. sg. m.
+          - word: त्रिभुवनम्
+            iast: tribhuvanam
+            gloss_en: the three worlds
+            morph: acc. sg. n.
+          - word: वश्यभावम्
+            iast: vaśya-bhāvam
+            gloss_en: into subjugation
+            morph: acc. sg. m. cpd.
+          - word: दक्षिणे
+            iast: dakṣiṇe
+            gloss_en: O Dakṣiṇā (Kālī facing south)
+            morph: voc. sg. f.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Kālikā with loosened hair, O Dakṣiṇā whose face streams with two rivulets of blood from both corners of Thy mouth — those who recite Thy other twin seed-syllable (Īśa seated in Fire, joined with the moon-bearing left eye), they slay their enemies and bring all three worlds into subjugation; thus Thy threefold mantra."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 4
+        devanagari: |
+          ऊर्ध्वे वामे कृपाणं करकमलतले छिन्नमुण्डं तथाधः
+          सव्ये चाभीर्वरं च त्रिजगदघहरे दक्षिणे कालिके च ।
+          जप्त्वैतन्नाम ये वा तव मनुविभवं भावयन्त्येतदम्ब
+          तेषामष्टौ करस्थाः प्रकटितरदने सिद्धयस्त्र्यम्बकस्य ॥ ४॥
+        iast: "ūrdhve vāme kṛpāṇaṃ kara-kamala-tale chinna-muṇḍaṃ tathādhaḥ / savye cābhīr varaṃ ca trijagad-agha-hare dakṣiṇe kālike ca / japtvaitan nāma ye vā tava manu-vibhavaṃ bhāvayanty etad amba / teṣām aṣṭau karasthāḥ prakaṭita-radane siddhayas tryambakasya // 4 //"
+        meter: sragdharā
+        word_glosses:
+          - word: कृपाणम्
+            iast: kṛpāṇam
+            gloss_en: sword
+            morph: acc. sg. n.
+          - word: छिन्नमुण्डम्
+            iast: chinna-muṇḍam
+            gloss_en: severed head
+            morph: acc. sg. n. cpd.
+          - word: अभीः
+            iast: abhīḥ
+            gloss_en: the gesture of fearlessness (abhaya-mudrā)
+            morph: nom. sg. f.
+          - word: वरम्
+            iast: varam
+            gloss_en: the boon-granting gesture (vara-mudrā)
+            morph: acc. sg. m./n.
+          - word: त्रिजगदघहरे
+            iast: trijagad-agha-hare
+            gloss_en: O Remover of the sins of the three worlds
+            morph: voc. sg. f. cpd.
+          - word: सिद्धयः
+            iast: siddhayaḥ
+            gloss_en: the perfections (the eight aṇimādi siddhis)
+            morph: nom. pl. f.
+          - word: त्र्यम्बकस्य
+            iast: tryambakasya
+            gloss_en: of the three-eyed Lord (Śiva)
+            morph: gen. sg. m.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother, O Kālikā, O Remover of the sins of the three worlds, O Dakṣiṇā with teeth bared — bearing in Thy upper left palm a sword and below it a severed head, and in Thy right hands the gestures of fearlessness and of granting boons — those who, having recited this Thy name, meditate on the majesty of Thy mantra, the eight perfections of the Three-Eyed One rest in their hands."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 5
+        devanagari: |
+          वर्गाद्यं वह्निसंस्थं विधुरतिललितं तत्त्रयं कूर्चयुग्मं
+          लज्जाद्वन्द्वं च पश्चात् स्मितमुखि तदधष्ठद्वयं योजयित्वा ।
+          मातर्ये ये जपन्ति स्मरहरमहिले भावयन्तः स्वरूपं
+          ते लक्ष्मीलास्यलीलाकमलदलदृशः कामरूपा भवन्ति ॥ ५॥
+        iast: "vargādyaṃ vahni-saṃsthaṃ vidhur ati-lalitaṃ tat-trayaṃ kūrca-yugmaṃ / lajjā-dvandvaṃ ca paścāt smita-mukhi tad-adhaḥ-ṣṭha-dvayaṃ yojayitvā / mātar ye ye japanti smara-hara-mahile bhāvayantaḥ svarūpaṃ / te lakṣmī-lāsya-līlā-kamala-dala-dṛśaḥ kāma-rūpā bhavanti // 5 //"
+        meter: sragdharā
+        word_glosses:
+          - word: मातर्
+            iast: mātar
+            gloss_en: O Mother
+            morph: voc. sg. f.
+          - word: स्मरहरमहिले
+            iast: smara-hara-mahile
+            gloss_en: O Consort of the Slayer of the god of love (Śiva)
+            morph: voc. sg. f. cpd.
+          - word: स्मितमुखि
+            iast: smita-mukhi
+            gloss_en: O Thou with smiling face
+            morph: voc. sg. f. cpd.
+          - word: स्वरूपम्
+            iast: svarūpam
+            gloss_en: Thy true form
+            morph: acc. sg. n.
+          - word: कामरूपाः
+            iast: kāma-rūpāḥ
+            gloss_en: able to assume any form at will
+            morph: nom. pl. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother with smiling face, Consort of Him who slew the god of love — they who, joining together the syllables in the prescribed order and meditating on Thy true form, recite Thy mantra, become themselves able to take any form at will, with eyes like the play of Lakṣmī upon lotus-petals."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 6
+        devanagari: |
+          प्रत्येकं वा द्वयं वा त्रयमपि च परं बीजमत्यन्तगुह्यं
+          त्वन्नाम्ना योजयित्वा सकलमपि सदा भावयन्तो जपन्ति ।
+          तेषां नेत्रारविन्दे विहरति कमला वक्त्रशुभ्रांशुबिम्बे
+          वाग्देवी देवि मुण्डस्रगतिशयलसत्कण्ठि पीनस्तनाढ्ये ॥ ६॥
+        iast: "pratyekaṃ vā dvayaṃ vā trayam api ca paraṃ bījam atyanta-guhyaṃ / tvan-nāmnā yojayitvā sakalam api sadā bhāvayanto japanti / teṣāṃ netrāravinde viharati kamalā vaktra-śubhrāṃśu-bimbe / vāg-devī devi muṇḍa-srag-atiśaya-lasat-kaṇṭhi pīna-stanāḍhye // 6 //"
+        meter: sragdharā
+        word_glosses:
+          - word: अत्यन्तगुह्यम्
+            iast: atyanta-guhyam
+            gloss_en: utterly secret
+            morph: acc. sg. n. cpd.
+          - word: कमला
+            iast: kamalā
+            gloss_en: Lakṣmī (goddess of fortune)
+            morph: nom. sg. f.
+          - word: वाग्देवी
+            iast: vāg-devī
+            gloss_en: Sarasvatī (goddess of speech)
+            morph: nom. sg. f. cpd.
+          - word: मुण्डस्रक्
+            iast: muṇḍa-srak
+            gloss_en: garland of skulls
+            morph: nom. sg. f. cpd.
+          - word: पीनस्तनाढ्ये
+            iast: pīna-stanāḍhye
+            gloss_en: O Thou rich with full breasts
+            morph: voc. sg. f. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Goddess garlanded with skulls, full-breasted — those who recite, singly or in twos or threes, the supreme and most secret seed-syllables joined with Thy name, ever meditating on the whole, in their lotus-eyes Lakṣmī sports, and in their bright moon-faces dwells the Goddess of Speech."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 7
+        devanagari: |
+          गतासूनां बाहुप्रकरकृतकाञ्चीपरिलसन्नितम्बां
+          दिग्वस्त्रां त्रिभुवनविधात्रीं त्रिणयनाम् ।
+          श्मशानस्थे तल्पे शवहृदि महाकालसुरतप्रयुक्तां
+          त्वां ध्यायन् जननि जडचेता अपि कविः ॥ ७॥
+        iast: "gatāsūnāṃ bāhu-prakara-kṛta-kāñcī-parilasan-nitambāṃ / dig-vastrāṃ tribhuvana-vidhātrīṃ tri-nayanām / śmaśāna-sthe talpe śava-hṛdi mahākāla-surata-prayuktāṃ / tvāṃ dhyāyañ janani jaḍa-cetā api kaviḥ // 7 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: दिग्वस्त्राम्
+            iast: dig-vastrām
+            gloss_en: clothed in the directions (i.e. naked)
+            morph: acc. sg. f. cpd.
+          - word: त्रिभुवनविधात्रीम्
+            iast: tribhuvana-vidhātrīm
+            gloss_en: ordainer of the three worlds
+            morph: acc. sg. f. cpd.
+          - word: श्मशानस्थे तल्पे
+            iast: śmaśāna-sthe talpe
+            gloss_en: on a couch set in the cremation ground
+            morph: loc. sg. n.
+          - word: महाकालसुरतप्रयुक्ताम्
+            iast: mahākāla-surata-prayuktām
+            gloss_en: engaged in love with Mahākāla (the great Time, Śiva)
+            morph: acc. sg. f. cpd.
+          - word: जडचेताः
+            iast: jaḍa-cetāḥ
+            gloss_en: of dull mind
+            morph: nom. sg. m. cpd.
+          - word: कविः
+            iast: kaviḥ
+            gloss_en: becomes a poet
+            morph: nom. sg. m.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother — even a dull-minded man becomes a poet who meditates on Thee, whose hips gleam with a girdle made of the arms of the slain, who art clothed in the four directions, the ordainer of the three worlds, three-eyed, upon a couch in the cremation ground on the breast of a corpse, joined in love with Mahākāla."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 8
+        devanagari: |
+          शिवाभिर्घोराभिः शवनिवहमुण्डास्थिनिकरैः
+          परं संकीर्णायां प्रकटितचितायां हरवधूम् ।
+          प्रविष्टां सन्तुष्टामुपरिसुरतेनातियुवतीं
+          सदा त्वां ध्यायन्ति क्वचिदपि च न तेषां परिभवः ॥ ८॥
+        iast: "śivābhir ghorābhiḥ śava-nivaha-muṇḍāsthi-nikaraiḥ / paraṃ saṃkīrṇāyāṃ prakaṭita-citāyāṃ hara-vadhūm / praviṣṭāṃ santuṣṭām upari-suratenāti-yuvatīṃ / sadā tvāṃ dhyāyanti kvacid api ca na teṣāṃ paribhavaḥ // 8 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: शिवाभिः
+            iast: śivābhiḥ
+            gloss_en: with she-jackals
+            morph: inst. pl. f.
+          - word: चितायाम्
+            iast: citāyām
+            gloss_en: on the funeral pyre
+            morph: loc. sg. f.
+          - word: हरवधूम्
+            iast: hara-vadhūm
+            gloss_en: bride of Hara (Śiva)
+            morph: acc. sg. f. cpd.
+          - word: अतियुवतीम्
+            iast: ati-yuvatīm
+            gloss_en: ever-youthful
+            morph: acc. sg. f.
+          - word: परिभवः
+            iast: paribhavaḥ
+            gloss_en: defeat, humiliation
+            morph: nom. sg. m.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Those who ever meditate on Thee — Bride of Hara, ever-youthful and well-pleased upon Thy lover, entered into the pyre lit upon a cremation ground thick with terrible she-jackals and heaps of skulls and bones of the slain — they meet defeat nowhere."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 9
+        devanagari: |
+          वदामस्ते किं वा जननि वयमुच्चैर्जडधियो
+          न धाता नापीशो हरिरपि न ते वेत्ति परमम् ।
+          तथापि त्वद्भक्तिर्मुखरयति चास्माकममिते
+          तदेतत्क्षन्तव्यं न खलु पशुरोषः समुचितः ॥ ९॥
+        iast: "vadāmas te kiṃ vā janani vayam uccair jaḍa-dhiyo / na dhātā nāpīśo harir api na te vetti paramam / tathāpi tvad-bhaktir mukharayati cāsmākam amite / tad etat kṣantavyaṃ na khalu paśu-roṣaḥ samucitaḥ // 9 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: जननि
+            iast: janani
+            gloss_en: O Mother
+            morph: voc. sg. f.
+          - word: जडधियः
+            iast: jaḍa-dhiyaḥ
+            gloss_en: of dull intellect
+            morph: nom. pl. m. cpd.
+          - word: धाता
+            iast: dhātā
+            gloss_en: Brahmā (the Creator)
+            morph: nom. sg. m.
+          - word: हरिः
+            iast: hariḥ
+            gloss_en: Viṣṇu
+            morph: nom. sg. m.
+          - word: भक्तिः
+            iast: bhaktiḥ
+            gloss_en: devotion
+            morph: nom. sg. f.
+          - word: क्षन्तव्यम्
+            iast: kṣantavyam
+            gloss_en: must be forgiven
+            morph: gerundive n.
+          - word: पशुरोषः
+            iast: paśu-roṣaḥ
+            gloss_en: anger toward a beast (i.e. a being still bound)
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother, what indeed can we, the dull of intellect, presume to say of Thee? Brahmā does not know Thy supreme nature, nor Īśa, nor even Hari. Yet devotion to Thee makes even us, O Boundless One, speak. Therefore forgive what we say — for anger toward the bound creature is unbecoming."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 10
+        devanagari: |
+          समन्तादापीनस्तनजघनधृग्यौवनवती-
+          रतासक्तो नक्तं यदि जपति भक्तस्तव मनुम् ।
+          विवासास्त्वां ध्यायन् गलितचिकुरस्तस्य वशगाः
+          समस्ताः सिद्धौघा भुवि चिरतरं जीवति कविः ॥ १०॥
+        iast: "samantād āpīna-stana-jaghana-dhṛg-yauvanavatī-/ ratāsakto naktaṃ yadi japati bhaktas tava manum / vivāsās tvāṃ dhyāyan galita-cikuras tasya vaśa-gāḥ / samastāḥ siddhaughā bhuvi cirataraṃ jīvati kaviḥ // 10 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: नक्तम्
+            iast: naktam
+            gloss_en: at night
+            morph: adv.
+          - word: भक्तः
+            iast: bhaktaḥ
+            gloss_en: devotee
+            morph: nom. sg. m.
+          - word: मनुम्
+            iast: manum
+            gloss_en: Thy mantra
+            morph: acc. sg. m.
+          - word: विवासाः
+            iast: vivāsāḥ
+            gloss_en: naked
+            morph: nom. sg. m.
+          - word: सिद्धौघाः
+            iast: siddhaughāḥ
+            gloss_en: hosts of perfections
+            morph: nom. pl. m. cpd.
+          - word: चिरतरम्
+            iast: cirataram
+            gloss_en: for a very long time
+            morph: adv.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "If a devotee at night, naked, with loosened hair, meditating on Thee, recites Thy mantra — even amid the embraces of full-breasted, broad-hipped, youthful women — all the hosts of perfections become his servants, and he lives long on the earth as a poet."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 11
+        devanagari: |
+          समाः सुस्थीभूतो जपति विपरीतां यदि सदा
+          विचिन्त्य त्वां ध्यायन्नतिशयमहाकालसुरताम् ।
+          तदा तस्य क्षोणीतलविहरमाणस्य विदुषः
+          कराम्भोजे वश्या पुरहरवधू सिद्धिनिवहाः ॥ ११॥
+        iast: "samāḥ susthī-bhūto japati viparītāṃ yadi sadā / vicintya tvāṃ dhyāyann atiśaya-mahākāla-suratām / tadā tasya kṣoṇī-tala-viharamāṇasya viduṣaḥ / karāmbhoje vaśyā purahara-vadhū siddhi-nivahāḥ // 11 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: समाः
+            iast: samāḥ
+            gloss_en: for years
+            morph: acc. pl. f.
+          - word: सुस्थीभूतः
+            iast: susthī-bhūtaḥ
+            gloss_en: well-settled, composed
+            morph: nom. sg. m. cpd.
+          - word: विपरीताम्
+            iast: viparītām
+            gloss_en: in the inverted (viparīta) posture
+            morph: acc. sg. f.
+          - word: क्षोणीतल
+            iast: kṣoṇī-tala
+            gloss_en: surface of the earth
+            morph: stem in cpd.
+          - word: कराम्भोजे
+            iast: karāmbhoje
+            gloss_en: in his lotus-hand
+            morph: loc. sg. n. cpd.
+          - word: सिद्धिनिवहाः
+            iast: siddhi-nivahāḥ
+            gloss_en: hosts of perfections
+            morph: nom. pl. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "If, well-composed, he recites Thy mantra for years, ever meditating on Thee united most intensely with Mahākāla in the inverted posture — then for that wise man, wandering the earth, the Consort of the City-Slayer and all the hosts of perfections become servants resting in his lotus-hand."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 12
+        devanagari: |
+          प्रसूते संसारं जननि भवती पालयति च
+          समस्तं क्षित्यादि प्रलयसमये संहरति च ।
+          अतस्त्वं धात्रीसि त्रिभुवनपतिः श्रीपतिरपि
+          महेशोऽपि प्रायः सकलमपि किं स्तौमि भवतीम् ॥ १२॥
+        iast: "prasūte saṃsāraṃ janani bhavatī pālayati ca / samastaṃ kṣity-ādi pralaya-samaye saṃharati ca / atas tvaṃ dhātrī si tribhuvana-patiḥ śrī-patir api / maheśo 'pi prāyaḥ sakalam api kiṃ staumi bhavatīm // 12 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: प्रसूते
+            iast: prasūte
+            gloss_en: brings forth, generates
+            morph: 3sg. pres. mid. √sū
+          - word: संसारम्
+            iast: saṃsāram
+            gloss_en: the round of existence
+            morph: acc. sg. m.
+          - word: पालयति
+            iast: pālayati
+            gloss_en: protects, maintains
+            morph: 3sg. pres. caus. √pāl
+          - word: संहरति
+            iast: saṃharati
+            gloss_en: dissolves, withdraws
+            morph: 3sg. pres. √hṛ
+          - word: धात्री
+            iast: dhātrī
+            gloss_en: the Creatrix
+            morph: nom. sg. f.
+          - word: स्तौमि
+            iast: staumi
+            gloss_en: I praise
+            morph: 1sg. pres. √stu
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother, Thou bringest forth the round of existence, Thou dost maintain it whole — earth and all — and at the hour of dissolution Thou dost withdraw it. Thus Thou art Creatrix, Lord of the three worlds, Consort of Śrī, and the Great Lord as well — Thou art all. How then shall I praise Thee?"
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 13
+        devanagari: |
+          अनेके सेवन्ते भवदधिगिर्वाणनिवहान्
+          विमूढास्ते मातः किमपि न हि जानन्ति परमम् ।
+          समाराध्यामाद्यां हरिहरविरिञ्चादिविबुधैः
+          प्रपन्नोऽस्मि स्वैरं रतिरससमहानन्दनिरताम् ॥ १३॥
+        iast: "aneke sevante bhavad-adhi-girvāṇa-nivahān / vimūḍhās te mātaḥ kim api na hi jānanti paramam / samārādhyām ādyāṃ hari-hara-viriñcādi-vibudhaiḥ / prapanno 'smi svairaṃ rati-rasa-sa-mahānanda-niratām // 13 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: सेवन्ते
+            iast: sevante
+            gloss_en: worship, serve
+            morph: 3pl. pres. mid. √sev
+          - word: विमूढाः
+            iast: vimūḍhāḥ
+            gloss_en: utterly confused
+            morph: nom. pl. m.
+          - word: समाराध्याम्
+            iast: samārādhyām
+            gloss_en: worthy of perfect worship
+            morph: acc. sg. f. gerundive
+          - word: आद्याम्
+            iast: ādyām
+            gloss_en: the Primordial
+            morph: acc. sg. f.
+          - word: प्रपन्नोऽस्मि
+            iast: prapanno 'smi
+            gloss_en: I have taken refuge
+            morph: 1sg. perf. pass. + cop.
+          - word: रतिरस
+            iast: rati-rasa
+            gloss_en: the savour of erotic delight
+            morph: stem in cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Many worship the host of gods who are beneath Thee — utterly confused, O Mother, they know nothing of the supreme. I have taken refuge, freely and at will, in Thee — the Primordial One worshipped by Hari, Hara, Viriñca, and all the wise — ever absorbed in the great bliss of erotic delight."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 14
+        devanagari: |
+          धरित्री कीलालं शुचिरपि समीरोऽपि गगनं
+          त्वमेका कल्याणी गिरिशरमणी कालि सकलम् ।
+          प्रसन्ना त्वं भूया भवमनु न भूयान्मम जनुः ॥ १४॥
+        iast: "dharitrī kīlālaṃ śucir api samīro 'pi gaganaṃ / tvam ekā kalyāṇī giri-śa-ramaṇī kāli sakalam / prasannā tvaṃ bhūyā bhavam anu na bhūyān mama januḥ // 14 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: धरित्री
+            iast: dharitrī
+            gloss_en: the earth
+            morph: nom. sg. f.
+          - word: कीलालम्
+            iast: kīlālam
+            gloss_en: water
+            morph: nom. sg. n.
+          - word: शुचिः
+            iast: śuciḥ
+            gloss_en: fire
+            morph: nom. sg. m.
+          - word: समीरः
+            iast: samīraḥ
+            gloss_en: wind
+            morph: nom. sg. m.
+          - word: गगनम्
+            iast: gaganam
+            gloss_en: ether, sky
+            morph: nom. sg. n.
+          - word: गिरिशरमणी
+            iast: giri-śa-ramaṇī
+            gloss_en: O Beloved of the Lord of the mountain (Śiva)
+            morph: voc. sg. f. cpd.
+          - word: प्रसन्ना
+            iast: prasannā
+            gloss_en: gracious, favourable
+            morph: nom. sg. f.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Earth, water, fire, wind, ether — Thou alone, O auspicious Kālī, beloved of the Mountain-Lord, art the whole. Be Thou gracious to me, and may I have no further birth in this world."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 15
+        devanagari: |
+          श्मशानस्थः सुस्थो गलितचिकुरो दिक्पटधरः
+          सहस्रं त्वर्कार्णां निजगलितवीर्येण कुसुमम् ।
+          जपंस्त्वत्प्रत्येकं मनुमपि तव ध्याननिरतो
+          महाकालि स्वैरं स भवति धरित्रीपरिवृढः ॥ १५॥
+        iast: "śmaśāna-sthaḥ sustho galita-cikuro dik-paṭa-dharaḥ / sahasraṃ tv arkārṇāṃ nija-galita-vīryeṇa kusumam / japaṃs tvat-pratyekaṃ manum api tava dhyāna-nirato / mahākāli svairaṃ sa bhavati dharitrī-parivṛḍhaḥ // 15 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: श्मशानस्थः
+            iast: śmaśāna-sthaḥ
+            gloss_en: standing in the cremation ground
+            morph: nom. sg. m. cpd.
+          - word: सहस्रम्
+            iast: sahasram
+            gloss_en: a thousand
+            morph: acc. sg. n.
+          - word: अर्कार्णाम्
+            iast: arkārṇām
+            gloss_en: red flowers of the arka (calotropis)
+            morph: gen. pl. m. cpd.
+          - word: ध्याननिरतः
+            iast: dhyāna-nirataḥ
+            gloss_en: absorbed in meditation
+            morph: nom. sg. m. cpd.
+          - word: महाकालि
+            iast: mahākāli
+            gloss_en: O Great Kālī
+            morph: voc. sg. f.
+          - word: धरित्रीपरिवृढः
+            iast: dharitrī-parivṛḍhaḥ
+            gloss_en: lord of the earth
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Standing well-poised in the cremation ground, with loosened hair, clothed in the four directions, offering a thousand arka-flowers smeared with his own seed, absorbed in meditation on Thee while reciting Thy mantra in private — that man, O Great Kālī, becomes at will the lord of the earth."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 16
+        devanagari: |
+          गृहे सम्मार्ज्यन्या परिगलितवीर्यं हि चिकुरं
+          समूलं मध्याह्ने वितरति चितायां कुजदिने ।
+          समुच्चार्य प्रेम्णा मनुमपि सकृत्कालि सततं
+          गजारूढो याति क्षितिपरिवृढः सत्कविवरः ॥ १६॥
+        iast: "gṛhe sammārjyanyā parigalita-vīryaṃ hi cikuraṃ / samūlaṃ madhyāhne vitarati citāyāṃ kuja-dine / samuccārya premṇā manum api sakṛt kāli satataṃ / gajārūḍho yāti kṣiti-parivṛḍhaḥ sat-kavi-varaḥ // 16 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: गृहे
+            iast: gṛhe
+            gloss_en: at home
+            morph: loc. sg. n.
+          - word: मध्याह्ने
+            iast: madhyāhne
+            gloss_en: at midday
+            morph: loc. sg. m.
+          - word: चितायाम्
+            iast: citāyām
+            gloss_en: on the pyre
+            morph: loc. sg. f.
+          - word: कुजदिने
+            iast: kuja-dine
+            gloss_en: on a Tuesday
+            morph: loc. sg. n. cpd.
+          - word: सकृत्
+            iast: sakṛt
+            gloss_en: once
+            morph: adv.
+          - word: गजारूढः
+            iast: gajārūḍhaḥ
+            gloss_en: mounted on an elephant
+            morph: nom. sg. m. cpd.
+          - word: सत्कविवरः
+            iast: sat-kavi-varaḥ
+            gloss_en: foremost among true poets
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "He who, at midday on a Tuesday, offers in the cremation ground his loose hair with its root and his fallen seed, and with love once utters Thy mantra — O Kālī, he ever becomes lord of the earth, mounted on an elephant, foremost among true poets."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 17
+        devanagari: |
+          स्वपुष्पैराकीर्णं कुसुमधनुषो मन्दिरमहो
+          पुरो ध्यायन्ध्यायन् यदि जपति भक्तस्तव मनुम् ।
+          स गन्धर्वश्रेणीपतिरपि कवित्वामृतनदी-
+          नदीनः पर्यन्ते परमपदलीनः प्रभवति ॥ १७॥
+        iast: "sva-puṣpair ākīrṇaṃ kusuma-dhanuṣo mandiram aho / puro dhyāyan-dhyāyan yadi japati bhaktas tava manum / sa gandharva-śreṇī-patir api kavitvāmṛta-nadī-/ nadīnaḥ paryante parama-pada-līnaḥ prabhavati // 17 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: कुसुमधनुषः
+            iast: kusuma-dhanuṣaḥ
+            gloss_en: of the Flower-bowed One (Kāma, god of love)
+            morph: gen. sg. m. cpd.
+          - word: मन्दिरम्
+            iast: mandiram
+            gloss_en: temple, dwelling
+            morph: acc. sg. n.
+          - word: भक्तः
+            iast: bhaktaḥ
+            gloss_en: devotee
+            morph: nom. sg. m.
+          - word: गन्धर्वश्रेणीपतिः
+            iast: gandharva-śreṇī-patiḥ
+            gloss_en: lord of the band of gandharvas (celestial musicians)
+            morph: nom. sg. m. cpd.
+          - word: कवित्वामृतनदीनदीनः
+            iast: kavitvāmṛta-nadī-nadīnaḥ
+            gloss_en: unbroken stream of the nectar-river of poetry
+            morph: nom. sg. m. cpd.
+          - word: परमपदलीनः
+            iast: parama-pada-līnaḥ
+            gloss_en: absorbed in the supreme state
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "If a devotee, gazing again and again upon a temple of the Flower-bowed god strewn with his own offerings, recites Thy mantra — he becomes lord of the gandharva bands, an unfailing river of the nectar of poetry, and at the end, dissolved in the supreme state."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 18
+        devanagari: |
+          त्रिपञ्चारे पीठे शवशिवहृदि स्मेरवदनां
+          महाकालेनोच्चैर्मदनरसलावण्यनिरताम् ।
+          समासक्तो नक्तं स्वयमपि रतानन्दनिरतो
+          जनो यो ध्यायेत्त्वामयि जननि स स्यात् स्मरहरः ॥ १८॥
+        iast: "tri-pañcāre pīṭhe śava-śiva-hṛdi smera-vadanāṃ / mahākālenoccair madana-rasa-lāvaṇya-niratām / samāsakto naktaṃ svayam api ratānanda-nirato / jano yo dhyāyet tvām ayi janani sa syāt smara-haraḥ // 18 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: त्रिपञ्चारे पीठे
+            iast: tri-pañcāre pīṭhe
+            gloss_en: on the seat with fifteen spokes (the śrī-cakra)
+            morph: loc. sg. n. cpd.
+          - word: शवशिवहृदि
+            iast: śava-śiva-hṛdi
+            gloss_en: on the breast of Śiva-as-corpse
+            morph: loc. sg. n. cpd.
+          - word: स्मेरवदनाम्
+            iast: smera-vadanām
+            gloss_en: with smiling face
+            morph: acc. sg. f. cpd.
+          - word: मदनरस
+            iast: madana-rasa
+            gloss_en: the savour of erotic love
+            morph: stem in cpd.
+          - word: रतानन्दनिरतः
+            iast: ratānanda-nirataḥ
+            gloss_en: absorbed in the bliss of love
+            morph: nom. sg. m. cpd.
+          - word: स्मरहरः
+            iast: smara-haraḥ
+            gloss_en: Slayer of Smara (Śiva, who burned Kāma)
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "He who, himself absorbed at night in the bliss of love, meditates on Thee — smiling-faced, upon the fifteen-spoked seat, upon the breast of Śiva-as-corpse, given over to the savour and grace of love with Mahākāla — that man, O Mother, becomes the Slayer of Smara himself."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 19
+        devanagari: |
+          सलोमास्थि स्वैरं पललमपि मार्जारमसिते
+          परं चोष्ट्रं मैषं नरमहिषयोश्छागमपि वा ।
+          बलिं ते पूजायामयि वितरतां मर्त्यवसतां
+          सतां सिद्धिः सर्वा प्रतिपदमपूर्वा प्रभवति ॥ १९॥
+        iast: "sa-lomāsthi svairaṃ palalam api mārjāram asite / paraṃ coṣṭraṃ maiṣaṃ nara-mahiṣayoś chāgam api vā / baliṃ te pūjāyām ayi vitaratāṃ martya-vasatāṃ / satāṃ siddhiḥ sarvā pratipadam apūrvā prabhavati // 19 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: असिते
+            iast: asite
+            gloss_en: O Dark One
+            morph: voc. sg. f.
+          - word: बलिम्
+            iast: balim
+            gloss_en: offering, oblation
+            morph: acc. sg. m.
+          - word: पूजायाम्
+            iast: pūjāyām
+            gloss_en: in worship
+            morph: loc. sg. f.
+          - word: सिद्धिः सर्वा
+            iast: siddhiḥ sarvā
+            gloss_en: every perfection
+            morph: nom. sg. f.
+          - word: प्रतिपदम्
+            iast: pratipadam
+            gloss_en: at every step
+            morph: adv.
+          - word: अपूर्वा
+            iast: apūrvā
+            gloss_en: unprecedented
+            morph: nom. sg. f.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Those who, dwelling in the world, offer Thee in worship — freely and along with hair and bone — meat of any kind: cat, camel, sheep, man, buffalo, or even goat — O Dark One, to such good men every perfection arises, unprecedented, at every step."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 20
+        devanagari: |
+          वशी लक्षं मन्त्रं प्रजपति हविष्याशनरतो
+          दिवा मातर्युष्मच्चरणयुगलध्याननिपुणः ।
+          परं नक्तं नग्नो निधुवनविनोदेन च मनुं
+          जपेल्लक्षं स स्यात् स्मरहरसमानः क्षितितले ॥ २०॥
+        iast: "vaśī lakṣaṃ mantraṃ prajapati haviṣyāśana-rato / divā mātar yuṣmac-caraṇa-yugala-dhyāna-nipuṇaḥ / paraṃ naktaṃ nagno nidhuvana-vinodena ca manuṃ / japel lakṣaṃ sa syāt smara-hara-samānaḥ kṣiti-tale // 20 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: वशी
+            iast: vaśī
+            gloss_en: self-controlled
+            morph: nom. sg. m.
+          - word: लक्षम्
+            iast: lakṣam
+            gloss_en: one hundred thousand
+            morph: acc. sg. n.
+          - word: हविष्याशनरतः
+            iast: haviṣyāśana-rataḥ
+            gloss_en: living on sacrificial food
+            morph: nom. sg. m. cpd.
+          - word: चरणयुगल
+            iast: caraṇa-yugala
+            gloss_en: pair of feet
+            morph: stem in cpd.
+          - word: नग्नः
+            iast: nagnaḥ
+            gloss_en: naked
+            morph: nom. sg. m.
+          - word: स्मरहरसमानः
+            iast: smara-hara-samānaḥ
+            gloss_en: equal to the Slayer of Smara (Śiva)
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Self-controlled, living on sacrificial food, by day skilful in meditation on Thy pair of feet, he recites Thy mantra one hundred thousand times; then at night, naked, in the pastime of love, he recites it another hundred thousand times — that man, O Mother, becomes upon earth the equal of the Slayer of Smara."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 21
+        devanagari: |
+          इदं स्तोत्रं मातस्तव मनुसमुद्धारणजनुः
+          स्वरूपाख्यं पादाम्बुजयुगलपूजाविधियुतम् ।
+          निशार्धं वा पूजासमयमधि वा यस्तु पठति
+          प्रलापस्तस्यापि प्रसरति कवित्वामृतरसः ॥ २१॥
+        iast: "idaṃ stotraṃ mātas tava manu-samuddhāraṇa-januḥ / svarūpākhyaṃ pādāmbuja-yugala-pūjā-vidhi-yutam / niśārdhaṃ vā pūjā-samayam adhi vā yas tu paṭhati / pralāpas tasyāpi prasarati kavitvāmṛta-rasaḥ // 21 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: स्तोत्रम्
+            iast: stotram
+            gloss_en: hymn
+            morph: nom. sg. n.
+          - word: स्वरूपाख्यम्
+            iast: svarūpākhyam
+            gloss_en: named "Of Her True Form" (svarūpa)
+            morph: nom. sg. n. cpd.
+          - word: पादाम्बुजयुगल
+            iast: pādāmbuja-yugala
+            gloss_en: pair of lotus-feet
+            morph: stem in cpd.
+          - word: निशार्धम्
+            iast: niśārdham
+            gloss_en: at midnight
+            morph: adv.
+          - word: प्रलापः
+            iast: pralāpaḥ
+            gloss_en: even disordered speech, prattle
+            morph: nom. sg. m.
+          - word: कवित्वामृतरसः
+            iast: kavitvāmṛta-rasaḥ
+            gloss_en: the nectar-essence of poetry
+            morph: nom. sg. m. cpd.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "O Mother, this hymn, born of the unfolding of Thy mantra and called Thy True Form (svarūpa), conjoined with the rite of worship of Thy pair of lotus-feet — whoever reads it at midnight or during worship, even his disordered speech flows as the nectar-essence of poetry."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
+
+      - verse: 22
+        devanagari: |
+          कुरङ्गाक्षीवृन्दं तमनुसरति प्रेमतरलं
+          वशस्तस्य क्षोणीपतिरपि कुबेरप्रतिनिधिः ।
+          रिपुः कारागारं कलयति च तं केलिकलया
+          चिरं जीवन्मुक्तः प्रभवति स भक्तः प्रतिजनुः ॥ २२॥
+        iast: "kuraṅgākṣī-vṛndaṃ tam anusarati prema-taralaṃ / vaśas tasya kṣoṇī-patir api kubera-pratinidhiḥ / ripuḥ kārāgāraṃ kalayati ca taṃ keli-kalayā / ciraṃ jīvan-muktaḥ prabhavati sa bhaktaḥ pratijanuḥ // 22 //"
+        meter: śikhariṇī
+        word_glosses:
+          - word: कुरङ्गाक्षीवृन्दम्
+            iast: kuraṅgākṣī-vṛndam
+            gloss_en: throng of doe-eyed women
+            morph: nom. sg. n. cpd.
+          - word: प्रेमतरलम्
+            iast: prema-taralam
+            gloss_en: trembling with love
+            morph: adj. n.
+          - word: क्षोणीपतिः
+            iast: kṣoṇī-patiḥ
+            gloss_en: lord of the earth, king
+            morph: nom. sg. m. cpd.
+          - word: कुबेरप्रतिनिधिः
+            iast: kubera-pratinidhiḥ
+            gloss_en: counterpart of Kubera (god of wealth)
+            morph: nom. sg. m. cpd.
+          - word: कारागारम्
+            iast: kārāgāram
+            gloss_en: prison
+            morph: nom. sg. n.
+          - word: केलिकलया
+            iast: keli-kalayā
+            gloss_en: as a fragment of sport
+            morph: inst. sg. f. cpd.
+          - word: जीवन्मुक्तः
+            iast: jīvan-muktaḥ
+            gloss_en: liberated while still living
+            morph: nom. sg. m.
+          - word: प्रतिजनुः
+            iast: pratijanuḥ
+            gloss_en: in birth after birth
+            morph: adv.
+        translations:
+          - lang: en
+            translator: "sohamhamso (after Woodroffe 1922)"
+            license: PD
+            text: "Throngs of doe-eyed women follow him, trembling with love; the king of the land is in his power, a very Kubera of wealth; his enemy he counts as if a prison were only sport — and long, liberated-while-living, that devotee prevails, birth after birth."
+            ai_assisted: true
+            status: published
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded
