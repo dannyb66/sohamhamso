@@ -21,15 +21,11 @@ const isKaula = typeof school === 'string' && school.toLowerCase().includes('kau
 ---
 
 {isKaula ? (
-  <aside class="kaula-advisory" role="note" aria-label="Scholarly access notice">
+  <aside class="kaula-advisory" role="note" aria-label="Scholarly access notice" data-i18n-attr-aria-label="kaula.aria">
     <div class="kaula-advisory__icon" aria-hidden="true">⚠</div>
     <div class="kaula-advisory__body">
-      <p class="kaula-advisory__title">Scholarly access</p>
-      <p class="kaula-advisory__text">
-        These texts traditionally require dīkṣā (initiation) and lineage
-        transmission for full study. They are published here for scholarly
-        access. Engage with appropriate context.
-      </p>
+      <p class="kaula-advisory__title" data-i18n="kaula.title">Scholarly access</p>
+      <p class="kaula-advisory__text" data-i18n="kaula.body">These texts traditionally require dīkṣā (initiation) and lineage transmission for full study. They are published here for scholarly access. Engage with appropriate context.</p>
     </div>
   </aside>
 ) : null}

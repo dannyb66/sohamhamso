@@ -56,7 +56,7 @@ function targetHref(p: Parallel): string {
   <details class="parallels-chip" aria-label={`${parallels.length} parallels`}>
     <summary id={id} class="parallels-chip__summary">
       <span class="parallels-chip__icon" aria-hidden="true">📜</span>
-      <span class="parallels-chip__label">parallels ({parallels.length})</span>
+      <span class="parallels-chip__label"><span data-i18n="parallels.label">parallels</span> ({parallels.length})</span>
     </summary>
     <div class="parallels-chip__body" role="region" aria-labelledby={id}>
       <ul class="parallels-chip__list">
@@ -64,7 +64,9 @@ function targetHref(p: Parallel): string {
           <li class="parallels-chip__item">
             <a class="parallels-chip__link" href={targetHref(p)}>
               <span class="parallels-chip__title">
-                {p.target_text_title ?? p.target_text_slug ?? "Parallel verse"}
+                {p.target_text_title ?? p.target_text_slug ?? (
+                  <span data-i18n="parallels.fallback_title">Parallel verse</span>
+                )}
               </span>
               {p.target_chapter != null && p.target_verse_num != null ? (
                 <span class="parallels-chip__locator">
@@ -79,7 +81,7 @@ function targetHref(p: Parallel): string {
             ) : null}
             {p.confidence != null ? (
               <div class="parallels-chip__meta">
-                confidence {Math.round((p.confidence ?? 0) * 100)}%
+                <span data-i18n="parallels.confidence_prefix">confidence</span> {Math.round((p.confidence ?? 0) * 100)}%
                 {p.citation_type ? ` · ${p.citation_type}` : ""}
               </div>
             ) : null}

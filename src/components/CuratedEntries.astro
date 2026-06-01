@@ -19,32 +19,45 @@
 import { listTexts } from '../lib/db';
 const textCount = listTexts().length;
 
+// The third entry's title interpolates a live count, so it gets a
+// custom render path below (static label + bare `(N)` sibling) rather
+// than a single i18n key — that lets I18nSwap rewrite the label while
+// the count stays correct.
 const entries = [
   {
+    titleKey: 'curated.if_new.title',
     title: 'If you are new',
     href: '/trika/siva-sutras/1/1',
+    descriptionKey: 'curated.if_new.description',
     description: 'Begin with the Śiva Sūtras — 77 aphorisms.',
   },
   {
+    titleKey: 'curated.daily.title',
     title: 'Daily readings',
     href: '/daily',
+    descriptionKey: 'curated.daily.description',
     description: 'A verse at dawn in your inbox.',
   },
   {
-    title: `All texts (${textCount})`,
+    titleKey: 'curated.all_texts.title',
+    title: 'All texts',
     href: '/texts',
+    descriptionKey: 'curated.all_texts.description',
     description: 'Browse the full corpus.',
+    countSuffix: ` (${textCount})`,
   },
-];
+] as const;
 ---
 
-<section class="curated" aria-label="Where to begin">
+<section class="curated" aria-label="Where to begin" data-i18n-attr-aria-label="curated.aria">
   <ul class="curated-list">
     {entries.map((entry) => (
       <li class="curated-item">
         <a href={entry.href} class="curated-link">
-          <span class="curated-title">{entry.title}</span>
-          <span class="curated-description">{entry.description}</span>
+          <span class="curated-title">
+            <span data-i18n={entry.titleKey}>{entry.title}</span>{"countSuffix" in entry ? entry.countSuffix : ""}
+          </span>
+          <span class="curated-description" data-i18n={entry.descriptionKey}>{entry.description}</span>
         </a>
       </li>
     ))}
