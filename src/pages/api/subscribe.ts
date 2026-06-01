@@ -37,22 +37,10 @@ import { getWritableDb } from '../../lib/db';
 export const prerender = false;
 
 // Languages active at V1 — English only. Others are queued but rejected
-// for now with an honest "not yet available" message.
-const ACTIVE_LANGUAGES = new Set(['en']);
-const KNOWN_LANGUAGES = new Set([
-  'en',
-  'hi',
-  'ta',
-  'te',
-  'bn',
-  'mr',
-  'gu',
-  'kn',
-  'ml',
-  'pa',
-  'or',
-  'as',
-]);
+// for now with an honest "not yet available" message. Source of truth
+// lives in src/lib/subscribe-langs.ts so the SubscribeBand picker stays
+// in sync — out-of-sync state lands real users on a dead-end submit.
+import { ACTIVE_LANGUAGES, KNOWN_LANGUAGES } from '../../lib/subscribe-langs';
 
 // RFC 5322-flavored email regex — pragmatic, not exhaustive. Server
 // stub only; the real Resend integration will do its own validation.

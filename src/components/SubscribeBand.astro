@@ -8,14 +8,14 @@
  * verse curator workstream wires the actual Resend send + double-opt-in
  * + subscribers-DB write for V1.x.
  *
- * Language availability mirrors the masthead picker: built from the
- * corpus DB at build time — any lang with at least one published or
- * reviewed translation is selectable; the rest stay greyed with a
- * "(soon)" suffix.
+ * Language availability tracks the SUBSCRIBE API's allowlist, not the
+ * READER corpus — they're different dimensions. The reader has all 12
+ * languages live, but the daily-verse send pipeline (Resend + region
+ * pinning + double opt-in) ships English-only at V1.0. Source of truth
+ * for the active set is src/lib/subscribe-langs.ts; both this picker
+ * and the API import from there so they cannot drift.
  */
-import { getAvailableLanguages } from '../lib/db';
-
-const availableSet = getAvailableLanguages();
+import { ACTIVE_LANGUAGES } from '../lib/subscribe-langs';
 
 const LANG_CATALOGUE: Array<{ code: string; label: string }> = [
   { code: 'en', label: 'English' },
@@ -34,7 +34,7 @@ const LANG_CATALOGUE: Array<{ code: string; label: string }> = [
 
 const languages = LANG_CATALOGUE.map((l) => ({
   ...l,
-  available: availableSet.has(l.code),
+  available: ACTIVE_LANGUAGES.has(l.code),
 }));
 ---
 
