@@ -7,1339 +7,4366 @@
   "status": "published",
   "verses": {
     "1.1": [
-      {"word_idx": 0, "gloss_text": "শ্ৰীদেৱী (ভৈৰৱী)"},
-      {"word_idx": 1, "gloss_text": "ক'লে"},
-      {"word_idx": 2, "gloss_text": "শ্ৰুত"},
-      {"word_idx": 3, "gloss_text": "হে দেৱ"},
-      {"word_idx": 4, "gloss_text": "মোৰ দ্বাৰা"},
-      {"word_idx": 5, "gloss_text": "সকলো, সম্পূৰ্ণ"},
-      {"word_idx": 6, "gloss_text": "ৰুদ্ৰযামল-তন্ত্ৰৰ পৰা উদ্ভূত"},
-      {"word_idx": 7, "gloss_text": "ত্ৰিকৰ ভেদ"},
-      {"word_idx": 8, "gloss_text": "নিঃশেষে, সম্পূৰ্ণৰূপে"},
-      {"word_idx": 9, "gloss_text": "সাৰৰ সাৰ-বিভাগৰূপে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শ্ৰীদেৱী (ভৈৰৱী)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ক'লে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শ্ৰুত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "হে দেৱ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মোৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সকলো, সম্পূৰ্ণ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ৰুদ্ৰযামল-তন্ত্ৰৰ পৰা উদ্ভূত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ত্ৰিকৰ ভেদ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "নিঃশেষে, সম্পূৰ্ণৰূপে"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "সাৰৰ সাৰ-বিভাগৰূপে"
+      }
     ],
     "1.2": [
-      {"word_idx": 0, "gloss_text": "আজিও"},
-      {"word_idx": 1, "gloss_text": "নহয়"},
-      {"word_idx": 2, "gloss_text": "নিবৃত্ত, দূৰীভূত"},
-      {"word_idx": 3, "gloss_text": "মোৰ"},
-      {"word_idx": 4, "gloss_text": "সংশয়"},
-      {"word_idx": 5, "gloss_text": "হে পৰমেশ্বৰ"},
-      {"word_idx": 6, "gloss_text": "কি?"},
-      {"word_idx": 7, "gloss_text": "ৰূপ, স্বৰূপ"},
-      {"word_idx": 8, "gloss_text": "প্ৰকৃতপক্ষে, বাস্তৱিক"},
-      {"word_idx": 9, "gloss_text": "হে দেৱ"},
-      {"word_idx": 10, "gloss_text": "শব্দৰাশি আৰু কলাময়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আজিও"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নহয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিবৃত্ত, দূৰীভূত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মোৰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সংশয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "হে পৰমেশ্বৰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "কি?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ৰূপ, স্বৰূপ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "প্ৰকৃতপক্ষে, বাস্তৱিক"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "হে দেৱ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "শব্দৰাশি আৰু কলাময়"
+      }
     ],
     "1.3": [
-      {"word_idx": 0, "gloss_text": "অথবা কি?"},
-      {"word_idx": 1, "gloss_text": "নৱাত্ম-ভেদ দ্বাৰা"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱত"},
-      {"word_idx": 3, "gloss_text": "ভৈৰৱ-আকৃতিত"},
-      {"word_idx": 4, "gloss_text": "[draft] ত্ৰিশিৰঃ-ভেদে বিভক্ত"},
-      {"word_idx": 5, "gloss_text": "অথবা"},
-      {"word_idx": 6, "gloss_text": "অথবা কি"},
-      {"word_idx": 7, "gloss_text": "শক্তি-ত্ৰয়-আত্মক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অথবা কি?"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নৱাত্ম-ভেদ দ্বাৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভৈৰৱ-আকৃতিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ত্ৰিশিৰঃ-ভেদে বিভক্ত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "অথবা কি"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "শক্তি-ত্ৰয়-আত্মক"
+      }
     ],
     "1.4": [
-      {"word_idx": 0, "gloss_text": "নাদ-বিন্দু-ময়"},
-      {"word_idx": 1, "gloss_text": "অথবা"},
-      {"word_idx": 2, "gloss_text": "কি?"},
-      {"word_idx": 3, "gloss_text": "[draft] অৰ্ধচন্দ্ৰ আৰু নিৰোধিকা-সমূহ"},
-      {"word_idx": 4, "gloss_text": "চক্ৰত আৰূঢ়"},
-      {"word_idx": 5, "gloss_text": "[draft] অনচ্ক (স্বৰহীন, শুদ্ধ-ব্যঞ্জন)"},
-      {"word_idx": 6, "gloss_text": "অথবা"},
-      {"word_idx": 7, "gloss_text": "অথবা কি"},
-      {"word_idx": 8, "gloss_text": "শক্তিৰ স্বৰূপ-আকাৰ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নাদ-বিন্দু-ময়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "কি?"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অৰ্ধচন্দ্ৰ আৰু নিৰোধিকা-সমূহ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "চক্ৰত আৰূঢ়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অনচ্ক (স্বৰহীন, শুদ্ধ-ব্যঞ্জন)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "অথবা কি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "শক্তিৰ স্বৰূপ-আকাৰ"
+      }
     ],
     "1.5": [
-      {"word_idx": 0, "gloss_text": "পৰাপৰাৰ (মধ্যৱৰ্তী দেৱীৰ)"},
-      {"word_idx": 1, "gloss_text": "সকল-ৰূপ, সাংশিক"},
-      {"word_idx": 2, "gloss_text": "অপৰাৰ (নিম্ন দেৱীৰ)"},
-      {"word_idx": 3, "gloss_text": "আৰু অথবা"},
-      {"word_idx": 4, "gloss_text": "পুনৰায়"},
-      {"word_idx": 5, "gloss_text": "পৰাৰ (পৰম দেৱীৰ)"},
-      {"word_idx": 6, "gloss_text": "যদি"},
-      {"word_idx": 7, "gloss_text": "সেইদৰে"},
-      {"word_idx": 8, "gloss_text": "হয়"},
-      {"word_idx": 9, "gloss_text": "পৰত্ব"},
-      {"word_idx": 10, "gloss_text": "সেয়া"},
-      {"word_idx": 11, "gloss_text": "বিৰুদ্ধ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "পৰাপৰাৰ (মধ্যৱৰ্তী দেৱীৰ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সকল-ৰূপ, সাংশিক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অপৰাৰ (নিম্ন দেৱীৰ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আৰু অথবা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "পুনৰায়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰাৰ (পৰম দেৱীৰ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "যদি"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সেইদৰে"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "হয়"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "পৰত্ব"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "সেয়া"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "বিৰুদ্ধ হয়"
+      }
     ],
     "1.6": [
-      {"word_idx": 0, "gloss_text": "কাৰণ নহয়"},
-      {"word_idx": 1, "gloss_text": "বৰ্ণ-ভেদ দ্বাৰা"},
-      {"word_idx": 2, "gloss_text": "দেহ-ভেদ দ্বাৰা"},
-      {"word_idx": 3, "gloss_text": "অথবা"},
-      {"word_idx": 4, "gloss_text": "হ'ব পাৰে"},
-      {"word_idx": 5, "gloss_text": "পৰত্ব"},
-      {"word_idx": 6, "gloss_text": "নিষ্কলত্ব দ্বাৰা"},
-      {"word_idx": 7, "gloss_text": "সকলত্বত"},
-      {"word_idx": 8, "gloss_text": "সেয়া হ'ব নোৱাৰে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কাৰণ নহয়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বৰ্ণ-ভেদ দ্বাৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দেহ-ভেদ দ্বাৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "হ'ব পাৰে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰত্ব"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "নিষ্কলত্ব দ্বাৰা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সকলত্বত"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সেয়া হ'ব নোৱাৰে"
+      }
     ],
     "1.7": [
-      {"word_idx": 0, "gloss_text": "প্ৰসাদ, কৃপা"},
-      {"word_idx": 1, "gloss_text": "কৰক, দিয়ক"},
-      {"word_idx": 2, "gloss_text": "মোক"},
-      {"word_idx": 3, "gloss_text": "হে নাথ"},
-      {"word_idx": 4, "gloss_text": "নিঃশেষে, সম্পূৰ্ণভাৱে"},
-      {"word_idx": 5, "gloss_text": "ছেদন কৰক"},
-      {"word_idx": 6, "gloss_text": "সংশয়"},
-      {"word_idx": 7, "gloss_text": "ভৈৰৱে ক'লে"},
-      {"word_idx": 8, "gloss_text": "সাধু সাধু!"},
-      {"word_idx": 9, "gloss_text": "তোমাৰ দ্বাৰা সোধা"},
-      {"word_idx": 10, "gloss_text": "তন্ত্ৰৰ সাৰ"},
-      {"word_idx": 11, "gloss_text": "এই, হে প্ৰিয়ে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "প্ৰসাদ, কৃপা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কৰক, দিয়ক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মোক"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "হে নাথ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিঃশেষে, সম্পূৰ্ণভাৱে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ছেদন কৰক"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সংশয়"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ভৈৰৱে ক'লে"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সাধু সাধু!"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "তোমাৰ দ্বাৰা সোধা"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "তন্ত্ৰৰ সাৰ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "এই, হে প্ৰিয়ে"
+      }
     ],
     "1.8": [
-      {"word_idx": 0, "gloss_text": "হে গুহ্য-অতি-গুহ্যৰ ৰক্ষক"},
-      {"word_idx": 1, "gloss_text": "তুমি"},
-      {"word_idx": 2, "gloss_text": "যদিও"},
-      {"word_idx": 3, "gloss_text": "এই"},
-      {"word_idx": 4, "gloss_text": "হে বৰাননে (সুমুখী)"},
-      {"word_idx": 5, "gloss_text": "তথাপি"},
-      {"word_idx": 6, "gloss_text": "মই ক'ম"},
-      {"word_idx": 7, "gloss_text": "যেনেদৰে"},
-      {"word_idx": 8, "gloss_text": "তুমি জানা"},
-      {"word_idx": 9, "gloss_text": "তেনেদৰে শুনা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "হে গুহ্য-অতি-গুহ্যৰ ৰক্ষক"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "তুমি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যদিও"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "এই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "হে বৰাননে (সুমুখী)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তথাপি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "মই ক'ম"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "যেনেদৰে"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "তুমি জানা"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "তেনেদৰে শুনা"
+      }
     ],
     "1.9": [
-      {"word_idx": 0, "gloss_text": "যি"},
-      {"word_idx": 1, "gloss_text": "পৰ"},
-      {"word_idx": 2, "gloss_text": "নিষ্কল"},
-      {"word_idx": 3, "gloss_text": "হে দেৱী"},
-      {"word_idx": 4, "gloss_text": "সৰ্ব-তত্ত্বৰ অগোচৰ"},
-      {"word_idx": 5, "gloss_text": "সেয়া নিশ্চয়ে সম্ভৱ নহয়"},
-      {"word_idx": 6, "gloss_text": "তাৰ দ্বাৰা"},
-      {"word_idx": 7, "gloss_text": "ইয়াত (শব্দত)"},
-      {"word_idx": 8, "gloss_text": "কোৱা"},
-      {"word_idx": 9, "gloss_text": "যি সম্ভৱ"},
-      {"word_idx": 10, "gloss_text": "কেৱল ইচ্ছাৰ দ্বাৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "পৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিষ্কল"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সৰ্ব-তত্ত্বৰ অগোচৰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সেয়া নিশ্চয়ে সম্ভৱ নহয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ইয়াত (শব্দত)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "কোৱা"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "যি সম্ভৱ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "কেৱল ইচ্ছাৰ দ্বাৰা"
+      }
     ],
     "1.10": [
-      {"word_idx": 0, "gloss_text": "হে দেৱী"},
-      {"word_idx": 1, "gloss_text": "প্ৰকৃতি-ৰূপা"},
-      {"word_idx": 2, "gloss_text": "যি"},
-      {"word_idx": 3, "gloss_text": "তেওঁৰ"},
-      {"word_idx": 4, "gloss_text": "কি ৰূপ?"},
-      {"word_idx": 5, "gloss_text": "কোৱা হয়"},
-      {"word_idx": 6, "gloss_text": "সকল-অৱস্থাত"},
-      {"word_idx": 7, "gloss_text": "বিকল্পসমূহৰ"},
-      {"word_idx": 8, "gloss_text": "সকল-অদ্বৈতৰ কল্পনা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্ৰকৃতি-ৰূপা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেওঁৰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "কি ৰূপ?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "কোৱা হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সকল-অৱস্থাত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "বিকল্পসমূহৰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সকল-অদ্বৈতৰ কল্পনা"
+      }
     ],
     "1.11": [
-      {"word_idx": 0, "gloss_text": "তেতিয়া"},
-      {"word_idx": 1, "gloss_text": "সেই মহা-ব্যোমত"},
-      {"word_idx": 2, "gloss_text": "প্ৰলীন হ'লে"},
-      {"word_idx": 3, "gloss_text": "চন্দ্ৰ আৰু সূৰ্য (লীন হ'লে)"},
-      {"word_idx": 4, "gloss_text": "নিমজ্জিতৰ দৰে"},
-      {"word_idx": 5, "gloss_text": "তামসিক নিদ্ৰা"},
-      {"word_idx": 6, "gloss_text": "উদ্ভূত হ'ল"},
-      {"word_idx": 7, "gloss_text": "খিল-গোচৰত (শূন্য পৰিধিত)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "তেতিয়া"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সেই মহা-ব্যোমত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "প্ৰলীন হ'লে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চন্দ্ৰ আৰু সূৰ্য (লীন হ'লে)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিমজ্জিতৰ দৰে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তামসিক নিদ্ৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "উদ্ভূত হ'ল"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "খিল-গোচৰত (শূন্য পৰিধিত)"
+      }
     ],
     "1.12": [
-      {"word_idx": 0, "gloss_text": "এই-প্ৰকাৰ"},
-      {"word_idx": 1, "gloss_text": "ভৈৰৱৰ"},
-      {"word_idx": 2, "gloss_text": "যি অৱস্থা"},
-      {"word_idx": 3, "gloss_text": "পৰিগীত হয়"},
-      {"word_idx": 4, "gloss_text": "তেওঁ পৰা"},
-      {"word_idx": 5, "gloss_text": "পৰ-ৰূপে"},
-      {"word_idx": 6, "gloss_text": "পৰা দেৱী"},
-      {"word_idx": 7, "gloss_text": "প্ৰকীৰ্তিতা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই-প্ৰকাৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভৈৰৱৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যি অৱস্থা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "পৰিগীত হয়"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁ পৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰ-ৰূপে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পৰা দেৱী"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰকীৰ্তিতা"
+      }
     ],
     "1.13": [
-      {"word_idx": 0, "gloss_text": "শক্তি আৰু শক্তিমানৰ"},
-      {"word_idx": 1, "gloss_text": "যেনেদৰে"},
-      {"word_idx": 2, "gloss_text": "অভেদ"},
-      {"word_idx": 3, "gloss_text": "সৰ্বদা"},
-      {"word_idx": 4, "gloss_text": "স্থিত"},
-      {"word_idx": 5, "gloss_text": "অতএৱ"},
-      {"word_idx": 6, "gloss_text": "তেওঁৰ ধৰ্ম-ধৰ্মিত্বৰ পৰা"},
-      {"word_idx": 7, "gloss_text": "পৰা শক্তি"},
-      {"word_idx": 8, "gloss_text": "পৰমাত্মাৰ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শক্তি আৰু শক্তিমানৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যেনেদৰে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অভেদ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সৰ্বদা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "স্থিত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অতএৱ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তেওঁৰ ধৰ্ম-ধৰ্মিত্বৰ পৰা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "পৰা শক্তি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "পৰমাত্মাৰ"
+      }
     ],
     "1.14": [
-      {"word_idx": 0, "gloss_text": "নহয়"},
-      {"word_idx": 1, "gloss_text": "অগ্নিৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "দাহিকা শক্তি"},
-      {"word_idx": 3, "gloss_text": "পৃথক, ভিন্ন"},
-      {"word_idx": 4, "gloss_text": "কল্পিত হয়"},
-      {"word_idx": 5, "gloss_text": "কেৱল"},
-      {"word_idx": 6, "gloss_text": "জ্ঞান-সত্তাত"},
-      {"word_idx": 7, "gloss_text": "এইটোৱেই আৰম্ভ"},
-      {"word_idx": 8, "gloss_text": "প্ৰৱেশনত (দুৱাৰ-প্ৰৱেশত)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নহয়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অগ্নিৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দাহিকা শক্তি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "পৃথক, ভিন্ন"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "কল্পিত হয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "কেৱল"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "জ্ঞান-সত্তাত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "এইটোৱেই আৰম্ভ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "প্ৰৱেশনত (দুৱাৰ-প্ৰৱেশত)"
+      }
     ],
     "1.15": [
-      {"word_idx": 0, "gloss_text": "শক্তি-অৱস্থাত প্ৰৱিষ্টৰ বাবে"},
-      {"word_idx": 1, "gloss_text": "অবিভক্তভাৱে"},
-      {"word_idx": 2, "gloss_text": "ভাৱনা"},
-      {"word_idx": 3, "gloss_text": "তেতিয়া"},
-      {"word_idx": 4, "gloss_text": "তেওঁ"},
-      {"word_idx": 5, "gloss_text": "শিৱ-ৰূপী হয়"},
-      {"word_idx": 6, "gloss_text": "শৈৱী (শক্তিৰ পথ)"},
-      {"word_idx": 7, "gloss_text": "মুখ, দুৱাৰ"},
-      {"word_idx": 8, "gloss_text": "ইয়াত, এই উপদেশত"},
-      {"word_idx": 9, "gloss_text": "কোৱা হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শক্তি-অৱস্থাত প্ৰৱিষ্টৰ বাবে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অবিভক্তভাৱে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভাৱনা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেতিয়া"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শিৱ-ৰূপী হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শৈৱী (শক্তিৰ পথ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "মুখ, দুৱাৰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ইয়াত, এই উপদেশত"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "কোৱা হয়"
+      }
     ],
     "1.16": [
-      {"word_idx": 0, "gloss_text": "যেনেদৰে"},
-      {"word_idx": 1, "gloss_text": "প্ৰদীপৰ পোহৰত"},
-      {"word_idx": 2, "gloss_text": "সূৰ্যৰ কিৰণত"},
-      {"word_idx": 3, "gloss_text": "আৰু"},
-      {"word_idx": 4, "gloss_text": "জনা যায়"},
-      {"word_idx": 5, "gloss_text": "দিশ-বিভাগ ইত্যাদি"},
-      {"word_idx": 6, "gloss_text": "তেনেদৰে"},
-      {"word_idx": 7, "gloss_text": "শক্তিৰ দ্বাৰা"},
-      {"word_idx": 8, "gloss_text": "শিৱ (জ্ঞাত হয়)"},
-      {"word_idx": 9, "gloss_text": "হে প্ৰিয়ে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যেনেদৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্ৰদীপৰ পোহৰত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সূৰ্যৰ কিৰণত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "জনা যায়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দিশ-বিভাগ ইত্যাদি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তেনেদৰে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "শক্তিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "শিৱ (জ্ঞাত হয়)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "হে প্ৰিয়ে"
+      }
     ],
     "1.17": [
-      {"word_idx": 0, "gloss_text": "শ্ৰীদেৱীয়ে ক'লে"},
-      {"word_idx": 1, "gloss_text": "হে দেৱদেৱ"},
-      {"word_idx": 2, "gloss_text": "ত্ৰিশূল-চিহ্নিত"},
-      {"word_idx": 3, "gloss_text": "কপাল-ভূষণ-অলংকৃত"},
-      {"word_idx": 4, "gloss_text": "দিশ-দেশ-কাল-শূন্য"},
-      {"word_idx": 5, "gloss_text": "আৰু"},
-      {"word_idx": 6, "gloss_text": "নিৰ্দেশ-বৰ্জিত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শ্ৰীদেৱীয়ে ক'লে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "হে দেৱদেৱ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ত্ৰিশূল-চিহ্নিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "কপাল-ভূষণ-অলংকৃত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "দিশ-দেশ-কাল-শূন্য"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "নিৰ্দেশ-বৰ্জিত"
+      }
     ],
     "1.18": [
-      {"word_idx": 0, "gloss_text": "যি অৱস্থা"},
-      {"word_idx": 1, "gloss_text": "পূৰ্ণ-আকাৰ"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱত উপলব্ধ হয়"},
-      {"word_idx": 3, "gloss_text": "কোনো উপায়েৰে?"},
-      {"word_idx": 4, "gloss_text": "তেওঁৰ মুখ"},
-      {"word_idx": 5, "gloss_text": "পৰা দেৱী"},
-      {"word_idx": 6, "gloss_text": "কেনেকৈ উদিত হয়?"},
-      {"word_idx": 7, "gloss_text": "যাতে মই সম্যকভাৱে জানিব পাৰোঁ"},
-      {"word_idx": 8, "gloss_text": "তেনেদৰে মোক কোৱা, হে ভৈৰৱ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যি অৱস্থা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "পূৰ্ণ-আকাৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱত উপলব্ধ হয়"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "কোনো উপায়েৰে?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁৰ মুখ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰা দেৱী"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "কেনেকৈ উদিত হয়?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "যাতে মই সম্যকভাৱে জানিব পাৰোঁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "তেনেদৰে মোক কোৱা, হে ভৈৰৱ"
+      }
     ],
     "1.19": [
-      {"word_idx": 0, "gloss_text": "ভৈৰৱে ক'লে"},
-      {"word_idx": 1, "gloss_text": "ওপৰত প্ৰাণ (উশাহ)"},
-      {"word_idx": 2, "gloss_text": "নিশ্চয়ে"},
-      {"word_idx": 3, "gloss_text": "তলত জীৱ (অপান)"},
-      {"word_idx": 4, "gloss_text": "বিসৰ্গ-আত্মা"},
-      {"word_idx": 5, "gloss_text": "পৰ উচ্চাৰিত হয়"},
-      {"word_idx": 6, "gloss_text": "দুই উৎপত্তি-স্থানত"},
-      {"word_idx": 7, "gloss_text": "ভৰণৰ পৰা"},
-      {"word_idx": 8, "gloss_text": "ভৰিত স্থিতি (পূৰ্ণতা)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ভৈৰৱে ক'লে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ওপৰত প্ৰাণ (উশাহ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিশ্চয়ে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তলত জীৱ (অপান)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিসৰ্গ-আত্মা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰ উচ্চাৰিত হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "দুই উৎপত্তি-স্থানত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ভৰণৰ পৰা"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ভৰিত স্থিতি (পূৰ্ণতা)"
+      }
     ],
     "1.20": [
-      {"word_idx": 0, "gloss_text": "উশাহ, বতাহ"},
-      {"word_idx": 1, "gloss_text": "ভিতৰত বা বাহিৰত"},
-      {"word_idx": 2, "gloss_text": "বিয়ৎ-যুগ্ম (দুই শূন্য)"},
-      {"word_idx": 3, "gloss_text": "নিবৃত্তিৰ পৰা"},
-      {"word_idx": 4, "gloss_text": "ভৈৰৱীৰ — ভৈৰৱৰ"},
-      {"word_idx": 5, "gloss_text": "এইদৰে"},
-      {"word_idx": 6, "gloss_text": "হে ভৈৰৱী"},
-      {"word_idx": 7, "gloss_text": "প্ৰকাশিত হয়"},
-      {"word_idx": 8, "gloss_text": "বপু, ৰূপ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "উশাহ, বতাহ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভিতৰত বা বাহিৰত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বিয়ৎ-যুগ্ম (দুই শূন্য)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিবৃত্তিৰ পৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ভৈৰৱীৰ — ভৈৰৱৰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "এইদৰে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "হে ভৈৰৱী"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰকাশিত হয়"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "বপু, ৰূপ"
+      }
     ],
     "1.21": [
-      {"word_idx": 0, "gloss_text": "নাযাব"},
-      {"word_idx": 1, "gloss_text": "প্ৰৱেশ নকৰিব"},
-      {"word_idx": 2, "gloss_text": "শক্তি (প্ৰাণ-শক্তি)"},
-      {"word_idx": 3, "gloss_text": "মৰুৎ-ৰূপা"},
-      {"word_idx": 4, "gloss_text": "বিকশিত হ'লে"},
-      {"word_idx": 5, "gloss_text": "নিৰ্বিকল্পতাত"},
-      {"word_idx": 6, "gloss_text": "মাজত (কেন্দ্ৰত)"},
-      {"word_idx": 7, "gloss_text": "তাৰ দ্বাৰা"},
-      {"word_idx": 8, "gloss_text": "ভৈৰৱ-ৰূপত্ব"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নাযাব"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্ৰৱেশ নকৰিব"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শক্তি (প্ৰাণ-শক্তি)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মৰুৎ-ৰূপা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিকশিত হ'লে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিৰ্বিকল্পতাত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "মাজত (কেন্দ্ৰত)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "তাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ভৈৰৱ-ৰূপত্ব"
+      }
     ],
     "1.22": [
-      {"word_idx": 0, "gloss_text": "কুম্ভিত (ধৃত)"},
-      {"word_idx": 1, "gloss_text": "ৰেচিত (নিষ্কাশিত)"},
-      {"word_idx": 2, "gloss_text": "অথবা"},
-      {"word_idx": 3, "gloss_text": "পূৰিত (অভ্যন্তৰীণ)"},
-      {"word_idx": 4, "gloss_text": "অথবা"},
-      {"word_idx": 5, "gloss_text": "যেতিয়া হয়"},
-      {"word_idx": 6, "gloss_text": "তাৰ অন্তত"},
-      {"word_idx": 7, "gloss_text": "শান্ত-নামক সেই (অৱস্থা)"},
-      {"word_idx": 8, "gloss_text": "সেই শক্তিৰ দ্বাৰা"},
-      {"word_idx": 9, "gloss_text": "শান্ত"},
-      {"word_idx": 10, "gloss_text": "প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কুম্ভিত (ধৃত)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ৰেচিত (নিষ্কাশিত)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "পূৰিত (অভ্যন্তৰীণ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "যেতিয়া হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ অন্তত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "শান্ত-নামক সেই (অৱস্থা)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সেই শক্তিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "শান্ত"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "প্ৰকাশিত হয়"
+      }
     ],
     "1.23": [
-      {"word_idx": 0, "gloss_text": "মূলৰ পৰা (মূলাধাৰৰ পৰা)"},
-      {"word_idx": 1, "gloss_text": "কিৰণ-আভাসিনী"},
-      {"word_idx": 2, "gloss_text": "সূক্ষ্মতকৈও সূক্ষ্মতৰা"},
-      {"word_idx": 3, "gloss_text": "চিন্তা কৰিব লাগে"},
-      {"word_idx": 4, "gloss_text": "তেওঁক"},
-      {"word_idx": 5, "gloss_text": "দ্বাদশান্তত (বাৰ আঙুলিৰ শেষ)"},
-      {"word_idx": 6, "gloss_text": "শান্ত হোৱা"},
-      {"word_idx": 7, "gloss_text": "ভৈৰৱ-উদয় (ঘটে)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মূলৰ পৰা (মূলাধাৰৰ পৰা)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কিৰণ-আভাসিনী"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সূক্ষ্মতকৈও সূক্ষ্মতৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চিন্তা কৰিব লাগে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁক"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দ্বাদশান্তত (বাৰ আঙুলিৰ শেষ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শান্ত হোৱা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ভৈৰৱ-উদয় (ঘটে)"
+      }
     ],
     "1.24": [
-      {"word_idx": 0, "gloss_text": "ওপৰত উদ্গত"},
-      {"word_idx": 1, "gloss_text": "বিদ্যুৎ-ৰূপা"},
-      {"word_idx": 2, "gloss_text": "প্ৰতি-চক্ৰত"},
-      {"word_idx": 3, "gloss_text": "ক্ৰমে ক্ৰমে"},
-      {"word_idx": 4, "gloss_text": "ওপৰলৈ"},
-      {"word_idx": 5, "gloss_text": "মুষ্টি-ত্ৰয় পৰ্যন্ত"},
-      {"word_idx": 6, "gloss_text": "যিমান সময়লৈ"},
-      {"word_idx": 7, "gloss_text": "সেইটোৱেই ভৈৰৱোদয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ওপৰত উদ্গত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিদ্যুৎ-ৰূপা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "প্ৰতি-চক্ৰত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ক্ৰমে ক্ৰমে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ওপৰলৈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মুষ্টি-ত্ৰয় পৰ্যন্ত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "যিমান সময়লৈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সেইটোৱেই ভৈৰৱোদয়"
+      }
     ],
     "1.25": [
-      {"word_idx": 0, "gloss_text": "ক্ৰম-দ্বাদশক (বাৰ-স্থানৰ ক্ৰম)"},
-      {"word_idx": 1, "gloss_text": "সম্যকভাৱে"},
-      {"word_idx": 2, "gloss_text": "দ্বাদশ-অক্ষৰৰ দ্বাৰা ভেদিত"},
-      {"word_idx": 3, "gloss_text": "স্থূল, সূক্ষ্ম আৰু পৰ-অৱস্থাৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "মুক্ত কৰি কৰি (প্ৰতিটো ত্যাগ কৰি)"},
-      {"word_idx": 5, "gloss_text": "অন্তত"},
-      {"word_idx": 6, "gloss_text": "শিৱ (লাভ হয়)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ক্ৰম-দ্বাদশক (বাৰ-স্থানৰ ক্ৰম)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সম্যকভাৱে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দ্বাদশ-অক্ষৰৰ দ্বাৰা ভেদিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "স্থূল, সূক্ষ্ম আৰু পৰ-অৱস্থাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মুক্ত কৰি কৰি (প্ৰতিটো ত্যাগ কৰি)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অন্তত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শিৱ (লাভ হয়)"
+      }
     ],
     "1.26": [
-      {"word_idx": 0, "gloss_text": "তাৰ দ্বাৰা (উদয়মান শক্তি)"},
-      {"word_idx": 1, "gloss_text": "পূৰিত কৰি"},
-      {"word_idx": 2, "gloss_text": "শীঘ্ৰে"},
-      {"word_idx": 3, "gloss_text": "মূৰৰ চূড়া পৰ্যন্ত"},
-      {"word_idx": 4, "gloss_text": "ভেদ কৰি"},
-      {"word_idx": 5, "gloss_text": "ভ্ৰূ-ক্ষেপ-সেতুৰ দ্বাৰা"},
-      {"word_idx": 6, "gloss_text": "নিৰ্বিকল্প"},
-      {"word_idx": 7, "gloss_text": "মন কৰি"},
-      {"word_idx": 8, "gloss_text": "সৰ্ব-ঊৰ্ধ্বত"},
-      {"word_idx": 9, "gloss_text": "সৰ্বগ-উদ্গম (সকলো-গামী শিৱৰ উদয়)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "তাৰ দ্বাৰা (উদয়মান শক্তি)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "পূৰিত কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শীঘ্ৰে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মূৰৰ চূড়া পৰ্যন্ত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ভেদ কৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভ্ৰূ-ক্ষেপ-সেতুৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "নিৰ্বিকল্প"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "মন কৰি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সৰ্ব-ঊৰ্ধ্বত"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "সৰ্বগ-উদ্গম (সকলো-গামী শিৱৰ উদয়)"
+      }
     ],
     "1.27": [
-      {"word_idx": 0, "gloss_text": "ময়ূৰৰ পাখিৰে"},
-      {"word_idx": 1, "gloss_text": "বিচিত্ৰ-ৰূপ"},
-      {"word_idx": 2, "gloss_text": "মণ্ডলত"},
-      {"word_idx": 3, "gloss_text": "পঞ্চ-শূন্য"},
-      {"word_idx": 4, "gloss_text": "ধ্যানকাৰীৰ বাবে"},
-      {"word_idx": 5, "gloss_text": "অনুত্তৰত (পৰম-অতীতত)"},
-      {"word_idx": 6, "gloss_text": "শূন্যত"},
-      {"word_idx": 7, "gloss_text": "প্ৰৱেশ"},
-      {"word_idx": 8, "gloss_text": "হৃদয়ত"},
-      {"word_idx": 9, "gloss_text": "ঘটিব পাৰে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ময়ূৰৰ পাখিৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিচিত্ৰ-ৰূপ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মণ্ডলত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "পঞ্চ-শূন্য"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ধ্যানকাৰীৰ বাবে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অনুত্তৰত (পৰম-অতীতত)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শূন্যত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰৱেশ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "হৃদয়ত"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ঘটিব পাৰে"
+      }
     ],
     "1.28": [
-      {"word_idx": 0, "gloss_text": "এই-প্ৰকাৰ ক্ৰমত"},
-      {"word_idx": 1, "gloss_text": "একমাত্ৰ"},
-      {"word_idx": 2, "gloss_text": "য'তেই হওক"},
-      {"word_idx": 3, "gloss_text": "চিন্তা (ঘটিলে)"},
-      {"word_idx": 4, "gloss_text": "শূন্যত"},
-      {"word_idx": 5, "gloss_text": "প্ৰাচীৰত"},
-      {"word_idx": 6, "gloss_text": "পৰ (উৎকৃষ্ট) বিষয়ত"},
-      {"word_idx": 7, "gloss_text": "পাত্ৰত"},
-      {"word_idx": 8, "gloss_text": "স্বয়ং লীন (মন)"},
-      {"word_idx": 9, "gloss_text": "বৰপ্ৰদা হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই-প্ৰকাৰ ক্ৰমত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "একমাত্ৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "য'তেই হওক"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চিন্তা (ঘটিলে)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শূন্যত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "প্ৰাচীৰত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পৰ (উৎকৃষ্ট) বিষয়ত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "পাত্ৰত"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "স্বয়ং লীন (মন)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "বৰপ্ৰদা হয়"
+      }
     ],
     "1.29": [
-      {"word_idx": 0, "gloss_text": "কপালৰ ভিতৰত"},
-      {"word_idx": 1, "gloss_text": "মন স্থাপন কৰি"},
-      {"word_idx": 2, "gloss_text": "থাকি"},
-      {"word_idx": 3, "gloss_text": "মুদ্ৰিত-চকুৰে"},
-      {"word_idx": 4, "gloss_text": "ক্ৰমে"},
-      {"word_idx": 5, "gloss_text": "মনৰ দৃঢ়তাৰ পৰা"},
-      {"word_idx": 6, "gloss_text": "লক্ষ্য কৰক"},
-      {"word_idx": 7, "gloss_text": "উত্তম লক্ষ্য"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কপালৰ ভিতৰত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মন স্থাপন কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "থাকি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মুদ্ৰিত-চকুৰে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ক্ৰমে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মনৰ দৃঢ়তাৰ পৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "লক্ষ্য কৰক"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "উত্তম লক্ষ্য"
+      }
     ],
     "1.30": [
-      {"word_idx": 0, "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"},
-      {"word_idx": 1, "gloss_text": "মাজত অৱস্থিত"},
-      {"word_idx": 2, "gloss_text": "পদ্ম-সূত্ৰ-আভ-ৰূপা"},
-      {"word_idx": 3, "gloss_text": "ধ্যাত হ'লে"},
-      {"word_idx": 4, "gloss_text": "অন্তৰ-ব্যোম-ময়ী"},
-      {"word_idx": 5, "gloss_text": "দেৱীৰ দ্বাৰা"},
-      {"word_idx": 6, "gloss_text": "সেই (দেৱী) দ্বাৰা"},
-      {"word_idx": 7, "gloss_text": "দেৱ (শিৱ)"},
-      {"word_idx": 8, "gloss_text": "প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মাজত অৱস্থিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পদ্ম-সূত্ৰ-আভ-ৰূপা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ধ্যাত হ'লে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "অন্তৰ-ব্যোম-ময়ী"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দেৱীৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সেই (দেৱী) দ্বাৰা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "দেৱ (শিৱ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "প্ৰকাশিত হয়"
+      }
     ],
     "1.31": [
-      {"word_idx": 0, "gloss_text": "হাতৰ দ্বাৰা ৰুদ্ধ দৃষ্টি-অস্ত্ৰৰ দ্বাৰা"},
-      {"word_idx": 1, "gloss_text": "ভ্ৰূ-ভেদৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "দুৱাৰ ৰোধৰ পৰা"},
-      {"word_idx": 3, "gloss_text": "বিন্দু দৃষ্ট হ'লে"},
-      {"word_idx": 4, "gloss_text": "ক্ৰমে লীন হ'লে"},
-      {"word_idx": 5, "gloss_text": "তাৰ মাজত"},
-      {"word_idx": 6, "gloss_text": "পৰম স্থিতি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "হাতৰ দ্বাৰা ৰুদ্ধ দৃষ্টি-অস্ত্ৰৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভ্ৰূ-ভেদৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দুৱাৰ ৰোধৰ পৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "বিন্দু দৃষ্ট হ'লে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ক্ৰমে লীন হ'লে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তাৰ মাজত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পৰম স্থিতি"
+      }
     ],
     "1.32": [
-      {"word_idx": 0, "gloss_text": "ধামৰ অন্তঃ-ক্ষোভৰ পৰা সম্ভূত"},
-      {"word_idx": 1, "gloss_text": "সূক্ষ্ম অগ্নি-তিলকৰ আকৃতি"},
-      {"word_idx": 2, "gloss_text": "বিন্দু"},
-      {"word_idx": 3, "gloss_text": "শিখাৰ অন্তত"},
-      {"word_idx": 4, "gloss_text": "হৃদয়ত"},
-      {"word_idx": 5, "gloss_text": "লয়ান্তত"},
-      {"word_idx": 6, "gloss_text": "ধ্যানকাৰীৰ"},
-      {"word_idx": 7, "gloss_text": "লয় (ঘটে)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ধামৰ অন্তঃ-ক্ষোভৰ পৰা সম্ভূত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সূক্ষ্ম অগ্নি-তিলকৰ আকৃতি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বিন্দু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শিখাৰ অন্তত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "হৃদয়ত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "লয়ান্তত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ধ্যানকাৰীৰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "লয় (ঘটে)"
+      }
     ],
     "1.33": [
-      {"word_idx": 0, "gloss_text": "অনাহত (অ-আঘাত শব্দত)"},
-      {"word_idx": 1, "gloss_text": "যোগ্য কাণত"},
-      {"word_idx": 2, "gloss_text": "অভগ্ন শব্দত"},
-      {"word_idx": 3, "gloss_text": "নদীৰ দৰে প্ৰৱাহিত"},
-      {"word_idx": 4, "gloss_text": "শব্দ-ব্ৰহ্মত"},
-      {"word_idx": 5, "gloss_text": "নিষ্ণাত"},
-      {"word_idx": 6, "gloss_text": "পৰ-ব্ৰহ্ম"},
-      {"word_idx": 7, "gloss_text": "প্ৰাপ্ত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অনাহত (অ-আঘাত শব্দত)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যোগ্য কাণত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অভগ্ন শব্দত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নদীৰ দৰে প্ৰৱাহিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শব্দ-ব্ৰহ্মত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিষ্ণাত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পৰ-ব্ৰহ্ম"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰাপ্ত হয়"
+      }
     ],
     "1.34": [
-      {"word_idx": 0, "gloss_text": "প্ৰণৱ ইত্যাদিৰ উচ্চাৰণৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "প্লুতান্তত (দীৰ্ঘ স্বৰৰ শেষত)"},
-      {"word_idx": 2, "gloss_text": "শূন্য-ভাৱনাৰ পৰা"},
-      {"word_idx": 3, "gloss_text": "শূন্যা পৰা শক্তিৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "শূন্যতা প্ৰাপ্ত হয়"},
-      {"word_idx": 5, "gloss_text": "হে ভৈৰৱী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "প্ৰণৱ ইত্যাদিৰ উচ্চাৰণৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্লুতান্তত (দীৰ্ঘ স্বৰৰ শেষত)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শূন্য-ভাৱনাৰ পৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শূন্যা পৰা শক্তিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শূন্যতা প্ৰাপ্ত হয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "হে ভৈৰৱী"
+      }
     ],
     "1.35": [
-      {"word_idx": 0, "gloss_text": "যিকোনো বৰ্ণৰ"},
-      {"word_idx": 1, "gloss_text": "পূৰ্ব আৰু অন্ত (নিৰৱতা)"},
-      {"word_idx": 2, "gloss_text": "অনুভৱ কৰিব লাগে"},
-      {"word_idx": 3, "gloss_text": "শূন্যতাৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "তেওঁ নিজে শূন্য-ভূত হয়"},
-      {"word_idx": 5, "gloss_text": "শূন্য-আকাৰ পুৰুষ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যিকোনো বৰ্ণৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "পূৰ্ব আৰু অন্ত (নিৰৱতা)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অনুভৱ কৰিব লাগে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শূন্যতাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁ নিজে শূন্য-ভূত হয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শূন্য-আকাৰ পুৰুষ হয়"
+      }
     ],
     "1.36": [
-      {"word_idx": 0, "gloss_text": "তন্ত্ৰী (বীণা) ইত্যাদি বাদ্যৰ শব্দত"},
-      {"word_idx": 1, "gloss_text": "দীৰ্ঘ"},
-      {"word_idx": 2, "gloss_text": "ক্ৰম-অৱস্থানৰ কাৰণে"},
-      {"word_idx": 3, "gloss_text": "অনন্য-চিত্ত (আন ঠাইলৈ নোযোৱা)"},
-      {"word_idx": 4, "gloss_text": "প্ৰত্যন্তত (শব্দৰ শেষত)"},
-      {"word_idx": 5, "gloss_text": "পৰ-ব্যোম-বপু হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "তন্ত্ৰী (বীণা) ইত্যাদি বাদ্যৰ শব্দত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দীৰ্ঘ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ক্ৰম-অৱস্থানৰ কাৰণে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অনন্য-চিত্ত (আন ঠাইলৈ নোযোৱা)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰত্যন্তত (শব্দৰ শেষত)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰ-ব্যোম-বপু হয়"
+      }
     ],
     "1.37": [
-      {"word_idx": 0, "gloss_text": "পিণ্ড-মন্ত্ৰৰ (বীজ-মন্ত্ৰ)"},
-      {"word_idx": 1, "gloss_text": "সমস্ত (মন্ত্ৰৰ)"},
-      {"word_idx": 2, "gloss_text": "স্থূল-বৰ্ণ-ক্ৰমত"},
-      {"word_idx": 3, "gloss_text": "অৰ্ধেন্দু, বিন্দু, নাদান্তত"},
-      {"word_idx": 4, "gloss_text": "শূন্য-উচ্চাৰণৰ পৰা"},
-      {"word_idx": 5, "gloss_text": "শিৱ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "পিণ্ড-মন্ত্ৰৰ (বীজ-মন্ত্ৰ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সমস্ত (মন্ত্ৰৰ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "স্থূল-বৰ্ণ-ক্ৰমত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অৰ্ধেন্দু, বিন্দু, নাদান্তত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শূন্য-উচ্চাৰণৰ পৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শিৱ হয়"
+      }
     ],
     "1.38": [
-      {"word_idx": 0, "gloss_text": "নিজ দেহত"},
-      {"word_idx": 1, "gloss_text": "সৰ্ব-দিশত"},
-      {"word_idx": 2, "gloss_text": "যুগপৎ"},
-      {"word_idx": 3, "gloss_text": "ভাৱনা কৰিব লাগে"},
-      {"word_idx": 4, "gloss_text": "বিয়ৎ (শূন্য)"},
-      {"word_idx": 5, "gloss_text": "নিৰ্বিকল্প-মন"},
-      {"word_idx": 6, "gloss_text": "তেওঁৰ বাবে"},
-      {"word_idx": 7, "gloss_text": "সমস্ত বিয়ৎ প্ৰৱৰ্তিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিজ দেহত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সৰ্ব-দিশত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যুগপৎ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভাৱনা কৰিব লাগে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিয়ৎ (শূন্য)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিৰ্বিকল্প-মন"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তেওঁৰ বাবে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সমস্ত বিয়ৎ প্ৰৱৰ্তিত হয়"
+      }
     ],
     "1.39": [
-      {"word_idx": 0, "gloss_text": "পৃষ্ঠ-শূন্য (পিছফালৰ শূন্য)"},
-      {"word_idx": 1, "gloss_text": "মূল-শূন্য (গুৰিৰ শূন্য)"},
-      {"word_idx": 2, "gloss_text": "যুগপৎ ভাৱনা কৰা উচিত"},
-      {"word_idx": 3, "gloss_text": "আৰু"},
-      {"word_idx": 4, "gloss_text": "যিয়ে"},
-      {"word_idx": 5, "gloss_text": "শৰীৰ-নিৰপেক্ষ শক্তিৰ দ্বাৰা"},
-      {"word_idx": 6, "gloss_text": "শূন্য-মনা হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "পৃষ্ঠ-শূন্য (পিছফালৰ শূন্য)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মূল-শূন্য (গুৰিৰ শূন্য)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যুগপৎ ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "যিয়ে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শৰীৰ-নিৰপেক্ষ শক্তিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শূন্য-মনা হয়"
+      }
     ],
     "1.40": [
-      {"word_idx": 0, "gloss_text": "পৃষ্ঠ-শূন্য"},
-      {"word_idx": 1, "gloss_text": "মূল-শূন্য"},
-      {"word_idx": 2, "gloss_text": "হৃদয়-শূন্য"},
-      {"word_idx": 3, "gloss_text": "দৃঢ়ভাৱে ভাৱনা কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "যুগপৎ"},
-      {"word_idx": 5, "gloss_text": "নিৰ্বিকল্পতাৰ পৰা"},
-      {"word_idx": 6, "gloss_text": "তাৰ পিছতেই নিৰ্বিকল্প-উদয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "পৃষ্ঠ-শূন্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মূল-শূন্য"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "হৃদয়-শূন্য"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "দৃঢ়ভাৱে ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "যুগপৎ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিৰ্বিকল্পতাৰ পৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ পিছতেই নিৰ্বিকল্প-উদয়"
+      }
     ],
     "1.41": [
-      {"word_idx": 0, "gloss_text": "দেহৰ কোনো এক প্ৰদেশত"},
-      {"word_idx": 1, "gloss_text": "শূন্যতাই"},
-      {"word_idx": 2, "gloss_text": "ক্ষণমাত্ৰ"},
-      {"word_idx": 3, "gloss_text": "ভাৱনা কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "নিৰ্বিকল্প"},
-      {"word_idx": 5, "gloss_text": "নিৰ্বিকল্প হয়"},
-      {"word_idx": 6, "gloss_text": "নিৰ্বিকল্প-স্বৰূপৰ ভাগী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দেহৰ কোনো এক প্ৰদেশত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শূন্যতাই"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ক্ষণমাত্ৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিৰ্বিকল্প"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিৰ্বিকল্প হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "নিৰ্বিকল্প-স্বৰূপৰ ভাগী"
+      }
     ],
     "1.42": [
-      {"word_idx": 0, "gloss_text": "দেহগত সমস্ত দ্ৰব্য"},
-      {"word_idx": 1, "gloss_text": "বিয়ৎ-ব্যাপ্ত"},
-      {"word_idx": 2, "gloss_text": "হে মৃগ-নয়না"},
-      {"word_idx": 3, "gloss_text": "ভাৱনা কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "তেতিয়া তেওঁৰ বাবে"},
-      {"word_idx": 5, "gloss_text": "সেই ভাৱনা"},
-      {"word_idx": 6, "gloss_text": "স্থিৰ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দেহগত সমস্ত দ্ৰব্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিয়ৎ-ব্যাপ্ত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "হে মৃগ-নয়না"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেতিয়া তেওঁৰ বাবে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সেই ভাৱনা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "স্থিৰ হয়"
+      }
     ],
     "1.43": [
-      {"word_idx": 0, "gloss_text": "দেহৰ ভিতৰত"},
-      {"word_idx": 1, "gloss_text": "ছাল-বিভাগ"},
-      {"word_idx": 2, "gloss_text": "প্ৰাচীৰ-মাত্ৰ হিচাপে"},
-      {"word_idx": 3, "gloss_text": "চিন্তা কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "তেওঁৰ বাবে ভিতৰত একোৱেই নাই"},
-      {"word_idx": 5, "gloss_text": "ধ্যান কৰি"},
-      {"word_idx": 6, "gloss_text": "অধ্যেয়-ভাগী হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দেহৰ ভিতৰত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ছাল-বিভাগ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "প্ৰাচীৰ-মাত্ৰ হিচাপে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চিন্তা কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেওঁৰ বাবে ভিতৰত একোৱেই নাই"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ধ্যান কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "অধ্যেয়-ভাগী হয়"
+      }
     ],
     "1.44": [
-      {"word_idx": 0, "gloss_text": "হৃদয়-আকাশত"},
-      {"word_idx": 1, "gloss_text": "ইন্দ্ৰিয় লীন"},
-      {"word_idx": 2, "gloss_text": "পদ্ম-সম্পুটৰ মাজত গত"},
-      {"word_idx": 3, "gloss_text": "অনন্য-চিত্ত"},
-      {"word_idx": 4, "gloss_text": "হে সুভগে"},
-      {"word_idx": 5, "gloss_text": "পৰম সৌভাগ্য লাভ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "হৃদয়-আকাশত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ইন্দ্ৰিয় লীন"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পদ্ম-সম্পুটৰ মাজত গত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অনন্য-চিত্ত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "হে সুভগে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰম সৌভাগ্য লাভ হয়"
+      }
     ],
     "1.45": [
-      {"word_idx": 0, "gloss_text": "সৰ্ব-দিশৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "নিজ-শৰীৰৰ"},
-      {"word_idx": 2, "gloss_text": "দ্বাদশান্তত"},
-      {"word_idx": 3, "gloss_text": "মনৰ লয়ৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "দৃঢ়-বুদ্ধিৰ বাবে"},
-      {"word_idx": 5, "gloss_text": "দৃঢ়ীভূত"},
-      {"word_idx": 6, "gloss_text": "তত্ত্ব-লক্ষ্য"},
-      {"word_idx": 7, "gloss_text": "প্ৰৱৰ্তিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সৰ্ব-দিশৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নিজ-শৰীৰৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দ্বাদশান্তত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মনৰ লয়ৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "দৃঢ়-বুদ্ধিৰ বাবে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দৃঢ়ীভূত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তত্ত্ব-লক্ষ্য"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰৱৰ্তিত হয়"
+      }
     ],
     "1.46": [
-      {"word_idx": 0, "gloss_text": "যিদৰে-তেনেদৰে"},
-      {"word_idx": 1, "gloss_text": "য'তেই হওক"},
-      {"word_idx": 2, "gloss_text": "দ্বাদশান্তত"},
-      {"word_idx": 3, "gloss_text": "মন নিক্ষেপ কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "প্ৰতি ক্ষণত"},
-      {"word_idx": 5, "gloss_text": "যাৰ বৃত্তি ক্ষীণ"},
-      {"word_idx": 6, "gloss_text": "বৈলক্ষণ্য (ভিন্ন প্ৰকাৰ পোহৰ)"},
-      {"word_idx": 7, "gloss_text": "কেইদিনৰ ভিতৰতেই আহে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যিদৰে-তেনেদৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "য'তেই হওক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দ্বাদশান্তত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মন নিক্ষেপ কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰতি ক্ষণত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "যাৰ বৃত্তি ক্ষীণ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "বৈলক্ষণ্য (ভিন্ন প্ৰকাৰ পোহৰ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "কেইদিনৰ ভিতৰতেই আহে"
+      }
     ],
     "1.47": [
-      {"word_idx": 0, "gloss_text": "য'তেই য'তেই"},
-      {"word_idx": 1, "gloss_text": "মন"},
-      {"word_idx": 2, "gloss_text": "যায়"},
-      {"word_idx": 3, "gloss_text": "বাহ্যত"},
-      {"word_idx": 4, "gloss_text": "বা"},
-      {"word_idx": 5, "gloss_text": "অভ্যন্তৰত"},
-      {"word_idx": 6, "gloss_text": "অথবা"},
-      {"word_idx": 7, "gloss_text": "তাতেই তাতেই"},
-      {"word_idx": 8, "gloss_text": "শিৱ-অৱস্থা"},
-      {"word_idx": 9, "gloss_text": "ব্যাপকতাৰ কাৰণে"},
-      {"word_idx": 10, "gloss_text": "ক'লৈ যাব?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "য'তেই য'তেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মন"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যায়"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "বাহ্যত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অভ্যন্তৰত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "তাতেই তাতেই"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "শিৱ-অৱস্থা"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ব্যাপকতাৰ কাৰণে"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ক'লৈ যাব?"
+      }
     ],
     "1.48": [
-      {"word_idx": 0, "gloss_text": "য'তেই য'তেই"},
-      {"word_idx": 1, "gloss_text": "ইন্দ্ৰিয়-পথত"},
-      {"word_idx": 2, "gloss_text": "চৈতন্য"},
-      {"word_idx": 3, "gloss_text": "প্ৰকাশিত হয়"},
-      {"word_idx": 4, "gloss_text": "বিভুৰ (সৰ্বব্যাপীৰ)"},
-      {"word_idx": 5, "gloss_text": "তেওঁৰ (যোগীৰ)"},
-      {"word_idx": 6, "gloss_text": "তন্মাত্ৰ-ধৰ্মিত্বৰ পৰা"},
-      {"word_idx": 7, "gloss_text": "চিৎ-লয়ৰ পৰা"},
-      {"word_idx": 8, "gloss_text": "ভৰিত-আত্মতা (আত্ম-পূৰ্ণতা)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "য'তেই য'তেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ইন্দ্ৰিয়-পথত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "চৈতন্য"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "প্ৰকাশিত হয়"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিভুৰ (সৰ্বব্যাপীৰ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তেওঁৰ (যোগীৰ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তন্মাত্ৰ-ধৰ্মিত্বৰ পৰা"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "চিৎ-লয়ৰ পৰা"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ভৰিত-আত্মতা (আত্ম-পূৰ্ণতা)"
+      }
     ],
     "1.49": [
-      {"word_idx": 0, "gloss_text": "ক্ষুধা ইত্যাদিৰ অন্তত"},
-      {"word_idx": 1, "gloss_text": "ভয়ত"},
-      {"word_idx": 2, "gloss_text": "শোকত"},
-      {"word_idx": 3, "gloss_text": "গহ্বৰত (গভীৰ সংশয়ত)"},
-      {"word_idx": 4, "gloss_text": "অথবা"},
-      {"word_idx": 5, "gloss_text": "ৰণৰ পৰা দ্ৰুত পলায়নত"},
-      {"word_idx": 6, "gloss_text": "কৌতূহলত"},
-      {"word_idx": 7, "gloss_text": "ক্ষুধা ইত্যাদিৰ অন্তত"},
-      {"word_idx": 8, "gloss_text": "ব্ৰহ্ম-সত্তাৰ ওচৰগামী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ক্ষুধা ইত্যাদিৰ অন্তত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভয়ত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শোকত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "গহ্বৰত (গভীৰ সংশয়ত)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ৰণৰ পৰা দ্ৰুত পলায়নত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "কৌতূহলত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ক্ষুধা ইত্যাদিৰ অন্তত"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ব্ৰহ্ম-সত্তাৰ ওচৰগামী"
+      }
     ],
     "1.50": [
-      {"word_idx": 0, "gloss_text": "বস্তুসমূহ সোঁৱৰাৰ সময়ত"},
-      {"word_idx": 1, "gloss_text": "দৃষ্ট দেশত"},
-      {"word_idx": 2, "gloss_text": "মন ত্যাগ কৰা উচিত"},
-      {"word_idx": 3, "gloss_text": "নিজ-শৰীৰ"},
-      {"word_idx": 4, "gloss_text": "নিৰাধাৰ কৰি"},
-      {"word_idx": 5, "gloss_text": "প্ৰভু প্ৰসাৰিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বস্তুসমূহ সোঁৱৰাৰ সময়ত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দৃষ্ট দেশত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মন ত্যাগ কৰা উচিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিজ-শৰীৰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিৰাধাৰ কৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "প্ৰভু প্ৰসাৰিত হয়"
+      }
     ],
     "1.51": [
-      {"word_idx": 0, "gloss_text": "কোনো বস্তুত"},
-      {"word_idx": 1, "gloss_text": "স্থাপন কৰি"},
-      {"word_idx": 2, "gloss_text": "লাহে লাহে"},
-      {"word_idx": 3, "gloss_text": "দৃষ্টি"},
-      {"word_idx": 4, "gloss_text": "ওভতাই অনা উচিত"},
-      {"word_idx": 5, "gloss_text": "সেই জ্ঞান"},
-      {"word_idx": 6, "gloss_text": "চিত্ত-সহিত"},
-      {"word_idx": 7, "gloss_text": "হে দেৱী"},
-      {"word_idx": 8, "gloss_text": "(যোগী) শূন্যৰ আলয় হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কোনো বস্তুত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "স্থাপন কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "লাহে লাহে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "দৃষ্টি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ওভতাই অনা উচিত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সেই জ্ঞান"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "চিত্ত-সহিত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(যোগী) শূন্যৰ আলয় হয়"
+      }
     ],
     "1.52": [
-      {"word_idx": 0, "gloss_text": "ভক্তিৰ উদ্ৰেকৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "বিৰক্তৰ"},
-      {"word_idx": 2, "gloss_text": "যি-প্ৰকাৰ"},
-      {"word_idx": 3, "gloss_text": "জন্মে"},
-      {"word_idx": 4, "gloss_text": "মতি (অন্তৰ্দৃষ্টি)"},
-      {"word_idx": 5, "gloss_text": "সেইটোৱেই শাঙ্কৰী শক্তি"},
-      {"word_idx": 6, "gloss_text": "নিত্য"},
-      {"word_idx": 7, "gloss_text": "তেওঁক ভাৱনা কৰা উচিত"},
-      {"word_idx": 8, "gloss_text": "তাৰ পিছত শিৱ (হোৱা যায়)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ভক্তিৰ উদ্ৰেকৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিৰক্তৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যি-প্ৰকাৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "জন্মে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মতি (অন্তৰ্দৃষ্টি)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সেইটোৱেই শাঙ্কৰী শক্তি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "নিত্য"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "তেওঁক ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "তাৰ পিছত শিৱ (হোৱা যায়)"
+      }
     ],
     "1.53": [
-      {"word_idx": 0, "gloss_text": "আন বস্তুত"},
-      {"word_idx": 1, "gloss_text": "জ্ঞাত হ'লে"},
-      {"word_idx": 2, "gloss_text": "সমস্ত বস্তুত"},
-      {"word_idx": 3, "gloss_text": "শূন্যতা (থাকে)"},
-      {"word_idx": 4, "gloss_text": "সেইটোৱেই"},
-      {"word_idx": 5, "gloss_text": "মনৰ দ্বাৰা ধ্যান কৰি"},
-      {"word_idx": 6, "gloss_text": "জ্ঞাত হ'লেও প্ৰশান্তি লাভ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আন বস্তুত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "জ্ঞাত হ'লে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সমস্ত বস্তুত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শূন্যতা (থাকে)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সেইটোৱেই"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মনৰ দ্বাৰা ধ্যান কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "জ্ঞাত হ'লেও প্ৰশান্তি লাভ"
+      }
     ],
     "1.54": [
-      {"word_idx": 0, "gloss_text": "অল্পজ্ঞসকলৰ দ্বাৰা"},
-      {"word_idx": 1, "gloss_text": "যাক শুদ্ধি ৰূপে গণ্য কৰা হয়"},
-      {"word_idx": 2, "gloss_text": "সেই শুদ্ধি"},
-      {"word_idx": 3, "gloss_text": "শম্ভু-দৰ্শনত"},
-      {"word_idx": 4, "gloss_text": "শুচি নহয়"},
-      {"word_idx": 5, "gloss_text": "নিশ্চয়ে"},
-      {"word_idx": 6, "gloss_text": "সেইবাবে অশুচিও নহয়"},
-      {"word_idx": 7, "gloss_text": "নিৰ্বিকল্পেই সুখী হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অল্পজ্ঞসকলৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যাক শুদ্ধি ৰূপে গণ্য কৰা হয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সেই শুদ্ধি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শম্ভু-দৰ্শনত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শুচি নহয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিশ্চয়ে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সেইবাবে অশুচিও নহয়"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "নিৰ্বিকল্পেই সুখী হয়"
+      }
     ],
     "1.55": [
-      {"word_idx": 0, "gloss_text": "সৰ্বত্ৰ"},
-      {"word_idx": 1, "gloss_text": "ভৈৰৱ-ভাৱ"},
-      {"word_idx": 2, "gloss_text": "সাধাৰণ বস্তুত"},
-      {"word_idx": 3, "gloss_text": "এনেকি"},
-      {"word_idx": 4, "gloss_text": "গোচৰ"},
-      {"word_idx": 5, "gloss_text": "আৰু নহয়"},
-      {"word_idx": 6, "gloss_text": "তাৰ বাহিৰে"},
-      {"word_idx": 7, "gloss_text": "পৰ আছে — এই-প্ৰকাৰ"},
-      {"word_idx": 8, "gloss_text": "অদ্বয় গতি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সৰ্বত্ৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভৈৰৱ-ভাৱ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সাধাৰণ বস্তুত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "এনেকি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "গোচৰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "আৰু নহয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ বাহিৰে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "পৰ আছে — এই-প্ৰকাৰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "অদ্বয় গতি"
+      }
     ],
     "1.56": [
-      {"word_idx": 0, "gloss_text": "সম"},
-      {"word_idx": 1, "gloss_text": "শত্ৰু-মিত্ৰত"},
-      {"word_idx": 2, "gloss_text": "মান-অপমানত সম"},
-      {"word_idx": 3, "gloss_text": "ব্ৰহ্মৰ পৰিপূৰ্ণতাৰ কাৰণে"},
-      {"word_idx": 4, "gloss_text": "এইদৰে জানি"},
-      {"word_idx": 5, "gloss_text": "সুখী হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সম"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শত্ৰু-মিত্ৰত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মান-অপমানত সম"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ব্ৰহ্মৰ পৰিপূৰ্ণতাৰ কাৰণে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "এইদৰে জানি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সুখী হয়"
+      }
     ],
     "1.57": [
-      {"word_idx": 0, "gloss_text": "দ্বেষ নহয়"},
-      {"word_idx": 1, "gloss_text": "ভাৱনা কৰক"},
-      {"word_idx": 2, "gloss_text": "কাৰোবাৰ প্ৰতি"},
-      {"word_idx": 3, "gloss_text": "ৰাগ নহয়"},
-      {"word_idx": 4, "gloss_text": "ভাৱনা কৰক"},
-      {"word_idx": 5, "gloss_text": "কোনোবাৰ প্ৰতি"},
-      {"word_idx": 6, "gloss_text": "ৰাগ-দ্বেষৰ পৰা মুক্ত হ'লে"},
-      {"word_idx": 7, "gloss_text": "মাজত ব্ৰহ্ম"},
-      {"word_idx": 8, "gloss_text": "প্ৰসৰ্পিত হয় (গমন কৰে)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দ্বেষ নহয়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভাৱনা কৰক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "কাৰোবাৰ প্ৰতি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ৰাগ নহয়"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ভাৱনা কৰক"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "কোনোবাৰ প্ৰতি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ৰাগ-দ্বেষৰ পৰা মুক্ত হ'লে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "মাজত ব্ৰহ্ম"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "প্ৰসৰ্পিত হয় (গমন কৰে)"
+      }
     ],
     "1.58": [
-      {"word_idx": 0, "gloss_text": "যি জ্ঞেয় নহয়"},
-      {"word_idx": 1, "gloss_text": "যি গ্ৰহণযোগ্য নহয়"},
-      {"word_idx": 2, "gloss_text": "যি শূন্য"},
-      {"word_idx": 3, "gloss_text": "যি অভাৱ-গত (অস্তিত্বহীন)"},
-      {"word_idx": 4, "gloss_text": "সকলো ভৈৰৱ"},
-      {"word_idx": 5, "gloss_text": "ভাৱনাৰ যোগ্য"},
-      {"word_idx": 6, "gloss_text": "তাৰ অন্তত"},
-      {"word_idx": 7, "gloss_text": "বোধৰ সম্ভৱ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যি জ্ঞেয় নহয়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যি গ্ৰহণযোগ্য নহয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যি শূন্য"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "যি অভাৱ-গত (অস্তিত্বহীন)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সকলো ভৈৰৱ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভাৱনাৰ যোগ্য"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ অন্তত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "বোধৰ সম্ভৱ"
+      }
     ],
     "1.59": [
-      {"word_idx": 0, "gloss_text": "নিত্যত"},
-      {"word_idx": 1, "gloss_text": "বিভুত (সৰ্বব্যাপী)"},
-      {"word_idx": 2, "gloss_text": "নিৰাধাৰত"},
-      {"word_idx": 3, "gloss_text": "ব্যাপকত"},
-      {"word_idx": 4, "gloss_text": "আৰু"},
-      {"word_idx": 5, "gloss_text": "অখিল-আত্মন"},
-      {"word_idx": 6, "gloss_text": "এইদৰে ভৈৰৱক"},
-      {"word_idx": 7, "gloss_text": "অনুস্মৰণ কৰি"},
-      {"word_idx": 8, "gloss_text": "পুৰুষ মুক্ত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিত্যত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিভুত (সৰ্বব্যাপী)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰাধাৰত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ব্যাপকত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অখিল-আত্মন"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "এইদৰে ভৈৰৱক"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "অনুস্মৰণ কৰি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "পুৰুষ মুক্ত হয়"
+      }
     ],
     "1.60": [
-      {"word_idx": 0, "gloss_text": "নিৰাধাৰ"},
-      {"word_idx": 1, "gloss_text": "সংশয়-বৰ্জিত"},
-      {"word_idx": 2, "gloss_text": "খ্যাতি-বৰ্জিত (দ্বৈত-জ্ঞান-বৰ্জিত)"},
-      {"word_idx": 3, "gloss_text": "সেই পৰম ব্ৰহ্ম"},
-      {"word_idx": 4, "gloss_text": "প্ৰোক্ত"},
-      {"word_idx": 5, "gloss_text": "ভাৱনা কৰা উচিত"},
-      {"word_idx": 6, "gloss_text": "তন্ময় হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিৰাধাৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সংশয়-বৰ্জিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "খ্যাতি-বৰ্জিত (দ্বৈত-জ্ঞান-বৰ্জিত)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সেই পৰম ব্ৰহ্ম"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰোক্ত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তন্ময় হয়"
+      }
     ],
     "1.61": [
-      {"word_idx": 0, "gloss_text": "যিদৰে-তেনেদৰে"},
-      {"word_idx": 1, "gloss_text": "উপদেশৰ দ্বাৰা"},
-      {"word_idx": 2, "gloss_text": "ঘটোৱা হয়"},
-      {"word_idx": 3, "gloss_text": "মৰুতৰ লয়"},
-      {"word_idx": 4, "gloss_text": "তেনেদৰে-তেনেদৰে"},
-      {"word_idx": 5, "gloss_text": "মন জ্ঞেয়"},
-      {"word_idx": 6, "gloss_text": "সেই অৱস্থাৰ পদলৈ গমন"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যিদৰে-তেনেদৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "উপদেশৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ঘটোৱা হয়"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মৰুতৰ লয়"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তেনেদৰে-তেনেদৰে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মন জ্ঞেয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সেই অৱস্থাৰ পদলৈ গমন"
+      }
     ],
     "1.62": [
-      {"word_idx": 0, "gloss_text": "অমূল (মূলৰহিত উৎস)"},
-      {"word_idx": 1, "gloss_text": "মূল-নাড়ীসমূহৰ"},
-      {"word_idx": 2, "gloss_text": "বায়ু-পূৰ্ণ"},
-      {"word_idx": 3, "gloss_text": "সুষুম্না"},
-      {"word_idx": 4, "gloss_text": "দ্বাদশান্তত স্থিত"},
-      {"word_idx": 5, "gloss_text": "ধ্যান কৰি"},
-      {"word_idx": 6, "gloss_text": "অমূল ভৈৰৱক প্ৰাপ্ত হোৱা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অমূল (মূলৰহিত উৎস)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মূল-নাড়ীসমূহৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বায়ু-পূৰ্ণ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সুষুম্না"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "দ্বাদশান্তত স্থিত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ধ্যান কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "অমূল ভৈৰৱক প্ৰাপ্ত হোৱা"
+      }
     ],
     "1.63": [
-      {"word_idx": 0, "gloss_text": "কপালৰ ভিতৰত"},
-      {"word_idx": 1, "gloss_text": "তেনেদৰে মন (স্থাপিত)"},
-      {"word_idx": 2, "gloss_text": "ধ্যানকাৰীৰ"},
-      {"word_idx": 3, "gloss_text": "অচিৰে"},
-      {"word_idx": 4, "gloss_text": "হে প্ৰভু"},
-      {"word_idx": 5, "gloss_text": "নিমীলন ইত্যাদিৰ পৰা জাত সিদ্ধি"},
-      {"word_idx": 6, "gloss_text": "চিন্ময়ৰ বাবে"},
-      {"word_idx": 7, "gloss_text": "জন্মে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কপালৰ ভিতৰত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "তেনেদৰে মন (স্থাপিত)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ধ্যানকাৰীৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অচিৰে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "হে প্ৰভু"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "নিমীলন ইত্যাদিৰ পৰা জাত সিদ্ধি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "চিন্ময়ৰ বাবে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "জন্মে"
+      }
     ],
     "1.64": [
-      {"word_idx": 0, "gloss_text": "জিভাৰ মাজত"},
-      {"word_idx": 1, "gloss_text": "মুখ প্ৰসাৰিত"},
-      {"word_idx": 2, "gloss_text": "মাজত নিক্ষেপ কৰি"},
-      {"word_idx": 3, "gloss_text": "চেতনা"},
-      {"word_idx": 4, "gloss_text": "'হ'-উচ্চাৰণ"},
-      {"word_idx": 5, "gloss_text": "ভাবি ভাবি"},
-      {"word_idx": 6, "gloss_text": "তাৰ পিছত শান্তত"},
-      {"word_idx": 7, "gloss_text": "প্ৰলীন হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "জিভাৰ মাজত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মুখ প্ৰসাৰিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মাজত নিক্ষেপ কৰি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চেতনা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'হ'-উচ্চাৰণ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভাবি ভাবি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাৰ পিছত শান্তত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰলীন হয়"
+      }
     ],
     "1.65": [
-      {"word_idx": 0, "gloss_text": "আসনত, শয্যাত"},
-      {"word_idx": 1, "gloss_text": "থাকি"},
-      {"word_idx": 2, "gloss_text": "নিৰাধাৰ"},
-      {"word_idx": 3, "gloss_text": "ভাৱনা কৰি কৰি"},
-      {"word_idx": 4, "gloss_text": "নিজ-দেহ"},
-      {"word_idx": 5, "gloss_text": "মন ক্ষীণ হ'লে"},
-      {"word_idx": 6, "gloss_text": "ক্ষণমাত্ৰত"},
-      {"word_idx": 7, "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য) হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আসনত, শয্যাত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "থাকি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰাধাৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভাৱনা কৰি কৰি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিজ-দেহ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মন ক্ষীণ হ'লে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ক্ষণমাত্ৰত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য) হয়"
+      }
     ],
     "1.66": [
-      {"word_idx": 0, "gloss_text": "চল-আসনত"},
-      {"word_idx": 1, "gloss_text": "স্থিত হৈ, তেতিয়া"},
-      {"word_idx": 2, "gloss_text": "অথবা লাহে"},
-      {"word_idx": 3, "gloss_text": "শৰীৰ-চালনাৰ পৰা"},
-      {"word_idx": 4, "gloss_text": "মানসিক ভাৱ প্ৰশান্ত হ'লে"},
-      {"word_idx": 5, "gloss_text": "হে দেৱী"},
-      {"word_idx": 6, "gloss_text": "দিব্য-ওঘ (আনন্দ-প্ৰৱাহ)"},
-      {"word_idx": 7, "gloss_text": "লাভ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "চল-আসনত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "স্থিত হৈ, তেতিয়া"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অথবা লাহে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শৰীৰ-চালনাৰ পৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মানসিক ভাৱ প্ৰশান্ত হ'লে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "দিব্য-ওঘ (আনন্দ-প্ৰৱাহ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "লাভ হয়"
+      }
     ],
     "1.67": [
-      {"word_idx": 0, "gloss_text": "বিমল আকাশ"},
-      {"word_idx": 1, "gloss_text": "চাই"},
-      {"word_idx": 2, "gloss_text": "নিৰন্তৰ দৃষ্টি কৰি"},
-      {"word_idx": 3, "gloss_text": "স্তব্ধ-আত্মা"},
-      {"word_idx": 4, "gloss_text": "সেই ক্ষণত"},
-      {"word_idx": 5, "gloss_text": "হে দেৱী"},
-      {"word_idx": 6, "gloss_text": "ভৈৰৱ-বপু"},
-      {"word_idx": 7, "gloss_text": "প্ৰাপ্ত হোৱা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিমল আকাশ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "চাই"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰন্তৰ দৃষ্টি কৰি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "স্তব্ধ-আত্মা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সেই ক্ষণত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৈৰৱ-বপু"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "প্ৰাপ্ত হোৱা"
+      }
     ],
     "1.68": [
-      {"word_idx": 0, "gloss_text": "লীন"},
-      {"word_idx": 1, "gloss_text": "মূৰ্ধাত"},
-      {"word_idx": 2, "gloss_text": "বিয়ৎ (শূন্য)"},
-      {"word_idx": 3, "gloss_text": "সমস্ত"},
-      {"word_idx": 4, "gloss_text": "ভৈৰৱত্ব-ৰূপে ভাৱনা কৰক"},
-      {"word_idx": 5, "gloss_text": "সেই সকলো"},
-      {"word_idx": 6, "gloss_text": "ভৈৰৱ-আকাৰ-তেজঃ-তত্ত্ব"},
-      {"word_idx": 7, "gloss_text": "সমাবিষ্ট হওঁক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "লীন"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মূৰ্ধাত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বিয়ৎ (শূন্য)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সমস্ত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ভৈৰৱত্ব-ৰূপে ভাৱনা কৰক"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সেই সকলো"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৈৰৱ-আকাৰ-তেজঃ-তত্ত্ব"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সমাবিষ্ট হওঁক"
+      }
     ],
     "1.69": [
-      {"word_idx": 0, "gloss_text": "কিঞ্চিৎ-জ্ঞাত (আংশিক জ্ঞান)"},
-      {"word_idx": 1, "gloss_text": "দ্বৈত-দায়ী"},
-      {"word_idx": 2, "gloss_text": "বাহ্য পোহৰ"},
-      {"word_idx": 3, "gloss_text": "আকৌ আন্ধাৰ"},
-      {"word_idx": 4, "gloss_text": "বিশ্ব ইত্যাদি"},
-      {"word_idx": 5, "gloss_text": "ভৈৰৱ-ৰূপ"},
-      {"word_idx": 6, "gloss_text": "জানি"},
-      {"word_idx": 7, "gloss_text": "অনন্ত-প্ৰকাশ-ধাৰী হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কিঞ্চিৎ-জ্ঞাত (আংশিক জ্ঞান)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দ্বৈত-দায়ী"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বাহ্য পোহৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আকৌ আন্ধাৰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিশ্ব ইত্যাদি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভৈৰৱ-ৰূপ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "জানি"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "অনন্ত-প্ৰকাশ-ধাৰী হয়"
+      }
     ],
     "1.70": [
-      {"word_idx": 0, "gloss_text": "এইদৰেই"},
-      {"word_idx": 1, "gloss_text": "দুৰ্নিশাত (অমাবস্যা-নিশাত)"},
-      {"word_idx": 2, "gloss_text": "কৃষ্ণপক্ষৰ আগমনত"},
-      {"word_idx": 3, "gloss_text": "দীৰ্ঘকাল"},
-      {"word_idx": 4, "gloss_text": "তিমিৰ (আন্ধাৰ)"},
-      {"word_idx": 5, "gloss_text": "ভাৱনা কৰি"},
-      {"word_idx": 6, "gloss_text": "ভৈৰৱ-ৰূপ হিচাপে"},
-      {"word_idx": 7, "gloss_text": "(সেই) ৰূপ প্ৰাপ্ত হ'ব"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এইদৰেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দুৰ্নিশাত (অমাবস্যা-নিশাত)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "কৃষ্ণপক্ষৰ আগমনত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "দীৰ্ঘকাল"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তিমিৰ (আন্ধাৰ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভাৱনা কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৈৰৱ-ৰূপ হিচাপে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(সেই) ৰূপ প্ৰাপ্ত হ'ব"
+      }
     ],
     "1.71": [
-      {"word_idx": 0, "gloss_text": "এইদৰেই"},
-      {"word_idx": 1, "gloss_text": "প্ৰথমে বন্ধ কৰি"},
-      {"word_idx": 2, "gloss_text": "দুটা চকু"},
-      {"word_idx": 3, "gloss_text": "কৃষ্ণ-আভা"},
-      {"word_idx": 4, "gloss_text": "সন্মুখত"},
-      {"word_idx": 5, "gloss_text": "প্ৰসাৰিত কৰি"},
-      {"word_idx": 6, "gloss_text": "ভৈৰৱ-ৰূপ"},
-      {"word_idx": 7, "gloss_text": "ভাৱনা কৰি কৰি"},
-      {"word_idx": 8, "gloss_text": "তন্ময় হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এইদৰেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্ৰথমে বন্ধ কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দুটা চকু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "কৃষ্ণ-আভা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সন্মুখত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "প্ৰসাৰিত কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৈৰৱ-ৰূপ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ভাৱনা কৰি কৰি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "তন্ময় হয়"
+      }
     ],
     "1.72": [
-      {"word_idx": 0, "gloss_text": "যিকোনো ইন্দ্ৰিয়ৰ"},
-      {"word_idx": 1, "gloss_text": "ব্যাঘাতৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "আৰু"},
-      {"word_idx": 3, "gloss_text": "নিৰোধৰ পৰা"},
-      {"word_idx": 4, "gloss_text": "প্ৰৱিষ্টৰ বাবে"},
-      {"word_idx": 5, "gloss_text": "অদ্বয় শূন্যত"},
-      {"word_idx": 6, "gloss_text": "তাতেই"},
-      {"word_idx": 7, "gloss_text": "আত্মা প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যিকোনো ইন্দ্ৰিয়ৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ব্যাঘাতৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিৰোধৰ পৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰৱিষ্টৰ বাবে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অদ্বয় শূন্যত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তাতেই"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "আত্মা প্ৰকাশিত হয়"
+      }
     ],
     "1.73": [
-      {"word_idx": 0, "gloss_text": "বিন্দু-হীন"},
-      {"word_idx": 1, "gloss_text": "বিসৰ্গ-হীন"},
-      {"word_idx": 2, "gloss_text": "আৰু"},
-      {"word_idx": 3, "gloss_text": "'অ'-কাৰ"},
-      {"word_idx": 4, "gloss_text": "জপকাৰীৰ বাবে"},
-      {"word_idx": 5, "gloss_text": "মহান উদিত হয়"},
-      {"word_idx": 6, "gloss_text": "হে দেৱী"},
-      {"word_idx": 7, "gloss_text": "সহসা"},
-      {"word_idx": 8, "gloss_text": "জ্ঞান-ওঘ যিজন — পৰমেশ্বৰ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিন্দু-হীন"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিসৰ্গ-হীন"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'অ'-কাৰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "জপকাৰীৰ বাবে"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মহান উদিত হয়"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "হে দেৱী"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সহসা"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "জ্ঞান-ওঘ যিজন — পৰমেশ্বৰ"
+      }
     ],
     "1.74": [
-      {"word_idx": 0, "gloss_text": "বিসৰ্গ-সহিত বৰ্ণৰ"},
-      {"word_idx": 1, "gloss_text": "বিসৰ্গ-অন্তত"},
-      {"word_idx": 2, "gloss_text": "চিতি স্থাপন কৰক"},
-      {"word_idx": 3, "gloss_text": "নিৰাধাৰ চিত্তৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "সনাতন ব্ৰহ্ম স্পৰ্শ কৰক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিসৰ্গ-সহিত বৰ্ণৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিসৰ্গ-অন্তত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "চিতি স্থাপন কৰক"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিৰাধাৰ চিত্তৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সনাতন ব্ৰহ্ম স্পৰ্শ কৰক"
+      }
     ],
     "1.75": [
-      {"word_idx": 0, "gloss_text": "ব্যোম-আকাৰ"},
-      {"word_idx": 1, "gloss_text": "নিজ আত্মাক"},
-      {"word_idx": 2, "gloss_text": "ধ্যান কৰা উচিত"},
-      {"word_idx": 3, "gloss_text": "দিশৰ দ্বাৰা অনাবৃত"},
-      {"word_idx": 4, "gloss_text": "নিৰাশ্ৰয়"},
-      {"word_idx": 5, "gloss_text": "চিতি-শক্তি"},
-      {"word_idx": 6, "gloss_text": "স্বৰূপ দেখুৱাব"},
-      {"word_idx": 7, "gloss_text": "তেতিয়া"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ব্যোম-আকাৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নিজ আত্মাক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ধ্যান কৰা উচিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "দিশৰ দ্বাৰা অনাবৃত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিৰাশ্ৰয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "চিতি-শক্তি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "স্বৰূপ দেখুৱাব"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "তেতিয়া"
+      }
     ],
     "1.76": [
-      {"word_idx": 0, "gloss_text": "কোনো অঙ্গ"},
-      {"word_idx": 1, "gloss_text": "প্ৰথমে বিদ্ধ কৰি"},
-      {"word_idx": 2, "gloss_text": "তীক্ষ্ণ সুঁই ইত্যাদিৰ দ্বাৰা"},
-      {"word_idx": 3, "gloss_text": "তাৰ পিছত"},
-      {"word_idx": 4, "gloss_text": "তাতেই"},
-      {"word_idx": 5, "gloss_text": "চেতনা যুক্ত কৰি"},
-      {"word_idx": 6, "gloss_text": "ভৈৰৱত"},
-      {"word_idx": 7, "gloss_text": "নিৰ্মল গতি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কোনো অঙ্গ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "প্ৰথমে বিদ্ধ কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তীক্ষ্ণ সুঁই ইত্যাদিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তাৰ পিছত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তাতেই"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "চেতনা যুক্ত কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৈৰৱত"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "নিৰ্মল গতি"
+      }
     ],
     "1.77": [
-      {"word_idx": 0, "gloss_text": "চিত্ত ইত্যাদি অন্তঃকৰণ"},
-      {"word_idx": 1, "gloss_text": "নাই"},
-      {"word_idx": 2, "gloss_text": "মোৰ ভিতৰত"},
-      {"word_idx": 3, "gloss_text": "এই ভাৱনা কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "বিকল্পৰ অভাৱত"},
-      {"word_idx": 5, "gloss_text": "বিকল্পসমূহ ত্যাগ কৰি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "চিত্ত ইত্যাদি অন্তঃকৰণ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নাই"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মোৰ ভিতৰত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "এই ভাৱনা কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "বিকল্পৰ অভাৱত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "বিকল্পসমূহ ত্যাগ কৰি"
+      }
     ],
     "1.78": [
-      {"word_idx": 0, "gloss_text": "মায়া বিমোহিনী নামত"},
-      {"word_idx": 1, "gloss_text": "কলাৰ"},
-      {"word_idx": 2, "gloss_text": "কলন (সীমিতকৰণ)"},
-      {"word_idx": 3, "gloss_text": "স্থিত"},
-      {"word_idx": 4, "gloss_text": "এই-আদি ধৰ্ম"},
-      {"word_idx": 5, "gloss_text": "তত্ত্বসমূহৰ"},
-      {"word_idx": 6, "gloss_text": "গণনা কৰি কৰি"},
-      {"word_idx": 7, "gloss_text": "পৃথক নহ'বা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মায়া বিমোহিনী নামত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কলাৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "কলন (সীমিতকৰণ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "স্থিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "এই-আদি ধৰ্ম"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তত্ত্বসমূহৰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "গণনা কৰি কৰি"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "পৃথক নহ'বা"
+      }
     ],
     "1.79": [
-      {"word_idx": 0, "gloss_text": "সদ্য"},
-      {"word_idx": 1, "gloss_text": "উৎপন্ন ইচ্ছাক"},
-      {"word_idx": 2, "gloss_text": "দেখি"},
-      {"word_idx": 3, "gloss_text": "শম-গামী কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "য'ৰ পৰাই উদ্ভূত"},
-      {"word_idx": 5, "gloss_text": "তাতেই লীন হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সদ্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "উৎপন্ন ইচ্ছাক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দেখি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "শম-গামী কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "য'ৰ পৰাই উদ্ভূত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তাতেই লীন হয়"
+      }
     ],
     "1.80": [
-      {"word_idx": 0, "gloss_text": "যেতিয়া মোৰ ইচ্ছা"},
-      {"word_idx": 1, "gloss_text": "উদিত নহয়"},
-      {"word_idx": 2, "gloss_text": "অথবা জ্ঞান (উদিত নহয়)"},
-      {"word_idx": 3, "gloss_text": "তেতিয়া মই কোন?"},
-      {"word_idx": 4, "gloss_text": "প্ৰকৃতপক্ষে মই সেইৰূপ"},
-      {"word_idx": 5, "gloss_text": "তাত লীন"},
-      {"word_idx": 6, "gloss_text": "তন্মন হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যেতিয়া মোৰ ইচ্ছা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "উদিত নহয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অথবা জ্ঞান (উদিত নহয়)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেতিয়া মই কোন?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰকৃতপক্ষে মই সেইৰূপ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তাত লীন"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "তন্মন হয়"
+      }
     ],
     "1.81": [
-      {"word_idx": 0, "gloss_text": "ইচ্ছাত"},
-      {"word_idx": 1, "gloss_text": "অথবা জ্ঞানত"},
-      {"word_idx": 2, "gloss_text": "জাত হ'লে"},
-      {"word_idx": 3, "gloss_text": "চিত্ত নিৱেশ কৰা উচিত"},
-      {"word_idx": 4, "gloss_text": "আত্ম-বুদ্ধিত অনন্য-চিত্ত হৈ"},
-      {"word_idx": 5, "gloss_text": "তাৰ পিছত তত্ত্ব-অৰ্থ-দৰ্শন"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ইচ্ছাত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অথবা জ্ঞানত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "জাত হ'লে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চিত্ত নিৱেশ কৰা উচিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "আত্ম-বুদ্ধিত অনন্য-চিত্ত হৈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তাৰ পিছত তত্ত্ব-অৰ্থ-দৰ্শন"
+      }
     ],
     "1.82": [
-      {"word_idx": 0, "gloss_text": "নিৰনিমিত্ত"},
-      {"word_idx": 1, "gloss_text": "জ্ঞান উদিত হ'ব পাৰে"},
-      {"word_idx": 2, "gloss_text": "নিৰাধাৰ"},
-      {"word_idx": 3, "gloss_text": "ভ্ৰম-আত্মক"},
-      {"word_idx": 4, "gloss_text": "প্ৰকৃতপক্ষে এয়া কাৰোৱে নহয়"},
-      {"word_idx": 5, "gloss_text": "এনে ভাৱনাকাৰী, হে প্ৰিয়ে, শিৱ (হয়)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিৰনিমিত্ত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "জ্ঞান উদিত হ'ব পাৰে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰাধাৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভ্ৰম-আত্মক"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "প্ৰকৃতপক্ষে এয়া কাৰোৱে নহয়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "এনে ভাৱনাকাৰী, হে প্ৰিয়ে, শিৱ (হয়)"
+      }
     ],
     "1.83": [
-      {"word_idx": 0, "gloss_text": "চিৎ-ধৰ্মা"},
-      {"word_idx": 1, "gloss_text": "সমস্ত দেহত"},
-      {"word_idx": 2, "gloss_text": "ক'তো বিশেষ নাই"},
-      {"word_idx": 3, "gloss_text": "আৰু সেইবাবে"},
-      {"word_idx": 4, "gloss_text": "সমস্ত তন্ময়"},
-      {"word_idx": 5, "gloss_text": "ভাৱনা কৰি"},
-      {"word_idx": 6, "gloss_text": "ভৱ-জিৎ ব্যক্তি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "চিৎ-ধৰ্মা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সমস্ত দেহত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ক'তো বিশেষ নাই"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আৰু সেইবাবে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সমস্ত তন্ময়"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভাৱনা কৰি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ভৱ-জিৎ ব্যক্তি"
+      }
     ],
     "1.84": [
-      {"word_idx": 0, "gloss_text": "কাম-ক্ৰোধ-লোভ-মোহ-মদ-মাৎসৰ্যৰ গোচৰত"},
-      {"word_idx": 1, "gloss_text": "বুদ্ধি নিস্তিমিত (স্থিৰ) কৰি"},
-      {"word_idx": 2, "gloss_text": "সেই তত্ত্বই অৱশিষ্ট থাকে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কাম-ক্ৰোধ-লোভ-মোহ-মদ-মাৎসৰ্যৰ গোচৰত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বুদ্ধি নিস্তিমিত (স্থিৰ) কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সেই তত্ত্বই অৱশিষ্ট থাকে"
+      }
     ],
     "1.85": [
-      {"word_idx": 0, "gloss_text": "ইন্দ্ৰজাল-ময় বিশ্ব"},
-      {"word_idx": 1, "gloss_text": "বিস্তৃত"},
-      {"word_idx": 2, "gloss_text": "অথবা"},
-      {"word_idx": 3, "gloss_text": "চিত্ৰকৰ্মৰ দৰে"},
-      {"word_idx": 4, "gloss_text": "ঘূৰ্ণমান"},
-      {"word_idx": 5, "gloss_text": "অথবা"},
-      {"word_idx": 6, "gloss_text": "ধ্যানকাৰীৰ বাবে"},
-      {"word_idx": 7, "gloss_text": "সকলো দেখিলে"},
-      {"word_idx": 8, "gloss_text": "সুখৰ উদয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ইন্দ্ৰজাল-ময় বিশ্ব"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিস্তৃত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "চিত্ৰকৰ্মৰ দৰে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ঘূৰ্ণমান"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ধ্যানকাৰীৰ বাবে"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সকলো দেখিলে"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "সুখৰ উদয়"
+      }
     ],
     "1.86": [
-      {"word_idx": 0, "gloss_text": "দুখত চিত্ত নিক্ষেপ নকৰিবা"},
-      {"word_idx": 1, "gloss_text": "সুখতো পৰিক্ষেপ নকৰিবা"},
-      {"word_idx": 2, "gloss_text": "হে ভৈৰৱী"},
-      {"word_idx": 3, "gloss_text": "মাজত জনা যাওক"},
-      {"word_idx": 4, "gloss_text": "কি তত্ত্ব অৱশিষ্ট থাকে?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দুখত চিত্ত নিক্ষেপ নকৰিবা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সুখতো পৰিক্ষেপ নকৰিবা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "হে ভৈৰৱী"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মাজত জনা যাওক"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "কি তত্ত্ব অৱশিষ্ট থাকে?"
+      }
     ],
     "1.87": [
-      {"word_idx": 0, "gloss_text": "ত্যাগ কৰি"},
-      {"word_idx": 1, "gloss_text": "নিজ-দেহৰ আস্থা"},
-      {"word_idx": 2, "gloss_text": "'সৰ্বত্ৰ মই' — এই"},
-      {"word_idx": 3, "gloss_text": "ভাৱনা কৰি কৰি"},
-      {"word_idx": 4, "gloss_text": "দৃঢ় মনৰ দ্বাৰা"},
-      {"word_idx": 5, "gloss_text": "দৃষ্টিত"},
-      {"word_idx": 6, "gloss_text": "আন-নিৰ্দেশহীন"},
-      {"word_idx": 7, "gloss_text": "সুখী হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ত্যাগ কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নিজ-দেহৰ আস্থা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'সৰ্বত্ৰ মই' — এই"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভাৱনা কৰি কৰি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "দৃঢ় মনৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দৃষ্টিত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "আন-নিৰ্দেশহীন"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সুখী হয়"
+      }
     ],
     "1.88": [
-      {"word_idx": 0, "gloss_text": "ঘট ইত্যাদিত"},
-      {"word_idx": 1, "gloss_text": "যি বিজ্ঞান"},
-      {"word_idx": 2, "gloss_text": "অথবা ইচ্ছা ইত্যাদি মোৰ অন্তৰত"},
-      {"word_idx": 3, "gloss_text": "সেয়া সৰ্বগ-ৰূপে বাহিৰে আন কোনো ৰূপে জন্মা নাই"},
-      {"word_idx": 4, "gloss_text": "এই ভাৱনাকাৰী সৰ্বগ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ঘট ইত্যাদিত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যি বিজ্ঞান"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অথবা ইচ্ছা ইত্যাদি মোৰ অন্তৰত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সেয়া সৰ্বগ-ৰূপে বাহিৰে আন কোনো ৰূপে জন্মা নাই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "এই ভাৱনাকাৰী সৰ্বগ হয়"
+      }
     ],
     "1.89": [
-      {"word_idx": 0, "gloss_text": "গ্ৰাহ্য-গ্ৰাহক-সংবিত্তি"},
-      {"word_idx": 1, "gloss_text": "সাধাৰণ"},
-      {"word_idx": 2, "gloss_text": "সমস্ত দেহীৰ"},
-      {"word_idx": 3, "gloss_text": "যোগীৰ ক্ষেত্ৰত কিন্তু বিশেষ আছে"},
-      {"word_idx": 4, "gloss_text": "সম্বন্ধত"},
-      {"word_idx": 5, "gloss_text": "সাৱধানতা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "গ্ৰাহ্য-গ্ৰাহক-সংবিত্তি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সাধাৰণ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সমস্ত দেহীৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "যোগীৰ ক্ষেত্ৰত কিন্তু বিশেষ আছে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সম্বন্ধত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সাৱধানতা"
+      }
     ],
     "1.90": [
-      {"word_idx": 0, "gloss_text": "নিজৰ দৰে"},
-      {"word_idx": 1, "gloss_text": "আনৰ শৰীৰতো"},
-      {"word_idx": 2, "gloss_text": "সংবিত্তি অনুভৱ কৰক"},
-      {"word_idx": 3, "gloss_text": "নিজ-শৰীৰৰ অপেক্ষা"},
-      {"word_idx": 4, "gloss_text": "ত্যাগ কৰি"},
-      {"word_idx": 5, "gloss_text": "দিনে দিনে ব্যাপী হওক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিজৰ দৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আনৰ শৰীৰতো"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সংবিত্তি অনুভৱ কৰক"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিজ-শৰীৰৰ অপেক্ষা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ত্যাগ কৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দিনে দিনে ব্যাপী হওক"
+      }
     ],
     "1.91": [
-      {"word_idx": 0, "gloss_text": "মন নিৰাধাৰ কৰি"},
-      {"word_idx": 1, "gloss_text": "বিকল্প নকৰিবা"},
-      {"word_idx": 2, "gloss_text": "তেতিয়া আত্ম-পৰমাত্ম-ত্বত"},
-      {"word_idx": 3, "gloss_text": "ভৈৰৱ, হে মৃগ-নয়না"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মন নিৰাধাৰ কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিকল্প নকৰিবা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তেতিয়া আত্ম-পৰমাত্ম-ত্বত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভৈৰৱ, হে মৃগ-নয়না"
+      }
     ],
     "1.92": [
-      {"word_idx": 0, "gloss_text": "সৰ্বজ্ঞ"},
-      {"word_idx": 1, "gloss_text": "আৰু সৰ্ব-কৰ্তা"},
-      {"word_idx": 2, "gloss_text": "ব্যাপক পৰমেশ্বৰ"},
-      {"word_idx": 3, "gloss_text": "তেৱেঁই মই"},
-      {"word_idx": 4, "gloss_text": "শৈৱ-ধৰ্মা"},
-      {"word_idx": 5, "gloss_text": "এই দৃঢ়তাৰ পৰা"},
-      {"word_idx": 6, "gloss_text": "শিৱ হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সৰ্বজ্ঞ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আৰু সৰ্ব-কৰ্তা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ব্যাপক পৰমেশ্বৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেৱেঁই মই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শৈৱ-ধৰ্মা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "এই দৃঢ়তাৰ পৰা"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শিৱ হয়"
+      }
     ],
     "1.93": [
-      {"word_idx": 0, "gloss_text": "পানীৰ দৰে"},
-      {"word_idx": 1, "gloss_text": "তৰংগসমূহ"},
-      {"word_idx": 2, "gloss_text": "অগ্নিৰ শিখা-ভঙ্গিসমূহ"},
-      {"word_idx": 3, "gloss_text": "সূৰ্যৰ প্ৰভা"},
-      {"word_idx": 4, "gloss_text": "মোৰেই — ভৈৰৱৰেই"},
-      {"word_idx": 5, "gloss_text": "এই বিশ্ব-ভঙ্গিসমূহ"},
-      {"word_idx": 6, "gloss_text": "বিভেদিত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "পানীৰ দৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "তৰংগসমূহ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অগ্নিৰ শিখা-ভঙ্গিসমূহ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "সূৰ্যৰ প্ৰভা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মোৰেই — ভৈৰৱৰেই"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "এই বিশ্ব-ভঙ্গিসমূহ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "বিভেদিত"
+      }
     ],
     "1.94": [
-      {"word_idx": 0, "gloss_text": "ভ্ৰমণ কৰি কৰি"},
-      {"word_idx": 1, "gloss_text": "শৰীৰত"},
-      {"word_idx": 2, "gloss_text": "দ্ৰুত"},
-      {"word_idx": 3, "gloss_text": "ভূমিত পতিত হ'লে"},
-      {"word_idx": 4, "gloss_text": "ক্ষোভ-শক্তিৰ বিৰামৰ পৰা"},
-      {"word_idx": 5, "gloss_text": "পৰা দশা উৎপন্ন হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ভ্ৰমণ কৰি কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শৰীৰত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দ্ৰুত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ভূমিত পতিত হ'লে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ক্ষোভ-শক্তিৰ বিৰামৰ পৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰা দশা উৎপন্ন হয়"
+      }
     ],
     "1.95": [
-      {"word_idx": 0, "gloss_text": "আধাৰসমূহত"},
-      {"word_idx": 1, "gloss_text": "অথবা অশক্তিৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "জ্ঞানৰ পৰা"},
-      {"word_idx": 3, "gloss_text": "অথবা"},
-      {"word_idx": 4, "gloss_text": "দেশ-কল্পনাৰ পৰা"},
-      {"word_idx": 5, "gloss_text": "শক্তিৰ সংশোভ উদ্ভূত হ'লে"},
-      {"word_idx": 6, "gloss_text": "পিছত শান্ত হ'লে, তেতিয়া (পৰা অৱস্থা) ঘটে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আধাৰসমূহত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অথবা অশক্তিৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "জ্ঞানৰ পৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অথবা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "দেশ-কল্পনাৰ পৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শক্তিৰ সংশোভ উদ্ভূত হ'লে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পিছত শান্ত হ'লে, তেতিয়া (পৰা অৱস্থা) ঘটে"
+      }
     ],
     "1.96": [
-      {"word_idx": 0, "gloss_text": "বহি"},
-      {"word_idx": 1, "gloss_text": "আসনত ভালদৰে"},
-      {"word_idx": 2, "gloss_text": "দুহাত কৰি"},
-      {"word_idx": 3, "gloss_text": "অৰ্ধ-কুঞ্চিত"},
-      {"word_idx": 4, "gloss_text": "কক্ষ-ব্যোমত (কাষৰ শূন্যত)"},
-      {"word_idx": 5, "gloss_text": "মন ৰাখি"},
-      {"word_idx": 6, "gloss_text": "শম-প্ৰাপ্ত হয়"},
-      {"word_idx": 7, "gloss_text": "তাৰ লয়ৰ পৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বহি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আসনত ভালদৰে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দুহাত কৰি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অৰ্ধ-কুঞ্চিত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "কক্ষ-ব্যোমত (কাষৰ শূন্যত)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "মন ৰাখি"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "শম-প্ৰাপ্ত হয়"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "তাৰ লয়ৰ পৰা"
+      }
     ],
     "1.97": [
-      {"word_idx": 0, "gloss_text": "স্থূল-ৰূপ বস্তুৰ প্ৰতি"},
-      {"word_idx": 1, "gloss_text": "স্তব্ধ দৃষ্টি নিপাত কৰি"},
-      {"word_idx": 2, "gloss_text": "আৰু"},
-      {"word_idx": 3, "gloss_text": "অচিৰে"},
-      {"word_idx": 4, "gloss_text": "মন নিৰাধাৰ কৰি"},
-      {"word_idx": 5, "gloss_text": "শিৱত গমন কৰক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "স্থূল-ৰূপ বস্তুৰ প্ৰতি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "স্তব্ধ দৃষ্টি নিপাত কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "অচিৰে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মন নিৰাধাৰ কৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "শিৱত গমন কৰক"
+      }
     ],
     "1.98": [
-      {"word_idx": 0, "gloss_text": "জিভাৰ মাজত"},
-      {"word_idx": 1, "gloss_text": "মুখ প্ৰসাৰিত"},
-      {"word_idx": 2, "gloss_text": "মাজত চেতনা নিক্ষেপ কৰি"},
-      {"word_idx": 3, "gloss_text": "মনে মন্ত্ৰ উচ্চাৰণ কৰি কৰি"},
-      {"word_idx": 4, "gloss_text": "শিৱ ৰূপে ধ্যান কৰি কৰি"},
-      {"word_idx": 5, "gloss_text": "(যোগী) প্ৰশান্ত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "জিভাৰ মাজত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মুখ প্ৰসাৰিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মাজত চেতনা নিক্ষেপ কৰি"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মনে মন্ত্ৰ উচ্চাৰণ কৰি কৰি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শিৱ ৰূপে ধ্যান কৰি কৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(যোগী) প্ৰশান্ত হয়"
+      }
     ],
     "1.99": [
-      {"word_idx": 0, "gloss_text": "কপালৰ ভিতৰত"},
-      {"word_idx": 1, "gloss_text": "মুদ্ৰিত চকুৰে"},
-      {"word_idx": 2, "gloss_text": "উত্তম লক্ষ্য"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কপালৰ ভিতৰত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মুদ্ৰিত চকুৰে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "উত্তম লক্ষ্য"
+      }
     ],
     "1.100": [
-      {"word_idx": 0, "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"},
-      {"word_idx": 1, "gloss_text": "পদ্ম-সূত্ৰ-আভ-ৰূপা"},
-      {"word_idx": 2, "gloss_text": "অন্তৰ-ব্যোমময়ী দেৱী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "পদ্ম-সূত্ৰ-আভ-ৰূপা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অন্তৰ-ব্যোমময়ী দেৱী"
+      }
     ],
     "1.101": [
-      {"word_idx": 0, "gloss_text": "হাতৰ দ্বাৰা ৰুদ্ধ দৃষ্টি"},
-      {"word_idx": 1, "gloss_text": "দুৱাৰ-ৰোধৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "পৰম স্থিতি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "হাতৰ দ্বাৰা ৰুদ্ধ দৃষ্টি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দুৱাৰ-ৰোধৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পৰম স্থিতি"
+      }
     ],
     "1.102": [
-      {"word_idx": 0, "gloss_text": "মন্ত্ৰ-অৰ্থ-প্ৰোক্ত ৰূপসমূহ"},
-      {"word_idx": 1, "gloss_text": "অধিকাৰীৰ বিশেষত্ব অনুসৰি"},
-      {"word_idx": 2, "gloss_text": "সিদ্ধ সাধক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মন্ত্ৰ-অৰ্থ-প্ৰোক্ত ৰূপসমূহ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অধিকাৰীৰ বিশেষত্ব অনুসৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সিদ্ধ সাধক"
+      }
     ],
     "1.103": [
-      {"word_idx": 0, "gloss_text": "অনুসন্ধেয় (অনুসন্ধান কৰা উচিত)"},
-      {"word_idx": 1, "gloss_text": "একত্ৰ জ্ঞান অৱলম্বন কৰি"},
-      {"word_idx": 2, "gloss_text": "যোগ-সিদ্ধি লাভ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অনুসন্ধেয় (অনুসন্ধান কৰা উচিত)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "একত্ৰ জ্ঞান অৱলম্বন কৰি"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "যোগ-সিদ্ধি লাভ"
+      }
     ],
     "1.104": [
-      {"word_idx": 0, "gloss_text": "কামনাৰ বেগৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "বিস্ময়"},
-      {"word_idx": 2, "gloss_text": "[draft] নিজ-শৰীৰৰ আহ্লাদ-শক্তি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কামনাৰ বেগৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিস্ময়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিজ-শৰীৰৰ আহ্লাদ-শক্তি"
+      }
     ],
     "1.105": [
-      {"word_idx": 0, "gloss_text": "[draft] লেহন-মন্থন-আকোটৰ দ্বাৰা"},
-      {"word_idx": 1, "gloss_text": "স্ত্ৰী-সুখৰ ভৰ-স্মৃতিৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "আনন্দ-সম্প্লৱ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "লেহন-মন্থন-আকোটৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "স্ত্ৰী-সুখৰ ভৰ-স্মৃতিৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আনন্দ-সম্প্লৱ"
+      }
     ],
     "1.106": [
-      {"word_idx": 0, "gloss_text": "মহান আনন্দ প্ৰাপ্ত হ'লে"},
-      {"word_idx": 1, "gloss_text": "দীৰ্ঘকাল পিছত প্ৰিয়জনক (দেখি)"},
-      {"word_idx": 2, "gloss_text": "তাত লীন"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মহান আনন্দ প্ৰাপ্ত হ'লে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দীৰ্ঘকাল পিছত প্ৰিয়জনক (দেখি)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তাত লীন"
+      }
     ],
     "1.107": [
-      {"word_idx": 0, "gloss_text": "খাদ্য-পান"},
-      {"word_idx": 1, "gloss_text": "ৰস-আনন্দ-বিজৃম্ভণৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "মহান আনন্দ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "খাদ্য-পান"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ৰস-আনন্দ-বিজৃম্ভণৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মহান আনন্দ"
+      }
     ],
     "1.108": [
-      {"word_idx": 0, "gloss_text": "গীত ইত্যাদি বিষয়-আস্বাদৰ অসম-সৌখ্য-একত্ব-আত্মা"},
-      {"word_idx": 1, "gloss_text": "যোগীৰ বাবে"},
-      {"word_idx": 2, "gloss_text": "তন্ময়ত্বৰ দ্বাৰা"},
-      {"word_idx": 3, "gloss_text": "মনৰ আৰোহণৰ পৰা"},
-      {"word_idx": 4, "gloss_text": "তৎ-আত্মতা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "গীত ইত্যাদি বিষয়-আস্বাদৰ অসম-সৌখ্য-একত্ব-আত্মা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যোগীৰ বাবে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তন্ময়ত্বৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মনৰ আৰোহণৰ পৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তৎ-আত্মতা"
+      }
     ],
     "1.109": [
-      {"word_idx": 0, "gloss_text": "য'তেই য'তেই"},
-      {"word_idx": 1, "gloss_text": "আত্মাৰ তুষ্টি (ঘটে)"},
-      {"word_idx": 2, "gloss_text": "মন"},
-      {"word_idx": 3, "gloss_text": "তাতেই"},
-      {"word_idx": 4, "gloss_text": "ধাৰণ কৰা উচিত"},
-      {"word_idx": 5, "gloss_text": "তাতেই তাতেই"},
-      {"word_idx": 6, "gloss_text": "পৰা-আনন্দৰ স্ব-ৰূপ"},
-      {"word_idx": 7, "gloss_text": "সম্যকভাৱে প্ৰৱৰ্তিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "য'তেই য'তেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আত্মাৰ তুষ্টি (ঘটে)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মন"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তাতেই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ধাৰণ কৰা উচিত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "তাতেই তাতেই"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "পৰা-আনন্দৰ স্ব-ৰূপ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "সম্যকভাৱে প্ৰৱৰ্তিত হয়"
+      }
     ],
     "1.110": [
-      {"word_idx": 0, "gloss_text": "নিদ্ৰা এতিয়াও নহাত"},
-      {"word_idx": 1, "gloss_text": "বাহ্য-গোচৰ বিনষ্ট হ'লে"},
-      {"word_idx": 2, "gloss_text": "সেই অৱস্থা"},
-      {"word_idx": 3, "gloss_text": "মনৰ দ্বাৰা গম্য"},
-      {"word_idx": 4, "gloss_text": "পৰা দেৱী প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিদ্ৰা এতিয়াও নহাত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বাহ্য-গোচৰ বিনষ্ট হ'লে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সেই অৱস্থা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "মনৰ দ্বাৰা গম্য"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "পৰা দেৱী প্ৰকাশিত হয়"
+      }
     ],
     "1.111": [
-      {"word_idx": 0, "gloss_text": "তেজৰ দ্বাৰা"},
-      {"word_idx": 1, "gloss_text": "সূৰ্য, প্ৰদীপ ইত্যাদিৰ"},
-      {"word_idx": 2, "gloss_text": "আকাশ বিচিত্ৰবৰ্ণ হ'লে"},
-      {"word_idx": 3, "gloss_text": "নিজ-আত্মা দৃষ্ট হ'লে"},
-      {"word_idx": 4, "gloss_text": "সেই ভাৱত যুক্ত"},
-      {"word_idx": 5, "gloss_text": "সচ্চিদানন্দৰ গোচৰ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "তেজৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সূৰ্য, প্ৰদীপ ইত্যাদিৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আকাশ বিচিত্ৰবৰ্ণ হ'লে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "নিজ-আত্মা দৃষ্ট হ'লে"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "সেই ভাৱত যুক্ত"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "সচ্চিদানন্দৰ গোচৰ"
+      }
     ],
     "1.112": [
-      {"word_idx": 0, "gloss_text": "কৰংকিনীৰ দ্বাৰা"},
-      {"word_idx": 1, "gloss_text": "ক্ৰোধনাৰ দ্বাৰা"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱীৰ দ্বাৰা"},
-      {"word_idx": 3, "gloss_text": "লেলিহানাৰ দ্বাৰা"},
-      {"word_idx": 4, "gloss_text": "খেচৰীৰ দ্বাৰা"},
-      {"word_idx": 5, "gloss_text": "দৃষ্টি-কালত"},
-      {"word_idx": 6, "gloss_text": "আৰু"},
-      {"word_idx": 7, "gloss_text": "পৰ-প্ৰাপ্তি"},
-      {"word_idx": 8, "gloss_text": "প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কৰংকিনীৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ক্ৰোধনাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱীৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "লেলিহানাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "খেচৰীৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "দৃষ্টি-কালত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "আৰু"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "পৰ-প্ৰাপ্তি"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "প্ৰকাশিত হয়"
+      }
     ],
     "1.113": [
-      {"word_idx": 0, "gloss_text": "মৃদু আসনত"},
-      {"word_idx": 1, "gloss_text": "এটা নিতম্বত (অসম আসন)"},
-      {"word_idx": 2, "gloss_text": "হাত-ভৰি নিৰাশ্ৰয়"},
-      {"word_idx": 3, "gloss_text": "স্থাপন কৰি"},
-      {"word_idx": 4, "gloss_text": "তাৰ দ্বাৰা"},
-      {"word_idx": 5, "gloss_text": "পৰা পূৰ্ণ মতি জন্মে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মৃদু আসনত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "এটা নিতম্বত (অসম আসন)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "হাত-ভৰি নিৰাশ্ৰয়"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "স্থাপন কৰি"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "তাৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "পৰা পূৰ্ণ মতি জন্মে"
+      }
     ],
     "1.114": [
-      {"word_idx": 0, "gloss_text": "দুহাত অৰ্ধ-কুঞ্চিত"},
-      {"word_idx": 1, "gloss_text": "কক্ষ-ব্যোমত"},
-      {"word_idx": 2, "gloss_text": "তাৰ লয়ৰ পৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দুহাত অৰ্ধ-কুঞ্চিত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কক্ষ-ব্যোমত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তাৰ লয়ৰ পৰা"
+      }
     ],
     "1.115": [
-      {"word_idx": 0, "gloss_text": "স্তব্ধ দৃষ্টি নিপাত কৰি"},
-      {"word_idx": 1, "gloss_text": "নিৰাধাৰ"},
-      {"word_idx": 2, "gloss_text": "শিৱত গমন কৰক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "স্তব্ধ দৃষ্টি নিপাত কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নিৰাধাৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শিৱত গমন কৰক"
+      }
     ],
     "1.116": [
-      {"word_idx": 0, "gloss_text": "জিভাৰ মাজত"},
-      {"word_idx": 1, "gloss_text": "'হ'-উচ্চাৰণ"},
-      {"word_idx": 2, "gloss_text": "শান্তত (শিৱত)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "জিভাৰ মাজত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'হ'-উচ্চাৰণ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "শান্তত (শিৱত)"
+      }
     ],
     "1.117": [
-      {"word_idx": 0, "gloss_text": "নিজ-দেহ নিৰাধাৰ ৰূপে"},
-      {"word_idx": 1, "gloss_text": "মন ক্ষীণ হ'লে"},
-      {"word_idx": 2, "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিজ-দেহ নিৰাধাৰ ৰূপে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মন ক্ষীণ হ'লে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য)"
+      }
     ],
     "1.118": [
-      {"word_idx": 0, "gloss_text": "চল-আসনত"},
-      {"word_idx": 1, "gloss_text": "শৰীৰ-চালনাৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "দিব্য-ওঘ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "চল-আসনত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শৰীৰ-চালনাৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দিব্য-ওঘ"
+      }
     ],
     "1.119": [
-      {"word_idx": 0, "gloss_text": "বিমল আকাশ"},
-      {"word_idx": 1, "gloss_text": "স্তব্ধ-আত্মা"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱ-বপু"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিমল আকাশ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "স্তব্ধ-আত্মা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱ-বপু"
+      }
     ],
     "1.120": [
-      {"word_idx": 0, "gloss_text": "লীন বিয়ৎ"},
-      {"word_idx": 1, "gloss_text": "ভৈৰৱত্ব-ৰূপে"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱ-আকাৰ-তেজঃ-তত্ত্ব"}
+      {
+        "word_idx": 0,
+        "gloss_text": "লীন বিয়ৎ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভৈৰৱত্ব-ৰূপে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱ-আকাৰ-তেজঃ-তত্ত্ব"
+      }
     ],
     "1.121": [
-      {"word_idx": 0, "gloss_text": "কিঞ্চিৎ-জ্ঞাত"},
-      {"word_idx": 1, "gloss_text": "বাহ্য পোহৰ"},
-      {"word_idx": 2, "gloss_text": "অনন্ত-প্ৰকাশ-ধাৰী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কিঞ্চিৎ-জ্ঞাত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বাহ্য পোহৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অনন্ত-প্ৰকাশ-ধাৰী"
+      }
     ],
     "1.122": [
-      {"word_idx": 0, "gloss_text": "দুৰ্নিশাত"},
-      {"word_idx": 1, "gloss_text": "তিমিৰ-ৰূপ"},
-      {"word_idx": 2, "gloss_text": "ভৈৰৱ-ৰূপ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "দুৰ্নিশাত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "তিমিৰ-ৰূপ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৈৰৱ-ৰূপ"
+      }
     ],
     "1.123": [
-      {"word_idx": 0, "gloss_text": "বন্ধ কৰি"},
-      {"word_idx": 1, "gloss_text": "কৃষ্ণ-আভা"},
-      {"word_idx": 2, "gloss_text": "তন্ময়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বন্ধ কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কৃষ্ণ-আভা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তন্ময়"
+      }
     ],
     "1.124": [
-      {"word_idx": 0, "gloss_text": "ব্যাঘাতৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "নিৰোধৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "অদ্বয় শূন্যত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ব্যাঘাতৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "নিৰোধৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অদ্বয় শূন্যত"
+      }
     ],
     "1.125": [
-      {"word_idx": 0, "gloss_text": "বিন্দু-হীন"},
-      {"word_idx": 1, "gloss_text": "বিসৰ্গ-হীন"},
-      {"word_idx": 2, "gloss_text": "জ্ঞান-ওঘ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিন্দু-হীন"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিসৰ্গ-হীন"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "জ্ঞান-ওঘ"
+      }
     ],
     "1.126": [
-      {"word_idx": 0, "gloss_text": "বিসৰ্গ-অন্ত"},
-      {"word_idx": 1, "gloss_text": "চিতি (চেতনা)"},
-      {"word_idx": 2, "gloss_text": "সনাতন ব্ৰহ্ম"}
+      {
+        "word_idx": 0,
+        "gloss_text": "বিসৰ্গ-অন্ত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "চিতি (চেতনা)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সনাতন ব্ৰহ্ম"
+      }
     ],
     "1.127": [
-      {"word_idx": 0, "gloss_text": "ব্যোম-আকাৰ"},
-      {"word_idx": 1, "gloss_text": "দিশৰ দ্বাৰা অনাবৃত"},
-      {"word_idx": 2, "gloss_text": "নিৰাশ্ৰয় চিতি-শক্তি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ব্যোম-আকাৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "দিশৰ দ্বাৰা অনাবৃত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰাশ্ৰয় চিতি-শক্তি"
+      }
     ],
     "1.128": [
-      {"word_idx": 0, "gloss_text": "কোনো অঙ্গ"},
-      {"word_idx": 1, "gloss_text": "তীক্ষ্ণ সুঁই ইত্যাদিৰ দ্বাৰা"},
-      {"word_idx": 2, "gloss_text": "নিৰ্মল গতি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কোনো অঙ্গ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "তীক্ষ্ণ সুঁই ইত্যাদিৰ দ্বাৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "নিৰ্মল গতি"
+      }
     ],
     "1.129": [
-      {"word_idx": 0, "gloss_text": "অন্তঃকৰণ"},
-      {"word_idx": 1, "gloss_text": "বিকল্পৰ অভাৱত"},
-      {"word_idx": 2, "gloss_text": "ত্যাগ-কৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "অন্তঃকৰণ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিকল্পৰ অভাৱত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ত্যাগ-কৰা"
+      }
     ],
     "1.130": [
-      {"word_idx": 0, "gloss_text": "মায়া বিমোহিনী"},
-      {"word_idx": 1, "gloss_text": "কলন (সীমিতকৰণ)"},
-      {"word_idx": 2, "gloss_text": "পৃথক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মায়া বিমোহিনী"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কলন (সীমিতকৰণ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পৃথক"
+      }
     ],
     "1.131": [
-      {"word_idx": 0, "gloss_text": "সদ্য"},
-      {"word_idx": 1, "gloss_text": "শম-গামী কৰা উচিত"},
-      {"word_idx": 2, "gloss_text": "য'ৰ পৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সদ্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শম-গামী কৰা উচিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "য'ৰ পৰা"
+      }
     ],
     "1.132": [
-      {"word_idx": 0, "gloss_text": "ইচ্ছা / জ্ঞান"},
-      {"word_idx": 1, "gloss_text": "মই কোন?"},
-      {"word_idx": 2, "gloss_text": "তন্মন (তাত-মন)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ইচ্ছা / জ্ঞান"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "মই কোন?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তন্মন (তাত-মন)"
+      }
     ],
     "1.133": [
-      {"word_idx": 0, "gloss_text": "ইচ্ছাত / জ্ঞানত"},
-      {"word_idx": 1, "gloss_text": "আত্ম-বুদ্ধিত"},
-      {"word_idx": 2, "gloss_text": "তত্ত্ব-অৰ্থ-দৰ্শন"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ইচ্ছাত / জ্ঞানত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আত্ম-বুদ্ধিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তত্ত্ব-অৰ্থ-দৰ্শন"
+      }
     ],
     "1.134": [
-      {"word_idx": 0, "gloss_text": "নিৰনিমিত্ত"},
-      {"word_idx": 1, "gloss_text": "ভ্ৰম-আত্মক"},
-      {"word_idx": 2, "gloss_text": "এনে ভাৱনাকাৰী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিৰনিমিত্ত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভ্ৰম-আত্মক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "এনে ভাৱনাকাৰী"
+      }
     ],
     "1.135": [
-      {"word_idx": 0, "gloss_text": "চিৎ-ধৰ্মা"},
-      {"word_idx": 1, "gloss_text": "বিশেষ, পাৰ্থক্য"},
-      {"word_idx": 2, "gloss_text": "ভৱ-জিৎ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "চিৎ-ধৰ্মা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিশেষ, পাৰ্থক্য"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ভৱ-জিৎ"
+      }
     ],
     "1.136": [
-      {"word_idx": 0, "gloss_text": "কাম, ক্ৰোধ, লোভ, মোহ, মদ, মাৎসৰ্য"},
-      {"word_idx": 1, "gloss_text": "সম্পূৰ্ণ স্থিৰ"},
-      {"word_idx": 2, "gloss_text": "অৱশিষ্ট থাকে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কাম, ক্ৰোধ, লোভ, মোহ, মদ, মাৎসৰ্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সম্পূৰ্ণ স্থিৰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "অৱশিষ্ট থাকে"
+      }
     ],
     "1.137": [
-      {"word_idx": 0, "gloss_text": "ইন্দ্ৰজাল-ময়"},
-      {"word_idx": 1, "gloss_text": "চিত্ৰকৰ্মৰ দৰে"},
-      {"word_idx": 2, "gloss_text": "সুখৰ উদয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ইন্দ্ৰজাল-ময়"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "চিত্ৰকৰ্মৰ দৰে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সুখৰ উদয়"
+      }
     ],
     "1.138": [
-      {"word_idx": 0, "gloss_text": "মাজত"},
-      {"word_idx": 1, "gloss_text": "অৱশিষ্ট থাকে"},
-      {"word_idx": 2, "gloss_text": "জনা যাওক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মাজত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "অৱশিষ্ট থাকে"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "জনা যাওক"
+      }
     ],
     "1.139": [
-      {"word_idx": 0, "gloss_text": "নিজ-দেহৰ আস্থা"},
-      {"word_idx": 1, "gloss_text": "'সৰ্বত্ৰ মই'"},
-      {"word_idx": 2, "gloss_text": "আন-নিৰ্দেশহীন দৃষ্টিত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিজ-দেহৰ আস্থা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'সৰ্বত্ৰ মই'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আন-নিৰ্দেশহীন দৃষ্টিত"
+      }
     ],
     "1.140": [
-      {"word_idx": 0, "gloss_text": "ঘট ইত্যাদিত"},
-      {"word_idx": 1, "gloss_text": "বিজ্ঞান"},
-      {"word_idx": 2, "gloss_text": "সৰ্বগ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ঘট ইত্যাদিত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিজ্ঞান"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সৰ্বগ"
+      }
     ],
     "1.141": [
-      {"word_idx": 0, "gloss_text": "গ্ৰাহ্য-গ্ৰাহক-সংবিত্তি"},
-      {"word_idx": 1, "gloss_text": "সাধাৰণ"},
-      {"word_idx": 2, "gloss_text": "সাৱধানতা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "গ্ৰাহ্য-গ্ৰাহক-সংবিত্তি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "সাধাৰণ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সাৱধানতা"
+      }
     ],
     "1.142": [
-      {"word_idx": 0, "gloss_text": "নিজৰ দৰে"},
-      {"word_idx": 1, "gloss_text": "আনৰ শৰীৰত"},
-      {"word_idx": 2, "gloss_text": "ব্যাপী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিজৰ দৰে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "আনৰ শৰীৰত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ব্যাপী"
+      }
     ],
     "1.143": [
-      {"word_idx": 0, "gloss_text": "নিৰাধাৰ মন"},
-      {"word_idx": 1, "gloss_text": "বিকল্প নকৰিবা"},
-      {"word_idx": 2, "gloss_text": "আত্ম-পৰমাত্ম-ত্বত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "নিৰাধাৰ মন"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "বিকল্প নকৰিবা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "আত্ম-পৰমাত্ম-ত্বত"
+      }
     ],
     "1.144": [
-      {"word_idx": 0, "gloss_text": "সৰ্বজ্ঞ, সৰ্ব-কৰ্তা"},
-      {"word_idx": 1, "gloss_text": "শৈৱ-ধৰ্মা"},
-      {"word_idx": 2, "gloss_text": "দৃঢ়তাৰ পৰা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সৰ্বজ্ঞ, সৰ্ব-কৰ্তা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শৈৱ-ধৰ্মা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "দৃঢ়তাৰ পৰা"
+      }
     ],
     "1.145": [
-      {"word_idx": 0, "gloss_text": "তৰংগসমূহ"},
-      {"word_idx": 1, "gloss_text": "শিখা-ভঙ্গিসমূহ"},
-      {"word_idx": 2, "gloss_text": "বিশ্ব-ভঙ্গিসমূহ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "তৰংগসমূহ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শিখা-ভঙ্গিসমূহ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "বিশ্ব-ভঙ্গিসমূহ"
+      }
     ],
     "1.146": [
-      {"word_idx": 0, "gloss_text": "ভ্ৰমণ কৰি কৰি"},
-      {"word_idx": 1, "gloss_text": "ক্ষোভ-শক্তিৰ বিৰামৰ পৰা"},
-      {"word_idx": 2, "gloss_text": "পৰা দশা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ভ্ৰমণ কৰি কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ক্ষোভ-শক্তিৰ বিৰামৰ পৰা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পৰা দশা"
+      }
     ],
     "1.147": [
-      {"word_idx": 0, "gloss_text": "আধাৰসমূহত"},
-      {"word_idx": 1, "gloss_text": "শক্তি-সংশোভত"},
-      {"word_idx": 2, "gloss_text": "পিছত শান্ত হ'লে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আধাৰসমূহত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শক্তি-সংশোভত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "পিছত শান্ত হ'লে"
+      }
     ],
     "1.148": [
-      {"word_idx": 0, "gloss_text": "সৰ্বত্ৰ"},
-      {"word_idx": 1, "gloss_text": "ভাৱনা-নামক উপদেশ"},
-      {"word_idx": 2, "gloss_text": "হে শোভনে"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সৰ্বত্ৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভাৱনা-নামক উপদেশ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "হে শোভনে"
+      }
     ],
     "1.149": [
-      {"word_idx": 0, "gloss_text": "এই দেহত যিকোনোৰ"},
-      {"word_idx": 1, "gloss_text": "'মই' প্ৰত্যয় উদয় হওক"},
-      {"word_idx": 2, "gloss_text": "তেওঁৰেই"},
-      {"word_idx": 3, "gloss_text": "ক্ষুদ্ৰ সংবিত্তিৰ পৰা"},
-      {"word_idx": 4, "gloss_text": "ভৈৰৱত্ব প্ৰকাশিত হয়"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই দেহত যিকোনোৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'মই' প্ৰত্যয় উদয় হওক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তেওঁৰেই"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ক্ষুদ্ৰ সংবিত্তিৰ পৰা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ভৈৰৱত্ব প্ৰকাশিত হয়"
+      }
     ],
     "1.150": [
-      {"word_idx": 0, "gloss_text": "শ্ৰীদেৱীয়ে ক'লে"},
-      {"word_idx": 1, "gloss_text": "হে দেৱদেৱ, মহাদেৱ"},
-      {"word_idx": 2, "gloss_text": "তুমি মোক পৰিপূৰ্ণ কৰিলা, হে প্ৰভু"},
-      {"word_idx": 3, "gloss_text": "তুমিয়েই শঙ্কৰৰ আত্মা"},
-      {"word_idx": 4, "gloss_text": "জগতত শাশ্বত শক্তি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শ্ৰীদেৱীয়ে ক'লে"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "হে দেৱদেৱ, মহাদেৱ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তুমি মোক পৰিপূৰ্ণ কৰিলা, হে প্ৰভু"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তুমিয়েই শঙ্কৰৰ আত্মা"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "জগতত শাশ্বত শক্তি"
+      }
     ],
     "1.151": [
-      {"word_idx": 0, "gloss_text": "যেনেদৰে তুমি কৃপাত আবিষ্ট হৈ"},
-      {"word_idx": 1, "gloss_text": "এই ৰহস্য"},
-      {"word_idx": 2, "gloss_text": "উদ্ধৃত কৰিলা"},
-      {"word_idx": 3, "gloss_text": "তেনেদৰেই"},
-      {"word_idx": 4, "gloss_text": "যিকোনোক (সাৱধানে) ক'ব পাৰি"},
-      {"word_idx": 5, "gloss_text": "যোগ্য কাণত"},
-      {"word_idx": 6, "gloss_text": "সেয়া নিক্ষেপ নকৰিবা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "যেনেদৰে তুমি কৃপাত আবিষ্ট হৈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "এই ৰহস্য"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "উদ্ধৃত কৰিলা"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেনেদৰেই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "যিকোনোক (সাৱধানে) ক'ব পাৰি"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "যোগ্য কাণত"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "সেয়া নিক্ষেপ নকৰিবা"
+      }
     ],
     "1.152": [
-      {"word_idx": 0, "gloss_text": "এই বিজ্ঞান"},
-      {"word_idx": 1, "gloss_text": "উদিত"},
-      {"word_idx": 2, "gloss_text": "জৰা-মৃত্যু-বিনাশক"},
-      {"word_idx": 3, "gloss_text": "ব্ৰহ্মা ইত্যাদি দেৱতাৰ বন্দনীয়"},
-      {"word_idx": 4, "gloss_text": "মন্থান-ভৈৰৱৰ"},
-      {"word_idx": 5, "gloss_text": "আৰু"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই বিজ্ঞান"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "উদিত"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "জৰা-মৃত্যু-বিনাশক"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ব্ৰহ্মা ইত্যাদি দেৱতাৰ বন্দনীয়"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "মন্থান-ভৈৰৱৰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "আৰু"
+      }
     ],
     "1.153": [
-      {"word_idx": 0, "gloss_text": "এই অনাখ্যাত (অনুক্ত) তন্ত্ৰ"},
-      {"word_idx": 1, "gloss_text": "ভোগ-মোক্ষ-বিধায়ক"},
-      {"word_idx": 2, "gloss_text": "এই অনাখ্যাত তন্ত্ৰ"},
-      {"word_idx": 3, "gloss_text": "তেওঁলোকৰ দ্বাৰা দত্ত"},
-      {"word_idx": 4, "gloss_text": "নিশ্চয়ে লীলাত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই অনাখ্যাত (অনুক্ত) তন্ত্ৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভোগ-মোক্ষ-বিধায়ক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "এই অনাখ্যাত তন্ত্ৰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তেওঁলোকৰ দ্বাৰা দত্ত"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "নিশ্চয়ে লীলাত"
+      }
     ],
     "1.154": [
-      {"word_idx": 0, "gloss_text": "জ্ঞান-লাভত"},
-      {"word_idx": 1, "gloss_text": "গুৰু-ভাৱ"},
-      {"word_idx": 2, "gloss_text": "সমতা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "জ্ঞান-লাভত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "গুৰু-ভাৱ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সমতা"
+      }
     ],
     "1.155": [
-      {"word_idx": 0, "gloss_text": "য'তেই য'তেই"},
-      {"word_idx": 1, "gloss_text": "যিকোনোভাৱেই হওক"},
-      {"word_idx": 2, "gloss_text": "কৰ্তা আৰু কৰ্মৰ বিবিক্ততা ঘটে"},
-      {"word_idx": 3, "gloss_text": "তাতেই তাতেই"},
-      {"word_idx": 4, "gloss_text": "শিৱ-অৱস্থা"},
-      {"word_idx": 5, "gloss_text": "ব্যাপকতাৰ কাৰণে"},
-      {"word_idx": 6, "gloss_text": "ক'লৈ যাব?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "য'তেই য'তেই"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যিকোনোভাৱেই হওক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "কৰ্তা আৰু কৰ্মৰ বিবিক্ততা ঘটে"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "তাতেই তাতেই"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "শিৱ-অৱস্থা"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ব্যাপকতাৰ কাৰণে"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ক'লৈ যাব?"
+      }
     ],
     "1.156": [
-      {"word_idx": 0, "gloss_text": "এই বিজ্ঞান অৱলম্বন কৰি"},
-      {"word_idx": 1, "gloss_text": "যোগী শিৱ হয়"},
-      {"word_idx": 2, "gloss_text": "তীৰ্থ ইত্যাদিত"},
-      {"word_idx": 3, "gloss_text": "আৰু কোনো জাতি-জন্ম হ'লেও"},
-      {"word_idx": 4, "gloss_text": "স্নান ইত্যাদিত কোনো কাৰণ নাই"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই বিজ্ঞান অৱলম্বন কৰি"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যোগী শিৱ হয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তীৰ্থ ইত্যাদিত"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "আৰু কোনো জাতি-জন্ম হ'লেও"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "স্নান ইত্যাদিত কোনো কাৰণ নাই"
+      }
     ],
     "1.157": [
-      {"word_idx": 0, "gloss_text": "[draft] শ্ৰোতা-আত্মাৰ"},
-      {"word_idx": 1, "gloss_text": "চিত্ত-সমতা"},
-      {"word_idx": 2, "gloss_text": "তত্ত্বৰ ভাৱনা"}
+      {
+        "word_idx": 0,
+        "gloss_text": "শ্ৰোতা-আত্মাৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "চিত্ত-সমতা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "তত্ত্বৰ ভাৱনা"
+      }
     ],
     "1.158": [
-      {"word_idx": 0, "gloss_text": "এই বিজ্ঞানৰ জ্ঞানৰ পৰা"},
-      {"word_idx": 1, "gloss_text": "যোগ-বিৎ-শ্ৰেষ্ঠ"},
-      {"word_idx": 2, "gloss_text": "মহাযোগী"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এই বিজ্ঞানৰ জ্ঞানৰ পৰা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "যোগ-বিৎ-শ্ৰেষ্ঠ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "মহাযোগী"
+      }
     ],
     "1.159": [
-      {"word_idx": 0, "gloss_text": "মই পৰিতৃপ্ত"},
-      {"word_idx": 1, "gloss_text": "ৰুদ্ৰযামল (মূল-তন্ত্ৰ)"},
-      {"word_idx": 2, "gloss_text": "সাৰ অৱধাৰিত হ'ল"}
+      {
+        "word_idx": 0,
+        "gloss_text": "মই পৰিতৃপ্ত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ৰুদ্ৰযামল (মূল-তন্ত্ৰ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সাৰ অৱধাৰিত হ'ল"
+      }
     ],
     "1.160": [
-      {"word_idx": 0, "gloss_text": "সকলো শক্তি-প্ৰভেদৰ"},
-      {"word_idx": 1, "gloss_text": "হৃদয়"},
-      {"word_idx": 2, "gloss_text": "প্ৰাপ্ত কৰি"}
+      {
+        "word_idx": 0,
+        "gloss_text": "সকলো শক্তি-প্ৰভেদৰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "হৃদয়"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "প্ৰাপ্ত কৰি"
+      }
     ],
     "1.161": [
-      {"word_idx": 0, "gloss_text": "আনন্দিতা"},
-      {"word_idx": 1, "gloss_text": "কণ্ঠত আশ্ৰিতা"},
-      {"word_idx": 2, "gloss_text": "সমুদ্ধৃত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "আনন্দিতা"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "কণ্ঠত আশ্ৰিতা"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "সমুদ্ধৃত"
+      }
     ],
     "1.162": [
-      {"word_idx": 0, "gloss_text": "কুল-গুহ্য"},
-      {"word_idx": 1, "gloss_text": "ভক্তি-যুক্ত শিষ্যক"},
-      {"word_idx": 2, "gloss_text": "গুৰু-ঘাতক"}
+      {
+        "word_idx": 0,
+        "gloss_text": "কুল-গুহ্য"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ভক্তি-যুক্ত শিষ্যক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "গুৰু-ঘাতক"
+      }
     ],
     "1.163": [
-      {"word_idx": 0, "gloss_text": "এইদৰে বিজ্ঞান-ভৈৰৱত"},
-      {"word_idx": 1, "gloss_text": "শ্ৰীদেৱী-দ্বাৰা স্তৱন-আত্মক"},
-      {"word_idx": 2, "gloss_text": "এশ"},
-      {"word_idx": 3, "gloss_text": "দ্বাদশ-অধিক"},
-      {"word_idx": 4, "gloss_text": "কোৱা হ'ল"},
-      {"word_idx": 5, "gloss_text": "ভেদ-বৰ্জিত"}
+      {
+        "word_idx": 0,
+        "gloss_text": "এইদৰে বিজ্ঞান-ভৈৰৱত"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "শ্ৰীদেৱী-দ্বাৰা স্তৱন-আত্মক"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "এশ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "দ্বাদশ-অধিক"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "কোৱা হ'ল"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ভেদ-বৰ্জিত"
+      }
     ]
   }
 }

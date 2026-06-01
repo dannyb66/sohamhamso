@@ -1287,7 +1287,7 @@ chapters:
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
-      text: అతడు ఒక్కడే అయినను, రెండు రూపములవాడు, మూడు విధములవాడు, నాలుగు ఆత్మలవాడు, ఏడు పంచకముల [draft] స్వభావము కలవాడు.
+      text: అతడు ఒక్కడే అయినను, రెండు రూపములవాడు, మూడు విధములవాడు, నాలుగు ఆత్మలవాడు, ఏడు పంచకముల స్వభావము కలవాడు.
       ai_assisted: true
       status: published
       model: claude-opus-4-7
@@ -1696,7 +1696,7 @@ chapters:
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
-      text: তথাপি, [draft] শিৱৰ দৰেই, তেওঁ পঞ্চকৃত্য সম্পাদন কৰে।
+      text: তথাপি, শিৱৰ দৰেই, তেওঁ পঞ্চকৃত্য সম্পাদন কৰে।
       ai_assisted: true
       status: published
       model: claude-opus-4-7
@@ -3245,7 +3245,7 @@ chapters:
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
-      text: ఇచట (ఈ సాధనలో) ఉపాయములు - వికల్ప క్షయము, శక్తుల సంకోచ-వికాసము, [draft] ప్రాణవాహ ఛేదనము, ఆది-అంత కోటుల నిభాలనము (ధ్యానము) మొదలగునవి.
+      text: ఇచట (ఈ సాధనలో) ఉపాయములు - వికల్ప క్షయము, శక్తుల సంకోచ-వికాసము, ప్రాణవాహ ఛేదనము, ఆది-అంత కోటుల నిభాలనము (ధ్యానము) మొదలగునవి.
       ai_assisted: true
       status: published
       model: claude-opus-4-7

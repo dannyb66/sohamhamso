@@ -7,1404 +7,4626 @@
   "status": "published",
   "verses": {
     "1.1": [
-      {"word_idx": 0, "gloss_text": "ధన్యురాలైన దేవి (భైరవి)"},
-      {"word_idx": 1, "gloss_text": "పలికెను"},
-      {"word_idx": 2, "gloss_text": "విన్నాను"},
-      {"word_idx": 3, "gloss_text": "ఓ ప్రభూ"},
-      {"word_idx": 4, "gloss_text": "నా చేత"},
-      {"word_idx": 5, "gloss_text": "సర్వము, మొత్తము"},
-      {"word_idx": 6, "gloss_text": "రుద్రయామల తంత్రము నుండి ఉద్భవించినది"},
-      {"word_idx": 7, "gloss_text": "త్రికము యొక్క విభజనలు"},
-      {"word_idx": 8, "gloss_text": "శేషము లేకుండా, పూర్తిగా"},
-      {"word_idx": 9, "gloss_text": "సారసారము నుండి విభజింపబడినది"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ధన్యురాలైన దేవి (భైరవి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పలికెను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విన్నాను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఓ ప్రభూ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నా చేత"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సర్వము, మొత్తము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "రుద్రయామల తంత్రము నుండి ఉద్భవించినది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "త్రికము యొక్క విభజనలు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శేషము లేకుండా, పూర్తిగా"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "సారసారము నుండి విభజింపబడినది"
+      }
     ],
     "1.2": [
-      {"word_idx": 0, "gloss_text": "ఈరోజు కూడా"},
-      {"word_idx": 1, "gloss_text": "కాదు"},
-      {"word_idx": 2, "gloss_text": "తొలగలేదు"},
-      {"word_idx": 3, "gloss_text": "నా యొక్క"},
-      {"word_idx": 4, "gloss_text": "సందేహము"},
-      {"word_idx": 5, "gloss_text": "ఓ పరమేశ్వరా"},
-      {"word_idx": 6, "gloss_text": "ఏమి?"},
-      {"word_idx": 7, "gloss_text": "రూపము, స్వభావము"},
-      {"word_idx": 8, "gloss_text": "నిజముగా"},
-      {"word_idx": 9, "gloss_text": "ఓ దేవా"},
-      {"word_idx": 10, "gloss_text": "శబ్దరాశి-కళలతో కూడినది"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈరోజు కూడా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తొలగలేదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నా యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సందేహము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ పరమేశ్వరా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏమి?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "రూపము, స్వభావము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఓ దేవా"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "శబ్దరాశి-కళలతో కూడినది"
+      }
     ],
     "1.3": [
-      {"word_idx": 0, "gloss_text": "లేదా"},
-      {"word_idx": 1, "gloss_text": "నవాత్మ-భేదముతో"},
-      {"word_idx": 2, "gloss_text": "భైరవునిలో"},
-      {"word_idx": 3, "gloss_text": "భైరవ-ఆకారములో"},
-      {"word_idx": 4, "gloss_text": "త్రిశిర-భేదముతో విభజింపబడినది"},
-      {"word_idx": 5, "gloss_text": "లేదా"},
-      {"word_idx": 6, "gloss_text": "లేదా"},
-      {"word_idx": 7, "gloss_text": "శక్తి-త్రయాత్మకము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నవాత్మ-భేదముతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవునిలో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భైరవ-ఆకారములో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "త్రిశిర-భేదముతో విభజింపబడినది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శక్తి-త్రయాత్మకము"
+      }
     ],
     "1.4": [
-      {"word_idx": 0, "gloss_text": "నాద-బిందుమయము"},
-      {"word_idx": 1, "gloss_text": "లేదా అయినా"},
-      {"word_idx": 2, "gloss_text": "ఏమి?"},
-      {"word_idx": 3, "gloss_text": "అర్ధచంద్ర-నిరోధికలు"},
-      {"word_idx": 4, "gloss_text": "చక్రముపై ఆరూఢమైనది"},
-      {"word_idx": 5, "gloss_text": "అనచ్కము (అచ్చు లేనిది)"},
-      {"word_idx": 6, "gloss_text": "లేదా"},
-      {"word_idx": 7, "gloss_text": "లేదా"},
-      {"word_idx": 8, "gloss_text": "శక్తి-స్వరూపము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నాద-బిందుమయము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లేదా అయినా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏమి?"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అర్ధచంద్ర-నిరోధికలు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చక్రముపై ఆరూఢమైనది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనచ్కము (అచ్చు లేనిది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శక్తి-స్వరూపము"
+      }
     ],
     "1.5": [
-      {"word_idx": 0, "gloss_text": "పరాపర దేవి యొక్క"},
-      {"word_idx": 1, "gloss_text": "సకలము (అంగములతో)"},
-      {"word_idx": 2, "gloss_text": "అపర దేవి యొక్క"},
-      {"word_idx": 3, "gloss_text": "మరియు, లేదా"},
-      {"word_idx": 4, "gloss_text": "మళ్ళీ"},
-      {"word_idx": 5, "gloss_text": "పరా దేవి యొక్క"},
-      {"word_idx": 6, "gloss_text": "ఒకవేళ"},
-      {"word_idx": 7, "gloss_text": "అటువంటి"},
-      {"word_idx": 8, "gloss_text": "అగును"},
-      {"word_idx": 9, "gloss_text": "పరత్వము"},
-      {"word_idx": 10, "gloss_text": "అది"},
-      {"word_idx": 11, "gloss_text": "విరుద్ధమగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "పరాపర దేవి యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సకలము (అంగములతో)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అపర దేవి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు, లేదా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మళ్ళీ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరా దేవి యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఒకవేళ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అటువంటి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అగును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "పరత్వము"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "విరుద్ధమగును"
+      }
     ],
     "1.6": [
-      {"word_idx": 0, "gloss_text": "ఏలయన కాదు"},
-      {"word_idx": 1, "gloss_text": "వర్ణ-భేదముతో"},
-      {"word_idx": 2, "gloss_text": "దేహ-భేదముతో"},
-      {"word_idx": 3, "gloss_text": "లేదా"},
-      {"word_idx": 4, "gloss_text": "అగును"},
-      {"word_idx": 5, "gloss_text": "పరత్వము"},
-      {"word_idx": 6, "gloss_text": "నిష్కలత్వముతో"},
-      {"word_idx": 7, "gloss_text": "సకలత్వములో"},
-      {"word_idx": 8, "gloss_text": "అది కాజాలదు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏలయన కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వర్ణ-భేదముతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దేహ-భేదముతో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అగును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరత్వము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిష్కలత్వముతో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సకలత్వములో"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది కాజాలదు"
+      }
     ],
     "1.7": [
-      {"word_idx": 0, "gloss_text": "అనుగ్రహము"},
-      {"word_idx": 1, "gloss_text": "చేయుము"},
-      {"word_idx": 2, "gloss_text": "నాకు"},
-      {"word_idx": 3, "gloss_text": "ఓ నాథా"},
-      {"word_idx": 4, "gloss_text": "శేషము లేకుండా"},
-      {"word_idx": 5, "gloss_text": "ఛేదించుము"},
-      {"word_idx": 6, "gloss_text": "సందేహమును"},
-      {"word_idx": 7, "gloss_text": "భైరవుడు పలికెను"},
-      {"word_idx": 8, "gloss_text": "సాధు, సాధు!"},
-      {"word_idx": 9, "gloss_text": "నీచే అడగబడినది"},
-      {"word_idx": 10, "gloss_text": "తంత్ర-సారము"},
-      {"word_idx": 11, "gloss_text": "ఇది, ఓ ప్రియురాలా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అనుగ్రహము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చేయుము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నాకు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఓ నాథా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శేషము లేకుండా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఛేదించుము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సందేహమును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భైరవుడు పలికెను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సాధు, సాధు!"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "నీచే అడగబడినది"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "తంత్ర-సారము"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఇది, ఓ ప్రియురాలా"
+      }
     ],
     "1.8": [
-      {"word_idx": 0, "gloss_text": "ఓ గుహ్యాతిగుహ్య రక్షకురాలా"},
-      {"word_idx": 1, "gloss_text": "నీవు"},
-      {"word_idx": 2, "gloss_text": "అయినప్పటికీ"},
-      {"word_idx": 3, "gloss_text": "ఇది"},
-      {"word_idx": 4, "gloss_text": "ఓ సుందరముఖీ"},
-      {"word_idx": 5, "gloss_text": "అయినప్పటికీ"},
-      {"word_idx": 6, "gloss_text": "చెప్పుదును"},
-      {"word_idx": 7, "gloss_text": "ఎలాగైతే"},
-      {"word_idx": 8, "gloss_text": "నీవు తెలుసుకుందువు"},
-      {"word_idx": 9, "gloss_text": "అలా వినుము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఓ గుహ్యాతిగుహ్య రక్షకురాలా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నీవు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అయినప్పటికీ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఓ సుందరముఖీ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అయినప్పటికీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "చెప్పుదును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఎలాగైతే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "నీవు తెలుసుకుందువు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అలా వినుము"
+      }
     ],
     "1.9": [
-      {"word_idx": 0, "gloss_text": "ఏది"},
-      {"word_idx": 1, "gloss_text": "పరమైనది"},
-      {"word_idx": 2, "gloss_text": "నిష్కలము"},
-      {"word_idx": 3, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 4, "gloss_text": "సర్వతత్వములకు అతీతము"},
-      {"word_idx": 5, "gloss_text": "అది శక్యము కాదు"},
-      {"word_idx": 6, "gloss_text": "దాని చేత"},
-      {"word_idx": 7, "gloss_text": "ఇక్కడ (మాటలలో)"},
-      {"word_idx": 8, "gloss_text": "చెప్పుటకు"},
-      {"word_idx": 9, "gloss_text": "శక్యమైనది ఏది"},
-      {"word_idx": 10, "gloss_text": "ఇచ్ఛతో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పరమైనది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిష్కలము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సర్వతత్వములకు అతీతము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అది శక్యము కాదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దాని చేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఇక్కడ (మాటలలో)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "చెప్పుటకు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "శక్యమైనది ఏది"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఇచ్ఛతో"
+      }
     ],
     "1.10": [
-      {"word_idx": 0, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 1, "gloss_text": "ప్రకృతి-రూపము కల"},
-      {"word_idx": 2, "gloss_text": "ఎవరైతే"},
-      {"word_idx": 3, "gloss_text": "ఆమె యొక్క"},
-      {"word_idx": 4, "gloss_text": "ఏ రూపము?"},
-      {"word_idx": 5, "gloss_text": "చెప్పబడును"},
-      {"word_idx": 6, "gloss_text": "సకలత్వములో"},
-      {"word_idx": 7, "gloss_text": "వికల్పముల యొక్క"},
-      {"word_idx": 8, "gloss_text": "సకల-అద్వైత-కల్పన"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రకృతి-రూపము కల"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎవరైతే"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆమె యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఏ రూపము?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చెప్పబడును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సకలత్వములో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వికల్పముల యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సకల-అద్వైత-కల్పన"
+      }
     ],
     "1.11": [
-      {"word_idx": 0, "gloss_text": "అప్పుడు"},
-      {"word_idx": 1, "gloss_text": "ఆ మహా-శూన్యములో"},
-      {"word_idx": 2, "gloss_text": "లయమైనపుడు"},
-      {"word_idx": 3, "gloss_text": "చంద్ర-సూర్యులు"},
-      {"word_idx": 4, "gloss_text": "మునిగినట్లు"},
-      {"word_idx": 5, "gloss_text": "తామస నిద్ర"},
-      {"word_idx": 6, "gloss_text": "ఏర్పడెను"},
-      {"word_idx": 7, "gloss_text": "శూన్య-క్షేత్రములో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అప్పుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆ మహా-శూన్యములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లయమైనపుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చంద్ర-సూర్యులు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మునిగినట్లు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తామస నిద్ర"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏర్పడెను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శూన్య-క్షేత్రములో"
+      }
     ],
     "1.12": [
-      {"word_idx": 0, "gloss_text": "ఇటువంటి"},
-      {"word_idx": 1, "gloss_text": "భైరవుని యొక్క"},
-      {"word_idx": 2, "gloss_text": "ఏ అవస్థ"},
-      {"word_idx": 3, "gloss_text": "కీర్తింపబడునో"},
-      {"word_idx": 4, "gloss_text": "ఆమే పరా"},
-      {"word_idx": 5, "gloss_text": "పరా-రూపముతో"},
-      {"word_idx": 6, "gloss_text": "పరా దేవి"},
-      {"word_idx": 7, "gloss_text": "ప్రకీర్తింపబడెను"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇటువంటి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భైరవుని యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏ అవస్థ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కీర్తింపబడునో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆమే పరా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరా-రూపముతో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరా దేవి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రకీర్తింపబడెను"
+      }
     ],
     "1.13": [
-      {"word_idx": 0, "gloss_text": "శక్తి-శక్తిమంతుల యొక్క"},
-      {"word_idx": 1, "gloss_text": "ఎంతగా"},
-      {"word_idx": 2, "gloss_text": "అభేదము"},
-      {"word_idx": 3, "gloss_text": "ఎల్లప్పుడూ"},
-      {"word_idx": 4, "gloss_text": "నిలిచియుండునో"},
-      {"word_idx": 5, "gloss_text": "కావున"},
-      {"word_idx": 6, "gloss_text": "అతని ధర్మములను ధరించుట వలన"},
-      {"word_idx": 7, "gloss_text": "పరా శక్తి"},
-      {"word_idx": 8, "gloss_text": "పరమాత్మ యొక్క"}
+      {
+        "word_idx": 0,
+        "gloss_text": "శక్తి-శక్తిమంతుల యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఎంతగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అభేదము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఎల్లప్పుడూ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిలిచియుండునో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కావున"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అతని ధర్మములను ధరించుట వలన"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పరా శక్తి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పరమాత్మ యొక్క"
+      }
     ],
     "1.14": [
-      {"word_idx": 0, "gloss_text": "కాదు"},
-      {"word_idx": 1, "gloss_text": "అగ్ని నుండి"},
-      {"word_idx": 2, "gloss_text": "దహన శక్తి"},
-      {"word_idx": 3, "gloss_text": "వేరుగా"},
-      {"word_idx": 4, "gloss_text": "భావింపబడదు"},
-      {"word_idx": 5, "gloss_text": "కేవలము"},
-      {"word_idx": 6, "gloss_text": "జ్ఞాన-సత్తలో"},
-      {"word_idx": 7, "gloss_text": "ఇది ప్రారంభము"},
-      {"word_idx": 8, "gloss_text": "ప్రవేశములో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అగ్ని నుండి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దహన శక్తి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వేరుగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భావింపబడదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కేవలము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "జ్ఞాన-సత్తలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఇది ప్రారంభము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రవేశములో"
+      }
     ],
     "1.15": [
-      {"word_idx": 0, "gloss_text": "శక్తి-అవస్థలో ప్రవేశించినవానికి"},
-      {"word_idx": 1, "gloss_text": "విభజన లేకుండా"},
-      {"word_idx": 2, "gloss_text": "భావన"},
-      {"word_idx": 3, "gloss_text": "అప్పుడు"},
-      {"word_idx": 4, "gloss_text": "అతడు"},
-      {"word_idx": 5, "gloss_text": "శివరూపుడగును"},
-      {"word_idx": 6, "gloss_text": "శైవి (శాక్త మార్గము)"},
-      {"word_idx": 7, "gloss_text": "ముఖము, ద్వారము"},
-      {"word_idx": 8, "gloss_text": "ఇక్కడ"},
-      {"word_idx": 9, "gloss_text": "చెప్పబడును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "శక్తి-అవస్థలో ప్రవేశించినవానికి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విభజన లేకుండా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భావన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అప్పుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అతడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శివరూపుడగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శైవి (శాక్త మార్గము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ముఖము, ద్వారము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇక్కడ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "చెప్పబడును"
+      }
     ],
     "1.16": [
-      {"word_idx": 0, "gloss_text": "ఎలాగైతే"},
-      {"word_idx": 1, "gloss_text": "దీపపు వెలుగుచేత"},
-      {"word_idx": 2, "gloss_text": "సూర్యకిరణములచేత"},
-      {"word_idx": 3, "gloss_text": "మరియు"},
-      {"word_idx": 4, "gloss_text": "తెలియబడునో"},
-      {"word_idx": 5, "gloss_text": "దిశా-విభాగాదులు"},
-      {"word_idx": 6, "gloss_text": "అలాగే"},
-      {"word_idx": 7, "gloss_text": "శక్తిచేత"},
-      {"word_idx": 8, "gloss_text": "శివుడు (తెలియబడును)"},
-      {"word_idx": 9, "gloss_text": "ఓ ప్రియురాలా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎలాగైతే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "దీపపు వెలుగుచేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సూర్యకిరణములచేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తెలియబడునో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దిశా-విభాగాదులు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అలాగే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శక్తిచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శివుడు (తెలియబడును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఓ ప్రియురాలా"
+      }
     ],
     "1.17": [
-      {"word_idx": 0, "gloss_text": "ధన్యురాలైన దేవి పలికెను"},
-      {"word_idx": 1, "gloss_text": "ఓ దేవదేవా"},
-      {"word_idx": 2, "gloss_text": "త్రిశూల-చిహ్నుడా"},
-      {"word_idx": 3, "gloss_text": "కపాలములతో అలంకృతుడా"},
-      {"word_idx": 4, "gloss_text": "దిక్-దేశ-కాల-శూన్యమైనది"},
-      {"word_idx": 5, "gloss_text": "మరియు"},
-      {"word_idx": 6, "gloss_text": "నిర్దేశము లేనిది"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ధన్యురాలైన దేవి పలికెను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఓ దేవదేవా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "త్రిశూల-చిహ్నుడా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కపాలములతో అలంకృతుడా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దిక్-దేశ-కాల-శూన్యమైనది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిర్దేశము లేనిది"
+      }
     ],
     "1.18": [
-      {"word_idx": 0, "gloss_text": "ఏ అవస్థ"},
-      {"word_idx": 1, "gloss_text": "పరిపూర్ణ-ఆకారము కలది"},
-      {"word_idx": 2, "gloss_text": "భైరవునిలో అనుభవింపబడునో"},
-      {"word_idx": 3, "gloss_text": "ఏ ఉపాయములచేత?"},
-      {"word_idx": 4, "gloss_text": "అతనికి ద్వారము"},
-      {"word_idx": 5, "gloss_text": "పరా దేవి"},
-      {"word_idx": 6, "gloss_text": "ఎలా అగును?"},
-      {"word_idx": 7, "gloss_text": "నేను సరిగ్గా తెలుసుకొనునట్లు"},
-      {"word_idx": 8, "gloss_text": "అలా నాకు చెప్పుము, ఓ భైరవా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏ అవస్థ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పరిపూర్ణ-ఆకారము కలది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవునిలో అనుభవింపబడునో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏ ఉపాయములచేత?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అతనికి ద్వారము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరా దేవి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎలా అగును?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నేను సరిగ్గా తెలుసుకొనునట్లు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అలా నాకు చెప్పుము, ఓ భైరవా"
+      }
     ],
     "1.19": [
-      {"word_idx": 0, "gloss_text": "భైరవుడు పలికెను"},
-      {"word_idx": 1, "gloss_text": "ఊర్ధ్వములో ప్రాణము (ఉచ్ఛ్వాస)"},
-      {"word_idx": 2, "gloss_text": "నిజముగా"},
-      {"word_idx": 3, "gloss_text": "క్రింద జీవుడు (నిశ్వాస)"},
-      {"word_idx": 4, "gloss_text": "విసర్గాత్మకము"},
-      {"word_idx": 5, "gloss_text": "పరము ఉద్భవించును"},
-      {"word_idx": 6, "gloss_text": "ఉత్పత్తి-ద్వయ స్థానములో"},
-      {"word_idx": 7, "gloss_text": "నింపుట వలన"},
-      {"word_idx": 8, "gloss_text": "పూర్ణ-స్థితి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "భైరవుడు పలికెను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఊర్ధ్వములో ప్రాణము (ఉచ్ఛ్వాస)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రింద జీవుడు (నిశ్వాస)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విసర్గాత్మకము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరము ఉద్భవించును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉత్పత్తి-ద్వయ స్థానములో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నింపుట వలన"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పూర్ణ-స్థితి"
+      }
     ],
     "1.20": [
-      {"word_idx": 0, "gloss_text": "ప్రాణవాయువు"},
-      {"word_idx": 1, "gloss_text": "లోపల లేదా బయట"},
-      {"word_idx": 2, "gloss_text": "శూన్య-యుగ్మము"},
-      {"word_idx": 3, "gloss_text": "నివృత్తి వలన"},
-      {"word_idx": 4, "gloss_text": "భైరవి-భైరవుల యొక్క"},
-      {"word_idx": 5, "gloss_text": "ఈ విధముగా"},
-      {"word_idx": 6, "gloss_text": "ఓ భైరవీ"},
-      {"word_idx": 7, "gloss_text": "ప్రకటితమగును"},
-      {"word_idx": 8, "gloss_text": "రూపము, శరీరము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రాణవాయువు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లోపల లేదా బయట"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శూన్య-యుగ్మము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నివృత్తి వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భైరవి-భైరవుల యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈ విధముగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఓ భైరవీ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రకటితమగును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "రూపము, శరీరము"
+      }
     ],
     "1.21": [
-      {"word_idx": 0, "gloss_text": "బయటకు పోకుండా"},
-      {"word_idx": 1, "gloss_text": "లోనికి రాకుండా"},
-      {"word_idx": 2, "gloss_text": "శక్తి"},
-      {"word_idx": 3, "gloss_text": "వాయురూపమైనది"},
-      {"word_idx": 4, "gloss_text": "వికసించినపుడు"},
-      {"word_idx": 5, "gloss_text": "నిర్వికల్పతతో"},
-      {"word_idx": 6, "gloss_text": "మధ్యలో"},
-      {"word_idx": 7, "gloss_text": "ఆమెచేత"},
-      {"word_idx": 8, "gloss_text": "భైరవ-రూపత్వము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "బయటకు పోకుండా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లోనికి రాకుండా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శక్తి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వాయురూపమైనది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వికసించినపుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్వికల్పతతో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మధ్యలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆమెచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భైరవ-రూపత్వము"
+      }
     ],
     "1.22": [
-      {"word_idx": 0, "gloss_text": "కుంభకము (నిలపబడిన)"},
-      {"word_idx": 1, "gloss_text": "రేచకము (విడువబడిన)"},
-      {"word_idx": 2, "gloss_text": "లేదా"},
-      {"word_idx": 3, "gloss_text": "పూరకము (నింపబడిన)"},
-      {"word_idx": 4, "gloss_text": "లేదా"},
-      {"word_idx": 5, "gloss_text": "ఎప్పుడైతే అగునో"},
-      {"word_idx": 6, "gloss_text": "దాని చివర"},
-      {"word_idx": 7, "gloss_text": "శాంత నామకము"},
-      {"word_idx": 8, "gloss_text": "శక్తిచేత"},
-      {"word_idx": 9, "gloss_text": "శాంతుడు"},
-      {"word_idx": 10, "gloss_text": "ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కుంభకము (నిలపబడిన)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "రేచకము (విడువబడిన)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "పూరకము (నింపబడిన)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఎప్పుడైతే అగునో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దాని చివర"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శాంత నామకము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శక్తిచేత"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "శాంతుడు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ప్రకాశించును"
+      }
     ],
     "1.23": [
-      {"word_idx": 0, "gloss_text": "మూలమునుండి"},
-      {"word_idx": 1, "gloss_text": "కిరణమువలె ప్రకాశించునది"},
-      {"word_idx": 2, "gloss_text": "సూక్ష్మాతిసూక్ష్మాత్మికము"},
-      {"word_idx": 3, "gloss_text": "చింతించవలెను"},
-      {"word_idx": 4, "gloss_text": "ఆమెను"},
-      {"word_idx": 5, "gloss_text": "ద్వాదశాంతములో"},
-      {"word_idx": 6, "gloss_text": "శాంతించునది"},
-      {"word_idx": 7, "gloss_text": "భైరవోదయము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మూలమునుండి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కిరణమువలె ప్రకాశించునది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సూక్ష్మాతిసూక్ష్మాత్మికము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చింతించవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆమెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ద్వాదశాంతములో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శాంతించునది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భైరవోదయము"
+      }
     ],
     "1.24": [
-      {"word_idx": 0, "gloss_text": "పైకి లేచునది"},
-      {"word_idx": 1, "gloss_text": "మెరుపు రూపమైనది"},
-      {"word_idx": 2, "gloss_text": "ప్రతి చక్రములో"},
-      {"word_idx": 3, "gloss_text": "క్రమక్రమముగా"},
-      {"word_idx": 4, "gloss_text": "పైకి"},
-      {"word_idx": 5, "gloss_text": "మూడు ముష్టుల వరకు"},
-      {"word_idx": 6, "gloss_text": "ఎంతవరకు"},
-      {"word_idx": 7, "gloss_text": "అదే భైరవోదయము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "పైకి లేచునది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మెరుపు రూపమైనది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రతి చక్రములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రమక్రమముగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పైకి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మూడు ముష్టుల వరకు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎంతవరకు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అదే భైరవోదయము"
+      }
     ],
     "1.25": [
-      {"word_idx": 0, "gloss_text": "ద్వాదశ క్రమము"},
-      {"word_idx": 1, "gloss_text": "సమ్యక్‌గా"},
-      {"word_idx": 2, "gloss_text": "పన్నెండు అక్షరములచే భేదింపబడినది"},
-      {"word_idx": 3, "gloss_text": "స్థూల-సూక్ష్మ-పర స్థితులచేత"},
-      {"word_idx": 4, "gloss_text": "విడిచిపెట్టుచూ"},
-      {"word_idx": 5, "gloss_text": "చివరికి"},
-      {"word_idx": 6, "gloss_text": "శివుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ద్వాదశ క్రమము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సమ్యక్‌గా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పన్నెండు అక్షరములచే భేదింపబడినది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్థూల-సూక్ష్మ-పర స్థితులచేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విడిచిపెట్టుచూ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చివరికి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శివుడు"
+      }
     ],
     "1.26": [
-      {"word_idx": 0, "gloss_text": "ఆ శక్తిచేత"},
-      {"word_idx": 1, "gloss_text": "నింపుకొని"},
-      {"word_idx": 2, "gloss_text": "త్వరగా"},
-      {"word_idx": 3, "gloss_text": "మూర్ధాంతము వరకు"},
-      {"word_idx": 4, "gloss_text": "ఛేదించుకొని"},
-      {"word_idx": 5, "gloss_text": "భ్రూ-క్షేప-సేతువుచేత"},
-      {"word_idx": 6, "gloss_text": "నిర్వికల్పము"},
-      {"word_idx": 7, "gloss_text": "మనస్సును చేసి"},
-      {"word_idx": 8, "gloss_text": "సర్వోర్ధ్వములో"},
-      {"word_idx": 9, "gloss_text": "సర్వగతుని ఉదయము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆ శక్తిచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నింపుకొని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "త్వరగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మూర్ధాంతము వరకు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఛేదించుకొని"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భ్రూ-క్షేప-సేతువుచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిర్వికల్పము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మనస్సును చేసి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సర్వోర్ధ్వములో"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "సర్వగతుని ఉదయము"
+      }
     ],
     "1.27": [
-      {"word_idx": 0, "gloss_text": "నెమలి పించములతో"},
-      {"word_idx": 1, "gloss_text": "విచిత్ర రూపములతో"},
-      {"word_idx": 2, "gloss_text": "మండలములతో"},
-      {"word_idx": 3, "gloss_text": "శూన్య-పంచకము"},
-      {"word_idx": 4, "gloss_text": "ధ్యానించువానికి"},
-      {"word_idx": 5, "gloss_text": "అనుత్తరములో"},
-      {"word_idx": 6, "gloss_text": "శూన్యములో"},
-      {"word_idx": 7, "gloss_text": "ప్రవేశము"},
-      {"word_idx": 8, "gloss_text": "హృదయములో"},
-      {"word_idx": 9, "gloss_text": "కలుగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నెమలి పించములతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విచిత్ర రూపములతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మండలములతో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శూన్య-పంచకము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ధ్యానించువానికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనుత్తరములో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శూన్యములో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రవేశము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "హృదయములో"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కలుగును"
+      }
     ],
     "1.28": [
-      {"word_idx": 0, "gloss_text": "ఇటువంటి క్రమముతో"},
-      {"word_idx": 1, "gloss_text": "మాత్రమే"},
-      {"word_idx": 2, "gloss_text": "ఎక్కడైనా"},
-      {"word_idx": 3, "gloss_text": "చింతన"},
-      {"word_idx": 4, "gloss_text": "శూన్యములో"},
-      {"word_idx": 5, "gloss_text": "గోడపై"},
-      {"word_idx": 6, "gloss_text": "శ్రేష్ఠమైన దానిలో"},
-      {"word_idx": 7, "gloss_text": "పాత్రలో"},
-      {"word_idx": 8, "gloss_text": "స్వయముగా లీనమైన (మనస్సు)"},
-      {"word_idx": 9, "gloss_text": "వరప్రదాయిని"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇటువంటి క్రమముతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మాత్రమే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎక్కడైనా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చింతన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శూన్యములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "గోడపై"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శ్రేష్ఠమైన దానిలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పాత్రలో"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్వయముగా లీనమైన (మనస్సు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "వరప్రదాయిని"
+      }
     ],
     "1.29": [
-      {"word_idx": 0, "gloss_text": "కపాలము లోపల"},
-      {"word_idx": 1, "gloss_text": "మనస్సును ఉంచి"},
-      {"word_idx": 2, "gloss_text": "నిలిచి"},
-      {"word_idx": 3, "gloss_text": "కన్నులు మూసుకొని"},
-      {"word_idx": 4, "gloss_text": "క్రమముగా"},
-      {"word_idx": 5, "gloss_text": "మనస్సు యొక్క దృఢత్వము వలన"},
-      {"word_idx": 6, "gloss_text": "లక్ష్యించవలెను"},
-      {"word_idx": 7, "gloss_text": "ఉత్తమ లక్ష్యమును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కపాలము లోపల"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మనస్సును ఉంచి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిలిచి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కన్నులు మూసుకొని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "క్రమముగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సు యొక్క దృఢత్వము వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లక్ష్యించవలెను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఉత్తమ లక్ష్యమును"
+      }
     ],
     "1.30": [
-      {"word_idx": 0, "gloss_text": "మధ్య నాడి (సుషుమ్న)"},
-      {"word_idx": 1, "gloss_text": "మధ్యలో ఉన్నది"},
-      {"word_idx": 2, "gloss_text": "తామర-తంతువు వంటి రూపము కలది"},
-      {"word_idx": 3, "gloss_text": "ధ్యానింపబడినది"},
-      {"word_idx": 4, "gloss_text": "అంతర్-వ్యోమముతో"},
-      {"word_idx": 5, "gloss_text": "దేవిచేత"},
-      {"word_idx": 6, "gloss_text": "ఆమెచేత"},
-      {"word_idx": 7, "gloss_text": "దేవుడు (శివుడు)"},
-      {"word_idx": 8, "gloss_text": "ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్య నాడి (సుషుమ్న)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మధ్యలో ఉన్నది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తామర-తంతువు వంటి రూపము కలది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ధ్యానింపబడినది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అంతర్-వ్యోమముతో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దేవిచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆమెచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "దేవుడు (శివుడు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రకాశించును"
+      }
     ],
     "1.31": [
-      {"word_idx": 0, "gloss_text": "హస్తముచే నిరోధించబడిన దృష్టి-అస్త్రముతో"},
-      {"word_idx": 1, "gloss_text": "భ్రూ-భేదముతో"},
-      {"word_idx": 2, "gloss_text": "ద్వార-నిరోధనముతో"},
-      {"word_idx": 3, "gloss_text": "బిందువు దృశ్యమైనపుడు"},
-      {"word_idx": 4, "gloss_text": "క్రమముగా లీనమగుచుండగా"},
-      {"word_idx": 5, "gloss_text": "దాని మధ్యలో"},
-      {"word_idx": 6, "gloss_text": "పరమ స్థితి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "హస్తముచే నిరోధించబడిన దృష్టి-అస్త్రముతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భ్రూ-భేదముతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ద్వార-నిరోధనముతో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బిందువు దృశ్యమైనపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "క్రమముగా లీనమగుచుండగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దాని మధ్యలో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరమ స్థితి"
+      }
     ],
     "1.32": [
-      {"word_idx": 0, "gloss_text": "అంతర-ధామ-క్షోభము నుండి ఉద్భవించినది"},
-      {"word_idx": 1, "gloss_text": "సూక్ష్మ-అగ్ని-తిలక-ఆకారము"},
-      {"word_idx": 2, "gloss_text": "బిందువును"},
-      {"word_idx": 3, "gloss_text": "శిఖాంతములో"},
-      {"word_idx": 4, "gloss_text": "హృదయములో"},
-      {"word_idx": 5, "gloss_text": "లయాంతములో"},
-      {"word_idx": 6, "gloss_text": "ధ్యానించువానికి"},
-      {"word_idx": 7, "gloss_text": "లయము కలుగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అంతర-ధామ-క్షోభము నుండి ఉద్భవించినది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సూక్ష్మ-అగ్ని-తిలక-ఆకారము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "బిందువును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శిఖాంతములో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "హృదయములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లయాంతములో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ధ్యానించువానికి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "లయము కలుగును"
+      }
     ],
     "1.33": [
-      {"word_idx": 0, "gloss_text": "అనాహతములో"},
-      {"word_idx": 1, "gloss_text": "పాత్రమైన చెవిలో"},
-      {"word_idx": 2, "gloss_text": "అభగ్న శబ్దములో"},
-      {"word_idx": 3, "gloss_text": "నదివలె ప్రవహించునది"},
-      {"word_idx": 4, "gloss_text": "శబ్దబ్రహ్మములో"},
-      {"word_idx": 5, "gloss_text": "నిష్ణాతుడు"},
-      {"word_idx": 6, "gloss_text": "పరబ్రహ్మము"},
-      {"word_idx": 7, "gloss_text": "పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అనాహతములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పాత్రమైన చెవిలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అభగ్న శబ్దములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నదివలె ప్రవహించునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శబ్దబ్రహ్మములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిష్ణాతుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరబ్రహ్మము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పొందును"
+      }
     ],
     "1.34": [
-      {"word_idx": 0, "gloss_text": "ప్రణవాది ఉచ్చారణ వలన"},
-      {"word_idx": 1, "gloss_text": "ప్లుత-అంతములో"},
-      {"word_idx": 2, "gloss_text": "శూన్య-భావనతో"},
-      {"word_idx": 3, "gloss_text": "శూన్యమైన పరాశక్తిచేత"},
-      {"word_idx": 4, "gloss_text": "శూన్యత్వమును పొందును"},
-      {"word_idx": 5, "gloss_text": "ఓ భైరవీ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రణవాది ఉచ్చారణ వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్లుత-అంతములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శూన్య-భావనతో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శూన్యమైన పరాశక్తిచేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శూన్యత్వమును పొందును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ భైరవీ"
+      }
     ],
     "1.35": [
-      {"word_idx": 0, "gloss_text": "ఏ వర్ణము యొక్కనైనా"},
-      {"word_idx": 1, "gloss_text": "ఆది-అంతములను"},
-      {"word_idx": 2, "gloss_text": "అనుభవింపవలెను"},
-      {"word_idx": 3, "gloss_text": "శూన్యతచేత"},
-      {"word_idx": 4, "gloss_text": "శూన్యభూతుడై"},
-      {"word_idx": 5, "gloss_text": "శూన్యాకార పురుషుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏ వర్ణము యొక్కనైనా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆది-అంతములను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనుభవింపవలెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శూన్యతచేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శూన్యభూతుడై"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శూన్యాకార పురుషుడగును"
+      }
     ],
     "1.36": [
-      {"word_idx": 0, "gloss_text": "తంత్రి-వాద్య శబ్దములలో"},
-      {"word_idx": 1, "gloss_text": "దీర్ఘములలో"},
-      {"word_idx": 2, "gloss_text": "క్రమ-సంస్థితి వలన"},
-      {"word_idx": 3, "gloss_text": "అనన్య-చేతస్సుతో"},
-      {"word_idx": 4, "gloss_text": "చివరిలో"},
-      {"word_idx": 5, "gloss_text": "పర-వ్యోమ-రూపుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "తంత్రి-వాద్య శబ్దములలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "దీర్ఘములలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "క్రమ-సంస్థితి వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అనన్య-చేతస్సుతో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చివరిలో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పర-వ్యోమ-రూపుడగును"
+      }
     ],
     "1.37": [
-      {"word_idx": 0, "gloss_text": "పిండ మంత్రము యొక్క"},
-      {"word_idx": 1, "gloss_text": "ప్రతి దాని యొక్క"},
-      {"word_idx": 2, "gloss_text": "స్థూల-వర్ణ క్రమముతో"},
-      {"word_idx": 3, "gloss_text": "అర్ధేందు-బిందు-నాదాంతము"},
-      {"word_idx": 4, "gloss_text": "శూన్య-ఉచ్చారణతో"},
-      {"word_idx": 5, "gloss_text": "శివుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "పిండ మంత్రము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రతి దాని యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్థూల-వర్ణ క్రమముతో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అర్ధేందు-బిందు-నాదాంతము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శూన్య-ఉచ్చారణతో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శివుడగును"
+      }
     ],
     "1.38": [
-      {"word_idx": 0, "gloss_text": "స్వంత దేహములో"},
-      {"word_idx": 1, "gloss_text": "సర్వదిక్కులలో"},
-      {"word_idx": 2, "gloss_text": "యుగపత్తుగా (ఏకకాలములో)"},
-      {"word_idx": 3, "gloss_text": "భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "శూన్యమును"},
-      {"word_idx": 5, "gloss_text": "నిర్వికల్ప-మనస్సుతో"},
-      {"word_idx": 6, "gloss_text": "అతనికి"},
-      {"word_idx": 7, "gloss_text": "శూన్యమంతా ప్రసరించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వంత దేహములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సర్వదిక్కులలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "యుగపత్తుగా (ఏకకాలములో)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శూన్యమును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్వికల్ప-మనస్సుతో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అతనికి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శూన్యమంతా ప్రసరించును"
+      }
     ],
     "1.39": [
-      {"word_idx": 0, "gloss_text": "వెనుక-శూన్యము"},
-      {"word_idx": 1, "gloss_text": "మూల-శూన్యము"},
-      {"word_idx": 2, "gloss_text": "యుగపత్తుగా భావింపవలెను"},
-      {"word_idx": 3, "gloss_text": "మరియు"},
-      {"word_idx": 4, "gloss_text": "ఎవరు"},
-      {"word_idx": 5, "gloss_text": "శరీర-నిరపేక్ష శక్తిచేత"},
-      {"word_idx": 6, "gloss_text": "శూన్య-మనస్సు అగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వెనుక-శూన్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మూల-శూన్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "యుగపత్తుగా భావింపవలెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎవరు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శరీర-నిరపేక్ష శక్తిచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శూన్య-మనస్సు అగును"
+      }
     ],
     "1.40": [
-      {"word_idx": 0, "gloss_text": "వెనుక-శూన్యము"},
-      {"word_idx": 1, "gloss_text": "మూల-శూన్యము"},
-      {"word_idx": 2, "gloss_text": "హృత్-శూన్యము"},
-      {"word_idx": 3, "gloss_text": "స్థిరముగా భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "యుగపత్తుగా"},
-      {"word_idx": 5, "gloss_text": "నిర్వికల్పత్వము వలన"},
-      {"word_idx": 6, "gloss_text": "నిర్వికల్ప ఉదయము కలుగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వెనుక-శూన్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మూల-శూన్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "హృత్-శూన్యము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్థిరముగా భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "యుగపత్తుగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్వికల్పత్వము వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిర్వికల్ప ఉదయము కలుగును"
+      }
     ],
     "1.41": [
-      {"word_idx": 0, "gloss_text": "శరీర ప్రదేశములో"},
-      {"word_idx": 1, "gloss_text": "శూన్యత మాత్రమే"},
-      {"word_idx": 2, "gloss_text": "క్షణ మాత్రము"},
-      {"word_idx": 3, "gloss_text": "భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "నిర్వికల్పము"},
-      {"word_idx": 5, "gloss_text": "నిర్వికల్పుడగును"},
-      {"word_idx": 6, "gloss_text": "నిర్వికల్ప-స్వరూపమును పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "శరీర ప్రదేశములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శూన్యత మాత్రమే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "క్షణ మాత్రము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిర్వికల్పము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్వికల్పుడగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిర్వికల్ప-స్వరూపమును పొందును"
+      }
     ],
     "1.42": [
-      {"word_idx": 0, "gloss_text": "దేహములోని సర్వ ద్రవ్యము"},
-      {"word_idx": 1, "gloss_text": "శూన్యముచే వ్యాపించబడినదిగా"},
-      {"word_idx": 2, "gloss_text": "ఓ మృగాక్షీ"},
-      {"word_idx": 3, "gloss_text": "భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "అప్పుడు అతనికి"},
-      {"word_idx": 5, "gloss_text": "ఆ భావన"},
-      {"word_idx": 6, "gloss_text": "స్థిరమగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "దేహములోని సర్వ ద్రవ్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శూన్యముచే వ్యాపించబడినదిగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఓ మృగాక్షీ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అప్పుడు అతనికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ భావన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్థిరమగును"
+      }
     ],
     "1.43": [
-      {"word_idx": 0, "gloss_text": "శరీరములోపల"},
-      {"word_idx": 1, "gloss_text": "త్వక్-విభాగమును"},
-      {"word_idx": 2, "gloss_text": "గోడవలె"},
-      {"word_idx": 3, "gloss_text": "చింతించవలెను"},
-      {"word_idx": 4, "gloss_text": "అతనికి లోపల ఏదీ లేదు"},
-      {"word_idx": 5, "gloss_text": "ధ్యానించుచూ"},
-      {"word_idx": 6, "gloss_text": "అధ్యేయుని పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "శరీరములోపల"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "త్వక్-విభాగమును"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "గోడవలె"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చింతించవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అతనికి లోపల ఏదీ లేదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ధ్యానించుచూ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అధ్యేయుని పొందును"
+      }
     ],
     "1.44": [
-      {"word_idx": 0, "gloss_text": "హృదాకాశములో"},
-      {"word_idx": 1, "gloss_text": "ఇంద్రియములు లీనమైనవాడై"},
-      {"word_idx": 2, "gloss_text": "పద్మ-సంపుట మధ్యగుడై"},
-      {"word_idx": 3, "gloss_text": "అనన్య-చేతస్సుతో"},
-      {"word_idx": 4, "gloss_text": "ఓ సుభగా"},
-      {"word_idx": 5, "gloss_text": "పరమ సౌభాగ్యమును పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "హృదాకాశములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇంద్రియములు లీనమైనవాడై"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పద్మ-సంపుట మధ్యగుడై"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అనన్య-చేతస్సుతో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఓ సుభగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరమ సౌభాగ్యమును పొందును"
+      }
     ],
     "1.45": [
-      {"word_idx": 0, "gloss_text": "అన్ని వైపుల"},
-      {"word_idx": 1, "gloss_text": "స్వంత శరీరము యొక్క"},
-      {"word_idx": 2, "gloss_text": "ద్వాదశాంతములో"},
-      {"word_idx": 3, "gloss_text": "మనోలయము వలన"},
-      {"word_idx": 4, "gloss_text": "దృఢ బుద్ధికి"},
-      {"word_idx": 5, "gloss_text": "దృఢీభూతమైనది"},
-      {"word_idx": 6, "gloss_text": "తత్త్వ-లక్ష్యము"},
-      {"word_idx": 7, "gloss_text": "ప్రవర్తించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అన్ని వైపుల"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్వంత శరీరము యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ద్వాదశాంతములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మనోలయము వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దృఢ బుద్ధికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృఢీభూతమైనది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తత్త్వ-లక్ష్యము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రవర్తించును"
+      }
     ],
     "1.46": [
-      {"word_idx": 0, "gloss_text": "ఎలాగైనా"},
-      {"word_idx": 1, "gloss_text": "ఎక్కడైనా"},
-      {"word_idx": 2, "gloss_text": "ద్వాదశాంతములో"},
-      {"word_idx": 3, "gloss_text": "మనస్సును ప్రవేశపెట్టవలెను"},
-      {"word_idx": 4, "gloss_text": "ప్రతి క్షణము"},
-      {"word_idx": 5, "gloss_text": "క్షీణ-వృత్తికి"},
-      {"word_idx": 6, "gloss_text": "వైలక్షణ్యము"},
-      {"word_idx": 7, "gloss_text": "కొద్ది దినములలో కలుగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎలాగైనా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఎక్కడైనా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ద్వాదశాంతములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మనస్సును ప్రవేశపెట్టవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రతి క్షణము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "క్షీణ-వృత్తికి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వైలక్షణ్యము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కొద్ది దినములలో కలుగును"
+      }
     ],
     "1.47": [
-      {"word_idx": 0, "gloss_text": "ఎక్కడెక్కడ"},
-      {"word_idx": 1, "gloss_text": "మనస్సు"},
-      {"word_idx": 2, "gloss_text": "వెళ్ళునో"},
-      {"word_idx": 3, "gloss_text": "బయట"},
-      {"word_idx": 4, "gloss_text": "లేదా"},
-      {"word_idx": 5, "gloss_text": "లోపల"},
-      {"word_idx": 6, "gloss_text": "లేదా"},
-      {"word_idx": 7, "gloss_text": "అక్కడక్కడ"},
-      {"word_idx": 8, "gloss_text": "శివ-అవస్థ"},
-      {"word_idx": 9, "gloss_text": "వ్యాపకత్వము వలన"},
-      {"word_idx": 10, "gloss_text": "ఎక్కడికి పోగలదు?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎక్కడెక్కడ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మనస్సు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వెళ్ళునో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బయట"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లోపల"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అక్కడక్కడ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శివ-అవస్థ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "వ్యాపకత్వము వలన"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఎక్కడికి పోగలదు?"
+      }
     ],
     "1.48": [
-      {"word_idx": 0, "gloss_text": "ఎక్కడెక్కడ"},
-      {"word_idx": 1, "gloss_text": "ఇంద్రియ మార్గము ద్వారా"},
-      {"word_idx": 2, "gloss_text": "చైతన్యము"},
-      {"word_idx": 3, "gloss_text": "వ్యక్తమగును"},
-      {"word_idx": 4, "gloss_text": "విభువు యొక్క"},
-      {"word_idx": 5, "gloss_text": "ఆ యోగికి"},
-      {"word_idx": 6, "gloss_text": "ఆ గుణము మాత్రమే ధరించుట వలన"},
-      {"word_idx": 7, "gloss_text": "చిత్-లయము వలన"},
-      {"word_idx": 8, "gloss_text": "పరిపూర్ణ-ఆత్మత్వము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎక్కడెక్కడ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇంద్రియ మార్గము ద్వారా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చైతన్యము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వ్యక్తమగును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విభువు యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ యోగికి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆ గుణము మాత్రమే ధరించుట వలన"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "చిత్-లయము వలన"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పరిపూర్ణ-ఆత్మత్వము"
+      }
     ],
     "1.49": [
-      {"word_idx": 0, "gloss_text": "క్షుత్తు మొదలగువాని చివర"},
-      {"word_idx": 1, "gloss_text": "భయములో"},
-      {"word_idx": 2, "gloss_text": "శోకములో"},
-      {"word_idx": 3, "gloss_text": "గహ్వరములో"},
-      {"word_idx": 4, "gloss_text": "లేదా"},
-      {"word_idx": 5, "gloss_text": "యుద్ధము నుండి పారిపోవునపుడు"},
-      {"word_idx": 6, "gloss_text": "కుతూహలములో"},
-      {"word_idx": 7, "gloss_text": "క్షుధాది చివరిలో"},
-      {"word_idx": 8, "gloss_text": "బ్రహ్మ-సత్త సమీపమునకు చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "క్షుత్తు మొదలగువాని చివర"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భయములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శోకములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "గహ్వరములో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "యుద్ధము నుండి పారిపోవునపుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కుతూహలములో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్షుధాది చివరిలో"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "బ్రహ్మ-సత్త సమీపమునకు చేరును"
+      }
     ],
     "1.50": [
-      {"word_idx": 0, "gloss_text": "వస్తువులు స్మరింపబడుచున్నపుడు"},
-      {"word_idx": 1, "gloss_text": "చూచిన ప్రదేశములో"},
-      {"word_idx": 2, "gloss_text": "మనస్సును విడువవలెను"},
-      {"word_idx": 3, "gloss_text": "స్వ-శరీరమును"},
-      {"word_idx": 4, "gloss_text": "నిరాధారముగా చేసి"},
-      {"word_idx": 5, "gloss_text": "ప్రభువు ప్రసరించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వస్తువులు స్మరింపబడుచున్నపుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చూచిన ప్రదేశములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మనస్సును విడువవలెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్వ-శరీరమును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిరాధారముగా చేసి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రభువు ప్రసరించును"
+      }
     ],
     "1.51": [
-      {"word_idx": 0, "gloss_text": "ఏదైనా వస్తువుపై"},
-      {"word_idx": 1, "gloss_text": "ఉంచి"},
-      {"word_idx": 2, "gloss_text": "మెల్లగా"},
-      {"word_idx": 3, "gloss_text": "దృష్టిని"},
-      {"word_idx": 4, "gloss_text": "ఉపసంహరించవలెను"},
-      {"word_idx": 5, "gloss_text": "ఆ జ్ఞానము"},
-      {"word_idx": 6, "gloss_text": "చిత్తముతో సహా"},
-      {"word_idx": 7, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 8, "gloss_text": "శూన్యాలయుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏదైనా వస్తువుపై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉంచి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మెల్లగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దృష్టిని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉపసంహరించవలెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ జ్ఞానము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "చిత్తముతో సహా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శూన్యాలయుడగును"
+      }
     ],
     "1.52": [
-      {"word_idx": 0, "gloss_text": "భక్తి-ఉద్రేకము వలన"},
-      {"word_idx": 1, "gloss_text": "విరక్తునికి"},
-      {"word_idx": 2, "gloss_text": "ఎటువంటి"},
-      {"word_idx": 3, "gloss_text": "ఉద్భవించునో"},
-      {"word_idx": 4, "gloss_text": "మతి, దృఢ నమ్మకము"},
-      {"word_idx": 5, "gloss_text": "అదే శాంకరీ శక్తి"},
-      {"word_idx": 6, "gloss_text": "నిత్యము"},
-      {"word_idx": 7, "gloss_text": "ఆమెను భావింపవలెను"},
-      {"word_idx": 8, "gloss_text": "అప్పుడు శివుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "భక్తి-ఉద్రేకము వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విరక్తునికి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎటువంటి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉద్భవించునో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మతి, దృఢ నమ్మకము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అదే శాంకరీ శక్తి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిత్యము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆమెను భావింపవలెను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అప్పుడు శివుడు"
+      }
     ],
     "1.53": [
-      {"word_idx": 0, "gloss_text": "ఒక వస్తువులో"},
-      {"word_idx": 1, "gloss_text": "తెలియబడుచున్నప్పుడు"},
-      {"word_idx": 2, "gloss_text": "సర్వ వస్తువులలో"},
-      {"word_idx": 3, "gloss_text": "శూన్యత"},
-      {"word_idx": 4, "gloss_text": "ఆమెనే"},
-      {"word_idx": 5, "gloss_text": "మనస్సుతో ధ్యానించి"},
-      {"word_idx": 6, "gloss_text": "తెలిసినా (జ్ఞాత) శాంతించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఒక వస్తువులో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తెలియబడుచున్నప్పుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సర్వ వస్తువులలో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శూన్యత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆమెనే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సుతో ధ్యానించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తెలిసినా (జ్ఞాత) శాంతించును"
+      }
     ],
     "1.54": [
-      {"word_idx": 0, "gloss_text": "అల్ప జ్ఞానులచే"},
-      {"word_idx": 1, "gloss_text": "ఏది శుద్ధిగా భావింపబడునో"},
-      {"word_idx": 2, "gloss_text": "ఆ శుద్ధి"},
-      {"word_idx": 3, "gloss_text": "శంభు దర్శనములో"},
-      {"word_idx": 4, "gloss_text": "శుచి కాదు"},
-      {"word_idx": 5, "gloss_text": "నిజముగా"},
-      {"word_idx": 6, "gloss_text": "అశుచి కావున"},
-      {"word_idx": 7, "gloss_text": "నిర్వికల్పుడు సుఖియగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అల్ప జ్ఞానులచే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది శుద్ధిగా భావింపబడునో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ శుద్ధి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శంభు దర్శనములో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శుచి కాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అశుచి కావున"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నిర్వికల్పుడు సుఖియగును"
+      }
     ],
     "1.55": [
-      {"word_idx": 0, "gloss_text": "సర్వత్రా"},
-      {"word_idx": 1, "gloss_text": "భైరవ భావము"},
-      {"word_idx": 2, "gloss_text": "సామాన్యములలో కూడా"},
-      {"word_idx": 3, "gloss_text": "కూడా"},
-      {"word_idx": 4, "gloss_text": "గోచరించును"},
-      {"word_idx": 5, "gloss_text": "మరియు లేదు"},
-      {"word_idx": 6, "gloss_text": "అతనికి భిన్నముగా"},
-      {"word_idx": 7, "gloss_text": "మరొకటి ఉన్నది అని"},
-      {"word_idx": 8, "gloss_text": "అద్వయ గతి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వత్రా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భైరవ భావము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సామాన్యములలో కూడా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కూడా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "గోచరించును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు లేదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అతనికి భిన్నముగా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరొకటి ఉన్నది అని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అద్వయ గతి"
+      }
     ],
     "1.56": [
-      {"word_idx": 0, "gloss_text": "సమానుడు"},
-      {"word_idx": 1, "gloss_text": "శత్రువు, మిత్రులలో"},
-      {"word_idx": 2, "gloss_text": "మాన-అవమానములలో సమానుడు"},
-      {"word_idx": 3, "gloss_text": "బ్రహ్మ పరిపూర్ణత్వము వలన"},
-      {"word_idx": 4, "gloss_text": "అని తెలుసుకొని"},
-      {"word_idx": 5, "gloss_text": "సుఖియగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సమానుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శత్రువు, మిత్రులలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మాన-అవమానములలో సమానుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బ్రహ్మ పరిపూర్ణత్వము వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అని తెలుసుకొని"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సుఖియగును"
+      }
     ],
     "1.57": [
-      {"word_idx": 0, "gloss_text": "ద్వేషమును"},
-      {"word_idx": 1, "gloss_text": "భావించవద్దు"},
-      {"word_idx": 2, "gloss_text": "దేనినీ"},
-      {"word_idx": 3, "gloss_text": "రాగమును"},
-      {"word_idx": 4, "gloss_text": "భావించవద్దు"},
-      {"word_idx": 5, "gloss_text": "దేనినీ"},
-      {"word_idx": 6, "gloss_text": "రాగ-ద్వేషముల నుండి విముక్తిలో"},
-      {"word_idx": 7, "gloss_text": "మధ్యలో బ్రహ్మము"},
-      {"word_idx": 8, "gloss_text": "ప్రసరించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ద్వేషమును"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భావించవద్దు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దేనినీ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "రాగమును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భావించవద్దు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దేనినీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "రాగ-ద్వేషముల నుండి విముక్తిలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మధ్యలో బ్రహ్మము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రసరించును"
+      }
     ],
     "1.58": [
-      {"word_idx": 0, "gloss_text": "ఏది తెలియరానిది"},
-      {"word_idx": 1, "gloss_text": "ఏది గ్రహింపరానిది"},
-      {"word_idx": 2, "gloss_text": "ఏది శూన్యమో"},
-      {"word_idx": 3, "gloss_text": "అభావమునకు చేరునది"},
-      {"word_idx": 4, "gloss_text": "ఆ సర్వము భైరవుడు"},
-      {"word_idx": 5, "gloss_text": "భావింపదగినది"},
-      {"word_idx": 6, "gloss_text": "దాని చివర"},
-      {"word_idx": 7, "gloss_text": "బోధ సంభవించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏది తెలియరానిది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది గ్రహింపరానిది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏది శూన్యమో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అభావమునకు చేరునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆ సర్వము భైరవుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావింపదగినది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దాని చివర"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "బోధ సంభవించును"
+      }
     ],
     "1.59": [
-      {"word_idx": 0, "gloss_text": "నిత్యునిలో"},
-      {"word_idx": 1, "gloss_text": "విభునిలో"},
-      {"word_idx": 2, "gloss_text": "నిరాధారునిలో"},
-      {"word_idx": 3, "gloss_text": "వ్యాపకునిలో"},
-      {"word_idx": 4, "gloss_text": "మరియు"},
-      {"word_idx": 5, "gloss_text": "అఖిల-ఆత్మలో"},
-      {"word_idx": 6, "gloss_text": "భైరవునిగా"},
-      {"word_idx": 7, "gloss_text": "నిరంతరము స్మరించుచూ"},
-      {"word_idx": 8, "gloss_text": "పురుషుడు ముక్తి పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిత్యునిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విభునిలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిరాధారునిలో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వ్యాపకునిలో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అఖిల-ఆత్మలో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవునిగా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నిరంతరము స్మరించుచూ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పురుషుడు ముక్తి పొందును"
+      }
     ],
     "1.60": [
-      {"word_idx": 0, "gloss_text": "నిరాధారము"},
-      {"word_idx": 1, "gloss_text": "సందేహ రహితము"},
-      {"word_idx": 2, "gloss_text": "ఖ్యాతి రహితము (ద్వైతజ్ఞాన రహితము)"},
-      {"word_idx": 3, "gloss_text": "ఆ పరమ బ్రహ్మము"},
-      {"word_idx": 4, "gloss_text": "ప్రకటింపబడెను"},
-      {"word_idx": 5, "gloss_text": "భావింపవలెను"},
-      {"word_idx": 6, "gloss_text": "తన్మయుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిరాధారము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సందేహ రహితము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఖ్యాతి రహితము (ద్వైతజ్ఞాన రహితము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆ పరమ బ్రహ్మము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రకటింపబడెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావింపవలెను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తన్మయుడగును"
+      }
     ],
     "1.61": [
-      {"word_idx": 0, "gloss_text": "ఎలాగైనా"},
-      {"word_idx": 1, "gloss_text": "ఉపదేశము ద్వారా"},
-      {"word_idx": 2, "gloss_text": "చేయబడునో"},
-      {"word_idx": 3, "gloss_text": "ప్రాణముల లయము"},
-      {"word_idx": 4, "gloss_text": "అదే విధముగా"},
-      {"word_idx": 5, "gloss_text": "మనస్సు తెలియదగినది"},
-      {"word_idx": 6, "gloss_text": "ఆ అవస్థా-పదమునకు చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎలాగైనా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉపదేశము ద్వారా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చేయబడునో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రాణముల లయము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అదే విధముగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సు తెలియదగినది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆ అవస్థా-పదమునకు చేరును"
+      }
     ],
     "1.62": [
-      {"word_idx": 0, "gloss_text": "మూలము లేనిది"},
-      {"word_idx": 1, "gloss_text": "మూల నాడుల యొక్క"},
-      {"word_idx": 2, "gloss_text": "వాయుపూర్ణమైన"},
-      {"word_idx": 3, "gloss_text": "సుషుమ్నను"},
-      {"word_idx": 4, "gloss_text": "ద్వాదశాంతములో నిలిచినది"},
-      {"word_idx": 5, "gloss_text": "ధ్యానించి"},
-      {"word_idx": 6, "gloss_text": "మూలము లేని భైరవునిని చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మూలము లేనిది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మూల నాడుల యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వాయుపూర్ణమైన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సుషుమ్నను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ద్వాదశాంతములో నిలిచినది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ధ్యానించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మూలము లేని భైరవునిని చేరును"
+      }
     ],
     "1.63": [
-      {"word_idx": 0, "gloss_text": "కపాలము లోపల"},
-      {"word_idx": 1, "gloss_text": "మనస్సును అలాగే"},
-      {"word_idx": 2, "gloss_text": "ధ్యానించువానికి"},
-      {"word_idx": 3, "gloss_text": "చిరకాలములో కాదు"},
-      {"word_idx": 4, "gloss_text": "ఓ ప్రభూ"},
-      {"word_idx": 5, "gloss_text": "నిమీలనాది సిద్ధులు"},
-      {"word_idx": 6, "gloss_text": "చిన్మయుని కొరకు"},
-      {"word_idx": 7, "gloss_text": "కలుగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కపాలము లోపల"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మనస్సును అలాగే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ధ్యానించువానికి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిరకాలములో కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఓ ప్రభూ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిమీలనాది సిద్ధులు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "చిన్మయుని కొరకు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కలుగును"
+      }
     ],
     "1.64": [
-      {"word_idx": 0, "gloss_text": "మధ్య-జిహ్వలో"},
-      {"word_idx": 1, "gloss_text": "నోరు తెరిచి"},
-      {"word_idx": 2, "gloss_text": "మధ్యలో చైతన్యమును పెట్టి"},
-      {"word_idx": 3, "gloss_text": "ఆవరణ"},
-      {"word_idx": 4, "gloss_text": "హ-ఉచ్చారణ"},
-      {"word_idx": 5, "gloss_text": "మనస్సుతో చేయుచూ"},
-      {"word_idx": 6, "gloss_text": "శాంతిలో"},
-      {"word_idx": 7, "gloss_text": "లయించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్య-జిహ్వలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నోరు తెరిచి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మధ్యలో చైతన్యమును పెట్టి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆవరణ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "హ-ఉచ్చారణ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సుతో చేయుచూ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శాంతిలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "లయించును"
+      }
     ],
     "1.65": [
-      {"word_idx": 0, "gloss_text": "ఆసనము లేదా శయనములో"},
-      {"word_idx": 1, "gloss_text": "ఉండి"},
-      {"word_idx": 2, "gloss_text": "నిరాధారముగా"},
-      {"word_idx": 3, "gloss_text": "భావించుచూ"},
-      {"word_idx": 4, "gloss_text": "స్వదేహమును"},
-      {"word_idx": 5, "gloss_text": "మనస్సు క్షీణించినపుడు"},
-      {"word_idx": 6, "gloss_text": "క్షణములో"},
-      {"word_idx": 7, "gloss_text": "క్షీణ-ఆశయుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆసనము లేదా శయనములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉండి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిరాధారముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావించుచూ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్వదేహమును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సు క్షీణించినపుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "క్షణములో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్షీణ-ఆశయుడగును"
+      }
     ],
     "1.66": [
-      {"word_idx": 0, "gloss_text": "చల-ఆసనములో"},
-      {"word_idx": 1, "gloss_text": "నిలిచినవానికి"},
-      {"word_idx": 2, "gloss_text": "మెల్లగా"},
-      {"word_idx": 3, "gloss_text": "దేహ-చాలనము వలన"},
-      {"word_idx": 4, "gloss_text": "ప్రశాంత మానస భావములో"},
-      {"word_idx": 5, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 6, "gloss_text": "దివ్య-ఓఘము"},
-      {"word_idx": 7, "gloss_text": "పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చల-ఆసనములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిలిచినవానికి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మెల్లగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దేహ-చాలనము వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రశాంత మానస భావములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దివ్య-ఓఘము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పొందును"
+      }
     ],
     "1.67": [
-      {"word_idx": 0, "gloss_text": "నిర్మల ఆకాశమును"},
-      {"word_idx": 1, "gloss_text": "చూచుచూ"},
-      {"word_idx": 2, "gloss_text": "నిరంతర దృష్టిని చేసి"},
-      {"word_idx": 3, "gloss_text": "స్తబ్ధాత్ముడై"},
-      {"word_idx": 4, "gloss_text": "ఆ క్షణములో"},
-      {"word_idx": 5, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 6, "gloss_text": "భైరవ రూపమును"},
-      {"word_idx": 7, "gloss_text": "పొందును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిర్మల ఆకాశమును"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చూచుచూ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిరంతర దృష్టిని చేసి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్తబ్ధాత్ముడై"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆ క్షణములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవ రూపమును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పొందును"
+      }
     ],
     "1.68": [
-      {"word_idx": 0, "gloss_text": "లీనమైనది"},
-      {"word_idx": 1, "gloss_text": "శిరస్సులో"},
-      {"word_idx": 2, "gloss_text": "శూన్యమును"},
-      {"word_idx": 3, "gloss_text": "సర్వము"},
-      {"word_idx": 4, "gloss_text": "భైరవత్వముగా భావింపవలెను"},
-      {"word_idx": 5, "gloss_text": "ఆ సర్వము"},
-      {"word_idx": 6, "gloss_text": "భైరవ-ఆకార-తేజస్-తత్త్వము"},
-      {"word_idx": 7, "gloss_text": "సమావేశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "లీనమైనది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శిరస్సులో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శూన్యమును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సర్వము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భైరవత్వముగా భావింపవలెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ సర్వము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవ-ఆకార-తేజస్-తత్త్వము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సమావేశించును"
+      }
     ],
     "1.69": [
-      {"word_idx": 0, "gloss_text": "కొద్దిగా తెలిసినది"},
-      {"word_idx": 1, "gloss_text": "ద్వైతదాయి"},
-      {"word_idx": 2, "gloss_text": "బాహ్య కాంతి"},
-      {"word_idx": 3, "gloss_text": "చీకటి కూడా"},
-      {"word_idx": 4, "gloss_text": "విశ్వాది"},
-      {"word_idx": 5, "gloss_text": "భైరవ రూపము"},
-      {"word_idx": 6, "gloss_text": "తెలిసికొని"},
-      {"word_idx": 7, "gloss_text": "అనంత ప్రకాశమును ధరించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కొద్దిగా తెలిసినది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ద్వైతదాయి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "బాహ్య కాంతి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చీకటి కూడా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విశ్వాది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భైరవ రూపము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తెలిసికొని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అనంత ప్రకాశమును ధరించును"
+      }
     ],
     "1.70": [
-      {"word_idx": 0, "gloss_text": "ఇదే విధముగా"},
-      {"word_idx": 1, "gloss_text": "అమావాస్య రాత్రిలో"},
-      {"word_idx": 2, "gloss_text": "కృష్ణ పక్షము వచ్చినపుడు"},
-      {"word_idx": 3, "gloss_text": "చిరకాలము"},
-      {"word_idx": 4, "gloss_text": "చీకటిని"},
-      {"word_idx": 5, "gloss_text": "భావించుచూ"},
-      {"word_idx": 6, "gloss_text": "భైరవ రూపముగా"},
-      {"word_idx": 7, "gloss_text": "రూపమును చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇదే విధముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అమావాస్య రాత్రిలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కృష్ణ పక్షము వచ్చినపుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిరకాలము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చీకటిని"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావించుచూ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవ రూపముగా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "రూపమును చేరును"
+      }
     ],
     "1.71": [
-      {"word_idx": 0, "gloss_text": "ఇదే విధముగా"},
-      {"word_idx": 1, "gloss_text": "ముందుగా మూసుకొని"},
-      {"word_idx": 2, "gloss_text": "కన్నులను"},
-      {"word_idx": 3, "gloss_text": "నల్లని కాంతిని"},
-      {"word_idx": 4, "gloss_text": "ముందు"},
-      {"word_idx": 5, "gloss_text": "విస్తరించి"},
-      {"word_idx": 6, "gloss_text": "భైరవ-రూపమును"},
-      {"word_idx": 7, "gloss_text": "భావించుచూ"},
-      {"word_idx": 8, "gloss_text": "తన్మయుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇదే విధముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ముందుగా మూసుకొని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కన్నులను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నల్లని కాంతిని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ముందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విస్తరించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవ-రూపమును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భావించుచూ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "తన్మయుడగును"
+      }
     ],
     "1.72": [
-      {"word_idx": 0, "gloss_text": "ఏదేని ఇంద్రియము యొక్క"},
-      {"word_idx": 1, "gloss_text": "వ్యాఘాతము వలన"},
-      {"word_idx": 2, "gloss_text": "మరియు"},
-      {"word_idx": 3, "gloss_text": "నిరోధము వలన"},
-      {"word_idx": 4, "gloss_text": "ప్రవేశించినవానికి"},
-      {"word_idx": 5, "gloss_text": "అద్వయ శూన్యములో"},
-      {"word_idx": 6, "gloss_text": "అక్కడే"},
-      {"word_idx": 7, "gloss_text": "ఆత్మ ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏదేని ఇంద్రియము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వ్యాఘాతము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నిరోధము వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రవేశించినవానికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అద్వయ శూన్యములో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అక్కడే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆత్మ ప్రకాశించును"
+      }
     ],
     "1.73": [
-      {"word_idx": 0, "gloss_text": "బిందు రహితము"},
-      {"word_idx": 1, "gloss_text": "విసర్గ రహితము"},
-      {"word_idx": 2, "gloss_text": "మరియు"},
-      {"word_idx": 3, "gloss_text": "అ-కారమును"},
-      {"word_idx": 4, "gloss_text": "జపించువానికి"},
-      {"word_idx": 5, "gloss_text": "మహత్తు ఉద్భవించును"},
-      {"word_idx": 6, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 7, "gloss_text": "హఠాత్తుగా"},
-      {"word_idx": 8, "gloss_text": "జ్ఞానౌఘము పరమేశ్వరుడే"}
+      {
+        "word_idx": 0,
+        "gloss_text": "బిందు రహితము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విసర్గ రహితము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అ-కారమును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జపించువానికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మహత్తు ఉద్భవించును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "హఠాత్తుగా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "జ్ఞానౌఘము పరమేశ్వరుడే"
+      }
     ],
     "1.74": [
-      {"word_idx": 0, "gloss_text": "విసర్గ సహిత వర్ణము యొక్క"},
-      {"word_idx": 1, "gloss_text": "విసర్గాంతము వరకు"},
-      {"word_idx": 2, "gloss_text": "చైతన్యమును చేయుము"},
-      {"word_idx": 3, "gloss_text": "నిరాధార చిత్తముతో"},
-      {"word_idx": 4, "gloss_text": "సనాతన బ్రహ్మమును స్పృశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "విసర్గ సహిత వర్ణము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విసర్గాంతము వరకు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చైతన్యమును చేయుము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నిరాధార చిత్తముతో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సనాతన బ్రహ్మమును స్పృశించును"
+      }
     ],
     "1.75": [
-      {"word_idx": 0, "gloss_text": "వ్యోమాకారము"},
-      {"word_idx": 1, "gloss_text": "స్వాత్మను"},
-      {"word_idx": 2, "gloss_text": "ధ్యానించవలెను"},
-      {"word_idx": 3, "gloss_text": "దిక్కులచే ఆవరింపబడనిది"},
-      {"word_idx": 4, "gloss_text": "నిరాశ్రయయైన"},
-      {"word_idx": 5, "gloss_text": "చితి-శక్తి"},
-      {"word_idx": 6, "gloss_text": "స్వరూపమును చూపును"},
-      {"word_idx": 7, "gloss_text": "అప్పుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వ్యోమాకారము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్వాత్మను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ధ్యానించవలెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దిక్కులచే ఆవరింపబడనిది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిరాశ్రయయైన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చితి-శక్తి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్వరూపమును చూపును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అప్పుడు"
+      }
     ],
     "1.76": [
-      {"word_idx": 0, "gloss_text": "ఏదేని అంగమును"},
-      {"word_idx": 1, "gloss_text": "ముందు భేదించి"},
-      {"word_idx": 2, "gloss_text": "పదునైన సూది మొదలగువానితో"},
-      {"word_idx": 3, "gloss_text": "అప్పుడు"},
-      {"word_idx": 4, "gloss_text": "అక్కడే"},
-      {"word_idx": 5, "gloss_text": "చైతన్యమును యోజించి"},
-      {"word_idx": 6, "gloss_text": "భైరవునిలో"},
-      {"word_idx": 7, "gloss_text": "నిర్మల గతి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏదేని అంగమును"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ముందు భేదించి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పదునైన సూది మొదలగువానితో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అప్పుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అక్కడే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చైతన్యమును యోజించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భైరవునిలో"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నిర్మల గతి"
+      }
     ],
     "1.77": [
-      {"word_idx": 0, "gloss_text": "చిత్తాది అంతఃకరణము"},
-      {"word_idx": 1, "gloss_text": "లేదు"},
-      {"word_idx": 2, "gloss_text": "నాలోపల"},
-      {"word_idx": 3, "gloss_text": "అని భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "వికల్పముల అభావము వలన"},
-      {"word_idx": 5, "gloss_text": "వికల్పములచే విడువబడినవాడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చిత్తాది అంతఃకరణము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లేదు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నాలోపల"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అని భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వికల్పముల అభావము వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వికల్పములచే విడువబడినవాడగును"
+      }
     ],
     "1.78": [
-      {"word_idx": 0, "gloss_text": "మాయ - విమోహిని అను నామము"},
-      {"word_idx": 1, "gloss_text": "కళ యొక్క"},
-      {"word_idx": 2, "gloss_text": "కలనము"},
-      {"word_idx": 3, "gloss_text": "ఉన్నది"},
-      {"word_idx": 4, "gloss_text": "ఇత్యాది ధర్మము"},
-      {"word_idx": 5, "gloss_text": "తత్త్వములను"},
-      {"word_idx": 6, "gloss_text": "గణించుచూ"},
-      {"word_idx": 7, "gloss_text": "వేరుగా ఉండడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మాయ - విమోహిని అను నామము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కళ యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కలనము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉన్నది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇత్యాది ధర్మము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తత్త్వములను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "గణించుచూ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వేరుగా ఉండడు"
+      }
     ],
     "1.79": [
-      {"word_idx": 0, "gloss_text": "హఠాత్తుగా"},
-      {"word_idx": 1, "gloss_text": "ఉద్భవించిన ఇచ్ఛను"},
-      {"word_idx": 2, "gloss_text": "చూచి"},
-      {"word_idx": 3, "gloss_text": "శాంతికి తీసుకొనిరావలెను"},
-      {"word_idx": 4, "gloss_text": "ఎక్కడ నుండి ఉద్భవించెనో"},
-      {"word_idx": 5, "gloss_text": "అక్కడే లయించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "హఠాత్తుగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉద్భవించిన ఇచ్ఛను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చూచి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శాంతికి తీసుకొనిరావలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎక్కడ నుండి ఉద్భవించెనో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అక్కడే లయించును"
+      }
     ],
     "1.80": [
-      {"word_idx": 0, "gloss_text": "నా ఇచ్ఛ ఎప్పుడైతే"},
-      {"word_idx": 1, "gloss_text": "ఉద్భవించలేదో"},
-      {"word_idx": 2, "gloss_text": "లేదా జ్ఞానము (ఉద్భవించలేదు)"},
-      {"word_idx": 3, "gloss_text": "అప్పుడు నేను ఎవరిని?"},
-      {"word_idx": 4, "gloss_text": "నిజముగా నేను ఆ స్వభావుడిని"},
-      {"word_idx": 5, "gloss_text": "ఆ స్థితిలో లీనమై"},
-      {"word_idx": 6, "gloss_text": "తన్మనస్కుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నా ఇచ్ఛ ఎప్పుడైతే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉద్భవించలేదో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లేదా జ్ఞానము (ఉద్భవించలేదు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అప్పుడు నేను ఎవరిని?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిజముగా నేను ఆ స్వభావుడిని"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ స్థితిలో లీనమై"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తన్మనస్కుడగును"
+      }
     ],
     "1.81": [
-      {"word_idx": 0, "gloss_text": "ఇచ్ఛలో"},
-      {"word_idx": 1, "gloss_text": "లేదా జ్ఞానములో"},
-      {"word_idx": 2, "gloss_text": "ఉద్భవించినపుడు"},
-      {"word_idx": 3, "gloss_text": "చిత్తమును నిలుపవలెను"},
-      {"word_idx": 4, "gloss_text": "ఆత్మ-బుద్ధిలో అనన్య-చిత్తుడై"},
-      {"word_idx": 5, "gloss_text": "అప్పుడు తత్త్వార్థ దర్శనము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇచ్ఛలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లేదా జ్ఞానములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉద్భవించినపుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిత్తమును నిలుపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆత్మ-బుద్ధిలో అనన్య-చిత్తుడై"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అప్పుడు తత్త్వార్థ దర్శనము"
+      }
     ],
     "1.82": [
-      {"word_idx": 0, "gloss_text": "నిర్నిమిత్తము"},
-      {"word_idx": 1, "gloss_text": "జ్ఞానము ఉద్భవించవచ్చు"},
-      {"word_idx": 2, "gloss_text": "నిరాధారము"},
-      {"word_idx": 3, "gloss_text": "భ్రమాత్మకము"},
-      {"word_idx": 4, "gloss_text": "నిజముగా ఇది ఎవరికీ సంబంధించదు"},
-      {"word_idx": 5, "gloss_text": "ఇట్లు భావించువాడు శివుడగును, ఓ ప్రియురాలా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిర్నిమిత్తము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "జ్ఞానము ఉద్భవించవచ్చు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిరాధారము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భ్రమాత్మకము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిజముగా ఇది ఎవరికీ సంబంధించదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇట్లు భావించువాడు శివుడగును, ఓ ప్రియురాలా"
+      }
     ],
     "1.83": [
-      {"word_idx": 0, "gloss_text": "చిత్-ధర్ముడై"},
-      {"word_idx": 1, "gloss_text": "సర్వ దేహములలో"},
-      {"word_idx": 2, "gloss_text": "ఎక్కడా విశేషము లేదు"},
-      {"word_idx": 3, "gloss_text": "మరియు దీని వలన"},
-      {"word_idx": 4, "gloss_text": "సర్వము తన్మయము"},
-      {"word_idx": 5, "gloss_text": "భావించుచూ"},
-      {"word_idx": 6, "gloss_text": "సంసార విజయుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చిత్-ధర్ముడై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సర్వ దేహములలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎక్కడా విశేషము లేదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు దీని వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సర్వము తన్మయము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావించుచూ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సంసార విజయుడగును"
+      }
     ],
     "1.84": [
-      {"word_idx": 0, "gloss_text": "కామ-క్రోధ-లోభ-మోహ-మద-మాత్సర్యముల గోచరములో"},
-      {"word_idx": 1, "gloss_text": "బుద్ధిని నిశ్చలముగా చేసి"},
-      {"word_idx": 2, "gloss_text": "ఆ తత్త్వము మిగులును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కామ-క్రోధ-లోభ-మోహ-మద-మాత్సర్యముల గోచరములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బుద్ధిని నిశ్చలముగా చేసి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ తత్త్వము మిగులును"
+      }
     ],
     "1.85": [
-      {"word_idx": 0, "gloss_text": "ఇంద్రజాల మయమైన విశ్వము"},
-      {"word_idx": 1, "gloss_text": "విస్తరించినది"},
-      {"word_idx": 2, "gloss_text": "లేదా"},
-      {"word_idx": 3, "gloss_text": "చిత్రకర్మవలె"},
-      {"word_idx": 4, "gloss_text": "తిరుగుచున్నది"},
-      {"word_idx": 5, "gloss_text": "లేదా"},
-      {"word_idx": 6, "gloss_text": "ధ్యానించువానికి"},
-      {"word_idx": 7, "gloss_text": "సర్వము చూచువానికి"},
-      {"word_idx": 8, "gloss_text": "సుఖోదయము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇంద్రజాల మయమైన విశ్వము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విస్తరించినది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిత్రకర్మవలె"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తిరుగుచున్నది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ధ్యానించువానికి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సర్వము చూచువానికి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సుఖోదయము"
+      }
     ],
     "1.86": [
-      {"word_idx": 0, "gloss_text": "దుఃఖములో చిత్తము పెట్టవద్దు"},
-      {"word_idx": 1, "gloss_text": "సుఖములోనూ పెట్టవద్దు"},
-      {"word_idx": 2, "gloss_text": "ఓ భైరవీ"},
-      {"word_idx": 3, "gloss_text": "మధ్యలో తెలియబడుగాక"},
-      {"word_idx": 4, "gloss_text": "ఏ తత్త్వము మిగులును?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "దుఃఖములో చిత్తము పెట్టవద్దు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సుఖములోనూ పెట్టవద్దు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఓ భైరవీ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మధ్యలో తెలియబడుగాక"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఏ తత్త్వము మిగులును?"
+      }
     ],
     "1.87": [
-      {"word_idx": 0, "gloss_text": "విడిచి"},
-      {"word_idx": 1, "gloss_text": "స్వదేహ ఆస్థను"},
-      {"word_idx": 2, "gloss_text": "నేను సర్వత్ర అని"},
-      {"word_idx": 3, "gloss_text": "భావించుచూ"},
-      {"word_idx": 4, "gloss_text": "దృఢ మనస్సుతో"},
-      {"word_idx": 5, "gloss_text": "దృష్టితో"},
-      {"word_idx": 6, "gloss_text": "మరొకటి చూడని"},
-      {"word_idx": 7, "gloss_text": "సుఖియగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "విడిచి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్వదేహ ఆస్థను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నేను సర్వత్ర అని"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావించుచూ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దృఢ మనస్సుతో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృష్టితో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మరొకటి చూడని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సుఖియగును"
+      }
     ],
     "1.88": [
-      {"word_idx": 0, "gloss_text": "కుండ మొదలగువానిలో"},
-      {"word_idx": 1, "gloss_text": "ఏ విజ్ఞానము ఉన్నదో"},
-      {"word_idx": 2, "gloss_text": "లేదా నాలోపల ఇచ్ఛాదులు"},
-      {"word_idx": 3, "gloss_text": "అది సర్వగతమైనది కాలేదు"},
-      {"word_idx": 4, "gloss_text": "ఇట్లు భావించువాడు సర్వగుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కుండ మొదలగువానిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏ విజ్ఞానము ఉన్నదో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లేదా నాలోపల ఇచ్ఛాదులు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అది సర్వగతమైనది కాలేదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇట్లు భావించువాడు సర్వగుడగును"
+      }
     ],
     "1.89": [
-      {"word_idx": 0, "gloss_text": "గ్రాహ్య-గ్రాహక సంవిత్తి"},
-      {"word_idx": 1, "gloss_text": "సామాన్యము"},
-      {"word_idx": 2, "gloss_text": "సర్వ దేహులకు"},
-      {"word_idx": 3, "gloss_text": "యోగులకు మాత్రము విశేషము ఉన్నది"},
-      {"word_idx": 4, "gloss_text": "సంబంధములో"},
-      {"word_idx": 5, "gloss_text": "సావధానత"}
+      {
+        "word_idx": 0,
+        "gloss_text": "గ్రాహ్య-గ్రాహక సంవిత్తి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సామాన్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సర్వ దేహులకు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "యోగులకు మాత్రము విశేషము ఉన్నది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సంబంధములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సావధానత"
+      }
     ],
     "1.90": [
-      {"word_idx": 0, "gloss_text": "స్వదేహములో వలెనే"},
-      {"word_idx": 1, "gloss_text": "ఇతర శరీరములో కూడా"},
-      {"word_idx": 2, "gloss_text": "సంవిత్తిని అనుభవింపవలెను"},
-      {"word_idx": 3, "gloss_text": "స్వ-శరీరమునందలి అపేక్షను"},
-      {"word_idx": 4, "gloss_text": "విడిచి"},
-      {"word_idx": 5, "gloss_text": "కొద్ది దినములలో వ్యాపి అగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వదేహములో వలెనే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇతర శరీరములో కూడా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సంవిత్తిని అనుభవింపవలెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్వ-శరీరమునందలి అపేక్షను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విడిచి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కొద్ది దినములలో వ్యాపి అగును"
+      }
     ],
     "1.91": [
-      {"word_idx": 0, "gloss_text": "మనస్సును నిరాధారముగా చేసి"},
-      {"word_idx": 1, "gloss_text": "వికల్పములను కల్పించరాదు"},
-      {"word_idx": 2, "gloss_text": "అప్పుడు ఆత్మ-పరమాత్మత్వములో"},
-      {"word_idx": 3, "gloss_text": "భైరవుడు, ఓ మృగాక్షీ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మనస్సును నిరాధారముగా చేసి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వికల్పములను కల్పించరాదు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అప్పుడు ఆత్మ-పరమాత్మత్వములో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భైరవుడు, ఓ మృగాక్షీ"
+      }
     ],
     "1.92": [
-      {"word_idx": 0, "gloss_text": "సర్వజ్ఞుడు"},
-      {"word_idx": 1, "gloss_text": "సర్వకర్త కూడా"},
-      {"word_idx": 2, "gloss_text": "వ్యాపక పరమేశ్వరుడు"},
-      {"word_idx": 3, "gloss_text": "నేను అతడే"},
-      {"word_idx": 4, "gloss_text": "శైవ ధర్ముడు"},
-      {"word_idx": 5, "gloss_text": "ఈ దృఢ నిశ్చయము వలన"},
-      {"word_idx": 6, "gloss_text": "శివుడగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వజ్ఞుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సర్వకర్త కూడా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వ్యాపక పరమేశ్వరుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నేను అతడే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శైవ ధర్ముడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈ దృఢ నిశ్చయము వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శివుడగును"
+      }
     ],
     "1.93": [
-      {"word_idx": 0, "gloss_text": "నీటివలె"},
-      {"word_idx": 1, "gloss_text": "తరంగములు"},
-      {"word_idx": 2, "gloss_text": "అగ్ని యొక్క జ్వాలా భంగములు"},
-      {"word_idx": 3, "gloss_text": "సూర్యుని ప్రభ"},
-      {"word_idx": 4, "gloss_text": "భైరవుడనైన నా యొక్కవే"},
-      {"word_idx": 5, "gloss_text": "ఈ విశ్వ తరంగములు"},
-      {"word_idx": 6, "gloss_text": "విభేదింపబడినవి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నీటివలె"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తరంగములు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అగ్ని యొక్క జ్వాలా భంగములు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సూర్యుని ప్రభ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భైరవుడనైన నా యొక్కవే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈ విశ్వ తరంగములు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విభేదింపబడినవి"
+      }
     ],
     "1.94": [
-      {"word_idx": 0, "gloss_text": "తిరిగి తిరిగి"},
-      {"word_idx": 1, "gloss_text": "శరీరముతో"},
-      {"word_idx": 2, "gloss_text": "త్వరితముగా"},
-      {"word_idx": 3, "gloss_text": "నేలపై పడుట వలన"},
-      {"word_idx": 4, "gloss_text": "క్షోభ-శక్తి విరామము వలన"},
-      {"word_idx": 5, "gloss_text": "పరా దశ ఉద్భవించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "తిరిగి తిరిగి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శరీరముతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "త్వరితముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నేలపై పడుట వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "క్షోభ-శక్తి విరామము వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరా దశ ఉద్భవించును"
+      }
     ],
     "1.95": [
-      {"word_idx": 0, "gloss_text": "ఆధారములలో"},
-      {"word_idx": 1, "gloss_text": "లేదా అశక్తి వలన"},
-      {"word_idx": 2, "gloss_text": "జ్ఞానము వలన"},
-      {"word_idx": 3, "gloss_text": "లేదా"},
-      {"word_idx": 4, "gloss_text": "దేశ-కల్పన వలన"},
-      {"word_idx": 5, "gloss_text": "శక్తి-సంశోభము ఉద్భవించినపుడు"},
-      {"word_idx": 6, "gloss_text": "శాంతించిన పిమ్మట, అప్పుడు పరా దశ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆధారములలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లేదా అశక్తి వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జ్ఞానము వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దేశ-కల్పన వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శక్తి-సంశోభము ఉద్భవించినపుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శాంతించిన పిమ్మట, అప్పుడు పరా దశ"
+      }
     ],
     "1.96": [
-      {"word_idx": 0, "gloss_text": "ఆసీనుడై"},
-      {"word_idx": 1, "gloss_text": "ఆసనముపై సరిగ్గా"},
-      {"word_idx": 2, "gloss_text": "బాహువులను చేసి"},
-      {"word_idx": 3, "gloss_text": "అర్ధ-కుంచితములుగా"},
-      {"word_idx": 4, "gloss_text": "కక్ష-వ్యోమములో"},
-      {"word_idx": 5, "gloss_text": "మనస్సును ఉంచుచూ"},
-      {"word_idx": 6, "gloss_text": "శాంతి పొందును"},
-      {"word_idx": 7, "gloss_text": "అందులో లయము వలన"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆసీనుడై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆసనముపై సరిగ్గా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "బాహువులను చేసి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అర్ధ-కుంచితములుగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కక్ష-వ్యోమములో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మనస్సును ఉంచుచూ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శాంతి పొందును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అందులో లయము వలన"
+      }
     ],
     "1.97": [
-      {"word_idx": 0, "gloss_text": "స్థూల రూప భావము యొక్క"},
-      {"word_idx": 1, "gloss_text": "స్తబ్ధ దృష్టిని ఉంచి"},
-      {"word_idx": 2, "gloss_text": "మరియు"},
-      {"word_idx": 3, "gloss_text": "త్వరగా"},
-      {"word_idx": 4, "gloss_text": "మనస్సును నిరాధారముగా చేసి"},
-      {"word_idx": 5, "gloss_text": "శివుని చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్థూల రూప భావము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్తబ్ధ దృష్టిని ఉంచి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "త్వరగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మనస్సును నిరాధారముగా చేసి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శివుని చేరును"
+      }
     ],
     "1.98": [
-      {"word_idx": 0, "gloss_text": "మధ్య-జిహ్వలో"},
-      {"word_idx": 1, "gloss_text": "నోరు తెరిచి"},
-      {"word_idx": 2, "gloss_text": "మధ్యలో చైతన్యమును పెట్టి"},
-      {"word_idx": 3, "gloss_text": "మనస్సుతో మంత్రమును ఉచ్చరించుచూ"},
-      {"word_idx": 4, "gloss_text": "శివుని ధ్యానించుచూ"},
-      {"word_idx": 5, "gloss_text": "ప్రశాంతించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్య-జిహ్వలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నోరు తెరిచి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మధ్యలో చైతన్యమును పెట్టి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మనస్సుతో మంత్రమును ఉచ్చరించుచూ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శివుని ధ్యానించుచూ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రశాంతించును"
+      }
     ],
     "1.99": [
-      {"word_idx": 0, "gloss_text": "కపాలము లోపల"},
-      {"word_idx": 1, "gloss_text": "కన్నులు మూసుకొని"},
-      {"word_idx": 2, "gloss_text": "ఉత్తమ లక్ష్యమును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కపాలము లోపల"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కన్నులు మూసుకొని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉత్తమ లక్ష్యమును"
+      }
     ],
     "1.100": [
-      {"word_idx": 0, "gloss_text": "మధ్య నాడి (సుషుమ్న)"},
-      {"word_idx": 1, "gloss_text": "తామర-తంతువు వంటి రూపముతో"},
-      {"word_idx": 2, "gloss_text": "అంతర్-వ్యోమ దేవితో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్య నాడి (సుషుమ్న)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తామర-తంతువు వంటి రూపముతో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అంతర్-వ్యోమ దేవితో"
+      }
     ],
     "1.101": [
-      {"word_idx": 0, "gloss_text": "చేతులచే అడ్డుపడిన దృష్టి"},
-      {"word_idx": 1, "gloss_text": "ద్వార-నిరోధనము వలన"},
-      {"word_idx": 2, "gloss_text": "పరమ స్థితి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చేతులచే అడ్డుపడిన దృష్టి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ద్వార-నిరోధనము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పరమ స్థితి"
+      }
     ],
     "1.102": [
-      {"word_idx": 0, "gloss_text": "మంత్రార్థ ప్రకటిత రూపములు"},
-      {"word_idx": 1, "gloss_text": "అధికారి విశేషత ప్రకారము"},
-      {"word_idx": 2, "gloss_text": "సాధకుడు"},
-      {"word_idx": 3, "gloss_text": "ఆ (రూపములు)"},
-      {"word_idx": 4, "gloss_text": "సాధించును"},
-      {"word_idx": 5, "gloss_text": "[draft] ఎవరో, అరుదైనవాడు"},
-      {"word_idx": 6, "gloss_text": "సాధించుచూ"},
-      {"word_idx": 7, "gloss_text": "అగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మంత్రార్థ ప్రకటిత రూపములు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అధికారి విశేషత ప్రకారము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సాధకుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆ (రూపములు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సాధించును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఎవరో, అరుదైనవాడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సాధించుచూ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అగును"
+      }
     ],
     "1.103": [
-      {"word_idx": 0, "gloss_text": "అన్వేషింపదగినది"},
-      {"word_idx": 1, "gloss_text": "ఏకత్రలో జ్ఞానమును ఆశ్రయించి"},
-      {"word_idx": 2, "gloss_text": "యోగ సిద్ధి"},
-      {"word_idx": 3, "gloss_text": "కావున"},
-      {"word_idx": 4, "gloss_text": "ఆయా అంగములు"},
-      {"word_idx": 5, "gloss_text": "విశేషముగా"},
-      {"word_idx": 6, "gloss_text": "పొందగలడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అన్వేషింపదగినది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏకత్రలో జ్ఞానమును ఆశ్రయించి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "యోగ సిద్ధి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కావున"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆయా అంగములు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విశేషముగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పొందగలడు"
+      }
     ],
     "1.104": [
-      {"word_idx": 0, "gloss_text": "కామనా వేగము వలన"},
-      {"word_idx": 1, "gloss_text": "విస్మయము"},
-      {"word_idx": 2, "gloss_text": "స్వశరీర ఆహ్లాద శక్తి"},
-      {"word_idx": 3, "gloss_text": "కామి యొక్క"},
-      {"word_idx": 4, "gloss_text": "యోగులచే అంగీకరింపబడినది"},
-      {"word_idx": 5, "gloss_text": "ఉద్భవించును"},
-      {"word_idx": 6, "gloss_text": "పరమేశ్వరి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కామనా వేగము వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విస్మయము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్వశరీర ఆహ్లాద శక్తి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కామి యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "యోగులచే అంగీకరింపబడినది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉద్భవించును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరమేశ్వరి"
+      }
     ],
     "1.105": [
-      {"word_idx": 0, "gloss_text": "[draft] లేహన-మంథన-ఆకోటములచేత"},
-      {"word_idx": 1, "gloss_text": "స్త్రీ-సుఖము యొక్క పరిపూర్ణత వలన"},
-      {"word_idx": 2, "gloss_text": "ఆనంద-సంప్లవము"},
-      {"word_idx": 3, "gloss_text": "స్మృతి వలన"},
-      {"word_idx": 4, "gloss_text": "శక్తి అభావములోనూ"},
-      {"word_idx": 5, "gloss_text": "ఓ దేవేశీ"},
-      {"word_idx": 6, "gloss_text": "ఉద్భవించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "లేహన-మంథన-ఆకోటములచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్త్రీ-సుఖము యొక్క పరిపూర్ణత వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆనంద-సంప్లవము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్మృతి వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శక్తి అభావములోనూ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ దేవేశీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉద్భవించును"
+      }
     ],
     "1.106": [
-      {"word_idx": 0, "gloss_text": "మహదానందము పొందినపుడు"},
-      {"word_idx": 1, "gloss_text": "చిరకాలము తర్వాత బంధువును (చూచి)"},
-      {"word_idx": 2, "gloss_text": "అందులో లయించి"},
-      {"word_idx": 3, "gloss_text": "లేదా చూచి"},
-      {"word_idx": 4, "gloss_text": "ఉద్భవించిన ఆనందమును"},
-      {"word_idx": 5, "gloss_text": "ధ్యానించి"},
-      {"word_idx": 6, "gloss_text": "తన్మనస్కుడు"},
-      {"word_idx": 7, "gloss_text": "అగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మహదానందము పొందినపుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చిరకాలము తర్వాత బంధువును (చూచి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అందులో లయించి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదా చూచి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉద్భవించిన ఆనందమును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ధ్యానించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తన్మనస్కుడు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అగును"
+      }
     ],
     "1.107": [
-      {"word_idx": 0, "gloss_text": "భోజన-పానము"},
-      {"word_idx": 1, "gloss_text": "రస-ఆనంద విజృంభణ వలన"},
-      {"word_idx": 2, "gloss_text": "మహదానందము"},
-      {"word_idx": 3, "gloss_text": "భావింపవలెను"},
-      {"word_idx": 4, "gloss_text": "పరిపూర్ణ అవస్థ"},
-      {"word_idx": 5, "gloss_text": "అప్పుడు ఉద్భవించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "భోజన-పానము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "రస-ఆనంద విజృంభణ వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మహదానందము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పరిపూర్ణ అవస్థ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అప్పుడు ఉద్భవించును"
+      }
     ],
     "1.108": [
-      {"word_idx": 0, "gloss_text": "గీత మొదలగు విషయ ఆస్వాదన యొక్క అసమాన సౌఖ్యైకాత్ముడై"},
-      {"word_idx": 1, "gloss_text": "యోగికి"},
-      {"word_idx": 2, "gloss_text": "తన్మయత్వము వలన"},
-      {"word_idx": 3, "gloss_text": "మనస్సు ఆరోహణము వలన"},
-      {"word_idx": 4, "gloss_text": "తత్-ఆత్మత్వము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "గీత మొదలగు విషయ ఆస్వాదన యొక్క అసమాన సౌఖ్యైకాత్ముడై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "యోగికి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తన్మయత్వము వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మనస్సు ఆరోహణము వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తత్-ఆత్మత్వము"
+      }
     ],
     "1.109": [
-      {"word_idx": 0, "gloss_text": "ఎక్కడెక్కడ"},
-      {"word_idx": 1, "gloss_text": "ఆత్మకు తుష్టి కలుగునో"},
-      {"word_idx": 2, "gloss_text": "మనస్సును"},
-      {"word_idx": 3, "gloss_text": "అక్కడే"},
-      {"word_idx": 4, "gloss_text": "నిలుపవలెను"},
-      {"word_idx": 5, "gloss_text": "అక్కడక్కడ"},
-      {"word_idx": 6, "gloss_text": "పరానంద స్వరూపము"},
-      {"word_idx": 7, "gloss_text": "ప్రవర్తించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎక్కడెక్కడ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆత్మకు తుష్టి కలుగునో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మనస్సును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అక్కడే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిలుపవలెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అక్కడక్కడ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరానంద స్వరూపము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రవర్తించును"
+      }
     ],
     "1.110": [
-      {"word_idx": 0, "gloss_text": "నిద్ర ఇంకా రానపుడు"},
-      {"word_idx": 1, "gloss_text": "బాహ్య గోచరము నశించినపుడు"},
-      {"word_idx": 2, "gloss_text": "ఆ అవస్థ"},
-      {"word_idx": 3, "gloss_text": "మనస్సు చేత గ్రహించదగినది"},
-      {"word_idx": 4, "gloss_text": "పరా దేవి ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిద్ర ఇంకా రానపుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్య గోచరము నశించినపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ అవస్థ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మనస్సు చేత గ్రహించదగినది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పరా దేవి ప్రకాశించును"
+      }
     ],
     "1.111": [
-      {"word_idx": 0, "gloss_text": "తేజస్సుతో"},
-      {"word_idx": 1, "gloss_text": "సూర్యుడు, దీపము మొదలగువాని"},
-      {"word_idx": 2, "gloss_text": "ఆకాశము శబలము చేయబడినపుడు"},
-      {"word_idx": 3, "gloss_text": "స్వాత్మ దృశ్యమైనపుడు"},
-      {"word_idx": 4, "gloss_text": "ఆ ప్రభతో కూడినది"},
-      {"word_idx": 5, "gloss_text": "సచ్చిదానంద గోచరము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "తేజస్సుతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సూర్యుడు, దీపము మొదలగువాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆకాశము శబలము చేయబడినపుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్వాత్మ దృశ్యమైనపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆ ప్రభతో కూడినది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సచ్చిదానంద గోచరము"
+      }
     ],
     "1.112": [
-      {"word_idx": 0, "gloss_text": "కరంకిణి చేత"},
-      {"word_idx": 1, "gloss_text": "క్రోధనా చేత"},
-      {"word_idx": 2, "gloss_text": "భైరవీ చేత"},
-      {"word_idx": 3, "gloss_text": "లేలిహానా చేత"},
-      {"word_idx": 4, "gloss_text": "ఖేచరీ చేత"},
-      {"word_idx": 5, "gloss_text": "దృష్టి కాలములో"},
-      {"word_idx": 6, "gloss_text": "మరియు"},
-      {"word_idx": 7, "gloss_text": "పరా-ఆవాప్తి"},
-      {"word_idx": 8, "gloss_text": "ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కరంకిణి చేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "క్రోధనా చేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవీ చేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేలిహానా చేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఖేచరీ చేత"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృష్టి కాలములో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పరా-ఆవాప్తి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రకాశించును"
+      }
     ],
     "1.113": [
-      {"word_idx": 0, "gloss_text": "మృదువైన ఆసనముపై"},
-      {"word_idx": 1, "gloss_text": "ఒకే పిరుదుపై (అసమ ఆసనము)"},
-      {"word_idx": 2, "gloss_text": "హస్త-పాదములు నిరాశ్రయములుగా"},
-      {"word_idx": 3, "gloss_text": "ఉంచి"},
-      {"word_idx": 4, "gloss_text": "దీని వలన"},
-      {"word_idx": 5, "gloss_text": "పరా పూర్ణ మతి ఉద్భవించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మృదువైన ఆసనముపై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఒకే పిరుదుపై (అసమ ఆసనము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "హస్త-పాదములు నిరాశ్రయములుగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉంచి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దీని వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరా పూర్ణ మతి ఉద్భవించును"
+      }
     ],
     "1.114": [
-      {"word_idx": 0, "gloss_text": "అర్ధ-కుంచిత బాహువులు"},
-      {"word_idx": 1, "gloss_text": "కక్ష-వ్యోమములో"},
-      {"word_idx": 2, "gloss_text": "అందులో లయము వలన"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అర్ధ-కుంచిత బాహువులు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కక్ష-వ్యోమములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అందులో లయము వలన"
+      }
     ],
     "1.115": [
-      {"word_idx": 0, "gloss_text": "స్తబ్ధ దృష్టిని ఉంచి"},
-      {"word_idx": 1, "gloss_text": "నిరాధారముగా"},
-      {"word_idx": 2, "gloss_text": "శివుని చేరును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్తబ్ధ దృష్టిని ఉంచి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిరాధారముగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శివుని చేరును"
+      }
     ],
     "1.116": [
-      {"word_idx": 0, "gloss_text": "మధ్య-జిహ్వతో"},
-      {"word_idx": 1, "gloss_text": "హ-ఉచ్చారణ"},
-      {"word_idx": 2, "gloss_text": "శాంత శివునిలో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్య-జిహ్వతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "హ-ఉచ్చారణ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శాంత శివునిలో"
+      }
     ],
     "1.117": [
-      {"word_idx": 0, "gloss_text": "నిరాధార స్వదేహము"},
-      {"word_idx": 1, "gloss_text": "మనస్సు క్షీణించినపుడు"},
-      {"word_idx": 2, "gloss_text": "క్షీణ-ఆశయుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిరాధార స్వదేహము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మనస్సు క్షీణించినపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "క్షీణ-ఆశయుడు"
+      }
     ],
     "1.118": [
-      {"word_idx": 0, "gloss_text": "చల-ఆసనములో"},
-      {"word_idx": 1, "gloss_text": "దేహ-చాలనము వలన"},
-      {"word_idx": 2, "gloss_text": "దివ్య-ఓఘము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చల-ఆసనములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "దేహ-చాలనము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దివ్య-ఓఘము"
+      }
     ],
     "1.119": [
-      {"word_idx": 0, "gloss_text": "నిర్మల ఆకాశము"},
-      {"word_idx": 1, "gloss_text": "స్తబ్ధ ఆత్ముడై"},
-      {"word_idx": 2, "gloss_text": "భైరవ రూపము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిర్మల ఆకాశము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్తబ్ధ ఆత్ముడై"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవ రూపము"
+      }
     ],
     "1.120": [
-      {"word_idx": 0, "gloss_text": "లయించిన శూన్యము"},
-      {"word_idx": 1, "gloss_text": "భైరవత్వముగా"},
-      {"word_idx": 2, "gloss_text": "భైరవాకార-తేజస్-తత్త్వము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "లయించిన శూన్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భైరవత్వముగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవాకార-తేజస్-తత్త్వము"
+      }
     ],
     "1.121": [
-      {"word_idx": 0, "gloss_text": "కొద్దిగా తెలిసినది"},
-      {"word_idx": 1, "gloss_text": "బాహ్య కాంతి"},
-      {"word_idx": 2, "gloss_text": "అనంత ప్రకాశ ధారి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కొద్దిగా తెలిసినది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్య కాంతి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనంత ప్రకాశ ధారి"
+      }
     ],
     "1.122": [
-      {"word_idx": 0, "gloss_text": "గాఢ చీకటి రాత్రిలో"},
-      {"word_idx": 1, "gloss_text": "తైమిర రూపము"},
-      {"word_idx": 2, "gloss_text": "భైరవ రూపము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "గాఢ చీకటి రాత్రిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తైమిర రూపము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భైరవ రూపము"
+      }
     ],
     "1.123": [
-      {"word_idx": 0, "gloss_text": "మూసుకొని"},
-      {"word_idx": 1, "gloss_text": "నల్లని కాంతిని"},
-      {"word_idx": 2, "gloss_text": "తన్మయుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మూసుకొని"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నల్లని కాంతిని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తన్మయుడు"
+      }
     ],
     "1.124": [
-      {"word_idx": 0, "gloss_text": "వ్యాఘాతము వలన"},
-      {"word_idx": 1, "gloss_text": "నిరోధము వలన"},
-      {"word_idx": 2, "gloss_text": "అద్వయ శూన్యములోనికి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వ్యాఘాతము వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిరోధము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అద్వయ శూన్యములోనికి"
+      }
     ],
     "1.125": [
-      {"word_idx": 0, "gloss_text": "బిందు రహితము"},
-      {"word_idx": 1, "gloss_text": "విసర్గ రహితము"},
-      {"word_idx": 2, "gloss_text": "జ్ఞానౌఘము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "బిందు రహితము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విసర్గ రహితము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జ్ఞానౌఘము"
+      }
     ],
     "1.126": [
-      {"word_idx": 0, "gloss_text": "విసర్గాంతము"},
-      {"word_idx": 1, "gloss_text": "చైతన్యము"},
-      {"word_idx": 2, "gloss_text": "సనాతన బ్రహ్మము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "విసర్గాంతము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చైతన్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సనాతన బ్రహ్మము"
+      }
     ],
     "1.127": [
-      {"word_idx": 0, "gloss_text": "వ్యోమాకారము"},
-      {"word_idx": 1, "gloss_text": "ఏ దిక్కుచేతనూ ఆవరింపబడనిది"},
-      {"word_idx": 2, "gloss_text": "నిరాశ్రయ చితి-శక్తి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "వ్యోమాకారము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏ దిక్కుచేతనూ ఆవరింపబడనిది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిరాశ్రయ చితి-శక్తి"
+      }
     ],
     "1.128": [
-      {"word_idx": 0, "gloss_text": "ఏదేని శరీర భాగము"},
-      {"word_idx": 1, "gloss_text": "పదునైన సూది మొదలగువానితో"},
-      {"word_idx": 2, "gloss_text": "నిర్మల గతి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏదేని శరీర భాగము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పదునైన సూది మొదలగువానితో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నిర్మల గతి"
+      }
     ],
     "1.129": [
-      {"word_idx": 0, "gloss_text": "అంతఃకరణము"},
-      {"word_idx": 1, "gloss_text": "వికల్పముల అభావము వలన"},
-      {"word_idx": 2, "gloss_text": "విడువబడినవాడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "అంతఃకరణము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వికల్పముల అభావము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విడువబడినవాడు"
+      }
     ],
     "1.130": [
-      {"word_idx": 0, "gloss_text": "మాయ, విమోహిని"},
-      {"word_idx": 1, "gloss_text": "ప్రేరణ"},
-      {"word_idx": 2, "gloss_text": "వేరుగా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మాయ, విమోహిని"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రేరణ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వేరుగా"
+      }
     ],
     "1.131": [
-      {"word_idx": 0, "gloss_text": "హఠాత్తుగా"},
-      {"word_idx": 1, "gloss_text": "శాంతికి తీసుకొనిరావలెను"},
-      {"word_idx": 2, "gloss_text": "ఎక్కడ నుండి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "హఠాత్తుగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శాంతికి తీసుకొనిరావలెను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎక్కడ నుండి"
+      }
     ],
     "1.132": [
-      {"word_idx": 0, "gloss_text": "ఇచ్ఛ / జ్ఞానము"},
-      {"word_idx": 1, "gloss_text": "నేను ఎవరిని?"},
-      {"word_idx": 2, "gloss_text": "తన్మనస్కుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇచ్ఛ / జ్ఞానము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నేను ఎవరిని?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తన్మనస్కుడు"
+      }
     ],
     "1.133": [
-      {"word_idx": 0, "gloss_text": "ఇచ్ఛలో / జ్ఞానములో"},
-      {"word_idx": 1, "gloss_text": "ఇది ఆత్మ అను బుద్ధితో"},
-      {"word_idx": 2, "gloss_text": "తత్త్వార్థ దర్శనము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇచ్ఛలో / జ్ఞానములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇది ఆత్మ అను బుద్ధితో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తత్త్వార్థ దర్శనము"
+      }
     ],
     "1.134": [
-      {"word_idx": 0, "gloss_text": "నిర్నిమిత్తము"},
-      {"word_idx": 1, "gloss_text": "భ్రమాత్మకము"},
-      {"word_idx": 2, "gloss_text": "ఇట్లు భావించువాడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిర్నిమిత్తము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భ్రమాత్మకము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఇట్లు భావించువాడు"
+      }
     ],
     "1.135": [
-      {"word_idx": 0, "gloss_text": "చిత్-ధర్ముడు"},
-      {"word_idx": 1, "gloss_text": "విశేషము"},
-      {"word_idx": 2, "gloss_text": "సంసార విజయుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "చిత్-ధర్ముడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విశేషము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సంసార విజయుడు"
+      }
     ],
     "1.136": [
-      {"word_idx": 0, "gloss_text": "కామ-క్రోధ-లోభ-మోహ-మద-మాత్సర్యము"},
-      {"word_idx": 1, "gloss_text": "పూర్తిగా నిశ్చలమైనది"},
-      {"word_idx": 2, "gloss_text": "మిగిలి ఉండును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కామ-క్రోధ-లోభ-మోహ-మద-మాత్సర్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పూర్తిగా నిశ్చలమైనది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మిగిలి ఉండును"
+      }
     ],
     "1.137": [
-      {"word_idx": 0, "gloss_text": "మాయా మయము"},
-      {"word_idx": 1, "gloss_text": "చిత్రకర్మవలె"},
-      {"word_idx": 2, "gloss_text": "సుఖోదయము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మాయా మయము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చిత్రకర్మవలె"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సుఖోదయము"
+      }
     ],
     "1.138": [
-      {"word_idx": 0, "gloss_text": "మధ్యలో"},
-      {"word_idx": 1, "gloss_text": "మిగిలి ఉండును"},
-      {"word_idx": 2, "gloss_text": "తెలియబడుగాక"}
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్యలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మిగిలి ఉండును"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తెలియబడుగాక"
+      }
     ],
     "1.139": [
-      {"word_idx": 0, "gloss_text": "స్వదేహ ఆస్థ"},
-      {"word_idx": 1, "gloss_text": "నేను సర్వత్ర ఉన్నాను"},
-      {"word_idx": 2, "gloss_text": "మరొకటి చూడని దృష్టితో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వదేహ ఆస్థ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నేను సర్వత్ర ఉన్నాను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరొకటి చూడని దృష్టితో"
+      }
     ],
     "1.140": [
-      {"word_idx": 0, "gloss_text": "కుండ మొదలగువానిలో"},
-      {"word_idx": 1, "gloss_text": "విజ్ఞానము"},
-      {"word_idx": 2, "gloss_text": "సర్వగతుడు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కుండ మొదలగువానిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విజ్ఞానము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సర్వగతుడు"
+      }
     ],
     "1.141": [
-      {"word_idx": 0, "gloss_text": "గ్రాహ్య-గ్రాహక సంవిత్తి"},
-      {"word_idx": 1, "gloss_text": "సామాన్యము"},
-      {"word_idx": 2, "gloss_text": "సావధానత"}
+      {
+        "word_idx": 0,
+        "gloss_text": "గ్రాహ్య-గ్రాహక సంవిత్తి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సామాన్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సావధానత"
+      }
     ],
     "1.142": [
-      {"word_idx": 0, "gloss_text": "స్వంతదానివలెనే"},
-      {"word_idx": 1, "gloss_text": "ఇతరుని శరీరములో"},
-      {"word_idx": 2, "gloss_text": "వ్యాపి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వంతదానివలెనే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇతరుని శరీరములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వ్యాపి"
+      }
     ],
     "1.143": [
-      {"word_idx": 0, "gloss_text": "నిరాధార మనస్సు"},
-      {"word_idx": 1, "gloss_text": "కల్పించును"},
-      {"word_idx": 2, "gloss_text": "ఆత్మ-పరమాత్మత్వములో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నిరాధార మనస్సు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కల్పించును"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆత్మ-పరమాత్మత్వములో"
+      }
     ],
     "1.144": [
-      {"word_idx": 0, "gloss_text": "సర్వజ్ఞుడు, సర్వకర్త"},
-      {"word_idx": 1, "gloss_text": "శైవ ధర్ముడు"},
-      {"word_idx": 2, "gloss_text": "దృఢత్వము వలన"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వజ్ఞుడు, సర్వకర్త"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శైవ ధర్ముడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దృఢత్వము వలన"
+      }
     ],
     "1.145": [
-      {"word_idx": 0, "gloss_text": "తరంగములు"},
-      {"word_idx": 1, "gloss_text": "జ్వాలా భంగములు"},
-      {"word_idx": 2, "gloss_text": "విశ్వ భంగములు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "తరంగములు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "జ్వాలా భంగములు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విశ్వ భంగములు"
+      }
     ],
     "1.146": [
-      {"word_idx": 0, "gloss_text": "తిరిగి తిరిగి"},
-      {"word_idx": 1, "gloss_text": "క్షోభ-శక్తి విరామము వలన"},
-      {"word_idx": 2, "gloss_text": "పరా దశ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "తిరిగి తిరిగి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "క్షోభ-శక్తి విరామము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పరా దశ"
+      }
     ],
     "1.147": [
-      {"word_idx": 0, "gloss_text": "ఆధారములలో"},
-      {"word_idx": 1, "gloss_text": "శక్తి-సంశోభములో"},
-      {"word_idx": 2, "gloss_text": "శాంతించిన పిమ్మట"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆధారములలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శక్తి-సంశోభములో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శాంతించిన పిమ్మట"
+      }
     ],
     "1.148": [
-      {"word_idx": 0, "gloss_text": "సర్వత్ర"},
-      {"word_idx": 1, "gloss_text": "భావనా అను బోధ"},
-      {"word_idx": 2, "gloss_text": "ఓ శోభనా"},
-      {"word_idx": 3, "gloss_text": "ఇట్లే నిజముగా"},
-      {"word_idx": 4, "gloss_text": "భైరవుడు"},
-      {"word_idx": 5, "gloss_text": "ఓ భైరవీ ప్రియురాలా"},
-      {"word_idx": 6, "gloss_text": "ప్రకటింపబడెను"},
-      {"word_idx": 7, "gloss_text": "అగును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వత్ర"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భావనా అను బోధ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఓ శోభనా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇట్లే నిజముగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భైరవుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ భైరవీ ప్రియురాలా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రకటింపబడెను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అగును"
+      }
     ],
     "1.149": [
-      {"word_idx": 0, "gloss_text": "ఎవరికైనా, ఈ దేహములో"},
-      {"word_idx": 1, "gloss_text": "నేను అను ప్రత్యయము ఉద్భవించునో"},
-      {"word_idx": 2, "gloss_text": "అతనికే"},
-      {"word_idx": 3, "gloss_text": "క్షుద్ర సంవిత్తి వలన"},
-      {"word_idx": 4, "gloss_text": "భైరవత్వము ప్రకాశించును"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎవరికైనా, ఈ దేహములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నేను అను ప్రత్యయము ఉద్భవించునో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అతనికే"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్షుద్ర సంవిత్తి వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భైరవత్వము ప్రకాశించును"
+      }
     ],
     "1.150": [
-      {"word_idx": 0, "gloss_text": "ధన్యురాలైన దేవి పలికెను"},
-      {"word_idx": 1, "gloss_text": "ఓ దేవదేవా, మహాదేవా"},
-      {"word_idx": 2, "gloss_text": "నాకు నీవు పరిపూర్ణుడవు, ఓ ప్రభూ"},
-      {"word_idx": 3, "gloss_text": "శంకరుని ఆత్మ నీవే"},
-      {"word_idx": 4, "gloss_text": "జగత్తులో శాశ్వత శక్తి"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ధన్యురాలైన దేవి పలికెను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఓ దేవదేవా, మహాదేవా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నాకు నీవు పరిపూర్ణుడవు, ఓ ప్రభూ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శంకరుని ఆత్మ నీవే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జగత్తులో శాశ్వత శక్తి"
+      }
     ],
     "1.151": [
-      {"word_idx": 0, "gloss_text": "నీచే కృపతో"},
-      {"word_idx": 1, "gloss_text": "ఈ రహస్యము"},
-      {"word_idx": 2, "gloss_text": "ఉద్ధరింపబడెను"},
-      {"word_idx": 3, "gloss_text": "అదే విధముగా"},
-      {"word_idx": 4, "gloss_text": "ఎవరికైనా చెప్పదగినది (జాగ్రత్తగా)"},
-      {"word_idx": 5, "gloss_text": "తగిన శ్రోతకు"},
-      {"word_idx": 6, "gloss_text": "దానిని ప్రసరించరాదు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నీచే కృపతో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ రహస్యము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉద్ధరింపబడెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అదే విధముగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎవరికైనా చెప్పదగినది (జాగ్రత్తగా)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తగిన శ్రోతకు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దానిని ప్రసరించరాదు"
+      }
     ],
     "1.152": [
-      {"word_idx": 0, "gloss_text": "ఈ విజ్ఞానము"},
-      {"word_idx": 1, "gloss_text": "ఉద్భవించెను"},
-      {"word_idx": 2, "gloss_text": "జరా-మరణ నాశకము"},
-      {"word_idx": 3, "gloss_text": "బ్రహ్మాది దేవులచే వంద్యుని యొక్క"},
-      {"word_idx": 4, "gloss_text": "మంథాన-భైరవుని యొక్క"},
-      {"word_idx": 5, "gloss_text": "మరియు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ విజ్ఞానము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉద్భవించెను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జరా-మరణ నాశకము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బ్రహ్మాది దేవులచే వంద్యుని యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మంథాన-భైరవుని యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు"
+      }
     ],
     "1.153": [
-      {"word_idx": 0, "gloss_text": "ఇది అనాఖ్యాత తంత్రము"},
-      {"word_idx": 1, "gloss_text": "భోగ-మోక్ష ప్రదాయకము"},
-      {"word_idx": 2, "gloss_text": "ఈ అనాఖ్యాత తంత్రము"},
-      {"word_idx": 3, "gloss_text": "వారికి ఇవ్వబడెను"},
-      {"word_idx": 4, "gloss_text": "నిజముగా లీలగా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇది అనాఖ్యాత తంత్రము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భోగ-మోక్ష ప్రదాయకము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఈ అనాఖ్యాత తంత్రము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వారికి ఇవ్వబడెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిజముగా లీలగా"
+      }
     ],
     "1.154": [
-      {"word_idx": 0, "gloss_text": "జ్ఞాన లాభము వలన"},
-      {"word_idx": 1, "gloss_text": "గురు భావము"},
-      {"word_idx": 2, "gloss_text": "సమత"},
-      {"word_idx": 3, "gloss_text": "దీని వలన"},
-      {"word_idx": 4, "gloss_text": "ప్రసన్నుడగును"},
-      {"word_idx": 5, "gloss_text": "పొంది"},
-      {"word_idx": 6, "gloss_text": "పరమ సిద్ధి పొందినవాడు"},
-      {"word_idx": 7, "gloss_text": "చేరును"},
-      {"word_idx": 8, "gloss_text": "శంకరునిలో"}
+      {
+        "word_idx": 0,
+        "gloss_text": "జ్ఞాన లాభము వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "గురు భావము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సమత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దీని వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రసన్నుడగును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పొంది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరమ సిద్ధి పొందినవాడు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "చేరును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శంకరునిలో"
+      }
     ],
     "1.155": [
-      {"word_idx": 0, "gloss_text": "ఎక్కడెక్కడ"},
-      {"word_idx": 1, "gloss_text": "ఏదైన విధముగానైనా"},
-      {"word_idx": 2, "gloss_text": "కర్త-కర్మ వివేచనము ఉద్భవించునో"},
-      {"word_idx": 3, "gloss_text": "అక్కడక్కడ"},
-      {"word_idx": 4, "gloss_text": "శివ అవస్థ"},
-      {"word_idx": 5, "gloss_text": "వ్యాపకత్వము వలన"},
-      {"word_idx": 6, "gloss_text": "ఎక్కడికి పోగలదు?"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎక్కడెక్కడ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏదైన విధముగానైనా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కర్త-కర్మ వివేచనము ఉద్భవించునో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అక్కడక్కడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శివ అవస్థ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వ్యాపకత్వము వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎక్కడికి పోగలదు?"
+      }
     ],
     "1.156": [
-      {"word_idx": 0, "gloss_text": "ఈ విజ్ఞానమును ఆశ్రయించి"},
-      {"word_idx": 1, "gloss_text": "యోగి శివుడగును"},
-      {"word_idx": 2, "gloss_text": "తీర్థాదులలో"},
-      {"word_idx": 3, "gloss_text": "మరియు ఏ జాతిలో పుట్టినా"},
-      {"word_idx": 4, "gloss_text": "స్నానాదులలో అవసరము లేదు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ విజ్ఞానమును ఆశ్రయించి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "యోగి శివుడగును"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తీర్థాదులలో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు ఏ జాతిలో పుట్టినా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్నానాదులలో అవసరము లేదు"
+      }
     ],
     "1.157": [
-      {"word_idx": 0, "gloss_text": "శ్రోత-ఆత్మ యొక్క"},
-      {"word_idx": 1, "gloss_text": "చిత్త సమత"},
-      {"word_idx": 2, "gloss_text": "తత్త్వ భావన"},
-      {"word_idx": 3, "gloss_text": "అసమత"},
-      {"word_idx": 4, "gloss_text": "మరియు అతని శక్తి"},
-      {"word_idx": 5, "gloss_text": "సమయగును"},
-      {"word_idx": 6, "gloss_text": "ఆత్మ ధ్యానము వలన"},
-      {"word_idx": 7, "gloss_text": "ఏ ప్రాప్తి ఉద్భవించునో"},
-      {"word_idx": 8, "gloss_text": "అదే ఇది"}
+      {
+        "word_idx": 0,
+        "gloss_text": "శ్రోత-ఆత్మ యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "చిత్త సమత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తత్త్వ భావన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అసమత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియు అతని శక్తి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సమయగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆత్మ ధ్యానము వలన"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఏ ప్రాప్తి ఉద్భవించునో"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అదే ఇది"
+      }
     ],
     "1.158": [
-      {"word_idx": 0, "gloss_text": "ఈ విజ్ఞాన-విజ్ఞానము వలన"},
-      {"word_idx": 1, "gloss_text": "యోగ-విత్తముడు"},
-      {"word_idx": 2, "gloss_text": "మహా యోగి"},
-      {"word_idx": 3, "gloss_text": "ఆ క్షణములోనే"},
-      {"word_idx": 4, "gloss_text": "యోగులలో అతడు"},
-      {"word_idx": 5, "gloss_text": "అగును"},
-      {"word_idx": 6, "gloss_text": "ఓ నా ప్రియురాలా"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ విజ్ఞాన-విజ్ఞానము వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "యోగ-విత్తముడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మహా యోగి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆ క్షణములోనే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "యోగులలో అతడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఓ నా ప్రియురాలా"
+      }
     ],
     "1.159": [
-      {"word_idx": 0, "gloss_text": "నేను పూర్తిగా తృప్తురాలను"},
-      {"word_idx": 1, "gloss_text": "రుద్రయామల (మూల తంత్రము)"},
-      {"word_idx": 2, "gloss_text": "సారము గ్రహింపబడెను"},
-      {"word_idx": 3, "gloss_text": "ధన్యురాలైన దేవి పలికెను"},
-      {"word_idx": 4, "gloss_text": "ఓ దేవదేవా, మహాదేవా"},
-      {"word_idx": 5, "gloss_text": "ఓ శంకరా (శుభంకరా)"},
-      {"word_idx": 6, "gloss_text": "తంత్రము యొక్క"},
-      {"word_idx": 7, "gloss_text": "ఈరోజు"}
+      {
+        "word_idx": 0,
+        "gloss_text": "నేను పూర్తిగా తృప్తురాలను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "రుద్రయామల (మూల తంత్రము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సారము గ్రహింపబడెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ధన్యురాలైన దేవి పలికెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఓ దేవదేవా, మహాదేవా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ శంకరా (శుభంకరా)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తంత్రము యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఈరోజు"
+      }
     ],
     "1.160": [
-      {"word_idx": 0, "gloss_text": "సర్వ శక్తి విభాగముల యొక్క"},
-      {"word_idx": 1, "gloss_text": "హృదయము"},
-      {"word_idx": 2, "gloss_text": "చేరి"},
-      {"word_idx": 3, "gloss_text": "మరియు ఈరోజు తెలియబడెను"},
-      {"word_idx": 4, "gloss_text": "రుద్రయామల (తంత్రము)"},
-      {"word_idx": 5, "gloss_text": "ఓ దేవీ"},
-      {"word_idx": 6, "gloss_text": "నీ నుండి"},
-      {"word_idx": 7, "gloss_text": "నా చేత పలుకబడెను"}
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వ శక్తి విభాగముల యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "హృదయము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చేరి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు ఈరోజు తెలియబడెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "రుద్రయామల (తంత్రము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఓ దేవీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నీ నుండి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నా చేత పలుకబడెను"
+      }
     ],
     "1.161": [
-      {"word_idx": 0, "gloss_text": "ఆనందించినదై"},
-      {"word_idx": 1, "gloss_text": "కంఠమునకు అతుక్కొని"},
-      {"word_idx": 2, "gloss_text": "ఉద్ధరింపబడెను"},
-      {"word_idx": 3, "gloss_text": "ఇట్లు పలికి"},
-      {"word_idx": 4, "gloss_text": "దేవి"},
-      {"word_idx": 5, "gloss_text": "శివుని యొక్క"},
-      {"word_idx": 6, "gloss_text": "ఇట్లు ఈ ప్రియ తంత్రము"},
-      {"word_idx": 7, "gloss_text": "భైరవుని చేత"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆనందించినదై"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కంఠమునకు అతుక్కొని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉద్ధరింపబడెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇట్లు పలికి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దేవి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శివుని యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఇట్లు ఈ ప్రియ తంత్రము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భైరవుని చేత"
+      }
     ],
     "1.162": [
-      {"word_idx": 0, "gloss_text": "కుల-గుహ్యము"},
-      {"word_idx": 1, "gloss_text": "భక్తి కల శిష్యునికి"},
-      {"word_idx": 2, "gloss_text": "గురు-ఘాతకుడు"},
-      {"word_idx": 3, "gloss_text": "సంపూర్ణముగా ప్రకటింపబడెను"},
-      {"word_idx": 4, "gloss_text": "ఇవ్వరాదు"},
-      {"word_idx": 5, "gloss_text": "[draft] పరీక్షించకుండా ఎవరికీ"},
-      {"word_idx": 6, "gloss_text": "లేకుంటే"}
+      {
+        "word_idx": 0,
+        "gloss_text": "కుల-గుహ్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భక్తి కల శిష్యునికి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "గురు-ఘాతకుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సంపూర్ణముగా ప్రకటింపబడెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇవ్వరాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరీక్షించకుండా ఎవరికీ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేకుంటే"
+      }
     ],
     "1.163": [
-      {"word_idx": 0, "gloss_text": "ఇట్లు విజ్ఞాన భైరవములో"},
-      {"word_idx": 1, "gloss_text": "శ్రీదేవి స్తవనాత్మకము"},
-      {"word_idx": 2, "gloss_text": "నూట ఒకటి"},
-      {"word_idx": 3, "gloss_text": "పన్నెండుతో కలిపి"},
-      {"word_idx": 4, "gloss_text": "చెప్పబడెను"},
-      {"word_idx": 5, "gloss_text": "భేద రహితము"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు విజ్ఞాన భైరవములో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శ్రీదేవి స్తవనాత్మకము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నూట ఒకటి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "పన్నెండుతో కలిపి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చెప్పబడెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భేద రహితము"
+      }
     ]
   }
 }
