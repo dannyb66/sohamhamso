@@ -41,6 +41,27 @@ const SCRIPTS: ScriptOption[] = [
 ];
 
 const STORAGE_KEY = 'sohamhamso:script';
+const READER_LANG_KEY = 'sohamhamso:reader-lang';
+
+// Each Indic script maps 1:1 to a reader language. Picking a script in
+// this switcher should also drive the gloss + translation language so a
+// reader who picks "Bengali" sees the entire verse in Bengali — Sanskrit
+// transliterated AND glosses + translation in Bengali. The Settings sheet
+// remains the override path for power users (e.g. Marathi readers who
+// want Devanāgarī script with Marathi glosses).
+const SCRIPT_TO_LANG: Record<string, string> = {
+  devanagari: 'hi',
+  iast: 'en',
+  bengali: 'bn',
+  assamese: 'as',
+  gujarati: 'gu',
+  gurmukhi: 'pa',
+  kannada: 'kn',
+  malayalam: 'ml',
+  oriya: 'or',
+  tamil: 'ta',
+  telugu: 'te',
+};
 
 /**
  * Re-render every `[data-sa]` element on the page from its preserved
@@ -90,6 +111,19 @@ export default function ScriptSwitcher() {
       localStorage.setItem(STORAGE_KEY, id);
     } catch {
       /* ignore */
+    }
+    const lang = SCRIPT_TO_LANG[id];
+    if (lang) {
+      try {
+        localStorage.setItem(READER_LANG_KEY, lang);
+      } catch {
+        /* ignore */
+      }
+      document.dispatchEvent(
+        new CustomEvent('sohamhamso:reader-lang-change', {
+          detail: { lang },
+        }),
+      );
     }
     setOpen(false);
   };
