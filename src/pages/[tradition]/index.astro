@@ -1,0 +1,155 @@
+---
+/**
+ * Tradition overview page: /{tradition}
+ * Lists every text in the tradition. Quiet table, same shape as
+ * /texts but scoped to one tradition.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { listTexts } from "../../lib/db";
+
+export async function getStaticPaths() {
+  const texts = listTexts();
+  const traditions = Array.from(new Set(texts.map((t) => t.tradition)));
+  return traditions.map((tradition) => ({ params: { tradition } }));
+}
+
+const { tradition } = Astro.params;
+const allTexts = listTexts();
+const textsInTradition = allTexts.filter((t) => t.tradition === tradition);
+if (textsInTradition.length === 0) {
+  return Astro.redirect("/texts");
+}
+
+const traditionLabel = tradition!.charAt(0).toUpperCase() + tradition!.slice(1);
+const totalVerses = textsInTradition.reduce((sum, t) => sum + (t.verse_count ?? 0), 0);
+const pageTitle = `${traditionLabel} — sohamhamso`;
+const description = `${textsInTradition.length} texts in the ${traditionLabel} tradition, ${totalVerses} verses.`;
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <header class="chrome">
+    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <div class="chrome__title">{traditionLabel}</div>
+  </header>
+
+  <main id="main" class="reader">
+    <article class="tradition-overview">
+      <h1 class="tradition-title">{traditionLabel}</h1>
+      <p class="tradition-meta">
+        {textsInTradition.length} text{textsInTradition.length === 1 ? "" : "s"}
+        <span aria-hidden="true"> · </span>
+        {totalVerses} verses
+      </p>
+
+      <hr class="shirorekha-rule" />
+
+      <table class="text-table">
+        <thead>
+          <tr>
+            <th scope="col">Text</th>
+            <th scope="col">Author</th>
+            <th scope="col">Verses</th>
+            <th scope="col">Read</th>
+          </tr>
+        </thead>
+        <tbody>
+          {textsInTradition.map((t) => (
+            <tr>
+              <td>
+                <span class="text-title-en">{t.title_en}</span>
+                <span class="text-title-sa" lang="sa">{t.title_sa}</span>
+              </td>
+              <td>{t.author ?? "—"}</td>
+              <td>{t.verse_count ?? 0}</td>
+              <td>
+                <a href={`/${tradition}/${t.slug}`}>
+                  Open →
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+
+  .tradition-overview {
+    padding-block: var(--spacing-6);
+  }
+  .tradition-title {
+    font-family: var(--font-iast);
+    font-size: var(--text-xl);
+    margin: 0;
+    color: var(--color-ink);
+    text-transform: capitalize;
+  }
+  .tradition-meta {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    margin: var(--spacing-2) 0 0 0;
+  }
+
+  .text-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .text-table th,
+  .text-table td {
+    text-align: left;
+    padding: var(--spacing-3) var(--spacing-2);
+    border-block-end: 1px solid var(--color-rule);
+    vertical-align: top;
+  }
+  .text-table th {
+    font-weight: 500;
+    color: var(--color-ink-muted);
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+  }
+  .text-title-en {
+    display: block;
+    font-family: var(--font-iast);
+    color: var(--color-ink);
+  }
+  .text-title-sa {
+    display: block;
+    font-family: var(--font-sa-display);
+    color: var(--color-ink-muted);
+    margin-top: 2px;
+  }
+</style>
