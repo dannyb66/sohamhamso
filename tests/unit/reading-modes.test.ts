@@ -117,7 +117,8 @@ describe('applyReadingMode', () => {
     expect(mode?.scriptId).toBe('bengali');
     expect(localStorage.getItem('sohamhamso:script')).toBe('bengali');
     expect(localStorage.getItem('sohamhamso:reader-lang')).toBe('bn');
-    const events = (globalThis as { document: { __events: Event[] } }).document.__events;
+    const events = (globalThis as unknown as { document: { __events: Event[] } }).document
+      .__events;
     expect(events).toHaveLength(1);
     const evt = events[0] as CustomEvent<{ lang: string }>;
     expect(evt.type).toBe('sohamhamso:reader-lang-change');
