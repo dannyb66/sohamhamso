@@ -1,3 +1,7 @@
+// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
+import { Database } from 'bun:sqlite';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 /**
  * Unit tests for `src/lib/db.ts` query helpers.
  *
@@ -12,26 +16,17 @@
  * Run with: `bun --bun vitest run tests/unit/db.test.ts`
  * (Vitest must be hosted by Bun so `bun:sqlite` resolves natively.)
  */
-import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
-// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import { Database } from "bun:sqlite";
-import {
-  __setDbForTests,
-  getVerse,
-  listChapterVerses,
-  listTexts,
-} from "../../src/lib/db";
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { __setDbForTests, getVerse, listChapterVerses, listTexts } from '../../src/lib/db';
 
-const SCHEMA_PATH = resolve(__dirname, "..", "..", "db", "schema.sql");
+const SCHEMA_PATH = resolve(__dirname, '..', '..', 'db', 'schema.sql');
 
 let db: Database;
 
 beforeAll(() => {
-  db = new Database(":memory:");
-  db.exec("PRAGMA foreign_keys = ON;");
-  db.exec(readFileSync(SCHEMA_PATH, "utf8"));
+  db = new Database(':memory:');
+  db.exec('PRAGMA foreign_keys = ON;');
+  db.exec(readFileSync(SCHEMA_PATH, 'utf8'));
 
   // ── Seed: two texts ────────────────────────────────────────────────────
   db.exec(`
@@ -115,98 +110,99 @@ afterAll(() => {
   db?.close();
 });
 
-describe("listTexts()", () => {
-  it("returns one row per text with the expected shape", () => {
+describe('listTexts()', () => {
+  it('returns one row per text with the expected shape', () => {
     const texts = listTexts();
     expect(texts).toHaveLength(2);
 
-    const siva = texts.find((t) => t.slug === "siva-sutras");
+    const siva = texts.find((t) => t.slug === 'siva-sutras');
     expect(siva).toBeDefined();
     expect(siva).toMatchObject({
-      id: "siva-sutras",
-      slug: "siva-sutras",
-      title_sa: "शिवसूत्राणि",
-      title_en: "Śiva Sūtras",
-      title_iast: "Śivasūtrāṇi",
-      tradition: "trika",
-      school: "kashmir-shaivism",
+      id: 'siva-sutras',
+      slug: 'siva-sutras',
+      title_sa: 'शिवसूत्राणि',
+      title_en: 'Śiva Sūtras',
+      title_iast: 'Śivasūtrāṇi',
+      tradition: 'trika',
+      school: 'kashmir-shaivism',
     });
     expect(siva!.verse_count).toBe(2);
 
-    const spanda = texts.find((t) => t.slug === "spanda-karikas");
+    const spanda = texts.find((t) => t.slug === 'spanda-karikas');
     expect(spanda!.verse_count).toBe(2);
   });
 
-  it("orders results by title_en ascending", () => {
+  it('orders results by title_en ascending', () => {
     const titles = listTexts().map((t) => t.title_en);
     expect(titles).toEqual([...titles].sort());
   });
 });
 
-describe("getVerse()", () => {
-  it("returns the verse plus its translations and word_glosses", () => {
-    const page = getVerse("siva-sutras", 1, 1);
+describe('getVerse()', () => {
+  it('returns the verse plus its translations and word_glosses', () => {
+    const page = getVerse('siva-sutras', 1, 1);
     expect(page).not.toBeNull();
-    expect(page!.text.slug).toBe("siva-sutras");
+    expect(page!.text.slug).toBe('siva-sutras');
     expect(page!.verse).toMatchObject({
-      text_id: "siva-sutras",
+      text_id: 'siva-sutras',
       chapter: 1,
       verse_num: 1,
-      devanagari: "चैतन्यमात्मा ॥१॥",
-      iast: "caitanyam ātmā",
+      devanagari: 'चैतन्यमात्मा ॥१॥',
+      iast: 'caitanyam ātmā',
     });
-    // Default lang='en' — 'published' + 'reviewed' surface, 'draft' hidden.
-    expect(page!.translations).toHaveLength(2);
-    expect(page!.translations.every((t) => t.lang === "en")).toBe(true);
-    expect(page!.translations.some((t) => t.status === "draft")).toBe(false);
+    // Default lang='en' — V1 surfaces 'published', 'reviewed', AND 'draft'.
+    // Drafts render with the amber "AI · not verified" badge per the V1
+    // AI-only posture; per-verse uncertainty is communicated through the
+    // badge variant rather than by hiding the content.
+    expect(page!.translations).toHaveLength(3);
+    expect(page!.translations.every((t) => t.lang === 'en')).toBe(true);
+    expect(page!.translations.some((t) => t.status === 'draft')).toBe(true);
     expect(page!.wordGlosses).toHaveLength(2);
   });
 
-  it("returns null for a non-existent verse", () => {
-    expect(getVerse("siva-sutras", 99, 99)).toBeNull();
-    expect(getVerse("does-not-exist", 1, 1)).toBeNull();
+  it('returns null for a non-existent verse', () => {
+    expect(getVerse('siva-sutras', 99, 99)).toBeNull();
+    expect(getVerse('does-not-exist', 1, 1)).toBeNull();
   });
 
-  it("filters translations by `lang` arg", () => {
-    const en = getVerse("siva-sutras", 1, 1, "en");
-    const de = getVerse("siva-sutras", 1, 1, "de");
-    expect(en!.translations.every((t) => t.lang === "en")).toBe(true);
+  it('filters translations by `lang` arg', () => {
+    const en = getVerse('siva-sutras', 1, 1, 'en');
+    const de = getVerse('siva-sutras', 1, 1, 'de');
+    expect(en!.translations.every((t) => t.lang === 'en')).toBe(true);
     expect(de).not.toBeNull();
     expect(de!.translations).toHaveLength(1);
-    expect(de!.translations[0]!.lang).toBe("de");
-    expect(de!.translations[0]!.translation_text).toBe(
-      "Bewusstsein ist das Selbst.",
-    );
+    expect(de!.translations[0]!.lang).toBe('de');
+    expect(de!.translations[0]!.translation_text).toBe('Bewusstsein ist das Selbst.');
   });
 
-  it("normalises SQLite ai_assisted 0/1 to a real JS boolean", () => {
-    const page = getVerse("siva-sutras", 1, 1);
-    expect(page!.translations).toHaveLength(2);
+  it('normalises SQLite ai_assisted 0/1 to a real JS boolean', () => {
+    const page = getVerse('siva-sutras', 1, 1);
+    expect(page!.translations).toHaveLength(3);
     for (const t of page!.translations) {
       // typeof check is the load-bearing assertion — `1 === true` is false
       // in JS, but a buggy mapper would still pass a deep-equal check.
-      expect(typeof t.ai_assisted).toBe("boolean");
+      expect(typeof t.ai_assisted).toBe('boolean');
     }
-    const ai = page!.translations.find((t) => t.translator === "AI");
-    const pd = page!.translations.find((t) => t.translator === "PD");
+    const ai = page!.translations.find((t) => t.translator === 'AI');
+    const pd = page!.translations.find((t) => t.translator === 'PD');
     expect(ai!.ai_assisted).toBe(true);
     expect(pd!.ai_assisted).toBe(false);
   });
 
-  it("joins parallels onto target verse summary via verse_id", () => {
-    const page = getVerse("siva-sutras", 1, 1);
+  it('joins parallels onto target verse summary via verse_id', () => {
+    const page = getVerse('siva-sutras', 1, 1);
     expect(page!.parallels).toHaveLength(1);
     const p = page!.parallels[0]!;
-    expect(p.target_text_slug).toBe("spanda-karikas");
+    expect(p.target_text_slug).toBe('spanda-karikas');
     expect(p.target_chapter).toBe(1);
     expect(p.target_verse_num).toBe(1);
     expect(p.confidence).toBeCloseTo(0.85);
-    expect(p.target_devanagari).toContain("यस्य");
+    expect(p.target_devanagari).toContain('यस्य');
   });
 
-  it("populates prev/next within the same text", () => {
-    const v1 = getVerse("siva-sutras", 1, 1);
-    const v2 = getVerse("siva-sutras", 1, 2);
+  it('populates prev/next within the same text', () => {
+    const v1 = getVerse('siva-sutras', 1, 1);
+    const v2 = getVerse('siva-sutras', 1, 2);
     expect(v1!.prev).toBeNull();
     expect(v1!.next).toEqual({ chapter: 1, verse_num: 2 });
     expect(v2!.prev).toEqual({ chapter: 1, verse_num: 1 });
@@ -214,20 +210,20 @@ describe("getVerse()", () => {
   });
 });
 
-describe("listChapterVerses()", () => {
-  it("returns verses in verse_num order", () => {
-    const verses = listChapterVerses("siva-sutras", 1);
+describe('listChapterVerses()', () => {
+  it('returns verses in verse_num order', () => {
+    const verses = listChapterVerses('siva-sutras', 1);
     expect(verses).toHaveLength(2);
     expect(verses.map((v) => v.verse_num)).toEqual([1, 2]);
     expect(verses[0]).toMatchObject({
       chapter: 1,
       verse_num: 1,
-      devanagari: "चैतन्यमात्मा ॥१॥",
-      iast: "caitanyam ātmā",
+      devanagari: 'चैतन्यमात्मा ॥१॥',
+      iast: 'caitanyam ātmā',
     });
   });
 
-  it("returns [] for a chapter with no verses", () => {
-    expect(listChapterVerses("siva-sutras", 99)).toEqual([]);
+  it('returns [] for a chapter with no verses', () => {
+    expect(listChapterVerses('siva-sutras', 99)).toEqual([]);
   });
 });

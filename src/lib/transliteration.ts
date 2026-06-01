@@ -9,7 +9,7 @@
 
 // biome-ignore lint/correctness/noUndeclaredDependencies: package ships its
 // own types via the CommonJS entrypoint.
-import Sanscript from "@indic-transliteration/sanscript";
+import Sanscript from '@indic-transliteration/sanscript';
 
 /**
  * The eleven scripts the reader UI surfaces. IAST is the Roman target;
@@ -17,17 +17,17 @@ import Sanscript from "@indic-transliteration/sanscript";
  * the canonical source script for the corpus.
  */
 export const availableScripts: readonly string[] = [
-  "devanagari",
-  "bengali",
-  "gujarati",
-  "gurmukhi",
-  "kannada",
-  "malayalam",
-  "oriya",
-  "tamil",
-  "telugu",
-  "iast",
-  "assamese",
+  'devanagari',
+  'bengali',
+  'gujarati',
+  'gurmukhi',
+  'kannada',
+  'malayalam',
+  'oriya',
+  'tamil',
+  'telugu',
+  'iast',
+  'assamese',
 ] as const;
 
 /**
@@ -35,19 +35,15 @@ export const availableScripts: readonly string[] = [
  * scheme name (anything not in `availableScripts`) so typos surface loudly
  * rather than returning a silently-wrong transliteration.
  */
-export function toScript(
-  text: string,
-  fromScript: string,
-  toScript: string,
-): string {
+export function toScript(text: string, fromScript: string, toScript: string): string {
   if (!availableScripts.includes(fromScript)) {
     throw new Error(
-      `Unsupported source script: '${fromScript}'. Supported: ${availableScripts.join(", ")}`,
+      `Unsupported source script: '${fromScript}'. Supported: ${availableScripts.join(', ')}`,
     );
   }
   if (!availableScripts.includes(toScript)) {
     throw new Error(
-      `Unsupported target script: '${toScript}'. Supported: ${availableScripts.join(", ")}`,
+      `Unsupported target script: '${toScript}'. Supported: ${availableScripts.join(', ')}`,
     );
   }
   return Sanscript.t(text, fromScript, toScript);

@@ -12,7 +12,7 @@
  *
  * Dismiss: ESC, scrim click, swipe-down (touch handlers), close button.
  */
-import { createSignal, onMount, onCleanup, Show } from "solid-js";
+import { Show, createSignal, onCleanup, onMount } from 'solid-js';
 
 interface GlossEntry {
   word_idx: number;
@@ -46,19 +46,19 @@ export default function WordSheet() {
     setOpen(false);
     setGloss(null);
     if (sheetEl) {
-      sheetEl.style.transform = "";
+      sheetEl.style.transform = '';
     }
   };
 
   const handleClick = (e: MouseEvent) => {
     const target = e.target as HTMLElement | null;
     if (!target) return;
-    const trigger = target.closest<HTMLElement>("[data-word-idx]");
+    const trigger = target.closest<HTMLElement>('[data-word-idx]');
     if (!trigger) return;
     e.preventDefault();
 
-    const verseId = trigger.dataset.verseId ?? "";
-    const wordIdx = Number(trigger.dataset.wordIdx ?? "-1");
+    const verseId = trigger.dataset.verseId ?? '';
+    const wordIdx = Number(trigger.dataset.wordIdx ?? '-1');
     const pool = window.__wordGlosses?.[verseId] ?? [];
     const found = pool.find((g) => g.word_idx === wordIdx);
 
@@ -69,15 +69,15 @@ export default function WordSheet() {
       // the user gets a "no gloss yet, contribute" affordance.
       setGloss({
         word_idx: wordIdx,
-        word_sa: trigger.textContent ?? "",
-        gloss_text: "",
+        word_sa: trigger.textContent ?? '',
+        gloss_text: '',
       });
     }
     setOpen(true);
   };
 
   const handleKey = (e: KeyboardEvent) => {
-    if (e.key === "Escape" && open()) close();
+    if (e.key === 'Escape' && open()) close();
   };
 
   const handleTouchStart = (e: TouchEvent) => {
@@ -94,29 +94,25 @@ export default function WordSheet() {
     if (touchDelta > 80) {
       close();
     } else if (sheetEl) {
-      sheetEl.style.transform = "";
+      sheetEl.style.transform = '';
     }
     touchDelta = 0;
   };
 
   onMount(() => {
-    if (typeof document === "undefined") return;
-    document.addEventListener("click", handleClick);
-    document.addEventListener("keydown", handleKey);
+    if (typeof document === 'undefined') return;
+    document.addEventListener('click', handleClick);
+    document.addEventListener('keydown', handleKey);
   });
   onCleanup(() => {
-    if (typeof document === "undefined") return;
-    document.removeEventListener("click", handleClick);
-    document.removeEventListener("keydown", handleKey);
+    if (typeof document === 'undefined') return;
+    document.removeEventListener('click', handleClick);
+    document.removeEventListener('keydown', handleKey);
   });
 
   return (
     <Show when={open()}>
-      <div
-        class="word-sheet__scrim"
-        onClick={close}
-        aria-hidden="true"
-      />
+      <div class="word-sheet__scrim" onClick={close} aria-hidden="true" />
       <dialog
         open
         ref={sheetEl}
@@ -138,12 +134,7 @@ export default function WordSheet() {
               <div class="word-sheet__iast">{gloss()?.lemma_iast}</div>
             </Show>
           </div>
-          <button
-            type="button"
-            class="word-sheet__close"
-            onClick={close}
-            aria-label="Close"
-          >
+          <button type="button" class="word-sheet__close" onClick={close} aria-label="Close">
             ×
           </button>
         </header>
@@ -153,8 +144,7 @@ export default function WordSheet() {
             when={gloss()?.gloss_text}
             fallback={
               <p class="word-sheet__empty">
-                No gloss yet for this word —{" "}
-                <a href="/contribute">help us add one</a>.
+                No gloss yet for this word — <a href="/contribute">help us add one</a>.
               </p>
             }
           >
@@ -176,9 +166,10 @@ export default function WordSheet() {
             <p class="word-sheet__occurrences">
               <a
                 class="word-sheet__occurrences-link"
-                href={`/search?q=${encodeURIComponent(gloss()?.lemma_iast ?? "")}`}
+                href={`/search?q=${encodeURIComponent(gloss()?.lemma_iast ?? '')}`}
               >
-                {gloss()?.occurrence_count} more occurrence{gloss()?.occurrence_count === 1 ? "" : "s"} in this text →
+                {gloss()?.occurrence_count} more occurrence
+                {gloss()?.occurrence_count === 1 ? '' : 's'} in this text →
               </a>
             </p>
           </Show>
@@ -186,7 +177,7 @@ export default function WordSheet() {
           <p class="word-sheet__cologne">
             <a
               href={`https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/indexcaller.php?key=${encodeURIComponent(
-                gloss()?.lemma_iast ?? gloss()?.word_sa ?? "",
+                gloss()?.lemma_iast ?? gloss()?.word_sa ?? '',
               )}`}
               target="_blank"
               rel="noopener noreferrer"

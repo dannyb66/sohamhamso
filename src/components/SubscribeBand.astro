@@ -8,24 +8,34 @@
  * verse curator workstream wires the actual Resend send + double-opt-in
  * + subscribers-DB write for V1.x.
  *
- * Language selector ships English-only at launch, with other languages
- * greyed and tooltipped — honest constraint, per design spec §5.
+ * Language availability mirrors the masthead picker: built from the
+ * corpus DB at build time — any lang with at least one published or
+ * reviewed translation is selectable; the rest stay greyed with a
+ * "(soon)" suffix.
  */
+import { getAvailableLanguages } from '../lib/db';
 
-const languages = [
-  { code: "en", label: "English", available: true },
-  { code: "hi", label: "Hindi", available: false },
-  { code: "ta", label: "Tamil", available: false },
-  { code: "te", label: "Telugu", available: false },
-  { code: "bn", label: "Bengali", available: false },
-  { code: "mr", label: "Marathi", available: false },
-  { code: "gu", label: "Gujarati", available: false },
-  { code: "kn", label: "Kannada", available: false },
-  { code: "ml", label: "Malayalam", available: false },
-  { code: "pa", label: "Punjabi", available: false },
-  { code: "or", label: "Odia", available: false },
-  { code: "as", label: "Assamese", available: false },
+const availableSet = getAvailableLanguages();
+
+const LANG_CATALOGUE: Array<{ code: string; label: string }> = [
+  { code: 'en', label: 'English' },
+  { code: 'hi', label: 'Hindi' },
+  { code: 'ta', label: 'Tamil' },
+  { code: 'te', label: 'Telugu' },
+  { code: 'bn', label: 'Bengali' },
+  { code: 'mr', label: 'Marathi' },
+  { code: 'gu', label: 'Gujarati' },
+  { code: 'kn', label: 'Kannada' },
+  { code: 'ml', label: 'Malayalam' },
+  { code: 'pa', label: 'Punjabi' },
+  { code: 'or', label: 'Odia' },
+  { code: 'as', label: 'Assamese' },
 ];
+
+const languages = LANG_CATALOGUE.map((l) => ({
+  ...l,
+  available: availableSet.has(l.code),
+}));
 ---
 
 <section class="subscribe" aria-labelledby="subscribe-heading">

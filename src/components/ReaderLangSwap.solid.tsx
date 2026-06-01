@@ -26,7 +26,7 @@
  * Mounted via `<ReaderLangSwap client:idle />` in the verse-page Astro
  * route. No SSR output — returns null.
  */
-import { onMount, onCleanup } from "solid-js";
+import { onCleanup, onMount } from 'solid-js';
 
 interface GlossEntry {
   word_idx: number;
@@ -54,14 +54,14 @@ declare global {
   }
 }
 
-const STORAGE_KEY = "sohamhamso:reader-lang";
+const STORAGE_KEY = 'sohamhamso:reader-lang';
 
 function currentLang(): string {
-  if (typeof localStorage === "undefined") return "en";
+  if (typeof localStorage === 'undefined') return 'en';
   try {
-    return localStorage.getItem(STORAGE_KEY) || "en";
+    return localStorage.getItem(STORAGE_KEY) || 'en';
   } catch {
-    return "en";
+    return 'en';
   }
 }
 
@@ -80,55 +80,49 @@ function currentLang(): string {
  *   3. Any miss → leave the English content alone.
  */
 function applyLang(lang: string) {
-  if (typeof document === "undefined") return;
+  if (typeof document === 'undefined') return;
   const data = window.__readerData;
   if (!data) return;
 
-  const synonymsBlocks = document.querySelectorAll<HTMLElement>(".synonyms");
+  const synonymsBlocks = document.querySelectorAll<HTMLElement>('.synonyms');
   for (const block of Array.from(synonymsBlocks)) {
     const enGlosses = data.glosses_by_lang?.en ?? [];
-    const targetGlosses =
-      lang === "en"
-        ? enGlosses
-        : data.glosses_by_lang?.[lang] ?? null;
+    const targetGlosses = lang === 'en' ? enGlosses : (data.glosses_by_lang?.[lang] ?? null);
 
     // Fallback: if no glosses for this lang, restore the English ones.
     const source = targetGlosses ?? enGlosses;
     if (source.length === 0) continue;
 
-    const glossSpans = block.querySelectorAll<HTMLElement>(".sa-gloss");
+    const glossSpans = block.querySelectorAll<HTMLElement>('.sa-gloss');
     const byIdx = new Map<number, string>();
     for (const g of source) byIdx.set(g.word_idx, g.gloss_text);
 
     // The synonyms section emits `.sa-word`/`.sa-gloss` pairs in word_idx
     // order — index N of `.sa-gloss` corresponds to the Nth gloss row.
     // We also walk the SA-word buttons to recover word_idx defensively.
-    const wordButtons = block.querySelectorAll<HTMLElement>(".sa-word[data-word-idx]");
+    const wordButtons = block.querySelectorAll<HTMLElement>('.sa-word[data-word-idx]');
     glossSpans.forEach((span, i) => {
       const btn = wordButtons[i];
       const idx = btn?.dataset.wordIdx ? Number(btn.dataset.wordIdx) : i;
       const text = byIdx.get(idx);
-      if (typeof text === "string") {
+      if (typeof text === 'string') {
         span.textContent = ` — ${text}`;
       }
     });
 
     // Mark the block lang so any future per-lang CSS hooks attach.
-    block.setAttribute("lang", lang);
+    block.setAttribute('lang', lang);
   }
 
-  const translationP = document.querySelector<HTMLElement>(".translation");
+  const translationP = document.querySelector<HTMLElement>('.translation');
   if (translationP) {
     const enTr = data.translations_by_lang?.en;
-    const targetTr =
-      lang === "en"
-        ? enTr
-        : data.translations_by_lang?.[lang] ?? null;
+    const targetTr = lang === 'en' ? enTr : (data.translations_by_lang?.[lang] ?? null);
 
     const tr = targetTr ?? enTr;
     if (tr) {
       translationP.textContent = tr.translation_text;
-      translationP.setAttribute("lang", tr.lang);
+      translationP.setAttribute('lang', tr.lang);
     }
   }
 }
@@ -141,19 +135,16 @@ export default function ReaderLangSwap() {
   };
 
   onMount(() => {
-    if (typeof document === "undefined") return;
+    if (typeof document === 'undefined') return;
     const initial = currentLang();
     // Only touch the DOM if we're swapping away from English — the static
     // page already renders English, so this avoids unnecessary writes.
-    if (initial !== "en") applyLang(initial);
-    document.addEventListener("sohamhamso:reader-lang-change", handleChange);
+    if (initial !== 'en') applyLang(initial);
+    document.addEventListener('sohamhamso:reader-lang-change', handleChange);
   });
   onCleanup(() => {
-    if (typeof document === "undefined") return;
-    document.removeEventListener(
-      "sohamhamso:reader-lang-change",
-      handleChange,
-    );
+    if (typeof document === 'undefined') return;
+    document.removeEventListener('sohamhamso:reader-lang-change', handleChange);
   });
 
   return null;

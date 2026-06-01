@@ -4,8 +4,8 @@
  * Lists every text in the tradition. Quiet table, same shape as
  * /texts but scoped to one tradition.
  */
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import { listTexts } from "../../lib/db";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { listTexts } from '../../lib/db';
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -17,7 +17,7 @@ const { tradition } = Astro.params;
 const allTexts = listTexts();
 const textsInTradition = allTexts.filter((t) => t.tradition === tradition);
 if (textsInTradition.length === 0) {
-  return Astro.redirect("/texts");
+  return Astro.redirect('/texts');
 }
 
 const traditionLabel = tradition!.charAt(0).toUpperCase() + tradition!.slice(1);

@@ -1,4 +1,6 @@
 ---
+import Footer from '../../components/Footer.astro';
+import Masthead from '../../components/Masthead.astro';
 /**
  * /texts — the flat alphabetical text index.
  *
@@ -11,9 +13,7 @@
  * SQLite reader helper exists. The shape below matches the `texts`
  * table in db/schema.sql, so swapping is mechanical.
  */
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Masthead from "../../components/Masthead.astro";
-import Footer from "../../components/Footer.astro";
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 type TextRow = {
   slug: string;
@@ -28,49 +28,49 @@ type TextRow = {
 // TODO: const texts = getAllTexts(); from src/lib/db.ts
 const texts: TextRow[] = [
   {
-    slug: "siva-sutras",
-    title_sa: "शिवसूत्राणि",
-    title_en: "Śiva Sūtras",
-    tradition: "Trika",
-    author: "Vasugupta",
+    slug: 'siva-sutras',
+    title_sa: 'शिवसूत्राणि',
+    title_en: 'Śiva Sūtras',
+    tradition: 'Trika',
+    author: 'Vasugupta',
     verse_count: 77,
-    license: "CC-BY-SA 4.0",
+    license: 'CC-BY-SA 4.0',
   },
   {
-    slug: "spanda-karikas",
-    title_sa: "स्पन्दकारिकाः",
-    title_en: "Spanda Kārikās",
-    tradition: "Trika",
-    author: "Vasugupta",
+    slug: 'spanda-karikas',
+    title_sa: 'स्पन्दकारिकाः',
+    title_en: 'Spanda Kārikās',
+    tradition: 'Trika',
+    author: 'Vasugupta',
     verse_count: 52,
-    license: "CC-BY-SA 4.0",
+    license: 'CC-BY-SA 4.0',
   },
   {
-    slug: "pratyabhijna-hridayam",
-    title_sa: "प्रत्यभिज्ञाहृदयम्",
-    title_en: "Pratyabhijñā Hṛdayam",
-    tradition: "Pratyabhijñā",
-    author: "Kṣemarāja",
+    slug: 'pratyabhijna-hridayam',
+    title_sa: 'प्रत्यभिज्ञाहृदयम्',
+    title_en: 'Pratyabhijñā Hṛdayam',
+    tradition: 'Pratyabhijñā',
+    author: 'Kṣemarāja',
     verse_count: 20,
-    license: "CC-BY-SA 4.0",
+    license: 'CC-BY-SA 4.0',
   },
   {
-    slug: "vijnana-bhairava",
-    title_sa: "विज्ञानभैरवतन्त्रम्",
-    title_en: "Vijñāna Bhairava Tantra",
-    tradition: "Trika / Kaula",
+    slug: 'vijnana-bhairava',
+    title_sa: 'विज्ञानभैरवतन्त्रम्',
+    title_en: 'Vijñāna Bhairava Tantra',
+    tradition: 'Trika / Kaula',
     author: null,
     verse_count: 163,
-    license: "CC-BY-SA 4.0",
+    license: 'CC-BY-SA 4.0',
   },
   {
-    slug: "karpuradi-stotra",
-    title_sa: "कर्पूरादिस्तोत्रम्",
-    title_en: "Karpūrādi Stotra",
-    tradition: "Kaula",
+    slug: 'karpuradi-stotra',
+    title_sa: 'कर्पूरादिस्तोत्रम्',
+    title_en: 'Karpūrādi Stotra',
+    tradition: 'Kaula',
     author: null,
     verse_count: 22,
-    license: "Public Domain (Woodroffe 1922)",
+    license: 'Public Domain (Woodroffe 1922)',
   },
 ];
 

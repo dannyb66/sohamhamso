@@ -30,23 +30,23 @@
  */
 
 // biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import { Database } from "bun:sqlite";
-import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { Database } from 'bun:sqlite';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 // `openai` npm package — add via `bun add openai`.
 // SDK v4: `new OpenAI({ apiKey }).embeddings.create({ model, input })`.
-import OpenAI from "openai";
+import OpenAI from 'openai';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Constants
 // ─────────────────────────────────────────────────────────────────────────────
 
-const MODEL = "text-embedding-3-large";
+const MODEL = 'text-embedding-3-large';
 const DIMS = 3072;
 const BATCH_SIZE = 100; // OpenAI accepts up to 2048; we stay well under for safety
 const HERE = dirname(fileURLToPath(import.meta.url));
 // pipeline/embed/runner.ts → ../../db/sohamhamso.db
-const DB_PATH = resolve(HERE, "..", "..", "db", "sohamhamso.db");
+const DB_PATH = resolve(HERE, '..', '..', 'db', 'sohamhamso.db');
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CLI parsing (minimal — no external dep)
@@ -63,10 +63,10 @@ function parseArgs(argv: string[]): CliArgs {
   const out: CliArgs = { dryRun: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--dry-run") out.dryRun = true;
-    else if (a === "--lang") out.lang = argv[++i];
-    else if (a === "--text") out.text = argv[++i];
-    else if (a === "--limit") out.limit = Number(argv[++i]);
+    if (a === '--dry-run') out.dryRun = true;
+    else if (a === '--lang') out.lang = argv[++i];
+    else if (a === '--text') out.text = argv[++i];
+    else if (a === '--limit') out.limit = Number(argv[++i]);
   }
   return out;
 }
@@ -89,7 +89,7 @@ interface PendingRow {
 function openDb(): Database {
   const db = new Database(DB_PATH);
   // WAL mode for concurrent reads while we write embeddings.
-  db.exec("PRAGMA journal_mode = WAL;");
+  db.exec('PRAGMA journal_mode = WAL;');
   return db;
 }
 
@@ -105,16 +105,16 @@ function findPending(
   const params: (string | number)[] = [];
 
   if (filter.lang) {
-    clauses.push("t.lang = ?");
+    clauses.push('t.lang = ?');
     params.push(filter.lang);
   }
   if (filter.text) {
-    clauses.push("v.text_id = (SELECT id FROM texts WHERE slug = ?)");
+    clauses.push('v.text_id = (SELECT id FROM texts WHERE slug = ?)');
     params.push(filter.text);
   }
 
-  const where = clauses.length ? `AND ${clauses.join(" AND ")}` : "";
-  const limit = filter.limit ? `LIMIT ${Number(filter.limit) | 0}` : "";
+  const where = clauses.length ? `AND ${clauses.join(' AND ')}` : '';
+  const limit = filter.limit ? `LIMIT ${Number(filter.limit) | 0}` : '';
 
   const sql = `
     SELECT
@@ -155,7 +155,7 @@ function float32ToBuffer(arr: number[]): Buffer {
  * "spanda" or "pratyabhijñā" hit even when the translation paraphrased.
  */
 function buildInput(row: PendingRow): string {
-  const iast = row.iast?.trim() ?? "";
+  const iast = row.iast?.trim() ?? '';
   const t = row.translation_text.trim();
   return iast ? `${t}\n\n${iast}` : t;
 }
@@ -170,8 +170,8 @@ async function main(): Promise<void> {
 
   if (!apiKey) {
     console.warn(
-      "[embed] OPENAI_API_KEY not set — skipping embedding run. " +
-        "Set the env var to enable. (dev fallback: lexical-only search still works.)",
+      '[embed] OPENAI_API_KEY not set — skipping embedding run. ' +
+        'Set the env var to enable. (dev fallback: lexical-only search still works.)',
     );
     process.exit(0);
   }
@@ -181,13 +181,13 @@ async function main(): Promise<void> {
 
   console.log(
     `[embed] model=${MODEL} dims=${DIMS} batch=${BATCH_SIZE} ` +
-      `lang=${args.lang ?? "*"} text=${args.text ?? "*"} ` +
-      `limit=${args.limit ?? "∞"} dryRun=${args.dryRun}`,
+      `lang=${args.lang ?? '*'} text=${args.text ?? '*'} ` +
+      `limit=${args.limit ?? '∞'} dryRun=${args.dryRun}`,
   );
   console.log(`[embed] ${pending.length} pending (verse, lang) pairs`);
 
   if (pending.length === 0) {
-    console.log("[embed] nothing to do — corpus is fully embedded.");
+    console.log('[embed] nothing to do — corpus is fully embedded.');
     return;
   }
 
@@ -276,6 +276,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((err) => {
-  console.error("[embed] fatal:", err);
+  console.error('[embed] fatal:', err);
   process.exit(1);
 });

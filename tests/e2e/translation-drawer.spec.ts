@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from '@playwright/test';
 
 /**
  * TranslationDrawer.solid.tsx — verse-page bottom-sheet language picker.
@@ -10,19 +10,19 @@ import { test, expect } from "@playwright/test";
  * Per spec: 12 language chips (English + 11 Indic). Selection persists in
  * localStorage `sohamhamso:translation-langs`.
  */
-test.describe("translation drawer (verse page)", () => {
-  const VERSE_URL = "/trika/siva-sutras/1/1";
+test.describe('translation drawer (verse page)', () => {
+  const VERSE_URL = '/trika/siva-sutras/1/1';
   const TRIGGER = 'button[aria-label="Open translation drawer"]';
   const DIALOG = '[role="dialog"][aria-modal="true"]';
 
-  test("opens with 12 chips when the trigger is tapped", async ({ page }) => {
+  test('opens with 12 chips when the trigger is tapped', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
     const trigger = page.locator(TRIGGER).first();
     if (!(await trigger.count())) {
       test.info().annotations.push({
-        type: "skip",
-        description: "translation drawer trigger not mounted",
+        type: 'skip',
+        description: 'translation drawer trigger not mounted',
       });
       return;
     }
@@ -32,7 +32,7 @@ test.describe("translation drawer (verse page)", () => {
     const drawer = page.locator(`${DIALOG}.td-sheet`).first();
     await expect(drawer).toBeVisible({ timeout: 2000 });
 
-    const chips = drawer.locator(".td-chip");
+    const chips = drawer.locator('.td-chip');
     await expect(chips).toHaveCount(12);
   });
 
@@ -40,10 +40,10 @@ test.describe("translation drawer (verse page)", () => {
     page,
   }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
     const trigger = page.locator(TRIGGER).first();
     if (!(await trigger.count())) {
-      test.info().annotations.push({ type: "skip", description: "no trigger" });
+      test.info().annotations.push({ type: 'skip', description: 'no trigger' });
       return;
     }
     await trigger.click();
@@ -54,18 +54,18 @@ test.describe("translation drawer (verse page)", () => {
     const hindiChip = drawer.locator('.td-chip:has([lang="hi"])').first();
     if (!(await hindiChip.count())) {
       test.info().annotations.push({
-        type: "skip",
-        description: "no Hindi chip rendered",
+        type: 'skip',
+        description: 'no Hindi chip rendered',
       });
       return;
     }
-    const disabled = await hindiChip.getAttribute("aria-disabled");
-    if (disabled === "true") {
+    const disabled = await hindiChip.getAttribute('aria-disabled');
+    if (disabled === 'true') {
       // Unavailable chips don't change selection — the V1 "Not yet translated"
       // preview lives behind a *selected* lang. The aria-disabled marker
       // satisfies the spec: "either renders Hindi translation or shows
       // 'Not yet translated' state (both valid in V1)".
-      expect(disabled).toBe("true");
+      expect(disabled).toBe('true');
       return;
     }
     // Tap → preview line should appear with lang="hi".
@@ -74,14 +74,14 @@ test.describe("translation drawer (verse page)", () => {
     await expect(hindiLine).toBeVisible({ timeout: 2000 });
   });
 
-  test("English chip renders an English translation line under the verse list", async ({
+  test('English chip renders an English translation line under the verse list', async ({
     page,
   }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
     const trigger = page.locator(TRIGGER).first();
     if (!(await trigger.count())) {
-      test.info().annotations.push({ type: "skip", description: "no trigger" });
+      test.info().annotations.push({ type: 'skip', description: 'no trigger' });
       return;
     }
     await trigger.click();
@@ -93,17 +93,15 @@ test.describe("translation drawer (verse page)", () => {
     // The line carries either the translation text or the "Not yet translated"
     // fallback — both are valid in V1.
     const text = await enLine.innerText();
-    expect(text.length, "English line must render some text").toBeGreaterThan(0);
+    expect(text.length, 'English line must render some text').toBeGreaterThan(0);
   });
 
-  test("localStorage `sohamhamso:translation-langs` persists selection", async ({
-    page,
-  }) => {
+  test('localStorage `sohamhamso:translation-langs` persists selection', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
     const trigger = page.locator(TRIGGER).first();
     if (!(await trigger.count())) {
-      test.info().annotations.push({ type: "skip", description: "no trigger" });
+      test.info().annotations.push({ type: 'skip', description: 'no trigger' });
       return;
     }
     await trigger.click();
@@ -113,30 +111,28 @@ test.describe("translation drawer (verse page)", () => {
     // Toggle the English chip OFF (it's selected by default). After the
     // click, the selected array should not contain 'en'.
     const enChip = drawer.locator('.td-chip:has([lang="en"])').first();
-    if ((await enChip.getAttribute("aria-disabled")) === "true") {
+    if ((await enChip.getAttribute('aria-disabled')) === 'true') {
       test.info().annotations.push({
-        type: "skip",
-        description: "English chip unexpectedly aria-disabled",
+        type: 'skip',
+        description: 'English chip unexpectedly aria-disabled',
       });
       return;
     }
     await enChip.click();
     // Read localStorage directly — drawer calls saveSelected() synchronously.
-    const stored = await page.evaluate(() =>
-      localStorage.getItem("sohamhamso:translation-langs"),
-    );
-    expect(stored, "localStorage key should be set after toggle").not.toBeNull();
-    const parsed = JSON.parse(stored ?? "[]");
+    const stored = await page.evaluate(() => localStorage.getItem('sohamhamso:translation-langs'));
+    expect(stored, 'localStorage key should be set after toggle').not.toBeNull();
+    const parsed = JSON.parse(stored ?? '[]');
     expect(Array.isArray(parsed)).toBe(true);
-    expect(parsed).not.toContain("en");
+    expect(parsed).not.toContain('en');
   });
 
-  test("close button (×) dismisses the drawer", async ({ page }) => {
+  test('close button (×) dismisses the drawer', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
     const trigger = page.locator(TRIGGER).first();
     if (!(await trigger.count())) {
-      test.info().annotations.push({ type: "skip", description: "no trigger" });
+      test.info().annotations.push({ type: 'skip', description: 'no trigger' });
       return;
     }
     await trigger.click();

@@ -17,7 +17,7 @@ interface Props {
 }
 
 const { school } = Astro.props;
-const isKaula = typeof school === "string" && school.toLowerCase().includes("kaula");
+const isKaula = typeof school === 'string' && school.toLowerCase().includes('kaula');
 ---
 
 {isKaula ? (

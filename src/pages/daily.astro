@@ -1,4 +1,8 @@
 ---
+import FeaturedVerseHero from '../components/FeaturedVerseHero.astro';
+import Footer from '../components/Footer.astro';
+import Masthead from '../components/Masthead.astro';
+import SubscribeBand from '../components/SubscribeBand.astro';
 /**
  * /daily — placeholder for the daily-verse engagement loop.
  *
@@ -8,15 +12,11 @@
  * replaces the hero with a server-side rotation and lights up the
  * email send via Resend.
  */
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Masthead from "../components/Masthead.astro";
-import Footer from "../components/Footer.astro";
-import FeaturedVerseHero from "../components/FeaturedVerseHero.astro";
-import SubscribeBand from "../components/SubscribeBand.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = "Daily verse — sohamhamso";
+const pageTitle = 'Daily verse — sohamhamso';
 const pageDescription =
-  "A verse arrives in your inbox each morning at sunrise. English only at launch; more languages soon.";
+  'A verse arrives in your inbox each morning at sunrise. English only at launch; more languages soon.';
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>

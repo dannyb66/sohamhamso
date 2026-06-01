@@ -1,8 +1,8 @@
+import cloudflare from '@astrojs/cloudflare';
+import solid from '@astrojs/solid-js';
+import tailwindcss from '@tailwindcss/vite';
 // @ts-check
 import { defineConfig } from 'astro/config';
-import solid from '@astrojs/solid-js';
-import cloudflare from '@astrojs/cloudflare';
-import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,20 +16,7 @@ export default defineConfig({
   },
   i18n: {
     defaultLocale: 'en',
-    locales: [
-      'en',
-      'hi',
-      'ta',
-      'te',
-      'bn',
-      'mr',
-      'gu',
-      'kn',
-      'ml',
-      'pa',
-      'or',
-      'as',
-    ],
+    locales: ['en', 'hi', 'ta', 'te', 'bn', 'mr', 'gu', 'kn', 'ml', 'pa', 'or', 'as'],
     routing: {
       prefixDefaultLocale: false,
     },

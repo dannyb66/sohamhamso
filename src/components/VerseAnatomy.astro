@@ -17,7 +17,7 @@
  * Sanskrit-bearing elements carry `data-sa` so the ScriptSwitcher island
  * can re-render them via Sanscript.t() without a page reload.
  */
-import type { Verse, WordGloss, Translation } from "../lib/db";
+import type { Translation, Verse, WordGloss } from '../lib/db';
 
 interface Props {
   verse: Verse;
@@ -42,7 +42,7 @@ const primaryTranslation = translations[0] ?? null;
 // (it marks the end of the verse). Paired with `white-space: pre-line` in
 // CSS below.
 function formatDanda(s: string | null | undefined): string {
-  if (!s) return "";
+  if (!s) return '';
   // Protect verse-number brackets so the internal dandas don't get split.
   // Devanāgarī forms: ॥४९॥, ॥ ४९ ॥. IAST forms: ||49||, || 49 ||.
   const protected_: string[] = [];
@@ -58,17 +58,20 @@ function formatDanda(s: string | null | undefined): string {
 
   work = work
     // Newline after Devanāgarī dandas
-    .replace(/॥/g, "॥\n")
-    .replace(/।/g, "।\n")
+    .replace(/॥/g, '॥\n')
+    .replace(/।/g, '।\n')
     // Newline after IAST dandas — || before single |
-    .replace(/\|\|/g, "||\n")
-    .replace(/(^|[^|])\|(?!\|)/g, "$1|\n");
+    .replace(/\|\|/g, '||\n')
+    .replace(/(^|[^|])\|(?!\|)/g, '$1|\n');
 
   // Restore the protected verse-number brackets
   work = work.replace(/(\d+)/g, (_m, i) => protected_[Number(i)]);
 
   // Collapse multiple newlines + trim
-  return work.replace(/[ \t]*\n[ \t]*/g, "\n").replace(/\n+/g, "\n").trim();
+  return work
+    .replace(/[ \t]*\n[ \t]*/g, '\n')
+    .replace(/\n+/g, '\n')
+    .trim();
 }
 
 const devanagariFormatted = formatDanda(verse.devanagari);

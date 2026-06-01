@@ -14,10 +14,10 @@
 // `bun:sqlite` ships with Bun. The import is resolved by Bun's runtime;
 // TypeScript may not have built-in types — declare-module fallback below.
 // biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import { Database } from "bun:sqlite";
-import { fileURLToPath } from "node:url";
-import { dirname, resolve } from "node:path";
-import { existsSync } from "node:fs";
+import { Database } from 'bun:sqlite';
+import { existsSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -82,7 +82,7 @@ export interface Translation {
   translation_text: string;
   source: string | null;
   license: string;
-  status: "draft" | "reviewed" | "published";
+  status: 'draft' | 'reviewed' | 'published';
   ai_assisted: boolean;
   model: string | null;
   model_version: string | null;
@@ -148,10 +148,10 @@ let _db: Database | null = null;
  */
 function dbPath(): string {
   if (process.env.SOHAMHAMSO_DB_PATH) return process.env.SOHAMHAMSO_DB_PATH;
-  const cwdPath = resolve(process.cwd(), "db", "sohamhamso.db");
+  const cwdPath = resolve(process.cwd(), 'db', 'sohamhamso.db');
   if (existsSync(cwdPath)) return cwdPath;
   const here = dirname(fileURLToPath(import.meta.url));
-  return resolve(here, "..", "..", "db", "sohamhamso.db");
+  return resolve(here, '..', '..', 'db', 'sohamhamso.db');
 }
 
 /**
@@ -166,13 +166,13 @@ function dbPath(): string {
 export function getDb(path?: string, readonly = true): Database {
   if (path !== undefined) {
     const db = new Database(path, { readonly });
-    if (readonly) db.exec("PRAGMA query_only = ON;");
+    if (readonly) db.exec('PRAGMA query_only = ON;');
     return db;
   }
   if (_db) return _db;
   _db = new Database(dbPath(), { readonly: true });
   // Slightly faster reads; safe for read-only conn.
-  _db.exec("PRAGMA query_only = ON;");
+  _db.exec('PRAGMA query_only = ON;');
   return _db;
 }
 
@@ -183,6 +183,41 @@ export function getDb(path?: string, readonly = true): Database {
  */
 export function __setDbForTests(db: Database | null): void {
   _db = db;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Writable connection (pii-DB writes — subscribers, etc.)
+// ─────────────────────────────────────────────────────────────────────────────
+
+let _wdb: Database | null = null;
+
+/**
+ * Returns a SHARED writable Database handle. Distinct from `getDb()` so the
+ * read-only default (and its `PRAGMA query_only`) stay safe for the rest of
+ * the codebase. Today the only writer is `POST /api/subscribe`; if more
+ * writers land they should reuse this handle.
+ *
+ * In production this is the pii Turso DB; locally it's the same SQLite file
+ * as the corpus (single-DB dev layout).
+ */
+export function getWritableDb(path?: string): Database {
+  if (path !== undefined) {
+    return new Database(path);
+  }
+  if (_wdb) return _wdb;
+  _wdb = new Database(dbPath());
+  // WAL mode keeps concurrent readers (the read-only `getDb()` handle) happy
+  // alongside this writer in dev. Safe to set repeatedly.
+  _wdb.exec('PRAGMA journal_mode = WAL;');
+  return _wdb;
+}
+
+/**
+ * Inject a writable Database instance as the module-level singleton (test
+ * hook). Pass `null` to clear. Production code should never call this.
+ */
+export function __setWritableDbForTests(db: Database | null): void {
+  _wdb = db;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -218,18 +253,14 @@ export function listTexts(): TextSummary[] {
  */
 export function getText(slug: string): Text | null {
   const db = getDb();
-  const stmt = db.query<Text, [string]>(
-    `SELECT * FROM texts WHERE slug = ? LIMIT 1`,
-  );
+  const stmt = db.query<Text, [string]>(`SELECT * FROM texts WHERE slug = ? LIMIT 1`);
   return stmt.get(slug) ?? null;
 }
 
 /**
  * List all (chapter, verse_num) tuples for a text — used by `getStaticPaths`.
  */
-export function listAllVerses(
-  textSlug: string,
-): Array<{ chapter: number; verse_num: number }> {
+export function listAllVerses(textSlug: string): Array<{ chapter: number; verse_num: number }> {
   const db = getDb();
   const stmt = db.query<{ chapter: number; verse_num: number }, [string]>(`
     SELECT v.chapter, v.verse_num
@@ -244,9 +275,7 @@ export function listAllVerses(
 /**
  * List all chapters in a text along with their verse counts.
  */
-export function listChapters(
-  textSlug: string,
-): Array<{ chapter: number; verse_count: number }> {
+export function listChapters(textSlug: string): Array<{ chapter: number; verse_count: number }> {
   const db = getDb();
   const stmt = db.query<{ chapter: number; verse_count: number }, [string]>(`
     SELECT v.chapter, COUNT(*) AS verse_count
@@ -263,10 +292,7 @@ export function listChapters(
  * List verse summaries (no glosses) for a given chapter.
  * Used by the chapter/text overview pages.
  */
-export function listChapterVerses(
-  textSlug: string,
-  chapter: number,
-): VerseSummary[] {
+export function listChapterVerses(textSlug: string, chapter: number): VerseSummary[] {
   const db = getDb();
   const stmt = db.query<VerseSummary, [string, number]>(`
     SELECT v.chapter, v.verse_num, v.devanagari, v.iast
@@ -290,7 +316,7 @@ export function getVerse(
   textSlug: string,
   chapter: number,
   verseNum: number,
-  lang = "en",
+  lang = 'en',
 ): VersePageData | null {
   const db = getDb();
 
@@ -307,18 +333,17 @@ export function getVerse(
     .get(text.id, chapter, verseNum);
   if (!verse) return null;
 
-  // Translations for the requested language. Drafts hidden — only
-  // 'published' or 'reviewed' surface. ai_assisted comes back as 0/1 int;
-  // normalize to boolean below.
+  // Translations for the requested language. V1 ships AI-only with the
+  // amber "not verified" badge for draft AND published; agents flag
+  // per-verse uncertainty inline with [draft] prefix and the merge
+  // pipeline promotes those to status='draft'. Both render with the
+  // amber badge. ai_assisted comes back as 0/1 int; normalized below.
   const rawTranslations = db
-    .query<
-      Omit<Translation, "ai_assisted"> & { ai_assisted: number },
-      [number, string]
-    >(`
+    .query<Omit<Translation, 'ai_assisted'> & { ai_assisted: number }, [number, string]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed')
-      ORDER BY ai_assisted ASC, created_at ASC
+      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed', 'draft')
+      ORDER BY ai_assisted ASC, status ASC, created_at ASC
     `)
     .all(verse.id, lang);
   const translations: Translation[] = rawTranslations.map((t) => ({
@@ -361,11 +386,9 @@ export function getVerse(
     .all(verse.id);
 
   // Prev/next within the same text (lex order on chapter, verse_num).
-  const prev = db
-    .query<
-      { chapter: number; verse_num: number },
-      [string, number, number, number]
-    >(`
+  const prev =
+    db
+      .query<{ chapter: number; verse_num: number }, [string, number, number, number]>(`
       SELECT v.chapter, v.verse_num
       FROM verses v
       WHERE v.text_id = ?
@@ -373,13 +396,11 @@ export function getVerse(
       ORDER BY v.chapter DESC, v.verse_num DESC
       LIMIT 1
     `)
-    .get(text.id, chapter, chapter, verseNum) ?? null;
+      .get(text.id, chapter, chapter, verseNum) ?? null;
 
-  const next = db
-    .query<
-      { chapter: number; verse_num: number },
-      [string, number, number, number]
-    >(`
+  const next =
+    db
+      .query<{ chapter: number; verse_num: number }, [string, number, number, number]>(`
       SELECT v.chapter, v.verse_num
       FROM verses v
       WHERE v.text_id = ?
@@ -387,7 +408,7 @@ export function getVerse(
       ORDER BY v.chapter ASC, v.verse_num ASC
       LIMIT 1
     `)
-    .get(text.id, chapter, chapter, verseNum) ?? null;
+      .get(text.id, chapter, chapter, verseNum) ?? null;
 
   return {
     text,
@@ -506,10 +527,10 @@ export function getVerseAllLanguages(
       { lang: string; translation_text: string; translator: string | null; ai_assisted: number },
       [number]
     >(`
-      SELECT lang, translation_text, translator, ai_assisted
+      SELECT lang, translation_text, translator, ai_assisted, status
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed')
-      ORDER BY lang ASC, ai_assisted ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
+      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
     `)
     .all(verse.id);
 
@@ -531,23 +552,47 @@ export function getVerseAllLanguages(
 }
 
 /**
+ * Return the set of language codes that have at least one published or
+ * reviewed translation anywhere in the corpus. Used by the global
+ * language picker (Masthead) and subscribe band to decide which langs
+ * render as "available" vs "soon".
+ *
+ * Returns lowercase ISO codes (`en`, `hi`, `ta`, ...) — callers using
+ * uppercase display codes should normalize with `.toLowerCase()` before
+ * membership testing.
+ *
+ * Cheap; runs at build time during Astro SSG and against the shared
+ * read-only singleton, so repeated calls across pages don't re-open
+ * the SQLite file.
+ */
+export function getAvailableLanguages(): Set<string> {
+  const db = getDb();
+  const rows = db
+    .query<{ lang: string }, []>(`
+      SELECT DISTINCT lang
+      FROM translations
+      WHERE status IN ('published', 'reviewed', 'draft')
+    `)
+    .all();
+  return new Set(rows.map((r) => r.lang.toLowerCase()));
+}
+
+/**
  * Return ALL translations for a verse across every language. Powers the
  * TranslationDrawer's multi-select chip availability + stacked preview.
  *
- * Same status filter as getVerse (published + reviewed only — drafts
- * stay hidden). ai_assisted is normalized from 0/1 to boolean.
+ * Same status filter as getVerse — drafts surface alongside published/reviewed
+ * in V1's AI-only posture (per-verse [draft] uncertainty is communicated
+ * through the amber AIAssistedBadge variant). ai_assisted is normalized to bool.
  */
 export function getVerseTranslations(verseId: number): Translation[] {
   const db = getDb();
   const rows = db
-    .query<
-      Omit<Translation, "ai_assisted"> & { ai_assisted: number },
-      [number]
-    >(`
+    .query<Omit<Translation, 'ai_assisted'> & { ai_assisted: number }, [number]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed')
-      ORDER BY lang ASC, ai_assisted ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
+      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
     `)
     .all(verseId);
   return rows.map((t) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));

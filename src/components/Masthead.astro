@@ -1,4 +1,5 @@
 ---
+import { getAvailableLanguages } from '../lib/db';
 /**
  * Masthead — top chrome. Wordmark left · search icon middle/right ·
  * language picker right. Hairline border-bottom (var(--color-rule)).
@@ -6,33 +7,41 @@
  *
  * The search trigger is intercepted by the global SearchBox Solid island
  * (mounted in BaseLayout); this component just renders the button. Language
- * picker is English-only at launch with other languages greyed
- * (aria-disabled + tooltip), per the honest-constraint pattern from the
- * design spec.
+ * availability is sourced from the corpus DB at build time: any language
+ * with at least one published/reviewed translation anywhere in the corpus
+ * renders as available; the rest get the greyed `soon` tag.
  */
-import Wordmark from "./Wordmark.astro";
+import Wordmark from './Wordmark.astro';
 
 interface Props {
   currentLang?: string;
 }
-const { currentLang = "EN" } = Astro.props;
+const { currentLang = 'EN' } = Astro.props;
 
-// All 11 languages — only EN active at V1. Others rendered greyed.
-// Eventually sourced from a single language registry; hardcoded for V1.
-const languages = [
-  { code: "EN", label: "English", available: true },
-  { code: "HI", label: "हिन्दी (Hindi)", available: false },
-  { code: "TA", label: "தமிழ் (Tamil)", available: false },
-  { code: "TE", label: "తెలుగు (Telugu)", available: false },
-  { code: "BN", label: "বাংলা (Bengali)", available: false },
-  { code: "MR", label: "मराठी (Marathi)", available: false },
-  { code: "GU", label: "ગુજરાતી (Gujarati)", available: false },
-  { code: "KN", label: "ಕನ್ನಡ (Kannada)", available: false },
-  { code: "ML", label: "മലയാളം (Malayalam)", available: false },
-  { code: "PA", label: "ਪੰਜਾਬੀ (Punjabi)", available: false },
-  { code: "OR", label: "ଓଡ଼ିଆ (Odia)", available: false },
-  { code: "AS", label: "অসমীয়া (Assamese)", available: false },
+// Build-time intersection: catalogue of 12 langs × DB-reported coverage.
+// DB codes are lowercase ISO; catalogue display codes are uppercase — we
+// normalize for the membership test.
+const availableSet = getAvailableLanguages();
+
+const LANG_CATALOGUE: Array<{ code: string; label: string }> = [
+  { code: 'EN', label: 'English' },
+  { code: 'HI', label: 'हिन्दी (Hindi)' },
+  { code: 'TA', label: 'தமிழ் (Tamil)' },
+  { code: 'TE', label: 'తెలుగు (Telugu)' },
+  { code: 'BN', label: 'বাংলা (Bengali)' },
+  { code: 'MR', label: 'मराठी (Marathi)' },
+  { code: 'GU', label: 'ગુજરાતી (Gujarati)' },
+  { code: 'KN', label: 'ಕನ್ನಡ (Kannada)' },
+  { code: 'ML', label: 'മലയാളം (Malayalam)' },
+  { code: 'PA', label: 'ਪੰਜਾਬੀ (Punjabi)' },
+  { code: 'OR', label: 'ଓଡ଼ିଆ (Odia)' },
+  { code: 'AS', label: 'অসমীয়া (Assamese)' },
 ];
+
+const languages = LANG_CATALOGUE.map((l) => ({
+  ...l,
+  available: availableSet.has(l.code.toLowerCase()),
+}));
 ---
 
 <header class="masthead" role="banner">

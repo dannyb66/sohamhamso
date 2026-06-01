@@ -6,23 +6,8 @@
     "useIgnoreFile": true
   },
   "files": {
-    "include": [
-      "src/**",
-      "pipeline/**",
-      "scripts/**",
-      "tests/**",
-      "*.ts",
-      "*.mjs",
-      "*.json"
-    ],
-    "ignore": [
-      "dist/**",
-      ".astro/**",
-      "node_modules/**",
-      "public/**",
-      "db/**",
-      "data/corpus/**"
-    ]
+    "include": ["src/**", "pipeline/**", "scripts/**", "tests/**", "*.ts", "*.mjs", "*.json"],
+    "ignore": ["dist/**", ".astro/**", "node_modules/**", "public/**", "db/**", "data/**"]
   },
   "formatter": {
     "enabled": true,

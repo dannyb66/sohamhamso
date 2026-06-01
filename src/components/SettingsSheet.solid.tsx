@@ -35,75 +35,73 @@
  * dismiss, scrim dismiss, focus-trap, focus-restore on close.
  * 44px touch targets. Respects prefers-reduced-motion.
  */
-import { createSignal, onMount, onCleanup, For, Show } from "solid-js";
+import { For, Show, createSignal, onCleanup, onMount } from 'solid-js';
 
 // ─── Option registries ────────────────────────────────────────────────
 const SA_FONTS = [
   {
-    id: "noto",
-    label: "Noto Serif Devanagari",
-    stack:
-      '"Noto Serif Devanagari", "Shobhika", serif',
+    id: 'noto',
+    label: 'Noto Serif Devanagari',
+    stack: '"Noto Serif Devanagari", "Shobhika", serif',
   },
   {
-    id: "adishila",
-    label: "Adishila",
+    id: 'adishila',
+    label: 'Adishila',
     stack: '"Adishila", "Noto Serif Devanagari", serif',
   },
   {
-    id: "shobhika",
-    label: "Shobhika",
+    id: 'shobhika',
+    label: 'Shobhika',
     stack: '"Shobhika", "Noto Serif Devanagari", serif',
   },
 ];
 
 const LATIN_FONTS = [
   {
-    id: "source-serif",
-    label: "Source Serif 4",
-    stack:
-      '"Source Serif 4", "Source Serif Pro", "Cardo", Georgia, serif',
+    id: 'source-serif',
+    label: 'Source Serif 4',
+    stack: '"Source Serif 4", "Source Serif Pro", "Cardo", Georgia, serif',
   },
   {
-    id: "inter",
-    label: "Inter",
+    id: 'inter',
+    label: 'Inter',
     stack: '"Inter", system-ui, sans-serif',
   },
 ];
 
 const THEMES = [
-  { id: "light", label: "Light", swatchBg: "#FAF6EE", swatchInk: "#1C1A17" },
-  { id: "sepia", label: "Sepia", swatchBg: "#EFE3CC", swatchInk: "#2C2620" },
-  { id: "dark", label: "Dark", swatchBg: "#14110D", swatchInk: "#ECE5D6" },
-  { id: "oled", label: "OLED", swatchBg: "#000000", swatchInk: "#ECE5D6" },
+  { id: 'light', label: 'Light', swatchBg: '#FAF6EE', swatchInk: '#1C1A17' },
+  { id: 'sepia', label: 'Sepia', swatchBg: '#EFE3CC', swatchInk: '#2C2620' },
+  { id: 'dark', label: 'Dark', swatchBg: '#14110D', swatchInk: '#ECE5D6' },
+  { id: 'oled', label: 'OLED', swatchBg: '#000000', swatchInk: '#ECE5D6' },
 ];
 
 const LANGS = [
-  { code: "en", label: "English" },
-  { code: "hi", label: "हिन्दी (Hindi)" },
-  { code: "ta", label: "தமிழ் (Tamil)" },
-  { code: "te", label: "తెలుగు (Telugu)" },
-  { code: "bn", label: "বাংলা (Bengali)" },
-  { code: "mr", label: "मराठी (Marathi)" },
-  { code: "gu", label: "ગુજરાતી (Gujarati)" },
-  { code: "kn", label: "ಕನ್ನಡ (Kannada)" },
-  { code: "ml", label: "മലയാളം (Malayalam)" },
-  { code: "pa", label: "ਪੰਜਾਬੀ (Punjabi)" },
-  { code: "or", label: "ଓଡ଼ିଆ (Odia)" },
+  { code: 'en', label: 'English' },
+  { code: 'hi', label: 'हिन्दी (Hindi)' },
+  { code: 'ta', label: 'தமிழ் (Tamil)' },
+  { code: 'te', label: 'తెలుగు (Telugu)' },
+  { code: 'bn', label: 'বাংলা (Bengali)' },
+  { code: 'mr', label: 'मराठी (Marathi)' },
+  { code: 'gu', label: 'ગુજરાતી (Gujarati)' },
+  { code: 'kn', label: 'ಕನ್ನಡ (Kannada)' },
+  { code: 'ml', label: 'മലയാളം (Malayalam)' },
+  { code: 'pa', label: 'ਪੰਜਾਬੀ (Punjabi)' },
+  { code: 'or', label: 'ଓଡ଼ିଆ (Odia)' },
 ];
 
 const SCRIPTS = [
-  { id: "devanagari", label: "Devanāgarī" },
-  { id: "iast", label: "IAST (Latin)" },
-  { id: "bengali", label: "Bengali / Bāṅlā" },
-  { id: "assamese", label: "Assamese" },
-  { id: "gujarati", label: "Gujarati" },
-  { id: "gurmukhi", label: "Gurmukhi" },
-  { id: "kannada", label: "Kannada" },
-  { id: "malayalam", label: "Malayalam" },
-  { id: "oriya", label: "Odia" },
-  { id: "tamil", label: "Tamil" },
-  { id: "telugu", label: "Telugu" },
+  { id: 'devanagari', label: 'Devanāgarī' },
+  { id: 'iast', label: 'IAST (Latin)' },
+  { id: 'bengali', label: 'Bengali / Bāṅlā' },
+  { id: 'assamese', label: 'Assamese' },
+  { id: 'gujarati', label: 'Gujarati' },
+  { id: 'gurmukhi', label: 'Gurmukhi' },
+  { id: 'kannada', label: 'Kannada' },
+  { id: 'malayalam', label: 'Malayalam' },
+  { id: 'oriya', label: 'Odia' },
+  { id: 'tamil', label: 'Tamil' },
+  { id: 'telugu', label: 'Telugu' },
 ];
 
 // ─── Default settings ─────────────────────────────────────────────────
@@ -112,50 +110,49 @@ interface Settings {
   latinFont: string;
   fontSizePx: number;
   lineHeight: number;
-  theme: "light" | "sepia" | "dark" | "oled";
+  theme: 'light' | 'sepia' | 'dark' | 'oled';
   defaultLang: string;
   defaultScript: string;
   readerLang: string;
 }
 
 const DEFAULTS: Settings = {
-  saFont: "noto",
-  latinFont: "source-serif",
+  saFont: 'noto',
+  latinFont: 'source-serif',
   fontSizePx: 18,
   lineHeight: 1.6,
-  theme: "light",
-  defaultLang: "en",
-  defaultScript: "devanagari",
-  readerLang: "en",
+  theme: 'light',
+  defaultLang: 'en',
+  defaultScript: 'devanagari',
+  readerLang: 'en',
 };
 
-const STORAGE_KEY = "sohamhamso:settings";
-const LEGACY_THEME_KEY = "sohamhamso:theme";
-const READER_LANG_KEY = "sohamhamso:reader-lang";
+const STORAGE_KEY = 'sohamhamso:settings';
+const LEGACY_THEME_KEY = 'sohamhamso:theme';
+const READER_LANG_KEY = 'sohamhamso:reader-lang';
 
 // ─── Apply settings to <html> as CSS vars / data-attrs ────────────────
 function applySettings(s: Settings) {
-  if (typeof document === "undefined") return;
+  if (typeof document === 'undefined') return;
   const root = document.documentElement;
   const saFont = SA_FONTS.find((f) => f.id === s.saFont) ?? SA_FONTS[0];
-  const latinFont =
-    LATIN_FONTS.find((f) => f.id === s.latinFont) ?? LATIN_FONTS[0];
-  root.style.setProperty("--font-sa-body", saFont.stack);
-  root.style.setProperty("--font-iast", latinFont.stack);
+  const latinFont = LATIN_FONTS.find((f) => f.id === s.latinFont) ?? LATIN_FONTS[0];
+  root.style.setProperty('--font-sa-body', saFont.stack);
+  root.style.setProperty('--font-iast', latinFont.stack);
   // Live font-size: set the base, downstream verse text uses --text-md
   // (1.125rem ≈ base * 1.125). We tweak --text-base on root so the
   // whole rhythm scales smoothly. Stored as px, written as px.
-  root.style.setProperty("--text-base", `${s.fontSizePx}px`);
-  root.style.setProperty("--line-height-iast", String(s.lineHeight));
+  root.style.setProperty('--text-base', `${s.fontSizePx}px`);
+  root.style.setProperty('--line-height-iast', String(s.lineHeight));
   // Theme drives swatch tokens via [data-theme] in tokens.css.
-  if (s.theme === "light") {
-    root.removeAttribute("data-theme");
+  if (s.theme === 'light') {
+    root.removeAttribute('data-theme');
   } else {
-    root.setAttribute("data-theme", s.theme);
+    root.setAttribute('data-theme', s.theme);
   }
   // Keep BaseLayout's pre-paint theme bootstrap in sync.
   try {
-    if (s.theme === "light") localStorage.removeItem(LEGACY_THEME_KEY);
+    if (s.theme === 'light') localStorage.removeItem(LEGACY_THEME_KEY);
     else localStorage.setItem(LEGACY_THEME_KEY, s.theme);
   } catch {
     /* localStorage unavailable */
@@ -163,13 +160,11 @@ function applySettings(s: Settings) {
 }
 
 function loadSettings(): Settings {
-  if (typeof localStorage === "undefined") return { ...DEFAULTS };
+  if (typeof localStorage === 'undefined') return { ...DEFAULTS };
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     const dedicatedReaderLang = localStorage.getItem(READER_LANG_KEY);
-    const base = raw
-      ? { ...DEFAULTS, ...(JSON.parse(raw) as Partial<Settings>) }
-      : { ...DEFAULTS };
+    const base = raw ? { ...DEFAULTS, ...(JSON.parse(raw) as Partial<Settings>) } : { ...DEFAULTS };
     // The dedicated key takes precedence — it's the source of truth for
     // ReaderLangSwap; if a user (or test) wrote it directly, honor it.
     if (dedicatedReaderLang) base.readerLang = dedicatedReaderLang;
@@ -189,9 +184,7 @@ function saveSettings(s: Settings) {
   } catch {
     /* ignore */
   }
-  document.dispatchEvent(
-    new CustomEvent("sohamhamso:settings-changed", { detail: s }),
-  );
+  document.dispatchEvent(new CustomEvent('sohamhamso:settings-changed', { detail: s }));
 }
 
 export default function SettingsSheet() {
@@ -199,7 +192,7 @@ export default function SettingsSheet() {
   const [settings, setSettings] = createSignal<Settings>({ ...DEFAULTS });
 
   let sheetEl: HTMLDialogElement | undefined;
-  let titleId = "settings-sheet-title";
+  const titleId = 'settings-sheet-title';
   let lastFocused: HTMLElement | null = null;
   // Touch-drag dismiss state (mobile only)
   let touchStartY = 0;
@@ -216,7 +209,7 @@ export default function SettingsSheet() {
     // client-side swap of gloss + translation text.
     if (patch.readerLang !== undefined && patch.readerLang !== prev.readerLang) {
       document.dispatchEvent(
-        new CustomEvent("sohamhamso:reader-lang-change", {
+        new CustomEvent('sohamhamso:reader-lang-change', {
           detail: { lang: next.readerLang },
         }),
       );
@@ -228,15 +221,17 @@ export default function SettingsSheet() {
     setOpen(true);
     // After paint, move focus into the sheet.
     queueMicrotask(() => {
-      sheetEl?.querySelector<HTMLElement>(
-        "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])",
-      )?.focus();
+      sheetEl
+        ?.querySelector<HTMLElement>(
+          "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])",
+        )
+        ?.focus();
     });
   };
 
   const closeSheet = () => {
     setOpen(false);
-    if (sheetEl) sheetEl.style.transform = "";
+    if (sheetEl) sheetEl.style.transform = '';
     // Restore focus to whatever opened us.
     queueMicrotask(() => lastFocused?.focus?.());
   };
@@ -250,12 +245,12 @@ export default function SettingsSheet() {
   // Focus-trap inside the dialog. Tab / Shift-Tab cycle the focusables.
   const handleKey = (e: KeyboardEvent) => {
     if (!open()) return;
-    if (e.key === "Escape") {
+    if (e.key === 'Escape') {
       e.preventDefault();
       closeSheet();
       return;
     }
-    if (e.key !== "Tab" || !sheetEl) return;
+    if (e.key !== 'Tab' || !sheetEl) return;
     const focusables = sheetEl.querySelectorAll<HTMLElement>(
       'button, [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
     );
@@ -287,22 +282,22 @@ export default function SettingsSheet() {
   };
   const handleTouchEnd = () => {
     if (touchDelta > 80) closeSheet();
-    else if (sheetEl) sheetEl.style.transform = "";
+    else if (sheetEl) sheetEl.style.transform = '';
     touchDelta = 0;
   };
 
   onMount(() => {
-    if (typeof document === "undefined") return;
+    if (typeof document === 'undefined') return;
     const initial = loadSettings();
     setSettings(initial);
     applySettings(initial);
-    document.addEventListener("sohamhamso:open-settings", handleOpenRequest);
-    document.addEventListener("keydown", handleKey);
+    document.addEventListener('sohamhamso:open-settings', handleOpenRequest);
+    document.addEventListener('keydown', handleKey);
   });
   onCleanup(() => {
-    if (typeof document === "undefined") return;
-    document.removeEventListener("sohamhamso:open-settings", handleOpenRequest);
-    document.removeEventListener("keydown", handleKey);
+    if (typeof document === 'undefined') return;
+    document.removeEventListener('sohamhamso:open-settings', handleOpenRequest);
+    document.removeEventListener('keydown', handleKey);
   });
 
   // Live-preview sample. Uses current saFont and fontSizePx via the
@@ -341,9 +336,7 @@ export default function SettingsSheet() {
             <div class="settings__preview-sa" lang="sa">
               तत्त्वमसि
             </div>
-            <div class="settings__preview-iast">
-              Sample verse text — tat tvam asi.
-            </div>
+            <div class="settings__preview-iast">Sample verse text — tat tvam asi.</div>
           </div>
 
           {/* Font — Devanāgarī */}
@@ -399,9 +392,7 @@ export default function SettingsSheet() {
               max="24"
               step="1"
               value={settings().fontSizePx}
-              onInput={(e) =>
-                update({ fontSizePx: Number(e.currentTarget.value) })
-              }
+              onInput={(e) => update({ fontSizePx: Number(e.currentTarget.value) })}
               aria-label="Font size in pixels"
             />
           </fieldset>
@@ -409,8 +400,7 @@ export default function SettingsSheet() {
           {/* Line-height */}
           <fieldset class="settings__fs">
             <legend>
-              Line-height{" "}
-              <span class="settings__val">{settings().lineHeight.toFixed(2)}</span>
+              Line-height <span class="settings__val">{settings().lineHeight.toFixed(2)}</span>
             </legend>
             <input
               type="range"
@@ -418,9 +408,7 @@ export default function SettingsSheet() {
               max="2.0"
               step="0.05"
               value={settings().lineHeight}
-              onInput={(e) =>
-                update({ lineHeight: Number(e.currentTarget.value) })
-              }
+              onInput={(e) => update({ lineHeight: Number(e.currentTarget.value) })}
               aria-label="Line height"
             />
           </fieldset>
@@ -435,16 +423,14 @@ export default function SettingsSheet() {
                     type="button"
                     class="settings__theme"
                     aria-pressed={settings().theme === t.id}
-                    onClick={() =>
-                      update({ theme: t.id as Settings["theme"] })
-                    }
+                    onClick={() => update({ theme: t.id as Settings['theme'] })}
                   >
                     <span
                       class="settings__theme-swatch"
                       style={{
                         background: t.swatchBg,
                         color: t.swatchInk,
-                        "border-color": t.swatchInk,
+                        'border-color': t.swatchInk,
                       }}
                       aria-hidden="true"
                     >
@@ -465,13 +451,9 @@ export default function SettingsSheet() {
             <select
               id="settings-lang"
               value={settings().defaultLang}
-              onChange={(e) =>
-                update({ defaultLang: e.currentTarget.value })
-              }
+              onChange={(e) => update({ defaultLang: e.currentTarget.value })}
             >
-              <For each={LANGS}>
-                {(l) => <option value={l.code}>{l.label}</option>}
-              </For>
+              <For each={LANGS}>{(l) => <option value={l.code}>{l.label}</option>}</For>
             </select>
           </fieldset>
 
@@ -485,13 +467,9 @@ export default function SettingsSheet() {
             <select
               id="settings-reader-lang"
               value={settings().readerLang}
-              onChange={(e) =>
-                update({ readerLang: e.currentTarget.value })
-              }
+              onChange={(e) => update({ readerLang: e.currentTarget.value })}
             >
-              <For each={LANGS}>
-                {(l) => <option value={l.code}>{l.label}</option>}
-              </For>
+              <For each={LANGS}>{(l) => <option value={l.code}>{l.label}</option>}</For>
             </select>
           </fieldset>
 
@@ -503,21 +481,13 @@ export default function SettingsSheet() {
             <select
               id="settings-script"
               value={settings().defaultScript}
-              onChange={(e) =>
-                update({ defaultScript: e.currentTarget.value })
-              }
+              onChange={(e) => update({ defaultScript: e.currentTarget.value })}
             >
-              <For each={SCRIPTS}>
-                {(s) => <option value={s.id}>{s.label}</option>}
-              </For>
+              <For each={SCRIPTS}>{(s) => <option value={s.id}>{s.label}</option>}</For>
             </select>
           </fieldset>
 
-          <button
-            type="button"
-            class="settings__reset"
-            onClick={reset}
-          >
+          <button type="button" class="settings__reset" onClick={reset}>
             Reset to defaults
           </button>
         </div>

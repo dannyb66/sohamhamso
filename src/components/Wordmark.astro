@@ -9,11 +9,11 @@
  * of Devanāgarī letters, lifted here as the wordmark's signature.
  */
 interface Props {
-  size?: "sm" | "md" | "lg";
+  size?: 'sm' | 'md' | 'lg';
   showDevanagari?: boolean;
   href?: string;
 }
-const { size = "md", showDevanagari = true, href = "/" } = Astro.props;
+const { size = 'md', showDevanagari = true, href = '/' } = Astro.props;
 ---
 
 <a href={href} class={`wordmark wordmark--${size}`}>

@@ -1,6 +1,6 @@
 ---
-import SettingsSheet from "../components/SettingsSheet.solid.tsx";
-import SearchBox from "../components/SearchBox.solid.tsx";
+import SearchBox from '../components/SearchBox.solid.tsx';
+import SettingsSheet from '../components/SettingsSheet.solid.tsx';
 
 interface Props {
   title?: string;
@@ -8,9 +8,9 @@ interface Props {
   lang?: string;
 }
 const {
-  title = "sohamhamso — The Tantric canon, read in eleven tongues",
-  description = "Modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages.",
-  lang = "en",
+  title = 'sohamhamso — The Tantric canon, read in eleven tongues',
+  description = 'Modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages.',
+  lang = 'en',
 } = Astro.props;
 ---
 <!doctype html>
@@ -26,7 +26,18 @@ const {
   <!-- Font preconnect for Google Fonts (we'll self-host later) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" />
+  <!--
+    Indic font stack — variable-font URLs for body weight range 400..700.
+    Each `Noto Serif <Script>` family is auto-subset by Google to that script's
+    code-point range, so total payload stays small. `display=swap` applies to
+    every family in the URL — never block paint on font load.
+    Covers: Devanagari (Sanskrit/Hindi/Marathi), Tamil, Telugu, Bengali
+    (also Assamese), Kannada, Malayalam, Gujarati, Gurmukhi, Oriya (Odia).
+    Plus Source Serif 4 for IAST/Latin and Inter for UI chrome.
+    Shobhika (Devanāgarī display face) is NOT loaded for V1 — `--font-sa-display`
+    falls back to Noto Serif Devanagari cleanly.
+  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400..700&family=Noto+Serif+Tamil:wght@400..700&family=Noto+Serif+Telugu:wght@400..700&family=Noto+Serif+Bengali:wght@400..700&family=Noto+Serif+Kannada:wght@400..700&family=Noto+Serif+Malayalam:wght@400..700&family=Noto+Serif+Gujarati:wght@400..700&family=Noto+Serif+Gurmukhi:wght@400..700&family=Noto+Serif+Oriya:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Inter:wght@400..700&display=swap" />
   <script is:inline>
     // Apply persisted theme before paint to avoid flash
     (() => {

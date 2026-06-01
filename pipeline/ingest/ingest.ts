@@ -51,12 +51,12 @@
  *               reviewed_at: "2026-01-15T00:00:00Z"
  */
 
-import { Database } from "bun:sqlite";
-import { readdirSync, readFileSync, existsSync } from "node:fs";
-import { join, dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
-import { load as yamlLoad } from "js-yaml";
-import Sanscript from "@indic-transliteration/sanscript";
+import { Database } from 'bun:sqlite';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import Sanscript from '@indic-transliteration/sanscript';
+import { load as yamlLoad } from 'js-yaml';
 
 // ---------------------------------------------------------------
 // Script normalisation
@@ -84,10 +84,10 @@ export function isDevanagari(s: string | null | undefined): boolean {
  * selects Tamil, Bengali, etc.
  */
 export function toDevanagari(s: string | null | undefined): string {
-  if (!s) return "";
+  if (!s) return '';
   if (isDevanagari(s)) return s;
   try {
-    return Sanscript.t(s, "iast", "devanagari");
+    return Sanscript.t(s, 'iast', 'devanagari');
   } catch {
     return s;
   }
@@ -100,9 +100,9 @@ export function toDevanagari(s: string | null | undefined): string {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // pipeline/ingest/ingest.ts -> project root is two levels up
-export const PROJECT_ROOT = resolve(__dirname, "..", "..");
-export const DEFAULT_DB_PATH = join(PROJECT_ROOT, "db", "sohamhamso.db");
-export const DEFAULT_CORPUS_DIR = join(PROJECT_ROOT, "data", "corpus");
+export const PROJECT_ROOT = resolve(__dirname, '..', '..');
+export const DEFAULT_DB_PATH = join(PROJECT_ROOT, 'db', 'sohamhamso.db');
+export const DEFAULT_CORPUS_DIR = join(PROJECT_ROOT, 'data', 'corpus');
 
 // ---------------------------------------------------------------
 // Types
@@ -124,7 +124,7 @@ export interface TranslationYaml {
   translation_text: string;
   source?: string | null;
   license: string;
-  status: "draft" | "reviewed" | "published";
+  status: 'draft' | 'reviewed' | 'published';
   ai_assisted?: boolean | number | null;
   model?: string | null;
   model_version?: string | null;
@@ -205,25 +205,39 @@ function nz<T>(v: T | undefined | null): T | null {
  * Parse a single YAML file into a TextYaml object. Throws on invalid shape.
  */
 export function parseTextYaml(filePath: string): TextYaml {
-  const raw = readFileSync(filePath, "utf8");
+  const raw = readFileSync(filePath, 'utf8');
   const loaded = yamlLoad(raw) as unknown as Record<string, unknown>;
-  if (!loaded || typeof loaded !== "object") {
+  if (!loaded || typeof loaded !== 'object') {
     throw new Error(`${filePath}: YAML root is not an object`);
   }
   // Support both flat and wrapped ({ text: {...}, chapters: [...] }) shapes.
   let docRaw: Record<string, unknown>;
-  if ("text" in loaded && loaded.text && typeof loaded.text === "object") {
-    docRaw = { ...(loaded.text as Record<string, unknown>), chapters: (loaded as Record<string, unknown>).chapters ?? (loaded.text as Record<string, unknown>).chapters };
+  if ('text' in loaded && loaded.text && typeof loaded.text === 'object') {
+    docRaw = {
+      ...(loaded.text as Record<string, unknown>),
+      chapters:
+        (loaded as Record<string, unknown>).chapters ??
+        (loaded.text as Record<string, unknown>).chapters,
+    };
   } else {
     docRaw = loaded;
   }
   // Normalise per-verse field aliases so downstream code can stay strict.
-  const chaptersRaw = Array.isArray(docRaw.chapters) ? (docRaw.chapters as Record<string, unknown>[]) : [];
+  const chaptersRaw = Array.isArray(docRaw.chapters)
+    ? (docRaw.chapters as Record<string, unknown>[])
+    : [];
   const chapters = chaptersRaw.map((ch) => {
     const versesRaw = Array.isArray(ch.verses) ? (ch.verses as Record<string, unknown>[]) : [];
     const verses = versesRaw.map((v) => {
-      const verse_num = typeof v.verse_num === "number" ? v.verse_num : typeof v.verse === "number" ? v.verse : v.verse_num;
-      const glossesRaw = Array.isArray(v.word_glosses) ? (v.word_glosses as Record<string, unknown>[]) : [];
+      const verse_num =
+        typeof v.verse_num === 'number'
+          ? v.verse_num
+          : typeof v.verse === 'number'
+            ? v.verse
+            : v.verse_num;
+      const glossesRaw = Array.isArray(v.word_glosses)
+        ? (v.word_glosses as Record<string, unknown>[])
+        : [];
       const word_glosses = glossesRaw.flatMap((g, i) => {
         // Some YAML files (e.g. Śiva Sūtras) store the surface form in
         // IAST instead of Devanāgarī. The ScriptSwitcher island treats
@@ -235,16 +249,15 @@ export function parseTextYaml(filePath: string): TextYaml {
         const rawWord = (g.word_sa ?? g.word) as string;
         const word_sa = toDevanagari(rawWord);
         const explicitIast = (g.lemma_iast ?? g.iast ?? null) as string | null;
-        const lemma_iast =
-          explicitIast ?? (rawWord && !isDevanagari(rawWord) ? rawWord : null);
-        const word_idx = typeof g.word_idx === "number" ? g.word_idx : i;
+        const lemma_iast = explicitIast ?? (rawWord && !isDevanagari(rawWord) ? rawWord : null);
+        const word_idx = typeof g.word_idx === 'number' ? g.word_idx : i;
         const lemma_sa = (g.lemma_sa ?? null) as string | null;
         const morph = (g.morph ?? null) as string | null;
 
         // English gloss — backward-compatible via gloss_text / gloss_en / gloss.
         // If gloss_lang is explicitly set, honour it instead of defaulting to en.
-        const englishText = (g.gloss_text ?? g.gloss_en ?? g.gloss ?? "") as string;
-        const englishLang = (g.gloss_lang ?? "en") as string;
+        const englishText = (g.gloss_text ?? g.gloss_en ?? g.gloss ?? '') as string;
+        const englishLang = (g.gloss_lang ?? 'en') as string;
 
         const out: Array<{
           word_idx: number;
@@ -256,7 +269,15 @@ export function parseTextYaml(filePath: string): TextYaml {
           morph: string | null;
         }> = [];
         if (englishText) {
-          out.push({ word_idx, word_sa, lemma_sa, lemma_iast, gloss_lang: englishLang, gloss_text: englishText, morph });
+          out.push({
+            word_idx,
+            word_sa,
+            lemma_sa,
+            lemma_iast,
+            gloss_lang: englishLang,
+            gloss_text: englishText,
+            morph,
+          });
         }
 
         // Multi-language extension: pick up any `gloss_{lang}` field with a
@@ -266,21 +287,31 @@ export function parseTextYaml(filePath: string): TextYaml {
           const m = /^gloss_([a-z]{2})$/.exec(key);
           if (!m) continue;
           const lang = m[1];
-          if (lang === "en") continue; // already handled
-          if (typeof val !== "string" || !val.trim()) continue;
-          out.push({ word_idx, word_sa, lemma_sa, lemma_iast, gloss_lang: lang, gloss_text: val, morph });
+          if (lang === 'en') continue; // already handled
+          if (typeof val !== 'string' || !val.trim()) continue;
+          out.push({
+            word_idx,
+            word_sa,
+            lemma_sa,
+            lemma_iast,
+            gloss_lang: lang,
+            gloss_text: val,
+            morph,
+          });
         }
 
         return out;
       });
-      const translationsRaw = Array.isArray(v.translations) ? (v.translations as Record<string, unknown>[]) : [];
+      const translationsRaw = Array.isArray(v.translations)
+        ? (v.translations as Record<string, unknown>[])
+        : [];
       const translations = translationsRaw.map((t) => ({
-        lang: (t.lang ?? "en") as string,
+        lang: (t.lang ?? 'en') as string,
         translator: (t.translator ?? null) as string | null,
-        translation_text: (t.translation_text ?? t.text ?? "") as string,
+        translation_text: (t.translation_text ?? t.text ?? '') as string,
         source: (t.source ?? null) as string | null,
-        license: (t.license ?? "PD") as string,
-        status: (t.status ?? "published") as "draft" | "reviewed" | "published",
+        license: (t.license ?? 'PD') as string,
+        status: (t.status ?? 'published') as 'draft' | 'reviewed' | 'published',
         ai_assisted: (t.ai_assisted ?? false) as boolean | number | null,
         model: (t.model ?? null) as string | null,
         model_version: (t.model_version ?? null) as string | null,
@@ -439,16 +470,14 @@ export function ingestText(
     });
 
     for (const chapter of doc.chapters) {
-      if (typeof chapter.chapter !== "number") {
+      if (typeof chapter.chapter !== 'number') {
         throw new Error(`${file}: chapter missing numeric 'chapter' field`);
       }
       if (!Array.isArray(chapter.verses)) continue;
 
       for (const verse of chapter.verses) {
-        if (typeof verse.verse_num !== "number") {
-          throw new Error(
-            `${file}: chapter ${chapter.chapter} verse missing 'verse_num'`,
-          );
+        if (typeof verse.verse_num !== 'number') {
+          throw new Error(`${file}: chapter ${chapter.chapter} verse missing 'verse_num'`);
         }
         if (!verse.devanagari) {
           throw new Error(
@@ -472,7 +501,7 @@ export function ingestText(
         // ON CONFLICT DO UPDATE ... RETURNING is supported in modern SQLite.
         // Fall back to SELECT if for any reason RETURNING returns nothing.
         let verseId: number;
-        if (verseRow && typeof verseRow.id === "number") {
+        if (verseRow && typeof verseRow.id === 'number') {
           verseId = verseRow.id;
         } else {
           const r = stmts.selectVerseId.get({
@@ -480,9 +509,10 @@ export function ingestText(
             $chapter: chapter.chapter,
             $verse_num: verse.verse_num,
           }) as { id: number } | undefined;
-          if (!r) throw new Error(
-            `${file}: failed to resolve verse_id for ${doc.id} ${chapter.chapter}.${verse.verse_num}`,
-          );
+          if (!r)
+            throw new Error(
+              `${file}: failed to resolve verse_id for ${doc.id} ${chapter.chapter}.${verse.verse_num}`,
+            );
           verseId = r.id;
         }
         verseCount++;
@@ -551,15 +581,15 @@ export interface IngestOptions {
 export function listYamlFiles(dir: string): string[] {
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
-    .filter((f) => f.endsWith(".yaml") || f.endsWith(".yml"))
+    .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
     .sort()
     .map((f) => join(dir, f));
 }
 
 export function openDb(dbPath: string): Database {
   const db = new Database(dbPath);
-  db.exec("PRAGMA journal_mode = WAL;");
-  db.exec("PRAGMA foreign_keys = ON;");
+  db.exec('PRAGMA journal_mode = WAL;');
+  db.exec('PRAGMA foreign_keys = ON;');
   return db;
 }
 
@@ -568,9 +598,7 @@ export function run(opts: IngestOptions = {}): RunSummary {
   const corpusDir = opts.corpusDir ?? DEFAULT_CORPUS_DIR;
 
   if (!existsSync(dbPath)) {
-    throw new Error(
-      `DB not found at ${dbPath}. Run \`bun pipeline/ingest/init-db.ts\` first.`,
-    );
+    throw new Error(`DB not found at ${dbPath}. Run \`bun pipeline/ingest/init-db.ts\` first.`);
   }
 
   const db = openDb(dbPath);
@@ -591,7 +619,7 @@ export function run(opts: IngestOptions = {}): RunSummary {
       const s = ingestText(db, stmts, doc, file);
       stats.push(s);
       console.log(
-        `Ingested ${s.verses} verses, ${s.glosses} glosses, ${s.translations} translations  (${doc.id} <- ${file.replace(PROJECT_ROOT + "/", "")})`,
+        `Ingested ${s.verses} verses, ${s.glosses} glosses, ${s.translations} translations  (${doc.id} <- ${file.replace(PROJECT_ROOT + '/', '')})`,
       );
     } catch (err) {
       console.error(`FAILED ${file}:`, err instanceof Error ? err.message : err);
@@ -622,8 +650,8 @@ export function parseArgs(argv: string[]): IngestOptions {
   const opts: IngestOptions = {};
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--db" && argv[i + 1]) opts.dbPath = argv[++i];
-    else if (a === "--dir" && argv[i + 1]) opts.corpusDir = argv[++i];
+    if (a === '--db' && argv[i + 1]) opts.dbPath = argv[++i];
+    else if (a === '--dir' && argv[i + 1]) opts.corpusDir = argv[++i];
   }
   return opts;
 }

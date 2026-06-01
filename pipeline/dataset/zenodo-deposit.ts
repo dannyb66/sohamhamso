@@ -22,8 +22,8 @@
  *   GITHUB_RELEASE_URL — optional; threaded into related_identifiers.
  */
 
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { basename, join, relative } from "node:path";
+import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { basename, join, relative } from 'node:path';
 
 // ---------------------------------------------------------------
 // CLI
@@ -41,17 +41,17 @@ function parseArgs(): Args {
     const idx = argv.indexOf(flag);
     return idx >= 0 && idx + 1 < argv.length ? argv[idx + 1] : undefined;
   };
-  const dir = get("--dir");
+  const dir = get('--dir');
   if (!dir) {
     console.error(
-      "usage: bun pipeline/dataset/zenodo-deposit.ts --dir <bundle-dir> [--sandbox] [--execute]",
+      'usage: bun pipeline/dataset/zenodo-deposit.ts --dir <bundle-dir> [--sandbox] [--execute]',
     );
     process.exit(2);
   }
   return {
     dir,
-    sandbox: argv.includes("--sandbox"),
-    execute: argv.includes("--execute"),
+    sandbox: argv.includes('--sandbox'),
+    execute: argv.includes('--execute'),
   };
 }
 
@@ -62,11 +62,11 @@ function parseArgs(): Args {
 
 interface ZenodoMeta {
   title: string;
-  upload_type: "dataset";
+  upload_type: 'dataset';
   description: string;
   creators: Array<{ name: string; affiliation?: string; orcid?: string }>;
   license: string; // "CC-BY-SA-4.0" matches Zenodo's id list
-  access_right: "open";
+  access_right: 'open';
   keywords: string[];
   related_identifiers: Array<{
     identifier: string;
@@ -89,61 +89,60 @@ function extractVersion(dir: string): string {
 }
 
 function buildMetadata(dir: string, version: string): ZenodoMeta {
-  const githubRepo = process.env.GITHUB_REPO ?? "sohamhamso/sohamhamso";
+  const githubRepo = process.env.GITHUB_REPO ?? 'sohamhamso/sohamhamso';
   const releaseUrl =
-    process.env.GITHUB_RELEASE_URL ??
-    `https://github.com/${githubRepo}/releases/tag/${version}`;
+    process.env.GITHUB_RELEASE_URL ?? `https://github.com/${githubRepo}/releases/tag/${version}`;
 
   return {
     title: `sohamhamso — Tantric / Kashmir Shaivism corpus (${version})`,
-    upload_type: "dataset",
+    upload_type: 'dataset',
     description: [
-      "<p>Original Sanskrit (Devanāgarī + IAST + SLP1), word-by-word glosses, ",
-      "and translations across English plus ten Indic languages for the Tantric / ",
-      "Kashmir Shaivism / Trika / Kaula scriptural corpus. Released as CSV + JSON + ",
-      "TEI under CC-BY-SA 4.0.</p>",
-      "<p>Schema, integrity verification, and per-source attribution included in the ",
-      "bundle. See <code>README.md</code> for a five-line pandas load snippet and ",
-      "<code>checksums.sha256</code> for integrity. Per-source upstream licenses ",
-      "(GRETIL, Muktabodha, sanskritdocuments, SARIT, Wikisource) listed in ",
-      "<code>ATTRIBUTION.md</code>.</p>",
-    ].join(""),
+      '<p>Original Sanskrit (Devanāgarī + IAST + SLP1), word-by-word glosses, ',
+      'and translations across English plus ten Indic languages for the Tantric / ',
+      'Kashmir Shaivism / Trika / Kaula scriptural corpus. Released as CSV + JSON + ',
+      'TEI under CC-BY-SA 4.0.</p>',
+      '<p>Schema, integrity verification, and per-source attribution included in the ',
+      'bundle. See <code>README.md</code> for a five-line pandas load snippet and ',
+      '<code>checksums.sha256</code> for integrity. Per-source upstream licenses ',
+      '(GRETIL, Muktabodha, sanskritdocuments, SARIT, Wikisource) listed in ',
+      '<code>ATTRIBUTION.md</code>.</p>',
+    ].join(''),
     creators: [
       {
-        name: "sohamhamso contributors",
-        affiliation: "sohamhamso (https://sohamhamso.org)",
+        name: 'sohamhamso contributors',
+        affiliation: 'sohamhamso (https://sohamhamso.org)',
       },
     ],
-    license: "CC-BY-SA-4.0",
-    access_right: "open",
+    license: 'CC-BY-SA-4.0',
+    access_right: 'open',
     keywords: [
-      "Sanskrit",
-      "Tantra",
-      "Kashmir Shaivism",
-      "Trika",
-      "Kaula",
-      "Indology",
-      "Digital Humanities",
-      "TEI",
-      "machine-readable corpus",
+      'Sanskrit',
+      'Tantra',
+      'Kashmir Shaivism',
+      'Trika',
+      'Kaula',
+      'Indology',
+      'Digital Humanities',
+      'TEI',
+      'machine-readable corpus',
     ],
     related_identifiers: [
       {
         identifier: releaseUrl,
-        relation: "isSupplementTo",
-        resource_type: "software",
+        relation: 'isSupplementTo',
+        resource_type: 'software',
       },
       {
         identifier: `https://github.com/${githubRepo}`,
-        relation: "isDerivedFrom",
-        resource_type: "software",
+        relation: 'isDerivedFrom',
+        resource_type: 'software',
       },
     ],
     version,
-    language: "san", // ISO 639-3 for Sanskrit; translations cover multiple Indic langs
+    language: 'san', // ISO 639-3 for Sanskrit; translations cover multiple Indic langs
     notes:
-      "Translations marked ai_assisted=true are AI-generated and may not have human review. " +
-      "See STATUS-CONTRACT.md in the source repo for the badge-rendering contract.",
+      'Translations marked ai_assisted=true are AI-generated and may not have human review. ' +
+      'See STATUS-CONTRACT.md in the source repo for the badge-rendering contract.',
   };
 }
 
@@ -195,9 +194,7 @@ async function deposit(
   files: FileInfo[],
   apiKey: string | null,
 ): Promise<DepositResult> {
-  const apiBase = args.sandbox
-    ? "https://sandbox.zenodo.org/api"
-    : "https://zenodo.org/api";
+  const apiBase = args.sandbox ? 'https://sandbox.zenodo.org/api' : 'https://zenodo.org/api';
 
   const result: DepositResult = {
     deposit_id: null,
@@ -212,20 +209,20 @@ async function deposit(
   };
 
   if (!args.execute) {
-    result.notes.push("dry-run: no HTTP calls made (pass --execute to publish)");
+    result.notes.push('dry-run: no HTTP calls made (pass --execute to publish)');
     return result;
   }
 
   if (!apiKey) {
-    result.notes.push("ZENODO_API_KEY missing — cannot --execute");
+    result.notes.push('ZENODO_API_KEY missing — cannot --execute');
     return result;
   }
 
   // 1. Create deposition.
   const createRes = await fetch(`${apiBase}/deposit/depositions`, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
       Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({ metadata: meta }),
@@ -245,26 +242,24 @@ async function deposit(
 
   // 2. Upload each file via bucket (new Zenodo files API).
   if (!result.bucket_url) {
-    throw new Error("Zenodo did not return a bucket URL — cannot upload files");
+    throw new Error('Zenodo did not return a bucket URL — cannot upload files');
   }
   for (const f of files) {
     const buf = readFileSync(f.path);
     const up = await fetch(`${result.bucket_url}/${encodeURIComponent(f.rel)}`, {
-      method: "PUT",
+      method: 'PUT',
       headers: { Authorization: `Bearer ${apiKey}` },
       body: buf,
     });
     if (!up.ok) {
-      throw new Error(
-        `Zenodo upload failed for ${f.rel}: ${up.status} ${await up.text()}`,
-      );
+      throw new Error(`Zenodo upload failed for ${f.rel}: ${up.status} ${await up.text()}`);
     }
     result.uploaded.push(f.rel);
   }
 
   // 3. Publish.
   const pub = await fetch(`${apiBase}/deposit/depositions/${created.id}/actions/publish`, {
-    method: "POST",
+    method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}` },
   });
   if (!pub.ok) {
@@ -294,8 +289,8 @@ async function main(): Promise<void> {
   const apiKey = process.env.ZENODO_API_KEY ?? null;
   if (!apiKey) {
     console.warn(
-      "warn: ZENODO_API_KEY is not set — running dry-run only. " +
-        "Set the env var and pass --execute to publish.",
+      'warn: ZENODO_API_KEY is not set — running dry-run only. ' +
+        'Set the env var and pass --execute to publish.',
     );
   }
 
@@ -306,7 +301,7 @@ async function main(): Promise<void> {
   const result = await deposit(args, meta, files, apiKey);
 
   const provenance = {
-    tool: "pipeline/dataset/zenodo-deposit.ts",
+    tool: 'pipeline/dataset/zenodo-deposit.ts',
     generated_at: new Date().toISOString(),
     version,
     bundle_dir: args.dir,
@@ -317,16 +312,16 @@ async function main(): Promise<void> {
     result,
   };
 
-  const outPath = join(args.dir, "zenodo-deposit.json");
-  writeFileSync(outPath, JSON.stringify(provenance, null, 2) + "\n", "utf8");
+  const outPath = join(args.dir, 'zenodo-deposit.json');
+  writeFileSync(outPath, JSON.stringify(provenance, null, 2) + '\n', 'utf8');
 
-  console.log("zenodo-deposit complete:");
+  console.log('zenodo-deposit complete:');
   console.log(JSON.stringify(result, null, 2));
   console.log(`\nprovenance: ${outPath}`);
   if (result.doi_url) console.log(`DOI: ${result.doi_url}`);
 }
 
 main().catch((err) => {
-  console.error("zenodo-deposit failed:", err);
+  console.error('zenodo-deposit failed:', err);
   process.exit(1);
 });

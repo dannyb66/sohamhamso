@@ -15,7 +15,7 @@
  * V1 corpus, so the chip won't render on any page yet. An e2e test
  * asserts the count=0 hide rule.
  */
-import type { Parallel } from "../lib/db";
+import type { Parallel } from '../lib/db';
 
 interface Props {
   parallels: Parallel[];
@@ -32,7 +32,7 @@ const id = `parallels-${Math.random().toString(36).slice(2, 9)}`;
 
 // Trim IAST previews so each list item stays single-line.
 function preview(iast: string | null | undefined): string {
-  if (!iast) return "";
+  if (!iast) return '';
   return iast.length > 80 ? `${iast.slice(0, 80)}…` : iast;
 }
 
@@ -43,7 +43,7 @@ function preview(iast: string | null | undefined): string {
 // we link via the search route as a graceful fallback that always works.
 function targetHref(p: Parallel): string {
   if (!p.target_text_slug || p.target_chapter == null || p.target_verse_num == null) {
-    return "/search";
+    return '/search';
   }
   // The reader resolves /<text-slug>/<chapter>/<verse>? No — routes are
   // tradition-namespaced. Use the search route which knows how to resolve

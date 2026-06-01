@@ -28,48 +28,49 @@
  *   bun add @anthropic-ai/sdk
  */
 
-import { Database } from "bun:sqlite";
-import { readFileSync, existsSync } from "node:fs";
-import { join, dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { Database } from 'bun:sqlite';
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // pipeline/translate/runner.ts -> project root is two levels up
-const PROJECT_ROOT = resolve(__dirname, "..", "..");
-const DEFAULT_DB_PATH = join(PROJECT_ROOT, "db", "sohamhamso.db");
+const PROJECT_ROOT = resolve(__dirname, '..', '..');
+const DEFAULT_DB_PATH = join(PROJECT_ROOT, 'db', 'sohamhamso.db');
 
-const PROMPT_TRANSLATE_PATH = join(__dirname, "prompts", "v1-sanskrit-grounded.md");
-const PROMPT_JUDGE_PATH = join(__dirname, "prompts", "v1-judge.md");
+const PROMPT_TRANSLATE_PATH = join(__dirname, 'prompts', 'v1-sanskrit-grounded.md');
+const PROMPT_JUDGE_PATH = join(__dirname, 'prompts', 'v1-judge.md');
 
 // ---- constants pinned to the contract ----
 
-const MODEL = "claude-sonnet-4-5-20250929";
-const MODEL_DISPLAY = "claude-sonnet-4-6"; // logical name written to translations.model per STATUS-CONTRACT.md
-const PROMPT_VERSION_TRANSLATE = "v1-sanskrit-grounded";
-const PROMPT_VERSION_JUDGE = "v1-judge";
+const MODEL = 'claude-sonnet-4-5-20250929';
+const MODEL_DISPLAY = 'claude-sonnet-4-6'; // logical name written to translations.model per STATUS-CONTRACT.md
+const PROMPT_VERSION_TRANSLATE = 'v1-sanskrit-grounded';
+const PROMPT_VERSION_JUDGE = 'v1-judge';
 const JUDGE_PUBLISH_THRESHOLD = 7;
 const RATE_LIMIT_SLEEP_MS = 1500; // simple sleep between calls; real gateway comes in shared rate-limit Worker workstream
-const DEFAULT_TRANSLATOR_LABEL = "sohamhamso AI pipeline";
+const DEFAULT_TRANSLATOR_LABEL = 'sohamhamso AI pipeline';
 
 // ---- PD English reference map (see pipeline/translate/anchors/woodroffe-references.md) ----
 
 const PD_REFERENCES: Record<string, { citation: string; note: string } | null> = {
-  "siva-sutras": null,
-  "spanda-karikas": null,
-  "pratyabhijna-hrdayam": null,
+  'siva-sutras': null,
+  'spanda-karikas': null,
+  'pratyabhijna-hrdayam': null,
   // Vijñāna Bhairava: partial Woodroffe summary; per-verse coverage is sparse.
   // V1 scaffolding leaves this null; per-verse coverage will land via
   // data/pd-anchors/vijnana-bhairava.json in a follow-up.
-  "vijnana-bhairava": null,
-  "karpuradi-stotra": {
-    citation: "Woodroffe (Arthur Avalon), Hymn to Kali (Karpuradi-Stotra), Luzac & Co., 1922 (PD).",
-    note: "Full PD translation. Pass full text as reference signal.",
+  'vijnana-bhairava': null,
+  'karpuradi-stotra': {
+    citation: 'Woodroffe (Arthur Avalon), Hymn to Kali (Karpuradi-Stotra), Luzac & Co., 1922 (PD).',
+    note: 'Full PD translation. Pass full text as reference signal.',
   },
   // Phase 2 additions
-  "mahanirvana-tantra": {
-    citation: "Woodroffe (Arthur Avalon), Mahanirvana Tantra (Tantra of the Great Liberation), Luzac & Co., 1913 (PD).",
-    note: "Full PD translation. Canonical Tantric anchor.",
+  'mahanirvana-tantra': {
+    citation:
+      'Woodroffe (Arthur Avalon), Mahanirvana Tantra (Tantra of the Great Liberation), Luzac & Co., 1913 (PD).',
+    note: 'Full PD translation. Canonical Tantric anchor.',
   },
 };
 
@@ -148,14 +149,14 @@ function parseArgs(argv: string[]): CliOpts {
   const opts: Partial<CliOpts> = { dryRun: false, dbPath: DEFAULT_DB_PATH };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--lang" && argv[i + 1]) opts.lang = argv[++i];
-    else if (a === "--text" && argv[i + 1]) opts.text = argv[++i];
-    else if (a === "--limit" && argv[i + 1]) opts.limit = Number.parseInt(argv[++i], 10);
-    else if (a === "--dry-run") opts.dryRun = true;
-    else if (a === "--db" && argv[i + 1]) opts.dbPath = argv[++i];
+    if (a === '--lang' && argv[i + 1]) opts.lang = argv[++i];
+    else if (a === '--text' && argv[i + 1]) opts.text = argv[++i];
+    else if (a === '--limit' && argv[i + 1]) opts.limit = Number.parseInt(argv[++i], 10);
+    else if (a === '--dry-run') opts.dryRun = true;
+    else if (a === '--db' && argv[i + 1]) opts.dbPath = argv[++i];
   }
-  if (!opts.lang) throw new Error("Missing required --lang (e.g. --lang en)");
-  if (!opts.text) throw new Error("Missing required --text (e.g. --text siva-sutras)");
+  if (!opts.lang) throw new Error('Missing required --lang (e.g. --lang en)');
+  if (!opts.text) throw new Error('Missing required --text (e.g. --text siva-sutras)');
   return opts as CliOpts;
 }
 
@@ -173,7 +174,12 @@ function renderTemplate(template: string, vars: Record<string, string>): string 
 
 // ---- DB helpers ----
 
-function loadVersesNeedingTranslation(db: Database, textSlug: string, lang: string, limit?: number): VerseRow[] {
+function loadVersesNeedingTranslation(
+  db: Database,
+  textSlug: string,
+  lang: string,
+  limit?: number,
+): VerseRow[] {
   const sql = `
     SELECT v.id, v.text_id, t.slug AS text_slug, v.chapter, v.verse_num,
            v.devanagari, v.iast, v.slp1, v.meter
@@ -184,7 +190,7 @@ function loadVersesNeedingTranslation(db: Database, textSlug: string, lang: stri
     WHERE t.slug = ?
       AND tr.id IS NULL
     ORDER BY v.chapter, v.verse_num
-    ${limit ? "LIMIT ?" : ""}
+    ${limit ? 'LIMIT ?' : ''}
   `;
   const args = limit ? [lang, textSlug, limit] : [lang, textSlug];
   return db.query<VerseRow, unknown[]>(sql).all(...args);
@@ -214,7 +220,10 @@ function loadGlosses(db: Database, verseId: number, glossLang: string): GlossRow
 function loadPrevContext(db: Database, verse: VerseRow): string {
   // Pull preceding two verses in the same text (cross chapter boundary if needed).
   const rows = db
-    .query<{ chapter: number; verse_num: number; devanagari: string; iast: string | null }, [string, number, number, number, number]>(
+    .query<
+      { chapter: number; verse_num: number; devanagari: string; iast: string | null },
+      [string, number, number, number, number]
+    >(
       `SELECT chapter, verse_num, devanagari, iast
        FROM verses
        WHERE text_id = ?
@@ -223,39 +232,40 @@ function loadPrevContext(db: Database, verse: VerseRow): string {
        LIMIT ?`,
     )
     .all(verse.text_id, verse.chapter, verse.chapter, verse.verse_num, 2);
-  if (rows.length === 0) return "(no preceding context — this is the opening of the text)";
+  if (rows.length === 0) return '(no preceding context — this is the opening of the text)';
   return rows
     .reverse()
-    .map((r) => `[${r.chapter}.${r.verse_num}] ${r.devanagari}${r.iast ? `\n${r.iast}` : ""}`)
-    .join("\n\n");
+    .map((r) => `[${r.chapter}.${r.verse_num}] ${r.devanagari}${r.iast ? `\n${r.iast}` : ''}`)
+    .join('\n\n');
 }
 
 function formatGlosses(glosses: GlossRow[]): { morphology: string; lexicon_glosses: string } {
   if (glosses.length === 0) {
     return {
-      morphology: "(no morphology data available — verse not yet processed by morph agent)",
-      lexicon_glosses: "(no lexicon glosses available — verse not yet processed by morph agent)",
+      morphology: '(no morphology data available — verse not yet processed by morph agent)',
+      lexicon_glosses: '(no lexicon glosses available — verse not yet processed by morph agent)',
     };
   }
   const morphology = glosses
     .map((g) => {
-      const lemma = g.lemma_iast ?? g.lemma_sa ?? "?";
-      const morph = g.morph ?? "(no morph)";
+      const lemma = g.lemma_iast ?? g.lemma_sa ?? '?';
+      const morph = g.morph ?? '(no morph)';
       return `#${g.word_idx} ${g.word_sa}  lemma=${lemma}  ${morph}`;
     })
-    .join("\n");
+    .join('\n');
   const lexicon = glosses
     .map((g) => {
       const lemma = g.lemma_iast ?? g.lemma_sa ?? g.word_sa;
       return `#${g.word_idx} ${lemma}: ${g.gloss_text}`;
     })
-    .join("\n");
+    .join('\n');
   return { morphology, lexicon_glosses: lexicon };
 }
 
 function pdReferenceFor(textSlug: string): string {
   const ref = PD_REFERENCES[textSlug];
-  if (!ref) return "(no public-domain English translation available for this text; ground on Sanskrit alone)";
+  if (!ref)
+    return '(no public-domain English translation available for this text; ground on Sanskrit alone)';
   return `${ref.citation}\nNote: ${ref.note}\n(Reference signal only — trust Sanskrit + morphology when they disagree.)`;
 }
 
@@ -267,7 +277,7 @@ function insertTranslation(
   judge: JudgeResult,
   license: string,
 ): void {
-  const status = judge.score >= JUDGE_PUBLISH_THRESHOLD ? "published" : "draft";
+  const status = judge.score >= JUDGE_PUBLISH_THRESHOLD ? 'published' : 'draft';
   db.query(
     `INSERT INTO translations
       (verse_id, lang, translator, translation_text, source, license, status,
@@ -302,7 +312,7 @@ type AnthropicClient = {
       max_tokens: number;
       temperature: number;
       system: string;
-      messages: Array<{ role: "user" | "assistant"; content: string }>;
+      messages: Array<{ role: 'user' | 'assistant'; content: string }>;
     }) => Promise<{ content: Array<{ type: string; text?: string }> }>;
   };
 };
@@ -312,21 +322,29 @@ let _client: AnthropicClient | null = null;
 async function getClient(): Promise<AnthropicClient | null> {
   if (_client) return _client;
   if (!process.env.ANTHROPIC_API_KEY) {
-    console.warn("[warn] ANTHROPIC_API_KEY not set — live API calls will be skipped");
+    console.warn('[warn] ANTHROPIC_API_KEY not set — live API calls will be skipped');
     return null;
   }
   try {
     // dynamic import so missing SDK does not crash the scaffold at import time
-    const mod = (await import("@anthropic-ai/sdk")) as unknown as { default: new (cfg: { apiKey: string }) => AnthropicClient };
+    const mod = (await import('@anthropic-ai/sdk')) as unknown as {
+      default: new (cfg: { apiKey: string }) => AnthropicClient;
+    };
     _client = new mod.default({ apiKey: process.env.ANTHROPIC_API_KEY });
     return _client;
   } catch (err) {
-    console.warn("[warn] @anthropic-ai/sdk not installed — run `bun add @anthropic-ai/sdk`. Skipping live calls.");
+    console.warn(
+      '[warn] @anthropic-ai/sdk not installed — run `bun add @anthropic-ai/sdk`. Skipping live calls.',
+    );
     return null;
   }
 }
 
-async function callClaude(systemPrompt: string, userContent: string, temperature: number): Promise<string | null> {
+async function callClaude(
+  systemPrompt: string,
+  userContent: string,
+  temperature: number,
+): Promise<string | null> {
   const client = await getClient();
   if (!client) return null;
   const resp = await client.messages.create({
@@ -334,20 +352,25 @@ async function callClaude(systemPrompt: string, userContent: string, temperature
     max_tokens: 4096,
     temperature,
     system: systemPrompt,
-    messages: [{ role: "user", content: userContent }],
+    messages: [{ role: 'user', content: userContent }],
   });
-  const block = resp.content.find((b) => b.type === "text");
+  const block = resp.content.find((b) => b.type === 'text');
   return block?.text ?? null;
 }
 
 function parseJsonStrict<T>(raw: string, label: string): T {
   // Tolerate optional Markdown fences that the model sometimes emits despite
   // the prompt's instruction to output JSON only.
-  const trimmed = raw.trim().replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "");
+  const trimmed = raw
+    .trim()
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/```\s*$/, '');
   try {
     return JSON.parse(trimmed) as T;
   } catch (err) {
-    throw new Error(`Failed to parse ${label} JSON: ${(err as Error).message}\n---raw---\n${raw}\n----------`);
+    throw new Error(
+      `Failed to parse ${label} JSON: ${(err as Error).message}\n---raw---\n${raw}\n----------`,
+    );
   }
 }
 
@@ -368,11 +391,11 @@ async function processVerse(
 
   const promptVars: Record<string, string> = {
     devanagari: verse.devanagari,
-    iast: verse.iast ?? "(no IAST available)",
-    slp1: verse.slp1 ?? "(no SLP1 available)",
+    iast: verse.iast ?? '(no IAST available)',
+    slp1: verse.slp1 ?? '(no SLP1 available)',
     morphology,
     lexicon_glosses,
-    meter: verse.meter ?? "(no meter tag)",
+    meter: verse.meter ?? '(no meter tag)',
     prev_verse_context: prev,
     target_language: lang,
     pd_english_reference: pdRef,
@@ -381,36 +404,55 @@ async function processVerse(
   const translatePrompt = renderTemplate(templates.translate, promptVars);
 
   if (dryRun) {
-    console.log(`\n[dry-run] verse ${verse.text_slug} ${verse.chapter}.${verse.verse_num} (id=${verse.id})`);
-    console.log(`  lang=${lang}  morph_words=${glosses.length}  pd_ref=${PD_REFERENCES[verse.text_slug] ? "yes" : "no"}`);
-    console.log(`  would call ${MODEL} with v1-sanskrit-grounded prompt (~${translatePrompt.length} chars)`);
-    console.log(`  would then judge with v1-judge prompt, write status='published' if judge_score >= ${JUDGE_PUBLISH_THRESHOLD}`);
+    console.log(
+      `\n[dry-run] verse ${verse.text_slug} ${verse.chapter}.${verse.verse_num} (id=${verse.id})`,
+    );
+    console.log(
+      `  lang=${lang}  morph_words=${glosses.length}  pd_ref=${PD_REFERENCES[verse.text_slug] ? 'yes' : 'no'}`,
+    );
+    console.log(
+      `  would call ${MODEL} with v1-sanskrit-grounded prompt (~${translatePrompt.length} chars)`,
+    );
+    console.log(
+      `  would then judge with v1-judge prompt, write status='published' if judge_score >= ${JUDGE_PUBLISH_THRESHOLD}`,
+    );
     return;
   }
 
   // 1. translation
-  const rawTranslate = await callClaude(translatePrompt, "Translate the verse above per the contract. Output JSON only.", 0.2);
+  const rawTranslate = await callClaude(
+    translatePrompt,
+    'Translate the verse above per the contract. Output JSON only.',
+    0.2,
+  );
   if (rawTranslate === null) {
     console.log(`  [skip] no API client; verse ${verse.id} not translated`);
     return;
   }
-  const translationResult = parseJsonStrict<TranslationResult>(rawTranslate, "translation");
+  const translationResult = parseJsonStrict<TranslationResult>(rawTranslate, 'translation');
   await sleep(RATE_LIMIT_SLEEP_MS);
 
   // 2. judge
-  const judgePromptVars = { ...promptVars, candidate_translation: JSON.stringify(translationResult, null, 2) };
+  const judgePromptVars = {
+    ...promptVars,
+    candidate_translation: JSON.stringify(translationResult, null, 2),
+  };
   const judgePrompt = renderTemplate(templates.judge, judgePromptVars);
-  const rawJudge = await callClaude(judgePrompt, "Score the candidate translation per the rubric. Output JSON only.", 0.0);
+  const rawJudge = await callClaude(
+    judgePrompt,
+    'Score the candidate translation per the rubric. Output JSON only.',
+    0.0,
+  );
   if (rawJudge === null) {
     console.log(`  [skip] no API client during judge step; verse ${verse.id} not written`);
     return;
   }
-  const judgeResult = parseJsonStrict<JudgeResult>(rawJudge, "judge");
+  const judgeResult = parseJsonStrict<JudgeResult>(rawJudge, 'judge');
   await sleep(RATE_LIMIT_SLEEP_MS);
 
   // 3. write
   insertTranslation(db, verse.id, lang, translationResult, judgeResult, textLicense);
-  const status = judgeResult.score >= JUDGE_PUBLISH_THRESHOLD ? "published" : "draft";
+  const status = judgeResult.score >= JUDGE_PUBLISH_THRESHOLD ? 'published' : 'draft';
   console.log(
     `  [${status}] ${verse.text_slug} ${verse.chapter}.${verse.verse_num} judge=${judgeResult.score} confidence=${translationResult.confidence}`,
   );
@@ -422,17 +464,19 @@ function sleep(ms: number): Promise<void> {
 
 function loadTextLicense(db: Database, textSlug: string): string {
   const row = db
-    .query<{ license: string | null }, [string]>("SELECT license FROM texts WHERE slug = ?")
+    .query<{ license: string | null }, [string]>('SELECT license FROM texts WHERE slug = ?')
     .get(textSlug);
   // Default to CC-BY-SA 4.0 per plan; falls back to text-level license if set.
-  return row?.license ?? "CC-BY-SA-4.0";
+  return row?.license ?? 'CC-BY-SA-4.0';
 }
 
 export async function main(): Promise<void> {
   const opts = parseArgs(Bun.argv.slice(2));
 
   if (!existsSync(opts.dbPath)) {
-    throw new Error(`DB not found at ${opts.dbPath}. Run \`bun pipeline/ingest/init-db.ts\` first.`);
+    throw new Error(
+      `DB not found at ${opts.dbPath}. Run \`bun pipeline/ingest/init-db.ts\` first.`,
+    );
   }
   if (!existsSync(PROMPT_TRANSLATE_PATH)) {
     throw new Error(`Prompt not found at ${PROMPT_TRANSLATE_PATH}`);
@@ -442,16 +486,16 @@ export async function main(): Promise<void> {
   }
 
   const templates = {
-    translate: readFileSync(PROMPT_TRANSLATE_PATH, "utf8"),
-    judge: readFileSync(PROMPT_JUDGE_PATH, "utf8"),
+    translate: readFileSync(PROMPT_TRANSLATE_PATH, 'utf8'),
+    judge: readFileSync(PROMPT_JUDGE_PATH, 'utf8'),
   };
 
   const db = new Database(opts.dbPath);
-  db.exec("PRAGMA foreign_keys = ON;");
+  db.exec('PRAGMA foreign_keys = ON;');
 
   const verses = loadVersesNeedingTranslation(db, opts.text, opts.lang, opts.limit);
   console.log(
-    `Translate runner: text=${opts.text} lang=${opts.lang} limit=${opts.limit ?? "none"} dry_run=${opts.dryRun}`,
+    `Translate runner: text=${opts.text} lang=${opts.lang} limit=${opts.limit ?? 'none'} dry_run=${opts.dryRun}`,
   );
   console.log(`Found ${verses.length} verse(s) without a ${opts.lang} translation.`);
 
@@ -462,13 +506,18 @@ export async function main(): Promise<void> {
 
   const textLicense = loadTextLicense(db, opts.text);
   console.log(`Text license: ${textLicense}`);
-  console.log(`Model: ${MODEL_DISPLAY} (${MODEL})  prompt: ${PROMPT_VERSION_TRANSLATE}  judge: ${PROMPT_VERSION_JUDGE}`);
+  console.log(
+    `Model: ${MODEL_DISPLAY} (${MODEL})  prompt: ${PROMPT_VERSION_TRANSLATE}  judge: ${PROMPT_VERSION_JUDGE}`,
+  );
 
   for (const verse of verses) {
     try {
       await processVerse(db, verse, opts.lang, templates, opts.dryRun, textLicense);
     } catch (err) {
-      console.error(`[err] verse ${verse.id} (${verse.text_slug} ${verse.chapter}.${verse.verse_num}):`, (err as Error).message);
+      console.error(
+        `[err] verse ${verse.id} (${verse.text_slug} ${verse.chapter}.${verse.verse_num}):`,
+        (err as Error).message,
+      );
     }
   }
 

@@ -32,19 +32,19 @@
  * No external CSV/XML deps — tiny built-in writers below.
  */
 
-import { Database } from "bun:sqlite";
-import { createHash } from "node:crypto";
+import { Database } from 'bun:sqlite';
+import { createHash } from 'node:crypto';
 import {
   copyFileSync,
   existsSync,
   mkdirSync,
-  readdirSync,
   readFileSync,
+  readdirSync,
   statSync,
   writeFileSync,
-} from "node:fs";
-import { dirname, join, relative, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+} from 'node:fs';
+import { dirname, join, relative, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // ---------------------------------------------------------------
 // CLI
@@ -66,12 +66,12 @@ function parseArgs(): Args {
 
   // pipeline/dataset/publish.ts → repo root is two dirs up.
   const here = dirname(fileURLToPath(import.meta.url));
-  const repoRoot = resolve(here, "..", "..");
+  const repoRoot = resolve(here, '..', '..');
 
   return {
-    version: get("--version") ?? defaultVersion(),
-    out: get("--out") ?? resolve(repoRoot, "dataset", "build"),
-    db: get("--db") ?? resolve(repoRoot, "db", "sohamhamso.db"),
+    version: get('--version') ?? defaultVersion(),
+    out: get('--out') ?? resolve(repoRoot, 'dataset', 'build'),
+    db: get('--db') ?? resolve(repoRoot, 'db', 'sohamhamso.db'),
     repoRoot,
   };
 }
@@ -79,16 +79,14 @@ function parseArgs(): Args {
 function defaultVersion(): string {
   const d = new Date();
   const y = d.getUTCFullYear();
-  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(d.getUTCDate()).padStart(2, "0");
+  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
   return `v${y}.${m}.${day}`;
 }
 
 function assertVersion(v: string): void {
   if (!/^v\d{4}\.\d{2}\.\d{2}$/.test(v)) {
-    throw new Error(
-      `--version must match vYYYY.MM.DD, got: ${v}. (Per V1 DX Spec § 1.)`,
-    );
+    throw new Error(`--version must match vYYYY.MM.DD, got: ${v}. (Per V1 DX Spec § 1.)`);
   }
 }
 
@@ -97,8 +95,8 @@ function assertVersion(v: string): void {
 // ---------------------------------------------------------------
 
 function csvCell(v: unknown): string {
-  if (v === null || v === undefined) return "";
-  const s = typeof v === "string" ? v : String(v);
+  if (v === null || v === undefined) return '';
+  const s = typeof v === 'string' ? v : String(v);
   if (/[",\r\n]/.test(s)) {
     return `"${s.replace(/"/g, '""')}"`;
   }
@@ -106,7 +104,7 @@ function csvCell(v: unknown): string {
 }
 
 function csvRow(cells: unknown[]): string {
-  return cells.map(csvCell).join(",");
+  return cells.map(csvCell).join(',');
 }
 
 function writeCsv(
@@ -121,9 +119,9 @@ function writeCsv(
     count++;
   }
   // Trailing newline keeps `wc -l` honest and matches POSIX text-file convention.
-  const body = out.join("\n") + "\n";
-  writeFileSync(path, body, "utf8");
-  return { rows: count, bytes: Buffer.byteLength(body, "utf8") };
+  const body = out.join('\n') + '\n';
+  writeFileSync(path, body, 'utf8');
+  return { rows: count, bytes: Buffer.byteLength(body, 'utf8') };
 }
 
 // ---------------------------------------------------------------
@@ -131,13 +129,13 @@ function writeCsv(
 // ---------------------------------------------------------------
 
 function xmlEscape(s: string | null | undefined): string {
-  if (s === null || s === undefined) return "";
+  if (s === null || s === undefined) return '';
   return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
 }
 
 // ---------------------------------------------------------------
@@ -145,98 +143,93 @@ function xmlEscape(s: string | null | undefined): string {
 // ---------------------------------------------------------------
 
 const TEXTS_COLS = [
-  "id",
-  "slug",
-  "title_sa",
-  "title_en",
-  "title_iast",
-  "author",
-  "tradition",
-  "school",
-  "era",
-  "source",
-  "source_url",
-  "source_revision",
-  "license",
-  "attribution_html",
-  "parent_text_id",
-  "manuscript_url",
-  "description",
-  "created_at",
-  "updated_at",
+  'id',
+  'slug',
+  'title_sa',
+  'title_en',
+  'title_iast',
+  'author',
+  'tradition',
+  'school',
+  'era',
+  'source',
+  'source_url',
+  'source_revision',
+  'license',
+  'attribution_html',
+  'parent_text_id',
+  'manuscript_url',
+  'description',
+  'created_at',
+  'updated_at',
 ];
 
 const VERSES_COLS = [
-  "id",
-  "text_id",
-  "book",
-  "chapter",
-  "verse_num",
-  "devanagari",
-  "slp1",
-  "iast",
-  "meter",
-  "manuscript_folio_ref",
-  "created_at",
+  'id',
+  'text_id',
+  'book',
+  'chapter',
+  'verse_num',
+  'devanagari',
+  'slp1',
+  'iast',
+  'meter',
+  'manuscript_folio_ref',
+  'created_at',
 ];
 
 const TRANSLATIONS_COLS = [
-  "id",
-  "verse_id",
-  "lang",
-  "translator",
-  "translation_text",
-  "source",
-  "license",
-  "status",
-  "ai_assisted",
-  "model",
-  "model_version",
-  "prompt_version",
-  "judge_score",
-  "reviewer",
-  "reviewed_at",
-  "created_at",
-  "updated_at",
+  'id',
+  'verse_id',
+  'lang',
+  'translator',
+  'translation_text',
+  'source',
+  'license',
+  'status',
+  'ai_assisted',
+  'model',
+  'model_version',
+  'prompt_version',
+  'judge_score',
+  'reviewer',
+  'reviewed_at',
+  'created_at',
+  'updated_at',
 ];
 
 const WORD_GLOSSES_COLS = [
-  "id",
-  "verse_id",
-  "word_idx",
-  "word_sa",
-  "lemma_sa",
-  "lemma_iast",
-  "gloss_lang",
-  "gloss_text",
-  "morph",
-  "created_at",
+  'id',
+  'verse_id',
+  'word_idx',
+  'word_sa',
+  'lemma_sa',
+  'lemma_iast',
+  'gloss_lang',
+  'gloss_text',
+  'morph',
+  'created_at',
 ];
 
 const PARALLELS_COLS = [
-  "id",
-  "source_verse_id",
-  "target_verse_id",
-  "citation_type",
-  "confidence",
-  "extracted_by",
-  "created_at",
+  'id',
+  'source_verse_id',
+  'target_verse_id',
+  'citation_type',
+  'confidence',
+  'extracted_by',
+  'created_at',
 ];
 
 // ---------------------------------------------------------------
 // Row generators (streaming via bun:sqlite iterate())
 // ---------------------------------------------------------------
 
-function* rowsFor(
-  db: Database,
-  table: string,
-  cols: string[],
-): Iterable<unknown[]> {
+function* rowsFor(db: Database, table: string, cols: string[]): Iterable<unknown[]> {
   // `draft` translations are reviewer-internal per STATUS-CONTRACT.md — never
   // shipped to the public dataset. All other tables ship as-is.
-  const where =
-    table === "translations" ? " WHERE status IN ('reviewed','published')" : "";
-  const q = db.query(`SELECT ${cols.join(", ")} FROM ${table}${where}`);
+  const where = table === 'translations' ? " WHERE status IN ('reviewed','published')" : '';
+  const q = db.query(`SELECT ${cols.join(', ')} FROM ${table}${where}`);
   // bun:sqlite Query has .iterate() in recent versions; fall back to .all().
   // We use .all() for portability — datasets stay small (~thousands of rows).
   const all = q.all() as Record<string, unknown>[];
@@ -255,14 +248,11 @@ interface TextRow {
   [k: string]: unknown;
 }
 
-function emitJsonShards(
-  db: Database,
-  dir: string,
-): { files: number; bytes: number } {
+function emitJsonShards(db: Database, dir: string): { files: number; bytes: number } {
   mkdirSync(dir, { recursive: true });
 
   const texts = db
-    .query(`SELECT ${TEXTS_COLS.join(", ")} FROM texts ORDER BY slug`)
+    .query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`)
     .all() as TextRow[];
 
   let files = 0;
@@ -271,7 +261,7 @@ function emitJsonShards(
   for (const text of texts) {
     const verses = db
       .query(
-        `SELECT ${VERSES_COLS.join(", ")} FROM verses WHERE text_id = ? ORDER BY chapter, verse_num`,
+        `SELECT ${VERSES_COLS.join(', ')} FROM verses WHERE text_id = ? ORDER BY chapter, verse_num`,
       )
       .all(text.id) as Array<Record<string, unknown>>;
 
@@ -336,10 +326,10 @@ function emitJsonShards(
 
     const shard = { text, chapters };
     const path = join(dir, `${text.slug}.json`);
-    const body = JSON.stringify(shard, null, 2) + "\n";
-    writeFileSync(path, body, "utf8");
+    const body = JSON.stringify(shard, null, 2) + '\n';
+    writeFileSync(path, body, 'utf8');
     files++;
-    bytes += Buffer.byteLength(body, "utf8");
+    bytes += Buffer.byteLength(body, 'utf8');
   }
 
   return { files, bytes };
@@ -349,15 +339,12 @@ function emitJsonShards(
 // TEI-XML shards — minimal valid TEI per text
 // ---------------------------------------------------------------
 
-function emitTeiShards(
-  db: Database,
-  dir: string,
-): { files: number; bytes: number } {
+function emitTeiShards(db: Database, dir: string): { files: number; bytes: number } {
   mkdirSync(dir, { recursive: true });
 
-  const texts = db
-    .query(`SELECT ${TEXTS_COLS.join(", ")} FROM texts ORDER BY slug`)
-    .all() as Array<Record<string, unknown>>;
+  const texts = db.query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`).all() as Array<
+    Record<string, unknown>
+  >;
 
   let files = 0;
   let bytes = 0;
@@ -380,39 +367,38 @@ function emitTeiShards(
     const lines: string[] = [];
     lines.push('<?xml version="1.0" encoding="UTF-8"?>');
     lines.push('<TEI xmlns="http://www.tei-c.org/ns/1.0">');
-    lines.push("  <teiHeader>");
-    lines.push("    <fileDesc>");
-    lines.push("      <titleStmt>");
+    lines.push('  <teiHeader>');
+    lines.push('    <fileDesc>');
+    lines.push('      <titleStmt>');
     lines.push(`        <title xml:lang="sa">${xmlEscape(text.title_sa as string)}</title>`);
     lines.push(`        <title xml:lang="en">${xmlEscape(text.title_en as string)}</title>`);
     if (text.author) {
       lines.push(`        <author>${xmlEscape(text.author as string)}</author>`);
     }
-    lines.push("      </titleStmt>");
-    lines.push("      <publicationStmt>");
-    lines.push("        <publisher>sohamhamso</publisher>");
+    lines.push('      </titleStmt>');
+    lines.push('      <publicationStmt>');
+    lines.push('        <publisher>sohamhamso</publisher>');
     lines.push(
       `        <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</licence></availability>`,
     );
-    lines.push("      </publicationStmt>");
-    lines.push("      <sourceDesc>");
+    lines.push('      </publicationStmt>');
+    lines.push('      <sourceDesc>');
     if (text.source || text.source_url || text.source_revision) {
-      lines.push("        <bibl>");
-      if (text.source)
-        lines.push(`          <title>${xmlEscape(text.source as string)}</title>`);
+      lines.push('        <bibl>');
+      if (text.source) lines.push(`          <title>${xmlEscape(text.source as string)}</title>`);
       if (text.source_url)
         lines.push(`          <ref target="${xmlEscape(text.source_url as string)}"/>`);
       if (text.source_revision)
         lines.push(`          <edition>${xmlEscape(text.source_revision as string)}</edition>`);
-      lines.push("        </bibl>");
+      lines.push('        </bibl>');
     } else {
-      lines.push("        <p>Source not recorded.</p>");
+      lines.push('        <p>Source not recorded.</p>');
     }
-    lines.push("      </sourceDesc>");
-    lines.push("    </fileDesc>");
-    lines.push("  </teiHeader>");
-    lines.push("  <text>");
-    lines.push("    <body>");
+    lines.push('      </sourceDesc>');
+    lines.push('    </fileDesc>');
+    lines.push('  </teiHeader>');
+    lines.push('  <text>');
+    lines.push('    <body>');
 
     const chapters = [...byChapter.entries()].sort((a, b) => a[0] - b[0]);
     for (const [chapter, vs] of chapters) {
@@ -420,14 +406,14 @@ function emitTeiShards(
       for (const v of vs) {
         const attrs = [`n="${v.verse_num}"`, 'type="verse"'];
         if (v.meter) attrs.push(`met="${xmlEscape(v.meter as string)}"`);
-        lines.push(`        <lg ${attrs.join(" ")}>`);
+        lines.push(`        <lg ${attrs.join(' ')}>`);
         // Each line of the verse becomes an <l>. We split on \n; if there are
         // no newlines, the whole verse is one <l>.
-        const dev = String(v.devanagari ?? "")
+        const dev = String(v.devanagari ?? '')
           .split(/\r?\n/)
           .map((s) => s.trim())
           .filter((s) => s.length > 0);
-        if (dev.length === 0) dev.push("");
+        if (dev.length === 0) dev.push('');
         for (const line of dev) {
           lines.push(`          <l xml:lang="sa-Deva">${xmlEscape(line)}</l>`);
         }
@@ -440,21 +426,21 @@ function emitTeiShards(
             lines.push(`          <l xml:lang="sa-Latn">${xmlEscape(line)}</l>`);
           }
         }
-        lines.push("        </lg>");
+        lines.push('        </lg>');
       }
-      lines.push("      </div>");
+      lines.push('      </div>');
     }
 
-    lines.push("    </body>");
-    lines.push("  </text>");
-    lines.push("</TEI>");
-    lines.push("");
+    lines.push('    </body>');
+    lines.push('  </text>');
+    lines.push('</TEI>');
+    lines.push('');
 
     const path = join(dir, `${text.slug}.xml`);
-    const body = lines.join("\n");
-    writeFileSync(path, body, "utf8");
+    const body = lines.join('\n');
+    writeFileSync(path, body, 'utf8');
     files++;
-    bytes += Buffer.byteLength(body, "utf8");
+    bytes += Buffer.byteLength(body, 'utf8');
   }
 
   return { files, bytes };
@@ -513,7 +499,7 @@ https://github.com/sohamhamso/sohamhamso.
 ## What's here
 
 \`\`\`
-${version === "" ? "sohamhamso-dataset-vYYYY.MM.DD" : `sohamhamso-dataset-${version}`}/
+${version === '' ? 'sohamhamso-dataset-vYYYY.MM.DD' : `sohamhamso-dataset-${version}`}/
 ├── README.md
 ├── LICENSE-CC-BY-SA-4.0
 ├── ATTRIBUTION.md
@@ -593,25 +579,25 @@ interface BuildStats {
 }
 
 function collectStats(db: Database, prevTexts: Set<string>): BuildStats {
-  const texts = db.query("SELECT slug FROM texts ORDER BY slug").all() as Array<{
+  const texts = db.query('SELECT slug FROM texts ORDER BY slug').all() as Array<{
     slug: string;
   }>;
   const langsRows = db
-    .query("SELECT DISTINCT lang FROM translations ORDER BY lang")
+    .query('SELECT DISTINCT lang FROM translations ORDER BY lang')
     .all() as Array<{ lang: string }>;
 
   const newTexts = texts.filter((t) => !prevTexts.has(t.slug)).map((t) => t.slug);
 
   return {
     texts: texts.length,
-    verses: (db.query("SELECT COUNT(*) AS n FROM verses").get() as { n: number }).n,
+    verses: (db.query('SELECT COUNT(*) AS n FROM verses').get() as { n: number }).n,
     translations: (
       db
         .query("SELECT COUNT(*) AS n FROM translations WHERE status IN ('reviewed','published')")
         .get() as { n: number }
     ).n,
-    glosses: (db.query("SELECT COUNT(*) AS n FROM word_glosses").get() as { n: number }).n,
-    parallels: (db.query("SELECT COUNT(*) AS n FROM parallels").get() as { n: number }).n,
+    glosses: (db.query('SELECT COUNT(*) AS n FROM word_glosses').get() as { n: number }).n,
+    parallels: (db.query('SELECT COUNT(*) AS n FROM parallels').get() as { n: number }).n,
     langs: langsRows.map((r) => r.lang),
     newTexts,
   };
@@ -628,19 +614,19 @@ function findPreviousBuild(outDir: string, currentVersion: string): string | nul
 
 function readPrevTexts(prevBuild: string | null): Set<string> {
   if (!prevBuild) return new Set();
-  const path = join(prevBuild, "texts.csv");
+  const path = join(prevBuild, 'texts.csv');
   if (!existsSync(path)) return new Set();
-  const lines = readFileSync(path, "utf8").split(/\r?\n/);
+  const lines = readFileSync(path, 'utf8').split(/\r?\n/);
   if (lines.length < 2) return new Set();
-  const header = lines[0].split(",");
-  const slugIdx = header.indexOf("slug");
+  const header = lines[0].split(',');
+  const slugIdx = header.indexOf('slug');
   if (slugIdx < 0) return new Set();
   const slugs = new Set<string>();
   for (let i = 1; i < lines.length; i++) {
     const line = lines[i];
     if (!line) continue;
     // Naive split — slug never contains a comma in our schema.
-    const cols = line.split(",");
+    const cols = line.split(',');
     if (cols[slugIdx]) slugs.add(cols[slugIdx]);
   }
   return slugs;
@@ -657,11 +643,11 @@ function buildChangelog(
 
   const newTextsLine =
     stats.newTexts.length > 0
-      ? `- New texts: ${stats.newTexts.join(", ")}\n`
+      ? `- New texts: ${stats.newTexts.join(', ')}\n`
       : `- No new texts (re-publish or non-text additions).\n`;
 
   const prevNote = prevBuild
-    ? `- Diffed against previous build: \`${prevBuild.split("/").pop()}\`.\n`
+    ? `- Diffed against previous build: \`${prevBuild.split('/').pop()}\`.\n`
     : `- First published build.\n`;
 
   const entry = `## ${version} — ${today}
@@ -671,15 +657,15 @@ ${prevNote}- Texts: ${stats.texts}
 - Translations (reviewed/published): ${stats.translations}
 - Word glosses: ${stats.glosses}
 - Parallel-passage links: ${stats.parallels}
-- Languages: ${stats.langs.join(", ") || "(none yet)"}
+- Languages: ${stats.langs.join(', ') || '(none yet)'}
 ${newTextsLine}
 `;
 
   // If an existing CHANGELOG.md is found in the repo root (unlikely for
   // dataset bundle, but harmless), prepend the new entry under the header.
-  if (existingChangelog && existingChangelog.startsWith("# Changelog")) {
-    const rest = existingChangelog.replace(/^# Changelog[\s\S]*?\n\n/, "");
-    return header + entry + "\n" + rest;
+  if (existingChangelog && existingChangelog.startsWith('# Changelog')) {
+    const rest = existingChangelog.replace(/^# Changelog[\s\S]*?\n\n/, '');
+    return header + entry + '\n' + rest;
   }
   return header + entry;
 }
@@ -703,37 +689,33 @@ function walk(dir: string, base: string = dir): string[] {
 
 function writeChecksums(dir: string): { files: number; bytes: number } {
   const files = walk(dir)
-    .filter((f) => relative(dir, f) !== "checksums.sha256")
+    .filter((f) => relative(dir, f) !== 'checksums.sha256')
     .sort();
 
   const lines: string[] = [];
   for (const f of files) {
     const data = readFileSync(f);
-    const hash = createHash("sha256").update(data).digest("hex");
+    const hash = createHash('sha256').update(data).digest('hex');
     const rel = relative(dir, f);
     lines.push(`${hash}  ${rel}`);
   }
-  const body = lines.join("\n") + "\n";
-  const out = join(dir, "checksums.sha256");
-  writeFileSync(out, body, "utf8");
-  return { files: files.length, bytes: Buffer.byteLength(body, "utf8") };
+  const body = lines.join('\n') + '\n';
+  const out = join(dir, 'checksums.sha256');
+  writeFileSync(out, body, 'utf8');
+  return { files: files.length, bytes: Buffer.byteLength(body, 'utf8') };
 }
 
 // ---------------------------------------------------------------
 // Copy a repo file into the bundle, with fallback content if missing.
 // ---------------------------------------------------------------
 
-function copyOrWrite(
-  src: string | null,
-  dst: string,
-  fallback: string | null,
-): void {
+function copyOrWrite(src: string | null, dst: string, fallback: string | null): void {
   if (src && existsSync(src)) {
     copyFileSync(src, dst);
     return;
   }
   if (fallback !== null) {
-    writeFileSync(dst, fallback, "utf8");
+    writeFileSync(dst, fallback, 'utf8');
     return;
   }
   throw new Error(`Missing required file: ${src ?? dst}`);
@@ -760,55 +742,55 @@ function main(): void {
 
   // --- CSVs (exact schema order) ---
   const csvStats = {
-    texts: writeCsv(join(buildDir, "texts.csv"), TEXTS_COLS, rowsFor(db, "texts", TEXTS_COLS)),
-    verses: writeCsv(join(buildDir, "verses.csv"), VERSES_COLS, rowsFor(db, "verses", VERSES_COLS)),
+    texts: writeCsv(join(buildDir, 'texts.csv'), TEXTS_COLS, rowsFor(db, 'texts', TEXTS_COLS)),
+    verses: writeCsv(join(buildDir, 'verses.csv'), VERSES_COLS, rowsFor(db, 'verses', VERSES_COLS)),
     translations: writeCsv(
-      join(buildDir, "translations.csv"),
+      join(buildDir, 'translations.csv'),
       TRANSLATIONS_COLS,
-      rowsFor(db, "translations", TRANSLATIONS_COLS),
+      rowsFor(db, 'translations', TRANSLATIONS_COLS),
     ),
     word_glosses: writeCsv(
-      join(buildDir, "word_glosses.csv"),
+      join(buildDir, 'word_glosses.csv'),
       WORD_GLOSSES_COLS,
-      rowsFor(db, "word_glosses", WORD_GLOSSES_COLS),
+      rowsFor(db, 'word_glosses', WORD_GLOSSES_COLS),
     ),
     parallels: writeCsv(
-      join(buildDir, "parallels.csv"),
+      join(buildDir, 'parallels.csv'),
       PARALLELS_COLS,
-      rowsFor(db, "parallels", PARALLELS_COLS),
+      rowsFor(db, 'parallels', PARALLELS_COLS),
     ),
   };
 
   // --- JSON shards ---
-  const jsonStats = emitJsonShards(db, join(buildDir, "json"));
+  const jsonStats = emitJsonShards(db, join(buildDir, 'json'));
 
   // --- TEI shards ---
-  const teiStats = emitTeiShards(db, join(buildDir, "tei"));
+  const teiStats = emitTeiShards(db, join(buildDir, 'tei'));
 
   // --- README / LICENSE / ATTRIBUTION ---
   // README is bundle-specific (not a copy of the repo README): it includes the
   // pandas load snippet from the V1 DX Spec, the integrity-verification
   // command, and a list of THIS bundle's files. The repo README is the
   // project-level surface; the bundle README is the dataset-level surface.
-  writeFileSync(join(buildDir, "README.md"), datasetReadme(args.version), "utf8");
+  writeFileSync(join(buildDir, 'README.md'), datasetReadme(args.version), 'utf8');
 
-  writeFileSync(join(buildDir, "LICENSE-CC-BY-SA-4.0"), LICENSE_CC_BY_SA, "utf8");
+  writeFileSync(join(buildDir, 'LICENSE-CC-BY-SA-4.0'), LICENSE_CC_BY_SA, 'utf8');
 
   copyOrWrite(
-    join(args.repoRoot, "ATTRIBUTION.md"),
-    join(buildDir, "ATTRIBUTION.md"),
-    "# Attribution\n\nSee https://github.com/sohamhamso/sohamhamso/blob/main/ATTRIBUTION.md\n",
+    join(args.repoRoot, 'ATTRIBUTION.md'),
+    join(buildDir, 'ATTRIBUTION.md'),
+    '# Attribution\n\nSee https://github.com/sohamhamso/sohamhamso/blob/main/ATTRIBUTION.md\n',
   );
 
   // --- CHANGELOG (diffed against previous build in args.out) ---
   const prevBuild = findPreviousBuild(args.out, args.version);
   const prevTexts = readPrevTexts(prevBuild);
   const stats = collectStats(db, prevTexts);
-  const existingChangelog = existsSync(join(args.repoRoot, "CHANGELOG.md"))
-    ? readFileSync(join(args.repoRoot, "CHANGELOG.md"), "utf8")
+  const existingChangelog = existsSync(join(args.repoRoot, 'CHANGELOG.md'))
+    ? readFileSync(join(args.repoRoot, 'CHANGELOG.md'), 'utf8')
     : null;
   const changelog = buildChangelog(args.version, stats, prevBuild, existingChangelog);
-  writeFileSync(join(buildDir, "CHANGELOG.md"), changelog, "utf8");
+  writeFileSync(join(buildDir, 'CHANGELOG.md'), changelog, 'utf8');
 
   // --- checksums.sha256 (MUST be last — hashes every file in the dir) ---
   writeChecksums(buildDir);
@@ -837,7 +819,7 @@ function main(): void {
     langs: stats.langs,
   };
 
-  console.log("sohamhamso dataset build complete:");
+  console.log('sohamhamso dataset build complete:');
   console.log(JSON.stringify(summary, null, 2));
   console.log(
     `\n  ${allFiles.length} files, ${(totalBytes / 1024).toFixed(1)} KiB at:\n  ${buildDir}`,

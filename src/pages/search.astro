@@ -1,4 +1,5 @@
 ---
+import Masthead from '../components/Masthead.astro';
 /**
  * /search?q=... — full search results page.
  *
@@ -11,8 +12,7 @@
  * the SearchBox overlay instead. We opt-out of prerender so once an
  * adapter lands the page just works.
  */
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Masthead from "../components/Masthead.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 export const prerender = false;
 
@@ -29,9 +29,9 @@ interface VerseHit {
   score?: number;
 }
 
-const qRaw = (Astro.url.searchParams.get("q") ?? "").trim();
+const qRaw = (Astro.url.searchParams.get('q') ?? '').trim();
 const q = qRaw.slice(0, 500);
-const lang = (Astro.url.searchParams.get("lang") ?? "en").toLowerCase();
+const lang = (Astro.url.searchParams.get('lang') ?? 'en').toLowerCase();
 const limit = 50;
 
 // Try the B2 helper. If absent, fall back to a placeholder render so
@@ -45,27 +45,23 @@ if (q) {
   const t0 = performance.now();
   try {
     // @ts-expect-error — module may not exist until B2 lands.
-    const lib = await import("../lib/search.ts").catch(() => null);
-    if (lib && typeof lib.blendedSearch === "function") {
+    const lib = await import('../lib/search.ts').catch(() => null);
+    if (lib && typeof lib.blendedSearch === 'function') {
       const out = await lib.blendedSearch(q, lang, limit);
       results = Array.isArray(out) ? out : [];
     } else {
       stub = true;
     }
   } catch (e) {
-    searchError = (e as Error)?.message ?? "Search failed.";
+    searchError = (e as Error)?.message ?? 'Search failed.';
   }
   took_ms = Math.round(performance.now() - t0);
 }
 
-const verseHref = (h: VerseHit) =>
-  `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
-const verseLabel = (h: VerseHit) =>
-  `${h.text_title} ${h.chapter}.${h.verse_num}`;
+const verseHref = (h: VerseHit) => `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
+const verseLabel = (h: VerseHit) => `${h.text_title} ${h.chapter}.${h.verse_num}`;
 
-const title = q
-  ? `Search: ${q} — sohamhamso`
-  : "Search — sohamhamso";
+const title = q ? `Search: ${q} — sohamhamso` : 'Search — sohamhamso';
 ---
 
 <BaseLayout title={title} description={`Search results for "${q}"`}>

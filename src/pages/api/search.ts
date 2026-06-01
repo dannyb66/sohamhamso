@@ -24,7 +24,7 @@
  * it correctly.
  */
 
-import type { APIRoute } from "astro";
+import type { APIRoute } from 'astro';
 
 export const prerender = false;
 
@@ -42,7 +42,7 @@ export interface VerseHit {
   score?: number;
 }
 
-type SearchType = "lexical" | "semantic" | "blended";
+type SearchType = 'lexical' | 'semantic' | 'blended';
 
 // ─── B2 helper bridge ─────────────────────────────────────────────────
 /**
@@ -50,25 +50,13 @@ type SearchType = "lexical" | "semantic" | "blended";
  * exist yet, returns null and the endpoint falls back to the stub.
  */
 async function loadSearchLib(): Promise<{
-  lexicalSearch?: (
-    q: string,
-    lang: string,
-    limit: number,
-  ) => Promise<VerseHit[]> | VerseHit[];
-  semanticSearch?: (
-    q: string,
-    lang: string,
-    limit: number,
-  ) => Promise<VerseHit[]> | VerseHit[];
-  blendedSearch?: (
-    q: string,
-    lang: string,
-    limit: number,
-  ) => Promise<VerseHit[]> | VerseHit[];
+  lexicalSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
+  semanticSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
+  blendedSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
 } | null> {
   try {
     // @ts-expect-error — may not exist until B2 lands; we handle null.
-    const mod = await import("../../lib/search.ts");
+    const mod = await import('../../lib/search.ts');
     return mod as Awaited<ReturnType<typeof loadSearchLib>>;
   } catch {
     return null;
@@ -80,7 +68,7 @@ function json(body: unknown, init: ResponseInit = {}): Response {
   return new Response(JSON.stringify(body), {
     ...init,
     headers: {
-      "Content-Type": "application/json; charset=utf-8",
+      'Content-Type': 'application/json; charset=utf-8',
       ...(init.headers || {}),
     },
   });
@@ -91,7 +79,7 @@ function err(message: string, status = 400): Response {
     { data: [], meta: { count: 0, took_ms: 0 }, error: message },
     {
       status,
-      headers: { "Cache-Control": "no-store" },
+      headers: { 'Cache-Control': 'no-store' },
     },
   );
 }
@@ -100,21 +88,18 @@ function err(message: string, status = 400): Response {
 export const GET: APIRoute = async ({ url }) => {
   const t0 = performance.now();
 
-  const qRaw = (url.searchParams.get("q") ?? "").trim();
+  const qRaw = (url.searchParams.get('q') ?? '').trim();
   if (!qRaw) return err("Query 'q' is required.");
-  if (qRaw.length > 500) return err("Query too long (max 500 chars).");
+  if (qRaw.length > 500) return err('Query too long (max 500 chars).');
 
-  const typeRaw = (url.searchParams.get("type") ?? "lexical").toLowerCase();
-  const type: SearchType =
-    typeRaw === "semantic" || typeRaw === "blended" ? typeRaw : "lexical";
+  const typeRaw = (url.searchParams.get('type') ?? 'lexical').toLowerCase();
+  const type: SearchType = typeRaw === 'semantic' || typeRaw === 'blended' ? typeRaw : 'lexical';
 
-  const limitRaw = Number(url.searchParams.get("limit") ?? "8");
+  const limitRaw = Number(url.searchParams.get('limit') ?? '8');
   const limit =
-    Number.isFinite(limitRaw) && limitRaw > 0
-      ? Math.min(50, Math.max(1, Math.floor(limitRaw)))
-      : 8;
+    Number.isFinite(limitRaw) && limitRaw > 0 ? Math.min(50, Math.max(1, Math.floor(limitRaw))) : 8;
 
-  const lang = (url.searchParams.get("lang") ?? "en").toLowerCase();
+  const lang = (url.searchParams.get('lang') ?? 'en').toLowerCase();
 
   const lib = await loadSearchLib();
 
@@ -122,16 +107,16 @@ export const GET: APIRoute = async ({ url }) => {
   let note: string | undefined;
 
   if (!lib) {
-    note = "search-stub";
+    note = 'search-stub';
   } else {
     try {
       const fn =
-        type === "blended"
+        type === 'blended'
           ? lib.blendedSearch
-          : type === "semantic"
+          : type === 'semantic'
             ? lib.semanticSearch
             : lib.lexicalSearch;
-      if (typeof fn === "function") {
+      if (typeof fn === 'function') {
         const out = await fn(qRaw, lang, limit);
         data = Array.isArray(out) ? out.slice(0, limit) : [];
       } else {
@@ -140,8 +125,8 @@ export const GET: APIRoute = async ({ url }) => {
     } catch (e) {
       // Don't leak internals — log to console for debugging.
       // eslint-disable-next-line no-console
-      console.error("[api/search]", e);
-      return err("Search failed.", 500);
+      console.error('[api/search]', e);
+      return err('Search failed.', 500);
     }
   }
 
@@ -160,12 +145,11 @@ export const GET: APIRoute = async ({ url }) => {
       status: 200,
       headers: {
         // 30s shared cache + brief browser cache for repeated keystrokes.
-        "Cache-Control": "public, max-age=10, s-maxage=30",
+        'Cache-Control': 'public, max-age=10, s-maxage=30',
       },
     },
   );
 };
 
 // Reject other methods explicitly so the route's surface is honest.
-export const POST: APIRoute = () =>
-  err("GET only.", 405);
+export const POST: APIRoute = () => err('GET only.', 405);

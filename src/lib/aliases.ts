@@ -18,7 +18,7 @@
  * All exported functions are PURE (no I/O beyond `listTexts()`).
  */
 
-import { listTexts, type TextSummary } from "./db";
+import { type TextSummary, listTexts } from './db';
 
 /**
  * Curated slug alias map.
@@ -38,22 +38,22 @@ import { listTexts, type TextSummary } from "./db";
  */
 export const SLUG_ALIASES: Record<string, string> = {
   // Pratyabhijñā-hr̥dayam: vocalic ṛ romanized as "ri" by lay readers
-  "pratyabhijna-hridayam": "pratyabhijna-hrdayam",
+  'pratyabhijna-hridayam': 'pratyabhijna-hrdayam',
   // Śiva Sūtras: "sh" vs "s" for ś
-  "shiva-sutras": "siva-sutras",
+  'shiva-sutras': 'siva-sutras',
   // Karpūrādi Stotra: split-compound and long-ū variants
-  "karpura-adi-stotra": "karpuradi-stotra",
-  "karpuradi-stotram": "karpuradi-stotra",
-  "karpuuradi-stotra": "karpuradi-stotra",
+  'karpura-adi-stotra': 'karpuradi-stotra',
+  'karpuradi-stotram': 'karpuradi-stotra',
+  'karpuuradi-stotra': 'karpuradi-stotra',
   // Vijñāna Bhairava Tantra: common 'vijnan' typo and short forms
-  "vijnan-bhairava-tantra": "vijnana-bhairava-tantra",
-  "vijnana-bhairava": "vijnana-bhairava-tantra",
+  'vijnan-bhairava-tantra': 'vijnana-bhairava-tantra',
+  'vijnana-bhairava': 'vijnana-bhairava-tantra',
   // Spanda Kārikās: singular vs plural
-  "spanda-karika": "spanda-karikas",
+  'spanda-karika': 'spanda-karikas',
 };
 
 /** Known traditions (extend if DB grows). */
-export const KNOWN_TRADITIONS = ["trika", "shakta", "kaula", "shaiva"] as const;
+export const KNOWN_TRADITIONS = ['trika', 'shakta', 'kaula', 'shaiva'] as const;
 export type KnownTradition = (typeof KNOWN_TRADITIONS)[number];
 
 /**
@@ -102,9 +102,7 @@ export function resolveAlias(
  * The canonical (tradition, slug) pair is NOT emitted here — that's the live
  * page, and emitting it again would collide in Astro's route table.
  */
-export function enumerateRedirectPairs(
-  texts: TextSummary[] = listTexts(),
-): Array<{
+export function enumerateRedirectPairs(texts: TextSummary[] = listTexts()): Array<{
   wrongTradition: string;
   wrongSlug: string;
   canonicalTradition: string;

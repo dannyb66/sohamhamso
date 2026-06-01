@@ -24,10 +24,10 @@
  */
 
 // biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import type { Database } from "bun:sqlite";
-import { LRUCache } from "lru-cache";
-import OpenAI from "openai";
-import { getDb } from "./db";
+import type { Database } from 'bun:sqlite';
+import { LRUCache } from 'lru-cache';
+import OpenAI from 'openai';
+import { getDb } from './db';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -42,14 +42,14 @@ export interface VerseHit {
   iast: string | null;
   translation: string | null;
   score: number;
-  source: "lexical" | "semantic" | "blended";
+  source: 'lexical' | 'semantic' | 'blended';
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Constants
 // ─────────────────────────────────────────────────────────────────────────────
 
-const EMBED_MODEL = "text-embedding-3-large";
+const EMBED_MODEL = 'text-embedding-3-large';
 const EMBED_DIMS = 3072;
 const RRF_K = 60; // standard reciprocal-rank-fusion constant
 
@@ -64,22 +64,22 @@ const RRF_K = 60; // standard reciprocal-rank-fusion constant
 
 const SYNONYMS: Record<string, string[]> = {
   // Devanagari ↔ IAST ↔ ASCII
-  krsna: ["kṛṣṇa", "krishna", "कृष्ण"],
-  "kṛṣṇa": ["krsna", "krishna", "कृष्ण"],
-  krishna: ["krsna", "kṛṣṇa", "कृष्ण"],
-  shiva: ["śiva", "siva", "शिव"],
-  "śiva": ["shiva", "siva", "शिव"],
-  siva: ["shiva", "śiva", "शिव"],
-  shakti: ["śakti", "sakti", "शक्ति"],
-  "śakti": ["shakti", "sakti", "शक्ति"],
-  spanda: ["स्पन्द"],
-  pratyabhijna: ["pratyabhijñā", "प्रत्यभिज्ञा"],
-  "pratyabhijñā": ["pratyabhijna", "प्रत्यभिज्ञा"],
+  krsna: ['kṛṣṇa', 'krishna', 'कृष्ण'],
+  kṛṣṇa: ['krsna', 'krishna', 'कृष्ण'],
+  krishna: ['krsna', 'kṛṣṇa', 'कृष्ण'],
+  shiva: ['śiva', 'siva', 'शिव'],
+  śiva: ['shiva', 'siva', 'शिव'],
+  siva: ['shiva', 'śiva', 'शिव'],
+  shakti: ['śakti', 'sakti', 'शक्ति'],
+  śakti: ['shakti', 'sakti', 'शक्ति'],
+  spanda: ['स्पन्द'],
+  pratyabhijna: ['pratyabhijñā', 'प्रत्यभिज्ञा'],
+  pratyabhijñā: ['pratyabhijna', 'प्रत्यभिज्ञा'],
   // common diacritic-stripping
-  "ā": ["a"],
-  "ī": ["i"],
-  "ū": ["u"],
-  "ṛ": ["r", "ri"],
+  ā: ['a'],
+  ī: ['i'],
+  ū: ['u'],
+  ṛ: ['r', 'ri'],
 };
 
 function expandSynonyms(query: string): string[] {
@@ -178,11 +178,7 @@ interface LexicalRow {
   score: number;
 }
 
-export async function lexicalSearch(
-  query: string,
-  lang = "en",
-  limit = 10,
-): Promise<VerseHit[]> {
+export async function lexicalSearch(query: string, lang = 'en', limit = 10): Promise<VerseHit[]> {
   if (!query.trim()) return [];
   const db = getDb();
   const variants = expandSynonyms(query);
@@ -193,7 +189,7 @@ export async function lexicalSearch(
   if (ftsAvailable(db)) {
     // FTS5 path — assumes `verses_fts(verse_id UNINDEXED, iast, devanagari, translation_text)`
     // exists with content from verses + translations. Score = bm25.
-    const ftsQuery = variants.map((v) => `"${v.replace(/"/g, '""')}"`).join(" OR ");
+    const ftsQuery = variants.map((v) => `"${v.replace(/"/g, '""')}"`).join(' OR ');
     rows = db
       .query<LexicalRow, [string, string, number]>(
         `
@@ -219,8 +215,8 @@ export async function lexicalSearch(
   } else {
     // LIKE fallback — slower, but works on any SQLite build.
     const ors = variants
-      .map(() => "(v.iast LIKE ? OR v.devanagari LIKE ? OR tr.translation_text LIKE ?)")
-      .join(" OR ");
+      .map(() => '(v.iast LIKE ? OR v.devanagari LIKE ? OR tr.translation_text LIKE ?)')
+      .join(' OR ');
     const params: (string | number)[] = [lang];
     for (const v of variants) {
       const wild = `%${v}%`;
@@ -251,7 +247,7 @@ export async function lexicalSearch(
       .all(...params);
   }
 
-  return rows.map((r) => ({ ...r, source: "lexical" as const }));
+  return rows.map((r) => ({ ...r, source: 'lexical' as const }));
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -275,11 +271,7 @@ interface VerseMetaRow {
 
 function bufferToFloat32(buf: Buffer): Float32Array {
   // BLOB is little-endian Float32 (matches libSQL F32_BLOB layout).
-  return new Float32Array(
-    buf.buffer,
-    buf.byteOffset,
-    buf.byteLength / 4,
-  );
+  return new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
 }
 
 function cosine(a: Float32Array, b: Float32Array): number {
@@ -302,11 +294,7 @@ function cosine(a: Float32Array, b: Float32Array): number {
   return denom === 0 ? 0 : dot / denom;
 }
 
-export async function semanticSearch(
-  query: string,
-  lang = "en",
-  limit = 10,
-): Promise<VerseHit[]> {
+export async function semanticSearch(query: string, lang = 'en', limit = 10): Promise<VerseHit[]> {
   if (!query.trim()) return [];
   const qvec = await embedQuery(query);
   if (!qvec) {
@@ -344,7 +332,7 @@ export async function semanticSearch(
 
   // Hydrate verse metadata + translation in one query.
   const ids = top.map((t) => t.verse_id);
-  const placeholders = ids.map(() => "?").join(",");
+  const placeholders = ids.map(() => '?').join(',');
   const meta = db
     .query<VerseMetaRow, (string | number)[]>(
       `
@@ -371,7 +359,7 @@ export async function semanticSearch(
   for (const { verse_id, score } of top) {
     const m = metaById.get(verse_id);
     if (!m) continue;
-    out.push({ ...m, score, source: "semantic" });
+    out.push({ ...m, score, source: 'semantic' });
   }
   return out;
 }
@@ -383,11 +371,7 @@ export async function semanticSearch(
 // Run lexical + semantic in parallel, combine, sort, return top-N.
 // ─────────────────────────────────────────────────────────────────────────────
 
-export async function blendedSearch(
-  query: string,
-  lang = "en",
-  limit = 10,
-): Promise<VerseHit[]> {
+export async function blendedSearch(query: string, lang = 'en', limit = 10): Promise<VerseHit[]> {
   if (!query.trim()) return [];
 
   // Pull more from each leg than we plan to return so the fusion has
@@ -396,11 +380,11 @@ export async function blendedSearch(
 
   const [lex, sem] = await Promise.all([
     lexicalSearch(query, lang, fetchPer).catch((e) => {
-      console.error("[search] lexical failed:", e);
+      console.error('[search] lexical failed:', e);
       return [] as VerseHit[];
     }),
     semanticSearch(query, lang, fetchPer).catch((e) => {
-      console.error("[search] semantic failed:", e);
+      console.error('[search] semantic failed:', e);
       return [] as VerseHit[];
     }),
   ]);
@@ -434,7 +418,7 @@ export async function blendedSearch(
 
   const out: VerseHit[] = [];
   for (const { hit, score } of fused.values()) {
-    out.push({ ...hit, score, source: "blended" });
+    out.push({ ...hit, score, source: 'blended' });
   }
   out.sort((a, b) => b.score - a.score);
   return out.slice(0, limit);

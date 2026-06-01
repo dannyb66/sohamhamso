@@ -2,26 +2,26 @@
 
 @theme {
   /* Color palette: manuscript-at-dawn (light) */
-  --color-bg: #FAF6EE;
-  --color-surface: #FBF7EC;
-  --color-ink: #1C1A17;
-  --color-ink-muted: #6E665A;
-  --color-accent: #7A1F18;
-  --color-accent-soft: #C8A27A;
-  --color-rule: #D8CFBE;
-  --color-success: #4F6B3A;
-  --color-warning: #B8741A;
-  --color-error: #7A1F18;
+  --color-bg: #faf6ee;
+  --color-surface: #fbf7ec;
+  --color-ink: #1c1a17;
+  --color-ink-muted: #6e665a;
+  --color-accent: #7a1f18;
+  --color-accent-soft: #c8a27a;
+  --color-rule: #d8cfbe;
+  --color-success: #4f6b3a;
+  --color-warning: #b8741a;
+  --color-error: #7a1f18;
 
   /* Type ramp (mobile/desktop) */
-  --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px */
-  --text-md: 1.125rem;    /* 18px */
-  --text-lg: 1.375rem;    /* 22px */
-  --text-xl: 1.75rem;     /* 28px */
-  --text-2xl: 2.25rem;    /* 36px */
-  --text-3xl: 3rem;       /* 48px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-md: 1.125rem; /* 18px */
+  --text-lg: 1.375rem; /* 22px */
+  --text-xl: 1.75rem; /* 28px */
+  --text-2xl: 2.25rem; /* 36px */
+  --text-3xl: 3rem; /* 48px */
 
   /* Spacing scale (8px base) */
   --spacing-1: 4px;
@@ -43,6 +43,25 @@
   --font-iast: "Source Serif 4", "Source Serif Pro", "Cardo", Georgia, serif;
   --font-chrome: "Inter", system-ui, sans-serif;
 
+  /*
+   * Per-script font aliases. The ScriptSwitcher swaps `[data-sa]` text to the
+   * chosen script and sets `data-sa-script` on <html>; per-script font rules
+   * live in global.css and read these tokens. These are also used by the
+   * `:lang(xx)` selectors so translation surfaces (lang="ta", etc.) render in
+   * the matching Noto Serif face. Single source of truth — never hard-code
+   * a family name in component CSS.
+   */
+  --font-sa-ta: "Noto Serif Tamil", serif;
+  --font-sa-te: "Noto Serif Telugu", serif;
+  --font-sa-bn: "Noto Serif Bengali", serif;
+  --font-sa-kn: "Noto Serif Kannada", serif;
+  --font-sa-ml: "Noto Serif Malayalam", serif;
+  --font-sa-gu: "Noto Serif Gujarati", serif;
+  --font-sa-pa: "Noto Serif Gurmukhi", serif;
+  --font-sa-or: "Noto Serif Oriya", serif;
+  /* Assamese shares the Bengali script — same font face. */
+  --font-sa-as: "Noto Serif Bengali", serif;
+
   /* Per-script line-heights (applied via :lang() selectors in global.css) */
   --line-height-sa: 1.85;
   --line-height-iast: 1.6;
@@ -63,48 +82,48 @@
 
 /* Dark theme tokens */
 :root[data-theme="dark"] {
-  --color-bg: #14110D;
+  --color-bg: #14110d;
   --color-surface: #181512;
-  --color-ink: #ECE5D6;
-  --color-ink-muted: #998A75;
-  --color-accent: #C8514A;
-  --color-accent-soft: #6B4B33;
-  --color-rule: #2A2520;
-  --color-success: #8FA975;
-  --color-warning: #D89A4A;
-  --color-error: #C8514A;
+  --color-ink: #ece5d6;
+  --color-ink-muted: #998a75;
+  --color-accent: #c8514a;
+  --color-accent-soft: #6b4b33;
+  --color-rule: #2a2520;
+  --color-success: #8fa975;
+  --color-warning: #d89a4a;
+  --color-error: #c8514a;
 }
 
 /* Sepia theme tokens (middle ground) */
 :root[data-theme="sepia"] {
-  --color-bg: #EFE3CC;
-  --color-surface: #F5EBD6;
-  --color-ink: #2C2620;
-  --color-ink-muted: #6E5E48;
+  --color-bg: #efe3cc;
+  --color-surface: #f5ebd6;
+  --color-ink: #2c2620;
+  --color-ink-muted: #6e5e48;
 }
 
 /* OLED-black theme (true black for OLED savings) */
 :root[data-theme="oled"] {
   --color-bg: #000000;
-  --color-surface: #0A0907;
-  --color-ink: #ECE5D6;
-  --color-ink-muted: #998A75;
-  --color-accent: #C8514A;
-  --color-rule: #1A1815;
+  --color-surface: #0a0907;
+  --color-ink: #ece5d6;
+  --color-ink-muted: #998a75;
+  --color-accent: #c8514a;
+  --color-rule: #1a1815;
 }
 
 /* prefers-color-scheme handling — only when user hasn't set explicit theme */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --color-bg: #14110D;
+    --color-bg: #14110d;
     --color-surface: #181512;
-    --color-ink: #ECE5D6;
-    --color-ink-muted: #998A75;
-    --color-accent: #C8514A;
-    --color-accent-soft: #6B4B33;
-    --color-rule: #2A2520;
-    --color-success: #8FA975;
-    --color-warning: #D89A4A;
-    --color-error: #C8514A;
+    --color-ink: #ece5d6;
+    --color-ink-muted: #998a75;
+    --color-accent: #c8514a;
+    --color-accent-soft: #6b4b33;
+    --color-rule: #2a2520;
+    --color-success: #8fa975;
+    --color-warning: #d89a4a;
+    --color-error: #c8514a;
   }
 }

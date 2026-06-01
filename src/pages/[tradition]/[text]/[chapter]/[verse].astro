@@ -1,4 +1,11 @@
 ---
+import AIAssistedBadge from '../../../../components/AIAssistedBadge.astro';
+import ParallelChip from '../../../../components/ParallelChip.astro';
+import ReaderLangSwap from '../../../../components/ReaderLangSwap.solid';
+import ScriptSwitcher from '../../../../components/ScriptSwitcher.solid';
+import TranslationDrawer from '../../../../components/TranslationDrawer.solid';
+import VerseAnatomy from '../../../../components/VerseAnatomy.astro';
+import WordSheet from '../../../../components/WordSheet.solid';
 /**
  * Verse-page route: /{tradition}/{text-slug}/{chapter}/{verse}
  *
@@ -7,16 +14,16 @@
  *
  * Spec: see /Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl-agent-aa24b14e8caa90241.md
  */
-import BaseLayout from "../../../../layouts/BaseLayout.astro";
-import VerseAnatomy from "../../../../components/VerseAnatomy.astro";
-import AIAssistedBadge from "../../../../components/AIAssistedBadge.astro";
-import ParallelChip from "../../../../components/ParallelChip.astro";
-import ScriptSwitcher from "../../../../components/ScriptSwitcher.solid";
-import WordSheet from "../../../../components/WordSheet.solid";
-import TranslationDrawer from "../../../../components/TranslationDrawer.solid";
-import ReaderLangSwap from "../../../../components/ReaderLangSwap.solid";
-import { listTexts, listAllVerses, getVerse, getVerseTranslations, getVerseAllLanguages, getDb } from "../../../../lib/db";
-import { enumerateRedirectPairs, resolveAlias } from "../../../../lib/aliases";
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { enumerateRedirectPairs, resolveAlias } from '../../../../lib/aliases';
+import {
+  getDb,
+  getVerse,
+  getVerseAllLanguages,
+  getVerseTranslations,
+  listAllVerses,
+  listTexts,
+} from '../../../../lib/db';
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -95,17 +102,14 @@ if (aliasCheck && !aliasCheck.canonical) {
   );
 }
 
-const data = getVerse(text!, chapterNum, verseNum, "en");
+const data = getVerse(text!, chapterNum, verseNum, 'en');
 if (!data) {
   // Astro 5: throw to surface a build-time error if the path made it here
   // without a matching DB row (shouldn't happen — paths come from same source).
-  throw new Error(
-    `Verse not found: ${tradition}/${text}/${chapterNum}/${verseNum}`,
-  );
+  throw new Error(`Verse not found: ${tradition}/${text}/${chapterNum}/${verseNum}`);
 }
 
-const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } =
-  data;
+const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } = data;
 
 const pageTitle = `${textRow.title_en} · ${chapterNum}.${verseNum} — sohamhamso`;
 const pageDescription =
@@ -123,7 +127,7 @@ const lemmaIasts = Array.from(
 const occurrenceCounts = new Map<string, number>();
 if (lemmaIasts.length > 0) {
   const db = getDb();
-  const placeholders = lemmaIasts.map(() => "?").join(",");
+  const placeholders = lemmaIasts.map(() => '?').join(',');
   const rows = db
     .query<{ lemma_iast: string; n: number }, (string | number)[]>(`
       SELECT g.lemma_iast AS lemma_iast, COUNT(DISTINCT g.verse_id) AS n
@@ -153,9 +157,7 @@ const glossesPayload = {
     lemma_iast: g.lemma_iast,
     gloss_text: g.gloss_text,
     morph: g.morph,
-    occurrence_count: g.lemma_iast
-      ? occurrenceCounts.get(g.lemma_iast) ?? 0
-      : 0,
+    occurrence_count: g.lemma_iast ? (occurrenceCounts.get(g.lemma_iast) ?? 0) : 0,
     text_slug: textRow.slug,
   })),
 };

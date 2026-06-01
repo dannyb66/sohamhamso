@@ -13,9 +13,11 @@
  * disclosure with full provenance — V1 stub; the bottom-sheet
  * implementation lands in V1.1 (WordSheet pattern can be lifted).
  */
+import { type BadgeStatus, computeBadgeState } from '../lib/ai-badge-state';
+
 interface Props {
   aiAssisted: boolean;
-  status: "draft" | "reviewed" | "published";
+  status: BadgeStatus;
   translator?: string | null;
   year?: number | string | null;
   model?: string | null;
@@ -37,33 +39,16 @@ const {
   generatedAt,
 } = Astro.props;
 
-// Resolve state → variant + label
-type Variant = "amber" | "emerald" | "slate";
-let variant: Variant;
-let label: string;
-let icon: string;
-
-if (aiAssisted && status === "reviewed") {
-  variant = "emerald";
-  label = reviewerName ? `AI · reviewed by ${reviewerName}` : "AI · reviewed";
-  icon = "✓";
-} else if (aiAssisted) {
-  // covers status='published' (and falls back for 'draft' if ever surfaced)
-  variant = "amber";
-  label = "AI · not verified";
-  icon = "AI";
-} else {
-  variant = "slate";
-  // Don't duplicate "PD" / "public-domain" when the translator string
-  // already encodes that — keep the pill compact.
-  const t = translator?.trim() || "Public domain";
-  const tIsPdSelf = /\bpd\b|public[\s-]?domain/i.test(t);
-  const parts: string[] = [t];
-  if (year) parts.push(String(year));
-  if (!tIsPdSelf) parts.push("PD");
-  label = parts.join(" · ");
-  icon = "PD";
-}
+// State → variant + label resolved via the pure helper (unit-tested in
+// tests/unit/ai-assisted-badge.test.ts). Keep this component a thin
+// renderer so the matrix has a single source of truth.
+const { variant, label, icon } = computeBadgeState({
+  aiAssisted,
+  status,
+  translator,
+  year,
+  reviewerName,
+});
 
 // Stable id pairs the <details> with its label so multiple badges on a
 // page don't collide.

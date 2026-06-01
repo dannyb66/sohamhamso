@@ -1,12 +1,12 @@
 ---
+import KaulaContentAdvisory from '../../../components/KaulaContentAdvisory.astro';
 /**
  * Text overview page: /{tradition}/{text-slug}
  * Lists chapters + verse counts.
  */
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import KaulaContentAdvisory from "../../../components/KaulaContentAdvisory.astro";
-import { listTexts, listChapters, getText } from "../../../lib/db";
-import { enumerateRedirectPairs, resolveAlias } from "../../../lib/aliases";
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { enumerateRedirectPairs, resolveAlias } from '../../../lib/aliases';
+import { getText, listChapters, listTexts } from '../../../lib/db';
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -42,10 +42,7 @@ if (redirectTo) {
 
 const aliasCheck = resolveAlias(tradition!, text!);
 if (aliasCheck && !aliasCheck.canonical) {
-  return Astro.redirect(
-    `/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`,
-    301,
-  );
+  return Astro.redirect(`/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
 }
 
 const textRow = getText(text!);

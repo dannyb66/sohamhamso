@@ -1,6 +1,8 @@
 @import "./tokens.css";
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 /* Accessibility — keyboard skip-link, hidden until focused. */
 .skip-link {
@@ -34,26 +36,114 @@ body {
 }
 
 /* Per-script typography */
-:lang(sa), [lang="sa"] {
+:lang(sa),
+[lang="sa"] {
   font-family: var(--font-sa-body);
   line-height: var(--line-height-sa);
 }
 
-:lang(en), [lang="en"] {
+:lang(en),
+[lang="en"] {
   font-family: var(--font-iast);
   line-height: var(--line-height-iast);
 }
 
-/* Other Indic scripts use Noto family per-language. */
-:lang(ta), [lang="ta"] { font-family: "Noto Serif Tamil", serif; line-height: 1.75; }
-:lang(te), [lang="te"] { font-family: "Noto Serif Telugu", serif; line-height: 1.70; }
-:lang(bn), [lang="bn"], :lang(as), [lang="as"] { font-family: "Noto Serif Bengali", serif; line-height: 1.80; }
-:lang(kn), [lang="kn"] { font-family: "Noto Serif Kannada", serif; line-height: 1.70; }
-:lang(ml), [lang="ml"] { font-family: "Noto Serif Malayalam", serif; line-height: 1.75; }
-:lang(gu), [lang="gu"] { font-family: "Noto Serif Gujarati", serif; line-height: 1.80; }
-:lang(pa), [lang="pa"] { font-family: "Noto Serif Gurmukhi", serif; line-height: 1.80; }
-:lang(or), [lang="or"] { font-family: "Noto Serif Oriya", serif; line-height: 1.80; }
-:lang(hi), [lang="hi"], :lang(mr), [lang="mr"] { font-family: var(--font-sa-body); line-height: var(--line-height-sa); }
+/* Other Indic scripts use Noto family per-language — driven from tokens.css. */
+:lang(ta),
+[lang="ta"] {
+  font-family: var(--font-sa-ta);
+  line-height: 1.75;
+}
+:lang(te),
+[lang="te"] {
+  font-family: var(--font-sa-te);
+  line-height: 1.7;
+}
+:lang(bn),
+[lang="bn"] {
+  font-family: var(--font-sa-bn);
+  line-height: 1.8;
+}
+:lang(as),
+[lang="as"] {
+  font-family: var(--font-sa-as);
+  line-height: 1.8;
+}
+:lang(kn),
+[lang="kn"] {
+  font-family: var(--font-sa-kn);
+  line-height: 1.7;
+}
+:lang(ml),
+[lang="ml"] {
+  font-family: var(--font-sa-ml);
+  line-height: 1.75;
+}
+:lang(gu),
+[lang="gu"] {
+  font-family: var(--font-sa-gu);
+  line-height: 1.8;
+}
+:lang(pa),
+[lang="pa"] {
+  font-family: var(--font-sa-pa);
+  line-height: 1.8;
+}
+:lang(or),
+[lang="or"] {
+  font-family: var(--font-sa-or);
+  line-height: 1.8;
+}
+:lang(hi),
+[lang="hi"],
+:lang(mr),
+[lang="mr"] {
+  font-family: var(--font-sa-body);
+  line-height: var(--line-height-sa);
+}
+
+/*
+ * Script-switcher integration.
+ *
+ * ScriptSwitcher.solid.tsx transliterates every `[data-sa]` element's text
+ * and sets `data-sa-script="<id>"` on <html>. Match on the root attribute
+ * to flip the font-family for every Sanskrit-bearing element in one place.
+ *
+ * Source script (devanagari) intentionally has no rule — `[data-sa]` falls
+ * through to `:lang(sa)` / `--font-sa-body` above. IAST stays in the IAST
+ * font (Source Serif 4) for diacritic quality. The 8 Indic scripts each
+ * pull their dedicated Noto Serif face.
+ */
+:root[data-sa-script="iast"] [data-sa] {
+  font-family: var(--font-iast);
+}
+:root[data-sa-script="tamil"] [data-sa] {
+  font-family: var(--font-sa-ta);
+}
+:root[data-sa-script="telugu"] [data-sa] {
+  font-family: var(--font-sa-te);
+}
+:root[data-sa-script="bengali"] [data-sa] {
+  font-family: var(--font-sa-bn);
+}
+:root[data-sa-script="assamese"] [data-sa] {
+  font-family: var(--font-sa-as);
+}
+:root[data-sa-script="kannada"] [data-sa] {
+  font-family: var(--font-sa-kn);
+}
+:root[data-sa-script="malayalam"] [data-sa] {
+  font-family: var(--font-sa-ml);
+}
+:root[data-sa-script="gujarati"] [data-sa] {
+  font-family: var(--font-sa-gu);
+}
+:root[data-sa-script="gurmukhi"] [data-sa] {
+  font-family: var(--font-sa-pa);
+}
+:root[data-sa-script="oriya"] [data-sa] {
+  font-family: var(--font-sa-or);
+}
 
 /* Reader container */
 .reader {
@@ -84,7 +174,9 @@ a:hover {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -98,7 +190,9 @@ a:hover {
 }
 
 /* Touch target floor */
-button, [role="button"], a.button {
+button,
+[role="button"],
+a.button {
   min-height: 44px;
   min-width: 44px;
 }

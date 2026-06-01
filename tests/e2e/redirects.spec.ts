@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from '@playwright/test';
 
 /**
  * Routing redirect tests.
@@ -19,37 +19,37 @@ import { test, expect } from "@playwright/test";
  * navigation lands at the canonical URL.
  */
 
-test.describe("routing redirects", () => {
+test.describe('routing redirects', () => {
   const cases: Array<{ from: string; to: string; label: string }> = [
     {
-      label: "wrong tradition: trika → shakta (karpuradi-stotra is shakta)",
-      from: "/trika/karpuradi-stotra/1/1",
-      to: "/shakta/karpuradi-stotra/1/1",
+      label: 'wrong tradition: trika → shakta (karpuradi-stotra is shakta)',
+      from: '/trika/karpuradi-stotra/1/1',
+      to: '/shakta/karpuradi-stotra/1/1',
     },
     {
-      label: "wrong tradition on text-overview URL",
-      from: "/trika/karpuradi-stotra",
-      to: "/shakta/karpuradi-stotra",
+      label: 'wrong tradition on text-overview URL',
+      from: '/trika/karpuradi-stotra',
+      to: '/shakta/karpuradi-stotra',
     },
     {
-      label: "slug alias: hridayam (with i) → hrdayam (vocalic ṛ)",
-      from: "/trika/pratyabhijna-hridayam/1/1",
-      to: "/trika/pratyabhijna-hrdayam/1/1",
+      label: 'slug alias: hridayam (with i) → hrdayam (vocalic ṛ)',
+      from: '/trika/pratyabhijna-hridayam/1/1',
+      to: '/trika/pratyabhijna-hrdayam/1/1',
     },
     {
-      label: "slug alias + wrong tradition combined (hridayam + shakta)",
-      from: "/shakta/pratyabhijna-hridayam/1/1",
-      to: "/trika/pratyabhijna-hrdayam/1/1",
+      label: 'slug alias + wrong tradition combined (hridayam + shakta)',
+      from: '/shakta/pratyabhijna-hridayam/1/1',
+      to: '/trika/pratyabhijna-hrdayam/1/1',
     },
     {
-      label: "slug alias: shiva-sutras (sh) → siva-sutras (s)",
-      from: "/trika/shiva-sutras/1/1",
-      to: "/trika/siva-sutras/1/1",
+      label: 'slug alias: shiva-sutras (sh) → siva-sutras (s)',
+      from: '/trika/shiva-sutras/1/1',
+      to: '/trika/siva-sutras/1/1',
     },
     {
-      label: "slug alias: spanda-karika (singular) → spanda-karikas",
-      from: "/trika/spanda-karika/1/1",
-      to: "/trika/spanda-karikas/1/1",
+      label: 'slug alias: spanda-karika (singular) → spanda-karikas',
+      from: '/trika/spanda-karika/1/1',
+      to: '/trika/spanda-karikas/1/1',
     },
   ];
 
@@ -68,16 +68,16 @@ test.describe("routing redirects", () => {
     });
   }
 
-  test("canonical URLs are NOT redirected", async ({ page }) => {
+  test('canonical URLs are NOT redirected', async ({ page }) => {
     // Belt-and-suspenders: we should not have accidentally clobbered a real
     // page with a redirect. Each text's canonical (tradition, slug) must
     // still render at 200.
     const canonical = [
-      "/shakta/karpuradi-stotra/1/1",
-      "/trika/pratyabhijna-hrdayam/1/1",
-      "/trika/siva-sutras/1/1",
-      "/trika/spanda-karikas/1/1",
-      "/trika/vijnana-bhairava-tantra/1/1",
+      '/shakta/karpuradi-stotra/1/1',
+      '/trika/pratyabhijna-hrdayam/1/1',
+      '/trika/siva-sutras/1/1',
+      '/trika/spanda-karikas/1/1',
+      '/trika/vijnana-bhairava-tantra/1/1',
     ];
     for (const u of canonical) {
       const resp = await page.request.get(u, { maxRedirects: 0 });
@@ -85,9 +85,9 @@ test.describe("routing redirects", () => {
     }
   });
 
-  test("unknown slug returns 404 (no fuzzy match)", async ({ page }) => {
+  test('unknown slug returns 404 (no fuzzy match)', async ({ page }) => {
     // Curated aliases only — random unknown slugs must NOT match.
-    const resp = await page.request.get("/trika/totally-fake-text/1/1", {
+    const resp = await page.request.get('/trika/totally-fake-text/1/1', {
       maxRedirects: 0,
     });
     expect(resp.status()).toBe(404);

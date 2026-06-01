@@ -130,14 +130,19 @@ CREATE INDEX IF NOT EXISTS idx_embeddings_verse ON verse_embeddings(verse_id);
 
 CREATE TABLE IF NOT EXISTS subscribers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  email_hash TEXT NOT NULL UNIQUE,  -- HMAC-SHA256(email, SUBSCRIBER_HASH_PEPPER env)
+  email_hash TEXT NOT NULL,  -- HMAC-SHA256(email, SUBSCRIBER_HASH_PEPPER env)
   language TEXT NOT NULL DEFAULT 'en',
   subscribed_at TEXT NOT NULL DEFAULT (datetime('now')),
   unsubscribe_token TEXT NOT NULL UNIQUE,
   region TEXT NOT NULL CHECK(region IN ('us','eu')),
   confirmed INTEGER NOT NULL DEFAULT 0 CHECK(confirmed IN (0,1)),
-  confirmed_at TEXT
+  confirmed_at TEXT,
+  -- A given email may subscribe to multiple languages (one row per
+  -- (email_hash, language) pair). Idempotent re-subscribes hit this
+  -- unique key and are absorbed at the API layer.
+  UNIQUE (email_hash, language)
 );
+CREATE INDEX IF NOT EXISTS idx_subscribers_email_hash ON subscribers(email_hash);
 
 
 -- ============================================================

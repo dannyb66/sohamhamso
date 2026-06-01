@@ -16,24 +16,24 @@
 // Live count from the corpus DB — stays honest as texts are ingested.
 // `listTexts()` already exists in src/lib/db.ts and returns one row per
 // text, so .length is the canonical "All texts (N)" number.
-import { listTexts } from "../lib/db";
+import { listTexts } from '../lib/db';
 const textCount = listTexts().length;
 
 const entries = [
   {
-    title: "If you are new",
-    href: "/trika/siva-sutras/1/1",
-    description: "Begin with the Śiva Sūtras — 77 aphorisms.",
+    title: 'If you are new',
+    href: '/trika/siva-sutras/1/1',
+    description: 'Begin with the Śiva Sūtras — 77 aphorisms.',
   },
   {
-    title: "Daily readings",
-    href: "/daily",
-    description: "A verse at dawn in your inbox.",
+    title: 'Daily readings',
+    href: '/daily',
+    description: 'A verse at dawn in your inbox.',
   },
   {
     title: `All texts (${textCount})`,
-    href: "/texts",
-    description: "Browse the full corpus.",
+    href: '/texts',
+    description: 'Browse the full corpus.',
   },
 ];
 ---

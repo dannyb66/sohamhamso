@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from '@playwright/test';
 
 /**
  * ParallelChip.astro — "📜 parallels (N)" disclosure pill on verse pages.
@@ -13,30 +13,28 @@ import { test, expect } from "@playwright/test";
  * known-parallel verse and asserts the disclosure body contains
  * `.parallels-chip__item` rows linking to the target verses.
  */
-test.describe("parallel chip (verse-page parallels disclosure)", () => {
-  const VERSE_URL = "/trika/siva-sutras/1/1";
+test.describe('parallel chip (verse-page parallels disclosure)', () => {
+  const VERSE_URL = '/trika/siva-sutras/1/1';
 
-  test("chip is hidden when the verse has no parallels", async ({ page }) => {
+  test('chip is hidden when the verse has no parallels', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
 
     // The chip element must not be present in the DOM at all when count=0
     // — it's the only honest UI for "zero parallels found". An empty
     // disclosure with "(0)" would be misleading.
-    const chip = page.locator(".parallels-chip");
+    const chip = page.locator('.parallels-chip');
     await expect(chip).toHaveCount(0);
   });
 
-  test("verse page renders without the chip in the chips slot", async ({
-    page,
-  }) => {
+  test('verse page renders without the chip in the chips slot', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState('networkidle');
 
     // The chips slot still exists (AI-assist badges live there) — we're
     // asserting it just doesn't include a parallels chip.
-    const chipsSlot = page.locator(".verse-chips");
+    const chipsSlot = page.locator('.verse-chips');
     await expect(chipsSlot).toBeVisible();
-    await expect(chipsSlot.locator(".parallels-chip")).toHaveCount(0);
+    await expect(chipsSlot.locator('.parallels-chip')).toHaveCount(0);
   });
 });

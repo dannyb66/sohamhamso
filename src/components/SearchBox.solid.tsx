@@ -32,7 +32,7 @@
  * the trigger click before the placeholder's listener fires (capture-
  * phase listener + `stopImmediatePropagation`).
  */
-import { createSignal, onMount, onCleanup, For, Show } from "solid-js";
+import { For, Show, createSignal, onCleanup, onMount } from 'solid-js';
 
 // ─── Types ────────────────────────────────────────────────────────────
 export interface VerseHit {
@@ -53,19 +53,14 @@ interface ApiResponse {
   meta: { count: number; type: string; took_ms: number };
 }
 
-const EXAMPLE_QUERIES = [
-  "pratyabhijñā",
-  "wherever the mind goes",
-  "कृष्ण",
-  "recognition",
-];
+const EXAMPLE_QUERIES = ['pratyabhijñā', 'wherever the mind goes', 'कृष्ण', 'recognition'];
 
-const RECENT_KEY = "sohamhamso:recent-searches";
+const RECENT_KEY = 'sohamhamso:recent-searches';
 const MAX_RECENT = 10;
 
 // ─── Helpers ──────────────────────────────────────────────────────────
 function loadRecent(): string[] {
-  if (typeof localStorage === "undefined") return [];
+  if (typeof localStorage === 'undefined') return [];
   try {
     const raw = localStorage.getItem(RECENT_KEY);
     if (!raw) return [];
@@ -98,7 +93,7 @@ function verseLabel(h: VerseHit): string {
 // ─── Component ────────────────────────────────────────────────────────
 export default function SearchBox() {
   const [open, setOpen] = createSignal(false);
-  const [query, setQuery] = createSignal("");
+  const [query, setQuery] = createSignal('');
   const [results, setResults] = createSignal<VerseHit[]>([]);
   const [recent, setRecent] = createSignal<string[]>([]);
   const [activeIdx, setActiveIdx] = createSignal(-1);
@@ -106,7 +101,7 @@ export default function SearchBox() {
   const [error, setError] = createSignal<string | null>(null);
 
   let inputEl: HTMLInputElement | undefined;
-  let listboxId = "sohamhamso-search-listbox";
+  const listboxId = 'sohamhamso-search-listbox';
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
   let lastFocused: HTMLElement | null = null;
   let abortCtl: AbortController | null = null;
@@ -130,16 +125,15 @@ export default function SearchBox() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(
-        `/api/search?q=${encodeURIComponent(q)}&type=lexical&limit=8`,
-        { signal: abortCtl.signal },
-      );
+      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&type=lexical&limit=8`, {
+        signal: abortCtl.signal,
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = (await res.json()) as ApiResponse;
       setResults(json.data ?? []);
       setActiveIdx(json.data?.length ? 0 : -1);
     } catch (e) {
-      if ((e as { name?: string })?.name === "AbortError") return;
+      if ((e as { name?: string })?.name === 'AbortError') return;
       setError("Couldn't search just now.");
       setResults([]);
     } finally {
@@ -176,21 +170,21 @@ export default function SearchBox() {
     if (!open()) return;
     const rs = results();
     switch (e.key) {
-      case "Escape":
+      case 'Escape':
         e.preventDefault();
         close();
         break;
-      case "ArrowDown":
+      case 'ArrowDown':
         e.preventDefault();
         if (rs.length === 0) return;
         setActiveIdx((i) => (i + 1) % rs.length);
         break;
-      case "ArrowUp":
+      case 'ArrowUp':
         e.preventDefault();
         if (rs.length === 0) return;
         setActiveIdx((i) => (i <= 0 ? rs.length - 1 : i - 1));
         break;
-      case "Enter": {
+      case 'Enter': {
         e.preventDefault();
         const idx = activeIdx();
         if (idx >= 0 && rs[idx]) {
@@ -210,12 +204,10 @@ export default function SearchBox() {
     // Capture-phase: intercept BEFORE the Masthead's placeholder listener
     // fires. Suppress the placeholder dialog if it's open.
     const target = e.target as HTMLElement | null;
-    if (!target?.closest("[data-search-trigger]")) return;
+    if (!target?.closest('[data-search-trigger]')) return;
     e.preventDefault();
     e.stopImmediatePropagation();
-    const placeholder = document.querySelector<HTMLDialogElement>(
-      "[data-search-modal]",
-    );
+    const placeholder = document.querySelector<HTMLDialogElement>('[data-search-modal]');
     if (placeholder?.open) placeholder.close();
     openBox();
   };
@@ -223,12 +215,10 @@ export default function SearchBox() {
   const onGlobalKey = (e: KeyboardEvent) => {
     // ⌘K / Ctrl-K → open the SearchBox. We add the listener in capture
     // so we beat the Masthead's placeholder shortcut.
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
       e.stopImmediatePropagation();
-      const placeholder = document.querySelector<HTMLDialogElement>(
-        "[data-search-modal]",
-      );
+      const placeholder = document.querySelector<HTMLDialogElement>('[data-search-modal]');
       if (placeholder?.open) placeholder.close();
       openBox();
     }
@@ -237,23 +227,22 @@ export default function SearchBox() {
   const onOpenEvent = () => openBox();
 
   onMount(() => {
-    if (typeof document === "undefined") return;
+    if (typeof document === 'undefined') return;
     setRecent(loadRecent());
-    document.addEventListener("click", onTriggerClick, true);
-    document.addEventListener("keydown", onGlobalKey, true);
-    document.addEventListener("sohamhamso:open-search", onOpenEvent);
+    document.addEventListener('click', onTriggerClick, true);
+    document.addEventListener('keydown', onGlobalKey, true);
+    document.addEventListener('sohamhamso:open-search', onOpenEvent);
   });
   onCleanup(() => {
-    if (typeof document === "undefined") return;
-    document.removeEventListener("click", onTriggerClick, true);
-    document.removeEventListener("keydown", onGlobalKey, true);
-    document.removeEventListener("sohamhamso:open-search", onOpenEvent);
+    if (typeof document === 'undefined') return;
+    document.removeEventListener('click', onTriggerClick, true);
+    document.removeEventListener('keydown', onGlobalKey, true);
+    document.removeEventListener('sohamhamso:open-search', onOpenEvent);
     if (debounceTimer) clearTimeout(debounceTimer);
     if (abortCtl) abortCtl.abort();
   });
 
-  const activeId = () =>
-    activeIdx() >= 0 ? `${listboxId}-opt-${activeIdx()}` : undefined;
+  const activeId = () => (activeIdx() >= 0 ? `${listboxId}-opt-${activeIdx()}` : undefined);
 
   return (
     <Show when={open()}>
@@ -397,7 +386,7 @@ export default function SearchBox() {
                       aria-selected={activeIdx() === i()}
                       class="searchbox__row"
                       classList={{
-                        "searchbox__row--active": activeIdx() === i(),
+                        'searchbox__row--active': activeIdx() === i(),
                       }}
                       onMouseEnter={() => setActiveIdx(i())}
                       onClick={() => {
@@ -413,20 +402,14 @@ export default function SearchBox() {
                         <div class="searchbox__row-iast">{h.iast}</div>
                       </Show>
                       <Show when={h.translation_excerpt}>
-                        <div class="searchbox__row-en">
-                          {h.translation_excerpt}
-                        </div>
+                        <div class="searchbox__row-en">{h.translation_excerpt}</div>
                       </Show>
                     </li>
                   )}
                 </For>
               </ul>
               <div class="searchbox__footer">
-                <button
-                  type="button"
-                  class="searchbox__more"
-                  onClick={() => submitFull(query())}
-                >
+                <button type="button" class="searchbox__more" onClick={() => submitFull(query())}>
                   More results → /search?q={query().trim()}
                 </button>
               </div>

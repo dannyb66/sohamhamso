@@ -29,24 +29,24 @@
  * Z-index: 65 (scrim) / 66 (sheet) — between WordSheet (60/61) and
  * SettingsSheet (70/71).
  */
-import { createSignal, createMemo, onMount, onCleanup, For, Show } from "solid-js";
+import { For, Show, createMemo, createSignal, onCleanup, onMount } from 'solid-js';
 
 // ─── Language registry ────────────────────────────────────────────────
 // Order matches V1 spec: English, Hindi, Bengali, Tamil, Telugu, Marathi,
 // Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese.
 const LANGS: Array<{ code: string; native: string; latin: string }> = [
-  { code: "en", native: "English", latin: "English" },
-  { code: "hi", native: "हिन्दी", latin: "Hindi" },
-  { code: "bn", native: "বাংলা", latin: "Bengali" },
-  { code: "ta", native: "தமிழ்", latin: "Tamil" },
-  { code: "te", native: "తెలుగు", latin: "Telugu" },
-  { code: "mr", native: "मराठी", latin: "Marathi" },
-  { code: "gu", native: "ગુજરાતી", latin: "Gujarati" },
-  { code: "kn", native: "ಕನ್ನಡ", latin: "Kannada" },
-  { code: "ml", native: "മലയാളം", latin: "Malayalam" },
-  { code: "pa", native: "ਪੰਜਾਬੀ", latin: "Punjabi" },
-  { code: "or", native: "ଓଡ଼ିଆ", latin: "Odia" },
-  { code: "as", native: "অসমীয়া", latin: "Assamese" },
+  { code: 'en', native: 'English', latin: 'English' },
+  { code: 'hi', native: 'हिन्दी', latin: 'Hindi' },
+  { code: 'bn', native: 'বাংলা', latin: 'Bengali' },
+  { code: 'ta', native: 'தமிழ்', latin: 'Tamil' },
+  { code: 'te', native: 'తెలుగు', latin: 'Telugu' },
+  { code: 'mr', native: 'मराठी', latin: 'Marathi' },
+  { code: 'gu', native: 'ગુજરાતી', latin: 'Gujarati' },
+  { code: 'kn', native: 'ಕನ್ನಡ', latin: 'Kannada' },
+  { code: 'ml', native: 'മലയാളം', latin: 'Malayalam' },
+  { code: 'pa', native: 'ਪੰਜਾਬੀ', latin: 'Punjabi' },
+  { code: 'or', native: 'ଓଡ଼ିଆ', latin: 'Odia' },
+  { code: 'as', native: 'অসমীয়া', latin: 'Assamese' },
 ];
 
 interface TranslationRow {
@@ -55,7 +55,7 @@ interface TranslationRow {
   translation_text: string;
   judge_score: number | null;
   ai_assisted: boolean;
-  status: "draft" | "reviewed" | "published";
+  status: 'draft' | 'reviewed' | 'published';
   model: string | null;
 }
 
@@ -65,19 +65,18 @@ declare global {
   }
 }
 
-const STORAGE_KEY = "sohamhamso:translation-langs";
-const DEFAULT_SELECTED = ["en"];
+const STORAGE_KEY = 'sohamhamso:translation-langs';
+const DEFAULT_SELECTED = ['en'];
 
 function loadSelected(): string[] {
-  if (typeof localStorage === "undefined") return [...DEFAULT_SELECTED];
+  if (typeof localStorage === 'undefined') return [...DEFAULT_SELECTED];
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return [...DEFAULT_SELECTED];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [...DEFAULT_SELECTED];
     const valid = parsed.filter(
-      (c): c is string =>
-        typeof c === "string" && LANGS.some((l) => l.code === c),
+      (c): c is string => typeof c === 'string' && LANGS.some((l) => l.code === c),
     );
     return valid.length > 0 ? valid : [...DEFAULT_SELECTED];
   } catch {
@@ -92,7 +91,7 @@ function saveSelected(selected: string[]) {
     /* ignore */
   }
   document.dispatchEvent(
-    new CustomEvent("sohamhamso:translations-changed", {
+    new CustomEvent('sohamhamso:translations-changed', {
       detail: { selected },
     }),
   );
@@ -109,14 +108,12 @@ export default function TranslationDrawer() {
   const [available, setAvailable] = createSignal<TranslationRow[]>([]);
 
   let sheetEl: HTMLDialogElement | undefined;
-  const titleId = "translation-drawer-title";
+  const titleId = 'translation-drawer-title';
   let lastFocused: HTMLElement | null = null;
   let touchStartY = 0;
   let touchDelta = 0;
 
-  const availableLangs = createMemo(
-    () => new Set(available().map((t) => t.lang)),
-  );
+  const availableLangs = createMemo(() => new Set(available().map((t) => t.lang)));
 
   const translationFor = (code: string): TranslationRow | undefined =>
     available().find((t) => t.lang === code);
@@ -125,9 +122,7 @@ export default function TranslationDrawer() {
     const isAvailable = availableLangs().has(code);
     if (!isAvailable) return; // greyed chips are aria-disabled; ignore taps
     const cur = selected();
-    const next = cur.includes(code)
-      ? cur.filter((c) => c !== code)
-      : [...cur, code];
+    const next = cur.includes(code) ? cur.filter((c) => c !== code) : [...cur, code];
     setSelected(next);
     saveSelected(next);
   };
@@ -136,26 +131,28 @@ export default function TranslationDrawer() {
     lastFocused = (document.activeElement as HTMLElement | null) ?? null;
     setOpen(true);
     queueMicrotask(() => {
-      sheetEl?.querySelector<HTMLElement>(
-        'button:not([aria-disabled="true"]), [href], input, [tabindex]:not([tabindex="-1"])',
-      )?.focus();
+      sheetEl
+        ?.querySelector<HTMLElement>(
+          'button:not([aria-disabled="true"]), [href], input, [tabindex]:not([tabindex="-1"])',
+        )
+        ?.focus();
     });
   };
 
   const closeSheet = () => {
     setOpen(false);
-    if (sheetEl) sheetEl.style.transform = "";
+    if (sheetEl) sheetEl.style.transform = '';
     queueMicrotask(() => lastFocused?.focus?.());
   };
 
   const handleKey = (e: KeyboardEvent) => {
     if (!open()) return;
-    if (e.key === "Escape") {
+    if (e.key === 'Escape') {
       e.preventDefault();
       closeSheet();
       return;
     }
-    if (e.key !== "Tab" || !sheetEl) return;
+    if (e.key !== 'Tab' || !sheetEl) return;
     const focusables = sheetEl.querySelectorAll<HTMLElement>(
       'button:not([aria-disabled="true"]):not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])',
     );
@@ -185,20 +182,20 @@ export default function TranslationDrawer() {
   };
   const handleTouchEnd = () => {
     if (touchDelta > 80) closeSheet();
-    else if (sheetEl) sheetEl.style.transform = "";
+    else if (sheetEl) sheetEl.style.transform = '';
     touchDelta = 0;
   };
 
   onMount(() => {
-    if (typeof document === "undefined") return;
+    if (typeof document === 'undefined') return;
     setAvailable(window.__translations ?? []);
     setSelected(loadSelected());
-    document.addEventListener("keydown", handleKey);
+    document.addEventListener('keydown', handleKey);
   });
 
   onCleanup(() => {
-    if (typeof document === "undefined") return;
-    document.removeEventListener("keydown", handleKey);
+    if (typeof document === 'undefined') return;
+    document.removeEventListener('keydown', handleKey);
   });
 
   return (
@@ -209,7 +206,7 @@ export default function TranslationDrawer() {
         class="td-trigger"
         aria-label="Open translation drawer"
         aria-haspopup="dialog"
-        aria-expanded={open() ? "true" : "false"}
+        aria-expanded={open() ? 'true' : 'false'}
         onClick={openSheet}
       >
         <span aria-hidden="true">🌐</span>
@@ -254,15 +251,13 @@ export default function TranslationDrawer() {
                       type="button"
                       class="td-chip"
                       classList={{
-                        "td-chip--selected": isSel() && isAvail(),
-                        "td-chip--unavailable": !isAvail(),
+                        'td-chip--selected': isSel() && isAvail(),
+                        'td-chip--unavailable': !isAvail(),
                       }}
-                      aria-pressed={isSel() && isAvail() ? "true" : "false"}
-                      aria-disabled={isAvail() ? "false" : "true"}
+                      aria-pressed={isSel() && isAvail() ? 'true' : 'false'}
+                      aria-disabled={isAvail() ? 'false' : 'true'}
                       title={
-                        isAvail()
-                          ? `${l.native} (${l.latin})`
-                          : `Not yet translated to ${l.latin}`
+                        isAvail() ? `${l.native} (${l.latin})` : `Not yet translated to ${l.latin}`
                       }
                       onClick={() => toggle(l.code)}
                     >
@@ -282,8 +277,7 @@ export default function TranslationDrawer() {
                 when={selected().length > 0}
                 fallback={
                   <p class="td-preview-empty">
-                    No languages selected — tap a chip above to stack a
-                    translation under the verse.
+                    No languages selected — tap a chip above to stack a translation under the verse.
                   </p>
                 }
               >
@@ -296,18 +290,14 @@ export default function TranslationDrawer() {
                           <span class="td-line-label">{labelFor(code)}</span>
                           <Show when={row()?.ai_assisted}>
                             <span
-                              class={`td-pill td-pill--${row()?.status === "reviewed" ? "emerald" : "amber"}`}
+                              class={`td-pill td-pill--${row()?.status === 'reviewed' ? 'emerald' : 'amber'}`}
                             >
-                              {row()?.status === "reviewed"
-                                ? "AI · reviewed"
-                                : "AI · not verified"}
+                              {row()?.status === 'reviewed' ? 'AI · reviewed' : 'AI · not verified'}
                             </span>
                           </Show>
                           <Show when={row() && !row()?.ai_assisted}>
                             <span class="td-pill td-pill--slate">
-                              {row()?.translator
-                                ? `${row()?.translator} · PD`
-                                : "PD"}
+                              {row()?.translator ? `${row()?.translator} · PD` : 'PD'}
                             </span>
                           </Show>
                         </header>
@@ -315,16 +305,12 @@ export default function TranslationDrawer() {
                           when={row()?.translation_text}
                           fallback={
                             <p class="td-line-empty">
-                              Not yet translated to {labelFor(code)} —{" "}
-                              <a href="/contribute">
-                                track progress ↗
-                              </a>
+                              Not yet translated to {labelFor(code)} —{' '}
+                              <a href="/contribute">track progress ↗</a>
                             </p>
                           }
                         >
-                          <p class="td-line-text">
-                            {row()?.translation_text}
-                          </p>
+                          <p class="td-line-text">{row()?.translation_text}</p>
                         </Show>
                       </article>
                     );

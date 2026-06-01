@@ -1,3 +1,5 @@
+// @ts-expect-error — Sanscript ships untyped (CJS). The .t signature is stable.
+import Sanscript from '@indic-transliteration/sanscript';
 /**
  * ScriptSwitcher — Solid island for switching the rendered script of every
  * Sanskrit-bearing element on the page (`[data-sa]`).
@@ -11,9 +13,7 @@
  *
  * Locked anti-pattern: NEVER reload the page on script change — pure DOM swap.
  */
-import { createSignal, onMount, For, Show } from "solid-js";
-// @ts-expect-error — Sanscript ships untyped (CJS). The .t signature is stable.
-import Sanscript from "@indic-transliteration/sanscript";
+import { For, Show, createSignal, onMount } from 'solid-js';
 
 interface ScriptOption {
   /** Sanscript scheme id */
@@ -27,34 +27,34 @@ interface ScriptOption {
 // The 11 scripts the project ships. `devanagari` is the source — listed
 // first so the switcher can return to source losslessly.
 const SCRIPTS: ScriptOption[] = [
-  { id: "devanagari", label: "Devanāgarī", sample: "देवनागरी" },
-  { id: "iast", label: "IAST (Latin)", sample: "devanāgarī" },
-  { id: "bengali", label: "Bengali / Bāṅlā", sample: "বাংলা" },
-  { id: "assamese", label: "Assamese", sample: "অসমীয়া" },
-  { id: "gujarati", label: "Gujarati", sample: "ગુજરાતી" },
-  { id: "gurmukhi", label: "Gurmukhi", sample: "ਗੁਰਮੁਖੀ" },
-  { id: "kannada", label: "Kannada", sample: "ಕನ್ನಡ" },
-  { id: "malayalam", label: "Malayalam", sample: "മലയാളം" },
-  { id: "oriya", label: "Odia", sample: "ଓଡ଼ିଆ" },
-  { id: "tamil", label: "Tamil", sample: "தமிழ்" },
-  { id: "telugu", label: "Telugu", sample: "తెలుగు" },
+  { id: 'devanagari', label: 'Devanāgarī', sample: 'देवनागरी' },
+  { id: 'iast', label: 'IAST (Latin)', sample: 'devanāgarī' },
+  { id: 'bengali', label: 'Bengali / Bāṅlā', sample: 'বাংলা' },
+  { id: 'assamese', label: 'Assamese', sample: 'অসমীয়া' },
+  { id: 'gujarati', label: 'Gujarati', sample: 'ગુજરાતી' },
+  { id: 'gurmukhi', label: 'Gurmukhi', sample: 'ਗੁਰਮੁਖੀ' },
+  { id: 'kannada', label: 'Kannada', sample: 'ಕನ್ನಡ' },
+  { id: 'malayalam', label: 'Malayalam', sample: 'മലയാളം' },
+  { id: 'oriya', label: 'Odia', sample: 'ଓଡ଼ିଆ' },
+  { id: 'tamil', label: 'Tamil', sample: 'தமிழ்' },
+  { id: 'telugu', label: 'Telugu', sample: 'తెలుగు' },
 ];
 
-const STORAGE_KEY = "sohamhamso:script";
+const STORAGE_KEY = 'sohamhamso:script';
 
 /**
  * Re-render every `[data-sa]` element on the page from its preserved
  * source Devanāgarī string into the target script.
  */
 function applyScript(target: string) {
-  if (typeof document === "undefined") return;
-  const nodes = document.querySelectorAll<HTMLElement>("[data-sa]");
+  if (typeof document === 'undefined') return;
+  const nodes = document.querySelectorAll<HTMLElement>('[data-sa]');
   for (const el of nodes) {
-    const src = el.dataset.saSource ?? el.textContent ?? "";
+    const src = el.dataset.saSource ?? el.textContent ?? '';
     // Preserve source on first run so repeated switches stay lossless.
     if (!el.dataset.saSource) el.dataset.saSource = src;
     try {
-      el.textContent = Sanscript.t(src, "devanagari", target);
+      el.textContent = Sanscript.t(src, 'devanagari', target);
     } catch {
       // Fall back to source on any transliteration failure (e.g.,
       // unmapped Vedic glyph). Keep the source visible rather than
@@ -67,7 +67,7 @@ function applyScript(target: string) {
 }
 
 export default function ScriptSwitcher() {
-  const [current, setCurrent] = createSignal("devanagari");
+  const [current, setCurrent] = createSignal('devanagari');
   const [open, setOpen] = createSignal(false);
 
   onMount(() => {
@@ -76,7 +76,7 @@ export default function ScriptSwitcher() {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved && SCRIPTS.some((s) => s.id === saved)) {
         setCurrent(saved);
-        if (saved !== "devanagari") applyScript(saved);
+        if (saved !== 'devanagari') applyScript(saved);
       }
     } catch {
       // localStorage unavailable (private mode / SSR) — ignore.
@@ -94,8 +94,7 @@ export default function ScriptSwitcher() {
     setOpen(false);
   };
 
-  const currentLabel = () =>
-    SCRIPTS.find((s) => s.id === current())?.label ?? "Devanāgarī";
+  const currentLabel = () => SCRIPTS.find((s) => s.id === current())?.label ?? 'Devanāgarī';
 
   return (
     <div class="script-switcher">
@@ -112,16 +111,8 @@ export default function ScriptSwitcher() {
       </button>
 
       <Show when={open()}>
-        <div
-          class="script-switcher__scrim"
-          onClick={() => setOpen(false)}
-          aria-hidden="true"
-        />
-        <dialog
-          open
-          class="script-switcher__sheet"
-          aria-label="Choose script"
-        >
+        <div class="script-switcher__scrim" onClick={() => setOpen(false)} aria-hidden="true" />
+        <dialog open class="script-switcher__sheet" aria-label="Choose script">
           <header class="script-switcher__head">
             <h2>Script</h2>
             <button
@@ -140,7 +131,7 @@ export default function ScriptSwitcher() {
                   <button
                     type="button"
                     class="script-switcher__row"
-                    aria-current={current() === s.id ? "true" : "false"}
+                    aria-current={current() === s.id ? 'true' : 'false'}
                     onClick={() => select(s.id)}
                   >
                     <span class="script-switcher__sample">{s.sample}</span>
