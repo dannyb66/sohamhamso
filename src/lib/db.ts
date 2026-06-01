@@ -338,15 +338,16 @@ export function getVerse(
   // per-verse uncertainty inline with [draft] prefix and the merge
   // pipeline promotes those to status='draft'. Both render with the
   // amber badge. ai_assisted comes back as 0/1 int; normalized below.
+  type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
   const rawTranslations = db
-    .query<Omit<Translation, 'ai_assisted'> & { ai_assisted: number }, [number, string]>(`
+    .query<TransRow, [number, string]>(`
       SELECT *
       FROM translations
       WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed', 'draft')
       ORDER BY ai_assisted ASC, status ASC, created_at ASC
     `)
     .all(verse.id, lang);
-  const translations: Translation[] = rawTranslations.map((t) => ({
+  const translations: Translation[] = rawTranslations.map((t: TransRow) => ({
     ...t,
     ai_assisted: t.ai_assisted === 1,
   }));
@@ -574,7 +575,7 @@ export function getAvailableLanguages(): Set<string> {
       WHERE status IN ('published', 'reviewed', 'draft')
     `)
     .all();
-  return new Set(rows.map((r) => r.lang.toLowerCase()));
+  return new Set(rows.map((r: { lang: string }) => r.lang.toLowerCase()));
 }
 
 /**
@@ -586,14 +587,15 @@ export function getAvailableLanguages(): Set<string> {
  * through the amber AIAssistedBadge variant). ai_assisted is normalized to bool.
  */
 export function getVerseTranslations(verseId: number): Translation[] {
+  type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
   const db = getDb();
   const rows = db
-    .query<Omit<Translation, 'ai_assisted'> & { ai_assisted: number }, [number]>(`
+    .query<TransRow, [number]>(`
       SELECT *
       FROM translations
       WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
       ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
     `)
     .all(verseId);
-  return rows.map((t) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));
+  return rows.map((t: TransRow) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));
 }

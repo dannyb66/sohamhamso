@@ -29,18 +29,10 @@ import type { APIRoute } from 'astro';
 export const prerender = false;
 
 // ─── Types ────────────────────────────────────────────────────────────
-export interface VerseHit {
-  text_id: string;
-  text_slug: string;
-  text_title: string;
-  tradition: string;
-  chapter: number;
-  verse_num: number;
-  devanagari: string;
-  iast: string | null;
-  translation_excerpt: string | null;
-  score?: number;
-}
+// VerseHit is the single source of truth defined in src/lib/search.ts.
+// The API surfaces it as-is in the JSON response.
+export type { VerseHit } from '../../lib/search';
+import type { VerseHit } from '../../lib/search';
 
 type SearchType = 'lexical' | 'semantic' | 'blended';
 
@@ -55,9 +47,8 @@ async function loadSearchLib(): Promise<{
   blendedSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
 } | null> {
   try {
-    // @ts-expect-error — may not exist until B2 lands; we handle null.
     const mod = await import('../../lib/search.ts');
-    return mod as Awaited<ReturnType<typeof loadSearchLib>>;
+    return mod;
   } catch {
     return null;
   }

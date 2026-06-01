@@ -13,21 +13,9 @@ import Masthead from '../components/Masthead.astro';
  * adapter lands the page just works.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import type { VerseHit } from '../lib/search';
 
 export const prerender = false;
-
-interface VerseHit {
-  text_id: string;
-  text_slug: string;
-  text_title: string;
-  tradition: string;
-  chapter: number;
-  verse_num: number;
-  devanagari: string;
-  iast: string | null;
-  translation_excerpt: string | null;
-  score?: number;
-}
 
 const qRaw = (Astro.url.searchParams.get('q') ?? '').trim();
 const q = qRaw.slice(0, 500);
@@ -44,7 +32,6 @@ let searchError: string | null = null;
 if (q) {
   const t0 = performance.now();
   try {
-    // @ts-expect-error — module may not exist until B2 lands.
     const lib = await import('../lib/search.ts').catch(() => null);
     if (lib && typeof lib.blendedSearch === 'function') {
       const out = await lib.blendedSearch(q, lang, limit);

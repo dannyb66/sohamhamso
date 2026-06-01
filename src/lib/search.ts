@@ -35,12 +35,15 @@ import { getDb } from './db';
 
 export interface VerseHit {
   verse_id: number;
+  text_id: string;
   text_slug: string;
+  text_title: string;
+  tradition: string;
   chapter: number;
   verse_num: number;
   devanagari: string;
   iast: string | null;
-  translation: string | null;
+  translation_excerpt: string | null;
   score: number;
   source: 'lexical' | 'semantic' | 'blended';
 }
@@ -169,12 +172,15 @@ function ftsAvailable(db: Database): boolean {
 
 interface LexicalRow {
   verse_id: number;
+  text_id: string;
   text_slug: string;
+  text_title: string;
+  tradition: string;
   chapter: number;
   verse_num: number;
   devanagari: string;
   iast: string | null;
-  translation: string | null;
+  translation_excerpt: string | null;
   score: number;
 }
 
@@ -195,13 +201,16 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         `
         SELECT
           v.id        AS verse_id,
+          t.id        AS text_id,
           t.slug      AS text_slug,
+          t.title_en  AS text_title,
+          t.tradition AS tradition,
           v.chapter   AS chapter,
           v.verse_num AS verse_num,
           v.devanagari,
           v.iast,
-          (SELECT tr.translation_text FROM translations tr
-           WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation,
+          (SELECT substr(tr.translation_text, 1, 140) FROM translations tr
+           WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation_excerpt,
           bm25(verses_fts) AS score
         FROM verses_fts
         JOIN verses v ON v.id = verses_fts.verse_id
@@ -209,7 +218,7 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         WHERE verses_fts MATCH ?
         ORDER BY score ASC
         LIMIT ?
-        `,
+`,
       )
       .all(lang, ftsQuery, safeLimit);
   } else {
@@ -229,12 +238,15 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         `
         SELECT
           v.id        AS verse_id,
+          t.id        AS text_id,
           t.slug      AS text_slug,
+          t.title_en  AS text_title,
+          t.tradition AS tradition,
           v.chapter   AS chapter,
           v.verse_num AS verse_num,
           v.devanagari,
           v.iast,
-          tr.translation_text AS translation,
+          substr(tr.translation_text, 1, 140) AS translation_excerpt,
           1.0 AS score
         FROM verses v
         JOIN texts t ON t.id = v.text_id
@@ -242,7 +254,7 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
           ON tr.verse_id = v.id AND tr.lang = ?
         WHERE ${ors}
         LIMIT ?
-        `,
+`,
       )
       .all(...params);
   }
@@ -261,12 +273,15 @@ interface EmbedRow {
 
 interface VerseMetaRow {
   verse_id: number;
+  text_id: string;
   text_slug: string;
+  text_title: string;
+  tradition: string;
   chapter: number;
   verse_num: number;
   devanagari: string;
   iast: string | null;
-  translation: string | null;
+  translation_excerpt: string | null;
 }
 
 function bufferToFloat32(buf: Buffer): Float32Array {
@@ -338,13 +353,16 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
       `
       SELECT
         v.id        AS verse_id,
+        t.id        AS text_id,
         t.slug      AS text_slug,
+        t.title_en  AS text_title,
+        t.tradition AS tradition,
         v.chapter   AS chapter,
         v.verse_num AS verse_num,
         v.devanagari,
         v.iast,
-        (SELECT tr.translation_text FROM translations tr
-         WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation
+        (SELECT substr(tr.translation_text, 1, 140) FROM translations tr
+         WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation_excerpt
       FROM verses v
       JOIN texts t ON t.id = v.text_id
       WHERE v.id IN (${placeholders})
