@@ -1,67 +1,33 @@
 // @ts-ignore — Sanscript ships untyped (CJS). The .t signature is stable.
 import Sanscript from '@indic-transliteration/sanscript';
 /**
- * ScriptSwitcher — Solid island for switching the rendered script of every
- * Sanskrit-bearing element on the page (`[data-sa]`).
+ * ScriptSwitcher — Solid island for switching the active "reading mode"
+ * on a verse page. A reading mode bundles (a) the script the Sanskrit
+ * line is transliterated INTO, and (b) the language glosses + the
+ * primary translation are rendered IN.
  *
- * Pattern: top-bar button shows the current script name; tap opens a bottom
- * sheet listing 11 scripts. On selection, every `[data-sa]` element is
- * re-rendered via Sanscript.t(source, 'devanagari', target). Source text is
- * preserved on `data-sa-source` so repeated switches don't compound errors.
+ * Pattern: top-bar button shows the current reading mode's English name;
+ * tap opens a bottom sheet listing the 12 modes from the shared
+ * READING_MODES catalogue (src/lib/reading-modes.ts). On selection,
+ * applyReadingMode() persists both localStorage keys + dispatches
+ * sohamhamso:reader-lang-change, and applyScript() re-renders every
+ * `[data-sa]` element via Sanscript.t(source, 'devanagari', target).
+ * Source text is preserved on `data-sa-source` so repeated switches
+ * stay lossless.
  *
- * State persists in localStorage under `sohamhamso:script`.
+ * State is restored from localStorage['sohamhamso:reader-lang'] (NOT
+ * 'sohamhamso:script') because the catalogue is lang-keyed — Hindi and
+ * Marathi share Devanāgarī but are distinct rows.
  *
- * Locked anti-pattern: NEVER reload the page on script change — pure DOM swap.
+ * Locked anti-pattern: NEVER reload the page on a pick — pure DOM swap.
  */
 import { For, Show, createSignal, onMount } from 'solid-js';
-
-interface ScriptOption {
-  /** Sanscript scheme id */
-  id: string;
-  /** UI label */
-  label: string;
-  /** A sample word in that script for the chooser row */
-  sample: string;
-}
-
-// The 11 scripts the project ships. `devanagari` is the source — listed
-// first so the switcher can return to source losslessly.
-const SCRIPTS: ScriptOption[] = [
-  { id: 'devanagari', label: 'Devanāgarī', sample: 'देवनागरी' },
-  { id: 'iast', label: 'IAST (Latin)', sample: 'devanāgarī' },
-  { id: 'bengali', label: 'Bengali / Bāṅlā', sample: 'বাংলা' },
-  { id: 'assamese', label: 'Assamese', sample: 'অসমীয়া' },
-  { id: 'gujarati', label: 'Gujarati', sample: 'ગુજરાતી' },
-  { id: 'gurmukhi', label: 'Gurmukhi', sample: 'ਗੁਰਮੁਖੀ' },
-  { id: 'kannada', label: 'Kannada', sample: 'ಕನ್ನಡ' },
-  { id: 'malayalam', label: 'Malayalam', sample: 'മലയാളം' },
-  { id: 'oriya', label: 'Odia', sample: 'ଓଡ଼ିଆ' },
-  { id: 'tamil', label: 'Tamil', sample: 'தமிழ்' },
-  { id: 'telugu', label: 'Telugu', sample: 'తెలుగు' },
-];
-
-const STORAGE_KEY = 'sohamhamso:script';
-const READER_LANG_KEY = 'sohamhamso:reader-lang';
-
-// Each Indic script maps 1:1 to a reader language. Picking a script in
-// this switcher should also drive the gloss + translation language so a
-// reader who picks "Bengali" sees the entire verse in Bengali — Sanskrit
-// transliterated AND glosses + translation in Bengali. The Settings sheet
-// remains the override path for power users (e.g. Marathi readers who
-// want Devanāgarī script with Marathi glosses).
-const SCRIPT_TO_LANG: Record<string, string> = {
-  devanagari: 'en',
-  iast: 'en',
-  bengali: 'bn',
-  assamese: 'as',
-  gujarati: 'gu',
-  gurmukhi: 'pa',
-  kannada: 'kn',
-  malayalam: 'ml',
-  oriya: 'or',
-  tamil: 'ta',
-  telugu: 'te',
-};
+import {
+  type LangCode,
+  READING_MODES,
+  applyReadingMode,
+  getReadingModeByLang,
+} from '../lib/reading-modes';
 
 /**
  * Re-render every `[data-sa]` element on the page from its preserved
@@ -102,47 +68,53 @@ function applyScript(target: string) {
 }
 
 export default function ScriptSwitcher() {
-  const [current, setCurrent] = createSignal('devanagari');
+  // `current` is a langCode — the catalogue is lang-keyed because
+  // Hindi + Marathi both ride Devanāgarī but are distinct reading modes.
+  const [current, setCurrent] = createSignal<LangCode>('en');
   const [open, setOpen] = createSignal(false);
 
   onMount(() => {
-    // Restore persisted choice.
+    // Restore from the dedicated reader-lang key. Fall back to the
+    // legacy script key when no lang was ever set (first-time visitors
+    // upgrading from the pre-catalogue build).
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && SCRIPTS.some((s) => s.id === saved)) {
-        setCurrent(saved);
-        if (saved !== 'devanagari') applyScript(saved);
+      const savedLang = localStorage.getItem('sohamhamso:reader-lang');
+      if (savedLang) {
+        const mode = getReadingModeByLang(savedLang);
+        if (mode) {
+          setCurrent(mode.langCode);
+          if (mode.scriptId !== 'devanagari') applyScript(mode.scriptId);
+          return;
+        }
+      }
+      const savedScript = localStorage.getItem('sohamhamso:script');
+      if (savedScript) {
+        // Best-effort back-fill: pick the first matching catalogue row.
+        const mode = READING_MODES.find((m) => m.scriptId === savedScript);
+        if (mode) {
+          setCurrent(mode.langCode);
+          if (mode.scriptId !== 'devanagari') applyScript(mode.scriptId);
+        }
       }
     } catch {
       // localStorage unavailable (private mode / SSR) — ignore.
     }
   });
 
-  const select = (id: string) => {
-    setCurrent(id);
-    applyScript(id);
-    try {
-      localStorage.setItem(STORAGE_KEY, id);
-    } catch {
-      /* ignore */
-    }
-    const lang = SCRIPT_TO_LANG[id];
-    if (lang) {
-      try {
-        localStorage.setItem(READER_LANG_KEY, lang);
-      } catch {
-        /* ignore */
-      }
-      document.dispatchEvent(
-        new CustomEvent('sohamhamso:reader-lang-change', {
-          detail: { lang },
-        }),
-      );
-    }
+  const select = (langCode: LangCode) => {
+    const mode = getReadingModeByLang(langCode);
+    if (!mode) return;
+    setCurrent(mode.langCode);
+    applyScript(mode.scriptId);
+    // applyReadingMode handles both localStorage keys + the
+    // reader-lang-change CustomEvent, so ReaderLangSwap reacts in the
+    // same tick.
+    applyReadingMode(mode.langCode);
     setOpen(false);
   };
 
-  const currentLabel = () => SCRIPTS.find((s) => s.id === current())?.label ?? 'Devanāgarī';
+  const currentMode = () => getReadingModeByLang(current()) ?? READING_MODES[0];
+  const currentLabel = () => currentMode().englishName;
 
   return (
     <div class="script-switcher">
@@ -151,7 +123,7 @@ export default function ScriptSwitcher() {
         class="script-switcher__trigger"
         aria-haspopup="dialog"
         aria-expanded={open()}
-        aria-label={`Script: ${currentLabel()} — tap to change`}
+        aria-label={`Reading mode: ${currentLabel()} — tap to change`}
         onClick={() => setOpen((v) => !v)}
       >
         <span aria-hidden="true">अ</span>
@@ -160,9 +132,9 @@ export default function ScriptSwitcher() {
 
       <Show when={open()}>
         <div class="script-switcher__scrim" onClick={() => setOpen(false)} aria-hidden="true" />
-        <dialog open class="script-switcher__sheet" aria-label="Choose script">
+        <dialog open class="script-switcher__sheet" aria-label="Choose reading mode">
           <header class="script-switcher__head">
-            <h2>Script</h2>
+            <h2>Reading mode</h2>
             <button
               type="button"
               class="script-switcher__close"
@@ -173,18 +145,18 @@ export default function ScriptSwitcher() {
             </button>
           </header>
           <ul class="script-switcher__list">
-            <For each={SCRIPTS}>
-              {(s) => (
+            <For each={READING_MODES}>
+              {(m) => (
                 <li>
                   <button
                     type="button"
                     class="script-switcher__row"
-                    aria-current={current() === s.id ? 'true' : 'false'}
-                    onClick={() => select(s.id)}
+                    aria-current={current() === m.langCode ? 'true' : 'false'}
+                    onClick={() => select(m.langCode)}
                   >
-                    <span class="script-switcher__sample">{s.sample}</span>
-                    <span class="script-switcher__name">{s.label}</span>
-                    {current() === s.id ? (
+                    <span class="script-switcher__sample">{m.nativeLabel}</span>
+                    <span class="script-switcher__name">{m.englishName}</span>
+                    {current() === m.langCode ? (
                       <span class="script-switcher__check" aria-hidden="true">
                         ✓
                       </span>
