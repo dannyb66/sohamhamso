@@ -36,6 +36,7 @@
  * 44px touch targets. Respects prefers-reduced-motion.
  */
 import { For, Show, createSignal, onCleanup, onMount } from 'solid-js';
+import { READING_MODES } from '../lib/reading-modes';
 
 // ─── Option registries ────────────────────────────────────────────────
 const SA_FONTS = [
@@ -76,19 +77,15 @@ const THEMES = [
   { id: 'oled', label: 'OLED', swatchBg: '#000000', swatchInk: '#ECE5D6' },
 ];
 
-const LANGS = [
-  { code: 'en', label: 'English' },
-  { code: 'hi', label: 'हिन्दी (Hindi)' },
-  { code: 'ta', label: 'தமிழ் (Tamil)' },
-  { code: 'te', label: 'తెలుగు (Telugu)' },
-  { code: 'bn', label: 'বাংলা (Bengali)' },
-  { code: 'mr', label: 'मराठी (Marathi)' },
-  { code: 'gu', label: 'ગુજરાતી (Gujarati)' },
-  { code: 'kn', label: 'ಕನ್ನಡ (Kannada)' },
-  { code: 'ml', label: 'മലയാളം (Malayalam)' },
-  { code: 'pa', label: 'ਪੰਜਾਬੀ (Punjabi)' },
-  { code: 'or', label: 'ଓଡ଼ିଆ (Odia)' },
-];
+// Sourced from the unified READING_MODES catalogue (src/lib/reading-modes.ts)
+// so the SettingsSheet language dropdowns stay in lock-step with the
+// Masthead picker and the verse-page ScriptSwitcher (12 entries —
+// Assamese included). Label format matches the legacy "Native (English)"
+// shape, with the English row collapsed to a single "English" label.
+const LANGS = READING_MODES.map((m) => ({
+  code: m.langCode,
+  label: m.englishName === m.nativeLabel ? m.englishName : `${m.nativeLabel} (${m.englishName})`,
+}));
 
 const SCRIPTS = [
   { id: 'devanagari', label: 'Devanāgarī' },
