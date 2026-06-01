@@ -41,8 +41,8 @@ const languages = LANG_CATALOGUE.map((l) => ({
 <section class="subscribe" aria-labelledby="subscribe-heading">
   <div class="subscribe-inner">
     <div class="subscribe-copy">
-      <h2 class="subscribe-heading" id="subscribe-heading">Receive a verse at dawn.</h2>
-      <p class="subscribe-sub">One verse, one translation. No commentary. Unsubscribe anytime.</p>
+      <h2 class="subscribe-heading" id="subscribe-heading" data-i18n="subscribe.heading">Receive a verse at dawn.</h2>
+      <p class="subscribe-sub" data-i18n="subscribe.sub">One verse, one translation. No commentary. Unsubscribe anytime.</p>
     </div>
 
     <form
@@ -52,24 +52,26 @@ const languages = LANG_CATALOGUE.map((l) => ({
       data-subscribe-form
       novalidate
     >
-      <label class="visually-hidden" for="subscribe-email">Email address</label>
+      <label class="visually-hidden" for="subscribe-email" data-i18n="subscribe.email.label">Email address</label>
       <input
         type="email"
         id="subscribe-email"
         name="email"
         placeholder="your email"
+        data-i18n-attr-placeholder="subscribe.email.placeholder"
         required
         autocomplete="email"
       />
 
       <div class="subscribe-lang">
-        <label class="subscribe-lang-label" for="subscribe-lang">language:</label>
+        <label class="subscribe-lang-label" for="subscribe-lang" data-i18n="subscribe.lang.label">language:</label>
         <select id="subscribe-lang" name="language">
           {languages.map((l) => (
             <option
               value={l.code}
               disabled={!l.available}
               title={l.available ? "" : "Coming soon — see methodology"}
+              data-i18n-attr-title={l.available ? undefined : "subscribe.lang.soon_title"}
             >
               {l.label}{!l.available ? " (soon)" : ""}
             </option>
@@ -77,10 +79,20 @@ const languages = LANG_CATALOGUE.map((l) => ({
         </select>
       </div>
 
-      <button type="submit" class="subscribe-button">subscribe</button>
+      <button type="submit" class="subscribe-button" data-i18n="subscribe.button">subscribe</button>
     </form>
 
     <p class="subscribe-status" data-subscribe-status hidden aria-live="polite"></p>
+    <!--
+      Hidden i18n message bank — the inline form script reads the
+      `.textContent` of each span to populate the live `[data-subscribe-status]`
+      element. I18nSwap rewrites these spans alongside the rest of the
+      page chrome, so non-EN visitors get translated status messages
+      without a separate IPC contract between the island and the script.
+    -->
+    <span data-i18n-msg="pending" data-i18n="subscribe.status.pending" hidden>Subscribing…</span>
+    <span data-i18n-msg="success" data-i18n="subscribe.status.success" hidden>Check your inbox to confirm — link expires in 24h.</span>
+    <span data-i18n-msg="error" data-i18n="subscribe.status.error" hidden>Couldn't subscribe. Try again or email us.</span>
   </div>
 </section>
 
@@ -94,13 +106,25 @@ const languages = LANG_CATALOGUE.map((l) => ({
     const status = document.querySelector<HTMLParagraphElement>("[data-subscribe-status]");
     if (!form || !status) return;
 
+    // Read the EN-by-default (i18n-swapped on hydrate) message bank.
+    // Falls back to the hardcoded English string if a span is missing.
+    function msg(kind: "pending" | "success" | "error"): string {
+      const node = document.querySelector<HTMLSpanElement>(
+        `[data-i18n-msg="${kind}"]`,
+      );
+      if (node?.textContent) return node.textContent;
+      if (kind === "pending") return "Subscribing…";
+      if (kind === "success") return "Check your inbox to confirm — link expires in 24h.";
+      return "Couldn't subscribe. Try again or email us.";
+    }
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
       const language = (form.elements.namedItem("language") as HTMLSelectElement).value;
 
       status.hidden = false;
-      status.textContent = "Subscribing…";
+      status.textContent = msg("pending");
       status.dataset.state = "pending";
 
       try {
@@ -111,15 +135,15 @@ const languages = LANG_CATALOGUE.map((l) => ({
         });
         const data = await res.json();
         if (res.ok && data.ok) {
-          status.textContent = data.message || "Check your inbox to confirm — link expires in 24h.";
+          status.textContent = data.message || msg("success");
           status.dataset.state = "success";
           form.reset();
         } else {
-          status.textContent = data.message || "Couldn't subscribe. Try again or email us.";
+          status.textContent = data.message || msg("error");
           status.dataset.state = "error";
         }
       } catch {
-        status.textContent = "Couldn't subscribe. Try again or email us.";
+        status.textContent = msg("error");
         status.dataset.state = "error";
       }
     });

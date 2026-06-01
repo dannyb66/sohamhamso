@@ -11,15 +11,18 @@ interface Props {
 const { doi = null } = Astro.props;
 
 // Single source of truth for footer links — easy to extend later.
+// Each row carries an `i18nKey` so the I18nSwap island can rewrite the
+// link text when the reader-lang ≠ 'en'. The English `label` IS the
+// SSR copy and the fallback (must match en.ts exactly).
 const links = [
-  { href: '/about/sources', label: 'Sources' },
-  { href: '/about/methodology', label: 'Methodology' },
-  { href: '/about/license', label: 'License (CC-BY-SA 4.0)' },
-  { href: 'https://github.com/sohamhamso', label: 'GitHub' },
-  { href: '/dataset', label: 'Zenodo dataset' },
-  { href: '/donate', label: 'Donate' },
-  { href: '/about/privacy', label: 'Privacy' },
-  { href: '/about/colophon', label: 'Colophon' },
+  { href: '/about/sources', label: 'Sources', i18nKey: 'footer.link.sources' },
+  { href: '/about/methodology', label: 'Methodology', i18nKey: 'footer.link.methodology' },
+  { href: '/about/license', label: 'License (CC-BY-SA 4.0)', i18nKey: 'footer.link.license' },
+  { href: 'https://github.com/sohamhamso', label: 'GitHub', i18nKey: 'footer.link.github' },
+  { href: '/dataset', label: 'Zenodo dataset', i18nKey: 'footer.link.dataset' },
+  { href: '/donate', label: 'Donate', i18nKey: 'footer.link.donate' },
+  { href: '/about/privacy', label: 'Privacy', i18nKey: 'footer.link.privacy' },
+  { href: '/about/colophon', label: 'Colophon', i18nKey: 'footer.link.colophon' },
 ];
 ---
 
@@ -29,7 +32,7 @@ const links = [
       <ul>
         {links.map((l, i) => (
           <li>
-            <a href={l.href}>{l.label}</a>
+            <a href={l.href} data-i18n={l.i18nKey}>{l.label}</a>
             {i < links.length - 1 && <span class="sep" aria-hidden="true"> · </span>}
           </li>
         ))}
@@ -38,17 +41,22 @@ const links = [
 
     <div class="footer-meta">
       <p class="footer-attribution">
-        sohamhamso is a non-profit project. Sanskrit sources from
-        <a href="https://gretil.sub.uni-goettingen.de/">GRETIL</a>,
-        <a href="https://www.muktabodha.org/">Muktabodha (MIRI)</a>,
-        and <a href="https://sanskritdocuments.org/">sanskritdocuments.org</a>
-        under their respective licenses. AI-assisted translations not
-        human-verified — see <a href="/about/methodology">methodology</a>.
+        <!--
+          Sentence-stitched: each leaf-text span carries a data-i18n key
+          so I18nSwap can rewrite it without disturbing the anchor
+          children. Whitespace around the anchors stays in the static
+          markup so the SSR English render is byte-identical.
+        -->
+        <span data-i18n="footer.attribution.prefix">sohamhamso is a non-profit project. Sanskrit sources from</span>
+        <a href="https://gretil.sub.uni-goettingen.de/" data-i18n="footer.attribution.source_gretil">GRETIL</a>,
+        <a href="https://www.muktabodha.org/" data-i18n="footer.attribution.source_muktabodha">Muktabodha (MIRI)</a>,
+        and <a href="https://sanskritdocuments.org/" data-i18n="footer.attribution.source_sanskritdocuments">sanskritdocuments.org</a>
+        <span data-i18n="footer.attribution.middle">under their respective licenses. AI-assisted translations not human-verified — see</span> <a href="/about/methodology" data-i18n="footer.attribution.methodology_link">methodology</a><span data-i18n="footer.attribution.suffix">.</span>
       </p>
       {doi && (
         <p class="footer-doi">
           <a href={`https://doi.org/${doi}`} aria-label={`Cite this release: DOI ${doi}`}>
-            <span class="doi-label">DOI</span>
+            <span class="doi-label" data-i18n="footer.doi.label">DOI</span>
             <span class="doi-value">{doi}</span>
           </a>
         </p>

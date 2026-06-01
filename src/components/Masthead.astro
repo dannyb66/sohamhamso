@@ -45,6 +45,7 @@ const languages = READING_MODES.map((m) => ({
         type="button"
         class="icon-button"
         aria-label="Search verses, words, or concepts"
+        data-i18n-attr-aria-label="masthead.search.aria"
         data-search-trigger
       >
         <!-- minimal magnifier glyph — no Lucide / icon set, per anti-pattern list -->
@@ -60,6 +61,8 @@ const languages = READING_MODES.map((m) => ({
           class="lang-trigger"
           aria-haspopup="listbox"
           aria-expanded="false"
+          aria-label="Reading language"
+          data-i18n-attr-aria-label="masthead.lang.aria"
           data-lang-trigger
         >
           <span lang="sa" data-sa class="lang-glyph">अ</span>
@@ -78,10 +81,11 @@ const languages = READING_MODES.map((m) => ({
               data-lang-code={l.langCode}
               data-lang-display={l.code}
               title={l.available ? "" : "Translation coming soon — see methodology"}
+              data-i18n-attr-title={l.available ? undefined : "masthead.lang.soon_title"}
             >
               <span class="lang-code">{l.code}</span>
               <span class="lang-label">{l.label}</span>
-              {!l.available && <span class="lang-soon">soon</span>}
+              {!l.available && <span class="lang-soon" data-i18n="masthead.lang.soon">soon</span>}
             </li>
           ))}
         </ul>
