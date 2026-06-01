@@ -1,4 +1,4 @@
-// @ts-expect-error — Sanscript ships untyped (CJS). The .t signature is stable.
+// @ts-ignore — Sanscript ships untyped (CJS). The .t signature is stable.
 import Sanscript from '@indic-transliteration/sanscript';
 /**
  * ScriptSwitcher — Solid island for switching the rendered script of every
