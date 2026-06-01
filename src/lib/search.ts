@@ -4,7 +4,7 @@
  * Search helpers for sohamhamso reader.
  *
  * Exports three entrypoints used by Astro routes / API handlers:
- *   - lexicalSearch(query)            — FTS5 if available, LIKE fallback
+ *   - lexicalSearch(query, lang, limit) — FTS5 if available, LIKE fallback
  *   - semanticSearch(query, lang)     — OpenAI embed + cosine scan
  *   - blendedSearch(query, lang)      — parallel lex+sem, RRF fusion (default)
  *
@@ -180,11 +180,13 @@ interface LexicalRow {
 
 export async function lexicalSearch(
   query: string,
+  lang = "en",
   limit = 10,
 ): Promise<VerseHit[]> {
   if (!query.trim()) return [];
   const db = getDb();
   const variants = expandSynonyms(query);
+  const safeLimit = Math.max(1, Math.floor(Number(limit) || 10));
 
   let rows: LexicalRow[];
 
@@ -193,7 +195,7 @@ export async function lexicalSearch(
     // exists with content from verses + translations. Score = bm25.
     const ftsQuery = variants.map((v) => `"${v.replace(/"/g, '""')}"`).join(" OR ");
     rows = db
-      .query<LexicalRow, [string, number]>(
+      .query<LexicalRow, [string, string, number]>(
         `
         SELECT
           v.id        AS verse_id,
@@ -203,7 +205,7 @@ export async function lexicalSearch(
           v.devanagari,
           v.iast,
           (SELECT tr.translation_text FROM translations tr
-           WHERE tr.verse_id = v.id AND tr.lang = 'en' LIMIT 1) AS translation,
+           WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation,
           bm25(verses_fts) AS score
         FROM verses_fts
         JOIN verses v ON v.id = verses_fts.verse_id
@@ -213,18 +215,18 @@ export async function lexicalSearch(
         LIMIT ?
         `,
       )
-      .all(ftsQuery, limit);
+      .all(lang, ftsQuery, safeLimit);
   } else {
     // LIKE fallback — slower, but works on any SQLite build.
     const ors = variants
       .map(() => "(v.iast LIKE ? OR v.devanagari LIKE ? OR tr.translation_text LIKE ?)")
       .join(" OR ");
-    const params: (string | number)[] = [];
+    const params: (string | number)[] = [lang];
     for (const v of variants) {
       const wild = `%${v}%`;
       params.push(wild, wild, wild);
     }
-    params.push(limit);
+    params.push(safeLimit);
 
     rows = db
       .query<LexicalRow, (string | number)[]>(
@@ -241,7 +243,7 @@ export async function lexicalSearch(
         FROM verses v
         JOIN texts t ON t.id = v.text_id
         LEFT JOIN translations tr
-          ON tr.verse_id = v.id AND tr.lang = 'en'
+          ON tr.verse_id = v.id AND tr.lang = ?
         WHERE ${ors}
         LIMIT ?
         `,
@@ -393,7 +395,7 @@ export async function blendedSearch(
   const fetchPer = Math.max(limit * 2, 20);
 
   const [lex, sem] = await Promise.all([
-    lexicalSearch(query, fetchPer).catch((e) => {
+    lexicalSearch(query, lang, fetchPer).catch((e) => {
       console.error("[search] lexical failed:", e);
       return [] as VerseHit[];
     }),
