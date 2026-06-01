@@ -60,3 +60,4 @@ test-results/
 # Dataset build artifacts (generated; do not commit)
 dataset/build/
 checksums.sha256.unsigned
+.gstack/
