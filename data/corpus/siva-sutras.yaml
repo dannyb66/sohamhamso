@@ -1,0 +1,1944 @@
+text:
+  id: siva-sutras
+  slug: siva-sutras
+  title_sa: शिवसूत्राणि
+  title_en: Śiva Sūtras
+  title_iast: Śivasūtrāṇi
+  author: Vasugupta
+  tradition: trika
+  school: kashmir-shaivism
+  era: "9th century CE"
+  source: "GRETIL (Göttingen Register of Electronic Texts in Indian Languages)"
+  source_url: "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/saiva/sivasutu.htm"
+  source_revision: "GRETIL revision pending"
+  license: CC-BY 4.0
+  parent_text_id: null
+  manuscript_url: null
+  description: |
+    The Śiva Sūtras are the foundational sūtras of the Trika school of Kashmir
+    Shaivism, revealed to Vasugupta in the 9th century. Structured in three
+    sections corresponding to the three means (upāyas) of liberation:
+    Śāmbhavopāya, Śāktopāya, and Āṇavopāya.
+
+chapters:
+  - chapter: 1
+    title_sa: शाम्भवोपायः
+    title_iast: Śāmbhavopāyaḥ
+    title_en: "Śāmbhavopāya — The Way of Śiva"
+    verses:
+      - verse: 1
+        devanagari: चैतन्यमात्मा ॥१॥
+        slp1: "caitanyamAtmA"
+        iast: "caitanyam ātmā"
+        meter: sūtra
+        word_glosses:
+          - word: caitanyam
+            iast: caitanyam
+            gloss_en: "pure consciousness, sentience"
+            morph: "nom. sg. n."
+          - word: ātmā
+            iast: ātmā
+            gloss_en: "the Self, true nature"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Consciousness is the Self."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: ज्ञानं बन्धः ॥२॥
+        slp1: "jYAnaM banDaH"
+        iast: "jñānaṃ bandhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: jñānam
+            iast: jñānam
+            gloss_en: "(limited, dualistic) knowledge"
+            morph: "nom. sg. n."
+          - word: bandhaḥ
+            iast: bandhaḥ
+            gloss_en: "bondage"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Limited) knowledge is bondage."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: योनिवर्गः कलाशरीरम् ॥३॥
+        slp1: "yonivargaH kalASarIram"
+        iast: "yonivargaḥ kalāśarīram"
+        meter: sūtra
+        word_glosses:
+          - word: yoni-vargaḥ
+            iast: yoni-vargaḥ
+            gloss_en: "the group/source of categories (māyā as womb of phenomena)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: kalā-śarīram
+            iast: kalā-śarīram
+            gloss_en: "the body composed of kalās (limiting phases of activity)"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The source-group (māyā) and the body of kalās (are also bondage)."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: ज्ञानाधिष्ठानं मातृका ॥४॥
+        slp1: "jYAnADizWAnaM mAtRkA"
+        iast: "jñānādhiṣṭhānaṃ mātṛkā"
+        meter: sūtra
+        word_glosses:
+          - word: jñāna-adhiṣṭhānam
+            iast: jñāna-adhiṣṭhānam
+            gloss_en: "the basis/substratum of (limited) knowledge"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+          - word: mātṛkā
+            iast: mātṛkā
+            gloss_en: "the (un-understood) Mother — the matrix of phonemes/letters"
+            morph: "nom. sg. f."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The basis of (bound) knowledge is Mātṛkā (the un-understood matrix of phonemes)."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: उद्यमो भैरवः ॥५॥
+        slp1: "udyamo BairavaH"
+        iast: "udyamo bhairavaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: udyamaḥ
+            iast: udyamaḥ
+            gloss_en: "sudden rising/emergence (of awareness)"
+            morph: "nom. sg. m."
+          - word: bhairavaḥ
+            iast: bhairavaḥ
+            gloss_en: "Bhairava, the absolute Śiva"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The sudden upsurge (of pure awareness) is Bhairava."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: शक्तिचक्रसन्धाने विश्वसंहारः ॥६॥
+        slp1: "SakticakrasanDAne viSvasaMhAraH"
+        iast: "śakticakra-sandhāne viśva-saṃhāraḥ"
+        meter: sūtra
+        word_glosses:
+          - word: śakti-cakra-sandhāne
+            iast: śakti-cakra-sandhāne
+            gloss_en: "in uniting with the wheel of (cognitive) powers"
+            morph: "loc. sg. n., tatpuruṣa cpd."
+          - word: viśva-saṃhāraḥ
+            iast: viśva-saṃhāraḥ
+            gloss_en: "dissolution of the universe (as separate)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Through union with the wheel of śaktis, the (objective) universe is dissolved."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: जाग्रत्स्वप्नसुषुप्तभेदे तुर्याभोगसम्भवः ॥७॥
+        slp1: "jAgratsvapnasuzuptaBede turyABogasamBavaH"
+        iast: "jāgrat-svapna-suṣupta-bhede turyābhoga-sambhavaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: jāgrat-svapna-suṣupta-bhede
+            iast: jāgrat-svapna-suṣupta-bhede
+            gloss_en: "in the differentiation of waking, dreaming, and deep sleep"
+            morph: "loc. sg. m., dvandva+tatpuruṣa"
+          - word: turya-ābhoga-sambhavaḥ
+            iast: turya-ābhoga-sambhavaḥ
+            gloss_en: "arising of the enjoyment/expansion of the Fourth"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(For the yogin) even amid the differences of waking, dream, and deep sleep, the bliss of the Fourth state arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 8
+        devanagari: ज्ञानं जाग्रत् ॥८॥
+        slp1: "jYAnaM jAgrat"
+        iast: "jñānaṃ jāgrat"
+        meter: sūtra
+        word_glosses:
+          - word: jñānam
+            iast: jñānam
+            gloss_en: "(empirical) knowledge"
+            morph: "nom. sg. n."
+          - word: jāgrat
+            iast: jāgrat
+            gloss_en: "the waking state"
+            morph: "nom. sg. n., pres. part."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Empirical knowledge is the waking state."
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: स्वप्नो विकल्पाः ॥९॥
+        slp1: "svapno vikalpAH"
+        iast: "svapno vikalpāḥ"
+        meter: sūtra
+        word_glosses:
+          - word: svapnaḥ
+            iast: svapnaḥ
+            gloss_en: "the dream state"
+            morph: "nom. sg. m."
+          - word: vikalpāḥ
+            iast: vikalpāḥ
+            gloss_en: "mental constructs, conceptualizations"
+            morph: "nom. pl. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Dream is (the play of) mental constructs."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: अविवेको मायासौषुप्तम् ॥१०॥
+        slp1: "aviveko mAyAsauzuptam"
+        iast: "aviveko māyāsauṣuptam"
+        meter: sūtra
+        word_glosses:
+          - word: avivekaḥ
+            iast: avivekaḥ
+            gloss_en: "non-discrimination, lack of discernment"
+            morph: "nom. sg. m."
+          - word: māyā-sauṣuptam
+            iast: māyā-sauṣuptam
+            gloss_en: "the deep-sleep of māyā (illusion-induced unconsciousness)"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Non-discrimination is the deep sleep of māyā."
+            ai_assisted: false
+            status: published
+
+      - verse: 11
+        devanagari: त्रितयभोक्ता वीरेशः ॥११॥
+        slp1: "tritayaBoktA vIreSaH"
+        iast: "tritaya-bhoktā vīreśaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: tritaya-bhoktā
+            iast: tritaya-bhoktā
+            gloss_en: "enjoyer of the triad (of waking, dream, deep sleep)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: vīra-īśaḥ
+            iast: vīra-īśaḥ
+            gloss_en: "lord of the (sense-)heroes, master of the indriyas"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(He who is) the enjoyer of the triad (of states) is the lord of the (sense-)heroes."
+            ai_assisted: false
+            status: published
+
+      - verse: 12
+        devanagari: विस्मयो योगभूमिकाः ॥१२॥
+        slp1: "vismayo yogaBUmikAH"
+        iast: "vismayo yoga-bhūmikāḥ"
+        meter: sūtra
+        word_glosses:
+          - word: vismayaḥ
+            iast: vismayaḥ
+            gloss_en: "wonder, amazement"
+            morph: "nom. sg. m."
+          - word: yoga-bhūmikāḥ
+            iast: yoga-bhūmikāḥ
+            gloss_en: "the stages of yoga"
+            morph: "nom. pl. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The stages of yoga are (states of) wonder."
+            ai_assisted: false
+            status: published
+
+      - verse: 13
+        devanagari: इच्छाशक्तिरुमा कुमारी ॥१३॥
+        slp1: "icCASaktirumA kumArI"
+        iast: "icchāśaktir umā kumārī"
+        meter: sūtra
+        word_glosses:
+          - word: icchā-śaktiḥ
+            iast: icchā-śaktiḥ
+            gloss_en: "the power of will"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+          - word: umā
+            iast: umā
+            gloss_en: "Umā (the goddess; here, supreme volition)"
+            morph: "nom. sg. f."
+          - word: kumārī
+            iast: kumārī
+            gloss_en: "the virgin maiden (unmodified, free of secondary aims)"
+            morph: "nom. sg. f."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The Will-power (of the yogin) is Umā, the Virgin."
+            ai_assisted: false
+            status: published
+
+      - verse: 14
+        devanagari: दृश्यं शरीरम् ॥१४॥
+        slp1: "dRSyaM SarIram"
+        iast: "dṛśyaṃ śarīram"
+        meter: sūtra
+        word_glosses:
+          - word: dṛśyam
+            iast: dṛśyam
+            gloss_en: "the (whole) visible/perceivable"
+            morph: "nom. sg. n., fut. pass. part."
+          - word: śarīram
+            iast: śarīram
+            gloss_en: "(his) body"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The whole of the perceivable (universe) is (his) body."
+            ai_assisted: false
+            status: published
+
+      - verse: 15
+        devanagari: हृदये चित्तसङ्घट्टाद्दृश्यस्वापदर्शनम् ॥१५॥
+        slp1: "hRdaye cittasaNGawwAddRSyasvApadarSanam"
+        iast: "hṛdaye citta-saṅghaṭṭād dṛśya-svāpa-darśanam"
+        meter: sūtra
+        word_glosses:
+          - word: hṛdaye
+            iast: hṛdaye
+            gloss_en: "in the Heart (the core of consciousness)"
+            morph: "loc. sg. n."
+          - word: citta-saṅghaṭṭāt
+            iast: citta-saṅghaṭṭāt
+            gloss_en: "from the fusion/concentration of mind"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: dṛśya-svāpa-darśanam
+            iast: dṛśya-svāpa-darśanam
+            gloss_en: "vision of the disappearance of the perceivable"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By fixing the mind on the Heart, the vision of the (whole) perceivable as if asleep arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 16
+        devanagari: शुद्धतत्त्वसन्धानाद्वापशुशक्तिः ॥१६॥
+        slp1: "SudDatattvasanDAnAdvApaSuSaktiH"
+        iast: "śuddha-tattva-sandhānād vā apaśu-śaktiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: śuddha-tattva-sandhānāt
+            iast: śuddha-tattva-sandhānāt
+            gloss_en: "from (continuous) union with the pure Principle"
+            morph: "abl. sg. n., tatpuruṣa cpd."
+          - word: vā
+            iast: vā
+            gloss_en: "or (alternatively)"
+            morph: "indecl."
+          - word: apaśu-śaktiḥ
+            iast: apaśu-śaktiḥ
+            gloss_en: "the power that frees from the state of paśu (bound creature)"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Or, by union with the pure Principle, one acquires the power that liberates from being a bound creature."
+            ai_assisted: false
+            status: published
+
+      - verse: 17
+        devanagari: वितर्क आत्मज्ञानम् ॥१७॥
+        slp1: "vitarka AtmajYAnam"
+        iast: "vitarka ātmajñānam"
+        meter: sūtra
+        word_glosses:
+          - word: vitarkaḥ
+            iast: vitarkaḥ
+            gloss_en: "(firm) recognitive cognition, reflective certainty"
+            morph: "nom. sg. m."
+          - word: ātma-jñānam
+            iast: ātma-jñānam
+            gloss_en: "knowledge of the Self"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Right awareness (vitarka) is knowledge of the Self."
+            ai_assisted: false
+            status: published
+
+      - verse: 18
+        devanagari: लोकानन्दः समाधिसुखम् ॥१८॥
+        slp1: "lokAnandaH samADisuKam"
+        iast: "lokānandaḥ samādhi-sukham"
+        meter: sūtra
+        word_glosses:
+          - word: loka-ānandaḥ
+            iast: loka-ānandaḥ
+            gloss_en: "bliss of (perceiving) the world"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: samādhi-sukham
+            iast: samādhi-sukham
+            gloss_en: "the joy of samādhi"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The bliss of (witnessing) the world is the joy of samādhi."
+            ai_assisted: false
+            status: published
+
+      - verse: 19
+        devanagari: शक्तिसन्धाने शरीरोत्पत्तिः ॥१९॥
+        slp1: "SaktisanDAne SarIrotpattiH"
+        iast: "śakti-sandhāne śarīrotpattiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: śakti-sandhāne
+            iast: śakti-sandhāne
+            gloss_en: "in union with (the divine) Śakti"
+            morph: "loc. sg. n., tatpuruṣa cpd."
+          - word: śarīra-utpattiḥ
+            iast: śarīra-utpattiḥ
+            gloss_en: "production of (any desired) body"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By union with Śakti, (the yogin can effect) the production of (any) body (he wills)."
+            ai_assisted: false
+            status: published
+
+      - verse: 20
+        devanagari: भूतसन्धानभूतपृथक्त्वविश्वसङ्घट्टाः ॥२०॥
+        slp1: "BUtasanDAnaBUtapRTaktvaviSvasaNGawwAH"
+        iast: "bhūta-sandhāna-bhūta-pṛthaktva-viśva-saṅghaṭṭāḥ"
+        meter: sūtra
+        word_glosses:
+          - word: bhūta-sandhāna
+            iast: bhūta-sandhāna
+            gloss_en: "joining (separated) elements/beings"
+            morph: "n., tatpuruṣa cpd. (stem)"
+          - word: bhūta-pṛthaktva
+            iast: bhūta-pṛthaktva
+            gloss_en: "separating (joined) elements/beings"
+            morph: "n., tatpuruṣa cpd. (stem)"
+          - word: viśva-saṅghaṭṭāḥ
+            iast: viśva-saṅghaṭṭāḥ
+            gloss_en: "and unifying the entire universe (with oneself)"
+            morph: "nom. pl. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(He acquires the powers of) joining elements, separating elements, and uniting the entire universe (with himself)."
+            ai_assisted: false
+            status: published
+
+      - verse: 21
+        devanagari: शुद्धविद्योदयाच्चक्रेशत्वसिद्धिः ॥२१॥
+        slp1: "SudDavidyodayAccakreSatvasidDiH"
+        iast: "śuddha-vidyodayāc cakreśatva-siddhiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: śuddha-vidyā-udayāt
+            iast: śuddha-vidyā-udayāt
+            gloss_en: "from the arising of Pure Wisdom (śuddhavidyā)"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: cakra-īśatva-siddhiḥ
+            iast: cakra-īśatva-siddhiḥ
+            gloss_en: "attainment of lordship over the wheel (of śaktis)"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By the arising of Pure Wisdom, mastery of the wheel of (śaktis) is attained."
+            ai_assisted: false
+            status: published
+
+      - verse: 22
+        devanagari: महाह्रदानुसन्धानान्मन्त्रवीर्यानुभवः ॥२२॥
+        slp1: "mahAhradAnusanDAnAnmantravIryAnuBavaH"
+        iast: "mahāhradānusandhānān mantra-vīryānubhavaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: mahā-hrada-anusandhānāt
+            iast: mahā-hrada-anusandhānāt
+            gloss_en: "from continuous union with the Great Lake (of supreme consciousness)"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: mantra-vīrya-anubhavaḥ
+            iast: mantra-vīrya-anubhavaḥ
+            gloss_en: "experience of the potency of mantra"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By continuous communion with the Great Lake (of supreme consciousness), one experiences the potency of mantra."
+            ai_assisted: false
+            status: published
+
+  - chapter: 2
+    title_sa: शाक्तोपायः
+    title_iast: Śāktopāyaḥ
+    title_en: "Śāktopāya — The Way of Śakti"
+    verses:
+      - verse: 1
+        devanagari: चित्तं मन्त्रः ॥१॥
+        slp1: "cittaM mantraH"
+        iast: "cittaṃ mantraḥ"
+        meter: sūtra
+        word_glosses:
+          - word: cittam
+            iast: cittam
+            gloss_en: "the mind (turned toward the highest reality)"
+            morph: "nom. sg. n."
+          - word: mantraḥ
+            iast: mantraḥ
+            gloss_en: "mantra"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(The yogin's) mind (intent on the supreme) is mantra."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: प्रयत्नः साधकः ॥२॥
+        slp1: "prayatnaH sADakaH"
+        iast: "prayatnaḥ sādhakaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: prayatnaḥ
+            iast: prayatnaḥ
+            gloss_en: "spontaneous, intense effort (toward the Self)"
+            morph: "nom. sg. m."
+          - word: sādhakaḥ
+            iast: sādhakaḥ
+            gloss_en: "the effective one, that which accomplishes (the goal)"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Spontaneous effort (toward Reality) is the (true) means of attainment."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: विद्याशरीरसत्ता मन्त्ररहस्यम् ॥३॥
+        slp1: "vidyASarIrasattA mantrarahasyam"
+        iast: "vidyā-śarīra-sattā mantra-rahasyam"
+        meter: sūtra
+        word_glosses:
+          - word: vidyā-śarīra-sattā
+            iast: vidyā-śarīra-sattā
+            gloss_en: "the being whose body is (pure) Knowledge"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+          - word: mantra-rahasyam
+            iast: mantra-rahasyam
+            gloss_en: "the secret of mantra"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The being whose body is Pure Knowledge is the secret of mantra."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: गर्भे चित्तविकासोऽविशिष्टविद्यास्वप्नः ॥४॥
+        slp1: "garBe cittavikAso'viSizwavidyAsvapnaH"
+        iast: "garbhe citta-vikāso 'viśiṣṭa-vidyā-svapnaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: garbhe
+            iast: garbhe
+            gloss_en: "in the womb (of māyā)"
+            morph: "loc. sg. m."
+          - word: citta-vikāsaḥ
+            iast: citta-vikāsaḥ
+            gloss_en: "expansion of the mind (in inferior bliss)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: aviśiṣṭa-vidyā-svapnaḥ
+            iast: aviśiṣṭa-vidyā-svapnaḥ
+            gloss_en: "is (only) a dream of unspecified (inferior) knowledge"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Expansion of the mind (delighted) in the womb (of māyā) is merely the dream of an inferior, undifferentiated knowledge."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: विद्यासमुत्थाने स्वाभाविके खेचरी शिवावस्था ॥५॥
+        slp1: "vidyAsamutTAne svABAvike KecarI SivAvasTA"
+        iast: "vidyā-samutthāne svābhāvike khecarī śivāvasthā"
+        meter: sūtra
+        word_glosses:
+          - word: vidyā-samutthāne
+            iast: vidyā-samutthāne
+            gloss_en: "when (Pure) Knowledge arises"
+            morph: "loc. sg. n., tatpuruṣa cpd."
+          - word: svābhāvike
+            iast: svābhāvike
+            gloss_en: "spontaneous, natural"
+            morph: "loc. sg. n., adj."
+          - word: khecarī
+            iast: khecarī
+            gloss_en: "khecarī (movement in the void of consciousness)"
+            morph: "nom. sg. f."
+          - word: śiva-avasthā
+            iast: śiva-avasthā
+            gloss_en: "the state of Śiva"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When Pure Knowledge spontaneously arises, (that) khecarī (state of moving in pure consciousness) is the state of Śiva."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: गुरुरुपायः ॥६॥
+        slp1: "gururupAyaH"
+        iast: "gurur upāyaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: guruḥ
+            iast: guruḥ
+            gloss_en: "the guru"
+            morph: "nom. sg. m."
+          - word: upāyaḥ
+            iast: upāyaḥ
+            gloss_en: "the means"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The Guru is the means."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: मातृकाचक्रसम्बोधः ॥७॥
+        slp1: "mAtRkAcakrasambodhaH"
+        iast: "mātṛkā-cakra-sambodhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: mātṛkā-cakra-sambodhaḥ
+            iast: mātṛkā-cakra-sambodhaḥ
+            gloss_en: "(comes from the guru:) full awakening to the wheel of the Mātṛkā (matrix of phonemes)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(From the guru comes) full awakening to the wheel of Mātṛkā (the matrix of phonemes)."
+            ai_assisted: false
+            status: published
+
+      - verse: 8
+        devanagari: शरीरं हविः ॥८॥
+        slp1: "SarIraM haviH"
+        iast: "śarīraṃ haviḥ"
+        meter: sūtra
+        word_glosses:
+          - word: śarīram
+            iast: śarīram
+            gloss_en: "the body (gross, subtle, and causal)"
+            morph: "nom. sg. n."
+          - word: haviḥ
+            iast: haviḥ
+            gloss_en: "the oblation (offered into the fire of consciousness)"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(For such a yogin,) the body is the oblation."
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: ज्ञानमन्नम् ॥९॥
+        slp1: "jYAnamannam"
+        iast: "jñānam annam"
+        meter: sūtra
+        word_glosses:
+          - word: jñānam
+            iast: jñānam
+            gloss_en: "(limited, dualistic) knowledge"
+            morph: "nom. sg. n."
+          - word: annam
+            iast: annam
+            gloss_en: "food (consumed by consciousness)"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Limited) knowledge is (his) food."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: विद्यासंहारे तदुत्थस्वप्नदर्शनम् ॥१०॥
+        slp1: "vidyAsaMhAre tadutTasvapnadarSanam"
+        iast: "vidyā-saṃhāre tadutthа-svapna-darśanam"
+        meter: sūtra
+        word_glosses:
+          - word: vidyā-saṃhāre
+            iast: vidyā-saṃhāre
+            gloss_en: "when (Pure) Knowledge is withdrawn"
+            morph: "loc. sg. m., tatpuruṣa cpd."
+          - word: tat-uttha-svapna-darśanam
+            iast: tat-uttha-svapna-darśanam
+            gloss_en: "vision of the dream that arises from that (withdrawal)"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "On the withdrawal of (Pure) Knowledge, there appears the dream-vision arising from that (withdrawal)."
+            ai_assisted: false
+            status: published
+
+  - chapter: 3
+    title_sa: आणवोपायः
+    title_iast: Āṇavopāyaḥ
+    title_en: "Āṇavopāya — The Way of the Individual"
+    verses:
+      - verse: 1
+        devanagari: आत्मा चित्तम् ॥१॥
+        slp1: "AtmA cittam"
+        iast: "ātmā cittam"
+        meter: sūtra
+        word_glosses:
+          - word: ātmā
+            iast: ātmā
+            gloss_en: "the (individual) self"
+            morph: "nom. sg. m."
+          - word: cittam
+            iast: cittam
+            gloss_en: "(is) the mind (engaged with objects)"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The (individual) self is the mind."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: ज्ञानं बन्धः ॥२॥
+        slp1: "jYAnaM banDaH"
+        iast: "jñānaṃ bandhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: jñānam
+            iast: jñānam
+            gloss_en: "(limited) knowledge"
+            morph: "nom. sg. n."
+          - word: bandhaḥ
+            iast: bandhaḥ
+            gloss_en: "bondage"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Such limited) knowledge is bondage."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: कलादीनां तत्त्वानामविवेको माया ॥३॥
+        slp1: "kalAdInAM tattvAnAmaviveko mAyA"
+        iast: "kalādīnāṃ tattvānām aviveko māyā"
+        meter: sūtra
+        word_glosses:
+          - word: kalā-ādīnām
+            iast: kalā-ādīnām
+            gloss_en: "of the tattvas beginning with kalā"
+            morph: "gen. pl. m., bahuvrīhi"
+          - word: tattvānām
+            iast: tattvānām
+            gloss_en: "of the principles"
+            morph: "gen. pl. n."
+          - word: avivekaḥ
+            iast: avivekaḥ
+            gloss_en: "non-discrimination"
+            morph: "nom. sg. m."
+          - word: māyā
+            iast: māyā
+            gloss_en: "(is) māyā"
+            morph: "nom. sg. f."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Non-discrimination among the tattvas beginning with kalā is māyā."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: शरीरे संहारः कलानाम् ॥४॥
+        slp1: "SarIre saMhAraH kalAnAm"
+        iast: "śarīre saṃhāraḥ kalānām"
+        meter: sūtra
+        word_glosses:
+          - word: śarīre
+            iast: śarīre
+            gloss_en: "in the body (subtle and gross)"
+            morph: "loc. sg. n."
+          - word: saṃhāraḥ
+            iast: saṃhāraḥ
+            gloss_en: "(let there be) dissolution"
+            morph: "nom. sg. m."
+          - word: kalānām
+            iast: kalānām
+            gloss_en: "of the parts/limiting principles"
+            morph: "gen. pl. f."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Let there be) dissolution of the (limiting) parts in the body (by meditation)."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: नाडीसंहारभूतजयभूतकैवल्यभूतपृथक्त्वानि ॥५॥
+        slp1: "nADIsaMhAraBUtajayaBUtakaivalyaBUtapRTaktvAni"
+        iast: "nāḍī-saṃhāra-bhūta-jaya-bhūta-kaivalya-bhūta-pṛthaktvāni"
+        meter: sūtra
+        word_glosses:
+          - word: nāḍī-saṃhāra
+            iast: nāḍī-saṃhāra
+            gloss_en: "dissolution of the (vital) channels"
+            morph: "stem"
+          - word: bhūta-jaya
+            iast: bhūta-jaya
+            gloss_en: "mastery of the elements"
+            morph: "stem"
+          - word: bhūta-kaivalya
+            iast: bhūta-kaivalya
+            gloss_en: "isolation/purification from the elements"
+            morph: "stem"
+          - word: bhūta-pṛthaktvāni
+            iast: bhūta-pṛthaktvāni
+            gloss_en: "and separation from the elements"
+            morph: "nom. pl. n., dvandva cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(He achieves) dissolution of the nāḍīs, mastery of the elements, isolation from the elements, and separation from the elements."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: मोहावरणात्सिद्धिः ॥६॥
+        slp1: "mohAvaraRAtsidDiH"
+        iast: "mohāvaraṇāt siddhiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: moha-āvaraṇāt
+            iast: moha-āvaraṇāt
+            gloss_en: "from the veil of delusion"
+            morph: "abl. sg. n., tatpuruṣa cpd."
+          - word: siddhiḥ
+            iast: siddhiḥ
+            gloss_en: "(comes the apparent) siddhi"
+            morph: "nom. sg. f."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Inferior) siddhis come from the veil of delusion."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: मोहजयादनन्ताभोगात्सहजविद्याजयः ॥७॥
+        slp1: "mohajayAdanantABogAtsahajavidyAjayaH"
+        iast: "moha-jayād anantābhogāt sahaja-vidyā-jayaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: moha-jayāt
+            iast: moha-jayāt
+            gloss_en: "from conquest of delusion"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: ananta-ābhogāt
+            iast: ananta-ābhogāt
+            gloss_en: "from the infinite extension (of consciousness)"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: sahaja-vidyā-jayaḥ
+            iast: sahaja-vidyā-jayaḥ
+            gloss_en: "conquest/mastery of innate Knowledge"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By conquest of delusion and through infinite expansion (of awareness), one masters innate Knowledge."
+            ai_assisted: false
+            status: published
+
+      - verse: 8
+        devanagari: जाग्रद्द्वितीयकरः ॥८॥
+        slp1: "jAgraddvitIyakaraH"
+        iast: "jāgrad dvitīya-karaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: jāgrat
+            iast: jāgrat
+            gloss_en: "(the yogin's) waking"
+            morph: "nom. sg. n., pres. part."
+          - word: dvitīya-karaḥ
+            iast: dvitīya-karaḥ
+            gloss_en: "(is) the second ray (illumining objects)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(The yogin's) waking state is (only) a second ray (of his inner light)."
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: नर्तक आत्मा ॥९॥
+        slp1: "nartaka AtmA"
+        iast: "nartaka ātmā"
+        meter: sūtra
+        word_glosses:
+          - word: nartakaḥ
+            iast: nartakaḥ
+            gloss_en: "a dancer"
+            morph: "nom. sg. m."
+          - word: ātmā
+            iast: ātmā
+            gloss_en: "the Self"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The Self is a dancer."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: रङ्गोऽन्तरात्मा ॥१०॥
+        slp1: "raNgo'ntarAtmA"
+        iast: "raṅgo 'ntarātmā"
+        meter: sūtra
+        word_glosses:
+          - word: raṅgaḥ
+            iast: raṅgaḥ
+            gloss_en: "the stage"
+            morph: "nom. sg. m."
+          - word: antar-ātmā
+            iast: antar-ātmā
+            gloss_en: "the inner self (subtle body)"
+            morph: "nom. sg. m., karmadhāraya cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The inner self is (his) stage."
+            ai_assisted: false
+            status: published
+
+      - verse: 11
+        devanagari: प्रेक्षकाणीन्द्रियाणि ॥११॥
+        slp1: "prekzakARIndriyARi"
+        iast: "prekṣakāṇīndriyāṇi"
+        meter: sūtra
+        word_glosses:
+          - word: prekṣakāṇi
+            iast: prekṣakāṇi
+            gloss_en: "(are) the spectators"
+            morph: "nom. pl. n."
+          - word: indriyāṇi
+            iast: indriyāṇi
+            gloss_en: "the senses"
+            morph: "nom. pl. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The senses are the spectators."
+            ai_assisted: false
+            status: published
+
+      - verse: 12
+        devanagari: धीवशात्सत्त्वसिद्धिः ॥१२॥
+        slp1: "DIvaSAtsattvasidDiH"
+        iast: "dhī-vaśāt sattva-siddhiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: dhī-vaśāt
+            iast: dhī-vaśāt
+            gloss_en: "by the power of (illumined) intellect"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: sattva-siddhiḥ
+            iast: sattva-siddhiḥ
+            gloss_en: "manifestation of (one's true) being"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Through the power of (illumined) intellect, attainment of pure being (sattva) arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 13
+        devanagari: सिद्धः स्वतन्त्रभावः ॥१३॥
+        slp1: "sidDaH svatantraBAvaH"
+        iast: "siddhaḥ svatantra-bhāvaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: siddhaḥ
+            iast: siddhaḥ
+            gloss_en: "(is) accomplished"
+            morph: "nom. sg. m., past part."
+          - word: svatantra-bhāvaḥ
+            iast: svatantra-bhāvaḥ
+            gloss_en: "the state of (perfect) independence"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The state of (perfect) freedom is (thus) attained."
+            ai_assisted: false
+            status: published
+
+      - verse: 14
+        devanagari: यथा तत्र तथान्यत्र ॥१४॥
+        slp1: "yaTA tatra taTAnyatra"
+        iast: "yathā tatra tathānyatra"
+        meter: sūtra
+        word_glosses:
+          - word: yathā
+            iast: yathā
+            gloss_en: "as"
+            morph: "indecl."
+          - word: tatra
+            iast: tatra
+            gloss_en: "there (in his own body)"
+            morph: "indecl."
+          - word: tathā
+            iast: tathā
+            gloss_en: "so"
+            morph: "indecl."
+          - word: anyatra
+            iast: anyatra
+            gloss_en: "elsewhere (in any other body)"
+            morph: "indecl."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "As (he is freely) there (in his own body), so (he is) elsewhere (in any other)."
+            ai_assisted: false
+            status: published
+
+      - verse: 15
+        devanagari: बीजावधानम् ॥१५॥
+        slp1: "bIjAvaDAnam"
+        iast: "bījāvadhānam"
+        meter: sūtra
+        word_glosses:
+          - word: bīja-avadhānam
+            iast: bīja-avadhānam
+            gloss_en: "attention/focus on the seed (the supreme Śakti as source of all)"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Let his) attention (be ever) on the Seed (the supreme Śakti)."
+            ai_assisted: false
+            status: published
+
+      - verse: 16
+        devanagari: आसनस्थः सुखं ह्रदे निमज्जति ॥१६॥
+        slp1: "AsanasTaH suKaM hrade nimajjati"
+        iast: "āsana-sthaḥ sukhaṃ hrade nimajjati"
+        meter: sūtra
+        word_glosses:
+          - word: āsana-sthaḥ
+            iast: āsana-sthaḥ
+            gloss_en: "established in the (true) seat (śakti as resting-place)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: sukham
+            iast: sukham
+            gloss_en: "easily, with bliss"
+            morph: "acc. sg. n., adv."
+          - word: hrade
+            iast: hrade
+            gloss_en: "in the lake (of supreme consciousness)"
+            morph: "loc. sg. m."
+          - word: nimajjati
+            iast: nimajjati
+            gloss_en: "becomes immersed"
+            morph: "3rd sg. pres. indic."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Established in the (true) seat (of power), he easily plunges into the Lake (of supreme consciousness)."
+            ai_assisted: false
+            status: published
+
+      - verse: 17
+        devanagari: स्वमात्रानिर्माणमापादयति ॥१७॥
+        slp1: "svamAtrAnirmARamApAdayati"
+        iast: "sva-mātrā-nirmāṇam āpādayati"
+        meter: sūtra
+        word_glosses:
+          - word: sva-mātrā-nirmāṇam
+            iast: sva-mātrā-nirmāṇam
+            gloss_en: "creation according to his own measure (of awareness)"
+            morph: "acc. sg. n., tatpuruṣa cpd."
+          - word: āpādayati
+            iast: āpādayati
+            gloss_en: "he brings about"
+            morph: "3rd sg. pres. caus."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "He brings about creation according to his own measure (of consciousness)."
+            ai_assisted: false
+            status: published
+
+      - verse: 18
+        devanagari: विद्याविनाशे जन्मविनाशः ॥१८॥
+        slp1: "vidyAvinASe janmavinASaH"
+        iast: "vidyāvināśe janma-vināśaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: vidyā-avināśe
+            iast: vidyā-avināśe
+            gloss_en: "when (Pure) Knowledge is unceasing"
+            morph: "loc. sg. m., tatpuruṣa cpd."
+          - word: janma-vināśaḥ
+            iast: janma-vināśaḥ
+            gloss_en: "destruction of (further) birth"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When (Pure) Knowledge does not vanish, there is the destruction of (further) birth."
+            ai_assisted: false
+            status: published
+
+      - verse: 19
+        devanagari: कवर्गादिषु माहेश्वर्याद्याः पशुमातरः ॥१९॥
+        slp1: "kavargAdizu mAheSvaryAdyAH paSumAtaraH"
+        iast: "kavargādiṣu māheśvaryādyāḥ paśu-mātaraḥ"
+        meter: sūtra
+        word_glosses:
+          - word: ka-varga-ādiṣu
+            iast: ka-varga-ādiṣu
+            gloss_en: "in the classes of consonants beginning with ka"
+            morph: "loc. pl. m., tatpuruṣa cpd."
+          - word: māheśvarī-ādyāḥ
+            iast: māheśvarī-ādyāḥ
+            gloss_en: "Māheśvarī and other (śaktis)"
+            morph: "nom. pl. f., bahuvrīhi"
+          - word: paśu-mātaraḥ
+            iast: paśu-mātaraḥ
+            gloss_en: "(are) the mothers of the bound creature"
+            morph: "nom. pl. f., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Māheśvarī and the other (śaktis), presiding over the classes of consonants (ka-varga, etc.), are the mothers of the bound creature."
+            ai_assisted: false
+            status: published
+
+      - verse: 20
+        devanagari: त्रिषु चतुर्थं तैलवदासेच्यम् ॥२०॥
+        slp1: "trizu caturTaM tailavadAsecyam"
+        iast: "triṣu caturthaṃ tailavad āsecyam"
+        meter: sūtra
+        word_glosses:
+          - word: triṣu
+            iast: triṣu
+            gloss_en: "into the three (states: waking, dream, deep sleep)"
+            morph: "loc. pl. m."
+          - word: caturtham
+            iast: caturtham
+            gloss_en: "the fourth (turya)"
+            morph: "nom. sg. n., ord. num."
+          - word: tailavat
+            iast: tailavat
+            gloss_en: "like oil"
+            morph: "indecl., comparative"
+          - word: āsecyam
+            iast: āsecyam
+            gloss_en: "is to be poured/infused"
+            morph: "nom. sg. n., fut. pass. part."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The Fourth (state) should be infused like oil into the three (states of waking, dream, and deep sleep)."
+            ai_assisted: false
+            status: published
+
+      - verse: 21
+        devanagari: मग्नः स्वचित्तेन प्रविशेत् ॥२१॥
+        slp1: "magnaH svacittena praviSet"
+        iast: "magnaḥ sva-cittena praviśet"
+        meter: sūtra
+        word_glosses:
+          - word: magnaḥ
+            iast: magnaḥ
+            gloss_en: "immersed (in his own Self)"
+            morph: "nom. sg. m., past part."
+          - word: sva-cittena
+            iast: sva-cittena
+            gloss_en: "by his own (purified) mind"
+            morph: "inst. sg. n., tatpuruṣa cpd."
+          - word: praviśet
+            iast: praviśet
+            gloss_en: "let him enter (the Heart)"
+            morph: "3rd sg. opt."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Immersed (in the Self), let him enter (the Heart) by his own (purified) mind."
+            ai_assisted: false
+            status: published
+
+      - verse: 22
+        devanagari: प्राणसमाचारे समदर्शनम् ॥२२॥
+        slp1: "prARasamAcAre samadarSanam"
+        iast: "prāṇa-samācāre sama-darśanam"
+        meter: sūtra
+        word_glosses:
+          - word: prāṇa-samācāre
+            iast: prāṇa-samācāre
+            gloss_en: "when prāṇa flows (slowly, evenly)"
+            morph: "loc. sg. m., tatpuruṣa cpd."
+          - word: sama-darśanam
+            iast: sama-darśanam
+            gloss_en: "equal vision (of all)"
+            morph: "nom. sg. n., karmadhāraya cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When prāṇa flows (gently and evenly), equal vision (of all things) arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 23
+        devanagari: मध्येऽवरप्रसवः ॥२३॥
+        slp1: "maDye'varaprasavaH"
+        iast: "madhye 'vara-prasavaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: madhye
+            iast: madhye
+            gloss_en: "in the middle (state, between turya and another state)"
+            morph: "loc. sg. n."
+          - word: avara-prasavaḥ
+            iast: avara-prasavaḥ
+            gloss_en: "production of an inferior (state)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "In the intermediate (phase), there is the production of an inferior (experience)."
+            ai_assisted: true
+            status: draft
+
+      - verse: 24
+        devanagari: मात्रास्वप्रत्ययसन्धाने नष्टस्य पुनरुत्थानम् ॥२४॥
+        slp1: "mAtrAsvapratyayasanDAne nazwasya punarutTAnam"
+        iast: "mātrāsva-pratyaya-sandhāne naṣṭasya punar-utthānam"
+        meter: sūtra
+        word_glosses:
+          - word: mātrāsva-pratyaya-sandhāne
+            iast: mātrāsva-pratyaya-sandhāne
+            gloss_en: "in union with the cognition of (one's own) measures (of object-experience)"
+            morph: "loc. sg. n., tatpuruṣa cpd."
+          - word: naṣṭasya
+            iast: naṣṭasya
+            gloss_en: "of what was lost (the turya state)"
+            morph: "gen. sg. m., past part."
+          - word: punar-utthānam
+            iast: punar-utthānam
+            gloss_en: "rising again"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By joining (turya) with the cognition of objects, what was lost rises again."
+            ai_assisted: true
+            status: draft
+
+      - verse: 25
+        devanagari: शिवतुल्यो जायते ॥२५॥
+        slp1: "SivatulyojAyate"
+        iast: "śiva-tulyo jāyate"
+        meter: sūtra
+        word_glosses:
+          - word: śiva-tulyaḥ
+            iast: śiva-tulyaḥ
+            gloss_en: "equal to Śiva"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: jāyate
+            iast: jāyate
+            gloss_en: "(he) becomes"
+            morph: "3rd sg. pres. mid."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Such a yogin) becomes equal to Śiva."
+            ai_assisted: false
+            status: published
+
+      - verse: 26
+        devanagari: शरीरवृत्तिर्व्रतम् ॥२६॥
+        slp1: "SarIravRttirvratam"
+        iast: "śarīra-vṛttir vratam"
+        meter: sūtra
+        word_glosses:
+          - word: śarīra-vṛttiḥ
+            iast: śarīra-vṛttiḥ
+            gloss_en: "the maintenance of the body"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+          - word: vratam
+            iast: vratam
+            gloss_en: "(is his) vow/observance"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The (mere) maintenance of the body is (his) vow."
+            ai_assisted: false
+            status: published
+
+      - verse: 27
+        devanagari: कथा जपः ॥२७॥
+        slp1: "kaTA japaH"
+        iast: "kathā japaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: kathā
+            iast: kathā
+            gloss_en: "(ordinary) speech"
+            morph: "nom. sg. f."
+          - word: japaḥ
+            iast: japaḥ
+            gloss_en: "(is his) japa/recitation"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(His ordinary) speech is (his) japa."
+            ai_assisted: false
+            status: published
+
+      - verse: 28
+        devanagari: दानमात्मज्ञानम् ॥२८॥
+        slp1: "dAnamAtmajYAnam"
+        iast: "dānam ātma-jñānam"
+        meter: sūtra
+        word_glosses:
+          - word: dānam
+            iast: dānam
+            gloss_en: "(his) gift (to others)"
+            morph: "nom. sg. n."
+          - word: ātma-jñānam
+            iast: ātma-jñānam
+            gloss_en: "knowledge of the Self"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(His) gift (to others) is Self-knowledge."
+            ai_assisted: false
+            status: published
+
+      - verse: 29
+        devanagari: योऽविपस्थो ज्ञाहेतुश्च ॥२९॥
+        slp1: "yo'vipasTojYAhetuSca"
+        iast: "yo 'vipastho jñā-hetuś ca"
+        meter: sūtra
+        word_glosses:
+          - word: yaḥ
+            iast: yaḥ
+            gloss_en: "he who"
+            morph: "nom. sg. m., rel. pron."
+          - word: avipa-sthaḥ
+            iast: avipa-sthaḥ
+            gloss_en: "is established in protection of (sense-)flock (i.e., master of the senses)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: jñā-hetuḥ
+            iast: jñā-hetuḥ
+            gloss_en: "(is) the cause of (Self-)knowledge"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: ca
+            iast: ca
+            gloss_en: "and"
+            morph: "indecl."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "best-attempt rendering; consult Kṣemarāja's Vimarśinī"
+            license: PD
+            text: "He who is established (as protector of the sense-flock) is (also) the cause of (their) knowledge."
+            ai_assisted: true
+            status: draft
+
+      - verse: 30
+        devanagari: स्वशक्तिप्रचयोऽस्य विश्वम् ॥३०॥
+        slp1: "svaSaktipracayo'sya viSvam"
+        iast: "sva-śakti-pracayo 'sya viśvam"
+        meter: sūtra
+        word_glosses:
+          - word: sva-śakti-pracayaḥ
+            iast: sva-śakti-pracayaḥ
+            gloss_en: "the expansion/accumulation of his own śaktis"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: asya
+            iast: asya
+            gloss_en: "for him"
+            morph: "gen. sg. m."
+          - word: viśvam
+            iast: viśvam
+            gloss_en: "(is) the universe"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The universe is, for him, the expansion of his own śakti."
+            ai_assisted: false
+            status: published
+
+      - verse: 31
+        devanagari: स्थितिलयौ ॥३१॥
+        slp1: "sTitilayO"
+        iast: "sthiti-layau"
+        meter: sūtra
+        word_glosses:
+          - word: sthiti-layau
+            iast: sthiti-layau
+            gloss_en: "(its) maintenance and dissolution (are likewise his own)"
+            morph: "nom. dual m., dvandva cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(Its) maintenance and dissolution (are likewise his own expansion)."
+            ai_assisted: false
+            status: published
+
+      - verse: 32
+        devanagari: तत्प्रवृत्तावप्यनिरासः संवेत्तृभावात् ॥३२॥
+        slp1: "tatpravRttAvapyanirAsaH saMvettRBAvAt"
+        iast: "tat-pravṛttāv apy anirāsaḥ saṃvettṛ-bhāvāt"
+        meter: sūtra
+        word_glosses:
+          - word: tat-pravṛttau
+            iast: tat-pravṛttau
+            gloss_en: "even when that (manifestation/dissolution) proceeds"
+            morph: "loc. sg. f., tatpuruṣa cpd."
+          - word: api
+            iast: api
+            gloss_en: "even"
+            morph: "indecl."
+          - word: anirāsaḥ
+            iast: anirāsaḥ
+            gloss_en: "no exclusion/loss (of his true nature)"
+            morph: "nom. sg. m."
+          - word: saṃvettṛ-bhāvāt
+            iast: saṃvettṛ-bhāvāt
+            gloss_en: "because of his being the (pure) knower"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Even when that (creation/dissolution) is occurring, there is no loss (of his real nature), because he remains the (pure) Knower."
+            ai_assisted: false
+            status: published
+
+      - verse: 33
+        devanagari: सुखदुःखयोर्बहिर्मननम् ॥३३॥
+        slp1: "suKaduHKayorbahirmananam"
+        iast: "sukha-duḥkhayor bahir-mananam"
+        meter: sūtra
+        word_glosses:
+          - word: sukha-duḥkhayoḥ
+            iast: sukha-duḥkhayoḥ
+            gloss_en: "of pleasure and pain"
+            morph: "gen. dual n., dvandva cpd."
+          - word: bahir-mananam
+            iast: bahir-mananam
+            gloss_en: "(there is) regarding (them) as external"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(For him,) pleasure and pain are regarded as external (objects)."
+            ai_assisted: false
+            status: published
+
+      - verse: 34
+        devanagari: तद्विमुक्तस्तु केवली ॥३४॥
+        slp1: "tadvimuktastu kevalI"
+        iast: "tad-vimuktas tu kevalī"
+        meter: sūtra
+        word_glosses:
+          - word: tat-vimuktaḥ
+            iast: tat-vimuktaḥ
+            gloss_en: "freed from that (pleasure-pain dyad)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: tu
+            iast: tu
+            gloss_en: "indeed"
+            morph: "indecl."
+          - word: kevalī
+            iast: kevalī
+            gloss_en: "(he is) the Alone (the absolute, isolated one)"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Freed from that (duality), he indeed is the Alone (kevalī)."
+            ai_assisted: false
+            status: published
+
+      - verse: 35
+        devanagari: मोहप्रतिसंहतस्तु कर्मात्मा ॥३५॥
+        slp1: "mohapratisaMhatastu karmAtmA"
+        iast: "moha-pratisaṃhatas tu karmātmā"
+        meter: sūtra
+        word_glosses:
+          - word: moha-pratisaṃhataḥ
+            iast: moha-pratisaṃhataḥ
+            gloss_en: "(one) compacted with delusion"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: tu
+            iast: tu
+            gloss_en: "but"
+            morph: "indecl."
+          - word: karma-ātmā
+            iast: karma-ātmā
+            gloss_en: "(is) the self subject to action (and its fruits)"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "But (the soul) compacted with delusion is (only) the karmic self (bound to action)."
+            ai_assisted: false
+            status: published
+
+      - verse: 36
+        devanagari: भेदतिरस्कारे सर्गान्तरकर्मत्वम् ॥३६॥
+        slp1: "Bedatiraskāre sargāntarakarmatvam"
+        iast: "bheda-tiraskāre sargāntara-karmatvam"
+        meter: sūtra
+        word_glosses:
+          - word: bheda-tiraskāre
+            iast: bheda-tiraskāre
+            gloss_en: "when difference is set aside"
+            morph: "loc. sg. m., tatpuruṣa cpd."
+          - word: sarga-antara-karmatvam
+            iast: sarga-antara-karmatvam
+            gloss_en: "(arises) the power of effecting another creation"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When (the sense of) difference is set aside, the power of effecting another creation (arises)."
+            ai_assisted: false
+            status: published
+
+      - verse: 37
+        devanagari: करणशक्तिः स्वतोऽनुभवात् ॥३७॥
+        slp1: "karaRaSaktiH svato'nuBavAt"
+        iast: "karaṇa-śaktiḥ svato 'nubhavāt"
+        meter: sūtra
+        word_glosses:
+          - word: karaṇa-śaktiḥ
+            iast: karaṇa-śaktiḥ
+            gloss_en: "the power of acting/creating"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+          - word: svataḥ
+            iast: svataḥ
+            gloss_en: "from oneself"
+            morph: "indecl., abl. adv."
+          - word: anubhavāt
+            iast: anubhavāt
+            gloss_en: "from (direct) experience"
+            morph: "abl. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(The yogin's) creative power (is known) from his own direct experience."
+            ai_assisted: false
+            status: published
+
+      - verse: 38
+        devanagari: त्रिपदाद्यनुप्राणनम् ॥३८॥
+        slp1: "tripadAdyanuprARanam"
+        iast: "tripadādy-anuprāṇanam"
+        meter: sūtra
+        word_glosses:
+          - word: tripada-ādi-anuprāṇanam
+            iast: tripada-ādi-anuprāṇanam
+            gloss_en: "(there is) enlivening of the three states (waking, dream, deep sleep) and what follows, by the primal (turya)"
+            morph: "nom. sg. n., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "(The three states, beginning with waking,) are enlivened by the primary (turya)."
+            ai_assisted: false
+            status: published
+
+      - verse: 39
+        devanagari: चित्तस्थितिवच्छरीरकरणबाह्येषु ॥३९॥
+        slp1: "cittasTitivaccarIrakaraRabAhyezu"
+        iast: "citta-sthitivac charīra-karaṇa-bāhyeṣu"
+        meter: sūtra
+        word_glosses:
+          - word: citta-sthiti-vat
+            iast: citta-sthiti-vat
+            gloss_en: "as in the state of (concentrated) mind"
+            morph: "indecl., comparative"
+          - word: śarīra-karaṇa-bāhyeṣu
+            iast: śarīra-karaṇa-bāhyeṣu
+            gloss_en: "in the body, the senses, and the external (objects)"
+            morph: "loc. pl. n., dvandva cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "As (turya pervades) the steady mind, (so it pervades) the body, the senses, and external (objects)."
+            ai_assisted: false
+            status: published
+
+      - verse: 40
+        devanagari: अभिलाषाद्बहिर्गतिः संवाह्यस्य ॥४०॥
+        slp1: "aBilAzAdbahirgatiH saMvAhyasya"
+        iast: "abhilāṣād bahir-gatiḥ saṃvāhyasya"
+        meter: sūtra
+        word_glosses:
+          - word: abhilāṣāt
+            iast: abhilāṣāt
+            gloss_en: "from desire/longing"
+            morph: "abl. sg. m."
+          - word: bahir-gatiḥ
+            iast: bahir-gatiḥ
+            gloss_en: "outward movement"
+            morph: "nom. sg. f., tatpuruṣa cpd."
+          - word: saṃvāhyasya
+            iast: saṃvāhyasya
+            gloss_en: "of one carried (by saṃsāra), the deluded soul"
+            morph: "gen. sg. m., fut. pass. part."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "From desire (alone) comes the outward-going (of) the soul carried (about by saṃsāra)."
+            ai_assisted: false
+            status: published
+
+      - verse: 41
+        devanagari: तदारूढप्रमितेस्तत्क्षयाज्जीवसङ्क्षयः ॥४१॥
+        slp1: "tadArUDapramitestatkzayAjjIvasaNkzayaH"
+        iast: "tad-ārūḍha-pramites tat-kṣayāj jīva-saṅkṣayaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: tat-ārūḍha-pramiteḥ
+            iast: tat-ārūḍha-pramiteḥ
+            gloss_en: "of one whose cognition is firmly established in That (the Self)"
+            morph: "gen. sg. m., bahuvrīhi"
+          - word: tat-kṣayāt
+            iast: tat-kṣayāt
+            gloss_en: "by the elimination of that (desire)"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: jīva-saṅkṣayaḥ
+            iast: jīva-saṅkṣayaḥ
+            gloss_en: "destruction of the (limited) jīva"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "For one established in That (the Self), by the elimination of (desire), there is the destruction of (his condition as a limited) jīva."
+            ai_assisted: false
+            status: published
+
+      - verse: 42
+        devanagari: भूतकञ्चुकी तदा विमुक्तो भूयः पतिसमः परः ॥४२॥
+        slp1: "BUtakaYcukI tadA vimukto BUyaH patisamaH paraH"
+        iast: "bhūta-kañcukī tadā vimukto bhūyaḥ pati-samaḥ paraḥ"
+        meter: sūtra
+        word_glosses:
+          - word: bhūta-kañcukī
+            iast: bhūta-kañcukī
+            gloss_en: "having the elements (only) as an outer garment"
+            morph: "nom. sg. m., bahuvrīhi"
+          - word: tadā
+            iast: tadā
+            gloss_en: "then"
+            morph: "indecl."
+          - word: vimuktaḥ
+            iast: vimuktaḥ
+            gloss_en: "liberated"
+            morph: "nom. sg. m., past part."
+          - word: bhūyaḥ
+            iast: bhūyaḥ
+            gloss_en: "thereupon"
+            morph: "indecl."
+          - word: pati-samaḥ
+            iast: pati-samaḥ
+            gloss_en: "equal to the Lord"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+          - word: paraḥ
+            iast: paraḥ
+            gloss_en: "supreme"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Then, wearing the elements (only) as an outer cloak, liberated, he becomes equal to the Lord, supreme."
+            ai_assisted: false
+            status: published
+
+      - verse: 43
+        devanagari: नैसर्गिकः प्राणसम्बन्धः ॥४३॥
+        slp1: "naisargikaH prARasambanDaH"
+        iast: "naisargikaḥ prāṇa-sambandhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: naisargikaḥ
+            iast: naisargikaḥ
+            gloss_en: "natural, innate"
+            morph: "nom. sg. m., adj."
+          - word: prāṇa-sambandhaḥ
+            iast: prāṇa-sambandhaḥ
+            gloss_en: "(is the) connection with prāṇa"
+            morph: "nom. sg. m., tatpuruṣa cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The connection with prāṇa (of the bound soul) is natural (innate to embodiment)."
+            ai_assisted: false
+            status: published
+
+      - verse: 44
+        devanagari: नासिकान्तर्मध्यसंयमात् किमत्र सव्यापसव्यसौषुम्नेषु ॥४४॥
+        slp1: "nAsikAntarmaDyasaMyamAt kimatra savyApasavyasauzumnezu"
+        iast: "nāsikāntar-madhya-saṃyamāt kim atra savya-apasavya-sauṣumneṣu"
+        meter: sūtra
+        word_glosses:
+          - word: nāsikā-antar-madhya-saṃyamāt
+            iast: nāsikā-antar-madhya-saṃyamāt
+            gloss_en: "by saṃyama on the inner middle of the nose (the center of breath)"
+            morph: "abl. sg. m., tatpuruṣa cpd."
+          - word: kim atra
+            iast: kim atra
+            gloss_en: "what (need is there) here"
+            morph: "indecl. phrase"
+          - word: savya-apasavya-sauṣumneṣu
+            iast: savya-apasavya-sauṣumneṣu
+            gloss_en: "(for concern) over iḍā, piṅgalā, and suṣumnā channels"
+            morph: "loc. pl. m., dvandva cpd."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By saṃyama on the inner middle of the nose (the center of breath), what need is there (to dwell) on the iḍā, piṅgalā, or suṣumnā?"
+            ai_assisted: true
+            status: draft
+
+      - verse: 45
+        devanagari: भूयः स्यात्प्रतिमीलनम् ॥४५॥
+        slp1: "BUyaH syAtpratimIlanam"
+        iast: "bhūyaḥ syāt pratimīlanam"
+        meter: sūtra
+        word_glosses:
+          - word: bhūyaḥ
+            iast: bhūyaḥ
+            gloss_en: "again and again"
+            morph: "indecl."
+          - word: syāt
+            iast: syāt
+            gloss_en: "let there be"
+            morph: "3rd sg. opt."
+          - word: pratimīlanam
+            iast: pratimīlanam
+            gloss_en: "pratimīlana (turning the gaze both inward and outward, recognizing Śiva everywhere)"
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Again and again, let there be pratimīlana — (the simultaneous turning of the gaze inward upon the Self and outward upon the world as Śiva)."
+            ai_assisted: false
+            status: published

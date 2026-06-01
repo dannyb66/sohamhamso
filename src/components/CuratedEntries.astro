@@ -1,0 +1,127 @@
+---
+/**
+ * CuratedEntries — three quiet entry points modeled on SuttaCentral's
+ * "Discourses · Monastic law · Abhidhamma" pattern, NOT a SaaS card grid.
+ *
+ * Vertical on mobile, three columns on desktop. Generous whitespace.
+ * Each entry is a text block: title (Source Serif SemiBold) + 1-line
+ * description in muted ink.
+ *
+ * V1: text-count is hardcoded. Once getTextCount() exists in src/lib/db.ts
+ * (planned for the content-loading workstream), wire it via:
+ *   import { getTextCount } from "../lib/db";
+ *   const textCount = getTextCount();
+ */
+
+// TODO: replace with `getTextCount()` from src/lib/db.ts once the
+// SQLite reader helper lands. Phase 1 ships 5 texts (Śiva Sūtras,
+// Spanda Kārikās, Pratyabhijñā Hṛdayam, Vijñāna Bhairava, Karpūrādi
+// Stotra) — keeping in sync with that until the DB query exists.
+const textCount = 5;
+
+const entries = [
+  {
+    title: "If you are new",
+    href: "/trika/siva-sutras/1/1",
+    description: "Begin with the Śiva Sūtras — 77 aphorisms.",
+  },
+  {
+    title: "Daily readings",
+    href: "/daily",
+    description: "A verse at dawn in your inbox.",
+  },
+  {
+    title: `All texts (${textCount})`,
+    href: "/texts",
+    description: "Browse the full corpus.",
+  },
+];
+---
+
+<section class="curated" aria-label="Where to begin">
+  <ul class="curated-list">
+    {entries.map((entry) => (
+      <li class="curated-item">
+        <a href={entry.href} class="curated-link">
+          <span class="curated-title">{entry.title}</span>
+          <span class="curated-description">{entry.description}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .curated {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4);
+  }
+
+  @media (min-width: 768px) {
+    .curated {
+      padding: var(--spacing-8) var(--spacing-6);
+    }
+  }
+
+  .curated-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  @media (min-width: 768px) {
+    .curated-list {
+      flex-direction: row;
+      gap: var(--spacing-7);
+      justify-content: space-between;
+    }
+    .curated-item {
+      flex: 1;
+    }
+  }
+
+  .curated-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    text-decoration: none;
+    color: var(--color-ink);
+    padding: var(--spacing-2) 0;
+    transition: opacity var(--motion-fast) var(--easing-out);
+  }
+  .curated-link:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  .curated-link:hover .curated-title {
+    text-decoration-color: var(--color-ink-muted);
+  }
+
+  .curated-title {
+    font-family: var(--font-iast);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 6px;
+  }
+
+  @media (min-width: 768px) {
+    .curated-title {
+      font-size: 24px;
+    }
+  }
+
+  .curated-description {
+    font-family: var(--font-iast);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-ink-muted);
+  }
+</style>

@@ -1,0 +1,708 @@
+text:
+  id: pratyabhijna-hrdayam
+  slug: pratyabhijna-hrdayam
+  title_sa: प्रत्यभिज्ञाहृदयम्
+  title_en: The Heart of Recognition
+  title_iast: Pratyabhijñāhṛdayam
+  author: Kṣemarāja
+  tradition: trika
+  school: kashmir-shaivism
+  era: "11th century CE"
+  source: "Muktabodha Indological Research Institute"
+  source_url: "https://muktabodha.org"
+  source_revision: pending
+  license: PD
+  parent_text_id: null
+  manuscript_url: null
+  description: |
+    The Pratyabhijñāhṛdayam ("Heart of Recognition") is a concise primer
+    on the Pratyabhijñā (Recognition) school of Kashmir Śaivism composed
+    by Kṣemarāja (c. 11th century CE), the principal disciple of
+    Abhinavagupta. In twenty sūtras with the author's own auto-commentary
+    (vṛtti), it distills the essential metaphysics, cosmology, and
+    soteriology of non-dual Trika Śaivism for aspirants who lacked the
+    capacity to study the larger works such as Utpaladeva's
+    Īśvarapratyabhijñākārikā. V1 ingests only the sūtras; Kṣemarāja's
+    auto-commentary is treated as a sibling text (pratyabhijna-hrdayam-vrtti).
+
+chapters:
+  - chapter: 1
+    title_sa: सूत्राणि
+    title_iast: sūtrāṇi
+    title_en: The Sūtras
+    verses:
+      - verse: 1
+        devanagari: चितिः स्वतन्त्रा विश्वसिद्धिहेतुः ॥१॥
+        slp1: "citiH svatantrA vizvasiddhihetuH"
+        iast: "citiḥ svatantrā viśvasiddhihetuḥ"
+        meter: sūtra
+        word_glosses:
+          - word: चितिः
+            iast: citiḥ
+            gloss_en: "Consciousness, the absolute Awareness"
+            morph: "f.nom.sg"
+          - word: स्वतन्त्रा
+            iast: svatantrā
+            gloss_en: "independent, autonomous, free"
+            morph: "f.nom.sg adj"
+          - word: विश्वसिद्धिहेतुः
+            iast: viśvasiddhihetuḥ
+            gloss_en: "the cause of the accomplishment (manifestation) of the universe"
+            morph: "m.nom.sg cpd (viśva-siddhi-hetu)"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings (Singh, Chatterji)"
+            license: PD
+            text: "The absolute Consciousness, in its freedom, is the cause of the manifestation of the universe."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: स्वेच्छया स्वभित्तौ विश्वमुन्मीलयति ॥२॥
+        slp1: "svecCayA svaBittO vizvamunmIlayati"
+        iast: "svecchayā svabhittau viśvam unmīlayati"
+        meter: sūtra
+        word_glosses:
+          - word: स्वेच्छया
+            iast: svecchayā
+            gloss_en: "by her own will"
+            morph: "f.ins.sg"
+          - word: स्वभित्तौ
+            iast: svabhittau
+            gloss_en: "on her own canvas/wall (i.e., on the screen of her own Self)"
+            morph: "f.loc.sg"
+          - word: विश्वम्
+            iast: viśvam
+            gloss_en: "the universe"
+            morph: "n.acc.sg"
+          - word: उन्मीलयति
+            iast: unmīlayati
+            gloss_en: "unfolds, makes manifest, opens out"
+            morph: "verb 3.sg.pres.caus"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "By her own free will she unfolds the universe upon the screen of her own Self."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: तन्नाना अनुरूपग्राह्यग्राहकभेदात् ॥३॥
+        slp1: "tannAnA anurUpagrAhyagrAhakaBedAt"
+        iast: "tan nānā anurūpa-grāhya-grāhaka-bhedāt"
+        meter: sūtra
+        word_glosses:
+          - word: तत्
+            iast: tat
+            gloss_en: "that (universe)"
+            morph: "n.nom.sg pron"
+          - word: नाना
+            iast: nānā
+            gloss_en: "manifold, various"
+            morph: "indecl"
+          - word: अनुरूप
+            iast: anurūpa
+            gloss_en: "corresponding, conforming"
+            morph: "adj cpd"
+          - word: ग्राह्यग्राहकभेदात्
+            iast: grāhya-grāhaka-bhedāt
+            gloss_en: "from the differentiation into object and subject (the grasped and the grasper)"
+            morph: "m.abl.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "That (universe) is manifold because of the corresponding differentiation of perceived objects and perceiving subjects."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: चितिसंकोचात्मा चेतनोऽपि सङ्कुचितविश्वमयः ॥४॥
+        slp1: "citisaMkocAtmA cetano'pi saNkucitavizvamayaH"
+        iast: "citi-saṃkocātmā cetano 'pi saṅkucita-viśvamayaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: चितिसंकोचात्मा
+            iast: citi-saṃkocātmā
+            gloss_en: "having as its essence the contraction of Consciousness"
+            morph: "m.nom.sg cpd"
+          - word: चेतनः
+            iast: cetanaḥ
+            gloss_en: "the experiencing subject, individual self"
+            morph: "m.nom.sg"
+          - word: अपि
+            iast: api
+            gloss_en: "even, also"
+            morph: "indecl"
+          - word: सङ्कुचितविश्वमयः
+            iast: saṅkucita-viśvamayaḥ
+            gloss_en: "consisting of the contracted universe"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The individual experiencer (cetana), whose essence is contracted Consciousness, embodies the universe in a contracted form."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: चितिरेव चेतनपदादवरूढा चेत्यसङ्कोचिनी चित्तम् ॥५॥
+        slp1: "citireva cetanapadAdavarUDhA cetyasaNkocinI cittam"
+        iast: "citir eva cetana-padād avarūḍhā cetya-saṅkocinī cittam"
+        meter: sūtra
+        word_glosses:
+          - word: चितिः
+            iast: citiḥ
+            gloss_en: "Consciousness"
+            morph: "f.nom.sg"
+          - word: एव
+            iast: eva
+            gloss_en: "itself, alone"
+            morph: "indecl"
+          - word: चेतनपदात्
+            iast: cetana-padāt
+            gloss_en: "from the state of the conscious subject"
+            morph: "n.abl.sg cpd"
+          - word: अवरूढा
+            iast: avarūḍhā
+            gloss_en: "descended, fallen"
+            morph: "f.nom.sg ppl"
+          - word: चेत्यसङ्कोचिनी
+            iast: cetya-saṅkocinī
+            gloss_en: "contracting (itself) by the object-of-cognition"
+            morph: "f.nom.sg adj"
+          - word: चित्तम्
+            iast: cittam
+            gloss_en: "the mind, individual mind-stuff"
+            morph: "n.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Consciousness itself, descended from the plane of pure subjectivity and contracted by its objects, becomes the mind (citta)."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: तन्मयो मायाप्रमाता ॥६॥
+        slp1: "tanmayo mAyApramAtA"
+        iast: "tan-mayo māyā-pramātā"
+        meter: sūtra
+        word_glosses:
+          - word: तन्मयः
+            iast: tan-mayaḥ
+            gloss_en: "consisting of that (mind)"
+            morph: "m.nom.sg cpd"
+          - word: मायाप्रमाता
+            iast: māyā-pramātā
+            gloss_en: "the experiencer/subject under māyā"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The empirical subject conditioned by māyā consists of that (contracted mind)."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: स चैको द्विरूपस्त्रिमयश्चतुरात्मा सप्तपञ्चकस्वभावः ॥७॥
+        slp1: "sa caiko dvirUpastrimayazcaturAtmA saptapaYcakasvaBAvaH"
+        iast: "sa caiko dvi-rūpas tri-mayaś catur-ātmā sapta-pañcaka-svabhāvaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: सः
+            iast: saḥ
+            gloss_en: "he (the experiencer)"
+            morph: "m.nom.sg pron"
+          - word: एकः
+            iast: ekaḥ
+            gloss_en: "one"
+            morph: "m.nom.sg"
+          - word: द्विरूपः
+            iast: dvi-rūpaḥ
+            gloss_en: "having two forms (prakāśa and vimarśa)"
+            morph: "m.nom.sg cpd"
+          - word: त्रिमयः
+            iast: tri-mayaḥ
+            gloss_en: "having three (āṇava, śākta, śāmbhava — or the three malas)"
+            morph: "m.nom.sg cpd"
+          - word: चतुरात्मा
+            iast: catur-ātmā
+            gloss_en: "having four selves (the four states of consciousness)"
+            morph: "m.nom.sg cpd"
+          - word: सप्तपञ्चकस्वभावः
+            iast: sapta-pañcaka-svabhāvaḥ
+            gloss_en: "whose nature is the seven pentads (the 35 tattvas grouped as 5×7)"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "He, though one, has two forms, three modes, four selves, and the nature of seven pentads."
+            ai_assisted: true
+            status: draft
+
+      - verse: 8
+        devanagari: तद्भूमिकाः सर्वदर्शनस्थितयः ॥८॥
+        slp1: "tadBUmikAH sarvadarzanasTitayaH"
+        iast: "tad-bhūmikāḥ sarva-darśana-sthitayaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: तद्भूमिकाः
+            iast: tad-bhūmikāḥ
+            gloss_en: "the stages/roles of that (one experiencer)"
+            morph: "f.nom.pl cpd"
+          - word: सर्वदर्शनस्थितयः
+            iast: sarva-darśana-sthitayaḥ
+            gloss_en: "the standpoints of all philosophical systems"
+            morph: "f.nom.pl cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The doctrinal positions of all philosophical schools are roles assumed by that (one Consciousness)."
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: चिद्वत्तच्छक्तिसङ्कोचान्मलावृतः संसारी ॥९॥
+        slp1: "cidvattacCaktisaNkocAnmalAvftaH saMsArI"
+        iast: "cid-vat tac-chakti-saṅkocān malāvṛtaḥ saṃsārī"
+        meter: sūtra
+        word_glosses:
+          - word: चिद्वत्
+            iast: cid-vat
+            gloss_en: "like Consciousness (the universal Self)"
+            morph: "indecl"
+          - word: तच्छक्तिसङ्कोचात्
+            iast: tac-chakti-saṅkocāt
+            gloss_en: "owing to the contraction of his powers"
+            morph: "m.abl.sg cpd"
+          - word: मलावृतः
+            iast: malāvṛtaḥ
+            gloss_en: "covered by the impurities (malas)"
+            morph: "m.nom.sg cpd"
+          - word: संसारी
+            iast: saṃsārī
+            gloss_en: "the transmigrating individual"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Like Consciousness itself (in essence), but with his powers contracted and covered by impurities, he becomes the transmigrating soul."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: तथापि तद्वत् पञ्चकृत्यानि करोति ॥१०॥
+        slp1: "taTApi tadvat paYcakftyAni karoti"
+        iast: "tathāpi tad-vat pañca-kṛtyāni karoti"
+        meter: sūtra
+        word_glosses:
+          - word: तथापि
+            iast: tathāpi
+            gloss_en: "even so"
+            morph: "indecl"
+          - word: तद्वत्
+            iast: tad-vat
+            gloss_en: "like Him (Śiva)"
+            morph: "indecl"
+          - word: पञ्चकृत्यानि
+            iast: pañca-kṛtyāni
+            gloss_en: "the five cosmic acts (creation, maintenance, dissolution, concealment, grace)"
+            morph: "n.acc.pl cpd"
+          - word: करोति
+            iast: karoti
+            gloss_en: "performs"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Even so, like Śiva himself, the bound soul performs the five cosmic acts."
+            ai_assisted: false
+            status: published
+
+      - verse: 11
+        devanagari: आभासनरक्तिविमर्शनबीजावस्थापनविलापनतस्तानि ॥११॥
+        slp1: "ABAsanaraktivimarzanabIjAvasTApanavilApanatastAni"
+        iast: "ābhāsana-rakti-vimarśana-bījāvasthāpana-vilāpanatas tāni"
+        meter: sūtra
+        word_glosses:
+          - word: आभासन
+            iast: ābhāsana
+            gloss_en: "manifesting (sṛṣṭi — creation)"
+            morph: "n cpd-stem"
+          - word: रक्ति
+            iast: rakti
+            gloss_en: "relishing/attachment (sthiti — preservation)"
+            morph: "f cpd-stem"
+          - word: विमर्शन
+            iast: vimarśana
+            gloss_en: "reflective awareness (saṃhāra — withdrawal)"
+            morph: "n cpd-stem"
+          - word: बीजावस्थापन
+            iast: bījāvasthāpana
+            gloss_en: "depositing as seed (tirodhāna — concealment)"
+            morph: "n cpd-stem"
+          - word: विलापनतः
+            iast: vilāpanataḥ
+            gloss_en: "from dissolving (anugraha — grace)"
+            morph: "indecl abl-sense"
+          - word: तानि
+            iast: tāni
+            gloss_en: "those (five acts)"
+            morph: "n.acc.pl pron"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Those five acts (he performs) by way of manifesting, relishing, reflective withdrawal, depositing as seed, and dissolving."
+            ai_assisted: false
+            status: published
+
+      - verse: 12
+        devanagari: तदपरिज्ञाने स्वशक्तिभिर्व्यामोहितता संसारित्वम् ॥१२॥
+        slp1: "tadaparijYAne svazaktiBirvyAmohitatA saMsAritvam"
+        iast: "tad-aparijñāne sva-śaktibhir vyāmohitatā saṃsāritvam"
+        meter: sūtra
+        word_glosses:
+          - word: तदपरिज्ञाने
+            iast: tad-aparijñāne
+            gloss_en: "in the non-recognition of that (one's own nature)"
+            morph: "n.loc.sg cpd"
+          - word: स्वशक्तिभिः
+            iast: sva-śaktibhiḥ
+            gloss_en: "by one's own powers"
+            morph: "f.ins.pl cpd"
+          - word: व्यामोहितता
+            iast: vyāmohitatā
+            gloss_en: "the state of being deluded"
+            morph: "f.nom.sg"
+          - word: संसारित्वम्
+            iast: saṃsāritvam
+            gloss_en: "the condition of being a transmigrant"
+            morph: "n.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When that (true nature) is not recognized, being deluded by one's own powers constitutes bondage to saṃsāra."
+            ai_assisted: false
+            status: published
+
+      - verse: 13
+        devanagari: तत्परिज्ञाने चित्तमेव अन्तर्मुखीभावेन चेतनपदाध्यारोहाच्चितिः ॥१३॥
+        slp1: "tatparijYAne cittameva antarmuKIBAvena cetanapadADyArohAccitiH"
+        iast: "tat-parijñāne cittam eva antarmukhī-bhāvena cetana-padādhyārohāc citiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: तत्परिज्ञाने
+            iast: tat-parijñāne
+            gloss_en: "in the recognition of that"
+            morph: "n.loc.sg cpd"
+          - word: चित्तम्
+            iast: cittam
+            gloss_en: "the mind"
+            morph: "n.nom.sg"
+          - word: एव
+            iast: eva
+            gloss_en: "itself"
+            morph: "indecl"
+          - word: अन्तर्मुखीभावेन
+            iast: antarmukhī-bhāvena
+            gloss_en: "by becoming inward-facing"
+            morph: "m.ins.sg cpd"
+          - word: चेतनपदाध्यारोहात्
+            iast: cetana-padādhyārohāt
+            gloss_en: "by ascending to the plane of the conscious subject"
+            morph: "n.abl.sg cpd"
+          - word: चितिः
+            iast: citiḥ
+            gloss_en: "(becomes) Consciousness"
+            morph: "f.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When that is recognized, the mind itself, turning inward and ascending to the plane of the conscious subject, becomes Consciousness."
+            ai_assisted: false
+            status: published
+
+      - verse: 14
+        devanagari: चितिवह्निरवरोहपदे छन्नोऽपि मात्रया मेयेन्धनं प्लुष्यति ॥१४॥
+        slp1: "citivahniravarohapade Canno'pi mAtrayA meyendhanaM pluzyati"
+        iast: "citi-vahnir avaroha-pade channo 'pi mātrayā meyendhanaṃ pluṣyati"
+        meter: sūtra
+        word_glosses:
+          - word: चितिवह्निः
+            iast: citi-vahniḥ
+            gloss_en: "the fire of Consciousness"
+            morph: "m.nom.sg cpd"
+          - word: अवरोहपदे
+            iast: avaroha-pade
+            gloss_en: "in the descended state"
+            morph: "n.loc.sg cpd"
+          - word: छन्नः
+            iast: channaḥ
+            gloss_en: "concealed, covered"
+            morph: "m.nom.sg ppl"
+          - word: अपि
+            iast: api
+            gloss_en: "even though"
+            morph: "indecl"
+          - word: मात्रया
+            iast: mātrayā
+            gloss_en: "partially, to a measure"
+            morph: "f.ins.sg"
+          - word: मेयेन्धनम्
+            iast: meyendhanam
+            gloss_en: "the fuel of objects-of-knowledge"
+            morph: "n.acc.sg cpd"
+          - word: प्लुष्यति
+            iast: pluṣyati
+            gloss_en: "burns, consumes"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The fire of Consciousness, even when veiled in the descended state, still partially consumes the fuel of objective phenomena."
+            ai_assisted: false
+            status: published
+
+      - verse: 15
+        devanagari: बललाभे विश्वमात्मसात्करोति ॥१५॥
+        slp1: "balalABe vizvamAtmasAtkaroti"
+        iast: "bala-lābhe viśvam ātmasāt karoti"
+        meter: sūtra
+        word_glosses:
+          - word: बललाभे
+            iast: bala-lābhe
+            gloss_en: "upon gaining strength/power"
+            morph: "m.loc.sg cpd"
+          - word: विश्वम्
+            iast: viśvam
+            gloss_en: "the universe"
+            morph: "n.acc.sg"
+          - word: आत्मसात्
+            iast: ātmasāt
+            gloss_en: "(to) one's own Self"
+            morph: "indecl"
+          - word: करोति
+            iast: karoti
+            gloss_en: "makes"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "On gaining (its full) power, it assimilates the whole universe to itself."
+            ai_assisted: false
+            status: published
+
+      - verse: 16
+        devanagari: चिदानन्दलाभे देहादिषु चेत्यमानेष्वपि चिदैकात्म्यप्रतिपत्तिदार्ढ्यं जीवन्मुक्तिः ॥१६॥
+        slp1: "cidAnandalABe dehAdizu cetyamAnezvapi cidEkAtmyapratipattidArQyaM jIvanmuktiH"
+        iast: "cid-ānanda-lābhe dehādiṣu cetyamāneṣv api cid-aikātmya-pratipatti-dārḍhyaṃ jīvan-muktiḥ"
+        meter: sūtra
+        word_glosses:
+          - word: चिदानन्दलाभे
+            iast: cid-ānanda-lābhe
+            gloss_en: "upon gaining the bliss of Consciousness"
+            morph: "m.loc.sg cpd"
+          - word: देहादिषु
+            iast: dehādiṣu
+            gloss_en: "in body and the rest (mind, prāṇa, etc.)"
+            morph: "m.loc.pl cpd"
+          - word: चेत्यमानेषु
+            iast: cetyamāneṣu
+            gloss_en: "even while they are being cognized as objects"
+            morph: "m.loc.pl ppl"
+          - word: अपि
+            iast: api
+            gloss_en: "even, also"
+            morph: "indecl"
+          - word: चिदैकात्म्यप्रतिपत्तिदार्ढ्यम्
+            iast: cid-aikātmya-pratipatti-dārḍhyam
+            gloss_en: "the firmness of the conviction of identity with Consciousness"
+            morph: "n.nom.sg cpd"
+          - word: जीवन्मुक्तिः
+            iast: jīvan-muktiḥ
+            gloss_en: "liberation while still living"
+            morph: "f.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When the bliss of Consciousness is gained, the firm conviction of identity with Consciousness — even when body and the rest are perceived as objects — is liberation-in-life."
+            ai_assisted: false
+            status: published
+
+      - verse: 17
+        devanagari: मध्यविकासाच्चिदानन्दलाभः ॥१७॥
+        slp1: "maDyavikAsAccidAnandalABaH"
+        iast: "madhya-vikāsāc cid-ānanda-lābhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: मध्यविकासात्
+            iast: madhya-vikāsāt
+            gloss_en: "from the unfolding/expansion of the central (channel / Consciousness)"
+            morph: "m.abl.sg cpd"
+          - word: चिदानन्दलाभः
+            iast: cid-ānanda-lābhaḥ
+            gloss_en: "the attainment of the bliss of Consciousness"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "From the unfoldment of the centre arises the attainment of the bliss of Consciousness."
+            ai_assisted: false
+            status: published
+
+      - verse: 18
+        devanagari: विकल्पक्षयशक्तिसङ्कोचविकासवाहच्छेदाद्यन्तकोटिनिभालनादय इहोपायाः ॥१८॥
+        slp1: "vikalpakzayazaktisaNkocavikAsavAhacCedAdyantakoTiniBAlanAdaya ihopAyAH"
+        iast: "vikalpa-kṣaya-śakti-saṅkoca-vikāsa-vāha-cchedādy-antakoṭi-nibhālanādaya ihopāyāḥ"
+        meter: sūtra
+        word_glosses:
+          - word: विकल्पक्षय
+            iast: vikalpa-kṣaya
+            gloss_en: "the dissolution of mental constructs"
+            morph: "n cpd-stem"
+          - word: शक्तिसङ्कोचविकास
+            iast: śakti-saṅkoca-vikāsa
+            gloss_en: "the contraction and expansion of the powers (of sense)"
+            morph: "n cpd-stem"
+          - word: वाहच्छेद
+            iast: vāha-cchedā
+            gloss_en: "the cutting of the (prāṇa/apāna) currents"
+            morph: "n cpd-stem"
+          - word: आद्यन्तकोटिनिभालन
+            iast: ādy-antakoṭi-nibhālana
+            gloss_en: "the contemplation of the beginning and end points (of breath/thought)"
+            morph: "n cpd-stem"
+          - word: आदयः
+            iast: ādayaḥ
+            gloss_en: "and so forth"
+            morph: "m.nom.pl"
+          - word: इह
+            iast: iha
+            gloss_en: "here (in this teaching)"
+            morph: "indecl"
+          - word: उपायाः
+            iast: upāyāḥ
+            gloss_en: "the means"
+            morph: "m.nom.pl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Here the means are: dissolution of mental constructs, contraction and expansion of the powers, cutting of the prāṇa-currents, contemplation of the beginning and end points, and so on."
+            ai_assisted: true
+            status: draft
+
+      - verse: 19
+        devanagari: समाधिसंस्कारवति व्युत्थाने भूयो भूयश्चिदैक्यामर्शान्नित्योदितसमाधिलाभः ॥१९॥
+        slp1: "samADisaMskAravati vyutTAne BUyo BUyazcidEkyAmarzAnnityoditasamADilABaH"
+        iast: "samādhi-saṃskāravati vyutthāne bhūyo bhūyaś cid-aikyāmarśān nityodita-samādhi-lābhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word: समाधिसंस्कारवति
+            iast: samādhi-saṃskāravati
+            gloss_en: "in the post-samādhi state still bearing the impressions of samādhi"
+            morph: "n.loc.sg cpd"
+          - word: व्युत्थाने
+            iast: vyutthāne
+            gloss_en: "in the (state of) emergence from samādhi"
+            morph: "n.loc.sg"
+          - word: भूयो भूयः
+            iast: bhūyo bhūyaḥ
+            gloss_en: "again and again"
+            morph: "indecl"
+          - word: चिदैक्यामर्शात्
+            iast: cid-aikyāmarśāt
+            gloss_en: "from the reflective awareness of unity with Consciousness"
+            morph: "m.abl.sg cpd"
+          - word: नित्योदितसमाधिलाभः
+            iast: nityodita-samādhi-lābhaḥ
+            gloss_en: "the attainment of perpetually-arisen samādhi"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "In the post-samādhi state, by repeatedly reflecting on identity with Consciousness, one attains the ever-present samādhi."
+            ai_assisted: false
+            status: published
+
+      - verse: 20
+        devanagari: तदा प्रकाशानन्दसारमहामन्त्रवीर्यात्मकपूर्णाहन्तावेशात् सदा सर्वसर्गसंहारकारिनिजसंविद्देवताचक्रेश्वरताप्राप्तिर्भवतीति शिवम् ॥२०॥
+        slp1: "tadA prakAzAnandasAramahAmantravIryAtmakapUrNAhantAvezAt sadA sarvasargasaMhArakArinijasaMviddevatAcakrezvaratAprAptirBavatIti zivam"
+        iast: "tadā prakāśānanda-sāra-mahā-mantra-vīryātmaka-pūrṇāhantā-veśāt sadā sarva-sarga-saṃhāra-kāri-nija-saṃvid-devatā-cakreśvaratā-prāptir bhavatīti śivam"
+        meter: sūtra
+        word_glosses:
+          - word: तदा
+            iast: tadā
+            gloss_en: "then"
+            morph: "indecl"
+          - word: प्रकाशानन्दसार
+            iast: prakāśānanda-sāra
+            gloss_en: "whose essence is the bliss of luminous Consciousness"
+            morph: "cpd-stem"
+          - word: महामन्त्रवीर्यात्मक
+            iast: mahā-mantra-vīryātmaka
+            gloss_en: "consisting of the potency of the great Mantra (I-AM)"
+            morph: "cpd-stem"
+          - word: पूर्णाहन्तावेशात्
+            iast: pūrṇāhantā-veśāt
+            gloss_en: "from absorption in the full I-consciousness"
+            morph: "m.abl.sg cpd"
+          - word: सर्वसर्गसंहारकारि
+            iast: sarva-sarga-saṃhāra-kāri
+            gloss_en: "which performs all creation and dissolution"
+            morph: "cpd-stem adj"
+          - word: निजसंविद्देवताचक्रेश्वरताप्राप्तिः
+            iast: nija-saṃvid-devatā-cakreśvaratā-prāptiḥ
+            gloss_en: "attainment of lordship over the wheel of deities of one's own Consciousness"
+            morph: "f.nom.sg cpd"
+          - word: भवति
+            iast: bhavati
+            gloss_en: "occurs, comes about"
+            morph: "verb 3.sg.pres"
+          - word: इति शिवम्
+            iast: iti śivam
+            gloss_en: "thus, may there be auspiciousness (Śiva)"
+            morph: "indecl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Then, through absorption in the full I-consciousness — whose essence is the bliss of luminous Awareness and whose nature is the potency of the great Mantra — one attains forever the lordship over the wheel of deities of one's own Consciousness, which performs all creation and dissolution. Thus, may there be auspiciousness (śivam)."
+            ai_assisted: false
+            status: published

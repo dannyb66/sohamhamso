@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+.astro/
+.output/
+.vercel/
+.netlify/
+.wrangler/
+build/
+
+# Local databases
+db/*.db
+db/*.db-journal
+db/*.sqlite
+db/*.sqlite-journal
+db/*.db-wal
+db/*.db-shm
+
+# Local dev caches
+.turso/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.swp
+*.swo
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# Dataset build artifacts (generated; do not commit)
+dataset/build/
+checksums.sha256.unsigned

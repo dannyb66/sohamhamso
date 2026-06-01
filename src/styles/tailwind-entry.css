@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+ * Tailwind 4 CSS-first config.
+ * The @theme block below is a placeholder — the A6 design-tokens agent
+ * writes the actual brand tokens (palette, type ramp, spacing scale,
+ * fonts) here per the locked design spec in
+ * /Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl.md
+ * (see "V1 Design Spec" section).
+ */
+@theme {
+  /* placeholder — design tokens land here in A6 */
+}

@@ -1,0 +1,339 @@
+---
+/**
+ * Masthead — top chrome. Wordmark left · search icon middle/right ·
+ * language picker right. Hairline border-bottom (var(--color-rule)).
+ * Persistent across pages.
+ *
+ * Search opens a placeholder modal at V1; full search (lexical +
+ * semantic blend) lands in the search workstream. Language picker is
+ * English-only at launch with other languages greyed (aria-disabled +
+ * tooltip), per the honest-constraint pattern from the design spec.
+ */
+import Wordmark from "./Wordmark.astro";
+
+interface Props {
+  currentLang?: string;
+}
+const { currentLang = "EN" } = Astro.props;
+
+// All 11 languages — only EN active at V1. Others rendered greyed.
+// Eventually sourced from a single language registry; hardcoded for V1.
+const languages = [
+  { code: "EN", label: "English", available: true },
+  { code: "HI", label: "हिन्दी (Hindi)", available: false },
+  { code: "TA", label: "தமிழ் (Tamil)", available: false },
+  { code: "TE", label: "తెలుగు (Telugu)", available: false },
+  { code: "BN", label: "বাংলা (Bengali)", available: false },
+  { code: "MR", label: "मराठी (Marathi)", available: false },
+  { code: "GU", label: "ગુજરાતી (Gujarati)", available: false },
+  { code: "KN", label: "ಕನ್ನಡ (Kannada)", available: false },
+  { code: "ML", label: "മലയാളം (Malayalam)", available: false },
+  { code: "PA", label: "ਪੰਜਾਬੀ (Punjabi)", available: false },
+  { code: "OR", label: "ଓଡ଼ିଆ (Odia)", available: false },
+  { code: "AS", label: "অসমীয়া (Assamese)", available: false },
+];
+---
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <Wordmark size="sm" showDevanagari={true} />
+
+    <nav class="masthead-actions" aria-label="Site">
+      <button
+        type="button"
+        class="icon-button"
+        aria-label="Search verses, words, or concepts"
+        data-search-trigger
+      >
+        <!-- minimal magnifier glyph — no Lucide / icon set, per anti-pattern list -->
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5" />
+          <line x1="13.5" y1="13.5" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="lang-picker">
+        <button
+          type="button"
+          class="lang-trigger"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          data-lang-trigger
+        >
+          <span lang="sa" data-sa class="lang-glyph">अ</span>
+          <span class="lang-current">{currentLang}</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+            <path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <ul class="lang-menu" role="listbox" hidden data-lang-menu>
+          {languages.map((l) => (
+            <li
+              role="option"
+              aria-selected={l.code === currentLang}
+              aria-disabled={!l.available}
+              data-available={l.available}
+              title={l.available ? "" : "Translation coming soon — see methodology"}
+            >
+              <span class="lang-code">{l.code}</span>
+              <span class="lang-label">{l.label}</span>
+              {!l.available && <span class="lang-soon">soon</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- V1 search placeholder modal. Real search lands later. -->
+<dialog class="search-modal" data-search-modal aria-label="Search">
+  <form method="dialog" class="search-modal-inner">
+    <label for="search-q" class="search-label">Search verses, words, or concepts</label>
+    <input
+      type="search"
+      id="search-q"
+      name="q"
+      placeholder="pratyabhijñā · wherever the mind goes · कृष्ण · recognition"
+      autocomplete="off"
+      autofocus
+    />
+    <p class="search-note">
+      Full search arrives in V1.1 — for now this is a placeholder. Browse
+      <a href="/texts">all texts</a> to explore the corpus.
+    </p>
+    <button type="submit" class="search-close">Close</button>
+  </form>
+</dialog>
+
+<script>
+  // Wire the placeholder search modal and the language menu. Vanilla JS —
+  // no framework island for V1 chrome. Replace with proper Solid island
+  // when real search ships.
+  (() => {
+    const searchTrigger = document.querySelector<HTMLButtonElement>("[data-search-trigger]");
+    const searchModal = document.querySelector<HTMLDialogElement>("[data-search-modal]");
+    if (searchTrigger && searchModal) {
+      searchTrigger.addEventListener("click", () => searchModal.showModal());
+    }
+
+    const langTrigger = document.querySelector<HTMLButtonElement>("[data-lang-trigger]");
+    const langMenu = document.querySelector<HTMLUListElement>("[data-lang-menu]");
+    if (langTrigger && langMenu) {
+      langTrigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const open = !langMenu.hasAttribute("hidden");
+        if (open) {
+          langMenu.setAttribute("hidden", "");
+          langTrigger.setAttribute("aria-expanded", "false");
+        } else {
+          langMenu.removeAttribute("hidden");
+          langTrigger.setAttribute("aria-expanded", "true");
+        }
+      });
+      document.addEventListener("click", (e) => {
+        if (!langMenu.hasAttribute("hidden") && !langMenu.contains(e.target as Node) && e.target !== langTrigger) {
+          langMenu.setAttribute("hidden", "");
+          langTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    // ⌘K / Ctrl-K to open search
+    document.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        searchModal?.showModal();
+      }
+    });
+  })();
+</script>
+
+<style>
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-rule);
+    backdrop-filter: none; /* no glassmorphism, per anti-pattern list */
+  }
+
+  .masthead-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    height: 56px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  @media (min-width: 768px) {
+    .masthead-inner {
+      height: 64px;
+      padding: 0 var(--spacing-6);
+    }
+  }
+
+  .masthead-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+  }
+
+  .icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--color-ink);
+    cursor: pointer;
+    transition: background var(--motion-fast) var(--easing-out);
+  }
+  .icon-button:hover { background: var(--color-rule); }
+
+  .lang-picker { position: relative; }
+
+  .lang-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 10px;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--color-ink);
+    font-family: var(--font-chrome);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    cursor: pointer;
+    transition: background var(--motion-fast) var(--easing-out);
+  }
+  .lang-trigger:hover { background: var(--color-rule); }
+
+  .lang-glyph {
+    font-family: var(--font-sa-body);
+    font-size: 16px;
+    line-height: 1;
+    color: var(--color-ink-muted);
+  }
+
+  .lang-current {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lang-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 4px);
+    margin: 0;
+    padding: var(--spacing-2) 0;
+    list-style: none;
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    min-width: 240px;
+    max-height: 360px;
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    font-family: var(--font-chrome);
+    font-size: 14px;
+  }
+
+  .lang-menu li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: 8px var(--spacing-4);
+    cursor: pointer;
+  }
+  .lang-menu li[aria-disabled="true"] {
+    color: var(--color-ink-muted);
+    cursor: not-allowed;
+  }
+  .lang-menu li[aria-selected="true"] {
+    background: var(--color-rule);
+  }
+  .lang-menu li[data-available="true"]:hover {
+    background: var(--color-rule);
+  }
+
+  .lang-code {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    min-width: 28px;
+  }
+  .lang-label { flex: 1; }
+  .lang-soon {
+    font-size: 11px;
+    color: var(--color-ink-muted);
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
+  }
+
+  /* Search modal — minimal, V1 placeholder */
+  .search-modal {
+    padding: 0;
+    border: 1px solid var(--color-rule);
+    border-radius: 6px;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    max-width: 560px;
+    width: 92vw;
+  }
+  .search-modal::backdrop {
+    background: rgba(28, 26, 23, 0.4);
+  }
+  .search-modal-inner {
+    padding: var(--spacing-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+  .search-label {
+    font-family: var(--font-chrome);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-muted);
+  }
+  .search-modal input[type="search"] {
+    font-family: var(--font-iast);
+    font-size: 18px;
+    padding: var(--spacing-3);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    width: 100%;
+  }
+  .search-modal input[type="search"]:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+  .search-note {
+    font-size: 14px;
+    color: var(--color-ink-muted);
+    margin: 0;
+  }
+  .search-close {
+    align-self: flex-end;
+    font-family: var(--font-chrome);
+    font-size: 14px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+</style>

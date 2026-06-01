@@ -1,0 +1,1961 @@
+text:
+  id: spanda-karikas
+  slug: spanda-karikas
+  title_sa: स्पन्दकारिकाः
+  title_en: Stanzas on the Divine Pulsation
+  title_iast: Spandakārikāḥ
+  author: "Bhaṭṭa Kallaṭa (attributed to Vasugupta)"
+  tradition: trika
+  school: kashmir-shaivism
+  era: "9th century CE"
+  source: "Muktabodha Indological Research Institute"
+  source_url: "https://muktabodha.org"
+  source_revision: pending
+  license: PD
+  parent_text_id: null
+  manuscript_url: null
+  description: |
+    The Spandakārikās ("Stanzas on the Divine Pulsation") is one of the
+    foundational texts of the Spanda branch of Kashmir Śaivism. Traditionally
+    attributed in different lineages either to Vasugupta (the revealer of the
+    Śivasūtras) or to his disciple Bhaṭṭa Kallaṭa (9th century CE), the work
+    elaborates the doctrine of spanda — the ever-present subtle vibratory
+    pulsation of Consciousness through which Śiva-śakti unfolds, sustains,
+    and withdraws the universe. The text is divided into four niḥṣyandas
+    ("outflows" or sections): Svarūpaspanda (the nature of spanda — 25 vv.),
+    Sahajavidyodaya (arising of innate knowledge — 7 vv.),
+    Vibhūtispanda (supernatural manifestations of spanda — 19 vv.), and a
+    concluding epilogue (1 v.), totalling 52 verses.
+
+chapters:
+  - chapter: 1
+    title_sa: स्वरूपस्पन्दः
+    title_iast: Svarūpaspanda
+    title_en: The Nature of Spanda
+    verses:
+      - verse: 1
+        devanagari: यस्योन्मेषनिमेषाभ्यां जगतः प्रलयोदयौ । तं शक्तिचक्रविभवप्रभवं शङ्करं स्तुमः ॥१॥
+        slp1: "yasyonmezanimezAByAM jagataH pralayodayO . taM zakticakraviBavapraBavaM zaNkaraM stumaH"
+        iast: "yasyonmeṣa-nimeṣābhyāṃ jagataḥ pralayodayau / taṃ śakti-cakra-vibhava-prabhavaṃ śaṅkaraṃ stumaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: यस्य
+            iast: yasya
+            gloss_en: "of whom"
+            morph: "m.gen.sg pron"
+          - word: उन्मेषनिमेषाभ्याम्
+            iast: unmeṣa-nimeṣābhyām
+            gloss_en: "by opening and closing (of the eyes)"
+            morph: "m.ins.du cpd"
+          - word: जगतः
+            iast: jagataḥ
+            gloss_en: "of the world"
+            morph: "n.gen.sg"
+          - word: प्रलयोदयौ
+            iast: pralaya-udayau
+            gloss_en: "the dissolution and arising"
+            morph: "m.nom.du cpd"
+          - word: शक्तिचक्रविभवप्रभवम्
+            iast: śakti-cakra-vibhava-prabhavam
+            gloss_en: "the source of the glory of the wheel of powers"
+            morph: "m.acc.sg cpd"
+          - word: शङ्करम्
+            iast: śaṅkaram
+            gloss_en: "Śaṅkara (Śiva, the bestower of welfare)"
+            morph: "m.acc.sg"
+          - word: स्तुमः
+            iast: stumaḥ
+            gloss_en: "we praise"
+            morph: "verb 1.pl.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "We praise that Śaṅkara, the source of the glory of the wheel of powers, by whose opening and closing (of the eyes) the world is dissolved and arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: यत्र स्थितमिदं सर्वं कार्यं यस्माच्च निर्गतम् । तस्यानावृतरूपत्वान्न निरोधोऽस्ति कुत्रचित् ॥२॥
+        slp1: "yatra sTitamidaM sarvaM kAryaM yasmAcca nirgatam . tasyAnAvftarUpatvAnna niroDo'sti kutracit"
+        iast: "yatra sthitam idaṃ sarvaṃ kāryaṃ yasmāc ca nirgatam / tasyānāvṛta-rūpatvān na nirodho 'sti kutracit //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: यत्र
+            iast: yatra
+            gloss_en: "in which"
+            morph: "indecl"
+          - word: स्थितम्
+            iast: sthitam
+            gloss_en: "abides"
+            morph: "n.nom.sg ppl"
+          - word: कार्यम्
+            iast: kāryam
+            gloss_en: "effect, world of effects"
+            morph: "n.nom.sg"
+          - word: निर्गतम्
+            iast: nirgatam
+            gloss_en: "issued forth"
+            morph: "n.nom.sg ppl"
+          - word: अनावृतरूपत्वात्
+            iast: anāvṛta-rūpatvāt
+            gloss_en: "owing to (its) unveiled nature"
+            morph: "n.abl.sg cpd"
+          - word: निरोधः
+            iast: nirodhaḥ
+            gloss_en: "obstruction"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "That (Spanda principle) in which this whole world of effects rests and from which it issues forth — owing to its unveiled nature, can never be obstructed anywhere."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: जाग्रदादिविभेदेऽपि तदभिन्ने प्रसर्पति । निवर्तते निजान्नैव स्वभावादुपलब्धृतः ॥३॥
+        slp1: "jAgradAdiviBede'pi tadaBinne prasarpati . nivartate nijAnnEva svaBAvAdupalabDftaH"
+        iast: "jāgrad-ādi-vibhede 'pi tad-abhinne prasarpati / nivartate nijān naiva svabhāvād upalabdhṛtaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: जाग्रदादिविभेदे
+            iast: jāgrad-ādi-vibhede
+            gloss_en: "in the differentiation of waking and the other states"
+            morph: "m.loc.sg cpd"
+          - word: तदभिन्ने
+            iast: tad-abhinne
+            gloss_en: "non-different from That"
+            morph: "m.loc.sg cpd"
+          - word: प्रसर्पति
+            iast: prasarpati
+            gloss_en: "though it spreads forth"
+            morph: "verb 3.sg.pres"
+          - word: निवर्तते
+            iast: nivartate
+            gloss_en: "departs, recedes"
+            morph: "verb 3.sg.pres"
+          - word: स्वभावात्
+            iast: svabhāvāt
+            gloss_en: "from its own nature"
+            morph: "m.abl.sg"
+          - word: उपलब्धृतः
+            iast: upalabdhṛtaḥ
+            gloss_en: "as the experiencer/perceiver"
+            morph: "m.abl.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Although it streams forth amid the differentiations of waking and the other states — non-different from itself — it never departs from its own nature as the Perceiver."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: अहं सुखी च दुःखी च रक्तश्चेत्यादिसंविदः । सुखाद्यवस्थानुस्यूते वर्तन्तेऽन्यत्र ताः स्फुटम् ॥४॥
+        slp1: "ahaM suKI ca duHKI ca raktazcetyAdisaMvidaH . suKAdyavasTAnusyUte vartante'nyatra tAH sPuTam"
+        iast: "ahaṃ sukhī ca duḥkhī ca raktaś cetyādi-saṃvidaḥ / sukhādy-avasthānusyūte vartante 'nyatra tāḥ sphuṭam //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अहं सुखी
+            iast: ahaṃ sukhī
+            gloss_en: "I am happy"
+            morph: "phrase"
+          - word: दुःखी
+            iast: duḥkhī
+            gloss_en: "miserable"
+            morph: "m.nom.sg"
+          - word: रक्तः
+            iast: raktaḥ
+            gloss_en: "attached"
+            morph: "m.nom.sg"
+          - word: संविदः
+            iast: saṃvidaḥ
+            gloss_en: "cognitions"
+            morph: "f.nom.pl"
+          - word: सुखाद्यवस्थानुस्यूते
+            iast: sukhādy-avasthānusyūte
+            gloss_en: "in (something) threaded through the states of pleasure etc."
+            morph: "m.loc.sg cpd"
+          - word: अन्यत्र
+            iast: anyatra
+            gloss_en: "elsewhere (i.e., in another substratum)"
+            morph: "indecl"
+          - word: स्फुटम्
+            iast: sphuṭam
+            gloss_en: "clearly"
+            morph: "indecl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Such cognitions as 'I am happy', 'I am miserable', 'I am attached', etc., clearly inhere in another (substratum — the Spanda Self) which is the thread running through the states of pleasure and the rest."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: न दुःखं न सुखं यत्र न ग्राह्यं ग्राहकं न च । न चास्ति मूढभावोऽपि तदस्ति परमार्थतः ॥५॥
+        slp1: "na duHKaM na suKaM yatra na grAhyaM grAhakaM na ca . na cAsti mUDaBAvo'pi tadasti paramArTataH"
+        iast: "na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca / na cāsti mūḍha-bhāvo 'pi tad asti paramārthataḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: दुःखम्
+            iast: duḥkham
+            gloss_en: "pain"
+            morph: "n.nom.sg"
+          - word: सुखम्
+            iast: sukham
+            gloss_en: "pleasure"
+            morph: "n.nom.sg"
+          - word: ग्राह्यम्
+            iast: grāhyam
+            gloss_en: "object of cognition"
+            morph: "n.nom.sg"
+          - word: ग्राहकम्
+            iast: grāhakam
+            gloss_en: "cognizing subject"
+            morph: "n.nom.sg"
+          - word: मूढभावः
+            iast: mūḍha-bhāvaḥ
+            gloss_en: "state of stupor/insentience"
+            morph: "m.nom.sg"
+          - word: परमार्थतः
+            iast: paramārthataḥ
+            gloss_en: "in highest truth"
+            morph: "indecl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "That alone exists in highest truth in which there is no pain, no pleasure, no object, no subject — not even a state of stupor."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: यतः करणवर्गोऽयं विमूढोऽमूढवत्स्वयम् । सहान्तरेण चक्रेण प्रवृत्तिस्थितिसंहृतीः ॥६॥
+        slp1: "yataH karaRavargo'yaM vimUDo'mUDavatsvayam . sahAntareRa cakreRa pravfttisTitisaMhftIH"
+        iast: "yataḥ karaṇa-vargo 'yaṃ vimūḍho 'mūḍha-vat svayam / sahāntareṇa cakreṇa pravṛtti-sthiti-saṃhṛtīḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: करणवर्गः
+            iast: karaṇa-vargaḥ
+            gloss_en: "the group of sense-instruments"
+            morph: "m.nom.sg cpd"
+          - word: विमूढः
+            iast: vimūḍhaḥ
+            gloss_en: "insentient"
+            morph: "m.nom.sg adj"
+          - word: अमूढवत्
+            iast: amūḍha-vat
+            gloss_en: "as if sentient"
+            morph: "indecl"
+          - word: अन्तरेण चक्रेण
+            iast: antareṇa cakreṇa
+            gloss_en: "together with the inner wheel (of antaḥkaraṇa)"
+            morph: "n.ins.sg"
+          - word: प्रवृत्तिस्थितिसंहृतीः
+            iast: pravṛtti-sthiti-saṃhṛtīḥ
+            gloss_en: "activities, maintenances, withdrawals"
+            morph: "f.acc.pl cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "From which this insentient set of sense-instruments, together with the inner wheel, behaves as if sentient — undertaking, sustaining, and withdrawing activities — (that is the Spanda principle)."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: लभते तत्प्रयत्नेन परीक्ष्यं तत्त्वमादरात् । यतः स्वतन्त्रता तस्य सर्वत्रेयमकृत्रिमा ॥७॥
+        slp1: "laBate tatprayatnena parIkzyaM tattvamAdarAt . yataH svatantratA tasya sarvatreyamakftrimA"
+        iast: "labhate tat-prayatnena parīkṣyaṃ tattvam ādarāt / yataḥ svatantratā tasya sarvatreyam akṛtrimā //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: तत्प्रयत्नेन
+            iast: tat-prayatnena
+            gloss_en: "by effort directed at That"
+            morph: "m.ins.sg cpd"
+          - word: परीक्ष्यम्
+            iast: parīkṣyam
+            gloss_en: "to be investigated"
+            morph: "n.acc.sg gerundive"
+          - word: तत्त्वम्
+            iast: tattvam
+            gloss_en: "the Principle/Reality"
+            morph: "n.acc.sg"
+          - word: स्वतन्त्रता
+            iast: svatantratā
+            gloss_en: "absolute freedom"
+            morph: "f.nom.sg"
+          - word: अकृत्रिमा
+            iast: akṛtrimā
+            gloss_en: "innate, not contrived"
+            morph: "f.nom.sg adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "One should investigate that Principle reverentially with sustained effort, for its innate, unconditioned freedom is found everywhere."
+            ai_assisted: false
+            status: published
+
+      - verse: 8
+        devanagari: न हीच्छानोदनस्यायं प्रेरकत्वेन वर्तते । अपि त्वात्मबलस्पर्शात्पुरुषस्तत्समो भवेत् ॥८॥
+        slp1: "na hIcCAnodanasyAyaM prerakatvena vartate . api tvAtmabalasparzAtpuruzastatsamo Bavet"
+        iast: "na hīcchā-nodanasyāyaṃ prerakatvena vartate / api tv ātma-bala-sparśāt puruṣas tat-samo bhavet //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: इच्छानोदनस्य
+            iast: icchā-nodanasya
+            gloss_en: "of the urging of desire"
+            morph: "n.gen.sg cpd"
+          - word: प्रेरकत्वेन
+            iast: prerakatvena
+            gloss_en: "as the impeller"
+            morph: "n.ins.sg"
+          - word: आत्मबलस्पर्शात्
+            iast: ātma-bala-sparśāt
+            gloss_en: "from contact with the power of the Self"
+            morph: "m.abl.sg cpd"
+          - word: पुरुषः
+            iast: puruṣaḥ
+            gloss_en: "the (individual) person"
+            morph: "m.nom.sg"
+          - word: तत्समः
+            iast: tat-samaḥ
+            gloss_en: "equal to That"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "He does not act as the mere impeller behind the urging of desire; rather, by contact with the power of the Self, the person becomes equal to That."
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: निजाशुद्ध्यासमर्थस्य कर्तव्येष्वभिलाषिणः । यदा क्षोभः प्रलीयेत तदा स्यात्परमं पदम् ॥९॥
+        slp1: "nijAzudDyAsamarTasya kartavyezvaBilAziRaH . yadA kzoBaH pralIyeta tadA syAtparamaM padam"
+        iast: "nijāśuddhyāsamarthasya kartavyeṣv abhilāṣiṇaḥ / yadā kṣobhaḥ pralīyeta tadā syāt paramaṃ padam //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: निजाशुद्धि
+            iast: nijāśuddhi
+            gloss_en: "innate impurity"
+            morph: "f cpd-stem"
+          - word: असमर्थस्य
+            iast: asamarthasya
+            gloss_en: "of one who is incapable"
+            morph: "m.gen.sg adj"
+          - word: कर्तव्येषु
+            iast: kartavyeṣu
+            gloss_en: "in things to be done"
+            morph: "n.loc.pl gerundive"
+          - word: अभिलाषिणः
+            iast: abhilāṣiṇaḥ
+            gloss_en: "of one who desires"
+            morph: "m.gen.sg"
+          - word: क्षोभः
+            iast: kṣobhaḥ
+            gloss_en: "agitation"
+            morph: "m.nom.sg"
+          - word: प्रलीयेत
+            iast: pralīyeta
+            gloss_en: "may dissolve"
+            morph: "verb 3.sg.opt"
+          - word: परमं पदम्
+            iast: paramaṃ padam
+            gloss_en: "the supreme state"
+            morph: "n.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When the agitation of one who, rendered incapable by innate impurity, yet hankers after actions — when that agitation dissolves, then the supreme state arises."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: तदास्याकृत्रिमो धर्मो ज्ञत्वकर्तृत्वलक्षणः । यतस्तदेप्सितं सर्वं जानाति च करोति च ॥१०॥
+        slp1: "tadAsyAkftrimo Darmo jYatvakartftvalakzaRaH . yatastadepsitaM sarvaM jAnAti ca karoti ca"
+        iast: "tadāsyākṛtrimo dharmo jñatva-kartṛtva-lakṣaṇaḥ / yatas tad epsitaṃ sarvaṃ jānāti ca karoti ca //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अकृत्रिमः
+            iast: akṛtrimaḥ
+            gloss_en: "innate"
+            morph: "m.nom.sg adj"
+          - word: धर्मः
+            iast: dharmaḥ
+            gloss_en: "nature, attribute"
+            morph: "m.nom.sg"
+          - word: ज्ञत्वकर्तृत्वलक्षणः
+            iast: jñatva-kartṛtva-lakṣaṇaḥ
+            gloss_en: "characterised by omniscience and omnipotence"
+            morph: "m.nom.sg cpd"
+          - word: एप्सितम्
+            iast: epsitam
+            gloss_en: "desired"
+            morph: "n.acc.sg ppl"
+          - word: जानाति
+            iast: jānāti
+            gloss_en: "knows"
+            morph: "verb 3.sg.pres"
+          - word: करोति
+            iast: karoti
+            gloss_en: "does"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Then his innate nature — marked by omniscience and omnipotence — reveals itself, whereby he knows and accomplishes whatever he desires."
+            ai_assisted: false
+            status: published
+
+      - verse: 11
+        devanagari: तमधिष्ठातृभावेन स्वभावमवलोकयन् । स्मयमान इवास्ते यस्तस्येयं कुसृतिः कुतः ॥११॥
+        slp1: "tamaDizWAtfBAvena svaBAvamavalokayan . smayamAna ivAste yastasyeyaM kusftiH kutaH"
+        iast: "tam adhiṣṭhātṛ-bhāvena svabhāvam avalokayan / smayamāna ivāste yas tasyeyaṃ kusṛtiḥ kutaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अधिष्ठातृभावेन
+            iast: adhiṣṭhātṛ-bhāvena
+            gloss_en: "in the role of the presiding agent"
+            morph: "m.ins.sg cpd"
+          - word: स्वभावम्
+            iast: svabhāvam
+            gloss_en: "one's own nature"
+            morph: "m.acc.sg"
+          - word: अवलोकयन्
+            iast: avalokayan
+            gloss_en: "beholding"
+            morph: "m.nom.sg ppl"
+          - word: स्मयमानः
+            iast: smayamānaḥ
+            gloss_en: "wondering, smiling in amazement"
+            morph: "m.nom.sg ppl"
+          - word: कुसृतिः
+            iast: kusṛtiḥ
+            gloss_en: "evil course (saṃsāra)"
+            morph: "f.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "For one who beholds his own essential nature as the presiding agent and remains as if smiling in wonder — whence can this miserable course of transmigration arise?"
+            ai_assisted: false
+            status: published
+
+      - verse: 12
+        devanagari: नाभावो भाव्यतामेति न च तत्रास्त्यमूढता । यतोऽभियोगसंस्पर्शात्तदासीदिति निश्चयः ॥१२॥
+        slp1: "nABAvo BAvyatAmeti na ca tatrAstyamUDatA . yato'BiyogasaMsparzAttadAsIditi nizcayaH"
+        iast: "nābhāvo bhāvyatām eti na ca tatrāsty amūḍhatā / yato 'bhiyoga-saṃsparśāt tadāsīd iti niścayaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अभावः
+            iast: abhāvaḥ
+            gloss_en: "non-being / void"
+            morph: "m.nom.sg"
+          - word: भाव्यताम्
+            iast: bhāvyatām
+            gloss_en: "the state of being object of meditation"
+            morph: "f.acc.sg"
+          - word: अमूढता
+            iast: amūḍhatā
+            gloss_en: "non-stupor (awareness)"
+            morph: "f.nom.sg"
+          - word: अभियोगसंस्पर्शात्
+            iast: abhiyoga-saṃsparśāt
+            gloss_en: "from the touch of (subsequent) reflection"
+            morph: "m.abl.sg cpd"
+          - word: निश्चयः
+            iast: niścayaḥ
+            gloss_en: "the determination/conviction"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Non-being (śūnya) cannot become an object of meditation, nor is there in it any awareness; yet from the touch of subsequent reflection arises the conviction 'that was'."
+            ai_assisted: true
+            status: draft
+
+      - verse: 13
+        devanagari: अतस्तत्कृत्रिमं ज्ञेयं सौषुप्तपदवत्सदा । न त्वेवं स्मर्यमाणत्वं तत्तत्त्वं प्रतिपद्यते ॥१३॥
+        slp1: "atastatkftrimaM jYeyaM sOzuptapadavatsadA . na tvevaM smaryamARatvaM tattattvaM pratipadyate"
+        iast: "atas tat-kṛtrimaṃ jñeyaṃ sauṣupta-padavat sadā / na tv evaṃ smaryamāṇatvaṃ tat-tattvaṃ pratipadyate //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: कृत्रिमम्
+            iast: kṛtrimam
+            gloss_en: "artificial / fabricated"
+            morph: "n.nom.sg adj"
+          - word: ज्ञेयम्
+            iast: jñeyam
+            gloss_en: "to be known"
+            morph: "n.nom.sg gerundive"
+          - word: सौषुप्तपदवत्
+            iast: sauṣupta-padavat
+            gloss_en: "like the state of deep sleep"
+            morph: "indecl"
+          - word: स्मर्यमाणत्वम्
+            iast: smaryamāṇatvam
+            gloss_en: "the being-remembered (i.e., being object of memory)"
+            morph: "n.nom.sg"
+          - word: तत्तत्त्वम्
+            iast: tat-tattvam
+            gloss_en: "that Reality"
+            morph: "n.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Therefore that (void) is to be regarded as something fabricated, like the state of deep sleep; the true Reality does not attain to such a state of being a mere object of memory."
+            ai_assisted: true
+            status: draft
+
+      - verse: 14
+        devanagari: अवस्थायुगलं चात्र कार्यकर्तृत्वशब्दितम् । कार्यता क्षयिणी तत्र कर्तृत्वं पुनरक्षयम् ॥१४॥
+        slp1: "avasTAyugalaM cAtra kAryakartftvazabditam . kAryatA kzayiRI tatra kartftvaM punarakzayam"
+        iast: "avasthā-yugalaṃ cātra kārya-kartṛtva-śabditam / kāryatā kṣayiṇī tatra kartṛtvaṃ punar akṣayam //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अवस्थायुगलम्
+            iast: avasthā-yugalam
+            gloss_en: "the pair of states"
+            morph: "n.nom.sg cpd"
+          - word: कार्यकर्तृत्वशब्दितम्
+            iast: kārya-kartṛtva-śabditam
+            gloss_en: "named effect-ness and agent-ness"
+            morph: "n.nom.sg cpd"
+          - word: कार्यता
+            iast: kāryatā
+            gloss_en: "the state of being effect"
+            morph: "f.nom.sg"
+          - word: क्षयिणी
+            iast: kṣayiṇī
+            gloss_en: "perishable"
+            morph: "f.nom.sg adj"
+          - word: कर्तृत्वम्
+            iast: kartṛtvam
+            gloss_en: "agency"
+            morph: "n.nom.sg"
+          - word: अक्षयम्
+            iast: akṣayam
+            gloss_en: "imperishable"
+            morph: "n.nom.sg adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Here a pair of states is spoken of — that of effect and that of agent: the effect-state is perishable, but agency is imperishable."
+            ai_assisted: false
+            status: published
+
+      - verse: 15
+        devanagari: कार्योन्मुखः प्रयत्नो यः केवलं सोऽत्र लुप्यते । तस्मिँल्लुप्ते विलुप्तोऽस्मीत्यबुधः प्रतिपद्यते ॥१५॥
+        slp1: "kAryonmuKaH prayatno yaH kevalaM so'tra lupyate . tasmiM~llupte vilupto'smItyabuDaH pratipadyate"
+        iast: "kāryonmukhaḥ prayatno yaḥ kevalaṃ so 'tra lupyate / tasmiṃl lupte vilupto 'smīty abudhaḥ pratipadyate //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: कार्योन्मुखः
+            iast: kāryonmukhaḥ
+            gloss_en: "directed toward effects"
+            morph: "m.nom.sg cpd adj"
+          - word: प्रयत्नः
+            iast: prayatnaḥ
+            gloss_en: "effort"
+            morph: "m.nom.sg"
+          - word: लुप्यते
+            iast: lupyate
+            gloss_en: "is suppressed"
+            morph: "verb 3.sg.pres pass"
+          - word: विलुप्तः
+            iast: viluptaḥ
+            gloss_en: "annihilated"
+            morph: "m.nom.sg ppl"
+          - word: अबुधः
+            iast: abudhaḥ
+            gloss_en: "the undiscerning person"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "What is suspended (in deep sleep) is merely the effort directed toward effects; when that ceases, the undiscerning person thinks 'I am annihilated'."
+            ai_assisted: false
+            status: published
+
+      - verse: 16
+        devanagari: न तु योऽन्तर्मुखो भावः सर्वज्ञत्वगुणास्पदम् । तस्योपलब्धिलोपोऽस्ति तदा ह्यन्योऽनुपलम्भकः ॥१६॥
+        slp1: "na tu yo'ntarmuKo BAvaH sarvajYatvaguRAspadam . tasyopalabDilopo'sti tadA hyanyo'nupalamBakaH"
+        iast: "na tu yo 'ntarmukho bhāvaḥ sarvajñatva-guṇāspadam / tasyopalabdhi-lopo 'sti tadā hy anyo 'nupalambhakaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अन्तर्मुखः
+            iast: antarmukhaḥ
+            gloss_en: "inward-facing"
+            morph: "m.nom.sg adj"
+          - word: भावः
+            iast: bhāvaḥ
+            gloss_en: "principle, being"
+            morph: "m.nom.sg"
+          - word: सर्वज्ञत्वगुणास्पदम्
+            iast: sarvajñatva-guṇāspadam
+            gloss_en: "the seat of the attribute of omniscience"
+            morph: "n.nom.sg cpd"
+          - word: उपलब्धिलोपः
+            iast: upalabdhi-lopaḥ
+            gloss_en: "cessation of perception"
+            morph: "m.nom.sg cpd"
+          - word: अनुपलम्भकः
+            iast: anupalambhakaḥ
+            gloss_en: "the non-perceiver"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "But that inward-facing Being which is the seat of omniscience — for it there is no cessation of perception; only the other (the limited self) becomes non-perceiver."
+            ai_assisted: false
+            status: published
+
+      - verse: 17
+        devanagari: तस्योपलब्धा सततं त्रिपदाव्यभिचारिणः । नित्यं स्यात्सुप्रबुद्धस्य तदाद्यन्ते परस्य तु ॥१७॥
+        slp1: "tasyopalabDA satataM tripadAvyaBicAriRaH . nityaM syAtsuprabudDasya tadAdyante parasya tu"
+        iast: "tasyopalabdhā satataṃ tri-padāvyabhicāriṇaḥ / nityaṃ syāt suprabuddhasya tad-ādy-ante parasya tu //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: उपलब्धा
+            iast: upalabdhā
+            gloss_en: "the perceiver"
+            morph: "m.nom.sg"
+          - word: त्रिपदाव्यभिचारिणः
+            iast: tri-padāvyabhicāriṇaḥ
+            gloss_en: "unfailing through the three states"
+            morph: "m.gen.sg cpd"
+          - word: सुप्रबुद्धस्य
+            iast: suprabuddhasya
+            gloss_en: "of the fully awakened one"
+            morph: "m.gen.sg ppl"
+          - word: तदाद्यन्ते
+            iast: tad-ādy-ante
+            gloss_en: "at the beginning and end of that (state)"
+            morph: "n.loc.sg cpd"
+          - word: परस्य
+            iast: parasya
+            gloss_en: "of the other (un-awakened)"
+            morph: "m.gen.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "For the fully awakened, the experience of that Reality — unfailing across the three states — is continuous; for the other (less awakened), it appears only at the beginning and end."
+            ai_assisted: false
+            status: published
+
+      - verse: 18
+        devanagari: ज्ञानज्ञेयस्वरूपिण्या शक्त्या परमया युतः । पदद्वये विभुर्भाति तदन्यत्र तु चिन्मात्रः ॥१८॥
+        slp1: "jYAnajYeyasvarUpiRyA zaktyA paramayA yutaH . padadvaye viBurBAti tadanyatra tu cinmAtraH"
+        iast: "jñāna-jñeya-svarūpiṇyā śaktyā paramayā yutaḥ / pada-dvaye vibhur bhāti tad-anyatra tu cin-mātraḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: ज्ञानज्ञेयस्वरूपिण्या
+            iast: jñāna-jñeya-svarūpiṇyā
+            gloss_en: "having the form of knowledge and the known"
+            morph: "f.ins.sg cpd"
+          - word: शक्त्या परमया
+            iast: śaktyā paramayā
+            gloss_en: "with the supreme Power"
+            morph: "f.ins.sg"
+          - word: पदद्वये
+            iast: pada-dvaye
+            gloss_en: "in the two states (waking and dream)"
+            morph: "n.loc.sg cpd"
+          - word: विभुः
+            iast: vibhuḥ
+            gloss_en: "the all-pervading"
+            morph: "m.nom.sg"
+          - word: चिन्मात्रः
+            iast: cin-mātraḥ
+            gloss_en: "pure Consciousness alone"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "In the two states (waking and dream), the all-pervading Lord shines forth united with his supreme Power whose form is knowledge and the known; elsewhere (in deep sleep) he abides as pure Consciousness alone."
+            ai_assisted: false
+            status: published
+
+      - verse: 19
+        devanagari: गुणादिस्पन्दनिष्यन्दाः सामान्यस्पन्दसंश्रयात् । लब्धात्मलाभाः सततं स्युर्ज्ञस्यापरिपन्थिनः ॥१९॥
+        slp1: "guRAdispandanizyandAH sAmAnyaspandasaMzrayAt . labDAtmalABAH satataM syurjYasyAparipanTinaH"
+        iast: "guṇādi-spanda-niṣyandāḥ sāmānya-spanda-saṃśrayāt / labdhātma-lābhāḥ satataṃ syur jñasyāparipanthinaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: गुणादिस्पन्दनिष्यन्दाः
+            iast: guṇādi-spanda-niṣyandāḥ
+            gloss_en: "particular spanda-currents (of the guṇas etc.)"
+            morph: "m.nom.pl cpd"
+          - word: सामान्यस्पन्दसंश्रयात्
+            iast: sāmānya-spanda-saṃśrayāt
+            gloss_en: "by reliance on the general spanda"
+            morph: "m.abl.sg cpd"
+          - word: लब्धात्मलाभाः
+            iast: labdhātma-lābhāḥ
+            gloss_en: "having gained their existence"
+            morph: "m.nom.pl cpd"
+          - word: ज्ञस्य
+            iast: jñasya
+            gloss_en: "of the knower"
+            morph: "m.gen.sg"
+          - word: अपरिपन्थिनः
+            iast: aparipanthinaḥ
+            gloss_en: "not obstructive"
+            morph: "m.nom.pl adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The particular pulsations (of the guṇas and so on) arise continually from their reliance on the general Spanda; for the knower, they are never obstacles."
+            ai_assisted: false
+            status: published
+
+      - verse: 20
+        devanagari: अप्रबुद्धधियस्त्वेते स्वस्थितिस्थगनोद्यताः । पातयन्ति दुरुत्तारे घोरे संसारवर्त्मनि ॥२०॥
+        slp1: "aprabudDaDiyastvete svasTitisTaganodyatAH . pAtayanti duruttAre Gore saMsAravartmani"
+        iast: "aprabuddha-dhiyas tv ete sva-sthiti-sthaganodyatāḥ / pātayanti duruttāre ghore saṃsāra-vartmani //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अप्रबुद्धधियः
+            iast: aprabuddha-dhiyaḥ
+            gloss_en: "those whose intellect is unawakened"
+            morph: "m.acc.pl cpd"
+          - word: स्वस्थितिस्थगनोद्यताः
+            iast: sva-sthiti-sthaganodyatāḥ
+            gloss_en: "intent on concealing one's true state"
+            morph: "m.nom.pl cpd"
+          - word: पातयन्ति
+            iast: pātayanti
+            gloss_en: "they cast down"
+            morph: "verb 3.pl.pres caus"
+          - word: दुरुत्तारे
+            iast: duruttāre
+            gloss_en: "difficult to cross"
+            morph: "m.loc.sg adj"
+          - word: संसारवर्त्मनि
+            iast: saṃsāra-vartmani
+            gloss_en: "in the path of saṃsāra"
+            morph: "n.loc.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "But for the unawakened, these same (powers), bent on concealing one's true state, hurl them down into the terrible, hardly-crossable path of saṃsāra."
+            ai_assisted: false
+            status: published
+
+      - verse: 21
+        devanagari: अतः सततमुद्युक्तः स्पन्दतत्त्वविविक्तये । जाग्रदेव निजं भावमचिरेणाधिगच्छति ॥२१॥
+        slp1: "ataH satatamudyuktaH spandatattvaviviktaye . jAgradeva nijaM BAvamacireRADigacCati"
+        iast: "ataḥ satatam udyuktaḥ spanda-tattva-viviktaye / jāgrad eva nijaṃ bhāvam acireṇādhigacchati //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: सततम् उद्युक्तः
+            iast: satatam udyuktaḥ
+            gloss_en: "ever exerting himself"
+            morph: "m.nom.sg phr"
+          - word: स्पन्दतत्त्वविविक्तये
+            iast: spanda-tattva-viviktaye
+            gloss_en: "for the discernment of the Spanda principle"
+            morph: "f.dat.sg cpd"
+          - word: जाग्रत् एव
+            iast: jāgrat eva
+            gloss_en: "while still in the waking state"
+            morph: "indecl"
+          - word: निजं भावम्
+            iast: nijaṃ bhāvam
+            gloss_en: "his own true state"
+            morph: "m.acc.sg"
+          - word: अचिरेण
+            iast: acireṇa
+            gloss_en: "before long"
+            morph: "indecl"
+          - word: अधिगच्छति
+            iast: adhigacchati
+            gloss_en: "attains"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Therefore, one who is ever intent on discerning the Spanda principle attains his own true state before long, even while in the waking condition."
+            ai_assisted: false
+            status: published
+
+      - verse: 22
+        devanagari: अतिक्रुद्धः प्रहृष्टो वा किं करोमीति वा मृशन् । धावन्वा यत्पदं गच्छेत्तत्र स्पन्दः प्रतिष्ठितः ॥२२॥
+        slp1: "atikrudDaH prahfzwo vA kiM karomIti vA mfzan . DAvanvA yatpadaM gacCettatra spandaH pratizWitaH"
+        iast: "atikruddhaḥ prahṛṣṭo vā kiṃ karomīti vā mṛśan / dhāvan vā yat-padaṃ gacchet tatra spandaḥ pratiṣṭhitaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अतिक्रुद्धः
+            iast: atikruddhaḥ
+            gloss_en: "extremely angry"
+            morph: "m.nom.sg adj"
+          - word: प्रहृष्टः
+            iast: prahṛṣṭaḥ
+            gloss_en: "exceedingly delighted"
+            morph: "m.nom.sg ppl"
+          - word: किं करोमि
+            iast: kiṃ karomi
+            gloss_en: "'what shall I do?'"
+            morph: "phr"
+          - word: मृशन्
+            iast: mṛśan
+            gloss_en: "deliberating"
+            morph: "m.nom.sg ppl"
+          - word: धावन्
+            iast: dhāvan
+            gloss_en: "running"
+            morph: "m.nom.sg ppl"
+          - word: यत्पदम्
+            iast: yat-padam
+            gloss_en: "the state which (one reaches)"
+            morph: "n.acc.sg"
+          - word: प्रतिष्ठितः
+            iast: pratiṣṭhitaḥ
+            gloss_en: "is established"
+            morph: "m.nom.sg ppl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Whether one is extremely enraged or overjoyed, perplexed thinking 'what shall I do?', or running for one's life — in the very state to which one arrives, Spanda is firmly established."
+            ai_assisted: false
+            status: published
+
+      - verse: 23
+        devanagari: यामवस्थां समालम्ब्य यदयं मम वक्ष्यति । तदवश्यं करिष्येऽहमिति सङ्कल्प्य तिष्ठति ॥२३॥
+        slp1: "yAmavasTAM samAlambya yadayaM mama vakzyati . tadavazyaM karizye'hamiti saNkalpya tizWati"
+        iast: "yām avasthāṃ samālambya yad ayaṃ mama vakṣyati / tad avaśyaṃ kariṣye 'ham iti saṅkalpya tiṣṭhati //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: समालम्ब्य
+            iast: samālambya
+            gloss_en: "having taken hold of"
+            morph: "abs"
+          - word: वक्ष्यति
+            iast: vakṣyati
+            gloss_en: "(he) will say"
+            morph: "verb 3.sg.fut"
+          - word: अवश्यम्
+            iast: avaśyam
+            gloss_en: "necessarily"
+            morph: "indecl"
+          - word: करिष्ये
+            iast: kariṣye
+            gloss_en: "I shall do"
+            morph: "verb 1.sg.fut"
+          - word: सङ्कल्प्य
+            iast: saṅkalpya
+            gloss_en: "having resolved"
+            morph: "abs"
+          - word: तिष्ठति
+            iast: tiṣṭhati
+            gloss_en: "abides"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The state which one assumes resolving, 'whatever this person will tell me I shall certainly do' — (that very steadiness is Spanda)."
+            ai_assisted: true
+            status: draft
+
+      - verse: 24
+        devanagari: तामाश्रित्योर्ध्वमार्गेण चन्द्रसूर्यावुभावपि । सौषुम्नेऽध्वन्यस्तमितो हित्वा ब्रह्माण्डगोचरम् ॥२४॥
+        slp1: "tAmAzrityordhvamArgeRa candrasUryAvuBAvapi . sOzumne'Dvanyastamito hitvA brahmARDagocaram"
+        iast: "tām āśrityordhva-mārgeṇa candra-sūryāv ubhāv api / sauṣumne 'dhvany astam ito hitvā brahmāṇḍa-gocaram //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: तामाश्रित्य
+            iast: tām āśritya
+            gloss_en: "taking refuge in that (state)"
+            morph: "abs phr"
+          - word: ऊर्ध्वमार्गेण
+            iast: ūrdhva-mārgeṇa
+            gloss_en: "by the upward path"
+            morph: "m.ins.sg cpd"
+          - word: चन्द्रसूर्यौ
+            iast: candra-sūryau
+            gloss_en: "moon and sun (iḍā and piṅgalā / prāṇa and apāna)"
+            morph: "m.nom.du cpd"
+          - word: सौषुम्ने अध्वनि
+            iast: sauṣumne adhvani
+            gloss_en: "in the suṣumnā channel"
+            morph: "m.loc.sg"
+          - word: अस्तम् इतः
+            iast: astam itaḥ
+            gloss_en: "having gone to setting (dissolved)"
+            morph: "phr"
+          - word: ब्रह्माण्डगोचरम्
+            iast: brahmāṇḍa-gocaram
+            gloss_en: "the range of the cosmic egg"
+            morph: "n.acc.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Resting in that (Spanda), both sun and moon, journeying upward through the suṣumnā path, set within it, abandoning the sphere of the cosmic egg."
+            ai_assisted: false
+            status: published
+
+      - verse: 25
+        devanagari: तदा तस्मिन्महाव्योम्नि प्रलीनशशिभास्करे । सौषुप्तपदवन्मूढः प्रबुद्धः स्यादनावृतः ॥२५॥
+        slp1: "tadA tasminmahAvyomni pralInazaziBAskare . sOzuptapadavanmUDaH prabudDaH syAdanAvftaH"
+        iast: "tadā tasmin mahā-vyomni pralīna-śaśi-bhāskare / sauṣupta-padavan mūḍhaḥ prabuddhaḥ syād anāvṛtaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: महाव्योम्नि
+            iast: mahā-vyomni
+            gloss_en: "in the great Sky (of Consciousness)"
+            morph: "n.loc.sg cpd"
+          - word: प्रलीनशशिभास्करे
+            iast: pralīna-śaśi-bhāskare
+            gloss_en: "where moon and sun are dissolved"
+            morph: "n.loc.sg cpd"
+          - word: सौषुप्तपदवत्
+            iast: sauṣupta-padavat
+            gloss_en: "as in the state of deep sleep"
+            morph: "indecl"
+          - word: मूढः
+            iast: mūḍhaḥ
+            gloss_en: "the ignorant one"
+            morph: "m.nom.sg"
+          - word: प्रबुद्धः
+            iast: prabuddhaḥ
+            gloss_en: "the awakened one"
+            morph: "m.nom.sg"
+          - word: अनावृतः
+            iast: anāvṛtaḥ
+            gloss_en: "unveiled"
+            morph: "m.nom.sg adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Then, in that great Sky where sun and moon are dissolved, the ignorant one experiences it like deep sleep, but the awakened one remains unveiled and fully alert."
+            ai_assisted: false
+            status: published
+
+  - chapter: 2
+    title_sa: सहजविद्योदयः
+    title_iast: Sahajavidyodaya
+    title_en: The Arising of Innate Knowledge
+    verses:
+      - verse: 1
+        devanagari: तदाक्रम्य बलं मन्त्राः सर्वज्ञबलशालिनः । प्रवर्तन्तेऽधिकारायं करणानीव देहिनाम् ॥१॥
+        slp1: "tadAkramya balaM mantrAH sarvajYabalazAlinaH . pravartante'DikArAyaM karaRAnIva dehinAm"
+        iast: "tad ākramya balaṃ mantrāḥ sarvajña-bala-śālinaḥ / pravartante 'dhikārāyaṃ karaṇānīva dehinām //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: तत् आक्रम्य बलम्
+            iast: tat ākramya balam
+            gloss_en: "having taken hold of that power"
+            morph: "abs phr"
+          - word: मन्त्राः
+            iast: mantrāḥ
+            gloss_en: "the mantras"
+            morph: "m.nom.pl"
+          - word: सर्वज्ञबलशालिनः
+            iast: sarvajña-bala-śālinaḥ
+            gloss_en: "endowed with all-knowing power"
+            morph: "m.nom.pl cpd"
+          - word: अधिकाराय
+            iast: adhikārāya
+            gloss_en: "for the task (assigned to them)"
+            morph: "m.dat.sg"
+          - word: करणानि इव
+            iast: karaṇāni iva
+            gloss_en: "like the (sense-)instruments"
+            morph: "n.nom.pl phr"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Taking hold of that power (Spanda), the mantras — invested with all-knowing energy — perform their function, just as the sense-organs do for embodied beings."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: तत्रैव सम्प्रलीयन्ते शान्तरूपा निरञ्जनाः । सहाराधकचित्तेन तेनैते शिवधर्मिणः ॥२॥
+        slp1: "tatrEva sampralIyante zAntarUpA niraYjanAH . sahArADakacittena tenEte zivaDarmiRaH"
+        iast: "tatraiva sampralīyante śānta-rūpā nirañjanāḥ / sahārādhaka-cittena tenaite śiva-dharmiṇaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: सम्प्रलीयन्ते
+            iast: sampralīyante
+            gloss_en: "dissolve completely"
+            morph: "verb 3.pl.pres pass"
+          - word: शान्तरूपाः
+            iast: śānta-rūpāḥ
+            gloss_en: "of peaceful form"
+            morph: "m.nom.pl cpd"
+          - word: निरञ्जनाः
+            iast: nirañjanāḥ
+            gloss_en: "stainless"
+            morph: "m.nom.pl adj"
+          - word: आराधकचित्तेन
+            iast: ārādhaka-cittena
+            gloss_en: "with the mind of the worshipper"
+            morph: "n.ins.sg cpd"
+          - word: शिवधर्मिणः
+            iast: śiva-dharmiṇaḥ
+            gloss_en: "having the nature of Śiva"
+            morph: "m.nom.pl cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "There alone — peaceful, stainless — they dissolve together with the mind of the worshipper, for they share the nature of Śiva."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: यस्मात्सर्वमयो जीवः सर्वभावसमुद्भवात् । तत्संवेदनरूपेण तादात्म्यप्रतिपत्तितः ॥३॥
+        slp1: "yasmAtsarvamayo jIvaH sarvaBAvasamudBavAt . tatsaMvedanarUpeRa tAdAtmyapratipattitaH"
+        iast: "yasmāt sarva-mayo jīvaḥ sarva-bhāva-samudbhavāt / tat-saṃvedana-rūpeṇa tādātmya-pratipattitaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: सर्वमयः
+            iast: sarva-mayaḥ
+            gloss_en: "consisting of all"
+            morph: "m.nom.sg cpd"
+          - word: जीवः
+            iast: jīvaḥ
+            gloss_en: "the individual soul"
+            morph: "m.nom.sg"
+          - word: सर्वभावसमुद्भवात्
+            iast: sarva-bhāva-samudbhavāt
+            gloss_en: "because all things arise (from it)"
+            morph: "m.abl.sg cpd"
+          - word: तत्संवेदनरूपेण
+            iast: tat-saṃvedana-rūpeṇa
+            gloss_en: "in the form of awareness of that"
+            morph: "n.ins.sg cpd"
+          - word: तादात्म्यप्रतिपत्तितः
+            iast: tādātmya-pratipattitaḥ
+            gloss_en: "from the recognition of identity"
+            morph: "indecl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Since the individual soul is all-pervading — because all things arise from it — by the awareness of that and the recognition of identity with it..."
+            ai_assisted: false
+            status: published
+
+      - verse: 4
+        devanagari: तस्माच्छब्दार्थचिन्तासु न सावस्था न या शिवः । भोक्तैव भोग्यभावेन सदा सर्वत्र संस्थितः ॥४॥
+        slp1: "tasmAcCabdArTacintAsu na sAvasTA na yA zivaH . BoktEva BogyaBAvena sadA sarvatra saMsTitaH"
+        iast: "tasmāc chabdārtha-cintāsu na sāvasthā na yā śivaḥ / bhoktaiva bhogya-bhāvena sadā sarvatra saṃsthitaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: शब्दार्थचिन्तासु
+            iast: śabdārtha-cintāsu
+            gloss_en: "in (one's) thoughts of words and meanings"
+            morph: "f.loc.pl cpd"
+          - word: अवस्था
+            iast: avasthā
+            gloss_en: "state"
+            morph: "f.nom.sg"
+          - word: शिवः
+            iast: śivaḥ
+            gloss_en: "Śiva"
+            morph: "m.nom.sg"
+          - word: भोक्ता
+            iast: bhoktā
+            gloss_en: "the enjoyer"
+            morph: "m.nom.sg"
+          - word: भोग्यभावेन
+            iast: bhogya-bhāvena
+            gloss_en: "in the form of the enjoyable"
+            morph: "m.ins.sg cpd"
+          - word: संस्थितः
+            iast: saṃsthitaḥ
+            gloss_en: "established"
+            morph: "m.nom.sg ppl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Therefore, in (any of) the thoughts of words and meanings, there is no state which is not Śiva: the Enjoyer himself abides ever and everywhere in the form of the enjoyable."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: इति वा यस्य संवित्तिः क्रीडात्वेनाखिलं जगत् । स पश्यन्सततं युक्तो जीवन्मुक्तो न संशयः ॥५॥
+        slp1: "iti vA yasya saMvittiH krIDAtvenAKilaM jagat . sa pazyansatataM yukto jIvanmukto na saMzayaH"
+        iast: "iti vā yasya saṃvittiḥ krīḍātvenākhilaṃ jagat / sa paśyan satataṃ yukto jīvan-mukto na saṃśayaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: संवित्तिः
+            iast: saṃvittiḥ
+            gloss_en: "realisation"
+            morph: "f.nom.sg"
+          - word: क्रीडात्वेन
+            iast: krīḍātvena
+            gloss_en: "as (Śiva's) play"
+            morph: "n.ins.sg"
+          - word: अखिलं जगत्
+            iast: akhilaṃ jagat
+            gloss_en: "the entire world"
+            morph: "n.acc.sg"
+          - word: पश्यन्
+            iast: paśyan
+            gloss_en: "seeing"
+            morph: "m.nom.sg ppl"
+          - word: युक्तः
+            iast: yuktaḥ
+            gloss_en: "ever yoked (in this awareness)"
+            morph: "m.nom.sg adj"
+          - word: जीवन्मुक्तः
+            iast: jīvan-muktaḥ
+            gloss_en: "liberated while living"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Or, he who has the realisation that the entire world is the play (of Consciousness), and ever sees it so — he, without doubt, is liberated while still living."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: अयमेवोदयस्तस्य ध्येयस्य ध्यायिचेतसि । तदात्मतासमापत्तिरिच्छतः साधकस्य या ॥६॥
+        slp1: "ayamevodayastasya DyeyasyaDyAyicetasi . tadAtmatAsamApattiricCataH sADakasya yA"
+        iast: "ayam evodayas tasya dhyeyasya dhyāyi-cetasi / tad-ātmatā-samāpattir icchataḥ sādhakasya yā //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: उदयः
+            iast: udayaḥ
+            gloss_en: "arising"
+            morph: "m.nom.sg"
+          - word: ध्येयस्य
+            iast: dhyeyasya
+            gloss_en: "of the object of meditation"
+            morph: "n.gen.sg"
+          - word: ध्यायिचेतसि
+            iast: dhyāyi-cetasi
+            gloss_en: "in the mind of the meditator"
+            morph: "n.loc.sg cpd"
+          - word: तदात्मतासमापत्तिः
+            iast: tad-ātmatā-samāpattiḥ
+            gloss_en: "attainment of identity with that"
+            morph: "f.nom.sg cpd"
+          - word: इच्छतः साधकस्य
+            iast: icchataḥ sādhakasya
+            gloss_en: "of the desiring practitioner"
+            morph: "m.gen.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "This very arising of the object-of-meditation in the meditator's mind is the attainment of identity with that, sought by the eager practitioner."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: इयमेवामृतप्राप्तिरयमेवात्मनो ग्रहः । इयं निर्वाणदीक्षा च शिवसद्भावदायिनी ॥७॥
+        slp1: "iyamevAmftaprAptirayamevAtmano grahaH . iyaM nirvARadIkzA ca zivasadBAvadAyinI"
+        iast: "iyam evāmṛta-prāptir ayam evātmano grahaḥ / iyaṃ nirvāṇa-dīkṣā ca śiva-sad-bhāva-dāyinī //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अमृतप्राप्तिः
+            iast: amṛta-prāptiḥ
+            gloss_en: "attainment of the nectar of immortality"
+            morph: "f.nom.sg cpd"
+          - word: आत्मनः ग्रहः
+            iast: ātmanaḥ grahaḥ
+            gloss_en: "the grasp of the Self"
+            morph: "m.nom.sg"
+          - word: निर्वाणदीक्षा
+            iast: nirvāṇa-dīkṣā
+            gloss_en: "the initiation into liberation"
+            morph: "f.nom.sg cpd"
+          - word: शिवसद्भावदायिनी
+            iast: śiva-sad-bhāva-dāyinī
+            gloss_en: "granting the true being of Śiva"
+            morph: "f.nom.sg cpd adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "This indeed is the attainment of the nectar of immortality, this is the grasping of the Self, this is the initiation into nirvāṇa that bestows the true being of Śiva."
+            ai_assisted: false
+            status: published
+
+  - chapter: 3
+    title_sa: विभूतिस्पन्दः
+    title_iast: Vibhūtispanda
+    title_en: The Supernatural Manifestations of Spanda
+    verses:
+      - verse: 1
+        devanagari: यथेच्छाभ्यर्थितो धाता जाग्रतोऽर्थान्हृदि स्थितान् । सोमसूर्योदयं कृत्वा सम्पादयति देहिनः ॥१॥
+        slp1: "yaTecCAByarTito DAtA jAgrato'rTAnhfdi sTitAn . somasUryodayaM kftvA sampAdayati dehinaH"
+        iast: "yathecchābhyarthito dhātā jāgrato 'rthān hṛdi sthitān / soma-sūryodayaṃ kṛtvā sampādayati dehinaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: यथेच्छाभ्यर्थितः
+            iast: yathecchābhyarthitaḥ
+            gloss_en: "requested according to (one's) wish"
+            morph: "m.nom.sg cpd"
+          - word: धाता
+            iast: dhātā
+            gloss_en: "the supporter (Spanda principle)"
+            morph: "m.nom.sg"
+          - word: जाग्रतः
+            iast: jāgrataḥ
+            gloss_en: "of the waking person"
+            morph: "m.gen.sg ppl"
+          - word: सोमसूर्योदयम्
+            iast: soma-sūryodayam
+            gloss_en: "the rise of moon and sun (apāna and prāṇa)"
+            morph: "m.acc.sg cpd"
+          - word: सम्पादयति
+            iast: sampādayati
+            gloss_en: "brings about"
+            morph: "verb 3.sg.pres caus"
+          - word: देहिनः
+            iast: dehinaḥ
+            gloss_en: "for the embodied one"
+            morph: "m.gen.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When entreated according to his wish, the Sustainer (Spanda), having brought about the rise of sun and moon, accomplishes for the embodied being in the waking state the objects established in his heart."
+            ai_assisted: false
+            status: published
+
+      - verse: 2
+        devanagari: तथा स्वप्नेऽप्यभीष्टार्थान्प्रणयस्यानतिक्रमात् । नित्यं स्फुटतरं मध्ये स्थितोऽवश्यं प्रकाशयेत् ॥२॥
+        slp1: "taTA svapne'pyaBIzwArTAnpraRayasyAnatikramAt . nityaM sPuTataraM maDye sTito'vazyaM prakAzayet"
+        iast: "tathā svapne 'py abhīṣṭārthān praṇayasyānatikramāt / nityaṃ sphuṭataraṃ madhye sthito 'vaśyaṃ prakāśayet //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अभीष्टार्थान्
+            iast: abhīṣṭārthān
+            gloss_en: "desired objects"
+            morph: "m.acc.pl cpd"
+          - word: प्रणयस्य अनतिक्रमात्
+            iast: praṇayasya anatikramāt
+            gloss_en: "from not transgressing (the devotee's) affection/request"
+            morph: "m.abl.sg phr"
+          - word: स्फुटतरम्
+            iast: sphuṭataram
+            gloss_en: "more clearly"
+            morph: "indecl"
+          - word: मध्ये स्थितः
+            iast: madhye sthitaḥ
+            gloss_en: "abiding in the centre"
+            morph: "m.nom.sg phr"
+          - word: प्रकाशयेत्
+            iast: prakāśayet
+            gloss_en: "should reveal"
+            morph: "verb 3.sg.opt caus"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Similarly, in dream too, abiding within (the central channel), it most certainly reveals — and more vividly — the desired objects, never failing the devotee's prayer."
+            ai_assisted: false
+            status: published
+
+      - verse: 3
+        devanagari: अन्यथा तु स्वतन्त्रा स्यात्सृष्टिस्तद्धर्मकत्वतः । सततं लौकिकस्येव जाग्रत्स्वप्नपदद्वये ॥३॥
+        slp1: "anyaTA tu svatantrA syAtsfzwistadDarmakatvataH . satataM lOkikasyeva jAgratsvapnapadadvaye"
+        iast: "anyathā tu svatantrā syāt sṛṣṭis tad-dharmakatvataḥ / satataṃ laukikasyeva jāgrat-svapna-pada-dvaye //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: स्वतन्त्रा
+            iast: svatantrā
+            gloss_en: "independent"
+            morph: "f.nom.sg adj"
+          - word: सृष्टिः
+            iast: sṛṣṭiḥ
+            gloss_en: "creation"
+            morph: "f.nom.sg"
+          - word: तद्धर्मकत्वतः
+            iast: tad-dharmakatvataḥ
+            gloss_en: "because of its having that (Spanda's) nature"
+            morph: "indecl"
+          - word: लौकिकस्य
+            iast: laukikasya
+            gloss_en: "of the worldly (un-awakened) person"
+            morph: "m.gen.sg adj"
+          - word: जाग्रत्स्वप्नपदद्वये
+            iast: jāgrat-svapna-pada-dvaye
+            gloss_en: "in the pair of waking and dream states"
+            morph: "n.loc.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Otherwise, owing to its sharing the nature of Spanda, creation would be independent — as it always is for the worldly person — in the pair of waking and dream states."
+            ai_assisted: true
+            status: draft
+
+      - verse: 4
+        devanagari: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥४॥
+        slp1: "yaTA hyarTo'sPuwo dfzwaH sAvaDAne'pi cetasi . BUyaH sPuwataro BAti svabalodyogaBAvitaH"
+        iast: "yathā hy artho 'sphuṭo dṛṣṭaḥ sāvadhāne 'pi cetasi / bhūyaḥ sphuṭataro bhāti sva-balodyoga-bhāvitaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अर्थः
+            iast: arthaḥ
+            gloss_en: "object"
+            morph: "m.nom.sg"
+          - word: अस्फुटः
+            iast: asphuṭaḥ
+            gloss_en: "indistinct"
+            morph: "m.nom.sg adj"
+          - word: सावधाने चेतसि
+            iast: sāvadhāne cetasi
+            gloss_en: "in the attentive mind"
+            morph: "n.loc.sg phr"
+          - word: स्फुटतरः
+            iast: sphuṭataraḥ
+            gloss_en: "more distinct"
+            morph: "m.nom.sg adj"
+          - word: स्वबलोद्योगभावितः
+            iast: sva-balodyoga-bhāvitaḥ
+            gloss_en: "intensified by the exertion of one's own power"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Just as an object first seen indistinctly — even by an attentive mind — appears later much more clearly when intensified by the exertion of one's own (inner) power..."
+            ai_assisted: false
+            status: published
+
+      - verse: 5
+        devanagari: तथा यत्परमार्थेन येन यत्र यथा स्थितम् । तत्तथा बलमाक्रम्य न चिरात्सम्प्रवर्तते ॥५॥
+        slp1: "taTA yatparamArTena yena yatra yaTA sTitam . tattaTA balamAkramya na cirAtsampravartate"
+        iast: "tathā yat paramārthena yena yatra yathā sthitam / tat tathā balam ākramya na cirāt sampravartate //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: परमार्थेन
+            iast: paramārthena
+            gloss_en: "in highest truth"
+            morph: "m.ins.sg"
+          - word: स्थितम्
+            iast: sthitam
+            gloss_en: "established"
+            morph: "n.nom.sg ppl"
+          - word: बलम् आक्रम्य
+            iast: balam ākramya
+            gloss_en: "having taken hold of (Spanda) power"
+            morph: "abs phr"
+          - word: न चिरात्
+            iast: na cirāt
+            gloss_en: "before long"
+            morph: "indecl"
+          - word: सम्प्रवर्तते
+            iast: sampravartate
+            gloss_en: "comes about"
+            morph: "verb 3.sg.pres"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Likewise, that which truly exists — by whatever means, wherever, and in whatever manner — taking hold of its (Spanda) power, it comes about before long."
+            ai_assisted: false
+            status: published
+
+      - verse: 6
+        devanagari: दुर्बलोऽपि तदाक्रम्य यतः कार्ये प्रवर्तते । आच्छादयेद्बुभुक्षां च तथा योऽतिबुभुक्षितः ॥६॥
+        slp1: "durbalo'pi tadAkramya yataH kArye pravartate . AcCAdayedbuBukzAM ca taTA yo'tibuBukzitaH"
+        iast: "durbalo 'pi tad ākramya yataḥ kārye pravartate / ācchādayed bubhukṣāṃ ca tathā yo 'ti-bubhukṣitaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: दुर्बलः
+            iast: durbalaḥ
+            gloss_en: "weak (person)"
+            morph: "m.nom.sg adj"
+          - word: तत् आक्रम्य
+            iast: tat ākramya
+            gloss_en: "taking hold of that"
+            morph: "abs phr"
+          - word: कार्ये
+            iast: kārye
+            gloss_en: "in (his) task"
+            morph: "n.loc.sg"
+          - word: प्रवर्तते
+            iast: pravartate
+            gloss_en: "becomes active"
+            morph: "verb 3.sg.pres"
+          - word: आच्छादयेत् बुभुक्षाम्
+            iast: ācchādayet bubhukṣām
+            gloss_en: "would suppress hunger"
+            morph: "verb 3.sg.opt phr"
+          - word: अतिबुभुक्षितः
+            iast: ati-bubhukṣitaḥ
+            gloss_en: "extremely hungry"
+            morph: "m.nom.sg adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Even a weakling, when he takes hold of that (Spanda), engages in his task; just as one even when extremely hungry may overcome his hunger (by that same power)."
+            ai_assisted: false
+            status: published
+
+      - verse: 7
+        devanagari: अनेनाधिष्ठिते देहे यथा सर्वज्ञतादयः । तथा स्वात्मन्यधिष्ठानात्सर्वत्रैवं भविष्यति ॥७॥
+        slp1: "anenADizWite dehe yaTA sarvajYatAdayaH . taTA svAtmanyaDizWAnAtsarvatrEvaM Bavizyati"
+        iast: "anenādhiṣṭhite dehe yathā sarva-jñatādayaḥ / tathā svātmany adhiṣṭhānāt sarvatraivaṃ bhaviṣyati //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अधिष्ठिते देहे
+            iast: adhiṣṭhite dehe
+            gloss_en: "in the body presided over (by Spanda)"
+            morph: "m.loc.sg"
+          - word: सर्वज्ञतादयः
+            iast: sarva-jñatādayaḥ
+            gloss_en: "omniscience and the rest"
+            morph: "f.nom.pl cpd"
+          - word: स्वात्मनि अधिष्ठानात्
+            iast: svātmany adhiṣṭhānāt
+            gloss_en: "by presiding over one's own Self"
+            morph: "m.abl.sg phr"
+          - word: सर्वत्र
+            iast: sarvatra
+            gloss_en: "everywhere"
+            morph: "indecl"
+          - word: एवम्
+            iast: evam
+            gloss_en: "so"
+            morph: "indecl"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Just as in a body presided over by (Spanda) omniscience and the other powers manifest, so, by presiding over one's own Self, the same will manifest everywhere."
+            ai_assisted: false
+            status: published
+
+      - verse: 8
+        devanagari: ग्लानिर्विलुण्ठिका देहे तस्याश्चाज्ञानतः सृतिः । तदुन्मेषविलुप्तं चेत्कुतः सा स्यादहेतुका ॥८॥
+        slp1: "glAnirviluRWikA dehe tasyAScAjYAnataH sftiH . tadunmezaviluptaM cetkutaH sA syAdahetukA"
+        iast: "glānir viluṇṭhikā dehe tasyāś cājñānataḥ sṛtiḥ / tad-unmeṣa-viluptaṃ cet kutaḥ sā syād ahetukā //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: ग्लानिः
+            iast: glāniḥ
+            gloss_en: "languor, depression"
+            morph: "f.nom.sg"
+          - word: विलुण्ठिका
+            iast: viluṇṭhikā
+            gloss_en: "robber"
+            morph: "f.nom.sg"
+          - word: अज्ञानतः
+            iast: ajñānataḥ
+            gloss_en: "from ignorance"
+            morph: "indecl"
+          - word: सृतिः
+            iast: sṛtiḥ
+            gloss_en: "issuing forth"
+            morph: "f.nom.sg"
+          - word: तदुन्मेषविलुप्तम्
+            iast: tad-unmeṣa-viluptam
+            gloss_en: "destroyed by the rising forth of That (Spanda)"
+            morph: "n.nom.sg cpd"
+          - word: अहेतुका
+            iast: ahetukā
+            gloss_en: "without cause"
+            morph: "f.nom.sg adj"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Languor is the robber of the body, and it issues from ignorance; if that (ignorance) is destroyed by the unmeṣa (rising forth) of Spanda — how could languor arise causeless?"
+            ai_assisted: false
+            status: published
+
+      - verse: 9
+        devanagari: एकचिन्ताप्रसक्तस्य यतः स्यादपरोदयः । उन्मेषः स तु विज्ञेयः स्वयं तमुपलक्षयेत् ॥९॥
+        slp1: "ekacintAprasaktasya yataH syAdaparodayaH . unmezaH sa tu vijYeyaH svayaM tamupalakzayet"
+        iast: "eka-cintā-prasaktasya yataḥ syād aparodayaḥ / unmeṣaḥ sa tu vijñeyaḥ svayaṃ tam upalakṣayet //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: एकचिन्ताप्रसक्तस्य
+            iast: eka-cintā-prasaktasya
+            gloss_en: "of one absorbed in a single thought"
+            morph: "m.gen.sg cpd"
+          - word: अपरोदयः
+            iast: aparodayaḥ
+            gloss_en: "the arising of another (thought)"
+            morph: "m.nom.sg cpd"
+          - word: उन्मेषः
+            iast: unmeṣaḥ
+            gloss_en: "the unmeṣa (opening / flashing forth)"
+            morph: "m.nom.sg"
+          - word: विज्ञेयः
+            iast: vijñeyaḥ
+            gloss_en: "to be known"
+            morph: "m.nom.sg gerundive"
+          - word: उपलक्षयेत्
+            iast: upalakṣayet
+            gloss_en: "one should observe"
+            morph: "verb 3.sg.opt caus"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "That, from which — for one absorbed in a single thought — another (different) thought arises, is to be known as the unmeṣa (opening); one should observe it for oneself."
+            ai_assisted: false
+            status: published
+
+      - verse: 10
+        devanagari: अतो विन्दुरतो नादो रूपमस्मादतो रसः । प्रवर्तन्तेऽचिरेणैव क्षोभकत्वेन देहिनः ॥१०॥
+        slp1: "ato vindurato nAdo rUpamasmAdato rasaH . pravartante'cireREva kzoBakatvena dehinaH"
+        iast: "ato vindur ato nādo rūpam asmād ato rasaḥ / pravartante 'cireṇaiva kṣobhakatvena dehinaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: विन्दुः
+            iast: vinduḥ
+            gloss_en: "bindu (a point of light)"
+            morph: "m.nom.sg"
+          - word: नादः
+            iast: nādaḥ
+            gloss_en: "inner sound"
+            morph: "m.nom.sg"
+          - word: रूपम्
+            iast: rūpam
+            gloss_en: "form/colour"
+            morph: "n.nom.sg"
+          - word: रसः
+            iast: rasaḥ
+            gloss_en: "taste (subtle)"
+            morph: "m.nom.sg"
+          - word: क्षोभकत्वेन
+            iast: kṣobhakatvena
+            gloss_en: "as agitating phenomena"
+            morph: "n.ins.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "From this (unmeṣa) arise — for the embodied one — bindu, nāda, form, and taste, swiftly appearing as agitating phenomena."
+            ai_assisted: false
+            status: published
+
+      - verse: 11
+        devanagari: दिदृक्षयेव सर्वार्थान्यदा व्याप्यावतिष्ठते । तदा किं बहुनोक्तेन स्वयमेवावभोत्स्यते ॥११॥
+        slp1: "didfkzayeva sarvArTAnyadA vyApyAvatizWate . tadA kiM bahunoktena svayamevAvaBotsyate"
+        iast: "didṛkṣayeva sarvārthān yadā vyāpyāvatiṣṭhate / tadā kiṃ bahunoktena svayam evāvabhotsyate //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: दिदृक्षया
+            iast: didṛkṣayā
+            gloss_en: "by the desire to see"
+            morph: "f.ins.sg"
+          - word: सर्वार्थान् व्याप्य
+            iast: sarvārthān vyāpya
+            gloss_en: "pervading all objects"
+            morph: "abs phr"
+          - word: अवतिष्ठते
+            iast: avatiṣṭhate
+            gloss_en: "abides"
+            morph: "verb 3.sg.pres"
+          - word: किं बहुना उक्तेन
+            iast: kiṃ bahunā uktena
+            gloss_en: "what need of saying much"
+            morph: "phr"
+          - word: अवभोत्स्यते
+            iast: avabhotsyate
+            gloss_en: "will be known/realised"
+            morph: "verb 3.sg.fut"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "When, as if eager to behold, (Spanda) abides pervading all objects — then what need of saying much? — one will know it for oneself."
+            ai_assisted: false
+            status: published
+
+      - verse: 12
+        devanagari: प्रबुद्धः सर्वदा तिष्ठेज्ज्ञानेनालोक्य गोचरम् । एकत्रारोपयेत्सर्वं ततोऽन्येन न पीड्यते ॥१२॥
+        slp1: "prabudDaH sarvadA tizWejjYAnenAlokya gocaram . ekatrAropayetsarvaM tato'nyena na pIDyate"
+        iast: "prabuddhaḥ sarvadā tiṣṭhej jñānenālokya gocaram / ekatrāropayet sarvaṃ tato 'nyena na pīḍyate //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: प्रबुद्धः
+            iast: prabuddhaḥ
+            gloss_en: "the awakened one"
+            morph: "m.nom.sg"
+          - word: तिष्ठेत्
+            iast: tiṣṭhet
+            gloss_en: "should remain"
+            morph: "verb 3.sg.opt"
+          - word: ज्ञानेन आलोक्य
+            iast: jñānena ālokya
+            gloss_en: "viewing (the world) by knowledge"
+            morph: "abs phr"
+          - word: गोचरम्
+            iast: gocaram
+            gloss_en: "the range (of senses)"
+            morph: "m.acc.sg"
+          - word: एकत्र आरोपयेत्
+            iast: ekatra āropayet
+            gloss_en: "should establish (all) in the One"
+            morph: "verb 3.sg.opt"
+          - word: न पीड्यते
+            iast: na pīḍyate
+            gloss_en: "is not troubled"
+            morph: "verb 3.sg.pres pass"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The awakened one should always remain alert, viewing the perceptual field with knowledge, and should refer all of it to the One; then he is afflicted by nothing else."
+            ai_assisted: false
+            status: published
+
+      - verse: 13
+        devanagari: शब्दराशिसमुत्थस्य शक्तिवर्गस्य भोग्यताम् । कलाविलुप्तविभवो गतः सन्स पशुः स्मृतः ॥१३॥
+        slp1: "zabdarAzisamutTasya zaktivargasya BogyatAm . kalAviluptaviBavo gataH sansa pazuH smftaH"
+        iast: "śabda-rāśi-samutthasya śakti-vargasya bhogyatām / kalā-vilupta-vibhavo gataḥ san sa paśuḥ smṛtaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: शब्दराशिसमुत्थस्य
+            iast: śabda-rāśi-samutthasya
+            gloss_en: "(of the powers) arising from the heap of phonemes"
+            morph: "m.gen.sg cpd"
+          - word: शक्तिवर्गस्य
+            iast: śakti-vargasya
+            gloss_en: "of the group of powers"
+            morph: "m.gen.sg cpd"
+          - word: भोग्यताम्
+            iast: bhogyatām
+            gloss_en: "the state of being enjoyed"
+            morph: "f.acc.sg"
+          - word: कलाविलुप्तविभवः
+            iast: kalā-vilupta-vibhavaḥ
+            gloss_en: "whose glory is concealed by kalā (the limiting power)"
+            morph: "m.nom.sg cpd"
+          - word: पशुः
+            iast: paśuḥ
+            gloss_en: "the bound soul (literally, beast)"
+            morph: "m.nom.sg"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "He who, his innate glory concealed by limited power (kalā), becomes object of enjoyment for the group of powers arising from the heap of phonemes — he is called paśu (bound soul)."
+            ai_assisted: false
+            status: published
+
+      - verse: 14
+        devanagari: परामृतरसापायस्तस्य यः प्रत्ययोद्भवः । तेनास्वतन्त्रतामेति स च तन्मात्रगोचरः ॥१४॥
+        slp1: "parAmftarasApAyastasya yaH pratyayodBavaH . tenAsvatantratAmeti sa ca tanmAtragocaraH"
+        iast: "parāmṛta-rasāpāyas tasya yaḥ pratyayodbhavaḥ / tenāsvatantratām eti sa ca tan-mātra-gocaraḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: परामृतरसापायः
+            iast: parāmṛta-rasāpāyaḥ
+            gloss_en: "loss of the supreme nectar's flavour"
+            morph: "m.nom.sg cpd"
+          - word: प्रत्ययोद्भवः
+            iast: pratyayodbhavaḥ
+            gloss_en: "the rising of mental constructs"
+            morph: "m.nom.sg cpd"
+          - word: अस्वतन्त्रताम्
+            iast: asvatantratām
+            gloss_en: "the state of non-autonomy"
+            morph: "f.acc.sg"
+          - word: तन्मात्रगोचरः
+            iast: tan-mātra-gocaraḥ
+            gloss_en: "the field of mere subtle elements"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "The rising of mental constructs in him is the loss of the flavour of the supreme nectar; through that he comes to non-autonomy, and (his world) is the field of mere tanmātras."
+            ai_assisted: true
+            status: draft
+
+      - verse: 15
+        devanagari: स्वरूपावरणे चास्य शक्तयः सततोत्थिताः । यतः शब्दानुवेधेन न विना प्रत्ययोद्भवः ॥१५॥
+        slp1: "svarUpAvaraRe cAsya zaktayaH satatotTitAH . yataH zabdAnuveDena na vinA pratyayodBavaH"
+        iast: "svarūpāvaraṇe cāsya śaktayaḥ satatotthitāḥ / yataḥ śabdānuvedhena na vinā pratyayodbhavaḥ //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: स्वरूपावरणे
+            iast: svarūpāvaraṇe
+            gloss_en: "for the concealment of his own nature"
+            morph: "n.loc.sg cpd"
+          - word: शक्तयः
+            iast: śaktayaḥ
+            gloss_en: "powers"
+            morph: "f.nom.pl"
+          - word: सततोत्थिताः
+            iast: satatotthitāḥ
+            gloss_en: "ever active"
+            morph: "f.nom.pl cpd"
+          - word: शब्दानुवेधेन
+            iast: śabdānuvedhena
+            gloss_en: "by the piercing-through of speech"
+            morph: "m.ins.sg cpd"
+          - word: प्रत्ययोद्भवः
+            iast: pratyayodbhavaḥ
+            gloss_en: "the rising of mental constructs"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Forever active for the concealment of his real nature are these powers, since without the penetration of speech (śabda) no mental construct can arise."
+            ai_assisted: false
+            status: published
+
+      - verse: 16
+        devanagari: सेयं क्रियात्मिका शक्तिः शिवस्य पशुवर्तिनी । बन्धयित्री स्वमार्गस्था ज्ञाता सिद्ध्युपपादिका ॥१६॥
+        slp1: "seyaM kriyAtmikA zaktiH zivasya pazuvartinI . banDayitrI svamArgasTA jYAtA sidDyupapAdikA"
+        iast: "seyaṃ kriyātmikā śaktiḥ śivasya paśu-vartinī / bandhayitrī sva-mārgasthā jñātā siddhy-upapādikā //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: क्रियात्मिका शक्तिः
+            iast: kriyātmikā śaktiḥ
+            gloss_en: "the power whose essence is action"
+            morph: "f.nom.sg phr"
+          - word: पशुवर्तिनी
+            iast: paśu-vartinī
+            gloss_en: "operating in the bound soul"
+            morph: "f.nom.sg cpd adj"
+          - word: बन्धयित्री
+            iast: bandhayitrī
+            gloss_en: "binding"
+            morph: "f.nom.sg adj"
+          - word: स्वमार्गस्था
+            iast: sva-mārgasthā
+            gloss_en: "standing on her own (real) path"
+            morph: "f.nom.sg cpd"
+          - word: सिद्ध्युपपादिका
+            iast: siddhy-upapādikā
+            gloss_en: "the producer of attainment"
+            morph: "f.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "This same active power (kriyā-śakti) of Śiva, operating in the bound soul, is the binder; (but) when known and abiding on her own true path, she becomes the bestower of perfection (siddhi)."
+            ai_assisted: false
+            status: published
+
+      - verse: 17
+        devanagari: तन्मात्रोदयरूपेण मनोऽहम्बुद्धिवर्तिना । पुर्यष्टकेन संरुद्धस्तदुत्थं प्रत्ययोद्भवम् ॥१७॥
+        slp1: "tanmAtrodayarUpeRa mano'hambudDivartinA . puryazwakena saMrudDastadutTaM pratyayodBavam"
+        iast: "tan-mātrodaya-rūpeṇa mano-'haṃ-buddhi-vartinā / pury-aṣṭakena saṃruddhas tad-utthaṃ pratyayodbhavam //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: तन्मात्रोदयरूपेण
+            iast: tan-mātrodaya-rūpeṇa
+            gloss_en: "of the form arising from the tanmātras"
+            morph: "n.ins.sg cpd"
+          - word: मनोऽहम्बुद्धिवर्तिना
+            iast: mano-'haṃ-buddhi-vartinā
+            gloss_en: "operating as mind, ego, intellect"
+            morph: "m.ins.sg cpd"
+          - word: पुर्यष्टकेन
+            iast: pury-aṣṭakena
+            gloss_en: "by the city of eight (subtle body)"
+            morph: "n.ins.sg cpd"
+          - word: संरुद्धः
+            iast: saṃruddhaḥ
+            gloss_en: "is confined"
+            morph: "m.nom.sg ppl"
+          - word: तदुत्थं प्रत्ययोद्भवम्
+            iast: tad-utthaṃ pratyayodbhavam
+            gloss_en: "the rising of constructs born from that"
+            morph: "n.acc.sg cpd phr"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Hemmed in by the puryaṣṭaka (eight-fold subtle body) — which consists in the arising of the tanmātras and functions as mind, ego, and intellect — he experiences the rising of mental constructs born of it."
+            ai_assisted: false
+            status: published
+
+      - verse: 18
+        devanagari: भुङ्क्ते परवशो भोगं तद्भावात्संसरेदतः । संसृतिप्रलयस्यास्य कारणं सम्प्रचक्ष्महे ॥१८॥
+        slp1: "BuNkte paravazo BogaM tadBAvAtsaMsaredataH . saMsftipralayasyAsya kAraRaM sampracakzmahe"
+        iast: "bhuṅkte para-vaśo bhogaṃ tad-bhāvāt saṃsared ataḥ / saṃsṛti-pralayasyāsya kāraṇaṃ sampracakṣmahe //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: भुङ्क्ते
+            iast: bhuṅkte
+            gloss_en: "he experiences"
+            morph: "verb 3.sg.pres ātm"
+          - word: परवशः
+            iast: para-vaśaḥ
+            gloss_en: "subjugated by another"
+            morph: "m.nom.sg cpd"
+          - word: भोगम्
+            iast: bhogam
+            gloss_en: "experience, enjoyment"
+            morph: "m.acc.sg"
+          - word: संसरेत्
+            iast: saṃsaret
+            gloss_en: "would transmigrate"
+            morph: "verb 3.sg.opt"
+          - word: कारणम्
+            iast: kāraṇam
+            gloss_en: "the cause"
+            morph: "n.acc.sg"
+          - word: सम्प्रचक्ष्महे
+            iast: sampracakṣmahe
+            gloss_en: "we shall declare"
+            morph: "verb 1.pl.pres ātm"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "Subject to another, he undergoes experience; because of that he transmigrates. We shall now declare the cause of the cessation of this transmigration."
+            ai_assisted: false
+            status: published
+
+      - verse: 19
+        devanagari: यदा त्वेकत्र संरूढस्तदा तस्य लयोदयौ । नियच्छन्भोक्तृतामेति ततश्चक्रेश्वरो भवेत् ॥१९॥
+        slp1: "yadA tvekatra saMrUDastadA tasya layodayO . niyacCanBoktftAmeti tatazcakrezvaro Bavet"
+        iast: "yadā tv ekatra saṃrūḍhas tadā tasya layodayau / niyacchan bhoktṛtām eti tataś cakreśvaro bhavet //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: एकत्र संरूढः
+            iast: ekatra saṃrūḍhaḥ
+            gloss_en: "firmly rooted in the One"
+            morph: "m.nom.sg phr"
+          - word: लयोदयौ
+            iast: layodayau
+            gloss_en: "dissolution and arising"
+            morph: "m.acc.du cpd"
+          - word: नियच्छन्
+            iast: niyacchan
+            gloss_en: "controlling"
+            morph: "m.nom.sg ppl"
+          - word: भोक्तृताम्
+            iast: bhoktṛtām
+            gloss_en: "the state of being (true) enjoyer"
+            morph: "f.acc.sg"
+          - word: चक्रेश्वरः
+            iast: cakreśvaraḥ
+            gloss_en: "Lord of the Wheel (of powers)"
+            morph: "m.nom.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "But when he is firmly established in the One, then, controlling the rise and dissolution of that (subtle body), he attains true enjoyer-ship and becomes the Lord of the Wheel (of powers)."
+            ai_assisted: false
+            status: published
+
+  - chapter: 4
+    title_sa: एपिलोगः
+    title_iast: Epilogue
+    title_en: Epilogue
+    verses:
+      - verse: 1
+        devanagari: अगाधसंशयाम्भोधिसमुत्तरणतारिणीम् । वन्दे विचित्रार्थपदां चित्रां तां गुरुभारतीम् ॥१॥
+        slp1: "agADasaMzayAmBoDisamuttaraRatAriRIm . vande vicitrArTapadAM citrAM tAM guruBAratIm"
+        iast: "agādha-saṃśayāmbhodhi-samuttaraṇa-tāriṇīm / vande vicitrārtha-padāṃ citrāṃ tāṃ guru-bhāratīm //"
+        meter: anuṣṭubh
+        word_glosses:
+          - word: अगाधसंशयाम्भोधि
+            iast: agādha-saṃśayāmbhodhi
+            gloss_en: "the fathomless ocean of doubt"
+            morph: "cpd-stem"
+          - word: समुत्तरणतारिणीम्
+            iast: samuttaraṇa-tāriṇīm
+            gloss_en: "she who delivers across"
+            morph: "f.acc.sg cpd"
+          - word: वन्दे
+            iast: vande
+            gloss_en: "I salute"
+            morph: "verb 1.sg.pres"
+          - word: विचित्रार्थपदाम्
+            iast: vicitrārtha-padām
+            gloss_en: "whose words have manifold meanings"
+            morph: "f.acc.sg cpd"
+          - word: चित्राम्
+            iast: citrām
+            gloss_en: "wondrous"
+            morph: "f.acc.sg adj"
+          - word: गुरुभारतीम्
+            iast: guru-bhāratīm
+            gloss_en: "the speech of the teacher (Guru)"
+            morph: "f.acc.sg cpd"
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            text: "I salute that wondrous speech of the Guru — its words of manifold meanings — which carries one safely across the fathomless ocean of doubt."
+            ai_assisted: false
+            status: published

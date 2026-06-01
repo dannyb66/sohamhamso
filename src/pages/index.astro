@@ -1,0 +1,38 @@
+---
+/**
+ * Homepage — sohamhamso.
+ *
+ * Per the locked design spec (Homepage IA): NO carousel, NO card grid,
+ * NO 3-column "Why us" features band. Just:
+ *   masthead → featured verse → curated entries → subscribe → footer.
+ *
+ * The verse is the only marketing the site needs.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Masthead from "../components/Masthead.astro";
+import FeaturedVerseHero from "../components/FeaturedVerseHero.astro";
+import CuratedEntries from "../components/CuratedEntries.astro";
+import SubscribeBand from "../components/SubscribeBand.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="sohamhamso — The Tantric canon, read in eleven tongues"
+  description="A modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages."
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main">
+    <FeaturedVerseHero />
+
+    <hr class="shirorekha-rule" aria-hidden="true" />
+
+    <CuratedEntries />
+
+    <hr class="shirorekha-rule" aria-hidden="true" />
+
+    <SubscribeBand />
+  </main>
+
+  <Footer />
+</BaseLayout>

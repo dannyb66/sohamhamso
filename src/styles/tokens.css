@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color palette: manuscript-at-dawn (light) */
+  --color-bg: #FAF6EE;
+  --color-surface: #FBF7EC;
+  --color-ink: #1C1A17;
+  --color-ink-muted: #6E665A;
+  --color-accent: #7A1F18;
+  --color-accent-soft: #C8A27A;
+  --color-rule: #D8CFBE;
+  --color-success: #4F6B3A;
+  --color-warning: #B8741A;
+  --color-error: #7A1F18;
+
+  /* Type ramp (mobile/desktop) */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-md: 1.125rem;    /* 18px */
+  --text-lg: 1.375rem;    /* 22px */
+  --text-xl: 1.75rem;     /* 28px */
+  --text-2xl: 2.25rem;    /* 36px */
+  --text-3xl: 3rem;       /* 48px */
+
+  /* Spacing scale (8px base) */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 48px;
+  --spacing-9: 64px;
+  --spacing-10: 96px;
+  --spacing-11: 128px;
+  --spacing-12: 160px;
+
+  /* Fonts (font-family stacks) */
+  --font-sa-body: "Noto Serif Devanagari", "Shobhika", serif;
+  --font-sa-display: "Shobhika", "Noto Serif Devanagari", serif;
+  --font-iast: "Source Serif 4", "Source Serif Pro", "Cardo", Georgia, serif;
+  --font-chrome: "Inter", system-ui, sans-serif;
+
+  /* Per-script line-heights (applied via :lang() selectors in global.css) */
+  --line-height-sa: 1.85;
+  --line-height-iast: 1.6;
+  --line-height-ui: 1.45;
+
+  /* Motion */
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-slow: 240ms;
+  --easing-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Reader widths */
+  --width-reader: 65ch;
+  --width-content: 760px;
+  --width-rail: 360px;
+}
+
+/* Dark theme tokens */
+:root[data-theme="dark"] {
+  --color-bg: #14110D;
+  --color-surface: #181512;
+  --color-ink: #ECE5D6;
+  --color-ink-muted: #998A75;
+  --color-accent: #C8514A;
+  --color-accent-soft: #6B4B33;
+  --color-rule: #2A2520;
+  --color-success: #8FA975;
+  --color-warning: #D89A4A;
+  --color-error: #C8514A;
+}
+
+/* Sepia theme tokens (middle ground) */
+:root[data-theme="sepia"] {
+  --color-bg: #EFE3CC;
+  --color-surface: #F5EBD6;
+  --color-ink: #2C2620;
+  --color-ink-muted: #6E5E48;
+}
+
+/* OLED-black theme (true black for OLED savings) */
+:root[data-theme="oled"] {
+  --color-bg: #000000;
+  --color-surface: #0A0907;
+  --color-ink: #ECE5D6;
+  --color-ink-muted: #998A75;
+  --color-accent: #C8514A;
+  --color-rule: #1A1815;
+}
+
+/* prefers-color-scheme handling — only when user hasn't set explicit theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg: #14110D;
+    --color-surface: #181512;
+    --color-ink: #ECE5D6;
+    --color-ink-muted: #998A75;
+    --color-accent: #C8514A;
+    --color-accent-soft: #6B4B33;
+    --color-rule: #2A2520;
+    --color-success: #8FA975;
+    --color-warning: #D89A4A;
+    --color-error: #C8514A;
+  }
+}

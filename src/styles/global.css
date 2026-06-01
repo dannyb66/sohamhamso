@@ -1,0 +1,84 @@
+@import "./tokens.css";
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-iast);
+  line-height: var(--line-height-iast);
+  font-size: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Per-script typography */
+:lang(sa), [lang="sa"] {
+  font-family: var(--font-sa-body);
+  line-height: var(--line-height-sa);
+}
+
+:lang(en), [lang="en"] {
+  font-family: var(--font-iast);
+  line-height: var(--line-height-iast);
+}
+
+/* Other Indic scripts use Noto family per-language. */
+:lang(ta), [lang="ta"] { font-family: "Noto Serif Tamil", serif; line-height: 1.75; }
+:lang(te), [lang="te"] { font-family: "Noto Serif Telugu", serif; line-height: 1.70; }
+:lang(bn), [lang="bn"], :lang(as), [lang="as"] { font-family: "Noto Serif Bengali", serif; line-height: 1.80; }
+:lang(kn), [lang="kn"] { font-family: "Noto Serif Kannada", serif; line-height: 1.70; }
+:lang(ml), [lang="ml"] { font-family: "Noto Serif Malayalam", serif; line-height: 1.75; }
+:lang(gu), [lang="gu"] { font-family: "Noto Serif Gujarati", serif; line-height: 1.80; }
+:lang(pa), [lang="pa"] { font-family: "Noto Serif Gurmukhi", serif; line-height: 1.80; }
+:lang(or), [lang="or"] { font-family: "Noto Serif Oriya", serif; line-height: 1.80; }
+:lang(hi), [lang="hi"], :lang(mr), [lang="mr"] { font-family: var(--font-sa-body); line-height: var(--line-height-sa); }
+
+/* Reader container */
+.reader {
+  max-width: var(--width-reader);
+  margin: 0 auto;
+  padding: var(--spacing-5) var(--spacing-4);
+}
+
+/* Links — body color with quiet underline, never blue */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--motion-fast) var(--easing-out);
+}
+a:hover {
+  text-decoration-color: var(--color-ink-muted);
+}
+
+/* Shirorekha divider — the only decorative motif */
+.shirorekha-rule {
+  height: 1px;
+  background: var(--color-rule);
+  border: 0;
+  margin: var(--spacing-6) 0;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus rings — sindūra accent */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Touch target floor */
+button, [role="button"], a.button {
+  min-height: 44px;
+  min-width: 44px;
+}

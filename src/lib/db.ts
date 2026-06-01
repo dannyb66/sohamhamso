@@ -1,0 +1,376 @@
+/**
+ * SQLite query helpers for sohamhamso reader.
+ *
+ * Runtime: Bun (build-time queries during `astro build`).
+ * Driver: `bun:sqlite` — Bun's built-in synchronous SQLite driver.
+ *
+ * All exported functions are PURE reads. No mutation. Prepared statements
+ * are cached on the Database instance.
+ *
+ * Production: this same logical schema lives in Turso libSQL (corpus DB).
+ * Local dev / static build: single SQLite file at `db/sohamhamso.db`.
+ */
+
+// `bun:sqlite` ships with Bun. The import is resolved by Bun's runtime;
+// TypeScript may not have built-in types — declare-module fallback below.
+// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
+import { Database } from "bun:sqlite";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Types
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface Text {
+  id: string;
+  slug: string;
+  title_sa: string;
+  title_en: string;
+  title_iast: string | null;
+  author: string | null;
+  tradition: string;
+  school: string | null;
+  era: string | null;
+  source: string | null;
+  source_url: string | null;
+  source_revision: string | null;
+  license: string;
+  attribution_html: string | null;
+  parent_text_id: string | null;
+  manuscript_url: string | null;
+  description: string | null;
+}
+
+export interface TextSummary {
+  id: string;
+  slug: string;
+  title_sa: string;
+  title_en: string;
+  title_iast: string | null;
+  tradition: string;
+  school: string | null;
+  verse_count: number;
+}
+
+export interface Verse {
+  id: number;
+  text_id: string;
+  book: number | null;
+  chapter: number;
+  verse_num: number;
+  devanagari: string;
+  slp1: string | null;
+  iast: string | null;
+  meter: string | null;
+  manuscript_folio_ref: string | null;
+}
+
+export interface VerseSummary {
+  chapter: number;
+  verse_num: number;
+  devanagari: string;
+  iast: string | null;
+}
+
+export interface Translation {
+  id: number;
+  verse_id: number;
+  lang: string;
+  translator: string | null;
+  translation_text: string;
+  source: string | null;
+  license: string;
+  status: "draft" | "reviewed" | "published";
+  ai_assisted: boolean;
+  model: string | null;
+  model_version: string | null;
+  prompt_version: string | null;
+  judge_score: number | null;
+  reviewer: string | null;
+  reviewed_at: string | null;
+}
+
+export interface WordGloss {
+  id: number;
+  verse_id: number;
+  word_idx: number;
+  word_sa: string;
+  lemma_sa: string | null;
+  lemma_iast: string | null;
+  gloss_lang: string;
+  gloss_text: string;
+  morph: string | null;
+}
+
+export interface Parallel {
+  id: number;
+  source_verse_id: number;
+  target_verse_id: number;
+  citation_type: string | null;
+  confidence: number | null;
+  extracted_by: string | null;
+  // joined target context for previews
+  target_text_slug?: string;
+  target_text_title?: string;
+  target_chapter?: number;
+  target_verse_num?: number;
+  target_devanagari?: string;
+  target_iast?: string | null;
+}
+
+export interface VersePageData {
+  text: Text;
+  verse: Verse;
+  translations: Translation[];
+  wordGlosses: WordGloss[];
+  parallels: Parallel[];
+  prev: { chapter: number; verse_num: number } | null;
+  next: { chapter: number; verse_num: number } | null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Connection
+// ─────────────────────────────────────────────────────────────────────────────
+
+let _db: Database | null = null;
+
+/**
+ * Resolve the SQLite file path. Defaults to `<repo>/db/sohamhamso.db`.
+ * Resolved relative to this source file so it works both in `astro dev`
+ * and `astro build` regardless of cwd.
+ */
+function dbPath(): string {
+  // ESM-safe __dirname
+  const here = dirname(fileURLToPath(import.meta.url));
+  // src/lib/db.ts → ../../db/sohamhamso.db
+  return resolve(here, "..", "..", "db", "sohamhamso.db");
+}
+
+/**
+ * Returns the shared Database instance. Opens read-only (`readonly: true`)
+ * because every reader-path query in this module is a SELECT.
+ */
+export function getDb(): Database {
+  if (_db) return _db;
+  const path = dbPath();
+  _db = new Database(path, { readonly: true });
+  // Slightly faster reads; safe for read-only conn.
+  _db.exec("PRAGMA query_only = ON;");
+  return _db;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Queries
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * List all texts with their verse counts. Used by:
+ * - Homepage "All texts (N)" list
+ * - Text index pages
+ * - `getStaticPaths` enumeration
+ */
+export function listTexts(): TextSummary[] {
+  const db = getDb();
+  const stmt = db.query<TextSummary, []>(`
+    SELECT
+      t.id,
+      t.slug,
+      t.title_sa,
+      t.title_en,
+      t.title_iast,
+      t.tradition,
+      t.school,
+      COALESCE((SELECT COUNT(*) FROM verses v WHERE v.text_id = t.id), 0) AS verse_count
+    FROM texts t
+    ORDER BY t.title_en ASC
+  `);
+  return stmt.all();
+}
+
+/**
+ * Get a text record by its slug, or null if missing.
+ */
+export function getText(slug: string): Text | null {
+  const db = getDb();
+  const stmt = db.query<Text, [string]>(
+    `SELECT * FROM texts WHERE slug = ? LIMIT 1`,
+  );
+  return stmt.get(slug) ?? null;
+}
+
+/**
+ * List all (chapter, verse_num) tuples for a text — used by `getStaticPaths`.
+ */
+export function listAllVerses(
+  textSlug: string,
+): Array<{ chapter: number; verse_num: number }> {
+  const db = getDb();
+  const stmt = db.query<{ chapter: number; verse_num: number }, [string]>(`
+    SELECT v.chapter, v.verse_num
+    FROM verses v
+    JOIN texts t ON t.id = v.text_id
+    WHERE t.slug = ?
+    ORDER BY v.chapter ASC, v.verse_num ASC
+  `);
+  return stmt.all(textSlug);
+}
+
+/**
+ * List all chapters in a text along with their verse counts.
+ */
+export function listChapters(
+  textSlug: string,
+): Array<{ chapter: number; verse_count: number }> {
+  const db = getDb();
+  const stmt = db.query<{ chapter: number; verse_count: number }, [string]>(`
+    SELECT v.chapter, COUNT(*) AS verse_count
+    FROM verses v
+    JOIN texts t ON t.id = v.text_id
+    WHERE t.slug = ?
+    GROUP BY v.chapter
+    ORDER BY v.chapter ASC
+  `);
+  return stmt.all(textSlug);
+}
+
+/**
+ * List verse summaries (no glosses) for a given chapter.
+ * Used by the chapter/text overview pages.
+ */
+export function listChapterVerses(
+  textSlug: string,
+  chapter: number,
+): VerseSummary[] {
+  const db = getDb();
+  const stmt = db.query<VerseSummary, [string, number]>(`
+    SELECT v.chapter, v.verse_num, v.devanagari, v.iast
+    FROM verses v
+    JOIN texts t ON t.id = v.text_id
+    WHERE t.slug = ? AND v.chapter = ?
+    ORDER BY v.verse_num ASC
+  `);
+  return stmt.all(textSlug, chapter);
+}
+
+/**
+ * Fetch a single verse with everything the reader page needs:
+ * verse row, translations (filtered to `lang`), word_glosses (filtered to
+ * `lang`), parallel-passage targets (joined with target verse summary),
+ * and prev/next navigation cursors within the same text.
+ *
+ * Returns null if the verse doesn't exist.
+ */
+export function getVerse(
+  textSlug: string,
+  chapter: number,
+  verseNum: number,
+  lang = "en",
+): VersePageData | null {
+  const db = getDb();
+
+  const text = getText(textSlug);
+  if (!text) return null;
+
+  const verse = db
+    .query<Verse, [string, number, number]>(`
+      SELECT v.*
+      FROM verses v
+      WHERE v.text_id = ? AND v.chapter = ? AND v.verse_num = ?
+      LIMIT 1
+    `)
+    .get(text.id, chapter, verseNum);
+  if (!verse) return null;
+
+  // Translations for the requested language. Drafts hidden — only
+  // 'published' or 'reviewed' surface. ai_assisted comes back as 0/1 int;
+  // normalize to boolean below.
+  const rawTranslations = db
+    .query<
+      Omit<Translation, "ai_assisted"> & { ai_assisted: number },
+      [number, string]
+    >(`
+      SELECT *
+      FROM translations
+      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed')
+      ORDER BY ai_assisted ASC, created_at ASC
+    `)
+    .all(verse.id, lang);
+  const translations: Translation[] = rawTranslations.map((t) => ({
+    ...t,
+    ai_assisted: t.ai_assisted === 1,
+  }));
+
+  const wordGlosses = db
+    .query<WordGloss, [number, string]>(`
+      SELECT *
+      FROM word_glosses
+      WHERE verse_id = ? AND gloss_lang = ?
+      ORDER BY word_idx ASC
+    `)
+    .all(verse.id, lang);
+
+  // Parallels: join target verse summary so the chip/sheet can render
+  // mini-anatomy without a second round trip per item.
+  const parallels = db
+    .query<Parallel, [number]>(`
+      SELECT
+        p.id,
+        p.source_verse_id,
+        p.target_verse_id,
+        p.citation_type,
+        p.confidence,
+        p.extracted_by,
+        tt.slug AS target_text_slug,
+        tt.title_en AS target_text_title,
+        tv.chapter AS target_chapter,
+        tv.verse_num AS target_verse_num,
+        tv.devanagari AS target_devanagari,
+        tv.iast AS target_iast
+      FROM parallels p
+      JOIN verses tv ON tv.id = p.target_verse_id
+      JOIN texts tt ON tt.id = tv.text_id
+      WHERE p.source_verse_id = ?
+      ORDER BY p.confidence DESC NULLS LAST
+    `)
+    .all(verse.id);
+
+  // Prev/next within the same text (lex order on chapter, verse_num).
+  const prev = db
+    .query<
+      { chapter: number; verse_num: number },
+      [string, number, number, number]
+    >(`
+      SELECT v.chapter, v.verse_num
+      FROM verses v
+      WHERE v.text_id = ?
+        AND (v.chapter < ? OR (v.chapter = ? AND v.verse_num < ?))
+      ORDER BY v.chapter DESC, v.verse_num DESC
+      LIMIT 1
+    `)
+    .get(text.id, chapter, chapter, verseNum) ?? null;
+
+  const next = db
+    .query<
+      { chapter: number; verse_num: number },
+      [string, number, number, number]
+    >(`
+      SELECT v.chapter, v.verse_num
+      FROM verses v
+      WHERE v.text_id = ?
+        AND (v.chapter > ? OR (v.chapter = ? AND v.verse_num > ?))
+      ORDER BY v.chapter ASC, v.verse_num ASC
+      LIMIT 1
+    `)
+    .get(text.id, chapter, chapter, verseNum) ?? null;
+
+  return {
+    text,
+    verse,
+    translations,
+    wordGlosses,
+    parallels,
+    prev,
+    next,
+  };
+}

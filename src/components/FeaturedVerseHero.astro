@@ -1,0 +1,144 @@
+---
+/**
+ * FeaturedVerseHero — single verse, center-aligned, max-width 62ch.
+ *
+ * V1: hard-coded to Vijñāna Bhairava 1.47 (the dhāraṇā "yatra yatra
+ * mano yāti..."). The daily-verse curator workstream (workstream #12
+ * in the plan) will replace this with a server-side rotation once it
+ * ships. Single source of truth — the curator drives both this hero
+ * and the daily email.
+ *
+ * Whole hero is one tap-target to the reading page; `Read →` link is
+ * a redundant explicit affordance, per the homepage IA spec.
+ */
+interface Props {
+  // Allow override for empty-corpus / preview contexts later.
+  href?: string;
+  citation?: string;
+  devanagari?: string;
+  iast?: string;
+  english?: string;
+}
+
+const {
+  href = "/trika/vijnana-bhairava/1/47",
+  citation = "Vijñāna Bhairava · 1 · 47",
+  devanagari = "यत्र यत्र मनो याति बाह्ये वाभ्यन्तरेऽपि वा ।\nतत्र तत्र शिवावस्था व्यापकत्वात्क्व यास्यति ॥",
+  iast = "yatra yatra mano yāti bāhye vābhyantare 'pi vā\ntatra tatra śivāvasthā vyāpakatvāt kva yāsyati",
+  english = "Wherever the mind wanders, outside or within, there is the state of Śiva. Since it pervades all, where else could it go?",
+} = Astro.props;
+---
+
+<section class="hero" aria-labelledby="hero-citation">
+  <a href={href} class="hero-link" aria-describedby="hero-citation">
+    <p class="hero-citation" id="hero-citation">{citation}</p>
+
+    <div class="hero-devanagari" lang="sa" data-sa>
+      {devanagari.split("\n").map((line) => <p>{line}</p>)}
+    </div>
+
+    <div class="hero-iast">
+      {iast.split("\n").map((line) => <p>{line}</p>)}
+    </div>
+
+    <p class="hero-english">{english}</p>
+  </a>
+
+  <a href={href} class="hero-read">Read <span aria-hidden="true">→</span></a>
+</section>
+
+<style>
+  .hero {
+    max-width: 62ch;
+    margin: 0 auto;
+    padding: var(--spacing-9) var(--spacing-4) var(--spacing-8);
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      padding: var(--spacing-10) var(--spacing-6) var(--spacing-9);
+    }
+  }
+
+  /* The whole verse block is one tap-target — wraps citation through
+     English translation. The explicit Read → sits outside the link so
+     it can be a separate focusable element with a clearer label for
+     screen readers. */
+  .hero-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 6px;
+    padding: var(--spacing-4);
+    transition: background var(--motion-base) var(--easing-out);
+  }
+  .hero-link:hover {
+    background: var(--color-surface);
+    text-decoration: none;
+  }
+
+  .hero-citation {
+    font-family: var(--font-chrome);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--spacing-5);
+  }
+
+  .hero-devanagari {
+    font-family: var(--font-sa-body);
+    font-size: 28px;
+    line-height: 1.7;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-5);
+  }
+  .hero-devanagari p {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    .hero-devanagari {
+      font-size: 32px;
+    }
+  }
+
+  .hero-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--spacing-5);
+  }
+  .hero-iast p {
+    margin: 0;
+  }
+
+  .hero-english {
+    font-family: var(--font-iast);
+    font-size: 20px;
+    line-height: 1.55;
+    color: var(--color-ink);
+    margin: 0;
+    max-width: 56ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-read {
+    display: inline-block;
+    margin-top: var(--spacing-5);
+    font-family: var(--font-iast);
+    font-size: 16px;
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 6px;
+  }
+  .hero-read:hover {
+    text-decoration-color: var(--color-ink-muted);
+  }
+</style>

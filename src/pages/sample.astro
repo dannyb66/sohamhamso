@@ -1,0 +1,317 @@
+---
+/**
+ * /sample — hardcoded Vijñāna Bhairava 1.47 verse page.
+ *
+ * Renders VerseAnatomy with inline test data, no DB required.
+ * Useful for component layout testing before corpus ingestion lands.
+ * Mounts the ScriptSwitcher + WordSheet Solid islands like the real
+ * verse-page route.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import VerseAnatomy from "../components/VerseAnatomy.astro";
+import AIAssistedBadge from "../components/AIAssistedBadge.astro";
+import ScriptSwitcher from "../components/ScriptSwitcher.solid";
+import WordSheet from "../components/WordSheet.solid";
+import type { Verse, WordGloss, Translation } from "../lib/db";
+
+// ─── Hardcoded sample data ──────────────────────────────────────────────────
+// Vijñāna Bhairava Tantra, dhāraṇā 1.47:
+//   "yatra yatra mano yāti bāhye vābhyantare 'pi vā |
+//    tatra tatra śivāvasthā vyāpakatvāt kva yāsyati ||"
+// (Where the mind goes, outward or inward, there is the state of Śiva —
+// pervading everywhere, where could it possibly go?)
+
+const verse: Verse = {
+  id: 9999,
+  text_id: "vijnana-bhairava",
+  book: null,
+  chapter: 1,
+  verse_num: 47,
+  devanagari:
+    "यत्र यत्र मनो याति बाह्ये वाभ्यन्तरेऽपि वा । तत्र तत्र शिवावस्था व्यापकत्वात्क्व यास्यति ॥",
+  slp1: "yatra yatra mano yAti bAhye vAByantare 'pi vA | tatra tatra SivAvasTA vyApakatvAt kva yAsyati ||",
+  iast: "yatra yatra mano yāti bāhye vābhyantare 'pi vā | tatra tatra śivāvasthā vyāpakatvāt kva yāsyati ||",
+  meter: "anuṣṭubh",
+  manuscript_folio_ref: null,
+};
+
+const wordGlosses: WordGloss[] = [
+  {
+    id: 1,
+    verse_id: 9999,
+    word_idx: 0,
+    word_sa: "यत्र यत्र",
+    lemma_sa: "यत्र",
+    lemma_iast: "yatra",
+    gloss_lang: "en",
+    gloss_text: "wherever",
+    morph: "adv. correlative",
+  },
+  {
+    id: 2,
+    verse_id: 9999,
+    word_idx: 1,
+    word_sa: "मनः",
+    lemma_sa: "मनस्",
+    lemma_iast: "manas",
+    gloss_lang: "en",
+    gloss_text: "the mind",
+    morph: "nom. sg. n.",
+  },
+  {
+    id: 3,
+    verse_id: 9999,
+    word_idx: 2,
+    word_sa: "याति",
+    lemma_sa: "या",
+    lemma_iast: "yā",
+    gloss_lang: "en",
+    gloss_text: "goes",
+    morph: "3rd sg. pres. √yā",
+  },
+  {
+    id: 4,
+    verse_id: 9999,
+    word_idx: 3,
+    word_sa: "बाह्ये",
+    lemma_sa: "बाह्य",
+    lemma_iast: "bāhya",
+    gloss_lang: "en",
+    gloss_text: "outward",
+    morph: "loc. sg. n.",
+  },
+  {
+    id: 5,
+    verse_id: 9999,
+    word_idx: 4,
+    word_sa: "वा अभ्यन्तरे अपि वा",
+    lemma_sa: "अभ्यन्तर",
+    lemma_iast: "abhyantara",
+    gloss_lang: "en",
+    gloss_text: "or inward",
+    morph: "loc. sg. n.",
+  },
+  {
+    id: 6,
+    verse_id: 9999,
+    word_idx: 5,
+    word_sa: "तत्र तत्र",
+    lemma_sa: "तत्र",
+    lemma_iast: "tatra",
+    gloss_lang: "en",
+    gloss_text: "there",
+    morph: "adv. correlative",
+  },
+  {
+    id: 7,
+    verse_id: 9999,
+    word_idx: 6,
+    word_sa: "शिवावस्था",
+    lemma_sa: "शिवावस्था",
+    lemma_iast: "śivāvasthā",
+    gloss_lang: "en",
+    gloss_text: "the state of Śiva",
+    morph: "nom. sg. f.",
+  },
+  {
+    id: 8,
+    verse_id: 9999,
+    word_idx: 7,
+    word_sa: "व्यापकत्वात्",
+    lemma_sa: "व्यापकत्व",
+    lemma_iast: "vyāpakatva",
+    gloss_lang: "en",
+    gloss_text: "due to pervasiveness",
+    morph: "abl. sg. n.",
+  },
+  {
+    id: 9,
+    verse_id: 9999,
+    word_idx: 8,
+    word_sa: "क्व",
+    lemma_sa: "क्व",
+    lemma_iast: "kva",
+    gloss_lang: "en",
+    gloss_text: "where",
+    morph: "interrog. adv.",
+  },
+  {
+    id: 10,
+    verse_id: 9999,
+    word_idx: 9,
+    word_sa: "यास्यति",
+    lemma_sa: "या",
+    lemma_iast: "yā",
+    gloss_lang: "en",
+    gloss_text: "could it go",
+    morph: "3rd sg. fut. √yā",
+  },
+];
+
+const translations: Translation[] = [
+  {
+    id: 1,
+    verse_id: 9999,
+    lang: "en",
+    translator: "AI · Claude Sonnet 4.6",
+    translation_text:
+      "Wherever the mind goes — outward to objects or inward upon itself — there, in that very place, abides the state of Śiva. Since Śiva pervades all, where could the mind possibly go to escape him?",
+    source: "AI-grounded pipeline (Vidyut + Cologne MW)",
+    license: "CC-BY-SA 4.0",
+    status: "published",
+    ai_assisted: true,
+    model: "claude-sonnet-4-6",
+    model_version: "20260301",
+    prompt_version: "v0.1",
+    judge_score: 7.4,
+    reviewer: null,
+    reviewed_at: null,
+  },
+];
+
+// glosses payload for the WordSheet island
+const glossesPayload = {
+  [String(verse.id)]: wordGlosses.map((g) => ({
+    word_idx: g.word_idx,
+    word_sa: g.word_sa,
+    lemma_sa: g.lemma_sa,
+    lemma_iast: g.lemma_iast,
+    gloss_text: g.gloss_text,
+    morph: g.morph,
+  })),
+};
+---
+
+<BaseLayout
+  title="Vijñāna Bhairava 1.47 — sohamhamso (sample)"
+  description="Sample verse-page render: Vijñāna Bhairava Tantra, dhāraṇā 1.47."
+>
+  <header class="chrome">
+    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <div class="chrome__title">
+      <span class="chrome__text">Vijñāna Bhairava</span>
+      <span class="chrome__verse">· 1.47</span>
+    </div>
+    <div class="chrome__tools">
+      <ScriptSwitcher client:idle />
+      <button type="button" class="chrome__settings" aria-label="Reading settings">
+        Aa
+      </button>
+    </div>
+  </header>
+
+  <main class="reader">
+    <p class="sample-banner">
+      Sample page — hardcoded verse, no database. Useful for component QA.
+    </p>
+
+    <VerseAnatomy
+      verse={verse}
+      wordGlosses={wordGlosses}
+      translations={translations}
+    >
+      <Fragment slot="chips">
+        {translations.map((t) => (
+          <AIAssistedBadge
+            aiAssisted={t.ai_assisted}
+            status={t.status}
+            translator={t.translator}
+            model={t.model}
+            modelVersion={t.model_version}
+            promptVersion={t.prompt_version}
+          />
+        ))}
+      </Fragment>
+
+      <Fragment slot="footer">
+        <span>📜 Manuscript scan not yet available · request one ↗</span>
+      </Fragment>
+    </VerseAnatomy>
+
+    <nav class="verse-nav" aria-label="Verse navigation">
+      <span class="verse-nav__spacer" />
+      <span class="verse-nav__hint">end of sample</span>
+    </nav>
+  </main>
+
+  <WordSheet client:idle />
+
+  <script
+    is:inline
+    set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`}
+  />
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .chrome__text { font-weight: 500; }
+  .chrome__verse { color: var(--color-ink-muted); margin-left: 4px; }
+  .chrome__tools {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+  .chrome__settings {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 999px;
+    padding: 8px 12px;
+    min-height: 44px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .sample-banner {
+    margin: var(--spacing-4) 0;
+    padding: var(--spacing-3);
+    background: var(--color-surface);
+    border: 1px dashed var(--color-rule);
+    border-radius: 8px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+  }
+
+  .verse-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--spacing-6);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+  }
+  .verse-nav__spacer { width: 1px; }
+</style>

@@ -1,0 +1,226 @@
+---
+/**
+ * Text overview page: /{tradition}/{text-slug}
+ * Lists chapters + verse counts.
+ */
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { listTexts, listChapters, getText } from "../../../lib/db";
+
+export async function getStaticPaths() {
+  const texts = listTexts();
+  return texts.map((t) => ({
+    params: { tradition: t.tradition, text: t.slug },
+  }));
+}
+
+const { tradition, text } = Astro.params;
+const textRow = getText(text!);
+if (!textRow) throw new Error(`Text not found: ${text}`);
+const chapters = listChapters(text!);
+const totalVerses = chapters.reduce((sum, c) => sum + c.verse_count, 0);
+
+const pageTitle = `${textRow.title_en} — sohamhamso`;
+---
+
+<BaseLayout title={pageTitle} description={textRow.description ?? undefined}>
+  <header class="chrome">
+    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <div class="chrome__title">
+      <span>{textRow.title_en}</span>
+    </div>
+  </header>
+
+  <main class="reader">
+    <article class="text-overview">
+      <h1 class="text-title-en">{textRow.title_en}</h1>
+      <p class="text-title-sa" lang="sa">{textRow.title_sa}</p>
+      {textRow.title_iast ? (
+        <p class="text-title-iast">{textRow.title_iast}</p>
+      ) : null}
+      {textRow.author ? (
+        <p class="text-author">by {textRow.author}</p>
+      ) : null}
+
+      <hr class="shirorekha-rule" />
+
+      {textRow.description ? (
+        <p class="text-description">{textRow.description}</p>
+      ) : null}
+
+      <div class="text-meta">
+        <span>{totalVerses} verses</span>
+        <span>·</span>
+        <span>{chapters.length} chapter{chapters.length === 1 ? "" : "s"}</span>
+        <span>·</span>
+        <span>{textRow.tradition}</span>
+        {textRow.school ? (
+          <>
+            <span>·</span>
+            <span>{textRow.school}</span>
+          </>
+        ) : null}
+      </div>
+
+      <hr class="shirorekha-rule" />
+
+      <table class="chapter-table">
+        <thead>
+          <tr>
+            <th scope="col">Chapter</th>
+            <th scope="col">Verses</th>
+            <th scope="col">Read</th>
+          </tr>
+        </thead>
+        <tbody>
+          {chapters.map((c) => (
+            <tr>
+              <td>{c.chapter}</td>
+              <td>{c.verse_count}</td>
+              <td>
+                <a href={`/${tradition}/${text}/${c.chapter}/1`}>
+                  Read chapter {c.chapter} →
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {textRow.source || textRow.manuscript_url ? (
+        <footer class="text-attribution">
+          <p>
+            {textRow.source ? <span>Source: {textRow.source}</span> : null}
+            {textRow.source && textRow.license ? " · " : null}
+            {textRow.license ? <span>License: {textRow.license}</span> : null}
+          </p>
+          {textRow.manuscript_url ? (
+            <p>
+              <a
+                href={textRow.manuscript_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📜 View manuscript ↗
+              </a>
+            </p>
+          ) : null}
+        </footer>
+      ) : null}
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+
+  .text-overview {
+    padding-block: var(--spacing-6);
+  }
+  .text-title-en {
+    font-family: var(--font-iast);
+    font-size: var(--text-xl);
+    margin: 0;
+    color: var(--color-ink);
+  }
+  .text-title-sa {
+    font-family: var(--font-sa-display);
+    font-size: var(--text-lg);
+    margin: var(--spacing-2) 0 0 0;
+    color: var(--color-ink);
+  }
+  .text-title-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    color: var(--color-ink-muted);
+    margin: 0;
+  }
+  .text-author {
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    margin: var(--spacing-2) 0 0 0;
+  }
+
+  .text-description {
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+
+  .text-meta {
+    display: flex;
+    gap: var(--spacing-2);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    flex-wrap: wrap;
+  }
+
+  .chapter-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .chapter-table th,
+  .chapter-table td {
+    text-align: left;
+    padding: var(--spacing-3) var(--spacing-2);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chapter-table th {
+    font-weight: 500;
+    color: var(--color-ink-muted);
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+  }
+  .chapter-table td:first-child {
+    font-variant-numeric: tabular-nums;
+    width: 96px;
+  }
+  .chapter-table td:nth-child(2) {
+    width: 96px;
+    color: var(--color-ink-muted);
+  }
+
+  .text-attribution {
+    margin-top: var(--spacing-6);
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+  }
+  .text-attribution p {
+    margin: var(--spacing-2) 0;
+  }
+</style>

@@ -1,0 +1,167 @@
+---
+/**
+ * Footer — two thin rows, hairline separator. Quiet text links only,
+ * no icons, no social rows, no "made with ♥". DOI badge slot on right
+ * (populated once the first Zenodo release lands).
+ */
+
+interface Props {
+  doi?: string | null;
+}
+const { doi = null } = Astro.props;
+
+// Single source of truth for footer links — easy to extend later.
+const links = [
+  { href: "/about/sources", label: "Sources" },
+  { href: "/about/methodology", label: "Methodology" },
+  { href: "/about/license", label: "License (CC-BY-SA 4.0)" },
+  { href: "https://github.com/sohamhamso", label: "GitHub" },
+  { href: "/dataset", label: "Zenodo dataset" },
+  { href: "/donate", label: "Donate" },
+  { href: "/about/privacy", label: "Privacy" },
+  { href: "/about/colophon", label: "Colophon" },
+];
+---
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer">
+      <ul>
+        {links.map((l, i) => (
+          <li>
+            <a href={l.href}>{l.label}</a>
+            {i < links.length - 1 && <span class="sep" aria-hidden="true"> · </span>}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="footer-meta">
+      <p class="footer-attribution">
+        sohamhamso is a non-profit project. Sanskrit sources from
+        <a href="https://gretil.sub.uni-goettingen.de/">GRETIL</a>,
+        <a href="https://www.muktabodha.org/">Muktabodha (MIRI)</a>,
+        and <a href="https://sanskritdocuments.org/">sanskritdocuments.org</a>
+        under their respective licenses. AI-assisted translations not
+        human-verified — see <a href="/about/methodology">methodology</a>.
+      </p>
+      {doi && (
+        <p class="footer-doi">
+          <a href={`https://doi.org/${doi}`} aria-label={`Cite this release: DOI ${doi}`}>
+            <span class="doi-label">DOI</span>
+            <span class="doi-value">{doi}</span>
+          </a>
+        </p>
+      )}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--color-rule);
+    background: var(--color-bg);
+  }
+
+  .footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: var(--spacing-6) var(--spacing-4) var(--spacing-7);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  @media (min-width: 768px) {
+    .footer-inner {
+      padding: var(--spacing-6) var(--spacing-6) var(--spacing-7);
+    }
+  }
+
+  /* Row 1 — links */
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    font-family: var(--font-iast);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-ink);
+  }
+  .footer-links li {
+    display: inline;
+  }
+  .footer-links a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 4px;
+  }
+  .footer-links a:hover {
+    text-decoration-color: var(--color-ink-muted);
+  }
+  .sep {
+    color: var(--color-ink-muted);
+    margin: 0 6px;
+  }
+
+  /* Hairline rule between the two rows */
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+  }
+
+  @media (min-width: 768px) {
+    .footer-meta {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--spacing-6);
+    }
+  }
+
+  .footer-attribution {
+    font-family: var(--font-iast);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--color-ink-muted);
+    margin: 0;
+    max-width: 72ch;
+  }
+  .footer-attribution a {
+    color: var(--color-ink-muted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 3px;
+  }
+
+  .footer-doi {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .footer-doi a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-chrome);
+    font-size: 12px;
+    color: var(--color-ink-muted);
+    text-decoration: none;
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+  .doi-label {
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .doi-value {
+    font-variant-numeric: tabular-nums;
+  }
+</style>

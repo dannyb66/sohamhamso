@@ -1,0 +1,104 @@
+---
+/**
+ * Wordmark — `sohamhamso` set in Source Serif 4 SemiBold lowercase
+ * with a 1.5px shirorekha bar above the x-height, terminating at the
+ * right edge of the final 'o'. Optional Devanāgarī lockup `सोऽहं हंसः`.
+ *
+ * The shirorekha bar is the only decorative motif on the site (per the
+ * brand spec) — it's the same horizontal line that runs across the top
+ * of Devanāgarī letters, lifted here as the wordmark's signature.
+ */
+interface Props {
+  size?: "sm" | "md" | "lg";
+  showDevanagari?: boolean;
+  href?: string;
+}
+const { size = "md", showDevanagari = true, href = "/" } = Astro.props;
+---
+
+<a href={href} class={`wordmark wordmark--${size}`} aria-label="sohamhamso home">
+  <span class="wordmark-roman">
+    <span class="shirorekha" aria-hidden="true"></span>
+    <span class="text">sohamhamso</span>
+  </span>
+  {showDevanagari && (
+    <span class="wordmark-devanagari" lang="sa" data-sa>सोऽहं हंसः</span>
+  )}
+</a>
+
+<style>
+  .wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.55em;
+    color: var(--color-ink);
+    text-decoration: none;
+    font-family: var(--font-iast);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    transition: opacity var(--motion-fast) var(--easing-out);
+  }
+  .wordmark:hover {
+    opacity: 0.78;
+    text-decoration: none;
+  }
+
+  .wordmark-roman {
+    position: relative;
+    display: inline-block;
+    /* padding-top reserves space for the shirorekha bar above the
+       x-height — keeps the bar from clipping in tight headers. */
+    padding-top: 0.34em;
+  }
+
+  /* The 1.5px shirorekha. Width is 100% of the wordmark so it
+     terminates exactly at the right edge of the final 'o'. */
+  .shirorekha {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.04em;       /* sits just above the x-height of the lowercase set */
+    height: 1.5px;
+    background: var(--color-ink);
+    pointer-events: none;
+  }
+
+  .text {
+    display: inline-block;
+    /* font-feature-settings: keep ligatures off for clean wordmark */
+    font-feature-settings: "liga" 0, "kern" 1;
+  }
+
+  .wordmark-devanagari {
+    font-family: var(--font-sa-body);
+    font-weight: 400;
+    color: var(--color-ink-muted);
+    font-size: 0.62em;
+    letter-spacing: 0;
+    line-height: 1;
+    /* lift the Devanāgarī slightly so its own shirorekha aligns
+       approximately with the Roman wordmark's shirorekha */
+    transform: translateY(-0.06em);
+  }
+
+  /* Sizes — chosen against the type ramp.
+     sm: masthead, footer
+     md: hero contexts
+     lg: standalone splash / about page */
+  .wordmark--sm { font-size: 18px; }
+  .wordmark--md { font-size: 24px; }
+  .wordmark--lg { font-size: 40px; }
+
+  @media (min-width: 768px) {
+    .wordmark--sm { font-size: 20px; }
+    .wordmark--md { font-size: 28px; }
+    .wordmark--lg { font-size: 48px; }
+  }
+
+  /* The shirorekha visually scales with the wordmark — 1.5px is the
+     reference at md; thin it on sm, thicken on lg so the proportion
+     stays consistent. */
+  .wordmark--sm .shirorekha { height: 1px; }
+  .wordmark--lg .shirorekha { height: 2px; }
+</style>

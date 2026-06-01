@@ -1,0 +1,282 @@
+---
+/**
+ * VerseAnatomy — Vedabase-pattern verse anatomy block.
+ *
+ * Top-to-bottom anatomy (mobile + desktop, single column):
+ *   1. Verse-number rail (sticky left on desktop, inline above on mobile)
+ *   2. Devanāgarī verse (large, Noto Serif Devanagari, line-height 1.75, lang="sa")
+ *   3. IAST transliteration (muted serif italic)
+ *   4. Synonyms — dash-joined Vedabase pattern: `tasya — of that; eva — only; ...`
+ *      Each Sanskrit lemma is a <button data-word-idx data-verse-id> for the
+ *      WordSheet Solid island to attach handlers via event delegation.
+ *   5. Translation (single paragraph, max 65ch)
+ *   6. Footer chips slot (AI badges, parallels chip, manuscript link)
+ *
+ * No purport / commentary layer — locked by design spec.
+ *
+ * Sanskrit-bearing elements carry `data-sa` so the ScriptSwitcher island
+ * can re-render them via Sanscript.t() without a page reload.
+ */
+import type { Verse, WordGloss, Translation } from "../lib/db";
+
+interface Props {
+  verse: Verse;
+  wordGlosses?: WordGloss[];
+  translations?: Translation[];
+}
+
+const { verse, wordGlosses = [], translations = [] } = Astro.props;
+
+const verseLabel =
+  verse.chapter && verse.verse_num
+    ? `${verse.chapter}.${verse.verse_num}`
+    : String(verse.verse_num);
+
+// Pick the primary translation (first one in the list — db.ts orders
+// `ai_assisted ASC, created_at ASC` so PD/human translations land first).
+const primaryTranslation = translations[0] ?? null;
+---
+
+<article class="verse-anatomy" data-verse-id={verse.id}>
+  <header class="verse-header">
+    <span class="verse-number" aria-label={`Verse ${verseLabel}`}>
+      {verseLabel}
+    </span>
+    <div class="verse-chips">
+      <slot name="chips" />
+    </div>
+  </header>
+
+  <div
+    class="verse-devanagari"
+    lang="sa"
+    data-sa
+    data-sa-source={verse.devanagari}
+  >
+    {verse.devanagari}
+  </div>
+
+  {verse.iast ? (
+    <div class="verse-iast" lang="sa-Latn">{verse.iast}</div>
+  ) : null}
+
+  {verse.meter ? (
+    <div class="verse-meter" aria-label="meter">{verse.meter}</div>
+  ) : null}
+
+  {wordGlosses.length > 0 ? (
+    <section class="synonyms" aria-label="word-by-word synonyms">
+      {wordGlosses.map((g, i) => (
+        <>
+          <button
+            type="button"
+            class="sa-word"
+            data-word-idx={g.word_idx}
+            data-verse-id={verse.id}
+            data-sa
+            data-sa-source={g.word_sa}
+            lang="sa"
+          >
+            {g.word_sa}
+          </button>
+          <span class="sa-gloss"> — {g.gloss_text}</span>
+          {i < wordGlosses.length - 1 ? (
+            <span class="sa-sep">; </span>
+          ) : null}
+        </>
+      ))}
+    </section>
+  ) : null}
+
+  {primaryTranslation ? (
+    <p class="translation" lang={primaryTranslation.lang}>
+      {primaryTranslation.translation_text}
+    </p>
+  ) : null}
+
+  {translations.length > 1 ? (
+    <section class="alt-translations" aria-label="additional translations">
+      {translations.slice(1).map((t) => (
+        <p class="translation translation-alt" lang={t.lang}>
+          {t.translation_text}
+        </p>
+      ))}
+    </section>
+  ) : null}
+
+  <footer class="verse-footer">
+    <slot name="footer" />
+  </footer>
+</article>
+
+<style>
+  .verse-anatomy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+    padding-block: var(--spacing-6);
+    border-block-end: 1px solid var(--color-rule);
+  }
+
+  /* Desktop: sticky-left verse-number rail */
+  @media (min-width: 1024px) {
+    .verse-anatomy {
+      grid-template-columns: 48px 1fr;
+      column-gap: var(--spacing-4);
+    }
+    .verse-header {
+      grid-column: 1 / 2;
+      flex-direction: column;
+      align-items: flex-start;
+      position: sticky;
+      top: 64px;
+      align-self: flex-start;
+    }
+    .verse-devanagari,
+    .verse-iast,
+    .verse-meter,
+    .synonyms,
+    .translation,
+    .alt-translations,
+    .verse-footer {
+      grid-column: 2 / 3;
+    }
+  }
+
+  .verse-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+  }
+
+  .verse-number {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-ink-muted);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "smcp" 1, "c2sc" 1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .verse-chips {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+  }
+
+  .verse-devanagari {
+    font-family: var(--font-sa-body);
+    font-size: var(--text-lg); /* 22px mobile */
+    font-weight: 500;
+    line-height: 1.75;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+  @media (min-width: 1024px) {
+    .verse-devanagari {
+      font-size: 1.625rem; /* 26px desktop */
+    }
+  }
+
+  .verse-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    color: var(--color-ink-muted);
+    line-height: 1.5;
+    max-width: var(--width-reader);
+  }
+  @media (min-width: 1024px) {
+    .verse-iast {
+      font-size: 1.0625rem; /* 17px */
+    }
+  }
+
+  .verse-meter {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .synonyms {
+    font-family: var(--font-iast);
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.55;
+    color: var(--color-ink-muted);
+    max-width: var(--width-reader);
+  }
+
+  .sa-word {
+    /* Override the global 44px touch-target floor — these are inline.
+       Tap surface gets the floor via the WordSheet sheet bounce area. */
+    min-height: 0;
+    min-width: 0;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    padding: 0 2px;
+    margin: 0;
+    cursor: pointer;
+    font-family: var(--font-sa-body);
+    font-size: 0.9375rem;
+    color: var(--color-ink);
+    text-decoration: underline dotted var(--color-rule);
+    text-underline-offset: 3px;
+    transition: text-decoration-color var(--motion-fast) var(--easing-out);
+  }
+  .sa-word:hover,
+  .sa-word:focus-visible {
+    text-decoration-color: var(--color-accent);
+  }
+
+  .sa-gloss {
+    color: var(--color-ink-muted);
+  }
+
+  .sa-sep {
+    color: var(--color-ink-muted);
+  }
+
+  .translation {
+    font-family: var(--font-iast);
+    font-size: var(--text-md); /* 18px */
+    line-height: 1.6;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+    margin: 0;
+  }
+  @media (min-width: 1024px) {
+    .translation {
+      font-size: 1.1875rem; /* 19px */
+    }
+  }
+
+  .translation-alt {
+    color: var(--color-ink-muted);
+    border-inline-start: 2px solid var(--color-rule);
+    padding-inline-start: var(--spacing-3);
+  }
+
+  .alt-translations {
+    display: grid;
+    gap: var(--spacing-3);
+  }
+
+  .verse-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+    align-items: center;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+  }
+  .verse-footer:empty {
+    display: none;
+  }
+</style>

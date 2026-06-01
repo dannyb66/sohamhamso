@@ -1,0 +1,277 @@
+---
+/**
+ * Verse-page route: /{tradition}/{text-slug}/{chapter}/{verse}
+ *
+ * Static-built: enumerates every (tradition, text, chapter, verse) tuple
+ * at build time by querying SQLite via src/lib/db.ts.
+ *
+ * Spec: see /Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl-agent-aa24b14e8caa90241.md
+ */
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import VerseAnatomy from "../../../../components/VerseAnatomy.astro";
+import AIAssistedBadge from "../../../../components/AIAssistedBadge.astro";
+import ScriptSwitcher from "../../../../components/ScriptSwitcher.solid";
+import WordSheet from "../../../../components/WordSheet.solid";
+import { listTexts, listAllVerses, getVerse } from "../../../../lib/db";
+
+export async function getStaticPaths() {
+  const texts = listTexts();
+  const paths: Array<{
+    params: {
+      tradition: string;
+      text: string;
+      chapter: string;
+      verse: string;
+    };
+  }> = [];
+
+  for (const t of texts) {
+    const verses = listAllVerses(t.slug);
+    for (const v of verses) {
+      paths.push({
+        params: {
+          tradition: t.tradition,
+          text: t.slug,
+          chapter: String(v.chapter),
+          verse: String(v.verse_num),
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { tradition, text, chapter, verse } = Astro.params;
+const chapterNum = Number(chapter);
+const verseNum = Number(verse);
+
+const data = getVerse(text!, chapterNum, verseNum, "en");
+if (!data) {
+  // Astro 5: throw to surface a build-time error if the path made it here
+  // without a matching DB row (shouldn't happen — paths come from same source).
+  throw new Error(
+    `Verse not found: ${tradition}/${text}/${chapterNum}/${verseNum}`,
+  );
+}
+
+const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } =
+  data;
+
+const pageTitle = `${textRow.title_en} · ${chapterNum}.${verseNum} — sohamhamso`;
+const pageDescription =
+  translations[0]?.translation_text?.slice(0, 160) ??
+  `${textRow.title_en}, verse ${chapterNum}.${verseNum} — Sanskrit verse anatomy with word-by-word translation.`;
+
+// Group glosses by verse_id for the WordSheet's window.__wordGlosses lookup.
+const glossesPayload = {
+  [String(verseRow.id)]: wordGlosses.map((g) => ({
+    word_idx: g.word_idx,
+    word_sa: g.word_sa,
+    lemma_sa: g.lemma_sa,
+    lemma_iast: g.lemma_iast,
+    gloss_text: g.gloss_text,
+    morph: g.morph,
+  })),
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <header class="chrome">
+    <a href={`/${tradition}/${text}`} class="chrome__back" aria-label="Back to text">
+      ←
+    </a>
+    <div class="chrome__title">
+      <span class="chrome__text">{textRow.title_en}</span>
+      <span class="chrome__verse">· {chapterNum}.{verseNum}</span>
+    </div>
+    <div class="chrome__tools">
+      <ScriptSwitcher client:idle />
+      <button type="button" class="chrome__settings" aria-label="Reading settings">
+        Aa
+      </button>
+    </div>
+  </header>
+
+  <main class="reader">
+    <VerseAnatomy
+      verse={verseRow}
+      wordGlosses={wordGlosses}
+      translations={translations}
+    >
+      <Fragment slot="chips">
+        {translations.map((t) => (
+          <AIAssistedBadge
+            aiAssisted={t.ai_assisted}
+            status={t.status}
+            translator={t.translator}
+            model={t.model}
+            modelVersion={t.model_version}
+            promptVersion={t.prompt_version}
+            reviewerName={t.reviewer}
+            generatedAt={t.reviewed_at}
+          />
+        ))}
+        {parallels.length > 0 ? (
+          <span class="chip chip--parallels" aria-label={`${parallels.length} parallels`}>
+            📜 parallels ({parallels.length})
+          </span>
+        ) : null}
+      </Fragment>
+
+      <Fragment slot="footer">
+        {textRow.manuscript_url ? (
+          <a
+            href={textRow.manuscript_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="manuscript-link"
+          >
+            📜 View manuscript at {textRow.source ?? "source"}
+            {verseRow.manuscript_folio_ref ? (
+              <span> · folio {verseRow.manuscript_folio_ref}</span>
+            ) : null}
+          </a>
+        ) : null}
+      </Fragment>
+    </VerseAnatomy>
+
+    <nav class="verse-nav" aria-label="Verse navigation">
+      {prev ? (
+        <a
+          href={`/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`}
+          class="verse-nav__prev"
+        >
+          ← {prev.chapter}.{prev.verse_num}
+        </a>
+      ) : (
+        <span class="verse-nav__spacer" />
+      )}
+      {next ? (
+        <a
+          href={`/${tradition}/${text}/${next.chapter}/${next.verse_num}`}
+          class="verse-nav__next"
+        >
+          {next.chapter}.{next.verse_num} →
+        </a>
+      ) : (
+        <span class="verse-nav__spacer" />
+      )}
+    </nav>
+  </main>
+
+  <WordSheet client:idle />
+
+  <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+    backdrop-filter: none; /* no glassmorphism per anti-pattern list */
+  }
+  .chrome__back {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .chrome__title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+  }
+  .chrome__text {
+    font-weight: 500;
+  }
+  .chrome__verse {
+    color: var(--color-ink-muted);
+    margin-left: 4px;
+  }
+  .chrome__tools {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+  .chrome__settings {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 999px;
+    padding: 8px 12px;
+    min-height: 44px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+  .chrome__settings:hover {
+    border-color: var(--color-ink-muted);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-family: var(--font-chrome);
+    font-size: 11px;
+    background: #F1F5F9;
+    border: 1px solid #CBD5E1;
+    color: #1E293B;
+  }
+
+  .manuscript-link {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+  }
+
+  .verse-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--spacing-6);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .verse-nav__prev,
+  .verse-nav__next {
+    color: var(--color-ink);
+    text-decoration: none;
+    padding: var(--spacing-3) var(--spacing-4);
+    border: 1px solid var(--color-rule);
+    border-radius: 8px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .verse-nav__prev:hover,
+  .verse-nav__next:hover {
+    border-color: var(--color-ink-muted);
+  }
+  .verse-nav__spacer {
+    width: 1px;
+  }
+</style>
