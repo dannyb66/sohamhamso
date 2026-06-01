@@ -42,10 +42,10 @@ const primaryTranslation = translations[0] ?? null;
     <span class="verse-number" aria-label={`Verse ${verseLabel}`}>
       {verseLabel}
     </span>
-    <div class="verse-chips">
-      <slot name="chips" />
-    </div>
   </header>
+  <div class="verse-chips">
+    <slot name="chips" />
+  </div>
 
   <div
     class="verse-devanagari"
@@ -135,6 +135,7 @@ const primaryTranslation = translations[0] ?? null;
     .verse-devanagari,
     .verse-iast,
     .verse-meter,
+    .verse-chips,
     .synonyms,
     .translation,
     .alt-translations,

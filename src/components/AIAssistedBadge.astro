@@ -54,9 +54,13 @@ if (aiAssisted && status === "reviewed") {
   icon = "AI";
 } else {
   variant = "slate";
-  const parts = [translator || "Public domain"];
+  // Don't duplicate "PD" / "public-domain" when the translator string
+  // already encodes that — keep the pill compact.
+  const t = translator?.trim() || "Public domain";
+  const tIsPdSelf = /\bpd\b|public[\s-]?domain/i.test(t);
+  const parts: string[] = [t];
   if (year) parts.push(String(year));
-  parts.push("PD");
+  if (!tIsPdSelf) parts.push("PD");
   label = parts.join(" · ");
   icon = "PD";
 }
@@ -133,8 +137,19 @@ const id = `aibadge-${Math.random().toString(36).slice(2, 9)}`;
     list-style: none;
     user-select: none;
     min-height: 24px;
+    /* Keep pill on one line — never wrap into a vertical blob. */
+    white-space: nowrap;
+    max-width: 100%;
     /* Expand hit area without visually inflating the pill */
     position: relative;
+  }
+  .ai-badge-label {
+    /* If a translator string runs long, truncate with ellipsis rather than
+       wrapping the pill into multiple lines. Full label is still readable
+       via the disclosure body + aria-label on the <details>. */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: min(48ch, 70vw);
   }
   .ai-badge-summary::-webkit-details-marker { display: none; }
   .ai-badge-summary::before {
