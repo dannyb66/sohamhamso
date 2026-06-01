@@ -1,0 +1,4373 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "pa",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "prompt_version": "v1-sanskrit-grounded",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼੍ਰੀ ਦੇਵੀ (ਭੈਰਵੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨੇ ਕਿਹਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੁਣਿਆ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੇ ਪ੍ਰਭੂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੇਰੇ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਾਰਾ, ਸਮੁੱਚਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਰੁਦ੍ਰਯਾਮਲ ਤੰਤਰ ਤੋਂ ਉਪਜਿਆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਤ੍ਰਿਕ ਦੇ ਭੇਦ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪੂਰੀ ਤਰ੍ਹਾਂ, ਬਿਨਾਂ ਬਾਕੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸਾਰ ਤੋਂ ਸਾਰ ਨੂੰ ਵੰਡਦਿਆਂ"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅੱਜ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦੂਰ ਹੋਇਆ, ਨਿਵਰਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੇਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੰਸ਼ਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੇ ਪਰਮੇਸ਼ਵਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕੀ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਰੂਪ, ਸਰੂਪ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਸਲ ਵਿਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੇ ਦੇਵ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸ਼ਬਦ-ਰਾਸ਼ੀ ਅਤੇ ਕਲਾਵਾਂ ਦਾ ਬਣਿਆ"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕੀ ਜਾਂ?"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨੌਂ-ਆਤਮਾ ਦੇ ਭੇਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭੈਰਵ-ਆਕਾਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਤ੍ਰਿਸ਼ਿਰ-ਭੇਦ ਨਾਲ ਵੰਡਿਆ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਂ ਕੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਤਿੰਨ ਸ਼ਕਤੀਆਂ ਦਾ ਬਣਿਆ"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਾਦ ਅਤੇ ਬਿੰਦੂ ਦਾ ਬਣਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਾਂ ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੀ?"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਰਧ-ਚੰਦਰ ਅਤੇ ਨਿਰੋਧਿਕਾਵਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਚੱਕਰ ਉੱਤੇ ਚੜ੍ਹਿਆ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਵਰ-ਰਹਿਤ (ਸ਼ੁੱਧ ਵਿਅੰਜਨ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਾਂ ਕੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਕਤੀ ਦਾ ਆਪਣਾ ਸਰੂਪ"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰਾਪਰਾ (ਮੱਧ-ਦੇਵੀ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਕਲ, ਅੰਗ-ਯੁਕਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਪਰਾ (ਨਿਮਨ ਦੇਵੀ) ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਤੇ ਜਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਫਿਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਾ (ਪਰਮ ਦੇਵੀ) ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹੋਏ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪਰਮਤਾ, ਸਰਬੋੱਚਤਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਖੰਡਿਤ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "1.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੱਖਰਾਂ ਦੇ ਭੇਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਰੀਰਾਂ ਦੇ ਭੇਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੋ ਸਕਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮਤਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਸ਼ਕਲਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਕਲ ਅਵਸਥਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ ਨਹੀਂ ਹੋ ਸਕਦੀ"
+      }
+    ],
+    "1.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਰਪਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਰੋ, ਪ੍ਰਦਾਨ ਕਰੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੇਰੇ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੇ ਨਾਥ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪੂਰੀ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕੱਟ, ਨਾਸ਼ ਕਰੋ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸੰਸ਼ਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭੈਰਵ ਨੇ ਕਿਹਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਾਬਾਸ਼, ਸ਼ਾਬਾਸ਼!"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਤੇਰੇ ਦੁਆਰਾ ਪੁੱਛਿਆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਤੰਤਰ ਦਾ ਸਾਰ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇਹ, ਹੇ ਪਿਆਰੀ"
+      }
+    ],
+    "1.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੇ ਗੁਪਤ ਤੋਂ ਗੁਪਤ ਦੀ ਰਾਖੀ ਕਰਨ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਤੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੇ ਸੁੰਦਰ-ਮੁੱਖੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮੈਂ ਕਹਾਂਗਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਤੂੰ ਜਾਣ ਸਕੇਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ ਸੁਣ"
+      }
+    ],
+    "1.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰਮ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਸ਼ਕਲ, ਅੰਗ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਾਰੇ ਤੱਤਾਂ ਤੋਂ ਪਰੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਨਿਸ਼ਚੇ ਨਹੀਂ ਹੋ ਸਕਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇੱਥੇ (ਸ਼ਬਦਾਂ ਵਿਚ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕਹਿਣ ਯੋਗ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੋ ਸੰਭਵ ਹੋ ਸਕੇ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇੱਛਾ ਦੁਆਰਾ"
+      }
+    ],
+    "1.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਕ੍ਰਿਤੀ-ਰੂਪਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕੀ ਰੂਪ?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਕਲ-ਅਵਸਥਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਕਲ ਦੀ ਕਲਪਿਤ ਅਦਵੈਤਤਾ"
+      }
+    ],
+    "1.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਦੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਸ ਮਹਾਂ-ਆਕਾਸ਼ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਲੀਨ ਹੋਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚੰਦਰ-ਸੂਰਜ (ਦੇ ਲੀਨ ਹੋਣ ਤੇ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਡੁੱਬੇ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤਾਮਸੀ ਨੀਂਦ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਪਜੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਖਾਲੀ ਖੇਤਰ ਵਿਚ"
+      }
+    ],
+    "1.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਜਿਹੀ ਪ੍ਰਕਾਰ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੈਰਵ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਗਾਈ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ ਪਰਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਾ-ਰੂਪ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰਾ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪੁਕਾਰੀ ਗਈ ਹੈ"
+      }
+    ],
+    "1.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼ਕਤੀ ਅਤੇ ਸ਼ਕਤੀਮਾਨ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਭੇਦ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਟਿਕਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਸੇ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੇ ਧਰਮ-ਧਰਮੀ ਨਾਤੇ ਨਾਲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰਾ ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰਮਾਤਮਾ ਦੀ"
+      }
+    ],
+    "1.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੱਗ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਲਾਉਣ ਵਾਲੀ ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੱਖਰੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੰਨੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕੇਵਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਗਿਆਨ ਦੀ ਸੱਤਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਹ ਆਰੰਭ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼ ਵਿਚ"
+      }
+    ],
+    "1.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼ਕਤੀ-ਅਵਸਥਾ ਵਿਚ ਪ੍ਰਵੇਸ਼ ਕੀਤੇ ਹੋਏ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਭੇਦ-ਰੂਪ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵਨਾ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਦੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ਼ਿਵ-ਰੂਪ ਹੋ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੈਵੀ (ਸ਼ਕਤੀ ਦਾ ਮਾਰਗ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮੁੱਖ, ਦੁਆਰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇੱਥੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੀਵੇ ਦੀ ਰੋਸ਼ਨੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੂਰਜ ਦੀਆਂ ਕਿਰਨਾਂ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦਿਸ਼ਾਵਾਂ ਆਦਿ ਦੇ ਭੇਦ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸ਼ਕਤੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਿਵ (ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੇ ਪਿਆਰੀ"
+      }
+    ],
+    "1.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼੍ਰੀ ਦੇਵੀ ਨੇ ਕਿਹਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੇ ਦੇਵਾਂ ਦੇ ਦੇਵ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤ੍ਰਿਸ਼ੂਲ-ਚਿੰਨ੍ਹਿਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਖੋਪੜੀਆਂ ਨਾਲ ਸ਼ਿੰਗਾਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦਿਸ਼ਾ, ਸਥਾਨ, ਕਾਲ ਤੋਂ ਖਾਲੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਾਮ-ਨਿਰਦੇਸ਼ ਤੋਂ ਰਹਿਤ"
+      }
+    ],
+    "1.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪੂਰਨ-ਭਰੀ ਰੂਪ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵ ਵਿਚ ਅਨੁਭਵ ਕੀਤੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਨ੍ਹਾਂ ਉਪਾਆਂ ਨਾਲ?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਦਾ ਦੁਆਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਾ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਵੇਂ ਹੋਵੇ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਿਵੇਂ ਮੈਂ ਠੀਕ ਜਾਣ ਸਕਾਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ ਮੈਨੂੰ ਕਹੋ, ਹੇ ਭੈਰਵ"
+      }
+    ],
+    "1.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭੈਰਵ ਨੇ ਕਿਹਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉੱਪਰ ਪ੍ਰਾਣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਸ਼ਚੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੇਠਾਂ ਜੀਵ (ਅਪਾਨ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਸਰਗ-ਆਤਮ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮ ਉਠੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦੁਹਰੀ-ਉਠਾਣ ਦੇ ਸਥਾਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭਰਨ ਨਾਲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਰਪੂਰ ਅਵਸਥਾ (ਮਿਲਦੀ ਹੈ)"
+      }
+    ],
+    "1.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਾਣ, ਹਵਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਦਰ ਜਾਂ ਬਾਹਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦੁਹਰਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਾ-ਮੁੜਨ ਤੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭੈਰਵੀ ਅਤੇ ਭੈਰਵ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੇ ਭੈਰਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਗਟ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਰੂਪ, ਦੇਹ"
+      }
+    ],
+    "1.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਾ ਬਾਹਰ ਜਾਏ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਾ ਅੰਦਰ ਆਏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ਕਤੀ (ਪ੍ਰਾਣ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹਵਾ-ਰੂਪ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਫੈਲਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਰਵਿਕਲਪਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮੱਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭੈਰਵ-ਸਰੂਪਤਾ"
+      }
+    ],
+    "1.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਰੋਕਿਆ ਹੋਇਆ (ਸਾਹ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹਰ ਕੱਢਿਆ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਰਿਆ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਦ ਵੀ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੇ ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ ਸ਼ਾਂਤ-ਨਾਮਕ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਕਤੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸ਼ਾਂਤ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਮਾਨ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੂਲਾਧਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਰਨ ਵਾਂਗ ਪ੍ਰਗਟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੂਖਮ ਤੋਂ ਸੂਖਮਤਰ ਆਤਮਕ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਨੂੰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਬਾਰਾਂ (ਅੰਗੁਲ) ਦੇ ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਾਂਤ ਹੁੰਦੀ ਹੋਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭੈਰਵ ਦਾ ਉਦੈ"
+      }
+    ],
+    "1.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉੱਪਰ ਉੱਠਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਿਜਲੀ-ਰੂਪ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹਰ ਚੱਕਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪੜਾਅ ਪੜਾਅ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉੱਪਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤਿੰਨ ਮੁੱਠਾਂ ਤਕ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਦ ਤਕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ ਭੈਰਵ ਦਾ ਉਦੈ ਹੈ"
+      }
+    ],
+    "1.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਾਰਾਂ ਦਾ ਕ੍ਰਮ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਠੀਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਾਰਾਂ ਅੱਖਰਾਂ ਨਾਲ ਵੰਡਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਥੂਲ-ਸੂਖਮ-ਪਰਾ ਸਥਿਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਛੱਡਦੇ-ਛੱਡਦੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅੰਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਿਵ"
+      }
+    ],
+    "1.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਰ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਲਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਿਰ ਦੀ ਚੋਟੀ ਤਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਤੋੜ ਕੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਰੂ-ਖੇਪ ਦੇ ਪੁਲ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮਨ ਨੂੰ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਾਰੇ ਤੋਂ ਉੱਪਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸਰਵ-ਗਾਮੀ ਦਾ ਉਦੈ"
+      }
+    ],
+    "1.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੋਰ ਦੇ ਖੰਭਾਂ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਰੰਗ-ਬਿਰੰਗੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੰਡਲਾਂ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪੰਜ-ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਧਿਆਉਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਨੁੱਤਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੂਨਯ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹਿਰਦੇ ਵਿਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੋਵੇ"
+      }
+    ],
+    "1.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਪ੍ਰਕਾਰ ਦੇ ਕ੍ਰਮ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿੱਥੇ ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੰਤਨ (ਹੋਵੇ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ੂਨਯ ਵਿਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕੰਧ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰਮ ਪਦਾਰਥ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਾਤਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਆਪ ਲੀਨ ਹੋਇਆ ਮਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵਰ ਦੇਣ ਵਾਲਾ ਬਣਦਾ ਹੈ"
+      }
+    ],
+    "1.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਖੋਪੜੀ ਦੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮਨ ਟਿਕਾ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਖੜ੍ਹਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅੱਖਾਂ ਮੀਚੀਆਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕ੍ਰਮਵਾਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਦੀ ਦ੍ਰਿੜ੍ਹਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦਰਸ਼ਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰਮ ਲਕਸ਼"
+      }
+    ],
+    "1.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ-ਨਾੜੀ (ਸੁਸ਼ੁਮਨਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੱਧ ਵਿਚ ਟਿਕੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਮਲ-ਰੇਸ਼ੇ ਜਿਹੇ ਰੂਪ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਧਿਆਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅੰਦਰਲੇ ਆਕਾਸ਼ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦੇਵੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਦੇਵ (ਸ਼ਿਵ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਮਾਨ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੱਥਾਂ ਨਾਲ ਨਜ਼ਰ ਰੋਕਣ ਦੇ ਅਸਤ੍ਰ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਰੌ ਦੇ ਛੇਦਨ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦੁਆਰਾਂ ਦੇ ਰੋਕਣ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਿੰਦੂ ਦੇ ਦਿਖਾਈ ਦੇਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕ੍ਰਮਵਾਰ ਲੀਨ ਹੋਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ ਦੇ ਮੱਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰਮ ਅਵਸਥਾ"
+      }
+    ],
+    "1.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅੰਦਰਲੇ ਪ੍ਰਕਾਸ਼ ਦੀ ਖਲਬਲੀ ਤੋਂ ਉਪਜਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੂਖਮ ਅਗਨੀ-ਤਿਲਕ ਜਿਹੇ ਆਕਾਰ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਿੰਦੂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋਤੀ ਦੇ ਸਿਰੇ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹਿਰਦੇ ਵਿਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਲੈਅ ਦੇ ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਧਿਆਉਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਲੈਅ (ਪ੍ਰਾਪਤ ਹੁੰਦੀ ਹੈ)"
+      }
+    ],
+    "1.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਨਾਹਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਾਤਰ-ਕੰਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਖੰਡ ਧੁਨੀ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਦੀ ਵਾਂਗ ਵਹਿੰਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ਬਦ-ਬ੍ਰਹਮ ਵਿਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਡੁੱਬਿਆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰਮ ਬ੍ਰਹਮ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "1.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਣਵ ਆਦਿ ਦੇ ਸਮੁੱਚਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਲੁਤ-ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ੂਨਯ ਦੀ ਭਾਵਨਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ੂਨਯ ਪਰਾ ਸ਼ਕਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ੂਨਯਤਾ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੇ ਭੈਰਵੀ"
+      }
+    ],
+    "1.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਸ ਕਿਸੇ ਅੱਖਰ ਦੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਰੰਭ ਅਤੇ ਅੰਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਨੁਭਵ ਕਰੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ੂਨਯ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ ਸ਼ੂਨਯ-ਰੂਪ ਬਣ ਜਾਂਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪੁਰਖ ਸ਼ੂਨਯ-ਆਕਾਰ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਤੰਤੀ ਆਦਿ ਵਾਜਿਆਂ ਦੀਆਂ ਧੁਨੀਆਂ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਲੰਮੀਆਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕ੍ਰਮ-ਟਿਕਾਣ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਨਨਯ-ਚੇਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮ ਆਕਾਸ਼ ਦਾ ਸਰੀਰ ਬਣ ਜਾਏ"
+      }
+    ],
+    "1.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਿੰਡ-ਮੰਤਰ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹਰ ਇਕ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਥੂਲ ਅੱਖਰ-ਕ੍ਰਮ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਰਧ-ਚੰਦਰ, ਬਿੰਦੂ, ਨਾਦ ਦਾ ਅੰਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ੂਨਯ-ਉਚਾਰਨ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ਼ਿਵ ਹੋ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹਰ ਦਿਸ਼ਾ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਕੋ ਵੇਲੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵਨਾ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਕਾਸ਼"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ-ਮਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਾਰਾ ਆਕਾਸ਼ ਹੀ ਪ੍ਰਵਰਤਿਤ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਿੱਠ ਦਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੂਲ ਦਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਕੱਠੇ ਭਾਵਨਾ ਕਰੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਕੋਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਰੀਰ-ਨਿਰਪੇਖ ਸ਼ਕਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੂਨਯ-ਮਨ ਹੋ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਿੱਠ ਦਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੂਲ ਦਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹਿਰਦੇ ਦਾ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਥਿਰ ਭਾਵਨਾ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਕੋ ਵੇਲੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਰਵਿਕਲਪਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ ਦਾ ਉਦੈ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਰੀਰ ਦੇ ਕਿਸੇ ਅੰਗ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ੂਨਯਤਾ ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਲ ਮਾਤਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵਨਾ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ (ਹੋ ਜਾਂਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ-ਸਰੂਪ ਦਾ ਭਾਗੀ"
+      }
+    ],
+    "1.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਰੀਰ ਦਾ ਹਰ ਪਦਾਰਥ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਕਾਸ਼ ਨਾਲ ਵਿਆਪਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੇ ਮ੍ਰਿਗ-ਨੇਤਰੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵਨਾ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਤੋਂ ਉਸ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਭਾਵਨਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪੱਕੀ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਰੀਰ ਦੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਮੜੀ ਦਾ ਘੇਰਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੰਧ ਜਿਹਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਅੰਦਰ ਕੁਝ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਧਿਆਉਂਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਧਯੇਯ ਦਾ ਭਾਗੀ ਬਣ ਜਾਏ"
+      }
+    ],
+    "1.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹਿਰਦੇ ਦੇ ਆਕਾਸ਼ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੰਦਰੀਆਂ ਲੀਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਮਲ-ਸੰਪੁਟ ਦੇ ਮੱਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਨਨਯ-ਚੇਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੇ ਸੁਭਾਗੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮ ਸੁਭਾਗ ਪ੍ਰਾਪਤ ਕਰੇ"
+      }
+    ],
+    "1.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਾਰੇ ਪਾਸੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਦੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦ੍ਵਾਦਸ਼ਾਂਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਨ-ਲੈਅ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦ੍ਰਿੜ੍ਹ-ਬੁੱਧੀ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪੱਕਾ ਹੁੰਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਤੱਤਵ-ਲਕਸ਼"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਵਰਤਿਤ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਵੇਂ-ਤਿਵੇਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਿੱਥੇ-ਜਿੱਥੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦ੍ਵਾਦਸ਼ਾਂਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਨ ਸੁੱਟੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹਰ ਪਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਘਟੇ-ਵਿਰਤੀਆਂ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਨੋਖੀ ਸਪਸ਼ਟਤਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੁਝ ਦਿਨਾਂ ਵਿਚ ਹੋਵੇ"
+      }
+    ],
+    "1.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿੱਥੇ-ਜਿੱਥੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਹਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅੰਦਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਂ ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉੱਥੇ-ਉੱਥੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਿਵ-ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵਿਆਪਕਤਾ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕਿੱਥੇ ਜਾਏਗਾ?"
+      }
+    ],
+    "1.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿੱਥੇ-ਜਿੱਥੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੰਦਰੀ-ਮਾਰਗ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਚੇਤਨਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਗਟ ਹੁੰਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਭੂ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ (ਯੋਗੀ) ਲਈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸੇ ਮਾਤ੍ਰ ਦਾ ਧਰਮੀ ਹੋਣ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਚਿਤ-ਲੈਅ ਤੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਆਤਮ-ਪੂਰਨਤਾ"
+      }
+    ],
+    "1.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਛਿੱਕ ਆਦਿ ਦੇ ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਡਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੋਗ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਡੂੰਘੀ ਖੱਡ ਵਿਚ (ਸੰਸ਼ਾ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੰਗ ਤੋਂ ਭੱਜਦਿਆਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਤਸੁਕਤਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭੁੱਖ ਆਦਿ ਦੇ ਅੰਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਬ੍ਰਹਮ-ਸੱਤਾ ਦੇ ਨੇੜੇ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਦੋਂ ਵਸਤਾਂ ਯਾਦ ਆਉਂਦੀਆਂ ਹਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੇਖੇ ਥਾਂ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਨ ਛੱਡ ਦੇਏ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਣਾ ਸਰੀਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਬਣਾ ਕੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਭੂ ਫੈਲ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਸੇ ਵਸਤੂ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਟਿਕਾ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੌਲੀ-ਹੌਲੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਜ਼ਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹਟਾ ਲਏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਨ ਸਮੇਤ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ੂਨਯ ਦਾ ਆਲਯ ਬਣਦਾ ਹੈ"
+      }
+    ],
+    "1.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭਗਤੀ ਦੀ ਉੱਚਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਰਕਤ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਹੋ ਜਿਹੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਪਜਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮਤਿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਸ਼ਾਂਕਰੀ ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ ਨੂੰ ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਫਿਰ ਸ਼ਿਵ ਪ੍ਰਾਪਤੀ"
+      }
+    ],
+    "1.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੂਜੀ ਵਸਤੂ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਾਣਨ ਸਮੇਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਰੀਆਂ ਵਸਤਾਂ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ੂਨਯਤਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸੇ ਨੂੰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਨਾਲ ਚਿੰਤਨ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਣਿਆ ਹੋਇਆ ਵੀ ਸ਼ਾਂਤ ਹੋ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਥੋੜ੍ਹਾ ਜਾਣਨ ਵਾਲਿਆਂ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਸ਼ੁੱਧੀ ਮੰਨੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ ਸ਼ੁੱਧੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ੰਭੂ-ਦਰਸ਼ਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਵਿੱਤਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਸ਼ਚੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸੇ ਕਰਕੇ ਅਪਵਿੱਤਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਿਰਵਿਕਲਪ ਹੀ ਸੁਖੀ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.55": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹਰ ਥਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੈਰਵ-ਭਾਵ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਧਾਰਨ ਵਸਤਾਂ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਗਟ ਹੁੰਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਤੋਂ ਵੱਖਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੋਈ ਹੋਰ ਹੈ — ਇਉਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਦਵੈਤ ਮਾਰਗ"
+      }
+    ],
+    "1.56": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਮਾਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੈਰੀ ਅਤੇ ਮਿੱਤਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਾਣ-ਅਪਮਾਨ ਵਿਚ ਸਮਾਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬ੍ਰਹਮ ਦੀ ਪਰਿਪੂਰਨਤਾ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ ਜਾਣ ਕੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸੁਖੀ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.57": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘਿਰਨਾ ਨਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਪਜਾਏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਸੇ ਪ੍ਰਤੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਰਾਗ ਨਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਪਜਾਏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਰਾਗ-ਦਵੇਸ਼ ਤੋਂ ਮੁਕਤੀ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮੱਧ ਵਿਚ ਬ੍ਰਹਮ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼ ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "1.58": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ ਅ-ਜਾਣਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਅ-ਗ੍ਰਹਣ-ਯੋਗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਸ਼ੂਨਯ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਅ-ਭਾਵ-ਗਾਮੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ ਸਭ ਭੈਰਵ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿੰਤਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੇ ਅੰਤ 'ਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਬੋਧ ਦਾ ਉਦੈ"
+      }
+    ],
+    "1.59": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿੱਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਭੂ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਆਪਕ ਵਿਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਰਵ-ਆਤਮਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਉਂ ਭੈਰਵ ਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਿਮਰਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪੁਰਖ ਮੁਕਤ ਹੋ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.60": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰਾਧਾਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੰਸ਼ਾ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਖਯਾਤੀ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ ਪਰਮ ਬ੍ਰਹਮ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਹਾ ਗਿਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸੇ-ਮਯ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.61": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਵੇਂ-ਤਿਵੇਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਪਦੇਸ਼ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੁੰਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਾਣਾਂ ਦੀ ਲੈਅ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਜਾਣਨਯੋਗ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਅਵਸਥਾ ਦੇ ਪਦ ਵਿਚ ਪਹੁੰਚੇ"
+      }
+    ],
+    "1.62": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੂਲ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੂਲ-ਨਾੜੀਆਂ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਾਣ-ਪੂਰਿਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੁਸ਼ੁਮਨਾ ਨੂੰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦ੍ਵਾਦਸ਼ਾਂਤ ਵਿਚ ਟਿਕੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਧਿਆਨ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮੂਲ-ਰਹਿਤ ਭੈਰਵ ਨੂੰ ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.63": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਖੋਪੜੀ ਦੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ ਮਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਧਿਆਉਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਛੇਤੀ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੇ ਪ੍ਰਭੂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮੀਚਣ ਆਦਿ ਤੋਂ ਉਪਜੀ ਸਿੱਧੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਚਿਤ-ਮਯ ਨੂੰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਪਜਦੀ ਹੈ"
+      }
+    ],
+    "1.64": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ-ਜੀਭ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਖੁੱਲ੍ਹੇ ਮੂੰਹ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੱਧ ਵਿਚ ਸੁੱਟ ਕੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚੇਤਨਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ਹਾ' ਦਾ ਉਚਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਨਾਲ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਫਿਰ ਸ਼ਾਂਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਲੀਨ ਹੋ ਜਾਂਦਾ"
+      }
+    ],
+    "1.65": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਸਣ-ਸ਼ੈਨ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਟਿਕ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਰਾਧਾਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਪਣਾ ਸਰੀਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਥਕਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਲ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਸ਼ਯ-ਰਹਿਤ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.66": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚੱਲਦੇ ਆਸਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬੈਠੇ ਲਈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂ ਹੌਲੀ-ਹੌਲੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਰੀਰ ਹਿਲਾਉਣ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਦ ਮਨ-ਅਵਸਥਾ ਸ਼ਾਂਤ ਹੋਏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦਿਵਯ ਪ੍ਰਵਾਹ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰੇ"
+      }
+    ],
+    "1.67": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰਮਲ ਆਕਾਸ਼"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੇਖਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਜ਼ਰ ਨਿਰੰਤਰ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਤਮਾ ਸਥਿਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸੇ ਪਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭੈਰਵ ਦਾ ਸਰੂਪ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰੇ"
+      }
+    ],
+    "1.68": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਲੀਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਿਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਕਾਸ਼"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਾਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭੈਰਵਤਾ-ਰੂਪ ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਸਭ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭੈਰਵ-ਆਕਾਰ ਤੇਜਸ-ਤੱਤਵ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼ ਕਰੇ"
+      }
+    ],
+    "1.69": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਥੋੜ੍ਹਾ ਜਾਣਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦਵੈਤ-ਦਾਯੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਾਹਰੀ ਪ੍ਰਕਾਸ਼"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਫਿਰ ਅੰਧਕਾਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਸ਼ਵ ਆਦਿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭੈਰਵ-ਰੂਪ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਣ ਕੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਨੰਤ-ਪ੍ਰਕਾਸ਼ ਦਾ ਧਾਰਕ"
+      }
+    ],
+    "1.70": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਘੋਰ ਰਾਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕ੍ਰਿਸ਼ਨ-ਪੱਖ ਦੇ ਆਉਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿਰ ਤਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅੰਧਕਾਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭੈਰਵ-ਰੂਪ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ ਰੂਪ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੇਗਾ"
+      }
+    ],
+    "1.71": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਹਿਲਾਂ ਮੀਚ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੱਖਾਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਾਲਾ ਜਿਹਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅੱਗੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਫੈਲਾ ਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭੈਰਵ-ਰੂਪ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਤਨਮਯ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.72": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਸ ਕਿਸੇ ਇੰਦਰੀ ਦੇ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਰੁਕਾਵਟ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਿਰੋਧ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼ ਕੀਤੇ ਹੋਏ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਦਵੈਤ ਸ਼ੂਨਯ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉੱਥੇ ਹੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਤਮਾ ਪ੍ਰਕਾਸ਼ਮਾਨ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "1.73": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਿੰਦੂ ਤੋਂ ਰਹਿਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਸਰਗ ਤੋਂ ਰਹਿਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ਅ'-ਅੱਖਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਪਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਹਾਨ ਉਦੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੇ ਦੇਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਚਾਨਕ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਗਿਆਨ-ਪ੍ਰਵਾਹ ਪਰਮੇਸ਼ਵਰ"
+      }
+    ],
+    "1.74": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਿਸਰਗ ਸਹਿਤ ਅੱਖਰ ਦੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਸਰਗ-ਅੰਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਚੇਤਨਾ ਟਿਕਾਉ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਚਿੱਤ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਨਾਤਨ ਬ੍ਰਹਮ ਨੂੰ ਸਪਰਸ਼ ਕਰੇ"
+      }
+    ],
+    "1.75": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਕਾਸ਼-ਰੂਪ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਪਣੀ ਆਤਮਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਧਿਆਉ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਦਿਸ਼ਾਵਾਂ ਦੁਆਰਾ ਅਣਘੇਰਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਰਾਸ਼੍ਰਯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿਤ-ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਪਣਾ ਸਰੂਪ ਦਿਖਾਏ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਦੋਂ"
+      }
+    ],
+    "1.76": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਸੇ ਅੰਗ ਨੂੰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਹਿਲਾਂ ਚੁਭੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤਿੱਖੀ ਸੂਈ ਆਦਿ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਫਿਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉੱਥੇ ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚੇਤਨਾ ਜੋੜ ਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭੈਰਵ ਵਿਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਿਰਮਲ ਰਾਹ"
+      }
+    ],
+    "1.77": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਿੱਤ ਆਦਿ ਅੰਤਃਕਰਣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਹੀਂ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੇਰੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਉਂ ਚਿੰਤਨ ਕਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਦੀ ਅਣਹੋਂਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਤੋਂ ਮੁਕਤ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.78": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮਾਯਾ ਵਿਮੋਹਿਨੀ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਲਾ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਲਨ (ਪ੍ਰੇਰਨਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਟਿਕਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਵਰਗੇ ਧਰਮ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤੱਤਾਂ ਦੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਣਦਾ ਹੋਇਆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੱਖਰਾ ਨਾ ਰਹੇ"
+      }
+    ],
+    "1.79": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਚਾਨਕ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉੱਠੀ ਇੱਛਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੇਖ ਕੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ਾਂਤ ਕਰ ਦੇਏ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿੱਥੋਂ ਉੱਠੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉੱਥੇ ਹੀ ਲੀਨ ਹੋ ਜਾਂਦੀ"
+      }
+    ],
+    "1.80": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਦੋਂ ਮੇਰੀ ਇੱਛਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਾ ਉੱਠੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਤਾਂ ਮੈਂ ਕੌਣ ਹਾਂ?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਸਲ ਵਿਚ ਮੈਂ ਉਹੀ ਸਰੂਪ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ ਵਿਚ ਲੀਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸੇ-ਮਨ ਵਾਲਾ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.81": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇੱਛਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਾਂ ਗਿਆਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉੱਠੇ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੱਤ ਟਿਕਾਏ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਤਮ-ਬੁੱਧੀ ਨਾਲ ਅਨਨਯ-ਚੇਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਫਿਰ ਤੱਤਵਾਰਥ ਦਾ ਦਰਸ਼ਨ"
+      }
+    ],
+    "1.82": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰ-ਨਿਮਿੱਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਗਿਆਨ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਰਾਧਾਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭ੍ਰਮ-ਆਤਮਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਸਲ ਵਿਚ ਕਿਸੇ ਦਾ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਉਂ ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸ਼ਿਵ, ਹੇ ਪਿਆਰੀ"
+      }
+    ],
+    "1.83": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਿਤ-ਸੁਭਾ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਾਰੇ ਸਰੀਰਾਂ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਤੇ ਭੇਦ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਸੇ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਭ ਉਸੇ-ਮਯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭਵ-ਜਿੱਤ ਮਨੁੱਖ"
+      }
+    ],
+    "1.84": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਮ-ਕ੍ਰੋਧ-ਲੋਭ-ਮੋਹ-ਮਦ-ਮਾਤਸਰਯ ਦੇ ਖੇਤਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬੁੱਧੀ ਨੂੰ ਨਿਸ਼ਚਲ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ ਤੱਤਵ ਹੀ ਬਾਕੀ ਰਹਿੰਦਾ ਹੈ"
+      }
+    ],
+    "1.85": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਾਦੂਮਯ ਵਿਸ਼ਵ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਖਿੱਲਰਿਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੱਤਰਕਾਰੀ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਘੁੰਮਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਧਿਆਉਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਭ ਵੇਖਣ ਵਾਲੇ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸੁਖ ਦਾ ਉਦੈ"
+      }
+    ],
+    "1.86": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮਨ ਨੂੰ ਦੁੱਖ ਵਿਚ ਨਾ ਸੁੱਟੋ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਾ ਸੁਖ ਵਿਚ ਫੈਂਕੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੇ ਭੈਰਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੱਧ ਵਿਚ ਜਾਣਿਆ ਜਾਏ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਹੜਾ ਤੱਤਵ ਬਾਕੀ ਰਹਿੰਦਾ ਹੈ?"
+      }
+    ],
+    "1.87": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਛੱਡ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਦਾ ਮੋਹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'ਸਰਵਤ੍ਰ ਮੈਂ ਹਾਂ' — ਇਉਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦ੍ਰਿੜ੍ਹ ਮਨ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਜ਼ਰ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਰ ਨਾ ਵੇਖਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸੁਖੀ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.88": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘੜੇ ਆਦਿ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਵਿਗਿਆਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਂ ਇੱਛਾ ਆਦਿ ਮੇਰੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਰਵ-ਗਾਮੀ ਹੀ ਉਪਜੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸਰਵਗ"
+      }
+    ],
+    "1.89": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗ੍ਰਾਹਯ-ਗ੍ਰਾਹਕ-ਸੰਵਿਤੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਾਂਝੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਰੇ ਜੀਆਂ ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਯੋਗੀਆਂ ਲਈ ਵਿਸ਼ੇਸ਼ਤਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੰਬੰਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਾਵਧਾਨੀ"
+      }
+    ],
+    "1.90": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੂਜੇ ਦੇ ਸਰੀਰ ਵਿਚ ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੰਵਿਤੀ ਅਨੁਭਵ ਕਰੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਦੀ ਆਸ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਛੱਡ ਕੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦਿਨਾਂ ਵਿਚ ਵਿਆਪੀ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.91": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਮਨ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਕਲਪ ਨਾ ਉਪਜਾਏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਦੋਂ ਆਤਮ-ਪਰਮਾਤਮ-ਏਕਤਾ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭੈਰਵ, ਹੇ ਮ੍ਰਿਗ-ਨੇਤਰੀ"
+      }
+    ],
+    "1.92": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਰਵਜੰਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ ਸਰਵਕਰਤਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਆਪਕ ਪਰਮੇਸ਼ਵਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹੀ ਮੈਂ ਹਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ੈਵ-ਧਰਮਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਸ ਨਿਸ਼ਚੇ ਦੀ ਪੱਕਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਿਵ ਹੋ ਜਾਏ"
+      }
+    ],
+    "1.93": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਵੇਂ ਪਾਣੀ ਦੀਆਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਲਹਿਰਾਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੱਗ ਦੀਆਂ ਜੀਭਾਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੂਰਜ ਦੀਆਂ ਕਿਰਨਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੇਰੇ — ਭੈਰਵ — ਤੋਂ ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਹ ਵਿਸ਼ਵ-ਲਹਿਰਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੰਡੀਆਂ ਹਨ"
+      }
+    ],
+    "1.94": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘੁੰਮ-ਘੁੰਮ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਰੀਰ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਛੇਤੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਧਰਤੀ 'ਤੇ ਡਿੱਗਣ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਖਲਬਲੀ-ਸ਼ਕਤੀ ਦੀ ਸਮਾਪਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮ ਅਵਸਥਾ ਉਪਜਦੀ ਹੈ"
+      }
+    ],
+    "1.95": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਧਾਰਾਂ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਾਂ ਅਸ਼ਕਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗਿਆਨ ਤੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਥਾਂ ਦੀ ਕਲਪਨਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਦ ਸ਼ਕਤੀ-ਖਲਬਲੀ ਉੱਠੀ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਫਿਰ ਸ਼ਾਂਤ ਹੋਣ 'ਤੇ ਉਹ ਉਪਜਦਾ"
+      }
+    ],
+    "1.96": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬੈਠ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਸਣ 'ਤੇ ਠੀਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਾਹਾਂ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅੱਧ-ਕੁੰਚਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕੱਛ-ਆਕਾਸ਼ ਵਿਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਨ ਟਿਕਾਉਂਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਾਂਤੀ ਨੂੰ ਆਉਂਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ ਦੀ ਲੀਨਤਾ ਨਾਲ"
+      }
+    ],
+    "1.97": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਥੂਲ-ਰੂਪੀ ਪਦਾਰਥ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਥਿਰ ਨਜ਼ਰ ਟਿਕਾ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਛੇਤੀ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਮਨ ਕਰ ਕੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ਼ਿਵ ਪ੍ਰਾਪਤ ਕਰੇ"
+      }
+    ],
+    "1.98": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ-ਜੀਭ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਖੁੱਲ੍ਹੇ ਮੂੰਹ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੱਧ ਵਿਚ ਚੇਤਨਾ ਸੁੱਟ ਕੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਨ ਨਾਲ ਮੰਤਰ ਉਚਾਰਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ਿਵ ਧਿਆਉਂਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ਼ਾਂਤ ਹੋ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.99": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਖੋਪੜੀ ਦੇ ਅੰਦਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੱਖਾਂ ਮੀਚੀਆਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰਮ ਲਕਸ਼"
+      }
+    ],
+    "1.100": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ-ਨਾੜੀ (ਸੁਸ਼ੁਮਨਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਮਲ-ਰੇਸ਼ੇ ਜਿਹੇ ਰੂਪ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੰਦਰਲੇ ਆਕਾਸ਼ ਵਾਲੀ ਦੇਵੀ ਨਾਲ"
+      }
+    ],
+    "1.101": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੱਥਾਂ ਨਾਲ ਨਜ਼ਰ ਰੋਕੀ ਹੋਈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੁਆਰਾਂ ਨੂੰ ਰੋਕਣ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰਮ ਅਵਸਥਾ"
+      }
+    ],
+    "1.102": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੰਤਰ-ਅਰਥ-ਦੱਸੇ ਰੂਪ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਧਿਕਾਰੀ ਵਿਸ਼ੇਸ਼ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਧਕ"
+      }
+    ],
+    "1.103": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਨੁਸੰਧਾਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਕ ਥਾਂ ਟਿਕੇ ਗਿਆਨ ਦਾ ਆਸਰਾ ਲੈ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਯੋਗ-ਸਿੱਧੀ"
+      }
+    ],
+    "1.104": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਮਨਾ ਦੇ ਉਛਾਲ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਸਮੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਦੀ ਆਨੰਦ-ਸ਼ਕਤੀ"
+      }
+    ],
+    "1.105": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਟਣਾ-ਮਥਣਾ-ਦਬਾਉਣਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਸਤਰੀ-ਸੁਖ ਦੀ ਪੂਰਨਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਨੰਦ ਦਾ ਹੜ੍ਹ"
+      }
+    ],
+    "1.106": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਦ ਮਹਾਨ ਆਨੰਦ ਪ੍ਰਾਪਤ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਿਰਾਂ ਤੋਂ ਵਿਛੁੜੇ ਸੰਬੰਧੀ ਨੂੰ ਵੇਖਣ ਉੱਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸ ਵਿਚ ਲੀਨ"
+      }
+    ],
+    "1.107": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਖਾਣ-ਪੀਣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਰਸ-ਆਨੰਦ ਦੀ ਉਮੰਗ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਹਾਨ ਆਨੰਦ"
+      }
+    ],
+    "1.108": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗੀਤ ਆਦਿ ਵਿਸ਼ਿਆਂ ਦੇ ਅਨੁਪਮ ਸੁਆਦ ਦੀ ਏਕਤਾ-ਆਤਮਾ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਯੋਗੀ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤਨਮਯਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਨ ਦੇ ਚੜ੍ਹਾਅ ਨਾਲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸੇ ਨਾਲ ਏਕਤਾ"
+      }
+    ],
+    "1.109": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿੱਥੇ-ਜਿੱਥੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਤਮਾ ਦੀ ਤ੍ਰਿਪਤੀ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉੱਥੇ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਟਿਕਾਏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉੱਥੇ-ਉੱਥੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰਮ ਆਨੰਦ ਦਾ ਸਰੂਪ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪੂਰਨ ਪ੍ਰਵਰਤਿਤ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "1.110": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨੀਂਦ ਨਾ ਆਈ ਹੋਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਦ ਬਾਹਰੀ ਵਿਸ਼ਾ-ਖੇਤਰ ਮਿਟ ਚੁੱਕਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਨ ਨਾਲ ਪ੍ਰਾਪਤ-ਯੋਗ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਰਾ ਦੇਵੀ ਪ੍ਰਕਾਸ਼ਿਤ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "1.111": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਰੋਸ਼ਨੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੂਰਜ, ਦੀਵੇ ਆਦਿ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਕਾਸ਼ ਰੰਗਦਾਰ ਹੋਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਣੀ ਆਤਮਾ ਦੇਖਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਰੌਸ਼ਨੀ ਨਾਲ ਯੁਕਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਤ-ਚਿਤ-ਆਨੰਦ ਦਾ ਖੇਤਰ"
+      }
+    ],
+    "1.112": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਰੰਕਿਣੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕ੍ਰੋਧਨਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਲੇਲਿਹਾਨਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਖੇਚਰੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਜ਼ਰ ਦੇ ਸਮੇਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰਾ-ਪ੍ਰਾਪਤੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਿਤ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "1.113": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਰਮ ਆਸਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਕ ਚੂਲ੍ਹੇ ਨਾਲ (ਅਸਮਾਨ ਸੀਟ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੱਥ-ਪੈਰ ਨਿਰਾਸ਼੍ਰਯ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਟਿਕਾ ਕੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਸ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਾ ਪੂਰਨ ਮਤਿ ਉਪਜਦੀ"
+      }
+    ],
+    "1.114": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅੱਧ-ਕੁੰਚਿਤ ਬਾਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕੱਛ-ਆਕਾਸ਼ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸ ਦੀ ਲੀਨਤਾ ਨਾਲ"
+      }
+    ],
+    "1.115": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਚੱਲ ਨਜ਼ਰ ਟਿਕਾ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਿਰਾਧਾਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ਿਵ ਪ੍ਰਾਪਤ ਕਰੇ"
+      }
+    ],
+    "1.116": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੀਭ ਮੱਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਹਾ' ਦਾ ਉਚਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ਾਂਤ (ਸ਼ਿਵ) ਵਿਚ"
+      }
+    ],
+    "1.117": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣਾ ਸਰੀਰ ਨਿਰਾਧਾਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮਨ ਥਕ ਜਾਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਸ਼ਯ-ਰਹਿਤ"
+      }
+    ],
+    "1.118": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚੱਲਦੇ ਆਸਣ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਰੀਰ ਦੇ ਹੌਲੇ-ਹੌਲੇ ਹਿਲਾਉਣ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦਿਵਯ ਪ੍ਰਵਾਹ"
+      }
+    ],
+    "1.119": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼ੁੱਧ ਆਕਾਸ਼"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਥਿਰ ਆਤਮਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵ ਦਾ ਸਰੀਰ"
+      }
+    ],
+    "1.120": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਕਾਸ਼ ਲੀਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੈਰਵਤਾ ਦੇ ਰੂਪ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵ-ਆਕਾਰ ਤੇਜਸ-ਤੱਤਵ"
+      }
+    ],
+    "1.121": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਥੋੜ੍ਹਾ ਜਾਣਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹਰੀ ਪ੍ਰਕਾਸ਼"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਨੰਤ ਪ੍ਰਕਾਸ਼ ਦਾ ਧਾਰਕ"
+      }
+    ],
+    "1.122": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘੋਰ ਰਾਤ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਧਕਾਰ-ਰੂਪ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੈਰਵ-ਰੂਪ"
+      }
+    ],
+    "1.123": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੀਚਣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਾਲੇ-ਜਿਹੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤਨਮਯ"
+      }
+    ],
+    "1.124": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਰੁਕਾਵਟ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਿਰੋਧ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਦਵੈਤ ਸ਼ੂਨਯ ਵਿਚ"
+      }
+    ],
+    "1.125": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਿੰਦੂ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਸਰਗ-ਰਹਿਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗਿਆਨ-ਪ੍ਰਵਾਹ"
+      }
+    ],
+    "1.126": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਿਸਰਗ ਦਾ ਅੰਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਿੱਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਨਾਤਨ ਬ੍ਰਹਮ"
+      }
+    ],
+    "1.127": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਕਾਸ਼-ਰੂਪ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦਿਸ਼ਾਵਾਂ ਦੁਆਰਾ ਅਣਘੇਰਿਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਰਾਸ਼੍ਰਯ ਚਿਤ-ਸ਼ਕਤੀ"
+      }
+    ],
+    "1.128": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਸੇ ਅੰਗ ਨੂੰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਤਿੱਖੀ ਸੂਈ ਆਦਿ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਰਮਲ ਰਾਹ"
+      }
+    ],
+    "1.129": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅੰਤਃਕਰਣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਦੀ ਅਣਹੋਂਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਛੱਡਿਆ ਹੋਇਆ"
+      }
+    ],
+    "1.130": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮਾਯਾ ਵਿਮੋਹਿਨੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਲਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੱਖਰਾ"
+      }
+    ],
+    "1.131": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਚਾਨਕ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ਾਂਤ ਕਰਨਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿੱਥੋਂ"
+      }
+    ],
+    "1.132": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇੱਛਾ / ਗਿਆਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੈਂ ਕੌਣ ਹਾਂ?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸੇ-ਮਨ ਵਾਲਾ"
+      }
+    ],
+    "1.133": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇੱਛਾ ਵਿਚ / ਗਿਆਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਤਮ-ਬੁੱਧੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤੱਤਵਾਰਥ ਦਾ ਦਰਸ਼ਨ"
+      }
+    ],
+    "1.134": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰ-ਨਿਮਿੱਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭ੍ਰਮ-ਆਤਮਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਉਂ-ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ"
+      }
+    ],
+    "1.135": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਿਤ-ਸੁਭਾ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੇਦ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਵ-ਜਿੱਤ"
+      }
+    ],
+    "1.136": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਮ, ਕ੍ਰੋਧ, ਲੋਭ, ਮੋਹ, ਮਦ, ਮਾਤਸਰਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪੂਰੀ ਨਿਸ਼ਚਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਾਕੀ ਰਹਿੰਦਾ ਹੈ"
+      }
+    ],
+    "1.137": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਾਦੂਮਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਿੱਤਰਕਾਰੀ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੁਖ ਦਾ ਉਦੈ"
+      }
+    ],
+    "1.138": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਕੀ ਰਹਿੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਾਣਿਆ ਜਾਏ"
+      }
+    ],
+    "1.139": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਸਰੀਰ ਦਾ ਮੋਹ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਸਰਵਤ੍ਰ ਮੈਂ ਹਾਂ'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੁਝ ਹੋਰ ਨਾ ਵੇਖਣ ਵਾਲੀ"
+      }
+    ],
+    "1.140": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘੜੇ ਆਦਿ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਗਿਆਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਰਵ-ਗਾਮੀ"
+      }
+    ],
+    "1.141": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗ੍ਰਾਹਯ-ਗ੍ਰਾਹਕ-ਸੰਵਿਤੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਾਂਝੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਵਧਾਨੀ"
+      }
+    ],
+    "1.142": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੂਜੇ ਦੇ ਸਰੀਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਆਪੀ"
+      }
+    ],
+    "1.143": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰਾਧਾਰ ਮਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਕਲਪ ਉਪਜਾਏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਤਮ-ਪਰਮਾਤਮ-ਏਕਤਾ ਵਿਚ"
+      }
+    ],
+    "1.144": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਰਵਜੰਯ, ਸਰਵਕਰਤਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ੈਵ-ਧਰਮਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪੱਕਤਾ ਨਾਲ"
+      }
+    ],
+    "1.145": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਲਹਿਰਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੀਭਾਂ-ਅੱਗ ਦੀਆਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਸ਼ਵ-ਲਹਿਰਾਂ"
+      }
+    ],
+    "1.146": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਘੁੰਮ-ਘੁੰਮ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਖਲਬਲੀ-ਸ਼ਕਤੀ ਦੀ ਸਮਾਪਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰਮ ਅਵਸਥਾ"
+      }
+    ],
+    "1.147": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਧਾਰਾਂ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ਕਤੀ-ਖਲਬਲੀ ਵਿਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ਾਂਤ ਹੋਣ ਪਿੱਛੋਂ"
+      }
+    ],
+    "1.148": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹਰ ਥਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਾਵਨਾ-ਨਾਮਕ ਉਪਦੇਸ਼"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੇ ਸੋਭਨੇ"
+      }
+    ],
+    "1.149": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਸ ਕਿਸੇ ਦੇ ਇਸ ਸਰੀਰ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਮੈਂ' ਦੀ ਪ੍ਰਤੀਤੀ ਉੱਠੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸੇ ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਛੋਟੀ ਸੰਵਿਤੀ ਤੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭੈਰਵਤਾ ਪ੍ਰਕਾਸ਼ਿਤ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "1.150": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼੍ਰੀ ਦੇਵੀ ਨੇ ਕਿਹਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੇ ਦੇਵਾਂ ਦੇ ਦੇਵ, ਮਹਾਦੇਵ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪ ਮੈਨੂੰ ਪੂਰਨ ਤ੍ਰਿਪਤ ਕਰ ਚੁੱਕੇ ਹੋ, ਹੇ ਪ੍ਰਭੂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪ ਹੀ ਸ਼ੰਕਰ ਦੀ ਆਤਮਾ ਹੋ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਗਤ ਵਿਚ ਸਨਾਤਨ ਸ਼ਕਤੀ"
+      }
+    ],
+    "1.151": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਵੇਂ ਕਿਰਪਾ-ਆਵਿਸ਼ਟ ਆਪ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਹ ਰਹੱਸ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਘਾੜਿਆ ਗਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਸੇ ਨੂੰ ਵੀ ਕਹਿਣ-ਯੋਗ (ਨਹੀਂ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਯੋਗ ਕੰਨ ਵਿਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਹ ਨਾ ਪਾਉ"
+      }
+    ],
+    "1.152": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਹ ਵਿਗਿਆਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਪਜਿਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬੁਢਾਪਾ-ਮੌਤ ਦਾ ਨਾਸ਼ਕ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬ੍ਰਹਮਾ ਆਦਿ ਦੇਵਾਂ ਦੁਆਰਾ ਪੂਜਯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮਨਥਾਨ-ਭੈਰਵ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ"
+      }
+    ],
+    "1.153": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਹ ਪਹਿਲਾਂ ਨਾ ਆਖਿਆ ਤੰਤਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੋਗ-ਮੋਕਸ਼ ਦੇਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਹ ਪਹਿਲਾਂ ਨਾ ਆਖਿਆ ਤੰਤਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਨੂੰ ਦਿੱਤਾ ਗਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਲੀਲਾ ਨਾਲ"
+      }
+    ],
+    "1.154": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗਿਆਨ-ਲਾਭ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਗੁਰੂ-ਭਾਵ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਮਾਨਤਾ"
+      }
+    ],
+    "1.155": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿੱਥੇ-ਜਿੱਥੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਸੇ ਵੀ ਤਰੀਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਰਤਾ-ਕਰਮ ਦੀ ਵੱਖਰਤਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉੱਥੇ-ਉੱਥੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ਼ਿਵ-ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਆਪਕਤਾ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿੱਥੇ ਜਾਏਗੀ?"
+      }
+    ],
+    "1.156": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਵਿਗਿਆਨ ਨੂੰ ਆਸਰਾ ਬਣਾ ਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਯੋਗੀ ਸ਼ਿਵ ਹੁੰਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤੀਰਥਾਂ ਆਦਿ ਵਿਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਤਿ-ਵਾਲਾ ਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਸ਼ਨਾਨ ਆਦਿ ਵਿਚ ਕਾਰਨ ਨਹੀਂ"
+      }
+    ],
+    "1.157": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸੁਣਨ ਵਾਲੇ-ਆਤਮਾ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਿੱਤ-ਸਮਾਨਤਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤੱਤਵ ਦੀ ਭਾਵਨਾ"
+      }
+    ],
+    "1.158": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਵਿਗਿਆਨ ਦੇ ਜਾਣਨ ਨਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਯੋਗ-ਜਾਣਕਾਰਾਂ ਵਿਚੋਂ ਸਰਬੋੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਹਾਯੋਗੀ"
+      }
+    ],
+    "1.159": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੈਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਤ੍ਰਿਪਤ ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਰੁਦ੍ਰਯਾਮਲ (ਮੂਲ ਤੰਤਰ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਰ ਜਾਣ ਲਿਆ"
+      }
+    ],
+    "1.160": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਾਰੀਆਂ ਸ਼ਕਤੀ-ਭੇਦਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹਿਰਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰ ਕੇ"
+      }
+    ],
+    "1.161": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਨੰਦਿਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਗਲ ਨਾਲ ਚੁੰਬੜੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਗਟ ਕੀਤਾ ਗਿਆ"
+      }
+    ],
+    "1.162": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕੁਲ-ਗੁਪਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਗਤੀਯੁਕਤ ਸ਼ਿਸ਼ ਨੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗੁਰੂ ਦਾ ਘਾਤੀ"
+      }
+    ],
+    "1.163": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ ਵਿਗਿਆਨ-ਭੈਰਵ ਵਿਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼੍ਰੀ ਦੇਵੀ ਦੀ ਸਤੁਤੀ ਰੂਪ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਕ ਸੌ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਰਾਂ ਅਧਿਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਹੀਆਂ ਗਈਆਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭੇਦ-ਰਹਿਤ"
+      }
+    ]
+  }
+}

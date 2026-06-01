@@ -515,6 +515,21 @@ chapters:
       gloss_pa: ਜਾਗਰਤ ਆਦਿ ਦੇ ਭੇਦ ਵਿੱਚ
       gloss_ta: விழிப்பு முதலான நிலைகளின் வேறுபாட்டில்
       gloss_te: జాగ్రదాది అవస్థల భేదమునందు
+    - word: अपि
+      iast: api
+      gloss_en: even, though
+      morph: indecl.
+      gloss_as: ও, এনেকি (অব্যয়)
+      gloss_bn: ও, এমনকি (অব্যয়)
+      gloss_gu: પણ, કૂદાં (અવ્યય)
+      gloss_hi: भी (अव्यय)
+      gloss_kn: ಸಹ, ಕೂಡ (ಅವ್ಯಯ)
+      gloss_ml: എങ്കിലും, പോലും (അവ്യയം)
+      gloss_mr: देखील, सुद्धा (अव्यय)
+      gloss_or: ମଧ୍ୟ, କୁଆଡ଼େ (ଅବ୍ୟୟ)
+      gloss_pa: ਵੀ, ਭਾਵੇਂ (ਅਵ੍ਯ.)
+      gloss_ta: கூட, ஆகவும் (இடைச்சொல்)
+      gloss_te: కూడా, అపి (అవ్యయం)
     - word: तदभिन्ने
       iast: tad-abhinne
       gloss_en: "non-different from That"
@@ -560,6 +575,36 @@ chapters:
       gloss_pa: ਹਟਦਾ, ਨਿਵ੍ਰਿੱਤ ਹੁੰਦਾ
       gloss_ta: விலகுகிறது (இல்லை)
       gloss_te: మరలదు
+    - word: निजात्
+      iast: nijāt
+      gloss_en: from its own (essential nature)
+      morph: m.abl.sg
+      gloss_as: নিজৰ (স্বৰূপৰ পৰা) — পু.পঞ্চমী.এক.
+      gloss_bn: নিজের (স্বরূপ) থেকে — পু.পঞ্চমী.এক.
+      gloss_gu: પોતાના (સ્વરૂપથી) — પુ.પંચમી.એક.
+      gloss_hi: अपने (स्वरूप) से — पु.पञ्चमी एक.
+      gloss_kn: ತನ್ನ (ಸ್ವರೂಪದಿಂದ) — ಪು.ಪಂಚಮಿ.ಏಕ.
+      gloss_ml: സ്വന്തം (സ്വരൂപത്തിൽനിന്ന്) — പു.പഞ്ചമീ.ഏക.
+      gloss_mr: स्वतःच्या (स्वरूपापासून) — पु.पंचमी.एक.
+      gloss_or: ନିଜ (ସ୍ୱରୂପରୁ) — ପୁ.ପଞ୍ଚମୀ.ଏକ.
+      gloss_pa: ਆਪਣੇ (ਸਰੂਪ ਤੋਂ) — ਪੁ.ਪੰਚਮੀ.ਇਕ.
+      gloss_ta: தன் (சொரூபத்திலிருந்து) — ஆ.ஐந்தா.எகவ.
+      gloss_te: తన (స్వరూపం) నుండి — పు.పంచమి.ఏక.
+    - word: न एव
+      iast: na eva
+      gloss_en: never (negation + emphatic)
+      morph: indecl.
+      gloss_as: কেতিয়াও নহয় (নিষেধ + নিশ্চয়)
+      gloss_bn: কখনই না (নিষেধ + নিশ্চয়)
+      gloss_gu: ક્યારેય નહીં (નકાર + નિશ્ચય)
+      gloss_hi: कदापि नहीं (निषेध + निश्चयार्थक)
+      gloss_kn: ಎಂದಿಗೂ ಇಲ್ಲ (ನಿಷೇಧ + ನಿಶ್ಚಯ)
+      gloss_ml: ഒരുപോലും ഇല്ല (നിഷേധം + നിശ്ചയം)
+      gloss_mr: कधीच नाही (निषेध + निश्चयार्थक)
+      gloss_or: କଦାପି ନୁହେଁ (ନିଷେଧ + ନିଶ୍ଚୟ)
+      gloss_pa: ਕਦੇ ਨਹੀਂ (ਨਿਖੇਧ + ਨਿਸ਼ਚੈ)
+      gloss_ta: ஒருபோதும் இல்லை (மறுப்பு + உறுதி)
+      gloss_te: ఎన్నడూ కాదు (నిషేధం + నిశ్చయార్థక)
     - word: स्वभावात्
       iast: svabhāvāt
       gloss_en: "from its own nature"
@@ -708,6 +753,21 @@ chapters:
       gloss_pa: ਮੈਂ ਸੁਖੀ
       gloss_ta: ‘நான் இன்பமுள்ளவன்’
       gloss_te: "'నేను సుఖిని'"
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: दुःखी
       iast: duḥkhī
       gloss_en: "miserable"
@@ -723,6 +783,21 @@ chapters:
       gloss_pa: ਦੁਖੀ
       gloss_ta: துன்பமுள்ளவன்
       gloss_te: దుఃఖి
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: रक्तः
       iast: raktaḥ
       gloss_en: "attached"
@@ -738,6 +813,21 @@ chapters:
       gloss_pa: ਅਨੁਰਾਗੀ
       gloss_ta: பற்றுகொண்டவன்
       gloss_te: రాగయుక్తుడు
+    - word: इत्यादि
+      iast: iti-ādi
+      gloss_en: and the like (such cognitions as 'I am … etc.')
+      morph: indecl. cpd
+      gloss_as: ইত্যাদি ('মই আছোঁ' আদি প্ৰতীতি)
+      gloss_bn: ইত্যাদি ('আমি আছি' প্রভৃতি প্রতীতি)
+      gloss_gu: ઇત્યાદિ ('હું છું' આદિ પ્રતીતિ)
+      gloss_hi: इत्यादि (ऐसी 'मैं हूँ' आदि प्रतीतियाँ) — अव्यय समास
+      gloss_kn: ಇತ್ಯಾದಿ ('ನಾನು ಇದ್ದೇನೆ' ಆದಿ ಪ್ರತೀತಿಗಳು)
+      gloss_ml: ഇത്യാദി ('ഞാൻ ഉണ്ട്' തുടങ്ങിയ പ്രതീതികൾ)
+      gloss_mr: इत्यादी ('मी आहे' आदी प्रतीती)
+      gloss_or: ଇତ୍ୟାଦି ('ମୁଁ ଅଛି' ଆଦି ପ୍ରତୀତି)
+      gloss_pa: ਇਤਯਾਦਿ ('ਮੈਂ ਹਾਂ' ਆਦਿ ਪ੍ਰਤੀਤੀਆਂ)
+      gloss_ta: என்பவை முதலியன ('நான் உள்ளேன்' முதலான அறிவுகள்)
+      gloss_te: ఇత్యాది ('నేను ఉన్నాను' వంటి జ్ఞానాలు)
     - word: संविदः
       iast: saṃvidaḥ
       gloss_en: "cognitions"
@@ -768,6 +858,21 @@ chapters:
       gloss_pa: ਸੁਖ ਆਦਿ ਅਵਸਥਾਵਾਂ ਵਿੱਚੋਂ ਪਿਰੋਇਆ ਹੋਇਆ (ਆਧਾਰ) ਵਿੱਚ
       gloss_ta: இன்பம் முதலிய நிலைகளில் இழையாக ஓடுவதில்
       gloss_te: సుఖాది అవస్థలను అనుస్యూతముగా ధరించినదానియందు
+    - word: वर्तन्ते
+      iast: vartante
+      gloss_en: exist, abide
+      morph: verb 3.pl.pres.mid √vṛt
+      gloss_as: বিদ্যমান আছে, চলি আছে (বৰ্ত. প্ৰ.বহু. আ. √vṛt)
+      gloss_bn: বিদ্যমান, প্রবৃত্ত (বর্ত. প্র.বহু. আ. √vṛt)
+      gloss_gu: વિદ્યમાન છે, પ્રવર્તે છે (વર્ત. પ્ર.બહુ. આ. √vṛt)
+      gloss_hi: रहती हैं, विद्यमान हैं (वर्तमान, तृ.पु.बहु., आत्मनेपद √वृत्)
+      gloss_kn: ಇರುತ್ತವೆ, ನಡೆಯುತ್ತವೆ (ವರ್ತ. ಪ್ರ.ಬಹು. ಆ. √vṛt)
+      gloss_ml: ഉണ്ട്, പ്രവർത്തിക്കുന്നു (വർത്ത. പ്ര.ബഹു. ആ. √vṛt)
+      gloss_mr: विद्यमान आहेत, चालू आहेत (वर्त. प्र.बहु. आ. √vṛt)
+      gloss_or: ବର୍ତ୍ତମାନ ଅଛନ୍ତି, ଚାଲିଛନ୍ତି (ବର୍ତ. ତୃ.ବହୁ. ଆ. √vṛt)
+      gloss_pa: ਮੌਜੂਦ ਹਨ, ਚਲਦੇ ਹਨ (ਵਰਤ. ਤੀ.ਬਹੁ. ਆ. √vṛt)
+      gloss_ta: உள்ளன, இயங்குகின்றன (நிகழ். ஆ.எகவ.பன். √vṛt)
+      gloss_te: ఉన్నాయి, నడుస్తున్నాయి (వర్త. ప్ర.బహు. ఆ. √vṛt)
     - word: अन्यत्र
       iast: anyatra
       gloss_en: "elsewhere (i.e., in another substratum)"
@@ -783,6 +888,21 @@ chapters:
       gloss_pa: ਹੋਰ (ਆਧਾਰ) ਵਿੱਚ
       gloss_ta: வேறொன்றில் (வேறு ஆதாரத்தில்)
       gloss_te: అన్యత్ర (వేరొక ఆధారమునందు)
+    - word: ताः
+      iast: tāḥ
+      gloss_en: those (cognitions)
+      morph: f.nom.pl pron
+      gloss_as: সেইবোৰ (সংবিত্তি) — স্ত্ৰী.কৰ্তা.বহু.
+      gloss_bn: তারা (সংবিৎসমূহ) — স্ত্রী.কর্তা.বহু.
+      gloss_gu: તેઓ (સંવિત્તિઓ) — સ્ત્રી.કર્તા.બહુ.
+      gloss_hi: वे (संवित्तियाँ) — स्त्री.कर्ता बहु. सर्वनाम
+      gloss_kn: ಅವು (ಸಂವಿತ್ತಿಗಳು) — ಸ್ತ್ರೀ.ಕರ್ತ.ಬಹು.
+      gloss_ml: അവ (സംവിത്തുകൾ) — സ്ത്രീ.കർത്താ.ബഹു.
+      gloss_mr: त्या (संविती) — स्त्री.कर्ता.बहु.
+      gloss_or: ସେମାନେ (ସମ୍ବିତ୍ତିଗୁଡ଼ିକ) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ବହୁ.
+      gloss_pa: ਉਹ (ਸੰਵਿਤੀਆਂ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਬਹੁ.
+      gloss_ta: அவை (சம்வித்துகள்) — பெ.எழ.பன்.
+      gloss_te: అవి (సంవిత్తులు) — స్త్రీ.కర్త.బహు.
     - word: स्फुटम्
       iast: sphuṭam
       gloss_en: "clearly"
@@ -901,6 +1021,21 @@ chapters:
     iast: "na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca / na cāsti mūḍha-bhāvo 'pi tad asti paramārthataḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: न
+      iast: na
+      gloss_en: not (negation)
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
     - word: दुःखम्
       iast: duḥkham
       gloss_en: "pain"
@@ -916,6 +1051,21 @@ chapters:
       gloss_pa: ਦੁੱਖ
       gloss_ta: துன்பம்
       gloss_te: దుఃఖము
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
     - word: सुखम्
       iast: sukham
       gloss_en: "pleasure"
@@ -931,6 +1081,36 @@ chapters:
       gloss_pa: ਸੁੱਖ
       gloss_ta: இன்பம்
       gloss_te: సుఖము
+    - word: यत्र
+      iast: yatra
+      gloss_en: in which (state)
+      morph: rel. adv.
+      gloss_as: য'ত, যি (অৱস্থাত) — সম্বন্ধবাচক
+      gloss_bn: যেখানে, যে (অবস্থায়) — সম্বন্ধবাচক
+      gloss_gu: જ્યાં, જે (અવસ્થામાં) — સંબંધવાચક
+      gloss_hi: जहाँ, जिस (अवस्था) में (सम्बन्धवाचक अव्यय)
+      gloss_kn: ಎಲ್ಲಿ, ಯಾವ (ಸ್ಥಿತಿಯಲ್ಲಿ) — ಸಂಬಂಧ-ಕ್ರಿ.
+      gloss_ml: എവിടെ, ഏത് (അവസ്ഥയിൽ) — സംബന്ധ-ക്രി.
+      gloss_mr: जिथे, ज्या (अवस्थेत) — संबंधवाचक
+      gloss_or: ଯେଉଁଠାରେ, ଯେଉଁ (ଅବସ୍ଥାରେ) — ସମ୍ବନ୍ଧବାଚକ
+      gloss_pa: ਜਿੱਥੇ, ਜਿਸ (ਅਵਸਥਾ ਵਿਚ) — ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எங்கே, எந்த (நிலையில்) — உறவு வினையடை
+      gloss_te: ఎక్కడ, ఏ (స్థితిలో) — సంబంధ క్రియావిశేషణం
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
     - word: ग्राह्यम्
       iast: grāhyam
       gloss_en: "object of cognition"
@@ -961,6 +1141,36 @@ chapters:
       gloss_pa: ਗ੍ਰਾਹਕ (ਜਾਣਨ ਵਾਲਾ)
       gloss_ta: அறிபவன்
       gloss_te: గ్రాహకుడు (జ్ఞాత)
+    - word: न च
+      iast: na ca
+      gloss_en: and not
+      morph: indecl.
+      gloss_as: আৰু নহয় (নিষেধ-সহিত)
+      gloss_bn: এবং না (নিষেধ-সহ)
+      gloss_gu: અને નહીં (નકાર-સહિત)
+      gloss_hi: और न ही (निषेध सहित)
+      gloss_kn: ಮತ್ತು ಇಲ್ಲ (ನಿಷೇಧ-ಸಹಿತ)
+      gloss_ml: എന്നുമില്ല (നിഷേധസഹിതം)
+      gloss_mr: आणि नाही (निषेध-सह)
+      gloss_or: ଓ ନୁହେଁ (ନିଷେଧ-ସହିତ)
+      gloss_pa: ਅਤੇ ਨਹੀਂ (ਨਿਖੇਧ-ਸਹਿਤ)
+      gloss_ta: மற்றும் இல்லை (மறுப்புடன்)
+      gloss_te: మరియు కాదు (నిషేధంతో)
+    - word: न च अस्ति
+      iast: na cāsti
+      gloss_en: nor is there
+      morph: indecl. + verb 3.sg.pres √as
+      gloss_as: নাইও, বিদ্যমানো নহয়
+      gloss_bn: নেই-ও, বিদ্যমান নয়
+      gloss_gu: છે જ નહીં (નકાર + વર્ત.એક.)
+      gloss_hi: न ही है (निषेध + वर्तमान तृ.पु.एक.)
+      gloss_kn: ಇಲ್ಲವೇ ಇಲ್ಲ (ನಿಷೇಧ + ವರ್ತ.ಏಕ.)
+      gloss_ml: ഇല്ലേയില്ല (നിഷേധം + വർത്ത.ഏക.)
+      gloss_mr: नाहीच आहे, अस्तित्वातही नाही
+      gloss_or: ନାହିଁ ମଧ୍ୟ (ନିଷେଧ + ବର୍ତ.ଏକ.)
+      gloss_pa: ਨਾ ਹੀ ਹੈ (ਨਿਖੇਧ + ਵਰਤ.ਇਕ.)
+      gloss_ta: இல்லையே, இருக்கவும் இல்லை (மறுப்பு + நிகழ்.எகவ.)
+      gloss_te: లేనే లేదు (నిషేధం + వర్త.ఏక.)
     - word: मूढभावः
       iast: mūḍha-bhāvaḥ
       gloss_en: "state of stupor/insentience"
@@ -976,6 +1186,51 @@ chapters:
       gloss_pa: ਮੂੜ੍ਹ-ਭਾਵ (ਜੜਤਾ)
       gloss_ta: மூட நிலை / உணர்வற்ற நிலை
       gloss_te: మూఢభావము (జడత్వము)
+    - word: अपि
+      iast: api
+      gloss_en: even
+      morph: indecl.
+      gloss_as: ও, এনেকি (অব্যয়)
+      gloss_bn: ও, এমনকি (অব্যয়)
+      gloss_gu: પણ, કૂદાં (અવ્યય)
+      gloss_hi: भी (अव्यय)
+      gloss_kn: ಸಹ, ಕೂಡ (ಅವ್ಯಯ)
+      gloss_ml: എങ്കിലും, പോലും (അവ്യയം)
+      gloss_mr: देखील, सुद्धा (अव्यय)
+      gloss_or: ମଧ୍ୟ, କୁଆଡ଼େ (ଅବ୍ୟୟ)
+      gloss_pa: ਵੀ, ਭਾਵੇਂ (ਅਵ੍ਯ.)
+      gloss_ta: கூட, ஆகவும் (இடைச்சொல்)
+      gloss_te: కూడా, అపి (అవ్యయం)
+    - word: तत्
+      iast: tat
+      gloss_en: that (state, the Spanda principle)
+      morph: n.nom.sg pron
+      gloss_as: সেই (স্পন্দ তত্ত্ব) — নপুং.কৰ্তা.এক.
+      gloss_bn: সেই (স্পন্দ তত্ত্ব) — ক্লীব.কর্তা.এক.
+      gloss_gu: તે (સ્પંદ તત્ત્વ) — નપું.કર્તા.એક.
+      gloss_hi: वह (स्पन्द तत्त्व) — नपुं.कर्ता एक.
+      gloss_kn: ಅದು (ಸ್ಪಂದ ತತ್ತ್ವ) — ನಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് (സ്പന്ദ തത്ത്വം) — നപു.കർത്താ.ഏക.
+      gloss_mr: ते (स्पंद तत्त्व) — नपुं.कर्ता.एक.
+      gloss_or: ତାହା (ସ୍ପନ୍ଦ ତତ୍ତ୍ୱ) — ନପୁଂ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ (ਸਪੰਦ ਤੱਤ) — ਨਪੁੰ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது (ஸ்பந்த தத்துவம்) — அல.எழ.எகவ.
+      gloss_te: అది (స్పందతత్త్వం) — నపుం.కర్త.ఏక.
+    - word: अस्ति
+      iast: asti
+      gloss_en: exists
+      morph: verb 3.sg.pres √as
+      gloss_as: আছে, বিদ্যমান (বৰ্ত.এক. √as)
+      gloss_bn: আছে, বিদ্যমান (বর্ত.এক. √as)
+      gloss_gu: છે, વિદ્યમાન છે (વર્ત.એક. √as)
+      gloss_hi: है, विद्यमान है (वर्त. तृ.पु.एक. √अस्)
+      gloss_kn: ಇದೆ, ವಿದ್ಯಮಾನ (ವರ್ತ.ಏಕ. √as)
+      gloss_ml: ഉണ്ട്, വിദ്യമാനം (വർത്ത.ഏക. √as)
+      gloss_mr: आहे, विद्यमान आहे (वर्त.एक. √as)
+      gloss_or: ଅଛି, ବିଦ୍ୟମାନ (ବର୍ତ.ଏକ. √as)
+      gloss_pa: ਹੈ, ਮੌਜੂਦ ਹੈ (ਵਰਤ.ਇਕ. √as)
+      gloss_ta: உள்ளது, இருக்கிறது (நிகழ்.எகவ. √as)
+      gloss_te: ఉంది, విద్యమానం (వర్త.ఏక. √as)
     - word: परमार्थतः
       iast: paramārthataḥ
       gloss_en: "in highest truth"
@@ -1094,6 +1349,21 @@ chapters:
     iast: "yataḥ karaṇa-vargo 'yaṃ vimūḍho 'mūḍha-vat svayam / sahāntareṇa cakreṇa pravṛtti-sthiti-saṃhṛtīḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: यतः
+      iast: yataḥ
+      gloss_en: since, because
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
     - word: करणवर्गः
       iast: karaṇa-vargaḥ
       gloss_en: "the group of sense-instruments"
@@ -1109,6 +1379,21 @@ chapters:
       gloss_pa: ਇੰਦ੍ਰੀ-ਸਮੂਹ
       gloss_ta: புலன்-கருவிகளின் கூட்டம்
       gloss_te: కరణ (ఇంద్రియ) సమూహము
+    - word: अयम्
+      iast: ayam
+      gloss_en: this
+      morph: m.nom.sg pron
+      gloss_as: এই, ই — পু.কৰ্তা.এক.
+      gloss_bn: এই, এটি — পু.কর্তা.এক.
+      gloss_gu: આ — પુ.કર્તા.એક. સર્વ.
+      gloss_hi: यह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಇವನು, ಇದು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൻ, ഇത് — പു.കർത്താ.ഏക.
+      gloss_mr: हा — पु.कर्ता.एक. सर्वनाम
+      gloss_or: ଏହି — ପୁ.କର୍ତ୍ତା.ଏକ. ସର୍ବନାମ
+      gloss_pa: ਇਹ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸਰਵਨਾਮ
+      gloss_ta: இவன் — ஆ.எழ.எகவ. பெயர்ச்சொல்
+      gloss_te: ఇది, ఇతడు — పు.కర్త.ఏక. సర్వ.
     - word: विमूढः
       iast: vimūḍhaḥ
       gloss_en: "insentient"
@@ -1139,6 +1424,36 @@ chapters:
       gloss_pa: ਚੇਤੰਨ ਵਾਂਗ
       gloss_ta: உணர்வுடையதைப் போல
       gloss_te: అమూఢము (చేతనము) వలె
+    - word: स्वयम्
+      iast: svayam
+      gloss_en: of itself, by itself
+      morph: indecl.
+      gloss_as: নিজে, স্বয়ং
+      gloss_bn: স্বয়ং, নিজেই
+      gloss_gu: સ્વયં, જાતે
+      gloss_hi: स्वयं, अपने आप (अव्यय)
+      gloss_kn: ಸ್ವಯಂ, ತಾನಾಗಿಯೇ
+      gloss_ml: സ്വയം, തനിയെ
+      gloss_mr: स्वतः, आपणहून
+      gloss_or: ସ୍ୱୟଂ, ନିଜେ
+      gloss_pa: ਆਪ, ਆਪਣੇ-ਆਪ
+      gloss_ta: தாமாகவே, தன்னிச்சையாக
+      gloss_te: స్వయంగా, తానంతటతానే
+    - word: सह
+      iast: saha
+      gloss_en: together (with)
+      morph: indecl.
+      gloss_as: সৈতে, সহিত (অব্যয়)
+      gloss_bn: সঙ্গে, সহিত (অব্যয়)
+      gloss_gu: સાથે, સહિત (અવ્યય)
+      gloss_hi: सहित, साथ (अव्यय)
+      gloss_kn: ಜೊತೆಗೆ, ಸಹಿತ (ಅವ್ಯಯ)
+      gloss_ml: ഒപ്പം, സഹിതം (അവ്യയം)
+      gloss_mr: सह, बरोबर (अव्यय)
+      gloss_or: ସହିତ, ସଙ୍ଗେ (ଅବ୍ୟୟ)
+      gloss_pa: ਨਾਲ, ਸਹਿਤ (ਅਵ੍ਯ.)
+      gloss_ta: உடன், கூட (இடைச்சொல்)
+      gloss_te: తో, సహా (అవ్యయం)
     - word: अन्तरेण चक्रेण
       iast: antareṇa cakreṇa
       gloss_en: "together with the inner wheel (of antaḥkaraṇa)"
@@ -1272,6 +1587,21 @@ chapters:
     iast: "labhate tat-prayatnena parīkṣyaṃ tattvam ādarāt / yataḥ svatantratā tasya sarvatreyam akṛtrimā //"
     meter: anuṣṭubh
     word_glosses:
+    - word: लभते
+      iast: labhate
+      gloss_en: obtains, gains
+      morph: verb 3.sg.pres.mid √labh
+      gloss_as: লাভ কৰে (বৰ্ত. আ.এক. √labh)
+      gloss_bn: লাভ করে (বর্ত. আ.এক. √labh)
+      gloss_gu: પ્રાપ્ત કરે છે (વર્ત. આ.એક. √labh)
+      gloss_hi: प्राप्त करता है (वर्त. तृ.पु.एक., आत्मनेपद √लभ्)
+      gloss_kn: ಪಡೆಯುತ್ತಾನೆ (ವರ್ತ. ಆ.ಏಕ. √labh)
+      gloss_ml: നേടുന്നു (വർത്ത. ആ.ഏക. √labh)
+      gloss_mr: मिळवतो (वर्त. आ.एक. √labh)
+      gloss_or: ପ୍ରାପ୍ତ କରେ (ବର୍ତ. ଆ.ଏକ. √labh)
+      gloss_pa: ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ (ਵਰਤ. ਆ.ਇਕ. √labh)
+      gloss_ta: அடைகிறான் (நிகழ். ஆ.எகவ. √labh)
+      gloss_te: పొందుచున్నాడు (వర్త. ఆ.ఏక. √labh)
     - word: तत्प्रयत्नेन
       iast: tat-prayatnena
       gloss_en: "by effort directed at That"
@@ -1317,6 +1647,36 @@ chapters:
       gloss_pa: ਤੱਤ (ਪਰਮ ਸਚਾਈ)
       gloss_ta: தத்துவம் / உண்மை
       gloss_te: తత్త్వము (పరమ సత్యము)
+    - word: आदरात्
+      iast: ādarāt
+      gloss_en: with reverence, attentively
+      morph: m.abl.sg
+      gloss_as: আদৰৰ সৈতে, শ্ৰদ্ধাৰে — পু.পঞ্চমী.এক.
+      gloss_bn: আদর সহকারে, যত্নে — পু.পঞ্চমী.এক.
+      gloss_gu: આદરથી, શ્રદ્ધાથી — પુ.પંચમી.એક.
+      gloss_hi: आदर से, श्रद्धापूर्वक — पु.पञ्चमी एक.
+      gloss_kn: ಆದರದಿಂದ, ಶ್ರದ್ಧೆಯಿಂದ — ಪು.ಪಂಚಮಿ.ಏಕ.
+      gloss_ml: ആദരവോടെ, ശ്രദ്ധയോടെ — പു.പഞ്ചമീ.ഏക.
+      gloss_mr: आदराने, श्रद्धेने — पु.पंचमी.एक.
+      gloss_or: ଆଦର ସହକାରେ, ଶ୍ରଦ୍ଧାରେ — ପୁ.ପଞ୍ଚମୀ.ଏକ.
+      gloss_pa: ਆਦਰ ਨਾਲ, ਸ਼ਰਧਾ ਨਾਲ — ਪੁ.ਪੰਚਮੀ.ਇਕ.
+      gloss_ta: மரியாதையுடன், ஈடுபாட்டுடன் — ஆ.ஐந்தா.எகவ.
+      gloss_te: ఆదరణతో, శ్రద్ధతో — పు.పంచమి.ఏక.
+    - word: यतः
+      iast: yataḥ
+      gloss_en: because
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
     - word: स्वतन्त्रता
       iast: svatantratā
       gloss_en: "absolute freedom"
@@ -1332,6 +1692,51 @@ chapters:
       gloss_pa: ਸੁਤੰਤਰਤਾ
       gloss_ta: சுதந்திரம்
       gloss_te: స్వాతంత్ర్యము
+    - word: तस्य
+      iast: tasya
+      gloss_en: his (that aspirant's)
+      morph: m.gen.sg pron
+      gloss_as: সেই (সাধকৰ) — পু.ষষ্ঠী.এক.
+      gloss_bn: সেই (সাধকের) — পু.ষষ্ঠী.এক.
+      gloss_gu: તે (સાધકનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (साधक) का — पु.षष्ठी एक.
+      gloss_kn: ಆ (ಸಾಧಕನ) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ആ (സാധകന്റെ) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्या (साधकाचे) — पु.षष्ठी.एक.
+      gloss_or: ସେହି (ସାଧକର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸ (ਸਾਧਕ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனுடைய (சாதகனின்) — ஆ.ஆறா.எகவ.
+      gloss_te: ఆ (సాధకుని) — పు.షష్ఠీ.ఏక.
+    - word: सर्वत्र
+      iast: sarvatra
+      gloss_en: everywhere
+      morph: adv.
+      gloss_as: সৰ্বত্ৰ, সকলো ঠাইতে
+      gloss_bn: সর্বত্র, সব জায়গায়
+      gloss_gu: સર્વત્ર, બધે જ
+      gloss_hi: सर्वत्र, सब जगह (अव्यय)
+      gloss_kn: ಸರ್ವತ್ರ, ಎಲ್ಲೆಡೆ
+      gloss_ml: സർവത്ര, എല്ലായിടത്തും
+      gloss_mr: सर्वत्र, सगळीकडे
+      gloss_or: ସର୍ବତ୍ର, ସମସ୍ତ ସ୍ଥାନରେ
+      gloss_pa: ਸਰਵਤ੍ਰ, ਹਰ ਥਾਂ
+      gloss_ta: எங்கும், எவ்விடத்திலும்
+      gloss_te: సర్వత్ర, అన్నిచోట్ల
+    - word: इयम्
+      iast: iyam
+      gloss_en: this (freedom)
+      morph: f.nom.sg pron
+      gloss_as: এই (স্বাধীনতা) — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: এই (স্বাতন্ত্র্য) — স্ত্রী.কর্তা.এক.
+      gloss_gu: આ (સ્વાતંત્ર્ય) — સ્ત્રી.કર્તા.એક.
+      gloss_hi: यह (स्वतन्त्रता) — स्त्री.कर्ता एक.
+      gloss_kn: ಈ (ಸ್ವಾತಂತ್ರ್ಯ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഈ (സ്വാതന്ത്ര്യം) — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ही (स्वातंत्र्य) — स्त्री.कर्ता.एक.
+      gloss_or: ଏହି (ସ୍ୱାଧୀନତା) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਸੁਤੰਤਰਤਾ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவள் (சுதந்திரம்) — பெ.எழ.எகவ.
+      gloss_te: ఈ (స్వాతంత్ర్యం) — స్త్రీ.కర్త.ఏక.
     - word: अकृत्रिमा
       iast: akṛtrimā
       gloss_en: "innate, not contrived"
@@ -1450,6 +1855,21 @@ chapters:
     iast: "na hīcchā-nodanasyāyaṃ prerakatvena vartate / api tv ātma-bala-sparśāt puruṣas tat-samo bhavet //"
     meter: anuṣṭubh
     word_glosses:
+    - word: न हि
+      iast: na hi
+      gloss_en: not indeed, for not
+      morph: indecl.
+      gloss_as: কাৰণ নহয়, নিশ্চয় নহয়
+      gloss_bn: কারণ নয়, নিশ্চয় নয়
+      gloss_gu: કેમ કે નહીં, ચોક્કસ નહીં
+      gloss_hi: क्योंकि नहीं, निःसंदेह नहीं (अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ ಇಲ್ಲ, ನಿಶ್ಚಯವಾಗಿ ಇಲ್ಲ
+      gloss_ml: എന്തെന്നാൽ ഇല്ല, നിശ്ചയമായും അല്ല
+      gloss_mr: कारण नाही, निःसंशय नाही
+      gloss_or: କାରଣ ନୁହେଁ, ନିଶ୍ଚୟ ନୁହେଁ
+      gloss_pa: ਕਿਉਂਕਿ ਨਹੀਂ, ਨਿਸ਼ਚੈ ਨਹੀਂ
+      gloss_ta: ஏனெனில் இல்லை, நிச்சயமாக இல்லை
+      gloss_te: ఎందుకంటే కాదు, నిజముగా కాదు
     - word: इच्छानोदनस्य
       iast: icchā-nodanasya
       gloss_en: "of the urging of desire"
@@ -1465,6 +1885,21 @@ chapters:
       gloss_pa: ਇੱਛਾ ਦੀ ਪ੍ਰੇਰਣਾ ਦਾ
       gloss_ta: ஆசையின் தூண்டுதலின்
       gloss_te: ఇచ్ఛ యొక్క ప్రేరణ యొక్క
+    - word: अयम्
+      iast: ayam
+      gloss_en: this (Self)
+      morph: m.nom.sg pron
+      gloss_as: এই (আত্মা) — পু.কৰ্তা.এক.
+      gloss_bn: এই (আত্মা) — পু.কর্তা.এক.
+      gloss_gu: આ (આત્મા) — પુ.કર્તા.એક.
+      gloss_hi: यह (आत्मा) — पु.कर्ता एक.
+      gloss_kn: ಈ (ಆತ್ಮ) — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഈ (ആത്മാവ്) — പു.കർത്താ.ഏക.
+      gloss_mr: हा (आत्मा) — पु.कर्ता.एक.
+      gloss_or: ଏହି (ଆତ୍ମା) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਆਤਮਾ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவன் (ஆத்மா) — ஆ.எழ.எகவ.
+      gloss_te: ఈ (ఆత్మ) — పు.కర్త.ఏక.
     - word: प्रेरकत्वेन
       iast: prerakatvena
       gloss_en: "as the impeller"
@@ -1480,6 +1915,36 @@ chapters:
       gloss_pa: ਪ੍ਰੇਰਕ ਵਜੋਂ
       gloss_ta: தூண்டுபவனாக
       gloss_te: ప్రేరకత్వముతో
+    - word: वर्तते
+      iast: vartate
+      gloss_en: operates, functions
+      morph: verb 3.sg.pres.mid √vṛt
+      gloss_as: চলি আছে, প্ৰৱৰ্তিত হয় (বৰ্ত.এক. √vṛt)
+      gloss_bn: প্রবৃত্ত হয়, চলে (বর্ত.এক. √vṛt)
+      gloss_gu: પ્રવર્તે છે, ચાલે છે (વર્ત.એક. √vṛt)
+      gloss_hi: प्रवृत्त होता है, चलता है (वर्त. तृ.पु.एक., √वृत्)
+      gloss_kn: ಪ್ರವರ್ತಿಸುತ್ತದೆ, ನಡೆಯುತ್ತದೆ (ವರ್ತ.ಏಕ. √vṛt)
+      gloss_ml: പ്രവർത്തിക്കുന്നു, നടക്കുന്നു (വർത്ത.ഏക. √vṛt)
+      gloss_mr: चालतो, प्रवृत्त होतो (वर्त.एक. √vṛt)
+      gloss_or: ପ୍ରବର୍ତ୍ତିତ ହୁଏ, ଚାଲେ (ବର୍ତ.ଏକ. √vṛt)
+      gloss_pa: ਚਲਦਾ ਹੈ, ਪ੍ਰਵਰਤਦਾ ਹੈ (ਵਰਤ.ਇਕ. √vṛt)
+      gloss_ta: செயல்படுகிறது, இயங்குகிறது (நிகழ்.எகவ. √vṛt)
+      gloss_te: ప్రవర్తిస్తుంది, నడుస్తుంది (వర్త.ఏక. √vṛt)
+    - word: अपि तु
+      iast: api tu
+      gloss_en: but rather
+      morph: indecl.
+      gloss_as: বৰঞ্চ, ইয়াৰ পৰিৱৰ্তে (বিৰোধ-নিৰাস)
+      gloss_bn: বরং, কিন্তু (বিরোধ-নিরাস)
+      gloss_gu: પરંતુ, ઊલટું (વિરોધ-નિરાસ)
+      gloss_hi: अपितु, बल्कि (विरोध-निरास अव्यय)
+      gloss_kn: ಆದರೆ, ಬದಲಾಗಿ (ವಿರೋಧ-ನಿರಾಸ)
+      gloss_ml: എന്നാൽ, പകരം (വിരോധ-നിരാസം)
+      gloss_mr: उलट, अपितु (विरोध-निरास)
+      gloss_or: ବରଂ, ଅପିତୁ (ବିରୋଧ-ନିରାସ)
+      gloss_pa: ਸਗੋਂ, ਇਸ ਦੀ ਥਾਂ (ਵਿਰੋਧ-ਨਿਰਾਸ)
+      gloss_ta: மாறாக, அதற்குப் பதிலாக
+      gloss_te: కానీ, అపితు (విరోధ-నిరాస)
     - word: आत्मबलस्पर्शात्
       iast: ātma-bala-sparśāt
       gloss_en: "from contact with the power of the Self"
@@ -1525,6 +1990,21 @@ chapters:
       gloss_pa: ਉਸ (ਪਰਮ ਤੱਤ) ਦੇ ਸਮਾਨ
       gloss_ta: அதற்கு சமமானவன்
       gloss_te: ఆ (తత్త్వము)తో సమానుడు
+    - word: भवेत्
+      iast: bhavet
+      gloss_en: would become
+      morph: verb 3.sg.opt √bhū
+      gloss_as: হ'ব, হ'ব পাৰে (বিধি.এক. √bhū)
+      gloss_bn: হবে, হতে পারে (বিধি.এক. √bhū)
+      gloss_gu: થાય, થઈ શકે (વિધિ.એક. √bhū)
+      gloss_hi: हो जाए, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √भू)
+      gloss_kn: ಆಗಬಹುದು (ವಿಧಿ.ಏಕ. √bhū)
+      gloss_ml: ആകാം, ആകട്ടെ (വിധി.ഏക. √bhū)
+      gloss_mr: होईल, होऊ शकेल (विधि.एक. √bhū)
+      gloss_or: ହୋଇଯାଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √bhū)
+      gloss_pa: ਹੋ ਜਾਏ, ਹੋ ਸਕੇ (ਵਿਧੀ.ਇਕ. √bhū)
+      gloss_ta: ஆகலாம், ஆகும் (வேண்டுகோள்.எகவ. √bhū)
+      gloss_te: అగుగాక, అవవచ్చు (విధిలింగ్.ఏక. √bhū)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -1688,6 +2168,21 @@ chapters:
       gloss_pa: ਇੱਛੁਕ ਦੀ
       gloss_ta: ஆசை கொண்டவனின்
       gloss_te: అభిలాష కలవాని యొక్క
+    - word: यदा
+      iast: yadā
+      gloss_en: when
+      morph: rel. adv.
+      gloss_as: যেতিয়া — কালবাচক সম্বন্ধ
+      gloss_bn: যখন — কালবাচক সম্বন্ধ
+      gloss_gu: જ્યારે — કાળવાચક સંબંધ
+      gloss_hi: जब (कालवाचक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾವಾಗ — ಕಾಲವಾಚಕ ಸಂಬಂಧ
+      gloss_ml: എപ്പോൾ — കാലവാചക സംബന്ധം
+      gloss_mr: जेव्हा — कालवाचक संबंध
+      gloss_or: ଯେତେବେଳେ — କାଳବାଚକ ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਦੋਂ — ਕਾਲਵਾਚਕ ਸੰਬੰਧ
+      gloss_ta: எப்போது — காலம் சார்ந்த உறவு
+      gloss_te: ఎప్పుడు — కాలవాచక సంబంధ
     - word: क्षोभः
       iast: kṣobhaḥ
       gloss_en: "agitation"
@@ -1718,6 +2213,36 @@ chapters:
       gloss_pa: ਲੀਨ ਹੋ ਜਾਵੇ
       gloss_ta: கரையக்கூடும்
       gloss_te: ప్రలీనమగును
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: स्यात्
+      iast: syāt
+      gloss_en: would be
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: परमं पदम्
       iast: paramaṃ padam
       gloss_en: "the supreme state"
@@ -1836,6 +2361,36 @@ chapters:
     iast: "tadāsyākṛtrimo dharmo jñatva-kartṛtva-lakṣaṇaḥ / yatas tad epsitaṃ sarvaṃ jānāti ca karoti ca //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: अस्य
+      iast: asya
+      gloss_en: of him (the aspirant)
+      morph: m.gen.sg pron
+      gloss_as: এওঁৰ (সাধকৰ) — পু.ষষ্ঠী.এক.
+      gloss_bn: এর (সাধকের) — পু.ষষ্ঠী.এক.
+      gloss_gu: આનું (સાધકનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (साधक) का — पु.षष्ठी एक.
+      gloss_kn: ಇವನ (ಸಾಧಕನ) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ഇവന്റെ (സാധകന്റെ) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे (साधकाचे) — पु.षष्ठी.एक.
+      gloss_or: ଏହି (ସାଧକର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਇਸ (ਸਾਧਕ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனின் (சாதகனின்) — ஆ.ஆறா.எகவ.
+      gloss_te: అతని (సాధకుని) — పు.షష్ఠీ.ఏక.
     - word: अकृत्रिमः
       iast: akṛtrimaḥ
       gloss_en: "innate"
@@ -1881,6 +2436,36 @@ chapters:
       gloss_pa: ਸਰਵਗਿਆਤਾ ਤੇ ਸਰਵਕਰਤਾ-ਪਣ ਦਾ ਲੱਛਣ
       gloss_ta: சர்வஞ்ஞத்துவம் மற்றும் சர்வகர்த்ருத்வத்தால் வரையறுக்கப்பட்டது
       gloss_te: జ్ఞత్వ-కర్తృత్వ లక్షణము కలది (సర్వజ్ఞత-సర్వకర్తృత్వములు)
+    - word: यतः
+      iast: yataḥ
+      gloss_en: because
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
+    - word: तत्
+      iast: tat
+      gloss_en: that (state)
+      morph: n.acc.sg pron
+      gloss_as: তাক — নপুং.কৰ্ম.এক.
+      gloss_bn: তাকে — ক্লীব.কর্ম.এক.
+      gloss_gu: તેને — નપું.કર્મ.એક.
+      gloss_hi: उस को — नपुं.कर्म एक.
+      gloss_kn: ಅದನ್ನು — ನಪು.ಕರ್ಮ.ಏಕ.
+      gloss_ml: അതിനെ — നപു.കർമ്മ.ഏക.
+      gloss_mr: त्याला — नपुं.कर्म.एक.
+      gloss_or: ତାହାକୁ — ନପୁଂ.କର୍ମ.ଏକ.
+      gloss_pa: ਉਸਨੂੰ — ਨਪੁੰ.ਕਰਮ.ਇਕ.
+      gloss_ta: அதை — அல.செயப்.எகவ.
+      gloss_te: దానిని — నపుం.కర్మ.ఏక.
     - word: एप्सितम्
       iast: epsitam
       gloss_en: "desired"
@@ -1896,6 +2481,21 @@ chapters:
       gloss_pa: ਚਾਹਿਆ ਹੋਇਆ
       gloss_ta: விரும்பப்பட்டது
       gloss_te: కోరబడినది
+    - word: सर्वम्
+      iast: sarvam
+      gloss_en: everything
+      morph: n.acc.sg
+      gloss_as: সকলোবোৰ — নপুং.কৰ্ম/কৰ্তা.এক.
+      gloss_bn: সব কিছু — ক্লীব.কর্ম/কর্তা.এক.
+      gloss_gu: બધું જ — નપું.કર્મ/કર્તા.એક.
+      gloss_hi: सब कुछ — नपुं.कर्म/कर्ता एक.
+      gloss_kn: ಸರ್ವ, ಎಲ್ಲವೂ — ನಪು.ಕರ್ಮ/ಕರ್ತ.ಏಕ.
+      gloss_ml: എല്ലാം — നപു.കർമ്മ/കർത്താ.ഏക.
+      gloss_mr: सर्व काही — नपुं.कर्म/कर्ता.एक.
+      gloss_or: ସବୁ କିଛି — ନପୁଂ.କର୍ମ/କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਸਭ ਕੁਝ — ਨਪੁੰ.ਕਰਮ/ਕਰਤਾ.ਇਕ.
+      gloss_ta: எல்லாமும் — அல.எழ./செய.எகவ.
+      gloss_te: సర్వం — నపుం.కర్మ/కర్త.ఏక.
     - word: जानाति
       iast: jānāti
       gloss_en: "knows"
@@ -1911,6 +2511,21 @@ chapters:
       gloss_pa: ਜਾਣਦਾ ਹੈ
       gloss_ta: அறிகிறான்
       gloss_te: తెలియును
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: करोति
       iast: karoti
       gloss_en: "does"
@@ -1926,6 +2541,21 @@ chapters:
       gloss_pa: ਕਰਦਾ ਹੈ
       gloss_ta: செய்கிறான்
       gloss_te: చేయును
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -2029,6 +2659,21 @@ chapters:
     iast: "tam adhiṣṭhātṛ-bhāvena svabhāvam avalokayan / smayamāna ivāste yas tasyeyaṃ kusṛtiḥ kutaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तम्
+      iast: tam
+      gloss_en: him (Śaṅkara, the Self)
+      morph: m.acc.sg pron
+      gloss_as: তেওঁক (শংকৰ, আত্মা) — পু.কৰ্ম.এক.
+      gloss_bn: তাকে (শঙ্কর, আত্মা) — পু.কর্ম.এক.
+      gloss_gu: તેને (શંકર, આત્મા) — પુ.કર્મ.એક.
+      gloss_hi: उस को (शङ्कर, आत्मा) — पु.कर्म एक.
+      gloss_kn: ಅವನನ್ನು (ಶಂಕರ, ಆತ್ಮ) — ಪು.ಕರ್ಮ.ಏಕ.
+      gloss_ml: അവനെ (ശങ്കരൻ, ആത്മാവ്) — പു.കർമ്മ.ഏക.
+      gloss_mr: त्याला (शंकर, आत्मा) — पु.कर्म.एक.
+      gloss_or: ତାହାଙ୍କୁ (ଶଙ୍କର, ଆତ୍ମା) — ପୁ.କର୍ମ.ଏକ.
+      gloss_pa: ਉਸਨੂੰ (ਸ਼ੰਕਰ, ਆਤਮਾ) — ਪੁ.ਕਰਮ.ਇਕ.
+      gloss_ta: அவனை (சங்கரர், ஆத்மா) — ஆ.செய.எகவ.
+      gloss_te: అతనిని (శంకర, ఆత్మ) — పు.కర్మ.ఏక.
     - word: अधिष्ठातृभावेन
       iast: adhiṣṭhātṛ-bhāvena
       gloss_en: "in the role of the presiding agent"
@@ -2089,6 +2734,81 @@ chapters:
       gloss_pa: ਅਚੰਭਿਤ, ਮੁਸਕਰਾਉਂਦਾ
       gloss_ta: வியப்புடன் புன்னகைப்பவன்
       gloss_te: ఆశ్చర్యముతో చిరునవ్వునవానివలె
+    - word: इव
+      iast: iva
+      gloss_en: as if
+      morph: indecl.
+      gloss_as: যেন, দৰে (উপমাবাচক)
+      gloss_bn: যেন, মতো (উপমাবাচক)
+      gloss_gu: જેવું, માફક (ઉપમાવાચક)
+      gloss_hi: मानो, जैसे (तुलनार्थक अव्यय)
+      gloss_kn: ಹಾಗೆ, ಅಂತೆ (ಉಪಮಾವಾಚಕ)
+      gloss_ml: പോലെ, എന്നപോലെ (ഉപമാവ്യയം)
+      gloss_mr: जणू, सारखे (उपमावाचक)
+      gloss_or: ଯେପରି, ସଦୃଶ (ଉପମାବାଚକ)
+      gloss_pa: ਜਿਵੇਂ, ਮਾਨੋ (ਉਪਮਾਵਾਚਕ)
+      gloss_ta: போல, போன்று (உவம இடைச்சொல்)
+      gloss_te: వలె, లాగా (ఉపమ అవ్యయం)
+    - word: आस्ते
+      iast: āste
+      gloss_en: remains, abides
+      morph: verb 3.sg.pres.mid √ās
+      gloss_as: থাকে, অৱস্থিত হয় (বৰ্ত. আ.এক. √ās)
+      gloss_bn: অবস্থান করে, থাকে (বর্ত. আ.এক. √ās)
+      gloss_gu: રહે છે, સ્થિત રહે છે (વર્ત. આ.એક. √ās)
+      gloss_hi: रहता है, अवस्थित होता है (वर्त. तृ.पु.एक., आत्मनेपद √आस्)
+      gloss_kn: ಇರುತ್ತಾನೆ, ನೆಲೆಸುತ್ತಾನೆ (ವರ್ತ. ಆ.ಏಕ. √ās)
+      gloss_ml: ഇരിക്കുന്നു, നിലനിൽക്കുന്നു (വർത്ത. ആ.ഏക. √ās)
+      gloss_mr: राहतो, अवस्थित होतो (वर्त. आ.एक. √ās)
+      gloss_or: ରହେ, ଅବସ୍ଥିତ ହୁଏ (ବର୍ତ. ଆ.ଏକ. √ās)
+      gloss_pa: ਰਹਿੰਦਾ ਹੈ, ਟਿਕਦਾ ਹੈ (ਵਰਤ. ਆ.ਇਕ. √ās)
+      gloss_ta: அமர்ந்திருக்கிறான், நிலைபெறுகிறான் (நிகழ். ஆ.எகவ. √ās)
+      gloss_te: ఉంటాడు, స్థితి పొందుతాడు (వర్త. ఆ.ఏక. √ās)
+    - word: यः
+      iast: yaḥ
+      gloss_en: who
+      morph: m.nom.sg rel. pron
+      gloss_as: যিজন — পু.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যিনি, যে — পু.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે — પુ.કર્તા.એક. સંબંધ
+      gloss_hi: जो — पु.कर्ता एक. सम्बन्धवाचक सर्वनाम
+      gloss_kn: ಯಾರು — ಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ആര് — പു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जो — पु.कर्ता.एक. संबंधवाचक
+      gloss_or: ଯିଏ — ପୁ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவன், யார் — ஆ.எழ.எகவ. உறவு
+      gloss_te: ఎవడు, ఎవరు — పు.కర్త.ఏక. సంబంధ
+    - word: तस्य
+      iast: tasya
+      gloss_en: for him
+      morph: m.gen.sg pron
+      gloss_as: তেওঁৰ — পু.ষষ্ঠী.এক.
+      gloss_bn: তাঁর — পু.ষষ্ঠী.এক.
+      gloss_gu: તેનું — પુ.ષષ્ઠી.એક.
+      gloss_hi: उसका — पु.षष्ठी एक. सर्वनाम
+      gloss_kn: ಅವನ — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: അവന്റെ — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे — पु.षष्ठी.एक.
+      gloss_or: ତାହାଙ୍କର — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனுடைய — ஆ.ஆறா.எகவ.
+      gloss_te: అతని — పు.షష్ఠీ.ఏక.
+    - word: इयम्
+      iast: iyam
+      gloss_en: this
+      morph: f.nom.sg pron
+      gloss_as: এই — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: এই, ইনি — স্ত্রী.কর্তা.এক.
+      gloss_gu: આ — સ્ત્રી.કર્તા.એક.
+      gloss_hi: यह — स्त्री.कर्ता एक.
+      gloss_kn: ಈ, ಇವಳು — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൾ, ഇത് — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ही — स्त्री.कर्ता.एक.
+      gloss_or: ଏହି — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவள் — பெ.எழ.எகவ.
+      gloss_te: ఈ, ఇది — స్త్రీ.కర్త.ఏక.
     - word: कुसृतिः
       iast: kusṛtiḥ
       gloss_en: "evil course (saṃsāra)"
@@ -2104,6 +2824,21 @@ chapters:
       gloss_pa: ਨੀਚ ਮਾਰਗ (ਸੰਸਾਰ)
       gloss_ta: கொடிய பாதை (சம்சாரம்)
       gloss_te: కుసృతి (దుర్మార్గము, సంసారము)
+    - word: कुतः
+      iast: kutaḥ
+      gloss_en: whence? (i.e. nowhere)
+      morph: interrog. adv.
+      gloss_as: ক'ৰ পৰা? (অৰ্থাৎ ক'ৰ পৰাও নহয়) — প্ৰশ্নাৰ্থক
+      gloss_bn: কোথা থেকে? (অর্থাৎ কোথাও থেকে নয়) — প্রশ্নবাচক
+      gloss_gu: ક્યાંથી? (એટલે કે ક્યાંયથી નહીં) — પ્રશ્નાર્થક
+      gloss_hi: कहाँ से? (अर्थात् कहीं से नहीं) — प्रश्नवाचक अव्यय
+      gloss_kn: ಎಲ್ಲಿಂದ? (ಎಲ್ಲಿಂದಲೂ ಅಲ್ಲ) — ಪ್ರಶ್ನಾರ್ಥಕ
+      gloss_ml: എവിടെനിന്ന്? (എവിടെനിന്നുമല്ല) — പ്രശ്നാർത്ഥകം
+      gloss_mr: कुठून? (म्हणजेच कुठूनच नाही) — प्रश्नवाचक
+      gloss_or: କେଉଁଠାରୁ? (ଅର୍ଥାତ୍ କୁଆଡ଼ୁ ନୁହେଁ) — ପ୍ରଶ୍ନାର୍ଥକ
+      gloss_pa: ਕਿੱਥੋਂ? (ਅਰਥਾਤ ਕਿਤੋਂ ਵੀ ਨਹੀਂ) — ਪ੍ਰਸ਼ਨਾਰਥਕ
+      gloss_ta: எங்கிருந்து? (அதாவது எங்கிருந்தும் இல்லை) — வினா
+      gloss_te: ఎక్కడినుండి? (అంటే ఎక్కడినుండీ కాదు) — ప్రశ్నార్థక
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -2207,6 +2942,21 @@ chapters:
     iast: "nābhāvo bhāvyatām eti na ca tatrāsty amūḍhatā / yato 'bhiyoga-saṃsparśāt tadāsīd iti niścayaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
     - word: अभावः
       iast: abhāvaḥ
       gloss_en: "non-being / void"
@@ -2237,6 +2987,66 @@ chapters:
       gloss_pa: ਧਿਆਨ ਦਾ ਵਿਸ਼ਾ ਬਣਨਾ
       gloss_ta: தியான-பொருள் ஆதலை
       gloss_te: భావ్యత (ధ్యాన విషయత్వము)
+    - word: एति
+      iast: eti
+      gloss_en: comes (to), reaches
+      morph: verb 3.sg.pres √i
+      gloss_as: পায়, আহে (বৰ্ত.এক. √i)
+      gloss_bn: আসে, পৌঁছায় (বর্ত.এক. √i)
+      gloss_gu: પહોંચે છે, આવે છે (વર્ત.એક. √i)
+      gloss_hi: पहुँचता है, प्राप्त करता है (वर्त. तृ.पु.एक. √इ)
+      gloss_kn: ತಲುಪುತ್ತದೆ, ಬರುತ್ತದೆ (ವರ್ತ.ಏಕ. √i)
+      gloss_ml: എത്തുന്നു, വരുന്നു (വർത്ത.ഏക. √i)
+      gloss_mr: पोचते, येते (वर्त.एक. √i)
+      gloss_or: ପହଞ୍ଚେ, ଆସେ (ବର୍ତ.ଏକ. √i)
+      gloss_pa: ਪਹੁੰਚਦਾ ਹੈ, ਆਉਂਦਾ ਹੈ (ਵਰਤ.ਇਕ. √i)
+      gloss_ta: சேர்கிறது, அடைகிறது (நிகழ்.எகவ. √i)
+      gloss_te: చేరుతుంది, పొందుతుంది (వర్త.ఏక. √i)
+    - word: न च
+      iast: na ca
+      gloss_en: nor
+      morph: indecl.
+      gloss_as: আৰু নহয় (নিষেধ-সহিত)
+      gloss_bn: এবং না (নিষেধ-সহ)
+      gloss_gu: અને નહીં (નકાર-સહિત)
+      gloss_hi: और न ही (निषेध सहित)
+      gloss_kn: ಮತ್ತು ಇಲ್ಲ (ನಿಷೇಧ-ಸಹಿತ)
+      gloss_ml: എന്നുമില്ല (നിഷേധസഹിതം)
+      gloss_mr: आणि नाही (निषेध-सह)
+      gloss_or: ଓ ନୁହେଁ (ନିଷେଧ-ସହିତ)
+      gloss_pa: ਅਤੇ ਨਹੀਂ (ਨਿਖੇਧ-ਸਹਿਤ)
+      gloss_ta: மற்றும் இல்லை (மறுப்புடன்)
+      gloss_te: మరియు కాదు (నిషేధంతో)
+    - word: तत्र
+      iast: tatra
+      gloss_en: there (in that void)
+      morph: adv.
+      gloss_as: তাত, তাহাতে — ক্ৰি.বিশেষণ
+      gloss_bn: সেখানে, তাতে — ক্রিয়াবিশেষণ
+      gloss_gu: ત્યાં, તેમાં — ક્રિયાવિશેષણ
+      gloss_hi: वहाँ, उस में (अव्यय)
+      gloss_kn: ಅಲ್ಲಿ, ಅದರಲ್ಲಿ — ಕ್ರಿ.ವಿಶೇಷಣ
+      gloss_ml: അവിടെ, അതിൽ — ക്രി.വി.
+      gloss_mr: तिथे, त्यात — क्रियाविशेषण
+      gloss_or: ସେଠାରେ, ତାହାରେ — କ୍ରି.ବି.
+      gloss_pa: ਉੱਥੇ, ਉਸ ਵਿਚ — ਕਿਰਿਆ-ਵਿਸ਼ੇਸ਼.
+      gloss_ta: அங்கே, அதில் — வினையடை
+      gloss_te: అక్కడ, దానిలో — క్రియావిశేషణం
+    - word: अस्ति
+      iast: asti
+      gloss_en: is, exists
+      morph: verb 3.sg.pres √as
+      gloss_as: আছে, বিদ্যমান (বৰ্ত.এক. √as)
+      gloss_bn: আছে, বিদ্যমান (বর্ত.এক. √as)
+      gloss_gu: છે, વિદ્યમાન છે (વર્ત.એક. √as)
+      gloss_hi: है, विद्यमान है (वर्त. तृ.पु.एक. √अस्)
+      gloss_kn: ಇದೆ, ವಿದ್ಯಮಾನ (ವರ್ತ.ಏಕ. √as)
+      gloss_ml: ഉണ്ട്, വിദ്യമാനം (വർത്ത.ഏക. √as)
+      gloss_mr: आहे, विद्यमान आहे (वर्त.एक. √as)
+      gloss_or: ଅଛି, ବିଦ୍ୟମାନ (ବର୍ତ.ଏକ. √as)
+      gloss_pa: ਹੈ, ਮੌਜੂਦ ਹੈ (ਵਰਤ.ਇਕ. √as)
+      gloss_ta: உள்ளது, இருக்கிறது (நிகழ்.எகவ. √as)
+      gloss_te: ఉంది, విద్యమానం (వర్త.ఏక. √as)
     - word: अमूढता
       iast: amūḍhatā
       gloss_en: "non-stupor (awareness)"
@@ -2252,6 +3062,21 @@ chapters:
       gloss_pa: ਅਮੂੜ੍ਹਤਾ (ਚੇਤਨਾ)
       gloss_ta: மூடமற்ற நிலை (விழிப்புணர்வு)
       gloss_te: అమూఢత (చైతన్యము)
+    - word: यतः
+      iast: yataḥ
+      gloss_en: because
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
     - word: अभियोगसंस्पर्शात्
       iast: abhiyoga-saṃsparśāt
       gloss_en: "from the touch of (subsequent) reflection"
@@ -2267,6 +3092,51 @@ chapters:
       gloss_pa: ਬਾਅਦ ਦੇ ਚਿੰਤਨ ਦੇ ਸੰਪਰਕ ਨਾਲ
       gloss_ta: பின்வரும் சிந்தனையின் தொடுகையினால்
       gloss_te: అభియోగ స్పర్శ నుండి (అనంతర ధ్యాన స్పర్శ నుండి)
+    - word: तदा
+      iast: tadā
+      gloss_en: then (during deep sleep / void)
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: आसीत्
+      iast: āsīt
+      gloss_en: (it) was, existed
+      morph: verb 3.sg.impf √as
+      gloss_as: আছিল, বিদ্যমান আছিল (ভূত.এক. √as)
+      gloss_bn: ছিল, বিদ্যমান ছিল (ভূত.এক. √as)
+      gloss_gu: હતું, વિદ્યમાન હતું (ભૂત.એક. √as)
+      gloss_hi: था, विद्यमान था (अनद्यतन भूत, तृ.पु.एक. √अस्)
+      gloss_kn: ಇತ್ತು, ವಿದ್ಯಮಾನವಾಗಿತ್ತು (ಭೂತ.ಏಕ. √as)
+      gloss_ml: ഉണ്ടായിരുന്നു, വിദ്യമാനമായിരുന്നു (ഭൂത.ഏക. √as)
+      gloss_mr: होते, विद्यमान होते (भूत.एक. √as)
+      gloss_or: ଥିଲା, ବିଦ୍ୟମାନ ଥିଲା (ଅତୀତ.ଏକ. √as)
+      gloss_pa: ਸੀ, ਮੌਜੂਦ ਸੀ (ਭੂਤ.ਇਕ. √as)
+      gloss_ta: இருந்தது, விளங்கியது (இறந்த.எகவ. √as)
+      gloss_te: ఉండెను, విద్యమానమై ఉండెను (భూత.ఏక. √as)
+    - word: इति
+      iast: iti
+      gloss_en: thus (closing the quoted reflection)
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ (উদ্ধৃতি-সমাপক)
+      gloss_bn: এইভাবে, এই বলে (উদ্ধৃতি-সমাপক)
+      gloss_gu: એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)
+      gloss_hi: इस प्रकार, ऐसा (उद्धरण-समापक अव्यय)
+      gloss_kn: ಹೀಗೆ, ಎಂದು (ಉದ್ಧರಣ-ಸಮಾಪಕ)
+      gloss_ml: എന്ന്, ഇപ്രകാരം (ഉദ്ധരണി-സമാപകം)
+      gloss_mr: असे, अशा प्रकारे (उद्धरण-समाप्ती)
+      gloss_or: ଏପରି, ଏହି ଭଳି (ଉଦ୍ଧରଣ-ସମାପକ)
+      gloss_pa: ਇੰਜ, ਇਸ ਤਰ੍ਹਾਂ (ਉਦਾਹਰਣ-ਸਮਾਪਕ)
+      gloss_ta: என்று, இவ்வாறு (மேற்கோள் முடிவு)
+      gloss_te: అని, ఈ విధంగా (ఉద్ధరణ-సమాపక అవ్యయం)
     - word: निश्चयः
       iast: niścayaḥ
       gloss_en: "the determination/conviction"
@@ -2385,6 +3255,36 @@ chapters:
     iast: "atas tat-kṛtrimaṃ jñeyaṃ sauṣupta-padavat sadā / na tv evaṃ smaryamāṇatvaṃ tat-tattvaṃ pratipadyate //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अतः
+      iast: ataḥ
+      gloss_en: therefore
+      morph: adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
+    - word: तत्
+      iast: tat
+      gloss_en: that (state of void)
+      morph: n.nom.sg pron
+      gloss_as: সেই (শূন্যাৱস্থা) — নপুং.কৰ্তা.এক.
+      gloss_bn: সেই (শূন্যাবস্থা) — ক্লীব.কর্তা.এক.
+      gloss_gu: તે (શૂન્યાવસ્થા) — નપું.કર્તા.એક.
+      gloss_hi: वह (शून्यावस्था) — नपुं.कर्ता एक.
+      gloss_kn: ಅದು (ಶೂನ್ಯಾವಸ್ಥೆ) — ನಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് (ശൂന്യാവസ്ഥ) — നപു.കർത്താ.ഏക.
+      gloss_mr: ते (शून्यावस्था) — नपुं.कर्ता.एक.
+      gloss_or: ତାହା (ଶୂନ୍ୟାବସ୍ଥା) — ନପୁଂ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ (ਸ਼ੂਨ੍ਯਾਵਸਥਾ) — ਨਪੁੰ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது (சூன்ய நிலை) — அல.எழ.எகவ.
+      gloss_te: అది (శూన్యావస్థ) — నపుం.కర్త.ఏక.
     - word: कृत्रिमम्
       iast: kṛtrimam
       gloss_en: "artificial / fabricated"
@@ -2430,6 +3330,51 @@ chapters:
       gloss_pa: ਡੂੰਘੀ ਨੀਂਦ ਦੀ ਅਵਸਥਾ ਵਾਂਗ
       gloss_ta: ஆழ்ந்த உறக்க நிலையைப் போல
       gloss_te: సుషుప్తి పదము వలె
+    - word: सदा
+      iast: sadā
+      gloss_en: always
+      morph: adv.
+      gloss_as: সদায়, সদা
+      gloss_bn: সর্বদা, চিরকাল
+      gloss_gu: સદા, હંમેશા
+      gloss_hi: सदा, हमेशा (अव्यय)
+      gloss_kn: ಸದಾ, ಯಾವಾಗಲೂ
+      gloss_ml: സദാ, എപ്പോഴും
+      gloss_mr: सदा, नेहमी
+      gloss_or: ସଦା, ସର୍ବଦା
+      gloss_pa: ਸਦਾ, ਹਮੇਸ਼ਾ
+      gloss_ta: எப்போதும், எந்நாளும்
+      gloss_te: ఎల్లప్పుడూ, సదా
+    - word: न तु
+      iast: na tu
+      gloss_en: but not
+      morph: indecl.
+      gloss_as: কিন্তু নহয় (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু না (বিরোধার্থক)
+      gloss_gu: પરંતુ નહીં (વિરોધાર્થક)
+      gloss_hi: किन्तु नहीं (व्याघातार्थक)
+      gloss_kn: ಆದರೆ ಇಲ್ಲ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ ഇല്ല (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु नाही (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ ନୁହେଁ (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ ਨਹੀਂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால் இல்லை (எதிர்மறை)
+      gloss_te: కానీ కాదు (వ్యతిరేకార్థక)
+    - word: एवम्
+      iast: evam
+      gloss_en: thus, in this way
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ
+      gloss_bn: এইভাবে, এমন
+      gloss_gu: આ રીતે, એમ
+      gloss_hi: इस प्रकार, ऐसे (अव्यय)
+      gloss_kn: ಹೀಗೆ, ಈ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: ഇപ്രകാരം, ഇങ്ങനെ
+      gloss_mr: अशा प्रकारे, असे
+      gloss_or: ଏହିପରି, ଏମନ୍ତ
+      gloss_pa: ਇਸ ਤਰ੍ਹਾਂ, ਇੰਜ
+      gloss_ta: இவ்வாறு, இப்படி
+      gloss_te: ఈ విధంగా, ఇట్లు
     - word: स्मर्यमाणत्वम्
       iast: smaryamāṇatvam
       gloss_en: "the being-remembered (i.e., being object of memory)"
@@ -2460,6 +3405,21 @@ chapters:
       gloss_pa: ਉਹ ਤੱਤ (ਅਸਲੀਅਤ)
       gloss_ta: அந்தத் தத்துவம்
       gloss_te: ఆ తత్త్వము
+    - word: प्रतिपद्यते
+      iast: pratipadyate
+      gloss_en: is attained, is recognized as
+      morph: verb 3.sg.pres.mid √prati-pad
+      gloss_as: প্ৰাপ্ত হয়, অনুভূত হয় (বৰ্ত. আ.এক. √prati-pad)
+      gloss_bn: প্রাপ্ত হয়, অনুভূত হয় (বর্ত. আ.এক. √prati-pad)
+      gloss_gu: પ્રાપ્ત થાય છે, અનુભવાય છે (વર્ત. આ.એક. √prati-pad)
+      gloss_hi: प्राप्त किया जाता है, अनुभूत होता है (वर्त. तृ.पु.एक., आ.प. √प्रति-पद्)
+      gloss_kn: ಪಡೆಯಲ್ಪಡುತ್ತದೆ, ಅನುಭವಿಸಲ್ಪಡುತ್ತದೆ (ವರ್ತ. ಆ.ಏಕ. √prati-pad)
+      gloss_ml: നേടപ്പെടുന്നു, അനുഭവിക്കപ്പെടുന്നു (വർത്ത. ആ.ഏക. √prati-pad)
+      gloss_mr: प्राप्त होते, अनुभवले जाते (वर्त. आ.एक. √prati-pad)
+      gloss_or: ପ୍ରାପ୍ତ ହୁଏ, ଅନୁଭୂତ ହୁଏ (ବର୍ତ. ଆ.ଏକ. √prati-pad)
+      gloss_pa: ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ, ਅਨੁਭਵ ਹੁੰਦਾ ਹੈ (ਵਰਤ. ਆ.ਇਕ. √prati-pad)
+      gloss_ta: அடையப்படுகிறது, உணரப்படுகிறது (நிகழ். ஆ.எகவ. √prati-pad)
+      gloss_te: పొందబడుతుంది, అనుభవిస్తాడు (వర్త. ఆ.ఏక. √prati-pad)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -2578,6 +3538,36 @@ chapters:
       gloss_pa: ਅਵਸਥਾਵਾਂ ਦਾ ਜੋੜਾ
       gloss_ta: இரு நிலைகள்
       gloss_te: అవస్థాద్వయము (రెండు అవస్థలు)
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
+    - word: अत्र
+      iast: atra
+      gloss_en: here (in this Self)
+      morph: adv.
+      gloss_as: ইয়াত, এইটোত
+      gloss_bn: এখানে, এতে
+      gloss_gu: અહીં, આમાં
+      gloss_hi: यहाँ, इस (में) — अव्यय
+      gloss_kn: ಇಲ್ಲಿ, ಇದರಲ್ಲಿ
+      gloss_ml: ഇവിടെ, ഇതിൽ
+      gloss_mr: इथे, यात (क्रियाविशेषण)
+      gloss_or: ଏଠାରେ, ଏଥିରେ
+      gloss_pa: ਇੱਥੇ, ਇਸ ਵਿਚ
+      gloss_ta: இங்கே, இதில் (வினையடை)
+      gloss_te: ఇక్కడ, దీనిలో (క్రియావిశేషణం)
     - word: कार्यकर्तृत्वशब्दितम्
       iast: kārya-kartṛtva-śabditam
       gloss_en: "named effect-ness and agent-ness"
@@ -2623,6 +3613,21 @@ chapters:
       gloss_pa: ਖ਼ਤਮ ਹੋਣ ਵਾਲੀ
       gloss_ta: அழியக்கூடியது
       gloss_te: క్షయిష్ణువు (నశించునది)
+    - word: तत्र
+      iast: tatra
+      gloss_en: there (in that pair)
+      morph: adv.
+      gloss_as: তাত, তাহাতে — ক্ৰি.বিশেষণ
+      gloss_bn: সেখানে, তাতে — ক্রিয়াবিশেষণ
+      gloss_gu: ત્યાં, તેમાં — ક્રિયાવિશેષણ
+      gloss_hi: वहाँ, उस में (अव्यय)
+      gloss_kn: ಅಲ್ಲಿ, ಅದರಲ್ಲಿ — ಕ್ರಿ.ವಿಶೇಷಣ
+      gloss_ml: അവിടെ, അതിൽ — ക്രി.വി.
+      gloss_mr: तिथे, त्यात — क्रियाविशेषण
+      gloss_or: ସେଠାରେ, ତାହାରେ — କ୍ରି.ବି.
+      gloss_pa: ਉੱਥੇ, ਉਸ ਵਿਚ — ਕਿਰਿਆ-ਵਿਸ਼ੇਸ਼.
+      gloss_ta: அங்கே, அதில் — வினையடை
+      gloss_te: అక్కడ, దానిలో — క్రియావిశేషణం
     - word: कर्तृत्वम्
       iast: kartṛtvam
       gloss_en: "agency"
@@ -2638,6 +3643,21 @@ chapters:
       gloss_pa: ਕਰਤ੍ਰਿੱਤਵ
       gloss_ta: கர்த்ருத்வம்
       gloss_te: కర్తృత్వము
+    - word: पुनर्
+      iast: punar
+      gloss_en: however, on the other hand
+      morph: indecl.
+      gloss_as: পুনৰ, আকৌ
+      gloss_bn: আবার, পুনরায়
+      gloss_gu: ફરી, ફરીથી
+      gloss_hi: पुनः, फिर (अव्यय)
+      gloss_kn: ಮತ್ತೆ, ಪುನಃ
+      gloss_ml: വീണ്ടും, പുനഃ
+      gloss_mr: पुनः, परत
+      gloss_or: ପୁନଃ, ପୁଣି
+      gloss_pa: ਫਿਰ, ਪੁਨਃ
+      gloss_ta: மீண்டும், மறுபடியும்
+      gloss_te: మరల, తిరిగి (అవ్యయం)
     - word: अक्षयम्
       iast: akṣayam
       gloss_en: "imperishable"
@@ -2786,6 +3806,66 @@ chapters:
       gloss_pa: ਯਤਨ
       gloss_ta: முயற்சி
       gloss_te: ప్రయత్నము
+    - word: यः
+      iast: yaḥ
+      gloss_en: which
+      morph: m.nom.sg rel. pron
+      gloss_as: যি (তত্ত্ব, প্ৰযত্ন) — পু.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যে (তত্ত্ব, প্রযত্ন) — পু.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે (તત્ત્વ, પ્રયત્ન) — પુ.કર્તા.એક. સંબંધ
+      gloss_hi: जो (तत्त्व, प्रयत्न) — पु.कर्ता एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವ (ತತ್ತ್ವ, ಪ್ರಯತ್ನ) — ಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ഏത് (തത്ത്വം, പ്രയത്നം) — പു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जो (तत्त्व, प्रयत्न) — पु.कर्ता.एक. संबंध
+      gloss_or: ଯେଉଁ (ତତ୍ତ୍ୱ, ପ୍ରଯତ୍ନ) — ପୁ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ (ਤੱਤ, ਪ੍ਰਯਤਨ) — ਪੁ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எது (தத்துவம், முயற்சி) — ஆ.எழ.எகவ. உறவு
+      gloss_te: ఏది (తత్త్వం, ప్రయత్నం) — పు.కర్త.ఏక. సంబంధ
+    - word: केवलम्
+      iast: kevalam
+      gloss_en: alone, merely
+      morph: adv.
+      gloss_as: কেৱল, মাথোঁ
+      gloss_bn: কেবল, শুধু
+      gloss_gu: કેવળ, માત્ર
+      gloss_hi: केवल, मात्र (अव्यय)
+      gloss_kn: ಕೇವಲ, ಮಾತ್ರ
+      gloss_ml: കേവലം, മാത്രം
+      gloss_mr: केवळ, फक्त
+      gloss_or: କେବଳ, ମାତ୍ର
+      gloss_pa: ਕੇਵਲ, ਮਾਤਰ
+      gloss_ta: மட்டுமே, கேவலம்
+      gloss_te: కేవలం, మాత్రమే
+    - word: सः
+      iast: saḥ
+      gloss_en: that (effort)
+      morph: m.nom.sg pron
+      gloss_as: সেইটো (প্ৰযত্ন) — পু.কৰ্তা.এক.
+      gloss_bn: সেটি (প্রযত্ন) — পু.কর্তা.এক.
+      gloss_gu: તે (પ્રયત્ન) — પુ.કર્તા.એક.
+      gloss_hi: वह (प्रयत्न) — पु.कर्ता एक.
+      gloss_kn: ಅದು (ಪ್ರಯತ್ನ) — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് (പ്രയത്നം) — പു.കർത്താ.ഏക.
+      gloss_mr: तो (प्रयत्न) — पु.कर्ता.एक.
+      gloss_or: ତାହା (ପ୍ରଯତ୍ନ) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ (ਪ੍ਰਯਤਨ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது (முயற்சி) — ஆ.எழ.எகவ.
+      gloss_te: అది (ప్రయత్నం) — పు.కర్త.ఏక.
+    - word: अत्र
+      iast: atra
+      gloss_en: here (in deep sleep)
+      morph: adv.
+      gloss_as: ইয়াত, এইটোত
+      gloss_bn: এখানে, এতে
+      gloss_gu: અહીં, આમાં
+      gloss_hi: यहाँ, इस (में) — अव्यय
+      gloss_kn: ಇಲ್ಲಿ, ಇದರಲ್ಲಿ
+      gloss_ml: ഇവിടെ, ഇതിൽ
+      gloss_mr: इथे, यात (क्रियाविशेषण)
+      gloss_or: ଏଠାରେ, ଏଥିରେ
+      gloss_pa: ਇੱਥੇ, ਇਸ ਵਿਚ
+      gloss_ta: இங்கே, இதில் (வினையடை)
+      gloss_te: ఇక్కడ, దీనిలో (క్రియావిశేషణం)
     - word: लुप्यते
       iast: lupyate
       gloss_en: "is suppressed"
@@ -2801,6 +3881,36 @@ chapters:
       gloss_pa: ਲੋਪ ਹੁੰਦਾ ਹੈ
       gloss_ta: அடங்குகிறது / நிறுத்தப்படுகிறது
       gloss_te: లుప్తమగును
+    - word: तस्मिन्
+      iast: tasmin
+      gloss_en: in that (effort)
+      morph: m.loc.sg pron
+      gloss_as: সেই (প্ৰযত্নত) — পু.সপ্তমী.এক.
+      gloss_bn: সেই (প্রযত্নে) — পু.সপ্তমী.এক.
+      gloss_gu: તે (પ્રયત્નમાં) — પુ.સપ્ત.એક.
+      gloss_hi: उस (प्रयत्न) में — पु.अधिकरण एक.
+      gloss_kn: ಆ (ಪ್ರಯತ್ನದಲ್ಲಿ) — ಪು.ಸಪ್ತಮಿ.ಏಕ.
+      gloss_ml: ആ (പ്രയത്നത്തിൽ) — പു.സപ്തമീ.ഏക.
+      gloss_mr: त्या (प्रयत्नात) — पु.सप्तमी.एक.
+      gloss_or: ସେହି (ପ୍ରଯତ୍ନରେ) — ପୁ.ସପ୍ତମୀ.ଏକ.
+      gloss_pa: ਉਸ (ਪ੍ਰਯਤਨ) ਵਿਚ — ਪੁ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: அந்த (முயற்சியில்) — ஆ.ஏழா.எகவ.
+      gloss_te: ఆ (ప్రయత్నంలో) — పు.సప్తమి.ఏక.
+    - word: लुप्ते
+      iast: lupte
+      gloss_en: (being) suppressed
+      morph: m.loc.sg ppp √lup
+      gloss_as: লুপ্ত হ'লে (পু.সপ্ত.এক. ppp √lup)
+      gloss_bn: লুপ্ত হলে (পু.সপ্ত.এক. ppp √lup)
+      gloss_gu: લુપ્ત થતાં (પુ.સપ્ત.એક. ppp √lup)
+      gloss_hi: लुप्त होने पर (पु.अधि. एक. ppp √लुप्)
+      gloss_kn: ಲುಪ್ತವಾದಾಗ (ಪು.ಸಪ್ತ.ಏಕ. ppp √lup)
+      gloss_ml: ലുപ്തമാകുമ്പോൾ (പു.സപ്ത.ഏക. ppp √lup)
+      gloss_mr: लुप्त झाल्यावर (पु.सप्त.एक. ppp √lup)
+      gloss_or: ଲୁପ୍ତ ହେଲେ (ପୁ.ସପ୍ତ.ଏକ. ppp √lup)
+      gloss_pa: ਲੁਪਤ ਹੋਣ ਤੇ (ਪੁ.ਸੱਤਵੀਂ.ਇਕ. ppp √lup)
+      gloss_ta: மறையும்போது (ஆ.ஏழா.எகவ. எச்ச. √lup)
+      gloss_te: లుప్తమవగానే (పు.సప్తమి.ఏక. ppp √lup)
     - word: विलुप्तः
       iast: viluptaḥ
       gloss_en: "annihilated"
@@ -2816,6 +3926,36 @@ chapters:
       gloss_pa: ਨਾਸ਼
       gloss_ta: அழிக்கப்பட்டவன்
       gloss_te: విలుప్తుడు (నశించినవాడు)
+    - word: अस्मि
+      iast: asmi
+      gloss_en: I am
+      morph: verb 1.sg.pres √as
+      gloss_as: মই আছোঁ (বৰ্ত. উ.এক. √as)
+      gloss_bn: আমি আছি (বর্ত. উ.এক. √as)
+      gloss_gu: હું છું (વર્ત. ઉ.એક. √as)
+      gloss_hi: मैं हूँ (वर्त. उत्तम.पु.एक. √अस्)
+      gloss_kn: ನಾನು ಇದ್ದೇನೆ (ವರ್ತ. ಉ.ಏಕ. √as)
+      gloss_ml: ഞാൻ ഉണ്ട് (വർത്ത. ഉ.ഏക. √as)
+      gloss_mr: मी आहे (वर्त. उ.एक. √as)
+      gloss_or: ମୁଁ ଅଛି (ବର୍ତ. ଉ.ଏକ. √as)
+      gloss_pa: ਮੈਂ ਹਾਂ (ਵਰਤ. ਉ.ਇਕ. √as)
+      gloss_ta: நான் உள்ளேன் (நிகழ். உ.எகவ. √as)
+      gloss_te: నేను ఉన్నాను (వర్త. ఉ.ఏక. √as)
+    - word: इति
+      iast: iti
+      gloss_en: thus
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ (উদ্ধৃতি-সমাপক)
+      gloss_bn: এইভাবে, এই বলে (উদ্ধৃতি-সমাপক)
+      gloss_gu: એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)
+      gloss_hi: इस प्रकार, ऐसा (उद्धरण-समापक अव्यय)
+      gloss_kn: ಹೀಗೆ, ಎಂದು (ಉದ್ಧರಣ-ಸಮಾಪಕ)
+      gloss_ml: എന്ന്, ഇപ്രകാരം (ഉദ്ധരണി-സമാപകം)
+      gloss_mr: असे, अशा प्रकारे (उद्धरण-समाप्ती)
+      gloss_or: ଏପରି, ଏହି ଭଳି (ଉଦ୍ଧରଣ-ସମାପକ)
+      gloss_pa: ਇੰਜ, ਇਸ ਤਰ੍ਹਾਂ (ਉਦਾਹਰਣ-ਸਮਾਪਕ)
+      gloss_ta: என்று, இவ்வாறு (மேற்கோள் முடிவு)
+      gloss_te: అని, ఈ విధంగా (ఉద్ధరణ-సమాపక అవ్యయం)
     - word: अबुधः
       iast: abudhaḥ
       gloss_en: "the undiscerning person"
@@ -2831,6 +3971,21 @@ chapters:
       gloss_pa: ਅਗਿਆਨੀ
       gloss_ta: அறிவில்லாதவன்
       gloss_te: అబుధుడు (అవివేకి)
+    - word: प्रतिपद्यते
+      iast: pratipadyate
+      gloss_en: concludes, supposes
+      morph: verb 3.sg.pres.mid √prati-pad
+      gloss_as: এনে সিদ্ধান্ত কৰে (বৰ্ত. আ.এক. √prati-pad)
+      gloss_bn: এমন উপলব্ধি করে (বর্ত. আ.এক. √prati-pad)
+      gloss_gu: એમ નિર્ણય કરે છે (વર્ત. આ.એક. √prati-pad)
+      gloss_hi: ऐसा निष्कर्ष निकालता है (वर्त. तृ.पु.एक., आ.प. √प्रति-पद्)
+      gloss_kn: ಎಂದು ತೀರ್ಮಾನಿಸುತ್ತಾನೆ (ವರ್ತ. ಆ.ಏಕ. √prati-pad)
+      gloss_ml: എന്ന് നിഗമിക്കുന്നു (വർത്ത. ആ.ഏക. √prati-pad)
+      gloss_mr: असा निष्कर्ष काढतो (वर्त. आ.एक. √prati-pad)
+      gloss_or: ଏପରି ନିଷ୍କର୍ଷ କରେ (ବର୍ତ. ଆ.ଏକ. √prati-pad)
+      gloss_pa: ਇਹ ਨਿਸ਼ਚੈ ਕਰਦਾ ਹੈ (ਵਰਤ. ਆ.ਇਕ. √prati-pad)
+      gloss_ta: என்று முடிவு செய்கிறான் (நிகழ். ஆ.எகவ. √prati-pad)
+      gloss_te: అని భావిస్తాడు, నిర్ణయిస్తాడు (వర్త. ఆ.ఏక. √prati-pad)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -2934,6 +4089,36 @@ chapters:
     iast: "na tu yo 'ntarmukho bhāvaḥ sarvajñatva-guṇāspadam / tasyopalabdhi-lopo 'sti tadā hy anyo 'nupalambhakaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: न तु
+      iast: na tu
+      gloss_en: but not
+      morph: indecl.
+      gloss_as: কিন্তু নহয় (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু না (বিরোধার্থক)
+      gloss_gu: પરંતુ નહીં (વિરોધાર્થક)
+      gloss_hi: किन्तु नहीं (व्याघातार्थक)
+      gloss_kn: ಆದರೆ ಇಲ್ಲ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ ഇല്ല (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु नाही (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ ନୁହେଁ (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ ਨਹੀਂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால் இல்லை (எதிர்மறை)
+      gloss_te: కానీ కాదు (వ్యతిరేకార్థక)
+    - word: यः
+      iast: yaḥ
+      gloss_en: which
+      morph: m.nom.sg rel. pron
+      gloss_as: যি (তত্ত্ব, প্ৰযত্ন) — পু.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যে (তত্ত্ব, প্রযত্ন) — পু.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે (તત્ત્વ, પ્રયત્ન) — પુ.કર્તા.એક. સંબંધ
+      gloss_hi: जो (तत्त्व, प्रयत्न) — पु.कर्ता एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವ (ತತ್ತ್ವ, ಪ್ರಯತ್ನ) — ಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ഏത് (തത്ത്വം, പ്രയത്നം) — പു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जो (तत्त्व, प्रयत्न) — पु.कर्ता.एक. संबंध
+      gloss_or: ଯେଉଁ (ତତ୍ତ୍ୱ, ପ୍ରଯତ୍ନ) — ପୁ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ (ਤੱਤ, ਪ੍ਰਯਤਨ) — ਪੁ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எது (தத்துவம், முயற்சி) — ஆ.எழ.எகவ. உறவு
+      gloss_te: ఏది (తత్త్వం, ప్రయత్నం) — పు.కర్త.ఏక. సంబంధ
     - word: अन्तर्मुखः
       iast: antarmukhaḥ
       gloss_en: "inward-facing"
@@ -2979,6 +4164,21 @@ chapters:
       gloss_pa: ਸਰਵਗਿਆਤਾ-ਗੁਣ ਦਾ ਆਸ਼੍ਰਯ
       gloss_ta: சர்வஞ்ஞத்துவ குணத்திற்கு இடம்
       gloss_te: సర్వజ్ఞత్వ గుణమునకు ఆస్పదము
+    - word: तस्य
+      iast: tasya
+      gloss_en: of that (inward principle)
+      morph: m.gen.sg pron
+      gloss_as: সেই (অন্তৰ তত্ত্বৰ) — পু.ষষ্ঠী.এক.
+      gloss_bn: সেই (অন্তর-তত্ত্বের) — পু.ষষ্ঠী.এক.
+      gloss_gu: તે (આંતર તત્ત્વનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (आन्तर तत्त्व) का — पु.षष्ठी एक.
+      gloss_kn: ಆ (ಆಂತರ ತತ್ತ್ವದ) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ആ (ആന്തരതത്ത്വത്തിന്റെ) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्या (आंतर तत्त्वाचे) — पु.षष्ठी.एक.
+      gloss_or: ସେହି (ଅନ୍ତର ତତ୍ତ୍ୱର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸ (ਅੰਤਰ-ਤੱਤ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அதன் (உள்ளக தத்துவத்தின்) — ஆ.ஆறா.எகவ.
+      gloss_te: ఆ (అంతఃతత్త్వం) యొక్క — పు.షష్ఠీ.ఏక.
     - word: उपलब्धिलोपः
       iast: upalabdhi-lopaḥ
       gloss_en: "cessation of perception"
@@ -2994,6 +4194,66 @@ chapters:
       gloss_pa: ਉਪਲਬਧੀ ਦਾ ਲੋਪ
       gloss_ta: உணர்வின் அடங்குதல்
       gloss_te: ఉపలబ్ధి (అనుభవము) యొక్క లోపము
+    - word: अस्ति
+      iast: asti
+      gloss_en: exists, is the case
+      morph: verb 3.sg.pres √as
+      gloss_as: আছে, বিদ্যমান (বৰ্ত.এক. √as)
+      gloss_bn: আছে, বিদ্যমান (বর্ত.এক. √as)
+      gloss_gu: છે, વિદ્યમાન છે (વર્ત.એક. √as)
+      gloss_hi: है, विद्यमान है (वर्त. तृ.पु.एक. √अस्)
+      gloss_kn: ಇದೆ, ವಿದ್ಯಮಾನ (ವರ್ತ.ಏಕ. √as)
+      gloss_ml: ഉണ്ട്, വിദ്യമാനം (വർത്ത.ഏക. √as)
+      gloss_mr: आहे, विद्यमान आहे (वर्त.एक. √as)
+      gloss_or: ଅଛି, ବିଦ୍ୟମାନ (ବର୍ତ.ଏକ. √as)
+      gloss_pa: ਹੈ, ਮੌਜੂਦ ਹੈ (ਵਰਤ.ਇਕ. √as)
+      gloss_ta: உள்ளது, இருக்கிறது (நிகழ்.எகவ. √as)
+      gloss_te: ఉంది, విద్యమానం (వర్త.ఏక. √as)
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: हि
+      iast: hi
+      gloss_en: indeed
+      morph: indecl.
+      gloss_as: কাৰণ, নিশ্চয়েই (হেতুবাচক)
+      gloss_bn: কারণ, নিশ্চয়ই (হেতুবাচক)
+      gloss_gu: કેમ કે, ચોક્કસ (હેત્વર્થક)
+      gloss_hi: क्योंकि, निश्चय ही (हेत्वर्थक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ನಿಶ್ಚಯವಾಗಿ (ಹೇತ್ವರ್ಥಕ)
+      gloss_ml: എന്തെന്നാൽ, നിശ്ചയമായും (ഹേത്വർത്ഥകം)
+      gloss_mr: कारण, निःसंशय (हेतुदर्शक)
+      gloss_or: କାରଣ, ନିଶ୍ଚୟ (ହେତ୍ୱର୍ଥକ)
+      gloss_pa: ਕਿਉਂਕਿ, ਨਿਸ਼ਚੈ (ਹੇਤਵਾਰਥਕ)
+      gloss_ta: ஏனெனில், திண்ணமாக (காரண இடைச்சொல்)
+      gloss_te: ఎందుకంటే, నిశ్చయముగా (హేత్వర్థక)
+    - word: अन्यः
+      iast: anyaḥ
+      gloss_en: another (entity)
+      morph: m.nom.sg pron
+      gloss_as: আন (কোনো) — পু.কৰ্তা.এক.
+      gloss_bn: অন্য (কেউ) — পু.কর্তা.এক.
+      gloss_gu: બીજો (કોઈ) — પુ.કર્તા.એક.
+      gloss_hi: अन्य (कोई) — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಬೇರೊಬ್ಬ — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: മറ്റൊരുവൻ — പു.കർത്താ.ഏക.
+      gloss_mr: दुसरा — पु.कर्ता.एक.
+      gloss_or: ଅନ୍ୟ (କେହି) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਹੋਰ (ਕੋਈ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: வேறொருவன் — ஆ.எழ.எகவ.
+      gloss_te: మరొకడు — పు.కర్త.ఏక.
     - word: अनुपलम्भकः
       iast: anupalambhakaḥ
       gloss_en: "the non-perceiver"
@@ -3112,6 +4372,21 @@ chapters:
     iast: "tasyopalabdhā satataṃ tri-padāvyabhicāriṇaḥ / nityaṃ syāt suprabuddhasya tad-ādy-ante parasya tu //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तस्य
+      iast: tasya
+      gloss_en: of that (inward principle)
+      morph: m.gen.sg pron
+      gloss_as: সেই (অন্তৰ তত্ত্বৰ) — পু.ষষ্ঠী.এক.
+      gloss_bn: সেই (অন্তর-তত্ত্বের) — পু.ষষ্ঠী.এক.
+      gloss_gu: તે (આંતર તત્ત્વનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (आन्तर तत्त्व) का — पु.षष्ठी एक.
+      gloss_kn: ಆ (ಆಂತರ ತತ್ತ್ವದ) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ആ (ആന്തരതത്ത്വത്തിന്റെ) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्या (आंतर तत्त्वाचे) — पु.षष्ठी.एक.
+      gloss_or: ସେହି (ଅନ୍ତର ତତ୍ତ୍ୱର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸ (ਅੰਤਰ-ਤੱਤ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அதன் (உள்ளக தத்துவத்தின்) — ஆ.ஆறா.எகவ.
+      gloss_te: ఆ (అంతఃతత్త్వం) యొక్క — పు.షష్ఠీ.ఏక.
     - word: उपलब्धा
       iast: upalabdhā
       gloss_en: "the perceiver"
@@ -3127,6 +4402,21 @@ chapters:
       gloss_pa: ਉਪਲਬਧਾ (ਅਨੁਭਵੀ)
       gloss_ta: உணர்பவன்
       gloss_te: ఉపలబ్ధ (అనుభవించువాడు)
+    - word: सततम्
+      iast: satatam
+      gloss_en: continuously
+      morph: adv.
+      gloss_as: নিৰন্তৰ, সতত
+      gloss_bn: অবিরাম, সতত
+      gloss_gu: નિરંતર, સતત
+      gloss_hi: निरन्तर, सतत (अव्यय)
+      gloss_kn: ನಿರಂತರ, ಸತತ
+      gloss_ml: നിരന്തരം, സതതം
+      gloss_mr: निरंतर, सतत
+      gloss_or: ନିରନ୍ତର, ସତତ
+      gloss_pa: ਨਿਰੰਤਰ, ਲਗਾਤਾਰ
+      gloss_ta: இடைவிடாமல், தொடர்ந்து
+      gloss_te: నిరంతరం, సతతం
     - word: त्रिपदाव्यभिचारिणः
       iast: tri-padāvyabhicāriṇaḥ
       gloss_en: "unfailing through the three states"
@@ -3142,6 +4432,36 @@ chapters:
       gloss_pa: ਤਿੰਨਾਂ ਅਵਸਥਾਵਾਂ ਵਿੱਚ ਅਵਿਚੱਲ
       gloss_ta: மூன்று நிலைகளிலும் தவறாதவனின்
       gloss_te: త్రిపదములందు అవ్యభిచారిగా ఉండువాని యొక్క
+    - word: नित्यम्
+      iast: nityam
+      gloss_en: eternally
+      morph: adv.
+      gloss_as: নিত্য, সদায়
+      gloss_bn: নিত্য, চিরকাল
+      gloss_gu: નિત્ય, હંમેશા
+      gloss_hi: नित्य, सर्वदा (अव्यय)
+      gloss_kn: ನಿತ್ಯ, ಶಾಶ್ವತವಾಗಿ
+      gloss_ml: നിത്യം, എപ്പോഴും
+      gloss_mr: नित्य, चिरकाल
+      gloss_or: ନିତ୍ୟ, ସର୍ବଦା
+      gloss_pa: ਨਿਤ੍ਯ, ਸਦਾ
+      gloss_ta: நித்தியமாக, எப்போதும்
+      gloss_te: నిత్యం, శాశ్వతంగా
+    - word: स्यात्
+      iast: syāt
+      gloss_en: is, would be
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: सुप्रबुद्धस्य
       iast: suprabuddhasya
       gloss_en: "of the fully awakened one"
@@ -3187,6 +4507,21 @@ chapters:
       gloss_pa: ਦੂਜੇ (ਘੱਟ ਜਾਗ੍ਰਤ) ਦੇ
       gloss_ta: மற்றவனுக்கு
       gloss_te: ఇతరుని యొక్క (పూర్తిగా మేల్కొనని వాని)
+    - word: तु
+      iast: tu
+      gloss_en: but, however
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -3320,6 +4655,21 @@ chapters:
       gloss_pa: ਪਰਮ ਸ਼ਕਤੀ ਨਾਲ
       gloss_ta: பரம சக்தியுடன்
       gloss_te: పరమ శక్తితో
+    - word: युतः
+      iast: yutaḥ
+      gloss_en: joined, conjoined
+      morph: m.nom.sg ppp √yu
+      gloss_as: যুক্ত, সংযুক্ত (পু.কৰ্তা.এক. ppp √yu)
+      gloss_bn: যুক্ত, সংযুক্ত (পু.কর্তা.এক. ppp √yu)
+      gloss_gu: યુક્ત, જોડાયેલ (પુ.કર્તા.એક. ppp √yu)
+      gloss_hi: युक्त, सम्बद्ध (पु.कर्ता एक. ppp √यु)
+      gloss_kn: ಯುಕ್ತ, ಸಂಯುಕ್ತ (ಪು.ಕರ್ತ.ಏಕ. ppp √yu)
+      gloss_ml: യുക്തൻ, ചേർന്നവൻ (പു.കർത്താ.ഏക. ppp √yu)
+      gloss_mr: युक्त, संलग्न (पु.कर्ता.एक. ppp √yu)
+      gloss_or: ଯୁକ୍ତ, ସଂଯୁକ୍ତ (ପୁ.କର୍ତ୍ତା.ଏକ. ppp √yu)
+      gloss_pa: ਯੁਕਤ, ਜੁੜਿਆ (ਪੁ.ਕਰਤਾ.ਇਕ. ppp √yu)
+      gloss_ta: கூடிய, இணைந்த (ஆ.எழ.எகவ. எச்ச. √yu)
+      gloss_te: కూడిన, యుక్తుడైన (పు.కర్త.ఏక. ppp √yu)
     - word: पदद्वये
       iast: pada-dvaye
       gloss_en: "in the two states (waking and dream)"
@@ -3350,6 +4700,51 @@ chapters:
       gloss_pa: ਵਿਭੁ (ਸਰਵਵਿਆਪੀ)
       gloss_ta: வியாபகன்
       gloss_te: విభువు (సర్వవ్యాపి)
+    - word: भाति
+      iast: bhāti
+      gloss_en: shines, appears
+      morph: verb 3.sg.pres √bhā
+      gloss_as: প্ৰকাশিত হয়, ভাসমান হয় (বৰ্ত.এক. √bhā)
+      gloss_bn: প্রকাশিত হয়, প্রতিভাত হয় (বর্ত.এক. √bhā)
+      gloss_gu: પ્રકાશિત થાય છે, ભાસે છે (વર્ત.એક. √bhā)
+      gloss_hi: प्रकाशित होता है, भासित होता है (वर्त. तृ.पु.एक. √भा)
+      gloss_kn: ಪ್ರಕಾಶಿಸುತ್ತದೆ, ಭಾಸಿಸುತ್ತದೆ (ವರ್ತ.ಏಕ. √bhā)
+      gloss_ml: പ്രകാശിക്കുന്നു, ഭാസിക്കുന്നു (വർത്ത.ഏക. √bhā)
+      gloss_mr: प्रकाशते, भासते (वर्त.एक. √bhā)
+      gloss_or: ପ୍ରକାଶିତ ହୁଏ, ଭାସିତ ହୁଏ (ବର୍ତ.ଏକ. √bhā)
+      gloss_pa: ਪ੍ਰਕਾਸ਼ਦਾ ਹੈ, ਭਾਸਦਾ ਹੈ (ਵਰਤ.ਇਕ. √bhā)
+      gloss_ta: ஒளிர்கிறது, தோன்றுகிறது (நிகழ்.எகவ. √bhā)
+      gloss_te: ప్రకాశిస్తుంది, భాసిస్తుంది (వర్త.ఏక. √bhā)
+    - word: तदन्यत्र
+      iast: tad-anyatra
+      gloss_en: elsewhere than that (i.e. in suṣupti, turīya)
+      morph: adv.
+      gloss_as: তাৰ বাহিৰে অন্যত্ৰ (সুষুপ্তি, তুৰীয় আদিত)
+      gloss_bn: সেটি ছাড়া অন্যত্র (সুষুপ্তি, তুরীয় প্রভৃতিতে)
+      gloss_gu: તેનાથી અન્યત્ર (સુષુપ્તિ, તુરીય આદિમાં)
+      gloss_hi: उससे अन्यत्र (सुषुप्ति-तुरीय आदि में) — अव्यय
+      gloss_kn: ಅದನ್ನು ಬಿಟ್ಟು ಬೇರೆಡೆ (ಸುಷುಪ್ತಿ, ತುರೀಯ ಆದಿಯಲ್ಲಿ)
+      gloss_ml: അതിനു പുറമേ (സുഷുപ്തി, തുരീയ തുടങ്ങിയവയിൽ)
+      gloss_mr: त्याशिवाय अन्यत्र (सुषुप्ती, तुरीयात)
+      gloss_or: ତାହାଠାରୁ ଅନ୍ୟତ୍ର (ସୁଷୁପ୍ତି, ତୁରୀୟ ଆଦିରେ)
+      gloss_pa: ਉਸ ਤੋਂ ਅਨ੍ਯਤ੍ਰ (ਸੁਸ਼ੁਪਤੀ, ਤੁਰੀਯ ਆਦਿ ਵਿਚ)
+      gloss_ta: அதைத் தவிர்த்த இடத்தில் (சுஷுப்தி, துரீயம் போன்றவற்றில்)
+      gloss_te: దాని కంటే ఇతరత్ర (సుషుప్తి, తురీయ మొదలగు)
+    - word: तु
+      iast: tu
+      gloss_en: but
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
     - word: चिन्मात्रः
       iast: cin-mātraḥ
       gloss_en: "pure Consciousness alone"
@@ -3513,6 +4908,36 @@ chapters:
       gloss_pa: ਆਪਣੀ ਹੋਂਦ ਪ੍ਰਾਪਤ ਕਰਨ ਵਾਲੇ
       gloss_ta: தம் இருப்பைப் பெற்றவை
       gloss_te: ఆత్మలాభము పొందినవి (తమ ఉనికిని పొందినవి)
+    - word: सततम्
+      iast: satatam
+      gloss_en: continuously
+      morph: adv.
+      gloss_as: নিৰন্তৰ, সতত
+      gloss_bn: অবিরাম, সতত
+      gloss_gu: નિરંતર, સતત
+      gloss_hi: निरन्तर, सतत (अव्यय)
+      gloss_kn: ನಿರಂತರ, ಸತತ
+      gloss_ml: നിരന്തരം, സതതം
+      gloss_mr: निरंतर, सतत
+      gloss_or: ନିରନ୍ତର, ସତତ
+      gloss_pa: ਨਿਰੰਤਰ, ਲਗਾਤਾਰ
+      gloss_ta: இடைவிடாமல், தொடர்ந்து
+      gloss_te: నిరంతరం, సతతం
+    - word: स्युः
+      iast: syuḥ
+      gloss_en: may they be, would be
+      morph: verb 3.pl.opt √as
+      gloss_as: হওক (বিধি.বহু. √as)
+      gloss_bn: হোক (বিধি.বহু. √as)
+      gloss_gu: હોય (વિધિ.બહુ. √as)
+      gloss_hi: हों (विधिलिङ्ग, तृ.पु.बहु. √अस्)
+      gloss_kn: ಇರಲಿ (ವಿಧಿ.ಬಹು. √as)
+      gloss_ml: ആകട്ടെ (വിധി.ബഹു. √as)
+      gloss_mr: असोत (विधि.बहु. √as)
+      gloss_or: ହେଉନ୍ତୁ (ବିଧି.ବହୁ. √as)
+      gloss_pa: ਹੋਣ (ਵਿਧੀ.ਬਹੁ. √as)
+      gloss_ta: இருக்கட்டும் (வேண்டுகோள். பன். √as)
+      gloss_te: అగుదురు (విధిలింగ్.బహు. √as)
     - word: ज्ञस्य
       iast: jñasya
       gloss_en: "of the knower"
@@ -3661,6 +5086,36 @@ chapters:
       gloss_pa: ਅਪ੍ਰਬੁੱਧ-ਬੁੱਧੀ ਵਾਲਿਆਂ ਨੂੰ
       gloss_ta: விழித்திராத அறிவுடையோர்
       gloss_te: అప్రబుద్ధ బుద్ధులు కలవారు (అమేల్కొననివారు)
+    - word: तु
+      iast: tu
+      gloss_en: but, however
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
+    - word: एते
+      iast: ete
+      gloss_en: these (guṇa-spandas — when they bind)
+      morph: m.nom.pl pron
+      gloss_as: এইবোৰ (গুণ-স্পন্দ, মন্ত্ৰ) — পু.কৰ্তা.বহু.
+      gloss_bn: এরা (গুণ-স্পন্দ, মন্ত্র) — পু.কর্তা.বহু.
+      gloss_gu: આ (ગુણ-સ્પંદ, મંત્રો) — પુ.કર્તા.બહુ.
+      gloss_hi: ये (गुण-स्पन्द, या मन्त्र) — पु.कर्ता बहु.
+      gloss_kn: ಇವು (ಗುಣ-ಸ್ಪಂದ, ಮಂತ್ರ) — ಪು.ಕರ್ತ.ಬಹು.
+      gloss_ml: ഇവ (ഗുണ-സ്പന്ദങ്ങൾ, മന്ത്രങ്ങൾ) — പു.കർത്താ.ബഹു.
+      gloss_mr: हे (गुण-स्पंद, मंत्र) — पु.कर्ता.बहु.
+      gloss_or: ଏମାନେ (ଗୁଣ-ସ୍ପନ୍ଦ, ମନ୍ତ୍ର) — ପୁ.କର୍ତ୍ତା.ବହୁ.
+      gloss_pa: ਇਹ (ਗੁਣ-ਸਪੰਦ, ਮੰਤ੍ਰ) — ਪੁ.ਕਰਤਾ.ਬਹੁ.
+      gloss_ta: இவை (குண-ஸ்பந்தங்கள், மந்திரங்கள்) — ஆ.எழ.பன்.
+      gloss_te: ఇవి (గుణ-స్పందములు, మంత్రములు) — పు.కర్త.బహు.
     - word: स्वस्थितिस्थगनोद्यताः
       iast: sva-sthiti-sthaganodyatāḥ
       gloss_en: "intent on concealing one's true state"
@@ -3706,6 +5161,21 @@ chapters:
       gloss_pa: ਪਾਰ ਕਰਨ ਵਿੱਚ ਔਖਾ
       gloss_ta: கடப்பதற்கு கடினமான
       gloss_te: దాటుటకు కష్టమైన
+    - word: घोरे
+      iast: ghore
+      gloss_en: terrible
+      morph: n.loc.sg
+      gloss_as: ঘোৰ (সংসাৰত) — নপুং.সপ্ত.এক.
+      gloss_bn: ঘোর (সংসারে) — ক্লীব.সপ্ত.এক.
+      gloss_gu: ઘોર (સંસારમાં) — નપું.સપ્ત.એક.
+      gloss_hi: घोर (भयानक संसार) में — नपुं.अधि. एक.
+      gloss_kn: ಘೋರ (ಸಂಸಾರದಲ್ಲಿ) — ನಪು.ಸಪ್ತ.ಏಕ.
+      gloss_ml: ഘോര (സംസാരത്തിൽ) — നപു.സപ്ത.ഏക.
+      gloss_mr: घोर (संसारात) — नपुं.सप्त.एक.
+      gloss_or: ଘୋର (ସଂସାରରେ) — ନପୁଂ.ସପ୍ତ.ଏକ.
+      gloss_pa: ਘੋਰ (ਸੰਸਾਰ) ਵਿਚ — ਨਪੁੰ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: கொடிய (பவசக்கரத்தில்) — அல.ஏழா.எகவ.
+      gloss_te: ఘోర (సంసారంలో) — నపుం.సప్తమి.ఏక.
     - word: संसारवर्त्मनि
       iast: saṃsāra-vartmani
       gloss_en: "in the path of saṃsāra"
@@ -3824,6 +5294,21 @@ chapters:
     iast: "ataḥ satatam udyuktaḥ spanda-tattva-viviktaye / jāgrad eva nijaṃ bhāvam acireṇādhigacchati //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अतः
+      iast: ataḥ
+      gloss_en: therefore
+      morph: adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
     - word: सततम् उद्युक्तः
       iast: satatam udyuktaḥ
       gloss_en: "ever exerting himself"
@@ -4047,6 +5532,21 @@ chapters:
       gloss_pa: ਪਰਮ-ਪ੍ਰਸੰਨ
       gloss_ta: மிகவும் மகிழ்ந்தவன்
       gloss_te: ప్రహృష్టుడు (అత్యంత ఆనందితుడు)
+    - word: वा
+      iast: vā
+      gloss_en: or
+      morph: indecl.
+      gloss_as: বা, অথবা (বিকল্প)
+      gloss_bn: অথবা, কিংবা (বিকল্প)
+      gloss_gu: અથવા, કે (વિકલ્પ)
+      gloss_hi: अथवा, या (विकल्पार्थक अव्यय)
+      gloss_kn: ಅಥವಾ, ಇಲ್ಲವೇ (ವಿಕಲ್ಪ)
+      gloss_ml: അഥവാ, അല്ലെങ്കിൽ (വികൽപം)
+      gloss_mr: अथवा, किंवा (विकल्पवाचक)
+      gloss_or: କିମ୍ବା, ଅଥବା (ବିକଳ୍ପ)
+      gloss_pa: ਜਾਂ, ਅਥਵਾ (ਵਿਕਲਪ)
+      gloss_ta: அல்லது (விருப்பத்தேர்வு)
+      gloss_te: లేదా, అథవా (వికల్పార్థక)
     - word: किं करोमि
       iast: kiṃ karomi
       gloss_en: "'what shall I do?'"
@@ -4062,6 +5562,36 @@ chapters:
       gloss_pa: "'ਮੈਂ ਕੀ ਕਰਾਂ'"
       gloss_ta: ‘நான் என்ன செய்வேன்?’
       gloss_te: "'ఏమి చేయుదును?'"
+    - word: इति
+      iast: iti
+      gloss_en: thus (closing the quoted reflection)
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ (উদ্ধৃতি-সমাপক)
+      gloss_bn: এইভাবে, এই বলে (উদ্ধৃতি-সমাপক)
+      gloss_gu: એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)
+      gloss_hi: इस प्रकार, ऐसा (उद्धरण-समापक अव्यय)
+      gloss_kn: ಹೀಗೆ, ಎಂದು (ಉದ್ಧರಣ-ಸಮಾಪಕ)
+      gloss_ml: എന്ന്, ഇപ്രകാരം (ഉദ്ധരണി-സമാപകം)
+      gloss_mr: असे, अशा प्रकारे (उद्धरण-समाप्ती)
+      gloss_or: ଏପରି, ଏହି ଭଳି (ଉଦ୍ଧରଣ-ସମାପକ)
+      gloss_pa: ਇੰਜ, ਇਸ ਤਰ੍ਹਾਂ (ਉਦਾਹਰਣ-ਸਮਾਪਕ)
+      gloss_ta: என்று, இவ்வாறு (மேற்கோள் முடிவு)
+      gloss_te: అని, ఈ విధంగా (ఉద్ధరణ-సమాపక అవ్యయం)
+    - word: वा
+      iast: vā
+      gloss_en: or
+      morph: indecl.
+      gloss_as: বা, অথবা (বিকল্প)
+      gloss_bn: অথবা, কিংবা (বিকল্প)
+      gloss_gu: અથવા, કે (વિકલ્પ)
+      gloss_hi: अथवा, या (विकल्पार्थक अव्यय)
+      gloss_kn: ಅಥವಾ, ಇಲ್ಲವೇ (ವಿಕಲ್ಪ)
+      gloss_ml: അഥവാ, അല്ലെങ്കിൽ (വികൽപം)
+      gloss_mr: अथवा, किंवा (विकल्पवाचक)
+      gloss_or: କିମ୍ବା, ଅଥବା (ବିକଳ୍ପ)
+      gloss_pa: ਜਾਂ, ਅਥਵਾ (ਵਿਕਲਪ)
+      gloss_ta: அல்லது (விருப்பத்தேர்வு)
+      gloss_te: లేదా, అథవా (వికల్పార్థక)
     - word: मृशन्
       iast: mṛśan
       gloss_en: "deliberating"
@@ -4092,6 +5622,21 @@ chapters:
       gloss_pa: ਦੌੜਦਾ
       gloss_ta: ஓடுபவன்
       gloss_te: పరుగెత్తుచు
+    - word: वा
+      iast: vā
+      gloss_en: or
+      morph: indecl.
+      gloss_as: বা, অথবা (বিকল্প)
+      gloss_bn: অথবা, কিংবা (বিকল্প)
+      gloss_gu: અથવા, કે (વિકલ્પ)
+      gloss_hi: अथवा, या (विकल्पार्थक अव्यय)
+      gloss_kn: ಅಥವಾ, ಇಲ್ಲವೇ (ವಿಕಲ್ಪ)
+      gloss_ml: അഥവാ, അല്ലെങ്കിൽ (വികൽപം)
+      gloss_mr: अथवा, किंवा (विकल्पवाचक)
+      gloss_or: କିମ୍ବା, ଅଥବା (ବିକଳ୍ପ)
+      gloss_pa: ਜਾਂ, ਅਥਵਾ (ਵਿਕਲਪ)
+      gloss_ta: அல்லது (விருப்பத்தேர்வு)
+      gloss_te: లేదా, అథవా (వికల్పార్థక)
     - word: यत्पदम्
       iast: yat-padam
       gloss_en: "the state which (one reaches)"
@@ -4107,6 +5652,51 @@ chapters:
       gloss_pa: ਜਿਸ ਅਵਸਥਾ (ਨੂੰ ਮਨੁੱਖ ਪਹੁੰਚੇ)
       gloss_ta: எந்த நிலையை (அடைகிறான்)
       gloss_te: ఏ పదమును (స్థితిని)
+    - word: गच्छेत्
+      iast: gacchet
+      gloss_en: may go, reaches
+      morph: verb 3.sg.opt √gam
+      gloss_as: যাওক, পাওক (বিধি.এক. √gam)
+      gloss_bn: যাবে, পৌঁছবে (বিধি.এক. √gam)
+      gloss_gu: જાય, પહોંચે (વિધિ.એક. √gam)
+      gloss_hi: जाए, पहुँचे (विधिलिङ्ग, तृ.पु.एक. √गम्)
+      gloss_kn: ಹೋಗಲಿ, ತಲುಪಲಿ (ವಿಧಿ.ಏಕ. √gam)
+      gloss_ml: പോകട്ടെ, എത്തട്ടെ (വിധി.ഏക. √gam)
+      gloss_mr: जावो, पोहोचावे (विधि.एक. √gam)
+      gloss_or: ଯାଉ, ପହଞ୍ଚୁ (ବିଧି.ଏକ. √gam)
+      gloss_pa: ਜਾਏ, ਪਹੁੰਚੇ (ਵਿਧੀ.ਇਕ. √gam)
+      gloss_ta: செல்லட்டும், அடையட்டும் (வேண்டுகோள்.எகவ. √gam)
+      gloss_te: వెళ్లగాక, పొందగాక (విధిలింగ్.ఏక. √gam)
+    - word: तत्र
+      iast: tatra
+      gloss_en: there (in that state)
+      morph: adv.
+      gloss_as: তাত, তাহাতে — ক্ৰি.বিশেষণ
+      gloss_bn: সেখানে, তাতে — ক্রিয়াবিশেষণ
+      gloss_gu: ત્યાં, તેમાં — ક્રિયાવિશેષણ
+      gloss_hi: वहाँ, उस में (अव्यय)
+      gloss_kn: ಅಲ್ಲಿ, ಅದರಲ್ಲಿ — ಕ್ರಿ.ವಿಶೇಷಣ
+      gloss_ml: അവിടെ, അതിൽ — ക്രി.വി.
+      gloss_mr: तिथे, त्यात — क्रियाविशेषण
+      gloss_or: ସେଠାରେ, ତାହାରେ — କ୍ରି.ବି.
+      gloss_pa: ਉੱਥੇ, ਉਸ ਵਿਚ — ਕਿਰਿਆ-ਵਿਸ਼ੇਸ਼.
+      gloss_ta: அங்கே, அதில் — வினையடை
+      gloss_te: అక్కడ, దానిలో — క్రియావిశేషణం
+    - word: स्पन्दः
+      iast: spandaḥ
+      gloss_en: the Spanda principle (the divine pulsation)
+      morph: m.nom.sg
+      gloss_as: স্পন্দ (দিব্য স্পন্দন) — পু.কৰ্তা.এক.
+      gloss_bn: স্পন্দ (দিব্য স্পন্দন) — পু.কর্তা.এক.
+      gloss_gu: સ્પંદ (દિવ્ય સ્પંદન) — પુ.કર્તા.એક.
+      gloss_hi: स्पन्द (दिव्य स्पन्दन तत्त्व) — पु.कर्ता एक.
+      gloss_kn: ಸ್ಪಂದ (ದಿವ್ಯ ಸ್ಪಂದನ) — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: സ്പന്ദം (ദിവ്യ സ്പന്ദനം) — പു.കർത്താ.ഏക.
+      gloss_mr: स्पंद (दिव्य स्पंदन) — पु.कर्ता.एक.
+      gloss_or: ସ୍ପନ୍ଦ (ଦିବ୍ୟ ସ୍ପନ୍ଦନ) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਸਪੰਦ (ਦਿਵ੍ਯ ਸਪੰਦਨ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: ஸ்பந்தம் (தெய்வீக துடிப்பு) — ஆ.எழ.எகவ.
+      gloss_te: స్పందం (దివ్య స్పందనం) — పు.కర్త.ఏక.
     - word: प्रतिष्ठितः
       iast: pratiṣṭhitaḥ
       gloss_en: "is established"
@@ -4225,6 +5815,36 @@ chapters:
     iast: "yām avasthāṃ samālambya yad ayaṃ mama vakṣyati / tad avaśyaṃ kariṣye 'ham iti saṅkalpya tiṣṭhati //"
     meter: anuṣṭubh
     word_glosses:
+    - word: याम्
+      iast: yām
+      gloss_en: which
+      morph: f.acc.sg rel. pron
+      gloss_as: যি — স্ত্ৰী.কৰ্ম.এক. সম্বন্ধ
+      gloss_bn: যে — স্ত্রী.কর্ম.এক. সম্বন্ধ
+      gloss_gu: જે — સ્ત્રી.કર્મ.એક. સંબંધ
+      gloss_hi: जिस — स्त्री.कर्म एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವ — ಸ್ತ್ರೀ.ಕರ್ಮ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ഏത് — സ്ത്രീ.കർമ്മ.ഏക. സംബന്ധ
+      gloss_mr: जी — स्त्री.कर्म.एक. संबंध
+      gloss_or: ଯେଉଁ — ସ୍ତ୍ରୀ.କର୍ମ.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਹੜੀ — ਇਸਤ੍ਰੀ.ਕਰਮ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எந்த — பெ.செய.எகவ. உறவு
+      gloss_te: ఏ — స్త్రీ.కర్మ.ఏక. సంబంధ
+    - word: अवस्थाम्
+      iast: avasthām
+      gloss_en: state
+      morph: f.acc.sg
+      gloss_as: অৱস্থাক — স্ত্ৰী.কৰ্ম.এক.
+      gloss_bn: অবস্থাকে — স্ত্রী.কর্ম.এক.
+      gloss_gu: અવસ્થાને — સ્ત્રી.કર્મ.એક.
+      gloss_hi: अवस्था को — स्त्री.कर्म एक.
+      gloss_kn: ಅವಸ್ಥೆಯನ್ನು — ಸ್ತ್ರೀ.ಕರ್ಮ.ಏಕ.
+      gloss_ml: അവസ്ഥയെ — സ്ത്രീ.കർമ്മ.ഏക.
+      gloss_mr: अवस्थेला — स्त्री.कर्म.एक.
+      gloss_or: ଅବସ୍ଥାକୁ — ସ୍ତ୍ରୀ.କର୍ମ.ଏକ.
+      gloss_pa: ਅਵਸਥਾ ਨੂੰ — ਇਸਤ੍ਰੀ.ਕਰਮ.ਇਕ.
+      gloss_ta: நிலையை — பெ.செய.எகவ.
+      gloss_te: అవస్థను — స్త్రీ.కర్మ.ఏక.
     - word: समालम्ब्य
       iast: samālambya
       gloss_en: "having taken hold of"
@@ -4240,6 +5860,51 @@ chapters:
       gloss_pa: ਆਸਰਾ ਲੈ ਕੇ
       gloss_ta: பற்றிக்கொண்டு
       gloss_te: ఆశ్రయించి (గ్రహించి)
+    - word: यत्
+      iast: yat
+      gloss_en: what(ever)
+      morph: n.acc.sg rel. pron
+      gloss_as: যিয়েই — নপুং.কৰ্ম.এক. সম্বন্ধ
+      gloss_bn: যা-ই — ক্লীব.কর্ম.এক. সম্বন্ধ
+      gloss_gu: જે પણ — નપું.કર્મ.એક. સંબંધ
+      gloss_hi: जो भी — नपुं.कर्म एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವುದನ್ನು — ನಪು.ಕರ್ಮ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: എന്തിനെയും — നപു.കർമ്മ.ഏക. സംബന്ധ
+      gloss_mr: जे-काही — नपुं.कर्म.एक. संबंध
+      gloss_or: ଯାହା ବି — ନପୁଂ.କର୍ମ.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ ਵੀ — ਨਪੁੰ.ਕਰਮ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எதையும் — அல.செய.எகவ. உறவு
+      gloss_te: దేన్ని — నపుం.కర్మ.ఏక. సంబంధ
+    - word: अयम्
+      iast: ayam
+      gloss_en: this (man, opponent)
+      morph: m.nom.sg pron
+      gloss_as: এই (প্ৰতিবাদী) — পু.কৰ্তা.এক.
+      gloss_bn: এই (প্রতিপক্ষ) — পু.কর্তা.এক.
+      gloss_gu: આ (પ્રતિવાદી) — પુ.કર્તા.એક.
+      gloss_hi: यह (पुरुष, प्रतिवादी) — पु.कर्ता एक.
+      gloss_kn: ಇವನು (ಪ್ರತಿವಾದಿ) — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൻ (പ്രതിവാദി) — പു.കർത്താ.ഏക.
+      gloss_mr: हा (प्रतिवादी) — पु.कर्ता.एक.
+      gloss_or: ଏ (ପ୍ରତିବାଦୀ) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਪ੍ਰਤਿਵਾਦੀ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவன் (எதிராளி, பேதை) — ஆ.எழ.எகவ.
+      gloss_te: ఇతడు (ప్రతివాది) — పు.కర్త.ఏక.
+    - word: मम
+      iast: mama
+      gloss_en: to me
+      morph: gen.sg pron
+      gloss_as: মোৰ — ষষ্ঠী.এক.
+      gloss_bn: আমার — ষষ্ঠী.এক.
+      gloss_gu: મારું — ષષ્ઠી.એક.
+      gloss_hi: मेरा — षष्ठी एक. सर्वनाम
+      gloss_kn: ನನ್ನ — ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: എന്റെ — ഷഷ്ഠീ.ഏക.
+      gloss_mr: माझे — षष्ठी.एक.
+      gloss_or: ମୋର — ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਮੇਰਾ — ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: என்னுடைய — ஆறா.எகவ.
+      gloss_te: నా — షష్ఠీ.ఏక.
     - word: वक्ष्यति
       iast: vakṣyati
       gloss_en: "(he) will say"
@@ -4255,6 +5920,21 @@ chapters:
       gloss_pa: ਕਹੇਗਾ
       gloss_ta: (அவன்) சொல்லப்போகிறான்
       gloss_te: (ఈయన) చెప్పును
+    - word: तत्
+      iast: tat
+      gloss_en: that
+      morph: n.acc.sg pron
+      gloss_as: তাক — নপুং.কৰ্ম.এক.
+      gloss_bn: তাকে — ক্লীব.কর্ম.এক.
+      gloss_gu: તેને — નપું.કર્મ.એક.
+      gloss_hi: उस को — नपुं.कर्म एक.
+      gloss_kn: ಅದನ್ನು — ನಪು.ಕರ್ಮ.ಏಕ.
+      gloss_ml: അതിനെ — നപു.കർമ്മ.ഏക.
+      gloss_mr: त्याला — नपुं.कर्म.एक.
+      gloss_or: ତାହାକୁ — ନପୁଂ.କର୍ମ.ଏକ.
+      gloss_pa: ਉਸਨੂੰ — ਨਪੁੰ.ਕਰਮ.ਇਕ.
+      gloss_ta: அதை — அல.செயப்.எகவ.
+      gloss_te: దానిని — నపుం.కర్మ.ఏక.
     - word: अवश्यम्
       iast: avaśyam
       gloss_en: "necessarily"
@@ -4285,6 +5965,36 @@ chapters:
       gloss_pa: ਮੈਂ ਕਰਾਂਗਾ
       gloss_ta: செய்வேன்
       gloss_te: చేయుదును
+    - word: अहम्
+      iast: aham
+      gloss_en: I
+      morph: nom.sg pron
+      gloss_as: মই — কৰ্তা.এক.
+      gloss_bn: আমি — কর্তা.এক.
+      gloss_gu: હું — કર્તા.એક.
+      gloss_hi: मैं — कर्ता एक. सर्वनाम
+      gloss_kn: ನಾನು — ಕರ್ತ.ಏಕ.
+      gloss_ml: ഞാൻ — കർത്താ.ഏക.
+      gloss_mr: मी — कर्ता.एक.
+      gloss_or: ମୁଁ — କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਮੈਂ — ਕਰਤਾ.ਇਕ.
+      gloss_ta: நான் — எழ.எகவ.
+      gloss_te: నేను — కర్త.ఏక.
+    - word: इति
+      iast: iti
+      gloss_en: thus
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ (উদ্ধৃতি-সমাপক)
+      gloss_bn: এইভাবে, এই বলে (উদ্ধৃতি-সমাপক)
+      gloss_gu: એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)
+      gloss_hi: इस प्रकार, ऐसा (उद्धरण-समापक अव्यय)
+      gloss_kn: ಹೀಗೆ, ಎಂದು (ಉದ್ಧರಣ-ಸಮಾಪಕ)
+      gloss_ml: എന്ന്, ഇപ്രകാരം (ഉദ്ധരണി-സമാപകം)
+      gloss_mr: असे, अशा प्रकारे (उद्धरण-समाप्ती)
+      gloss_or: ଏପରି, ଏହି ଭଳି (ଉଦ୍ଧରଣ-ସମାପକ)
+      gloss_pa: ਇੰਜ, ਇਸ ਤਰ੍ਹਾਂ (ਉਦਾਹਰਣ-ਸਮਾਪਕ)
+      gloss_ta: என்று, இவ்வாறு (மேற்கோள் முடிவு)
+      gloss_te: అని, ఈ విధంగా (ఉద్ధరణ-సమాపక అవ్యయం)
     - word: सङ्कल्प्य
       iast: saṅkalpya
       gloss_en: "having resolved"
@@ -4463,6 +6173,21 @@ chapters:
       gloss_pa: ਚੰਦ੍ਰਮਾ ਤੇ ਸੂਰਜ (ਇੜਾ ਤੇ ਪਿੰਗਲਾ / ਪ੍ਰਾਣ ਤੇ ਅਪਾਨ)
       gloss_ta: சந்திர-சூரியர் (இடா-பிங்களா / பிராண-அபானம்)
       gloss_te: చంద్ర-సూర్యులు (ఇడా-పింగళలు / ప్రాణ-అపానములు)
+    - word: उभौ अपि
+      iast: ubhau api
+      gloss_en: both
+      morph: m.nom.du + indecl.
+      gloss_as: দুয়ো (পু.কৰ্তা.দ্বি. + অব্যয়)
+      gloss_bn: উভয়ই (পু.কর্তা.দ্বি. + অব্যয়)
+      gloss_gu: બંને જ (પુ.કર્તા.દ્વિ. + અવ્યય)
+      gloss_hi: दोनों ही (पु.कर्ता द्विवचन + अव्यय)
+      gloss_kn: ಇಬ್ಬರೂ (ಪು.ಕರ್ತ.ದ್ವಿ. + ಅವ್ಯಯ)
+      gloss_ml: രണ്ടുപേരും (പു.കർത്താ.ദ്വി. + അവ്യയം)
+      gloss_mr: दोघेही (पु.कर्ता.द्वि. + अव्यय)
+      gloss_or: ଉଭୟ (ପୁ.କର୍ତ୍ତା.ଦ୍ୱି. + ଅବ୍ୟୟ)
+      gloss_pa: ਦੋਵੇਂ ਹੀ (ਪੁ.ਕਰਤਾ.ਦਵਿ. + ਅਵ੍ਯ.)
+      gloss_ta: இரண்டுமே (ஆ.எழ.இரு. + இடைச்சொல்)
+      gloss_te: ఇద్దరూనూ (పు.కర్త.ద్వి. + అవ్యయం)
     - word: सौषुम्ने अध्वनि
       iast: sauṣumne adhvani
       gloss_en: "in the suṣumnā channel"
@@ -4493,6 +6218,21 @@ chapters:
       gloss_pa: ਅਸਤ ਹੋ ਗਏ (ਲੀਨ)
       gloss_ta: அஸ்தமனம் அடைந்தவை (அடங்கின)
       gloss_te: అస్తమించి (లయించి)
+    - word: हित्वा
+      iast: hitvā
+      gloss_en: having abandoned
+      morph: abs. √hā
+      gloss_as: ত্যাগ কৰি, এৰি (পূৰ্ব-কালিক √hā)
+      gloss_bn: ত্যাগ করে, ছেড়ে (অসমাপিকা √hā)
+      gloss_gu: છોડીને, ત્યજીને (પૂર્વ-કાલિક √hā)
+      gloss_hi: त्याग कर, छोड़कर (पूर्वकालिक अव्यय कृदन्त √हा)
+      gloss_kn: ತ್ಯಜಿಸಿ, ಬಿಟ್ಟು (ಪೂರ್ವ-ಕಾಲಿಕ √hā)
+      gloss_ml: ത്യജിച്ച്, ഉപേക്ഷിച്ച് (പൂർവ-കാലികം √hā)
+      gloss_mr: त्यागून, सोडून (पूर्व-कालिक √hā)
+      gloss_or: ତ୍ୟାଗ କରି, ଛାଡ଼ି (ପୂର୍ବ-କାଳିକ √hā)
+      gloss_pa: ਛੱਡ ਕੇ, ਤਿਆਗ ਕੇ (ਪੂਰਵ-ਕਾਲਿਕ √hā)
+      gloss_ta: துறந்து, விட்டுவிட்டு (முற்.வினையெச்.) √hā
+      gloss_te: త్యజించి, విడిచిపెట్టి (పూర్వ.కృ. √hā)
     - word: ब्रह्माण्डगोचरम्
       iast: brahmāṇḍa-gocaram
       gloss_en: "the range of the cosmic egg"
@@ -4611,6 +6351,36 @@ chapters:
     iast: "tadā tasmin mahā-vyomni pralīna-śaśi-bhāskare / sauṣupta-padavan mūḍhaḥ prabuddhaḥ syād anāvṛtaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: तस्मिन्
+      iast: tasmin
+      gloss_en: in that
+      morph: n.loc.sg pron
+      gloss_as: তাত — নপুং.সপ্তমী.এক.
+      gloss_bn: তাতে — ক্লীব.সপ্তমী.এক.
+      gloss_gu: તેમાં — નપું.સપ્ત.એક.
+      gloss_hi: उसमें — नपुं.अधिकरण एक.
+      gloss_kn: ಅದರಲ್ಲಿ — ನಪು.ಸಪ್ತಮಿ.ಏಕ.
+      gloss_ml: അതിൽ — നപു.സപ്തമീ.ഏക.
+      gloss_mr: त्यात — नपुं.सप्तमी.एक.
+      gloss_or: ତାହାରେ — ନପୁଂ.ସପ୍ତମୀ.ଏକ.
+      gloss_pa: ਉਸ ਵਿਚ — ਨਪੁੰ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: அதில் — அல.ஏழா.எகவ.
+      gloss_te: దానిలో — నపుం.సప్తమి.ఏక.
     - word: महाव्योम्नि
       iast: mahā-vyomni
       gloss_en: "in the great Sky (of Consciousness)"
@@ -4686,6 +6456,21 @@ chapters:
       gloss_pa: ਪ੍ਰਬੁੱਧ (ਜਾਗ੍ਰਤ)
       gloss_ta: விழித்தவன்
       gloss_te: ప్రబుద్ధుడు (మేల్కొనినవాడు)
+    - word: स्यात्
+      iast: syāt
+      gloss_en: would be, becomes
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: अनावृतः
       iast: anāvṛtaḥ
       gloss_en: "unveiled"
@@ -4854,6 +6639,21 @@ chapters:
       gloss_pa: ਸਰਵਗਿਆ-ਬਲ ਨਾਲ ਸ਼ੋਭਨਯੁਕਤ
       gloss_ta: சர்வஞ்ஞ பலத்துடன் கூடியவை
       gloss_te: సర్వజ్ఞ బలము కలవి
+    - word: प्रवर्तन्ते
+      iast: pravartante
+      gloss_en: they engage, set forth
+      morph: verb 3.pl.pres.mid √pra-vṛt
+      gloss_as: প্ৰৱৰ্তিত হয়, উদ্যত হয় (বৰ্ত.বহু. √pra-vṛt)
+      gloss_bn: প্রবৃত্ত হয়, উদ্যত হয় (বর্ত.বহু. √pra-vṛt)
+      gloss_gu: પ્રવર્તે છે, ઉદ્યત થાય છે (વર્ત.બહુ. √pra-vṛt)
+      gloss_hi: प्रवृत्त होती हैं, उद्यत होती हैं (वर्त. तृ.पु.बहु., √प्र-वृत्)
+      gloss_kn: ಪ್ರವರ್ತಿಸುತ್ತವೆ, ಉದ್ಯುಕ್ತವಾಗುತ್ತವೆ (ವರ್ತ.ಬಹು. √pra-vṛt)
+      gloss_ml: പ്രവൃത്തമാകുന്നു, ഉദ്യമിക്കുന്നു (വർത്ത.ബഹു. √pra-vṛt)
+      gloss_mr: प्रवृत्त होतात, उद्यत होतात (वर्त.बहु. √pra-vṛt)
+      gloss_or: ପ୍ରବର୍ତ୍ତିତ ହୁଅନ୍ତି, ଉଦ୍ୟତ ହୁଅନ୍ତି (ବର୍ତ.ବହୁ. √pra-vṛt)
+      gloss_pa: ਪ੍ਰਵਰਤਦੇ ਹਨ, ਉਦ੍ਯਤ ਹੁੰਦੇ ਹਨ (ਵਰਤ.ਬਹੁ. √pra-vṛt)
+      gloss_ta: தொடங்குகின்றன, செயலில் இறங்குகின்றன (நிகழ்.பன். √pra-vṛt)
+      gloss_te: ప్రవర్తిస్తున్నాయి, ఉద్యమిస్తున్నాయి (వర్త.బహు. √pra-vṛt)
     - word: अधिकाराय
       iast: adhikārāya
       gloss_en: "for the task (assigned to them)"
@@ -4869,6 +6669,21 @@ chapters:
       gloss_pa: ਅਧਿਕਾਰ (ਨਿਯੁਕਤ ਕਾਰਜ) ਲਈ
       gloss_ta: தம் தொழிலுக்காக
       gloss_te: అధికారము కొరకు (తమ నియమిత కార్యము కొరకు)
+    - word: अयम्
+      iast: ayam
+      gloss_en: this (i.e. they, the mantras)
+      morph: m.nom.sg pron
+      gloss_as: এইবোৰ (মন্ত্ৰ) — পু.কৰ্তা.এক.
+      gloss_bn: এরা (মন্ত্রসমূহ) — পু.কর্তা.এক.
+      gloss_gu: આ (મંત્રો) — પુ.કર્તા.એક.
+      gloss_hi: यह (अर्थात् मन्त्र-गण) — पु.कर्ता एक.
+      gloss_kn: ಇವು (ಮಂತ್ರಗಳು) — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവ (മന്ത്രങ്ങൾ) — പു.കർത്താ.ഏക.
+      gloss_mr: हे (मंत्रसमूह) — पु.कर्ता.एक.
+      gloss_or: ଏମାନେ (ମନ୍ତ୍ର) — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਮੰਤ੍ਰ) — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவை (மந்திரங்கள்) — ஆ.எழ.எகவ.
+      gloss_te: ఇవి (మంత్రములు) — పు.కర్త.ఏక.
     - word: करणानि इव
       iast: karaṇāni iva
       gloss_en: "like the (sense-)instruments"
@@ -4884,6 +6699,21 @@ chapters:
       gloss_pa: ਇੰਦ੍ਰੀਆਂ ਵਾਂਗ
       gloss_ta: புலன்-கருவிகள் போல
       gloss_te: (ఇంద్రియ) కరణముల వలె
+    - word: देहिनाम्
+      iast: dehinām
+      gloss_en: of embodied beings
+      morph: m.gen.pl
+      gloss_as: দেহধাৰীসকলৰ — পু.ষষ্ঠী.বহু.
+      gloss_bn: দেহীদের — পু.ষষ্ঠী.বহু.
+      gloss_gu: દેહધારીઓનું — પુ.ષષ્ઠી.બહુ.
+      gloss_hi: देहधारियों के — पु.षष्ठी बहु.
+      gloss_kn: ದೇಹಿಗಳ — ಪು.ಷಷ್ಠೀ.ಬಹು.
+      gloss_ml: ദേഹികളുടെ — പു.ഷഷ്ഠീ.ബഹു.
+      gloss_mr: देहधाऱ्यांचे — पु.षष्ठी.बहु.
+      gloss_or: ଦେହଧାରୀଙ୍କର — ପୁ.ଷଷ୍ଠୀ.ବହୁ.
+      gloss_pa: ਦੇਹਧਾਰੀਆਂ ਦਾ — ਪੁ.ਛੇਵੀਂ.ਬਹੁ.
+      gloss_ta: தேகிகளின், உடலுடையோரின் — ஆ.ஆறா.பன்.
+      gloss_te: దేహధారుల యొక్క — పు.షష్ఠీ.బహు.
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -4987,6 +6817,21 @@ chapters:
     iast: "tatraiva sampralīyante śānta-rūpā nirañjanāḥ / sahārādhaka-cittena tenaite śiva-dharmiṇaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तत्र एव
+      iast: tatra eva
+      gloss_en: there alone (in that very Spanda)
+      morph: adv.
+      gloss_as: তাতেই, সিয়েই
+      gloss_bn: সেখানেই, তারই মধ্যে
+      gloss_gu: ત્યાં જ, તેમાં જ
+      gloss_hi: उसी में, वहीं (अव्यय)
+      gloss_kn: ಅಲ್ಲೇ, ಅದರಲ್ಲೇ
+      gloss_ml: അവിടെത്തന്നെ, അതിൽത്തന്നെ
+      gloss_mr: तिथेच, त्यातच
+      gloss_or: ସେଠାରେ ହିଁ, ତାହାରେ ହିଁ
+      gloss_pa: ਉੱਥੇ ਹੀ, ਉਸ ਵਿਚ ਹੀ
+      gloss_ta: அதிலேயே, அங்கேயே
+      gloss_te: అదేచోట, దానిలోనే
     - word: सम्प्रलीयन्ते
       iast: sampralīyante
       gloss_en: "dissolve completely"
@@ -5032,6 +6877,21 @@ chapters:
       gloss_pa: ਨਿਰੰਜਨ (ਨਿਰਮਲ)
       gloss_ta: களங்கமற்றவை
       gloss_te: నిరంజనములు (నిర్మలములు)
+    - word: सह
+      iast: saha
+      gloss_en: together with
+      morph: indecl.
+      gloss_as: সৈতে, সহিত (অব্যয়)
+      gloss_bn: সঙ্গে, সহিত (অব্যয়)
+      gloss_gu: સાથે, સહિત (અવ્યય)
+      gloss_hi: सहित, साथ (अव्यय)
+      gloss_kn: ಜೊತೆಗೆ, ಸಹಿತ (ಅವ್ಯಯ)
+      gloss_ml: ഒപ്പം, സഹിതം (അവ്യയം)
+      gloss_mr: सह, बरोबर (अव्यय)
+      gloss_or: ସହିତ, ସଙ୍ଗେ (ଅବ୍ୟୟ)
+      gloss_pa: ਨਾਲ, ਸਹਿਤ (ਅਵ੍ਯ.)
+      gloss_ta: உடன், கூட (இடைச்சொல்)
+      gloss_te: తో, సహా (అవ్యయం)
     - word: आराधकचित्तेन
       iast: ārādhaka-cittena
       gloss_en: "with the mind of the worshipper"
@@ -5047,6 +6907,36 @@ chapters:
       gloss_pa: ਆਰਾਧਕ ਦੇ ਚਿੱਤ ਨਾਲ
       gloss_ta: ஆராதிப்பவனின் சித்தத்துடன்
       gloss_te: ఆరాధక చిత్తముతో (ఉపాసకుని మనస్సుతో)
+    - word: तेन
+      iast: tena
+      gloss_en: for this reason
+      morph: n.inst.sg pron
+      gloss_as: তাৰ দ্বাৰা, এতেকে — নপুং.কৰণ.এক.
+      gloss_bn: তা দিয়ে, অতএব — ক্লীব.করণ.এক.
+      gloss_gu: તેના વડે, આથી — નપું.કરણ.એક.
+      gloss_hi: उसके कारण, इसलिए — नपुं.करण एक.
+      gloss_kn: ಅದರಿಂದ, ಆದ್ದರಿಂದ — ನಪು.ತೃತೀಯ.ಏಕ.
+      gloss_ml: അതുകൊണ്ട്, ആകയാൽ — നപു.തൃതീയ.ഏക.
+      gloss_mr: त्यामुळे, म्हणून — नपुं.करण.एक.
+      gloss_or: ତାହାଦ୍ୱାରା, ଅତଏବ — ନପୁଂ.କରଣ.ଏକ.
+      gloss_pa: ਉਸ ਨਾਲ, ਇਸ ਲਈ — ਨਪੁੰ.ਕਰਣ.ਇਕ.
+      gloss_ta: அதனால், ஆதலால் — அல.கருவி.எகவ.
+      gloss_te: ఆ కారణంగా, అందువల్ల — నపుం.తృతీయ.ఏక.
+    - word: एते
+      iast: ete
+      gloss_en: these (mantras)
+      morph: m.nom.pl pron
+      gloss_as: এইবোৰ (গুণ-স্পন্দ, মন্ত্ৰ) — পু.কৰ্তা.বহু.
+      gloss_bn: এরা (গুণ-স্পন্দ, মন্ত্র) — পু.কর্তা.বহু.
+      gloss_gu: આ (ગુણ-સ્પંદ, મંત્રો) — પુ.કર્તા.બહુ.
+      gloss_hi: ये (गुण-स्पन्द, या मन्त्र) — पु.कर्ता बहु.
+      gloss_kn: ಇವು (ಗುಣ-ಸ್ಪಂದ, ಮಂತ್ರ) — ಪು.ಕರ್ತ.ಬಹು.
+      gloss_ml: ഇവ (ഗുണ-സ്പന്ദങ്ങൾ, മന്ത്രങ്ങൾ) — പു.കർത്താ.ബഹു.
+      gloss_mr: हे (गुण-स्पंद, मंत्र) — पु.कर्ता.बहु.
+      gloss_or: ଏମାନେ (ଗୁଣ-ସ୍ପନ୍ଦ, ମନ୍ତ୍ର) — ପୁ.କର୍ତ୍ତା.ବହୁ.
+      gloss_pa: ਇਹ (ਗੁਣ-ਸਪੰਦ, ਮੰਤ੍ਰ) — ਪੁ.ਕਰਤਾ.ਬਹੁ.
+      gloss_ta: இவை (குண-ஸ்பந்தங்கள், மந்திரங்கள்) — ஆ.எழ.பன்.
+      gloss_te: ఇవి (గుణ-స్పందములు, మంత్రములు) — పు.కర్త.బహు.
     - word: शिवधर्मिणः
       iast: śiva-dharmiṇaḥ
       gloss_en: "having the nature of Śiva"
@@ -5165,6 +7055,21 @@ chapters:
     iast: "yasmāt sarva-mayo jīvaḥ sarva-bhāva-samudbhavāt / tat-saṃvedana-rūpeṇa tādātmya-pratipattitaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: यस्मात्
+      iast: yasmāt
+      gloss_en: since, because
+      morph: rel. abl. adv.
+      gloss_as: য'ৰ পৰা, কাৰণ — পঞ্চমী-সম্বন্ধ
+      gloss_bn: যা থেকে, যেহেতু — পঞ্চমী-সম্বন্ধ
+      gloss_gu: જેનાથી, કેમ કે — પંચમી-સંબંધ
+      gloss_hi: जिससे, क्योंकि (अपादान-सूचक सम्बन्धवाचक)
+      gloss_kn: ಎಲ್ಲಿಂದ, ಯಾಕೆಂದರೆ — ಪಂಚಮಿ-ಸಂಬಂಧ
+      gloss_ml: എവിടെനിന്ന്, എന്തെന്നാൽ — പഞ്ചമീ-സംബന്ധം
+      gloss_mr: ज्यापासून, कारण — पंचमी-संबंध
+      gloss_or: ଯେଉଁଠାରୁ, କାରଣ — ପଞ୍ଚମୀ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਸ ਤੋਂ, ਕਿਉਂਕਿ — ਪੰਚਮੀ-ਸੰਬੰਧ
+      gloss_ta: எதனிலிருந்து, ஏனெனில் — ஐந்தாம் வேற்.உறவு
+      gloss_te: దేనినుండి, ఎందుకంటే — పంచమ్యర్థక సంబంధ
     - word: सर्वमयः
       iast: sarva-mayaḥ
       gloss_en: "consisting of all"
@@ -5343,6 +7248,21 @@ chapters:
     iast: "tasmāc chabdārtha-cintāsu na sāvasthā na yā śivaḥ / bhoktaiva bhogya-bhāvena sadā sarvatra saṃsthitaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तस्मात्
+      iast: tasmāt
+      gloss_en: therefore
+      morph: abl. adv.
+      gloss_as: তাৰ পৰা, এতেকে
+      gloss_bn: তা থেকে, অতএব
+      gloss_gu: તેનાથી, આથી
+      gloss_hi: उससे, इसलिए (पञ्चमी-वाचक अव्यय)
+      gloss_kn: ಅದರಿಂದ, ಆದ್ದರಿಂದ
+      gloss_ml: അതിനാൽ, ആകയാൽ
+      gloss_mr: त्यापासून, म्हणून
+      gloss_or: ତାହାରୁ, ଅତଏବ
+      gloss_pa: ਉਸ ਤੋਂ, ਇਸ ਲਈ
+      gloss_ta: அதனால், ஆதலால் — ஐந்தாம் வேற்.வினையடை
+      gloss_te: అందువల్ల, తస్మాత్ — పంచమ్యర్థక
     - word: शब्दार्थचिन्तासु
       iast: śabdārtha-cintāsu
       gloss_en: "in (one's) thoughts of words and meanings"
@@ -5358,6 +7278,36 @@ chapters:
       gloss_pa: ਸ਼ਬਦ ਤੇ ਅਰਥ ਦੇ ਚਿੰਤਨਾਂ ਵਿੱਚ
       gloss_ta: சொற்களின், பொருள்களின் சிந்தனைகளில்
       gloss_te: శబ్దార్థ చింతలయందు (పదములు, అర్థముల ఆలోచనలలో)
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
+    - word: सा
+      iast: sā
+      gloss_en: that (state)
+      morph: f.nom.sg pron
+      gloss_as: সেইটো (অৱস্থা) — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: সেই (অবস্থা) — স্ত্রী.কর্তা.এক.
+      gloss_gu: તે (અવસ્થા) — સ્ત્રી.કર્તા.એક.
+      gloss_hi: वह (अवस्था) — स्त्री.कर्ता एक.
+      gloss_kn: ಅದು (ಅವಸ್ಥೆ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് (അവസ്ഥ) — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ती (अवस्था) — स्त्री.कर्ता.एक.
+      gloss_or: ତାହା (ଅବସ୍ଥା) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ (ਅਵਸਥਾ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது (நிலை) — பெ.எழ.எகவ.
+      gloss_te: అది (అవస్థ) — స్త్రీ.కర్త.ఏక.
     - word: अवस्था
       iast: avasthā
       gloss_en: "state"
@@ -5373,6 +7323,36 @@ chapters:
       gloss_pa: ਅਵਸਥਾ
       gloss_ta: நிலை
       gloss_te: అవస్థ (స్థితి)
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
+    - word: या
+      iast: yā
+      gloss_en: which
+      morph: f.nom.sg rel. pron
+      gloss_as: যি (সমাপত্তি, অৱস্থা) — স্ত্ৰী.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যে (সমাপত্তি, অবস্থা) — স্ত্রী.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે (સમાપત્તિ, અવસ્થા) — સ્ત્રી.કર્તા.એક. સંબંધ
+      gloss_hi: जो (समापत्ति, अवस्था) — स्त्री.कर्ता एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವ (ಸಮಾಪತ್ತಿ, ಅವಸ್ಥೆ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ഏത് (സമാപത്തി, അവസ്ഥ) — സ്ത്രീ.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जी (समापत्ति, अवस्था) — स्त्री.कर्ता.एक. संबंध
+      gloss_or: ଯେଉଁ (ସମାପତ୍ତି, ଅବସ୍ଥା) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਹੜੀ (ਸਮਾਪਤਿ, ਅਵਸਥਾ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எந்த (சமாபத்தி, நிலை) — பெ.எழ.எகவ. உறவு
+      gloss_te: ఏ (సమాపత్తి, అవస్థ) — స్త్రీ.కర్త.ఏక. సంబంధ
     - word: शिवः
       iast: śivaḥ
       gloss_en: "Śiva"
@@ -5403,6 +7383,21 @@ chapters:
       gloss_pa: ਭੋਕਤਾ (ਅਨੁਭਵੀ)
       gloss_ta: போக்தா / அனுபவிப்பவன்
       gloss_te: భోక్త (అనుభవించువాడు)
+    - word: एव
+      iast: eva
+      gloss_en: indeed, alone
+      morph: indecl.
+      gloss_as: ই, নিশ্চয়েই (নিশ্চয়াৰ্থক)
+      gloss_bn: ই, নিশ্চয়ই (নিশ্চয়ার্থক)
+      gloss_gu: જ, ચોક્કસપણે (નિશ્ચયાર્થક)
+      gloss_hi: ही, निश्चय ही (निश्चयार्थक अव्यय)
+      gloss_kn: ಮಾತ್ರ, ನಿಶ್ಚಯವಾಗಿ (ನಿಶ್ಚಯಾರ್ಥಕ)
+      gloss_ml: തന്നെ, നിശ്ചയമായും (നിശ്ചയാർത്ഥകം)
+      gloss_mr: च, निश्चितच (निश्चयार्थक)
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ (ନିଶ୍ଚୟାର୍ଥକ)
+      gloss_pa: ਹੀ, ਯਕੀਨਨ (ਨਿਸ਼ਚਯਾਰਥਕ)
+      gloss_ta: தான், மட்டுமே (உறுதி இடைச்சொல்)
+      gloss_te: మాత్రమే, నిశ్చయముగా (నిశ్చయార్థక)
     - word: भोग्यभावेन
       iast: bhogya-bhāvena
       gloss_en: "in the form of the enjoyable"
@@ -5418,6 +7413,36 @@ chapters:
       gloss_pa: ਭੋਗਯ-ਭਾਵ (ਅਨੁਭਵ-ਯੋਗ) ਦੇ ਰੂਪ ਵਿੱਚ
       gloss_ta: போக்யம் (அனுபவிக்கப்படுவது) என்ற ரூபத்தில்
       gloss_te: భోగ్య భావముతో (అనుభవింపదగిన వస్తురూపముగా)
+    - word: सदा
+      iast: sadā
+      gloss_en: always
+      morph: adv.
+      gloss_as: সদায়, সদা
+      gloss_bn: সর্বদা, চিরকাল
+      gloss_gu: સદા, હંમેશા
+      gloss_hi: सदा, हमेशा (अव्यय)
+      gloss_kn: ಸದಾ, ಯಾವಾಗಲೂ
+      gloss_ml: സദാ, എപ്പോഴും
+      gloss_mr: सदा, नेहमी
+      gloss_or: ସଦା, ସର୍ବଦା
+      gloss_pa: ਸਦਾ, ਹਮੇਸ਼ਾ
+      gloss_ta: எப்போதும், எந்நாளும்
+      gloss_te: ఎల్లప్పుడూ, సదా
+    - word: सर्वत्र
+      iast: sarvatra
+      gloss_en: everywhere
+      morph: adv.
+      gloss_as: সৰ্বত্ৰ, সকলো ঠাইতে
+      gloss_bn: সর্বত্র, সব জায়গায়
+      gloss_gu: સર્વત્ર, બધે જ
+      gloss_hi: सर्वत्र, सब जगह (अव्यय)
+      gloss_kn: ಸರ್ವತ್ರ, ಎಲ್ಲೆಡೆ
+      gloss_ml: സർവത്ര, എല്ലായിടത്തും
+      gloss_mr: सर्वत्र, सगळीकडे
+      gloss_or: ସର୍ବତ୍ର, ସମସ୍ତ ସ୍ଥାନରେ
+      gloss_pa: ਸਰਵਤ੍ਰ, ਹਰ ਥਾਂ
+      gloss_ta: எங்கும், எவ்விடத்திலும்
+      gloss_te: సర్వత్ర, అన్నిచోట్ల
     - word: संस्थितः
       iast: saṃsthitaḥ
       gloss_en: "established"
@@ -5536,6 +7561,51 @@ chapters:
     iast: "iti vā yasya saṃvittiḥ krīḍātvenākhilaṃ jagat / sa paśyan satataṃ yukto jīvan-mukto na saṃśayaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: इति
+      iast: iti
+      gloss_en: thus
+      morph: indecl.
+      gloss_as: এইদৰে, এনেকৈ (উদ্ধৃতি-সমাপক)
+      gloss_bn: এইভাবে, এই বলে (উদ্ধৃতি-সমাপক)
+      gloss_gu: એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)
+      gloss_hi: इस प्रकार, ऐसा (उद्धरण-समापक अव्यय)
+      gloss_kn: ಹೀಗೆ, ಎಂದು (ಉದ್ಧರಣ-ಸಮಾಪಕ)
+      gloss_ml: എന്ന്, ഇപ്രകാരം (ഉദ്ധരണി-സമാപകം)
+      gloss_mr: असे, अशा प्रकारे (उद्धरण-समाप्ती)
+      gloss_or: ଏପରି, ଏହି ଭଳି (ଉଦ୍ଧରଣ-ସମାପକ)
+      gloss_pa: ਇੰਜ, ਇਸ ਤਰ੍ਹਾਂ (ਉਦਾਹਰਣ-ਸਮਾਪਕ)
+      gloss_ta: என்று, இவ்வாறு (மேற்கோள் முடிவு)
+      gloss_te: అని, ఈ విధంగా (ఉద్ధరణ-సమాపక అవ్యయం)
+    - word: वा
+      iast: vā
+      gloss_en: or (alternatively)
+      morph: indecl.
+      gloss_as: বা, অথবা (বিকল্প)
+      gloss_bn: অথবা, কিংবা (বিকল্প)
+      gloss_gu: અથવા, કે (વિકલ્પ)
+      gloss_hi: अथवा, या (विकल्पार्थक अव्यय)
+      gloss_kn: ಅಥವಾ, ಇಲ್ಲವೇ (ವಿಕಲ್ಪ)
+      gloss_ml: അഥവാ, അല്ലെങ്കിൽ (വികൽപം)
+      gloss_mr: अथवा, किंवा (विकल्पवाचक)
+      gloss_or: କିମ୍ବା, ଅଥବା (ବିକଳ୍ପ)
+      gloss_pa: ਜਾਂ, ਅਥਵਾ (ਵਿਕਲਪ)
+      gloss_ta: அல்லது (விருப்பத்தேர்வு)
+      gloss_te: లేదా, అథవా (వికల్పార్థక)
+    - word: यस्य
+      iast: yasya
+      gloss_en: of whom
+      morph: m.gen.sg rel. pron
+      gloss_as: যাৰ — পু.ষষ্ঠী.এক. সম্বন্ধ
+      gloss_bn: যাঁর — পু.ষষ্ঠী.এক. সম্বন্ধ
+      gloss_gu: જેનું — પુ.ષષ્ઠી.એક. સંબંધ
+      gloss_hi: जिसका — पु.षष्ठी एक. सम्बन्धवाचक
+      gloss_kn: ಯಾರ — ಪು.ಷಷ್ಠೀ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ആരുടെ — പു.ഷഷ്ഠീ.ഏക. സംബന്ധ
+      gloss_mr: ज्याचे — पु.षष्ठी.एक. संबंध
+      gloss_or: ଯାହାଙ୍କର — ପୁ.ଷଷ୍ଠୀ.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਸਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எவனின் — ஆ.ஆறா.எகவ. உறவு
+      gloss_te: ఎవరి — పు.షష్ఠీ.ఏక. సంబంధ
     - word: संवित्तिः
       iast: saṃvittiḥ
       gloss_en: "realisation"
@@ -5581,6 +7651,21 @@ chapters:
       gloss_pa: ਸਾਰਾ ਜਗਤ
       gloss_ta: இவ்வுலகனைத்தும்
       gloss_te: అఖిల జగత్తు (సర్వ ప్రపంచము)
+    - word: सः
+      iast: saḥ
+      gloss_en: he
+      morph: m.nom.sg pron
+      gloss_as: তেওঁ, সি — পু.কৰ্তা.এক.
+      gloss_bn: সে, তিনি — পু.কর্তা.এক.
+      gloss_gu: તે — પુ.કર્તા.એક.
+      gloss_hi: वह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಅವನು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അവൻ — പു.കർത്താ.ഏക.
+      gloss_mr: तो — पु.कर्ता.एक.
+      gloss_or: ସେ — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அவன் — ஆ.எழ.எகவ.
+      gloss_te: అతడు — పు.కర్త.ఏక.
     - word: पश्यन्
       iast: paśyan
       gloss_en: "seeing"
@@ -5596,6 +7681,21 @@ chapters:
       gloss_pa: ਵੇਖਦਾ ਹੋਇਆ
       gloss_ta: காண்பவன்
       gloss_te: పశ్యన్ (చూచుచున్నవాడు)
+    - word: सततम्
+      iast: satatam
+      gloss_en: continuously
+      morph: adv.
+      gloss_as: নিৰন্তৰ, সতত
+      gloss_bn: অবিরাম, সতত
+      gloss_gu: નિરંતર, સતત
+      gloss_hi: निरन्तर, सतत (अव्यय)
+      gloss_kn: ನಿರಂತರ, ಸತತ
+      gloss_ml: നിരന്തരം, സതതം
+      gloss_mr: निरंतर, सतत
+      gloss_or: ନିରନ୍ତର, ସତତ
+      gloss_pa: ਨਿਰੰਤਰ, ਲਗਾਤਾਰ
+      gloss_ta: இடைவிடாமல், தொடர்ந்து
+      gloss_te: నిరంతరం, సతతం
     - word: युक्तः
       iast: yuktaḥ
       gloss_en: "ever yoked (in this awareness)"
@@ -5626,6 +7726,21 @@ chapters:
       gloss_pa: ਜੀਵਨ-ਮੁਕਤ
       gloss_ta: உயிருடனிருந்தே முக்தனானவன்
       gloss_te: జీవన్ముక్తుడు (జీవించుచుండగనే విముక్తుడు)
+    - word: न संशयः
+      iast: na saṃśayaḥ
+      gloss_en: (there is) no doubt
+      morph: indecl. + m.nom.sg
+      gloss_as: (ইয়াত) কোনো সন্দেহ নাই
+      gloss_bn: (এতে) কোনো সন্দেহ নেই
+      gloss_gu: (આમાં) કોઈ સંશય નથી
+      gloss_hi: (इसमें) कोई संशय नहीं है
+      gloss_kn: (ಇದರಲ್ಲಿ) ಯಾವ ಸಂಶಯವೂ ಇಲ್ಲ
+      gloss_ml: (ഇതിൽ) യാതൊരു സന്ദേഹവുമില്ല
+      gloss_mr: (यात) कोणताही संशय नाही
+      gloss_or: (ଏଥିରେ) କୌଣସି ସନ୍ଦେହ ନାହିଁ
+      gloss_pa: (ਇਸ ਵਿਚ) ਕੋਈ ਸ਼ੰਕਾ ਨਹੀਂ
+      gloss_ta: (இதில்) ஐயமே இல்லை
+      gloss_te: (దీనిలో) ఏ సందేహమూ లేదు
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -5729,6 +7844,36 @@ chapters:
     iast: "ayam evodayas tasya dhyeyasya dhyāyi-cetasi / tad-ātmatā-samāpattir icchataḥ sādhakasya yā //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अयम्
+      iast: ayam
+      gloss_en: this (very)
+      morph: m.nom.sg pron
+      gloss_as: এই, ই — পু.কৰ্তা.এক.
+      gloss_bn: এই, এটি — পু.কর্তা.এক.
+      gloss_gu: આ — પુ.કર્તા.એક. સર્વ.
+      gloss_hi: यह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಇವನು, ಇದು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൻ, ഇത് — പു.കർത്താ.ഏക.
+      gloss_mr: हा — पु.कर्ता.एक. सर्वनाम
+      gloss_or: ଏହି — ପୁ.କର୍ତ୍ତା.ଏକ. ସର୍ବନାମ
+      gloss_pa: ਇਹ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸਰਵਨਾਮ
+      gloss_ta: இவன் — ஆ.எழ.எகவ. பெயர்ச்சொல்
+      gloss_te: ఇది, ఇతడు — పు.కర్త.ఏక. సర్వ.
+    - word: एव
+      iast: eva
+      gloss_en: alone, indeed
+      morph: indecl.
+      gloss_as: ই, নিশ্চয়েই (নিশ্চয়াৰ্থক)
+      gloss_bn: ই, নিশ্চয়ই (নিশ্চয়ার্থক)
+      gloss_gu: જ, ચોક્કસપણે (નિશ્ચયાર્થક)
+      gloss_hi: ही, निश्चय ही (निश्चयार्थक अव्यय)
+      gloss_kn: ಮಾತ್ರ, ನಿಶ್ಚಯವಾಗಿ (ನಿಶ್ಚಯಾರ್ಥಕ)
+      gloss_ml: തന്നെ, നിശ്ചയമായും (നിശ്ചയാർത്ഥകം)
+      gloss_mr: च, निश्चितच (निश्चयार्थक)
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ (ନିଶ୍ଚୟାର୍ଥକ)
+      gloss_pa: ਹੀ, ਯਕੀਨਨ (ਨਿਸ਼ਚਯਾਰਥਕ)
+      gloss_ta: தான், மட்டுமே (உறுதி இடைச்சொல்)
+      gloss_te: మాత్రమే, నిశ్చయముగా (నిశ్చయార్థక)
     - word: उदयः
       iast: udayaḥ
       gloss_en: "arising"
@@ -5744,6 +7889,21 @@ chapters:
       gloss_pa: ਉਦੈ (ਪ੍ਰਗਟ ਹੋਣਾ)
       gloss_ta: தோற்றம் / எழுச்சி
       gloss_te: ఉదయము (ఆవిర్భావము)
+    - word: तस्य
+      iast: tasya
+      gloss_en: of that
+      morph: m.gen.sg pron
+      gloss_as: তাৰ — পু.ষষ্ঠী.এক.
+      gloss_bn: তাঁর — পু.ষষ্ঠী.এক.
+      gloss_gu: તેનું — પુ.ષષ્ઠી.એક.
+      gloss_hi: उसका — पु.षष्ठी एक.
+      gloss_kn: ಅವನ — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: അവന്റെ — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे — पु.षष्ठी.एक.
+      gloss_or: ତାହାର — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அதன் — ஆ.ஆறா.எகவ.
+      gloss_te: దాని — పు.షష్ఠీ.ఏక.
     - word: ध्येयस्य
       iast: dhyeyasya
       gloss_en: "of the object of meditation"
@@ -5804,6 +7964,21 @@ chapters:
       gloss_pa: ਇੱਛੁਕ ਸਾਧਕ ਦੀ
       gloss_ta: விரும்பும் சாதகனின்
       gloss_te: ఇచ్ఛాయుత సాధకుని యొక్క
+    - word: या
+      iast: yā
+      gloss_en: which (samāpatti)
+      morph: f.nom.sg rel. pron
+      gloss_as: যি (সমাপত্তি, অৱস্থা) — স্ত্ৰী.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যে (সমাপত্তি, অবস্থা) — স্ত্রী.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે (સમાપત્તિ, અવસ્થા) — સ્ત્રી.કર્તા.એક. સંબંધ
+      gloss_hi: जो (समापत्ति, अवस्था) — स्त्री.कर्ता एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವ (ಸಮಾಪತ್ತಿ, ಅವಸ್ಥೆ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ഏത് (സമാപത്തി, അവസ്ഥ) — സ്ത്രീ.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जी (समापत्ति, अवस्था) — स्त्री.कर्ता.एक. संबंध
+      gloss_or: ଯେଉଁ (ସମାପତ୍ତି, ଅବସ୍ଥା) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਹੜੀ (ਸਮਾਪਤਿ, ਅਵਸਥਾ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எந்த (சமாபத்தி, நிலை) — பெ.எழ.எகவ. உறவு
+      gloss_te: ఏ (సమాపత్తి, అవస్థ) — స్త్రీ.కర్త.ఏక. సంబంధ
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -5907,6 +8082,36 @@ chapters:
     iast: "iyam evāmṛta-prāptir ayam evātmano grahaḥ / iyaṃ nirvāṇa-dīkṣā ca śiva-sad-bhāva-dāyinī //"
     meter: anuṣṭubh
     word_glosses:
+    - word: इयम्
+      iast: iyam
+      gloss_en: this (samāpatti)
+      morph: f.nom.sg pron
+      gloss_as: এই (সমাপত্তি) — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: এই (সমাপত্তি) — স্ত্রী.কর্তা.এক.
+      gloss_gu: આ (સમાપત્તિ) — સ્ત્રી.કર્તા.એક.
+      gloss_hi: यह (समापत्ति) — स्त्री.कर्ता एक.
+      gloss_kn: ಈ (ಸಮಾಪತ್ತಿ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഈ (സമാപത്തി) — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ही (समापत्ति) — स्त्री.कर्ता.एक.
+      gloss_or: ଏହି (ସମାପତ୍ତି) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਸਮਾਪਤਿ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவள் (சமாபத்தி) — பெ.எழ.எகவ.
+      gloss_te: ఈ (సమాపత్తి) — స్త్రీ.కర్త.ఏక.
+    - word: एव
+      iast: eva
+      gloss_en: alone, very
+      morph: indecl.
+      gloss_as: ই, নিশ্চয়েই (নিশ্চয়াৰ্থক)
+      gloss_bn: ই, নিশ্চয়ই (নিশ্চয়ার্থক)
+      gloss_gu: જ, ચોક્કસપણે (નિશ્ચયાર્થક)
+      gloss_hi: ही, निश्चय ही (निश्चयार्थक अव्यय)
+      gloss_kn: ಮಾತ್ರ, ನಿಶ್ಚಯವಾಗಿ (ನಿಶ್ಚಯಾರ್ಥಕ)
+      gloss_ml: തന്നെ, നിശ്ചയമായും (നിശ്ചയാർത്ഥകം)
+      gloss_mr: च, निश्चितच (निश्चयार्थक)
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ (ନିଶ୍ଚୟାର୍ଥକ)
+      gloss_pa: ਹੀ, ਯਕੀਨਨ (ਨਿਸ਼ਚਯਾਰਥਕ)
+      gloss_ta: தான், மட்டுமே (உறுதி இடைச்சொல்)
+      gloss_te: మాత్రమే, నిశ్చయముగా (నిశ్చయార్థక)
     - word: अमृतप्राप्तिः
       iast: amṛta-prāptiḥ
       gloss_en: "attainment of the nectar of immortality"
@@ -5922,6 +8127,36 @@ chapters:
       gloss_pa: ਅੰਮ੍ਰਿਤ ਦੀ ਪ੍ਰਾਪਤੀ
       gloss_ta: அமிர்தத்தைப் பெறுதல்
       gloss_te: అమృత ప్రాప్తి (అమృత లాభము)
+    - word: अयम्
+      iast: ayam
+      gloss_en: this
+      morph: m.nom.sg pron
+      gloss_as: এই, ই — পু.কৰ্তা.এক.
+      gloss_bn: এই, এটি — পু.কর্তা.এক.
+      gloss_gu: આ — પુ.કર્તા.એક. સર્વ.
+      gloss_hi: यह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಇವನು, ಇದು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൻ, ഇത് — പു.കർത്താ.ഏക.
+      gloss_mr: हा — पु.कर्ता.एक. सर्वनाम
+      gloss_or: ଏହି — ପୁ.କର୍ତ୍ତା.ଏକ. ସର୍ବନାମ
+      gloss_pa: ਇਹ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸਰਵਨਾਮ
+      gloss_ta: இவன் — ஆ.எழ.எகவ. பெயர்ச்சொல்
+      gloss_te: ఇది, ఇతడు — పు.కర్త.ఏక. సర్వ.
+    - word: एव
+      iast: eva
+      gloss_en: alone, very
+      morph: indecl.
+      gloss_as: ই, নিশ্চয়েই (নিশ্চয়াৰ্থক)
+      gloss_bn: ই, নিশ্চয়ই (নিশ্চয়ার্থক)
+      gloss_gu: જ, ચોક્કસપણે (નિશ્ચયાર્થક)
+      gloss_hi: ही, निश्चय ही (निश्चयार्थक अव्यय)
+      gloss_kn: ಮಾತ್ರ, ನಿಶ್ಚಯವಾಗಿ (ನಿಶ್ಚಯಾರ್ಥಕ)
+      gloss_ml: തന്നെ, നിശ്ചയമായും (നിശ്ചയാർത്ഥകം)
+      gloss_mr: च, निश्चितच (निश्चयार्थक)
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ (ନିଶ୍ଚୟାର୍ଥକ)
+      gloss_pa: ਹੀ, ਯਕੀਨਨ (ਨਿਸ਼ਚਯਾਰਥਕ)
+      gloss_ta: தான், மட்டுமே (உறுதி இடைச்சொல்)
+      gloss_te: మాత్రమే, నిశ్చయముగా (నిశ్చయార్థక)
     - word: आत्मनः ग्रहः
       iast: ātmanaḥ grahaḥ
       gloss_en: "the grasp of the Self"
@@ -5937,6 +8172,21 @@ chapters:
       gloss_pa: ਆਤਮਾ ਦਾ ਗ੍ਰਹਣ
       gloss_ta: ஆத்மாவின் கைப்பற்றுதல்
       gloss_te: ఆత్మ యొక్క గ్రహణము
+    - word: इयम्
+      iast: iyam
+      gloss_en: this
+      morph: f.nom.sg pron
+      gloss_as: এই (সমাপত্তি) — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: এই (সমাপত্তি) — স্ত্রী.কর্তা.এক.
+      gloss_gu: આ (સમાપત્તિ) — સ્ત્રી.કર્તા.એક.
+      gloss_hi: यह (समापत्ति) — स्त्री.कर्ता एक.
+      gloss_kn: ಈ (ಸಮಾಪತ್ತಿ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഈ (സമാപത്തി) — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ही (समापत्ति) — स्त्री.कर्ता.एक.
+      gloss_or: ଏହି (ସମାପତ୍ତି) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ (ਸਮਾਪਤਿ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவள் (சமாபத்தி) — பெ.எழ.எகவ.
+      gloss_te: ఈ (సమాపత్తి) — స్త్రీ.కర్త.ఏక.
     - word: निर्वाणदीक्षा
       iast: nirvāṇa-dīkṣā
       gloss_en: "the initiation into liberation"
@@ -5952,6 +8202,21 @@ chapters:
       gloss_pa: ਨਿਰਵਾਣ ਦੀ ਦੀਖਿਆ
       gloss_ta: நிர்வாண-தீட்சை
       gloss_te: నిర్వాణ దీక్ష (విముక్తికి దీక్ష)
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: शिवसद्भावदायिनी
       iast: śiva-sad-bhāva-dāyinī
       gloss_en: "granting the true being of Śiva"
@@ -6120,6 +8385,51 @@ chapters:
       gloss_pa: ਜਾਗਰਤ ਅਵਸਥਾ ਵਿੱਚ
       gloss_ta: விழித்திருப்பவனின்
       gloss_te: జాగ్రదవస్థలో ఉన్నవాని యొక్క
+    - word: अर्थान्
+      iast: arthān
+      gloss_en: objects
+      morph: m.acc.pl
+      gloss_as: অৰ্থসমূহক (বিষয়) — পু.কৰ্ম.বহু.
+      gloss_bn: অর্থসমূহকে (বিষয়) — পু.কর্ম.বহু.
+      gloss_gu: અર્થોને (વિષયોને) — પુ.કર્મ.બહુ.
+      gloss_hi: अर्थों (विषयों) को — पु.कर्म बहु.
+      gloss_kn: ಅರ್ಥಗಳನ್ನು (ವಿಷಯಗಳನ್ನು) — ಪು.ಕರ್ಮ.ಬಹು.
+      gloss_ml: അർത്ഥങ്ങളെ (വിഷയങ്ങളെ) — പു.കർമ്മ.ബഹു.
+      gloss_mr: अर्थांना (विषयांना) — पु.कर्म.बहु.
+      gloss_or: ଅର୍ଥମାନଙ୍କୁ (ବିଷୟ) — ପୁ.କର୍ମ.ବହୁ.
+      gloss_pa: ਅਰਥਾਂ ਨੂੰ (ਵਿਸ਼ਿਆਂ ਨੂੰ) — ਪੁ.ਕਰਮ.ਬਹੁ.
+      gloss_ta: பொருள்களை, விஷயங்களை — ஆ.செய.பன்.
+      gloss_te: అర్థాలను (విషయాలను) — పు.కర్మ.బహు.
+    - word: हृदि
+      iast: hṛdi
+      gloss_en: in the heart
+      morph: n.loc.sg
+      gloss_as: হৃদয়ত — নপুং.সপ্ত.এক.
+      gloss_bn: হৃদয়ে — ক্লীব.সপ্ত.এক.
+      gloss_gu: હૃદયમાં — નપું.સપ્ત.એક.
+      gloss_hi: हृदय में — नपुं.अधि. एक.
+      gloss_kn: ಹೃದಯದಲ್ಲಿ — ನಪು.ಸಪ್ತ.ಏಕ.
+      gloss_ml: ഹൃദയത്തിൽ — നപു.സപ്ത.ഏക.
+      gloss_mr: हृदयात — नपुं.सप्त.एक.
+      gloss_or: ହୃଦୟରେ — ନପୁଂ.ସପ୍ତ.ଏକ.
+      gloss_pa: ਹਿਰਦੇ ਵਿਚ — ਨਪੁੰ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: இதயத்தில் — அல.ஏழா.எகவ.
+      gloss_te: హృదయంలో — నపుం.సప్తమి.ఏక.
+    - word: स्थितान्
+      iast: sthitān
+      gloss_en: abiding
+      morph: m.acc.pl ppp √sthā
+      gloss_as: স্থিত, অৱস্থিত (পু.কৰ্ম.বহু. ppp √sthā)
+      gloss_bn: অবস্থিত (পু.কর্ম.বহু. ppp √sthā)
+      gloss_gu: સ્થિત, અવસ્થિત (પુ.કર્મ.બહુ. ppp √sthā)
+      gloss_hi: स्थित, अवस्थित (पु.कर्म बहु. ppp √स्था)
+      gloss_kn: ಸ್ಥಿತ, ನೆಲೆಸಿರುವ (ಪು.ಕರ್ಮ.ಬಹು. ppp √sthā)
+      gloss_ml: സ്ഥിതരായ (പു.കർമ്മ.ബഹു. ppp √sthā)
+      gloss_mr: स्थित, अवस्थित (पु.कर्म.बहु. ppp √sthā)
+      gloss_or: ସ୍ଥିତ, ଅବସ୍ଥିତ (ପୁ.କର୍ମ.ବହୁ. ppp √sthā)
+      gloss_pa: ਸਥਿਤ, ਟਿਕੇ ਹੋਏ (ਪੁ.ਕਰਮ.ਬਹੁ. ppp √sthā)
+      gloss_ta: நிலைபெற்ற (ஆ.செய.பன். எச்ச. √sthā)
+      gloss_te: స్థితులైన (పు.కర్మ.బహు. ppp √sthā)
     - word: सोमसूर्योदयम्
       iast: soma-sūryodayam
       gloss_en: "the rise of moon and sun (apāna and prāṇa)"
@@ -6135,6 +8445,21 @@ chapters:
       gloss_pa: ਸੋਮ ਤੇ ਸੂਰਜ ਦਾ ਉਦੈ (ਅਪਾਨ ਤੇ ਪ੍ਰਾਣ)
       gloss_ta: சந்திர-சூரியர்களின் உதயம் (அபானம், பிராணம்)
       gloss_te: సోమ-సూర్యుల ఉదయము (అపాన-ప్రాణముల ఉదయము)
+    - word: कृत्वा
+      iast: kṛtvā
+      gloss_en: having caused
+      morph: abs. √kṛ
+      gloss_as: কৰি, উৎপন্ন কৰি (পূৰ্ব-কালিক √kṛ)
+      gloss_bn: করে, উৎপন্ন করে (অসমাপিকা √kṛ)
+      gloss_gu: કરીને, ઉત્પન્ન કરીને (પૂર્વ-કાલિક √kṛ)
+      gloss_hi: करके, उत्पन्न करके (पूर्वकालिक कृदन्त √कृ)
+      gloss_kn: ಮಾಡಿ, ಉತ್ಪನ್ನಗೊಳಿಸಿ (ಪೂರ್ವ-ಕಾಲಿಕ √kṛ)
+      gloss_ml: ചെയ്ത്, ഉൽപാദിപ്പിച്ച് (പൂർവ-കാലികം √kṛ)
+      gloss_mr: करून, उत्पन्न करून (पूर्व-कालिक √kṛ)
+      gloss_or: କରି, ଉତ୍ପନ୍ନ କରି (ପୂର୍ବ-କାଳିକ √kṛ)
+      gloss_pa: ਕਰ ਕੇ, ਉਤਪੰਨ ਕਰ ਕੇ (ਪੂਰਵ-ਕਾਲਿਕ √kṛ)
+      gloss_ta: செய்து, உருவாக்கி (முற்.வினையெச்.) √kṛ
+      gloss_te: చేసి, ఉత్పన్నం చేసి (పూర్వ.కృ. √kṛ)
     - word: सम्पादयति
       iast: sampādayati
       gloss_en: "brings about"
@@ -6268,6 +8593,51 @@ chapters:
     iast: "tathā svapne 'py abhīṣṭārthān praṇayasyānatikramāt / nityaṃ sphuṭataraṃ madhye sthito 'vaśyaṃ prakāśayet //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तथा
+      iast: tathā
+      gloss_en: likewise
+      morph: adv.
+      gloss_as: সেইদৰে, তথা
+      gloss_bn: তেমনি, সেইরূপ
+      gloss_gu: તેમ, એ જ રીતે
+      gloss_hi: तथा, उसी प्रकार (अव्यय)
+      gloss_kn: ಅಂತೆಯೇ, ಆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അപ്രകാരം, അതുപോലെ
+      gloss_mr: तसेच, त्याचप्रमाणे
+      gloss_or: ତଥା, ସେହିପରି
+      gloss_pa: ਉਸੇ ਤਰ੍ਹਾਂ, ਤਥਾ
+      gloss_ta: அவ்வாறே, அதுபோல
+      gloss_te: అట్లే, తథా
+    - word: स्वप्ने
+      iast: svapne
+      gloss_en: in dream
+      morph: m.loc.sg
+      gloss_as: সপোনত — পু.সপ্ত.এক.
+      gloss_bn: স্বপ্নে — পু.সপ্ত.এক.
+      gloss_gu: સ્વપ્નમાં — પુ.સપ્ત.એક.
+      gloss_hi: स्वप्न में — पु.अधि. एक.
+      gloss_kn: ಸ್ವಪ್ನದಲ್ಲಿ — ಪು.ಸಪ್ತ.ಏಕ.
+      gloss_ml: സ്വപ്നത്തിൽ — പു.സപ്ത.ഏക.
+      gloss_mr: स्वप्नात — पु.सप्त.एक.
+      gloss_or: ସ୍ୱପ୍ନରେ — ପୁ.ସପ୍ତ.ଏକ.
+      gloss_pa: ਸੁਪਨੇ ਵਿਚ — ਪੁ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: கனவில் — ஆ.ஏழா.எகவ.
+      gloss_te: స్వప్నంలో — పు.సప్తమి.ఏక.
+    - word: अपि
+      iast: api
+      gloss_en: also
+      morph: indecl.
+      gloss_as: ও, এনেকি (অব্যয়)
+      gloss_bn: ও, এমনকি (অব্যয়)
+      gloss_gu: પણ, કૂદાં (અવ્યય)
+      gloss_hi: भी (अव्यय)
+      gloss_kn: ಸಹ, ಕೂಡ (ಅವ್ಯಯ)
+      gloss_ml: എങ്കിലും, പോലും (അവ്യയം)
+      gloss_mr: देखील, सुद्धा (अव्यय)
+      gloss_or: ମଧ୍ୟ, କୁଆଡ଼େ (ଅବ୍ୟୟ)
+      gloss_pa: ਵੀ, ਭਾਵੇਂ (ਅਵ੍ਯ.)
+      gloss_ta: கூட, ஆகவும் (இடைச்சொல்)
+      gloss_te: కూడా, అపి (అవ్యయం)
     - word: अभीष्टार्थान्
       iast: abhīṣṭārthān
       gloss_en: "desired objects"
@@ -6298,6 +8668,21 @@ chapters:
       gloss_pa: ਪ੍ਰੇਮ-ਪ੍ਰਾਰਥਨਾ ਦਾ ਉਲੰਘਣ ਨਾ ਕਰ ਕੇ
       gloss_ta: (பக்தனின்) பிரார்த்தனையை மீறாமல்
       gloss_te: ప్రణయము యొక్క అనతిక్రమణము నుండి (భక్తుని ప్రార్థనను అతిక్రమింపకుండుట వలన)
+    - word: नित्यम्
+      iast: nityam
+      gloss_en: always
+      morph: adv.
+      gloss_as: নিত্য, সদায়
+      gloss_bn: নিত্য, চিরকাল
+      gloss_gu: નિત્ય, હંમેશા
+      gloss_hi: नित्य, सर्वदा (अव्यय)
+      gloss_kn: ನಿತ್ಯ, ಶಾಶ್ವತವಾಗಿ
+      gloss_ml: നിത്യം, എപ്പോഴും
+      gloss_mr: नित्य, चिरकाल
+      gloss_or: ନିତ୍ୟ, ସର୍ବଦା
+      gloss_pa: ਨਿਤ੍ਯ, ਸਦਾ
+      gloss_ta: நித்தியமாக, எப்போதும்
+      gloss_te: నిత్యం, శాశ్వతంగా
     - word: स्फुटतरम्
       iast: sphuṭataram
       gloss_en: "more clearly"
@@ -6328,6 +8713,21 @@ chapters:
       gloss_pa: ਮੱਧ (ਕੇਂਦਰ) ਵਿੱਚ ਟਿਕਿਆ
       gloss_ta: மத்தியில் நிலைபெற்றவன்
       gloss_te: మధ్యమునందు స్థితుడై (కేంద్రములో ఉండి)
+    - word: अवश्यम्
+      iast: avaśyam
+      gloss_en: necessarily
+      morph: adv.
+      gloss_as: অৱশ্যেই, নিশ্চিত ৰূপে
+      gloss_bn: অবশ্য, নিশ্চিতভাবে
+      gloss_gu: અવશ્ય, ચોક્કસપણે
+      gloss_hi: अवश्य, निश्चित रूप से (अव्यय)
+      gloss_kn: ಅವಶ್ಯ, ನಿಶ್ಚಯವಾಗಿ
+      gloss_ml: അവശ്യം, നിശ്ചയമായും
+      gloss_mr: अवश्य, निश्चितच
+      gloss_or: ଅବଶ୍ୟ, ନିଶ୍ଚୟ ଭାବେ
+      gloss_pa: ਅਵਸ਼ਯ, ਨਿਸ਼ਚਿਤ ਰੂਪ ਵਿਚ
+      gloss_ta: நிச்சயமாக, கட்டாயமாக
+      gloss_te: అవశ్యం, తప్పక
     - word: प्रकाशयेत्
       iast: prakāśayet
       gloss_en: "should reveal"
@@ -6446,6 +8846,36 @@ chapters:
     iast: "anyathā tu svatantrā syāt sṛṣṭis tad-dharmakatvataḥ / satataṃ laukikasyeva jāgrat-svapna-pada-dvaye //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अन्यथा
+      iast: anyathā
+      gloss_en: otherwise
+      morph: adv.
+      gloss_as: অন্যথা, অন্য ধৰণে
+      gloss_bn: অন্যথায়, নতুবা
+      gloss_gu: અન્યથા, બીજી રીતે
+      gloss_hi: अन्यथा, अन्य रूप से (अव्यय)
+      gloss_kn: ಅನ್ಯಥಾ, ಬೇರೆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അന്യഥാ, മറ്റൊരുവിധം
+      gloss_mr: अन्यथा, अन्य प्रकारे
+      gloss_or: ଅନ୍ୟଥା, ଅନ୍ୟ ପ୍ରକାରେ
+      gloss_pa: ਅਨ੍ਯਥਾ, ਹੋਰ ਤਰੀਕੇ ਨਾਲ
+      gloss_ta: வேறுவிதமாக, இல்லையெனில்
+      gloss_te: మరోవిధంగా, లేకపోతే
+    - word: तु
+      iast: tu
+      gloss_en: but
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
     - word: स्वतन्त्रा
       iast: svatantrā
       gloss_en: "independent"
@@ -6461,6 +8891,21 @@ chapters:
       gloss_pa: ਸੁਤੰਤਰ
       gloss_ta: சுதந்திரமானது
       gloss_te: స్వతంత్రమైనది
+    - word: स्यात्
+      iast: syāt
+      gloss_en: would be
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: सृष्टिः
       iast: sṛṣṭiḥ
       gloss_en: "creation"
@@ -6491,6 +8936,21 @@ chapters:
       gloss_pa: ਉਸ (ਸਪੰਦ) ਦੇ ਸੁਭਾਅ ਨਾਲ ਸਾਂਝ ਕਾਰਨ
       gloss_ta: அதன் (ஸ்பந்தத்தின்) தன்மை கொண்டதனால்
       gloss_te: ఆ (స్పంద) ధర్మము కలిగియుండుట వలన
+    - word: सततम्
+      iast: satatam
+      gloss_en: continually
+      morph: adv.
+      gloss_as: নিৰন্তৰ, সতত
+      gloss_bn: অবিরাম, সতত
+      gloss_gu: નિરંતર, સતત
+      gloss_hi: निरन्तर, सतत (अव्यय)
+      gloss_kn: ನಿರಂತರ, ಸತತ
+      gloss_ml: നിരന്തരം, സതതം
+      gloss_mr: निरंतर, सतत
+      gloss_or: ନିରନ୍ତର, ସତତ
+      gloss_pa: ਨਿਰੰਤਰ, ਲਗਾਤਾਰ
+      gloss_ta: இடைவிடாமல், தொடர்ந்து
+      gloss_te: నిరంతరం, సతతం
     - word: लौकिकस्य
       iast: laukikasya
       gloss_en: "of the worldly (un-awakened) person"
@@ -6506,6 +8966,21 @@ chapters:
       gloss_pa: ਸਾਧਾਰਣ (ਲੌਕਿਕ) ਜੀਵ ਦੀ
       gloss_ta: உலகியல் மனிதனின்
       gloss_te: లౌకికుని యొక్క (అప్రబుద్ధుని యొక్క)
+    - word: इव
+      iast: iva
+      gloss_en: as if, like
+      morph: indecl.
+      gloss_as: যেন, দৰে (উপমাবাচক)
+      gloss_bn: যেন, মতো (উপমাবাচক)
+      gloss_gu: જેવું, માફક (ઉપમાવાચક)
+      gloss_hi: मानो, जैसे (तुलनार्थक अव्यय)
+      gloss_kn: ಹಾಗೆ, ಅಂತೆ (ಉಪಮಾವಾಚಕ)
+      gloss_ml: പോലെ, എന്നപോലെ (ഉപമാവ്യയം)
+      gloss_mr: जणू, सारखे (उपमावाचक)
+      gloss_or: ଯେପରି, ସଦୃଶ (ଉପମାବାଚକ)
+      gloss_pa: ਜਿਵੇਂ, ਮਾਨੋ (ਉਪਮਾਵਾਚਕ)
+      gloss_ta: போல, போன்று (உவம இடைச்சொல்)
+      gloss_te: వలె, లాగా (ఉపమ అవ్యయం)
     - word: जाग्रत्स्वप्नपदद्वये
       iast: jāgrat-svapna-pada-dvaye
       gloss_en: "in the pair of waking and dream states"
@@ -6624,6 +9099,36 @@ chapters:
     iast: "yathā hy artho 'sphuṭo dṛṣṭaḥ sāvadhāne 'pi cetasi / bhūyaḥ sphuṭataro bhāti sva-balodyoga-bhāvitaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: यथा
+      iast: yathā
+      gloss_en: just as
+      morph: rel. adv.
+      gloss_as: যেনেকৈ, যি দৰে — সম্বন্ধবাচক
+      gloss_bn: যেমন, যেভাবে — সম্বন্ধবাচক
+      gloss_gu: જેમ, જે રીતે — સંબંધવાચક
+      gloss_hi: जैसे, जिस प्रकार (सम्बन्धवाचक अव्यय)
+      gloss_kn: ಹೇಗೆ, ಯಾವ ರೀತಿಯಲ್ಲಿ — ಸಂಬಂಧವಾಚಕ
+      gloss_ml: എങ്ങനെ, ഏതുപ്രകാരം — സംബന്ധവാചകം
+      gloss_mr: जसे, ज्या प्रकारे — संबंधवाचक
+      gloss_or: ଯେପରି, ଯେଉଁ ପ୍ରକାରେ — ସମ୍ବନ୍ଧବାଚକ
+      gloss_pa: ਜਿਵੇਂ, ਜਿਸ ਤਰ੍ਹਾਂ — ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவ்வாறு, எப்படி — உறவு வினையடை
+      gloss_te: ఎలా, ఏ విధంగా — సంబంధ క్రియావిశేషణం
+    - word: हि
+      iast: hi
+      gloss_en: indeed
+      morph: indecl.
+      gloss_as: কাৰণ, নিশ্চয়েই (হেতুবাচক)
+      gloss_bn: কারণ, নিশ্চয়ই (হেতুবাচক)
+      gloss_gu: કેમ કે, ચોક્કસ (હેત્વર્થક)
+      gloss_hi: क्योंकि, निश्चय ही (हेत्वर्थक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ನಿಶ್ಚಯವಾಗಿ (ಹೇತ್ವರ್ಥಕ)
+      gloss_ml: എന്തെന്നാൽ, നിശ്ചയമായും (ഹേത്വർത്ഥകം)
+      gloss_mr: कारण, निःसंशय (हेतुदर्शक)
+      gloss_or: କାରଣ, ନିଶ୍ଚୟ (ହେତ୍ୱର୍ଥକ)
+      gloss_pa: ਕਿਉਂਕਿ, ਨਿਸ਼ਚੈ (ਹੇਤਵਾਰਥਕ)
+      gloss_ta: ஏனெனில், திண்ணமாக (காரண இடைச்சொல்)
+      gloss_te: ఎందుకంటే, నిశ్చయముగా (హేత్వర్థక)
     - word: अर्थः
       iast: arthaḥ
       gloss_en: "object"
@@ -6654,6 +9159,21 @@ chapters:
       gloss_pa: ਅਸਪਸ਼ਟ
       gloss_ta: தெளிவற்றது
       gloss_te: అస్ఫుటము (స్పష్టము కానిది)
+    - word: दृष्टः
+      iast: dṛṣṭaḥ
+      gloss_en: (when) seen
+      morph: m.nom.sg ppp √dṛś
+      gloss_as: দেখা গ'ল (পু.কৰ্তা.এক. ppp √dṛś)
+      gloss_bn: দৃষ্ট, দেখা হয়েছে (পু.কর্তা.এক. ppp √dṛś)
+      gloss_gu: જોવાયેલો (પુ.કર્તા.એક. ppp √dṛś)
+      gloss_hi: देखा गया (पु.कर्ता एक. ppp √दृश्)
+      gloss_kn: ಕಂಡ, ಕಂಡುಬಂದ (ಪು.ಕರ್ತ.ಏಕ. ppp √dṛś)
+      gloss_ml: കണ്ടത് (പു.കർത്താ.ഏക. ppp √dṛś)
+      gloss_mr: पाहिलेला (पु.कर्ता.एक. ppp √dṛś)
+      gloss_or: ଦେଖାଗଲା (ପୁ.କର୍ତ୍ତା.ଏକ. ppp √dṛś)
+      gloss_pa: ਵੇਖਿਆ ਗਿਆ (ਪੁ.ਕਰਤਾ.ਇਕ. ppp √dṛś)
+      gloss_ta: காணப்பட்ட (ஆ.எழ.எகவ. எச்ச. √dṛś)
+      gloss_te: చూడబడిన (పు.కర్త.ఏక. ppp √dṛś)
     - word: सावधाने चेतसि
       iast: sāvadhāne cetasi
       gloss_en: "in the attentive mind"
@@ -6669,6 +9189,36 @@ chapters:
       gloss_pa: ਸਾਵਧਾਨ ਮਨ ਨਾਲ ਵੀ
       gloss_ta: கவனமான மனத்தில்
       gloss_te: సావధాన చిత్తమునందు (శ్రద్ధాయుత మనస్సునందు)
+    - word: अपि
+      iast: api
+      gloss_en: even
+      morph: indecl.
+      gloss_as: ও, এনেকি (অব্যয়)
+      gloss_bn: ও, এমনকি (অব্যয়)
+      gloss_gu: પણ, કૂદાં (અવ્યય)
+      gloss_hi: भी (अव्यय)
+      gloss_kn: ಸಹ, ಕೂಡ (ಅವ್ಯಯ)
+      gloss_ml: എങ്കിലും, പോലും (അവ്യയം)
+      gloss_mr: देखील, सुद्धा (अव्यय)
+      gloss_or: ମଧ୍ୟ, କୁଆଡ଼େ (ଅବ୍ୟୟ)
+      gloss_pa: ਵੀ, ਭਾਵੇਂ (ਅਵ੍ਯ.)
+      gloss_ta: கூட, ஆகவும் (இடைச்சொல்)
+      gloss_te: కూడా, అపి (అవ్యయం)
+    - word: भूयः
+      iast: bhūyaḥ
+      gloss_en: again, repeatedly
+      morph: adv.
+      gloss_as: পুনৰ, বাৰে বাৰে
+      gloss_bn: পুনরায়, বার বার
+      gloss_gu: ફરી, વારંવાર
+      gloss_hi: पुनः, बार-बार (अव्यय)
+      gloss_kn: ಮತ್ತೆ, ಮತ್ತೆ ಮತ್ತೆ
+      gloss_ml: വീണ്ടും, പലവുരു
+      gloss_mr: पुनः, वारंवार
+      gloss_or: ପୁନର୍ବାର, ବାରମ୍ବାର
+      gloss_pa: ਫਿਰ, ਵਾਰ-ਵਾਰ
+      gloss_ta: மறுபடியும், பலமுறை
+      gloss_te: మరల, మరల (అవ్యయం)
     - word: स्फुटतरः
       iast: sphuṭataraḥ
       gloss_en: "more distinct"
@@ -6684,6 +9234,21 @@ chapters:
       gloss_pa: ਹੋਰ ਸਪਸ਼ਟ
       gloss_ta: இன்னும் தெளிவானது
       gloss_te: స్ఫుటతరము (మరింత స్పష్టమైనది)
+    - word: भाति
+      iast: bhāti
+      gloss_en: appears
+      morph: verb 3.sg.pres √bhā
+      gloss_as: প্ৰকাশিত হয়, ভাসমান হয় (বৰ্ত.এক. √bhā)
+      gloss_bn: প্রকাশিত হয়, প্রতিভাত হয় (বর্ত.এক. √bhā)
+      gloss_gu: પ્રકાશિત થાય છે, ભાસે છે (વર્ત.એક. √bhā)
+      gloss_hi: प्रकाशित होता है, भासित होता है (वर्त. तृ.पु.एक. √भा)
+      gloss_kn: ಪ್ರಕಾಶಿಸುತ್ತದೆ, ಭಾಸಿಸುತ್ತದೆ (ವರ್ತ.ಏಕ. √bhā)
+      gloss_ml: പ്രകാശിക്കുന്നു, ഭാസിക്കുന്നു (വർത്ത.ഏക. √bhā)
+      gloss_mr: प्रकाशते, भासते (वर्त.एक. √bhā)
+      gloss_or: ପ୍ରକାଶିତ ହୁଏ, ଭାସିତ ହୁଏ (ବର୍ତ.ଏକ. √bhā)
+      gloss_pa: ਪ੍ਰਕਾਸ਼ਦਾ ਹੈ, ਭਾਸਦਾ ਹੈ (ਵਰਤ.ਇਕ. √bhā)
+      gloss_ta: ஒளிர்கிறது, தோன்றுகிறது (நிகழ்.எகவ. √bhā)
+      gloss_te: ప్రకాశిస్తుంది, భాసిస్తుంది (వర్త.ఏక. √bhā)
     - word: स्वबलोद्योगभावितः
       iast: sva-balodyoga-bhāvitaḥ
       gloss_en: "intensified by the exertion of one's own power"
@@ -6802,6 +9367,36 @@ chapters:
     iast: "tathā yat paramārthena yena yatra yathā sthitam / tat tathā balam ākramya na cirāt sampravartate //"
     meter: anuṣṭubh
     word_glosses:
+    - word: तथा
+      iast: tathā
+      gloss_en: likewise
+      morph: adv.
+      gloss_as: সেইদৰে, তথা
+      gloss_bn: তেমনি, সেইরূপ
+      gloss_gu: તેમ, એ જ રીતે
+      gloss_hi: तथा, उसी प्रकार (अव्यय)
+      gloss_kn: ಅಂತೆಯೇ, ಆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അപ്രകാരം, അതുപോലെ
+      gloss_mr: तसेच, त्याचप्रमाणे
+      gloss_or: ତଥା, ସେହିପରି
+      gloss_pa: ਉਸੇ ਤਰ੍ਹਾਂ, ਤਥਾ
+      gloss_ta: அவ்வாறே, அதுபோல
+      gloss_te: అట్లే, తథా
+    - word: यत्
+      iast: yat
+      gloss_en: what(ever)
+      morph: n.nom.sg rel. pron
+      gloss_as: যি (কিবা) — নপুং.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যা (কিছু) — ক্লীব.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે (કંઈ) — નપું.કર્તા.એક. સંબંધ
+      gloss_hi: जो (कुछ भी) — नपुं.कर्ता एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವುದು — ನಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: എന്ത് — നപു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जे (काही) — नपुं.कर्ता.एक. संबंध
+      gloss_or: ଯାହା (କିଛି) — ନପୁଂ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ ਕੁਝ — ਨਪੁੰ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எது, யாது — அல.எழ.எகவ. உறவு
+      gloss_te: ఏది (కూడా) — నపుం.కర్త.ఏక. సంబంధ
     - word: परमार्थेन
       iast: paramārthena
       gloss_en: "in highest truth"
@@ -6817,6 +9412,51 @@ chapters:
       gloss_pa: ਪਰਮਾਰਥ ਰੂਪ ਵਿੱਚ
       gloss_ta: பரமார்த்தத்தில்
       gloss_te: పరమార్థతః (పరమ సత్యమునందు)
+    - word: येन
+      iast: yena
+      gloss_en: by which (means)
+      morph: m.inst.sg rel. pron
+      gloss_as: যাৰ দ্বাৰা — পু.কৰণ.এক. সম্বন্ধ
+      gloss_bn: যার দ্বারা — পু.করণ.এক. সম্বন্ধ
+      gloss_gu: જેના વડે — પુ.કરણ.એક. સંબંધ
+      gloss_hi: जिसके द्वारा — पु.करण एक. सम्बन्धवाचक
+      gloss_kn: ಯಾವುದರಿಂದ — ಪು.ತೃತೀಯ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: എന്തുകൊണ്ട് — പു.തൃതീയ.ഏക. സംബന്ധ
+      gloss_mr: ज्याद्वारे — पु.करण.एक. संबंध
+      gloss_or: ଯାହାଦ୍ୱାରା — ପୁ.କରଣ.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਿਸ ਨਾਲ — ਪੁ.ਕਰਣ.ਇਕ. ਸੰਬੰਧ
+      gloss_ta: எதனால் — ஆ.கருவி.எகவ. உறவு
+      gloss_te: దేనిచేత — పు.తృతీయ.ఏక. సంబంధ
+    - word: यत्र
+      iast: yatra
+      gloss_en: in which (place)
+      morph: rel. adv.
+      gloss_as: য'ত, যি (অৱস্থাত) — সম্বন্ধবাচক
+      gloss_bn: যেখানে, যে (অবস্থায়) — সম্বন্ধবাচক
+      gloss_gu: જ્યાં, જે (અવસ્થામાં) — સંબંધવાચક
+      gloss_hi: जहाँ, जिस (अवस्था) में (सम्बन्धवाचक अव्यय)
+      gloss_kn: ಎಲ್ಲಿ, ಯಾವ (ಸ್ಥಿತಿಯಲ್ಲಿ) — ಸಂಬಂಧ-ಕ್ರಿ.
+      gloss_ml: എവിടെ, ഏത് (അവസ്ഥയിൽ) — സംബന്ധ-ക്രി.
+      gloss_mr: जिथे, ज्या (अवस्थेत) — संबंधवाचक
+      gloss_or: ଯେଉଁଠାରେ, ଯେଉଁ (ଅବସ୍ଥାରେ) — ସମ୍ବନ୍ଧବାଚକ
+      gloss_pa: ਜਿੱਥੇ, ਜਿਸ (ਅਵਸਥਾ ਵਿਚ) — ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எங்கே, எந்த (நிலையில்) — உறவு வினையடை
+      gloss_te: ఎక్కడ, ఏ (స్థితిలో) — సంబంధ క్రియావిశేషణం
+    - word: यथा
+      iast: yathā
+      gloss_en: in which manner
+      morph: rel. adv.
+      gloss_as: যেনেকৈ, যি দৰে — সম্বন্ধবাচক
+      gloss_bn: যেমন, যেভাবে — সম্বন্ধবাচক
+      gloss_gu: જેમ, જે રીતે — સંબંધવાચક
+      gloss_hi: जैसे, जिस प्रकार (सम्बन्धवाचक अव्यय)
+      gloss_kn: ಹೇಗೆ, ಯಾವ ರೀತಿಯಲ್ಲಿ — ಸಂಬಂಧವಾಚಕ
+      gloss_ml: എങ്ങനെ, ഏതുപ്രകാരം — സംബന്ധവാചകം
+      gloss_mr: जसे, ज्या प्रकारे — संबंधवाचक
+      gloss_or: ଯେପରି, ଯେଉଁ ପ୍ରକାରେ — ସମ୍ବନ୍ଧବାଚକ
+      gloss_pa: ਜਿਵੇਂ, ਜਿਸ ਤਰ੍ਹਾਂ — ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவ்வாறு, எப்படி — உறவு வினையடை
+      gloss_te: ఎలా, ఏ విధంగా — సంబంధ క్రియావిశేషణం
     - word: स्थितम्
       iast: sthitam
       gloss_en: "established"
@@ -6832,6 +9472,36 @@ chapters:
       gloss_pa: ਟਿਕਿਆ ਹੋਇਆ
       gloss_ta: நிலைபெற்றுள்ளது
       gloss_te: స్థితము (నెలకొనియున్నది)
+    - word: तत्
+      iast: tat
+      gloss_en: that
+      morph: n.nom.sg pron
+      gloss_as: সেইটো — নপুং.কৰ্তা.এক.
+      gloss_bn: সেটি — ক্লীব.কর্তা.এক.
+      gloss_gu: તે — નપું.કર્તા.એક.
+      gloss_hi: वह — नपुं.कर्ता एक. सर्वनाम
+      gloss_kn: ಅದು — ನಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് — നപു.കർത്താ.ഏക.
+      gloss_mr: ते — नपुं.कर्ता.एक.
+      gloss_or: ତାହା — ନପୁଂ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਨਪੁੰ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது — அல.எழ.எகவ.
+      gloss_te: అది — నపుం.కర్త.ఏక.
+    - word: तथा
+      iast: tathā
+      gloss_en: so, in that manner
+      morph: adv.
+      gloss_as: সেইদৰে, তথা
+      gloss_bn: তেমনি, সেইরূপ
+      gloss_gu: તેમ, એ જ રીતે
+      gloss_hi: तथा, उसी प्रकार (अव्यय)
+      gloss_kn: ಅಂತೆಯೇ, ಆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അപ്രകാരം, അതുപോലെ
+      gloss_mr: तसेच, त्याचप्रमाणे
+      gloss_or: ତଥା, ସେହିପରି
+      gloss_pa: ਉਸੇ ਤਰ੍ਹਾਂ, ਤਥਾ
+      gloss_ta: அவ்வாறே, அதுபோல
+      gloss_te: అట్లే, తథా
     - word: बलम् आक्रम्य
       iast: balam ākramya
       gloss_en: "having taken hold of (Spanda) power"
@@ -6995,6 +9665,21 @@ chapters:
       gloss_pa: ਕਮਜ਼ੋਰ
       gloss_ta: பலவீனன்
       gloss_te: దుర్బలుడు (బలహీనుడు)
+    - word: अपि
+      iast: api
+      gloss_en: even
+      morph: indecl.
+      gloss_as: ও, এনেকি (অব্যয়)
+      gloss_bn: ও, এমনকি (অব্যয়)
+      gloss_gu: પણ, કૂદાં (અવ્યય)
+      gloss_hi: भी (अव्यय)
+      gloss_kn: ಸಹ, ಕೂಡ (ಅವ್ಯಯ)
+      gloss_ml: എങ്കിലും, പോലും (അവ്യയം)
+      gloss_mr: देखील, सुद्धा (अव्यय)
+      gloss_or: ମଧ୍ୟ, କୁଆଡ଼େ (ଅବ୍ୟୟ)
+      gloss_pa: ਵੀ, ਭਾਵੇਂ (ਅਵ੍ਯ.)
+      gloss_ta: கூட, ஆகவும் (இடைச்சொல்)
+      gloss_te: కూడా, అపి (అవ్యయం)
     - word: तत् आक्रम्य
       iast: tat ākramya
       gloss_en: "taking hold of that"
@@ -7010,6 +9695,21 @@ chapters:
       gloss_pa: ਉਸ (ਸਪੰਦ) ਦਾ ਆਸਰਾ ਲੈ ਕੇ
       gloss_ta: அதைப் பற்றிக்கொண்டு
       gloss_te: దానిని (స్పందమును) ఆక్రమించి
+    - word: यतः
+      iast: yataḥ
+      gloss_en: since
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
     - word: कार्ये
       iast: kārye
       gloss_en: "in (his) task"
@@ -7055,6 +9755,51 @@ chapters:
       gloss_pa: ਭੁੱਖ ਨੂੰ ਢੱਕ ਲਵੇ
       gloss_ta: பசியை அடக்குவான்
       gloss_te: బుభుక్షను (ఆకలిని) అణచును
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
+    - word: तथा
+      iast: tathā
+      gloss_en: likewise, just as
+      morph: adv.
+      gloss_as: সেইদৰে, তথা
+      gloss_bn: তেমনি, সেইরূপ
+      gloss_gu: તેમ, એ જ રીતે
+      gloss_hi: तथा, उसी प्रकार (अव्यय)
+      gloss_kn: ಅಂತೆಯೇ, ಆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അപ്രകാരം, അതുപോലെ
+      gloss_mr: तसेच, त्याचप्रमाणे
+      gloss_or: ତଥା, ସେହିପରି
+      gloss_pa: ਉਸੇ ਤਰ੍ਹਾਂ, ਤਥਾ
+      gloss_ta: அவ்வாறே, அதுபோல
+      gloss_te: అట్లే, తథా
+    - word: यः
+      iast: yaḥ
+      gloss_en: who(ever)
+      morph: m.nom.sg rel. pron
+      gloss_as: যিজন — পু.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যিনি, যে — পু.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે — પુ.કર્તા.એક. સંબંધ
+      gloss_hi: जो — पु.कर्ता एक. सम्बन्धवाचक सर्वनाम
+      gloss_kn: ಯಾರು — ಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ആര് — പു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जो — पु.कर्ता.एक. संबंधवाचक
+      gloss_or: ଯିଏ — ପୁ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவன், யார் — ஆ.எழ.எகவ. உறவு
+      gloss_te: ఎవడు, ఎవరు — పు.కర్త.ఏక. సంబంధ
     - word: अतिबुभुक्षितः
       iast: ati-bubhukṣitaḥ
       gloss_en: "extremely hungry"
@@ -7173,6 +9918,21 @@ chapters:
     iast: "anenādhiṣṭhite dehe yathā sarva-jñatādayaḥ / tathā svātmany adhiṣṭhānāt sarvatraivaṃ bhaviṣyati //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अनेन
+      iast: anena
+      gloss_en: by this (Spanda principle)
+      morph: n.inst.sg pron
+      gloss_as: ইয়াৰ দ্বাৰা (স্পন্দ তত্ত্ব) — নপুং.কৰণ.এক.
+      gloss_bn: এর দ্বারা (স্পন্দ তত্ত্ব) — ক্লীব.করণ.এক.
+      gloss_gu: આના (સ્પંદ તત્ત્વ) વડે — નપું.કરણ.એક.
+      gloss_hi: इस (स्पन्द तत्त्व) के द्वारा — नपुं.करण एक.
+      gloss_kn: ಇದರಿಂದ (ಸ್ಪಂದ ತತ್ತ್ವ) — ನಪು.ತೃತೀಯ.ಏಕ.
+      gloss_ml: ഇതുകൊണ്ട് (സ്പന്ദ തത്ത്വം) — നപു.തൃതീയ.ഏക.
+      gloss_mr: याद्वारे (स्पंद तत्त्व) — नपुं.करण.एक.
+      gloss_or: ଏହାଦ୍ୱାରା (ସ୍ପନ୍ଦ ତତ୍ତ୍ୱ) — ନପୁଂ.କରଣ.ଏକ.
+      gloss_pa: ਇਸ (ਸਪੰਦ ਤੱਤ) ਦੁਆਰਾ — ਨਪੁੰ.ਕਰਣ.ਇਕ.
+      gloss_ta: இதனால் (ஸ்பந்த தத்துவத்தால்) — அல.கருவி.எகவ.
+      gloss_te: దీనిచేత (స్పందతత్త్వం) — నపుం.తృతీయ.ఏక.
     - word: अधिष्ठिते देहे
       iast: adhiṣṭhite dehe
       gloss_en: "in the body presided over (by Spanda)"
@@ -7188,6 +9948,21 @@ chapters:
       gloss_pa: ਇਸ (ਸਪੰਦ) ਦੁਆਰਾ ਅਧਿਸ਼ਠਿਤ ਦੇਹ ਵਿੱਚ
       gloss_ta: (ஸ்பந்தத்தால்) ஆட்சிசெய்யப்பட்ட உடலில்
       gloss_te: (స్పందము చేత) అధిష్ఠితమైన దేహమునందు
+    - word: यथा
+      iast: yathā
+      gloss_en: just as
+      morph: rel. adv.
+      gloss_as: যেনেকৈ, যি দৰে — সম্বন্ধবাচক
+      gloss_bn: যেমন, যেভাবে — সম্বন্ধবাচক
+      gloss_gu: જેમ, જે રીતે — સંબંધવાચક
+      gloss_hi: जैसे, जिस प्रकार (सम्बन्धवाचक अव्यय)
+      gloss_kn: ಹೇಗೆ, ಯಾವ ರೀತಿಯಲ್ಲಿ — ಸಂಬಂಧವಾಚಕ
+      gloss_ml: എങ്ങനെ, ഏതുപ്രകാരം — സംബന്ധവാചകം
+      gloss_mr: जसे, ज्या प्रकारे — संबंधवाचक
+      gloss_or: ଯେପରି, ଯେଉଁ ପ୍ରକାରେ — ସମ୍ବନ୍ଧବାଚକ
+      gloss_pa: ਜਿਵੇਂ, ਜਿਸ ਤਰ੍ਹਾਂ — ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவ்வாறு, எப்படி — உறவு வினையடை
+      gloss_te: ఎలా, ఏ విధంగా — సంబంధ క్రియావిశేషణం
     - word: सर्वज्ञतादयः
       iast: sarva-jñatādayaḥ
       gloss_en: "omniscience and the rest"
@@ -7203,6 +9978,21 @@ chapters:
       gloss_pa: ਸਰਵਗਿਆਤਾ ਆਦਿ
       gloss_ta: சர்வஞ்ஞத்துவம் முதலியவை
       gloss_te: సర్వజ్ఞతాది (సర్వజ్ఞత్వము మొదలగు శక్తులు)
+    - word: तथा
+      iast: tathā
+      gloss_en: so
+      morph: adv.
+      gloss_as: সেইদৰে, তথা
+      gloss_bn: তেমনি, সেইরূপ
+      gloss_gu: તેમ, એ જ રીતે
+      gloss_hi: तथा, उसी प्रकार (अव्यय)
+      gloss_kn: ಅಂತೆಯೇ, ಆ ರೀತಿಯಲ್ಲಿ
+      gloss_ml: അപ്രകാരം, അതുപോലെ
+      gloss_mr: तसेच, त्याचप्रमाणे
+      gloss_or: ତଥା, ସେହିପରି
+      gloss_pa: ਉਸੇ ਤਰ੍ਹਾਂ, ਤਥਾ
+      gloss_ta: அவ்வாறே, அதுபோல
+      gloss_te: అట్లే, తథా
     - word: स्वात्मनि अधिष्ठानात्
       iast: svātmany adhiṣṭhānāt
       gloss_en: "by presiding over one's own Self"
@@ -7248,6 +10038,21 @@ chapters:
       gloss_pa: ਇਸੇ ਤਰ੍ਹਾਂ
       gloss_ta: அப்படியே
       gloss_te: ఏవం (ఈ విధముగా, అట్లే)
+    - word: भविष्यति
+      iast: bhaviṣyati
+      gloss_en: will come to be
+      morph: verb 3.sg.fut √bhū
+      gloss_as: হ'ব (ভৱি.এক. √bhū)
+      gloss_bn: হবে (ভবি.এক. √bhū)
+      gloss_gu: થશે (ભવિ.એક. √bhū)
+      gloss_hi: होगा (भविष्यत् काल, तृ.पु.एक. √भू)
+      gloss_kn: ಆಗುತ್ತದೆ, ಆಗಲಿರುತ್ತದೆ (ಭವಿ.ಏಕ. √bhū)
+      gloss_ml: ആകും (ഭവി.ഏക. √bhū)
+      gloss_mr: होईल (भवि.एक. √bhū)
+      gloss_or: ହେବ (ଭବି.ଏକ. √bhū)
+      gloss_pa: ਹੋਵੇਗਾ (ਭਵਿ.ਇਕ. √bhū)
+      gloss_ta: ஆகும், நடைபெறும் (எதிர்.எகவ. √bhū)
+      gloss_te: అగును, జరుగును (భవి.ఏక. √bhū)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -7381,6 +10186,51 @@ chapters:
       gloss_pa: ਚੋਰ (ਲੁੱਟਣ ਵਾਲੀ)
       gloss_ta: கொள்ளைக்காரன் / திருடி
       gloss_te: విలుంఠిక (దోచుకొనెడిది)
+    - word: देहे
+      iast: dehe
+      gloss_en: in the body
+      morph: m.loc.sg
+      gloss_as: দেহত — পু.সপ্ত.এক.
+      gloss_bn: দেহে — পু.সপ্ত.এক.
+      gloss_gu: દેહમાં — પુ.સપ્ત.એક.
+      gloss_hi: देह में — पु.अधि. एक.
+      gloss_kn: ದೇಹದಲ್ಲಿ — ಪು.ಸಪ್ತ.ಏಕ.
+      gloss_ml: ദേഹത്തിൽ — പു.സപ്ത.ഏക.
+      gloss_mr: देहात — पु.सप्त.एक.
+      gloss_or: ଦେହରେ — ପୁ.ସପ୍ତ.ଏକ.
+      gloss_pa: ਦੇਹ ਵਿਚ — ਪੁ.ਸੱਤਵੀਂ.ਇਕ.
+      gloss_ta: உடலில் — ஆ.ஏழா.எகவ.
+      gloss_te: దేహంలో — పు.సప్తమి.ఏక.
+    - word: तस्याः
+      iast: tasyāḥ
+      gloss_en: of it (glāni)
+      morph: f.gen.sg pron
+      gloss_as: তাৰ (গ্লানিৰ) — স্ত্ৰী.ষষ্ঠী.এক.
+      gloss_bn: তার (গ্লানির) — স্ত্রী.ষষ্ঠী.এক.
+      gloss_gu: તેની (ગ્લાનિની) — સ્ત્રી.ષષ્ઠી.એક.
+      gloss_hi: उस (ग्लानि) का — स्त्री.षष्ठी एक.
+      gloss_kn: ಅದರ (ಗ್ಲಾನಿಯ) — ಸ್ತ್ರೀ.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: അതിന്റെ (ഗ്ലാനിയുടെ) — സ്ത്രീ.ഷഷ്ഠീ.ഏക.
+      gloss_mr: तिचे (ग्लानीचे) — स्त्री.षष्ठी.एक.
+      gloss_or: ତାହାର (ଗ୍ଲାନିର) — ସ୍ତ୍ରୀ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸ (ਗਲਾਨੀ) ਦਾ — ਇਸਤ੍ਰੀ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அதன் (க்லானியின்) — பெ.ஆறா.எகவ.
+      gloss_te: దాని (గ్లాని) యొక్క — స్త్రీ.షష్ఠీ.ఏక.
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: अज्ञानतः
       iast: ajñānataḥ
       gloss_en: "from ignorance"
@@ -7426,6 +10276,66 @@ chapters:
       gloss_pa: ਉਸ (ਸਪੰਦ) ਦੇ ਉਨਮੇਸ਼ ਨਾਲ ਨਾਸ਼
       gloss_ta: அந்த (ஸ்பந்த) உன்மேஷத்தினால் அழிக்கப்பட்டது
       gloss_te: ఆ (స్పంద) ఉన్మేషముచేత విలుప్తము (నాశనమైనది)
+    - word: चेत्
+      iast: cet
+      gloss_en: if
+      morph: indecl.
+      gloss_as: যদি (শৰ্তবাচক)
+      gloss_bn: যদি (শর্তার্থক)
+      gloss_gu: જો (શરતાર્થક)
+      gloss_hi: यदि (शर्तार्थक अव्यय)
+      gloss_kn: ಒಂದು ವೇಳೆ (ಶರ್ತಾರ್ಥಕ)
+      gloss_ml: എങ്കിൽ (ശർത്താർത്ഥകം)
+      gloss_mr: जर (शर्तार्थक)
+      gloss_or: ଯଦି (ଶର୍ତ୍ତାର୍ଥକ)
+      gloss_pa: ਜੇਕਰ (ਸ਼ਰਤੀ)
+      gloss_ta: எனில் (நிபந்தனை)
+      gloss_te: ఒకవేళ, యదుర (షర్తార్థక)
+    - word: कुतः
+      iast: kutaḥ
+      gloss_en: whence?
+      morph: interrog. adv.
+      gloss_as: ক'ৰ পৰা? (অৰ্থাৎ ক'ৰ পৰাও নহয়) — প্ৰশ্নাৰ্থক
+      gloss_bn: কোথা থেকে? (অর্থাৎ কোথাও থেকে নয়) — প্রশ্নবাচক
+      gloss_gu: ક્યાંથી? (એટલે કે ક્યાંયથી નહીં) — પ્રશ્નાર્થક
+      gloss_hi: कहाँ से? (अर्थात् कहीं से नहीं) — प्रश्नवाचक अव्यय
+      gloss_kn: ಎಲ್ಲಿಂದ? (ಎಲ್ಲಿಂದಲೂ ಅಲ್ಲ) — ಪ್ರಶ್ನಾರ್ಥಕ
+      gloss_ml: എവിടെനിന്ന്? (എവിടെനിന്നുമല്ല) — പ്രശ്നാർത്ഥകം
+      gloss_mr: कुठून? (म्हणजेच कुठूनच नाही) — प्रश्नवाचक
+      gloss_or: କେଉଁଠାରୁ? (ଅର୍ଥାତ୍ କୁଆଡ଼ୁ ନୁହେଁ) — ପ୍ରଶ୍ନାର୍ଥକ
+      gloss_pa: ਕਿੱਥੋਂ? (ਅਰਥਾਤ ਕਿਤੋਂ ਵੀ ਨਹੀਂ) — ਪ੍ਰਸ਼ਨਾਰਥਕ
+      gloss_ta: எங்கிருந்து? (அதாவது எங்கிருந்தும் இல்லை) — வினா
+      gloss_te: ఎక్కడినుండి? (అంటే ఎక్కడినుండీ కాదు) — ప్రశ్నార్థక
+    - word: सा
+      iast: sā
+      gloss_en: it (glāni)
+      morph: f.nom.sg pron
+      gloss_as: সেইটো (গ্লানি) — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: সেই (গ্লানি) — স্ত্রী.কর্তা.এক.
+      gloss_gu: તે (ગ્લાનિ) — સ્ત્રી.કર્તા.એક.
+      gloss_hi: वह (ग्लानि) — स्त्री.कर्ता एक.
+      gloss_kn: ಅದು (ಗ್ಲಾನಿ) — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: അത് (ഗ്ലാനി) — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ती (ग्लानी) — स्त्री.कर्ता.एक.
+      gloss_or: ତାହା (ଗ୍ଲାନି) — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ (ਗਲਾਨੀ) — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அது (க்லானி) — பெ.எழ.எகவ.
+      gloss_te: అది (గ్లాని) — స్త్రీ.కర్త.ఏక.
+    - word: स्यात्
+      iast: syāt
+      gloss_en: would arise
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: अहेतुका
       iast: ahetukā
       gloss_en: "without cause"
@@ -7559,6 +10469,36 @@ chapters:
       gloss_pa: ਇੱਕ ਚਿੰਤਨ ਵਿੱਚ ਲੀਨ ਦਾ
       gloss_ta: ஒரே சிந்தனையில் ஆழ்ந்தவனின்
       gloss_te: ఏక చింతయందు ప్రసక్తుడైనవాని యొక్క (ఒక ఆలోచనయందు లగ్నుడైనవాని)
+    - word: यतः
+      iast: yataḥ
+      gloss_en: from which
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
+    - word: स्यात्
+      iast: syāt
+      gloss_en: would be
+      morph: verb 3.sg.opt √as
+      gloss_as: হওক, হ'ব পাৰে (বিধি.এক. √as)
+      gloss_bn: হোক, হতে পারে (বিধি.এক. √as)
+      gloss_gu: હોય, હોઈ શકે (વિધિ.એક. √as)
+      gloss_hi: हो, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √अस्)
+      gloss_kn: ಆಗಬಹುದು, ಇರಲಿ (ವಿಧಿ.ಏಕ. √as)
+      gloss_ml: ആകട്ടെ, ആകാം (വിധി.ഏക. √as)
+      gloss_mr: असो, असू शकते (विधि.एक. √as)
+      gloss_or: ହେଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √as)
+      gloss_pa: ਹੋਵੇ, ਹੋ ਸਕਦਾ ਹੈ (ਵਿਧੀ.ਇਕ. √as)
+      gloss_ta: ஆகலாம், இருக்கட்டும் (வேண்டுகோள். எகவ. √as)
+      gloss_te: అవవచ్చు, అగుగాక (విధిలింగ్.ఏక. √as)
     - word: अपरोदयः
       iast: aparodayaḥ
       gloss_en: "the arising of another (thought)"
@@ -7574,6 +10514,36 @@ chapters:
       gloss_pa: ਕਿਸੇ ਹੋਰ (ਚਿੰਤਨ) ਦਾ ਉਦੈ
       gloss_ta: வேறொன்றின் தோற்றம்
       gloss_te: అపరోదయము (వేరొక ఆలోచన ఉద్భవము)
+    - word: सः
+      iast: saḥ
+      gloss_en: that
+      morph: m.nom.sg pron
+      gloss_as: তেওঁ, সি — পু.কৰ্তা.এক.
+      gloss_bn: সে, তিনি — পু.কর্তা.এক.
+      gloss_gu: તે — પુ.કર્તા.એક.
+      gloss_hi: वह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಅವನು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അവൻ — പു.കർത്താ.ഏക.
+      gloss_mr: तो — पु.कर्ता.एक.
+      gloss_or: ସେ — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அவன் — ஆ.எழ.எகவ.
+      gloss_te: అతడు — పు.కర్త.ఏక.
+    - word: तु
+      iast: tu
+      gloss_en: indeed
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
     - word: उन्मेषः
       iast: unmeṣaḥ
       gloss_en: "the unmeṣa (opening / flashing forth)"
@@ -7604,6 +10574,36 @@ chapters:
       gloss_pa: ਜਾਣਨ-ਯੋਗ
       gloss_ta: அறியப்பட வேண்டியது
       gloss_te: విజ్ఞేయము (తెలియదగినది)
+    - word: स्वयम्
+      iast: svayam
+      gloss_en: by oneself
+      morph: indecl.
+      gloss_as: নিজে, স্বয়ং
+      gloss_bn: স্বয়ং, নিজেই
+      gloss_gu: સ્વયં, જાતે
+      gloss_hi: स्वयं, अपने आप (अव्यय)
+      gloss_kn: ಸ್ವಯಂ, ತಾನಾಗಿಯೇ
+      gloss_ml: സ്വയം, തനിയെ
+      gloss_mr: स्वतः, आपणहून
+      gloss_or: ସ୍ୱୟଂ, ନିଜେ
+      gloss_pa: ਆਪ, ਆਪਣੇ-ਆਪ
+      gloss_ta: தாமாகவே, தன்னிச்சையாக
+      gloss_te: స్వయంగా, తానంతటతానే
+    - word: तम्
+      iast: tam
+      gloss_en: it (unmeṣa)
+      morph: m.acc.sg pron
+      gloss_as: তাক (উন্মেষ) — পু.কৰ্ম.এক.
+      gloss_bn: তাকে (উন্মেষ) — পু.কর্ম.এক.
+      gloss_gu: તેને (ઉન્મેષને) — પુ.કર્મ.એક.
+      gloss_hi: उस को (उन्मेष) — पु.कर्म एक.
+      gloss_kn: ಅದನ್ನು (ಉನ್ಮೇಷ) — ಪು.ಕರ್ಮ.ಏಕ.
+      gloss_ml: അതിനെ (ഉന്മേഷം) — പു.കർമ്മ.ഏക.
+      gloss_mr: त्याला (उन्मेषाला) — पु.कर्म.एक.
+      gloss_or: ତାହାକୁ (ଉନ୍ମେଷ) — ପୁ.କର୍ମ.ଏକ.
+      gloss_pa: ਉਸਨੂੰ (ਉਨਮੇਸ਼) — ਪੁ.ਕਰਮ.ਇਕ.
+      gloss_ta: அதை (உன்மேஷத்தை) — ஆ.செய.எகவ.
+      gloss_te: దానిని (ఉన్మేషాన్ని) — పు.కర్మ.ఏక.
     - word: उपलक्षयेत्
       iast: upalakṣayet
       gloss_en: "one should observe"
@@ -7722,6 +10722,21 @@ chapters:
     iast: "ato vindur ato nādo rūpam asmād ato rasaḥ / pravartante 'cireṇaiva kṣobhakatvena dehinaḥ //"
     meter: anuṣṭubh
     word_glosses:
+    - word: अतः
+      iast: ataḥ
+      gloss_en: from this (unmeṣa)
+      morph: abl. adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
     - word: विन्दुः
       iast: vinduḥ
       gloss_en: "bindu (a point of light)"
@@ -7737,6 +10752,21 @@ chapters:
       gloss_pa: ਬਿੰਦੁ (ਪ੍ਰਕਾਸ਼-ਬਿੰਦੁ)
       gloss_ta: பிந்து (ஒளிப் புள்ளி)
       gloss_te: విందువు (వెలుగు బిందువు)
+    - word: अतः
+      iast: ataḥ
+      gloss_en: from this
+      morph: abl. adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
     - word: नादः
       iast: nādaḥ
       gloss_en: "inner sound"
@@ -7767,6 +10797,36 @@ chapters:
       gloss_pa: ਰੂਪ
       gloss_ta: ரூபம்/நிறம்
       gloss_te: రూపము (ఆకారము/వర్ణము)
+    - word: अस्मात्
+      iast: asmāt
+      gloss_en: from this
+      morph: n.abl.sg pron
+      gloss_as: ইয়াৰ পৰা — নপুং.পঞ্চমী.এক.
+      gloss_bn: এই থেকে — নপুং.পঞ্চমী.এক.
+      gloss_gu: આનાથી — નપું.પંચમી.એક.
+      gloss_hi: इससे (नपुं.पञ्चमी एक. सर्वनाम)
+      gloss_kn: ಇದರಿಂದ — ನಪು.ಪಂಚಮಿ.ಏಕ.
+      gloss_ml: ഇതിൽനിന്ന് — നപു.പഞ്ചമീ.ഏക.
+      gloss_mr: यापासून — नपुं.पंचमी.एक.
+      gloss_or: ଏହାରୁ — ନପୁଂ.ପଞ୍ଚମୀ.ଏକ.
+      gloss_pa: ਇਸ ਤੋਂ — ਨਪੁੰ.ਪੰਚਮੀ.ਇਕ.
+      gloss_ta: இதிலிருந்து — அல.ஐந்தாம் வேற்.எகவ.
+      gloss_te: దీనినుండి — నపుం.పంచమి.ఏక.
+    - word: अतः
+      iast: ataḥ
+      gloss_en: from this
+      morph: abl. adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
     - word: रसः
       iast: rasaḥ
       gloss_en: "taste (subtle)"
@@ -7782,6 +10842,36 @@ chapters:
       gloss_pa: ਰਸ (ਸੂਖਮ ਸੁਆਦ)
       gloss_ta: ரசம் (சூட்சும சுவை)
       gloss_te: రసము (సూక్ష్మ రుచి)
+    - word: प्रवर्तन्ते
+      iast: pravartante
+      gloss_en: arise, set forth
+      morph: verb 3.pl.pres.mid √pra-vṛt
+      gloss_as: প্ৰৱৰ্তিত হয়, উদ্যত হয় (বৰ্ত.বহু. √pra-vṛt)
+      gloss_bn: প্রবৃত্ত হয়, উদ্যত হয় (বর্ত.বহু. √pra-vṛt)
+      gloss_gu: પ્રવર્તે છે, ઉદ્યત થાય છે (વર્ત.બહુ. √pra-vṛt)
+      gloss_hi: प्रवृत्त होती हैं, उद्यत होती हैं (वर्त. तृ.पु.बहु., √प्र-वृत्)
+      gloss_kn: ಪ್ರವರ್ತಿಸುತ್ತವೆ, ಉದ್ಯುಕ್ತವಾಗುತ್ತವೆ (ವರ್ತ.ಬಹು. √pra-vṛt)
+      gloss_ml: പ്രവൃത്തമാകുന്നു, ഉദ്യമിക്കുന്നു (വർത്ത.ബഹു. √pra-vṛt)
+      gloss_mr: प्रवृत्त होतात, उद्यत होतात (वर्त.बहु. √pra-vṛt)
+      gloss_or: ପ୍ରବର୍ତ୍ତିତ ହୁଅନ୍ତି, ଉଦ୍ୟତ ହୁଅନ୍ତି (ବର୍ତ.ବହୁ. √pra-vṛt)
+      gloss_pa: ਪ੍ਰਵਰਤਦੇ ਹਨ, ਉਦ੍ਯਤ ਹੁੰਦੇ ਹਨ (ਵਰਤ.ਬਹੁ. √pra-vṛt)
+      gloss_ta: தொடங்குகின்றன, செயலில் இறங்குகின்றன (நிகழ்.பன். √pra-vṛt)
+      gloss_te: ప్రవర్తిస్తున్నాయి, ఉద్యమిస్తున్నాయి (వర్త.బహు. √pra-vṛt)
+    - word: अचिरेण एव
+      iast: acireṇa eva
+      gloss_en: very quickly, before long
+      morph: adv. + emph.
+      gloss_as: শীঘ্ৰেই, বেছি দেৰি নকৰি
+      gloss_bn: শীঘ্রই, অচিরেই
+      gloss_gu: જલ્દી જ, શીઘ્ર
+      gloss_hi: शीघ्र ही, अचिर काल में (अव्यय)
+      gloss_kn: ಬೇಗನೆ, ಶೀಘ್ರವೇ
+      gloss_ml: വേഗത്തിൽ, അൽപ്പസമയത്തിനുള്ളിൽ
+      gloss_mr: लवकरच, अल्पकाळातच
+      gloss_or: ଶୀଘ୍ର ହିଁ, ଅଚିରେ
+      gloss_pa: ਜਲਦੀ ਹੀ, ਥੋੜੇ ਚਿਰ ਵਿਚ
+      gloss_ta: விரைவிலேயே, சீக்கிரமாக
+      gloss_te: త్వరలోనే, శీఘ్రమే
     - word: क्षोभकत्वेन
       iast: kṣobhakatvena
       gloss_en: "as agitating phenomena"
@@ -7797,6 +10887,21 @@ chapters:
       gloss_pa: ਖੌਫ਼ਲਾਉਣ ਵਾਲੇ ਅਨੁਭਵ ਵਜੋਂ
       gloss_ta: (மனத்தைக்) கலக்கும் நிகழ்வுகளாக
       gloss_te: క్షోభకత్వముతో (విక్షేపకారిగా)
+    - word: देहिनः
+      iast: dehinaḥ
+      gloss_en: for the embodied one
+      morph: m.gen.sg
+      gloss_as: দেহধাৰীৰ বাবে — পু.ষষ্ঠী.এক.
+      gloss_bn: দেহীর জন্য — পু.ষষ্ঠী.এক.
+      gloss_gu: દેહધારી માટે — પુ.ષષ્ઠી.એક.
+      gloss_hi: देहधारी के लिए — पु.षष्ठी एक.
+      gloss_kn: ದೇಹಿಗೆ — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ദേഹിക്കായി — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: देहधाऱ्यासाठी — पु.षष्ठी.एक.
+      gloss_or: ଦେହଧାରୀ ପାଇଁ — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਦੇਹਧਾਰੀ ਲਈ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: தேகிக்கு, உடலுடையோனுக்கு — ஆ.ஆறா.எகவ.
+      gloss_te: దేహధారికి — పు.షష్ఠీ.ఏక.
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -7915,6 +11020,21 @@ chapters:
       gloss_pa: ਵੇਖਣ ਦੀ ਇੱਛਾ ਨਾਲ
       gloss_ta: காண விழைவதனால் போல
       gloss_te: దిదృక్షచేత (చూచుటకు ఇచ్ఛచేత)
+    - word: इव
+      iast: iva
+      gloss_en: as if
+      morph: indecl.
+      gloss_as: যেন, দৰে (উপমাবাচক)
+      gloss_bn: যেন, মতো (উপমাবাচক)
+      gloss_gu: જેવું, માફક (ઉપમાવાચક)
+      gloss_hi: मानो, जैसे (तुलनार्थक अव्यय)
+      gloss_kn: ಹಾಗೆ, ಅಂತೆ (ಉಪಮಾವಾಚಕ)
+      gloss_ml: പോലെ, എന്നപോലെ (ഉപമാവ്യയം)
+      gloss_mr: जणू, सारखे (उपमावाचक)
+      gloss_or: ଯେପରି, ସଦୃଶ (ଉପମାବାଚକ)
+      gloss_pa: ਜਿਵੇਂ, ਮਾਨੋ (ਉਪਮਾਵਾਚਕ)
+      gloss_ta: போல, போன்று (உவம இடைச்சொல்)
+      gloss_te: వలె, లాగా (ఉపమ అవ్యయం)
     - word: सर्वार्थान् व्याप्य
       iast: sarvārthān vyāpya
       gloss_en: "pervading all objects"
@@ -7930,6 +11050,21 @@ chapters:
       gloss_pa: ਸਾਰੇ ਪਦਾਰਥਾਂ ਨੂੰ ਵਿਆਪ ਕੇ
       gloss_ta: அனைத்துப் பொருள்களையும் வியாபித்து
       gloss_te: సర్వార్థములను వ్యాపించి
+    - word: यदा
+      iast: yadā
+      gloss_en: when
+      morph: rel. adv.
+      gloss_as: যেতিয়া — কালবাচক সম্বন্ধ
+      gloss_bn: যখন — কালবাচক সম্বন্ধ
+      gloss_gu: જ્યારે — કાળવાચક સંબંધ
+      gloss_hi: जब (कालवाचक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾವಾಗ — ಕಾಲವಾಚಕ ಸಂಬಂಧ
+      gloss_ml: എപ്പോൾ — കാലവാചക സംബന്ധം
+      gloss_mr: जेव्हा — कालवाचक संबंध
+      gloss_or: ଯେତେବେଳେ — କାଳବାଚକ ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਦੋਂ — ਕਾਲਵਾਚਕ ਸੰਬੰਧ
+      gloss_ta: எப்போது — காலம் சார்ந்த உறவு
+      gloss_te: ఎప్పుడు — కాలవాచక సంబంధ
     - word: अवतिष्ठते
       iast: avatiṣṭhate
       gloss_en: "abides"
@@ -7945,6 +11080,21 @@ chapters:
       gloss_pa: ਟਿਕਦਾ ਹੈ
       gloss_ta: நிலைபெறுகிறது
       gloss_te: అవతిష్ఠించును (నెలకొనును)
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
     - word: किं बहुना उक्तेन
       iast: kiṃ bahunā uktena
       gloss_en: "what need of saying much"
@@ -7960,6 +11110,36 @@ chapters:
       gloss_pa: ਬਹੁਤ ਕਹਿਣ ਦੀ ਕੀ ਲੋੜ
       gloss_ta: அதிகம் கூறியதனால் என்ன பயன்
       gloss_te: ఎక్కువగా చెప్పనేల (అధికము చెప్పుట అనవసరము)
+    - word: स्वयम्
+      iast: svayam
+      gloss_en: by himself
+      morph: indecl.
+      gloss_as: নিজে, স্বয়ং
+      gloss_bn: স্বয়ং, নিজেই
+      gloss_gu: સ્વયં, જાતે
+      gloss_hi: स्वयं, अपने आप (अव्यय)
+      gloss_kn: ಸ್ವಯಂ, ತಾನಾಗಿಯೇ
+      gloss_ml: സ്വയം, തനിയെ
+      gloss_mr: स्वतः, आपणहून
+      gloss_or: ସ୍ୱୟଂ, ନିଜେ
+      gloss_pa: ਆਪ, ਆਪਣੇ-ਆਪ
+      gloss_ta: தாமாகவே, தன்னிச்சையாக
+      gloss_te: స్వయంగా, తానంతటతానే
+    - word: एव
+      iast: eva
+      gloss_en: indeed
+      morph: indecl.
+      gloss_as: ই, নিশ্চয়েই (নিশ্চয়াৰ্থক)
+      gloss_bn: ই, নিশ্চয়ই (নিশ্চয়ার্থক)
+      gloss_gu: જ, ચોક્કસપણે (નિશ્ચયાર્થક)
+      gloss_hi: ही, निश्चय ही (निश्चयार्थक अव्यय)
+      gloss_kn: ಮಾತ್ರ, ನಿಶ್ಚಯವಾಗಿ (ನಿಶ್ಚಯಾರ್ಥಕ)
+      gloss_ml: തന്നെ, നിശ്ചയമായും (നിശ്ചയാർത്ഥകം)
+      gloss_mr: च, निश्चितच (निश्चयार्थक)
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ (ନିଶ୍ଚୟାର୍ଥକ)
+      gloss_pa: ਹੀ, ਯਕੀਨਨ (ਨਿਸ਼ਚਯਾਰਥਕ)
+      gloss_ta: தான், மட்டுமே (உறுதி இடைச்சொல்)
+      gloss_te: మాత్రమే, నిశ్చయముగా (నిశ్చయార్థక)
     - word: अवभोत्स्यते
       iast: avabhotsyate
       gloss_en: "will be known/realised"
@@ -8093,6 +11273,21 @@ chapters:
       gloss_pa: ਪ੍ਰਬੁੱਧ (ਜਾਗ੍ਰਤ)
       gloss_ta: விழித்தவன் (பிரபுத்தன்)
       gloss_te: ప్రబుద్ధుడు (మేల్కొనినవాడు)
+    - word: सर्वदा
+      iast: sarvadā
+      gloss_en: always
+      morph: adv.
+      gloss_as: সৰ্বদা, প্ৰতিবাৰ
+      gloss_bn: সর্বদা, প্রতিনিয়ত
+      gloss_gu: સર્વદા, દરેક સમયે
+      gloss_hi: सर्वदा, हर समय (अव्यय)
+      gloss_kn: ಸರ್ವದಾ, ಪ್ರತಿಸಲವೂ
+      gloss_ml: സർവദാ, എപ്പോഴും
+      gloss_mr: सर्वदा, प्रत्येक वेळी
+      gloss_or: ସର୍ବଦା, ସବୁ ସମୟରେ
+      gloss_pa: ਸਰਵਦਾ, ਹਰ ਵੇਲੇ
+      gloss_ta: எக்காலத்திலும், எப்போதும்
+      gloss_te: సర్వదా, ప్రతిసారి
     - word: तिष्ठेत्
       iast: tiṣṭhet
       gloss_en: "should remain"
@@ -8153,6 +11348,51 @@ chapters:
       gloss_pa: ਇੱਕ (ਪਰਮ ਤੱਤ) ਵਿੱਚ ਆਰੋਪਿਤ ਕਰੇ
       gloss_ta: ஒன்றில் (எல்லாவற்றையும்) ஆரோபிக்க வேண்டும்
       gloss_te: ఏకత్రము నందు ఆరోపించవలెను (ఏకము నందు స్థాపించవలెను)
+    - word: सर्वम्
+      iast: sarvam
+      gloss_en: everything
+      morph: n.acc.sg
+      gloss_as: সকলোবোৰ — নপুং.কৰ্ম/কৰ্তা.এক.
+      gloss_bn: সব কিছু — ক্লীব.কর্ম/কর্তা.এক.
+      gloss_gu: બધું જ — નપું.કર્મ/કર્તા.એક.
+      gloss_hi: सब कुछ — नपुं.कर्म/कर्ता एक.
+      gloss_kn: ಸರ್ವ, ಎಲ್ಲವೂ — ನಪು.ಕರ್ಮ/ಕರ್ತ.ಏಕ.
+      gloss_ml: എല്ലാം — നപു.കർമ്മ/കർത്താ.ഏക.
+      gloss_mr: सर्व काही — नपुं.कर्म/कर्ता.एक.
+      gloss_or: ସବୁ କିଛି — ନପୁଂ.କର୍ମ/କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਸਭ ਕੁਝ — ਨਪੁੰ.ਕਰਮ/ਕਰਤਾ.ਇਕ.
+      gloss_ta: எல்லாமும் — அல.எழ./செய.எகவ.
+      gloss_te: సర్వం — నపుం.కర్మ/కర్త.ఏక.
+    - word: ततः
+      iast: tataḥ
+      gloss_en: thereafter, by that
+      morph: abl. adv.
+      gloss_as: তাৰ পৰা, তাৰ পিছত — পঞ্চমী-বাচক
+      gloss_bn: তা থেকে, তারপর — পঞ্চমী-বাচক
+      gloss_gu: તેનાથી, ત્યારબાદ — પંચમી-વાચક
+      gloss_hi: उससे, तदनन्तर (पञ्चमी-वाचक अव्यय)
+      gloss_kn: ಅದರಿಂದ, ಆಮೇಲೆ — ಪಂಚಮಿ-ವಾಚಕ
+      gloss_ml: അതിൽനിന്ന്, അനന്തരം — പഞ്ചമീവാചകം
+      gloss_mr: त्यापासून, मग — पंचमी-वाचक
+      gloss_or: ତାହାରୁ, ତତ୍ପରେ — ପଞ୍ଚମୀ-ବାଚକ
+      gloss_pa: ਉਸ ਤੋਂ, ਫਿਰ — ਪੰਚਮੀ-ਵਾਚਕ
+      gloss_ta: அதனால், பிறகு — ஐந்தாம் வேற்.வினையடை
+      gloss_te: దానివల్ల, తదనంతరం — పంచమ్యర్థక
+    - word: अन्येन
+      iast: anyena
+      gloss_en: by another (object)
+      morph: n.inst.sg pron
+      gloss_as: আন (বস্তু দ্বাৰা) — নপুং.কৰণ.এক.
+      gloss_bn: অন্য (কোনো বস্তু) দ্বারা — ক্লীব.করণ.এক.
+      gloss_gu: બીજા (વસ્તુ) વડે — નપું.કરણ.એક.
+      gloss_hi: किसी अन्य (वस्तु) के द्वारा — नपुं.करण एक.
+      gloss_kn: ಬೇರೊಂದು (ವಸ್ತುವಿನಿಂದ) — ನಪು.ತೃತೀಯ.ಏಕ.
+      gloss_ml: മറ്റൊരു (വസ്തുകൊണ്ട്) — നപു.തൃതീയ.ഏക.
+      gloss_mr: इतर (वस्तू) द्वारे — नपुं.करण.एक.
+      gloss_or: ଅନ୍ୟ (ବସ୍ତୁଦ୍ୱାରା) — ନପୁଂ.କରଣ.ଏକ.
+      gloss_pa: ਹੋਰ (ਚੀਜ਼) ਦੁਆਰਾ — ਨਪੁੰ.ਕਰਣ.ਇਕ.
+      gloss_ta: வேறு (ஒரு பொருளால்) — அல.கருவி.எகவ.
+      gloss_te: మరొక (వస్తువు)చేత — నపుం.తృతీయ.ఏక.
     - word: न पीड्यते
       iast: na pīḍyate
       gloss_en: "is not troubled"
@@ -8331,6 +11571,51 @@ chapters:
       gloss_pa: ਜਿਸ ਦਾ ਵਿਭਵ ਕਲਾ (ਸੀਮਿਤ ਸ਼ਕਤੀ) ਨਾਲ ਢੱਕਿਆ
       gloss_ta: கலையினால் (வரம்புசக்தியால்) மறைக்கப்பட்ட வைபவம் உடையவன்
       gloss_te: కళచేత విలుప్త వైభవుడు (కళ అను పరిమిత శక్తి చేత మహిమ కప్పబడినవాడు)
+    - word: गतः
+      iast: gataḥ
+      gloss_en: gone (to)
+      morph: m.nom.sg ppp √gam
+      gloss_as: যোৱা, প্ৰাপ্ত (পু.কৰ্তা.এক. ppp √gam)
+      gloss_bn: গত, প্রাপ্ত (পু.কর্তা.এক. ppp √gam)
+      gloss_gu: ગયેલો, પ્રાપ્ત (પુ.કર્તા.એક. ppp √gam)
+      gloss_hi: गया हुआ, प्राप्त (पु.कर्ता एक. ppp √गम्)
+      gloss_kn: ಹೋದ, ಪಡೆದ (ಪು.ಕರ್ತ.ಏಕ. ppp √gam)
+      gloss_ml: പോയ, പ്രാപിച്ച (പു.കർത്താ.ഏക. ppp √gam)
+      gloss_mr: गेलेला, प्राप्त (पु.कर्ता.एक. ppp √gam)
+      gloss_or: ଯାଇଥିବା, ପ୍ରାପ୍ତ (ପୁ.କର୍ତ୍ତା.ଏକ. ppp √gam)
+      gloss_pa: ਗਿਆ, ਪ੍ਰਾਪਤ (ਪੁ.ਕਰਤਾ.ਇਕ. ppp √gam)
+      gloss_ta: சென்ற, அடைந்த (ஆ.எழ.எகவ. எச்ச. √gam)
+      gloss_te: వెళ్ళిన, పొందిన (పు.కర్త.ఏక. ppp √gam)
+    - word: सन्
+      iast: san
+      gloss_en: being
+      morph: m.nom.sg pres.part √as
+      gloss_as: থাকি, বিদ্যমান (বৰ্ত.কৃ. পু.কৰ্তা.এক. √as)
+      gloss_bn: থাকতে থাকতে, বিদ্যমান (বর্ত.কৃ. পু.কর্তা.এক. √as)
+      gloss_gu: હોવા છતાં, વિદ્યમાન (વર્ત.કૃ. પુ.કર્તા.એક. √as)
+      gloss_hi: होते हुए, विद्यमान (वर्त. कृदन्त पु.कर्ता एक. √अस्)
+      gloss_kn: ಇರುತ್ತಾ, ವಿದ್ಯಮಾನ (ವರ್ತ.ಕೃ. ಪು.ಕರ್ತ.ಏಕ. √as)
+      gloss_ml: ഇരിക്കെ, വിദ്യമാനനായി (വർത്ത.കൃ. പു.കർത്താ.ഏക. √as)
+      gloss_mr: असताना, विद्यमान (वर्त.कृ. पु.कर्ता.एक. √as)
+      gloss_or: ଥାଇ, ବିଦ୍ୟମାନ (ବର୍ତ.କୃ. ପୁ.କର୍ତ୍ତା.ଏକ. √as)
+      gloss_pa: ਹੁੰਦੇ ਹੋਏ, ਮੌਜੂਦ (ਵਰਤ.ਕ੍ਰਿ. ਪੁ.ਕਰਤਾ.ਇਕ. √as)
+      gloss_ta: இருக்கும்போது, விளங்கும் (நிகழ். எச்ச. √as)
+      gloss_te: ఉంటూ, విద్యమానంగా (వర్త.కృ.పు.కర్త.ఏక. √as)
+    - word: सः
+      iast: saḥ
+      gloss_en: he
+      morph: m.nom.sg pron
+      gloss_as: তেওঁ, সি — পু.কৰ্তা.এক.
+      gloss_bn: সে, তিনি — পু.কর্তা.এক.
+      gloss_gu: તે — પુ.કર્તા.એક.
+      gloss_hi: वह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಅವನು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അവൻ — പു.കർത്താ.ഏക.
+      gloss_mr: तो — पु.कर्ता.एक.
+      gloss_or: ସେ — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அவன் — ஆ.எழ.எகவ.
+      gloss_te: అతడు — పు.కర్త.ఏక.
     - word: पशुः
       iast: paśuḥ
       gloss_en: "the bound soul (literally, beast)"
@@ -8346,6 +11631,21 @@ chapters:
       gloss_pa: ਪਸ਼ੁ (ਬੰਧਨ-ਯੁਕਤ ਜੀਵ)
       gloss_ta: பசு (கட்டுண்ட ஜீவன்)
       gloss_te: "పశువు (బద్ధ జీవుడు, అక్షరార్థము: 'పశువు')"
+    - word: स्मृतः
+      iast: smṛtaḥ
+      gloss_en: is called, is reckoned
+      morph: m.nom.sg ppp √smṛ
+      gloss_as: কোৱা হয়, গণনা কৰা হয় (পু.কৰ্তা.এক. ppp √smṛ)
+      gloss_bn: কথিত, পরিগণিত (পু.কর্তা.এক. ppp √smṛ)
+      gloss_gu: કહેવાય છે, ગણાય છે (પુ.કર્તા.એક. ppp √smṛ)
+      gloss_hi: कहा गया है, माना जाता है (पु.कर्ता एक. ppp √स्मृ)
+      gloss_kn: ಹೇಳಲಾಗಿದೆ, ಗಣಿಸಲಾಗುತ್ತದೆ (ಪು.ಕರ್ತ.ಏಕ. ppp √smṛ)
+      gloss_ml: പറയപ്പെടുന്നു, ഗണിക്കപ്പെടുന്നു (പു.കർത്താ.ഏക. ppp √smṛ)
+      gloss_mr: म्हटला आहे, मानला जातो (पु.कर्ता.एक. ppp √smṛ)
+      gloss_or: କୁହାଯାଏ, ଗଣିଆଯାଏ (ପୁ.କର୍ତ୍ତା.ଏକ. ppp √smṛ)
+      gloss_pa: ਕਿਹਾ ਜਾਂਦਾ ਹੈ, ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ (ਪੁ.ਕਰਤਾ.ਇਕ. ppp √smṛ)
+      gloss_ta: என்று கூறப்படுகிறான் (ஆ.எழ.எகவ. எச்ச. √smṛ)
+      gloss_te: చెప్పబడ్డాడు, పరిగణింపబడ్డాడు (పు.కర్త.ఏక. ppp √smṛ)
     translations:
     - lang: en
       translator: "public-domain composite"
@@ -8464,6 +11764,36 @@ chapters:
       gloss_pa: ਪਰਮ ਅੰਮ੍ਰਿਤ-ਰਸ ਦਾ ਨਾਸ਼
       gloss_ta: பரம-அமிர்த-ரசத்தின் இழப்பு
       gloss_te: పరామృత రసాపాయము (పరమ అమృత రసము నశించుట)
+    - word: तस्य
+      iast: tasya
+      gloss_en: of him (the paśu)
+      morph: m.gen.sg pron
+      gloss_as: সেই (পশুৰ) — পু.ষষ্ঠী.এক.
+      gloss_bn: সেই (পশুর) — পু.ষষ্ঠী.এক.
+      gloss_gu: તે (પશુનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (पशु) का — पु.षष्ठी एक.
+      gloss_kn: ಆ (ಪಶುವಿನ) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ആ (പശുവിന്റെ) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्या (पशूचे) — पु.षष्ठी.एक.
+      gloss_or: ସେହି (ପଶୁର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸ (ਪਸ਼ੂ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனின் (பசுவின்) — ஆ.ஆறா.எகவ.
+      gloss_te: ఆ (పశువు) యొక్క — పు.షష్ఠీ.ఏక.
+    - word: यः
+      iast: yaḥ
+      gloss_en: which
+      morph: m.nom.sg rel. pron
+      gloss_as: যিজন — পু.কৰ্তা.এক. সম্বন্ধ
+      gloss_bn: যিনি, যে — পু.কর্তা.এক. সম্বন্ধ
+      gloss_gu: જે — પુ.કર્તા.એક. સંબંધ
+      gloss_hi: जो — पु.कर्ता एक. सम्बन्धवाचक सर्वनाम
+      gloss_kn: ಯಾರು — ಪು.ಕರ್ತ.ಏಕ. ಸಂಬಂಧ
+      gloss_ml: ആര് — പു.കർത്താ.ഏക. സംബന്ധ
+      gloss_mr: जो — पु.कर्ता.एक. संबंधवाचक
+      gloss_or: ଯିଏ — ପୁ.କର୍ତ୍ତା.ଏକ. ସମ୍ବନ୍ଧ
+      gloss_pa: ਜੋ — ਪੁ.ਕਰਤਾ.ਇਕ. ਸੰਬੰਧਵਾਚਕ
+      gloss_ta: எவன், யார் — ஆ.எழ.எகவ. உறவு
+      gloss_te: ఎవడు, ఎవరు — పు.కర్త.ఏక. సంబంధ
     - word: प्रत्ययोद्भवः
       iast: pratyayodbhavaḥ
       gloss_en: "the rising of mental constructs"
@@ -8479,6 +11809,21 @@ chapters:
       gloss_pa: ਪ੍ਰਤਯਯਾਂ (ਮਾਨਸਿਕ ਸੰਕਲਪਾਂ) ਦਾ ਉਦੈ
       gloss_ta: மன-நிர்மாணங்களின் தோற்றம்
       gloss_te: ప్రత్యయోద్భవము (మానసిక వికల్పముల ఉద్భవము)
+    - word: तेन
+      iast: tena
+      gloss_en: by that (pratyayodbhava)
+      morph: m.inst.sg pron
+      gloss_as: তাৰ (প্ৰত্যয়োদ্ভৱ) দ্বাৰা — পু.কৰণ.এক.
+      gloss_bn: তার (প্রত্যয়োদ্ভব) দ্বারা — পু.করণ.এক.
+      gloss_gu: તેના (પ્રત્યયોદ્ભવ) વડે — પુ.કરણ.એક.
+      gloss_hi: उसके (प्रत्ययोद्भव के) द्वारा — पु.करण एक.
+      gloss_kn: ಅದರಿಂದ (ಪ್ರತ್ಯಯೋದ್ಭವ) — ಪು.ತೃತೀಯ.ಏಕ.
+      gloss_ml: അതുകൊണ്ട് (പ്രത്യയോദ്ഭവം) — പു.തൃതീയ.ഏക.
+      gloss_mr: त्याद्वारे (प्रत्ययोद्भव) — पु.करण.एक.
+      gloss_or: ତାହାଦ୍ୱାରା (ପ୍ରତ୍ୟୟୋଦ୍ଭବ) — ପୁ.କରଣ.ଏକ.
+      gloss_pa: ਉਸ (ਪ੍ਰਤ੍ਯਯੋਦਭਵ) ਦੁਆਰਾ — ਪੁ.ਕਰਣ.ਇਕ.
+      gloss_ta: அதனால் (ப்ரத்யயோத்பவத்தால்) — ஆ.கருவி.எகவ.
+      gloss_te: దానిచేత (ప్రత్యయోద్భవంచేత) — పు.తృతీయ.ఏక.
     - word: अस्वतन्त्रताम्
       iast: asvatantratām
       gloss_en: "the state of non-autonomy"
@@ -8494,6 +11839,51 @@ chapters:
       gloss_pa: ਅਸੁਤੰਤਰਤਾ ਨੂੰ
       gloss_ta: சுதந்திரமின்மை
       gloss_te: అస్వతంత్రతను (స్వాతంత్ర్యరాహిత్యమును)
+    - word: एति
+      iast: eti
+      gloss_en: comes to, attains
+      morph: verb 3.sg.pres √i
+      gloss_as: পায়, প্ৰাপ্ত হয় (বৰ্ত.এক. √i)
+      gloss_bn: পৌঁছায়, প্রাপ্ত হয় (বর্ত.এক. √i)
+      gloss_gu: પ્રાપ્ત કરે છે (વર્ત.એક. √i)
+      gloss_hi: प्राप्त करता है (वर्त. तृ.पु.एक. √इ)
+      gloss_kn: ತಲುಪುತ್ತಾನೆ, ಪಡೆಯುತ್ತಾನೆ (ವರ್ತ.ಏಕ. √i)
+      gloss_ml: എത്തുന്നു, പ്രാപിക്കുന്നു (വർത്ത.ഏക. √i)
+      gloss_mr: पोचतो, प्राप्त करतो (वर्त.एक. √i)
+      gloss_or: ପ୍ରାପ୍ତ କରେ (ବର୍ତ.ଏକ. √i)
+      gloss_pa: ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ (ਵਰਤ.ਇਕ. √i)
+      gloss_ta: அடைகிறான் (நிகழ்.எகவ. √i)
+      gloss_te: పొందుతున్నాడు (వర్త.ఏక. √i)
+    - word: सः
+      iast: saḥ
+      gloss_en: he
+      morph: m.nom.sg pron
+      gloss_as: তেওঁ, সি — পু.কৰ্তা.এক.
+      gloss_bn: সে, তিনি — পু.কর্তা.এক.
+      gloss_gu: તે — પુ.કર્તા.એક.
+      gloss_hi: वह — पु.कर्ता एक. सर्वनाम
+      gloss_kn: ಅವನು — ಪು.ಕರ್ತ.ಏಕ.
+      gloss_ml: അവൻ — പു.കർത്താ.ഏക.
+      gloss_mr: तो — पु.कर्ता.एक.
+      gloss_or: ସେ — ପୁ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਪੁ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அவன் — ஆ.எழ.எகவ.
+      gloss_te: అతడు — పు.కర్త.ఏక.
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
     - word: तन्मात्रगोचरः
       iast: tan-mātra-gocaraḥ
       gloss_en: "the field of mere subtle elements"
@@ -8627,6 +12017,36 @@ chapters:
       gloss_pa: ਆਪਣੇ ਸਰੂਪ ਨੂੰ ਢੱਕਣ ਲਈ
       gloss_ta: ஸ்வரூபத்தின் மறைப்பிற்காக
       gloss_te: స్వరూపావరణమునందు (నిజ స్వరూపమును కప్పుట యందు)
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: indecl.
+      gloss_as: আৰু (অব্যয়)
+      gloss_bn: এবং, ও (অব্যয়)
+      gloss_gu: અને (અવ્યય)
+      gloss_hi: और (अव्यय)
+      gloss_kn: ಮತ್ತು (ಅವ್ಯಯ)
+      gloss_ml: ഉം, എന്നും (അവ്യയം)
+      gloss_mr: आणि (अव्यय)
+      gloss_or: ଓ, ଏବଂ (ଅବ୍ୟୟ)
+      gloss_pa: ਅਤੇ, ਤੇ (ਅਵ੍ਯ.)
+      gloss_ta: மற்றும், ம் (இடைச்சொல்)
+      gloss_te: మరియు (అవ్యయం)
+    - word: अस्य
+      iast: asya
+      gloss_en: his (Śiva's, or the paśu's)
+      morph: m.gen.sg pron
+      gloss_as: এওঁৰ (শিৱ/পশু) — পু.ষষ্ঠী.এক.
+      gloss_bn: এর (শিব/পশুর) — পু.ষষ্ঠী.এক.
+      gloss_gu: આનું (શિવ/પશુનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (शिव या पशु) का — पु.षष्ठी एक.
+      gloss_kn: ಇವನ (ಶಿವ/ಪಶು) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ഇവന്റെ (ശിവൻ/പശു) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे (शिव/पशूचे) — पु.षष्ठी.एक.
+      gloss_or: ଏହି (ଶିବ/ପଶୁର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਇਸ (ਸ਼ਿਵ/ਪਸ਼ੂ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனின் (சிவன் அல்லது பசு) — ஆ.ஆறா.எகவ.
+      gloss_te: అతని (శివుని లేదా పశువు) — పు.షష్ఠీ.ఏక.
     - word: शक्तयः
       iast: śaktayaḥ
       gloss_en: "powers"
@@ -8657,6 +12077,21 @@ chapters:
       gloss_pa: ਨਿਰੰਤਰ ਉੱਠਣ ਵਾਲੀਆਂ
       gloss_ta: எப்போதும் எழுந்துள்ளவை
       gloss_te: సతత ఉత్థితములు (నిరంతరము క్రియాశీలములు)
+    - word: यतः
+      iast: yataḥ
+      gloss_en: since
+      morph: rel. adv.
+      gloss_as: কাৰণ, য'ৰ পৰা — হেতু-সম্বন্ধ
+      gloss_bn: যেহেতু, যা থেকে — হেতু-সম্বন্ধ
+      gloss_gu: કેમ કે, જેનાથી — હેતુ-સંબંધ
+      gloss_hi: क्योंकि, जिससे (हेत्वर्थक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾಕೆಂದರೆ, ಎಲ್ಲಿಂದ — ಹೇತು-ಸಂಬಂಧ
+      gloss_ml: എന്തെന്നാൽ, എവിടെനിന്ന് — ഹേതു-സംബന്ധം
+      gloss_mr: कारण, ज्यापासून — हेतु-संबंध
+      gloss_or: କାରଣ, ଯେଉଁଠାରୁ — ହେତୁ-ସମ୍ବନ୍ଧ
+      gloss_pa: ਕਿਉਂਕਿ, ਜਿਸ ਤੋਂ — ਹੇਤੂ-ਸੰਬੰਧ
+      gloss_ta: ஏனெனில், எதனால் — காரண-உறவு
+      gloss_te: ఎందుకంటే, దేనినుండి — హేత్వర్థక సంబంధ
     - word: शब्दानुवेधेन
       iast: śabdānuvedhena
       gloss_en: "by the piercing-through of speech"
@@ -8672,6 +12107,36 @@ chapters:
       gloss_pa: ਸ਼ਬਦ ਦੇ ਅਨੁਵੇਧ (ਵਿੰਨ੍ਹਣ) ਨਾਲ
       gloss_ta: சப்தத்தின் ஊடுருவலினால்
       gloss_te: శబ్దానువేధము ద్వారా (వాక్ యొక్క ఆవేశము ద్వారా)
+    - word: न
+      iast: na
+      gloss_en: not
+      morph: indecl.
+      gloss_as: নহয়, নাই (নঞর্থক)
+      gloss_bn: না (নঞর্থক অব্যয়)
+      gloss_gu: ન, નહીં (નકારાત્મક અવ્યય)
+      gloss_hi: नहीं (अव्यय, निषेधार्थक)
+      gloss_kn: ಅಲ್ಲ, ಇಲ್ಲ (ನಿಷೇಧಾವ್ಯಯ)
+      gloss_ml: അല്ല, ഇല്ല (നിഷേധാവ്യയം)
+      gloss_mr: नाही (निषेधार्थक अव्यय)
+      gloss_or: ନୁହେଁ, ନାହିଁ (ନିଷେଧାର୍ଥକ)
+      gloss_pa: ਨਹੀਂ (ਨਿਖੇਧਾਰਥਕ)
+      gloss_ta: இல்லை, அன்று (மறுப்பு)
+      gloss_te: కాదు, లేదు (నిషేధార్థక అవ్యయం)
+    - word: विना
+      iast: vinā
+      gloss_en: without
+      morph: indecl.
+      gloss_as: বিনা, অবিহনে
+      gloss_bn: ছাড়া, ব্যতীত
+      gloss_gu: વિના, રહિત
+      gloss_hi: बिना, रहित (अव्यय)
+      gloss_kn: ಇಲ್ಲದೆ, ಹೊರತುಪಡಿಸಿ
+      gloss_ml: കൂടാതെ, ഒഴികെ
+      gloss_mr: विना, शिवाय
+      gloss_or: ବିନା, ବ୍ୟତୀତ
+      gloss_pa: ਬਿਨਾਂ, ਰਹਿਤ
+      gloss_ta: இன்றி, அல்லாமல்
+      gloss_te: లేకుండా, రహితంగా
     - word: प्रत्ययोद्भवः
       iast: pratyayodbhavaḥ
       gloss_en: "the rising of mental constructs"
@@ -8790,6 +12255,36 @@ chapters:
     iast: "seyaṃ kriyātmikā śaktiḥ śivasya paśu-vartinī / bandhayitrī sva-mārgasthā jñātā siddhy-upapādikā //"
     meter: anuṣṭubh
     word_glosses:
+    - word: सा
+      iast: sā
+      gloss_en: she
+      morph: f.nom.sg pron
+      gloss_as: তাই — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: সে, তিনি — স্ত্রী.কর্তা.এক.
+      gloss_gu: તે — સ્ત્રી.કર્તા.એક.
+      gloss_hi: वह — स्त्री.कर्ता एक. सर्वनाम
+      gloss_kn: ಅವಳು — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: അവൾ — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ती — स्त्री.कर्ता.एक.
+      gloss_or: ସେ — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਉਹ — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: அவள் — பெ.எழ.எகவ.
+      gloss_te: ఆమె — స్త్రీ.కర్త.ఏక.
+    - word: इयम्
+      iast: iyam
+      gloss_en: this very
+      morph: f.nom.sg pron
+      gloss_as: এই — স্ত্ৰী.কৰ্তা.এক.
+      gloss_bn: এই, ইনি — স্ত্রী.কর্তা.এক.
+      gloss_gu: આ — સ્ત્રી.કર્તા.એક.
+      gloss_hi: यह — स्त्री.कर्ता एक.
+      gloss_kn: ಈ, ಇವಳು — ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ.
+      gloss_ml: ഇവൾ, ഇത് — സ്ത്രീ.കർത്താ.ഏക.
+      gloss_mr: ही — स्त्री.कर्ता.एक.
+      gloss_or: ଏହି — ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ.
+      gloss_pa: ਇਹ — ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ.
+      gloss_ta: இவள் — பெ.எழ.எகவ.
+      gloss_te: ఈ, ఇది — స్త్రీ.కర్త.ఏక.
     - word: क्रियात्मिका शक्तिः
       iast: kriyātmikā śaktiḥ
       gloss_en: "the power whose essence is action"
@@ -8805,6 +12300,21 @@ chapters:
       gloss_pa: ਕ੍ਰਿਯਾਤਮਕ ਸ਼ਕਤੀ
       gloss_ta: கிரியா ரூபமான சக்தி
       gloss_te: క్రియాత్మికా శక్తి (క్రియయే స్వరూపముగా కల శక్తి)
+    - word: शिवस्य
+      iast: śivasya
+      gloss_en: of Śiva
+      morph: m.gen.sg
+      gloss_as: শিৱৰ — পু.ষষ্ঠী.এক.
+      gloss_bn: শিবের — পু.ষষ্ঠী.এক.
+      gloss_gu: શિવનું — પુ.ષષ્ઠી.એક.
+      gloss_hi: शिव का — पु.षष्ठी एक.
+      gloss_kn: ಶಿವನ — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ശിവന്റെ — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: शिवाचे — पु.षष्ठी.एक.
+      gloss_or: ଶିବଙ୍କର — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਸ਼ਿਵ ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: சிவனின் — ஆ.ஆறா.எகவ.
+      gloss_te: శివుని యొక్క — పు.షష్ఠీ.ఏక.
     - word: पशुवर्तिनी
       iast: paśu-vartinī
       gloss_en: "operating in the bound soul"
@@ -8850,6 +12360,21 @@ chapters:
       gloss_pa: ਆਪਣੇ (ਅਸਲ) ਮਾਰਗ ਉੱਤੇ ਟਿਕੀ
       gloss_ta: தனது சொந்த வழியில் நிலைபெற்றவள்
       gloss_te: స్వమార్గస్థ (తన నిజ మార్గమునందున్నది)
+    - word: ज्ञाता
+      iast: jñātā
+      gloss_en: (when) known, recognized
+      morph: f.nom.sg ppp √jñā
+      gloss_as: জ্ঞাত, প্ৰত্যভিজ্ঞাত (স্ত্ৰী.কৰ্তা.এক. ppp √jñā)
+      gloss_bn: জ্ঞাত, প্রত্যভিজ্ঞাত (স্ত্রী.কর্তা.এক. ppp √jñā)
+      gloss_gu: જ્ઞાત, પ્રત્યભિજ્ઞાત (સ્ત્રી.કર્તા.એક. ppp √jñā)
+      gloss_hi: जान ली गई, प्रत्यभिज्ञात (स्त्री.कर्ता एक. ppp √ज्ञा)
+      gloss_kn: ಜ್ಞಾತ, ಪ್ರತ್ಯಭಿಜ್ಞಾತ (ಸ್ತ್ರೀ.ಕರ್ತ.ಏಕ. ppp √jñā)
+      gloss_ml: ജ്ഞാത, പ്രത്യഭിജ്ഞാത (സ്ത്രീ.കർത്താ.ഏക. ppp √jñā)
+      gloss_mr: ज्ञात, प्रत्यभिज्ञात (स्त्री.कर्ता.एक. ppp √jñā)
+      gloss_or: ଜ୍ଞାତ, ପ୍ରତ୍ୟଭିଜ୍ଞାତ (ସ୍ତ୍ରୀ.କର୍ତ୍ତା.ଏକ. ppp √jñā)
+      gloss_pa: ਜਾਣੀ ਗਈ, ਪ੍ਰਤ੍ਯਭਿਜ੍ਞਾਤ (ਇਸਤ੍ਰੀ.ਕਰਤਾ.ਇਕ. ppp √jñā)
+      gloss_ta: அறியப்பட்ட, பிரத்யபிஞ்ஞை செய்யப்பட்ட (பெ.எழ.எகவ. எச்ச. √jñā)
+      gloss_te: తెలిసిన, ప్రత్యభిజ్ఞానం పొందిన (స్త్రీ.కర్త.ఏక. ppp √jñā)
     - word: सिद्ध्युपपादिका
       iast: siddhy-upapādikā
       gloss_en: "the producer of attainment"
@@ -9191,6 +12716,21 @@ chapters:
       gloss_pa: ਭੋਗ (ਅਨੁਭਵ)
       gloss_ta: போகத்தை / அனுபவத்தை
       gloss_te: భోగమును (అనుభవమును)
+    - word: तद्भावात्
+      iast: tad-bhāvāt
+      gloss_en: because of that state (of bondage)
+      morph: m.abl.sg cpd
+      gloss_as: সেই (বদ্ধ) ভাৱৰ বাবে — পু.পঞ্চমী.এক. সমাস
+      gloss_bn: সেই (বদ্ধ) ভাবের কারণে — পু.পঞ্চমী.এক. সমাস
+      gloss_gu: તે (બદ્ધ) ભાવને કારણે — પુ.પંચમી.એક. સમાસ
+      gloss_hi: उस (बद्ध) भाव के कारण — पु.पञ्चमी एक. समास
+      gloss_kn: ಆ (ಬದ್ಧ) ಭಾವದಿಂದ — ಪು.ಪಂಚಮಿ.ಏಕ. ಸಮಾಸ
+      gloss_ml: ആ (ബദ്ധ) ഭാവം നിമിത്തം — പു.പഞ്ചമീ.ഏക. സമാസം
+      gloss_mr: त्या (बद्ध) भावामुळे — पु.पंचमी.एक. समास
+      gloss_or: ସେହି (ବଦ୍ଧ) ଭାବ କାରଣରୁ — ପୁ.ପଞ୍ଚମୀ.ଏକ. ସମାସ
+      gloss_pa: ਉਸ (ਬੱਧ) ਭਾਵ ਕਾਰਨ — ਪੁ.ਪੰਚਮੀ.ਇਕ. ਸਮਾਸ
+      gloss_ta: அந்த (கட்டுண்ட) நிலையின் காரணமாக — ஆ.ஐந்தா.எகவ.
+      gloss_te: ఆ (బద్ధ) స్థితి కారణంగా — పు.పంచమి.ఏక. సమాస
     - word: संसरेत्
       iast: saṃsaret
       gloss_en: "would transmigrate"
@@ -9206,6 +12746,51 @@ chapters:
       gloss_pa: ਸੰਸਾਰ-ਚੱਕਰ ਵਿੱਚ ਘੁੰਮੇ
       gloss_ta: சம்சாரத்தில் சுற்றுவான்
       gloss_te: సంసరించును (సంసారమునందు తిరుగును)
+    - word: अतः
+      iast: ataḥ
+      gloss_en: therefore
+      morph: abl. adv.
+      gloss_as: এতেকে, ইয়াৰ বাবে
+      gloss_bn: অতএব, এই কারণে
+      gloss_gu: આથી, એ કારણે
+      gloss_hi: इसलिए, अतः (अव्यय)
+      gloss_kn: ಆದ್ದರಿಂದ, ಈ ಕಾರಣದಿಂದ
+      gloss_ml: അതിനാൽ, ഈ കാരണത്താൽ
+      gloss_mr: म्हणून, यामुळे
+      gloss_or: ଏଣୁ, ଏ କାରଣରୁ
+      gloss_pa: ਇਸ ਲਈ, ਇਸੇ ਕਾਰਨ
+      gloss_ta: ஆகவே, இதனால் — வினையடை
+      gloss_te: కావున, ఈ కారణంగా — క్రియావిశేషణం
+    - word: संसृति-प्रलयस्य
+      iast: saṃsṛti-pralayasya
+      gloss_en: of the cessation of saṃsāra
+      morph: m.gen.sg cpd
+      gloss_as: সংসাৰৰ প্ৰলয়ৰ — পু.ষষ্ঠী.এক. সমাস
+      gloss_bn: সংসারের প্রলয়ের — পু.ষষ্ঠী.এক. সমাস
+      gloss_gu: સંસારના પ્રલયનું — પુ.ષષ્ઠી.એક. સમાસ
+      gloss_hi: संसार के विलय की — पु.षष्ठी एक. समास
+      gloss_kn: ಸಂಸಾರ-ಪ್ರಲಯದ — ಪು.ಷಷ್ಠೀ.ಏಕ. ಸಮಾಸ
+      gloss_ml: സംസാരത്തിന്റെ പ്രളയത്തിന്റെ — പു.ഷഷ്ഠീ.ഏക. സമാസം
+      gloss_mr: संसाराच्या प्रलयाचे — पु.षष्ठी.एक. समास
+      gloss_or: ସଂସାର-ପ୍ରଳୟର — ପୁ.ଷଷ୍ଠୀ.ଏକ. ସମାସ
+      gloss_pa: ਸੰਸਾਰ-ਪ੍ਰਲੈ ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ. ਸਮਾਸ
+      gloss_ta: சம்சார ஒடுக்கத்தின் — ஆ.ஆறா.எகவ.
+      gloss_te: సంసార ప్రలయం యొక్క — పు.షష్ఠీ.ఏక. సమాస
+    - word: अस्य
+      iast: asya
+      gloss_en: his
+      morph: m.gen.sg pron
+      gloss_as: এওঁৰ (শিৱ/পশু) — পু.ষষ্ঠী.এক.
+      gloss_bn: এর (শিব/পশুর) — পু.ষষ্ঠী.এক.
+      gloss_gu: આનું (શિવ/પશુનું) — પુ.ષષ્ઠી.એક.
+      gloss_hi: उस (शिव या पशु) का — पु.षष्ठी एक.
+      gloss_kn: ಇವನ (ಶಿವ/ಪಶು) — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: ഇവന്റെ (ശിവൻ/പശു) — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे (शिव/पशूचे) — पु.षष्ठी.एक.
+      gloss_or: ଏହି (ଶିବ/ପଶୁର) — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਇਸ (ਸ਼ਿਵ/ਪਸ਼ੂ) ਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனின் (சிவன் அல்லது பசு) — ஆ.ஆறா.எகவ.
+      gloss_te: అతని (శివుని లేదా పశువు) — పు.షష్ఠీ.ఏక.
     - word: कारणम्
       iast: kāraṇam
       gloss_en: "the cause"
@@ -9339,6 +12924,36 @@ chapters:
     iast: "yadā tv ekatra saṃrūḍhas tadā tasya layodayau / niyacchan bhoktṛtām eti tataś cakreśvaro bhavet //"
     meter: anuṣṭubh
     word_glosses:
+    - word: यदा
+      iast: yadā
+      gloss_en: when
+      morph: rel. adv.
+      gloss_as: যেতিয়া — কালবাচক সম্বন্ধ
+      gloss_bn: যখন — কালবাচক সম্বন্ধ
+      gloss_gu: જ્યારે — કાળવાચક સંબંધ
+      gloss_hi: जब (कालवाचक सम्बन्धवाचक अव्यय)
+      gloss_kn: ಯಾವಾಗ — ಕಾಲವಾಚಕ ಸಂಬಂಧ
+      gloss_ml: എപ്പോൾ — കാലവാചക സംബന്ധം
+      gloss_mr: जेव्हा — कालवाचक संबंध
+      gloss_or: ଯେତେବେଳେ — କାଳବାଚକ ସମ୍ବନ୍ଧ
+      gloss_pa: ਜਦੋਂ — ਕਾਲਵਾਚਕ ਸੰਬੰਧ
+      gloss_ta: எப்போது — காலம் சார்ந்த உறவு
+      gloss_te: ఎప్పుడు — కాలవాచక సంబంధ
+    - word: तु
+      iast: tu
+      gloss_en: indeed, however
+      morph: indecl.
+      gloss_as: কিন্তু, তথাপি (বিৰোধাৰ্থক)
+      gloss_bn: কিন্তু, তবে (বিরোধার্থক)
+      gloss_gu: પરંતુ, પણ (વિરોધાર્થક)
+      gloss_hi: किन्तु, परन्तु (विरोधार्थक अव्यय)
+      gloss_kn: ಆದರೆ, ಆದರೂ (ವಿರೋಧಾರ್ಥಕ)
+      gloss_ml: എന്നാൽ, പക്ഷേ (വിരോധാർത്ഥകം)
+      gloss_mr: परंतु, मात्र (विरोधार्थक)
+      gloss_or: କିନ୍ତୁ, ତଥାପି (ବିରୋଧାର୍ଥକ)
+      gloss_pa: ਪਰ, ਪਰੰਤੂ (ਵਿਰੋਧਾਰਥਕ)
+      gloss_ta: ஆனால், என்றாலும் (எதிர்மறை)
+      gloss_te: కానీ, అయితే (వ్యతిరేకార్థక)
     - word: एकत्र संरूढः
       iast: ekatra saṃrūḍhaḥ
       gloss_en: "firmly rooted in the One"
@@ -9354,6 +12969,36 @@ chapters:
       gloss_pa: ਇੱਕ (ਪਰਮ ਤੱਤ) ਵਿੱਚ ਦ੍ਰਿੜ੍ਹ
       gloss_ta: ஒன்றில் உறுதியாக நிலைபெற்றவன்
       gloss_te: ఏకత్ర సంరూఢుడు (ఒక్క (తత్త్వము)నందు దృఢముగా నెలకొనినవాడు)
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: corr. adv.
+      gloss_as: তেতিয়া — কালবাচক নিত্যসম্বন্ধী
+      gloss_bn: তখন — কালবাচক নিত্যসম্বন্ধী
+      gloss_gu: ત્યારે — કાળવાચક નિત્યસંબંધી
+      gloss_hi: तब (कालवाचक नित्यसम्बन्धी अव्यय)
+      gloss_kn: ಆಗ — ಕಾಲವಾಚಕ ನಿತ್ಯಸಂಬಂಧಿ
+      gloss_ml: അപ്പോൾ — കാലവാചക നിത്യസംബന്ധി
+      gloss_mr: तेव्हा — कालवाचक नित्यसंबंधी
+      gloss_or: ସେତେବେଳେ — କାଳବାଚକ ନିତ୍ୟସମ୍ବନ୍ଧୀ
+      gloss_pa: ਉਦੋਂ — ਕਾਲਵਾਚਕ ਨਿਤ੍ਯਸੰਬੰਧੀ
+      gloss_ta: அப்போது — காலம் சார்ந்த ஒத்தடை
+      gloss_te: అప్పుడు — కాలవాచక నిత్యసంబంధి
+    - word: तस्य
+      iast: tasya
+      gloss_en: his
+      morph: m.gen.sg pron
+      gloss_as: তেওঁৰ — পু.ষষ্ঠী.এক.
+      gloss_bn: তাঁর — পু.ষষ্ঠী.এক.
+      gloss_gu: તેનું — પુ.ષષ્ઠી.એક.
+      gloss_hi: उसका — पु.षष्ठी एक.
+      gloss_kn: ಅವನ — ಪು.ಷಷ್ಠೀ.ಏಕ.
+      gloss_ml: അവന്റെ — പു.ഷഷ്ഠീ.ഏക.
+      gloss_mr: त्याचे — पु.षष्ठी.एक.
+      gloss_or: ତାହାର — ପୁ.ଷଷ୍ଠୀ.ଏକ.
+      gloss_pa: ਉਸਦਾ — ਪੁ.ਛੇਵੀਂ.ਇਕ.
+      gloss_ta: அவனுடைய — ஆ.ஆறா.எகவ.
+      gloss_te: అతని — పు.షష్ఠీ.ఏక.
     - word: लयोदयौ
       iast: layodayau
       gloss_en: "dissolution and arising"
@@ -9399,6 +13044,36 @@ chapters:
       gloss_pa: ਸੱਚੀ ਭੋਕਤ੍ਰਿਤਾ ਨੂੰ
       gloss_ta: (உண்மை) போக்தாவாதலை
       gloss_te: భోక్తృత్వము (నిజ అనుభవి స్థితి)
+    - word: एति
+      iast: eti
+      gloss_en: attains
+      morph: verb 3.sg.pres √i
+      gloss_as: পায়, প্ৰাপ্ত হয় (বৰ্ত.এক. √i)
+      gloss_bn: পৌঁছায়, প্রাপ্ত হয় (বর্ত.এক. √i)
+      gloss_gu: પ્રાપ્ત કરે છે (વર્ત.એક. √i)
+      gloss_hi: प्राप्त करता है (वर्त. तृ.पु.एक. √इ)
+      gloss_kn: ತಲುಪುತ್ತಾನೆ, ಪಡೆಯುತ್ತಾನೆ (ವರ್ತ.ಏಕ. √i)
+      gloss_ml: എത്തുന്നു, പ്രാപിക്കുന്നു (വർത്ത.ഏക. √i)
+      gloss_mr: पोचतो, प्राप्त करतो (वर्त.एक. √i)
+      gloss_or: ପ୍ରାପ୍ତ କରେ (ବର୍ତ.ଏକ. √i)
+      gloss_pa: ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ (ਵਰਤ.ਇਕ. √i)
+      gloss_ta: அடைகிறான் (நிகழ்.எகவ. √i)
+      gloss_te: పొందుతున్నాడు (వర్త.ఏక. √i)
+    - word: ततः
+      iast: tataḥ
+      gloss_en: thereupon
+      morph: abl. adv.
+      gloss_as: তাৰ পৰা, তাৰ পিছত — পঞ্চমী-বাচক
+      gloss_bn: তা থেকে, তারপর — পঞ্চমী-বাচক
+      gloss_gu: તેનાથી, ત્યારબાદ — પંચમી-વાચક
+      gloss_hi: उससे, तदनन्तर (पञ्चमी-वाचक अव्यय)
+      gloss_kn: ಅದರಿಂದ, ಆಮೇಲೆ — ಪಂಚಮಿ-ವಾಚಕ
+      gloss_ml: അതിൽനിന്ന്, അനന്തരം — പഞ്ചമീവാചകം
+      gloss_mr: त्यापासून, मग — पंचमी-वाचक
+      gloss_or: ତାହାରୁ, ତତ୍ପରେ — ପଞ୍ଚମୀ-ବାଚକ
+      gloss_pa: ਉਸ ਤੋਂ, ਫਿਰ — ਪੰਚਮੀ-ਵਾਚਕ
+      gloss_ta: அதனால், பிறகு — ஐந்தாம் வேற்.வினையடை
+      gloss_te: దానివల్ల, తదనంతరం — పంచమ్యర్థక
     - word: चक्रेश्वरः
       iast: cakreśvaraḥ
       gloss_en: "Lord of the Wheel (of powers)"
@@ -9414,6 +13089,21 @@ chapters:
       gloss_pa: ਚੱਕ੍ਰੇਸ਼ਵਰ (ਸ਼ਕਤੀ-ਚੱਕਰ ਦਾ ਸੁਆਮੀ)
       gloss_ta: சக்கரத்தின் ஈஸ்வரன் (சக்கரேசுவரன்)
       gloss_te: చక్రేశ్వరుడు (శక్తి చక్రమునకు ప్రభువు)
+    - word: भवेत्
+      iast: bhavet
+      gloss_en: becomes
+      morph: verb 3.sg.opt √bhū
+      gloss_as: হ'ব, হ'ব পাৰে (বিধি.এক. √bhū)
+      gloss_bn: হবে, হতে পারে (বিধি.এক. √bhū)
+      gloss_gu: થાય, થઈ શકે (વિધિ.એક. √bhū)
+      gloss_hi: हो जाए, हो सकता है (विधिलिङ्ग, तृ.पु.एक. √भू)
+      gloss_kn: ಆಗಬಹುದು (ವಿಧಿ.ಏಕ. √bhū)
+      gloss_ml: ആകാം, ആകട്ടെ (വിധി.ഏക. √bhū)
+      gloss_mr: होईल, होऊ शकेल (विधि.एक. √bhū)
+      gloss_or: ହୋଇଯାଉ, ହୋଇପାରେ (ବିଧି.ଏକ. √bhū)
+      gloss_pa: ਹੋ ਜਾਏ, ਹੋ ਸਕੇ (ਵਿਧੀ.ਇਕ. √bhū)
+      gloss_ta: ஆகலாம், ஆகும் (வேண்டுகோள்.எகவ. √bhū)
+      gloss_te: అగుగాక, అవవచ్చు (విధిలింగ్.ఏక. √bhū)
     translations:
     - lang: en
       translator: "public-domain composite"

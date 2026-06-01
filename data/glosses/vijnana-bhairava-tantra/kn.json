@@ -1,0 +1,1345 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "kn",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "ಪೂಜ್ಯ ದೇವಿ (ಭೈರವಿ)"},
+      {"word_idx": 1, "gloss_text": "ಹೇಳಿದಳು"},
+      {"word_idx": 2, "gloss_text": "ಕೇಳಲ್ಪಟ್ಟಿದೆ"},
+      {"word_idx": 3, "gloss_text": "ಹೇ ಪ್ರಭು"},
+      {"word_idx": 4, "gloss_text": "ನನ್ನಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ಎಲ್ಲವೂ"},
+      {"word_idx": 6, "gloss_text": "ರುದ್ರಯಾಮಲ ತಂತ್ರದಿಂದ ಉದ್ಭವಿಸಿದ್ದು"},
+      {"word_idx": 7, "gloss_text": "ತ್ರಿಕದ ವಿಭಾಗಗಳು"},
+      {"word_idx": 8, "gloss_text": "ಸಂಪೂರ್ಣವಾಗಿ, ಶೇಷವಿಲ್ಲದೆ"},
+      {"word_idx": 9, "gloss_text": "ಸಾರದ ಸಾರವಾಗಿ ವಿಂಗಡಿಸಲ್ಪಟ್ಟು"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "ಇಂದಿಗೂ ಕೂಡ"},
+      {"word_idx": 1, "gloss_text": "ಅಲ್ಲ"},
+      {"word_idx": 2, "gloss_text": "ನಿವೃತ್ತವಾಗಿಲ್ಲ"},
+      {"word_idx": 3, "gloss_text": "ನನ್ನ"},
+      {"word_idx": 4, "gloss_text": "ಸಂಶಯ"},
+      {"word_idx": 5, "gloss_text": "ಹೇ ಪರಮೇಶ್ವರ"},
+      {"word_idx": 6, "gloss_text": "ಏನು?"},
+      {"word_idx": 7, "gloss_text": "ರೂಪ, ಸ್ವರೂಪ"},
+      {"word_idx": 8, "gloss_text": "ತತ್ತ್ವತಃ, ನಿಜವಾಗಿ"},
+      {"word_idx": 9, "gloss_text": "ಹೇ ದೇವ"},
+      {"word_idx": 10, "gloss_text": "ಶಬ್ದರಾಶಿ-ಕಲೆಗಳಿಂದ ಕೂಡಿದ್ದು"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "ಅಥವಾ?"},
+      {"word_idx": 1, "gloss_text": "ನವಾತ್ಮ ಭೇದದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವನಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಭೈರವಾಕೃತಿಯಲ್ಲಿ"},
+      {"word_idx": 4, "gloss_text": "ತ್ರಿಶಿರೋಭೇದದಿಂದ ಭಿನ್ನವಾಗಿರುವುದು"},
+      {"word_idx": 5, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 6, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 7, "gloss_text": "ಶಕ್ತಿತ್ರಯಾತ್ಮಕವಾದ್ದು"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "ನಾದ-ಬಿಂದುಮಯ"},
+      {"word_idx": 1, "gloss_text": "ಅಥವಾ ಕೂಡ"},
+      {"word_idx": 2, "gloss_text": "ಏನು?"},
+      {"word_idx": 3, "gloss_text": "ಅರ್ಧಚಂದ್ರ-ನಿರೋಧಿಕೆಗಳು"},
+      {"word_idx": 4, "gloss_text": "ಚಕ್ರಾರೂಢ"},
+      {"word_idx": 5, "gloss_text": "ಸ್ವರರಹಿತ (ಶುದ್ಧ ವ್ಯಂಜನ)"},
+      {"word_idx": 6, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 7, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 8, "gloss_text": "ಶಕ್ತಿಯ ಸ್ವರೂಪ"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "ಪರಾಪರೆಯ"},
+      {"word_idx": 1, "gloss_text": "ಸಕಲ"},
+      {"word_idx": 2, "gloss_text": "ಅಪರೆಯ"},
+      {"word_idx": 3, "gloss_text": "ಮತ್ತು ಅಥವಾ"},
+      {"word_idx": 4, "gloss_text": "ಮತ್ತೆ"},
+      {"word_idx": 5, "gloss_text": "ಪರೆಯ"},
+      {"word_idx": 6, "gloss_text": "ಒಂದು ವೇಳೆ"},
+      {"word_idx": 7, "gloss_text": "ಹಾಗೆಯೇ"},
+      {"word_idx": 8, "gloss_text": "ಆಗಿರುತ್ತದೆ"},
+      {"word_idx": 9, "gloss_text": "ಪರತ್ವ"},
+      {"word_idx": 10, "gloss_text": "ಅದು"},
+      {"word_idx": 11, "gloss_text": "ವಿರೋಧಿಸಲ್ಪಡುತ್ತದೆ"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "ಅಲ್ಲವೇ"},
+      {"word_idx": 1, "gloss_text": "ವರ್ಣಭೇದದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ದೇಹಭೇದದಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 4, "gloss_text": "ಆಗಬಹುದು"},
+      {"word_idx": 5, "gloss_text": "ಪರತ್ವ"},
+      {"word_idx": 6, "gloss_text": "ನಿಷ್ಕಲತ್ವದಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ಸಕಲತ್ವದಲ್ಲಿ"},
+      {"word_idx": 8, "gloss_text": "ಅದು ಆಗಲಾರದು"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "ಕೃಪೆ"},
+      {"word_idx": 1, "gloss_text": "ಮಾಡು"},
+      {"word_idx": 2, "gloss_text": "ನನಗೆ"},
+      {"word_idx": 3, "gloss_text": "ಹೇ ನಾಥ"},
+      {"word_idx": 4, "gloss_text": "ಸಂಪೂರ್ಣವಾಗಿ"},
+      {"word_idx": 5, "gloss_text": "ಛೇದಿಸು"},
+      {"word_idx": 6, "gloss_text": "ಸಂಶಯವನ್ನು"},
+      {"word_idx": 7, "gloss_text": "ಭೈರವ ಹೇಳಿದನು"},
+      {"word_idx": 8, "gloss_text": "ಸಾಧು ಸಾಧು!"},
+      {"word_idx": 9, "gloss_text": "ನಿನ್ನಿಂದ ಪ್ರಶ್ನಿಸಲ್ಪಟ್ಟಿದೆ"},
+      {"word_idx": 10, "gloss_text": "ತಂತ್ರದ ಸಾರ"},
+      {"word_idx": 11, "gloss_text": "ಇದು, ಪ್ರಿಯೆಯೇ"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ಹೇ ಗುಹ್ಯಾತಿಗುಹ್ಯದ ರಕ್ಷಕಿ"},
+      {"word_idx": 1, "gloss_text": "ನೀನು"},
+      {"word_idx": 2, "gloss_text": "ಆದರೂ"},
+      {"word_idx": 3, "gloss_text": "ಇದು"},
+      {"word_idx": 4, "gloss_text": "ಹೇ ಸುಂದರಮುಖಿ"},
+      {"word_idx": 5, "gloss_text": "ಆದರೂ ಕೂಡ"},
+      {"word_idx": 6, "gloss_text": "ಹೇಳುತ್ತೇನೆ"},
+      {"word_idx": 7, "gloss_text": "ಹೇಗೆ"},
+      {"word_idx": 8, "gloss_text": "ತಿಳಿಯುತ್ತೀಯೆ"},
+      {"word_idx": 9, "gloss_text": "ಹಾಗೆ ಕೇಳು"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದು"},
+      {"word_idx": 1, "gloss_text": "ಪರವಾಗಿದೆ"},
+      {"word_idx": 2, "gloss_text": "ನಿಷ್ಕಲ"},
+      {"word_idx": 3, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 4, "gloss_text": "ಸರ್ವತತ್ತ್ವಗಳ ಆಚೆಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಅದು ಸಾಧ್ಯವಲ್ಲ"},
+      {"word_idx": 6, "gloss_text": "ಅವನಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ಇಲ್ಲಿ (ಶಬ್ದದಲ್ಲಿ)"},
+      {"word_idx": 8, "gloss_text": "ಹೇಳಲು"},
+      {"word_idx": 9, "gloss_text": "ಸಾಧ್ಯವಾಗುತ್ತದೆ ಅದು"},
+      {"word_idx": 10, "gloss_text": "ಇಚ್ಛೆಯಿಂದ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 1, "gloss_text": "ಪ್ರಕೃತಿಸ್ವರೂಪ"},
+      {"word_idx": 2, "gloss_text": "ಯಾವಳು"},
+      {"word_idx": 3, "gloss_text": "ಆಕೆಯ"},
+      {"word_idx": 4, "gloss_text": "ಏನು ರೂಪ?"},
+      {"word_idx": 5, "gloss_text": "ಹೇಳಲಾಗುತ್ತದೆ"},
+      {"word_idx": 6, "gloss_text": "ಸಕಲತ್ವದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ವಿಕಲ್ಪಗಳ"},
+      {"word_idx": 8, "gloss_text": "ಸಕಲ-ಅದ್ವೈತ ಕಲ್ಪನೆ"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "ಆಗ"},
+      {"word_idx": 1, "gloss_text": "ಆ ಮಹಾವ್ಯೋಮದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಲೀನವಾದಾಗ"},
+      {"word_idx": 3, "gloss_text": "ಚಂದ್ರ-ಸೂರ್ಯರು ಲೀನವಾದಾಗ"},
+      {"word_idx": 4, "gloss_text": "ಮುಳುಗಿದಂತೆ"},
+      {"word_idx": 5, "gloss_text": "ತಾಮಸನಿದ್ರೆ"},
+      {"word_idx": 6, "gloss_text": "ಉಂಟಾಯಿತು"},
+      {"word_idx": 7, "gloss_text": "ಖಿಲಗೋಚರದಲ್ಲಿ"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "ಇಂಥ ರೀತಿಯ"},
+      {"word_idx": 1, "gloss_text": "ಭೈರವನ"},
+      {"word_idx": 2, "gloss_text": "ಯಾವ ಅವಸ್ಥೆ"},
+      {"word_idx": 3, "gloss_text": "ಕೀರ್ತಿಸಲ್ಪಡುತ್ತದೆ"},
+      {"word_idx": 4, "gloss_text": "ಆಕೆ ಪರೆ"},
+      {"word_idx": 5, "gloss_text": "ಪರಸ್ವರೂಪದಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಪರಾದೇವಿ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರಕೀರ್ತಿತಳು"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "ಶಕ್ತಿ ಮತ್ತು ಶಕ್ತಿಮಂತರ"},
+      {"word_idx": 1, "gloss_text": "ಎಂದರೆ"},
+      {"word_idx": 2, "gloss_text": "ಅಭೇದ"},
+      {"word_idx": 3, "gloss_text": "ಸದಾ"},
+      {"word_idx": 4, "gloss_text": "ನೆಲೆಸಿರುತ್ತದೆ"},
+      {"word_idx": 5, "gloss_text": "ಆದ್ದರಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಧರ್ಮ-ಧರ್ಮಿತ್ವದಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ಪರಾಶಕ್ತಿ"},
+      {"word_idx": 8, "gloss_text": "ಪರಮಾತ್ಮನದು"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "ಅಲ್ಲ"},
+      {"word_idx": 1, "gloss_text": "ಬೆಂಕಿಯಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ದಹಿಸುವ ಶಕ್ತಿ"},
+      {"word_idx": 3, "gloss_text": "ಬೇರೆಯಾಗಿ"},
+      {"word_idx": 4, "gloss_text": "ಭಾವಿಸಲ್ಪಡುತ್ತದೆ"},
+      {"word_idx": 5, "gloss_text": "ಕೇವಲ"},
+      {"word_idx": 6, "gloss_text": "ಜ್ಞಾನಸತ್ತೆಯಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಇದು ಆರಂಭ"},
+      {"word_idx": 8, "gloss_text": "ಪ್ರವೇಶದಲ್ಲಿ"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "ಶಕ್ತ್ಯವಸ್ಥೆಯಲ್ಲಿ ಪ್ರವೇಶಿಸಿದವನ"},
+      {"word_idx": 1, "gloss_text": "ನಿರ್ವಿಭಾಗದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಭಾವನೆ"},
+      {"word_idx": 3, "gloss_text": "ಆಗ"},
+      {"word_idx": 4, "gloss_text": "ಅವನು"},
+      {"word_idx": 5, "gloss_text": "ಶಿವರೂಪಿಯಾಗುತ್ತಾನೆ"},
+      {"word_idx": 6, "gloss_text": "ಶೈವೀ"},
+      {"word_idx": 7, "gloss_text": "ಮುಖ, ದ್ವಾರ"},
+      {"word_idx": 8, "gloss_text": "ಇಲ್ಲಿ"},
+      {"word_idx": 9, "gloss_text": "ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತದೆ"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "ಎಂತು"},
+      {"word_idx": 1, "gloss_text": "ದೀಪದ ಬೆಳಕಿನಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಸೂರ್ಯನ ಕಿರಣಗಳಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 4, "gloss_text": "ತಿಳಿಯಲ್ಪಡುತ್ತದೆ"},
+      {"word_idx": 5, "gloss_text": "ದಿಕ್ಕುಗಳ ವಿಭಾಗ ಇತ್ಯಾದಿ"},
+      {"word_idx": 6, "gloss_text": "ಹಾಗೆಯೇ"},
+      {"word_idx": 7, "gloss_text": "ಶಕ್ತಿಯಿಂದ"},
+      {"word_idx": 8, "gloss_text": "ಶಿವನು (ತಿಳಿಯಲ್ಪಡುತ್ತಾನೆ)"},
+      {"word_idx": 9, "gloss_text": "ಹೇ ಪ್ರಿಯೆ"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "ಶ್ರೀದೇವಿ ಹೇಳಿದಳು"},
+      {"word_idx": 1, "gloss_text": "ಹೇ ದೇವದೇವ"},
+      {"word_idx": 2, "gloss_text": "ತ್ರಿಶೂಲಧಾರಿ"},
+      {"word_idx": 3, "gloss_text": "ಕಪಾಲಭೂಷಿತ"},
+      {"word_idx": 4, "gloss_text": "ದಿಕ್-ದೇಶ-ಕಾಲಶೂನ್ಯ"},
+      {"word_idx": 5, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 6, "gloss_text": "ವ್ಯಪದೇಶರಹಿತ"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "ಯಾವ ಅವಸ್ಥೆ"},
+      {"word_idx": 1, "gloss_text": "ಭರಿತಾಕಾರ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವನಲ್ಲಿ ಲಭ್ಯ"},
+      {"word_idx": 3, "gloss_text": "ಯಾವ ಉಪಾಯಗಳಿಂದ?"},
+      {"word_idx": 4, "gloss_text": "ಅವನಿಗೆ ಮುಖ"},
+      {"word_idx": 5, "gloss_text": "ಪರಾದೇವಿ"},
+      {"word_idx": 6, "gloss_text": "ಹೇಗೆ ಆಗುತ್ತಾಳೆ?"},
+      {"word_idx": 7, "gloss_text": "ನಾನು ಸರಿಯಾಗಿ ತಿಳಿಯುವಂತೆ"},
+      {"word_idx": 8, "gloss_text": "ಭೈರವ, ನನಗೆ ಹೇಳು"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ಭೈರವ ಹೇಳಿದನು"},
+      {"word_idx": 1, "gloss_text": "ಮೇಲೆ ಪ್ರಾಣ"},
+      {"word_idx": 2, "gloss_text": "ನಿಜವಾಗಿಯೂ"},
+      {"word_idx": 3, "gloss_text": "ಕೆಳಗೆ ಜೀವ"},
+      {"word_idx": 4, "gloss_text": "ವಿಸರ್ಗಸ್ವರೂಪ"},
+      {"word_idx": 5, "gloss_text": "ಪರವು ಉದಯಿಸಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಎರಡು ಉತ್ಪತ್ತಿಸ್ಥಾನಗಳಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಭರಣದಿಂದ"},
+      {"word_idx": 8, "gloss_text": "ಭರಿತ ಸ್ಥಿತಿ"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "ವಾಯು, ಶ್ವಾಸ"},
+      {"word_idx": 1, "gloss_text": "ಒಳಗೆ ಅಥವಾ ಹೊರಗೆ"},
+      {"word_idx": 2, "gloss_text": "ಶ್ವಾಸಯುಗ್ಮದ ವಿಯತ್"},
+      {"word_idx": 3, "gloss_text": "ನಿವೃತ್ತಿಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಭೈರವಿಯ, ಭೈರವನ"},
+      {"word_idx": 5, "gloss_text": "ಹೀಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಹೇ ಭೈರವಿ"},
+      {"word_idx": 7, "gloss_text": "ವ್ಯಕ್ತವಾಗುತ್ತದೆ"},
+      {"word_idx": 8, "gloss_text": "ವಪು, ರೂಪ"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "ಹೋಗದು"},
+      {"word_idx": 1, "gloss_text": "ಪ್ರವೇಶಿಸದು"},
+      {"word_idx": 2, "gloss_text": "ಶಕ್ತಿ"},
+      {"word_idx": 3, "gloss_text": "ವಾಯುರೂಪ"},
+      {"word_idx": 4, "gloss_text": "ವಿಕಸಿತವಾದಾಗ"},
+      {"word_idx": 5, "gloss_text": "ನಿರ್ವಿಕಲ್ಪತೆಯಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಆಕೆಯಿಂದ"},
+      {"word_idx": 8, "gloss_text": "ಭೈರವರೂಪತೆ"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "ಕುಂಭಕ"},
+      {"word_idx": 1, "gloss_text": "ರೇಚಕ"},
+      {"word_idx": 2, "gloss_text": "ಅಥವಾ ಕೂಡ"},
+      {"word_idx": 3, "gloss_text": "ಪೂರಕ"},
+      {"word_idx": 4, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 5, "gloss_text": "ಯಾವಾಗ ಆಗುತ್ತದೋ"},
+      {"word_idx": 6, "gloss_text": "ಅದರ ಕೊನೆಯಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಶಾಂತನೆಂಬ ಆ ಸ್ಥಿತಿ"},
+      {"word_idx": 8, "gloss_text": "ಶಕ್ತಿಯಿಂದ"},
+      {"word_idx": 9, "gloss_text": "ಶಾಂತ"},
+      {"word_idx": 10, "gloss_text": "ಪ್ರಕಾಶಿಸುತ್ತಾನೆ"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "ಮೂಲದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಕಿರಣದಂತೆ ತೋರುವ"},
+      {"word_idx": 2, "gloss_text": "ಸೂಕ್ಷ್ಮಕ್ಕಿಂತ ಸೂಕ್ಷ್ಮ"},
+      {"word_idx": 3, "gloss_text": "ಚಿಂತಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಆಕೆಯನ್ನು"},
+      {"word_idx": 5, "gloss_text": "ದ್ವಾದಶಾಂತದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಶಮಿಸುತ್ತಿರುವ"},
+      {"word_idx": 7, "gloss_text": "ಭೈರವೋದಯ"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "ಮೇಲೇರುತ್ತಿರುವ"},
+      {"word_idx": 1, "gloss_text": "ಮಿಂಚಿನ ರೂಪ"},
+      {"word_idx": 2, "gloss_text": "ಪ್ರತಿ ಚಕ್ರದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಹಂತಹಂತವಾಗಿ"},
+      {"word_idx": 4, "gloss_text": "ಊರ್ಧ್ವವಾಗಿ"},
+      {"word_idx": 5, "gloss_text": "ಮೂರು ಮುಷ್ಟಿ ಎತ್ತರದವರೆಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಎಲ್ಲಿಯವರೆಗೆ"},
+      {"word_idx": 7, "gloss_text": "ಅದು ಭೈರವೋದಯ"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "ಹನ್ನೆರಡು ಕ್ರಮ"},
+      {"word_idx": 1, "gloss_text": "ಸಮ್ಯಕ್"},
+      {"word_idx": 2, "gloss_text": "ಹನ್ನೆರಡು ಅಕ್ಷರಗಳಿಂದ ವಿಭಜಿತ"},
+      {"word_idx": 3, "gloss_text": "ಸ್ಥೂಲ-ಸೂಕ್ಷ್ಮ-ಪರ ಸ್ಥಿತಿಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಬಿಟ್ಟು ಬಿಟ್ಟು"},
+      {"word_idx": 5, "gloss_text": "ಕೊನೆಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಶಿವ"}
+    ],
+    "1.26": [
+      {"word_idx": 0, "gloss_text": "ಆಕೆಯಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ತುಂಬಿಸಿ"},
+      {"word_idx": 2, "gloss_text": "ಶೀಘ್ರ"},
+      {"word_idx": 3, "gloss_text": "ಮೂರ್ಧಾಂತದವರೆಗೆ"},
+      {"word_idx": 4, "gloss_text": "ಭೇದಿಸಿ"},
+      {"word_idx": 5, "gloss_text": "ಭ್ರೂಕ್ಷೇಪ ಸೇತುವೆಯಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ನಿರ್ವಿಕಲ್ಪ"},
+      {"word_idx": 7, "gloss_text": "ಮನಸ್ಸನ್ನು ಮಾಡಿ"},
+      {"word_idx": 8, "gloss_text": "ಸರ್ವೋರ್ಧ್ವದಲ್ಲಿ"},
+      {"word_idx": 9, "gloss_text": "ಸರ್ವಗನ ಉದ್ಗಮ"}
+    ],
+    "1.27": [
+      {"word_idx": 0, "gloss_text": "ನವಿಲ ಪುಕ್ಕಗಳಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ವಿಚಿತ್ರ ರೂಪಗಳ"},
+      {"word_idx": 2, "gloss_text": "ಮಂಡಲಗಳಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಶೂನ್ಯ ಪಂಚಕ"},
+      {"word_idx": 4, "gloss_text": "ಧ್ಯಾನಿಸುವವನಿಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಅನುತ್ತರದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಶೂನ್ಯದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರವೇಶ"},
+      {"word_idx": 8, "gloss_text": "ಹೃದಯದಲ್ಲಿ"},
+      {"word_idx": 9, "gloss_text": "ಆಗಲಿ"}
+    ],
+    "1.28": [
+      {"word_idx": 0, "gloss_text": "ಈ ಕ್ರಮದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಮಾತ್ರ"},
+      {"word_idx": 2, "gloss_text": "ಎಲ್ಲಿಯಾದರೂ"},
+      {"word_idx": 3, "gloss_text": "ಚಿಂತನೆ"},
+      {"word_idx": 4, "gloss_text": "ಶೂನ್ಯದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಗೋಡೆಯಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಶ್ರೇಷ್ಠದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಪಾತ್ರದಲ್ಲಿ"},
+      {"word_idx": 8, "gloss_text": "ಸ್ವತಃ ಲೀನ"},
+      {"word_idx": 9, "gloss_text": "ವರಪ್ರದೆ"}
+    ],
+    "1.29": [
+      {"word_idx": 0, "gloss_text": "ಕಪಾಲದೊಳಗೆ"},
+      {"word_idx": 1, "gloss_text": "ಮನಸ್ಸನ್ನು ಇಟ್ಟು"},
+      {"word_idx": 2, "gloss_text": "ಇರುತ್ತಾ"},
+      {"word_idx": 3, "gloss_text": "ಮುಚ್ಚಿದ ಕಣ್ಣುಳ್ಳವನು"},
+      {"word_idx": 4, "gloss_text": "ಕ್ರಮವಾಗಿ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸಿನ ಸ್ಥೈರ್ಯದಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಗ್ರಹಿಸಬೇಕು"},
+      {"word_idx": 7, "gloss_text": "ಉತ್ತಮ ಲಕ್ಷ್ಯ"}
+    ],
+    "1.30": [
+      {"word_idx": 0, "gloss_text": "ಮಧ್ಯನಾಡಿ (ಸುಷುಮ್ನಾ)"},
+      {"word_idx": 1, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ ನೆಲೆಸಿರುವವಳು"},
+      {"word_idx": 2, "gloss_text": "ಕಮಲನಾಳದಂತೆ ಆಕಾರವುಳ್ಳ"},
+      {"word_idx": 3, "gloss_text": "ಧ್ಯಾನಿಸಲ್ಪಟ್ಟ"},
+      {"word_idx": 4, "gloss_text": "ಅಂತರ್ ವ್ಯೋಮಳಾಗಿ"},
+      {"word_idx": 5, "gloss_text": "ದೇವಿಯಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಆಕೆಯಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ದೇವನು"},
+      {"word_idx": 8, "gloss_text": "ಪ್ರಕಾಶಿಸುತ್ತಾನೆ"}
+    ],
+    "1.31": [
+      {"word_idx": 0, "gloss_text": "ಕರಗಳಿಂದ ತಡೆದ ದೃಷ್ಟಿ-ಅಸ್ತ್ರದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಭ್ರೂಭೇದದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ದ್ವಾರರೋಧದಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಬಿಂದು ಕಂಡಾಗ"},
+      {"word_idx": 4, "gloss_text": "ಕ್ರಮವಾಗಿ ಲೀನವಾದಾಗ"},
+      {"word_idx": 5, "gloss_text": "ಅದರ ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಪರಮ ಸ್ಥಿತಿ"}
+    ],
+    "1.32": [
+      {"word_idx": 0, "gloss_text": "ಧಾಮದೊಳಗಿನ ಕ್ಷೋಭದಿಂದ ಉಂಟಾದ"},
+      {"word_idx": 1, "gloss_text": "ಸೂಕ್ಷ್ಮ ಅಗ್ನಿ-ತಿಲಕಾಕೃತಿ"},
+      {"word_idx": 2, "gloss_text": "ಬಿಂದುವನ್ನು"},
+      {"word_idx": 3, "gloss_text": "ಶಿಖೆಯ ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 4, "gloss_text": "ಹೃದಯದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಲಯದ ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಧ್ಯಾನಿಸುವವನಿಗೆ"},
+      {"word_idx": 7, "gloss_text": "ಲಯ"}
+    ],
+    "1.33": [
+      {"word_idx": 0, "gloss_text": "ಅನಾಹತದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಯೋಗ್ಯ ಕಿವಿಯಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಅಭಗ್ನ ಶಬ್ದದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ನದಿಯಂತೆ ಪ್ರವಹಿಸುವ"},
+      {"word_idx": 4, "gloss_text": "ಶಬ್ದಬ್ರಹ್ಮದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಮುಳುಗಿದವನು"},
+      {"word_idx": 6, "gloss_text": "ಪರಬ್ರಹ್ಮ"},
+      {"word_idx": 7, "gloss_text": "ಪಡೆಯುತ್ತಾನೆ"}
+    ],
+    "1.34": [
+      {"word_idx": 0, "gloss_text": "ಪ್ರಣವಾದಿಗಳ ಉಚ್ಚಾರಣೆಯಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಪ್ಲುತಾಂತದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಶೂನ್ಯ ಭಾವನೆಯಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಶೂನ್ಯ ಪರಾ ಶಕ್ತಿಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಶೂನ್ಯತೆಯನ್ನು ಹೊಂದುತ್ತಾನೆ"},
+      {"word_idx": 5, "gloss_text": "ಹೇ ಭೈರವಿ"}
+    ],
+    "1.35": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದೇ ವರ್ಣದ"},
+      {"word_idx": 1, "gloss_text": "ಪೂರ್ವ-ಅಂತ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಅನುಭವಿಸಬೇಕು"},
+      {"word_idx": 3, "gloss_text": "ಶೂನ್ಯದಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಆ ಪುರುಷ ಶೂನ್ಯಭೂತನಾಗಿ"},
+      {"word_idx": 5, "gloss_text": "ಪುರುಷನು ಶೂನ್ಯಾಕಾರನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.36": [
+      {"word_idx": 0, "gloss_text": "ತಂತಿವಾದ್ಯ ಮುಂತಾದ ಶಬ್ದಗಳಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ದೀರ್ಘವಾದ"},
+      {"word_idx": 2, "gloss_text": "ಕ್ರಮಸಂಸ್ಥಿತಿಯಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಏಕಚಿತ್ತನಾಗಿ"},
+      {"word_idx": 4, "gloss_text": "ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಪರವ್ಯೋಮಸ್ವರೂಪನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.37": [
+      {"word_idx": 0, "gloss_text": "ಪಿಂಡಮಂತ್ರದ"},
+      {"word_idx": 1, "gloss_text": "ಎಲ್ಲ"},
+      {"word_idx": 2, "gloss_text": "ಸ್ಥೂಲ ವರ್ಣಕ್ರಮದಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಅರ್ಧೇಂದು-ಬಿಂದು-ನಾದದ ಅಂತ್ಯ"},
+      {"word_idx": 4, "gloss_text": "ಶೂನ್ಯ ಉಚ್ಚಾರದಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ಶಿವನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.38": [
+      {"word_idx": 0, "gloss_text": "ತನ್ನ ದೇಹದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಎಲ್ಲ ದಿಕ್ಕುಗಳಲ್ಲೂ"},
+      {"word_idx": 2, "gloss_text": "ಒಮ್ಮೆಲೇ"},
+      {"word_idx": 3, "gloss_text": "ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ವ್ಯೋಮ"},
+      {"word_idx": 5, "gloss_text": "ನಿರ್ವಿಕಲ್ಪ ಮನಸ್ಸಿನವನು"},
+      {"word_idx": 6, "gloss_text": "ಅವನಿಗೆ"},
+      {"word_idx": 7, "gloss_text": "ಎಲ್ಲವೂ ವ್ಯೋಮವಾಗಿ ಪ್ರವರ್ತಿಸುತ್ತದೆ"}
+    ],
+    "1.39": [
+      {"word_idx": 0, "gloss_text": "ಬೆನ್ನಿನ ಶೂನ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಮೂಲದ ಶೂನ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಒಮ್ಮೆಲೇ ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 3, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 4, "gloss_text": "ಯಾರು"},
+      {"word_idx": 5, "gloss_text": "ಶರೀರ-ನಿರಪೇಕ್ಷ ಶಕ್ತಿಯಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಶೂನ್ಯಮನಸ್ಕನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.40": [
+      {"word_idx": 0, "gloss_text": "ಬೆನ್ನಿನ ಶೂನ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಮೂಲದ ಶೂನ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಹೃದಯದ ಶೂನ್ಯ"},
+      {"word_idx": 3, "gloss_text": "ಸ್ಥಿರವಾಗಿ ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಒಮ್ಮೆಲೇ"},
+      {"word_idx": 5, "gloss_text": "ನಿರ್ವಿಕಲ್ಪತ್ವದಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ನಿರ್ವಿಕಲ್ಪೋದಯ"}
+    ],
+    "1.41": [
+      {"word_idx": 0, "gloss_text": "ದೇಹದ ಯಾವುದೋ ಪ್ರದೇಶದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಶೂನ್ಯತೆಯೇ"},
+      {"word_idx": 2, "gloss_text": "ಕ್ಷಣಮಾತ್ರ"},
+      {"word_idx": 3, "gloss_text": "ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ನಿರ್ವಿಕಲ್ಪ"},
+      {"word_idx": 5, "gloss_text": "ನಿರ್ವಿಕಲ್ಪನಾಗಿ"},
+      {"word_idx": 6, "gloss_text": "ನಿರ್ವಿಕಲ್ಪ ಸ್ವರೂಪ ಭಾಗಿ"}
+    ],
+    "1.42": [
+      {"word_idx": 0, "gloss_text": "ದೇಹಗತವಾದ ಎಲ್ಲ ದ್ರವ್ಯವನ್ನು"},
+      {"word_idx": 1, "gloss_text": "ವ್ಯೋಮವ್ಯಾಪ್ತ"},
+      {"word_idx": 2, "gloss_text": "ಹೇ ಮೃಗನೇತ್ರೆ"},
+      {"word_idx": 3, "gloss_text": "ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಅವನಿಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಆ ಭಾವನೆ"},
+      {"word_idx": 6, "gloss_text": "ಸ್ಥಿರವಾಗುತ್ತದೆ"}
+    ],
+    "1.43": [
+      {"word_idx": 0, "gloss_text": "ದೇಹದೊಳಗೆ"},
+      {"word_idx": 1, "gloss_text": "ಚರ್ಮವಿಭಾಗ"},
+      {"word_idx": 2, "gloss_text": "ಗೋಡೆಯಂತೆ"},
+      {"word_idx": 3, "gloss_text": "ಚಿಂತಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಅವನಿಗೆ ಒಳಗೆ ಏನೂ ಇಲ್ಲ"},
+      {"word_idx": 5, "gloss_text": "ಧ್ಯಾನಿಸುತ್ತಾ"},
+      {"word_idx": 6, "gloss_text": "ಅಧ್ಯೇಯ ಭಾಗಿಯಾಗುತ್ತಾನೆ"}
+    ],
+    "1.44": [
+      {"word_idx": 0, "gloss_text": "ಹೃದಯಾಕಾಶದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಲೀನ ಇಂದ್ರಿಯಗಳುಳ್ಳವನು"},
+      {"word_idx": 2, "gloss_text": "ಪದ್ಮಸಂಪುಟದ ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಏಕಚಿತ್ತನಾಗಿ"},
+      {"word_idx": 4, "gloss_text": "ಹೇ ಸುಭಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಪರಮ ಸೌಭಾಗ್ಯ ಪಡೆಯುತ್ತಾನೆ"}
+    ],
+    "1.45": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲ ಕಡೆಯಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ತನ್ನ ಶರೀರದ"},
+      {"word_idx": 2, "gloss_text": "ದ್ವಾದಶಾಂತದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಮನೋಲಯದಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ದೃಢಬುದ್ಧಿಯವನಿಗೆ"},
+      {"word_idx": 5, "gloss_text": "ದೃಢವಾಗಿ"},
+      {"word_idx": 6, "gloss_text": "ತತ್ತ್ವ ಲಕ್ಷ್ಯ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರಕಟವಾಗುತ್ತದೆ"}
+    ],
+    "1.46": [
+      {"word_idx": 0, "gloss_text": "ಹೇಗಾದರೂ"},
+      {"word_idx": 1, "gloss_text": "ಎಲ್ಲಿಯಾದರೂ"},
+      {"word_idx": 2, "gloss_text": "ದ್ವಾದಶಾಂತದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಮನಸ್ಸನ್ನು ಪ್ರಕ್ಷೇಪಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಪ್ರತಿ ಕ್ಷಣ"},
+      {"word_idx": 5, "gloss_text": "ಕ್ಷೀಣವೃತ್ತಿಯವನಿಗೆ"},
+      {"word_idx": 6, "gloss_text": "ವೈಲಕ್ಷಣ್ಯ"},
+      {"word_idx": 7, "gloss_text": "ಕೆಲವೇ ದಿನಗಳಲ್ಲಿ ಆಗುತ್ತದೆ"}
+    ],
+    "1.47": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲೆಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಮನಸ್ಸು"},
+      {"word_idx": 2, "gloss_text": "ಹೋಗುತ್ತದೆ"},
+      {"word_idx": 3, "gloss_text": "ಹೊರಗೆ"},
+      {"word_idx": 4, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 5, "gloss_text": "ಒಳಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಅಥವಾ ಕೂಡ"},
+      {"word_idx": 7, "gloss_text": "ಅಲ್ಲೆಲ್ಲ"},
+      {"word_idx": 8, "gloss_text": "ಶಿವಾವಸ್ಥೆ"},
+      {"word_idx": 9, "gloss_text": "ವ್ಯಾಪಕತ್ವದಿಂದ"},
+      {"word_idx": 10, "gloss_text": "ಎಲ್ಲಿ ಹೋಗಬಲ್ಲದು?"}
+    ],
+    "1.48": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲೆಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಇಂದ್ರಿಯ ಮಾರ್ಗದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಚೈತನ್ಯ"},
+      {"word_idx": 3, "gloss_text": "ವ್ಯಕ್ತವಾಗುತ್ತದೆ"},
+      {"word_idx": 4, "gloss_text": "ವಿಭುವಿನ"},
+      {"word_idx": 5, "gloss_text": "ಅವನಿಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಆ ಮಾತ್ರ ಧರ್ಮಿತ್ವದಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ಚಿತ್‌ಲಯದಿಂದ"},
+      {"word_idx": 8, "gloss_text": "ಭರಿತಾತ್ಮತಾ"}
+    ],
+    "1.49": [
+      {"word_idx": 0, "gloss_text": "ಸೀನು ಮುಂತಾದವುಗಳ ಆದಿ-ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಭಯದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಶೋಕದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಗಹ್ವರದಲ್ಲಿ"},
+      {"word_idx": 4, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 5, "gloss_text": "ರಣದಿಂದ ಓಡುತ್ತಿರುವಾಗ"},
+      {"word_idx": 6, "gloss_text": "ಕುತೂಹಲದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಹಸಿವಿನ ಆದಿ-ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 8, "gloss_text": "ಬ್ರಹ್ಮಸತ್ತೆಯ ಸಮೀಪಗಾಮಿನಿ"}
+    ],
+    "1.50": [
+      {"word_idx": 0, "gloss_text": "ವಸ್ತುಗಳು ಸ್ಮರಿಸಲ್ಪಡುತ್ತಿರುವಾಗ"},
+      {"word_idx": 1, "gloss_text": "ಕಂಡ ಪ್ರದೇಶದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಮನಸ್ಸನ್ನು ಬಿಡಬೇಕು"},
+      {"word_idx": 3, "gloss_text": "ತನ್ನ ಶರೀರ"},
+      {"word_idx": 4, "gloss_text": "ನಿರಾಧಾರ ಮಾಡಿ"},
+      {"word_idx": 5, "gloss_text": "ಪ್ರಭು ವಿಸ್ತರಿಸುತ್ತಾನೆ"}
+    ],
+    "1.51": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದೋ ವಸ್ತುವಿನಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಇಟ್ಟು"},
+      {"word_idx": 2, "gloss_text": "ಮೆಲ್ಲನೆ"},
+      {"word_idx": 3, "gloss_text": "ದೃಷ್ಟಿಯನ್ನು"},
+      {"word_idx": 4, "gloss_text": "ಹಿಂದಿರುಗಿಸಬೇಕು"},
+      {"word_idx": 5, "gloss_text": "ಆ ಜ್ಞಾನ"},
+      {"word_idx": 6, "gloss_text": "ಚಿತ್ತಸಹಿತ"},
+      {"word_idx": 7, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 8, "gloss_text": "ಶೂನ್ಯಾಲಯವಾಗುತ್ತದೆ"}
+    ],
+    "1.52": [
+      {"word_idx": 0, "gloss_text": "ಭಕ್ತಿಯ ಉದ್ರೇಕದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ವಿರಕ್ತನಿಗೆ"},
+      {"word_idx": 2, "gloss_text": "ಎಂಥ"},
+      {"word_idx": 3, "gloss_text": "ಉಂಟಾಗುತ್ತದೆ"},
+      {"word_idx": 4, "gloss_text": "ಮತಿ"},
+      {"word_idx": 5, "gloss_text": "ಆಕೆಯೇ ಶಾಂಕರೀ ಶಕ್ತಿ"},
+      {"word_idx": 6, "gloss_text": "ಸದಾ"},
+      {"word_idx": 7, "gloss_text": "ಆಕೆಯನ್ನು ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 8, "gloss_text": "ಆ ಮೇಲೆ ಶಿವ"}
+    ],
+    "1.53": [
+      {"word_idx": 0, "gloss_text": "ಒಂದು ವಸ್ತುವಿನಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ತಿಳಿಯುತ್ತಿರುವಾಗ"},
+      {"word_idx": 2, "gloss_text": "ಎಲ್ಲ ವಸ್ತುಗಳಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಶೂನ್ಯತೆ"},
+      {"word_idx": 4, "gloss_text": "ಆಕೆಯನ್ನೇ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸಿನಿಂದ ಧ್ಯಾನಿಸಿ"},
+      {"word_idx": 6, "gloss_text": "ತಿಳಿದದ್ದು ಕೂಡ ಪ್ರಶಮಿಸುತ್ತದೆ"}
+    ],
+    "1.54": [
+      {"word_idx": 0, "gloss_text": "ಅಲ್ಪಜ್ಞರಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಯಾವುದು ಶುದ್ಧಿಯೆಂದು ಪರಿಗಣಿಸಲ್ಪಡುತ್ತದೋ"},
+      {"word_idx": 2, "gloss_text": "ಆ ಶುದ್ಧಿ"},
+      {"word_idx": 3, "gloss_text": "ಶಂಭುದರ್ಶನದಲ್ಲಿ"},
+      {"word_idx": 4, "gloss_text": "ಶುಚಿಯಲ್ಲ"},
+      {"word_idx": 5, "gloss_text": "ಖಂಡಿತ"},
+      {"word_idx": 6, "gloss_text": "ಅಶುಚಿಯೂ ಅಲ್ಲ; ಆದ್ದರಿಂದ"},
+      {"word_idx": 7, "gloss_text": "ನಿರ್ವಿಕಲ್ಪನು ಸುಖಿಯಾಗುತ್ತಾನೆ"}
+    ],
+    "1.55": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲ ಕಡೆ"},
+      {"word_idx": 1, "gloss_text": "ಭೈರವ ಭಾವ"},
+      {"word_idx": 2, "gloss_text": "ಸಾಮಾನ್ಯ ವಸ್ತುಗಳಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಕೂಡ"},
+      {"word_idx": 4, "gloss_text": "ಗೋಚರ"},
+      {"word_idx": 5, "gloss_text": "ಮತ್ತು ಅಲ್ಲ"},
+      {"word_idx": 6, "gloss_text": "ಅವನನ್ನು ಬಿಟ್ಟು"},
+      {"word_idx": 7, "gloss_text": "ಬೇರೆ ಇದೆ ಎಂದು"},
+      {"word_idx": 8, "gloss_text": "ಅದ್ವಯ ಗತಿ"}
+    ],
+    "1.56": [
+      {"word_idx": 0, "gloss_text": "ಸಮ"},
+      {"word_idx": 1, "gloss_text": "ಶತ್ರು-ಮಿತ್ರರಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಮಾನ-ಅಪಮಾನಗಳಲ್ಲಿ ಸಮ"},
+      {"word_idx": 3, "gloss_text": "ಬ್ರಹ್ಮನ ಪರಿಪೂರ್ಣತೆಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಹೀಗೆ ತಿಳಿದು"},
+      {"word_idx": 5, "gloss_text": "ಸುಖಿಯಾಗುತ್ತಾನೆ"}
+    ],
+    "1.57": [
+      {"word_idx": 0, "gloss_text": "ದ್ವೇಷ ಬೇಡ"},
+      {"word_idx": 1, "gloss_text": "ಭಾವಿಸಬೇಡ"},
+      {"word_idx": 2, "gloss_text": "ಯಾವುದರಲ್ಲೂ"},
+      {"word_idx": 3, "gloss_text": "ರಾಗ ಬೇಡ"},
+      {"word_idx": 4, "gloss_text": "ಭಾವಿಸಬೇಡ"},
+      {"word_idx": 5, "gloss_text": "ಯಾವುದರಲ್ಲೂ"},
+      {"word_idx": 6, "gloss_text": "ರಾಗ-ದ್ವೇಷ ವಿಮುಕ್ತಿಯಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ ಬ್ರಹ್ಮ"},
+      {"word_idx": 8, "gloss_text": "ಪ್ರಸರಿಸುತ್ತದೆ"}
+    ],
+    "1.58": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದು ಅವೇದ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಯಾವುದು ಅಗ್ರಾಹ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಯಾವುದು ಶೂನ್ಯ"},
+      {"word_idx": 3, "gloss_text": "ಯಾವುದು ಅಭಾವಗ"},
+      {"word_idx": 4, "gloss_text": "ಅದೆಲ್ಲ ಭೈರವ"},
+      {"word_idx": 5, "gloss_text": "ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 6, "gloss_text": "ಅದರ ಅಂತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಬೋಧ ಸಂಭವ"}
+    ],
+    "1.59": [
+      {"word_idx": 0, "gloss_text": "ನಿತ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ವಿಭುವಿನಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ನಿರಾಧಾರದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ವ್ಯಾಪಕದಲ್ಲಿ"},
+      {"word_idx": 4, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 5, "gloss_text": "ಸರ್ವಾತ್ಮನಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಹೀಗೆ ಭೈರವನನ್ನು"},
+      {"word_idx": 7, "gloss_text": "ಅನುಸ್ಮರಿಸುತ್ತಾ"},
+      {"word_idx": 8, "gloss_text": "ಪುರುಷನು ಮುಕ್ತನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.60": [
+      {"word_idx": 0, "gloss_text": "ನಿರಾಧಾರ"},
+      {"word_idx": 1, "gloss_text": "ಸಂಶಯವಿರಹಿತ"},
+      {"word_idx": 2, "gloss_text": "ಖ್ಯಾತಿರಹಿತ"},
+      {"word_idx": 3, "gloss_text": "ಅದು ಪರಮ ಬ್ರಹ್ಮ"},
+      {"word_idx": 4, "gloss_text": "ಪ್ರೋಕ್ತ"},
+      {"word_idx": 5, "gloss_text": "ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 6, "gloss_text": "ತನ್ಮಯನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.61": [
+      {"word_idx": 0, "gloss_text": "ಹೇಗೆ ಹೇಗೆ"},
+      {"word_idx": 1, "gloss_text": "ಉಪದೇಶದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಮಾಡಲ್ಪಡುತ್ತದೆ"},
+      {"word_idx": 3, "gloss_text": "ಪ್ರಾಣಗಳ ಲಯ"},
+      {"word_idx": 4, "gloss_text": "ಹಾಗೆ ಹಾಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸು ಜ್ಞೇಯ"},
+      {"word_idx": 6, "gloss_text": "ಆ ಸ್ಥಿತಿಯ ಪದಕ್ಕೆ ಹೋಗುತ್ತಾನೆ"}
+    ],
+    "1.62": [
+      {"word_idx": 0, "gloss_text": "ಅಮೂಲ"},
+      {"word_idx": 1, "gloss_text": "ಮೂಲನಾಡಿಗಳ"},
+      {"word_idx": 2, "gloss_text": "ವಾಯುಪೂರಿತ"},
+      {"word_idx": 3, "gloss_text": "ಸುಷುಮ್ನೆ"},
+      {"word_idx": 4, "gloss_text": "ದ್ವಾದಶಾಂತದಲ್ಲಿ ಸ್ಥಿತ"},
+      {"word_idx": 5, "gloss_text": "ಧ್ಯಾನಿಸಿ"},
+      {"word_idx": 6, "gloss_text": "ಅಮೂಲ ಭೈರವಗೆ ಹೋಗುತ್ತಾನೆ"}
+    ],
+    "1.63": [
+      {"word_idx": 0, "gloss_text": "ಕಪಾಲದೊಳಗೆ"},
+      {"word_idx": 1, "gloss_text": "ಹಾಗೆ ಮನಸ್ಸನ್ನು"},
+      {"word_idx": 2, "gloss_text": "ಧ್ಯಾನಿಸುವವನಿಗೆ"},
+      {"word_idx": 3, "gloss_text": "ಬಹಳ ಬೇಗ"},
+      {"word_idx": 4, "gloss_text": "ಹೇ ಪ್ರಭು"},
+      {"word_idx": 5, "gloss_text": "ನಿಮೀಲನಾದಿಜ ಸಿದ್ಧಿ"},
+      {"word_idx": 6, "gloss_text": "ಚಿನ್ಮಯನಿಗೆ"},
+      {"word_idx": 7, "gloss_text": "ಉಂಟಾಗುತ್ತದೆ"}
+    ],
+    "1.64": [
+      {"word_idx": 0, "gloss_text": "ನಾಲಿಗೆಯ ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಬಾಯಿ ತೆರೆದು"},
+      {"word_idx": 2, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ ಇಟ್ಟು"},
+      {"word_idx": 3, "gloss_text": "ಚೇತನವನ್ನು"},
+      {"word_idx": 4, "gloss_text": "'ಹ'ಕಾರ ಉಚ್ಚಾರ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸಿನಿಂದ ಮಾಡುತ್ತಾ"},
+      {"word_idx": 6, "gloss_text": "ಶಾಂತದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಲಯಿಸುತ್ತಾನೆ"}
+    ],
+    "1.65": [
+      {"word_idx": 0, "gloss_text": "ಆಸನದಲ್ಲಿ ಶಯನದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಇದ್ದು"},
+      {"word_idx": 2, "gloss_text": "ನಿರಾಧಾರ"},
+      {"word_idx": 3, "gloss_text": "ಭಾವಿಸುತ್ತಾ"},
+      {"word_idx": 4, "gloss_text": "ತನ್ನ ದೇಹ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸು ಕ್ಷೀಣವಾದಾಗ"},
+      {"word_idx": 6, "gloss_text": "ಕ್ಷಣದಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ಕ್ಷೀಣಾಶಯನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.66": [
+      {"word_idx": 0, "gloss_text": "ಚಲಾಸನದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಕುಳಿತವನಿಗೆ, ಆಗ"},
+      {"word_idx": 2, "gloss_text": "ಅಥವಾ ಮೆಲ್ಲನೆ"},
+      {"word_idx": 3, "gloss_text": "ದೇಹಚಾಲನೆಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಮಾನಸಭಾವ ಪ್ರಶಾಂತವಾದಾಗ"},
+      {"word_idx": 5, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 6, "gloss_text": "ದಿವ್ಯೌಘ"},
+      {"word_idx": 7, "gloss_text": "ಪಡೆಯುತ್ತಾನೆ"}
+    ],
+    "1.67": [
+      {"word_idx": 0, "gloss_text": "ವಿಮಲ ಆಕಾಶ"},
+      {"word_idx": 1, "gloss_text": "ನೋಡುತ್ತಾ"},
+      {"word_idx": 2, "gloss_text": "ನಿರಂತರ ದೃಷ್ಟಿಯಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಸ್ತಬ್ಧಾತ್ಮ"},
+      {"word_idx": 4, "gloss_text": "ತತ್ ಕ್ಷಣದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 6, "gloss_text": "ಭೈರವ ವಪು"},
+      {"word_idx": 7, "gloss_text": "ಪಡೆಯುತ್ತಾನೆ"}
+    ],
+    "1.68": [
+      {"word_idx": 0, "gloss_text": "ಲೀನ"},
+      {"word_idx": 1, "gloss_text": "ತಲೆಯಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ವ್ಯೋಮ"},
+      {"word_idx": 3, "gloss_text": "ಎಲ್ಲ"},
+      {"word_idx": 4, "gloss_text": "ಭೈರವತ್ವದಿಂದ ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 5, "gloss_text": "ಅದೆಲ್ಲ"},
+      {"word_idx": 6, "gloss_text": "ಭೈರವಾಕಾರ ತೇಜಸ್ ತತ್ತ್ವ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರವೇಶಿಸಬೇಕು"}
+    ],
+    "1.69": [
+      {"word_idx": 0, "gloss_text": "ಅಲ್ಪಜ್ಞಾನ"},
+      {"word_idx": 1, "gloss_text": "ದ್ವೈತ ತರುವಂಥದ್ದು"},
+      {"word_idx": 2, "gloss_text": "ಬಾಹ್ಯಾಲೋಕ"},
+      {"word_idx": 3, "gloss_text": "ಮತ್ತೆ ತಮಸ್ಸು"},
+      {"word_idx": 4, "gloss_text": "ವಿಶ್ವಾದಿ"},
+      {"word_idx": 5, "gloss_text": "ಭೈರವ ರೂಪ"},
+      {"word_idx": 6, "gloss_text": "ತಿಳಿದು"},
+      {"word_idx": 7, "gloss_text": "ಅನಂತ ಪ್ರಕಾಶ ಧಾರಕ"}
+    ],
+    "1.70": [
+      {"word_idx": 0, "gloss_text": "ಹಾಗೆಯೇ"},
+      {"word_idx": 1, "gloss_text": "ದುರ್ನಿಶೆಯಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಕೃಷ್ಣಪಕ್ಷ ಆಗಮನದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ದೀರ್ಘಕಾಲ"},
+      {"word_idx": 4, "gloss_text": "ತಮೋ ರೂಪ"},
+      {"word_idx": 5, "gloss_text": "ಭಾವಿಸುತ್ತಾ"},
+      {"word_idx": 6, "gloss_text": "ಭೈರವ ರೂಪವಾಗಿ"},
+      {"word_idx": 7, "gloss_text": "ರೂಪವನ್ನು ಪಡೆಯುತ್ತಾನೆ"}
+    ],
+    "1.71": [
+      {"word_idx": 0, "gloss_text": "ಹಾಗೆಯೇ"},
+      {"word_idx": 1, "gloss_text": "ಮೊದಲು ಮುಚ್ಚಿ"},
+      {"word_idx": 2, "gloss_text": "ಎರಡು ಕಣ್ಣುಗಳನ್ನು"},
+      {"word_idx": 3, "gloss_text": "ಕೃಷ್ಣಾಭ"},
+      {"word_idx": 4, "gloss_text": "ಮುಂದೆ"},
+      {"word_idx": 5, "gloss_text": "ಹರಡಿ"},
+      {"word_idx": 6, "gloss_text": "ಭೈರವ ರೂಪ"},
+      {"word_idx": 7, "gloss_text": "ಭಾವಿಸುತ್ತಾ"},
+      {"word_idx": 8, "gloss_text": "ತನ್ಮಯನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.72": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದೇ ಇಂದ್ರಿಯದ"},
+      {"word_idx": 1, "gloss_text": "ವ್ಯಾಘಾತದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 3, "gloss_text": "ನಿರೋಧದಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಪ್ರವೇಶಿಸಿದವನಿಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಅದ್ವಯ ಶೂನ್ಯದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಅಲ್ಲಿಯೇ"},
+      {"word_idx": 7, "gloss_text": "ಆತ್ಮ ಪ್ರಕಾಶಿಸುತ್ತಾನೆ"}
+    ],
+    "1.73": [
+      {"word_idx": 0, "gloss_text": "ಬಿಂದು ರಹಿತ"},
+      {"word_idx": 1, "gloss_text": "ವಿಸರ್ಗ ರಹಿತ"},
+      {"word_idx": 2, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 3, "gloss_text": "'ಅ'ಕಾರ"},
+      {"word_idx": 4, "gloss_text": "ಜಪಿಸುವವನಿಗೆ"},
+      {"word_idx": 5, "gloss_text": "ಮಹಾ ಉದಯಿಸುತ್ತದೆ"},
+      {"word_idx": 6, "gloss_text": "ಹೇ ದೇವಿ"},
+      {"word_idx": 7, "gloss_text": "ಸಹಸಾ"},
+      {"word_idx": 8, "gloss_text": "ಜ್ಞಾನೌಘ ಪರಮೇಶ್ವರ"}
+    ],
+    "1.74": [
+      {"word_idx": 0, "gloss_text": "ಸವಿಸರ್ಗ ವರ್ಣದ"},
+      {"word_idx": 1, "gloss_text": "ವಿಸರ್ಗದ ಅಂತ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಚೇತನವನ್ನು ಇಡು"},
+      {"word_idx": 3, "gloss_text": "ನಿರಾಧಾರ ಚಿತ್ತದಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಸನಾತನ ಬ್ರಹ್ಮವನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಾನೆ"}
+    ],
+    "1.75": [
+      {"word_idx": 0, "gloss_text": "ವ್ಯೋಮಾಕಾರ"},
+      {"word_idx": 1, "gloss_text": "ತನ್ನ ಆತ್ಮ"},
+      {"word_idx": 2, "gloss_text": "ಧ್ಯಾನಿಸಬೇಕು"},
+      {"word_idx": 3, "gloss_text": "ದಿಕ್ಕುಗಳಿಂದ ಆವೃತವಲ್ಲದ್ದು"},
+      {"word_idx": 4, "gloss_text": "ನಿರಾಶ್ರಯ"},
+      {"word_idx": 5, "gloss_text": "ಚಿತಿ-ಶಕ್ತಿ"},
+      {"word_idx": 6, "gloss_text": "ಸ್ವರೂಪವನ್ನು ಪ್ರಕಟಿಸುತ್ತಾಳೆ"},
+      {"word_idx": 7, "gloss_text": "ಆಗ"}
+    ],
+    "1.76": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದಾದರೂ ಅಂಗ"},
+      {"word_idx": 1, "gloss_text": "ಮೊದಲು ಭೇದಿಸಿ"},
+      {"word_idx": 2, "gloss_text": "ತೀಕ್ಷ್ಣ ಸೂಜಿ ಮುಂತಾದವುಗಳಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಆ ಮೇಲೆ"},
+      {"word_idx": 4, "gloss_text": "ಅಲ್ಲಿಯೇ"},
+      {"word_idx": 5, "gloss_text": "ಚೇತನವನ್ನು ಯೋಜಿಸಿ"},
+      {"word_idx": 6, "gloss_text": "ಭೈರವನಲ್ಲಿ"},
+      {"word_idx": 7, "gloss_text": "ನಿರ್ಮಲ ಗತಿ"}
+    ],
+    "1.77": [
+      {"word_idx": 0, "gloss_text": "ಚಿತ್ತಾದಿ ಅಂತಃಕರಣ"},
+      {"word_idx": 1, "gloss_text": "ಇಲ್ಲ"},
+      {"word_idx": 2, "gloss_text": "ನನ್ನೊಳಗೆ"},
+      {"word_idx": 3, "gloss_text": "ಎಂದು ಭಾವಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ವಿಕಲ್ಪಗಳ ಅಭಾವದಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ವಿಕಲ್ಪರಹಿತನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.78": [
+      {"word_idx": 0, "gloss_text": "ಮಾಯೆ ವಿಮೋಹಿನಿ ಎಂದು"},
+      {"word_idx": 1, "gloss_text": "ಕಲೆಯ"},
+      {"word_idx": 2, "gloss_text": "ಕಲನ"},
+      {"word_idx": 3, "gloss_text": "ಸ್ಥಿತ"},
+      {"word_idx": 4, "gloss_text": "ಇತ್ಯಾದಿ ಧರ್ಮ"},
+      {"word_idx": 5, "gloss_text": "ತತ್ತ್ವಗಳ"},
+      {"word_idx": 6, "gloss_text": "ಗಣಿಸುತ್ತಾ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರತ್ಯೇಕನಾಗದೆ ಇರುತ್ತಾನೆ"}
+    ],
+    "1.79": [
+      {"word_idx": 0, "gloss_text": "ಸಹಸಾ"},
+      {"word_idx": 1, "gloss_text": "ಉತ್ಪನ್ನವಾದ ಇಚ್ಛೆ"},
+      {"word_idx": 2, "gloss_text": "ಗಮನಿಸಿ"},
+      {"word_idx": 3, "gloss_text": "ಶಮಗೊಳಿಸಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಎಲ್ಲಿಂದ ಉದ್ಭವಿಸಿತೋ"},
+      {"word_idx": 5, "gloss_text": "ಅಲ್ಲಿಯೇ ಲೀನವಾಗುತ್ತದೆ"}
+    ],
+    "1.80": [
+      {"word_idx": 0, "gloss_text": "ನನ್ನ ಇಚ್ಛೆ ಯಾವಾಗ"},
+      {"word_idx": 1, "gloss_text": "ಉತ್ಪನ್ನವಾಗಿಲ್ಲ"},
+      {"word_idx": 2, "gloss_text": "ಜ್ಞಾನವೂ ಇಲ್ಲ"},
+      {"word_idx": 3, "gloss_text": "ಆಗ ನಾನು ಯಾರು?"},
+      {"word_idx": 4, "gloss_text": "ತತ್ತ್ವತಃ ನಾನು ಹಾಗೆ ಆಗಿರುತ್ತೇನೆ"},
+      {"word_idx": 5, "gloss_text": "ತಲ್ಲೀನ"},
+      {"word_idx": 6, "gloss_text": "ತನ್ಮನಸ್ಕನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.81": [
+      {"word_idx": 0, "gloss_text": "ಇಚ್ಛೆಯಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಅಥವಾ ಜ್ಞಾನದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಉತ್ಪನ್ನವಾದಾಗ"},
+      {"word_idx": 3, "gloss_text": "ಚಿತ್ತವನ್ನು ಇಡಬೇಕು"},
+      {"word_idx": 4, "gloss_text": "ಆತ್ಮಬುದ್ಧಿಯಿಂದ ಅನನ್ಯಚೇತಸ"},
+      {"word_idx": 5, "gloss_text": "ಆ ಮೇಲೆ ತತ್ತ್ವಾರ್ಥ ದರ್ಶನ"}
+    ],
+    "1.82": [
+      {"word_idx": 0, "gloss_text": "ನಿರ್ನಿಮಿತ್ತ"},
+      {"word_idx": 1, "gloss_text": "ಜ್ಞಾನ ಉಂಟಾಗಬಹುದು"},
+      {"word_idx": 2, "gloss_text": "ನಿರಾಧಾರ"},
+      {"word_idx": 3, "gloss_text": "ಭ್ರಮಾತ್ಮಕ"},
+      {"word_idx": 4, "gloss_text": "ತತ್ತ್ವತಃ ಯಾರಿಗೂ ಸೇರಿದ್ದಲ್ಲ"},
+      {"word_idx": 5, "gloss_text": "ಹೀಗೆ ಭಾವಿಸುವವನು ಶಿವನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.83": [
+      {"word_idx": 0, "gloss_text": "ಚಿತ್‌ ಧರ್ಮಿ"},
+      {"word_idx": 1, "gloss_text": "ಎಲ್ಲ ದೇಹಗಳಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಎಲ್ಲಿಯೂ ವಿಶೇಷ ಇಲ್ಲ"},
+      {"word_idx": 3, "gloss_text": "ಆದ್ದರಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಎಲ್ಲವೂ ತನ್ಮಯ"},
+      {"word_idx": 5, "gloss_text": "ಭಾವಿಸುತ್ತಾ"},
+      {"word_idx": 6, "gloss_text": "ಪುರುಷನು ಭವಜಿತ್ತಾಗುತ್ತಾನೆ"}
+    ],
+    "1.84": [
+      {"word_idx": 0, "gloss_text": "ಕಾಮ-ಕ್ರೋಧ-ಲೋಭ-ಮೋಹ-ಮದ-ಮಾತ್ಸರ್ಯ ಗೋಚರದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಬುದ್ಧಿಯನ್ನು ನಿಸ್ತಿಮಿತ ಮಾಡಿ"},
+      {"word_idx": 2, "gloss_text": "ಆ ತತ್ತ್ವವೇ ಉಳಿಯುತ್ತದೆ"}
+    ],
+    "1.85": [
+      {"word_idx": 0, "gloss_text": "ಇಂದ್ರಜಾಲಮಯ ವಿಶ್ವ"},
+      {"word_idx": 1, "gloss_text": "ವ್ಯಸ್ತ"},
+      {"word_idx": 2, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 3, "gloss_text": "ಚಿತ್ರಕರ್ಮದಂತೆ"},
+      {"word_idx": 4, "gloss_text": "ಭ್ರಮಿಸುತ್ತಿರುವಂತೆ"},
+      {"word_idx": 5, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 6, "gloss_text": "ಧ್ಯಾನಿಸುವವನಿಗೆ"},
+      {"word_idx": 7, "gloss_text": "ಎಲ್ಲ ನೋಡುತ್ತಿರುವವನಿಗೆ"},
+      {"word_idx": 8, "gloss_text": "ಸುಖೋದಯ"}
+    ],
+    "1.86": [
+      {"word_idx": 0, "gloss_text": "ಚಿತ್ತ ದುಃಖದಲ್ಲಿ ಇಡಬೇಡ"},
+      {"word_idx": 1, "gloss_text": "ಸುಖದಲ್ಲಿ ಎಸೆಯಬೇಡ"},
+      {"word_idx": 2, "gloss_text": "ಹೇ ಭೈರವಿ"},
+      {"word_idx": 3, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ ತಿಳಿಯಲಿ"},
+      {"word_idx": 4, "gloss_text": "ಯಾವ ತತ್ತ್ವ ಉಳಿಯುತ್ತದೆ?"}
+    ],
+    "1.87": [
+      {"word_idx": 0, "gloss_text": "ಬಿಟ್ಟು"},
+      {"word_idx": 1, "gloss_text": "ತನ್ನ ದೇಹದ ಆಸಕ್ತಿ"},
+      {"word_idx": 2, "gloss_text": "'ನಾನು ಎಲ್ಲ ಕಡೆ ಇದ್ದೇನೆ' ಎಂದು"},
+      {"word_idx": 3, "gloss_text": "ಭಾವಿಸುತ್ತಾ"},
+      {"word_idx": 4, "gloss_text": "ದೃಢ ಮನಸ್ಸಿನಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ದೃಷ್ಟಿಯಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಬೇರೆ ನೋಡದ"},
+      {"word_idx": 7, "gloss_text": "ಸುಖಿಯಾಗುತ್ತಾನೆ"}
+    ],
+    "1.88": [
+      {"word_idx": 0, "gloss_text": "ಘಟಾದಿಗಳಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಯಾವ ವಿಜ್ಞಾನ"},
+      {"word_idx": 2, "gloss_text": "ಇಚ್ಛೆ ಮುಂತಾದವು ನನ್ನೊಳಗೆ"},
+      {"word_idx": 3, "gloss_text": "ಸರ್ವಗತವಾಗಿಯೇ ಜನಿಸಿದೆ"},
+      {"word_idx": 4, "gloss_text": "ಭಾವಿಸುತ್ತಾ ಸರ್ವಗನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.89": [
+      {"word_idx": 0, "gloss_text": "ಗ್ರಾಹ್ಯ-ಗ್ರಾಹಕ ಸಂವಿತ್ತಿ"},
+      {"word_idx": 1, "gloss_text": "ಸಾಮಾನ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಎಲ್ಲ ದೇಹಿಗಳಿಗೆ"},
+      {"word_idx": 3, "gloss_text": "ಯೋಗಿಗಳಲ್ಲಿ ವಿಶೇಷ ಇದೆ"},
+      {"word_idx": 4, "gloss_text": "ಸಂಬಂಧದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಸಾವಧಾನತೆ"}
+    ],
+    "1.90": [
+      {"word_idx": 0, "gloss_text": "ತನ್ನಂತೆ"},
+      {"word_idx": 1, "gloss_text": "ಅನ್ಯ ಶರೀರದಲ್ಲಿಯೂ"},
+      {"word_idx": 2, "gloss_text": "ಸಂವಿತ್ತಿಯನ್ನು ಅನುಭವಿಸಬೇಕು"},
+      {"word_idx": 3, "gloss_text": "ತನ್ನ ಶರೀರದ ಅಪೇಕ್ಷೆಯನ್ನು"},
+      {"word_idx": 4, "gloss_text": "ತ್ಯಜಿಸಿ"},
+      {"word_idx": 5, "gloss_text": "ಕೆಲವೇ ದಿನಗಳಲ್ಲಿ ವ್ಯಾಪಿಯಾಗುತ್ತಾನೆ"}
+    ],
+    "1.91": [
+      {"word_idx": 0, "gloss_text": "ಮನಸ್ಸನ್ನು ನಿರಾಧಾರ ಮಾಡಿ"},
+      {"word_idx": 1, "gloss_text": "ವಿಕಲ್ಪಗಳನ್ನು ಮಾಡದಿರಬೇಕು"},
+      {"word_idx": 2, "gloss_text": "ಆತ್ಮ-ಪರಮಾತ್ಮತ್ವದಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಹೇ ಮೃಗನೇತ್ರೆ, ಭೈರವ"}
+    ],
+    "1.92": [
+      {"word_idx": 0, "gloss_text": "ಸರ್ವಜ್ಞ"},
+      {"word_idx": 1, "gloss_text": "ಸರ್ವಕರ್ತ"},
+      {"word_idx": 2, "gloss_text": "ವ್ಯಾಪಕ ಪರಮೇಶ್ವರ"},
+      {"word_idx": 3, "gloss_text": "ಅವನೇ ನಾನು"},
+      {"word_idx": 4, "gloss_text": "ಶೈವಧರ್ಮಿ"},
+      {"word_idx": 5, "gloss_text": "ಎಂಬ ದೃಢ ನಿಶ್ಚಯದಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಶಿವನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.93": [
+      {"word_idx": 0, "gloss_text": "ನೀರಿನಂತೆ"},
+      {"word_idx": 1, "gloss_text": "ತೆರೆಗಳು"},
+      {"word_idx": 2, "gloss_text": "ಬೆಂಕಿಯ ಜ್ವಾಲೆಯ ಭಂಗಿಗಳು"},
+      {"word_idx": 3, "gloss_text": "ಸೂರ್ಯನ ಪ್ರಭೆ"},
+      {"word_idx": 4, "gloss_text": "ನನ್ನವೇ ಭೈರವನ"},
+      {"word_idx": 5, "gloss_text": "ಈ ವಿಶ್ವಭಂಗಿಗಳು"},
+      {"word_idx": 6, "gloss_text": "ಭಿನ್ನವಾಗಿ ತೋರುತ್ತವೆ"}
+    ],
+    "1.94": [
+      {"word_idx": 0, "gloss_text": "ಸುತ್ತಿ ಸುತ್ತಿ"},
+      {"word_idx": 1, "gloss_text": "ಶರೀರದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ತ್ವರಿತವಾಗಿ"},
+      {"word_idx": 3, "gloss_text": "ನೆಲಕ್ಕೆ ಬೀಳುವುದರಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಕ್ಷೋಭಶಕ್ತಿಯ ವಿರಾಮದಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ಪರಮ ದಶೆ ಜನಿಸುತ್ತದೆ"}
+    ],
+    "1.95": [
+      {"word_idx": 0, "gloss_text": "ಆಧಾರಗಳಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಅಥವಾ ಅಶಕ್ತಿಯಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಜ್ಞಾನದಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಅಥವಾ"},
+      {"word_idx": 4, "gloss_text": "ದೇಶಕಲ್ಪನೆಯಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ಶಕ್ತಿಸಂಶೋಭ ಉಂಟಾದಾಗ"},
+      {"word_idx": 6, "gloss_text": "ಶಾಂತವಾದ ನಂತರ ಆಗ ಆಗುತ್ತದೆ"}
+    ],
+    "1.96": [
+      {"word_idx": 0, "gloss_text": "ಕುಳಿತು"},
+      {"word_idx": 1, "gloss_text": "ಸಮ್ಯಕ್ ಆಸನದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಎರಡು ಬಾಹುಗಳನ್ನು ಮಾಡಿ"},
+      {"word_idx": 3, "gloss_text": "ಅರ್ಧ ಬಗ್ಗಿಸಿದ"},
+      {"word_idx": 4, "gloss_text": "ಕಂಕುಳ ವ್ಯೋಮದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಮನಸ್ಸನ್ನು ಇಟ್ಟು"},
+      {"word_idx": 6, "gloss_text": "ಶಾಂತಿಯನ್ನು ಪಡೆಯುತ್ತಾನೆ"},
+      {"word_idx": 7, "gloss_text": "ಆ ಲಯದಿಂದ"}
+    ],
+    "1.97": [
+      {"word_idx": 0, "gloss_text": "ಸ್ಥೂಲ ರೂಪದ ಭಾವದ"},
+      {"word_idx": 1, "gloss_text": "ಸ್ತಬ್ಧ ದೃಷ್ಟಿಯನ್ನು ಬೀಳಿಸಿ"},
+      {"word_idx": 2, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 3, "gloss_text": "ಶೀಘ್ರವಾಗಿ"},
+      {"word_idx": 4, "gloss_text": "ಮನಸ್ಸನ್ನು ನಿರಾಧಾರ ಮಾಡಿ"},
+      {"word_idx": 5, "gloss_text": "ಶಿವನನ್ನು ಹೊಂದುತ್ತಾನೆ"}
+    ],
+    "1.98": [
+      {"word_idx": 0, "gloss_text": "ನಾಲಿಗೆಯ ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಬಾಯಿ ತೆರೆದು"},
+      {"word_idx": 2, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ ಚೇತನವನ್ನು ಇಟ್ಟು"},
+      {"word_idx": 3, "gloss_text": "ಮನಸ್ಸಿನಿಂದ ಮಂತ್ರ ಉಚ್ಚರಿಸುತ್ತಾ"},
+      {"word_idx": 4, "gloss_text": "ಶಿವನನ್ನು ಧ್ಯಾನಿಸಿ"},
+      {"word_idx": 5, "gloss_text": "ಪ್ರಶಾಂತನಾಗುತ್ತಾನೆ"}
+    ],
+    "1.99": [
+      {"word_idx": 0, "gloss_text": "ಕಪಾಲದೊಳಗೆ"},
+      {"word_idx": 1, "gloss_text": "ಮುಚ್ಚಿದ ಕಣ್ಣುಳ್ಳವನು"},
+      {"word_idx": 2, "gloss_text": "ಉತ್ತಮ ಲಕ್ಷ್ಯ"}
+    ],
+    "1.100": [
+      {"word_idx": 0, "gloss_text": "ಮಧ್ಯನಾಡಿ (ಸುಷುಮ್ನಾ)"},
+      {"word_idx": 1, "gloss_text": "ಕಮಲನಾಳದಂತೆ ಆಕಾರವುಳ್ಳವಳಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಅಂತರ್ ವ್ಯೋಮ ದೇವಿಯಿಂದ"}
+    ],
+    "1.101": [
+      {"word_idx": 0, "gloss_text": "ಕೈಗಳಿಂದ ತಡೆದ ದೃಷ್ಟಿ"},
+      {"word_idx": 1, "gloss_text": "ದ್ವಾರ ರೋಧದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಪರಮ ಸ್ಥಿತಿ"}
+    ],
+    "1.102": [
+      {"word_idx": 0, "gloss_text": "ಮಂತ್ರಾರ್ಥ ಪ್ರೋಕ್ತ ರೂಪಗಳು"},
+      {"word_idx": 1, "gloss_text": "ಅಧಿಕಾರಿ ವಿಶೇಷದಂತೆ"},
+      {"word_idx": 2, "gloss_text": "ಸಾಧಕನು"}
+    ],
+    "1.103": [
+      {"word_idx": 0, "gloss_text": "ಅನುಸಂಧಾನ ಮಾಡಬೇಕು"},
+      {"word_idx": 1, "gloss_text": "ಒಂದು ಜ್ಞಾನವನ್ನು ಆಶ್ರಯಿಸಿ"},
+      {"word_idx": 2, "gloss_text": "ಯೋಗಸಿದ್ಧಿ"}
+    ],
+    "1.104": [
+      {"word_idx": 0, "gloss_text": "ಕಾಮನೆಯ ವೇಗದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ವಿಸ್ಮಯ"},
+      {"word_idx": 2, "gloss_text": "ಸ್ವಶರೀರಾಹ್ಲಾದ ಶಕ್ತಿ"}
+    ],
+    "1.105": [
+      {"word_idx": 0, "gloss_text": "ಲೇಹನ-ಮಂಥನ-ಆಕೋಟಗಳಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಸ್ತ್ರೀಸುಖದ ಭರದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಆನಂದ ಸಮ್ಪ್ಲವ"}
+    ],
+    "1.106": [
+      {"word_idx": 0, "gloss_text": "ಮಹಾ ಆನಂದ ದೊರಕಿದಾಗ"},
+      {"word_idx": 1, "gloss_text": "ಬಹುದಿನಗಳ ನಂತರ ಬಂಧುವನ್ನು ನೋಡಿದಾಗ"},
+      {"word_idx": 2, "gloss_text": "ಅದರಲ್ಲಿ ತಲ್ಲೀನ"}
+    ],
+    "1.107": [
+      {"word_idx": 0, "gloss_text": "ಭಕ್ಷ್ಯ-ಪಾನ"},
+      {"word_idx": 1, "gloss_text": "ರಸಾನಂದದ ವಿಜೃಂಭಣದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಮಹಾ ಆನಂದ"}
+    ],
+    "1.108": [
+      {"word_idx": 0, "gloss_text": "ಗೀತ ಮುಂತಾದ ವಿಷಯಗಳ ಆಸ್ವಾದದ ಅಸಮ ಸೌಖ್ಯದಲ್ಲಿ ಏಕತಾತ್ಮನಾದವನ"},
+      {"word_idx": 1, "gloss_text": "ಯೋಗಿಗೆ"},
+      {"word_idx": 2, "gloss_text": "ತನ್ಮಯತ್ವದಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಮನೋರೂಢಿಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ತದಾತ್ಮತಾ"}
+    ],
+    "1.109": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲೆಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಆತ್ಮಕ್ಕೆ ತುಷ್ಟಿ"},
+      {"word_idx": 2, "gloss_text": "ಮನಸ್ಸು"},
+      {"word_idx": 3, "gloss_text": "ಅಲ್ಲಿಯೇ"},
+      {"word_idx": 4, "gloss_text": "ಧಾರಣೆ ಮಾಡಬೇಕು"},
+      {"word_idx": 5, "gloss_text": "ಅಲ್ಲೆಲ್ಲ"},
+      {"word_idx": 6, "gloss_text": "ಪರಮಾನಂದ ಸ್ವರೂಪ"},
+      {"word_idx": 7, "gloss_text": "ಪ್ರವರ್ತಿಸುತ್ತದೆ"}
+    ],
+    "1.110": [
+      {"word_idx": 0, "gloss_text": "ನಿದ್ರೆ ಬಾರದಿರುವಾಗ"},
+      {"word_idx": 1, "gloss_text": "ಬಾಹ್ಯ ಗೋಚರ ನಶಿಸಿದಾಗ"},
+      {"word_idx": 2, "gloss_text": "ಆ ಅವಸ್ಥೆ"},
+      {"word_idx": 3, "gloss_text": "ಮನಸ್ಸಿನಿಂದ ಗಮ್ಯ"},
+      {"word_idx": 4, "gloss_text": "ಪರಾದೇವಿ ಪ್ರಕಾಶಿಸುತ್ತಾಳೆ"}
+    ],
+    "1.111": [
+      {"word_idx": 0, "gloss_text": "ತೇಜದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಸೂರ್ಯ-ದೀಪಾದಿಗಳ"},
+      {"word_idx": 2, "gloss_text": "ಆಕಾಶ ಶಬಲೀಕೃತವಾದಾಗ"},
+      {"word_idx": 3, "gloss_text": "ತನ್ನ ಆತ್ಮವನ್ನು ಕಂಡಾಗ"},
+      {"word_idx": 4, "gloss_text": "ಭಾಯುಕ್ತದಲ್ಲಿ"},
+      {"word_idx": 5, "gloss_text": "ಸಚ್ಚಿದಾನಂದ ಗೋಚರ"}
+    ],
+    "1.112": [
+      {"word_idx": 0, "gloss_text": "ಕರಂಕಿಣಿಯಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಕ್ರೋಧನೆಯಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವಿಯಿಂದ"},
+      {"word_idx": 3, "gloss_text": "ಲೇಲಿಹಾನೆಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಖೇಚರಿಯಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ದೃಷ್ಟಿ ಕಾಲದಲ್ಲಿ"},
+      {"word_idx": 6, "gloss_text": "ಮತ್ತು"},
+      {"word_idx": 7, "gloss_text": "ಪರಾವಾಪ್ತಿ"},
+      {"word_idx": 8, "gloss_text": "ಪ್ರಕಾಶಿಸುತ್ತದೆ"}
+    ],
+    "1.113": [
+      {"word_idx": 0, "gloss_text": "ಮೃದು ಆಸನದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಒಂದು ಪೃಷ್ಠದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಕೈ-ಪಾದ ನಿರಾಶ್ರಯ"},
+      {"word_idx": 3, "gloss_text": "ಇಟ್ಟು"},
+      {"word_idx": 4, "gloss_text": "ಆ ಪ್ರಸಂಗದಿಂದ"},
+      {"word_idx": 5, "gloss_text": "ಪರಾ ಪೂರ್ಣ ಮತಿ ಆಗುತ್ತದೆ"}
+    ],
+    "1.114": [
+      {"word_idx": 0, "gloss_text": "ಅರ್ಧ ಬಗ್ಗಿಸಿದ ಎರಡು ಬಾಹುಗಳು"},
+      {"word_idx": 1, "gloss_text": "ಕಂಕುಳ ವ್ಯೋಮದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಆ ಲಯದಿಂದ"}
+    ],
+    "1.115": [
+      {"word_idx": 0, "gloss_text": "ಸ್ತಬ್ಧ ದೃಷ್ಟಿಯನ್ನು ಬೀಳಿಸಿ"},
+      {"word_idx": 1, "gloss_text": "ನಿರಾಧಾರ"},
+      {"word_idx": 2, "gloss_text": "ಶಿವನನ್ನು ಹೊಂದಬೇಕು"}
+    ],
+    "1.116": [
+      {"word_idx": 0, "gloss_text": "ನಾಲಿಗೆಯ ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "'ಹ'ಕಾರ ಉಚ್ಚಾರ"},
+      {"word_idx": 2, "gloss_text": "ಶಾಂತದಲ್ಲಿ (ಶಿವನಲ್ಲಿ)"}
+    ],
+    "1.117": [
+      {"word_idx": 0, "gloss_text": "ನಿರಾಧಾರ ಸ್ವದೇಹ"},
+      {"word_idx": 1, "gloss_text": "ಮನಸ್ಸು ಕ್ಷೀಣವಾದಾಗ"},
+      {"word_idx": 2, "gloss_text": "ಕ್ಷೀಣ ಆಶಯ"}
+    ],
+    "1.118": [
+      {"word_idx": 0, "gloss_text": "ಚಲಾಸನದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ದೇಹಚಾಲನೆಯಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ದಿವ್ಯೌಘ"}
+    ],
+    "1.119": [
+      {"word_idx": 0, "gloss_text": "ವಿಮಲ ಆಕಾಶ"},
+      {"word_idx": 1, "gloss_text": "ಸ್ತಬ್ಧಾತ್ಮ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವ ವಪು"}
+    ],
+    "1.120": [
+      {"word_idx": 0, "gloss_text": "ವ್ಯೋಮ ಲೀನ"},
+      {"word_idx": 1, "gloss_text": "ಭೈರವತ್ವದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವಾಕಾರ ತೇಜಸ್‌ ತತ್ತ್ವ"}
+    ],
+    "1.121": [
+      {"word_idx": 0, "gloss_text": "ಅಲ್ಪ ಜ್ಞಾತ"},
+      {"word_idx": 1, "gloss_text": "ಬಾಹ್ಯಾಲೋಕ"},
+      {"word_idx": 2, "gloss_text": "ಅನಂತ ಪ್ರಕಾಶ ಧಾರಕ"}
+    ],
+    "1.122": [
+      {"word_idx": 0, "gloss_text": "ದುರ್ನಿಶೆಯಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ತಮೋ ರೂಪ"},
+      {"word_idx": 2, "gloss_text": "ಭೈರವ ರೂಪ"}
+    ],
+    "1.123": [
+      {"word_idx": 0, "gloss_text": "ಮುಚ್ಚಿ"},
+      {"word_idx": 1, "gloss_text": "ಕೃಷ್ಣಾಭ"},
+      {"word_idx": 2, "gloss_text": "ತನ್ಮಯ"}
+    ],
+    "1.124": [
+      {"word_idx": 0, "gloss_text": "ವ್ಯಾಘಾತದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ನಿರೋಧದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಅದ್ವಯ ಶೂನ್ಯದಲ್ಲಿ"}
+    ],
+    "1.125": [
+      {"word_idx": 0, "gloss_text": "ಅಬಿಂದು"},
+      {"word_idx": 1, "gloss_text": "ಅವಿಸರ್ಗ"},
+      {"word_idx": 2, "gloss_text": "ಜ್ಞಾನೌಘ"}
+    ],
+    "1.126": [
+      {"word_idx": 0, "gloss_text": "ವಿಸರ್ಗದ ಅಂತ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಚಿತಿ"},
+      {"word_idx": 2, "gloss_text": "ಸನಾತನ ಬ್ರಹ್ಮ"}
+    ],
+    "1.127": [
+      {"word_idx": 0, "gloss_text": "ವ್ಯೋಮಾಕಾರ"},
+      {"word_idx": 1, "gloss_text": "ದಿಕ್ಕುಗಳಿಂದ ಆವೃತವಲ್ಲದ್ದು"},
+      {"word_idx": 2, "gloss_text": "ನಿರಾಶ್ರಯ ಚಿತಿ-ಶಕ್ತಿ"}
+    ],
+    "1.128": [
+      {"word_idx": 0, "gloss_text": "ಯಾವುದಾದರೂ ಅಂಗ"},
+      {"word_idx": 1, "gloss_text": "ತೀಕ್ಷ್ಣ ಸೂಜಿ ಮುಂತಾದವುಗಳಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ನಿರ್ಮಲ ಗತಿ"}
+    ],
+    "1.129": [
+      {"word_idx": 0, "gloss_text": "ಅಂತಃಕರಣ"},
+      {"word_idx": 1, "gloss_text": "ವಿಕಲ್ಪಗಳ ಅಭಾವದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ತ್ಯಜಿಸಲ್ಪಟ್ಟ"}
+    ],
+    "1.130": [
+      {"word_idx": 0, "gloss_text": "ಮಾಯೆ ವಿಮೋಹಿನಿ"},
+      {"word_idx": 1, "gloss_text": "ಕಲನ (ಪ್ರೇರಣೆ)"},
+      {"word_idx": 2, "gloss_text": "ಪ್ರತ್ಯೇಕ"}
+    ],
+    "1.131": [
+      {"word_idx": 0, "gloss_text": "ಸಹಸಾ"},
+      {"word_idx": 1, "gloss_text": "ಶಮಗೊಳಿಸಬೇಕು"},
+      {"word_idx": 2, "gloss_text": "ಎಲ್ಲಿಂದ"}
+    ],
+    "1.132": [
+      {"word_idx": 0, "gloss_text": "ಇಚ್ಛೆ / ಜ್ಞಾನ"},
+      {"word_idx": 1, "gloss_text": "ನಾನು ಯಾರು?"},
+      {"word_idx": 2, "gloss_text": "ತನ್ಮನಸ್ಕ"}
+    ],
+    "1.133": [
+      {"word_idx": 0, "gloss_text": "ಇಚ್ಛೆಯಲ್ಲಿ / ಜ್ಞಾನದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಆತ್ಮಬುದ್ಧಿಯಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ತತ್ತ್ವಾರ್ಥ ದರ್ಶನ"}
+    ],
+    "1.134": [
+      {"word_idx": 0, "gloss_text": "ನಿರ್ನಿಮಿತ್ತ"},
+      {"word_idx": 1, "gloss_text": "ಭ್ರಮಾತ್ಮಕ"},
+      {"word_idx": 2, "gloss_text": "ಹೀಗೆ ಭಾವಿಸುವವನು"}
+    ],
+    "1.135": [
+      {"word_idx": 0, "gloss_text": "ಚಿತ್‌ ಧರ್ಮಿ"},
+      {"word_idx": 1, "gloss_text": "ವಿಶೇಷ"},
+      {"word_idx": 2, "gloss_text": "ಭವಜಿತ್"}
+    ],
+    "1.136": [
+      {"word_idx": 0, "gloss_text": "ಕಾಮ-ಕ್ರೋಧ-ಲೋಭ-ಮೋಹ-ಮದ-ಮಾತ್ಸರ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಸಂಪೂರ್ಣ ಸ್ತಬ್ಧ"},
+      {"word_idx": 2, "gloss_text": "ಉಳಿಯುತ್ತದೆ"}
+    ],
+    "1.137": [
+      {"word_idx": 0, "gloss_text": "ಇಂದ್ರಜಾಲಮಯ"},
+      {"word_idx": 1, "gloss_text": "ಚಿತ್ರಕರ್ಮದಂತೆ"},
+      {"word_idx": 2, "gloss_text": "ಸುಖೋದಯ"}
+    ],
+    "1.138": [
+      {"word_idx": 0, "gloss_text": "ಮಧ್ಯದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಉಳಿಯುತ್ತದೆ"},
+      {"word_idx": 2, "gloss_text": "ತಿಳಿಯಲಿ"}
+    ],
+    "1.139": [
+      {"word_idx": 0, "gloss_text": "ತನ್ನ ದೇಹದ ಆಸಕ್ತಿ"},
+      {"word_idx": 1, "gloss_text": "'ನಾನು ಎಲ್ಲ ಕಡೆ ಇದ್ದೇನೆ'"},
+      {"word_idx": 2, "gloss_text": "ಬೇರೆ ನೋಡದ ದೃಷ್ಟಿಯಿಂದ"}
+    ],
+    "1.140": [
+      {"word_idx": 0, "gloss_text": "ಘಟಾದಿಗಳಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ವಿಜ್ಞಾನ"},
+      {"word_idx": 2, "gloss_text": "ಸರ್ವಗ"}
+    ],
+    "1.141": [
+      {"word_idx": 0, "gloss_text": "ಗ್ರಾಹ್ಯ-ಗ್ರಾಹಕ ಸಂವಿತ್ತಿ"},
+      {"word_idx": 1, "gloss_text": "ಸಾಮಾನ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಸಾವಧಾನತೆ"}
+    ],
+    "1.142": [
+      {"word_idx": 0, "gloss_text": "ತನ್ನಂತೆ"},
+      {"word_idx": 1, "gloss_text": "ಅನ್ಯ ಶರೀರದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ವ್ಯಾಪಿ"}
+    ],
+    "1.143": [
+      {"word_idx": 0, "gloss_text": "ನಿರಾಧಾರ ಮನಸ್ಸು"},
+      {"word_idx": 1, "gloss_text": "ವಿಕಲ್ಪಿಸಬೇಕು"},
+      {"word_idx": 2, "gloss_text": "ಆತ್ಮ-ಪರಮಾತ್ಮತ್ವದಲ್ಲಿ"}
+    ],
+    "1.144": [
+      {"word_idx": 0, "gloss_text": "ಸರ್ವಜ್ಞ, ಸರ್ವಕರ್ತ"},
+      {"word_idx": 1, "gloss_text": "ಶೈವಧರ್ಮಿ"},
+      {"word_idx": 2, "gloss_text": "ದೃಢತೆಯಿಂದ"}
+    ],
+    "1.145": [
+      {"word_idx": 0, "gloss_text": "ತೆರೆಗಳು"},
+      {"word_idx": 1, "gloss_text": "ಜ್ವಾಲೆಯ ಭಂಗಿಗಳು"},
+      {"word_idx": 2, "gloss_text": "ವಿಶ್ವಭಂಗಿಗಳು"}
+    ],
+    "1.146": [
+      {"word_idx": 0, "gloss_text": "ಸುತ್ತಿ ಸುತ್ತಿ"},
+      {"word_idx": 1, "gloss_text": "ಕ್ಷೋಭಶಕ್ತಿಯ ವಿರಾಮದಿಂದ"},
+      {"word_idx": 2, "gloss_text": "ಪರಮ ದಶೆ"}
+    ],
+    "1.147": [
+      {"word_idx": 0, "gloss_text": "ಆಧಾರಗಳಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಶಕ್ತಿ-ಸಂಶೋಭದಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಶಾಂತವಾದ ನಂತರ"}
+    ],
+    "1.148": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲ ಕಡೆ"},
+      {"word_idx": 1, "gloss_text": "ಭಾವನಾ ಎಂಬ ಆಖ್ಯಾನ"},
+      {"word_idx": 2, "gloss_text": "ಹೇ ಶೋಭನೆ"}
+    ],
+    "1.149": [
+      {"word_idx": 0, "gloss_text": "ಯಾವನ ದೇಹದಲ್ಲಿಯೂ"},
+      {"word_idx": 1, "gloss_text": "'ನಾನು' ಎಂಬ ಪ್ರತ್ಯಯ ಉಂಟಾಗುತ್ತದೆ"},
+      {"word_idx": 2, "gloss_text": "ಅವನಿಗೇ"},
+      {"word_idx": 3, "gloss_text": "ಅಲ್ಪ ಸಂವಿತ್ತಿಯಿಂದ"},
+      {"word_idx": 4, "gloss_text": "ಭೈರವತ್ವ ಪ್ರಕಾಶಿಸುತ್ತದೆ"}
+    ],
+    "1.150": [
+      {"word_idx": 0, "gloss_text": "ಶ್ರೀದೇವಿ ಹೇಳಿದಳು"},
+      {"word_idx": 1, "gloss_text": "ಹೇ ದೇವದೇವ, ಮಹಾದೇವ"},
+      {"word_idx": 2, "gloss_text": "ನೀನು ನನಗೆ ಪರಿಪೂರ್ಣನು, ಪ್ರಭು"},
+      {"word_idx": 3, "gloss_text": "ಶಂಕರನ ಆತ್ಮವೇ ನೀನು"},
+      {"word_idx": 4, "gloss_text": "ಜಗತ್ತಿನ ಶಾಶ್ವತ ಶಕ್ತಿ"}
+    ],
+    "1.151": [
+      {"word_idx": 0, "gloss_text": "ಕೃಪೆಯಿಂದ ತುಂಬಿ ನಿನ್ನಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಈ ರಹಸ್ಯ"},
+      {"word_idx": 2, "gloss_text": "ಉದ್ಧೃತ"},
+      {"word_idx": 3, "gloss_text": "ಹಾಗೆಯೇ"},
+      {"word_idx": 4, "gloss_text": "ಯಾರಿಗೂ ಹೇಳಬೇಕು"},
+      {"word_idx": 5, "gloss_text": "ಯೋಗ್ಯ ಕಿವಿಗೆ"},
+      {"word_idx": 6, "gloss_text": "ಎಸೆಯಬಾರದು"}
+    ],
+    "1.152": [
+      {"word_idx": 0, "gloss_text": "ಈ ವಿಜ್ಞಾನ"},
+      {"word_idx": 1, "gloss_text": "ಉದಿತ"},
+      {"word_idx": 2, "gloss_text": "ಜರಾ-ಮರಣ ನಾಶಕ"},
+      {"word_idx": 3, "gloss_text": "ಬ್ರಹ್ಮಾದಿ ದೇವತೆಗಳಿಂದ ವಂದ್ಯ"},
+      {"word_idx": 4, "gloss_text": "ಮಂಥಾನ-ಭೈರವನ"},
+      {"word_idx": 5, "gloss_text": "ಮತ್ತು"}
+    ],
+    "1.153": [
+      {"word_idx": 0, "gloss_text": "ಈ ಅನಾಖ್ಯಾತ ತಂತ್ರ"},
+      {"word_idx": 1, "gloss_text": "ಭೋಗ-ಮೋಕ್ಷವಿಧಾಯಕ"},
+      {"word_idx": 2, "gloss_text": "ಈ ಅನಾಖ್ಯಾತ ತಂತ್ರ"},
+      {"word_idx": 3, "gloss_text": "ಅವರಿಗೆ ಕೊಡಲಾಗಿದೆ"},
+      {"word_idx": 4, "gloss_text": "ಲೀಲೆಯಿಂದ"}
+    ],
+    "1.154": [
+      {"word_idx": 0, "gloss_text": "ಜ್ಞಾನಲಾಭದಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಗುರುಭಾವ"},
+      {"word_idx": 2, "gloss_text": "ಸಮತಾ"}
+    ],
+    "1.155": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲೆಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಕರ್ತೃ-ಕರ್ಮ ವಿವಿಕ್ತತೆ"},
+      {"word_idx": 3, "gloss_text": "ಅಲ್ಲೆಲ್ಲ"},
+      {"word_idx": 4, "gloss_text": "ಶಿವಾವಸ್ಥೆ"},
+      {"word_idx": 5, "gloss_text": "ವ್ಯಾಪಕತ್ವದಿಂದ"},
+      {"word_idx": 6, "gloss_text": "ಎಲ್ಲಿ ಹೋಗಬಲ್ಲದು?"}
+    ],
+    "1.156": [
+      {"word_idx": 0, "gloss_text": "ಈ ವಿಜ್ಞಾನವನ್ನು ಆಲಂಬಿಸಿ"},
+      {"word_idx": 1, "gloss_text": "ಯೋಗಿ ಶಿವನಾಗುತ್ತಾನೆ"},
+      {"word_idx": 2, "gloss_text": "ತೀರ್ಥಾದಿಗಳಲ್ಲಿ"},
+      {"word_idx": 3, "gloss_text": "ಜಾತಿಯವನಾದರೂ"},
+      {"word_idx": 4, "gloss_text": "ಸ್ನಾನಾದಿಗಳು ಕಾರಣವಲ್ಲ"}
+    ],
+    "1.157": [
+      {"word_idx": 0, "gloss_text": "ಶ್ರೋತೃ ಆತ್ಮನ"},
+      {"word_idx": 1, "gloss_text": "ಚಿತ್ತಸಮತೆ"},
+      {"word_idx": 2, "gloss_text": "ತತ್ತ್ವದ ಭಾವನೆ"}
+    ],
+    "1.158": [
+      {"word_idx": 0, "gloss_text": "ವಿಜ್ಞಾನವನ್ನು ತಿಳಿಯುವುದರಿಂದ"},
+      {"word_idx": 1, "gloss_text": "ಯೋಗವಿತ್ತಮ"},
+      {"word_idx": 2, "gloss_text": "ಮಹಾಯೋಗಿ"}
+    ],
+    "1.159": [
+      {"word_idx": 0, "gloss_text": "ಪರಿತೃಪ್ತಳಾಗಿದ್ದೇನೆ"},
+      {"word_idx": 1, "gloss_text": "ರುದ್ರಯಾಮಲ"},
+      {"word_idx": 2, "gloss_text": "ಸಾರ ಗ್ರಹಿಸಲಾಗಿದೆ"}
+    ],
+    "1.160": [
+      {"word_idx": 0, "gloss_text": "ಎಲ್ಲ ಶಕ್ತಿ ಪ್ರಭೇದಗಳ"},
+      {"word_idx": 1, "gloss_text": "ಹೃದಯ"},
+      {"word_idx": 2, "gloss_text": "ಆಸಾದಿಸಿ"}
+    ],
+    "1.161": [
+      {"word_idx": 0, "gloss_text": "ಆನಂದಿತಳಾಗಿ"},
+      {"word_idx": 1, "gloss_text": "ಕಂಠಕ್ಕೆ ತಗುಲಿ"},
+      {"word_idx": 2, "gloss_text": "ಸಮುದ್ಧೃತ"}
+    ],
+    "1.162": [
+      {"word_idx": 0, "gloss_text": "ಕುಲಗುಹ್ಯ"},
+      {"word_idx": 1, "gloss_text": "ಭಕ್ತಿಯುಕ್ತ ಶಿಷ್ಯನಿಗೆ"},
+      {"word_idx": 2, "gloss_text": "ಗುರುಘಾತಕ"}
+    ],
+    "1.163": [
+      {"word_idx": 0, "gloss_text": "ಹೀಗೆ ವಿಜ್ಞಾನ ಭೈರವದಲ್ಲಿ"},
+      {"word_idx": 1, "gloss_text": "ಶ್ರೀದೇವಿಯ ಸ್ತವನಾತ್ಮಕ"},
+      {"word_idx": 2, "gloss_text": "ನೂರು"},
+      {"word_idx": 3, "gloss_text": "ಹನ್ನೆರಡು ಸೇರಿಸಲ್ಪಟ್ಟ"},
+      {"word_idx": 4, "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿದೆ"},
+      {"word_idx": 5, "gloss_text": "ಭೇದರಹಿತ"}
+    ]
+  }
+}

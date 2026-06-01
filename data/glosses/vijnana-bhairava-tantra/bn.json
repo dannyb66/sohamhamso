@@ -1,0 +1,1345 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "bn",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "শ্রীদেবী (ভৈরবী)"},
+      {"word_idx": 1, "gloss_text": "বললেন"},
+      {"word_idx": 2, "gloss_text": "শ্রুত"},
+      {"word_idx": 3, "gloss_text": "হে দেব"},
+      {"word_idx": 4, "gloss_text": "আমার দ্বারা"},
+      {"word_idx": 5, "gloss_text": "সমস্ত, সম্পূর্ণ"},
+      {"word_idx": 6, "gloss_text": "রুদ্রযামল-তন্ত্র থেকে উদ্ভূত"},
+      {"word_idx": 7, "gloss_text": "ত্রিকের ভেদ"},
+      {"word_idx": 8, "gloss_text": "নিঃশেষে, সম্পূর্ণরূপে"},
+      {"word_idx": 9, "gloss_text": "সারের সার-বিভাগরূপে"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "আজও"},
+      {"word_idx": 1, "gloss_text": "না"},
+      {"word_idx": 2, "gloss_text": "নিবৃত্ত, দূরীভূত"},
+      {"word_idx": 3, "gloss_text": "আমার"},
+      {"word_idx": 4, "gloss_text": "সংশয়"},
+      {"word_idx": 5, "gloss_text": "হে পরমেশ্বর"},
+      {"word_idx": 6, "gloss_text": "কী?"},
+      {"word_idx": 7, "gloss_text": "রূপ, স্বরূপ"},
+      {"word_idx": 8, "gloss_text": "প্রকৃতপক্ষে, বাস্তবিক"},
+      {"word_idx": 9, "gloss_text": "হে দেব"},
+      {"word_idx": 10, "gloss_text": "শব্দরাশি ও কলাময়"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "অথবা কি?"},
+      {"word_idx": 1, "gloss_text": "নবাত্ম-ভেদ দ্বারা"},
+      {"word_idx": 2, "gloss_text": "ভৈরবে"},
+      {"word_idx": 3, "gloss_text": "ভৈরব-আকৃতিতে"},
+      {"word_idx": 4, "gloss_text": "[draft] ত্রিশিরঃ-ভেদে বিভক্ত"},
+      {"word_idx": 5, "gloss_text": "অথবা"},
+      {"word_idx": 6, "gloss_text": "অথবা কি"},
+      {"word_idx": 7, "gloss_text": "শক্তি-ত্রয়-আত্মক"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "নাদ-বিন্দু-ময়"},
+      {"word_idx": 1, "gloss_text": "অথবা"},
+      {"word_idx": 2, "gloss_text": "কি?"},
+      {"word_idx": 3, "gloss_text": "[draft] অর্ধচন্দ্র ও নিরোধিকা-সমূহ"},
+      {"word_idx": 4, "gloss_text": "চক্রে আরূঢ়"},
+      {"word_idx": 5, "gloss_text": "[draft] অনচ্ক (স্বরহীন, শুদ্ধ-ব্যঞ্জন)"},
+      {"word_idx": 6, "gloss_text": "অথবা"},
+      {"word_idx": 7, "gloss_text": "অথবা কি"},
+      {"word_idx": 8, "gloss_text": "শক্তির স্বরূপ-আকার"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "পরাপরার (মধ্যবর্তী দেবীর)"},
+      {"word_idx": 1, "gloss_text": "সকল-রূপ, সাংশিক"},
+      {"word_idx": 2, "gloss_text": "অপরার (নিম্ন দেবীর)"},
+      {"word_idx": 3, "gloss_text": "এবং অথবা"},
+      {"word_idx": 4, "gloss_text": "পুনরায়"},
+      {"word_idx": 5, "gloss_text": "পরার (পরম দেবীর)"},
+      {"word_idx": 6, "gloss_text": "যদি"},
+      {"word_idx": 7, "gloss_text": "সেইভাবে"},
+      {"word_idx": 8, "gloss_text": "হয়"},
+      {"word_idx": 9, "gloss_text": "পরত্ব"},
+      {"word_idx": 10, "gloss_text": "তা"},
+      {"word_idx": 11, "gloss_text": "বিরুদ্ধ হয়"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "কারণ নয়"},
+      {"word_idx": 1, "gloss_text": "বর্ণ-ভেদ দ্বারা"},
+      {"word_idx": 2, "gloss_text": "দেহ-ভেদ দ্বারা"},
+      {"word_idx": 3, "gloss_text": "অথবা"},
+      {"word_idx": 4, "gloss_text": "হতে পারে"},
+      {"word_idx": 5, "gloss_text": "পরত্ব"},
+      {"word_idx": 6, "gloss_text": "নিষ্কলত্ব দ্বারা"},
+      {"word_idx": 7, "gloss_text": "সকলত্বে"},
+      {"word_idx": 8, "gloss_text": "তা হতে পারে না"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "প্রসাদ, কৃপা"},
+      {"word_idx": 1, "gloss_text": "কর, দাও"},
+      {"word_idx": 2, "gloss_text": "আমাকে"},
+      {"word_idx": 3, "gloss_text": "হে নাথ"},
+      {"word_idx": 4, "gloss_text": "নিঃশেষে, সম্পূর্ণভাবে"},
+      {"word_idx": 5, "gloss_text": "ছেদন কর"},
+      {"word_idx": 6, "gloss_text": "সংশয়"},
+      {"word_idx": 7, "gloss_text": "ভৈরব বললেন"},
+      {"word_idx": 8, "gloss_text": "সাধু সাধু!"},
+      {"word_idx": 9, "gloss_text": "তোমার দ্বারা জিজ্ঞাসিত"},
+      {"word_idx": 10, "gloss_text": "তন্ত্রের সার"},
+      {"word_idx": 11, "gloss_text": "এই, হে প্রিয়ে"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "হে গুহ্য-অতি-গুহ্যের রক্ষক"},
+      {"word_idx": 1, "gloss_text": "তুমি"},
+      {"word_idx": 2, "gloss_text": "যদিও"},
+      {"word_idx": 3, "gloss_text": "এই"},
+      {"word_idx": 4, "gloss_text": "হে বরাননে (সুমুখী)"},
+      {"word_idx": 5, "gloss_text": "তবু"},
+      {"word_idx": 6, "gloss_text": "আমি বলব"},
+      {"word_idx": 7, "gloss_text": "যেমন"},
+      {"word_idx": 8, "gloss_text": "তুমি জান"},
+      {"word_idx": 9, "gloss_text": "সেইভাবে শোনো"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "যা"},
+      {"word_idx": 1, "gloss_text": "পর"},
+      {"word_idx": 2, "gloss_text": "নিষ্কল"},
+      {"word_idx": 3, "gloss_text": "হে দেবী"},
+      {"word_idx": 4, "gloss_text": "সর্ব-তত্ত্বের অগোচর"},
+      {"word_idx": 5, "gloss_text": "তা নিশ্চয়ই সম্ভব নয়"},
+      {"word_idx": 6, "gloss_text": "তার দ্বারা"},
+      {"word_idx": 7, "gloss_text": "এখানে (শব্দে)"},
+      {"word_idx": 8, "gloss_text": "বলা"},
+      {"word_idx": 9, "gloss_text": "যা সম্ভব"},
+      {"word_idx": 10, "gloss_text": "কেবল ইচ্ছা দ্বারা"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "হে দেবী"},
+      {"word_idx": 1, "gloss_text": "প্রকৃতি-রূপা"},
+      {"word_idx": 2, "gloss_text": "যিনি"},
+      {"word_idx": 3, "gloss_text": "তাঁর"},
+      {"word_idx": 4, "gloss_text": "কী রূপ?"},
+      {"word_idx": 5, "gloss_text": "বলা হয়"},
+      {"word_idx": 6, "gloss_text": "সকল-অবস্থায়"},
+      {"word_idx": 7, "gloss_text": "বিকল্পসমূহের"},
+      {"word_idx": 8, "gloss_text": "সকল-অদ্বৈতের কল্পনা"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "তখন"},
+      {"word_idx": 1, "gloss_text": "সেই মহা-ব্যোমে"},
+      {"word_idx": 2, "gloss_text": "প্রলীন হলে"},
+      {"word_idx": 3, "gloss_text": "চন্দ্র ও সূর্য (লীন হলে)"},
+      {"word_idx": 4, "gloss_text": "নিমজ্জিতের মতো"},
+      {"word_idx": 5, "gloss_text": "তামসিক নিদ্রা"},
+      {"word_idx": 6, "gloss_text": "উদ্ভূত হল"},
+      {"word_idx": 7, "gloss_text": "খিল-গোচরে (শূন্য পরিধিতে)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "এই-প্রকার"},
+      {"word_idx": 1, "gloss_text": "ভৈরবের"},
+      {"word_idx": 2, "gloss_text": "যে অবস্থা"},
+      {"word_idx": 3, "gloss_text": "পরিগীত হয়"},
+      {"word_idx": 4, "gloss_text": "তিনি পরা"},
+      {"word_idx": 5, "gloss_text": "পর-রূপে"},
+      {"word_idx": 6, "gloss_text": "পরা দেবী"},
+      {"word_idx": 7, "gloss_text": "প্রকীর্তিতা"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "শক্তি ও শক্তিমানের"},
+      {"word_idx": 1, "gloss_text": "যেমন"},
+      {"word_idx": 2, "gloss_text": "অভেদ"},
+      {"word_idx": 3, "gloss_text": "সর্বদা"},
+      {"word_idx": 4, "gloss_text": "স্থিত"},
+      {"word_idx": 5, "gloss_text": "অতএব"},
+      {"word_idx": 6, "gloss_text": "তাঁর ধর্ম-ধর্মিত্ব থেকে"},
+      {"word_idx": 7, "gloss_text": "পরা শক্তি"},
+      {"word_idx": 8, "gloss_text": "পরমাত্মার"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "না"},
+      {"word_idx": 1, "gloss_text": "অগ্নি থেকে"},
+      {"word_idx": 2, "gloss_text": "দাহিকা শক্তি"},
+      {"word_idx": 3, "gloss_text": "পৃথক, ভিন্ন"},
+      {"word_idx": 4, "gloss_text": "কল্পিত হয়"},
+      {"word_idx": 5, "gloss_text": "কেবল"},
+      {"word_idx": 6, "gloss_text": "জ্ঞান-সত্তায়"},
+      {"word_idx": 7, "gloss_text": "এই আরম্ভ"},
+      {"word_idx": 8, "gloss_text": "প্রবেশনে (দ্বার-প্রবেশে)"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "শক্তি-অবস্থায় প্রবিষ্টের পক্ষে"},
+      {"word_idx": 1, "gloss_text": "অবিভক্তভাবে"},
+      {"word_idx": 2, "gloss_text": "ভাবনা"},
+      {"word_idx": 3, "gloss_text": "তখন"},
+      {"word_idx": 4, "gloss_text": "সে"},
+      {"word_idx": 5, "gloss_text": "শিব-রূপী হয়"},
+      {"word_idx": 6, "gloss_text": "শৈবী (শক্তির পথ)"},
+      {"word_idx": 7, "gloss_text": "মুখ, দ্বার"},
+      {"word_idx": 8, "gloss_text": "এখানে, এই উপদেশে"},
+      {"word_idx": 9, "gloss_text": "বলা হয়"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "যেমন"},
+      {"word_idx": 1, "gloss_text": "প্রদীপের আলোয়"},
+      {"word_idx": 2, "gloss_text": "সূর্যের কিরণে"},
+      {"word_idx": 3, "gloss_text": "এবং"},
+      {"word_idx": 4, "gloss_text": "জানা যায়"},
+      {"word_idx": 5, "gloss_text": "দিক-বিভাগ ইত্যাদি"},
+      {"word_idx": 6, "gloss_text": "সেইভাবে"},
+      {"word_idx": 7, "gloss_text": "শক্তি দ্বারা"},
+      {"word_idx": 8, "gloss_text": "শিব (জ্ঞাত হন)"},
+      {"word_idx": 9, "gloss_text": "হে প্রিয়ে"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "শ্রীদেবী বললেন"},
+      {"word_idx": 1, "gloss_text": "হে দেবদেব"},
+      {"word_idx": 2, "gloss_text": "ত্রিশূল-চিহ্নিত"},
+      {"word_idx": 3, "gloss_text": "কপাল-ভূষণ-অলংকৃত"},
+      {"word_idx": 4, "gloss_text": "দিক-দেশ-কাল-শূন্য"},
+      {"word_idx": 5, "gloss_text": "এবং"},
+      {"word_idx": 6, "gloss_text": "নির্দেশ-বর্জিত"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "যে অবস্থা"},
+      {"word_idx": 1, "gloss_text": "পূর্ণ-আকার"},
+      {"word_idx": 2, "gloss_text": "ভৈরবে উপলব্ধ হয়"},
+      {"word_idx": 3, "gloss_text": "কোন উপায়ে?"},
+      {"word_idx": 4, "gloss_text": "তাঁর মুখ"},
+      {"word_idx": 5, "gloss_text": "পরা দেবী"},
+      {"word_idx": 6, "gloss_text": "কীভাবে উদিত হন?"},
+      {"word_idx": 7, "gloss_text": "যেন আমি সম্যকভাবে জানি"},
+      {"word_idx": 8, "gloss_text": "সেইভাবে আমাকে বলো, হে ভৈরব"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ভৈরব বললেন"},
+      {"word_idx": 1, "gloss_text": "ঊর্ধ্বে প্রাণ (নিঃশ্বাস)"},
+      {"word_idx": 2, "gloss_text": "নিশ্চয়ই"},
+      {"word_idx": 3, "gloss_text": "নীচে জীব (অপান)"},
+      {"word_idx": 4, "gloss_text": "বিসর্গ-আত্মা"},
+      {"word_idx": 5, "gloss_text": "পর উচ্চারিত হন"},
+      {"word_idx": 6, "gloss_text": "দুই উৎপত্তি-স্থানে"},
+      {"word_idx": 7, "gloss_text": "ভরণ থেকে"},
+      {"word_idx": 8, "gloss_text": "ভরিত স্থিতি (পূর্ণতা)"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "শ্বাস, বায়ু"},
+      {"word_idx": 1, "gloss_text": "ভিতরে বা বাইরে"},
+      {"word_idx": 2, "gloss_text": "বিযৎ-যুগ্ম (দুই শূন্য)"},
+      {"word_idx": 3, "gloss_text": "নিবৃত্তি থেকে"},
+      {"word_idx": 4, "gloss_text": "ভৈরবীর — ভৈরবের"},
+      {"word_idx": 5, "gloss_text": "এইভাবে"},
+      {"word_idx": 6, "gloss_text": "হে ভৈরবী"},
+      {"word_idx": 7, "gloss_text": "প্রকাশিত হয়"},
+      {"word_idx": 8, "gloss_text": "বপু, রূপ"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "যাবে না"},
+      {"word_idx": 1, "gloss_text": "প্রবেশ করবে না"},
+      {"word_idx": 2, "gloss_text": "শক্তি (প্রাণ-শক্তি)"},
+      {"word_idx": 3, "gloss_text": "মরুৎ-রূপা"},
+      {"word_idx": 4, "gloss_text": "বিকশিত হলে"},
+      {"word_idx": 5, "gloss_text": "নির্বিকল্পতায়"},
+      {"word_idx": 6, "gloss_text": "মধ্যে (কেন্দ্রে)"},
+      {"word_idx": 7, "gloss_text": "তার দ্বারা"},
+      {"word_idx": 8, "gloss_text": "ভৈরব-রূপত্ব"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "কুম্ভিত (ধৃত)"},
+      {"word_idx": 1, "gloss_text": "রেচিত (নিষ্কাশিত)"},
+      {"word_idx": 2, "gloss_text": "অথবা"},
+      {"word_idx": 3, "gloss_text": "পূরিত (অভ্যন্তরীণ)"},
+      {"word_idx": 4, "gloss_text": "অথবা"},
+      {"word_idx": 5, "gloss_text": "যখন হয়"},
+      {"word_idx": 6, "gloss_text": "তার অন্তে"},
+      {"word_idx": 7, "gloss_text": "শান্ত-নামক সেই (অবস্থা)"},
+      {"word_idx": 8, "gloss_text": "সেই শক্তি দ্বারা"},
+      {"word_idx": 9, "gloss_text": "শান্ত"},
+      {"word_idx": 10, "gloss_text": "প্রকাশিত হন"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "মূল থেকে (মূলাধার থেকে)"},
+      {"word_idx": 1, "gloss_text": "কিরণ-আভাসিনী"},
+      {"word_idx": 2, "gloss_text": "সূক্ষ্মেরও সূক্ষ্মতরা"},
+      {"word_idx": 3, "gloss_text": "চিন্তা করতে হবে"},
+      {"word_idx": 4, "gloss_text": "তাঁকে"},
+      {"word_idx": 5, "gloss_text": "দ্বাদশান্তে (বার অঙ্গুলির শেষ)"},
+      {"word_idx": 6, "gloss_text": "শান্ত হতে"},
+      {"word_idx": 7, "gloss_text": "ভৈরব-উদয় (ঘটে)"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "ঊর্ধ্বে উদ্গত"},
+      {"word_idx": 1, "gloss_text": "বিদ্যুৎ-রূপা"},
+      {"word_idx": 2, "gloss_text": "প্রতি-চক্রে"},
+      {"word_idx": 3, "gloss_text": "ক্রমে ক্রমে"},
+      {"word_idx": 4, "gloss_text": "ঊর্ধ্বে"},
+      {"word_idx": 5, "gloss_text": "মুষ্টি-ত্রয় পর্যন্ত"},
+      {"word_idx": 6, "gloss_text": "যতক্ষণ"},
+      {"word_idx": 7, "gloss_text": "সেটিই ভৈরবোদয়"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "ক্রম-দ্বাদশক (বারো-স্থানের ক্রম)"},
+      {"word_idx": 1, "gloss_text": "সম্যকভাবে"},
+      {"word_idx": 2, "gloss_text": "দ্বাদশ-অক্ষর দ্বারা ভেদিত"},
+      {"word_idx": 3, "gloss_text": "স্থূল, সূক্ষ্ম ও পর-অবস্থা দ্বারা"},
+      {"word_idx": 4, "gloss_text": "মুক্ত করে করে (প্রতিটি ত্যাগ করে)"},
+      {"word_idx": 5, "gloss_text": "অন্তে"},
+      {"word_idx": 6, "gloss_text": "শিব (লাভ হয়)"}
+    ],
+    "1.26": [
+      {"word_idx": 0, "gloss_text": "তার দ্বারা (উদয়মান শক্তি)"},
+      {"word_idx": 1, "gloss_text": "পূরিত করে"},
+      {"word_idx": 2, "gloss_text": "শীঘ্র"},
+      {"word_idx": 3, "gloss_text": "মস্তকের শীর্ষ পর্যন্ত"},
+      {"word_idx": 4, "gloss_text": "ভেদ করে"},
+      {"word_idx": 5, "gloss_text": "ভ্রূ-ক্ষেপ-সেতু দ্বারা"},
+      {"word_idx": 6, "gloss_text": "নির্বিকল্প"},
+      {"word_idx": 7, "gloss_text": "মন করে"},
+      {"word_idx": 8, "gloss_text": "সর্ব-ঊর্ধ্বে"},
+      {"word_idx": 9, "gloss_text": "সর্বগ-উদ্গম (সব-গামী শিবের উদয়)"}
+    ],
+    "1.27": [
+      {"word_idx": 0, "gloss_text": "ময়ূরের পালক দিয়ে"},
+      {"word_idx": 1, "gloss_text": "বিচিত্র-রূপ"},
+      {"word_idx": 2, "gloss_text": "মণ্ডলে"},
+      {"word_idx": 3, "gloss_text": "পঞ্চ-শূন্য"},
+      {"word_idx": 4, "gloss_text": "ধ্যানকারীর পক্ষে"},
+      {"word_idx": 5, "gloss_text": "অনুত্তরে (পরম-অতীতে)"},
+      {"word_idx": 6, "gloss_text": "শূন্যে"},
+      {"word_idx": 7, "gloss_text": "প্রবেশ"},
+      {"word_idx": 8, "gloss_text": "হৃদয়ে"},
+      {"word_idx": 9, "gloss_text": "ঘটতে পারে"}
+    ],
+    "1.28": [
+      {"word_idx": 0, "gloss_text": "এই-প্রকার ক্রমে"},
+      {"word_idx": 1, "gloss_text": "একমাত্র"},
+      {"word_idx": 2, "gloss_text": "যেখানেই হোক"},
+      {"word_idx": 3, "gloss_text": "চিন্তা (ঘটলে)"},
+      {"word_idx": 4, "gloss_text": "শূন্যে"},
+      {"word_idx": 5, "gloss_text": "প্রাচীরে"},
+      {"word_idx": 6, "gloss_text": "পর (উৎকৃষ্ট) বিষয়ে"},
+      {"word_idx": 7, "gloss_text": "পাত্রে"},
+      {"word_idx": 8, "gloss_text": "স্বয়ং লীন (মন)"},
+      {"word_idx": 9, "gloss_text": "বরপ্রদা হয়"}
+    ],
+    "1.29": [
+      {"word_idx": 0, "gloss_text": "কপালের ভিতরে"},
+      {"word_idx": 1, "gloss_text": "মন স্থাপন করে"},
+      {"word_idx": 2, "gloss_text": "থেকে"},
+      {"word_idx": 3, "gloss_text": "মুদিত-চোখে"},
+      {"word_idx": 4, "gloss_text": "ক্রমে"},
+      {"word_idx": 5, "gloss_text": "মনের দৃঢ়তা থেকে"},
+      {"word_idx": 6, "gloss_text": "লক্ষ্য করো"},
+      {"word_idx": 7, "gloss_text": "উত্তম লক্ষ্য"}
+    ],
+    "1.30": [
+      {"word_idx": 0, "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"},
+      {"word_idx": 1, "gloss_text": "মধ্যে অবস্থিত"},
+      {"word_idx": 2, "gloss_text": "পদ্ম-সূত্র-আভ-রূপা"},
+      {"word_idx": 3, "gloss_text": "ধ্যাত হলে"},
+      {"word_idx": 4, "gloss_text": "অন্তর-ব্যোম-ময়ী"},
+      {"word_idx": 5, "gloss_text": "দেবী দ্বারা"},
+      {"word_idx": 6, "gloss_text": "সেই (দেবী) দ্বারা"},
+      {"word_idx": 7, "gloss_text": "দেব (শিব)"},
+      {"word_idx": 8, "gloss_text": "প্রকাশিত হন"}
+    ],
+    "1.31": [
+      {"word_idx": 0, "gloss_text": "হাত দ্বারা রুদ্ধ দৃষ্টি-অস্ত্র দ্বারা"},
+      {"word_idx": 1, "gloss_text": "ভ্রূ-ভেদ থেকে"},
+      {"word_idx": 2, "gloss_text": "দ্বার রোধ থেকে"},
+      {"word_idx": 3, "gloss_text": "বিন্দু দৃষ্ট হলে"},
+      {"word_idx": 4, "gloss_text": "ক্রমে লীন হলে"},
+      {"word_idx": 5, "gloss_text": "তার মধ্যে"},
+      {"word_idx": 6, "gloss_text": "পরম স্থিতি"}
+    ],
+    "1.32": [
+      {"word_idx": 0, "gloss_text": "ধামের অন্তঃ-ক্ষোভ থেকে সম্ভূত"},
+      {"word_idx": 1, "gloss_text": "সূক্ষ্ম অগ্নি-তিলকের আকৃতি"},
+      {"word_idx": 2, "gloss_text": "বিন্দু"},
+      {"word_idx": 3, "gloss_text": "শিখার অন্তে"},
+      {"word_idx": 4, "gloss_text": "হৃদয়ে"},
+      {"word_idx": 5, "gloss_text": "লয়ান্তে"},
+      {"word_idx": 6, "gloss_text": "ধ্যানকারীর"},
+      {"word_idx": 7, "gloss_text": "লয় (ঘটে)"}
+    ],
+    "1.33": [
+      {"word_idx": 0, "gloss_text": "অনাহত (অ-আঘাত শব্দে)"},
+      {"word_idx": 1, "gloss_text": "যোগ্য কর্ণে"},
+      {"word_idx": 2, "gloss_text": "অভগ্ন শব্দে"},
+      {"word_idx": 3, "gloss_text": "নদীর মতো প্রবাহিত"},
+      {"word_idx": 4, "gloss_text": "শব্দ-ব্রহ্মে"},
+      {"word_idx": 5, "gloss_text": "নিষ্ণাত"},
+      {"word_idx": 6, "gloss_text": "পর-ব্রহ্ম"},
+      {"word_idx": 7, "gloss_text": "প্রাপ্ত হন"}
+    ],
+    "1.34": [
+      {"word_idx": 0, "gloss_text": "প্রণব ইত্যাদির উচ্চারণ থেকে"},
+      {"word_idx": 1, "gloss_text": "প্লুতান্তে (দীর্ঘ স্বরের শেষ)"},
+      {"word_idx": 2, "gloss_text": "শূন্য-ভাবনা থেকে"},
+      {"word_idx": 3, "gloss_text": "শূন্যা পরা শক্তি দ্বারা"},
+      {"word_idx": 4, "gloss_text": "শূন্যতা প্রাপ্ত হয়"},
+      {"word_idx": 5, "gloss_text": "হে ভৈরবী"}
+    ],
+    "1.35": [
+      {"word_idx": 0, "gloss_text": "যেকোনো বর্ণের"},
+      {"word_idx": 1, "gloss_text": "পূর্ব ও অন্ত (নীরবতা)"},
+      {"word_idx": 2, "gloss_text": "অনুভব করতে হবে"},
+      {"word_idx": 3, "gloss_text": "শূন্যতা দ্বারা"},
+      {"word_idx": 4, "gloss_text": "সে নিজে শূন্য-ভূত হয়"},
+      {"word_idx": 5, "gloss_text": "শূন্য-আকার পুরুষ হয়"}
+    ],
+    "1.36": [
+      {"word_idx": 0, "gloss_text": "তন্ত্রী (বীণা) ইত্যাদি বাদ্যের শব্দে"},
+      {"word_idx": 1, "gloss_text": "দীর্ঘ"},
+      {"word_idx": 2, "gloss_text": "ক্রম-অবস্থানের কারণে"},
+      {"word_idx": 3, "gloss_text": "অনন্য-চিত্ত (অন্যত্র না-গতি)"},
+      {"word_idx": 4, "gloss_text": "প্রত্যন্তে (শব্দের শেষে)"},
+      {"word_idx": 5, "gloss_text": "পর-ব্যোম-বপু হয়"}
+    ],
+    "1.37": [
+      {"word_idx": 0, "gloss_text": "পিণ্ড-মন্ত্রের (বীজ-মন্ত্র)"},
+      {"word_idx": 1, "gloss_text": "সমস্ত (মন্ত্রের)"},
+      {"word_idx": 2, "gloss_text": "স্থূল-বর্ণ-ক্রমে"},
+      {"word_idx": 3, "gloss_text": "অর্ধেন্দু, বিন্দু, নাদান্তে"},
+      {"word_idx": 4, "gloss_text": "শূন্য-উচ্চারণ থেকে"},
+      {"word_idx": 5, "gloss_text": "শিব হয়"}
+    ],
+    "1.38": [
+      {"word_idx": 0, "gloss_text": "নিজ দেহে"},
+      {"word_idx": 1, "gloss_text": "সর্ব-দিকে"},
+      {"word_idx": 2, "gloss_text": "যুগপৎ"},
+      {"word_idx": 3, "gloss_text": "ভাবনা করতে হবে"},
+      {"word_idx": 4, "gloss_text": "বিয়ৎ (শূন্য)"},
+      {"word_idx": 5, "gloss_text": "নির্বিকল্প-মন"},
+      {"word_idx": 6, "gloss_text": "তার পক্ষে"},
+      {"word_idx": 7, "gloss_text": "সমস্ত বিয়ৎ প্রবর্তিত হয়"}
+    ],
+    "1.39": [
+      {"word_idx": 0, "gloss_text": "পৃষ্ঠ-শূন্য (পিছনের শূন্য)"},
+      {"word_idx": 1, "gloss_text": "মূল-শূন্য (গোড়ার শূন্য)"},
+      {"word_idx": 2, "gloss_text": "যুগপৎ ভাবনা করা উচিত"},
+      {"word_idx": 3, "gloss_text": "এবং"},
+      {"word_idx": 4, "gloss_text": "যিনি"},
+      {"word_idx": 5, "gloss_text": "শরীর-নিরপেক্ষ শক্তি দ্বারা"},
+      {"word_idx": 6, "gloss_text": "শূন্য-মনা হয়"}
+    ],
+    "1.40": [
+      {"word_idx": 0, "gloss_text": "পৃষ্ঠ-শূন্য"},
+      {"word_idx": 1, "gloss_text": "মূল-শূন্য"},
+      {"word_idx": 2, "gloss_text": "হৃদয়-শূন্য"},
+      {"word_idx": 3, "gloss_text": "দৃঢ়ভাবে ভাবনা করা উচিত"},
+      {"word_idx": 4, "gloss_text": "যুগপৎ"},
+      {"word_idx": 5, "gloss_text": "নির্বিকল্পতা থেকে"},
+      {"word_idx": 6, "gloss_text": "তার পরই নির্বিকল্প-উদয়"}
+    ],
+    "1.41": [
+      {"word_idx": 0, "gloss_text": "দেহের কোনো এক প্রদেশে"},
+      {"word_idx": 1, "gloss_text": "শূন্যতাই"},
+      {"word_idx": 2, "gloss_text": "ক্ষণমাত্র"},
+      {"word_idx": 3, "gloss_text": "ভাবনা করা উচিত"},
+      {"word_idx": 4, "gloss_text": "নির্বিকল্প"},
+      {"word_idx": 5, "gloss_text": "নির্বিকল্প হয়"},
+      {"word_idx": 6, "gloss_text": "নির্বিকল্প-স্বরূপের ভাগী"}
+    ],
+    "1.42": [
+      {"word_idx": 0, "gloss_text": "দেহগত সমস্ত দ্রব্য"},
+      {"word_idx": 1, "gloss_text": "বিয়ৎ-ব্যাপ্ত"},
+      {"word_idx": 2, "gloss_text": "হে মৃগ-নয়না"},
+      {"word_idx": 3, "gloss_text": "ভাবনা করা উচিত"},
+      {"word_idx": 4, "gloss_text": "তখন তার পক্ষে"},
+      {"word_idx": 5, "gloss_text": "সেই ভাবনা"},
+      {"word_idx": 6, "gloss_text": "স্থির হয়"}
+    ],
+    "1.43": [
+      {"word_idx": 0, "gloss_text": "দেহের ভিতরে"},
+      {"word_idx": 1, "gloss_text": "ত্বক-বিভাগ"},
+      {"word_idx": 2, "gloss_text": "প্রাচীর-মাত্র হিসাবে"},
+      {"word_idx": 3, "gloss_text": "চিন্তা করা উচিত"},
+      {"word_idx": 4, "gloss_text": "তার পক্ষে ভিতরে কিছুই নেই"},
+      {"word_idx": 5, "gloss_text": "ধ্যান করে"},
+      {"word_idx": 6, "gloss_text": "অধ্যেয়-ভাগী হয়"}
+    ],
+    "1.44": [
+      {"word_idx": 0, "gloss_text": "হৃদয়-আকাশে"},
+      {"word_idx": 1, "gloss_text": "ইন্দ্রিয় লীন"},
+      {"word_idx": 2, "gloss_text": "পদ্ম-সম্পুটের মাঝখানে গত"},
+      {"word_idx": 3, "gloss_text": "অনন্য-চিত্ত"},
+      {"word_idx": 4, "gloss_text": "হে সুভগে"},
+      {"word_idx": 5, "gloss_text": "পরম সৌভাগ্য লাভ হয়"}
+    ],
+    "1.45": [
+      {"word_idx": 0, "gloss_text": "সর্ব-দিক থেকে"},
+      {"word_idx": 1, "gloss_text": "নিজ-শরীরের"},
+      {"word_idx": 2, "gloss_text": "দ্বাদশান্তে"},
+      {"word_idx": 3, "gloss_text": "মনের লয়ের দ্বারা"},
+      {"word_idx": 4, "gloss_text": "দৃঢ়-বুদ্ধির পক্ষে"},
+      {"word_idx": 5, "gloss_text": "দৃঢ়ীভূত"},
+      {"word_idx": 6, "gloss_text": "তত্ত্ব-লক্ষ্য"},
+      {"word_idx": 7, "gloss_text": "প্রবর্তিত হয়"}
+    ],
+    "1.46": [
+      {"word_idx": 0, "gloss_text": "যেভাবে-তেমন"},
+      {"word_idx": 1, "gloss_text": "যেখানে-সেখানে"},
+      {"word_idx": 2, "gloss_text": "দ্বাদশান্তে"},
+      {"word_idx": 3, "gloss_text": "মন নিক্ষেপ করা উচিত"},
+      {"word_idx": 4, "gloss_text": "প্রতি ক্ষণে"},
+      {"word_idx": 5, "gloss_text": "যাঁর বৃত্তি ক্ষীণ"},
+      {"word_idx": 6, "gloss_text": "বৈলক্ষণ্য (ভিন্ন প্রকার আলোক)"},
+      {"word_idx": 7, "gloss_text": "কয়েক দিনে আসে"}
+    ],
+    "1.47": [
+      {"word_idx": 0, "gloss_text": "যেখানে যেখানে"},
+      {"word_idx": 1, "gloss_text": "মন"},
+      {"word_idx": 2, "gloss_text": "যায়"},
+      {"word_idx": 3, "gloss_text": "বাহ্যে"},
+      {"word_idx": 4, "gloss_text": "বা"},
+      {"word_idx": 5, "gloss_text": "অভ্যন্তরে"},
+      {"word_idx": 6, "gloss_text": "অথবা"},
+      {"word_idx": 7, "gloss_text": "সেখানে সেখানে"},
+      {"word_idx": 8, "gloss_text": "শিব-অবস্থা"},
+      {"word_idx": 9, "gloss_text": "ব্যাপকতার কারণে"},
+      {"word_idx": 10, "gloss_text": "কোথায় যাবে?"}
+    ],
+    "1.48": [
+      {"word_idx": 0, "gloss_text": "যেখানে যেখানে"},
+      {"word_idx": 1, "gloss_text": "ইন্দ্রিয়-পথে"},
+      {"word_idx": 2, "gloss_text": "চৈতন্য"},
+      {"word_idx": 3, "gloss_text": "প্রকাশিত হয়"},
+      {"word_idx": 4, "gloss_text": "বিভুর (সর্বব্যাপীর)"},
+      {"word_idx": 5, "gloss_text": "তাঁর (যোগীর)"},
+      {"word_idx": 6, "gloss_text": "তন্মাত্র-ধর্মিত্ব থেকে"},
+      {"word_idx": 7, "gloss_text": "চিৎ-লয় থেকে"},
+      {"word_idx": 8, "gloss_text": "ভরিত-আত্মতা (আত্ম-পূর্ণতা)"}
+    ],
+    "1.49": [
+      {"word_idx": 0, "gloss_text": "ক্ষুধা ইত্যাদির অন্তে"},
+      {"word_idx": 1, "gloss_text": "ভয়ে"},
+      {"word_idx": 2, "gloss_text": "শোকে"},
+      {"word_idx": 3, "gloss_text": "গহ্বরে (গভীর সংশয়ে)"},
+      {"word_idx": 4, "gloss_text": "অথবা"},
+      {"word_idx": 5, "gloss_text": "রণ থেকে দ্রুত পলায়নে"},
+      {"word_idx": 6, "gloss_text": "কৌতূহলে"},
+      {"word_idx": 7, "gloss_text": "ক্ষুধা ইত্যাদির অন্তে"},
+      {"word_idx": 8, "gloss_text": "ব্রহ্ম-সত্তার নিকটগামী"}
+    ],
+    "1.50": [
+      {"word_idx": 0, "gloss_text": "বস্তুসমূহ স্মরণের সময়"},
+      {"word_idx": 1, "gloss_text": "দৃষ্ট দেশে"},
+      {"word_idx": 2, "gloss_text": "মন ত্যাগ করা উচিত"},
+      {"word_idx": 3, "gloss_text": "নিজ-শরীর"},
+      {"word_idx": 4, "gloss_text": "নিরাধার করে"},
+      {"word_idx": 5, "gloss_text": "প্রভু প্রসারিত হন"}
+    ],
+    "1.51": [
+      {"word_idx": 0, "gloss_text": "কোনো বস্তুতে"},
+      {"word_idx": 1, "gloss_text": "স্থাপন করে"},
+      {"word_idx": 2, "gloss_text": "ধীরে ধীরে"},
+      {"word_idx": 3, "gloss_text": "দৃষ্টি"},
+      {"word_idx": 4, "gloss_text": "ফিরিয়ে নেওয়া উচিত"},
+      {"word_idx": 5, "gloss_text": "সেই জ্ঞান"},
+      {"word_idx": 6, "gloss_text": "চিত্ত-সহিত"},
+      {"word_idx": 7, "gloss_text": "হে দেবী"},
+      {"word_idx": 8, "gloss_text": "(যোগী) শূন্যের আলয় হন"}
+    ],
+    "1.52": [
+      {"word_idx": 0, "gloss_text": "ভক্তির উদ্রেক থেকে"},
+      {"word_idx": 1, "gloss_text": "বিরক্তের"},
+      {"word_idx": 2, "gloss_text": "যে-প্রকার"},
+      {"word_idx": 3, "gloss_text": "জন্মায়"},
+      {"word_idx": 4, "gloss_text": "মতি (অন্তর্দৃষ্টি)"},
+      {"word_idx": 5, "gloss_text": "তা-ই শাঙ্করী শক্তি"},
+      {"word_idx": 6, "gloss_text": "নিত্য"},
+      {"word_idx": 7, "gloss_text": "তাঁকে ভাবনা করা উচিত"},
+      {"word_idx": 8, "gloss_text": "তারপর শিব (হওয়া যায়)"}
+    ],
+    "1.53": [
+      {"word_idx": 0, "gloss_text": "অন্য বস্তুতে"},
+      {"word_idx": 1, "gloss_text": "জ্ঞাত হলে"},
+      {"word_idx": 2, "gloss_text": "সমস্ত বস্তুতে"},
+      {"word_idx": 3, "gloss_text": "শূন্যতা (থাকে)"},
+      {"word_idx": 4, "gloss_text": "সেই-ই"},
+      {"word_idx": 5, "gloss_text": "মন দ্বারা ধ্যান করে"},
+      {"word_idx": 6, "gloss_text": "জ্ঞাত হলেও প্রশান্তি লাভ"}
+    ],
+    "1.54": [
+      {"word_idx": 0, "gloss_text": "অল্পজ্ঞদের দ্বারা"},
+      {"word_idx": 1, "gloss_text": "যা শুদ্ধি রূপে গণ্য"},
+      {"word_idx": 2, "gloss_text": "সেই শুদ্ধি"},
+      {"word_idx": 3, "gloss_text": "শম্ভু-দর্শনে"},
+      {"word_idx": 4, "gloss_text": "শুচি নয়"},
+      {"word_idx": 5, "gloss_text": "নিশ্চয়ই"},
+      {"word_idx": 6, "gloss_text": "তাই অশুচিও নয়"},
+      {"word_idx": 7, "gloss_text": "নির্বিকল্পই সুখী হন"}
+    ],
+    "1.55": [
+      {"word_idx": 0, "gloss_text": "সর্বত্র"},
+      {"word_idx": 1, "gloss_text": "ভৈরব-ভাব"},
+      {"word_idx": 2, "gloss_text": "সাধারণ বস্তুতে"},
+      {"word_idx": 3, "gloss_text": "এমনকি"},
+      {"word_idx": 4, "gloss_text": "গোচর"},
+      {"word_idx": 5, "gloss_text": "এবং না"},
+      {"word_idx": 6, "gloss_text": "তা ছাড়া"},
+      {"word_idx": 7, "gloss_text": "পর আছে — এই-প্রকার"},
+      {"word_idx": 8, "gloss_text": "অদ্বয় গতি"}
+    ],
+    "1.56": [
+      {"word_idx": 0, "gloss_text": "সম"},
+      {"word_idx": 1, "gloss_text": "শত্রু-মিত্রে"},
+      {"word_idx": 2, "gloss_text": "মান-অপমানে সম"},
+      {"word_idx": 3, "gloss_text": "ব্রহ্মের পরিপূর্ণতার কারণে"},
+      {"word_idx": 4, "gloss_text": "এইভাবে জেনে"},
+      {"word_idx": 5, "gloss_text": "সুখী হয়"}
+    ],
+    "1.57": [
+      {"word_idx": 0, "gloss_text": "দ্বেষ নয়"},
+      {"word_idx": 1, "gloss_text": "ভাবনা করো"},
+      {"word_idx": 2, "gloss_text": "কারো প্রতি"},
+      {"word_idx": 3, "gloss_text": "রাগ নয়"},
+      {"word_idx": 4, "gloss_text": "ভাবনা করো"},
+      {"word_idx": 5, "gloss_text": "কোনো প্রতি"},
+      {"word_idx": 6, "gloss_text": "রাগ-দ্বেষ থেকে মুক্ত হলে"},
+      {"word_idx": 7, "gloss_text": "মধ্যে ব্রহ্ম"},
+      {"word_idx": 8, "gloss_text": "প্রসর্পিত হন (গমন করেন)"}
+    ],
+    "1.58": [
+      {"word_idx": 0, "gloss_text": "যা জ্ঞেয় নয়"},
+      {"word_idx": 1, "gloss_text": "যা গ্রহণযোগ্য নয়"},
+      {"word_idx": 2, "gloss_text": "যা শূন্য"},
+      {"word_idx": 3, "gloss_text": "যা অভাব-গত (অস্তিত্বহীন)"},
+      {"word_idx": 4, "gloss_text": "সমস্তই ভৈরব"},
+      {"word_idx": 5, "gloss_text": "ভাবনার যোগ্য"},
+      {"word_idx": 6, "gloss_text": "তার অন্তে"},
+      {"word_idx": 7, "gloss_text": "বোধের সম্ভব"}
+    ],
+    "1.59": [
+      {"word_idx": 0, "gloss_text": "নিত্যে"},
+      {"word_idx": 1, "gloss_text": "বিভুতে (সর্বব্যাপী)"},
+      {"word_idx": 2, "gloss_text": "নিরাধারে"},
+      {"word_idx": 3, "gloss_text": "ব্যাপকে"},
+      {"word_idx": 4, "gloss_text": "এবং"},
+      {"word_idx": 5, "gloss_text": "অখিল-আত্মন"},
+      {"word_idx": 6, "gloss_text": "এইভাবে ভৈরবকে"},
+      {"word_idx": 7, "gloss_text": "অনুস্মরণ করে"},
+      {"word_idx": 8, "gloss_text": "পুরুষ মুক্ত হন"}
+    ],
+    "1.60": [
+      {"word_idx": 0, "gloss_text": "নিরাধার"},
+      {"word_idx": 1, "gloss_text": "সংশয়-বর্জিত"},
+      {"word_idx": 2, "gloss_text": "খ্যাতি-বর্জিত (দ্বৈত-জ্ঞান-বর্জিত)"},
+      {"word_idx": 3, "gloss_text": "সেই পরম ব্রহ্ম"},
+      {"word_idx": 4, "gloss_text": "প্রোক্ত"},
+      {"word_idx": 5, "gloss_text": "ভাবনা করা উচিত"},
+      {"word_idx": 6, "gloss_text": "তন্ময় হয়"}
+    ],
+    "1.61": [
+      {"word_idx": 0, "gloss_text": "যেভাবে-তেমন"},
+      {"word_idx": 1, "gloss_text": "উপদেশ দ্বারা"},
+      {"word_idx": 2, "gloss_text": "ঘটানো হয়"},
+      {"word_idx": 3, "gloss_text": "মরুতের লয়"},
+      {"word_idx": 4, "gloss_text": "সেইভাবে-সেইভাবে"},
+      {"word_idx": 5, "gloss_text": "মন জ্ঞেয়"},
+      {"word_idx": 6, "gloss_text": "সেই অবস্থার পদে গমন"}
+    ],
+    "1.62": [
+      {"word_idx": 0, "gloss_text": "অমূল (মূলরহিত উৎস)"},
+      {"word_idx": 1, "gloss_text": "মূল-নাড়ীসমূহের"},
+      {"word_idx": 2, "gloss_text": "বায়ু-পূর্ণ"},
+      {"word_idx": 3, "gloss_text": "সুষুম্না"},
+      {"word_idx": 4, "gloss_text": "দ্বাদশান্তে স্থিত"},
+      {"word_idx": 5, "gloss_text": "ধ্যান করে"},
+      {"word_idx": 6, "gloss_text": "অমূল ভৈরবকে প্রাপ্ত হও"}
+    ],
+    "1.63": [
+      {"word_idx": 0, "gloss_text": "কপালের ভিতরে"},
+      {"word_idx": 1, "gloss_text": "সেইভাবে মন (স্থাপিত)"},
+      {"word_idx": 2, "gloss_text": "ধ্যানকারীর"},
+      {"word_idx": 3, "gloss_text": "অচিরে"},
+      {"word_idx": 4, "gloss_text": "হে প্রভু"},
+      {"word_idx": 5, "gloss_text": "নিমীলন ইত্যাদি থেকে জাত সিদ্ধি"},
+      {"word_idx": 6, "gloss_text": "চিন্ময়ের পক্ষে"},
+      {"word_idx": 7, "gloss_text": "জন্মায়"}
+    ],
+    "1.64": [
+      {"word_idx": 0, "gloss_text": "জিহ্বা মাঝখানে"},
+      {"word_idx": 1, "gloss_text": "মুখ প্রসারিত"},
+      {"word_idx": 2, "gloss_text": "মধ্যে নিক্ষেপ করে"},
+      {"word_idx": 3, "gloss_text": "চেতনা"},
+      {"word_idx": 4, "gloss_text": "'হ'-উচ্চারণ"},
+      {"word_idx": 5, "gloss_text": "মনে করতে করতে"},
+      {"word_idx": 6, "gloss_text": "তারপর শান্তে"},
+      {"word_idx": 7, "gloss_text": "প্রলীন হয়"}
+    ],
+    "1.65": [
+      {"word_idx": 0, "gloss_text": "আসনে, শয্যায়"},
+      {"word_idx": 1, "gloss_text": "থেকে"},
+      {"word_idx": 2, "gloss_text": "নিরাধার"},
+      {"word_idx": 3, "gloss_text": "ভাবনা করতে করতে"},
+      {"word_idx": 4, "gloss_text": "নিজ-দেহ"},
+      {"word_idx": 5, "gloss_text": "মন ক্ষীণ হলে"},
+      {"word_idx": 6, "gloss_text": "ক্ষণমাত্রে"},
+      {"word_idx": 7, "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য) হয়"}
+    ],
+    "1.66": [
+      {"word_idx": 0, "gloss_text": "চল-আসনে"},
+      {"word_idx": 1, "gloss_text": "স্থিত হয়ে, তখন"},
+      {"word_idx": 2, "gloss_text": "অথবা ধীরে"},
+      {"word_idx": 3, "gloss_text": "শরীর-চালনা থেকে"},
+      {"word_idx": 4, "gloss_text": "মানসিক ভাব প্রশান্ত হলে"},
+      {"word_idx": 5, "gloss_text": "হে দেবী"},
+      {"word_idx": 6, "gloss_text": "দিব্য-ওঘ (আনন্দ-প্রবাহ)"},
+      {"word_idx": 7, "gloss_text": "লাভ হয়"}
+    ],
+    "1.67": [
+      {"word_idx": 0, "gloss_text": "বিমল আকাশ"},
+      {"word_idx": 1, "gloss_text": "দেখে"},
+      {"word_idx": 2, "gloss_text": "নিরন্তর দৃষ্টি করে"},
+      {"word_idx": 3, "gloss_text": "স্তব্ধ-আত্মা"},
+      {"word_idx": 4, "gloss_text": "সেই ক্ষণে"},
+      {"word_idx": 5, "gloss_text": "হে দেবী"},
+      {"word_idx": 6, "gloss_text": "ভৈরব-বপু"},
+      {"word_idx": 7, "gloss_text": "প্রাপ্ত হও"}
+    ],
+    "1.68": [
+      {"word_idx": 0, "gloss_text": "লীন"},
+      {"word_idx": 1, "gloss_text": "মূর্ধায়"},
+      {"word_idx": 2, "gloss_text": "বিয়ৎ (শূন্য)"},
+      {"word_idx": 3, "gloss_text": "সমস্ত"},
+      {"word_idx": 4, "gloss_text": "ভৈরবত্ব-রূপে ভাবনা করো"},
+      {"word_idx": 5, "gloss_text": "সেই সমস্ত"},
+      {"word_idx": 6, "gloss_text": "ভৈরব-আকার-তেজঃ-তত্ত্ব"},
+      {"word_idx": 7, "gloss_text": "সমাবিষ্ট হও"}
+    ],
+    "1.69": [
+      {"word_idx": 0, "gloss_text": "কিঞ্চিৎ-জ্ঞাত (অংশিক জ্ঞান)"},
+      {"word_idx": 1, "gloss_text": "দ্বৈত-দায়ী"},
+      {"word_idx": 2, "gloss_text": "বাহ্য আলোক"},
+      {"word_idx": 3, "gloss_text": "আবার অন্ধকার"},
+      {"word_idx": 4, "gloss_text": "বিশ্ব ইত্যাদি"},
+      {"word_idx": 5, "gloss_text": "ভৈরব-রূপ"},
+      {"word_idx": 6, "gloss_text": "জেনে"},
+      {"word_idx": 7, "gloss_text": "অনন্ত-প্রকাশ-ধারী হয়"}
+    ],
+    "1.70": [
+      {"word_idx": 0, "gloss_text": "এইভাবেই"},
+      {"word_idx": 1, "gloss_text": "দুর্নিশায় (অমাবস্যা-রাত্রিতে)"},
+      {"word_idx": 2, "gloss_text": "কৃষ্ণপক্ষের আগমে"},
+      {"word_idx": 3, "gloss_text": "দীর্ঘকাল"},
+      {"word_idx": 4, "gloss_text": "তিমির (অন্ধকার)"},
+      {"word_idx": 5, "gloss_text": "ভাবনা করে"},
+      {"word_idx": 6, "gloss_text": "ভৈরব-রূপ হিসাবে"},
+      {"word_idx": 7, "gloss_text": "(সেই) রূপ প্রাপ্ত হবে"}
+    ],
+    "1.71": [
+      {"word_idx": 0, "gloss_text": "এইভাবেই"},
+      {"word_idx": 1, "gloss_text": "প্রথমে বন্ধ করে"},
+      {"word_idx": 2, "gloss_text": "দু চোখ"},
+      {"word_idx": 3, "gloss_text": "কৃষ্ণ-আভা"},
+      {"word_idx": 4, "gloss_text": "সামনে"},
+      {"word_idx": 5, "gloss_text": "প্রসারিত করে"},
+      {"word_idx": 6, "gloss_text": "ভৈরব-রূপ"},
+      {"word_idx": 7, "gloss_text": "ভাবনা করতে করতে"},
+      {"word_idx": 8, "gloss_text": "তন্ময় হয়"}
+    ],
+    "1.72": [
+      {"word_idx": 0, "gloss_text": "যেকোনো ইন্দ্রিয়ের"},
+      {"word_idx": 1, "gloss_text": "ব্যাঘাত থেকে"},
+      {"word_idx": 2, "gloss_text": "এবং"},
+      {"word_idx": 3, "gloss_text": "নিরোধ থেকে"},
+      {"word_idx": 4, "gloss_text": "প্রবিষ্টের পক্ষে"},
+      {"word_idx": 5, "gloss_text": "অদ্বয় শূন্যে"},
+      {"word_idx": 6, "gloss_text": "সেখানেই"},
+      {"word_idx": 7, "gloss_text": "আত্মা প্রকাশিত হন"}
+    ],
+    "1.73": [
+      {"word_idx": 0, "gloss_text": "বিন্দু-হীন"},
+      {"word_idx": 1, "gloss_text": "বিসর্গ-হীন"},
+      {"word_idx": 2, "gloss_text": "এবং"},
+      {"word_idx": 3, "gloss_text": "'অ'-কার"},
+      {"word_idx": 4, "gloss_text": "জপকারীর পক্ষে"},
+      {"word_idx": 5, "gloss_text": "মহান উদিত হন"},
+      {"word_idx": 6, "gloss_text": "হে দেবী"},
+      {"word_idx": 7, "gloss_text": "সহসা"},
+      {"word_idx": 8, "gloss_text": "জ্ঞান-ওঘ যিনি — পরমেশ্বর"}
+    ],
+    "1.74": [
+      {"word_idx": 0, "gloss_text": "বিসর্গ-সহিত বর্ণের"},
+      {"word_idx": 1, "gloss_text": "বিসর্গ-অন্তে"},
+      {"word_idx": 2, "gloss_text": "চিতি স্থাপন করো"},
+      {"word_idx": 3, "gloss_text": "নিরাধার চিত্ত দ্বারা"},
+      {"word_idx": 4, "gloss_text": "সনাতন ব্রহ্ম স্পর্শ করো"}
+    ],
+    "1.75": [
+      {"word_idx": 0, "gloss_text": "ব্যোম-আকার"},
+      {"word_idx": 1, "gloss_text": "নিজ আত্মাকে"},
+      {"word_idx": 2, "gloss_text": "ধ্যান করা উচিত"},
+      {"word_idx": 3, "gloss_text": "দিকদ্বারা অনাবৃত"},
+      {"word_idx": 4, "gloss_text": "নিরাশ্রয়"},
+      {"word_idx": 5, "gloss_text": "চিতি-শক্তি"},
+      {"word_idx": 6, "gloss_text": "স্বরূপ দেখাবেন"},
+      {"word_idx": 7, "gloss_text": "তখন"}
+    ],
+    "1.76": [
+      {"word_idx": 0, "gloss_text": "কোনো অঙ্গ"},
+      {"word_idx": 1, "gloss_text": "প্রথমে বিদ্ধ করে"},
+      {"word_idx": 2, "gloss_text": "তীক্ষ্ণ সূচ ইত্যাদি দ্বারা"},
+      {"word_idx": 3, "gloss_text": "তারপর"},
+      {"word_idx": 4, "gloss_text": "সেখানেই"},
+      {"word_idx": 5, "gloss_text": "চেতনা যুক্ত করে"},
+      {"word_idx": 6, "gloss_text": "ভৈরবে"},
+      {"word_idx": 7, "gloss_text": "নির্মল গতি"}
+    ],
+    "1.77": [
+      {"word_idx": 0, "gloss_text": "চিত্ত ইত্যাদি অন্তঃকরণ"},
+      {"word_idx": 1, "gloss_text": "নেই"},
+      {"word_idx": 2, "gloss_text": "আমার ভিতরে"},
+      {"word_idx": 3, "gloss_text": "এই ভাবনা করা উচিত"},
+      {"word_idx": 4, "gloss_text": "বিকল্পের অভাবে"},
+      {"word_idx": 5, "gloss_text": "বিকল্পসমূহ ত্যাগ করে"}
+    ],
+    "1.78": [
+      {"word_idx": 0, "gloss_text": "মায়া বিমোহিনী নামে"},
+      {"word_idx": 1, "gloss_text": "কলার"},
+      {"word_idx": 2, "gloss_text": "কলন (সীমিতকরণ)"},
+      {"word_idx": 3, "gloss_text": "স্থিত"},
+      {"word_idx": 4, "gloss_text": "এই-আদি ধর্ম"},
+      {"word_idx": 5, "gloss_text": "তত্ত্বসমূহের"},
+      {"word_idx": 6, "gloss_text": "গণনা করতে করতে"},
+      {"word_idx": 7, "gloss_text": "পৃথক হয়ো না"}
+    ],
+    "1.79": [
+      {"word_idx": 0, "gloss_text": "সদ্য"},
+      {"word_idx": 1, "gloss_text": "উৎপন্ন ইচ্ছাকে"},
+      {"word_idx": 2, "gloss_text": "দেখে"},
+      {"word_idx": 3, "gloss_text": "শম-গামী করা উচিত"},
+      {"word_idx": 4, "gloss_text": "যেখান থেকেই উদ্ভূত"},
+      {"word_idx": 5, "gloss_text": "সেখানেই লীন হয়"}
+    ],
+    "1.80": [
+      {"word_idx": 0, "gloss_text": "যখন আমার ইচ্ছা"},
+      {"word_idx": 1, "gloss_text": "উদিত হয় না"},
+      {"word_idx": 2, "gloss_text": "অথবা জ্ঞান (উদিত হয় না)"},
+      {"word_idx": 3, "gloss_text": "তখন আমি কে?"},
+      {"word_idx": 4, "gloss_text": "প্রকৃতপক্ষে আমি সেই-রকম"},
+      {"word_idx": 5, "gloss_text": "তাতে লীন"},
+      {"word_idx": 6, "gloss_text": "তন্মন হয়"}
+    ],
+    "1.81": [
+      {"word_idx": 0, "gloss_text": "ইচ্ছায়"},
+      {"word_idx": 1, "gloss_text": "অথবা জ্ঞানে"},
+      {"word_idx": 2, "gloss_text": "জাত হলে"},
+      {"word_idx": 3, "gloss_text": "চিত্ত নিবেশ করা উচিত"},
+      {"word_idx": 4, "gloss_text": "আত্ম-বুদ্ধিতে অনন্য-চিত্ত হয়ে"},
+      {"word_idx": 5, "gloss_text": "তারপর তত্ত্ব-অর্থ-দর্শন"}
+    ],
+    "1.82": [
+      {"word_idx": 0, "gloss_text": "নিরনিমিত্ত"},
+      {"word_idx": 1, "gloss_text": "জ্ঞান উদিত হতে পারে"},
+      {"word_idx": 2, "gloss_text": "নিরাধার"},
+      {"word_idx": 3, "gloss_text": "ভ্রম-আত্মক"},
+      {"word_idx": 4, "gloss_text": "প্রকৃতপক্ষে এ কারোই নয়"},
+      {"word_idx": 5, "gloss_text": "এমন ভাবনাকারী, হে প্রিয়ে, শিব (হন)"}
+    ],
+    "1.83": [
+      {"word_idx": 0, "gloss_text": "চিৎ-ধর্মা"},
+      {"word_idx": 1, "gloss_text": "সমস্ত দেহে"},
+      {"word_idx": 2, "gloss_text": "কোথাও বিশেষ নেই"},
+      {"word_idx": 3, "gloss_text": "এবং তাই"},
+      {"word_idx": 4, "gloss_text": "সমস্ত তন্ময়"},
+      {"word_idx": 5, "gloss_text": "ভাবনা করে"},
+      {"word_idx": 6, "gloss_text": "ভব-জিৎ ব্যক্তি"}
+    ],
+    "1.84": [
+      {"word_idx": 0, "gloss_text": "কাম-ক্রোধ-লোভ-মোহ-মদ-মাৎসর্যের গোচরে"},
+      {"word_idx": 1, "gloss_text": "বুদ্ধি নিস্তিমিত (স্থির) করে"},
+      {"word_idx": 2, "gloss_text": "সেই তত্ত্বই অবশিষ্ট থাকে"}
+    ],
+    "1.85": [
+      {"word_idx": 0, "gloss_text": "ইন্দ্রজাল-ময় বিশ্ব"},
+      {"word_idx": 1, "gloss_text": "বিস্তৃত"},
+      {"word_idx": 2, "gloss_text": "অথবা"},
+      {"word_idx": 3, "gloss_text": "চিত্রকর্মের মতো"},
+      {"word_idx": 4, "gloss_text": "ঘূর্ণমান"},
+      {"word_idx": 5, "gloss_text": "অথবা"},
+      {"word_idx": 6, "gloss_text": "ধ্যানকারীর পক্ষে"},
+      {"word_idx": 7, "gloss_text": "সমস্ত দেখলে"},
+      {"word_idx": 8, "gloss_text": "সুখের উদয়"}
+    ],
+    "1.86": [
+      {"word_idx": 0, "gloss_text": "দুঃখে চিত্ত নিক্ষেপ করো না"},
+      {"word_idx": 1, "gloss_text": "সুখেও পরিক্ষেপ করো না"},
+      {"word_idx": 2, "gloss_text": "হে ভৈরবি"},
+      {"word_idx": 3, "gloss_text": "মাঝখানে জানা যাক"},
+      {"word_idx": 4, "gloss_text": "কী তত্ত্ব অবশিষ্ট থাকে?"}
+    ],
+    "1.87": [
+      {"word_idx": 0, "gloss_text": "ত্যাগ করে"},
+      {"word_idx": 1, "gloss_text": "নিজ-দেহের আস্থা"},
+      {"word_idx": 2, "gloss_text": "'সর্বত্র আমি' — এই"},
+      {"word_idx": 3, "gloss_text": "ভাবনা করতে করতে"},
+      {"word_idx": 4, "gloss_text": "দৃঢ় মন দ্বারা"},
+      {"word_idx": 5, "gloss_text": "দৃষ্টিতে"},
+      {"word_idx": 6, "gloss_text": "অন্য-নির্দেশহীন"},
+      {"word_idx": 7, "gloss_text": "সুখী হয়"}
+    ],
+    "1.88": [
+      {"word_idx": 0, "gloss_text": "ঘট ইত্যাদিতে"},
+      {"word_idx": 1, "gloss_text": "যা বিজ্ঞান"},
+      {"word_idx": 2, "gloss_text": "অথবা ইচ্ছা ইত্যাদি আমার অন্তরে"},
+      {"word_idx": 3, "gloss_text": "তা সর্বগ-রূপে ছাড়া আর কিছুরূপে জন্মায়নি"},
+      {"word_idx": 4, "gloss_text": "এই ভাবনাকারী সর্বগ হন"}
+    ],
+    "1.89": [
+      {"word_idx": 0, "gloss_text": "গ্রাহ্য-গ্রাহক-সংবিত্তি"},
+      {"word_idx": 1, "gloss_text": "সাধারণ"},
+      {"word_idx": 2, "gloss_text": "সমস্ত দেহীদের"},
+      {"word_idx": 3, "gloss_text": "যোগীদের তবে বিশেষ আছে"},
+      {"word_idx": 4, "gloss_text": "সম্বন্ধে"},
+      {"word_idx": 5, "gloss_text": "সাবধানতা"}
+    ],
+    "1.90": [
+      {"word_idx": 0, "gloss_text": "নিজের মতো"},
+      {"word_idx": 1, "gloss_text": "অন্যের শরীরেও"},
+      {"word_idx": 2, "gloss_text": "সংবিত্তি অনুভব করো"},
+      {"word_idx": 3, "gloss_text": "নিজ-শরীরের অপেক্ষা"},
+      {"word_idx": 4, "gloss_text": "ত্যাগ করে"},
+      {"word_idx": 5, "gloss_text": "দিনে দিনে ব্যাপী হও"}
+    ],
+    "1.91": [
+      {"word_idx": 0, "gloss_text": "মন নিরাধার করে"},
+      {"word_idx": 1, "gloss_text": "বিকল্প করো না"},
+      {"word_idx": 2, "gloss_text": "তখন আত্ম-পরমাত্ম-ত্বে"},
+      {"word_idx": 3, "gloss_text": "ভৈরব, হে মৃগ-নয়না"}
+    ],
+    "1.92": [
+      {"word_idx": 0, "gloss_text": "সর্বজ্ঞ"},
+      {"word_idx": 1, "gloss_text": "এবং সর্ব-কর্তা"},
+      {"word_idx": 2, "gloss_text": "ব্যাপক পরমেশ্বর"},
+      {"word_idx": 3, "gloss_text": "তিনিই আমি"},
+      {"word_idx": 4, "gloss_text": "শৈব-ধর্মা"},
+      {"word_idx": 5, "gloss_text": "এই দৃঢ়তা থেকে"},
+      {"word_idx": 6, "gloss_text": "শিব হয়"}
+    ],
+    "1.93": [
+      {"word_idx": 0, "gloss_text": "জলের মতো"},
+      {"word_idx": 1, "gloss_text": "তরঙ্গসমূহ"},
+      {"word_idx": 2, "gloss_text": "অগ্নির শিখা-ভঙ্গিসমূহ"},
+      {"word_idx": 3, "gloss_text": "সূর্যের প্রভা"},
+      {"word_idx": 4, "gloss_text": "আমারই — ভৈরবেরই"},
+      {"word_idx": 5, "gloss_text": "এই বিশ্ব-ভঙ্গিসমূহ"},
+      {"word_idx": 6, "gloss_text": "বিভেদিত"}
+    ],
+    "1.94": [
+      {"word_idx": 0, "gloss_text": "ভ্রমণ করে করে"},
+      {"word_idx": 1, "gloss_text": "শরীরে"},
+      {"word_idx": 2, "gloss_text": "দ্রুত"},
+      {"word_idx": 3, "gloss_text": "ভূমিতে পতিত হলে"},
+      {"word_idx": 4, "gloss_text": "ক্ষোভ-শক্তির বিরাম থেকে"},
+      {"word_idx": 5, "gloss_text": "পরা দশা উৎপন্ন হয়"}
+    ],
+    "1.95": [
+      {"word_idx": 0, "gloss_text": "আধারসমূহে"},
+      {"word_idx": 1, "gloss_text": "অথবা অশক্তি থেকে"},
+      {"word_idx": 2, "gloss_text": "জ্ঞান থেকে"},
+      {"word_idx": 3, "gloss_text": "অথবা"},
+      {"word_idx": 4, "gloss_text": "দেশ-কল্পনা থেকে"},
+      {"word_idx": 5, "gloss_text": "শক্তির সংশোভ উদ্ভূত হলে"},
+      {"word_idx": 6, "gloss_text": "পরে শান্ত হলে, তখন (পরা অবস্থা) ঘটে"}
+    ],
+    "1.96": [
+      {"word_idx": 0, "gloss_text": "বসে"},
+      {"word_idx": 1, "gloss_text": "আসনে ভালভাবে"},
+      {"word_idx": 2, "gloss_text": "দু হাত করে"},
+      {"word_idx": 3, "gloss_text": "অর্ধ-কুঞ্চিত"},
+      {"word_idx": 4, "gloss_text": "কক্ষ-ব্যোমে (বগলের শূন্যে)"},
+      {"word_idx": 5, "gloss_text": "মন রেখে"},
+      {"word_idx": 6, "gloss_text": "শম-প্রাপ্ত হয়"},
+      {"word_idx": 7, "gloss_text": "তার লয় থেকে"}
+    ],
+    "1.97": [
+      {"word_idx": 0, "gloss_text": "স্থূল-রূপ বস্তুর প্রতি"},
+      {"word_idx": 1, "gloss_text": "স্তব্ধ দৃষ্টি নিপাত করে"},
+      {"word_idx": 2, "gloss_text": "এবং"},
+      {"word_idx": 3, "gloss_text": "অচিরে"},
+      {"word_idx": 4, "gloss_text": "মন নিরাধার করে"},
+      {"word_idx": 5, "gloss_text": "শিবে গমন করো"}
+    ],
+    "1.98": [
+      {"word_idx": 0, "gloss_text": "জিহ্বা মাঝখানে"},
+      {"word_idx": 1, "gloss_text": "মুখ প্রসারিত"},
+      {"word_idx": 2, "gloss_text": "মাঝখানে চেতনা নিক্ষেপ করে"},
+      {"word_idx": 3, "gloss_text": "মনে মন্ত্র উচ্চারণ করতে করতে"},
+      {"word_idx": 4, "gloss_text": "শিব রূপে ধ্যান করতে করতে"},
+      {"word_idx": 5, "gloss_text": "(যোগী) প্রশান্ত হন"}
+    ],
+    "1.99": [
+      {"word_idx": 0, "gloss_text": "কপালের ভিতরে"},
+      {"word_idx": 1, "gloss_text": "মুদিত চোখে"},
+      {"word_idx": 2, "gloss_text": "উত্তম লক্ষ্য"}
+    ],
+    "1.100": [
+      {"word_idx": 0, "gloss_text": "মধ্য-নাড়ী (সুষুম্না)"},
+      {"word_idx": 1, "gloss_text": "পদ্ম-সূত্র-আভ-রূপা"},
+      {"word_idx": 2, "gloss_text": "অন্তর-ব্যোমময়ী দেবী"}
+    ],
+    "1.101": [
+      {"word_idx": 0, "gloss_text": "হাত-দ্বারা-রুদ্ধ দৃষ্টি"},
+      {"word_idx": 1, "gloss_text": "দ্বার-রোধ থেকে"},
+      {"word_idx": 2, "gloss_text": "পরম স্থিতি"}
+    ],
+    "1.102": [
+      {"word_idx": 0, "gloss_text": "মন্ত্র-অর্থ-প্রোক্ত রূপসমূহ"},
+      {"word_idx": 1, "gloss_text": "অধিকারীর বিশেষত্ব অনুযায়ী"},
+      {"word_idx": 2, "gloss_text": "সিদ্ধ সাধক"}
+    ],
+    "1.103": [
+      {"word_idx": 0, "gloss_text": "অনুসন্ধেয় (অনুসন্ধান করা উচিত)"},
+      {"word_idx": 1, "gloss_text": "একত্র জ্ঞান অবলম্বন করে"},
+      {"word_idx": 2, "gloss_text": "যোগ-সিদ্ধি লাভ"}
+    ],
+    "1.104": [
+      {"word_idx": 0, "gloss_text": "কামনার বেগ থেকে"},
+      {"word_idx": 1, "gloss_text": "বিস্ময়"},
+      {"word_idx": 2, "gloss_text": "[draft] নিজ-শরীরের আহ্লাদ-শক্তি"}
+    ],
+    "1.105": [
+      {"word_idx": 0, "gloss_text": "[draft] লেহন-মন্থন-আকোট দ্বারা"},
+      {"word_idx": 1, "gloss_text": "স্ত্রী-সুখের ভর-স্মৃতি থেকে"},
+      {"word_idx": 2, "gloss_text": "আনন্দ-সম্প্লব"}
+    ],
+    "1.106": [
+      {"word_idx": 0, "gloss_text": "মহান আনন্দ প্রাপ্ত হলে"},
+      {"word_idx": 1, "gloss_text": "দীর্ঘকাল পর প্রিয়জনকে (দেখে)"},
+      {"word_idx": 2, "gloss_text": "তাতে লীন"}
+    ],
+    "1.107": [
+      {"word_idx": 0, "gloss_text": "খাদ্য-পান"},
+      {"word_idx": 1, "gloss_text": "রস-আনন্দ-বিজৃম্ভণ থেকে"},
+      {"word_idx": 2, "gloss_text": "মহান আনন্দ"}
+    ],
+    "1.108": [
+      {"word_idx": 0, "gloss_text": "গীত ইত্যাদি বিষয়-আস্বাদের অসম-সৌখ্য-একত্ব-আত্মা"},
+      {"word_idx": 1, "gloss_text": "যোগীর পক্ষে"},
+      {"word_idx": 2, "gloss_text": "তন্ময়ত্ব দ্বারা"},
+      {"word_idx": 3, "gloss_text": "মনের আরোহণ থেকে"},
+      {"word_idx": 4, "gloss_text": "তত্-আত্মতা"}
+    ],
+    "1.109": [
+      {"word_idx": 0, "gloss_text": "যেখানে যেখানে"},
+      {"word_idx": 1, "gloss_text": "আত্মার তুষ্টি (ঘটে)"},
+      {"word_idx": 2, "gloss_text": "মন"},
+      {"word_idx": 3, "gloss_text": "সেখানেই"},
+      {"word_idx": 4, "gloss_text": "ধারণ করা উচিত"},
+      {"word_idx": 5, "gloss_text": "সেখানে সেখানে"},
+      {"word_idx": 6, "gloss_text": "পরা-আনন্দের স্ব-রূপ"},
+      {"word_idx": 7, "gloss_text": "সম্যকভাবে প্রবর্তিত হয়"}
+    ],
+    "1.110": [
+      {"word_idx": 0, "gloss_text": "নিদ্রা এখনও না আসায়"},
+      {"word_idx": 1, "gloss_text": "বাহ্য-গোচর বিনষ্ট হলে"},
+      {"word_idx": 2, "gloss_text": "সেই অবস্থা"},
+      {"word_idx": 3, "gloss_text": "মন দ্বারা গম্য"},
+      {"word_idx": 4, "gloss_text": "পরা দেবী প্রকাশিত হন"}
+    ],
+    "1.111": [
+      {"word_idx": 0, "gloss_text": "তেজ দ্বারা"},
+      {"word_idx": 1, "gloss_text": "সূর্য, প্রদীপ ইত্যাদির"},
+      {"word_idx": 2, "gloss_text": "আকাশ বিচিত্রবর্ণ হলে"},
+      {"word_idx": 3, "gloss_text": "নিজ-আত্মা দৃষ্ট হলে"},
+      {"word_idx": 4, "gloss_text": "সেই ভায় যুক্ত"},
+      {"word_idx": 5, "gloss_text": "সচ্চিদানন্দের গোচর"}
+    ],
+    "1.112": [
+      {"word_idx": 0, "gloss_text": "করঙ্কিণী দ্বারা"},
+      {"word_idx": 1, "gloss_text": "ক্রোধনা দ্বারা"},
+      {"word_idx": 2, "gloss_text": "ভৈরবী দ্বারা"},
+      {"word_idx": 3, "gloss_text": "লেলিহানা দ্বারা"},
+      {"word_idx": 4, "gloss_text": "খেচরী দ্বারা"},
+      {"word_idx": 5, "gloss_text": "দৃষ্টি-কালে"},
+      {"word_idx": 6, "gloss_text": "এবং"},
+      {"word_idx": 7, "gloss_text": "পর-প্রাপ্তি"},
+      {"word_idx": 8, "gloss_text": "প্রকাশিত হয়"}
+    ],
+    "1.113": [
+      {"word_idx": 0, "gloss_text": "মৃদু আসনে"},
+      {"word_idx": 1, "gloss_text": "একটি নিতম্বে (অসম আসন)"},
+      {"word_idx": 2, "gloss_text": "হাত-পা নিরাশ্রয়"},
+      {"word_idx": 3, "gloss_text": "স্থাপন করে"},
+      {"word_idx": 4, "gloss_text": "তার দ্বারা"},
+      {"word_idx": 5, "gloss_text": "পরা পূর্ণ মতি জন্মায়"}
+    ],
+    "1.114": [
+      {"word_idx": 0, "gloss_text": "দু হাত অর্ধ-কুঞ্চিত"},
+      {"word_idx": 1, "gloss_text": "কক্ষ-ব্যোমে"},
+      {"word_idx": 2, "gloss_text": "তার লয় থেকে"}
+    ],
+    "1.115": [
+      {"word_idx": 0, "gloss_text": "স্তব্ধ দৃষ্টি নিপাত করে"},
+      {"word_idx": 1, "gloss_text": "নিরাধার"},
+      {"word_idx": 2, "gloss_text": "শিবে গমন করো"}
+    ],
+    "1.116": [
+      {"word_idx": 0, "gloss_text": "জিহ্বা মাঝখানে"},
+      {"word_idx": 1, "gloss_text": "'হ'-উচ্চারণ"},
+      {"word_idx": 2, "gloss_text": "শান্তে (শিবে)"}
+    ],
+    "1.117": [
+      {"word_idx": 0, "gloss_text": "নিজ-দেহ নিরাধার রূপে"},
+      {"word_idx": 1, "gloss_text": "মন ক্ষীণ হলে"},
+      {"word_idx": 2, "gloss_text": "ক্ষীণ-আশয় (বাসনা-শূন্য)"}
+    ],
+    "1.118": [
+      {"word_idx": 0, "gloss_text": "চল-আসনে"},
+      {"word_idx": 1, "gloss_text": "শরীর-চালনা থেকে"},
+      {"word_idx": 2, "gloss_text": "দিব্য-ওঘ"}
+    ],
+    "1.119": [
+      {"word_idx": 0, "gloss_text": "বিমল আকাশ"},
+      {"word_idx": 1, "gloss_text": "স্তব্ধ-আত্মা"},
+      {"word_idx": 2, "gloss_text": "ভৈরব-বপু"}
+    ],
+    "1.120": [
+      {"word_idx": 0, "gloss_text": "লীন বিয়ৎ"},
+      {"word_idx": 1, "gloss_text": "ভৈরবত্ব-রূপে"},
+      {"word_idx": 2, "gloss_text": "ভৈরব-আকার-তেজঃ-তত্ত্ব"}
+    ],
+    "1.121": [
+      {"word_idx": 0, "gloss_text": "কিঞ্চিৎ-জ্ঞাত"},
+      {"word_idx": 1, "gloss_text": "বাহ্য আলোক"},
+      {"word_idx": 2, "gloss_text": "অনন্ত-প্রকাশ-ধারী"}
+    ],
+    "1.122": [
+      {"word_idx": 0, "gloss_text": "দুর্নিশায়"},
+      {"word_idx": 1, "gloss_text": "তিমির-রূপ"},
+      {"word_idx": 2, "gloss_text": "ভৈরব-রূপ"}
+    ],
+    "1.123": [
+      {"word_idx": 0, "gloss_text": "বন্ধ করে"},
+      {"word_idx": 1, "gloss_text": "কৃষ্ণ-আভা"},
+      {"word_idx": 2, "gloss_text": "তন্ময়"}
+    ],
+    "1.124": [
+      {"word_idx": 0, "gloss_text": "ব্যাঘাত থেকে"},
+      {"word_idx": 1, "gloss_text": "নিরোধ থেকে"},
+      {"word_idx": 2, "gloss_text": "অদ্বয় শূন্যে"}
+    ],
+    "1.125": [
+      {"word_idx": 0, "gloss_text": "বিন্দু-হীন"},
+      {"word_idx": 1, "gloss_text": "বিসর্গ-হীন"},
+      {"word_idx": 2, "gloss_text": "জ্ঞান-ওঘ"}
+    ],
+    "1.126": [
+      {"word_idx": 0, "gloss_text": "বিসর্গ-অন্ত"},
+      {"word_idx": 1, "gloss_text": "চিতি (চেতনা)"},
+      {"word_idx": 2, "gloss_text": "সনাতন ব্রহ্ম"}
+    ],
+    "1.127": [
+      {"word_idx": 0, "gloss_text": "ব্যোম-আকার"},
+      {"word_idx": 1, "gloss_text": "দিকদ্বারা অনাবৃত"},
+      {"word_idx": 2, "gloss_text": "নিরাশ্রয় চিতি-শক্তি"}
+    ],
+    "1.128": [
+      {"word_idx": 0, "gloss_text": "কোনো অঙ্গ"},
+      {"word_idx": 1, "gloss_text": "তীক্ষ্ণ সূচ ইত্যাদি দ্বারা"},
+      {"word_idx": 2, "gloss_text": "নির্মল গতি"}
+    ],
+    "1.129": [
+      {"word_idx": 0, "gloss_text": "অন্তঃকরণ"},
+      {"word_idx": 1, "gloss_text": "বিকল্পের অভাবে"},
+      {"word_idx": 2, "gloss_text": "ত্যাগ-করা"}
+    ],
+    "1.130": [
+      {"word_idx": 0, "gloss_text": "মায়া বিমোহিনী"},
+      {"word_idx": 1, "gloss_text": "কলন (সীমিতকরণ)"},
+      {"word_idx": 2, "gloss_text": "পৃথক"}
+    ],
+    "1.131": [
+      {"word_idx": 0, "gloss_text": "সদ্য"},
+      {"word_idx": 1, "gloss_text": "শম-গামী করা উচিত"},
+      {"word_idx": 2, "gloss_text": "যেখান থেকে"}
+    ],
+    "1.132": [
+      {"word_idx": 0, "gloss_text": "ইচ্ছা / জ্ঞান"},
+      {"word_idx": 1, "gloss_text": "আমি কে?"},
+      {"word_idx": 2, "gloss_text": "তন্মন (তাতে-মন)"}
+    ],
+    "1.133": [
+      {"word_idx": 0, "gloss_text": "ইচ্ছায় / জ্ঞানে"},
+      {"word_idx": 1, "gloss_text": "আত্ম-বুদ্ধিতে"},
+      {"word_idx": 2, "gloss_text": "তত্ত্ব-অর্থ-দর্শন"}
+    ],
+    "1.134": [
+      {"word_idx": 0, "gloss_text": "নিরনিমিত্ত"},
+      {"word_idx": 1, "gloss_text": "ভ্রম-আত্মক"},
+      {"word_idx": 2, "gloss_text": "এমন ভাবনাকারী"}
+    ],
+    "1.135": [
+      {"word_idx": 0, "gloss_text": "চিৎ-ধর্মা"},
+      {"word_idx": 1, "gloss_text": "বিশেষ, পার্থক্য"},
+      {"word_idx": 2, "gloss_text": "ভব-জিৎ"}
+    ],
+    "1.136": [
+      {"word_idx": 0, "gloss_text": "কাম, ক্রোধ, লোভ, মোহ, মদ, মাৎসর্য"},
+      {"word_idx": 1, "gloss_text": "সম্পূর্ণ স্থির"},
+      {"word_idx": 2, "gloss_text": "অবশিষ্ট থাকে"}
+    ],
+    "1.137": [
+      {"word_idx": 0, "gloss_text": "ইন্দ্রজাল-ময়"},
+      {"word_idx": 1, "gloss_text": "চিত্রকর্মের মতো"},
+      {"word_idx": 2, "gloss_text": "সুখের উদয়"}
+    ],
+    "1.138": [
+      {"word_idx": 0, "gloss_text": "মাঝখানে"},
+      {"word_idx": 1, "gloss_text": "অবশিষ্ট থাকে"},
+      {"word_idx": 2, "gloss_text": "জানা যাক"}
+    ],
+    "1.139": [
+      {"word_idx": 0, "gloss_text": "নিজ-দেহের আস্থা"},
+      {"word_idx": 1, "gloss_text": "'সর্বত্র আমি'"},
+      {"word_idx": 2, "gloss_text": "অন্য-নির্দেশহীন দৃষ্টিতে"}
+    ],
+    "1.140": [
+      {"word_idx": 0, "gloss_text": "ঘট ইত্যাদিতে"},
+      {"word_idx": 1, "gloss_text": "বিজ্ঞান"},
+      {"word_idx": 2, "gloss_text": "সর্বগ"}
+    ],
+    "1.141": [
+      {"word_idx": 0, "gloss_text": "গ্রাহ্য-গ্রাহক-সংবিত্তি"},
+      {"word_idx": 1, "gloss_text": "সাধারণ"},
+      {"word_idx": 2, "gloss_text": "সাবধানতা"}
+    ],
+    "1.142": [
+      {"word_idx": 0, "gloss_text": "নিজের মতো"},
+      {"word_idx": 1, "gloss_text": "অন্যের শরীরে"},
+      {"word_idx": 2, "gloss_text": "ব্যাপী"}
+    ],
+    "1.143": [
+      {"word_idx": 0, "gloss_text": "নিরাধার মন"},
+      {"word_idx": 1, "gloss_text": "বিকল্প করো না"},
+      {"word_idx": 2, "gloss_text": "আত্ম-পরমাত্ম-ত্বে"}
+    ],
+    "1.144": [
+      {"word_idx": 0, "gloss_text": "সর্বজ্ঞ, সর্ব-কর্তা"},
+      {"word_idx": 1, "gloss_text": "শৈব-ধর্মা"},
+      {"word_idx": 2, "gloss_text": "দৃঢ়তা থেকে"}
+    ],
+    "1.145": [
+      {"word_idx": 0, "gloss_text": "তরঙ্গসমূহ"},
+      {"word_idx": 1, "gloss_text": "শিখা-ভঙ্গিসমূহ"},
+      {"word_idx": 2, "gloss_text": "বিশ্ব-ভঙ্গিসমূহ"}
+    ],
+    "1.146": [
+      {"word_idx": 0, "gloss_text": "ভ্রমণ করে করে"},
+      {"word_idx": 1, "gloss_text": "ক্ষোভ-শক্তির বিরাম থেকে"},
+      {"word_idx": 2, "gloss_text": "পরা দশা"}
+    ],
+    "1.147": [
+      {"word_idx": 0, "gloss_text": "আধারসমূহে"},
+      {"word_idx": 1, "gloss_text": "শক্তি-সংশোভে"},
+      {"word_idx": 2, "gloss_text": "পরে শান্ত হলে"}
+    ],
+    "1.148": [
+      {"word_idx": 0, "gloss_text": "সর্বত্র"},
+      {"word_idx": 1, "gloss_text": "ভাবনা-নামক উপদেশ"},
+      {"word_idx": 2, "gloss_text": "হে শোভনে"}
+    ],
+    "1.149": [
+      {"word_idx": 0, "gloss_text": "এই দেহে যে কারোই"},
+      {"word_idx": 1, "gloss_text": "'আমি' প্রত্যয় উদয় হোক"},
+      {"word_idx": 2, "gloss_text": "তাঁরই"},
+      {"word_idx": 3, "gloss_text": "ক্ষুদ্র সংবিত্তি থেকে"},
+      {"word_idx": 4, "gloss_text": "ভৈরবত্ব প্রকাশিত হয়"}
+    ],
+    "1.150": [
+      {"word_idx": 0, "gloss_text": "শ্রীদেবী বললেন"},
+      {"word_idx": 1, "gloss_text": "হে দেবদেব, মহাদেব"},
+      {"word_idx": 2, "gloss_text": "তুমি আমাকে পরিপূর্ণ করেছ, হে প্রভু"},
+      {"word_idx": 3, "gloss_text": "তুমিই শঙ্করের আত্মা"},
+      {"word_idx": 4, "gloss_text": "জগতে শাশ্বত শক্তি"}
+    ],
+    "1.151": [
+      {"word_idx": 0, "gloss_text": "যেমন তুমি কৃপায় আবিষ্ট হয়ে"},
+      {"word_idx": 1, "gloss_text": "এই রহস্য"},
+      {"word_idx": 2, "gloss_text": "উদ্ধৃত করেছ"},
+      {"word_idx": 3, "gloss_text": "সেইভাবেই"},
+      {"word_idx": 4, "gloss_text": "যে-কাউকে (সাবধানে) বলা যায়"},
+      {"word_idx": 5, "gloss_text": "যোগ্য কর্ণে"},
+      {"word_idx": 6, "gloss_text": "তা নিক্ষেপ কোরো না"}
+    ],
+    "1.152": [
+      {"word_idx": 0, "gloss_text": "এই বিজ্ঞান"},
+      {"word_idx": 1, "gloss_text": "উদিত"},
+      {"word_idx": 2, "gloss_text": "জরা-মৃত্যু-বিনাশক"},
+      {"word_idx": 3, "gloss_text": "ব্রহ্মা ইত্যাদি দেবদের বন্দনীয়"},
+      {"word_idx": 4, "gloss_text": "মন্থান-ভৈরবের"},
+      {"word_idx": 5, "gloss_text": "এবং"}
+    ],
+    "1.153": [
+      {"word_idx": 0, "gloss_text": "এই অনাখ্যাত (অনুক্ত) তন্ত্র"},
+      {"word_idx": 1, "gloss_text": "ভোগ-মোক্ষ-বিধায়ক"},
+      {"word_idx": 2, "gloss_text": "এই অনাখ্যাত তন্ত্র"},
+      {"word_idx": 3, "gloss_text": "তাঁদের দত্ত"},
+      {"word_idx": 4, "gloss_text": "নিশ্চয়ই লীলায়"}
+    ],
+    "1.154": [
+      {"word_idx": 0, "gloss_text": "জ্ঞান-লাভে"},
+      {"word_idx": 1, "gloss_text": "গুরু-ভাব"},
+      {"word_idx": 2, "gloss_text": "সমতা"}
+    ],
+    "1.155": [
+      {"word_idx": 0, "gloss_text": "যেখানে যেখানে"},
+      {"word_idx": 1, "gloss_text": "যে-কোনোভাবেই হোক"},
+      {"word_idx": 2, "gloss_text": "কর্তা ও কর্মের বিবিক্ততা ঘটে"},
+      {"word_idx": 3, "gloss_text": "সেখানে সেখানে"},
+      {"word_idx": 4, "gloss_text": "শিব-অবস্থা"},
+      {"word_idx": 5, "gloss_text": "ব্যাপকতার কারণে"},
+      {"word_idx": 6, "gloss_text": "কোথায় যাবে?"}
+    ],
+    "1.156": [
+      {"word_idx": 0, "gloss_text": "এই বিজ্ঞান অবলম্বন করে"},
+      {"word_idx": 1, "gloss_text": "যোগী শিব হন"},
+      {"word_idx": 2, "gloss_text": "তীর্থ ইত্যাদিতে"},
+      {"word_idx": 3, "gloss_text": "এবং কোনো জাতি-জন্ম হলেও"},
+      {"word_idx": 4, "gloss_text": "স্নান ইত্যাদিতে কোনো কারণ নেই"}
+    ],
+    "1.157": [
+      {"word_idx": 0, "gloss_text": "[draft] শ্রোতা-আত্মার"},
+      {"word_idx": 1, "gloss_text": "চিত্ত-সমতা"},
+      {"word_idx": 2, "gloss_text": "তত্ত্বের ভাবনা"}
+    ],
+    "1.158": [
+      {"word_idx": 0, "gloss_text": "এই বিজ্ঞানের জ্ঞান থেকে"},
+      {"word_idx": 1, "gloss_text": "যোগ-বিৎ-শ্রেষ্ঠ"},
+      {"word_idx": 2, "gloss_text": "মহাযোগী"}
+    ],
+    "1.159": [
+      {"word_idx": 0, "gloss_text": "আমি পরিতৃপ্ত"},
+      {"word_idx": 1, "gloss_text": "রুদ্রযামল (মূল-তন্ত্র)"},
+      {"word_idx": 2, "gloss_text": "সার অবধারিত হল"}
+    ],
+    "1.160": [
+      {"word_idx": 0, "gloss_text": "সমস্ত শক্তি-প্রভেদের"},
+      {"word_idx": 1, "gloss_text": "হৃদয়"},
+      {"word_idx": 2, "gloss_text": "প্রাপ্ত করে"}
+    ],
+    "1.161": [
+      {"word_idx": 0, "gloss_text": "আনন্দিতা"},
+      {"word_idx": 1, "gloss_text": "কণ্ঠে আশ্রিতা"},
+      {"word_idx": 2, "gloss_text": "সমুদ্ধৃত"}
+    ],
+    "1.162": [
+      {"word_idx": 0, "gloss_text": "কুল-গুহ্য"},
+      {"word_idx": 1, "gloss_text": "ভক্তি-যুক্ত শিষ্যকে"},
+      {"word_idx": 2, "gloss_text": "গুরু-ঘাতক"}
+    ],
+    "1.163": [
+      {"word_idx": 0, "gloss_text": "এইভাবে বিজ্ঞান-ভৈরবে"},
+      {"word_idx": 1, "gloss_text": "শ্রীদেবী-দ্বারা স্তবন-আত্মক"},
+      {"word_idx": 2, "gloss_text": "একশত"},
+      {"word_idx": 3, "gloss_text": "দ্বাদশ-অধিক"},
+      {"word_idx": 4, "gloss_text": "বলা হল"},
+      {"word_idx": 5, "gloss_text": "ভেদ-বর্জিত"}
+    ]
+  }
+}

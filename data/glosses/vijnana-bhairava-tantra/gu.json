@@ -1,0 +1,1345 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "gu",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "શ્રીદેવી (ભૈરવી)"},
+      {"word_idx": 1, "gloss_text": "બોલ્યાં"},
+      {"word_idx": 2, "gloss_text": "સાંભળ્યું"},
+      {"word_idx": 3, "gloss_text": "હે દેવ"},
+      {"word_idx": 4, "gloss_text": "મારા દ્વારા"},
+      {"word_idx": 5, "gloss_text": "બધું, સમગ્ર"},
+      {"word_idx": 6, "gloss_text": "રુદ્રયામલ-તંત્રમાંથી ઉદ્ભવેલું"},
+      {"word_idx": 7, "gloss_text": "ત્રિકના ભેદો"},
+      {"word_idx": 8, "gloss_text": "સંપૂર્ણપણે, બાકી રાખ્યા વિના"},
+      {"word_idx": 9, "gloss_text": "સારના સારથી વિભક્ત"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "આજે પણ"},
+      {"word_idx": 1, "gloss_text": "નહીં"},
+      {"word_idx": 2, "gloss_text": "નિવૃત્ત, દૂર થયેલ"},
+      {"word_idx": 3, "gloss_text": "મારો"},
+      {"word_idx": 4, "gloss_text": "સંશય"},
+      {"word_idx": 5, "gloss_text": "હે પરમેશ્વર"},
+      {"word_idx": 6, "gloss_text": "શું?"},
+      {"word_idx": 7, "gloss_text": "સ્વરૂપ"},
+      {"word_idx": 8, "gloss_text": "ખરેખર, તત્ત્વતઃ"},
+      {"word_idx": 9, "gloss_text": "હે દેવ"},
+      {"word_idx": 10, "gloss_text": "શબ્દરાશિ અને કલાઓથી બનેલું"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "કે શું?"},
+      {"word_idx": 1, "gloss_text": "નવ-આત્માના ભેદથી"},
+      {"word_idx": 2, "gloss_text": "ભૈરવમાં"},
+      {"word_idx": 3, "gloss_text": "ભૈરવ-આકૃતિમાં"},
+      {"word_idx": 4, "gloss_text": "ત્રિશિરસ-ભેદથી વિભક્ત"},
+      {"word_idx": 5, "gloss_text": "કે"},
+      {"word_idx": 6, "gloss_text": "કે શું?"},
+      {"word_idx": 7, "gloss_text": "શક્તિત્રય-આત્મક"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "નાદ-બિન્દુથી બનેલું"},
+      {"word_idx": 1, "gloss_text": "કે પણ"},
+      {"word_idx": 2, "gloss_text": "શું?"},
+      {"word_idx": 3, "gloss_text": "અર્ધચન્દ્ર-નિરોધિકાઓ"},
+      {"word_idx": 4, "gloss_text": "ચક્ર પર આરૂઢ"},
+      {"word_idx": 5, "gloss_text": "સ્વર-રહિત (શુદ્ધ વ્યંજન)"},
+      {"word_idx": 6, "gloss_text": "કે"},
+      {"word_idx": 7, "gloss_text": "કે શું?"},
+      {"word_idx": 8, "gloss_text": "શક્તિના સ્વરૂપવાળું"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "પરાપરા(મધ્ય દેવી)નું"},
+      {"word_idx": 1, "gloss_text": "સકલ, અંગ-યુક્ત"},
+      {"word_idx": 2, "gloss_text": "અપરા (નીચલી દેવી)નું"},
+      {"word_idx": 3, "gloss_text": "અને કે"},
+      {"word_idx": 4, "gloss_text": "ફરી"},
+      {"word_idx": 5, "gloss_text": "પરા(શ્રેષ્ઠ દેવી)નું"},
+      {"word_idx": 6, "gloss_text": "જો"},
+      {"word_idx": 7, "gloss_text": "તે જ રીતે"},
+      {"word_idx": 8, "gloss_text": "હોય"},
+      {"word_idx": 9, "gloss_text": "પરત્વ, શ્રેષ્ઠતા"},
+      {"word_idx": 10, "gloss_text": "તે"},
+      {"word_idx": 11, "gloss_text": "વિરોધી થાય છે"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "નહીં જ"},
+      {"word_idx": 1, "gloss_text": "વર્ણ-ભેદથી"},
+      {"word_idx": 2, "gloss_text": "દેહ-ભેદથી"},
+      {"word_idx": 3, "gloss_text": "કે"},
+      {"word_idx": 4, "gloss_text": "થાય"},
+      {"word_idx": 5, "gloss_text": "પરત્વ, શ્રેષ્ઠતા"},
+      {"word_idx": 6, "gloss_text": "નિષ્કલત્વ વડે"},
+      {"word_idx": 7, "gloss_text": "સકલત્વમાં"},
+      {"word_idx": 8, "gloss_text": "તે હોઈ શકતું નથી"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "પ્રસાદ, કૃપા"},
+      {"word_idx": 1, "gloss_text": "કરો"},
+      {"word_idx": 2, "gloss_text": "મને, મારા પર"},
+      {"word_idx": 3, "gloss_text": "હે નાથ"},
+      {"word_idx": 4, "gloss_text": "બાકી રાખ્યા વિના, સંપૂર્ણ"},
+      {"word_idx": 5, "gloss_text": "છેદો"},
+      {"word_idx": 6, "gloss_text": "સંશય"},
+      {"word_idx": 7, "gloss_text": "ભૈરવ બોલ્યા"},
+      {"word_idx": 8, "gloss_text": "સાધુ, સાધુ! વાહ વાહ!"},
+      {"word_idx": 9, "gloss_text": "તારા દ્વારા પુછાયું"},
+      {"word_idx": 10, "gloss_text": "તંત્રનો સાર"},
+      {"word_idx": 11, "gloss_text": "આ, હે પ્રિયે"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ગુહ્યથી પણ ગુહ્યતરનું રક્ષક"},
+      {"word_idx": 1, "gloss_text": "તું"},
+      {"word_idx": 2, "gloss_text": "જો કે"},
+      {"word_idx": 3, "gloss_text": "આ"},
+      {"word_idx": 4, "gloss_text": "હે વરાનને"},
+      {"word_idx": 5, "gloss_text": "તથાપિ"},
+      {"word_idx": 6, "gloss_text": "હું કહીશ"},
+      {"word_idx": 7, "gloss_text": "જે રીતે"},
+      {"word_idx": 8, "gloss_text": "તું જાણે"},
+      {"word_idx": 9, "gloss_text": "તે રીતે સાંભળ"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "જે"},
+      {"word_idx": 1, "gloss_text": "પરમ છે"},
+      {"word_idx": 2, "gloss_text": "નિષ્કલ"},
+      {"word_idx": 3, "gloss_text": "હે દેવી"},
+      {"word_idx": 4, "gloss_text": "સર્વ તત્ત્વોની પેલે પાર"},
+      {"word_idx": 5, "gloss_text": "તે ખરેખર શક્ય નથી"},
+      {"word_idx": 6, "gloss_text": "તેના દ્વારા"},
+      {"word_idx": 7, "gloss_text": "અહીં (શબ્દોમાં)"},
+      {"word_idx": 8, "gloss_text": "કહેવાનું"},
+      {"word_idx": 9, "gloss_text": "જે કહી શકાય તે"},
+      {"word_idx": 10, "gloss_text": "માત્ર ઇચ્છાથી"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "હે દેવી"},
+      {"word_idx": 1, "gloss_text": "પ્રકૃતિ-રૂપા"},
+      {"word_idx": 2, "gloss_text": "જે"},
+      {"word_idx": 3, "gloss_text": "તેનું"},
+      {"word_idx": 4, "gloss_text": "કયું સ્વરૂપ?"},
+      {"word_idx": 5, "gloss_text": "કહેવાય છે"},
+      {"word_idx": 6, "gloss_text": "સકલત્વમાં"},
+      {"word_idx": 7, "gloss_text": "વિકલ્પોની"},
+      {"word_idx": 8, "gloss_text": "સકલ-અદ્વૈતની કલ્પના"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "ત્યારે"},
+      {"word_idx": 1, "gloss_text": "તે મહા-વ્યોમમાં"},
+      {"word_idx": 2, "gloss_text": "લય પામતાં"},
+      {"word_idx": 3, "gloss_text": "ચંદ્ર અને સૂર્ય"},
+      {"word_idx": 4, "gloss_text": "ડૂબેલા જેવી"},
+      {"word_idx": 5, "gloss_text": "તામસી નિદ્રા"},
+      {"word_idx": 6, "gloss_text": "ઊભી થઈ"},
+      {"word_idx": 7, "gloss_text": "ખિલ-ગોચરમાં"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "આવી"},
+      {"word_idx": 1, "gloss_text": "ભૈરવની"},
+      {"word_idx": 2, "gloss_text": "જે અવસ્થા"},
+      {"word_idx": 3, "gloss_text": "ગવાય છે"},
+      {"word_idx": 4, "gloss_text": "તે પરા છે"},
+      {"word_idx": 5, "gloss_text": "પર-રૂપે"},
+      {"word_idx": 6, "gloss_text": "પરા દેવી"},
+      {"word_idx": 7, "gloss_text": "પ્રકીર્તિત"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "શક્તિ અને શક્તિમાનની"},
+      {"word_idx": 1, "gloss_text": "જેવી રીતે"},
+      {"word_idx": 2, "gloss_text": "અભેદ"},
+      {"word_idx": 3, "gloss_text": "સદા"},
+      {"word_idx": 4, "gloss_text": "સ્થિત છે"},
+      {"word_idx": 5, "gloss_text": "તેથી"},
+      {"word_idx": 6, "gloss_text": "ધર્મ-ધર્મીપણાના કારણે"},
+      {"word_idx": 7, "gloss_text": "પરા શક્તિ"},
+      {"word_idx": 8, "gloss_text": "પરમાત્માની"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "નહીં"},
+      {"word_idx": 1, "gloss_text": "અગ્નિથી"},
+      {"word_idx": 2, "gloss_text": "દાહક શક્તિ"},
+      {"word_idx": 3, "gloss_text": "ભિન્ન"},
+      {"word_idx": 4, "gloss_text": "ગણાય છે"},
+      {"word_idx": 5, "gloss_text": "માત્ર"},
+      {"word_idx": 6, "gloss_text": "જ્ઞાન-સત્તામાં"},
+      {"word_idx": 7, "gloss_text": "આ આરંભ છે"},
+      {"word_idx": 8, "gloss_text": "પ્રવેશમાં (દ્વાર)"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "જે શક્તિ-અવસ્થામાં પ્રવેશેલો છે તેનું"},
+      {"word_idx": 1, "gloss_text": "નિર્વિભાગ"},
+      {"word_idx": 2, "gloss_text": "ભાવના"},
+      {"word_idx": 3, "gloss_text": "ત્યારે"},
+      {"word_idx": 4, "gloss_text": "તે"},
+      {"word_idx": 5, "gloss_text": "શિવ-રૂપ બને છે"},
+      {"word_idx": 6, "gloss_text": "શૈવી"},
+      {"word_idx": 7, "gloss_text": "મુખ, દ્વાર"},
+      {"word_idx": 8, "gloss_text": "અહીં, આ ઉપદેશમાં"},
+      {"word_idx": 9, "gloss_text": "કહેવાય છે"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "જે રીતે"},
+      {"word_idx": 1, "gloss_text": "દીપકના પ્રકાશ દ્વારા"},
+      {"word_idx": 2, "gloss_text": "સૂર્યનાં કિરણો દ્વારા"},
+      {"word_idx": 3, "gloss_text": "અને"},
+      {"word_idx": 4, "gloss_text": "જણાય છે"},
+      {"word_idx": 5, "gloss_text": "દિશા-વિભાગ આદિ"},
+      {"word_idx": 6, "gloss_text": "તે જ રીતે"},
+      {"word_idx": 7, "gloss_text": "શક્તિ દ્વારા"},
+      {"word_idx": 8, "gloss_text": "શિવ (જણાય છે)"},
+      {"word_idx": 9, "gloss_text": "હે પ્રિયે"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "શ્રીદેવી બોલ્યાં"},
+      {"word_idx": 1, "gloss_text": "હે દેવોના દેવ"},
+      {"word_idx": 2, "gloss_text": "ત્રિશૂલ-ચિહ્નિત"},
+      {"word_idx": 3, "gloss_text": "કપાલોથી શોભિત"},
+      {"word_idx": 4, "gloss_text": "દિશા-દેશ-કાળથી રહિત"},
+      {"word_idx": 5, "gloss_text": "અને"},
+      {"word_idx": 6, "gloss_text": "વ્યપદેશથી મુક્ત"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "જે અવસ્થા"},
+      {"word_idx": 1, "gloss_text": "ભરિત-આકારવાળી"},
+      {"word_idx": 2, "gloss_text": "ભૈરવમાં ઉપલબ્ધ થાય છે"},
+      {"word_idx": 3, "gloss_text": "કયા ઉપાયોથી?"},
+      {"word_idx": 4, "gloss_text": "તેનું મુખ"},
+      {"word_idx": 5, "gloss_text": "પરા દેવી"},
+      {"word_idx": 6, "gloss_text": "કેવી રીતે થાય?"},
+      {"word_idx": 7, "gloss_text": "જે રીતે હું બરાબર સમજું"},
+      {"word_idx": 8, "gloss_text": "તે રીતે મને કહો, હે ભૈરવ"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ભૈરવ બોલ્યા"},
+      {"word_idx": 1, "gloss_text": "ઊર્ધ્વમાં પ્રાણ"},
+      {"word_idx": 2, "gloss_text": "ખરેખર"},
+      {"word_idx": 3, "gloss_text": "નીચે જીવ (અપાન)"},
+      {"word_idx": 4, "gloss_text": "વિસર્ગ-આત્મા"},
+      {"word_idx": 5, "gloss_text": "પરમ ઉદય પામે"},
+      {"word_idx": 6, "gloss_text": "બે ઉત્પત્તિના સ્થાનમાં"},
+      {"word_idx": 7, "gloss_text": "ભરણથી"},
+      {"word_idx": 8, "gloss_text": "ભરિતા સ્થિતિ"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "શ્વાસ, વાયુ"},
+      {"word_idx": 1, "gloss_text": "અંદર કે બહાર"},
+      {"word_idx": 2, "gloss_text": "વિયત-યુગ્મ (બે ખાલીપણાં)"},
+      {"word_idx": 3, "gloss_text": "નિવર્તનથી"},
+      {"word_idx": 4, "gloss_text": "ભૈરવી-ભૈરવનું"},
+      {"word_idx": 5, "gloss_text": "આ રીતે"},
+      {"word_idx": 6, "gloss_text": "હે ભૈરવી"},
+      {"word_idx": 7, "gloss_text": "પ્રગટ થાય છે"},
+      {"word_idx": 8, "gloss_text": "વપુ, શરીર"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "ન બહાર જાય"},
+      {"word_idx": 1, "gloss_text": "ન અંદર પ્રવેશે"},
+      {"word_idx": 2, "gloss_text": "શક્તિ"},
+      {"word_idx": 3, "gloss_text": "મરુત્-રૂપ"},
+      {"word_idx": 4, "gloss_text": "વિકસિત થતાં"},
+      {"word_idx": 5, "gloss_text": "નિર્વિકલ્પપણે"},
+      {"word_idx": 6, "gloss_text": "મધ્યમાં"},
+      {"word_idx": 7, "gloss_text": "તેના દ્વારા"},
+      {"word_idx": 8, "gloss_text": "ભૈરવ-રૂપતા"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "કુંભક"},
+      {"word_idx": 1, "gloss_text": "રેચક"},
+      {"word_idx": 2, "gloss_text": "કે"},
+      {"word_idx": 3, "gloss_text": "પૂરક"},
+      {"word_idx": 4, "gloss_text": "કે"},
+      {"word_idx": 5, "gloss_text": "જ્યારે હોય"},
+      {"word_idx": 6, "gloss_text": "તેના અંતે"},
+      {"word_idx": 7, "gloss_text": "શાંત નામક તે"},
+      {"word_idx": 8, "gloss_text": "શક્તિ દ્વારા"},
+      {"word_idx": 9, "gloss_text": "શાંત"},
+      {"word_idx": 10, "gloss_text": "પ્રકાશે છે"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "મૂળ(મૂલાધાર)થી"},
+      {"word_idx": 1, "gloss_text": "કિરણ જેવી દેખાતી"},
+      {"word_idx": 2, "gloss_text": "સૂક્ષ્મથી પણ સૂક્ષ્મતર"},
+      {"word_idx": 3, "gloss_text": "ધ્યાન કરો"},
+      {"word_idx": 4, "gloss_text": "તેણીને"},
+      {"word_idx": 5, "gloss_text": "દ્વાદશાંતે"},
+      {"word_idx": 6, "gloss_text": "શાંત થતી"},
+      {"word_idx": 7, "gloss_text": "ભૈરવનો ઉદય"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "ઉપર ઊઠતી"},
+      {"word_idx": 1, "gloss_text": "વિજળી જેવી"},
+      {"word_idx": 2, "gloss_text": "પ્રત્યેક ચક્રમાં"},
+      {"word_idx": 3, "gloss_text": "ક્રમે ક્રમે"},
+      {"word_idx": 4, "gloss_text": "ઊર્ધ્વ"},
+      {"word_idx": 5, "gloss_text": "ત્રણ મુષ્ટિ સુધી"},
+      {"word_idx": 6, "gloss_text": "જ્યાં સુધી"},
+      {"word_idx": 7, "gloss_text": "તે ભૈરવ-ઉદય છે"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "ક્રમ-દ્વાદશક (બાર સ્થાનો)"},
+      {"word_idx": 1, "gloss_text": "બરાબર"},
+      {"word_idx": 2, "gloss_text": "બાર અક્ષરો વડે વિભક્ત"},
+      {"word_idx": 3, "gloss_text": "સ્થૂળ-સૂક્ષ્મ-પર સ્થિતિ વડે"},
+      {"word_idx": 4, "gloss_text": "છોડીને છોડીને"},
+      {"word_idx": 5, "gloss_text": "છેવટે"},
+      {"word_idx": 6, "gloss_text": "શિવ"}
+    ],
+    "1.26": [
+      {"word_idx": 0, "gloss_text": "તે (ઉદય પામતી શક્તિ) વડે"},
+      {"word_idx": 1, "gloss_text": "ભરીને"},
+      {"word_idx": 2, "gloss_text": "ઝડપથી"},
+      {"word_idx": 3, "gloss_text": "મૂર્ધાંત (માથાના ઉપરનો છેડો) સુધી"},
+      {"word_idx": 4, "gloss_text": "ભેદીને"},
+      {"word_idx": 5, "gloss_text": "ભ્રૂક્ષેપ-સેતુ વડે"},
+      {"word_idx": 6, "gloss_text": "નિર્વિકલ્પ"},
+      {"word_idx": 7, "gloss_text": "મનને કરીને"},
+      {"word_idx": 8, "gloss_text": "સર્વોપરિમાં"},
+      {"word_idx": 9, "gloss_text": "સર્વગનો ઉદય"}
+    ],
+    "1.27": [
+      {"word_idx": 0, "gloss_text": "મયૂર-પીંછોથી"},
+      {"word_idx": 1, "gloss_text": "વિવિધ રૂપવાળાં"},
+      {"word_idx": 2, "gloss_text": "મંડળોથી"},
+      {"word_idx": 3, "gloss_text": "શૂન્ય-પંચક"},
+      {"word_idx": 4, "gloss_text": "ધ્યાન કરનારને"},
+      {"word_idx": 5, "gloss_text": "અનુત્તરમાં"},
+      {"word_idx": 6, "gloss_text": "શૂન્યમાં"},
+      {"word_idx": 7, "gloss_text": "પ્રવેશ"},
+      {"word_idx": 8, "gloss_text": "હૃદયમાં"},
+      {"word_idx": 9, "gloss_text": "થાય"}
+    ],
+    "1.28": [
+      {"word_idx": 0, "gloss_text": "આવા ક્રમ વડે"},
+      {"word_idx": 1, "gloss_text": "જ"},
+      {"word_idx": 2, "gloss_text": "જ્યાં ક્યાંય"},
+      {"word_idx": 3, "gloss_text": "ચિંતન"},
+      {"word_idx": 4, "gloss_text": "શૂન્યમાં"},
+      {"word_idx": 5, "gloss_text": "ભીંતમાં"},
+      {"word_idx": 6, "gloss_text": "પરમાં (શ્રેષ્ઠમાં)"},
+      {"word_idx": 7, "gloss_text": "પાત્રમાં"},
+      {"word_idx": 8, "gloss_text": "સ્વયં લય પામેલી"},
+      {"word_idx": 9, "gloss_text": "વર આપનારી"}
+    ],
+    "1.29": [
+      {"word_idx": 0, "gloss_text": "ખોપરીની અંદર"},
+      {"word_idx": 1, "gloss_text": "મન મૂકીને"},
+      {"word_idx": 2, "gloss_text": "સ્થિર રહેતો"},
+      {"word_idx": 3, "gloss_text": "આંખો બંધ કરેલી"},
+      {"word_idx": 4, "gloss_text": "ક્રમશઃ"},
+      {"word_idx": 5, "gloss_text": "મનની દૃઢતાથી"},
+      {"word_idx": 6, "gloss_text": "દર્શન કરે"},
+      {"word_idx": 7, "gloss_text": "ઉત્તમ લક્ષ્ય"}
+    ],
+    "1.30": [
+      {"word_idx": 0, "gloss_text": "મધ્ય-નાડી (સુષુમ્ણા)"},
+      {"word_idx": 1, "gloss_text": "મધ્યમાં સ્થિત"},
+      {"word_idx": 2, "gloss_text": "કમળતંતુ જેવી રૂપવાળી"},
+      {"word_idx": 3, "gloss_text": "ધ્યેય"},
+      {"word_idx": 4, "gloss_text": "અંતર-વ્યોમ સહિત"},
+      {"word_idx": 5, "gloss_text": "દેવી દ્વારા"},
+      {"word_idx": 6, "gloss_text": "તેના દ્વારા"},
+      {"word_idx": 7, "gloss_text": "દેવ"},
+      {"word_idx": 8, "gloss_text": "પ્રકાશે છે"}
+    ],
+    "1.31": [
+      {"word_idx": 0, "gloss_text": "હાથો વડે દૃષ્ટિ-અસ્ત્ર રોકીને"},
+      {"word_idx": 1, "gloss_text": "ભ્રૂ-ભેદથી"},
+      {"word_idx": 2, "gloss_text": "દ્વાર-રોધનથી"},
+      {"word_idx": 3, "gloss_text": "જ્યારે બિન્દુ દેખાય"},
+      {"word_idx": 4, "gloss_text": "ક્રમશઃ લય પામતો"},
+      {"word_idx": 5, "gloss_text": "તેના મધ્યમાં"},
+      {"word_idx": 6, "gloss_text": "પરમ સ્થિતિ"}
+    ],
+    "1.32": [
+      {"word_idx": 0, "gloss_text": "ધામની અંતઃક્ષોભથી ઉદ્ભવેલ"},
+      {"word_idx": 1, "gloss_text": "સૂક્ષ્મ અગ્નિ-તિલકના આકારનો"},
+      {"word_idx": 2, "gloss_text": "બિન્દુ"},
+      {"word_idx": 3, "gloss_text": "શિખાના અંતે"},
+      {"word_idx": 4, "gloss_text": "હૃદયમાં"},
+      {"word_idx": 5, "gloss_text": "લયના અંતે"},
+      {"word_idx": 6, "gloss_text": "ધ્યાન કરનારને"},
+      {"word_idx": 7, "gloss_text": "લય"}
+    ],
+    "1.33": [
+      {"word_idx": 0, "gloss_text": "અનાહતમાં"},
+      {"word_idx": 1, "gloss_text": "પાત્ર-કાનમાં"},
+      {"word_idx": 2, "gloss_text": "અખંડ શબ્દમાં"},
+      {"word_idx": 3, "gloss_text": "નદી જેવા વહેતા"},
+      {"word_idx": 4, "gloss_text": "શબ્દ-બ્રહ્મમાં"},
+      {"word_idx": 5, "gloss_text": "નિષ્ણાત"},
+      {"word_idx": 6, "gloss_text": "પરમ બ્રહ્મ"},
+      {"word_idx": 7, "gloss_text": "પ્રાપ્ત કરે છે"}
+    ],
+    "1.34": [
+      {"word_idx": 0, "gloss_text": "પ્રણવ આદિના સમુચ્ચારથી"},
+      {"word_idx": 1, "gloss_text": "પ્લુત અંતે"},
+      {"word_idx": 2, "gloss_text": "શૂન્ય-ભાવનાથી"},
+      {"word_idx": 3, "gloss_text": "શૂન્યા પરા શક્તિ દ્વારા"},
+      {"word_idx": 4, "gloss_text": "શૂન્યતા પ્રાપ્ત કરે"},
+      {"word_idx": 5, "gloss_text": "હે ભૈરવી"}
+    ],
+    "1.35": [
+      {"word_idx": 0, "gloss_text": "જે કોઈ વર્ણનો"},
+      {"word_idx": 1, "gloss_text": "આદિ અને અંત"},
+      {"word_idx": 2, "gloss_text": "અનુભવ કરે"},
+      {"word_idx": 3, "gloss_text": "શૂન્યતા દ્વારા"},
+      {"word_idx": 4, "gloss_text": "પોતે શૂન્ય બનીને"},
+      {"word_idx": 5, "gloss_text": "પુરુષ શૂન્ય-આકાર બને"}
+    ],
+    "1.36": [
+      {"word_idx": 0, "gloss_text": "તંતુ આદિ વાદ્યોના શબ્દોમાં"},
+      {"word_idx": 1, "gloss_text": "દીર્ઘ"},
+      {"word_idx": 2, "gloss_text": "ક્રમશઃ સ્થિર થવાથી"},
+      {"word_idx": 3, "gloss_text": "અનન્ય ચિત્તવાળો"},
+      {"word_idx": 4, "gloss_text": "અંતે"},
+      {"word_idx": 5, "gloss_text": "પરવ્યોમ-વપુ બને"}
+    ],
+    "1.37": [
+      {"word_idx": 0, "gloss_text": "પિંડ-મંત્રનું"},
+      {"word_idx": 1, "gloss_text": "દરેકનું"},
+      {"word_idx": 2, "gloss_text": "સ્થૂળ વર્ણ-ક્રમ વડે"},
+      {"word_idx": 3, "gloss_text": "અર્ધચંદ્ર-બિંદુ-નાદ-અંત"},
+      {"word_idx": 4, "gloss_text": "શૂન્ય-ઉચ્ચારથી"},
+      {"word_idx": 5, "gloss_text": "શિવ બને"}
+    ],
+    "1.38": [
+      {"word_idx": 0, "gloss_text": "પોતાના દેહમાં"},
+      {"word_idx": 1, "gloss_text": "બધી દિશાઓમાં"},
+      {"word_idx": 2, "gloss_text": "એકસાથે"},
+      {"word_idx": 3, "gloss_text": "ભાવો"},
+      {"word_idx": 4, "gloss_text": "વ્યોમ"},
+      {"word_idx": 5, "gloss_text": "નિર્વિકલ્પ-મનવાળો"},
+      {"word_idx": 6, "gloss_text": "તેને માટે"},
+      {"word_idx": 7, "gloss_text": "સર્વ વ્યોમ થઈ જાય"}
+    ],
+    "1.39": [
+      {"word_idx": 0, "gloss_text": "પૃષ્ઠ-શૂન્ય (પાછળનું ખાલીપણું)"},
+      {"word_idx": 1, "gloss_text": "મૂળ-શૂન્ય"},
+      {"word_idx": 2, "gloss_text": "એકસાથે ભાવો"},
+      {"word_idx": 3, "gloss_text": "અને"},
+      {"word_idx": 4, "gloss_text": "જે કોઈ"},
+      {"word_idx": 5, "gloss_text": "શરીરથી નિરપેક્ષ શક્તિ વડે"},
+      {"word_idx": 6, "gloss_text": "શૂન્ય-મન બને"}
+    ],
+    "1.40": [
+      {"word_idx": 0, "gloss_text": "પૃષ્ઠ-શૂન્ય"},
+      {"word_idx": 1, "gloss_text": "મૂળ-શૂન્ય"},
+      {"word_idx": 2, "gloss_text": "હૃત્-શૂન્ય"},
+      {"word_idx": 3, "gloss_text": "સ્થિરપણે ભાવો"},
+      {"word_idx": 4, "gloss_text": "એકસાથે"},
+      {"word_idx": 5, "gloss_text": "નિર્વિકલ્પત્વથી"},
+      {"word_idx": 6, "gloss_text": "પછી નિર્વિકલ્પનો ઉદય"}
+    ],
+    "1.41": [
+      {"word_idx": 0, "gloss_text": "દેહના કોઈ ભાગમાં"},
+      {"word_idx": 1, "gloss_text": "શૂન્યતા જ"},
+      {"word_idx": 2, "gloss_text": "ક્ષણમાત્ર"},
+      {"word_idx": 3, "gloss_text": "ભાવવી"},
+      {"word_idx": 4, "gloss_text": "નિર્વિકલ્પ"},
+      {"word_idx": 5, "gloss_text": "નિર્વિકલ્પ બને"},
+      {"word_idx": 6, "gloss_text": "નિર્વિકલ્પ-સ્વરૂપનો ભોક્તા"}
+    ],
+    "1.42": [
+      {"word_idx": 0, "gloss_text": "દેહગત સર્વ દ્રવ્ય"},
+      {"word_idx": 1, "gloss_text": "વ્યોમ-વ્યાપ્ત રૂપે"},
+      {"word_idx": 2, "gloss_text": "હે મૃગ-ઈક્ષણા"},
+      {"word_idx": 3, "gloss_text": "ભાવો"},
+      {"word_idx": 4, "gloss_text": "પછી તેને"},
+      {"word_idx": 5, "gloss_text": "તે ભાવના"},
+      {"word_idx": 6, "gloss_text": "સ્થિર બને"}
+    ],
+    "1.43": [
+      {"word_idx": 0, "gloss_text": "દેહની અંદર"},
+      {"word_idx": 1, "gloss_text": "ચામડીના વિભાગને"},
+      {"word_idx": 2, "gloss_text": "ભીંત જેવો"},
+      {"word_idx": 3, "gloss_text": "ચિંતવો"},
+      {"word_idx": 4, "gloss_text": "તેની અંદર કંઈ નથી"},
+      {"word_idx": 5, "gloss_text": "ધ્યાન કરતો"},
+      {"word_idx": 6, "gloss_text": "અધ્યેયનો ભોક્તા બને"}
+    ],
+    "1.44": [
+      {"word_idx": 0, "gloss_text": "હૃદય-આકાશમાં"},
+      {"word_idx": 1, "gloss_text": "ઇન્દ્રિયો લય પામેલી"},
+      {"word_idx": 2, "gloss_text": "કમળ-સંપુટના મધ્યમાં સ્થિત"},
+      {"word_idx": 3, "gloss_text": "અનન્ય ચિત્તવાળો"},
+      {"word_idx": 4, "gloss_text": "હે સુભગે"},
+      {"word_idx": 5, "gloss_text": "પરમ સૌભાગ્ય પ્રાપ્ત કરે"}
+    ],
+    "1.45": [
+      {"word_idx": 0, "gloss_text": "ચોતરફથી"},
+      {"word_idx": 1, "gloss_text": "પોતાના શરીરની"},
+      {"word_idx": 2, "gloss_text": "દ્વાદશાંતે"},
+      {"word_idx": 3, "gloss_text": "મનોલયથી"},
+      {"word_idx": 4, "gloss_text": "દૃઢ બુદ્ધિવાળાને"},
+      {"word_idx": 5, "gloss_text": "દૃઢીભૂત"},
+      {"word_idx": 6, "gloss_text": "તત્ત્વ-લક્ષ્ય"},
+      {"word_idx": 7, "gloss_text": "પ્રવર્તે"}
+    ],
+    "1.46": [
+      {"word_idx": 0, "gloss_text": "જે રીતે"},
+      {"word_idx": 1, "gloss_text": "જ્યાં પણ"},
+      {"word_idx": 2, "gloss_text": "દ્વાદશાંતે"},
+      {"word_idx": 3, "gloss_text": "મન મૂકો"},
+      {"word_idx": 4, "gloss_text": "પ્રતિક્ષણ"},
+      {"word_idx": 5, "gloss_text": "ક્ષીણ-વૃત્તિવાળાને"},
+      {"word_idx": 6, "gloss_text": "વૈલક્ષણ્ય (વિશેષતા)"},
+      {"word_idx": 7, "gloss_text": "દિવસોમાં થાય"}
+    ],
+    "1.47": [
+      {"word_idx": 0, "gloss_text": "જ્યાં જ્યાં"},
+      {"word_idx": 1, "gloss_text": "મન"},
+      {"word_idx": 2, "gloss_text": "જાય"},
+      {"word_idx": 3, "gloss_text": "બાહ્યમાં"},
+      {"word_idx": 4, "gloss_text": "કે"},
+      {"word_idx": 5, "gloss_text": "આંતરિકમાં"},
+      {"word_idx": 6, "gloss_text": "પણ"},
+      {"word_idx": 7, "gloss_text": "ત્યાં ત્યાં"},
+      {"word_idx": 8, "gloss_text": "શિવ-અવસ્થા"},
+      {"word_idx": 9, "gloss_text": "વ્યાપકતાને કારણે"},
+      {"word_idx": 10, "gloss_text": "ક્યાં જઈ શકે?"}
+    ],
+    "1.48": [
+      {"word_idx": 0, "gloss_text": "જ્યાં જ્યાં"},
+      {"word_idx": 1, "gloss_text": "ઇન્દ્રિય-માર્ગ વડે"},
+      {"word_idx": 2, "gloss_text": "ચૈતન્ય"},
+      {"word_idx": 3, "gloss_text": "પ્રગટ થાય"},
+      {"word_idx": 4, "gloss_text": "વિભુનું"},
+      {"word_idx": 5, "gloss_text": "તેને"},
+      {"word_idx": 6, "gloss_text": "તન્માત્ર-ધર્મીપણાથી"},
+      {"word_idx": 7, "gloss_text": "ચિત્-લયથી"},
+      {"word_idx": 8, "gloss_text": "ભરિતાત્મતા"}
+    ],
+    "1.49": [
+      {"word_idx": 0, "gloss_text": "છીંક આદિના અંતે"},
+      {"word_idx": 1, "gloss_text": "ભયમાં"},
+      {"word_idx": 2, "gloss_text": "શોકમાં"},
+      {"word_idx": 3, "gloss_text": "ગહ્વરમાં (ખીણ)"},
+      {"word_idx": 4, "gloss_text": "કે"},
+      {"word_idx": 5, "gloss_text": "યુદ્ધથી ભાગતા"},
+      {"word_idx": 6, "gloss_text": "કૌતૂહલમાં"},
+      {"word_idx": 7, "gloss_text": "ભૂખ આદિના આદિ-અંતે"},
+      {"word_idx": 8, "gloss_text": "બ્રહ્મ-સત્તાની સમીપ"}
+    ],
+    "1.50": [
+      {"word_idx": 0, "gloss_text": "યાદ આવેલા પદાર્થોમાં"},
+      {"word_idx": 1, "gloss_text": "જોયેલા સ્થાનમાં"},
+      {"word_idx": 2, "gloss_text": "મન છોડો"},
+      {"word_idx": 3, "gloss_text": "પોતાનો દેહ"},
+      {"word_idx": 4, "gloss_text": "નિરાધાર કરીને"},
+      {"word_idx": 5, "gloss_text": "પ્રભુ પ્રસરે છે"}
+    ],
+    "1.51": [
+      {"word_idx": 0, "gloss_text": "કોઈ વસ્તુ પર"},
+      {"word_idx": 1, "gloss_text": "મૂકીને"},
+      {"word_idx": 2, "gloss_text": "ધીમે ધીમે"},
+      {"word_idx": 3, "gloss_text": "દૃષ્ટિ"},
+      {"word_idx": 4, "gloss_text": "પાછી ખેંચે"},
+      {"word_idx": 5, "gloss_text": "તે જ્ઞાન"},
+      {"word_idx": 6, "gloss_text": "ચિત્ત સહિત"},
+      {"word_idx": 7, "gloss_text": "હે દેવિ"},
+      {"word_idx": 8, "gloss_text": "શૂન્ય-આલય બને"}
+    ],
+    "1.52": [
+      {"word_idx": 0, "gloss_text": "ભક્તિના ઉદ્રેકથી"},
+      {"word_idx": 1, "gloss_text": "વિરક્તને"},
+      {"word_idx": 2, "gloss_text": "જે પ્રકારની"},
+      {"word_idx": 3, "gloss_text": "ઊભી થાય"},
+      {"word_idx": 4, "gloss_text": "મતિ"},
+      {"word_idx": 5, "gloss_text": "તે જ શાંકરી શક્તિ"},
+      {"word_idx": 6, "gloss_text": "નિત્ય"},
+      {"word_idx": 7, "gloss_text": "તેને ભાવો"},
+      {"word_idx": 8, "gloss_text": "પછી શિવ"}
+    ],
+    "1.53": [
+      {"word_idx": 0, "gloss_text": "બીજી વસ્તુમાં"},
+      {"word_idx": 1, "gloss_text": "જણાતી હોય ત્યારે"},
+      {"word_idx": 2, "gloss_text": "બધી વસ્તુઓમાં"},
+      {"word_idx": 3, "gloss_text": "શૂન્યતા"},
+      {"word_idx": 4, "gloss_text": "તેણીને જ"},
+      {"word_idx": 5, "gloss_text": "મનથી ધ્યાન કરીને"},
+      {"word_idx": 6, "gloss_text": "જાણેલી પણ શાંત થાય"}
+    ],
+    "1.54": [
+      {"word_idx": 0, "gloss_text": "કિંચિજ્જ્ઞો (થોડું જાણનારા) દ્વારા"},
+      {"word_idx": 1, "gloss_text": "જે શુદ્ધિ ગણાય"},
+      {"word_idx": 2, "gloss_text": "તે શુદ્ધિ"},
+      {"word_idx": 3, "gloss_text": "શાંભવ-દર્શનમાં"},
+      {"word_idx": 4, "gloss_text": "શુચિ નથી"},
+      {"word_idx": 5, "gloss_text": "ખરેખર"},
+      {"word_idx": 6, "gloss_text": "અશુચિ પણ નથી"},
+      {"word_idx": 7, "gloss_text": "નિર્વિકલ્પ સુખી થાય"}
+    ],
+    "1.55": [
+      {"word_idx": 0, "gloss_text": "સર્વત્ર"},
+      {"word_idx": 1, "gloss_text": "ભૈરવ-ભાવ"},
+      {"word_idx": 2, "gloss_text": "સામાન્ય વસ્તુઓમાં"},
+      {"word_idx": 3, "gloss_text": "પણ"},
+      {"word_idx": 4, "gloss_text": "ગોચર"},
+      {"word_idx": 5, "gloss_text": "નહીં અને"},
+      {"word_idx": 6, "gloss_text": "તેના વ્યતિરેકથી"},
+      {"word_idx": 7, "gloss_text": "બીજો છે — એમ"},
+      {"word_idx": 8, "gloss_text": "અદ્વયા ગતિ"}
+    ],
+    "1.56": [
+      {"word_idx": 0, "gloss_text": "સમ"},
+      {"word_idx": 1, "gloss_text": "શત્રુ અને મિત્રમાં"},
+      {"word_idx": 2, "gloss_text": "માન-અપમાનમાં સમ"},
+      {"word_idx": 3, "gloss_text": "બ્રહ્મની પરિપૂર્ણતાથી"},
+      {"word_idx": 4, "gloss_text": "એમ જાણીને"},
+      {"word_idx": 5, "gloss_text": "સુખી થાય"}
+    ],
+    "1.57": [
+      {"word_idx": 0, "gloss_text": "દ્વેષ ન"},
+      {"word_idx": 1, "gloss_text": "ભાવો"},
+      {"word_idx": 2, "gloss_text": "ક્યાંય"},
+      {"word_idx": 3, "gloss_text": "રાગ ન"},
+      {"word_idx": 4, "gloss_text": "ભાવો"},
+      {"word_idx": 5, "gloss_text": "ક્યાંય"},
+      {"word_idx": 6, "gloss_text": "રાગ-દ્વેષથી મુક્તિમાં"},
+      {"word_idx": 7, "gloss_text": "મધ્યમાં બ્રહ્મ"},
+      {"word_idx": 8, "gloss_text": "પ્રસરે છે"}
+    ],
+    "1.58": [
+      {"word_idx": 0, "gloss_text": "જે અવેદ્ય"},
+      {"word_idx": 1, "gloss_text": "જે અગ્રાહ્ય"},
+      {"word_idx": 2, "gloss_text": "જે શૂન્ય"},
+      {"word_idx": 3, "gloss_text": "જે અભાવ સુધી જનાર"},
+      {"word_idx": 4, "gloss_text": "તે સર્વ ભૈરવ"},
+      {"word_idx": 5, "gloss_text": "ભાવવા યોગ્ય"},
+      {"word_idx": 6, "gloss_text": "તેના અંતે"},
+      {"word_idx": 7, "gloss_text": "બોધનો ઉદય"}
+    ],
+    "1.59": [
+      {"word_idx": 0, "gloss_text": "નિત્યમાં"},
+      {"word_idx": 1, "gloss_text": "વિભુમાં"},
+      {"word_idx": 2, "gloss_text": "નિરાધારમાં"},
+      {"word_idx": 3, "gloss_text": "વ્યાપકમાં"},
+      {"word_idx": 4, "gloss_text": "અને"},
+      {"word_idx": 5, "gloss_text": "અખિલાત્મામાં"},
+      {"word_idx": 6, "gloss_text": "એમ ભૈરવનું"},
+      {"word_idx": 7, "gloss_text": "અનુસ્મરણ કરતો"},
+      {"word_idx": 8, "gloss_text": "પુરુષ મુક્ત થાય"}
+    ],
+    "1.60": [
+      {"word_idx": 0, "gloss_text": "નિરાધાર"},
+      {"word_idx": 1, "gloss_text": "સંશયથી રહિત"},
+      {"word_idx": 2, "gloss_text": "ખ્યાતિ (દ્વૈત-ભાન)થી રહિત"},
+      {"word_idx": 3, "gloss_text": "તે પરમ બ્રહ્મ"},
+      {"word_idx": 4, "gloss_text": "કહેવાય છે"},
+      {"word_idx": 5, "gloss_text": "ભાવો"},
+      {"word_idx": 6, "gloss_text": "તન્મય બને"}
+    ],
+    "1.61": [
+      {"word_idx": 0, "gloss_text": "જે રીતે"},
+      {"word_idx": 1, "gloss_text": "ઉપદેશથી"},
+      {"word_idx": 2, "gloss_text": "કરાય છે"},
+      {"word_idx": 3, "gloss_text": "મરુત્-લય"},
+      {"word_idx": 4, "gloss_text": "તે જ રીતે"},
+      {"word_idx": 5, "gloss_text": "મન જાણવા યોગ્ય"},
+      {"word_idx": 6, "gloss_text": "તે અવસ્થાના સ્થાનને જાય"}
+    ],
+    "1.62": [
+      {"word_idx": 0, "gloss_text": "અમૂળ"},
+      {"word_idx": 1, "gloss_text": "મૂળ-નાડીઓની"},
+      {"word_idx": 2, "gloss_text": "વાયુ-પૂર્ણ"},
+      {"word_idx": 3, "gloss_text": "સુષુમ્ણિકા"},
+      {"word_idx": 4, "gloss_text": "દ્વાદશાંતે સ્થિત"},
+      {"word_idx": 5, "gloss_text": "ધ્યાન કરીને"},
+      {"word_idx": 6, "gloss_text": "અમૂળ ભૈરવ સુધી જઈ શકાય"}
+    ],
+    "1.63": [
+      {"word_idx": 0, "gloss_text": "ખોપરીની અંદર"},
+      {"word_idx": 1, "gloss_text": "મન તેવી જ રીતે"},
+      {"word_idx": 2, "gloss_text": "ધ્યાન કરનારને"},
+      {"word_idx": 3, "gloss_text": "થોડા સમયમાં"},
+      {"word_idx": 4, "gloss_text": "હે પ્રભો"},
+      {"word_idx": 5, "gloss_text": "નિમીલન આદિથી જન્મેલી સિદ્ધિ"},
+      {"word_idx": 6, "gloss_text": "ચિન્મયને"},
+      {"word_idx": 7, "gloss_text": "ઉદય પામે"}
+    ],
+    "1.64": [
+      {"word_idx": 0, "gloss_text": "મધ્ય જિહ્વા"},
+      {"word_idx": 1, "gloss_text": "મુખ ખુલ્લું હોય"},
+      {"word_idx": 2, "gloss_text": "મધ્યમાં નાખીને"},
+      {"word_idx": 3, "gloss_text": "ચેતના"},
+      {"word_idx": 4, "gloss_text": "'હ'નો ઉચ્ચાર"},
+      {"word_idx": 5, "gloss_text": "મનથી કરતો"},
+      {"word_idx": 6, "gloss_text": "પછી શાંતમાં"},
+      {"word_idx": 7, "gloss_text": "લય પામે"}
+    ],
+    "1.65": [
+      {"word_idx": 0, "gloss_text": "આસને કે શયને"},
+      {"word_idx": 1, "gloss_text": "બેસીને"},
+      {"word_idx": 2, "gloss_text": "નિરાધાર"},
+      {"word_idx": 3, "gloss_text": "ભાવતો"},
+      {"word_idx": 4, "gloss_text": "પોતાનો દેહ"},
+      {"word_idx": 5, "gloss_text": "મન ક્ષીણ થતાં"},
+      {"word_idx": 6, "gloss_text": "ક્ષણમાં"},
+      {"word_idx": 7, "gloss_text": "આશય-ક્ષીણ થાય"}
+    ],
+    "1.66": [
+      {"word_idx": 0, "gloss_text": "ચલ-આસન પર"},
+      {"word_idx": 1, "gloss_text": "બેઠેલા, ત્યારે"},
+      {"word_idx": 2, "gloss_text": "કે ધીમેથી"},
+      {"word_idx": 3, "gloss_text": "દેહ-ચાલનથી"},
+      {"word_idx": 4, "gloss_text": "માનસિક ભાવ શાંત થતાં"},
+      {"word_idx": 5, "gloss_text": "હે દેવી"},
+      {"word_idx": 6, "gloss_text": "દિવ્ય-ઓઘ"},
+      {"word_idx": 7, "gloss_text": "પ્રાપ્ત કરે"}
+    ],
+    "1.67": [
+      {"word_idx": 0, "gloss_text": "વિમલ આકાશ"},
+      {"word_idx": 1, "gloss_text": "જોતો"},
+      {"word_idx": 2, "gloss_text": "નિરંતર દૃષ્ટિ કરીને"},
+      {"word_idx": 3, "gloss_text": "સ્તબ્ધ-આત્મા"},
+      {"word_idx": 4, "gloss_text": "તે જ ક્ષણે"},
+      {"word_idx": 5, "gloss_text": "હે દેવી"},
+      {"word_idx": 6, "gloss_text": "ભૈરવ-વપુ"},
+      {"word_idx": 7, "gloss_text": "પ્રાપ્ત કરે"}
+    ],
+    "1.68": [
+      {"word_idx": 0, "gloss_text": "લય પામેલું"},
+      {"word_idx": 1, "gloss_text": "મૂર્ધામાં"},
+      {"word_idx": 2, "gloss_text": "વ્યોમ"},
+      {"word_idx": 3, "gloss_text": "બધું"},
+      {"word_idx": 4, "gloss_text": "ભૈરવત્વ રૂપે ભાવો"},
+      {"word_idx": 5, "gloss_text": "તે બધું"},
+      {"word_idx": 6, "gloss_text": "ભૈરવ-આકાર-તેજસ-તત્ત્વ"},
+      {"word_idx": 7, "gloss_text": "પ્રવેશે"}
+    ],
+    "1.69": [
+      {"word_idx": 0, "gloss_text": "કિંચિત્-જ્ઞાન"},
+      {"word_idx": 1, "gloss_text": "દ્વૈતદાયી"},
+      {"word_idx": 2, "gloss_text": "બાહ્ય આલોક"},
+      {"word_idx": 3, "gloss_text": "અને પાછું તમસ્"},
+      {"word_idx": 4, "gloss_text": "વિશ્વ આદિ"},
+      {"word_idx": 5, "gloss_text": "ભૈરવ-રૂપ"},
+      {"word_idx": 6, "gloss_text": "જાણીને"},
+      {"word_idx": 7, "gloss_text": "અનંત પ્રકાશનો ધારક"}
+    ],
+    "1.70": [
+      {"word_idx": 0, "gloss_text": "એ જ રીતે"},
+      {"word_idx": 1, "gloss_text": "દુર્નિશા (કાળી રાત)માં"},
+      {"word_idx": 2, "gloss_text": "કૃષ્ણપક્ષની શરૂઆતમાં"},
+      {"word_idx": 3, "gloss_text": "લાંબા સમય"},
+      {"word_idx": 4, "gloss_text": "તૈમિર (અંધકાર)"},
+      {"word_idx": 5, "gloss_text": "ભાવતો"},
+      {"word_idx": 6, "gloss_text": "ભૈરવ-રૂપ રૂપે"},
+      {"word_idx": 7, "gloss_text": "રૂપ પ્રાપ્ત કરે"}
+    ],
+    "1.71": [
+      {"word_idx": 0, "gloss_text": "એ જ રીતે"},
+      {"word_idx": 1, "gloss_text": "પ્રથમ બંધ કરીને"},
+      {"word_idx": 2, "gloss_text": "બે આંખો"},
+      {"word_idx": 3, "gloss_text": "કૃષ્ણાભ (કાળું દેખાવ)"},
+      {"word_idx": 4, "gloss_text": "આગળ"},
+      {"word_idx": 5, "gloss_text": "ફેલાવીને"},
+      {"word_idx": 6, "gloss_text": "ભૈરવ-રૂપ"},
+      {"word_idx": 7, "gloss_text": "ભાવતો"},
+      {"word_idx": 8, "gloss_text": "તન્મય બને"}
+    ],
+    "1.72": [
+      {"word_idx": 0, "gloss_text": "જે કોઈ ઇન્દ્રિયનો"},
+      {"word_idx": 1, "gloss_text": "વ્યાઘાતથી"},
+      {"word_idx": 2, "gloss_text": "અને"},
+      {"word_idx": 3, "gloss_text": "નિરોધથી"},
+      {"word_idx": 4, "gloss_text": "પ્રવેશેલાને"},
+      {"word_idx": 5, "gloss_text": "અદ્વય શૂન્યમાં"},
+      {"word_idx": 6, "gloss_text": "ત્યાં જ"},
+      {"word_idx": 7, "gloss_text": "આત્મા પ્રકાશે"}
+    ],
+    "1.73": [
+      {"word_idx": 0, "gloss_text": "બિન્દુ રહિત"},
+      {"word_idx": 1, "gloss_text": "વિસર્ગ રહિત"},
+      {"word_idx": 2, "gloss_text": "અને"},
+      {"word_idx": 3, "gloss_text": "'અ' કાર"},
+      {"word_idx": 4, "gloss_text": "જપ કરનારને"},
+      {"word_idx": 5, "gloss_text": "મહાન ઉદય પામે"},
+      {"word_idx": 6, "gloss_text": "હે દેવી"},
+      {"word_idx": 7, "gloss_text": "સહસા"},
+      {"word_idx": 8, "gloss_text": "જ્ઞાનનો ઓઘ — પરમેશ્વર"}
+    ],
+    "1.74": [
+      {"word_idx": 0, "gloss_text": "વિસર્ગ સહિત વર્ણનો"},
+      {"word_idx": 1, "gloss_text": "વિસર્ગાંતે"},
+      {"word_idx": 2, "gloss_text": "ચિતિ (ચેતનતા) મૂકો"},
+      {"word_idx": 3, "gloss_text": "નિરાધાર ચિત્તે"},
+      {"word_idx": 4, "gloss_text": "સનાતન બ્રહ્મને સ્પર્શો"}
+    ],
+    "1.75": [
+      {"word_idx": 0, "gloss_text": "વ્યોમ-આકાર"},
+      {"word_idx": 1, "gloss_text": "પોતાનો આત્મા"},
+      {"word_idx": 2, "gloss_text": "ધ્યાવો"},
+      {"word_idx": 3, "gloss_text": "દિશાઓથી અનાવૃત"},
+      {"word_idx": 4, "gloss_text": "નિરાશ્રયા"},
+      {"word_idx": 5, "gloss_text": "ચિતિ-શક્તિ"},
+      {"word_idx": 6, "gloss_text": "પોતાનું સ્વરૂપ બતાવે"},
+      {"word_idx": 7, "gloss_text": "ત્યારે"}
+    ],
+    "1.76": [
+      {"word_idx": 0, "gloss_text": "કોઈ અંગ"},
+      {"word_idx": 1, "gloss_text": "પ્રથમ વીંધીને"},
+      {"word_idx": 2, "gloss_text": "તીક્ષ્ણ સોય આદિથી"},
+      {"word_idx": 3, "gloss_text": "પછી"},
+      {"word_idx": 4, "gloss_text": "ત્યાં જ"},
+      {"word_idx": 5, "gloss_text": "ચેતના જોડીને"},
+      {"word_idx": 6, "gloss_text": "ભૈરવમાં"},
+      {"word_idx": 7, "gloss_text": "નિર્મલ ગતિ"}
+    ],
+    "1.77": [
+      {"word_idx": 0, "gloss_text": "ચિત્ત આદિ અંતઃકરણ"},
+      {"word_idx": 1, "gloss_text": "નથી"},
+      {"word_idx": 2, "gloss_text": "મારી અંદર"},
+      {"word_idx": 3, "gloss_text": "એમ ભાવો"},
+      {"word_idx": 4, "gloss_text": "વિકલ્પોના અભાવથી"},
+      {"word_idx": 5, "gloss_text": "વિકલ્પોથી ત્યક્ત થાય"}
+    ],
+    "1.78": [
+      {"word_idx": 0, "gloss_text": "વિમોહિની માયા"},
+      {"word_idx": 1, "gloss_text": "કલાનું"},
+      {"word_idx": 2, "gloss_text": "કલન"},
+      {"word_idx": 3, "gloss_text": "સ્થિત છે"},
+      {"word_idx": 4, "gloss_text": "આવા ધર્મ"},
+      {"word_idx": 5, "gloss_text": "તત્ત્વોના"},
+      {"word_idx": 6, "gloss_text": "ગણતો"},
+      {"word_idx": 7, "gloss_text": "પૃથક્ ન રહે"}
+    ],
+    "1.79": [
+      {"word_idx": 0, "gloss_text": "અચાનક"},
+      {"word_idx": 1, "gloss_text": "ઊભી થયેલી ઇચ્છા"},
+      {"word_idx": 2, "gloss_text": "જોઈને"},
+      {"word_idx": 3, "gloss_text": "શાંત કરો"},
+      {"word_idx": 4, "gloss_text": "જ્યાંથી જ તે ઉદ્ભવી"},
+      {"word_idx": 5, "gloss_text": "ત્યાં જ લય પામે"}
+    ],
+    "1.80": [
+      {"word_idx": 0, "gloss_text": "જ્યારે મારી ઇચ્છા"},
+      {"word_idx": 1, "gloss_text": "ઊભી થઈ નથી"},
+      {"word_idx": 2, "gloss_text": "કે જ્ઞાન"},
+      {"word_idx": 3, "gloss_text": "ત્યારે હું કોણ છું?"},
+      {"word_idx": 4, "gloss_text": "તત્ત્વતઃ હું તેવો જ"},
+      {"word_idx": 5, "gloss_text": "તેમાં લીન"},
+      {"word_idx": 6, "gloss_text": "તન્મન બને"}
+    ],
+    "1.81": [
+      {"word_idx": 0, "gloss_text": "ઇચ્છામાં"},
+      {"word_idx": 1, "gloss_text": "કે જ્ઞાનમાં"},
+      {"word_idx": 2, "gloss_text": "ઊભું થાય ત્યારે"},
+      {"word_idx": 3, "gloss_text": "ચિત્ત મૂકો"},
+      {"word_idx": 4, "gloss_text": "આત્મ-બુદ્ધિએ અનન્ય ચિત્તવાળો"},
+      {"word_idx": 5, "gloss_text": "પછી તત્ત્વાર્થ-દર્શન"}
+    ],
+    "1.82": [
+      {"word_idx": 0, "gloss_text": "નિર્નિમિત્ત"},
+      {"word_idx": 1, "gloss_text": "જ્ઞાન થાય"},
+      {"word_idx": 2, "gloss_text": "નિરાધાર"},
+      {"word_idx": 3, "gloss_text": "ભ્રમ-આત્મક"},
+      {"word_idx": 4, "gloss_text": "તત્ત્વતઃ આ કોઈનું નથી"},
+      {"word_idx": 5, "gloss_text": "આવી ભાવનાવાળો શિવ, હે પ્રિયે"}
+    ],
+    "1.83": [
+      {"word_idx": 0, "gloss_text": "ચિત્-ધર્મ"},
+      {"word_idx": 1, "gloss_text": "બધાં શરીરોમાં"},
+      {"word_idx": 2, "gloss_text": "ક્યાંય વિશેષ નથી"},
+      {"word_idx": 3, "gloss_text": "અને તેથી"},
+      {"word_idx": 4, "gloss_text": "બધું તન્મય"},
+      {"word_idx": 5, "gloss_text": "ભાવતો"},
+      {"word_idx": 6, "gloss_text": "ભવ-જિત માણસ"}
+    ],
+    "1.84": [
+      {"word_idx": 0, "gloss_text": "કામ-ક્રોધ-લોભ-મોહ-મદ-માત્સર્યના વિષયમાં"},
+      {"word_idx": 1, "gloss_text": "બુદ્ધિને નિસ્તિમિત (નિશ્ચલ) કરીને"},
+      {"word_idx": 2, "gloss_text": "તે તત્ત્વ બાકી રહે"}
+    ],
+    "1.85": [
+      {"word_idx": 0, "gloss_text": "ઇન્દ્રજાલમય વિશ્વ"},
+      {"word_idx": 1, "gloss_text": "વ્યસ્ત"},
+      {"word_idx": 2, "gloss_text": "કે"},
+      {"word_idx": 3, "gloss_text": "ચિત્ર-કર્મ જેવું"},
+      {"word_idx": 4, "gloss_text": "ભ્રમણ કરતું"},
+      {"word_idx": 5, "gloss_text": "કે"},
+      {"word_idx": 6, "gloss_text": "ધ્યાન કરનારને"},
+      {"word_idx": 7, "gloss_text": "બધું જોનારને"},
+      {"word_idx": 8, "gloss_text": "સુખ-ઉદય"}
+    ],
+    "1.86": [
+      {"word_idx": 0, "gloss_text": "મનને દુ:ખમાં ન નાખો"},
+      {"word_idx": 1, "gloss_text": "ન સુખમાં ફેંકો"},
+      {"word_idx": 2, "gloss_text": "હે ભૈરવી"},
+      {"word_idx": 3, "gloss_text": "મધ્યમાં જાણ"},
+      {"word_idx": 4, "gloss_text": "કયું તત્ત્વ બાકી રહે?"}
+    ],
+    "1.87": [
+      {"word_idx": 0, "gloss_text": "છોડીને"},
+      {"word_idx": 1, "gloss_text": "પોતાના દેહ પ્રત્યે આસ્થા"},
+      {"word_idx": 2, "gloss_text": "'સર્વત્ર હું છું' એમ"},
+      {"word_idx": 3, "gloss_text": "ભાવતો"},
+      {"word_idx": 4, "gloss_text": "દૃઢ મનથી"},
+      {"word_idx": 5, "gloss_text": "દૃષ્ટિ વડે"},
+      {"word_idx": 6, "gloss_text": "બીજે ન જોતી"},
+      {"word_idx": 7, "gloss_text": "સુખી થાય"}
+    ],
+    "1.88": [
+      {"word_idx": 0, "gloss_text": "ઘટ આદિમાં"},
+      {"word_idx": 1, "gloss_text": "જે વિજ્ઞાન"},
+      {"word_idx": 2, "gloss_text": "કે ઇચ્છા આદિ મારી અંદર"},
+      {"word_idx": 3, "gloss_text": "સર્વગત રૂપે જ ઉદ્ભવ્યું"},
+      {"word_idx": 4, "gloss_text": "ભાવનાર સર્વગ બને"}
+    ],
+    "1.89": [
+      {"word_idx": 0, "gloss_text": "ગ્રાહ્ય-ગ્રાહક-સંવિત્તિ"},
+      {"word_idx": 1, "gloss_text": "સામાન્ય"},
+      {"word_idx": 2, "gloss_text": "બધાં દેહીઓને"},
+      {"word_idx": 3, "gloss_text": "પણ યોગીઓની વિશેષતા છે"},
+      {"word_idx": 4, "gloss_text": "સંબંધમાં"},
+      {"word_idx": 5, "gloss_text": "સાવધાનતા"}
+    ],
+    "1.90": [
+      {"word_idx": 0, "gloss_text": "પોતાના જેવી"},
+      {"word_idx": 1, "gloss_text": "બીજાના શરીરમાં પણ"},
+      {"word_idx": 2, "gloss_text": "સંવિત્તિ અનુભવો"},
+      {"word_idx": 3, "gloss_text": "પોતાના શરીરની અપેક્ષા"},
+      {"word_idx": 4, "gloss_text": "છોડીને"},
+      {"word_idx": 5, "gloss_text": "દિવસોમાં વ્યાપી બને"}
+    ],
+    "1.91": [
+      {"word_idx": 0, "gloss_text": "મનને નિરાધાર કરીને"},
+      {"word_idx": 1, "gloss_text": "વિકલ્પોની વિકલ્પના ન કરો"},
+      {"word_idx": 2, "gloss_text": "ત્યારે આત્મા-પરમાત્મભાવમાં"},
+      {"word_idx": 3, "gloss_text": "ભૈરવ, હે મૃગલોચને"}
+    ],
+    "1.92": [
+      {"word_idx": 0, "gloss_text": "સર્વજ્ઞ"},
+      {"word_idx": 1, "gloss_text": "અને સર્વકર્તા"},
+      {"word_idx": 2, "gloss_text": "વ્યાપક પરમેશ્વર"},
+      {"word_idx": 3, "gloss_text": "તે જ હું"},
+      {"word_idx": 4, "gloss_text": "શૈવ-ધર્મા"},
+      {"word_idx": 5, "gloss_text": "એ દૃઢતાથી"},
+      {"word_idx": 6, "gloss_text": "શિવ બને"}
+    ],
+    "1.93": [
+      {"word_idx": 0, "gloss_text": "જળની જેમ"},
+      {"word_idx": 1, "gloss_text": "તરંગો"},
+      {"word_idx": 2, "gloss_text": "અગ્નિની જ્વાલા-ભંગીઓ"},
+      {"word_idx": 3, "gloss_text": "સૂર્યની પ્રભા"},
+      {"word_idx": 4, "gloss_text": "મારી, ભૈરવની જ"},
+      {"word_idx": 5, "gloss_text": "આ વિશ્વ-ભંગીઓ"},
+      {"word_idx": 6, "gloss_text": "વિભેદિત"}
+    ],
+    "1.94": [
+      {"word_idx": 0, "gloss_text": "ભ્રમણ કરી કરીને"},
+      {"word_idx": 1, "gloss_text": "શરીરથી"},
+      {"word_idx": 2, "gloss_text": "ઝડપથી"},
+      {"word_idx": 3, "gloss_text": "ભૂમિ પર પડવાથી"},
+      {"word_idx": 4, "gloss_text": "ક્ષોભ-શક્તિના વિરામથી"},
+      {"word_idx": 5, "gloss_text": "પરા દશા જન્મે"}
+    ],
+    "1.95": [
+      {"word_idx": 0, "gloss_text": "આધારોમાં"},
+      {"word_idx": 1, "gloss_text": "કે અશક્તિથી"},
+      {"word_idx": 2, "gloss_text": "જ્ઞાનથી"},
+      {"word_idx": 3, "gloss_text": "કે"},
+      {"word_idx": 4, "gloss_text": "દેશ-કલ્પનાથી"},
+      {"word_idx": 5, "gloss_text": "શક્તિ-સંશોભ ઊભો થતાં"},
+      {"word_idx": 6, "gloss_text": "પાછળથી શાંત થાય ત્યારે થાય"}
+    ],
+    "1.96": [
+      {"word_idx": 0, "gloss_text": "બેસીને"},
+      {"word_idx": 1, "gloss_text": "આસને બરાબર"},
+      {"word_idx": 2, "gloss_text": "બે હાથ કરીને"},
+      {"word_idx": 3, "gloss_text": "અર્ધ-વાંકા"},
+      {"word_idx": 4, "gloss_text": "કક્ષ-વ્યોમમાં"},
+      {"word_idx": 5, "gloss_text": "મન રાખીને"},
+      {"word_idx": 6, "gloss_text": "શાંતિ આવે"},
+      {"word_idx": 7, "gloss_text": "તે લયથી"}
+    ],
+    "1.97": [
+      {"word_idx": 0, "gloss_text": "સ્થૂળ-રૂપવાળા ભાવ પર"},
+      {"word_idx": 1, "gloss_text": "સ્તબ્ધ દૃષ્ટિ નાખીને"},
+      {"word_idx": 2, "gloss_text": "અને"},
+      {"word_idx": 3, "gloss_text": "જલદી"},
+      {"word_idx": 4, "gloss_text": "મનને નિરાધાર કરીને"},
+      {"word_idx": 5, "gloss_text": "શિવ સુધી જાય"}
+    ],
+    "1.98": [
+      {"word_idx": 0, "gloss_text": "મધ્ય જિહ્વા"},
+      {"word_idx": 1, "gloss_text": "મુખ ખુલ્લું"},
+      {"word_idx": 2, "gloss_text": "મધ્યમાં ચેતના નાખીને"},
+      {"word_idx": 3, "gloss_text": "મનથી મંત્ર ઉચ્ચારતો"},
+      {"word_idx": 4, "gloss_text": "શિવનું ધ્યાન કરતો"},
+      {"word_idx": 5, "gloss_text": "પ્રશાંત થાય"}
+    ],
+    "1.99": [
+      {"word_idx": 0, "gloss_text": "ખોપરીની અંદર"},
+      {"word_idx": 1, "gloss_text": "આંખો બંધ"},
+      {"word_idx": 2, "gloss_text": "ઉત્તમ લક્ષ્ય"}
+    ],
+    "1.100": [
+      {"word_idx": 0, "gloss_text": "મધ્ય-નાડી (સુષુમ્ણા)"},
+      {"word_idx": 1, "gloss_text": "કમળતંતુ જેવી રૂપવાળી"},
+      {"word_idx": 2, "gloss_text": "અંતર-વ્યોમ રૂપ દેવી"}
+    ],
+    "1.101": [
+      {"word_idx": 0, "gloss_text": "હાથ વડે દૃષ્ટિ રોકેલી"},
+      {"word_idx": 1, "gloss_text": "દ્વાર-રોધનથી"},
+      {"word_idx": 2, "gloss_text": "પરમ સ્થિતિ"}
+    ],
+    "1.102": [
+      {"word_idx": 0, "gloss_text": "મંત્રાર્થ રૂપે કહેલા સ્વરૂપો"},
+      {"word_idx": 1, "gloss_text": "અધિકારી-વિશેષ પ્રમાણે"},
+      {"word_idx": 2, "gloss_text": "સાધક"}
+    ],
+    "1.103": [
+      {"word_idx": 0, "gloss_text": "અનુસંધાન યોગ્ય"},
+      {"word_idx": 1, "gloss_text": "એક પર જ્ઞાન કેન્દ્રિત કરીને"},
+      {"word_idx": 2, "gloss_text": "યોગ-સિદ્ધિ"}
+    ],
+    "1.104": [
+      {"word_idx": 0, "gloss_text": "કામના-વેગથી"},
+      {"word_idx": 1, "gloss_text": "વિસ્મય"},
+      {"word_idx": 2, "gloss_text": "પોતાના શરીરની આહ્લાદ-શક્તિ"}
+    ],
+    "1.105": [
+      {"word_idx": 0, "gloss_text": "લેહન-મંથન-આકોટ વડે"},
+      {"word_idx": 1, "gloss_text": "સ્ત્રી-સુખની પૂર્ણતાથી"},
+      {"word_idx": 2, "gloss_text": "આનંદનો સંપ્લવ"}
+    ],
+    "1.106": [
+      {"word_idx": 0, "gloss_text": "મહા આનંદ પ્રાપ્ત થતાં"},
+      {"word_idx": 1, "gloss_text": "બાંધવ લાંબા સમય પછી જોવાથી"},
+      {"word_idx": 2, "gloss_text": "તેમાં લય થયેલ"}
+    ],
+    "1.107": [
+      {"word_idx": 0, "gloss_text": "ખાવા-પીવાથી"},
+      {"word_idx": 1, "gloss_text": "રસ-આનંદના વિજૃંભણથી"},
+      {"word_idx": 2, "gloss_text": "મહા-આનંદ"}
+    ],
+    "1.108": [
+      {"word_idx": 0, "gloss_text": "ગીત આદિ વિષયોના આસ્વાદની અસમ સુખ-એકતા સાથે"},
+      {"word_idx": 1, "gloss_text": "યોગીને"},
+      {"word_idx": 2, "gloss_text": "તન્મયત્વ વડે"},
+      {"word_idx": 3, "gloss_text": "મનની આરોહણથી"},
+      {"word_idx": 4, "gloss_text": "તદાત્મતા"}
+    ],
+    "1.109": [
+      {"word_idx": 0, "gloss_text": "જ્યાં જ્યાં"},
+      {"word_idx": 1, "gloss_text": "આત્માની તુષ્ટિ"},
+      {"word_idx": 2, "gloss_text": "મન"},
+      {"word_idx": 3, "gloss_text": "ત્યાં જ"},
+      {"word_idx": 4, "gloss_text": "ધારણ કરો"},
+      {"word_idx": 5, "gloss_text": "ત્યાં ત્યાં"},
+      {"word_idx": 6, "gloss_text": "પરમ આનંદનું સ્વરૂપ"},
+      {"word_idx": 7, "gloss_text": "પ્રવર્તે"}
+    ],
+    "1.110": [
+      {"word_idx": 0, "gloss_text": "નિદ્રા હજુ આવી નથી"},
+      {"word_idx": 1, "gloss_text": "બાહ્ય ગોચર નષ્ટ થયેલ"},
+      {"word_idx": 2, "gloss_text": "તે અવસ્થા"},
+      {"word_idx": 3, "gloss_text": "મનથી ગમ્ય"},
+      {"word_idx": 4, "gloss_text": "પરા દેવી પ્રકાશે"}
+    ],
+    "1.111": [
+      {"word_idx": 0, "gloss_text": "તેજથી"},
+      {"word_idx": 1, "gloss_text": "સૂર્ય, દીપ આદિના"},
+      {"word_idx": 2, "gloss_text": "આકાશ વિવિધરંગી થતાં"},
+      {"word_idx": 3, "gloss_text": "પોતાનો આત્મા જોવાથી"},
+      {"word_idx": 4, "gloss_text": "તે પ્રકાશ સાથે જોડાયેલો"},
+      {"word_idx": 5, "gloss_text": "સચ્ચિદાનંદનું ગોચર"}
+    ],
+    "1.112": [
+      {"word_idx": 0, "gloss_text": "કરંકિણી દ્વારા"},
+      {"word_idx": 1, "gloss_text": "ક્રોધના દ્વારા"},
+      {"word_idx": 2, "gloss_text": "ભૈરવી દ્વારા"},
+      {"word_idx": 3, "gloss_text": "લેલિહાના દ્વારા"},
+      {"word_idx": 4, "gloss_text": "ખેચરી દ્વારા"},
+      {"word_idx": 5, "gloss_text": "દૃષ્ટિ-કાળે"},
+      {"word_idx": 6, "gloss_text": "અને"},
+      {"word_idx": 7, "gloss_text": "પરમ પ્રાપ્તિ"},
+      {"word_idx": 8, "gloss_text": "પ્રકાશે"}
+    ],
+    "1.113": [
+      {"word_idx": 0, "gloss_text": "કોમળ આસને"},
+      {"word_idx": 1, "gloss_text": "એક નિતંબ વડે"},
+      {"word_idx": 2, "gloss_text": "હાથ-પગ નિરાધાર"},
+      {"word_idx": 3, "gloss_text": "મૂકીને"},
+      {"word_idx": 4, "gloss_text": "આ પ્રસંગથી"},
+      {"word_idx": 5, "gloss_text": "પરા પૂર્ણ મતિ થાય"}
+    ],
+    "1.114": [
+      {"word_idx": 0, "gloss_text": "બંને હાથ અર્ધ-વાંકા"},
+      {"word_idx": 1, "gloss_text": "કક્ષ-વ્યોમમાં"},
+      {"word_idx": 2, "gloss_text": "તે લયથી"}
+    ],
+    "1.115": [
+      {"word_idx": 0, "gloss_text": "સ્તબ્ધ દૃષ્ટિ નાખીને"},
+      {"word_idx": 1, "gloss_text": "નિરાધાર"},
+      {"word_idx": 2, "gloss_text": "શિવ સુધી જાય"}
+    ],
+    "1.116": [
+      {"word_idx": 0, "gloss_text": "મધ્ય જિહ્વા"},
+      {"word_idx": 1, "gloss_text": "'હ' નો ઉચ્ચાર"},
+      {"word_idx": 2, "gloss_text": "શાંતમાં"}
+    ],
+    "1.117": [
+      {"word_idx": 0, "gloss_text": "નિરાધાર પોતાનો દેહ"},
+      {"word_idx": 1, "gloss_text": "મન ક્ષીણ થતાં"},
+      {"word_idx": 2, "gloss_text": "આશય-ક્ષીણ"}
+    ],
+    "1.118": [
+      {"word_idx": 0, "gloss_text": "ચલ-આસને"},
+      {"word_idx": 1, "gloss_text": "દેહ-ચાલનથી"},
+      {"word_idx": 2, "gloss_text": "દિવ્ય-ઓઘ"}
+    ],
+    "1.119": [
+      {"word_idx": 0, "gloss_text": "વિમલ આકાશ"},
+      {"word_idx": 1, "gloss_text": "સ્તબ્ધ-આત્મા"},
+      {"word_idx": 2, "gloss_text": "ભૈરવ-વપુ"}
+    ],
+    "1.120": [
+      {"word_idx": 0, "gloss_text": "વ્યોમ લય પામેલું"},
+      {"word_idx": 1, "gloss_text": "ભૈરવત્વ રૂપે"},
+      {"word_idx": 2, "gloss_text": "ભૈરવ-આકાર-તેજસ-તત્ત્વ"}
+    ],
+    "1.121": [
+      {"word_idx": 0, "gloss_text": "કિંચિત્-જ્ઞાન"},
+      {"word_idx": 1, "gloss_text": "બાહ્ય આલોક"},
+      {"word_idx": 2, "gloss_text": "અનંત પ્રકાશનો ધારક"}
+    ],
+    "1.122": [
+      {"word_idx": 0, "gloss_text": "દુર્નિશા (કાળી રાત)માં"},
+      {"word_idx": 1, "gloss_text": "તૈમિર (અંધકાર) રૂપ"},
+      {"word_idx": 2, "gloss_text": "ભૈરવ-રૂપ"}
+    ],
+    "1.123": [
+      {"word_idx": 0, "gloss_text": "બંધ કરીને"},
+      {"word_idx": 1, "gloss_text": "કૃષ્ણાભ (કાળું દેખાવ)"},
+      {"word_idx": 2, "gloss_text": "તન્મય"}
+    ],
+    "1.124": [
+      {"word_idx": 0, "gloss_text": "વ્યાઘાતથી"},
+      {"word_idx": 1, "gloss_text": "નિરોધથી"},
+      {"word_idx": 2, "gloss_text": "અદ્વય શૂન્યમાં"}
+    ],
+    "1.125": [
+      {"word_idx": 0, "gloss_text": "બિન્દુ રહિત"},
+      {"word_idx": 1, "gloss_text": "વિસર્ગ રહિત"},
+      {"word_idx": 2, "gloss_text": "જ્ઞાનનો ઓઘ"}
+    ],
+    "1.126": [
+      {"word_idx": 0, "gloss_text": "વિસર્ગાંતે"},
+      {"word_idx": 1, "gloss_text": "ચિતિ"},
+      {"word_idx": 2, "gloss_text": "સનાતન બ્રહ્મ"}
+    ],
+    "1.127": [
+      {"word_idx": 0, "gloss_text": "વ્યોમ-આકાર"},
+      {"word_idx": 1, "gloss_text": "દિશાઓથી અનાવૃત"},
+      {"word_idx": 2, "gloss_text": "નિરાશ્રય ચિતિ-શક્તિ"}
+    ],
+    "1.128": [
+      {"word_idx": 0, "gloss_text": "કોઈ અંગ"},
+      {"word_idx": 1, "gloss_text": "તીક્ષ્ણ સોય આદિથી"},
+      {"word_idx": 2, "gloss_text": "નિર્મલ ગતિ"}
+    ],
+    "1.129": [
+      {"word_idx": 0, "gloss_text": "અંતઃકરણ"},
+      {"word_idx": 1, "gloss_text": "વિકલ્પોના અભાવથી"},
+      {"word_idx": 2, "gloss_text": "ત્યક્ત"}
+    ],
+    "1.130": [
+      {"word_idx": 0, "gloss_text": "વિમોહિની માયા"},
+      {"word_idx": 1, "gloss_text": "કલન"},
+      {"word_idx": 2, "gloss_text": "પૃથક્"}
+    ],
+    "1.131": [
+      {"word_idx": 0, "gloss_text": "અચાનક"},
+      {"word_idx": 1, "gloss_text": "શાંત કરો"},
+      {"word_idx": 2, "gloss_text": "જ્યાંથી"}
+    ],
+    "1.132": [
+      {"word_idx": 0, "gloss_text": "ઇચ્છા / જ્ઞાન"},
+      {"word_idx": 1, "gloss_text": "હું કોણ?"},
+      {"word_idx": 2, "gloss_text": "તન્મન"}
+    ],
+    "1.133": [
+      {"word_idx": 0, "gloss_text": "ઇચ્છામાં / જ્ઞાનમાં"},
+      {"word_idx": 1, "gloss_text": "આત્મ-બુદ્ધિએ"},
+      {"word_idx": 2, "gloss_text": "તત્ત્વાર્થ-દર્શન"}
+    ],
+    "1.134": [
+      {"word_idx": 0, "gloss_text": "નિર્નિમિત્ત"},
+      {"word_idx": 1, "gloss_text": "ભ્રમ-આત્મક"},
+      {"word_idx": 2, "gloss_text": "આવી ભાવનાવાળો"}
+    ],
+    "1.135": [
+      {"word_idx": 0, "gloss_text": "ચિત્-ધર્મ"},
+      {"word_idx": 1, "gloss_text": "વિશેષ"},
+      {"word_idx": 2, "gloss_text": "ભવ-જિત"}
+    ],
+    "1.136": [
+      {"word_idx": 0, "gloss_text": "કામ-ક્રોધ-લોભ-મોહ-મદ-માત્સર્ય"},
+      {"word_idx": 1, "gloss_text": "નિસ્તિમિત (નિશ્ચલ)"},
+      {"word_idx": 2, "gloss_text": "બાકી રહે"}
+    ],
+    "1.137": [
+      {"word_idx": 0, "gloss_text": "ઇન્દ્રજાલમય"},
+      {"word_idx": 1, "gloss_text": "ચિત્ર-કર્મ જેવું"},
+      {"word_idx": 2, "gloss_text": "સુખનો ઉદય"}
+    ],
+    "1.138": [
+      {"word_idx": 0, "gloss_text": "મધ્યમાં"},
+      {"word_idx": 1, "gloss_text": "બાકી રહે"},
+      {"word_idx": 2, "gloss_text": "જાણ"}
+    ],
+    "1.139": [
+      {"word_idx": 0, "gloss_text": "પોતાના દેહની આસ્થા"},
+      {"word_idx": 1, "gloss_text": "'સર્વત્ર હું છું'"},
+      {"word_idx": 2, "gloss_text": "બીજે ન જોતી દૃષ્ટિ"}
+    ],
+    "1.140": [
+      {"word_idx": 0, "gloss_text": "ઘટ આદિમાં"},
+      {"word_idx": 1, "gloss_text": "વિજ્ઞાન"},
+      {"word_idx": 2, "gloss_text": "સર્વગ"}
+    ],
+    "1.141": [
+      {"word_idx": 0, "gloss_text": "ગ્રાહ્ય-ગ્રાહક-સંવિત્તિ"},
+      {"word_idx": 1, "gloss_text": "સામાન્ય"},
+      {"word_idx": 2, "gloss_text": "સાવધાનતા"}
+    ],
+    "1.142": [
+      {"word_idx": 0, "gloss_text": "પોતાના જેવી"},
+      {"word_idx": 1, "gloss_text": "બીજાના શરીરમાં"},
+      {"word_idx": 2, "gloss_text": "વ્યાપી"}
+    ],
+    "1.143": [
+      {"word_idx": 0, "gloss_text": "નિરાધાર મન"},
+      {"word_idx": 1, "gloss_text": "વિકલ્પ ન કરો"},
+      {"word_idx": 2, "gloss_text": "આત્મ-પરમાત્મભાવમાં"}
+    ],
+    "1.144": [
+      {"word_idx": 0, "gloss_text": "સર્વજ્ઞ, સર્વકર્તા"},
+      {"word_idx": 1, "gloss_text": "શૈવ-ધર્મા"},
+      {"word_idx": 2, "gloss_text": "દૃઢતાથી"}
+    ],
+    "1.145": [
+      {"word_idx": 0, "gloss_text": "તરંગો"},
+      {"word_idx": 1, "gloss_text": "જ્વાલા-ભંગીઓ"},
+      {"word_idx": 2, "gloss_text": "વિશ્વ-ભંગીઓ"}
+    ],
+    "1.146": [
+      {"word_idx": 0, "gloss_text": "ભ્રમણ કરી કરીને"},
+      {"word_idx": 1, "gloss_text": "ક્ષોભ-શક્તિના વિરામથી"},
+      {"word_idx": 2, "gloss_text": "પરા દશા"}
+    ],
+    "1.147": [
+      {"word_idx": 0, "gloss_text": "આધારોમાં"},
+      {"word_idx": 1, "gloss_text": "શક્તિ-સંશોભમાં"},
+      {"word_idx": 2, "gloss_text": "પાછળથી શાંત થાય ત્યારે"}
+    ],
+    "1.148": [
+      {"word_idx": 0, "gloss_text": "સર્વત્ર"},
+      {"word_idx": 1, "gloss_text": "ભાવના-આખ્યાન"},
+      {"word_idx": 2, "gloss_text": "હે શોભને"}
+    ],
+    "1.149": [
+      {"word_idx": 0, "gloss_text": "જે કોઈનામાં, આ દેહમાં"},
+      {"word_idx": 1, "gloss_text": "અહંકાર-યુક્ત પ્રત્યય થાય"},
+      {"word_idx": 2, "gloss_text": "તેને માટે જ"},
+      {"word_idx": 3, "gloss_text": "ક્ષુદ્ર સંવિત્તિથી"},
+      {"word_idx": 4, "gloss_text": "ભૈરવત્વ પ્રકાશે"}
+    ],
+    "1.150": [
+      {"word_idx": 0, "gloss_text": "શ્રીદેવી બોલ્યાં"},
+      {"word_idx": 1, "gloss_text": "હે દેવોના દેવ, મહાદેવ"},
+      {"word_idx": 2, "gloss_text": "હે પ્રભો, તમે મારા માટે પરિપૂર્ણ છો"},
+      {"word_idx": 3, "gloss_text": "તમે જ શંકરના આત્મા"},
+      {"word_idx": 4, "gloss_text": "જગતમાં શાશ્વતી શક્તિ"}
+    ],
+    "1.151": [
+      {"word_idx": 0, "gloss_text": "જે રીતે કૃપાથી પ્રેરિત તમારા દ્વારા"},
+      {"word_idx": 1, "gloss_text": "આ રહસ્ય"},
+      {"word_idx": 2, "gloss_text": "ઉદ્ધૃત"},
+      {"word_idx": 3, "gloss_text": "તે જ રીતે"},
+      {"word_idx": 4, "gloss_text": "કોઈને કહેવા યોગ્ય"},
+      {"word_idx": 5, "gloss_text": "પાત્ર શ્રોત્રમાં"},
+      {"word_idx": 6, "gloss_text": "ન નાખવું"}
+    ],
+    "1.152": [
+      {"word_idx": 0, "gloss_text": "આ વિજ્ઞાન"},
+      {"word_idx": 1, "gloss_text": "ઉદય પામ્યું"},
+      {"word_idx": 2, "gloss_text": "જરા-મરણનો નાશ કરનાર"},
+      {"word_idx": 3, "gloss_text": "બ્રહ્મા આદિ દેવોથી વંદ્ય"},
+      {"word_idx": 4, "gloss_text": "મંથાન-ભૈરવનું"},
+      {"word_idx": 5, "gloss_text": "અને"}
+    ],
+    "1.153": [
+      {"word_idx": 0, "gloss_text": "આ અનાખ્યાત તંત્ર"},
+      {"word_idx": 1, "gloss_text": "ભોગ-મોક્ષ આપનાર"},
+      {"word_idx": 2, "gloss_text": "આ અનાખ્યાત તંત્ર"},
+      {"word_idx": 3, "gloss_text": "તેમને આપવામાં આવ્યું"},
+      {"word_idx": 4, "gloss_text": "ખરેખર, લીલા રૂપે"}
+    ],
+    "1.154": [
+      {"word_idx": 0, "gloss_text": "જ્ઞાન-લાભથી"},
+      {"word_idx": 1, "gloss_text": "ગુરુ-ભાવ"},
+      {"word_idx": 2, "gloss_text": "સમતા"}
+    ],
+    "1.155": [
+      {"word_idx": 0, "gloss_text": "જ્યાં જ્યાં"},
+      {"word_idx": 1, "gloss_text": "કોઈ રીતે"},
+      {"word_idx": 2, "gloss_text": "કર્તા-કર્મ વિવિક્તતા"},
+      {"word_idx": 3, "gloss_text": "ત્યાં ત્યાં"},
+      {"word_idx": 4, "gloss_text": "શિવાવસ્થા"},
+      {"word_idx": 5, "gloss_text": "વ્યાપકતાને કારણે"},
+      {"word_idx": 6, "gloss_text": "ક્યાં જઈ શકે?"}
+    ],
+    "1.156": [
+      {"word_idx": 0, "gloss_text": "આ વિજ્ઞાનનો આશ્રય લઈને"},
+      {"word_idx": 1, "gloss_text": "યોગી શિવ બને"},
+      {"word_idx": 2, "gloss_text": "તીર્થ આદિમાં"},
+      {"word_idx": 3, "gloss_text": "જાતિ હોવા છતાં"},
+      {"word_idx": 4, "gloss_text": "સ્નાન આદિ કારણ નથી"}
+    ],
+    "1.157": [
+      {"word_idx": 0, "gloss_text": "શ્રોત્રાત્માની"},
+      {"word_idx": 1, "gloss_text": "ચિત્તસમતા"},
+      {"word_idx": 2, "gloss_text": "તત્ત્વની ભાવના"}
+    ],
+    "1.158": [
+      {"word_idx": 0, "gloss_text": "આ વિજ્ઞાનને જાણવાથી"},
+      {"word_idx": 1, "gloss_text": "યોગ-વિત્તમ (શ્રેષ્ઠ યોગજ્ઞ)"},
+      {"word_idx": 2, "gloss_text": "મહાયોગી"}
+    ],
+    "1.159": [
+      {"word_idx": 0, "gloss_text": "પરિતૃપ્ત છું"},
+      {"word_idx": 1, "gloss_text": "રુદ્રયામલ"},
+      {"word_idx": 2, "gloss_text": "સાર સમજાયો"}
+    ],
+    "1.160": [
+      {"word_idx": 0, "gloss_text": "સર્વ શક્તિ-ભેદોનું"},
+      {"word_idx": 1, "gloss_text": "હૃદય"},
+      {"word_idx": 2, "gloss_text": "પ્રાપ્ત કરીને"}
+    ],
+    "1.161": [
+      {"word_idx": 0, "gloss_text": "આનંદિત"},
+      {"word_idx": 1, "gloss_text": "કંઠે વળગેલી"},
+      {"word_idx": 2, "gloss_text": "સમુદ્ધૃત"}
+    ],
+    "1.162": [
+      {"word_idx": 0, "gloss_text": "કુલ-ગુહ્ય"},
+      {"word_idx": 1, "gloss_text": "ભક્તિયુક્ત શિષ્યને"},
+      {"word_idx": 2, "gloss_text": "ગુરુ-ઘાતક"}
+    ],
+    "1.163": [
+      {"word_idx": 0, "gloss_text": "આમ વિજ્ઞાન-ભૈરવમાં"},
+      {"word_idx": 1, "gloss_text": "શ્રીદેવી દ્વારા સ્તવનાત્મક"},
+      {"word_idx": 2, "gloss_text": "એકસો"},
+      {"word_idx": 3, "gloss_text": "બાર સહિત"},
+      {"word_idx": 4, "gloss_text": "કહેવાયું"},
+      {"word_idx": 5, "gloss_text": "ભેદ-રહિત"}
+    ]
+  }
+}

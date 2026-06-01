@@ -1,0 +1,1345 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "mr",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "श्रीदेवी (बिभूषित देवी, भैरवी)"},
+      {"word_idx": 1, "gloss_text": "म्हणाली"},
+      {"word_idx": 2, "gloss_text": "ऐकलेले"},
+      {"word_idx": 3, "gloss_text": "हे प्रभो (हे देवा)"},
+      {"word_idx": 4, "gloss_text": "माझ्याकडून"},
+      {"word_idx": 5, "gloss_text": "सर्व, संपूर्ण"},
+      {"word_idx": 6, "gloss_text": "रुद्र-यामल तंत्रापासून उद्भवलेले"},
+      {"word_idx": 7, "gloss_text": "त्रिकाचे भेद (विभाजने)"},
+      {"word_idx": 8, "gloss_text": "अशेष (कशालाही न उरवता, संपूर्ण)"},
+      {"word_idx": 9, "gloss_text": "सारापासून सार-विभागापर्यंत"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "आजसुद्धा"},
+      {"word_idx": 1, "gloss_text": "नाही"},
+      {"word_idx": 2, "gloss_text": "विरून गेलेले, फिटलेले"},
+      {"word_idx": 3, "gloss_text": "माझा (माझे)"},
+      {"word_idx": 4, "gloss_text": "संशय"},
+      {"word_idx": 5, "gloss_text": "हे परमेश्वरा"},
+      {"word_idx": 6, "gloss_text": "कोणते? काय?"},
+      {"word_idx": 7, "gloss_text": "रूप, स्वरूप"},
+      {"word_idx": 8, "gloss_text": "तत्त्वतः (खरोखर)"},
+      {"word_idx": 9, "gloss_text": "हे देवा"},
+      {"word_idx": 10, "gloss_text": "शब्द-राशी व कलांनी बनलेले"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "की काय?"},
+      {"word_idx": 1, "gloss_text": "नवात्म-भेदाने (नऊ आत्म्यांच्या विभागाने)"},
+      {"word_idx": 2, "gloss_text": "भैरवामध्ये"},
+      {"word_idx": 3, "gloss_text": "भैरव-आकारात"},
+      {"word_idx": 4, "gloss_text": "त्रिशिर-भेदाने विभक्त"},
+      {"word_idx": 5, "gloss_text": "किंवा"},
+      {"word_idx": 6, "gloss_text": "की काय?"},
+      {"word_idx": 7, "gloss_text": "तीन शक्तींची त्रयी असलेले"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "नाद-बिंदुमय (नाद व बिंदूने बनलेले)"},
+      {"word_idx": 1, "gloss_text": "किंवा"},
+      {"word_idx": 2, "gloss_text": "की काय?"},
+      {"word_idx": 3, "gloss_text": "अर्धचंद्र व निरोधिकांच्या रूपात"},
+      {"word_idx": 4, "gloss_text": "चक्रावर आरूढ"},
+      {"word_idx": 5, "gloss_text": "अनच्क (स्वर-रहित, शुद्ध व्यंजन)"},
+      {"word_idx": 6, "gloss_text": "किंवा"},
+      {"word_idx": 7, "gloss_text": "की काय?"},
+      {"word_idx": 8, "gloss_text": "शक्तीचेच स्वरूप असलेले"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "परापरेचे (मधल्या देवीचे)"},
+      {"word_idx": 1, "gloss_text": "सकल (विभाग-युक्त, मूर्त)"},
+      {"word_idx": 2, "gloss_text": "अपरेचे (खालच्या देवीचे)"},
+      {"word_idx": 3, "gloss_text": "किंवा आणि"},
+      {"word_idx": 4, "gloss_text": "पुन्हा"},
+      {"word_idx": 5, "gloss_text": "परेचे (सर्वोच्च देवीचे)"},
+      {"word_idx": 6, "gloss_text": "जर"},
+      {"word_idx": 7, "gloss_text": "त्याच प्रकारची"},
+      {"word_idx": 8, "gloss_text": "असेल"},
+      {"word_idx": 9, "gloss_text": "परत्व (सर्वोच्चता)"},
+      {"word_idx": 10, "gloss_text": "ते"},
+      {"word_idx": 11, "gloss_text": "विरुद्ध ठरते"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "कारण नाही"},
+      {"word_idx": 1, "gloss_text": "वर्ण-भेदाने (अक्षर/रंग-भेदाने)"},
+      {"word_idx": 2, "gloss_text": "देह-भेदाने"},
+      {"word_idx": 3, "gloss_text": "किंवा"},
+      {"word_idx": 4, "gloss_text": "असू शकेल"},
+      {"word_idx": 5, "gloss_text": "परत्व"},
+      {"word_idx": 6, "gloss_text": "निष्कलत्वामुळे (अविभाज्यतेमुळे)"},
+      {"word_idx": 7, "gloss_text": "सकलत्वाच्या (विभाग-युक्ततेच्या) अवस्थेत"},
+      {"word_idx": 8, "gloss_text": "ते असू शकत नाही"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "कृपा, अनुग्रह"},
+      {"word_idx": 1, "gloss_text": "करा, द्या"},
+      {"word_idx": 2, "gloss_text": "मला"},
+      {"word_idx": 3, "gloss_text": "हे नाथा"},
+      {"word_idx": 4, "gloss_text": "अशेष (पूर्णपणे)"},
+      {"word_idx": 5, "gloss_text": "छेदून टाका"},
+      {"word_idx": 6, "gloss_text": "संशय"},
+      {"word_idx": 7, "gloss_text": "भैरव म्हणाला"},
+      {"word_idx": 8, "gloss_text": "बरे, बरे!"},
+      {"word_idx": 9, "gloss_text": "तू विचारलेस"},
+      {"word_idx": 10, "gloss_text": "तंत्र-सार (तंत्राचे सार)"},
+      {"word_idx": 11, "gloss_text": "हे, प्रिये"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "हे गुह्याहूनही गुह्याची रक्षणकर्ती"},
+      {"word_idx": 1, "gloss_text": "तू"},
+      {"word_idx": 2, "gloss_text": "जरी"},
+      {"word_idx": 3, "gloss_text": "हे"},
+      {"word_idx": 4, "gloss_text": "हे सुंदर-मुखी"},
+      {"word_idx": 5, "gloss_text": "तरीही"},
+      {"word_idx": 6, "gloss_text": "मी सांगेन"},
+      {"word_idx": 7, "gloss_text": "जसे"},
+      {"word_idx": 8, "gloss_text": "तुला माहीत आहे"},
+      {"word_idx": 9, "gloss_text": "तसे ऐक"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "जे"},
+      {"word_idx": 1, "gloss_text": "परम (सर्वोच्च) आहे"},
+      {"word_idx": 2, "gloss_text": "निष्कल (अविभाज्य)"},
+      {"word_idx": 3, "gloss_text": "हे देवी"},
+      {"word_idx": 4, "gloss_text": "सर्व तत्त्वांच्या पलीकडे"},
+      {"word_idx": 5, "gloss_text": "ते (शब्दांनी) सांगता येणार नाही"},
+      {"word_idx": 6, "gloss_text": "त्याद्वारे"},
+      {"word_idx": 7, "gloss_text": "इथे (शब्दांत)"},
+      {"word_idx": 8, "gloss_text": "सांगायला"},
+      {"word_idx": 9, "gloss_text": "तरी ते सांगण्या-योग्य आहे"},
+      {"word_idx": 10, "gloss_text": "केवळ इच्छेने (संकल्पाने)"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "हे देवी"},
+      {"word_idx": 1, "gloss_text": "प्रकृति-रूपा (प्रकृतीचे रूप असलेली)"},
+      {"word_idx": 2, "gloss_text": "जी"},
+      {"word_idx": 3, "gloss_text": "तिचे"},
+      {"word_idx": 4, "gloss_text": "कोणते रूप?"},
+      {"word_idx": 5, "gloss_text": "म्हटले जाते"},
+      {"word_idx": 6, "gloss_text": "सकलत्वाच्या अवस्थेत"},
+      {"word_idx": 7, "gloss_text": "विकल्पांचा"},
+      {"word_idx": 8, "gloss_text": "सकल-अद्वैत-कल्पना (विभागयुक्ततेची काल्पनिक अद्वैतता)"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "तेव्हा"},
+      {"word_idx": 1, "gloss_text": "त्या महाव्योमात (महा-शून्यात)"},
+      {"word_idx": 2, "gloss_text": "विलीन झाले असता"},
+      {"word_idx": 3, "gloss_text": "चंद्र व सूर्य"},
+      {"word_idx": 4, "gloss_text": "बुडल्यासारखे"},
+      {"word_idx": 5, "gloss_text": "तामसी (अंधकारमय) निद्रा"},
+      {"word_idx": 6, "gloss_text": "उद्भवली"},
+      {"word_idx": 7, "gloss_text": "खिल-गोचरात (निःशब्द/उजाड क्षेत्रात)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "अशा प्रकारची"},
+      {"word_idx": 1, "gloss_text": "भैरवाची"},
+      {"word_idx": 2, "gloss_text": "जी अवस्था"},
+      {"word_idx": 3, "gloss_text": "गाइली जाते"},
+      {"word_idx": 4, "gloss_text": "तीच परा"},
+      {"word_idx": 5, "gloss_text": "परा-रूपाने"},
+      {"word_idx": 6, "gloss_text": "परा देवी"},
+      {"word_idx": 7, "gloss_text": "प्रसिद्ध केली जाते, घोषित केली जाते"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "शक्ती व शक्तिमान् यांचा"},
+      {"word_idx": 1, "gloss_text": "ज्याप्रमाणे"},
+      {"word_idx": 2, "gloss_text": "अभेद (न-वेगळेपण)"},
+      {"word_idx": 3, "gloss_text": "सर्वदा (नेहमी)"},
+      {"word_idx": 4, "gloss_text": "स्थित आहे"},
+      {"word_idx": 5, "gloss_text": "म्हणून"},
+      {"word_idx": 6, "gloss_text": "त्याचे धर्म धारण करत असल्याने (धर्म-धर्मि-संबंधामुळे)"},
+      {"word_idx": 7, "gloss_text": "परा शक्ती"},
+      {"word_idx": 8, "gloss_text": "परम आत्म्याची"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "नाही"},
+      {"word_idx": 1, "gloss_text": "अग्नीची, अग्नीहून"},
+      {"word_idx": 2, "gloss_text": "दाहक (जाळणारी) शक्ती"},
+      {"word_idx": 3, "gloss_text": "वेगळी, पृथक"},
+      {"word_idx": 4, "gloss_text": "कल्पिली जाते"},
+      {"word_idx": 5, "gloss_text": "केवळ, फक्त"},
+      {"word_idx": 6, "gloss_text": "ज्ञान-सत्तेत (ज्ञानाच्या अस्तित्वात)"},
+      {"word_idx": 7, "gloss_text": "ही प्रारंभ (सुरुवात) आहे"},
+      {"word_idx": 8, "gloss_text": "प्रवेशात (प्रवेश-द्वारात)"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "शक्ती-अवस्थेत प्रवेश केलेल्याची"},
+      {"word_idx": 1, "gloss_text": "निर्विभागाने (अविभाज्यपणे)"},
+      {"word_idx": 2, "gloss_text": "भावना (असते)"},
+      {"word_idx": 3, "gloss_text": "तेव्हा"},
+      {"word_idx": 4, "gloss_text": "तो"},
+      {"word_idx": 5, "gloss_text": "शिव-रूपी होतो"},
+      {"word_idx": 6, "gloss_text": "शैवी (शक्तीचा मार्ग, शैवी मुख)"},
+      {"word_idx": 7, "gloss_text": "द्वार, मुख"},
+      {"word_idx": 8, "gloss_text": "इथे, या उपदेशात"},
+      {"word_idx": 9, "gloss_text": "म्हटले जाते"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "जसे"},
+      {"word_idx": 1, "gloss_text": "दिव्याच्या प्रकाशाने"},
+      {"word_idx": 2, "gloss_text": "सूर्याच्या किरणांनी"},
+      {"word_idx": 3, "gloss_text": "आणि"},
+      {"word_idx": 4, "gloss_text": "जाणला जातो"},
+      {"word_idx": 5, "gloss_text": "दिशांचे विभाग वगैरे"},
+      {"word_idx": 6, "gloss_text": "त्याचप्रमाणे"},
+      {"word_idx": 7, "gloss_text": "शक्तीद्वारे"},
+      {"word_idx": 8, "gloss_text": "शिव (जाणला जातो)"},
+      {"word_idx": 9, "gloss_text": "हे प्रिये"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "श्रीदेवी म्हणाली"},
+      {"word_idx": 1, "gloss_text": "हे देवांच्या देवा"},
+      {"word_idx": 2, "gloss_text": "त्रिशूल-धारी"},
+      {"word_idx": 3, "gloss_text": "कपालांनी अलंकृत"},
+      {"word_idx": 4, "gloss_text": "दिशा-देश-कालापासून शून्य"},
+      {"word_idx": 5, "gloss_text": "आणि"},
+      {"word_idx": 6, "gloss_text": "व्यपदेश-रहित (वर्णनापासून मुक्त)"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "जी अवस्था"},
+      {"word_idx": 1, "gloss_text": "भरित-आकाराची (पूर्णतेची)"},
+      {"word_idx": 2, "gloss_text": "भैरवात अनुभवली जाते"},
+      {"word_idx": 3, "gloss_text": "कोणत्या उपायांनी?"},
+      {"word_idx": 4, "gloss_text": "त्याचे मुख"},
+      {"word_idx": 5, "gloss_text": "परा देवी"},
+      {"word_idx": 6, "gloss_text": "कशी होते?"},
+      {"word_idx": 7, "gloss_text": "जेणेकरून मी नीट जाणीन"},
+      {"word_idx": 8, "gloss_text": "तसे मला सांग, हे भैरवा"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "भैरव म्हणाला"},
+      {"word_idx": 1, "gloss_text": "वर प्राण"},
+      {"word_idx": 2, "gloss_text": "खरोखर"},
+      {"word_idx": 3, "gloss_text": "खाली जीव (अपान)"},
+      {"word_idx": 4, "gloss_text": "विसर्ग-स्वरूप"},
+      {"word_idx": 5, "gloss_text": "परा (शक्ती) उठते"},
+      {"word_idx": 6, "gloss_text": "उत्पत्तीच्या दोन स्थानांत"},
+      {"word_idx": 7, "gloss_text": "भरण्यामुळे"},
+      {"word_idx": 8, "gloss_text": "भरित-स्थिती (पूर्णतेची स्थिती) प्राप्त होते"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "मरुत (श्वास, वारा)"},
+      {"word_idx": 1, "gloss_text": "आत किंवा बाहेर"},
+      {"word_idx": 2, "gloss_text": "व्योम-युग्म (श्वासाच्या आत व बाहेरचे दोन शून्य)"},
+      {"word_idx": 3, "gloss_text": "अ-निवृत्तीतून (परत न-येण्यामुळे)"},
+      {"word_idx": 4, "gloss_text": "भैरवीचे, भैरवाचे"},
+      {"word_idx": 5, "gloss_text": "अशा प्रकारे"},
+      {"word_idx": 6, "gloss_text": "हे भैरवि"},
+      {"word_idx": 7, "gloss_text": "प्रकट होते"},
+      {"word_idx": 8, "gloss_text": "वपू (शरीर, रूप)"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "बाहेर जाणार नाही"},
+      {"word_idx": 1, "gloss_text": "आत येणार नाही"},
+      {"word_idx": 2, "gloss_text": "शक्ती"},
+      {"word_idx": 3, "gloss_text": "मरुद्-रूपा (श्वास-रूप असलेली)"},
+      {"word_idx": 4, "gloss_text": "विकसित झाली असता"},
+      {"word_idx": 5, "gloss_text": "निर्विकल्पतेने"},
+      {"word_idx": 6, "gloss_text": "मध्ये (मध्यवर्ती अवस्थेत)"},
+      {"word_idx": 7, "gloss_text": "तिच्याद्वारे"},
+      {"word_idx": 8, "gloss_text": "भैरव-रूपता (भैरवाशी एकत्व)"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "कुंभकात (श्वास धारण केलेला)"},
+      {"word_idx": 1, "gloss_text": "रेचित (बाहेर सोडलेला)"},
+      {"word_idx": 2, "gloss_text": "किंवा"},
+      {"word_idx": 3, "gloss_text": "पूरित (आत भरलेला)"},
+      {"word_idx": 4, "gloss_text": "किंवा"},
+      {"word_idx": 5, "gloss_text": "जेव्हाही असेल"},
+      {"word_idx": 6, "gloss_text": "त्याच्या अंती"},
+      {"word_idx": 7, "gloss_text": "'शांत' नावाची ती अवस्था"},
+      {"word_idx": 8, "gloss_text": "त्या शक्तीद्वारे"},
+      {"word_idx": 9, "gloss_text": "शांत-स्वरूप"},
+      {"word_idx": 10, "gloss_text": "प्रकाशतो"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "मूळापासून (मूलाधारापासून)"},
+      {"word_idx": 1, "gloss_text": "किरण-आभा असलेली"},
+      {"word_idx": 2, "gloss_text": "सूक्ष्माहूनही सूक्ष्मतर"},
+      {"word_idx": 3, "gloss_text": "चिंतावी, ध्यानात आणावी"},
+      {"word_idx": 4, "gloss_text": "तिला"},
+      {"word_idx": 5, "gloss_text": "द्वादशांती (बारा अंगुळांच्या अंती)"},
+      {"word_idx": 6, "gloss_text": "शांत होत असता"},
+      {"word_idx": 7, "gloss_text": "भैरवाचा उदय (होतो)"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "वर चढत असलेली"},
+      {"word_idx": 1, "gloss_text": "विद्युत्-रूपी"},
+      {"word_idx": 2, "gloss_text": "प्रत्येक चक्रात"},
+      {"word_idx": 3, "gloss_text": "क्रमाक्रमाने"},
+      {"word_idx": 4, "gloss_text": "वर"},
+      {"word_idx": 5, "gloss_text": "मुष्टि-त्रयाच्या मर्यादेपर्यंत"},
+      {"word_idx": 6, "gloss_text": "जिथवर"},
+      {"word_idx": 7, "gloss_text": "तोच भैरवाचा उदय"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "बारा-स्थानांचा क्रम"},
+      {"word_idx": 1, "gloss_text": "नीट, यथार्थपणे"},
+      {"word_idx": 2, "gloss_text": "बारा अक्षरांनी भेदलेला"},
+      {"word_idx": 3, "gloss_text": "स्थूल, सूक्ष्म व परा स्थितींद्वारे"},
+      {"word_idx": 4, "gloss_text": "सोडत-सोडत (प्रत्येक त्यागत)"},
+      {"word_idx": 5, "gloss_text": "शेवटी"},
+      {"word_idx": 6, "gloss_text": "शिव (प्राप्त होतो)"}
+    ],
+    "1.26": [
+      {"word_idx": 0, "gloss_text": "तिच्याद्वारे (शक्तीद्वारे)"},
+      {"word_idx": 1, "gloss_text": "भरून"},
+      {"word_idx": 2, "gloss_text": "त्वरेने, चटकन"},
+      {"word_idx": 3, "gloss_text": "मस्तकाच्या टोकापर्यंत"},
+      {"word_idx": 4, "gloss_text": "भेद करून, छेदून"},
+      {"word_idx": 5, "gloss_text": "भ्रूकूटीच्या क्षेपाने (भुवया वर उचलण्याच्या क्रियेने)"},
+      {"word_idx": 6, "gloss_text": "निर्विकल्प"},
+      {"word_idx": 7, "gloss_text": "मन करून"},
+      {"word_idx": 8, "gloss_text": "सर्वांच्या वर"},
+      {"word_idx": 9, "gloss_text": "सर्वग (सर्वगामी शिवाचा) उदय (होतो)"}
+    ],
+    "1.27": [
+      {"word_idx": 0, "gloss_text": "मोराच्या पंखांनी"},
+      {"word_idx": 1, "gloss_text": "रंगीबेरंगी (विविध) रूपांच्या"},
+      {"word_idx": 2, "gloss_text": "मंडलांनी"},
+      {"word_idx": 3, "gloss_text": "शून्य-पंचक (पाच शून्यांचा गट)"},
+      {"word_idx": 4, "gloss_text": "ध्यान करणाऱ्याला"},
+      {"word_idx": 5, "gloss_text": "अनुत्तरात (परम-अद्वितीयात)"},
+      {"word_idx": 6, "gloss_text": "शून्यात"},
+      {"word_idx": 7, "gloss_text": "प्रवेश"},
+      {"word_idx": 8, "gloss_text": "हृदयात"},
+      {"word_idx": 9, "gloss_text": "होतो"}
+    ],
+    "1.28": [
+      {"word_idx": 0, "gloss_text": "अशा क्रमाने"},
+      {"word_idx": 1, "gloss_text": "केवळ"},
+      {"word_idx": 2, "gloss_text": "कुठेही"},
+      {"word_idx": 3, "gloss_text": "चिंतना (मन-व्यापार)"},
+      {"word_idx": 4, "gloss_text": "शून्यात"},
+      {"word_idx": 5, "gloss_text": "भिंतीवर"},
+      {"word_idx": 6, "gloss_text": "श्रेष्ठ (वस्तूत)"},
+      {"word_idx": 7, "gloss_text": "पात्रात"},
+      {"word_idx": 8, "gloss_text": "स्वतःहून विलीन झालेले (मन)"},
+      {"word_idx": 9, "gloss_text": "वर-दात्री बनते"}
+    ],
+    "1.29": [
+      {"word_idx": 0, "gloss_text": "कपालाच्या आत"},
+      {"word_idx": 1, "gloss_text": "मन ठेवून"},
+      {"word_idx": 2, "gloss_text": "थांबून, स्थित होऊन"},
+      {"word_idx": 3, "gloss_text": "डोळे मिटून"},
+      {"word_idx": 4, "gloss_text": "क्रमाने"},
+      {"word_idx": 5, "gloss_text": "मनाच्या दृढतेमुळे"},
+      {"word_idx": 6, "gloss_text": "जाणून घ्यावा, पाहावा"},
+      {"word_idx": 7, "gloss_text": "उत्तम (सर्वोच्च) लक्ष्य"}
+    ],
+    "1.30": [
+      {"word_idx": 0, "gloss_text": "मध्य-नाडी (सुषुम्ना)"},
+      {"word_idx": 1, "gloss_text": "मध्यभागी स्थित"},
+      {"word_idx": 2, "gloss_text": "कमळ-तंतूच्या आभेसारख्या रूपाने"},
+      {"word_idx": 3, "gloss_text": "ध्यानात आणली जाते"},
+      {"word_idx": 4, "gloss_text": "अंतर्व्योम-रूपी (आतल्या आकाशासह)"},
+      {"word_idx": 5, "gloss_text": "देवीद्वारे"},
+      {"word_idx": 6, "gloss_text": "तिच्याद्वारे"},
+      {"word_idx": 7, "gloss_text": "देव (शिव)"},
+      {"word_idx": 8, "gloss_text": "प्रकाशतो"}
+    ],
+    "1.31": [
+      {"word_idx": 0, "gloss_text": "हाताने रोखलेल्या दृष्टि-अस्त्राने"},
+      {"word_idx": 1, "gloss_text": "भ्रू-भेदाने (भुवयांमध्ये भेदून)"},
+      {"word_idx": 2, "gloss_text": "इंद्रिय-द्वारांच्या रोधनाने"},
+      {"word_idx": 3, "gloss_text": "बिंदू दिसताच"},
+      {"word_idx": 4, "gloss_text": "क्रमाने विलीन होत असता"},
+      {"word_idx": 5, "gloss_text": "त्याच्या मध्यभागी"},
+      {"word_idx": 6, "gloss_text": "परम स्थिती (असते)"}
+    ],
+    "1.32": [
+      {"word_idx": 0, "gloss_text": "अंतस्थ धामाच्या क्षोभातून उद्भवलेले"},
+      {"word_idx": 1, "gloss_text": "सूक्ष्म अग्नी-तिलकाच्या आकाराचे"},
+      {"word_idx": 2, "gloss_text": "बिंदू"},
+      {"word_idx": 3, "gloss_text": "ज्योतीच्या शिखेच्या टोकाशी"},
+      {"word_idx": 4, "gloss_text": "हृदयात"},
+      {"word_idx": 5, "gloss_text": "लयाच्या अंती"},
+      {"word_idx": 6, "gloss_text": "ध्यान करणाऱ्याला"},
+      {"word_idx": 7, "gloss_text": "लय (विलयन)"}
+    ],
+    "1.33": [
+      {"word_idx": 0, "gloss_text": "अनाहत (अनुठोकलेल्या) नादात"},
+      {"word_idx": 1, "gloss_text": "पात्र बनलेल्या कानात"},
+      {"word_idx": 2, "gloss_text": "अखंडित शब्दात"},
+      {"word_idx": 3, "gloss_text": "नदीसारख्या वाहत्यात"},
+      {"word_idx": 4, "gloss_text": "शब्द-ब्रह्मात"},
+      {"word_idx": 5, "gloss_text": "निमग्न झालेला"},
+      {"word_idx": 6, "gloss_text": "परम ब्रह्म"},
+      {"word_idx": 7, "gloss_text": "प्राप्त करतो"}
+    ],
+    "1.34": [
+      {"word_idx": 0, "gloss_text": "ॐ इत्यादींच्या उच्चारणाने"},
+      {"word_idx": 1, "gloss_text": "प्लुत (दीर्घ) अंती"},
+      {"word_idx": 2, "gloss_text": "शून्य-भावनेने"},
+      {"word_idx": 3, "gloss_text": "शून्यरूप परा शक्तीद्वारे"},
+      {"word_idx": 4, "gloss_text": "शून्यतेला प्राप्त होतो"},
+      {"word_idx": 5, "gloss_text": "हे भैरवि"}
+    ],
+    "1.35": [
+      {"word_idx": 0, "gloss_text": "कोणत्याही वर्णाच्या (अक्षराच्या)"},
+      {"word_idx": 1, "gloss_text": "पूर्व व अंत (आरंभ व समाप्ती)"},
+      {"word_idx": 2, "gloss_text": "अनुभव घ्यावा"},
+      {"word_idx": 3, "gloss_text": "शून्यतेमुळे"},
+      {"word_idx": 4, "gloss_text": "तो स्वतः शून्य-भूत बनतो"},
+      {"word_idx": 5, "gloss_text": "तो पुरुष शून्य-आकार बनतो"}
+    ],
+    "1.36": [
+      {"word_idx": 0, "gloss_text": "तंतू-वाद्यादींच्या नादांमध्ये"},
+      {"word_idx": 1, "gloss_text": "दीर्घ (लांबवलेल्या)"},
+      {"word_idx": 2, "gloss_text": "क्रमशः स्थित राहिल्याने"},
+      {"word_idx": 3, "gloss_text": "अनन्य-चित्ताने (एकाग्र मनाने)"},
+      {"word_idx": 4, "gloss_text": "त्यांच्या अंती"},
+      {"word_idx": 5, "gloss_text": "परा-व्योम-वपू (परम आकाश-रूपी) होतो"}
+    ],
+    "1.37": [
+      {"word_idx": 0, "gloss_text": "पिंडमंत्राच्या (बीजमंत्राच्या)"},
+      {"word_idx": 1, "gloss_text": "कोणत्याही (मंत्राच्या)"},
+      {"word_idx": 2, "gloss_text": "स्थूल वर्ण-क्रमाने"},
+      {"word_idx": 3, "gloss_text": "अर्ध-चंद्र, बिंदू व नादाच्या अंती"},
+      {"word_idx": 4, "gloss_text": "शून्य-उच्चाराने"},
+      {"word_idx": 5, "gloss_text": "साधक शिव बनतो"}
+    ],
+    "1.38": [
+      {"word_idx": 0, "gloss_text": "स्वतःच्या देहात"},
+      {"word_idx": 1, "gloss_text": "सर्व दिशांत"},
+      {"word_idx": 2, "gloss_text": "एकाच वेळी"},
+      {"word_idx": 3, "gloss_text": "भावावे, चिंतावे"},
+      {"word_idx": 4, "gloss_text": "व्योम (आकाश, शून्य)"},
+      {"word_idx": 5, "gloss_text": "निर्विकल्प-मन असलेला"},
+      {"word_idx": 6, "gloss_text": "त्याच्यासाठी"},
+      {"word_idx": 7, "gloss_text": "सर्व व्योमच पसरू लागते"}
+    ],
+    "1.39": [
+      {"word_idx": 0, "gloss_text": "पाठीमागील शून्य"},
+      {"word_idx": 1, "gloss_text": "मूलात (मूलाधारात) शून्य"},
+      {"word_idx": 2, "gloss_text": "एकाच वेळी भावावे"},
+      {"word_idx": 3, "gloss_text": "आणि"},
+      {"word_idx": 4, "gloss_text": "जो (साधक)"},
+      {"word_idx": 5, "gloss_text": "देहाची अपेक्षा न ठेवणाऱ्या शक्तीद्वारे"},
+      {"word_idx": 6, "gloss_text": "शून्य-मन बनतो"}
+    ],
+    "1.40": [
+      {"word_idx": 0, "gloss_text": "पाठीमागील शून्य"},
+      {"word_idx": 1, "gloss_text": "मूलातील शून्य"},
+      {"word_idx": 2, "gloss_text": "हृदयातील शून्य"},
+      {"word_idx": 3, "gloss_text": "स्थिरपणे भावावे"},
+      {"word_idx": 4, "gloss_text": "एकाच वेळी"},
+      {"word_idx": 5, "gloss_text": "निर्विकल्पतेमुळे"},
+      {"word_idx": 6, "gloss_text": "निर्विकल्पाचा उदय त्यानंतर (होतो)"}
+    ],
+    "1.41": [
+      {"word_idx": 0, "gloss_text": "देहाच्या एखाद्या ठिकाणी"},
+      {"word_idx": 1, "gloss_text": "शून्यता-च"},
+      {"word_idx": 2, "gloss_text": "केवळ क्षणभर"},
+      {"word_idx": 3, "gloss_text": "विशेषाने भावावी"},
+      {"word_idx": 4, "gloss_text": "निर्विकल्प"},
+      {"word_idx": 5, "gloss_text": "(साधक) निर्विकल्प होतो"},
+      {"word_idx": 6, "gloss_text": "निर्विकल्प-स्वरूपाचा भागीदार (बनतो)"}
+    ],
+    "1.42": [
+      {"word_idx": 0, "gloss_text": "देहातील सर्व द्रव्य (पदार्थ)"},
+      {"word_idx": 1, "gloss_text": "व्योमाने (आकाशाने) व्यापलेले"},
+      {"word_idx": 2, "gloss_text": "हे मृग-नयने"},
+      {"word_idx": 3, "gloss_text": "भावावे"},
+      {"word_idx": 4, "gloss_text": "तेव्हा त्याच्यासाठी"},
+      {"word_idx": 5, "gloss_text": "ती भावना"},
+      {"word_idx": 6, "gloss_text": "स्थिर होते"}
+    ],
+    "1.43": [
+      {"word_idx": 0, "gloss_text": "देहाच्या आत"},
+      {"word_idx": 1, "gloss_text": "त्वचेचा विभाग"},
+      {"word_idx": 2, "gloss_text": "केवळ भिंतीसारखा"},
+      {"word_idx": 3, "gloss_text": "चिंतावा"},
+      {"word_idx": 4, "gloss_text": "त्याच्यासाठी आत काहीही नाही"},
+      {"word_idx": 5, "gloss_text": "ध्यान करत असता"},
+      {"word_idx": 6, "gloss_text": "अध्येयाचा (ध्यानाला विषय न होणाऱ्या) भागीदार बनतो"}
+    ],
+    "1.44": [
+      {"word_idx": 0, "gloss_text": "हृदय-आकाशात"},
+      {"word_idx": 1, "gloss_text": "इंद्रिये विलीन झालेली"},
+      {"word_idx": 2, "gloss_text": "कमळ-संपुटाच्या मध्यभागी स्थित"},
+      {"word_idx": 3, "gloss_text": "अनन्य-चित्ताने"},
+      {"word_idx": 4, "gloss_text": "हे सुभगे (हे भाग्यवती)"},
+      {"word_idx": 5, "gloss_text": "परम सौभाग्य प्राप्त करेल"}
+    ],
+    "1.45": [
+      {"word_idx": 0, "gloss_text": "सर्व बाजूंनी"},
+      {"word_idx": 1, "gloss_text": "स्वतःच्या देहाच्या"},
+      {"word_idx": 2, "gloss_text": "द्वादशांतावर"},
+      {"word_idx": 3, "gloss_text": "मन विलीन केल्याने"},
+      {"word_idx": 4, "gloss_text": "दृढ बुद्धीच्या साधकाला"},
+      {"word_idx": 5, "gloss_text": "दृढ झालेले"},
+      {"word_idx": 6, "gloss_text": "तत्त्व-लक्ष्य"},
+      {"word_idx": 7, "gloss_text": "प्रकट होते, पुढे येते"}
+    ],
+    "1.46": [
+      {"word_idx": 0, "gloss_text": "कसेही, कोणत्याही प्रकारे"},
+      {"word_idx": 1, "gloss_text": "कुठेही"},
+      {"word_idx": 2, "gloss_text": "द्वादशांतावर"},
+      {"word_idx": 3, "gloss_text": "मन फेकावे"},
+      {"word_idx": 4, "gloss_text": "प्रत्येक क्षणी"},
+      {"word_idx": 5, "gloss_text": "ज्याच्या वृत्ती क्षीण झाल्या आहेत त्याला"},
+      {"word_idx": 6, "gloss_text": "वैलक्षण्य (विलक्षण, प्रकाशमान अंतर्दृष्टी)"},
+      {"word_idx": 7, "gloss_text": "(काही) दिवसांत प्राप्त होते"}
+    ],
+    "1.47": [
+      {"word_idx": 0, "gloss_text": "जिथे-जिथे"},
+      {"word_idx": 1, "gloss_text": "मन"},
+      {"word_idx": 2, "gloss_text": "जाते"},
+      {"word_idx": 3, "gloss_text": "बाहेर"},
+      {"word_idx": 4, "gloss_text": "किंवा"},
+      {"word_idx": 5, "gloss_text": "आत"},
+      {"word_idx": 6, "gloss_text": "किंवा"},
+      {"word_idx": 7, "gloss_text": "तिथेच, प्रत्येक त्या ठिकाणी"},
+      {"word_idx": 8, "gloss_text": "शिव-अवस्था (असते)"},
+      {"word_idx": 9, "gloss_text": "व्यापकत्वामुळे (सर्वव्यापीत्वामुळे)"},
+      {"word_idx": 10, "gloss_text": "कुठे जाऊ शकेल?"}
+    ],
+    "1.48": [
+      {"word_idx": 0, "gloss_text": "जिथे-जिथे"},
+      {"word_idx": 1, "gloss_text": "इंद्रिय-मार्गाने"},
+      {"word_idx": 2, "gloss_text": "चैतन्य"},
+      {"word_idx": 3, "gloss_text": "प्रकट होते"},
+      {"word_idx": 4, "gloss_text": "व्यापक प्रभूचे"},
+      {"word_idx": 5, "gloss_text": "त्या (साधका)साठी"},
+      {"word_idx": 6, "gloss_text": "त्याच धर्माचा धारक असल्यामुळे"},
+      {"word_idx": 7, "gloss_text": "चित्-लयाने (चैतन्यात विलीन होण्याने)"},
+      {"word_idx": 8, "gloss_text": "भरित-आत्मता (पूर्ण-स्वरूप)"}
+    ],
+    "1.49": [
+      {"word_idx": 0, "gloss_text": "शिंक इत्यादींच्या अंती"},
+      {"word_idx": 1, "gloss_text": "भीतीत"},
+      {"word_idx": 2, "gloss_text": "शोकात"},
+      {"word_idx": 3, "gloss_text": "खोल खाईत (दरीत)"},
+      {"word_idx": 4, "gloss_text": "किंवा"},
+      {"word_idx": 5, "gloss_text": "युद्धातून पळताना"},
+      {"word_idx": 6, "gloss_text": "कुतूहलात, विस्मयात"},
+      {"word_idx": 7, "gloss_text": "भुकेच्या आरंभी व अंती"},
+      {"word_idx": 8, "gloss_text": "ब्रह्म-सत्तेच्या जवळ पोहोचणारी (अवस्था)"}
+    ],
+    "1.50": [
+      {"word_idx": 0, "gloss_text": "वस्तू आठवल्या जात असताना"},
+      {"word_idx": 1, "gloss_text": "पाहिलेल्या जागेत"},
+      {"word_idx": 2, "gloss_text": "मन सोडावे"},
+      {"word_idx": 3, "gloss_text": "स्वतःचा देह"},
+      {"word_idx": 4, "gloss_text": "निराधार करून"},
+      {"word_idx": 5, "gloss_text": "प्रभू पसरतो, फैलावतो"}
+    ],
+    "1.51": [
+      {"word_idx": 0, "gloss_text": "एखाद्या वस्तूवर"},
+      {"word_idx": 1, "gloss_text": "(दृष्टी) ठेवून"},
+      {"word_idx": 2, "gloss_text": "हळूहळू"},
+      {"word_idx": 3, "gloss_text": "दृष्टी"},
+      {"word_idx": 4, "gloss_text": "मागे घ्यावी"},
+      {"word_idx": 5, "gloss_text": "त्याचे ज्ञान"},
+      {"word_idx": 6, "gloss_text": "चित्तासह"},
+      {"word_idx": 7, "gloss_text": "हे देवी"},
+      {"word_idx": 8, "gloss_text": "शून्य-आलय (शून्याचे आश्रयस्थान) बनते"}
+    ],
+    "1.52": [
+      {"word_idx": 0, "gloss_text": "भक्तीच्या उद्रेकामुळे"},
+      {"word_idx": 1, "gloss_text": "विरक्ताला"},
+      {"word_idx": 2, "gloss_text": "जशी"},
+      {"word_idx": 3, "gloss_text": "उत्पन्न होते"},
+      {"word_idx": 4, "gloss_text": "मती, बुद्धी"},
+      {"word_idx": 5, "gloss_text": "तीच शांकरी शक्ती"},
+      {"word_idx": 6, "gloss_text": "नित्य, सदैव"},
+      {"word_idx": 7, "gloss_text": "तिला भावावे"},
+      {"word_idx": 8, "gloss_text": "त्यापासून शिव (बनतो)"}
+    ],
+    "1.53": [
+      {"word_idx": 0, "gloss_text": "एका वस्तूच्या ठिकाणी"},
+      {"word_idx": 1, "gloss_text": "ज्ञान होत असताना"},
+      {"word_idx": 2, "gloss_text": "सर्व (इतर) वस्तूंत"},
+      {"word_idx": 3, "gloss_text": "शून्यता (असते)"},
+      {"word_idx": 4, "gloss_text": "तिलाच"},
+      {"word_idx": 5, "gloss_text": "मनाने ध्यानात आणून"},
+      {"word_idx": 6, "gloss_text": "ज्ञात (विषय) सुद्धा शांत होतो"}
+    ],
+    "1.54": [
+      {"word_idx": 0, "gloss_text": "अल्पज्ञानी लोकांकडून"},
+      {"word_idx": 1, "gloss_text": "जी शुद्धी मानली जाते"},
+      {"word_idx": 2, "gloss_text": "ती शुद्धी"},
+      {"word_idx": 3, "gloss_text": "शंभु-दर्शनात (शिव-दृष्टीत)"},
+      {"word_idx": 4, "gloss_text": "शुद्ध नव्हे"},
+      {"word_idx": 5, "gloss_text": "खरोखर"},
+      {"word_idx": 6, "gloss_text": "म्हणून (काहीही स्वतःहून) अशुद्ध (नसते)"},
+      {"word_idx": 7, "gloss_text": "निर्विकल्प (साधक) सुखी होतो"}
+    ],
+    "1.55": [
+      {"word_idx": 0, "gloss_text": "सर्वत्र"},
+      {"word_idx": 1, "gloss_text": "भैरवच भाव (सत्ता) आहे"},
+      {"word_idx": 2, "gloss_text": "सामान्य गोष्टींतही"},
+      {"word_idx": 3, "gloss_text": "सुद्धा"},
+      {"word_idx": 4, "gloss_text": "गोचर (जाणण्या-योग्य) आहे"},
+      {"word_idx": 5, "gloss_text": "आणि नाही"},
+      {"word_idx": 6, "gloss_text": "त्याच्याव्यतिरिक्त"},
+      {"word_idx": 7, "gloss_text": "दुसरा कोणी आहे — असे"},
+      {"word_idx": 8, "gloss_text": "अद्वैत-गती (असते)"}
+    ],
+    "1.56": [
+      {"word_idx": 0, "gloss_text": "समान"},
+      {"word_idx": 1, "gloss_text": "शत्रू व मित्र यांच्याकडे"},
+      {"word_idx": 2, "gloss_text": "मान व अपमानात समान"},
+      {"word_idx": 3, "gloss_text": "ब्रह्माच्या परिपूर्णतेमुळे"},
+      {"word_idx": 4, "gloss_text": "असे जाणून"},
+      {"word_idx": 5, "gloss_text": "सुखी होतो"}
+    ],
+    "1.57": [
+      {"word_idx": 0, "gloss_text": "द्वेष नको"},
+      {"word_idx": 1, "gloss_text": "भावावा (मनात आणावा)"},
+      {"word_idx": 2, "gloss_text": "कशासाठीही"},
+      {"word_idx": 3, "gloss_text": "राग नको"},
+      {"word_idx": 4, "gloss_text": "भावावा"},
+      {"word_idx": 5, "gloss_text": "कशासाठीही"},
+      {"word_idx": 6, "gloss_text": "राग-द्वेषापासून मुक्त असता"},
+      {"word_idx": 7, "gloss_text": "मध्यभागी ब्रह्म"},
+      {"word_idx": 8, "gloss_text": "प्रसरते, झिरपते"}
+    ],
+    "1.58": [
+      {"word_idx": 0, "gloss_text": "जे अवेद्य (जाणता न येणारे)"},
+      {"word_idx": 1, "gloss_text": "जे अग्राह्य (पकडता न येणारे)"},
+      {"word_idx": 2, "gloss_text": "जे शून्य"},
+      {"word_idx": 3, "gloss_text": "जे अभाव-गामी (न-असण्याकडे झुकणारे)"},
+      {"word_idx": 4, "gloss_text": "ते सर्व भैरव म्हणून"},
+      {"word_idx": 5, "gloss_text": "भावावे"},
+      {"word_idx": 6, "gloss_text": "त्याच्या अंती"},
+      {"word_idx": 7, "gloss_text": "बोधाचा उद्भव (जागृती)"}
+    ],
+    "1.59": [
+      {"word_idx": 0, "gloss_text": "नित्य"},
+      {"word_idx": 1, "gloss_text": "विभू (व्यापक)"},
+      {"word_idx": 2, "gloss_text": "निराधार"},
+      {"word_idx": 3, "gloss_text": "व्यापक"},
+      {"word_idx": 4, "gloss_text": "आणि"},
+      {"word_idx": 5, "gloss_text": "अखिलाच्या आत्म्यात (असलेला)"},
+      {"word_idx": 6, "gloss_text": "अशा भैरवाला"},
+      {"word_idx": 7, "gloss_text": "सतत स्मरत असता"},
+      {"word_idx": 8, "gloss_text": "पुरुष मुक्त होतो"}
+    ],
+    "1.60": [
+      {"word_idx": 0, "gloss_text": "निराधार"},
+      {"word_idx": 1, "gloss_text": "संशय-रहित"},
+      {"word_idx": 2, "gloss_text": "ख्याती-रहित (विषय-रूप दिसण्यापासून मुक्त)"},
+      {"word_idx": 3, "gloss_text": "तेच परम ब्रह्म"},
+      {"word_idx": 4, "gloss_text": "सांगितले आहे"},
+      {"word_idx": 5, "gloss_text": "त्याचे भावन करावे"},
+      {"word_idx": 6, "gloss_text": "त्याच्याशी तन्मय (एकरूप) होतो"}
+    ],
+    "1.61": [
+      {"word_idx": 0, "gloss_text": "जशा-जशा प्रकारे"},
+      {"word_idx": 1, "gloss_text": "उपदेशाने"},
+      {"word_idx": 2, "gloss_text": "घडवला जातो"},
+      {"word_idx": 3, "gloss_text": "श्वासांचा लय"},
+      {"word_idx": 4, "gloss_text": "तसे-तसे"},
+      {"word_idx": 5, "gloss_text": "मन (जे) ज्ञान-वस्तू आहे"},
+      {"word_idx": 6, "gloss_text": "त्या अवस्थेच्या पदाकडे जाते"}
+    ],
+    "1.62": [
+      {"word_idx": 0, "gloss_text": "अमूळ (मूळ-रहित मूळ)"},
+      {"word_idx": 1, "gloss_text": "मूळ-नाड्यांचा"},
+      {"word_idx": 2, "gloss_text": "वायूने भरलेली"},
+      {"word_idx": 3, "gloss_text": "सुषुम्णा"},
+      {"word_idx": 4, "gloss_text": "द्वादशांती स्थित"},
+      {"word_idx": 5, "gloss_text": "ध्यानात आणून"},
+      {"word_idx": 6, "gloss_text": "अमूळ भैरवाला पोहोचतो"}
+    ],
+    "1.63": [
+      {"word_idx": 0, "gloss_text": "कपालाच्या आत"},
+      {"word_idx": 1, "gloss_text": "मन त्याचप्रमाणे (ठेवून)"},
+      {"word_idx": 2, "gloss_text": "ध्यान करणाऱ्याला"},
+      {"word_idx": 3, "gloss_text": "फार उशिराने नाही (लवकरच)"},
+      {"word_idx": 4, "gloss_text": "हे प्रभो"},
+      {"word_idx": 5, "gloss_text": "नेत्र-निमीलन (डोळे मिटणे) इत्यादींपासून उद्भवलेली सिद्धी"},
+      {"word_idx": 6, "gloss_text": "चिन्मय (चैतन्य-स्वरूप) साधकाला"},
+      {"word_idx": 7, "gloss_text": "उत्पन्न होते"}
+    ],
+    "1.64": [
+      {"word_idx": 0, "gloss_text": "जीभ मधोमध (टाळूच्या मध्ये) ठेवून"},
+      {"word_idx": 1, "gloss_text": "तोंड पसरवून (उघडे ठेवून)"},
+      {"word_idx": 2, "gloss_text": "मध्यभागी ठेवून"},
+      {"word_idx": 3, "gloss_text": "चेतना"},
+      {"word_idx": 4, "gloss_text": "'ह' चा उच्चार"},
+      {"word_idx": 5, "gloss_text": "मनाने करत"},
+      {"word_idx": 6, "gloss_text": "तेव्हा शांत-स्वरूपात"},
+      {"word_idx": 7, "gloss_text": "विलीन होतो"}
+    ],
+    "1.65": [
+      {"word_idx": 0, "gloss_text": "आसनात किंवा शय्येत"},
+      {"word_idx": 1, "gloss_text": "थांबून"},
+      {"word_idx": 2, "gloss_text": "निराधार"},
+      {"word_idx": 3, "gloss_text": "भावन करत"},
+      {"word_idx": 4, "gloss_text": "स्वतःचा देह"},
+      {"word_idx": 5, "gloss_text": "मन क्षीण झाले असता"},
+      {"word_idx": 6, "gloss_text": "क्षणार्धात"},
+      {"word_idx": 7, "gloss_text": "क्षीण-आशय (वासना-रहित) होतो"}
+    ],
+    "1.66": [
+      {"word_idx": 0, "gloss_text": "हलत्या आसनावर"},
+      {"word_idx": 1, "gloss_text": "बसलेल्याला, तेव्हा"},
+      {"word_idx": 2, "gloss_text": "किंवा हळूहळू"},
+      {"word_idx": 3, "gloss_text": "देहाच्या हलण्यामुळे"},
+      {"word_idx": 4, "gloss_text": "मनाचा भाव प्रशांत झाला असता"},
+      {"word_idx": 5, "gloss_text": "हे देवी"},
+      {"word_idx": 6, "gloss_text": "दिव्य-ओघ (आनंदाचा पूर)"},
+      {"word_idx": 7, "gloss_text": "प्राप्त होईल"}
+    ],
+    "1.67": [
+      {"word_idx": 0, "gloss_text": "निर्मल आकाश"},
+      {"word_idx": 1, "gloss_text": "पाहत"},
+      {"word_idx": 2, "gloss_text": "दृष्टी अखंड करून"},
+      {"word_idx": 3, "gloss_text": "स्तब्ध-आत्मा (आत्मा स्थिर केलेला)"},
+      {"word_idx": 4, "gloss_text": "त्याच क्षणी"},
+      {"word_idx": 5, "gloss_text": "हे देवी"},
+      {"word_idx": 6, "gloss_text": "भैरव-वपू (भैरव-रूप)"},
+      {"word_idx": 7, "gloss_text": "प्राप्त करेल"}
+    ],
+    "1.68": [
+      {"word_idx": 0, "gloss_text": "विलीन"},
+      {"word_idx": 1, "gloss_text": "मस्तकात"},
+      {"word_idx": 2, "gloss_text": "व्योम (आकाश)"},
+      {"word_idx": 3, "gloss_text": "सर्व"},
+      {"word_idx": 4, "gloss_text": "भैरवत्व-रूपाने भावावे"},
+      {"word_idx": 5, "gloss_text": "ते सर्व"},
+      {"word_idx": 6, "gloss_text": "भैरव-आकार-तेजस्तत्त्व (भैरव-रूपी तेजाचे तत्त्व)"},
+      {"word_idx": 7, "gloss_text": "साधकात आविष्ट होईल"}
+    ],
+    "1.69": [
+      {"word_idx": 0, "gloss_text": "अल्पजनित ज्ञान"},
+      {"word_idx": 1, "gloss_text": "द्वैत निर्माण करणारे"},
+      {"word_idx": 2, "gloss_text": "बाह्य प्रकाश"},
+      {"word_idx": 3, "gloss_text": "आणि (तसाच) अंधार"},
+      {"word_idx": 4, "gloss_text": "विश्व इत्यादी"},
+      {"word_idx": 5, "gloss_text": "भैरव-रूप म्हणून"},
+      {"word_idx": 6, "gloss_text": "जाणून"},
+      {"word_idx": 7, "gloss_text": "अनंत-प्रकाशाचा धारक (होतो)"}
+    ],
+    "1.70": [
+      {"word_idx": 0, "gloss_text": "त्याचप्रमाणे"},
+      {"word_idx": 1, "gloss_text": "घोर रात्री"},
+      {"word_idx": 2, "gloss_text": "कृष्ण-पक्षाच्या आरंभी"},
+      {"word_idx": 3, "gloss_text": "बराच वेळ"},
+      {"word_idx": 4, "gloss_text": "त्या अंधाराचे"},
+      {"word_idx": 5, "gloss_text": "रूप भावत"},
+      {"word_idx": 6, "gloss_text": "भैरव-रूप म्हणून"},
+      {"word_idx": 7, "gloss_text": "रूपाला प्राप्त होईल"}
+    ],
+    "1.71": [
+      {"word_idx": 0, "gloss_text": "त्याचप्रमाणे"},
+      {"word_idx": 1, "gloss_text": "आरंभी डोळे मिटून"},
+      {"word_idx": 2, "gloss_text": "डोळे"},
+      {"word_idx": 3, "gloss_text": "कृष्णवर्णी आभा असलेली"},
+      {"word_idx": 4, "gloss_text": "समोर"},
+      {"word_idx": 5, "gloss_text": "पसरवून"},
+      {"word_idx": 6, "gloss_text": "भैरव-रूप"},
+      {"word_idx": 7, "gloss_text": "भावत असता"},
+      {"word_idx": 8, "gloss_text": "तन्मय (त्या-रूपाशी एकरूप) होईल"}
+    ],
+    "1.72": [
+      {"word_idx": 0, "gloss_text": "कोणत्याही इंद्रियाला"},
+      {"word_idx": 1, "gloss_text": "आघातामुळे"},
+      {"word_idx": 2, "gloss_text": "आणि"},
+      {"word_idx": 3, "gloss_text": "रोधामुळे"},
+      {"word_idx": 4, "gloss_text": "प्रवेश केलेल्याला"},
+      {"word_idx": 5, "gloss_text": "अद्वय-शून्यात"},
+      {"word_idx": 6, "gloss_text": "तिथेच"},
+      {"word_idx": 7, "gloss_text": "आत्मा प्रकाशतो"}
+    ],
+    "1.73": [
+      {"word_idx": 0, "gloss_text": "बिंदू-रहित"},
+      {"word_idx": 1, "gloss_text": "विसर्ग-रहित"},
+      {"word_idx": 2, "gloss_text": "आणि"},
+      {"word_idx": 3, "gloss_text": "'अ' अक्षर"},
+      {"word_idx": 4, "gloss_text": "जप करणाऱ्याला"},
+      {"word_idx": 5, "gloss_text": "महान (ज्ञान) उदय पावते"},
+      {"word_idx": 6, "gloss_text": "हे देवी"},
+      {"word_idx": 7, "gloss_text": "अचानक"},
+      {"word_idx": 8, "gloss_text": "ज्ञानाचा ओघ जो परमेश्वर"}
+    ],
+    "1.74": [
+      {"word_idx": 0, "gloss_text": "विसर्ग-युक्त वर्णाच्या"},
+      {"word_idx": 1, "gloss_text": "विसर्गाच्या अंती"},
+      {"word_idx": 2, "gloss_text": "चित्त (चिति) ठेवावी"},
+      {"word_idx": 3, "gloss_text": "निराधार चित्ताने"},
+      {"word_idx": 4, "gloss_text": "सनातन ब्रह्मास स्पर्श करेल"}
+    ],
+    "1.75": [
+      {"word_idx": 0, "gloss_text": "व्योम-आकार (आकाश-रूप)"},
+      {"word_idx": 1, "gloss_text": "स्वतःचा आत्मा"},
+      {"word_idx": 2, "gloss_text": "ध्यानात आणावा"},
+      {"word_idx": 3, "gloss_text": "दिशांनी अनावृत्त"},
+      {"word_idx": 4, "gloss_text": "निराश्रय"},
+      {"word_idx": 5, "gloss_text": "चित्-शक्ती (चित्ती)"},
+      {"word_idx": 6, "gloss_text": "स्वतःचे स्वरूप दाखवते"},
+      {"word_idx": 7, "gloss_text": "तेव्हा"}
+    ],
+    "1.76": [
+      {"word_idx": 0, "gloss_text": "देहाच्या एखाद्या भागाला"},
+      {"word_idx": 1, "gloss_text": "आरंभी टोचून"},
+      {"word_idx": 2, "gloss_text": "तीक्ष्ण सुईने वगैरे"},
+      {"word_idx": 3, "gloss_text": "नंतर"},
+      {"word_idx": 4, "gloss_text": "तिथेच"},
+      {"word_idx": 5, "gloss_text": "चेतना जोडून"},
+      {"word_idx": 6, "gloss_text": "भैरवात"},
+      {"word_idx": 7, "gloss_text": "निर्मल गती (मार्ग)"}
+    ],
+    "1.77": [
+      {"word_idx": 0, "gloss_text": "चित्त इत्यादींची अंतःकरण-संरचना"},
+      {"word_idx": 1, "gloss_text": "नाही (अस्तित्वात नाही)"},
+      {"word_idx": 2, "gloss_text": "माझ्या आत"},
+      {"word_idx": 3, "gloss_text": "असे भावावे"},
+      {"word_idx": 4, "gloss_text": "विकल्पांच्या अभावामुळे"},
+      {"word_idx": 5, "gloss_text": "विकल्पांनी त्यागलेला (विकल्प-रहित) होईल"}
+    ],
+    "1.78": [
+      {"word_idx": 0, "gloss_text": "माया जी विमोहिनी नावाची"},
+      {"word_idx": 1, "gloss_text": "कलेची"},
+      {"word_idx": 2, "gloss_text": "कलन-क्रिया (मर्यादित-करणे)"},
+      {"word_idx": 3, "gloss_text": "स्थित (असते)"},
+      {"word_idx": 4, "gloss_text": "इत्यादी धर्म"},
+      {"word_idx": 5, "gloss_text": "तत्त्वांचे"},
+      {"word_idx": 6, "gloss_text": "जाणत असता"},
+      {"word_idx": 7, "gloss_text": "पृथक (वेगळा) उरत नाही"}
+    ],
+    "1.79": [
+      {"word_idx": 0, "gloss_text": "अचानक"},
+      {"word_idx": 1, "gloss_text": "उत्पन्न झालेली इच्छा"},
+      {"word_idx": 2, "gloss_text": "पाहून"},
+      {"word_idx": 3, "gloss_text": "शांतीकडे न्यावी"},
+      {"word_idx": 4, "gloss_text": "जिथून ती उद्भवली"},
+      {"word_idx": 5, "gloss_text": "तिथेच विलीन होते"}
+    ],
+    "1.80": [
+      {"word_idx": 0, "gloss_text": "जेव्हा माझी इच्छा"},
+      {"word_idx": 1, "gloss_text": "उत्पन्न झालेली नाही"},
+      {"word_idx": 2, "gloss_text": "किंवा ज्ञान (नाही)"},
+      {"word_idx": 3, "gloss_text": "तेव्हा मी कोण आहे?"},
+      {"word_idx": 4, "gloss_text": "तत्त्वतः मीच तसा आहे"},
+      {"word_idx": 5, "gloss_text": "त्यात तल्लीन (विलीन)"},
+      {"word_idx": 6, "gloss_text": "त्यातच मन असलेला होतो"}
+    ],
+    "1.81": [
+      {"word_idx": 0, "gloss_text": "इच्छेच्या ठायी"},
+      {"word_idx": 1, "gloss_text": "किंवा ज्ञानात"},
+      {"word_idx": 2, "gloss_text": "उत्पन्न झाले असता"},
+      {"word_idx": 3, "gloss_text": "चित्त त्यावर बसवावे"},
+      {"word_idx": 4, "gloss_text": "आत्म-बुद्धीने अनन्य-चित्त असलेला"},
+      {"word_idx": 5, "gloss_text": "तेव्हा तत्त्व-अर्थाचे दर्शन (होते)"}
+    ],
+    "1.82": [
+      {"word_idx": 0, "gloss_text": "निर्निमित्त (कारण-रहित)"},
+      {"word_idx": 1, "gloss_text": "ज्ञान उद्भवू शकते"},
+      {"word_idx": 2, "gloss_text": "निराधार"},
+      {"word_idx": 3, "gloss_text": "भ्रम-स्वरूप"},
+      {"word_idx": 4, "gloss_text": "तत्त्वतः ते कुणाचेही नाही"},
+      {"word_idx": 5, "gloss_text": "असे भावणारा शिव (बनतो), हे प्रिये"}
+    ],
+    "1.83": [
+      {"word_idx": 0, "gloss_text": "चैतन्य ज्यांचा धर्म आहे (असे)"},
+      {"word_idx": 1, "gloss_text": "सर्व देहांत"},
+      {"word_idx": 2, "gloss_text": "कुठेही विशेष भेद नाही"},
+      {"word_idx": 3, "gloss_text": "आणि म्हणून"},
+      {"word_idx": 4, "gloss_text": "सर्व त्या-मय (चैतन्य-मय)"},
+      {"word_idx": 5, "gloss_text": "भावत असता"},
+      {"word_idx": 6, "gloss_text": "भव-जयी (संसार-जिंकणारा) माणूस"}
+    ],
+    "1.84": [
+      {"word_idx": 0, "gloss_text": "काम, क्रोध, लोभ, मोह, मद, मत्सर यांच्या क्षेत्रात"},
+      {"word_idx": 1, "gloss_text": "बुद्धी निश्चल करून"},
+      {"word_idx": 2, "gloss_text": "तेच परम तत्त्व शिल्लक राहते"}
+    ],
+    "1.85": [
+      {"word_idx": 0, "gloss_text": "इंद्रजाल-मय विश्व (मायेने भरलेले जग)"},
+      {"word_idx": 1, "gloss_text": "विखुरलेले, छिन्न-विछिन्न"},
+      {"word_idx": 2, "gloss_text": "किंवा"},
+      {"word_idx": 3, "gloss_text": "चित्र-कर्मासारखे"},
+      {"word_idx": 4, "gloss_text": "घुसळणारे (भ्रमणारे)"},
+      {"word_idx": 5, "gloss_text": "किंवा"},
+      {"word_idx": 6, "gloss_text": "ध्यान करणाऱ्याला"},
+      {"word_idx": 7, "gloss_text": "व सर्व पाहणाऱ्याला"},
+      {"word_idx": 8, "gloss_text": "सुखाचा उदय (होतो)"}
+    ],
+    "1.86": [
+      {"word_idx": 0, "gloss_text": "चित्त दुःखात बुडवू नये"},
+      {"word_idx": 1, "gloss_text": "सुखातही फेकू नये"},
+      {"word_idx": 2, "gloss_text": "हे भैरवि"},
+      {"word_idx": 3, "gloss_text": "मध्ये जाणून घ्यावे"},
+      {"word_idx": 4, "gloss_text": "कुठले तत्त्व शिल्लक राहते?"}
+    ],
+    "1.87": [
+      {"word_idx": 0, "gloss_text": "सोडून"},
+      {"word_idx": 1, "gloss_text": "स्वतःच्या देहाची आसक्ती"},
+      {"word_idx": 2, "gloss_text": "'मी सर्वत्र आहे' असे"},
+      {"word_idx": 3, "gloss_text": "भावत असता"},
+      {"word_idx": 4, "gloss_text": "दृढ मनाने"},
+      {"word_idx": 5, "gloss_text": "दृष्टीने"},
+      {"word_idx": 6, "gloss_text": "अन्य कशालाही न पाहणाऱ्या"},
+      {"word_idx": 7, "gloss_text": "सुखी होतो"}
+    ],
+    "1.88": [
+      {"word_idx": 0, "gloss_text": "घट इत्यादींविषयी"},
+      {"word_idx": 1, "gloss_text": "जे ज्ञान"},
+      {"word_idx": 2, "gloss_text": "किंवा इच्छा वगैरे माझ्या अंतःकरणात"},
+      {"word_idx": 3, "gloss_text": "ते सर्वगत म्हणूनच उद्भवले आहे"},
+      {"word_idx": 4, "gloss_text": "असे भावणारा सर्वग (सर्वव्यापी) बनतो"}
+    ],
+    "1.89": [
+      {"word_idx": 0, "gloss_text": "ग्राह्य-ग्राहकाची संविद् (विषय-विषयीची जाणीव)"},
+      {"word_idx": 1, "gloss_text": "सामान्य आहे"},
+      {"word_idx": 2, "gloss_text": "सर्व देहधाऱ्यांना"},
+      {"word_idx": 3, "gloss_text": "पण योग्यांचे विशेष आहे"},
+      {"word_idx": 4, "gloss_text": "संबंधात"},
+      {"word_idx": 5, "gloss_text": "सावधानता"}
+    ],
+    "1.90": [
+      {"word_idx": 0, "gloss_text": "स्वतःच्या (देहाप्रमाणे)"},
+      {"word_idx": 1, "gloss_text": "दुसऱ्याच्या देहातही"},
+      {"word_idx": 2, "gloss_text": "जाणीव अनुभवावी"},
+      {"word_idx": 3, "gloss_text": "स्वतःच्या देहाची अपेक्षा"},
+      {"word_idx": 4, "gloss_text": "सोडून"},
+      {"word_idx": 5, "gloss_text": "व्यापी (सर्वव्यापी) काही दिवसांत होतो"}
+    ],
+    "1.91": [
+      {"word_idx": 0, "gloss_text": "मन निराधार करून"},
+      {"word_idx": 1, "gloss_text": "विकल्पांची कल्पना करू नये"},
+      {"word_idx": 2, "gloss_text": "तेव्हा आत्मा-परमात्म्यांच्या एकत्वात"},
+      {"word_idx": 3, "gloss_text": "भैरव (असतो), हे मृग-नयने"}
+    ],
+    "1.92": [
+      {"word_idx": 0, "gloss_text": "सर्वज्ञ"},
+      {"word_idx": 1, "gloss_text": "सर्व-कर्ता"},
+      {"word_idx": 2, "gloss_text": "व्यापक परमेश्वर"},
+      {"word_idx": 3, "gloss_text": "तोच मी"},
+      {"word_idx": 4, "gloss_text": "शैव-धर्मा (शिवाच्या स्वभावाचा)"},
+      {"word_idx": 5, "gloss_text": "या निश्चयाच्या दृढतेने"},
+      {"word_idx": 6, "gloss_text": "शिव बनतो"}
+    ],
+    "1.93": [
+      {"word_idx": 0, "gloss_text": "पाण्याच्या जशा"},
+      {"word_idx": 1, "gloss_text": "लाटा (असतात)"},
+      {"word_idx": 2, "gloss_text": "अग्नीच्या ज्वालांच्या रेषा"},
+      {"word_idx": 3, "gloss_text": "सूर्याची प्रभा"},
+      {"word_idx": 4, "gloss_text": "माझ्याच (भैरवाच्या)"},
+      {"word_idx": 5, "gloss_text": "ही विश्वातील नाना भेद-रूपे"},
+      {"word_idx": 6, "gloss_text": "विभेदित (वेगवेगळी झालेली)"}
+    ],
+    "1.94": [
+      {"word_idx": 0, "gloss_text": "भ्रमण-भ्रमण करून"},
+      {"word_idx": 1, "gloss_text": "देहाने"},
+      {"word_idx": 2, "gloss_text": "त्वरेने"},
+      {"word_idx": 3, "gloss_text": "जमिनीवर पडल्यामुळे"},
+      {"word_idx": 4, "gloss_text": "क्षोभ-शक्तीच्या विरामाने (थांबण्याने)"},
+      {"word_idx": 5, "gloss_text": "परा (श्रेष्ठ) दशा उत्पन्न होते"}
+    ],
+    "1.95": [
+      {"word_idx": 0, "gloss_text": "आधारांवर"},
+      {"word_idx": 1, "gloss_text": "किंवा अशक्तीमुळे"},
+      {"word_idx": 2, "gloss_text": "ज्ञानामुळे"},
+      {"word_idx": 3, "gloss_text": "किंवा"},
+      {"word_idx": 4, "gloss_text": "देश-कल्पनेमुळे"},
+      {"word_idx": 5, "gloss_text": "शक्तीचा क्षोभ उद्भवल्यानंतर"},
+      {"word_idx": 6, "gloss_text": "तो शांत झाल्यावर तेव्हा (ती अवस्था) येते"}
+    ],
+    "1.96": [
+      {"word_idx": 0, "gloss_text": "बसून"},
+      {"word_idx": 1, "gloss_text": "आसनावर नीट"},
+      {"word_idx": 2, "gloss_text": "बाहू करून"},
+      {"word_idx": 3, "gloss_text": "अर्ध-वाकवलेले"},
+      {"word_idx": 4, "gloss_text": "कक्ष-व्योमात (काखेतल्या पोकळीत)"},
+      {"word_idx": 5, "gloss_text": "मन ठेवून"},
+      {"word_idx": 6, "gloss_text": "शांती पावतो"},
+      {"word_idx": 7, "gloss_text": "त्यातील लयाने"}
+    ],
+    "1.97": [
+      {"word_idx": 0, "gloss_text": "स्थूल-रूप वस्तूवर"},
+      {"word_idx": 1, "gloss_text": "स्तब्ध दृष्टी टाकून"},
+      {"word_idx": 2, "gloss_text": "आणि"},
+      {"word_idx": 3, "gloss_text": "थोड्याच काळात"},
+      {"word_idx": 4, "gloss_text": "मन निराधार करून"},
+      {"word_idx": 5, "gloss_text": "शिवाकडे जातो"}
+    ],
+    "1.98": [
+      {"word_idx": 0, "gloss_text": "जीभ मधोमध ठेवून"},
+      {"word_idx": 1, "gloss_text": "तोंड पसरवून (उघडे ठेवून)"},
+      {"word_idx": 2, "gloss_text": "मध्यभागी चेतना ठेवून"},
+      {"word_idx": 3, "gloss_text": "मनाने मंत्र उच्चारत"},
+      {"word_idx": 4, "gloss_text": "शिव म्हणून ध्यान करत"},
+      {"word_idx": 5, "gloss_text": "पूर्ण शांती पावतो"}
+    ],
+    "1.99": [
+      {"word_idx": 0, "gloss_text": "कपालाच्या आत"},
+      {"word_idx": 1, "gloss_text": "डोळे मिटून"},
+      {"word_idx": 2, "gloss_text": "उत्तम लक्ष्य"}
+    ],
+    "1.100": [
+      {"word_idx": 0, "gloss_text": "मध्य-नाडी (सुषुम्ना)"},
+      {"word_idx": 1, "gloss_text": "कमळ-तंतूसारख्या रूपाने"},
+      {"word_idx": 2, "gloss_text": "अंतर्व्योम-रूप देवीद्वारे"}
+    ],
+    "1.101": [
+      {"word_idx": 0, "gloss_text": "हाताने रोखलेली दृष्टी"},
+      {"word_idx": 1, "gloss_text": "इंद्रिय-द्वारांच्या रोधनाने"},
+      {"word_idx": 2, "gloss_text": "परम स्थिती"}
+    ],
+    "1.102": [
+      {"word_idx": 0, "gloss_text": "मंत्र-अर्थ-प्रोक्त (मंत्रांच्या अर्थांनी सांगितलेली) रूपे"},
+      {"word_idx": 1, "gloss_text": "अधिकाऱ्याच्या (साधकाच्या) विशेषतेनुसार"},
+      {"word_idx": 2, "gloss_text": "साधक (बनतो)"}
+    ],
+    "1.103": [
+      {"word_idx": 0, "gloss_text": "अनुसंधेय (तपासण्या-योग्य)"},
+      {"word_idx": 1, "gloss_text": "एका ज्ञानावर केंद्रित होऊन"},
+      {"word_idx": 2, "gloss_text": "योग-सिद्धी (प्राप्त करतो)"}
+    ],
+    "1.104": [
+      {"word_idx": 0, "gloss_text": "कामनेच्या वेगाने"},
+      {"word_idx": 1, "gloss_text": "विस्मय (अद्भुतता)"},
+      {"word_idx": 2, "gloss_text": "स्वतःच्या देहाच्या आह्लाद-शक्तीची (परमेश्वरी)"}
+    ],
+    "1.105": [
+      {"word_idx": 0, "gloss_text": "चाटणे, घुसळणे, चेपणे या क्रियांनी"},
+      {"word_idx": 1, "gloss_text": "स्त्री-सुखाच्या भरामुळे (पूर्णतेमुळे)"},
+      {"word_idx": 2, "gloss_text": "आनंदाचा महापूर"}
+    ],
+    "1.106": [
+      {"word_idx": 0, "gloss_text": "महान आनंद प्राप्त झाला असता"},
+      {"word_idx": 1, "gloss_text": "कितीतरी दिवसांनी प्रिय बंधू (दिसताच)"},
+      {"word_idx": 2, "gloss_text": "त्यात तल्लीन"}
+    ],
+    "1.107": [
+      {"word_idx": 0, "gloss_text": "खाणे-पिणे"},
+      {"word_idx": 1, "gloss_text": "रसानंदाच्या विजृंभणाने (विस्ताराने)"},
+      {"word_idx": 2, "gloss_text": "महानंद (परम आनंद)"}
+    ],
+    "1.108": [
+      {"word_idx": 0, "gloss_text": "गीतादी विषयांच्या आस्वादाच्या अनुपम सुखाशी एकत्व पावलेल्या (साधकाचे)"},
+      {"word_idx": 1, "gloss_text": "योग्याला"},
+      {"word_idx": 2, "gloss_text": "तन्मयतेने (त्यात एकरूप होऊन)"},
+      {"word_idx": 3, "gloss_text": "मनाच्या ऊर्ध्व-गतीमुळे"},
+      {"word_idx": 4, "gloss_text": "त्या-तत्त्वाशी एकत्व"}
+    ],
+    "1.109": [
+      {"word_idx": 0, "gloss_text": "जिथे-जिथे"},
+      {"word_idx": 1, "gloss_text": "आत्म्याची तृप्ती (मिळते)"},
+      {"word_idx": 2, "gloss_text": "मन"},
+      {"word_idx": 3, "gloss_text": "तिथेच"},
+      {"word_idx": 4, "gloss_text": "धारण करावे"},
+      {"word_idx": 5, "gloss_text": "तिथे-तिथे"},
+      {"word_idx": 6, "gloss_text": "परम-आनंदाचे स्वरूप"},
+      {"word_idx": 7, "gloss_text": "पूर्णपणे प्रकट होते"}
+    ],
+    "1.110": [
+      {"word_idx": 0, "gloss_text": "जेव्हा निद्रा अद्याप आलेली नाही"},
+      {"word_idx": 1, "gloss_text": "बाह्य विषय नष्ट झाले असता"},
+      {"word_idx": 2, "gloss_text": "ती अवस्था"},
+      {"word_idx": 3, "gloss_text": "मनाने गाठावी"},
+      {"word_idx": 4, "gloss_text": "तिथे परा देवी प्रकाशते"}
+    ],
+    "1.111": [
+      {"word_idx": 0, "gloss_text": "तेजाने"},
+      {"word_idx": 1, "gloss_text": "सूर्य, दिवा वगैरेंच्या"},
+      {"word_idx": 2, "gloss_text": "आकाश रंगीबेरंगी झाले असता"},
+      {"word_idx": 3, "gloss_text": "स्वतःचा आत्मा (तेथे) दिसताच"},
+      {"word_idx": 4, "gloss_text": "त्या प्रभेशी संयुक्त"},
+      {"word_idx": 5, "gloss_text": "सच्चिदानंदाचे क्षेत्र (उघडते)"}
+    ],
+    "1.112": [
+      {"word_idx": 0, "gloss_text": "करंकिणीद्वारे"},
+      {"word_idx": 1, "gloss_text": "क्रोधनेद्वारे"},
+      {"word_idx": 2, "gloss_text": "भैरवीद्वारे"},
+      {"word_idx": 3, "gloss_text": "लेलिहानेद्वारे"},
+      {"word_idx": 4, "gloss_text": "खेचरीद्वारे"},
+      {"word_idx": 5, "gloss_text": "दृष्टीच्या वेळी"},
+      {"word_idx": 6, "gloss_text": "आणि"},
+      {"word_idx": 7, "gloss_text": "परम-आवाप्ती (परम-प्राप्ती)"},
+      {"word_idx": 8, "gloss_text": "प्रकाशते"}
+    ],
+    "1.113": [
+      {"word_idx": 0, "gloss_text": "मऊ आसनावर"},
+      {"word_idx": 1, "gloss_text": "एका नितंबाने (असमतोल बैठक)"},
+      {"word_idx": 2, "gloss_text": "हात व पाय निराधार"},
+      {"word_idx": 3, "gloss_text": "ठेवून"},
+      {"word_idx": 4, "gloss_text": "त्या प्रसंगाने (या स्थितीमुळे)"},
+      {"word_idx": 5, "gloss_text": "परा-पूर्ण मती (बुद्धी) उद्भवते"}
+    ],
+    "1.114": [
+      {"word_idx": 0, "gloss_text": "अर्ध-वाकवलेले दोन्ही बाहू"},
+      {"word_idx": 1, "gloss_text": "कक्ष-व्योमात"},
+      {"word_idx": 2, "gloss_text": "त्यातील लयाने"}
+    ],
+    "1.115": [
+      {"word_idx": 0, "gloss_text": "स्तब्ध दृष्टी टाकून"},
+      {"word_idx": 1, "gloss_text": "निराधार"},
+      {"word_idx": 2, "gloss_text": "शिवाकडे जावे"}
+    ],
+    "1.116": [
+      {"word_idx": 0, "gloss_text": "जीभ मधोमध ठेवून"},
+      {"word_idx": 1, "gloss_text": "'ह' चा उच्चार"},
+      {"word_idx": 2, "gloss_text": "शांत-स्वरूपात (शिवात)"}
+    ],
+    "1.117": [
+      {"word_idx": 0, "gloss_text": "स्वतःचा देह निराधार आहे असे"},
+      {"word_idx": 1, "gloss_text": "मन क्षीण झाले असता"},
+      {"word_idx": 2, "gloss_text": "क्षीण-आशय (वासना-रहित)"}
+    ],
+    "1.118": [
+      {"word_idx": 0, "gloss_text": "हलत्या आसनावर"},
+      {"word_idx": 1, "gloss_text": "देहाच्या हलण्यामुळे"},
+      {"word_idx": 2, "gloss_text": "दिव्य-ओघ"}
+    ],
+    "1.119": [
+      {"word_idx": 0, "gloss_text": "निर्मल आकाश"},
+      {"word_idx": 1, "gloss_text": "स्तब्ध-आत्मा (आत्मा स्थिर केलेला)"},
+      {"word_idx": 2, "gloss_text": "भैरव-वपू (भैरव-रूप)"}
+    ],
+    "1.120": [
+      {"word_idx": 0, "gloss_text": "विलीन व्योम (आकाश)"},
+      {"word_idx": 1, "gloss_text": "भैरवत्व-रूपाने"},
+      {"word_idx": 2, "gloss_text": "भैरव-आकार तेजस्तत्त्व"}
+    ],
+    "1.121": [
+      {"word_idx": 0, "gloss_text": "अल्पजनित ज्ञान"},
+      {"word_idx": 1, "gloss_text": "बाह्य प्रकाश"},
+      {"word_idx": 2, "gloss_text": "अनंत-प्रकाशाचा धारक"}
+    ],
+    "1.122": [
+      {"word_idx": 0, "gloss_text": "घोर रात्री"},
+      {"word_idx": 1, "gloss_text": "अंधाराचे रूप"},
+      {"word_idx": 2, "gloss_text": "भैरव-रूप"}
+    ],
+    "1.123": [
+      {"word_idx": 0, "gloss_text": "मिटून (डोळे)"},
+      {"word_idx": 1, "gloss_text": "कृष्णवर्णी आभा"},
+      {"word_idx": 2, "gloss_text": "तन्मय (एकरूप)"}
+    ],
+    "1.124": [
+      {"word_idx": 0, "gloss_text": "आघातामुळे"},
+      {"word_idx": 1, "gloss_text": "रोधामुळे"},
+      {"word_idx": 2, "gloss_text": "अद्वय-शून्यात"}
+    ],
+    "1.125": [
+      {"word_idx": 0, "gloss_text": "बिंदू-रहित"},
+      {"word_idx": 1, "gloss_text": "विसर्ग-रहित"},
+      {"word_idx": 2, "gloss_text": "ज्ञानाचा ओघ"}
+    ],
+    "1.126": [
+      {"word_idx": 0, "gloss_text": "विसर्गाच्या अंती"},
+      {"word_idx": 1, "gloss_text": "चित्त (चिति)"},
+      {"word_idx": 2, "gloss_text": "सनातन ब्रह्म"}
+    ],
+    "1.127": [
+      {"word_idx": 0, "gloss_text": "व्योम-आकार (आकाश-रूप)"},
+      {"word_idx": 1, "gloss_text": "दिशांनी अनावृत्त"},
+      {"word_idx": 2, "gloss_text": "निराश्रय चित्-शक्ती"}
+    ],
+    "1.128": [
+      {"word_idx": 0, "gloss_text": "देहाच्या एखाद्या भागाला"},
+      {"word_idx": 1, "gloss_text": "तीक्ष्ण सुईने वगैरे"},
+      {"word_idx": 2, "gloss_text": "निर्मल गती (मार्ग)"}
+    ],
+    "1.129": [
+      {"word_idx": 0, "gloss_text": "अंतःकरण (आतले साधन)"},
+      {"word_idx": 1, "gloss_text": "विकल्पांच्या अभावाने"},
+      {"word_idx": 2, "gloss_text": "त्यागलेला (विकल्प-रहित)"}
+    ],
+    "1.130": [
+      {"word_idx": 0, "gloss_text": "माया विमोहिनी (मोह उत्पन्न करणारी)"},
+      {"word_idx": 1, "gloss_text": "कलन (मर्यादित-करण्याची क्रिया)"},
+      {"word_idx": 2, "gloss_text": "पृथक (वेगळा)"}
+    ],
+    "1.131": [
+      {"word_idx": 0, "gloss_text": "अचानक"},
+      {"word_idx": 1, "gloss_text": "शांतीकडे न्यावी"},
+      {"word_idx": 2, "gloss_text": "जिथून (ती)"}
+    ],
+    "1.132": [
+      {"word_idx": 0, "gloss_text": "इच्छा / ज्ञान"},
+      {"word_idx": 1, "gloss_text": "मी कोण आहे?"},
+      {"word_idx": 2, "gloss_text": "त्यातच मन असलेला"}
+    ],
+    "1.133": [
+      {"word_idx": 0, "gloss_text": "इच्छेत / ज्ञानात"},
+      {"word_idx": 1, "gloss_text": "आत्म-बुद्धीने (हाच आत्मा-असे जाणणाऱ्या बुद्धीने)"},
+      {"word_idx": 2, "gloss_text": "तत्त्व-अर्थाचे दर्शन"}
+    ],
+    "1.134": [
+      {"word_idx": 0, "gloss_text": "निर्निमित्त (कारण-रहित)"},
+      {"word_idx": 1, "gloss_text": "भ्रम-स्वरूप"},
+      {"word_idx": 2, "gloss_text": "असे भावणारा"}
+    ],
+    "1.135": [
+      {"word_idx": 0, "gloss_text": "चैतन्य-धर्मा (चैतन्य ज्याचा स्वभाव)"},
+      {"word_idx": 1, "gloss_text": "विशेष (भेद)"},
+      {"word_idx": 2, "gloss_text": "भव-जयी (संसार-जिंकणारा)"}
+    ],
+    "1.136": [
+      {"word_idx": 0, "gloss_text": "काम, क्रोध, लोभ, मोह, मद, मत्सर"},
+      {"word_idx": 1, "gloss_text": "पूर्णपणे निश्चल केली"},
+      {"word_idx": 2, "gloss_text": "शिल्लक राहते"}
+    ],
+    "1.137": [
+      {"word_idx": 0, "gloss_text": "इंद्रजाल-मय (मायेने बनलेले)"},
+      {"word_idx": 1, "gloss_text": "चित्र-कर्मासारखे"},
+      {"word_idx": 2, "gloss_text": "सुखाचा उदय"}
+    ],
+    "1.138": [
+      {"word_idx": 0, "gloss_text": "मध्यभागी"},
+      {"word_idx": 1, "gloss_text": "शिल्लक राहते"},
+      {"word_idx": 2, "gloss_text": "जाणावे"}
+    ],
+    "1.139": [
+      {"word_idx": 0, "gloss_text": "स्वतःच्या देहाची आसक्ती"},
+      {"word_idx": 1, "gloss_text": "'मी सर्वत्र आहे'"},
+      {"word_idx": 2, "gloss_text": "अन्य कशालाही न पाहणाऱ्या दृष्टीने"}
+    ],
+    "1.140": [
+      {"word_idx": 0, "gloss_text": "घट इत्यादींविषयी"},
+      {"word_idx": 1, "gloss_text": "ज्ञान"},
+      {"word_idx": 2, "gloss_text": "सर्वग (सर्वव्यापी)"}
+    ],
+    "1.141": [
+      {"word_idx": 0, "gloss_text": "ग्राह्य-ग्राहकाची संविद् (विषय-विषयीची जाणीव)"},
+      {"word_idx": 1, "gloss_text": "सामान्य"},
+      {"word_idx": 2, "gloss_text": "सावधानता"}
+    ],
+    "1.142": [
+      {"word_idx": 0, "gloss_text": "स्वतःच्या (देहाप्रमाणे)"},
+      {"word_idx": 1, "gloss_text": "दुसऱ्याच्या देहात"},
+      {"word_idx": 2, "gloss_text": "व्यापी (सर्वव्यापी)"}
+    ],
+    "1.143": [
+      {"word_idx": 0, "gloss_text": "निराधार मन"},
+      {"word_idx": 1, "gloss_text": "विकल्प करावा"},
+      {"word_idx": 2, "gloss_text": "आत्मा-परमात्म्याच्या एकत्वात"}
+    ],
+    "1.144": [
+      {"word_idx": 0, "gloss_text": "सर्वज्ञ, सर्व-कर्ता"},
+      {"word_idx": 1, "gloss_text": "शैव-धर्मा (शिव-स्वभावाचा)"},
+      {"word_idx": 2, "gloss_text": "दृढतेने"}
+    ],
+    "1.145": [
+      {"word_idx": 0, "gloss_text": "लाटा"},
+      {"word_idx": 1, "gloss_text": "ज्वालांच्या रेषा"},
+      {"word_idx": 2, "gloss_text": "विश्वातील नाना भेद-रूपे"}
+    ],
+    "1.146": [
+      {"word_idx": 0, "gloss_text": "भ्रमण-भ्रमण करून"},
+      {"word_idx": 1, "gloss_text": "क्षोभ-शक्तीच्या विरामाने"},
+      {"word_idx": 2, "gloss_text": "परा दशा"}
+    ],
+    "1.147": [
+      {"word_idx": 0, "gloss_text": "आधारांत"},
+      {"word_idx": 1, "gloss_text": "शक्ती-क्षोभात"},
+      {"word_idx": 2, "gloss_text": "शांत झाल्यानंतर"}
+    ],
+    "1.148": [
+      {"word_idx": 0, "gloss_text": "सर्वत्र"},
+      {"word_idx": 1, "gloss_text": "भावना नावाची साधना"},
+      {"word_idx": 2, "gloss_text": "हे शोभने (हे सुंदरी)"}
+    ],
+    "1.149": [
+      {"word_idx": 0, "gloss_text": "ज्या कुणाच्याही, या देहामध्ये"},
+      {"word_idx": 1, "gloss_text": "'मी आहे' असा प्रत्यय येतो"},
+      {"word_idx": 2, "gloss_text": "त्याच्याच (या क्षुद्र संविदातून)"},
+      {"word_idx": 3, "gloss_text": "क्षुद्र संविदातून"},
+      {"word_idx": 4, "gloss_text": "भैरवत्व प्रकाशते"}
+    ],
+    "1.150": [
+      {"word_idx": 0, "gloss_text": "श्रीदेवी म्हणाली"},
+      {"word_idx": 1, "gloss_text": "हे देवांच्या देवा, हे महादेवा"},
+      {"word_idx": 2, "gloss_text": "तू मला पूर्णतया तृप्त केले आहेस, हे प्रभो"},
+      {"word_idx": 3, "gloss_text": "तूच शंकराचा आत्मा आहेस"},
+      {"word_idx": 4, "gloss_text": "जगात नित्य असलेली शक्ती (आहेस)"}
+    ],
+    "1.151": [
+      {"word_idx": 0, "gloss_text": "ज्याप्रकारे कृपेने आविष्ट झालेल्या तू"},
+      {"word_idx": 1, "gloss_text": "हे रहस्य"},
+      {"word_idx": 2, "gloss_text": "उद्धृत केले आहेस"},
+      {"word_idx": 3, "gloss_text": "त्याच प्रकारे"},
+      {"word_idx": 4, "gloss_text": "कुणाला (योग्य अधिकाऱ्याला) सांगण्या-योग्य (आहे, सावधगिरीने)"},
+      {"word_idx": 5, "gloss_text": "योग्य कानात (पात्र-कानात)"},
+      {"word_idx": 6, "gloss_text": "ते फेकू नये"}
+    ],
+    "1.152": [
+      {"word_idx": 0, "gloss_text": "हे विज्ञान"},
+      {"word_idx": 1, "gloss_text": "उदित झाले आहे"},
+      {"word_idx": 2, "gloss_text": "जरा-मरण-नाशक (वार्धक्य व मृत्यू नष्ट करणारे)"},
+      {"word_idx": 3, "gloss_text": "ब्रह्मादी देवांनी वंदित अशा"},
+      {"word_idx": 4, "gloss_text": "मंथान-भैरवाचे"},
+      {"word_idx": 5, "gloss_text": "आणि"}
+    ],
+    "1.153": [
+      {"word_idx": 0, "gloss_text": "हे अनाख्यात (पूर्वी न-सांगितलेले) तंत्र"},
+      {"word_idx": 1, "gloss_text": "भोग व मोक्ष देणारे"},
+      {"word_idx": 2, "gloss_text": "हे अनाख्यात तंत्र"},
+      {"word_idx": 3, "gloss_text": "त्यांना दिलेले आहे"},
+      {"word_idx": 4, "gloss_text": "खरोखर लीलेने (खेळासारखे)"}
+    ],
+    "1.154": [
+      {"word_idx": 0, "gloss_text": "ज्ञान-लाभाने"},
+      {"word_idx": 1, "gloss_text": "गुरु-भाव (गुरुत्व)"},
+      {"word_idx": 2, "gloss_text": "समता (एकत्व)"}
+    ],
+    "1.155": [
+      {"word_idx": 0, "gloss_text": "जिथे-जिथे"},
+      {"word_idx": 1, "gloss_text": "कोणत्याही प्रकारे"},
+      {"word_idx": 2, "gloss_text": "कर्ता-कर्म-विविक्तता (कर्ता व कर्म यांचे वेगळेपण)"},
+      {"word_idx": 3, "gloss_text": "तिथे-तिथे"},
+      {"word_idx": 4, "gloss_text": "शिव-अवस्था"},
+      {"word_idx": 5, "gloss_text": "व्यापकत्वामुळे"},
+      {"word_idx": 6, "gloss_text": "कुठे जाऊ शकेल?"}
+    ],
+    "1.156": [
+      {"word_idx": 0, "gloss_text": "अशा प्रकारे या विज्ञानाचा अवलंब करून"},
+      {"word_idx": 1, "gloss_text": "योगी शिव बनतो"},
+      {"word_idx": 2, "gloss_text": "तीर्थादिकांत"},
+      {"word_idx": 3, "gloss_text": "जातीतही"},
+      {"word_idx": 4, "gloss_text": "स्नानादिकांत कारण (आवश्यकता) नाही"}
+    ],
+    "1.157": [
+      {"word_idx": 0, "gloss_text": "श्रोता-आत्म्याची"},
+      {"word_idx": 1, "gloss_text": "चित्त-समानता (मनाची समता)"},
+      {"word_idx": 2, "gloss_text": "तत्त्वाची भावना"}
+    ],
+    "1.158": [
+      {"word_idx": 0, "gloss_text": "या विज्ञानाच्या ज्ञानाने"},
+      {"word_idx": 1, "gloss_text": "योग-ज्ञात्यांमधील श्रेष्ठ"},
+      {"word_idx": 2, "gloss_text": "महा-योगी"}
+    ],
+    "1.159": [
+      {"word_idx": 0, "gloss_text": "मी पूर्ण तृप्त झाले आहे"},
+      {"word_idx": 1, "gloss_text": "रुद्रयामल (मूळ तंत्र)"},
+      {"word_idx": 2, "gloss_text": "सार ग्रहण केले गेले आहे"}
+    ],
+    "1.160": [
+      {"word_idx": 0, "gloss_text": "सर्व शक्ती-भेदांचे"},
+      {"word_idx": 1, "gloss_text": "हृदय"},
+      {"word_idx": 2, "gloss_text": "पोहोचून"}
+    ],
+    "1.161": [
+      {"word_idx": 0, "gloss_text": "आनंदित"},
+      {"word_idx": 1, "gloss_text": "गळ्यात लगडली"},
+      {"word_idx": 2, "gloss_text": "उद्धृत केले गेले"}
+    ],
+    "1.162": [
+      {"word_idx": 0, "gloss_text": "कुल-गुह्य (कुलाचे गुप्त रहस्य)"},
+      {"word_idx": 1, "gloss_text": "भक्ती-युक्त शिष्याला"},
+      {"word_idx": 2, "gloss_text": "गुरु-घातकी (गुरुचा घात करणारा)"}
+    ],
+    "1.163": [
+      {"word_idx": 0, "gloss_text": "अशा प्रकारे विज्ञान-भैरवामध्ये"},
+      {"word_idx": 1, "gloss_text": "श्रीदेवीच्या स्तवन-स्वरूपात"},
+      {"word_idx": 2, "gloss_text": "एकशे (शंभर)"},
+      {"word_idx": 3, "gloss_text": "बारा अधिक"},
+      {"word_idx": 4, "gloss_text": "सांगितलेले आहे"},
+      {"word_idx": 5, "gloss_text": "भेद-रहित"}
+    ]
+  }
+}

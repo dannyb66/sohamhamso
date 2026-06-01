@@ -6,396 +6,1085 @@
   "ai_assisted": true,
   "status": "published",
   "verses": {
-    "1.1": [
-      {"word_idx": 0, "gloss_text": "જેમના"},
-      {"word_idx": 1, "gloss_text": "ઉન્મેષ અને નિમેષ (નેત્રો ખોલવા-મીંચવા) દ્વારા"},
-      {"word_idx": 2, "gloss_text": "જગતનો"},
-      {"word_idx": 3, "gloss_text": "પ્રલય અને ઉદય"},
-      {"word_idx": 4, "gloss_text": "શક્તિચક્રના વૈભવના સ્રોત"},
-      {"word_idx": 5, "gloss_text": "શંકરને (શિવ, કલ્યાણકારી)"},
-      {"word_idx": 6, "gloss_text": "અમે સ્તુતિ કરીએ છીએ"}
-    ],
-    "1.2": [
-      {"word_idx": 0, "gloss_text": "જેમાં"},
-      {"word_idx": 1, "gloss_text": "સ્થિત છે"},
-      {"word_idx": 2, "gloss_text": "આ સર્વ"},
-      {"word_idx": 3, "gloss_text": "કાર્ય (કૃત જગત)"},
-      {"word_idx": 4, "gloss_text": "જેમાંથી"},
-      {"word_idx": 5, "gloss_text": "અને (સર્વ) નિર્ગત થયું છે"},
-      {"word_idx": 6, "gloss_text": "તેને માટે"},
-      {"word_idx": 7, "gloss_text": "અનાવૃત સ્વરૂપને કારણે"},
-      {"word_idx": 8, "gloss_text": "નિરોધ નથી"},
-      {"word_idx": 9, "gloss_text": "ક્યાંય"}
-    ],
     "1.3": [
-      {"word_idx": 0, "gloss_text": "જાગ્રત આદિ અવસ્થાઓના ભેદમાં"},
-      {"word_idx": 1, "gloss_text": "તેનાથી અભિન્ન"},
-      {"word_idx": 2, "gloss_text": "પ્રસરે છે છતાં"},
-      {"word_idx": 3, "gloss_text": "નિવૃત્ત થાય છે (નહીં)"},
-      {"word_idx": 4, "gloss_text": "પોતાના સ્વભાવમાંથી"},
-      {"word_idx": 5, "gloss_text": "ઉપલબ્ધા (પ્રત્યક્ષકર્તા) રૂપે"}
+      {
+        "word_idx": 1,
+        "gloss_text": "પણ, કૂદાં (અવ્યય)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "પોતાના (સ્વરૂપથી) — પુ.પંચમી.એક."
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ક્યારેય નહીં (નકાર + નિશ્ચય)"
+      }
     ],
     "1.4": [
-      {"word_idx": 0, "gloss_text": "'હું સુખી'"},
-      {"word_idx": 1, "gloss_text": "દુઃખી"},
-      {"word_idx": 2, "gloss_text": "આસક્ત"},
-      {"word_idx": 3, "gloss_text": "સંવિત્તિઓ (બોધો)"},
-      {"word_idx": 4, "gloss_text": "સુખાદિ અવસ્થાઓમાં અનુસ્યૂત (પરોવાયેલ)માં"},
-      {"word_idx": 5, "gloss_text": "અન્યત્ર (બીજા આશ્રયમાં)"},
-      {"word_idx": 6, "gloss_text": "સ્પષ્ટ રીતે"}
+      {
+        "word_idx": 1,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ઇત્યાદિ ('હું છું' આદિ પ્રતીતિ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "વિદ્યમાન છે, પ્રવર્તે છે (વર્ત. પ્ર.બહુ. આ. √vṛt)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "તેઓ (સંવિત્તિઓ) — સ્ત્રી.કર્તા.બહુ."
+      }
     ],
     "1.5": [
-      {"word_idx": 0, "gloss_text": "દુઃખ"},
-      {"word_idx": 1, "gloss_text": "સુખ"},
-      {"word_idx": 2, "gloss_text": "ગ્રાહ્ય (વિષય)"},
-      {"word_idx": 3, "gloss_text": "ગ્રાહક (વિષયી)"},
-      {"word_idx": 4, "gloss_text": "મૂઢ-ભાવ (જડતાની સ્થિતિ)"},
-      {"word_idx": 5, "gloss_text": "પરમાર્થે (પરમ સત્યમાં)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "જ્યાં, જે (અવસ્થામાં) — સંબંધવાચક"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "અને નહીં (નકાર-સહિત)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "છે જ નહીં (નકાર + વર્ત.એક.)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "પણ, કૂદાં (અવ્યય)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "તે (સ્પંદ તત્ત્વ) — નપું.કર્તા.એક."
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "છે, વિદ્યમાન છે (વર્ત.એક. √as)"
+      }
     ],
     "1.6": [
-      {"word_idx": 0, "gloss_text": "કરણસમૂહ (ઇન્દ્રિય-સમૂહ)"},
-      {"word_idx": 1, "gloss_text": "વિમૂઢ (જડ)"},
-      {"word_idx": 2, "gloss_text": "જાણે અમૂઢ (ચેતન) હોય તેમ"},
-      {"word_idx": 3, "gloss_text": "અંતર (અંતઃકરણ) ચક્ર સહિત"},
-      {"word_idx": 4, "gloss_text": "પ્રવૃત્તિ, સ્થિતિ, સંહૃતિઓ"}
+      {
+        "word_idx": 0,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "આ — પુ.કર્તા.એક. સર્વ."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "સ્વયં, જાતે"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "સાથે, સહિત (અવ્યય)"
+      }
     ],
     "1.7": [
-      {"word_idx": 0, "gloss_text": "તે માટેના પ્રયત્નથી"},
-      {"word_idx": 1, "gloss_text": "પરીક્ષણીય"},
-      {"word_idx": 2, "gloss_text": "તત્ત્વ (પરમ સત્ય)"},
-      {"word_idx": 3, "gloss_text": "સ્વતંત્રતા"},
-      {"word_idx": 4, "gloss_text": "અકૃત્રિમ (સ્વાભાવિક)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "પ્રાપ્ત કરે છે (વર્ત. આ.એક. √labh)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "આદરથી, શ્રદ્ધાથી — પુ.પંચમી.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તે (સાધકનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "સર્વત્ર, બધે જ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "આ (સ્વાતંત્ર્ય) — સ્ત્રી.કર્તા.એક."
+      }
     ],
     "1.8": [
-      {"word_idx": 0, "gloss_text": "ઇચ્છાની પ્રેરણાનો"},
-      {"word_idx": 1, "gloss_text": "પ્રેરક રૂપે"},
-      {"word_idx": 2, "gloss_text": "આત્મ-બળના સ્પર્શથી"},
-      {"word_idx": 3, "gloss_text": "પુરુષ"},
-      {"word_idx": 4, "gloss_text": "તેની સમાન"}
+      {
+        "word_idx": 0,
+        "gloss_text": "કેમ કે નહીં, ચોક્કસ નહીં"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "આ (આત્મા) — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "પ્રવર્તે છે, ચાલે છે (વર્ત.એક. √vṛt)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "પરંતુ, ઊલટું (વિરોધ-નિરાસ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "થાય, થઈ શકે (વિધિ.એક. √bhū)"
+      }
     ],
     "1.9": [
-      {"word_idx": 0, "gloss_text": "નિજ અશુદ્ધિ (પોતાની અશુદ્ધિ)"},
-      {"word_idx": 1, "gloss_text": "અસમર્થનો"},
-      {"word_idx": 2, "gloss_text": "કર્તવ્યોમાં"},
-      {"word_idx": 3, "gloss_text": "અભિલાષીનો"},
-      {"word_idx": 4, "gloss_text": "ક્ષોભ"},
-      {"word_idx": 5, "gloss_text": "વિલીન થાય"},
-      {"word_idx": 6, "gloss_text": "પરમ પદ"}
+      {
+        "word_idx": 4,
+        "gloss_text": "જ્યારે — કાળવાચક સંબંધ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      }
     ],
     "1.10": [
-      {"word_idx": 0, "gloss_text": "અકૃત્રિમ"},
-      {"word_idx": 1, "gloss_text": "ધર્મ (સ્વભાવ)"},
-      {"word_idx": 2, "gloss_text": "જ્ઞત્વ અને કર્તૃત્વ લક્ષણવાળો"},
-      {"word_idx": 3, "gloss_text": "ઇચ્છિત"},
-      {"word_idx": 4, "gloss_text": "જાણે છે"},
-      {"word_idx": 5, "gloss_text": "કરે છે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "આનું (સાધકનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "તેને — નપું.કર્મ.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "બધું જ — નપું.કર્મ/કર્તા.એક."
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "અને (અવ્યય)"
+      }
     ],
     "1.11": [
-      {"word_idx": 0, "gloss_text": "અધિષ્ઠાતા-ભાવે"},
-      {"word_idx": 1, "gloss_text": "સ્વભાવને"},
-      {"word_idx": 2, "gloss_text": "જોતો"},
-      {"word_idx": 3, "gloss_text": "વિસ્મયથી હસતો (જેવો)"},
-      {"word_idx": 4, "gloss_text": "કુસૃતિ (દુષ્ટ માર્ગ — સંસાર)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તેને (શંકર, આત્મા) — પુ.કર્મ.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "જેવું, માફક (ઉપમાવાચક)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "રહે છે, સ્થિત રહે છે (વર્ત. આ.એક. √ās)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "જે — પુ.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "તેનું — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "આ — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ક્યાંથી? (એટલે કે ક્યાંયથી નહીં) — પ્રશ્નાર્થક"
+      }
     ],
     "1.12": [
-      {"word_idx": 0, "gloss_text": "અભાવ (શૂન્ય)"},
-      {"word_idx": 1, "gloss_text": "ભાવ્યતા (ધ્યાન-વિષય હોવાની સ્થિતિ)"},
-      {"word_idx": 2, "gloss_text": "[draft] અમૂઢતા (જાગૃતિ)"},
-      {"word_idx": 3, "gloss_text": "[draft] અભિયોગ-સંસ્પર્શથી (પાછળથી થતા વિચારના સ્પર્શથી)"},
-      {"word_idx": 4, "gloss_text": "નિશ્ચય (દૃઢ બોધ)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "પહોંચે છે, આવે છે (વર્ત.એક. √i)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "અને નહીં (નકાર-સહિત)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ત્યાં, તેમાં — ક્રિયાવિશેષણ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "છે, વિદ્યમાન છે (વર્ત.એક. √as)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "હતું, વિદ્યમાન હતું (ભૂત.એક. √as)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)"
+      }
     ],
     "1.13": [
-      {"word_idx": 0, "gloss_text": "કૃત્રિમ (કલ્પિત)"},
-      {"word_idx": 1, "gloss_text": "જ્ઞેય (જાણવા યોગ્ય)"},
-      {"word_idx": 2, "gloss_text": "સુષુપ્તિ-પદની જેમ"},
-      {"word_idx": 3, "gloss_text": "[draft] સ્મર્યમાણત્વ (સ્મૃતિનો વિષય બનવાની સ્થિતિ)"},
-      {"word_idx": 4, "gloss_text": "તે તત્ત્વ (પરમ સત્ય)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આથી, એ કારણે"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "તે (શૂન્યાવસ્થા) — નપું.કર્તા.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "સદા, હંમેશા"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "પરંતુ નહીં (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "આ રીતે, એમ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "પ્રાપ્ત થાય છે, અનુભવાય છે (વર્ત. આ.એક. √prati-pad)"
+      }
     ],
     "1.14": [
-      {"word_idx": 0, "gloss_text": "અવસ્થા-યુગલ (બે અવસ્થા)"},
-      {"word_idx": 1, "gloss_text": "કાર્ય અને કર્તૃત્વ — એમ નામિત"},
-      {"word_idx": 2, "gloss_text": "કાર્યતા (કાર્ય હોવાની સ્થિતિ)"},
-      {"word_idx": 3, "gloss_text": "ક્ષયશીલ"},
-      {"word_idx": 4, "gloss_text": "કર્તૃત્વ"},
-      {"word_idx": 5, "gloss_text": "અક્ષય"}
+      {
+        "word_idx": 1,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "અહીં, આમાં"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ત્યાં, તેમાં — ક્રિયાવિશેષણ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ફરી, ફરીથી"
+      }
     ],
     "1.15": [
-      {"word_idx": 0, "gloss_text": "કાર્યોન્મુખ (કાર્ય તરફ વળેલો)"},
-      {"word_idx": 1, "gloss_text": "પ્રયત્ન"},
-      {"word_idx": 2, "gloss_text": "લોપ પામે છે (દબાય છે)"},
-      {"word_idx": 3, "gloss_text": "વિલુપ્ત (નષ્ટ)"},
-      {"word_idx": 4, "gloss_text": "અબુધ (અવિવેકી)"}
+      {
+        "word_idx": 2,
+        "gloss_text": "જે (તત્ત્વ, પ્રયત્ન) — પુ.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "કેવળ, માત્ર"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "તે (પ્રયત્ન) — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "અહીં, આમાં"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તે (પ્રયત્નમાં) — પુ.સપ્ત.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "લુપ્ત થતાં (પુ.સપ્ત.એક. ppp √lup)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "હું છું (વર્ત. ઉ.એક. √as)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "એમ નિર્ણય કરે છે (વર્ત. આ.એક. √prati-pad)"
+      }
     ],
     "1.16": [
-      {"word_idx": 0, "gloss_text": "અંતર્મુખ"},
-      {"word_idx": 1, "gloss_text": "ભાવ (પ્રિન્સિપલ)"},
-      {"word_idx": 2, "gloss_text": "સર્વજ્ઞત્વ-ગુણનું આશ્રયસ્થાન"},
-      {"word_idx": 3, "gloss_text": "ઉપલબ્ધિનો લોપ (પ્રત્યક્ષનો અભાવ)"},
-      {"word_idx": 4, "gloss_text": "અનુપલમ્ભક (ન-પ્રત્યક્ષ-કર્તા)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "પરંતુ નહીં (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "જે (તત્ત્વ, પ્રયત્ન) — પુ.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "તે (આંતર તત્ત્વનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "છે, વિદ્યમાન છે (વર્ત.એક. √as)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "કેમ કે, ચોક્કસ (હેત્વર્થક)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "બીજો (કોઈ) — પુ.કર્તા.એક."
+      }
     ],
     "1.17": [
-      {"word_idx": 0, "gloss_text": "ઉપલબ્ધા (પ્રત્યક્ષકર્તા)"},
-      {"word_idx": 1, "gloss_text": "ત્રિપદ (ત્રણ અવસ્થા)માં અવ્યભિચારી"},
-      {"word_idx": 2, "gloss_text": "સુપ્રબુદ્ધ (પૂર્ણ જાગૃત)નો"},
-      {"word_idx": 3, "gloss_text": "તેના આદિ અને અંતે"},
-      {"word_idx": 4, "gloss_text": "બીજાનો (અપૂર્ણ જાગૃત)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તે (આંતર તત્ત્વનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "નિરંતર, સતત"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "નિત્ય, હંમેશા"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      }
     ],
     "1.18": [
-      {"word_idx": 0, "gloss_text": "જ્ઞાન અને જ્ઞેયના સ્વરૂપવાળી"},
-      {"word_idx": 1, "gloss_text": "પરમા શક્તિ સાથે"},
-      {"word_idx": 2, "gloss_text": "બે પદો (જાગ્રત-સ્વપ્ન)માં"},
-      {"word_idx": 3, "gloss_text": "વિભુ (પ્રભુ)"},
-      {"word_idx": 4, "gloss_text": "ચિન્માત્ર (કેવળ ચૈતન્ય)"}
+      {
+        "word_idx": 2,
+        "gloss_text": "યુક્ત, જોડાયેલ (પુ.કર્તા.એક. ppp √yu)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "પ્રકાશિત થાય છે, ભાસે છે (વર્ત.એક. √bhā)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "તેનાથી અન્યત્ર (સુષુપ્તિ, તુરીય આદિમાં)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      }
     ],
     "1.19": [
-      {"word_idx": 0, "gloss_text": "ગુણ આદિના સ્પંદ-નિષ્યન્દો (વિશેષ સ્પંદ-પ્રવાહો)"},
-      {"word_idx": 1, "gloss_text": "સામાન્ય સ્પંદના આશ્રયથી"},
-      {"word_idx": 2, "gloss_text": "પોતાની સત્તા પ્રાપ્ત"},
-      {"word_idx": 3, "gloss_text": "જ્ઞાનીના"},
-      {"word_idx": 4, "gloss_text": "અપરિપંથી (અવરોધક નહીં)"}
+      {
+        "word_idx": 3,
+        "gloss_text": "નિરંતર, સતત"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "હોય (વિધિ.બહુ. √as)"
+      }
     ],
     "1.20": [
-      {"word_idx": 0, "gloss_text": "અપ્રબુદ્ધ બુદ્ધિવાળાઓને"},
-      {"word_idx": 1, "gloss_text": "સ્વ-સ્થિતિને ઢાંકવા તત્પર"},
-      {"word_idx": 2, "gloss_text": "પાડી દે છે (નાખે છે)"},
-      {"word_idx": 3, "gloss_text": "દુરુત્તાર (પાર કરવો કઠિન)"},
-      {"word_idx": 4, "gloss_text": "સંસાર-માર્ગમાં"}
+      {
+        "word_idx": 1,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "આ (ગુણ-સ્પંદ, મંત્રો) — પુ.કર્તા.બહુ."
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ઘોર (સંસારમાં) — નપું.સપ્ત.એક."
+      }
     ],
     "1.21": [
-      {"word_idx": 0, "gloss_text": "સતત ઉદ્યુક્ત (પ્રયત્નશીલ)"},
-      {"word_idx": 1, "gloss_text": "સ્પંદ-તત્ત્વના વિવેક માટે"},
-      {"word_idx": 2, "gloss_text": "જાગ્રતમાં જ"},
-      {"word_idx": 3, "gloss_text": "પોતાનો સાચો ભાવ"},
-      {"word_idx": 4, "gloss_text": "થોડા સમયમાં"},
-      {"word_idx": 5, "gloss_text": "પ્રાપ્ત કરે છે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આથી, એ કારણે"
+      }
     ],
     "1.22": [
-      {"word_idx": 0, "gloss_text": "અતિક્રુદ્ધ"},
-      {"word_idx": 1, "gloss_text": "અતિપ્રહૃષ્ટ"},
-      {"word_idx": 2, "gloss_text": "'હું શું કરું?'"},
-      {"word_idx": 3, "gloss_text": "વિચારતો"},
-      {"word_idx": 4, "gloss_text": "દોડતો"},
-      {"word_idx": 5, "gloss_text": "જે પદ (અવસ્થા)"},
-      {"word_idx": 6, "gloss_text": "પ્રતિષ્ઠિત છે"}
+      {
+        "word_idx": 2,
+        "gloss_text": "અથવા, કે (વિકલ્પ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "અથવા, કે (વિકલ્પ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "અથવા, કે (વિકલ્પ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "જાય, પહોંચે (વિધિ.એક. √gam)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ત્યાં, તેમાં — ક્રિયાવિશેષણ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "સ્પંદ (દિવ્ય સ્પંદન) — પુ.કર્તા.એક."
+      }
     ],
     "1.23": [
-      {"word_idx": 0, "gloss_text": "આશ્રય લઈને"},
-      {"word_idx": 1, "gloss_text": "[draft] કહેશે"},
-      {"word_idx": 2, "gloss_text": "અવશ્ય"},
-      {"word_idx": 3, "gloss_text": "હું કરીશ"},
-      {"word_idx": 4, "gloss_text": "[draft] સંકલ્પ કરીને"},
-      {"word_idx": 5, "gloss_text": "રહે છે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "જે — સ્ત્રી.કર્મ.એક. સંબંધ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "અવસ્થાને — સ્ત્રી.કર્મ.એક."
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "જે પણ — નપું.કર્મ.એક. સંબંધ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "આ (પ્રતિવાદી) — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "મારું — ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તેને — નપું.કર્મ.એક."
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "હું — કર્તા.એક."
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)"
+      }
     ],
     "1.24": [
-      {"word_idx": 0, "gloss_text": "તેનો આશ્રય લઈને"},
-      {"word_idx": 1, "gloss_text": "ઊર્ધ્વ માર્ગથી"},
-      {"word_idx": 2, "gloss_text": "ચંદ્ર અને સૂર્ય (ઇડા-પિંગળા / પ્રાણ-અપાન)"},
-      {"word_idx": 3, "gloss_text": "સૌષુમ્ન માર્ગમાં"},
-      {"word_idx": 4, "gloss_text": "અસ્ત થયેલા (વિલીન)"},
-      {"word_idx": 5, "gloss_text": "બ્રહ્માંડ-ગોચર (બ્રહ્માંડનો ક્ષેત્ર)"}
+      {
+        "word_idx": 3,
+        "gloss_text": "બંને જ (પુ.કર્તા.દ્વિ. + અવ્યય)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "છોડીને, ત્યજીને (પૂર્વ-કાલિક √hā)"
+      }
     ],
     "1.25": [
-      {"word_idx": 0, "gloss_text": "મહાવ્યોમ (ચૈતન્યના મહા આકાશ)માં"},
-      {"word_idx": 1, "gloss_text": "જ્યાં ચંદ્ર-સૂર્ય પ્રલીન થયા છે"},
-      {"word_idx": 2, "gloss_text": "સુષુપ્તિ-પદની જેમ"},
-      {"word_idx": 3, "gloss_text": "મૂઢ (અજ્ઞાની)"},
-      {"word_idx": 4, "gloss_text": "પ્રબુદ્ધ (જાગૃત)"},
-      {"word_idx": 5, "gloss_text": "અનાવૃત (અનાચ્છાદિત)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "તેમાં — નપું.સપ્ત.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      }
     ],
     "2.1": [
-      {"word_idx": 0, "gloss_text": "તે બળને આક્રમીને"},
-      {"word_idx": 1, "gloss_text": "મંત્રો"},
-      {"word_idx": 2, "gloss_text": "સર્વજ્ઞ-બળથી શાલિન (સંપન્ન)"},
-      {"word_idx": 3, "gloss_text": "અધિકાર (પોતાના કાર્ય) માટે"},
-      {"word_idx": 4, "gloss_text": "જેમ કરણો (ઇન્દ્રિયો)"}
+      {
+        "word_idx": 3,
+        "gloss_text": "પ્રવર્તે છે, ઉદ્યત થાય છે (વર્ત.બહુ. √pra-vṛt)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "આ (મંત્રો) — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "દેહધારીઓનું — પુ.ષષ્ઠી.બહુ."
+      }
     ],
     "2.2": [
-      {"word_idx": 0, "gloss_text": "સંપૂર્ણપણે વિલીન થાય છે"},
-      {"word_idx": 1, "gloss_text": "શાંત રૂપવાળાં"},
-      {"word_idx": 2, "gloss_text": "નિરંજન (નિર્મલ)"},
-      {"word_idx": 3, "gloss_text": "આરાધક (ઉપાસક)ના ચિત્ત સહિત"},
-      {"word_idx": 4, "gloss_text": "શિવ-ધર્મી (શિવ-સ્વભાવ)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "ત્યાં જ, તેમાં જ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "સાથે, સહિત (અવ્યય)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "તેના વડે, આથી — નપું.કરણ.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "આ (ગુણ-સ્પંદ, મંત્રો) — પુ.કર્તા.બહુ."
+      }
     ],
     "2.3": [
-      {"word_idx": 0, "gloss_text": "સર્વમય (સર્વસ્વરૂપ)"},
-      {"word_idx": 1, "gloss_text": "જીવ"},
-      {"word_idx": 2, "gloss_text": "સર્વ ભાવોના સમુદ્ભવને કારણે"},
-      {"word_idx": 3, "gloss_text": "તે અંગેની સંવેદન-રૂપે"},
-      {"word_idx": 4, "gloss_text": "તાદાત્મ્ય-પ્રતિપત્તિથી (એકતાના બોધથી)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "જેનાથી, કેમ કે — પંચમી-સંબંધ"
+      }
     ],
     "2.4": [
-      {"word_idx": 0, "gloss_text": "શબ્દ અને અર્થના ચિંતનોમાં"},
-      {"word_idx": 1, "gloss_text": "અવસ્થા"},
-      {"word_idx": 2, "gloss_text": "શિવ"},
-      {"word_idx": 3, "gloss_text": "ભોક્તા"},
-      {"word_idx": 4, "gloss_text": "ભોગ્યના રૂપે"},
-      {"word_idx": 5, "gloss_text": "સંસ્થિત (પ્રતિષ્ઠિત)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તેનાથી, આથી"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "તે (અવસ્થા) — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "જે (સમાપત્તિ, અવસ્થા) — સ્ત્રી.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "જ, ચોક્કસપણે (નિશ્ચયાર્થક)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "સદા, હંમેશા"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "સર્વત્ર, બધે જ"
+      }
     ],
     "2.5": [
-      {"word_idx": 0, "gloss_text": "સંવિત્તિ (દૃઢ બોધ)"},
-      {"word_idx": 1, "gloss_text": "ક્રીડારૂપે (શિવની લીલા તરીકે)"},
-      {"word_idx": 2, "gloss_text": "સમગ્ર જગત"},
-      {"word_idx": 3, "gloss_text": "જોતો"},
-      {"word_idx": 4, "gloss_text": "યુક્ત (સતત આ બોધમાં જોડાયેલો)"},
-      {"word_idx": 5, "gloss_text": "જીવન્મુક્ત"}
+      {
+        "word_idx": 0,
+        "gloss_text": "એમ, એ પ્રમાણે (ઉદ્ધરણ-સમાપક)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "અથવા, કે (વિકલ્પ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "જેનું — પુ.ષષ્ઠી.એક. સંબંધ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "તે — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "નિરંતર, સતત"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "(આમાં) કોઈ સંશય નથી"
+      }
     ],
     "2.6": [
-      {"word_idx": 0, "gloss_text": "ઉદય"},
-      {"word_idx": 1, "gloss_text": "ધ્યેયનો (ધ્યાન-વિષયનો)"},
-      {"word_idx": 2, "gloss_text": "ધ્યાયિ-ચિત્તમાં (ધ્યાન કરનારના ચિત્તમાં)"},
-      {"word_idx": 3, "gloss_text": "તાદાત્મ્ય-સમાપત્તિ (એકાત્મ-પ્રાપ્તિ)"},
-      {"word_idx": 4, "gloss_text": "ઇચ્છુક સાધકની"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આ — પુ.કર્તા.એક. સર્વ."
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "જ, ચોક્કસપણે (નિશ્ચયાર્થક)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "તેનું — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "જે (સમાપત્તિ, અવસ્થા) — સ્ત્રી.કર્તા.એક. સંબંધ"
+      }
     ],
     "2.7": [
-      {"word_idx": 0, "gloss_text": "અમૃત-પ્રાપ્તિ"},
-      {"word_idx": 1, "gloss_text": "આત્માનો ગ્રહ (પોતાનું ગ્રહણ)"},
-      {"word_idx": 2, "gloss_text": "નિર્વાણ-દીક્ષા"},
-      {"word_idx": 3, "gloss_text": "શિવના સદ્ભાવને આપતી"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આ (સમાપત્તિ) — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "જ, ચોક્કસપણે (નિશ્ચયાર્થક)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "આ — પુ.કર્તા.એક. સર્વ."
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "જ, ચોક્કસપણે (નિશ્ચયાર્થક)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "આ (સમાપત્તિ) — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "અને (અવ્યય)"
+      }
     ],
     "3.1": [
-      {"word_idx": 0, "gloss_text": "ઇચ્છા પ્રમાણે પ્રાર્થના કરાયેલ"},
-      {"word_idx": 1, "gloss_text": "ધાતા (ધારણ કરનાર — સ્પંદ)"},
-      {"word_idx": 2, "gloss_text": "જાગ્રત (વ્યક્તિ)નો"},
-      {"word_idx": 3, "gloss_text": "સોમ-સૂર્યનો ઉદય (અપાન-પ્રાણનો)"},
-      {"word_idx": 4, "gloss_text": "સંપાદિત કરે છે"},
-      {"word_idx": 5, "gloss_text": "દેહધારી માટે"}
+      {
+        "word_idx": 3,
+        "gloss_text": "અર્થોને (વિષયોને) — પુ.કર્મ.બહુ."
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "હૃદયમાં — નપું.સપ્ત.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "સ્થિત, અવસ્થિત (પુ.કર્મ.બહુ. ppp √sthā)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "કરીને, ઉત્પન્ન કરીને (પૂર્વ-કાલિક √kṛ)"
+      }
     ],
     "3.2": [
-      {"word_idx": 0, "gloss_text": "અભીષ્ટ અર્થો (ઇચ્છિત વસ્તુઓ)"},
-      {"word_idx": 1, "gloss_text": "પ્રણયને અતિક્રમ્યા વિના"},
-      {"word_idx": 2, "gloss_text": "વધુ સ્પષ્ટ રીતે"},
-      {"word_idx": 3, "gloss_text": "મધ્યમાં સ્થિત"},
-      {"word_idx": 4, "gloss_text": "પ્રકાશિત કરે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તેમ, એ જ રીતે"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "સ્વપ્નમાં — પુ.સપ્ત.એક."
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "પણ, કૂદાં (અવ્યય)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "નિત્ય, હંમેશા"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "અવશ્ય, ચોક્કસપણે"
+      }
     ],
     "3.3": [
-      {"word_idx": 0, "gloss_text": "[draft] સ્વતંત્ર"},
-      {"word_idx": 1, "gloss_text": "સૃષ્ટિ"},
-      {"word_idx": 2, "gloss_text": "[draft] તેની (સ્પંદની) ધર્મકતાને કારણે"},
-      {"word_idx": 3, "gloss_text": "લૌકિક (અપ્રબુદ્ધ વ્યક્તિ)નું"},
-      {"word_idx": 4, "gloss_text": "જાગ્રત-સ્વપ્ન — એ બે પદોમાં"}
+      {
+        "word_idx": 0,
+        "gloss_text": "અન્યથા, બીજી રીતે"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "નિરંતર, સતત"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "જેવું, માફક (ઉપમાવાચક)"
+      }
     ],
     "3.4": [
-      {"word_idx": 0, "gloss_text": "અર્થ (વસ્તુ)"},
-      {"word_idx": 1, "gloss_text": "અસ્ફુટ (અસ્પષ્ટ)"},
-      {"word_idx": 2, "gloss_text": "સાવધાન ચિત્તમાં"},
-      {"word_idx": 3, "gloss_text": "વધુ સ્ફુટ (વધુ સ્પષ્ટ)"},
-      {"word_idx": 4, "gloss_text": "સ્વ-બળના ઉદ્યોગથી ભાવિત"}
+      {
+        "word_idx": 0,
+        "gloss_text": "જેમ, જે રીતે — સંબંધવાચક"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "કેમ કે, ચોક્કસ (હેત્વર્થક)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "જોવાયેલો (પુ.કર્તા.એક. ppp √dṛś)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "પણ, કૂદાં (અવ્યય)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ફરી, વારંવાર"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "પ્રકાશિત થાય છે, ભાસે છે (વર્ત.એક. √bhā)"
+      }
     ],
     "3.5": [
-      {"word_idx": 0, "gloss_text": "પરમાર્થે"},
-      {"word_idx": 1, "gloss_text": "સ્થિત"},
-      {"word_idx": 2, "gloss_text": "બળને આક્રમીને"},
-      {"word_idx": 3, "gloss_text": "અલ્પ સમયમાં (થોડા સમયમાં)"},
-      {"word_idx": 4, "gloss_text": "પ્રવર્તે છે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તેમ, એ જ રીતે"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "જે (કંઈ) — નપું.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "જેના વડે — પુ.કરણ.એક. સંબંધ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "જ્યાં, જે (અવસ્થામાં) — સંબંધવાચક"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "જેમ, જે રીતે — સંબંધવાચક"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તે — નપું.કર્તા.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "તેમ, એ જ રીતે"
+      }
     ],
     "3.6": [
-      {"word_idx": 0, "gloss_text": "દુર્બળ"},
-      {"word_idx": 1, "gloss_text": "તેને આક્રમીને"},
-      {"word_idx": 2, "gloss_text": "કાર્યમાં"},
-      {"word_idx": 3, "gloss_text": "પ્રવૃત્ત થાય છે"},
-      {"word_idx": 4, "gloss_text": "ભૂખને દબાવી દે"},
-      {"word_idx": 5, "gloss_text": "અતિ ભૂખ્યો"}
+      {
+        "word_idx": 1,
+        "gloss_text": "પણ, કૂદાં (અવ્યય)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "તેમ, એ જ રીતે"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "જે — પુ.કર્તા.એક. સંબંધ"
+      }
     ],
     "3.7": [
-      {"word_idx": 0, "gloss_text": "અધિષ્ઠિત દેહમાં (સ્પંદ-અધિષ્ઠિત શરીરમાં)"},
-      {"word_idx": 1, "gloss_text": "સર્વજ્ઞતા આદિ"},
-      {"word_idx": 2, "gloss_text": "સ્વ-આત્મામાં અધિષ્ઠાનથી"},
-      {"word_idx": 3, "gloss_text": "સર્વત્ર"},
-      {"word_idx": 4, "gloss_text": "એ રીતે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આના (સ્પંદ તત્ત્વ) વડે — નપું.કરણ.એક."
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "જેમ, જે રીતે — સંબંધવાચક"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "તેમ, એ જ રીતે"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "થશે (ભવિ.એક. √bhū)"
+      }
     ],
     "3.8": [
-      {"word_idx": 0, "gloss_text": "ગ્લાનિ (થાક-ઉદાસીનતા)"},
-      {"word_idx": 1, "gloss_text": "વિલુણ્ઠિકા (લૂંટનારી)"},
-      {"word_idx": 2, "gloss_text": "અજ્ઞાનથી"},
-      {"word_idx": 3, "gloss_text": "સૃતિ (ઉદ્ભવ)"},
-      {"word_idx": 4, "gloss_text": "તેના (સ્પંદના) ઉન્મેષથી નષ્ટ"},
-      {"word_idx": 5, "gloss_text": "અહેતુક (વિના કારણે)"}
+      {
+        "word_idx": 2,
+        "gloss_text": "દેહમાં — પુ.સપ્ત.એક."
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "તેની (ગ્લાનિની) — સ્ત્રી.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "જો (શરતાર્થક)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ક્યાંથી? (એટલે કે ક્યાંયથી નહીં) — પ્રશ્નાર્થક"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "તે (ગ્લાનિ) — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      }
     ],
     "3.9": [
-      {"word_idx": 0, "gloss_text": "એક ચિંતામાં લીન વ્યક્તિના"},
-      {"word_idx": 1, "gloss_text": "બીજા (વિચાર)નો ઉદય"},
-      {"word_idx": 2, "gloss_text": "ઉન્મેષ (ખુલવું / ઝબકાર)"},
-      {"word_idx": 3, "gloss_text": "જ્ઞેય (જાણવા યોગ્ય)"},
-      {"word_idx": 4, "gloss_text": "નિરીક્ષણ કરવો"}
+      {
+        "word_idx": 1,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "હોય, હોઈ શકે (વિધિ.એક. √as)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "તે — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "સ્વયં, જાતે"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "તેને (ઉન્મેષને) — પુ.કર્મ.એક."
+      }
     ],
     "3.10": [
-      {"word_idx": 0, "gloss_text": "બિન્દુ (પ્રકાશનું બિન્દુ)"},
-      {"word_idx": 1, "gloss_text": "નાદ (આંતરિક ધ્વનિ)"},
-      {"word_idx": 2, "gloss_text": "રૂપ/રંગ"},
-      {"word_idx": 3, "gloss_text": "રસ (સૂક્ષ્મ સ્વાદ)"},
-      {"word_idx": 4, "gloss_text": "ક્ષોભક (ઉત્તેજક) રૂપે"}
+      {
+        "word_idx": 0,
+        "gloss_text": "આથી, એ કારણે"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "આથી, એ કારણે"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "આનાથી — નપું.પંચમી.એક."
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "આથી, એ કારણે"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "પ્રવર્તે છે, ઉદ્યત થાય છે (વર્ત.બહુ. √pra-vṛt)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "જલ્દી જ, શીઘ્ર"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "દેહધારી માટે — પુ.ષષ્ઠી.એક."
+      }
     ],
     "3.11": [
-      {"word_idx": 0, "gloss_text": "જોવાની ઇચ્છાથી"},
-      {"word_idx": 1, "gloss_text": "સર્વ અર્થોને વ્યાપીને"},
-      {"word_idx": 2, "gloss_text": "રહે છે (અવસ્થિત છે)"},
-      {"word_idx": 3, "gloss_text": "વધુ કહેવાથી શું"},
-      {"word_idx": 4, "gloss_text": "જાણી લેવાશે"}
+      {
+        "word_idx": 1,
+        "gloss_text": "જેવું, માફક (ઉપમાવાચક)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "જ્યારે — કાળવાચક સંબંધ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "સ્વયં, જાતે"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "જ, ચોક્કસપણે (નિશ્ચયાર્થક)"
+      }
     ],
     "3.12": [
-      {"word_idx": 0, "gloss_text": "પ્રબુદ્ધ (જાગૃત)"},
-      {"word_idx": 1, "gloss_text": "રહેવો જોઈએ"},
-      {"word_idx": 2, "gloss_text": "જ્ઞાન વડે જોઈને"},
-      {"word_idx": 3, "gloss_text": "ગોચર (ઇન્દ્રિય-ક્ષેત્ર)"},
-      {"word_idx": 4, "gloss_text": "એક (તત્ત્વ)માં આરોપિત કરે"},
-      {"word_idx": 5, "gloss_text": "પીડિત થતો નથી"}
+      {
+        "word_idx": 1,
+        "gloss_text": "સર્વદા, દરેક સમયે"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "બધું જ — નપું.કર્મ/કર્તા.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તેનાથી, ત્યારબાદ — પંચમી-વાચક"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "બીજા (વસ્તુ) વડે — નપું.કરણ.એક."
+      }
     ],
     "3.13": [
-      {"word_idx": 0, "gloss_text": "શબ્દરાશિ (વર્ણસમૂહ)માંથી સમુત્થિતના"},
-      {"word_idx": 1, "gloss_text": "શક્તિવર્ગના (શક્તિ-સમૂહના)"},
-      {"word_idx": 2, "gloss_text": "ભોગ્યતા (ભોગ-વિષય હોવાની સ્થિતિ)"},
-      {"word_idx": 3, "gloss_text": "કલા (પરિમિત-કરનારી શક્તિ) દ્વારા વૈભવ લુપ્ત"},
-      {"word_idx": 4, "gloss_text": "પશુ (બદ્ધ જીવ — અક્ષરશઃ પશુ)"}
+      {
+        "word_idx": 4,
+        "gloss_text": "ગયેલો, પ્રાપ્ત (પુ.કર્તા.એક. ppp √gam)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "હોવા છતાં, વિદ્યમાન (વર્ત.કૃ. પુ.કર્તા.એક. √as)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "તે — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "કહેવાય છે, ગણાય છે (પુ.કર્તા.એક. ppp √smṛ)"
+      }
     ],
     "3.14": [
-      {"word_idx": 0, "gloss_text": "[draft] પરમ-અમૃત-રસનો અપાય (નાશ)"},
-      {"word_idx": 1, "gloss_text": "[draft] પ્રત્યયોદ્ભવ (વિકલ્પોનો ઉદય)"},
-      {"word_idx": 2, "gloss_text": "અસ્વતંત્રતા"},
-      {"word_idx": 3, "gloss_text": "[draft] તન્માત્ર-ગોચર (કેવળ સૂક્ષ્મ ભૂતોનું ક્ષેત્ર)"}
+      {
+        "word_idx": 1,
+        "gloss_text": "તે (પશુનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "જે — પુ.કર્તા.એક. સંબંધ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "તેના (પ્રત્યયોદ્ભવ) વડે — પુ.કરણ.એક."
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "પ્રાપ્ત કરે છે (વર્ત.એક. √i)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "તે — પુ.કર્તા.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "અને (અવ્યય)"
+      }
     ],
     "3.15": [
-      {"word_idx": 0, "gloss_text": "સ્વરૂપાવરણમાં (પોતાના સ્વરૂપને ઢાંકવામાં)"},
-      {"word_idx": 1, "gloss_text": "શક્તિઓ"},
-      {"word_idx": 2, "gloss_text": "સતત ઉત્થિત (સતત જાગૃત)"},
-      {"word_idx": 3, "gloss_text": "શબ્દના અનુવેધથી (વાણીના પ્રવેશથી)"},
-      {"word_idx": 4, "gloss_text": "પ્રત્યયોદ્ભવ (વિકલ્પનો ઉદય)"}
+      {
+        "word_idx": 1,
+        "gloss_text": "અને (અવ્યય)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "આનું (શિવ/પશુનું) — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "કેમ કે, જેનાથી — હેતુ-સંબંધ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ન, નહીં (નકારાત્મક અવ્યય)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "વિના, રહિત"
+      }
     ],
     "3.16": [
-      {"word_idx": 0, "gloss_text": "ક્રિયાત્મિકા શક્તિ (ક્રિયા-સ્વરૂપ શક્તિ)"},
-      {"word_idx": 1, "gloss_text": "પશુવર્તિની (બદ્ધ જીવમાં વર્તતી)"},
-      {"word_idx": 2, "gloss_text": "બંધનકારી"},
-      {"word_idx": 3, "gloss_text": "સ્વ-માર્ગ પર સ્થિત"},
-      {"word_idx": 4, "gloss_text": "સિદ્ધ્યુપપાદિકા (સિદ્ધિ ઉત્પન્ન કરનારી)"}
-    ],
-    "3.17": [
-      {"word_idx": 0, "gloss_text": "તન્માત્રોદય રૂપે"},
-      {"word_idx": 1, "gloss_text": "મન, અહંકાર, બુદ્ધિ રૂપે વર્તતા"},
-      {"word_idx": 2, "gloss_text": "પુર્યષ્ટક (આઠ-નગર — સૂક્ષ્મ શરીર) દ્વારા"},
-      {"word_idx": 3, "gloss_text": "સંરુદ્ધ (ઘેરાયેલ)"},
-      {"word_idx": 4, "gloss_text": "તેમાંથી ઉત્પન્ન પ્રત્યયોદ્ભવ (વિકલ્પ-ઉદય)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "તે — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "આ — સ્ત્રી.કર્તા.એક."
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "શિવનું — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "જ્ઞાત, પ્રત્યભિજ્ઞાત (સ્ત્રી.કર્તા.એક. ppp √jñā)"
+      }
     ],
     "3.18": [
-      {"word_idx": 0, "gloss_text": "ભોગવે છે"},
-      {"word_idx": 1, "gloss_text": "પરવશ (બીજાને આધીન)"},
-      {"word_idx": 2, "gloss_text": "ભોગ (અનુભવ)"},
-      {"word_idx": 3, "gloss_text": "સંસરણ કરે (સંસારમાં ફરે)"},
-      {"word_idx": 4, "gloss_text": "કારણ"},
-      {"word_idx": 5, "gloss_text": "અમે કહીશું (ઘોષણા કરીશું)"}
+      {
+        "word_idx": 3,
+        "gloss_text": "તે (બદ્ધ) ભાવને કારણે — પુ.પંચમી.એક. સમાસ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "આથી, એ કારણે"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "સંસારના પ્રલયનું — પુ.ષષ્ઠી.એક. સમાસ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "આનું (શિવ/પશુનું) — પુ.ષષ્ઠી.એક."
+      }
     ],
     "3.19": [
-      {"word_idx": 0, "gloss_text": "એક (તત્ત્વ)માં દૃઢ સ્થાપિત"},
-      {"word_idx": 1, "gloss_text": "લય અને ઉદય"},
-      {"word_idx": 2, "gloss_text": "નિયંત્રિત કરતો"},
-      {"word_idx": 3, "gloss_text": "ભોક્તૃત્વ (સાચું ભોગ-કરવાપણું)"},
-      {"word_idx": 4, "gloss_text": "ચક્રેશ્વર (શક્તિચક્રનો સ્વામી)"}
-    ],
-    "4.1": [
-      {"word_idx": 0, "gloss_text": "અગાધ સંશય-સાગર"},
-      {"word_idx": 1, "gloss_text": "પાર ઉતારનારી"},
-      {"word_idx": 2, "gloss_text": "વંદન કરું છું"},
-      {"word_idx": 3, "gloss_text": "વિચિત્ર-અર્થવાળાં પદો ધરાવનારી"},
-      {"word_idx": 4, "gloss_text": "વિચિત્ર (અદ્ભુત)"},
-      {"word_idx": 5, "gloss_text": "ગુરુ-ભારતી (ગુરુની વાણી)"}
+      {
+        "word_idx": 0,
+        "gloss_text": "જ્યારે — કાળવાચક સંબંધ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "પરંતુ, પણ (વિરોધાર્થક)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ત્યારે — કાળવાચક નિત્યસંબંધી"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "તેનું — પુ.ષષ્ઠી.એક."
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "પ્રાપ્ત કરે છે (વર્ત.એક. √i)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "તેનાથી, ત્યારબાદ — પંચમી-વાચક"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "થાય, થઈ શકે (વિધિ.એક. √bhū)"
+      }
     ]
   }
 }

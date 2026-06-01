@@ -1,0 +1,4373 @@
+{
+  "text_slug": "vijnana-bhairava-tantra",
+  "lang": "or",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "prompt_version": "v1-sanskrit-grounded",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶ୍ରୀଦେବୀ (ଭୈରବୀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କହିଲେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶ୍ରୁତ, ଶୁଣାଯାଇଛି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ହେ ପ୍ରଭୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମୋ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସବୁ କିଛି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ରୁଦ୍ରଯାମଳ ତନ୍ତ୍ରରୁ ଉଦ୍ଭୂତ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ତ୍ରିକର ବିଭାଗ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ସାରର ସାରରୁ ବିଭକ୍ତ"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଆଜି ସୁଦ୍ଧା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନୁହେଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିବୃତ୍ତ, ଦୂର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମୋର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସନ୍ଦେହ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ହେ ପରମେଶ୍ୱର"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କ'ଣ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ରୂପ, ସ୍ୱରୂପ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ବାସ୍ତବରେ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ହେ ଦେବ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ଶବ୍ଦରାଶି ଓ କଳାମୟ"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କିମ୍ବା ତାହା?"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନବାତ୍ମା-ବିଭାଗ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବଠାରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭୈରବାକୃତିରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତ୍ରିଶିର-ଭେଦ ଦ୍ୱାରା ବିଭକ୍ତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଶକ୍ତି-ତ୍ରୟାତ୍ମକ"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନାଦ-ବିନ୍ଦୁମୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କିମ୍ବା ସୁଦ୍ଧା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କ'ଣ?"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅର୍ଦ୍ଧଚନ୍ଦ୍ର ଓ ନିରୋଧିକା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଚକ୍ରାରୂଢ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସ୍ୱର-ବିହୀନ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଶକ୍ତିର ସ୍ୱରୂପ"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ପରାପରାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସକଳ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅପରାର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଓ କିମ୍ବା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ପୁଣି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପରାର"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଯଦି"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସେହିପରି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ହୁଅନ୍ତା"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ପରତ୍ୱ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ତାହା"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ବିରୋଧ ପାଏ"
+      }
+    ],
+    "1.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କାରଣ ନୁହେଁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବର୍ଣ୍ଣ-ବିଭେଦ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦେହ-ଭେଦ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ହୋଇପାରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପରତ୍ୱ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ନିଷ୍କଳତ୍ୱ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସକଳତ୍ୱରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ତାହା ହୋଇ ନ ପାରେ"
+      }
+    ],
+    "1.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ପ୍ରସାଦ, କୃପା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମୋ ପ୍ରତି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ହେ ନାଥ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଛିନ୍ନ କର"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସନ୍ଦେହ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଭୈରବ କହିଲେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସାଧୁ, ସାଧୁ!"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ତୁମ ଦ୍ୱାରା ପଚରାଯାଇଛି"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ତନ୍ତ୍ରର ସାର"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ଏହା, ହେ ପ୍ରିୟେ"
+      }
+    ],
+    "1.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଗୁହ୍ୟାତିଗୁହ୍ୟର ରକ୍ଷୟିତ୍ରୀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ତୁମେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯଦିଓ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଏହି"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ହେ ବରାନନେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତଥାପି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କହିବି"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଯେପରି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ତୁମେ ଜାଣ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ସେପରି ଶୁଣ"
+      }
+    ],
+    "1.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯାହା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିଷ୍କଳ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସମସ୍ତ ତତ୍ତ୍ୱର ସୀମା ବାହାରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତାହା ସମ୍ଭବ ନୁହେଁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଏଠାରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "କହିବାକୁ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ତାହା ସମ୍ଭବ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ଇଚ୍ଛା ଦ୍ୱାରା"
+      }
+    ],
+    "1.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପ୍ରକୃତି-ରୂପା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯିଏ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ତାଙ୍କର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କେଉଁ ରୂପ?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କୁହାଯାଏ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସକଳତ୍ୱରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ବିକଳ୍ପଗୁଡ଼ିକର"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସକଳ-ଅଦ୍ୱୈତ କଳ୍ପନା"
+      }
+    ],
+    "1.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସେତେବେଳେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସେହି ମହାବ୍ୟୋମରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଲୟ ପ୍ରାପ୍ତ ହେଲେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚନ୍ଦ୍ର ଓ ସୂର୍ଯ୍ୟ (ଯେତେବେଳେ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଡୁବିଯିବା ସଦୃଶ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତାମସୀ ନିଦ୍ରା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଉଦୟ ହେଲା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଶୂନ୍ୟ ଗୋଚରରେ"
+      }
+    ],
+    "1.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହିପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭୈରବଙ୍କର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯେଉଁ ଅବସ୍ଥା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବର୍ଣ୍ଣିତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେ ପର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପର ସ୍ୱରୂପରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ପରମା ଦେବୀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରକୀର୍ତ୍ତିତ"
+      }
+    ],
+    "1.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶକ୍ତି ଓ ଶକ୍ତିମାନଙ୍କର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯେପରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅଭେଦ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସର୍ବଦା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସ୍ଥିତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେଥିପାଇଁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାଙ୍କର ଗୁଣ-ଗୁଣୀ ସମ୍ବନ୍ଧ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପରା ଶକ୍ତି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ପରମାତ୍ମାଙ୍କର"
+      }
+    ],
+    "1.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନୁହେଁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅଗ୍ନିରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦାହିକା ଶକ୍ତି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭିନ୍ନ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିଚାର ହୁଏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କେବଳ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଜ୍ଞାନ-ସତ୍ତାରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଏହି ଆରମ୍ଭ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ପ୍ରବେଶରେ"
+      }
+    ],
+    "1.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶକ୍ତି-ଅବସ୍ଥାରେ ପ୍ରବିଷ୍ଟ ବ୍ୟକ୍ତିଙ୍କୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିର୍ବିଭାଗ ଭାବେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭାବନା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେତେବେଳେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶିବରୂପୀ ହୁଅନ୍ତି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶୈବୀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ମୁଖ, ଦ୍ୱାର"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଏଠାରେ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "କୁହାଯାଏ"
+      }
+    ],
+    "1.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦୀପର ଆଲୋକ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସୂର୍ଯ୍ୟର କିରଣଗୁଡ଼ିକ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଜଣା ପଡ଼େ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦିଗ-ବିଭାଗ ଆଦି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସେହିପରି"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଶକ୍ତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଶିବ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ହେ ପ୍ରିୟେ"
+      }
+    ],
+    "1.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶ୍ରୀଦେବୀ କହିଲେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ହେ ଦେବଦେବ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତ୍ରିଶୂଳ-ଅଙ୍କିତ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କପାଳ-ଭୂଷଣ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଦିଗ-ଦେଶ-କାଳ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଅଭିଧାନ-ବର୍ଜିତ"
+      }
+    ],
+    "1.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେଉଁ ଅବସ୍ଥା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପୂର୍ଣ୍ଣ-ଆକାର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବଙ୍କଠାରେ ଅନୁଭୂତ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କେଉଁ ଉପାୟ ଦ୍ୱାରା?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତାଙ୍କର ମୁଖ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପରମା ଦେବୀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କିପରି ହୁଅନ୍ତି?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ମୁଁ ଠିକ୍ ଜାଣିପାରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସେପରି ମୋତେ କୁହ, ହେ ଭୈରବ"
+      }
+    ],
+    "1.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଭୈରବ କହିଲେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଊର୍ଦ୍ଧ୍ୱରେ ପ୍ରାଣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିଶ୍ଚୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅଧଃରେ ଜୀବ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିସର୍ଗାତ୍ମକ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପର ଉଠିଥାଏ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଦୁଇ ଉତ୍ପତ୍ତିର ସ୍ଥାନରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଧାରଣରୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ପୂର୍ଣ୍ଣ ଅବସ୍ଥା"
+      }
+    ],
+    "1.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶ୍ୱାସ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭିତରେ କିମ୍ବା ବାହାରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯୁଗଳ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅନିବୃତ୍ତିରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭୈରବୀଙ୍କ, ଭୈରବଙ୍କର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଏହିପରି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ହେ ଭୈରବୀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରକଟିତ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ବପୁ, ରୂପ"
+      }
+    ],
+    "1.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବାହାରକୁ ନ ଯାଉ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭିତରକୁ ନ ଆସୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶକ୍ତି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବାୟୁ-ରୂପା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିକାଶିତ ହେଲେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିର୍ବିକଳ୍ପତା ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ମଝିରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ତାହାଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଭୈରବ-ରୂପତା"
+      }
+    ],
+    "1.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କୁମ୍ଭିତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ରେଚିତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ପୂରିତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଯେତେବେଳେ ହୁଏ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାର ଶେଷରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସେହି ଶାନ୍ତ ନାମକ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଶକ୍ତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ଶାନ୍ତ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମୂଳରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କିରଣ-ଆଭାସ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସୂକ୍ଷ୍ମରୁ ସୂକ୍ଷ୍ମତର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚିନ୍ତା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତାଙ୍କୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦ୍ୱାଦଶାନ୍ତରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶାନ୍ତ ହେଉଥିବା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଭୈରବର ଉଦୟ"
+      }
+    ],
+    "1.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଉଠୁଥିବା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ତଡ଼ିତ୍-ରୂପା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପ୍ରତି ଚକ୍ର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କ୍ରମେ କ୍ରମେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଊର୍ଦ୍ଧ୍ୱକୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତିନି ମୁଷ୍ଟି-ସୀମା ପର୍ଯ୍ୟନ୍ତ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଯେପର୍ଯ୍ୟନ୍ତ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ତାହାହିଁ ଭୈରବର ଉଦୟ"
+      }
+    ],
+    "1.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବାର-ସ୍ଥାନ କ୍ରମ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସମ୍ୟକ୍"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବାର ଅକ୍ଷର ଦ୍ୱାରା ବିଭକ୍ତ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସ୍ଥୂଳ-ସୂକ୍ଷ୍ମ-ପର ସ୍ଥିତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତ୍ୟାଗ କରୁ କରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶେଷରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶିବ"
+      }
+    ],
+    "1.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ତାହାଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପୂରଣ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶିଘ୍ର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମୁଣ୍ଡ-ଅନ୍ତ ପର୍ଯ୍ୟନ୍ତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭାଙ୍ଗି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭ୍ରୂକ୍ଷେପ-ସେତୁ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ମନ କରି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସର୍ବୋର୍ଦ୍ଧ୍ୱରେ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ସର୍ବଗ-ଉଦ୍ଗମ"
+      }
+    ],
+    "1.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମୟୂରପୁଚ୍ଛ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିଚିତ୍ର-ରୂପୀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମଣ୍ଡଳ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶୂନ୍ୟ-ପଞ୍ଚକ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଧ୍ୟାନ କରୁଥିବା ବ୍ୟକ୍ତିଙ୍କୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଅନୁତ୍ତରରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶୂନ୍ୟରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରବେଶ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ହୃଦୟରେ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ହୁଏ"
+      }
+    ],
+    "1.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହିପରି କ୍ରମରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ହିଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯେଉଁଠି ସେଉଁଠି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚିନ୍ତନ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୂନ୍ୟରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କାନ୍ଥରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଉତ୍କୃଷ୍ଟରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପାତ୍ରରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସ୍ୱୟଂ ଲୀନ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ବର-ପ୍ରଦା"
+      }
+    ],
+    "1.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କପାଳ ଭିତରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମନ ସ୍ଥାପନ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସ୍ଥିର ରହି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବନ୍ଦ ଆଖିରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କ୍ରମେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନର ଦୃଢ଼ତାରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଲକ୍ଷ୍ୟ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଉତ୍ତମ ଲକ୍ଷ୍ୟ"
+      }
+    ],
+    "1.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମଧ୍ୟ-ନାଡ଼ୀ (ସୁଷୁମ୍ନା)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମଧ୍ୟରେ ସ୍ଥିତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପଦ୍ମ-ତନ୍ତୁ ସଦୃଶ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଧ୍ୟାନ କରାଯାଇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଅନ୍ତର୍ବ୍ୟୋମା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦେବୀ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାଙ୍କ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଦେବ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ହାତ ଦ୍ୱାରା ରୋଧିତ ଦୃଷ୍ଟି-ଅସ୍ତ୍ର ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭ୍ରୂ-ଭେଦରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦ୍ୱାର-ରୋଧରୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବିନ୍ଦୁ ଦୃଷ୍ଟ ହେଲେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କ୍ରମେ ଲୀନ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତା'ର ମଝିରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ପରମ ସ୍ଥିତି"
+      }
+    ],
+    "1.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅନ୍ତରର ତେଜର କ୍ଷୋଭରୁ ଉତ୍ପନ୍ନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସୂକ୍ଷ୍ମ ଅଗ୍ନି-ତିଳକ ଆକୃତି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବିନ୍ଦୁକୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶିଖାର ଅଗ୍ରଭାଗରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ହୃଦୟରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଲୟର ଶେଷରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଧ୍ୟାନ କରୁଥିବାଙ୍କୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଲୟ"
+      }
+    ],
+    "1.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅନାହତରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସୁପାତ୍ର କର୍ଣ୍ଣରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅଭଗ୍ନ ଶବ୍ଦରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନଦୀ ସଦୃଶ ବହିଯାଉଥିବାରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶବ୍ଦ-ବ୍ରହ୍ମରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିଷ୍ଣାତ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ପର ବ୍ରହ୍ମ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରାପ୍ତ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଓଁକାର ଆଦି ଉଚ୍ଚାରଣରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପ୍ଳୁତ ଶେଷରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶୂନ୍ୟ ଭାବନାରୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶୂନ୍ୟା ପରମା ଶକ୍ତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୂନ୍ୟତା ପ୍ରାପ୍ତ କରନ୍ତି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ହେ ଭୈରବୀ"
+      }
+    ],
+    "1.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେକୌଣସି ବର୍ଣ୍ଣର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପୂର୍ବ ଓ ଅନ୍ତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅନୁଭବ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶୂନ୍ୟ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୂନ୍ୟ-ଭୂତ ସେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶୂନ୍ୟାକାର ବ୍ୟକ୍ତି ହୁଅନ୍ତି"
+      }
+    ],
+    "1.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ତନ୍ତ୍ରୀ ଆଦି ବାଦ୍ୟ-ଶବ୍ଦରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦୀର୍ଘମାନଙ୍କରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କ୍ରମିକ ସ୍ଥିତିରୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅନନ୍ୟ-ଚିତ୍ତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶେଷରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପର-ବ୍ୟୋମ-ବପୁ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ପିଣ୍ଡ-ମନ୍ତ୍ରର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସମସ୍ତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସ୍ଥୂଳ-ବର୍ଣ୍ଣ-କ୍ରମ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅର୍ଦ୍ଧଚନ୍ଦ୍ର, ବିନ୍ଦୁ, ନାଦର ଶେଷ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୂନ୍ୟ-ଉଚ୍ଚାରଣରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶିବ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଜ ଦେହରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସବୁ ଦିଗରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯୁଗପତ୍, ଏକ ସମୟରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବ୍ୟୋମ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ ମନ ବିଶିଷ୍ଟ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାଙ୍କ ପାଇଁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସମସ୍ତ ବ୍ୟୋମ ସଞ୍ଚାରିତ ହୁଏ"
+      }
+    ],
+    "1.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ପୃଷ୍ଠ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମୂଳ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯୁଗପତ୍ ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଯିଏ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶରୀର-ନିରପେକ୍ଷ ଶକ୍ତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶୂନ୍ୟ-ମନା ହୁଅନ୍ତି"
+      }
+    ],
+    "1.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ପୃଷ୍ଠ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମୂଳ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହୃଦୟ-ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସ୍ଥିର ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଯୁଗପତ୍"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିର୍ବିକଳ୍ପତାରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାଠାରୁ ନିର୍ବିକଳ୍ପର ଉଦୟ"
+      }
+    ],
+    "1.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶରୀରର କୌଣସି ଅଂଶରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶୂନ୍ୟତା ହିଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କେବଳ କ୍ଷଣେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ ହୁଅନ୍ତି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ-ସ୍ୱରୂପ-ଭାଗୀ"
+      }
+    ],
+    "1.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସମସ୍ତ ଦେହଗତ ଦ୍ରବ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବ୍ୟୋମ-ବ୍ୟାପ୍ତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହେ ମୃଗେକ୍ଷଣେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତାହାପରେ ତାଙ୍କ ପାଇଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେହି ଭାବନା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସ୍ଥିର ହୁଏ"
+      }
+    ],
+    "1.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଦେହ ଭିତରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ତ୍ୱକ୍-ବିଭାଗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କାନ୍ଥ ସଦୃଶ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତାଙ୍କ ପାଇଁ ଭିତରେ କିଛି ନୁହେଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଧ୍ୟାନ କରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଅଚିନ୍ତ୍ୟ-ଭାଗୀ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ହୃଦୟାକାଶରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଇନ୍ଦ୍ରିୟ ଲୀନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପଦ୍ମ-ସମ୍ପୁଟ ମଝିରେ ସ୍ଥିତ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅନନ୍ୟ-ଚିତ୍ତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ହେ ସୁଭଗେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପର ସୌଭାଗ୍ୟ ପ୍ରାପ୍ତ କରନ୍ତି"
+      }
+    ],
+    "1.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସବୁ ଆଡ଼େ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିଜ ଶରୀରର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦ୍ୱାଦଶାନ୍ତରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମନର ଲୟରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଦୃଢ ବୁଦ୍ଧି ବିଶିଷ୍ଟ ବ୍ୟକ୍ତିର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦୃଢ-ଭୂତ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତତ୍ତ୍ୱ-ଲକ୍ଷ୍ୟ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରକାଶିତ ହୁଏ"
+      }
+    ],
+    "1.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେପରି ସେପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯେଉଁଠି ସେଉଁଠି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦ୍ୱାଦଶାନ୍ତରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମନକୁ ନିକ୍ଷେପ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ପ୍ରତି କ୍ଷଣ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କ୍ଷୀଣ-ବୃତ୍ତି ବିଶିଷ୍ଟଙ୍କ ପାଇଁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ବୈଲକ୍ଷଣ୍ୟ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "କିଛି ଦିନରେ ହୁଏ"
+      }
+    ],
+    "1.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେଉଁଠି ଯେଉଁଠି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯାଏ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବାହାରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭିତରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସୁଦ୍ଧା"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସେଠାରେ ସେଠାରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଶିବ-ଅବସ୍ଥା"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ବ୍ୟାପକତ୍ୱରୁ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "କୁଆଡ଼େ ଯିବ?"
+      }
+    ],
+    "1.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେଉଁଠି ଯେଉଁଠି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଇନ୍ଦ୍ରିୟ-ମାର୍ଗରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଚୈତନ୍ୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ପ୍ରକାଶିତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିଭୁଙ୍କର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତାଙ୍କର"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତତ୍-ମାତ୍ର ଗୁଣ-ଧର୍ମରୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଚିତ୍-ଲୟରୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଭରିତ-ଆତ୍ମତା"
+      }
+    ],
+    "1.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ହିକ୍କା ଆଦିର ଶେଷରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭୟରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶୋକରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଗଭୀର ଗହ୍ୱରରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଯୁଦ୍ଧରୁ ପଳାୟନରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କୁତୂହଳରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "କ୍ଷୁଧା ଆଦିର ଶେଷରେ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ବ୍ରହ୍ମ-ସତ୍ତାର ସମୀପଗା"
+      }
+    ],
+    "1.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସ୍ମରଣୀୟ ବସ୍ତୁ ସମ୍ବନ୍ଧରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦୃଷ୍ଟ ସ୍ଥାନରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମନ ତ୍ୟାଗ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନିଜ ଶରୀର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ନିରାଧାର କରି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପ୍ରଭୁ ବିସ୍ତାର ହୁଅନ୍ତି"
+      }
+    ],
+    "1.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କୌଣସି ବସ୍ତୁରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସ୍ଥାପନ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଧୀରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଦୃଷ୍ଟି"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ନିବାରଣ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେହି ଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଚିତ୍ତ ସହିତ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଶୂନ୍ୟର ଆଳୟ ହୁଏ"
+      }
+    ],
+    "1.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଭକ୍ତିର ଉଦ୍ରେକରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିରକ୍ତଙ୍କଠାରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯେପ୍ରକାର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଜାତ ହୁଏ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମତି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେହି ଶାଙ୍କରୀ ଶକ୍ତି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ନିତ୍ୟ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ତାହାକୁ ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ତାହାଠାରୁ ଶିବ"
+      }
+    ],
+    "1.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅନ୍ୟ ବସ୍ତୁରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଜ୍ଞାତ ହେଉଥିବା ସମୟରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସମସ୍ତ ବସ୍ତୁରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶୂନ୍ୟତା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତାହାକୁ ହିଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନରେ ଧ୍ୟାନ କରି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଜ୍ଞାତ ବି ଶାନ୍ତ ହୁଏ"
+      }
+    ],
+    "1.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅଳ୍ପଜ୍ଞ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯାହା ଶୁଦ୍ଧି ବୋଲି ସ୍ମରଣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସେହି ଶୁଦ୍ଧି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶମ୍ଭୁ-ଦର୍ଶନରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୁଚି ନୁହେଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିଶ୍ଚୟ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଅଶୁଚି, ତେଣୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ନିର୍ବିକଳ୍ପ ବ୍ୟକ୍ତି ସୁଖୀ"
+      }
+    ],
+    "1.55": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସର୍ବତ୍ର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭୈରବ-ଭାବ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସାମାନ୍ୟ ବସ୍ତୁରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସୁଦ୍ଧା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଗୋଚର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଓ ନୁହେଁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାଠାରୁ ଭିନ୍ନ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଅନ୍ୟ ଅଛି — ବୋଲି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଅଦ୍ୱୟ ଗତି"
+      }
+    ],
+    "1.56": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସମ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶତ୍ରୁ ଓ ମିତ୍ର ପ୍ରତି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମାନ-ଅପମାନରେ ସମ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବ୍ରହ୍ମର ପରିପୂର୍ଣ୍ଣତାରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଏହା ଜାଣି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସୁଖୀ ହୁଏ"
+      }
+    ],
+    "1.57": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଦ୍ୱେଷ ନୁହେଁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କୌଣସିଠାରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ରାଗ ନୁହେଁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭାବନା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କୌଣସିଠାରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ରାଗ-ଦ୍ୱେଷ-ମୁକ୍ତିରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ମଝିରେ ବ୍ରହ୍ମ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସଞ୍ଚାର କରେ"
+      }
+    ],
+    "1.58": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯାହା ଅବେଦ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯାହା ଅଗ୍ରାହ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯାହା ଶୂନ୍ୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଯାହା ଅଭାବ-ଗତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେସବୁ ଭୈରବ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭାବନୀୟ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାର ଶେଷରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ବୋଧର ସମ୍ଭବ"
+      }
+    ],
+    "1.59": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିତ୍ୟରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିଭୁରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିରାଧାରରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବ୍ୟାପକରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଅଖିଳ-ଆତ୍ମାରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଏହିପରି ଭୈରବକୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଅନୁସ୍ମରଣ କରୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ବ୍ୟକ୍ତି ମୁକ୍ତ ହୁଏ"
+      }
+    ],
+    "1.60": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିରାଧାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସନ୍ଦେହ-ବର୍ଜିତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଖ୍ୟାତି-ବର୍ଜିତ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେହି ପରମ ବ୍ରହ୍ମ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କୁହାଯାଇଛି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭାବନା କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତନ୍ମୟ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.61": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଉପଦେଶ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କରାଯାଏ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମରୁତ୍-ର ଲୟ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେପରି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନ ଜ୍ଞେୟ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସେହି ଅବସ୍ଥା-ପଦକୁ ଯାଏ"
+      }
+    ],
+    "1.62": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅମୂଳ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମୂଳ-ନାଡ଼ୀଗୁଡ଼ିକର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବାୟୁ-ପୂର୍ଣ୍ଣ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସୁଷୁମ୍ନିକା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଦ୍ୱାଦଶାନ୍ତରେ ସ୍ଥିତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଧ୍ୟାନ କରି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଅମୂଳ ଭୈରବକୁ ଯାଏ"
+      }
+    ],
+    "1.63": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କପାଳ ଭିତରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସେହିପରି ମନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଧ୍ୟାନ କରୁଥିବାଙ୍କୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବେଶି ସମୟ ନ ଯାଇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ହେ ପ୍ରଭୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ନିମୀଳନ ଆଦିରୁ ଜାତ ସିଦ୍ଧି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଚିନ୍ମୟଙ୍କୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଜାତ ହୁଏ"
+      }
+    ],
+    "1.64": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଜିଭ ମଝିରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଖୋଲା ମୁଖରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମଝିରେ ନିକ୍ଷେପ କରି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚେତନା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ହ' ଉଚ୍ଚାରଣ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନରେ କରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାଠାରୁ ଶାନ୍ତରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରଳୀନ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.65": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଆସନ କିମ୍ବା ଶୟନରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସ୍ଥିତ ହୋଇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିରାଧାର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା କରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ନିଜ ଶରୀର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନ କ୍ଷୀଣ ହେଲେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କ୍ଷଣିକରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "କ୍ଷୀଣ-ଆଶୟ ହୁଅନ୍ତି"
+      }
+    ],
+    "1.66": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚଳନ୍ତା ଆସନରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବସିଥିବାଙ୍କୁ, ତାହାପରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କିମ୍ବା ଧୀରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଦେହ-ଚାଳନାରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମାନସିକ ଭାବ ପ୍ରଶାନ୍ତ ହେଲେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଦିବ୍ୟ-ଓଘ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରାପ୍ତ କରନ୍ତି"
+      }
+    ],
+    "1.67": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିମଳ ଆକାଶ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦେଖୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିରନ୍ତର ଦୃଷ୍ଟି କରି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସ୍ତବ୍ଧ-ଆତ୍ମା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତତ୍କ୍ଷଣାତ୍"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭୈରବ-ବପୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପ୍ରାପ୍ତ କରନ୍ତି"
+      }
+    ],
+    "1.68": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଲୀନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମୁଣ୍ଡରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବ୍ୟୋମ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସବୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭୈରବତ୍ୱ ରୂପେ ଭାବନା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେସବୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭୈରବାକାର-ତେଜସ୍-ତତ୍ତ୍ୱ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସମାବେଶ ହୁଏ"
+      }
+    ],
+    "1.69": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କିଞ୍ଚିତ୍-ଜ୍ଞାତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦ୍ୱୈତ-ଦାୟୀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବାହ୍ୟ-ଆଲୋକ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ପୁଣି ଅନ୍ଧକାର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିଶ୍ୱାଦି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭୈରବ-ରୂପ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଜାଣି"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଅନନ୍ତ-ପ୍ରକାଶ-ଭୃତ୍"
+      }
+    ],
+    "1.70": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସେହିପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦୁର୍ନିଶାରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କୃଷ୍ଣପକ୍ଷ ଆଗମନରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଦୀର୍ଘ ସମୟ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଅନ୍ଧକାର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭାବନା କରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭୈରବ-ରୂପ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ରୂପ ପ୍ରାପ୍ତ କରନ୍ତି"
+      }
+    ],
+    "1.71": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସେହିପରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପ୍ରଥମେ ବନ୍ଦ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଆଖି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କୃଷ୍ଣାଭ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସମ୍ମୁଖରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ବିସ୍ତାର କରି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭୈରବ-ରୂପ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଭାବନା କରୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ତନ୍ମୟ ହୁଏ"
+      }
+    ],
+    "1.72": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେକୌଣସି ଇନ୍ଦ୍ରିୟର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବ୍ୟାଘାତରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନିରୋଧରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ପ୍ରବିଷ୍ଟ ବ୍ୟକ୍ତିଠାରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଅଦ୍ୱୟ ଶୂନ୍ୟରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସେଠାରେହିଁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ଆତ୍ମା ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.73": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିନ୍ଦୁ-ବିହୀନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିସର୍ଗ-ବିହୀନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ଅ'କାର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଜପ କରୁଥିବାଙ୍କୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମହାନ ଉଦୟ ହୁଏ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ହେ ଦେବୀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସହସା"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ଜ୍ଞାନ-ଓଘ ସ୍ୱରୂପ ପରମେଶ୍ୱର"
+      }
+    ],
+    "1.74": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିସର୍ଗ-ସହିତ ବର୍ଣ୍ଣର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିସର୍ଗର ଶେଷ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଚିତି ଲଗାନ୍ତୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନିରାଧାର ଚିତ୍ତରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସନାତନ ବ୍ରହ୍ମ ସ୍ପର୍ଶ"
+      }
+    ],
+    "1.75": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବ୍ୟୋମାକାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିଜ ଆତ୍ମା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଧ୍ୟାନ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଦିଗଗୁଡ଼ିକ ଦ୍ୱାରା ଅନାବୃତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ନିରାଶ୍ରୟା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଚିତି-ଶକ୍ତି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ସ୍ୱରୂପ ପ୍ରକାଶ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସେତେବେଳେ"
+      }
+    ],
+    "1.76": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କିଛି ଅଙ୍ଗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପ୍ରଥମେ ବେଧି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତୀକ୍ଷ୍ଣ ସୂଚୀ ଆଦି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ତାହାପରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେଠାରେହିଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଚେତନା ଯୋଗ କରି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭୈରବରେ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ନିର୍ମଳ ଗତି"
+      }
+    ],
+    "1.77": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚିତ୍ତ ଆଦି ଅନ୍ତଃକରଣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନାହିଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମୋ ଭିତରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଏହିପରି ଭାବନା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ବିକଳ୍ପର ଅଭାବରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ବିକଳ୍ପ-ମୁକ୍ତ ହୁଏ"
+      }
+    ],
+    "1.78": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିମୋହିନୀ ନାମକ ମାୟା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କଳାର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କଳନ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସ୍ଥିତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଏହିପରି ଧର୍ମ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତତ୍ତ୍ୱମାନଙ୍କର"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ବିଚାର କରୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପୃଥକ୍ ହୁଅନ୍ତି ନାହିଁ"
+      }
+    ],
+    "1.79": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସହସା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଉଦିତ ଇଚ୍ଛା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅବଲୋକନ କରି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶାନ୍ତ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଯେଉଁଠାରୁ ଉତ୍ପନ୍ନ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେଠାରେହିଁ ଲୀନ"
+      }
+    ],
+    "1.80": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେତେବେଳେ ମୋର ଇଚ୍ଛା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଉତ୍ପନ୍ନ ନୁହେଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବା ଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେତେବେଳେ ମୁଁ କିଏ?"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତତ୍ତ୍ୱତଃ ମୁଁ ସେହିପରି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତଲ୍ଲୀନ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତନ୍ମନା ହୁଅନ୍ତି"
+      }
+    ],
+    "1.81": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଇଚ୍ଛାରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କିମ୍ବା ଜ୍ଞାନରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଉତ୍ପନ୍ନ ହେଲେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚିତ୍ତ ସ୍ଥାପନ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଆତ୍ମ-ବୁଦ୍ଧି ସହ ଅନନ୍ୟ-ଚିତ୍ତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ତାହାଠାରୁ ତତ୍ତ୍ୱାର୍ଥ-ଦର୍ଶନ"
+      }
+    ],
+    "1.82": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିର୍ନିମିତ୍ତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଜ୍ଞାନ ଉଦୟ ହୁଏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିରାଧାର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭ୍ରମାତ୍ମକ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତତ୍ତ୍ୱତଃ କାହାରି ନୁହେଁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଏହିପରି ଭାବନା କରୁଥିବା ଶିବ, ହେ ପ୍ରିୟେ"
+      }
+    ],
+    "1.83": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚିତ୍-ଧର୍ମା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସମସ୍ତ ଦେହରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କୌଣସିଠାରେ ବିଶେଷ ନାହିଁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେଥିପାଇଁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସବୁ ତନ୍ମୟ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭାବନା କରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଭବ-ଜିତ୍ ବ୍ୟକ୍ତି"
+      }
+    ],
+    "1.84": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କାମ-କ୍ରୋଧ-ଲୋଭ-ମୋହ-ମଦ-ମାତ୍ସର୍ଯ୍ୟ ଗୋଚରରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବୁଦ୍ଧିକୁ ନିସ୍ତିମିତ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସେହି ତତ୍ତ୍ୱ ଅବଶିଷ୍ଟ"
+      }
+    ],
+    "1.85": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଇନ୍ଦ୍ରଜାଳ-ମୟ ବିଶ୍ୱ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବ୍ୟସ୍ତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଚିତ୍ର ସଦୃଶ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭ୍ରମଣଶୀଳ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଧ୍ୟାନ କରୁଥିବାଙ୍କୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସବୁ ଦେଖୁ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ସୁଖ-ଉଦୟ"
+      }
+    ],
+    "1.86": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚିତ୍ତକୁ ଦୁଃଖରେ ନ ପକାନ୍ତୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସୁଖରେ ବି ନୁହେଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହେ ଭୈରବୀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମଝିରେ ଜାଣିଲେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କେଉଁ ତତ୍ତ୍ୱ ଅବଶିଷ୍ଟ?"
+      }
+    ],
+    "1.87": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ତ୍ୟାଗ କରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିଜ ଦେହର ଆସ୍ଥା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'ସର୍ବତ୍ର ମୁଁ' ବୋଲି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭାବନା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଦୃଢ ମନରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦୃଷ୍ଟି ସହ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଅନ୍ୟ କିଛି ନ ଦେଖୁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସୁଖୀ ହୁଏ"
+      }
+    ],
+    "1.88": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଘଟ ଆଦିଠାରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯେଉଁ ବିଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବା ମୋ ଭିତରେ ଇଚ୍ଛା ଆଦି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସର୍ବଗତ ରୂପେ ଜାତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭାବନା କରୁ ସର୍ବଗ"
+      }
+    ],
+    "1.89": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଗ୍ରାହ୍ୟ-ଗ୍ରାହକ-ସମ୍ବିତ୍ତି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସାମାନ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସମସ୍ତ ଦେହୀଙ୍କର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଯୋଗୀଙ୍କଠାରେ ବିଶେଷ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସମ୍ବନ୍ଧରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସାବଧାନତା"
+      }
+    ],
+    "1.90": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଜ ସଦୃଶ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅନ୍ୟର ଶରୀରରେ ବି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସମ୍ବିତ୍ତି ଅନୁଭବ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନିଜ ଶରୀରର ଅପେକ୍ଷା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତ୍ୟାଗ କରି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "କିଛି ଦିନରେ ବ୍ୟାପୀ ହୁଏ"
+      }
+    ],
+    "1.91": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମନକୁ ନିରାଧାର କରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିକଳ୍ପ କରନ୍ତୁ ନାହିଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଆତ୍ମ-ପରମାତ୍ମ-ତ୍ୱରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭୈରବ, ହେ ମୃଗଲୋଚନେ"
+      }
+    ],
+    "1.92": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସର୍ବଜ୍ଞ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସର୍ବକର୍ତ୍ତା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବ୍ୟାପକ ପରମେଶ୍ୱର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେହି ମୁଁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶୈବ-ଧର୍ମା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଏହି ଦୃଢ ବିଶ୍ୱାସରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶିବ ହୁଏ"
+      }
+    ],
+    "1.93": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଜଳର ସଦୃଶ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଲହର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅଗ୍ନିର ଶିଖା-ଭଙ୍ଗି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସୂର୍ଯ୍ୟର ପ୍ରଭା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମୁଁ ଭୈରବର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଏ ବିଶ୍ୱ-ଭଙ୍ଗି"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ବିଭେଦିତ"
+      }
+    ],
+    "1.94": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଘୂରି ଘୂରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶରୀର ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶିଘ୍ର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଭୂମିରେ ପତନରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କ୍ଷୋଭ-ଶକ୍ତିର ବିରାମରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପରମ ଅବସ୍ଥା ଜାତ"
+      }
+    ],
+    "1.95": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଆଧାରଗୁଡ଼ିକରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବା ଅଶକ୍ତି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଜ୍ଞାନରୁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କିମ୍ବା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଦେଶ-କଳ୍ପନାରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶକ୍ତି-ସଂଶୋଭ ଉଠିଲେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶାନ୍ତ ହେଲା ପରେ ତାହା ହୁଏ"
+      }
+    ],
+    "1.96": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବସି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଆସନରେ ସମ୍ୟକ୍"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବାହୁ କରି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଅର୍ଦ୍ଧ-କୁଞ୍ଚିତ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "କକ୍ଷ-ବ୍ୟୋମରେ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ମନ ଲଗାଇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଶାନ୍ତି ପ୍ରାପ୍ତ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ତଲ୍ଲୟରୁ"
+      }
+    ],
+    "1.97": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସ୍ଥୂଳ-ରୂପ ବସ୍ତୁର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସ୍ତବ୍ଧ ଦୃଷ୍ଟି ନିପାତ କରି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଶିଘ୍ର"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମନ ନିରାଧାର କରି"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଶିବକୁ ଯାଏ"
+      }
+    ],
+    "1.98": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଜିଭ ମଝିରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଖୋଲା ମୁଖରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମଝିରେ ଚେତନା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମନରେ ମନ୍ତ୍ର ଉଚ୍ଚାରଣ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶିବ ଧ୍ୟାନ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପ୍ରଶାନ୍ତ ହୁଏ"
+      }
+    ],
+    "1.99": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କପାଳ ଭିତରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବନ୍ଦ ଆଖିରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଉତ୍ତମ ଲକ୍ଷ୍ୟ"
+      }
+    ],
+    "1.100": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମଧ୍ୟ-ନାଡ଼ୀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ପଦ୍ମ-ତନ୍ତୁ ସଦୃଶ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅନ୍ତର୍ବ୍ୟୋମା ଦେବୀ ସହ"
+      }
+    ],
+    "1.101": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ହାତ ଦ୍ୱାରା ରୋଧିତ ଦୃଷ୍ଟି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦ୍ୱାର-ରୋଧରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପରମ ସ୍ଥିତି"
+      }
+    ],
+    "1.102": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମନ୍ତ୍ର-ଅର୍ଥ ରୂପେ ଉକ୍ତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅଧିକାରୀ-ବିଶେଷ ଅନୁସାରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସାଧକ"
+      }
+    ],
+    "1.103": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅନୁସନ୍ଧାନ-ଯୋଗ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଏକ ଜ୍ଞାନର ଆଶ୍ରୟରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯୋଗ-ସିଦ୍ଧି"
+      }
+    ],
+    "1.104": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କାମନା-ବେଗରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିସ୍ମୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିଜ ଶରୀରର ଆହ୍ଲାଦ-ଶକ୍ତି"
+      }
+    ],
+    "1.105": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଲେହନ, ମନ୍ଥନ, ଆକୋଟ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସ୍ତ୍ରୀ-ସୁଖର ସ୍ମରଣରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଆନନ୍ଦ-ସମ୍ପ୍ଳାବ"
+      }
+    ],
+    "1.106": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମହାନ ଆନନ୍ଦ ପ୍ରାପ୍ତ ହେଲେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବହୁ ସମୟ ପରେ ବାନ୍ଧବ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତଲ୍ଲୀନ"
+      }
+    ],
+    "1.107": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଖାଦ୍ୟ-ପାନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ରସ-ଆନନ୍ଦ-ବିଜୃମ୍ଭଣରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମହାନନ୍ଦ"
+      }
+    ],
+    "1.108": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଗୀତ ଆଦି ବିଷୟ-ଆସ୍ୱାଦ ଅସମ-ସୌଖ୍ୟ ସହ ଏକାତ୍ମଙ୍କୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯୋଗୀଙ୍କୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତନ୍ମୟତ୍ୱ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମନ-ରୂଢ଼ିରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ତଦାତ୍ମତା"
+      }
+    ],
+    "1.109": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେଉଁଠି ଯେଉଁଠି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଆତ୍ମାର ତୁଷ୍ଟି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମନ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେଠାରେହିଁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଧାରଣ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସେଠାରେ ସେଠାରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ପର-ଆନନ୍ଦ-ସ୍ୱରୂପ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ସଞ୍ଚାରିତ"
+      }
+    ],
+    "1.110": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଦ୍ରା ନ ଆସିଥିବା ସମୟରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବାହ୍ୟ-ଗୋଚର ବିଲୁପ୍ତ ହେଲେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସେହି ଅବସ୍ଥା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ମନ ଦ୍ୱାରା ଗମ୍ୟ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ପରମା ଦେବୀ ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.111": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ତେଜ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସୂର୍ଯ୍ୟ, ଦୀପ ଆଦିର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଆକାଶ ଚିତ୍ର-ବର୍ଣ୍ଣ ହେଲେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ନିଜ ଆତ୍ମା ଦୃଷ୍ଟ ହେଲେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଆଭା-ଯୁକ୍ତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ସଚ୍ଚିଦାନନ୍ଦର ଗୋଚର"
+      }
+    ],
+    "1.112": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କରଙ୍କିଣୀ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କ୍ରୋଧନା ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବୀ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଲେଲିହାନା ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଖେଚରୀ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଦୃଷ୍ଟି-କାଳରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ଓ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ପର-ଆବାପ୍ତି"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.113": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କୋମଳ ଆସନରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଗୋଟିଏ ନିତମ୍ବ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହାତ-ପାଦ ନିରାଶ୍ରୟ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସ୍ଥାପନ କରି"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସେହି ପ୍ରସଙ୍ଗରୁ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ପର ପୂର୍ଣ୍ଣ ମତି ଜାତ"
+      }
+    ],
+    "1.114": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅର୍ଦ୍ଧ-କୁଞ୍ଚିତ ଦୁଇ ବାହୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କକ୍ଷ-ବ୍ୟୋମରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତଲ୍ଲୟରୁ"
+      }
+    ],
+    "1.115": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସ୍ତବ୍ଧ ଦୃଷ୍ଟି ନିପାତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିରାଧାର"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶିବକୁ ଯାଏ"
+      }
+    ],
+    "1.116": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଜିଭ ମଝିରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ହ' ଉଚ୍ଚାରଣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶାନ୍ତରେ"
+      }
+    ],
+    "1.117": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଜ ଶରୀର ନିରାଧାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମନ କ୍ଷୀଣ ହେଲେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କ୍ଷୀଣ-ଆଶୟ"
+      }
+    ],
+    "1.118": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚଳନ୍ତା ଆସନରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦେହ-ଚାଳନାରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦିବ୍ୟ-ଓଘ"
+      }
+    ],
+    "1.119": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିମଳ ଆକାଶ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସ୍ତବ୍ଧ-ଆତ୍ମା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବ-ବପୁ"
+      }
+    ],
+    "1.120": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଲୀନ ବ୍ୟୋମ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭୈରବତ୍ୱ ରୂପେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବାକାର-ତେଜସ୍-ତତ୍ତ୍ୱ"
+      }
+    ],
+    "1.121": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କିଞ୍ଚିତ୍-ଜ୍ଞାତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବାହ୍ୟ-ଆଲୋକ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅନନ୍ତ-ପ୍ରକାଶ-ଭୃତ୍"
+      }
+    ],
+    "1.122": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଦୁର୍ନିଶାରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅନ୍ଧକାର-ରୂପ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭୈରବ-ରୂପ"
+      }
+    ],
+    "1.123": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବନ୍ଦ କରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କୃଷ୍ଣାଭ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତନ୍ମୟ"
+      }
+    ],
+    "1.124": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବ୍ୟାଘାତରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିରୋଧରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅଦ୍ୱୟ ଶୂନ୍ୟରେ"
+      }
+    ],
+    "1.125": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିନ୍ଦୁ-ବିହୀନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିସର୍ଗ-ବିହୀନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଜ୍ଞାନ-ଓଘ"
+      }
+    ],
+    "1.126": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିସର୍ଗର ଶେଷ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଚିତି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସନାତନ ବ୍ରହ୍ମ"
+      }
+    ],
+    "1.127": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବ୍ୟୋମାକାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଦିଗଗୁଡ଼ିକ ଦ୍ୱାରା ଅନାବୃତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିରାଶ୍ରୟା ଚିତି-ଶକ୍ତି"
+      }
+    ],
+    "1.128": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କିଛି ଅଙ୍ଗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ତୀକ୍ଷ୍ଣ ସୂଚୀ ଆଦି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ନିର୍ମଳ ଗତି"
+      }
+    ],
+    "1.129": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଅନ୍ତଃକରଣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିକଳ୍ପର ଅଭାବରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତ୍ୟକ୍ତ"
+      }
+    ],
+    "1.130": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ବିମୋହିନୀ ମାୟା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କଳନ, ପ୍ରେରଣା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପୃଥକ୍"
+      }
+    ],
+    "1.131": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସହସା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶାନ୍ତ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଯେଉଁଠାରୁ"
+      }
+    ],
+    "1.132": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଇଚ୍ଛା / ଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ମୁଁ କିଏ?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତନ୍ମନା"
+      }
+    ],
+    "1.133": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଇଚ୍ଛାରେ / ଜ୍ଞାନରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଆତ୍ମ-ବୁଦ୍ଧି ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତତ୍ତ୍ୱାର୍ଥ-ଦର୍ଶନ"
+      }
+    ],
+    "1.134": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିର୍ନିମିତ୍ତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭ୍ରମାତ୍ମକ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଏହିପରି ଭାବନା କରୁଥିବା"
+      }
+    ],
+    "1.135": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଚିତ୍-ଧର୍ମା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିଶେଷ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଭବ-ଜିତ୍"
+      }
+    ],
+    "1.136": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କାମ-କ୍ରୋଧ-ଲୋଭ-ମୋହ-ମଦ-ମାତ୍ସର୍ଯ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ନିସ୍ତିମିତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅବଶିଷ୍ଟ ରହେ"
+      }
+    ],
+    "1.137": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଇନ୍ଦ୍ରଜାଳ-ମୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଚିତ୍ର ସଦୃଶ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସୁଖ-ଉଦୟ"
+      }
+    ],
+    "1.138": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ମଝିରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅବଶିଷ୍ଟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଜଣାଯାଉ"
+      }
+    ],
+    "1.139": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଜ ଦେହ-ଆସ୍ଥା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସର୍ବତ୍ର ମୁଁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଅନ୍ୟ କିଛି ନ ଦେଖୁଥିବା ଦୃଷ୍ଟି"
+      }
+    ],
+    "1.140": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଘଟ ଆଦିଠାରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସର୍ବଗ"
+      }
+    ],
+    "1.141": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଗ୍ରାହ୍ୟ-ଗ୍ରାହକ-ସମ୍ବିତ୍ତି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ସାମାନ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସାବଧାନତା"
+      }
+    ],
+    "1.142": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିଜ ସଦୃଶ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଅନ୍ୟର ଶରୀରରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବ୍ୟାପୀ"
+      }
+    ],
+    "1.143": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ନିରାଧାର ମନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ବିକଳ୍ପ କରନ୍ତୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଆତ୍ମା-ପରମାତ୍ମା ତାଦାତ୍ମ୍ୟରେ"
+      }
+    ],
+    "1.144": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସର୍ବଜ୍ଞ, ସର୍ବକର୍ତ୍ତା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶୈବ-ଧର୍ମା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଦାର୍ଢ୍ୟରୁ"
+      }
+    ],
+    "1.145": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଲହର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶିଖା-ଭଙ୍ଗି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ବିଶ୍ୱ-ଭଙ୍ଗି"
+      }
+    ],
+    "1.146": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଘୂରି ଘୂରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କ୍ଷୋଭ-ଶକ୍ତି ବିରାମରୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପରମ ଅବସ୍ଥା"
+      }
+    ],
+    "1.147": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଆଧାରଗୁଡ଼ିକରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶକ୍ତି-ସଂଶୋଭରେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶାନ୍ତ ହେଲା ପରେ"
+      }
+    ],
+    "1.148": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସର୍ବତ୍ର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭାବନା ନାମକ ଶିକ୍ଷା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହେ ଶୋଭନେ"
+      }
+    ],
+    "1.149": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେକାହାର ଏହି ଦେହରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ମୁଁ'-ପ୍ରତ୍ୟୟ ଉଠେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତାଙ୍କରହିଁ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "କ୍ଷୁଦ୍ର-ସମ୍ବିତ୍ତିରୁ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଭୈରବତ୍ୱ ପ୍ରକାଶିତ"
+      }
+    ],
+    "1.150": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶ୍ରୀଦେବୀ କହିଲେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ହେ ଦେବଦେବ, ମହାଦେବ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ହେ ପ୍ରଭୁ, ଆପଣ ମୋ ପାଇଁ ପୂର୍ଣ୍ଣ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଆପଣହିଁ ଶଙ୍କରଙ୍କର ଆତ୍ମା"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଜଗତରେ ଶାଶ୍ୱତ ଶକ୍ତି"
+      }
+    ],
+    "1.151": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେପରି ଆପଣ କୃପା-ଆବେଶରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଏହି ରହସ୍ୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଉଦ୍ଧାର କରିଛନ୍ତି"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେହିପରି"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଯୋଗ୍ୟ ବ୍ୟକ୍ତିଙ୍କୁ କୁହାଯିବ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଯୋଗ୍ୟ କର୍ଣ୍ଣରେ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ତାହାକୁ ନ ଫିଙ୍ଗନ୍ତୁ"
+      }
+    ],
+    "1.152": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହି ବିଜ୍ଞାନ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଉଦିତ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଜରା-ମରଣ-ନାଶକ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ବ୍ରହ୍ମା ଆଦି ଦେବତା ଦ୍ୱାରା ବନ୍ଦନୀୟଙ୍କ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ମନ୍ଥାନ-ଭୈରବଙ୍କର"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଓ"
+      }
+    ],
+    "1.153": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହି ତନ୍ତ୍ର ଅନାଖ୍ୟାତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭୋଗ-ମୋକ୍ଷ-ବିଧାୟକ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଏହି ଅନାଖ୍ୟାତ ତନ୍ତ୍ର"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେମାନଙ୍କୁ ଦାନ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଲୀଳାରେ"
+      }
+    ],
+    "1.154": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଜ୍ଞାନ-ଲାଭ ଦ୍ୱାରା"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଗୁରୁ-ଭାବ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସମତା"
+      }
+    ],
+    "1.155": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଯେଉଁଠି ଯେଉଁଠି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯେକୌଣସି ଭାବେ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "କର୍ତ୍ତା-କର୍ମର ବିବେକ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ସେଠାରେ ସେଠାରେ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଶିବ-ଅବସ୍ଥା"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ବ୍ୟାପକତ୍ୱରୁ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "କୁଆଡ଼େ ଯିବ?"
+      }
+    ],
+    "1.156": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହି ବିଜ୍ଞାନକୁ ଅବଲମ୍ବନ କରି"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯୋଗୀ ଶିବ ହୁଅନ୍ତି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତୀର୍ଥ ଆଦିଠାରେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଜାତ ବି"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ସ୍ନାନ ଆଦିରେ କାରଣ ନୁହେଁ"
+      }
+    ],
+    "1.157": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଶ୍ରୋତା-ଆତ୍ମାର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଚିତ୍ତ-ସମତା"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ତତ୍ତ୍ୱର ଭାବନା"
+      }
+    ],
+    "1.158": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହି ବିଜ୍ଞାନର ଜ୍ଞାନରୁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଯୋଗ-ବିତ୍ତମ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ମହାଯୋଗୀ"
+      }
+    ],
+    "1.159": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସମ୍ପୂର୍ଣ୍ଣ ତୃପ୍ତ ମୁଁ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ରୁଦ୍ରଯାମଳ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସାର ଅବଧାରିତ"
+      }
+    ],
+    "1.160": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ସମସ୍ତ ଶକ୍ତି-ପ୍ରଭେଦର"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ହୃଦୟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ପ୍ରାପ୍ତ କରି"
+      }
+    ],
+    "1.161": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଆନନ୍ଦିତ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "କଣ୍ଠରେ ଲାଗି"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ସମୁଦ୍ଧୃତ"
+      }
+    ],
+    "1.162": [
+      {
+        "word_idx": 0,
+        "gloss_text": "କୁଳ-ଗୁହ୍ୟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଭକ୍ତି-ଯୁକ୍ତ ଶିଷ୍ୟକୁ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଗୁରୁ-ଘାତକ"
+      }
+    ],
+    "1.163": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ଏହିପରି ବିଜ୍ଞାନ-ଭୈରବରେ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ଶ୍ରୀଦେବୀଙ୍କ ସ୍ତୁତି-ରୂପ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ଶହେ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ଦ୍ୱାଦଶ-ଅଧିକ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ଉକ୍ତ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ଭେଦ-ବର୍ଜିତ"
+      }
+    ]
+  }
+}
