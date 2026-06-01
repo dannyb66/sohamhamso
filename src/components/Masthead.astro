@@ -4,10 +4,11 @@
  * language picker right. Hairline border-bottom (var(--color-rule)).
  * Persistent across pages.
  *
- * Search opens a placeholder modal at V1; full search (lexical +
- * semantic blend) lands in the search workstream. Language picker is
- * English-only at launch with other languages greyed (aria-disabled +
- * tooltip), per the honest-constraint pattern from the design spec.
+ * The search trigger is intercepted by the global SearchBox Solid island
+ * (mounted in BaseLayout); this component just renders the button. Language
+ * picker is English-only at launch with other languages greyed
+ * (aria-disabled + tooltip), per the honest-constraint pattern from the
+ * design spec.
  */
 import Wordmark from "./Wordmark.astro";
 
@@ -86,37 +87,12 @@ const languages = [
   </div>
 </header>
 
-<!-- V1 search placeholder modal. Real search lands later. -->
-<dialog class="search-modal" data-search-modal aria-label="Search">
-  <form method="dialog" class="search-modal-inner">
-    <label for="search-q" class="search-label">Search verses, words, or concepts</label>
-    <input
-      type="search"
-      id="search-q"
-      name="q"
-      placeholder="pratyabhijñā · wherever the mind goes · कृष्ण · recognition"
-      autocomplete="off"
-      autofocus
-    />
-    <p class="search-note">
-      Full search arrives in V1.1 — for now this is a placeholder. Browse
-      <a href="/texts">all texts</a> to explore the corpus.
-    </p>
-    <button type="submit" class="search-close">Close</button>
-  </form>
-</dialog>
-
 <script>
-  // Wire the placeholder search modal and the language menu. Vanilla JS —
-  // no framework island for V1 chrome. Replace with proper Solid island
-  // when real search ships.
+  // Wire the language menu. The [data-search-trigger] button is intercepted
+  // by the SearchBox Solid island (mounted globally in BaseLayout), so this
+  // file does not bind a click handler for it. ⌘K / Ctrl-K is handled by
+  // the same island in capture phase.
   (() => {
-    const searchTrigger = document.querySelector<HTMLButtonElement>("[data-search-trigger]");
-    const searchModal = document.querySelector<HTMLDialogElement>("[data-search-modal]");
-    if (searchTrigger && searchModal) {
-      searchTrigger.addEventListener("click", () => searchModal.showModal());
-    }
-
     const langTrigger = document.querySelector<HTMLButtonElement>("[data-lang-trigger]");
     const langMenu = document.querySelector<HTMLUListElement>("[data-lang-menu]");
     if (langTrigger && langMenu) {
@@ -138,14 +114,6 @@ const languages = [
         }
       });
     }
-
-    // ⌘K / Ctrl-K to open search
-    document.addEventListener("keydown", (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        searchModal?.showModal();
-      }
-    });
   })();
 </script>
 
@@ -280,60 +248,4 @@ const languages = [
     letter-spacing: 0.02em;
   }
 
-  /* Search modal — minimal, V1 placeholder */
-  .search-modal {
-    padding: 0;
-    border: 1px solid var(--color-rule);
-    border-radius: 6px;
-    background: var(--color-surface);
-    color: var(--color-ink);
-    max-width: 560px;
-    width: 92vw;
-  }
-  .search-modal::backdrop {
-    background: rgba(28, 26, 23, 0.4);
-  }
-  .search-modal-inner {
-    padding: var(--spacing-5);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-3);
-  }
-  .search-label {
-    font-family: var(--font-chrome);
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-ink-muted);
-  }
-  .search-modal input[type="search"] {
-    font-family: var(--font-iast);
-    font-size: 18px;
-    padding: var(--spacing-3);
-    border: 1px solid var(--color-rule);
-    border-radius: 4px;
-    background: var(--color-bg);
-    color: var(--color-ink);
-    width: 100%;
-  }
-  .search-modal input[type="search"]:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 1px;
-  }
-  .search-note {
-    font-size: 14px;
-    color: var(--color-ink-muted);
-    margin: 0;
-  }
-  .search-close {
-    align-self: flex-end;
-    font-family: var(--font-chrome);
-    font-size: 14px;
-    padding: 8px 16px;
-    background: transparent;
-    border: 1px solid var(--color-rule);
-    border-radius: 4px;
-    color: var(--color-ink);
-    cursor: pointer;
-  }
 </style>

@@ -27,6 +27,11 @@
 
 import type { APIRoute } from "astro";
 
+// Server-rendered endpoint — Astro's default `output: 'static'` would
+// prerender this route and reject POST. The opt-out keeps the rest of
+// the site static while letting this one route accept form submissions.
+export const prerender = false;
+
 // Languages active at V1 — English only. Others are queued but rejected
 // for now with an honest "not yet available" message.
 const ACTIVE_LANGUAGES = new Set(["en"]);

@@ -56,6 +56,42 @@ import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { load as yamlLoad } from "js-yaml";
+import Sanscript from "@indic-transliteration/sanscript";
+
+// ---------------------------------------------------------------
+// Script normalisation
+// ---------------------------------------------------------------
+
+/**
+ * Returns true when `s` contains at least one Devanāgarī code point
+ * (U+0900–U+097F). Used to decide whether a YAML `word`/`word_sa` value
+ * is already in the canonical script or needs to be transliterated from
+ * IAST/Latin. We deliberately accept "any Devanāgarī" rather than "no
+ * Latin" so that mixed strings (rare, but present in some compounds with
+ * editor brackets) take the no-op path.
+ */
+export function isDevanagari(s: string | null | undefined): boolean {
+  if (!s) return false;
+  return /[ऀ-ॿ]/.test(s);
+}
+
+/**
+ * Best-effort normalisation: if the input is already Devanāgarī, return
+ * it untouched. Otherwise treat it as IAST and run it through Sanscript.
+ * The downstream ScriptSwitcher uses `data-sa-source` containing
+ * Devanāgarī as its canonical form, so storing anything else here would
+ * cause the on-page transliteration to produce garbage when the reader
+ * selects Tamil, Bengali, etc.
+ */
+export function toDevanagari(s: string | null | undefined): string {
+  if (!s) return "";
+  if (isDevanagari(s)) return s;
+  try {
+    return Sanscript.t(s, "iast", "devanagari");
+  } catch {
+    return s;
+  }
+}
 
 // ---------------------------------------------------------------
 // Paths
@@ -188,15 +224,29 @@ export function parseTextYaml(filePath: string): TextYaml {
     const verses = versesRaw.map((v) => {
       const verse_num = typeof v.verse_num === "number" ? v.verse_num : typeof v.verse === "number" ? v.verse : v.verse_num;
       const glossesRaw = Array.isArray(v.word_glosses) ? (v.word_glosses as Record<string, unknown>[]) : [];
-      const word_glosses = glossesRaw.map((g, i) => ({
-        word_idx: typeof g.word_idx === "number" ? g.word_idx : i,
-        word_sa: (g.word_sa ?? g.word) as string,
-        lemma_sa: (g.lemma_sa ?? null) as string | null,
-        lemma_iast: (g.lemma_iast ?? g.iast ?? null) as string | null,
-        gloss_lang: (g.gloss_lang ?? "en") as string,
-        gloss_text: (g.gloss_text ?? g.gloss_en ?? g.gloss ?? "") as string,
-        morph: (g.morph ?? null) as string | null,
-      }));
+      const word_glosses = glossesRaw.map((g, i) => {
+        // Some YAML files (e.g. Śiva Sūtras) store the surface form in
+        // IAST instead of Devanāgarī. The ScriptSwitcher island treats
+        // word_sa as the canonical Devanāgarī source for on-page
+        // transliteration, so we normalise here. If `word_sa` is already
+        // Devanāgarī we keep it untouched; if it's IAST we round-trip
+        // through Sanscript and also preserve the original IAST in
+        // `lemma_iast` (unless the YAML already provided one).
+        const rawWord = (g.word_sa ?? g.word) as string;
+        const word_sa = toDevanagari(rawWord);
+        const explicitIast = (g.lemma_iast ?? g.iast ?? null) as string | null;
+        const lemma_iast =
+          explicitIast ?? (rawWord && !isDevanagari(rawWord) ? rawWord : null);
+        return {
+          word_idx: typeof g.word_idx === "number" ? g.word_idx : i,
+          word_sa,
+          lemma_sa: (g.lemma_sa ?? null) as string | null,
+          lemma_iast,
+          gloss_lang: (g.gloss_lang ?? "en") as string,
+          gloss_text: (g.gloss_text ?? g.gloss_en ?? g.gloss ?? "") as string,
+          morph: (g.morph ?? null) as string | null,
+        };
+      });
       const translationsRaw = Array.isArray(v.translations) ? (v.translations as Record<string, unknown>[]) : [];
       const translations = translationsRaw.map((t) => ({
         lang: (t.lang ?? "en") as string,

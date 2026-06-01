@@ -194,13 +194,19 @@ const glossesPayload = {
     </div>
     <div class="chrome__tools">
       <ScriptSwitcher client:idle />
-      <button type="button" class="chrome__settings" aria-label="Reading settings">
+      <button
+        type="button"
+        class="chrome__settings"
+        aria-label="Reading settings"
+        data-settings-trigger
+        onclick="document.dispatchEvent(new CustomEvent('sohamhamso:open-settings'))"
+      >
         Aa
       </button>
     </div>
   </header>
 
-  <main class="reader">
+  <main id="main" class="reader">
     <p class="sample-banner">
       Sample page — hardcoded verse, no database. Useful for component QA.
     </p>

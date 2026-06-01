@@ -13,11 +13,11 @@
  *   const textCount = getTextCount();
  */
 
-// TODO: replace with `getTextCount()` from src/lib/db.ts once the
-// SQLite reader helper lands. Phase 1 ships 5 texts (Śiva Sūtras,
-// Spanda Kārikās, Pratyabhijñā Hṛdayam, Vijñāna Bhairava, Karpūrādi
-// Stotra) — keeping in sync with that until the DB query exists.
-const textCount = 5;
+// Live count from the corpus DB — stays honest as texts are ingested.
+// `listTexts()` already exists in src/lib/db.ts and returns one row per
+// text, so .length is the canonical "All texts (N)" number.
+import { listTexts } from "../lib/db";
+const textCount = listTexts().length;
 
 const entries = [
   {

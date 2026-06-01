@@ -1,0 +1,115 @@
+---
+/**
+ * /daily — placeholder for the daily-verse engagement loop.
+ *
+ * V1: shows the hardcoded featured verse (Vijñāna Bhairava 1.47) and
+ * the subscribe band so visitors who follow the curated "Daily readings"
+ * link have a place to land. V1.1 (daily-verse curator workstream)
+ * replaces the hero with a server-side rotation and lights up the
+ * email send via Resend.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Masthead from "../components/Masthead.astro";
+import Footer from "../components/Footer.astro";
+import FeaturedVerseHero from "../components/FeaturedVerseHero.astro";
+import SubscribeBand from "../components/SubscribeBand.astro";
+
+const pageTitle = "Daily verse — sohamhamso";
+const pageDescription =
+  "A verse arrives in your inbox each morning at sunrise. English only at launch; more languages soon.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Masthead />
+
+  <main id="main" class="daily">
+    <header class="daily-header">
+      <h1 class="daily-title">Daily verse</h1>
+      <p class="daily-lede">
+        A verse arrives in your inbox each morning at sunrise. English only at
+        launch; more languages soon.
+      </p>
+    </header>
+
+    <section class="daily-today" aria-labelledby="today-label">
+      <p id="today-label" class="daily-eyebrow">Today's verse</p>
+      <FeaturedVerseHero />
+    </section>
+
+    <SubscribeBand />
+
+    <p class="daily-note">
+      Verse rotation lands in V1.1 via the daily-verse curator workstream.
+      Until then, today's verse is fixed to Vijñāna Bhairava 1.47.
+    </p>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .daily {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4) var(--spacing-9);
+  }
+
+  @media (min-width: 768px) {
+    .daily {
+      padding: var(--spacing-9) var(--spacing-6) var(--spacing-10);
+    }
+  }
+
+  .daily-header {
+    max-width: 62ch;
+    margin: 0 auto var(--spacing-7);
+    text-align: center;
+  }
+
+  .daily-title {
+    font-family: var(--font-iast);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-3);
+  }
+
+  @media (min-width: 768px) {
+    .daily-title {
+      font-size: 40px;
+    }
+  }
+
+  .daily-lede {
+    font-family: var(--font-iast);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+    margin: 0;
+  }
+
+  .daily-today {
+    margin-bottom: var(--spacing-8);
+  }
+
+  .daily-eyebrow {
+    font-family: var(--font-chrome);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-muted);
+    text-align: center;
+    margin: 0 0 var(--spacing-4);
+  }
+
+  .daily-note {
+    max-width: 62ch;
+    margin: var(--spacing-7) auto 0;
+    font-family: var(--font-chrome);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--color-ink-muted);
+    text-align: center;
+  }
+</style>

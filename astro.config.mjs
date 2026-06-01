@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://sohamhamso.org',
   output: 'static',
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
   integrations: [solid()],
   vite: {
     plugins: [tailwindcss()],

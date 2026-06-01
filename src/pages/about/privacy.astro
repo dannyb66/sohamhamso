@@ -1,0 +1,141 @@
+---
+/**
+ * /about/privacy — minimum-collection privacy statement.
+ *
+ * The site is a static reader. The only personal data the project handles
+ * is opt-in email addresses for the daily-verse subscription. This page
+ * states that honestly. It is plain prose, not a legal document, and it
+ * is meant to be readable in under two minutes.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Masthead from "../../components/Masthead.astro";
+import Footer from "../../components/Footer.astro";
+
+const updated = "2026-05-31";
+---
+
+<BaseLayout
+  title="Privacy — sohamhamso"
+  description="What sohamhamso collects (almost nothing) and why."
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Privacy</h1>
+      <p class="lede">
+        sohamhamso is a static reader. We collect almost nothing. This
+        page explains the small exception (opt-in email) and how to
+        unsubscribe.
+      </p>
+
+      <h2 id="what-we-collect">What we collect</h2>
+      <p>
+        Reading the site requires nothing. No account, no cookie wall, no
+        tracker network. The pages you read are served as static HTML from
+        the edge. Your IP address is visible to our hosting provider for
+        the duration of each request, the same way every website on the
+        public internet works, and it is not stored against your identity
+        by us.
+      </p>
+
+      <p>
+        The one exception is the daily-verse email. If you subscribe, we
+        store an HMAC-SHA256 hash of your address — not the plaintext
+        email — along with your language preference and an unsubscribe
+        token. The hash means we can deliver mail and check duplicates
+        without keeping a usable email list at rest. We do not share or
+        sell anything.
+      </p>
+
+      <h2 id="what-we-dont">What we don't use</h2>
+      <ul>
+        <li>No analytics scripts (no GA, no Plausible, no Fathom).</li>
+        <li>No advertising or remarketing networks.</li>
+        <li>No third-party social embeds.</li>
+        <li>No fingerprinting, session replay, or A/B testing tools.</li>
+      </ul>
+
+      <h2 id="unsubscribe">Unsubscribe</h2>
+      <p>
+        Every daily-verse email includes a one-click unsubscribe link
+        tied to the token mentioned above. Following it deletes your row
+        from the subscribers database. If you want a manual deletion
+        instead, write to the address listed on the
+        <a href="/about/colophon">colophon</a>.
+      </p>
+
+      <h2 id="changes">Changes</h2>
+      <p>
+        If this page changes materially, the change is recorded in the
+        public Git history of the site. The page is generated from a
+        single source file, not a CMS, so there is no hidden version.
+      </p>
+
+      <p class="updated">Last updated: {updated}.</p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .reader {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4) var(--spacing-9);
+    font-family: var(--font-iast);
+    color: var(--color-ink);
+  }
+
+  @media (min-width: 768px) {
+    .reader {
+      padding: var(--spacing-9) var(--spacing-6) var(--spacing-10);
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-3);
+  }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 40px; }
+  }
+
+  .lede {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-7);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+
+  p, li {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--color-ink);
+  }
+
+  ul {
+    padding-left: 1.25em;
+    margin: 0 0 var(--spacing-4);
+  }
+
+  li { margin-bottom: var(--spacing-2); }
+
+  .updated {
+    margin-top: var(--spacing-7);
+    font-family: var(--font-chrome);
+    font-size: 13px;
+    color: var(--color-ink-muted);
+  }
+</style>

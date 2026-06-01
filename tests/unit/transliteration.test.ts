@@ -57,11 +57,14 @@ describe("toScript() — Devanāgarī ↔ IAST (Śiva Sūtra 1.1)", () => {
     expect(back).toBe(deva);
   });
 
-  it("the data-sa-source lossless-roundtrip pattern holds", () => {
-    // Pattern: render to a target script for display, but store the
-    // original devanagari in `data-sa-source`. To verify losslessness we
-    // re-run target → IAST → devanagari and confirm equality.
-    const targets = ["tamil", "telugu", "bengali", "gujarati", "kannada"];
+  it("the data-sa-source lossless-roundtrip pattern holds (voicing-preserving scripts)", () => {
+    // Tamil intentionally collapses voicing/aspiration distinctions (ka = क/ख/ग/घ),
+    // so a Devanāgarī → Tamil → IAST → Devanāgarī round-trip cannot preserve
+    // काइतन्य's च (it comes back as ज). This is a script-system limitation, not a
+    // bug. Production code stores the original Devanāgarī in `data-sa-source`
+    // precisely to handle this — the round-trip itself is only guaranteed for
+    // scripts that preserve the full Sanskrit consonant inventory.
+    const targets = ["telugu", "bengali", "gujarati", "kannada"];
     for (const target of targets) {
       const rendered = toScript(deva, "devanagari", target);
       const viaIast = toScript(rendered, target, "iast");

@@ -44,5 +44,5 @@ Code is MIT. Content (corpus YAML, translations, glosses, prose) is CC-BY-SA 4.0
 
 - Discussions: https://github.com/sohamhamso/sohamhamso/discussions
 - Dataset DOI: *TBD on first Zenodo release*
-- Methodology: [`/methodology`](https://sohamhamso.org/methodology) on the live site
+- Methodology: [`/about/methodology`](https://sohamhamso.org/about/methodology) on the live site
 - Contributing: [`CONTRIBUTING.md`](./CONTRIBUTING.md)
