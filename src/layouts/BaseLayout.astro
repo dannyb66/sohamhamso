@@ -1,4 +1,5 @@
 ---
+import I18nSwap from '../components/I18nSwap.solid.tsx';
 import SearchBox from '../components/SearchBox.solid.tsx';
 import SettingsSheet from '../components/SettingsSheet.solid.tsx';
 
@@ -50,16 +51,19 @@ const {
   <slot name="head" />
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link" data-i18n="skip.to_content">Skip to content</a>
   <slot />
   <!--
     Global islands: SettingsSheet listens for `sohamhamso:open-settings`
     (dispatched by [Aa] chrome buttons) and SearchBox intercepts the
     Masthead's `[data-search-trigger]` clicks + ⌘K/Ctrl-K in capture phase
-    so it supersedes the V1 placeholder dialog when present.
+    so it supersedes the V1 placeholder dialog when present. I18nSwap
+    walks the SSR DOM after hydrate and rewrites every [data-i18n]
+    element to the user's chosen reader-lang (no-op for English).
   -->
   <SettingsSheet client:idle />
   <SearchBox client:idle />
+  <I18nSwap client:idle />
 </body>
 </html>
 
