@@ -14,7 +14,8 @@ import ParallelChip from "../../../../components/ParallelChip.astro";
 import ScriptSwitcher from "../../../../components/ScriptSwitcher.solid";
 import WordSheet from "../../../../components/WordSheet.solid";
 import TranslationDrawer from "../../../../components/TranslationDrawer.solid";
-import { listTexts, listAllVerses, getVerse, getVerseTranslations, getDb } from "../../../../lib/db";
+import ReaderLangSwap from "../../../../components/ReaderLangSwap.solid";
+import { listTexts, listAllVerses, getVerse, getVerseTranslations, getVerseAllLanguages, getDb } from "../../../../lib/db";
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -126,6 +127,17 @@ const translationsPayload = allTranslations.map((t) => ({
   status: t.status,
   model: t.model,
 }));
+
+// Pre-bundle every supported reader-language's glosses + primary
+// translation so ReaderLangSwap can do an instant client-side swap when
+// the user picks Hindi / Tamil / etc. from the Reading Settings sheet.
+// English fallback is the existing static HTML — if a lang is missing
+// from this payload, ReaderLangSwap leaves the page unchanged.
+const allLang = getVerseAllLanguages(text!, chapterNum, verseNum);
+const readerDataPayload = {
+  glosses_by_lang: allLang?.glosses_by_lang ?? {},
+  translations_by_lang: allLang?.translations_by_lang ?? {},
+};
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -216,9 +228,11 @@ const translationsPayload = allTranslations.map((t) => ({
 
   <WordSheet client:idle />
   <TranslationDrawer client:idle />
+  <ReaderLangSwap client:idle />
 
   <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
   <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
+  <script is:inline set:html={`window.__readerData = ${JSON.stringify(readerDataPayload)};`} />
 </BaseLayout>
 
 <style>

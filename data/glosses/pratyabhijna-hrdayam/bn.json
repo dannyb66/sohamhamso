@@ -1,0 +1,154 @@
+{
+  "text_slug": "pratyabhijna-hrdayam",
+  "lang": "bn",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "চিতি, পরম চৈতন্য"},
+      {"word_idx": 1, "gloss_text": "স্বাধীনা, স্বতন্ত্র, মুক্ত"},
+      {"word_idx": 2, "gloss_text": "বিশ্ব, সমস্ত"},
+      {"word_idx": 3, "gloss_text": "সিদ্ধি, প্রকাশ, প্রতিষ্ঠা"},
+      {"word_idx": 4, "gloss_text": "কারণ"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "আপন ইচ্ছায়"},
+      {"word_idx": 1, "gloss_text": "আপন ভিত্তিতে (স্বরূপের পটে)"},
+      {"word_idx": 2, "gloss_text": "বিশ্বকে"},
+      {"word_idx": 3, "gloss_text": "উন্মীলিত করেন, প্রকাশ করেন (আক্ষরিক — উন্মুক্ত করেন)"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "সেই (বিশ্ব)"},
+      {"word_idx": 1, "gloss_text": "বহুরূপ, নানা প্রকার"},
+      {"word_idx": 2, "gloss_text": "অনুরূপ, পরস্পর সঙ্গত"},
+      {"word_idx": 3, "gloss_text": "গ্রাহ্য, জ্ঞেয় বিষয়"},
+      {"word_idx": 4, "gloss_text": "গ্রাহক, জ্ঞাতা"},
+      {"word_idx": 5, "gloss_text": "ভেদের কারণে"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "চিতির সঙ্কোচই যাঁহার স্বরূপ"},
+      {"word_idx": 1, "gloss_text": "চেতন, জীব, অনুভবকারী"},
+      {"word_idx": 2, "gloss_text": "অপি, যদিও"},
+      {"word_idx": 3, "gloss_text": "সঙ্কুচিত, সঙ্কীর্ণ"},
+      {"word_idx": 4, "gloss_text": "বিশ্বময়, বিশ্বের সহিত একরূপ"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "চিতি স্বয়ং"},
+      {"word_idx": 1, "gloss_text": "এব, কেবল"},
+      {"word_idx": 2, "gloss_text": "(মুক্ত) চেতন-পদ হইতে"},
+      {"word_idx": 3, "gloss_text": "অবরূঢ়, অবতীর্ণ"},
+      {"word_idx": 4, "gloss_text": "চেত্য (জ্ঞেয়) দ্বারা সঙ্কুচিতা"},
+      {"word_idx": 5, "gloss_text": "চিত্ত — ব্যক্তিগত মন"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "সেই (চিত্ত)-ময়"},
+      {"word_idx": 1, "gloss_text": "মায়িক প্রমাতা (মায়াবদ্ধ জীব)"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "সঃ, তিনি (অনুভবকারী)"},
+      {"word_idx": 1, "gloss_text": "এবং"},
+      {"word_idx": 2, "gloss_text": "এক (স্বরূপে)"},
+      {"word_idx": 3, "gloss_text": "দ্বিরূপ (শিব-শক্তি)"},
+      {"word_idx": 4, "gloss_text": "ত্রিময় (আণব/শাক্ত/শাম্ভব অথবা তিন মল)"},
+      {"word_idx": 5, "gloss_text": "চতুরাত্মা (চৈতন্যের চারি অবস্থাবিশিষ্ট)"},
+      {"word_idx": 6, "gloss_text": "সপ্ত-পঞ্চক, সাত পঞ্চক"},
+      {"word_idx": 7, "gloss_text": "স্বভাব, সেই স্বরূপের"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "সেই (এক চৈতন্যের) ভূমিকা/অবস্থা"},
+      {"word_idx": 1, "gloss_text": "সর্ব"},
+      {"word_idx": 2, "gloss_text": "দর্শন, দার্শনিক মত"},
+      {"word_idx": 3, "gloss_text": "স্থিতি, সিদ্ধান্ত-অবস্থান"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "চিৎ-স্বরূপ হইলেও"},
+      {"word_idx": 1, "gloss_text": "আপন শক্তির সঙ্কোচের কারণে"},
+      {"word_idx": 2, "gloss_text": "মলে আবৃত"},
+      {"word_idx": 3, "gloss_text": "সংসারী, সংসারচক্রে আবদ্ধ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "তথাপি, তবুও"},
+      {"word_idx": 1, "gloss_text": "তাঁর (শিবের) ন্যায়"},
+      {"word_idx": 2, "gloss_text": "পঞ্চকৃত্য (সৃষ্টি, স্থিতি, সংহার, তিরোধান, অনুগ্রহ)"},
+      {"word_idx": 3, "gloss_text": "সম্পাদন করেন"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "আভাসন — প্রকাশন (= সৃষ্টি)"},
+      {"word_idx": 1, "gloss_text": "রক্তি — আস্বাদন (= স্থিতি)"},
+      {"word_idx": 2, "gloss_text": "বিমর্শন — পরামর্শাত্মক গ্রহণ (= সংহার)"},
+      {"word_idx": 3, "gloss_text": "বীজাবস্থাপন — বীজরূপে স্থাপন (= তিরোধান)"},
+      {"word_idx": 4, "gloss_text": "বিলাপন — বিলয়/দ্রবীভবন (= অনুগ্রহ) — এই (পাঁচ)-এর দ্বারা"},
+      {"word_idx": 5, "gloss_text": "সেই পাঁচ ক্রিয়া (সম্পাদিত হয়)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "তাঁহার (স্বরূপের) অপরিজ্ঞান হইলে"},
+      {"word_idx": 1, "gloss_text": "আপন শক্তিসমূহের দ্বারা"},
+      {"word_idx": 2, "gloss_text": "ব্যামোহিত হওয়ার অবস্থা"},
+      {"word_idx": 3, "gloss_text": "সংসারিত্ব, সংসারে আবদ্ধতা"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "তাঁহার (স্বরূপের) পরিজ্ঞান হইলে"},
+      {"word_idx": 1, "gloss_text": "চিত্ত (সীমিত মন)"},
+      {"word_idx": 2, "gloss_text": "স্বয়ং"},
+      {"word_idx": 3, "gloss_text": "অন্তর্মুখী ভাবের দ্বারা"},
+      {"word_idx": 4, "gloss_text": "(মুক্ত) চেতন-পদে আরোহণ দ্বারা"},
+      {"word_idx": 5, "gloss_text": "চিতি (বিশ্বচৈতন্য) হইয়া ওঠে"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "চিতি-বহ্নি, চৈতন্যের অগ্নি"},
+      {"word_idx": 1, "gloss_text": "অবরোহ-পদে (অর্থাৎ বদ্ধ অবস্থায়)"},
+      {"word_idx": 2, "gloss_text": "ছন্ন, আবৃত"},
+      {"word_idx": 3, "gloss_text": "অপি, যদিও"},
+      {"word_idx": 4, "gloss_text": "মাত্রায়, আংশিকভাবে"},
+      {"word_idx": 5, "gloss_text": "মেয় (জ্ঞেয়) ইন্ধন"},
+      {"word_idx": 6, "gloss_text": "দগ্ধ করে"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "(চিতির) বল লাভ হইলে"},
+      {"word_idx": 1, "gloss_text": "বিশ্বকে"},
+      {"word_idx": 2, "gloss_text": "আত্মসাৎ, আপনার সহিত একাত্ম"},
+      {"word_idx": 3, "gloss_text": "করেন"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "চিৎ-আনন্দ লাভ হইলে"},
+      {"word_idx": 1, "gloss_text": "দেহ আদিতে"},
+      {"word_idx": 2, "gloss_text": "চেত্যমান (বিষয়রূপে অনুভূত) হইলেও"},
+      {"word_idx": 3, "gloss_text": "অপি, এমনকি"},
+      {"word_idx": 4, "gloss_text": "চৈতন্যের সহিত একাত্ম্যের দৃঢ় প্রতিপত্তি"},
+      {"word_idx": 5, "gloss_text": "জীবন্মুক্তি — জীবিত অবস্থায় মুক্তি"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "মধ্য (মধ্যনাড়ী)-এর বিকাশ হইতে"},
+      {"word_idx": 1, "gloss_text": "চিৎ-আনন্দের প্রাপ্তি"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "বিকল্প-ক্ষয়, চিন্তা-কল্পনার বিলয়"},
+      {"word_idx": 1, "gloss_text": "শক্তির সঙ্কোচ ও বিকাশ"},
+      {"word_idx": 2, "gloss_text": "(প্রাণ-অপান) বাহের ছেদ"},
+      {"word_idx": 3, "gloss_text": "আদি, ইত্যাদি"},
+      {"word_idx": 4, "gloss_text": "অন্ত-কোটি-নিভালন, আদি ও অন্ত বিন্দুর একাগ্র দর্শন"},
+      {"word_idx": 5, "gloss_text": "আদয়ঃ, ইত্যাদি (এইরূপ অন্যান্য)"},
+      {"word_idx": 6, "gloss_text": "ইহ, এই (শাস্ত্রে)"},
+      {"word_idx": 7, "gloss_text": "উপায়সমূহ"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "সমাধি-সংস্কারযুক্ত (সমাধির ছাপ-বহনকারী)"},
+      {"word_idx": 1, "gloss_text": "ব্যুত্থানে, বাহ্য কর্মে প্রত্যাবর্তনের অবস্থায়"},
+      {"word_idx": 2, "gloss_text": "বারংবার"},
+      {"word_idx": 3, "gloss_text": "চৈতন্য-একতার আমর্শ (পরামর্শ) দ্বারা"},
+      {"word_idx": 4, "gloss_text": "নিত্যোদিত (সদা উদিত) সমাধির লাভ"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "তদা, তখন"},
+      {"word_idx": 1, "gloss_text": "প্রকাশ ও আনন্দ যাঁহার সার"},
+      {"word_idx": 2, "gloss_text": "মহামন্ত্র (অহম্)-এর বীর্যাত্মক"},
+      {"word_idx": 3, "gloss_text": "পূর্ণ অহন্তায় আবেশের দ্বারা"},
+      {"word_idx": 4, "gloss_text": "সদা সর্ব সৃষ্টি ও সংহারকারী"},
+      {"word_idx": 5, "gloss_text": "আপন সংবিদ্-দেবতাচক্রের ঈশ্বরত্বের প্রাপ্তি"},
+      {"word_idx": 6, "gloss_text": "ভবতি, ঘটে"},
+      {"word_idx": 7, "gloss_text": "ইতি শিবম্ — ইহাই মঙ্গল"}
+    ]
+  }
+}

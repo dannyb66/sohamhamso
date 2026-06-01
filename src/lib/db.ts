@@ -401,6 +401,136 @@ export function getVerse(
 }
 
 /**
+ * Return per-language glosses + per-language translations for a single
+ * verse. Used by the reader-language client island (`ReaderLangSwap`) to
+ * pre-bundle every supported reader language into the static HTML, so the
+ * swap to Hindi / Tamil / etc. is near-instant with no extra round trip.
+ *
+ * Returned shape:
+ *   {
+ *     glosses_by_lang: { en: [...], hi: [...], ... }
+ *     translations_by_lang: { en: { translation_text, translator, ... }, ... }
+ *   }
+ *
+ * `glosses_by_lang[lang]` is the array of {word_idx, word_sa, lemma_iast,
+ * gloss_text, morph} ordered by word_idx ASC. For translations we keep
+ * the FIRST published/reviewed row per language (the same row
+ * VerseAnatomy renders as primary).
+ *
+ * Single query each — pulls all langs together (no `WHERE gloss_lang = ?`).
+ */
+export function getVerseAllLanguages(
+  textSlug: string,
+  chapter: number,
+  verseNum: number,
+): {
+  verse: Verse;
+  glosses_by_lang: Record<
+    string,
+    Array<{
+      word_idx: number;
+      word_sa: string;
+      lemma_iast: string | null;
+      gloss_text: string;
+      morph: string | null;
+    }>
+  >;
+  translations_by_lang: Record<
+    string,
+    {
+      lang: string;
+      translation_text: string;
+      translator: string | null;
+      ai_assisted: boolean;
+    }
+  >;
+} | null {
+  const db = getDb();
+  const text = getText(textSlug);
+  if (!text) return null;
+
+  const verse = db
+    .query<Verse, [string, number, number]>(`
+      SELECT v.*
+      FROM verses v
+      WHERE v.text_id = ? AND v.chapter = ? AND v.verse_num = ?
+      LIMIT 1
+    `)
+    .get(text.id, chapter, verseNum);
+  if (!verse) return null;
+
+  const glossRows = db
+    .query<
+      {
+        word_idx: number;
+        word_sa: string;
+        lemma_iast: string | null;
+        gloss_lang: string;
+        gloss_text: string;
+        morph: string | null;
+      },
+      [number]
+    >(`
+      SELECT word_idx, word_sa, lemma_iast, gloss_lang, gloss_text, morph
+      FROM word_glosses
+      WHERE verse_id = ?
+      ORDER BY gloss_lang ASC, word_idx ASC
+    `)
+    .all(verse.id);
+
+  const glosses_by_lang: Record<
+    string,
+    Array<{
+      word_idx: number;
+      word_sa: string;
+      lemma_iast: string | null;
+      gloss_text: string;
+      morph: string | null;
+    }>
+  > = {};
+  for (const g of glossRows) {
+    const list = glosses_by_lang[g.gloss_lang] ?? (glosses_by_lang[g.gloss_lang] = []);
+    list.push({
+      word_idx: g.word_idx,
+      word_sa: g.word_sa,
+      lemma_iast: g.lemma_iast,
+      gloss_text: g.gloss_text,
+      morph: g.morph,
+    });
+  }
+
+  // Mirror getVerse() ordering: ai_assisted ASC, created_at ASC — the
+  // first row per lang is the "primary" one VerseAnatomy renders.
+  const trRows = db
+    .query<
+      { lang: string; translation_text: string; translator: string | null; ai_assisted: number },
+      [number]
+    >(`
+      SELECT lang, translation_text, translator, ai_assisted
+      FROM translations
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, ai_assisted ASC, created_at ASC
+    `)
+    .all(verse.id);
+
+  const translations_by_lang: Record<
+    string,
+    { lang: string; translation_text: string; translator: string | null; ai_assisted: boolean }
+  > = {};
+  for (const t of trRows) {
+    if (translations_by_lang[t.lang]) continue; // keep the first per lang
+    translations_by_lang[t.lang] = {
+      lang: t.lang,
+      translation_text: t.translation_text,
+      translator: t.translator,
+      ai_assisted: t.ai_assisted === 1,
+    };
+  }
+
+  return { verse, glosses_by_lang, translations_by_lang };
+}
+
+/**
  * Return ALL translations for a verse across every language. Powers the
  * TranslationDrawer's multi-select chip availability + stacked preview.
  *

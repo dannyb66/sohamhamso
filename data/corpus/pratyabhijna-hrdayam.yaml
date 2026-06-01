@@ -12,8 +12,8 @@ text:
   source_url: "https://muktabodha.org"
   source_revision: pending
   license: PD
-  parent_text_id: null
-  manuscript_url: null
+  parent_text_id:
+  manuscript_url:
   description: |
     The Pratyabhijñāhṛdayam ("Heart of Recognition") is a concise primer
     on the Pratyabhijñā (Recognition) school of Kashmir Śaivism composed
@@ -26,723 +26,3627 @@ text:
     auto-commentary is treated as a sibling text (pratyabhijna-hrdayam-vrtti).
 
 chapters:
-  - chapter: 1
-    title_sa: सूत्राणि
-    title_iast: sūtrāṇi
-    title_en: The Sūtras
-    verses:
-      - verse: 1
-        devanagari: चितिः स्वतन्त्रा विश्वसिद्धिहेतुः ॥१॥
-        slp1: "citiH svatantrA vizvasiddhihetuH"
-        iast: "citiḥ svatantrā viśvasiddhihetuḥ"
-        meter: sūtra
-        word_glosses:
-          - word: चितिः
-            iast: citiḥ
-            gloss_en: Consciousness, the absolute Awareness
-            morph: nom. sg. f.
-          - word: स्वतन्त्रा
-            iast: svatantrā
-            gloss_en: self-dependent, free, autonomous
-            morph: nom. sg. f. adj.
-          - word: विश्व
-            iast: viśva
-            gloss_en: the universe, the all
-            morph: stem in cpd.
-          - word: सिद्धि
-            iast: siddhi
-            gloss_en: accomplishment, manifestation, establishment
-            morph: stem in cpd.
-          - word: हेतुः
-            iast: hetuḥ
-            gloss_en: the cause
-            morph: nom. sg. m.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings (Singh, Chatterji)"
-            license: PD
-            text: "The absolute Consciousness, in its freedom, is the cause of the manifestation of the universe."
-            ai_assisted: false
-            status: published
+- chapter: 1
+  title_sa: सूत्राणि
+  title_iast: sūtrāṇi
+  title_en: The Sūtras
+  verses:
+  - verse: 1
+    devanagari: चितिः स्वतन्त्रा विश्वसिद्धिहेतुः ॥१॥
+    slp1: "citiH svatantrA vizvasiddhihetuH"
+    iast: "citiḥ svatantrā viśvasiddhihetuḥ"
+    meter: sūtra
+    word_glosses:
+    - word: चितिः
+      iast: citiḥ
+      gloss_en: Consciousness, the absolute Awareness
+      morph: nom. sg. f.
+      gloss_as: চিতি, পৰম চৈতন্য
+      gloss_bn: চিতি, পরম চৈতন্য
+      gloss_gu: ચૈતન્ય, પરમ જ્ઞાન-સ્વરૂપ
+      gloss_hi: चिति — चैतन्य, परम बोध-शक्ति
+      gloss_kn: ಚಿತಿ — ಚೈತನ್ಯ, ಪರಮ ಪ್ರಜ್ಞೆ
+      gloss_ml: ചിതി — പരമബോധം, ശുദ്ധ ചൈതന്യം
+      gloss_mr: चैतन्य, परम जाणीव
+      gloss_or: ଚୈତନ୍ୟ, ପରମ ବୋଧ
+      gloss_pa: ਚੈਤੰਨ, ਪਰਮ ਚੇਤਨਾ
+      gloss_ta: சித், பேரறிவு, தனிமுதல் சைதன்யம்
+      gloss_te: చైతన్యము, పరమ అవగాహన
+    - word: स्वतन्त्रा
+      iast: svatantrā
+      gloss_en: self-dependent, free, autonomous
+      morph: nom. sg. f. adj.
+      gloss_as: স্বতন্ত্ৰা, স্বাধীন, মুক্ত
+      gloss_bn: স্বাধীনা, স্বতন্ত্র, মুক্ত
+      gloss_gu: સ્વતંત્ર, સ્વાધીન, કોઈના આશ્રય વગરની
+      gloss_hi: स्वतन्त्र, स्वाधीन, स्वायत्त
+      gloss_kn: ಸ್ವತಂತ್ರಳಾದ, ಸ್ವಾಧೀನಳಾದ, ಸ್ವಯಂಭು
+      gloss_ml: സ്വതന്ത്ര — സ്വാധീന, സ്വയം ആശ്രയിച്ച, സ്വാതന്ത്ര്യമുള്ള
+      gloss_mr: स्वतंत्र, स्वायत्त, स्व-अधीन
+      gloss_or: ସ୍ୱତନ୍ତ୍ର, ସ୍ୱାଧୀନ, ସ୍ୱାୟତ୍ତ
+      gloss_pa: ਸਵੈ-ਨਿਰਭਰ, ਸੁਤੰਤਰ, ਆਜ਼ਾਦ
+      gloss_ta: சுயாதீனமான, சுதந்திரமான, தன்னிச்சையான
+      gloss_te: స్వతంత్రమైన, స్వాధీనమైన, స్వేచ్ఛాయుతమైన
+    - word: विश्व
+      iast: viśva
+      gloss_en: the universe, the all
+      morph: stem in cpd.
+      gloss_as: বিশ্ব, সমষ্টি
+      gloss_bn: বিশ্ব, সমস্ত
+      gloss_gu: વિશ્વ, સમગ્ર બ્રહ્માંડ
+      gloss_hi: विश्व, समस्त (समासगत स्तम्भ)
+      gloss_kn: ವಿಶ್ವ — ಜಗತ್ತು, ಸರ್ವವೂ
+      gloss_ml: വിശ്വ — പ്രപഞ്ചം, സർവം
+      gloss_mr: विश्व, सर्व
+      gloss_or: ବିଶ୍ୱ, ସମଗ୍ର
+      gloss_pa: ਵਿਸ਼ਵ, ਸਮੂਹ ਬ੍ਰਹਿਮੰਡ
+      gloss_ta: பிரபஞ்சம், அனைத்தும்
+      gloss_te: విశ్వము, సర్వము
+    - word: सिद्धि
+      iast: siddhi
+      gloss_en: accomplishment, manifestation, establishment
+      morph: stem in cpd.
+      gloss_as: সিদ্ধি, প্ৰকটন, প্ৰতিষ্ঠা
+      gloss_bn: সিদ্ধি, প্রকাশ, প্রতিষ্ঠা
+      gloss_gu: સિદ્ધિ, અભિવ્યક્તિ, સ્થાપના
+      gloss_hi: सिद्धि — अभिव्यक्ति, स्थापना (समासगत स्तम्भ)
+      gloss_kn: ಸಿದ್ಧಿ — ಅಭಿವ್ಯಕ್ತಿ, ಸಿದ್ಧಗೊಳ್ಳುವಿಕೆ, ಪ್ರತಿಷ್ಠಾಪನೆ
+      gloss_ml: സിദ്ധി — സാധനം, പ്രകടനം, സ്ഥാപനം
+      gloss_mr: सिद्धी, आविष्कार, प्रकटन
+      gloss_or: ସିଦ୍ଧି, ଅଭିବ୍ୟକ୍ତି, ପ୍ରତିଷ୍ଠା
+      gloss_pa: ਸਿੱਧੀ, ਪ੍ਰਗਟਾਵਾ, ਸਥਾਪਨਾ
+      gloss_ta: சித்தி, வெளிப்பாடு, நிலைநிறுத்துதல்
+      gloss_te: సిద్ధి, ఆవిర్భావము, స్థాపన
+    - word: हेतुः
+      iast: hetuḥ
+      gloss_en: the cause
+      morph: nom. sg. m.
+      gloss_as: হেতু, কাৰণ
+      gloss_bn: কারণ
+      gloss_gu: હેતુ, કારણ
+      gloss_hi: हेतु — कारण
+      gloss_kn: ಹೇತು — ಕಾರಣ
+      gloss_ml: ഹേതു — കാരണം
+      gloss_mr: कारण
+      gloss_or: କାରଣ
+      gloss_pa: ਕਾਰਨ, ਹੇਤੁ
+      gloss_ta: காரணம்
+      gloss_te: కారణము
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings (Singh, Chatterji)"
+      license: PD
+      text: "The absolute Consciousness, in its freedom, is the cause of the manifestation of the universe."
+      ai_assisted: false
+      status: published
 
-      - verse: 2
-        devanagari: स्वेच्छया स्वभित्तौ विश्वमुन्मीलयति ॥२॥
-        slp1: "svecCayA svaBittO vizvamunmIlayati"
-        iast: "svecchayā svabhittau viśvam unmīlayati"
-        meter: sūtra
-        word_glosses:
-          - word: स्व-इच्छया
-            iast: sva-icchayā
-            gloss_en: by her own will
-            morph: inst. sg. f.
-          - word: स्व-भित्तौ
-            iast: sva-bhittau
-            gloss_en: on her own canvas (screen of the Self)
-            morph: loc. sg. f.
-          - word: विश्वम्
-            iast: viśvam
-            gloss_en: the universe
-            morph: acc. sg. n.
-          - word: उन्मीलयति
-            iast: unmīlayati
-            gloss_en: unfolds, makes manifest (lit. 'opens out')
-            morph: 3sg. pres. caus. √mīl
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "By her own free will she unfolds the universe upon the screen of her own Self."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতি, নিজৰ স্বাধীনতাত, বিশ্বৰ প্ৰকটনৰ কাৰণ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: পরম চিতি, স্বাধীনা হইয়া, বিশ্বের প্রকাশের কারণ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: સ્વતંત્ર ચિતિ (પરમ ચૈતન્ય) જ વિશ્વની સિદ્ધિ(અભિવ્યક્તિ)નો હેતુ છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: स्वतन्त्र चिति (परम चैतन्य) ही विश्व की अभिव्यक्ति का कारण है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಸ್ವತಂತ್ರಳಾದ ಚಿತಿಯು ವಿಶ್ವದ ಅಭಿವ್ಯಕ್ತಿಗೆ ಕಾರಣವಾಗಿದ್ದಾಳೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: സ്വതന്ത്രയായ ചിതി (പരമബോധം) വിശ്വത്തിന്റെ ആവിർഭാവത്തിന്റെ കാരണമാകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: स्वतंत्र चिती (परम चैतन्य) हीच विश्वाच्या आविष्काराचे कारण आहे.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସ୍ୱତନ୍ତ୍ର ଚିତି (ପରମ ଚୈତନ୍ୟ) ବିଶ୍ୱର ଅଭିବ୍ୟକ୍ତିର କାରଣ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਸੁਤੰਤਰ ਚਿਤਿ (ਪਰਮ ਚੈਤੰਨ) ਹੀ ਵਿਸ਼ਵ ਦੇ ਪ੍ਰਗਟਾਵੇ ਦਾ ਕਾਰਨ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சுயாதீனமான சித்தே (பேரறிவே) பிரபஞ்சத்தின் தோற்றத்திற்குக் காரணமாகும்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: స్వతంత్రమైన చితి (పరమ చైతన్యం) విశ్వము యొక్క ఆవిర్భావమునకు కారణము.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 2
+    devanagari: स्वेच्छया स्वभित्तौ विश्वमुन्मीलयति ॥२॥
+    slp1: "svecCayA svaBittO vizvamunmIlayati"
+    iast: "svecchayā svabhittau viśvam unmīlayati"
+    meter: sūtra
+    word_glosses:
+    - word: स्व-इच्छया
+      iast: sva-icchayā
+      gloss_en: by her own will
+      morph: inst. sg. f.
+      gloss_as: নিজৰ ইচ্ছাৰে
+      gloss_bn: আপন ইচ্ছায়
+      gloss_gu: પોતાની ઇચ્છાથી
+      gloss_hi: अपनी इच्छा से
+      gloss_kn: ಸ್ವ-ಇಚ್ಛೆಯಿಂದ — ತನ್ನದೇ ಇಚ್ಛೆಯಿಂದ
+      gloss_ml: സ്വ-ഇച്ഛയാ — സ്വന്തം ഇച്ഛയാൽ
+      gloss_mr: स्वतःच्या इच्छेने
+      gloss_or: ନିଜ ଇଚ୍ଛାରେ
+      gloss_pa: ਆਪਣੀ ਇੱਛਾ ਨਾਲ
+      gloss_ta: தனது சுய இச்சையினால்
+      gloss_te: తన స్వంత ఇచ్ఛచేత
+    - word: स्व-भित्तौ
+      iast: sva-bhittau
+      gloss_en: on her own canvas (screen of the Self)
+      morph: loc. sg. f.
+      gloss_as: নিজৰ ভিত্তিত (আত্মৰূপ পৰ্দাত)
+      gloss_bn: আপন ভিত্তিতে (স্বরূপের পটে)
+      gloss_gu: પોતાની ભીંત પર (આત્મારૂપી પટ ઉપર)
+      gloss_hi: अपनी ही भित्ति (आत्म-रूप पट) पर
+      gloss_kn: ಸ್ವ-ಭಿತ್ತಿಯಲ್ಲಿ — ತನ್ನದೇ ಭಿತ್ತಿಯ (ಆತ್ಮನ ಪರದೆಯ) ಮೇಲೆ
+      gloss_ml: സ്വ-ഭിത്തൗ — സ്വന്തം ഭിത്തിയിൽ (ആത്മപടത്തിൽ)
+      gloss_mr: स्वतःच्या पटावर (स्व-स्वरूपाच्या पडद्यावर)
+      gloss_or: ନିଜ ଭିତ୍ତି (ଆତ୍ମରୂପୀ ପଟ) ଉପରେ
+      gloss_pa: ਆਪਣੀ ਹੀ ਭਿੱਤੀ (ਪਟ) ਉੱਤੇ — ਸਵੈ ਦੇ ਪਰਦੇ ਉੱਤੇ
+      gloss_ta: தனது சுய திரையின் மீது (சுயத்தின் சுவரில்)
+      gloss_te: తన స్వంత తెరపై (ఆత్మ యొక్క భిత్తిపై)
+    - word: विश्वम्
+      iast: viśvam
+      gloss_en: the universe
+      morph: acc. sg. n.
+      gloss_as: বিশ্বক
+      gloss_bn: বিশ্বকে
+      gloss_gu: વિશ્વને
+      gloss_hi: विश्व को
+      gloss_kn: ವಿಶ್ವವನ್ನು — ಜಗತ್ತನ್ನು
+      gloss_ml: വിശ്വം — പ്രപഞ്ചത്തെ
+      gloss_mr: विश्वाला
+      gloss_or: ବିଶ୍ୱକୁ
+      gloss_pa: ਵਿਸ਼ਵ ਨੂੰ
+      gloss_ta: பிரபஞ்சத்தை
+      gloss_te: విశ్వమును
+    - word: उन्मीलयति
+      iast: unmīlayati
+      gloss_en: unfolds, makes manifest (lit. 'opens out')
+      morph: 3sg. pres. caus. √mīl
+      gloss_as: উন্মীলন কৰে, প্ৰকটিত কৰে
+      gloss_bn: উন্মীলিত করেন, প্রকাশ করেন (আক্ষরিক — উন্মুক্ত করেন)
+      gloss_gu: ઉન્મીલિત કરે છે, ખોલી દેખાડે છે (પ્રગટ કરે છે)
+      gloss_hi: उन्मीलित करती है, प्रकट करती है (शाब्दिक — 'खोलती है')
+      gloss_kn: ಉನ್ಮೀಲಯತಿ — ಅನಾವರಣಗೊಳಿಸುತ್ತಾಳೆ, ಪ್ರಕಟಪಡಿಸುತ್ತಾಳೆ (ಅಕ್ಷರಶಃ 'ಅರಳಿಸುತ್ತಾಳೆ')
+      gloss_ml: "ഉന്മീലയതി — വിടർത്തുന്നു, പ്രകടമാക്കുന്നു (അക്ഷരാർഥം: 'തുറന്നു കാട്ടുന്നു')"
+      gloss_mr: उलगडते, प्रकट करते (शब्दशः 'उघडते')
+      gloss_or: ଉନ୍ମୀଳିତ କରେ, ପ୍ରକଟ କରେ
+      gloss_pa: ਉਨਮੀਲਿਤ ਕਰਦੀ ਹੈ, ਪ੍ਰਗਟ ਕਰਦੀ ਹੈ (ਅੱਖ ਖੋਲ੍ਹਣ ਵਾਂਗ)
+      gloss_ta: விரித்து வெளிப்படுத்துகிறாள் (திறந்து விரிக்கிறாள்)
+      gloss_te: "విప్పును, ప్రకటించును (అక్షరార్థము: 'తెరచును')"
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "By her own free will she unfolds the universe upon the screen of her own Self."
+      ai_assisted: false
+      status: published
 
-      - verse: 3
-        devanagari: तन्नाना अनुरूपग्राह्यग्राहकभेदात् ॥३॥
-        slp1: "tannAnA anurUpagrAhyagrAhakaBedAt"
-        iast: "tan nānā anurūpa-grāhya-grāhaka-bhedāt"
-        meter: sūtra
-        word_glosses:
-          - word: तत्
-            iast: tat
-            gloss_en: that (universe)
-            morph: nom. sg. n.
-          - word: नाना
-            iast: nānā
-            gloss_en: manifold, various
-            morph: indecl.
-          - word: अनुरूप
-            iast: anurūpa
-            gloss_en: corresponding, conformable
-            morph: stem in cpd.
-          - word: ग्राह्य
-            iast: grāhya
-            gloss_en: the perceivable (object)
-            morph: stem in cpd.
-          - word: ग्राहक
-            iast: grāhaka
-            gloss_en: the perceiver (subject)
-            morph: stem in cpd.
-          - word: भेदात्
-            iast: bhedāt
-            gloss_en: by reason of the differentiation
-            morph: abl. sg. m.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "That (universe) is manifold because of the corresponding differentiation of perceived objects and perceiving subjects."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তেওঁ নিজৰ ইচ্ছাৰে নিজৰ পৰ্দাত (আত্মৰূপ ভিত্তিত) বিশ্বক উন্মীলন কৰে।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: নিজ ইচ্ছায় তিনি আপন ভিত্তিতে (স্বরূপের পটে) বিশ্বকে উন্মীলিত করেন।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: પોતાની ઇચ્છાથી પોતાની ભીંત (પોતાના આત્મારૂપી પટ) ઉપર તે વિશ્વને ઉન્મીલિત કરે છે (ખોલી દેખાડે છે).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: वह अपनी स्वेच्छा से अपने ही भित्ति-पट पर विश्व को उन्मीलित (प्रकट) करती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ತನ್ನ ಸ್ವಂತ ಇಚ್ಛೆಯಿಂದ ಅವಳು ತನ್ನದೇ ಭಿತ್ತಿಯ (ಆತ್ಮನ ಪರದೆಯ) ಮೇಲೆ ವಿಶ್ವವನ್ನು ಅನಾವರಣಗೊಳಿಸುತ್ತಾಳೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: സ്വന്തം ഇച്ഛയാൽ, സ്വന്തം ഭിത്തിയിൽ (ആത്മപടത്തിൽ) അവൾ വിശ്വത്തെ വിടർത്തി പ്രകടമാക്കുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: स्वतःच्या इच्छेने ती स्वतःच्याच पटावर विश्वाला उलगडून दाखवते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେ ନିଜ ସ୍ୱେଚ୍ଛାରେ ନିଜ ଆତ୍ମରୂପୀ ପଟ ଉପରେ ବିଶ୍ୱକୁ ଉନ୍ମୀଳିତ କରନ୍ତି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਹ ਆਪਣੀ ਇੱਛਾ ਨਾਲ ਆਪਣੇ ਹੀ ਪਟ (ਸਵੈ-ਰੂਪ ਦੀ ਭਿੱਤੀ) ਉੱਤੇ ਵਿਸ਼ਵ ਨੂੰ ਉਨਮੀਲਿਤ (ਪ੍ਰਗਟ) ਕਰਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: தன் சுய இச்சையினால், தனது சுய திரையின் மீது (சித்) பிரபஞ்சத்தை விரித்து விளக்குகிறாள்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆమె తన స్వంత ఇచ్ఛతో, తన స్వంత తెర (స్వభిత్తి) పై విశ్వమును విప్పి ప్రకటించును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 3
+    devanagari: तन्नाना अनुरूपग्राह्यग्राहकभेदात् ॥३॥
+    slp1: "tannAnA anurUpagrAhyagrAhakaBedAt"
+    iast: "tan nānā anurūpa-grāhya-grāhaka-bhedāt"
+    meter: sūtra
+    word_glosses:
+    - word: तत्
+      iast: tat
+      gloss_en: that (universe)
+      morph: nom. sg. n.
+      gloss_as: সেই (বিশ্ব)
+      gloss_bn: সেই (বিশ্ব)
+      gloss_gu: તે (વિશ્વ)
+      gloss_hi: वह (विश्व)
+      gloss_kn: ತತ್ — ಆ (ವಿಶ್ವ)
+      gloss_ml: തത് — ആ (പ്രപഞ്ചം)
+      gloss_mr: ते (विश्व)
+      gloss_or: ତାହା (ବିଶ୍ୱ)
+      gloss_pa: ਉਹ (ਵਿਸ਼ਵ)
+      gloss_ta: அது (பிரபஞ்சம்)
+      gloss_te: అది (విశ్వము)
+    - word: नाना
+      iast: nānā
+      gloss_en: manifold, various
+      morph: indecl.
+      gloss_as: নানা, বহুধা
+      gloss_bn: বহুরূপ, নানা প্রকার
+      gloss_gu: અનેક પ્રકારનું, વિવિધ
+      gloss_hi: नाना, विविध
+      gloss_kn: ನಾನಾ — ವಿವಿಧವಾದ, ಬಹುವಿಧವಾದ
+      gloss_ml: നാനാ — അനേകവിധം, വൈവിധ്യപൂർണം
+      gloss_mr: अनेक प्रकारचे, विविध
+      gloss_or: ନାନା, ବହୁବିଧ
+      gloss_pa: ਨਾਨਾ, ਅਨੇਕ, ਵੰਨ-ਸੁਵੰਨਾ
+      gloss_ta: பலவகை, பல்வேறானது
+      gloss_te: అనేకవిధము, వివిధము
+    - word: अनुरूप
+      iast: anurūpa
+      gloss_en: corresponding, conformable
+      morph: stem in cpd.
+      gloss_as: অনুৰূপ, পৰস্পৰ-সংগতি
+      gloss_bn: অনুরূপ, পরস্পর সঙ্গত
+      gloss_gu: અનુરૂપ, મેળ ખાતું
+      gloss_hi: अनुरूप, परस्पर अनुकूल
+      gloss_kn: ಅನುರೂಪ — ಪರಸ್ಪರ ಅನುರೂಪವಾದ, ಸಂಗತವಾದ
+      gloss_ml: അനുരൂപ — അനുയോജ്യമായ, അനുരൂപമായ
+      gloss_mr: अनुरूप, परस्पर-संगत
+      gloss_or: ଅନୁରୂପ, ଅନୁକୂଳ
+      gloss_pa: ਅਨੁਰੂਪ, ਮੇਲ ਖਾਂਦਾ
+      gloss_ta: ஒத்த, இணையான
+      gloss_te: అనురూపమైన, తగినట్లుగా
+    - word: ग्राह्य
+      iast: grāhya
+      gloss_en: the perceivable (object)
+      morph: stem in cpd.
+      gloss_as: গ্ৰাহ্য, জ্ঞেয় বিষয়
+      gloss_bn: গ্রাহ্য, জ্ঞেয় বিষয়
+      gloss_gu: ગ્રાહ્ય, જ્ઞેય વિષય
+      gloss_hi: ग्राह्य — ज्ञेय विषय
+      gloss_kn: ಗ್ರಾಹ್ಯ — ಗ್ರಹಿಸಲ್ಪಡುವ (ವಿಷಯ)
+      gloss_ml: ഗ്രാഹ്യ — ഗ്രഹിക്കപ്പെടേണ്ടത് (വിഷയം)
+      gloss_mr: ग्राह्य (विषय, जे जाणले जाते)
+      gloss_or: ଗ୍ରାହ୍ୟ, ଜ୍ଞେୟ ବିଷୟ
+      gloss_pa: ਗ੍ਰਾਹ੍ਯ — ਜਾਣਨ-ਯੋਗ (ਵਿਸ਼ਾ)
+      gloss_ta: க்ராஹ்யம், அறியப்படுபொருள் (விஷயம்)
+      gloss_te: గ్రాహ్యము (విషయము/వస్తువు)
+    - word: ग्राहक
+      iast: grāhaka
+      gloss_en: the perceiver (subject)
+      morph: stem in cpd.
+      gloss_as: গ্ৰাহক, জ্ঞাতা
+      gloss_bn: গ্রাহক, জ্ঞাতা
+      gloss_gu: ગ્રાહક, જાણનાર વિષયી
+      gloss_hi: ग्राहक — ज्ञाता विषयी
+      gloss_kn: ಗ್ರಾಹಕ — ಗ್ರಹಿಸುವವನು (ವಿಷಯಿ)
+      gloss_ml: ഗ്രാഹക — ഗ്രഹിക്കുന്നവൻ (വിഷയി)
+      gloss_mr: ग्राहक (विषयी, जो जाणतो)
+      gloss_or: ଗ୍ରାହକ, ଜ୍ଞାତା
+      gloss_pa: ਗ੍ਰਾਹਕ — ਜਾਣਨ ਵਾਲਾ (ਵਿਸ਼ਈ)
+      gloss_ta: க்ராஹகன், அறிபவன் (கர்த்தா)
+      gloss_te: గ్రాహకుడు (విషయి/జ్ఞాత)
+    - word: भेदात्
+      iast: bhedāt
+      gloss_en: by reason of the differentiation
+      morph: abl. sg. m.
+      gloss_as: ভেদৰ কাৰণে
+      gloss_bn: ভেদের কারণে
+      gloss_gu: ભેદને કારણે
+      gloss_hi: भेद के कारण
+      gloss_kn: ಭೇದಾತ್ — ಭೇದದಿಂದಾಗಿ
+      gloss_ml: ഭേദാത് — ഭേദംമൂലം, വ്യത്യാസംമൂലം
+      gloss_mr: भेदामुळे, फरकामुळे
+      gloss_or: ଭେଦ ହେତୁ
+      gloss_pa: ਭੇਦ ਦੇ ਕਾਰਨ
+      gloss_ta: பேதத்தினால், வேறுபாட்டினால்
+      gloss_te: భేదము వలన
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "That (universe) is manifold because of the corresponding differentiation of perceived objects and perceiving subjects."
+      ai_assisted: false
+      status: published
 
-      - verse: 4
-        devanagari: चितिसंकोचात्मा चेतनोऽपि सङ्कुचितविश्वमयः ॥४॥
-        slp1: "citisaMkocAtmA cetano'pi saNkucitavizvamayaH"
-        iast: "citi-saṃkocātmā cetano 'pi saṅkucita-viśvamayaḥ"
-        meter: sūtra
-        word_glosses:
-          - word: चिति-सङ्कोच-आत्मा
-            iast: citi-saṃkoca-ātmā
-            gloss_en: having a contraction of Consciousness as its essence
-            morph: nom. sg. m. cpd.
-          - word: चेतनः
-            iast: cetanaḥ
-            gloss_en: the sentient being, the experient
-            morph: nom. sg. m.
-          - word: अपि
-            iast: api
-            gloss_en: even, also
-            morph: ptcl.
-          - word: सङ्कुचित
-            iast: saṅkucita
-            gloss_en: contracted, narrowed
-            morph: ppp. stem in cpd.
-          - word: विश्व-मयः
-            iast: viśva-mayaḥ
-            gloss_en: made of the universe, identical with the universe
-            morph: nom. sg. m. cpd.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "The individual experiencer (cetana), whose essence is contracted Consciousness, embodies the universe in a contracted form."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (বিশ্ব) গ্ৰাহ্য আৰু গ্ৰাহকৰ পৰস্পৰ-অনুৰূপ ভেদৰ কাৰণে বহুধা ৰূপত প্ৰকাশিত।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (বিশ্ব) পরস্পর-অনুরূপ গ্রাহ্য ও গ্রাহকের ভেদের কারণে বহুরূপ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તે (વિશ્વ) અનુરૂપ ગ્રાહ્ય (વિષય) અને ગ્રાહક (વિષયી)ના ભેદને કારણે અનેક પ્રકારનું છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: वह (विश्व) ग्राह्य (विषय) और ग्राहक (विषयी) के परस्पर अनुरूप भेद के कारण अनेक रूप वाला है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆ (ವಿಶ್ವ)ವು ಪರಸ್ಪರ ಅನುರೂಪವಾದ ಗ್ರಾಹ್ಯ (ವಿಷಯ) ಮತ್ತು ಗ್ರಾಹಕ (ವಿಷಯಿ) ಗಳ ಭೇದದಿಂದಾಗಿ ನಾನಾವಿಧವಾಗಿದೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ആ വിശ്വം, അനുരൂപമായ ഗ്രാഹ്യ-ഗ്രാഹക (വിഷയ-വിഷയി) ഭേദത്താൽ നാനാവിധമായി കാണപ്പെടുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ते (विश्व) ग्राह्य (विषय) आणि ग्राहक (विषयी) यांच्या परस्पर अनुरूप भेदामुळे अनेक प्रकारचे होते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେହି (ବିଶ୍ୱ) ଅନୁରୂପ ଗ୍ରାହ୍ୟ (ଜ୍ଞେୟ) ଓ ଗ୍ରାହକ (ଜ୍ଞାତା)ର ଭେଦ ହେତୁ ନାନା ରୂପ ଧାରଣ କରେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਹ (ਵਿਸ਼ਵ) ਆਪਸ ਵਿੱਚ ਅਨੁਰੂਪ ਗ੍ਰਾਹ੍ਯ (ਵਿਸ਼ੇ) ਅਤੇ ਗ੍ਰਾਹਕ (ਵਿਸ਼ਈ) ਦੇ ਭੇਦ ਕਾਰਨ ਅਨੇਕ-ਰੂਪ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அந்த (பிரபஞ்சம்) ஒன்றுக்கொன்று இணையான கிராஹ்ய-கிராஹக (அறியப்படுபவை - அறிபவை) பேதத்தினால் பல்வேறு வடிவம் கொண்டதாகும்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆ విశ్వము గ్రాహ్య (వస్తువు) - గ్రాహక (విషయి) భేదమునకు అనురూపముగా అనేకవిధముగా ఉన్నది.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 4
+    devanagari: चितिसंकोचात्मा चेतनोऽपि सङ्कुचितविश्वमयः ॥४॥
+    slp1: "citisaMkocAtmA cetano'pi saNkucitavizvamayaH"
+    iast: "citi-saṃkocātmā cetano 'pi saṅkucita-viśvamayaḥ"
+    meter: sūtra
+    word_glosses:
+    - word: चिति-सङ्कोच-आत्मा
+      iast: citi-saṃkoca-ātmā
+      gloss_en: having a contraction of Consciousness as its essence
+      morph: nom. sg. m. cpd.
+      gloss_as: চিতিৰ সঙ্কোচ যাৰ স্বৰূপ
+      gloss_bn: চিতির সঙ্কোচই যাঁহার স্বরূপ
+      gloss_gu: ચિતિના સંકોચ-સ્વરૂપ
+      gloss_hi: जिसका स्वरूप चिति का संकोच है
+      gloss_kn: ಚಿತಿ-ಸಂಕೋಚ-ಆತ್ಮಾ — ಚಿತಿಯ ಸಂಕೋಚವೇ ಸ್ವರೂಪವಾಗಿರುವವನು
+      gloss_ml: ചിതി-സങ്കോച-ആത്മാ — ചിതിയുടെ സങ്കോചം സ്വരൂപമായവൻ
+      gloss_mr: ज्याचे स्वरूप चितीच्या संकोचात आहे असा
+      gloss_or: ଚିତିର ସଙ୍କୋଚକୁ ସ୍ୱରୂପ ଭାବେ ଧାରଣ କରୁଥିବା
+      gloss_pa: ਜਿਸਦਾ ਸਰੂਪ ਚਿਤਿ ਦਾ ਸੰਕੋਚ ਹੈ
+      gloss_ta: சித்தின் சங்கோசத்தை (சுருக்கத்தை) இயல்பாகக் கொண்டவன்
+      gloss_te: చితి యొక్క సంకోచమే స్వరూపముగా కలవాడు
+    - word: चेतनः
+      iast: cetanaḥ
+      gloss_en: the sentient being, the experient
+      morph: nom. sg. m.
+      gloss_as: চেতন, অনুভৱকৰ্তা জীৱ
+      gloss_bn: চেতন, জীব, অনুভবকারী
+      gloss_gu: ચેતન, અનુભવિતા જીવ
+      gloss_hi: चेतन — जीव, अनुभोक्ता
+      gloss_kn: ಚೇತನ — ಜೀವಿ, ಅನುಭವಿಸುವವನು
+      gloss_ml: ചേതനഃ — ചേതനൻ, അനുഭവിക്കുന്നവൻ, ജീവൻ
+      gloss_mr: चेतन, अनुभवकर्ता जीव
+      gloss_or: ଚେତନ, ଜୀବ, ଅନୁଭବକର୍ତ୍ତା
+      gloss_pa: ਚੇਤਨ, ਜੀਵ, ਅਨੁਭਵੀ
+      gloss_ta: சேதனன், அனுபவிப்போன், ஜீவன்
+      gloss_te: చేతనుడు, జీవుడు, అనుభవి
+    - word: अपि
+      iast: api
+      gloss_en: even, also
+      morph: ptcl.
+      gloss_as: অপি — অৱশ্যে, তথাপি
+      gloss_bn: অপি, যদিও
+      gloss_gu: પણ, પણ તો
+      gloss_hi: भी, तथापि
+      gloss_kn: ಅಪಿ — ಸಹ, ಸಹಾ
+      gloss_ml: അപി — പോലും, കൂടി
+      gloss_mr: देखील, सुद्धा
+      gloss_or: ମଧ୍ୟ, ସୁଦ୍ଧା
+      gloss_pa: ਵੀ, ਭੀ
+      gloss_ta: ஆனாலும், கூட
+      gloss_te: కూడా, అయినను
+    - word: सङ्कुचित
+      iast: saṅkucita
+      gloss_en: contracted, narrowed
+      morph: ppp. stem in cpd.
+      gloss_as: সঙ্কুচিত, সীমাবদ্ধ
+      gloss_bn: সঙ্কুচিত, সঙ্কীর্ণ
+      gloss_gu: સંકુચિત, સંકોચાયેલ
+      gloss_hi: संकुचित, सीमित
+      gloss_kn: ಸಂಕುಚಿತ — ಸಂಕುಚಿತಗೊಂಡ, ಸಂಕೀರ್ಣಗೊಂಡ
+      gloss_ml: സങ്കുചിത — സങ്കുചിതമായ, ചുരുങ്ങിയ
+      gloss_mr: संकुचित, आक्रसलेले
+      gloss_or: ସଙ୍କୁଚିତ, ସଂକୁଚିତ
+      gloss_pa: ਸੰਕੁਚਿਤ, ਸੀਮਿਤ ਹੋਇਆ
+      gloss_ta: சுருங்கிய, குறுகிய
+      gloss_te: సంకుచితమైన, సంకోచింపబడిన
+    - word: विश्व-मयः
+      iast: viśva-mayaḥ
+      gloss_en: made of the universe, identical with the universe
+      morph: nom. sg. m. cpd.
+      gloss_as: বিশ্বময়, বিশ্বৰূপ
+      gloss_bn: বিশ্বময়, বিশ্বের সহিত একরূপ
+      gloss_gu: વિશ્વમય, વિશ્વસ્વરૂપ
+      gloss_hi: विश्वमय — विश्व-स्वरूप, विश्व से अभिन्न
+      gloss_kn: ವಿಶ್ವ-ಮಯ — ವಿಶ್ವಮಯನಾದ, ವಿಶ್ವದೊಂದಿಗೆ ತಾದಾತ್ಮ್ಯವುಳ್ಳ
+      gloss_ml: വിശ്വ-മയഃ — വിശ്വസ്വരൂപൻ, വിശ്വാത്മകൻ
+      gloss_mr: विश्वमय, विश्वाशी एकरूप
+      gloss_or: ବିଶ୍ୱମୟ, ବିଶ୍ୱ-ସ୍ୱରୂପ
+      gloss_pa: ਵਿਸ਼ਵ-ਮਯ — ਵਿਸ਼ਵ ਦਾ ਬਣਿਆ, ਵਿਸ਼ਵ ਨਾਲ ਅਭੇਦ
+      gloss_ta: பிரபஞ்சத்தை உள்ளடக்கியவன், பிரபஞ்ச மயமானவன்
+      gloss_te: విశ్వస్వరూపుడు, విశ్వముతో ఏకీభూతుడు
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "The individual experiencer (cetana), whose essence is contracted Consciousness, embodies the universe in a contracted form."
+      ai_assisted: false
+      status: published
 
-      - verse: 5
-        devanagari: चितिरेव चेतनपदादवरूढा चेत्यसङ्कोचिनी चित्तम् ॥५॥
-        slp1: "citireva cetanapadAdavarUDhA cetyasaNkocinI cittam"
-        iast: "citir eva cetana-padād avarūḍhā cetya-saṅkocinī cittam"
-        meter: sūtra
-        word_glosses:
-          - word: चितिः
-            iast: citiḥ
-            gloss_en: Consciousness itself
-            morph: nom. sg. f.
-          - word: एव
-            iast: eva
-            gloss_en: indeed, alone
-            morph: ptcl. emph.
-          - word: चेतन-पदात्
-            iast: cetana-padāt
-            gloss_en: from the level of the (free) experient
-            morph: abl. sg. n. cpd.
-          - word: अवरूढा
-            iast: avarūḍhā
-            gloss_en: descended, fallen
-            morph: ppp. nom. sg. f.
-          - word: चेत्य-सङ्कोचिनी
-            iast: cetya-saṅkocinī
-            gloss_en: contracting itself to the knowable (object)
-            morph: nom. sg. f. cpd.
-          - word: चित्तम्
-            iast: cittam
-            gloss_en: is (called) citta — the individualized mind
-            morph: nom. sg. n.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Consciousness itself, descended from the plane of pure subjectivity and contracted by its objects, becomes the mind (citta)."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতিৰ সঙ্কোচ যাৰ স্বৰূপ, সেই চেতন জীৱও সঙ্কুচিত ৰূপত বিশ্বময়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চৈতন্যের সঙ্কোচই যাঁহার স্বরূপ, সেই চেতন (জীব)ও সঙ্কুচিত বিশ্বময়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ચિતિના સંકોચરૂપ ચેતન (બદ્ધ જીવ) પણ સંકુચિત વિશ્વમય હોય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिति के संकोच को अपना स्वरूप बनाने वाला चेतन (जीव) भी संकुचित विश्व से युक्त — अर्थात् विश्व का संकुचित रूप — होता है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಚಿತಿಯ ಸಂಕೋಚವೇ ಸ್ವರೂಪವಾಗಿರುವ ಚೇತನ (ಜೀವಿ)ಯು ಸಹ ಸಂಕುಚಿತ ರೂಪದಲ್ಲಿ ವಿಶ್ವಮಯನಾಗಿದ್ದಾನೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ചിതിയുടെ സങ്കോചസ്വരൂപനായ ചേതനൻ (ജീവൻ) പോലും സങ്കുചിതരൂപത്തിൽ വിശ്വമയനാകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ज्याचे स्वरूप चितीचा संकोच आहे असा चेतन (जीव) देखील संकुचित रूपाने विश्वमय असतो.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଚିତିର ସଙ୍କୋଚକୁ ସ୍ୱରୂପ ଭାବେ ଧାରଣ କରୁଥିବା ଚେତନ (ଜୀବ) ମଧ୍ୟ ସଙ୍କୁଚିତ ବିଶ୍ୱମୟ ଅଟେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਚਿਤਿ ਦੇ ਸੰਕੋਚ ਨੂੰ ਆਪਣਾ ਸਰੂਪ ਬਣਾਉਣ ਵਾਲਾ ਚੇਤਨ (ਜੀਵ) ਵੀ ਸੰਕੁਚਿਤ ਵਿਸ਼ਵ-ਮਯ (ਵਿਸ਼ਵ ਦਾ ਸੰਕੁਚਿਤ ਰੂਪ) ਹੁੰਦਾ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சித்தின் சங்கோசத்தை இயல்பாகக் கொண்ட சேதனனும் (உயிரியும்) சுருங்கிய நிலையில் பிரபஞ்சத்தையே உள்ளடக்கியவன் ஆகின்றான்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: చిత్‌సంకోచ స్వరూపుడైన చేతనుడు (జీవుడు) కూడా సంకుచిత విశ్వ స్వరూపుడే.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 5
+    devanagari: चितिरेव चेतनपदादवरूढा चेत्यसङ्कोचिनी चित्तम् ॥५॥
+    slp1: "citireva cetanapadAdavarUDhA cetyasaNkocinI cittam"
+    iast: "citir eva cetana-padād avarūḍhā cetya-saṅkocinī cittam"
+    meter: sūtra
+    word_glosses:
+    - word: चितिः
+      iast: citiḥ
+      gloss_en: Consciousness itself
+      morph: nom. sg. f.
+      gloss_as: চিতি নিজেই
+      gloss_bn: চিতি স্বয়ং
+      gloss_gu: ચિતિ (ચૈતન્ય) જ
+      gloss_hi: चिति स्वयं
+      gloss_kn: ಚಿತಿಯೇ — ಚೈತನ್ಯವೇ
+      gloss_ml: ചിതിഃ — ചിതി തന്നെ
+      gloss_mr: चितीच (परम चैतन्यच)
+      gloss_or: ଚିତି ସ୍ୱୟଂ
+      gloss_pa: ਚਿਤਿ ਆਪ
+      gloss_ta: சித்தே, பேரறிவே
+      gloss_te: చితియే
+    - word: एव
+      iast: eva
+      gloss_en: indeed, alone
+      morph: ptcl. emph.
+      gloss_as: এৱ — কেৱল, নিশ্চয়ে
+      gloss_bn: এব, কেবল
+      gloss_gu: જ, એ જ
+      gloss_hi: ही, मात्र
+      gloss_kn: ಏವ — ತಾನೇ, ನಿಜವಾಗಿಯೂ
+      gloss_ml: ഏവ — തന്നെ, മാത്രം (നിശ്ചയാർഥം)
+      gloss_mr: च, खरोखर
+      gloss_or: ହିଁ, ନିଶ୍ଚୟ
+      gloss_pa: ਹੀ, ਅਸਲ ਵਿੱਚ
+      gloss_ta: தானே, மட்டுமே (வலியுறுத்தும் இடைச்சொல்)
+      gloss_te: నిశ్చయముగా, మాత్రమే
+    - word: चेतन-पदात्
+      iast: cetana-padāt
+      gloss_en: from the level of the (free) experient
+      morph: abl. sg. n. cpd.
+      gloss_as: চেতন-পদৰ পৰা (মুক্ত অনুভৱকৰ্তাৰ স্তৰৰ পৰা)
+      gloss_bn: (মুক্ত) চেতন-পদ হইতে
+      gloss_gu: ચેતન-પદ (શુદ્ધ વિષયી-ભૂમિકા)થી
+      gloss_hi: (स्वतन्त्र) चेतन-पद से
+      gloss_kn: ಚೇತನ-ಪದದಿಂದ — (ಸ್ವತಂತ್ರ) ಅನುಭವಿಸುವವನ ಸ್ಥಾನದಿಂದ
+      gloss_ml: ചേതന-പദാത് — സ്വതന്ത്ര ചേതനന്റെ പദത്തിൽനിന്ന്
+      gloss_mr: चेतनपदापासून (मुक्त अनुभवकर्त्याच्या स्तरापासून)
+      gloss_or: ଚେତନ-ପଦରୁ (ସ୍ୱତନ୍ତ୍ର ଅନୁଭବକର୍ତ୍ତାର ସ୍ତରରୁ)
+      gloss_pa: ਚੇਤਨ-ਪਦ ਤੋਂ — (ਮੁਕਤ) ਅਨੁਭਵੀ ਦੇ ਪੱਧਰ ਤੋਂ
+      gloss_ta: சேதன நிலையிலிருந்து (சுதந்திர அனுபவிப்போனின் நிலையிலிருந்து)
+      gloss_te: (స్వేచ్ఛాయుత) చేతనపదము నుండి
+    - word: अवरूढा
+      iast: avarūḍhā
+      gloss_en: descended, fallen
+      morph: ppp. nom. sg. f.
+      gloss_as: অৱৰূঢ়া, অৱতীৰ্ণা
+      gloss_bn: অবরূঢ়, অবতীর্ণ
+      gloss_gu: ઊતરેલી, અવરોહિત
+      gloss_hi: अवरूढ़, नीचे उतरी हुई
+      gloss_kn: ಅವರೂಢಾ — ಇಳಿದು ಬಂದು, ಪತಿತಳಾಗಿ
+      gloss_ml: അവരൂഢാ — ഇറങ്ങിയ, താഴ്ന്ന
+      gloss_mr: खाली उतरलेली
+      gloss_or: ଅବତରଣ କରି, ଅବରୋହଣ କରି
+      gloss_pa: ਉਤਰੀ ਹੋਈ, ਅਵਰੂੜ੍ਹ
+      gloss_ta: இறங்கியதாய், கீழ்ப்பட்டதாய்
+      gloss_te: దిగివచ్చిన, పతితమైన
+    - word: चेत्य-सङ्कोचिनी
+      iast: cetya-saṅkocinī
+      gloss_en: contracting itself to the knowable (object)
+      morph: nom. sg. f. cpd.
+      gloss_as: জ্ঞেয়ৰ দ্বাৰা সঙ্কুচিতা
+      gloss_bn: চেত্য (জ্ঞেয়) দ্বারা সঙ্কুচিতা
+      gloss_gu: જ્ઞેય વિષયોથી સંકુચિત થનારી
+      gloss_hi: ज्ञेय (विषय) से संकुचित होती हुई
+      gloss_kn: ಚೇತ್ಯ-ಸಂಕೋಚಿನೀ — ಜ್ಞೇಯ (ವಿಷಯ)ದಿಂದ ಸಂಕುಚಿತಗೊಳ್ಳುತ್ತಾ
+      gloss_ml: ചേത്യ-സങ്കോചിനീ — ജ്ഞേയവിഷയത്താൽ സ്വയം സങ്കോചിക്കുന്നവൾ
+      gloss_mr: ज्ञेय विषयांमुळे संकोचित होणारी
+      gloss_or: ଚେତ୍ୟ (ଜ୍ଞେୟ ବିଷୟ)ଦ୍ୱାରା ସଙ୍କୁଚିତ ହେଉଥିବା
+      gloss_pa: ਚੇਤ੍ਯ (ਜਾਣਨ-ਯੋਗ ਵਿਸ਼ੇ) ਦੁਆਰਾ ਸੰਕੁਚਿਤ ਹੋਣ ਵਾਲੀ
+      gloss_ta: அறியப்படுபொருளால் சுருக்கம் பெறுவதாய்
+      gloss_te: చేత్యముచే (జ్ఞేయవస్తువుచే) తనను సంకోచింపజేసుకొనునది
+    - word: चित्तम्
+      iast: cittam
+      gloss_en: is (called) citta — the individualized mind
+      morph: nom. sg. n.
+      gloss_as: চিত্ত — সীমিত মন
+      gloss_bn: চিত্ত — ব্যক্তিগত মন
+      gloss_gu: ચિત્ત (વ્યક્તિગત મન) કહેવાય છે
+      gloss_hi: चित्त — व्यक्तिगत मन कहलाती है
+      gloss_kn: ಚಿತ್ತಂ — ಚಿತ್ತವೆನಿಸಿಕೊಳ್ಳುತ್ತದೆ, ಪ್ರತ್ಯೇಕ ಮನಸ್ಸಾಗುತ್ತದೆ
+      gloss_ml: ചിത്തം — ചിത്തം (വ്യക്തിമനസ്സ്) എന്നു വിളിക്കപ്പെടുന്നു
+      gloss_mr: चित्त (वैयक्तिक मन) (असे म्हटले जाते)
+      gloss_or: ଚିତ୍ତ (ବ୍ୟକ୍ତିଗତ ମନ) ହୁଏ
+      gloss_pa: ਚਿੱਤ — ਵਿਅਕਤੀਗਤ ਮਨ — ਅਖਵਾਉਂਦੀ ਹੈ
+      gloss_ta: சித்தம் (மனம்) ஆகின்றது
+      gloss_te: చిత్తము (వ్యక్తిగత మనస్సు) అని పిలువబడును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Consciousness itself, descended from the plane of pure subjectivity and contracted by its objects, becomes the mind (citta)."
+      ai_assisted: false
+      status: published
 
-      - verse: 6
-        devanagari: तन्मयो मायाप्रमाता ॥६॥
-        slp1: "tanmayo mAyApramAtA"
-        iast: "tan-mayo māyā-pramātā"
-        meter: sūtra
-        word_glosses:
-          - word: तत्-मयः
-            iast: tat-mayaḥ
-            gloss_en: made of that (citta)
-            morph: nom. sg. m. cpd.
-          - word: माया-प्रमाता
-            iast: māyā-pramātā
-            gloss_en: is the māyic experient (the soul bound by māyā)
-            morph: nom. sg. m. cpd.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "The empirical subject conditioned by māyā consists of that (contracted mind)."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতি নিজেই চেতন-পদৰ পৰা অৱৰূঢ় হৈ, জ্ঞেয় বিষয়ৰ দ্বাৰা সঙ্কুচিত হোৱাত, চিত্ত নামেৰে অভিহিত হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতি স্বয়ংই চেতন-পদ হইতে অবরূঢ় হইয়া, জ্ঞেয় বস্তুর দ্বারা সঙ্কুচিতা হইয়া চিত্ত নামে অভিহিত হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ચિતિ જ ચેતન-પદ (શુદ્ધ વિષયી-ભૂમિકા)થી નીચે ઊતરીને, જ્ઞેય વિષયોથી સંકુચિત થતી, ચિત્ત કહેવાય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिति ही चेतन-पद से अवरूढ़ (नीचे उतरी) होकर तथा ज्ञेय (चेत्य) से संकुचित होकर 'चित्त' कहलाती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಚಿತಿಯೇ ಚೇತನಪದದಿಂದ (ಸ್ವತಂತ್ರ ವಿಷಯಿಯ ಸ್ಥಾನದಿಂದ) ಇಳಿದು, ಚೇತ್ಯ (ವಿಷಯ)ದಿಂದ ಸಂಕುಚಿತಗೊಂಡು ಚಿತ್ತವೆನಿಸಿಕೊಳ್ಳುತ್ತಾಳೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ചിതി തന്നെ, ചേതനപദത്തിൽനിന്നു താഴ്ന്നിറങ്ങി, ജ്ഞേയവിഷയങ്ങളാൽ സങ്കോചിതയായി, ചിത്തമെന്നു വിളിക്കപ്പെടുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिती स्वतःच चेतनपदापासून (शुद्ध कर्तृत्वाच्या पातळीवरून) खाली उतरून, ज्ञेय विषयांमुळे संकोचित होऊन चित्त बनते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଚିତି ସ୍ୱୟଂ ଚେତନ ପଦରୁ ଅବତରଣ କରି ଚେତ୍ୟ (ଜ୍ଞେୟ ବିଷୟ)ଦ୍ୱାରା ସଙ୍କୁଚିତ ହୋଇ ଚିତ୍ତ ହୁଏ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਚਿਤਿ ਆਪ ਹੀ ਚੇਤਨ-ਪਦ ਤੋਂ ਉਤਰ ਕੇ, ਜਾਣਨਯੋਗ (ਚੇਤ੍ਯ) ਦੁਆਰਾ ਸੰਕੁਚਿਤ ਹੋ ਕੇ 'ਚਿੱਤ' ਅਖਵਾਉਂਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சித்தே, சேதன நிலையிலிருந்து இறங்கி, அறியப்படுபவற்றால் சுருங்கி, சித்தம் (மனம்) என்று அழைக்கப்படுகிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: చితియే చేతనపదము నుండి దిగివచ్చి, చేత్యముచే (జ్ఞేయవస్తువులచే) సంకుచితమై చిత్తముగా అవుతుంది.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 6
+    devanagari: तन्मयो मायाप्रमाता ॥६॥
+    slp1: "tanmayo mAyApramAtA"
+    iast: "tan-mayo māyā-pramātā"
+    meter: sūtra
+    word_glosses:
+    - word: तत्-मयः
+      iast: tat-mayaḥ
+      gloss_en: made of that (citta)
+      morph: nom. sg. m. cpd.
+      gloss_as: সেই (চিত্ত)ময়
+      gloss_bn: সেই (চিত্ত)-ময়
+      gloss_gu: તે(ચિત્ત)થી બનેલો
+      gloss_hi: उस (चित्त) से बना हुआ
+      gloss_kn: ತತ್-ಮಯ — ಆ (ಚಿತ್ತ)ಮಯನಾದ
+      gloss_ml: തത്-മയഃ — അതുകൊണ്ടു നിർമിതൻ (ചിത്തമയൻ)
+      gloss_mr: त्या (चित्ता)पासून बनलेला
+      gloss_or: ସେହି (ଚିତ୍ତ)ମୟ
+      gloss_pa: ਉਸ (ਚਿੱਤ) ਤੋਂ ਬਣਿਆ ਹੋਇਆ
+      gloss_ta: அதனால் (சித்தத்தால்) ஆனவன்
+      gloss_te: ఆ (చిత్తము) యొక్క స్వరూపము కలవాడు
+    - word: माया-प्रमाता
+      iast: māyā-pramātā
+      gloss_en: is the māyic experient (the soul bound by māyā)
+      morph: nom. sg. m. cpd.
+      gloss_as: মায়াপ্ৰমাতা — মায়াৰ অধীন অনুভৱকৰ্তা
+      gloss_bn: মায়িক প্রমাতা (মায়াবদ্ধ জীব)
+      gloss_gu: માયા-પ્રમાતા (માયાથી બદ્ધ અનુભવિતા)
+      gloss_hi: माया-प्रमाता — मायाबद्ध अनुभोक्ता (जीव)
+      gloss_kn: ಮಾಯಾ-ಪ್ರಮಾತೃ — ಮಾಯಾಬದ್ಧ ಅನುಭವಿಯಾಗಿರುತ್ತಾನೆ (ಮಾಯೆಯಿಂದ ಬಂಧಿತನಾದ ಜೀವಾತ್ಮ)
+      gloss_ml: മായാ-പ്രമാതാ — മായാബദ്ധ പ്രമാതാ (മായയാൽ ബന്ധിതനായ അനുഭവിക്കുന്നവൻ)
+      gloss_mr: माया-प्रमाता — मायेने बद्ध झालेला जीव-अनुभवकर्ता
+      gloss_or: ମାୟା-ପ୍ରମାତା (ମାୟାବଦ୍ଧ ଜୀବାତ୍ମା)
+      gloss_pa: ਮਾਯਾ-ਪ੍ਰਮਾਤਾ ਹੈ (ਮਾਯਾ-ਬੱਧ ਜੀਵ)
+      gloss_ta: மாயையால் கட்டுண்ட அனுபவிப்போன் (மாயாப்ரமாதா)
+      gloss_te: మాయాప్రమాత (మాయచే బంధింపబడిన జ్ఞాత)
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "The empirical subject conditioned by māyā consists of that (contracted mind)."
+      ai_assisted: false
+      status: published
 
-      - verse: 7
-        devanagari: स चैको द्विरूपस्त्रिमयश्चतुरात्मा सप्तपञ्चकस्वभावः ॥७॥
-        slp1: "sa caiko dvirUpastrimayazcaturAtmA saptapaYcakasvaBAvaH"
-        iast: "sa caiko dvi-rūpas tri-mayaś catur-ātmā sapta-pañcaka-svabhāvaḥ"
-        meter: sūtra
-        word_glosses:
-          - word: सः
-            iast: saḥ
-            gloss_en: he (the experient)
-            morph: nom. sg. m.
-          - word: च
-            iast: ca
-            gloss_en: and
-            morph: conj.
-          - word: एकः
-            iast: ekaḥ
-            gloss_en: one (in essence)
-            morph: nom. sg. m.
-          - word: द्वि-रूपः
-            iast: dvi-rūpaḥ
-            gloss_en: of two forms (Śiva–Śakti)
-            morph: nom. sg. m. cpd.
-          - word: त्रि-मयः
-            iast: tri-mayaḥ
-            gloss_en: consisting of three (āṇava/śākta/śāmbhava or three malas)
-            morph: nom. sg. m. cpd.
-          - word: चतुर्-आत्मा
-            iast: catur-ātmā
-            gloss_en: having four selves (the four states of consciousness)
-            morph: nom. sg. m. cpd.
-          - word: सप्त-पञ्चक
-            iast: sapta-pañcaka
-            gloss_en: the seven pentads
-            morph: stem in cpd.
-          - word: स्वभावः
-            iast: svabhāvaḥ
-            gloss_en: is of that own nature
-            morph: nom. sg. m.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "He, though one, has two forms, three modes, four selves, and the nature of seven pentads."
-            ai_assisted: true
-            status: draft
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (চিত্ত)ময় হৈ থকা জনেই মায়াপ্ৰমাতা (মায়াৰ অধীন অনুভৱকৰ্তা)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (সঙ্কুচিত চিত্ত)-ময়ই মায়িক প্রমাতা (মায়াবদ্ধ জীব)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તે (ચિત્ત)થી બનેલો માયા-પ્રમાતા (માયાથી બદ્ધ અનુભવિતા) છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: उसी (चित्त) से बना हुआ माया-प्रमाता (मायाबद्ध जीव-प्रमाता) है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆ (ಚಿತ್ತ)ಮಯನಾದವನೇ ಮಾಯಾಪ್ರಮಾತೃ (ಮಾಯೆಯಿಂದ ಬಂಧಿತನಾದ ಜೀವಾತ್ಮ).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: അതിൽനിന്നു (ചിത്തത്തിൽനിന്നു) രൂപപ്പെട്ടവനാണ് മായാപ്രമാതാവ് (മായയാൽ ബന്ധിതനായ അനുഭവിക്കുന്നവൻ).
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: त्याच (चित्ता)पासून बनलेला माया-प्रमाता असतो — मायेने बद्ध झालेला अनुभवकर्ता.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେହି (ଚିତ୍ତ)ମୟ ହିଁ ମାୟା-ପ୍ରମାତା (ମାୟାବଦ୍ଧ ଜୀବାତ୍ମା)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਸ (ਚਿੱਤ) ਤੋਂ ਬਣਿਆ ਹੋਇਆ ਹੀ ਮਾਯਾ-ਪ੍ਰਮਾਤਾ (ਮਾਯਾ-ਬੱਧ ਜੀਵ) ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அந்தச் சித்தத்தினால் ஆனவனே மாயையினால் கட்டுண்ட அனுபவிப்போன் (மாயாப்ரமாதா).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆ చిత్తస్వరూపుడే మాయాప్రమాత (మాయచే బంధింపబడిన జ్ఞాత).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 7
+    devanagari: स चैको द्विरूपस्त्रिमयश्चतुरात्मा सप्तपञ्चकस्वभावः ॥७॥
+    slp1: "sa caiko dvirUpastrimayazcaturAtmA saptapaYcakasvaBAvaH"
+    iast: "sa caiko dvi-rūpas tri-mayaś catur-ātmā sapta-pañcaka-svabhāvaḥ"
+    meter: sūtra
+    word_glosses:
+    - word: सः
+      iast: saḥ
+      gloss_en: he (the experient)
+      morph: nom. sg. m.
+      gloss_as: সেই (অনুভৱকৰ্তা)
+      gloss_bn: সঃ, তিনি (অনুভবকারী)
+      gloss_gu: તે (અનુભવિતા)
+      gloss_hi: वह (प्रमाता)
+      gloss_kn: ಸಃ — ಅವನು (ಅನುಭವಿ)
+      gloss_ml: സഃ — അവൻ (പ്രമാതാ, അനുഭവിക്കുന്നവൻ)
+      gloss_mr: तो (अनुभवकर्ता)
+      gloss_or: ସେ (ଅନୁଭବକର୍ତ୍ତା)
+      gloss_pa: ਉਹ (ਅਨੁਭਵੀ)
+      gloss_ta: அவன்
+      gloss_te: అతడు (అనుభవి)
+    - word: च
+      iast: ca
+      gloss_en: and
+      morph: conj.
+      gloss_as: আৰু
+      gloss_bn: এবং
+      gloss_gu: અને
+      gloss_hi: और
+      gloss_kn: ಚ — ಮತ್ತು
+      gloss_ml: ച — ഉം
+      gloss_mr: आणि
+      gloss_or: ଏବଂ
+      gloss_pa: ਅਤੇ
+      gloss_ta: மேலும்
+      gloss_te: మరియు
+    - word: एकः
+      iast: ekaḥ
+      gloss_en: one (in essence)
+      morph: nom. sg. m.
+      gloss_as: এক (স্বৰূপত)
+      gloss_bn: এক (স্বরূপে)
+      gloss_gu: એક (સ્વરૂપથી)
+      gloss_hi: एक (तत्त्व में)
+      gloss_kn: ಏಕಃ — ಒಬ್ಬನೇ (ಸ್ವರೂಪತಃ)
+      gloss_ml: ഏകഃ — ഒരുവൻ (സ്വരൂപത്തിൽ)
+      gloss_mr: एक (मूलतः)
+      gloss_or: ଏକ (ସ୍ୱରୂପତଃ)
+      gloss_pa: ਇੱਕ (ਸਰੂਪ ਵਿੱਚ)
+      gloss_ta: ஒருவன் (தத்துவத்தில்)
+      gloss_te: ఒక్కడు (సారతః)
+    - word: द्वि-रूपः
+      iast: dvi-rūpaḥ
+      gloss_en: of two forms (Śiva–Śakti)
+      morph: nom. sg. m. cpd.
+      gloss_as: দুই ৰূপ (শিৱ-শক্তি)
+      gloss_bn: দ্বিরূপ (শিব-শক্তি)
+      gloss_gu: દ્વિરૂપ (શિવ-શક્તિ રૂપે)
+      gloss_hi: द्विरूप — दो रूप वाला (शिव-शक्ति)
+      gloss_kn: ದ್ವಿ-ರೂಪಃ — ಎರಡು ರೂಪಗಳುಳ್ಳವನು (ಶಿವ-ಶಕ್ತಿ)
+      gloss_ml: ദ്വി-രൂപഃ — ഇരുരൂപി (ശിവ-ശക്തി)
+      gloss_mr: दोन रूपांचा (शिव-शक्ती)
+      gloss_or: ଦୁଇ ରୂପର (ଶିବ-ଶକ୍ତି)
+      gloss_pa: ਦੋ-ਰੂਪ (ਸ਼ਿਵ-ਸ਼ਕਤੀ)
+      gloss_ta: இரு வடிவம் கொண்டவன் (சிவ-சக்தி)
+      gloss_te: రెండు రూపములవాడు (శివ-శక్తి)
+    - word: त्रि-मयः
+      iast: tri-mayaḥ
+      gloss_en: consisting of three (āṇava/śākta/śāmbhava or three malas)
+      morph: nom. sg. m. cpd.
+      gloss_as: তিনি প্ৰকাৰ (আণৱ/শাক্ত/শাম্ভৱ বা তিনি মল)
+      gloss_bn: ত্রিময় (আণব/শাক্ত/শাম্ভব অথবা তিন মল)
+      gloss_gu: ત્રિમય (ત્રણ મલ અથવા આણવ/શાક્ત/શાંભવ ઉપાય)
+      gloss_hi: त्रिमय — तीन से युक्त (आणव/शाक्त/शाम्भव अथवा तीन मल)
+      gloss_kn: ತ್ರಿ-ಮಯಃ — ಮೂರರಿಂದ ಕೂಡಿದವನು (ಆಣವ/ಶಾಕ್ತ/ಶಾಂಭವ ಅಥವಾ ಮೂರು ಮಲಗಳು)
+      gloss_ml: ത്രി-മയഃ — മൂന്നുകൊണ്ടു നിർമിതൻ (ആണവ/ശാക്ത/ശാംഭവ അഥവാ മൂന്നു മലങ്ങൾ)
+      gloss_mr: तीन प्रकारांचा (आणव/शाक्त/शांभव किंवा तीन मल)
+      gloss_or: ତିନି ମୟ (ଆଣବ/ଶାକ୍ତ/ଶାମ୍ଭବ ବା ତିନି ମଳ)
+      gloss_pa: ਤਿੰਨ-ਮਯ (ਆਣਵ/ਸ਼ਾਕਤ/ਸ਼ਾਂਭਵ ਜਾਂ ਤਿੰਨ ਮਲਾਂ ਵਾਲਾ)
+      gloss_ta: மூன்றாக இயன்றவன் (ஆணவ/சாக்த/சாம்பவ அல்லது மூன்று மலங்கள்)
+      gloss_te: మూడు విధములవాడు (ఆణవ/శాక్త/శాంభవ లేక మూడు మలములు)
+    - word: चतुर्-आत्मा
+      iast: catur-ātmā
+      gloss_en: having four selves (the four states of consciousness)
+      morph: nom. sg. m. cpd.
+      gloss_as: চাৰি আত্মা (চেতনাৰ চাৰি অৱস্থা)
+      gloss_bn: চতুরাত্মা (চৈতন্যের চারি অবস্থাবিশিষ্ট)
+      gloss_gu: ચતુરાત્મા (ચાર ચૈતન્ય-અવસ્થાઓ)
+      gloss_hi: चतुरात्मा — चार स्वरूप वाला (चार अवस्थाएँ)
+      gloss_kn: ಚತುರ್-ಆತ್ಮಾ — ನಾಲ್ಕು ಆತ್ಮಗಳುಳ್ಳವನು (ಪ್ರಜ್ಞೆಯ ನಾಲ್ಕು ಅವಸ್ಥೆಗಳು)
+      gloss_ml: ചതുര്-ആത്മാ — ചതുരാത്മൻ (ബോധത്തിന്റെ നാല് അവസ്ഥകൾ)
+      gloss_mr: चार आत्म्यांचा (चैतन्याच्या चार अवस्था)
+      gloss_or: ଚାରି ଆତ୍ମା (ଚାରି ଚୈତନ୍ୟାବସ୍ଥା)
+      gloss_pa: ਚਾਰ-ਆਤਮਾ (ਚੇਤਨਾ ਦੀਆਂ ਚਾਰ ਅਵਸਥਾਵਾਂ ਵਾਲਾ)
+      gloss_ta: நான்கு ஆத்மா உடையவன் (உணர்வின் நான்கு நிலைகள்)
+      gloss_te: నాలుగు ఆత్మలవాడు (నాలుగు చైతన్య అవస్థలు)
+    - word: सप्त-पञ्चक
+      iast: sapta-pañcaka
+      gloss_en: the seven pentads
+      morph: stem in cpd.
+      gloss_as: সাত পঞ্চক
+      gloss_bn: সপ্ত-পঞ্চক, সাত পঞ্চক
+      gloss_gu: સાત પંચક (સાત પંચકો)
+      gloss_hi: सप्त-पंचक — सात पञ्चक
+      gloss_kn: ಸಪ್ತ-ಪಂಚಕ — ಏಳು ಪಂಚಕಗಳು
+      gloss_ml: സപ്ത-പഞ്ചക — ഏഴു പഞ്ചകങ്ങൾ
+      gloss_mr: सात पंचकांचा
+      gloss_or: ସପ୍ତ-ପଞ୍ଚକ (ସାତ ପଞ୍ଚକ)
+      gloss_pa: ਸੱਤ ਪੰਜਕ
+      gloss_ta: ஏழு பஞ்சகங்கள்
+      gloss_te: సప్త పంచకములు (ఏడు పంచకములు)
+    - word: स्वभावः
+      iast: svabhāvaḥ
+      gloss_en: is of that own nature
+      morph: nom. sg. m.
+      gloss_as: স্বভাৱ, প্ৰকৃতি
+      gloss_bn: স্বভাব, সেই স্বরূপের
+      gloss_gu: સ્વભાવવાળો
+      gloss_hi: स्वभाव वाला है
+      gloss_kn: ಸ್ವಭಾವಃ — ಆ ಸ್ವಭಾವವುಳ್ಳವನು
+      gloss_ml: സ്വഭാവഃ — ആ സ്വഭാവമുള്ളവൻ
+      gloss_mr: असा स्वभाव असलेला
+      gloss_or: ସ୍ୱଭାବ ସମ୍ପନ୍ନ
+      gloss_pa: ਜਿਸਦਾ ਆਪਣਾ ਸੁਭਾਅ ਹੈ
+      gloss_ta: சுய இயல்பு கொண்டவன்
+      gloss_te: అది తన స్వభావము
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "He, though one, has two forms, three modes, four selves, and the nature of seven pentads."
+      ai_assisted: true
+      status: draft
 
-      - verse: 8
-        devanagari: तद्भूमिकाः सर्वदर्शनस्थितयः ॥८॥
-        slp1: "tadBUmikAH sarvadarzanasTitayaH"
-        iast: "tad-bhūmikāḥ sarva-darśana-sthitayaḥ"
-        meter: sūtra
-        word_glosses:
-          - word: तत्-भूमिकाः
-            iast: tat-bhūmikāḥ
-            gloss_en: roles/stages of that (one Consciousness)
-            morph: nom. pl. f. cpd.
-          - word: सर्व
-            iast: sarva
-            gloss_en: all
-            morph: adj. stem
-          - word: दर्शन
-            iast: darśana
-            gloss_en: philosophical view, system
-            morph: stem in cpd.
-          - word: स्थितयः
-            iast: sthitayaḥ
-            gloss_en: are the standpoints
-            morph: nom. pl. f.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "The doctrinal positions of all philosophical schools are roles assumed by that (one Consciousness)."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (অনুভৱকৰ্তা) এক হোৱাৰ পাছতো দুই ৰূপ, তিনি প্ৰকাৰ, চাৰি আত্মা আৰু সাত পঞ্চকৰ স্বভাৱযুক্ত।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তিনি এক হইয়াও দ্বিরূপ, ত্রিময়, চতুরাত্মা এবং সপ্ত-পঞ্চক স্বভাববিশিষ্ট।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તે એક હોવા છતાં દ્વિરૂપ, ત્રિમય, ચતુરાત્મા અને સપ્ત-પંચક સ્વભાવવાળો છે.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: वह (प्रमाता) एक होते हुए भी द्विरूप (शिव-शक्ति), त्रिमय (तीन मलों या तीन उपायों वाला), चतुरात्मा (चार अवस्थाओं वाला) तथा सप्त-पंचक (सात पञ्चकों) के स्वभाव वाला है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಅವನು ಒಬ್ಬನೇ ಆದರೂ ಎರಡು ರೂಪಗಳುಳ್ಳವನು, ಮೂರು ಭಾವಗಳಿಂದ ಕೂಡಿದವನು, ನಾಲ್ಕು ಆತ್ಮಗಳುಳ್ಳವನು ಮತ್ತು ಏಳು ಪಂಚಕಗಳ ಸ್ವಭಾವವುಳ್ಳವನು.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: അവൻ ഒരുവനായിരുന്നിട്ടും ദ്വിരൂപനും (ശിവ-ശക്തി), ത്രിമയനും (മൂന്നു മലങ്ങൾ), ചതുരാത്മാവും (നാല് അവസ്ഥകൾ), സപ്തപഞ്ചകസ്വഭാവനും (ഏഴു പഞ്ചകങ്ങൾ) ആകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: तो एक असूनही दोन रूपांचा (शिव–शक्ती), तीन प्रकारांचा, चार आत्म्यांचा आणि सात पंचकांच्या स्वभावाचा असतो.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେ ଏକ ହୋଇ ମଧ୍ୟ ଦୁଇ ରୂପ, ତିନି ମୟ, ଚାରି ଆତ୍ମା ଏବଂ ସପ୍ତ-ପଞ୍ଚକ ସ୍ୱଭାବର ଅଟନ୍ତି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਹ (ਪ੍ਰਮਾਤਾ) ਇੱਕ ਹੁੰਦਿਆਂ ਹੋਇਆਂ ਵੀ ਦੋ-ਰੂਪ (ਸ਼ਿਵ-ਸ਼ਕਤੀ), ਤਿੰਨ-ਮਯ (ਤਿੰਨ ਮਲਾਂ ਜਾਂ ਤਿੰਨ ਉਪਾਵਾਂ ਵਾਲਾ), ਚਾਰ-ਆਤਮਾ (ਚਾਰ ਅਵਸਥਾਵਾਂ ਵਾਲਾ) ਅਤੇ ਸੱਤ-ਪੰਚਕ (ਸੱਤ ਪੰਜਕਾਂ) ਦੇ ਸੁਭਾਅ ਵਾਲਾ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அவன் ஒருவனாக இருந்தாலும், இரு வடிவங்களையும் (சிவ-சக்தி), மூன்று கூறுகளையும், நான்கு ஆத்மாக்களையும், ஏழு பஞ்சகங்களின் இயல்பையும் கொண்டுள்ளான்.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: అతడు ఒక్కడే అయినను, రెండు రూపములవాడు, మూడు విధములవాడు, నాలుగు ఆత్మలవాడు, ఏడు పంచకముల [draft] స్వభావము కలవాడు.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 8
+    devanagari: तद्भूमिकाः सर्वदर्शनस्थितयः ॥८॥
+    slp1: "tadBUmikAH sarvadarzanasTitayaH"
+    iast: "tad-bhūmikāḥ sarva-darśana-sthitayaḥ"
+    meter: sūtra
+    word_glosses:
+    - word: तत्-भूमिकाः
+      iast: tat-bhūmikāḥ
+      gloss_en: roles/stages of that (one Consciousness)
+      morph: nom. pl. f. cpd.
+      gloss_as: সেই (এক চিতি)ৰ ভূমিকা/স্তৰ
+      gloss_bn: সেই (এক চৈতন্যের) ভূমিকা/অবস্থা
+      gloss_gu: તે(એક ચૈતન્ય)ની ભૂમિકાઓ
+      gloss_hi: उसी (एक चिति) की भूमिकाएँ / स्तर
+      gloss_kn: ತತ್-ಭೂಮಿಕಾಃ — ಆ (ಏಕ ಚೈತನ್ಯದ) ಭೂಮಿಕೆಗಳು/ಅವಸ್ಥೆಗಳು
+      gloss_ml: തത്-ഭൂമികാഃ — ആ (ഏക ചിതിയുടെ) ഭൂമികകൾ, പങ്കുകൾ
+      gloss_mr: त्याच्या (एका चैतन्याच्या) भूमिका
+      gloss_or: ସେହି (ଏକ ଚୈତନ୍ୟ)ର ଭୂମିକା/ସ୍ତର
+      gloss_pa: ਉਸ (ਇੱਕ ਚੇਤਨਾ) ਦੀਆਂ ਭੂਮਿਕਾਵਾਂ/ਅਵਸਥਾਵਾਂ
+      gloss_ta: அதன் (ஒரே சித்தின்) பாத்திரங்கள், நிலைகள்
+      gloss_te: ఆ (ఏక చైతన్యము) యొక్క పాత్రలు/భూమికలు
+    - word: सर्व
+      iast: sarva
+      gloss_en: all
+      morph: adj. stem
+      gloss_as: সকলো
+      gloss_bn: সর্ব
+      gloss_gu: બધાં, સર્વ
+      gloss_hi: समस्त
+      gloss_kn: ಸರ್ವ — ಸಮಸ್ತ
+      gloss_ml: സർവ — സകലം, എല്ലാം
+      gloss_mr: सर्व
+      gloss_or: ସମସ୍ତ
+      gloss_pa: ਸਾਰੇ
+      gloss_ta: அனைத்து
+      gloss_te: సర్వ, అన్ని
+    - word: दर्शन
+      iast: darśana
+      gloss_en: philosophical view, system
+      morph: stem in cpd.
+      gloss_as: দৰ্শন, দাৰ্শনিক মত
+      gloss_bn: দর্শন, দার্শনিক মত
+      gloss_gu: દર્શન, ફિલસૂફી-મત
+      gloss_hi: दर्शन — दार्शनिक मत, सिद्धान्त
+      gloss_kn: ದರ್ಶನ — ತತ್ತ್ವದರ್ಶನ, ಸಿದ್ಧಾಂತ
+      gloss_ml: ദർശന — തത്ത്വദർശനം, സിദ്ധാന്തവ്യവസ്ഥ
+      gloss_mr: दर्शन, तत्त्वज्ञान-संप्रदाय
+      gloss_or: ଦର୍ଶନ, ଦାର୍ଶନିକ ମତ
+      gloss_pa: ਦਰਸ਼ਨ, ਫ਼ਲਸਫ਼ਾਈ ਮੱਤ
+      gloss_ta: தர்சனம், தத்துவக் கொள்கை
+      gloss_te: దర్శనము, తాత్త్విక సిద్ధాంతము
+    - word: स्थितयः
+      iast: sthitayaḥ
+      gloss_en: are the standpoints
+      morph: nom. pl. f.
+      gloss_as: স্থিতি, স্থান, দৃষ্টিকোণ
+      gloss_bn: স্থিতি, সিদ্ধান্ত-অবস্থান
+      gloss_gu: સ્થિતિઓ, સ્થાનો
+      gloss_hi: स्थितियाँ — स्थापित दृष्टिकोण
+      gloss_kn: ಸ್ಥಿತಯಃ — ಸ್ಥಿತಿಗಳು, ನಿಲುವುಗಳು
+      gloss_ml: സ്ഥിതയഃ — സ്ഥിതികൾ, നിലപാടുകൾ
+      gloss_mr: स्थिती, भूमिका, मतपद्धती
+      gloss_or: ସ୍ଥିତିଗୁଡ଼ିକ, ସ୍ୱୀକୃତିଗୁଡ଼ିକ
+      gloss_pa: ਸਥਿਤੀਆਂ, ਸਿੱਧਾਂਤ
+      gloss_ta: நிலைப்பாடுகள், ஸ்திதிகள்
+      gloss_te: నిష్ఠలు, స్థితులు
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "The doctrinal positions of all philosophical schools are roles assumed by that (one Consciousness)."
+      ai_assisted: false
+      status: published
 
-      - verse: 9
-        devanagari: चिद्वत्तच्छक्तिसङ्कोचान्मलावृतः संसारी ॥९॥
-        slp1: "cidvattacCaktisaNkocAnmalAvftaH saMsArI"
-        iast: "cid-vat tac-chakti-saṅkocān malāvṛtaḥ saṃsārī"
-        meter: sūtra
-        word_glosses:
-          - word: चित्-वत्
-            iast: cit-vat
-            gloss_en: though of the nature of Consciousness
-            morph: adv./adj. cpd.
-          - word: तत्-शक्ति-सङ्कोचात्
-            iast: tat-śakti-saṅkocāt
-            gloss_en: owing to the contraction of his own powers
-            morph: abl. sg. m. cpd.
-          - word: मल-आवृतः
-            iast: mala-āvṛtaḥ
-            gloss_en: covered by the impurities (malas)
-            morph: nom. sg. m. cpd.
-          - word: संसारी
-            iast: saṃsārī
-            gloss_en: becomes the transmigrant
-            morph: nom. sg. m.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Like Consciousness itself (in essence), but with his powers contracted and covered by impurities, he becomes the transmigrating soul."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সকলো দাৰ্শনিক মতবাদ সেই (এক চিতি)ৰ ভূমিকা মাত্ৰ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সর্ব দর্শনের সিদ্ধান্ত-সকল সেই (এক চৈতন্যের) ভূমিকা মাত্র।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: બધાં દર્શનો (ફિલસૂફી-મતો)ની સ્થિતિઓ તે (એક ચૈતન્ય)ની ભૂમિકાઓ છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: सभी दर्शनों की स्थापित स्थितियाँ उसी (एक चिति) की भूमिकाएँ हैं।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಸಮಸ್ತ ದರ್ಶನಗಳ (ತತ್ತ್ವಶಾಸ್ತ್ರ ಸಂಪ್ರದಾಯಗಳ) ಸ್ಥಿತಿಗಳು ಆ (ಏಕ ಚಿತಿಯ) ಭೂಮಿಕೆಗಳಾಗಿವೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: സർവ ദർശനങ്ങളുടെയും സിദ്ധാന്തനിലപാടുകൾ ആ ഏക ചിതിയുടെ ഭൂമികകൾ (പങ്കുകൾ) മാത്രമാകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: सर्व दर्शनांच्या (तत्त्वज्ञान-संप्रदायांच्या) भूमिका त्याच एका चैतन्याच्याच भूमिका आहेत.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସମସ୍ତ ଦର୍ଶନ (ଦାର୍ଶନିକ ମତ)ର ସ୍ଥିତିଗୁଡ଼ିକ ସେହି (ଏକ ଚୈତନ୍ୟ)ର ଭୂମିକା (ଭିନ୍ନ ଭିନ୍ନ ସ୍ତର) ଅଟନ୍ତି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਸਾਰੇ ਦਰਸ਼ਨਾਂ ਦੀਆਂ ਸਥਾਪਿਤ ਸਥਿਤੀਆਂ ਉਸੇ (ਇੱਕ ਚਿਤਿ) ਦੀਆਂ ਭੂਮਿਕਾਵਾਂ ਹਨ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அந்த (ஒரே சித்தின்) பாத்திரங்களே எல்லாத் தத்துவ தர்சனங்களின் நிலைப்பாடுகளாகும்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: సర్వదర్శనముల (తాత్త్విక సిద్ధాంతముల) యొక్క నిష్ఠలు ఆ (ఏకచితి యొక్క) భూమికలే.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 9
+    devanagari: चिद्वत्तच्छक्तिसङ्कोचान्मलावृतः संसारी ॥९॥
+    slp1: "cidvattacCaktisaNkocAnmalAvftaH saMsArI"
+    iast: "cid-vat tac-chakti-saṅkocān malāvṛtaḥ saṃsārī"
+    meter: sūtra
+    word_glosses:
+    - word: चित्-वत्
+      iast: cit-vat
+      gloss_en: though of the nature of Consciousness
+      morph: adv./adj. cpd.
+      gloss_as: চিতিৰ দৰে (স্বৰূপত)
+      gloss_bn: চিৎ-স্বরূপ হইলেও
+      gloss_gu: ચિત્-સ્વરૂપ હોવા છતાં
+      gloss_hi: यद्यपि चित्-स्वरूप है
+      gloss_kn: ಚಿತ್-ವತ್ — ಚೈತನ್ಯ ಸ್ವರೂಪನಾಗಿದ್ದರೂ
+      gloss_ml: ചിത്-വത് — ചിത്സ്വരൂപമുണ്ടെങ്കിലും
+      gloss_mr: चैतन्यासारखा असूनही
+      gloss_or: ଚିତ୍-ସ୍ୱରୂପ ହୋଇ ମଧ୍ୟ
+      gloss_pa: ਚਿਤ-ਸਰੂਪ ਹੁੰਦਿਆਂ ਹੋਇਆਂ ਵੀ
+      gloss_ta: சித்தின் தன்மையுள்ளவனாக இருந்தாலும்
+      gloss_te: చైతన్య స్వరూపుడే అయినను
+    - word: तत्-शक्ति-सङ्कोचात्
+      iast: tat-śakti-saṅkocāt
+      gloss_en: owing to the contraction of his own powers
+      morph: abl. sg. m. cpd.
+      gloss_as: নিজৰ শক্তিৰ সঙ্কোচৰ কাৰণে
+      gloss_bn: আপন শক্তির সঙ্কোচের কারণে
+      gloss_gu: પોતાની શક્તિઓના સંકોચને કારણે
+      gloss_hi: अपनी शक्तियों के संकोच के कारण
+      gloss_kn: ತತ್-ಶಕ್ತಿ-ಸಂಕೋಚಾತ್ — ತನ್ನದೇ ಶಕ್ತಿಗಳ ಸಂಕೋಚದಿಂದಾಗಿ
+      gloss_ml: തത്-ശക്തി-സങ്കോചാത് — തന്റെ ശക്തികളുടെ സങ്കോചംമൂലം
+      gloss_mr: स्वतःच्या शक्तींच्या संकोचामुळे
+      gloss_or: ନିଜ ଶକ୍ତିର ସଙ୍କୋଚ ଯୋଗୁଁ
+      gloss_pa: ਆਪਣੀਆਂ ਸ਼ਕਤੀਆਂ ਦੇ ਸੰਕੋਚ ਕਾਰਨ
+      gloss_ta: தனது சக்திகளின் சங்கோசத்தினால் (சுருக்கத்தினால்)
+      gloss_te: తన శక్తుల సంకోచము వలన
+    - word: मल-आवृतः
+      iast: mala-āvṛtaḥ
+      gloss_en: covered by the impurities (malas)
+      morph: nom. sg. m. cpd.
+      gloss_as: মলৰ দ্বাৰা আবৃত
+      gloss_bn: মলে আবৃত
+      gloss_gu: મલોથી આવૃત, અશુદ્ધિઓથી ઢંકાયેલ
+      gloss_hi: मलों से आवृत, अशुद्धियों से ढका हुआ
+      gloss_kn: ಮಲ-ಆವೃತಃ — ಮಲಗಳಿಂದ (ಅಶುದ್ಧಿಗಳಿಂದ) ಆವರಿಸಲ್ಪಟ್ಟ
+      gloss_ml: മല-ആവൃതഃ — മലങ്ങളാൽ (അശുദ്ധികളാൽ) ആവൃതൻ
+      gloss_mr: मलांनी (अशुद्धींनी) आवृत
+      gloss_or: ମଳ ଦ୍ୱାରା ଆଚ୍ଛାଦିତ
+      gloss_pa: ਮਲਾਂ (ਅਸ਼ੁੱਧੀਆਂ) ਨਾਲ ਢੱਕਿਆ ਹੋਇਆ
+      gloss_ta: மலங்களால் மூடப்பட்டவன்
+      gloss_te: మలములచే ఆవరింపబడిన
+    - word: संसारी
+      iast: saṃsārī
+      gloss_en: becomes the transmigrant
+      morph: nom. sg. m.
+      gloss_as: সংসাৰী — সংসাৰত ভ্ৰমণ কৰোঁতা
+      gloss_bn: সংসারী, সংসারচক্রে আবদ্ধ
+      gloss_gu: સંસારી (પુનર્જન્મ-ચક્રમાં ભમનાર) બને છે
+      gloss_hi: संसारी — संसार में परिभ्रमण करने वाला जीव
+      gloss_kn: ಸಂಸಾರೀ — ಸಂಸಾರಿಯಾಗುತ್ತಾನೆ, ಜನನಮರಣ ಚಕ್ರದಲ್ಲಿ ಸಿಲುಕುತ್ತಾನೆ
+      gloss_ml: സംസാരീ — സംസാരി, ജനനമരണചക്രത്തിൽ കറങ്ങുന്നവൻ
+      gloss_mr: संसारी (जन्ममरणात फिरणारा) बनतो
+      gloss_or: ସଂସାରୀ (ଜନ୍ମ-ମରଣଚକ୍ରବର୍ତ୍ତୀ) ହୁଏ
+      gloss_pa: ਸੰਸਾਰੀ — ਆਵਾਗਮਨ ਵਿੱਚ ਫਸਿਆ ਜੀਵ — ਬਣ ਜਾਂਦਾ ਹੈ
+      gloss_ta: சம்சாரி, பிறவித் தளையில் உழல்பவன் ஆகின்றான்
+      gloss_te: సంసారి (సంసారములో సంచరించువాడు) అగును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Like Consciousness itself (in essence), but with his powers contracted and covered by impurities, he becomes the transmigrating soul."
+      ai_assisted: false
+      status: published
 
-      - verse: 10
-        devanagari: तथापि तद्वत् पञ्चकृत्यानि करोति ॥१०॥
-        slp1: "taTApi tadvat paYcakftyAni karoti"
-        iast: "tathāpi tad-vat pañca-kṛtyāni karoti"
-        meter: sūtra
-        word_glosses:
-          - word: तथापि
-            iast: tathāpi
-            gloss_en: yet even so
-            morph: conj.
-          - word: तत्-वत्
-            iast: tad-vat
-            gloss_en: like Him (Śiva)
-            morph: adv.
-          - word: पञ्च-कृत्यानि
-            iast: pañca-kṛtyāni
-            gloss_en: the five acts (sṛṣṭi, sthiti, saṃhāra, tirodhāna, anugraha)
-            morph: acc. pl. n. cpd.
-          - word: करोति
-            iast: karoti
-            gloss_en: performs
-            morph: 3sg. pres. √kṛ
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Even so, like Śiva himself, the bound soul performs the five cosmic acts."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতিৰ দৰে স্বৰূপ হলেও, নিজৰ শক্তিসমূহৰ সঙ্কোচৰ কাৰণে মলসমূহেৰে আবৃত হৈ তেওঁ সংসাৰী হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিৎস্বরূপ হইলেও, আপন শক্তির সঙ্কোচের কারণে মলে আবৃত হইয়া তিনি সংসারী হন।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ચિત્-સ્વરૂપ હોવા છતાં પોતાની શક્તિઓના સંકોચને કારણે મલોથી આવૃત થઈને તે સંસારી બને છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चित्-स्वरूप होते हुए भी अपनी शक्तियों के संकोच के कारण मलों से आवृत होकर वह संसारी (संसार में भटकने वाला जीव) बन जाता है।
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಚಿತ್‌ಸ್ವರೂಪನಾಗಿದ್ದರೂ ತನ್ನ ಶಕ್ತಿಗಳ ಸಂಕೋಚದಿಂದಾಗಿ ಮಲಾವೃತನಾಗಿ (ಮಲಗಳಿಂದ ಆವರಿಸಲ್ಪಟ್ಟು) ಸಂಸಾರಿಯಾಗುತ್ತಾನೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ചിത്സ്വരൂപനായിരുന്നിട്ടും, തന്റെ ശക്തികളുടെ സങ്കോചംമൂലം മലങ്ങളാൽ ആവൃതനായി അവൻ സംസാരിയായിത്തീരുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चैतन्यस्वरूप असूनही त्याच्या शक्तींच्या संकोचामुळे मलांनी आवृत होऊन तो संसारी (जन्ममरणात फिरणारा जीव) बनतो.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସ୍ୱରୂପତଃ ଚିତ୍-ସ୍ୱରୂପ ହୋଇ ମଧ୍ୟ ନିଜ ଶକ୍ତିର ସଙ୍କୋଚ ଦ୍ୱାରା ମଳଆବୃତ ହୋଇ ସେ ସଂସାରୀ ହୁଅନ୍ତି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਚਿਤ-ਸਰੂਪ ਹੁੰਦਿਆਂ ਹੋਇਆਂ ਵੀ ਆਪਣੀਆਂ ਸ਼ਕਤੀਆਂ ਦੇ ਸੰਕੋਚ ਕਾਰਨ ਮਲਾਂ ਨਾਲ ਢੱਕਿਆ ਹੋਇਆ ਉਹ ਸੰਸਾਰੀ (ਸੰਸਾਰ ਵਿੱਚ ਭਟਕਣ ਵਾਲਾ ਜੀਵ) ਬਣ ਜਾਂਦਾ ਹੈ।
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சித்தின் தன்மையுள்ளவனாக இருந்தாலும், தனது சக்திகளின் சுருக்கத்தினால் மலங்களால் மூடப்பட்டு, சம்சாரியாகின்றான்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: చిత్స్వరూపుడే అయినను, తన శక్తుల సంకోచము వలన మలములచే ఆవరింపబడి సంసారియగును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 10
+    devanagari: तथापि तद्वत् पञ्चकृत्यानि करोति ॥१०॥
+    slp1: "taTApi tadvat paYcakftyAni karoti"
+    iast: "tathāpi tad-vat pañca-kṛtyāni karoti"
+    meter: sūtra
+    word_glosses:
+    - word: तथापि
+      iast: tathāpi
+      gloss_en: yet even so
+      morph: conj.
+      gloss_as: তথাপি, এনেদৰেও
+      gloss_bn: তথাপি, তবুও
+      gloss_gu: તેમ છતાં
+      gloss_hi: फिर भी, तथापि
+      gloss_kn: ತಥಾಪಿ — ಆದರೂ ಸಹ
+      gloss_ml: തഥാപി — എങ്കിലും, അങ്ങനെയായാലും
+      gloss_mr: तरीसुद्धा
+      gloss_or: ତଥାପି, ସତ୍ତ୍ୱେ
+      gloss_pa: ਫਿਰ ਵੀ, ਇਸੇ ਤਰ੍ਹਾਂ
+      gloss_ta: அவ்வாறிருந்தும்
+      gloss_te: అయినప్పటికీ
+    - word: तत्-वत्
+      iast: tad-vat
+      gloss_en: like Him (Śiva)
+      morph: adv.
+      gloss_as: তেওঁৰ (শিৱৰ) দৰে
+      gloss_bn: তাঁর (শিবের) ন্যায়
+      gloss_gu: તેની (શિવની) જેમ
+      gloss_hi: उस (शिव) के समान
+      gloss_kn: ತದ್-ವತ್ — ಅವನಂತೆಯೇ (ಶಿವನಂತೆ)
+      gloss_ml: തദ്-വത് — അവനെപ്പോലെ (ശിവനെപ്പോലെ)
+      gloss_mr: त्याच्याप्रमाणे (शिवाप्रमाणे)
+      gloss_or: ତାଙ୍କ (ଶିବ) ଭଳି
+      gloss_pa: ਉਸ (ਸ਼ਿਵ) ਵਾਂਗ
+      gloss_ta: அவனை (சிவனை)ப் போலவே
+      gloss_te: ఆయన (శివుని) వలెనే
+    - word: पञ्च-कृत्यानि
+      iast: pañca-kṛtyāni
+      gloss_en: the five acts (sṛṣṭi, sthiti, saṃhāra, tirodhāna, anugraha)
+      morph: acc. pl. n. cpd.
+      gloss_as: পঞ্চকৃত্য (সৃষ্টি, স্থিতি, সংহাৰ, তিৰোধান, অনুগ্ৰহ)
+      gloss_bn: পঞ্চকৃত্য (সৃষ্টি, স্থিতি, সংহার, তিরোধান, অনুগ্রহ)
+      gloss_gu: પાંચ કૃત્યો (સૃષ્ટિ, સ્થિતિ, સંહાર, તિરોધાન, અનુગ્રહ)
+      gloss_hi: पाँच कृत्य (सृष्टि, स्थिति, संहार, तिरोधान, अनुग्रह)
+      gloss_kn: ಪಂಚ-ಕೃತ್ಯಾನಿ — ಪಂಚಕೃತ್ಯಗಳು (ಸೃಷ್ಟಿ, ಸ್ಥಿತಿ, ಸಂಹಾರ, ತಿರೋಧಾನ, ಅನುಗ್ರಹ)
+      gloss_ml: പഞ്ച-കൃത്യാനി — പഞ്ചകൃത്യങ്ങൾ (സൃഷ്ടി, സ്ഥിതി, സംഹാരം, തിരോധാനം, അനുഗ്രഹം)
+      gloss_mr: पाच कृत्ये (सृष्टी, स्थिती, संहार, तिरोधान, अनुग्रह)
+      gloss_or: ପଞ୍ଚକୃତ୍ୟ (ସୃଷ୍ଟି, ସ୍ଥିତି, ସଂହାର, ତିରୋଧାନ, ଅନୁଗ୍ରହ)
+      gloss_pa: ਪੰਜ ਕ੍ਰਿਤ (ਸ੍ਰਿਸ਼ਟੀ, ਸਥਿਤੀ, ਸੰਹਾਰ, ਤਿਰੋਧਾਨ, ਅਨੁਗ੍ਰਹਿ)
+      gloss_ta: ஐந்து செயல்கள் (சிருஷ்டி, ஸ்திதி, ஸம்ஹாரம், திரோதானம், அனுக்ரஹம்)
+      gloss_te: పంచకృత్యములు (సృష్టి, స్థితి, సంహారము, తిరోధానము, అనుగ్రహము)
+    - word: करोति
+      iast: karoti
+      gloss_en: performs
+      morph: 3sg. pres. √kṛ
+      gloss_as: কৰে, সম্পাদন কৰে
+      gloss_bn: সম্পাদন করেন
+      gloss_gu: કરે છે
+      gloss_hi: करता है
+      gloss_kn: ಕರೋತಿ — ಮಾಡುತ್ತಾನೆ
+      gloss_ml: കരോതി — ചെയ്യുന്നു, അനുഷ്ഠിക്കുന്നു
+      gloss_mr: करतो
+      gloss_or: କରେ
+      gloss_pa: ਕਰਦਾ ਹੈ
+      gloss_ta: செய்கிறான்
+      gloss_te: చేయును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Even so, like Śiva himself, the bound soul performs the five cosmic acts."
+      ai_assisted: false
+      status: published
 
-      - verse: 11
-        devanagari: आभासनरक्तिविमर्शनबीजावस्थापनविलापनतस्तानि ॥११॥
-        slp1: "ABAsanaraktivimarzanabIjAvasTApanavilApanatastAni"
-        iast: "ābhāsana-rakti-vimarśana-bījāvasthāpana-vilāpanatas tāni"
-        meter: sūtra
-        word_glosses:
-          - word: आभासन
-            iast: ābhāsana
-            gloss_en: manifesting (= sṛṣṭi, emission)
-            morph: stem in cpd.
-          - word: रक्ति
-            iast: rakti
-            gloss_en: relishing (= sthiti, maintenance)
-            morph: stem in cpd.
-          - word: विमर्शन
-            iast: vimarśana
-            gloss_en: reflective grasp (= saṃhāra, withdrawal)
-            morph: stem in cpd.
-          - word: बीज-अवस्थापन
-            iast: bīja-avasthāpana
-            gloss_en: placing in seed-form (= tirodhāna, concealment)
-            morph: stem in cpd.
-          - word: विलापनतः
-            iast: vilāpanataḥ
-            gloss_en: and dissolving (= anugraha, grace) — by these
-            morph: abl. sg. n. cpd.
-          - word: तानि
-            iast: tāni
-            gloss_en: those five acts (are accomplished)
-            morph: acc. pl. n.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Those five acts (he performs) by way of manifesting, relishing, reflective withdrawal, depositing as seed, and dissolving."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তথাপি, [draft] শিৱৰ দৰেই, তেওঁ পঞ্চকৃত্য সম্পাদন কৰে।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তথাপি তিনি শিবের ন্যায় পঞ্চকৃত্য সম্পাদন করেন।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તેમ છતાં, શિવની જેમ જ, તે પાંચ કૃત્યો (સૃષ્ટિ, સ્થિતિ, સંહાર, તિરોધાન, અનુગ્રહ) કરે છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: तथापि वह (बद्ध जीव) उस (शिव) के समान ही पाँच कृत्यों को करता है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆದರೂ ಸಹ, ಶಿವನಂತೆಯೇ ಅವನು ಪಂಚಕೃತ್ಯಗಳನ್ನು (ಐದು ಕ್ರಿಯೆಗಳನ್ನು) ಮಾಡುತ್ತಾನೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: എന്നിരുന്നാലും, ശിവനെപ്പോലെതന്നെ, അവൻ പഞ്ചകൃത്യങ്ങൾ (സൃഷ്ടി, സ്ഥിതി, സംഹാരം, തിരോധാനം, അനുഗ്രഹം) അനുഷ്ഠിക്കുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: तरीही, त्याच्याप्रमाणेच (शिवाप्रमाणेच), तो पाच कृत्ये करत असतो.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ତଥାପି ସେ (ସଂସାରୀ ଜୀବ) ତାଙ୍କ (ଶିବ)ଭଳି ପଞ୍ଚକୃତ୍ୟ (ସୃଷ୍ଟି, ସ୍ଥିତି, ସଂହାର, ତିରୋଧାନ, ଅନୁଗ୍ରହ) କରନ୍ତି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਫਿਰ ਵੀ ਉਹ (ਬੱਧ ਜੀਵ) ਉਸ (ਸ਼ਿਵ) ਵਾਂਗ ਹੀ ਪੰਜ ਕ੍ਰਿਤਾਂ ਨੂੰ ਕਰਦਾ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அவ்வாறிருந்தும், சிவனைப் போலவே, அவன் ஐந்து செயல்களை (பஞ்சகிருத்தியங்களை) நிகழ்த்துகிறான்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: అట్లయినను, శివుని వలెనే అతడు పంచకృత్యములను (సృష్టి, స్థితి, సంహారము, తిరోధానము, అనుగ్రహము) చేయుచున్నాడు.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 11
+    devanagari: आभासनरक्तिविमर्शनबीजावस्थापनविलापनतस्तानि ॥११॥
+    slp1: "ABAsanaraktivimarzanabIjAvasTApanavilApanatastAni"
+    iast: "ābhāsana-rakti-vimarśana-bījāvasthāpana-vilāpanatas tāni"
+    meter: sūtra
+    word_glosses:
+    - word: आभासन
+      iast: ābhāsana
+      gloss_en: manifesting (= sṛṣṭi, emission)
+      morph: stem in cpd.
+      gloss_as: আভাসন — প্ৰকটন (= সৃষ্টি)
+      gloss_bn: আভাসন — প্রকাশন (= সৃষ্টি)
+      gloss_gu: આભાસન — પ્રકટ કરવું (= સૃષ્ટિ)
+      gloss_hi: आभासन — प्रकटीकरण (= सृष्टि)
+      gloss_kn: ಆಭಾಸನ — ಪ್ರಕಟಪಡಿಸುವಿಕೆ (= ಸೃಷ್ಟಿ, ಉತ್ಪತ್ತಿ)
+      gloss_ml: ആഭാസന — പ്രകടനം (= സൃഷ്ടി, ഉത്സർജനം)
+      gloss_mr: आभासन — प्रकट करणे (= सृष्टी)
+      gloss_or: ଆଭାସନ (ପ୍ରକଟନ = ସୃଷ୍ଟି)
+      gloss_pa: ਆਭਾਸਨ — ਪ੍ਰਗਟਾਉਣਾ (= ਸ੍ਰਿਸ਼ਟੀ, ਪ੍ਰਸਰਣ)
+      gloss_ta: ஆபாசனம், வெளிப்படுத்துதல் (= சிருஷ்டி, தோற்றுவித்தல்)
+      gloss_te: ఆభాసనము (ప్రకటించుట = సృష్టి)
+    - word: रक्ति
+      iast: rakti
+      gloss_en: relishing (= sthiti, maintenance)
+      morph: stem in cpd.
+      gloss_as: ৰক্তি — আস্বাদন, ৰঞ্জন (= স্থিতি)
+      gloss_bn: রক্তি — আস্বাদন (= স্থিতি)
+      gloss_gu: રક્તિ — આસ્વાદન (= સ્થિતિ)
+      gloss_hi: रक्ति — आस्वादन (= स्थिति)
+      gloss_kn: ರಕ್ತಿ — ಆಸ್ವಾದನೆ (= ಸ್ಥಿತಿ, ಪರಿಪಾಲನೆ)
+      gloss_ml: രക്തി — ആസ്വാദനം (= സ്ഥിതി, പരിപാലനം)
+      gloss_mr: रक्ती — आस्वादन (= स्थिती)
+      gloss_or: ରକ୍ତି (ଆସ୍ୱାଦନ = ସ୍ଥିତି)
+      gloss_pa: ਰਕਤਿ — ਆਸਵਾਦਨ (= ਸਥਿਤੀ, ਪਾਲਣਾ)
+      gloss_ta: ரக்தி, ருசித்தல் (= ஸ்திதி, நிலைநிறுத்தல்)
+      gloss_te: రక్తి (ఆస్వాదించుట = స్థితి)
+    - word: विमर्शन
+      iast: vimarśana
+      gloss_en: reflective grasp (= saṃhāra, withdrawal)
+      morph: stem in cpd.
+      gloss_as: বিমৰ্শন — পৰাবৰ্তিত প্ৰতিগ্ৰহণ (= সংহাৰ)
+      gloss_bn: বিমর্শন — পরামর্শাত্মক গ্রহণ (= সংহার)
+      gloss_gu: વિમર્શન — પ્રતિવિચાર (= સંહાર)
+      gloss_hi: विमर्शन — विमर्श-रूप ग्रहण (= संहार)
+      gloss_kn: ವಿಮರ್ಶನ — ವಿಮರ್ಶಾತ್ಮಕ ಗ್ರಹಣ (= ಸಂಹಾರ, ಉಪಸಂಹಾರ)
+      gloss_ml: വിമർശന — പ്രതിഫലനാത്മക ഗ്രഹണം (= സംഹാരം, പിൻവലിക്കൽ)
+      gloss_mr: विमर्शन — अंतर्ग्रहण (= संहार)
+      gloss_or: ବିମର୍ଶନ (ପ୍ରତ୍ୟବେକ୍ଷଣ = ସଂହାର)
+      gloss_pa: ਵਿਮਰਸ਼ਨ — ਅੰਤਰ-ਚਿੰਤਨ (= ਸੰਹਾਰ, ਉਪਸੰਹਾਰ)
+      gloss_ta: விமர்சனம், எண்ணிப் பற்றுதல் (= ஸம்ஹாரம், திரும்ப எடுத்தல்)
+      gloss_te: విమర్శనము (పరావర్తన గ్రహణము = సంహారము)
+    - word: बीज-अवस्थापन
+      iast: bīja-avasthāpana
+      gloss_en: placing in seed-form (= tirodhāna, concealment)
+      morph: stem in cpd.
+      gloss_as: বীজৰূপে অৱস্থাপন (= তিৰোধান, গোপন)
+      gloss_bn: বীজাবস্থাপন — বীজরূপে স্থাপন (= তিরোধান)
+      gloss_gu: બીજાવસ્થાપન — બીજરૂપે મૂકવું (= તિરોધાન)
+      gloss_hi: बीजावस्थापन — बीज-रूप में स्थापन (= तिरोधान)
+      gloss_kn: ಬೀಜ-ಅವಸ್ಥಾಪನ — ಬೀಜರೂಪದಲ್ಲಿ ಇಡುವಿಕೆ (= ತಿರೋಧಾನ, ಮರೆಮಾಚುವಿಕೆ)
+      gloss_ml: ബീജ-അവസ്ഥാപന — ബീജരൂപത്തിൽ സ്ഥാപിക്കൽ (= തിരോധാനം, മറയ്ക്കൽ)
+      gloss_mr: बीजावस्थापन — बीजरूपाने ठेवणे (= तिरोधान)
+      gloss_or: ବୀଜରୂପେ ସ୍ଥାପନ (= ତିରୋଧାନ)
+      gloss_pa: ਬੀਜ-ਰੂਪ ਵਿੱਚ ਸਥਾਪਨਾ (= ਤਿਰੋਧਾਨ, ਛੁਪਾਉਣਾ)
+      gloss_ta: விதையாய் நிலைநிறுத்துதல் (= திரோதானம், மறைத்தல்)
+      gloss_te: బీజావస్థాపనము (బీజరూపమున ఉంచుట = తిరోధానము)
+    - word: विलापनतः
+      iast: vilāpanataḥ
+      gloss_en: and dissolving (= anugraha, grace) — by these
+      morph: abl. sg. n. cpd.
+      gloss_as: বিলাপন — গলাই দিয়া (= অনুগ্ৰহ); ইয়াৰ দ্বাৰাই
+      gloss_bn: বিলাপন — বিলয়/দ্রবীভবন (= অনুগ্রহ) — এই (পাঁচ)-এর দ্বারা
+      gloss_gu: વિલાપન — ગાળી દેવું (= અનુગ્રહ); એ વડે
+      gloss_hi: विलापन — विलय (= अनुग्रह) — इनसे
+      gloss_kn: ವಿಲಾಪನತಃ — ಲಯಗೊಳಿಸುವಿಕೆಯಿಂದ (= ಅನುಗ್ರಹ) — ಇವುಗಳಿಂದ
+      gloss_ml: വിലാപനതഃ — വിലയിപ്പിക്കൽ (= അനുഗ്രഹം, കൃപ) — ഇവയിലൂടെ
+      gloss_mr: विलापन — विलीन करणे (= अनुग्रह) — यांच्याद्वारे
+      gloss_or: ଓ ବିଳାପନ (ଲୟ = ଅନୁଗ୍ରହ) — ଏଗୁଡ଼ିକଦ୍ୱାରା
+      gloss_pa: ਅਤੇ ਵਿਲਾਪਨ — ਵਿਲਯ (= ਅਨੁਗ੍ਰਹਿ, ਕਿਰਪਾ) — ਇਹਨਾਂ ਰਾਹੀਂ
+      gloss_ta: கரைத்தல் (= அனுக்ரஹம், அருள்) — இவற்றினால்
+      gloss_te: విలాపనము (విలయము = అనుగ్రహము) - వీటి ద్వారా
+    - word: तानि
+      iast: tāni
+      gloss_en: those five acts (are accomplished)
+      morph: acc. pl. n.
+      gloss_as: সেই পাঁচ কৃত্য
+      gloss_bn: সেই পাঁচ ক্রিয়া (সম্পাদিত হয়)
+      gloss_gu: તે (પાંચ કૃત્યો) સંપન્ન થાય છે
+      gloss_hi: वे पाँच कृत्य (सम्पन्न होते हैं)
+      gloss_kn: ತಾನಿ — ಆ ಪಂಚಕೃತ್ಯಗಳು (ನಡೆಯುತ್ತವೆ)
+      gloss_ml: താനി — ആ അഞ്ചു കൃത്യങ്ങൾ (നിർവഹിക്കപ്പെടുന്നു)
+      gloss_mr: ती पाच कृत्ये (पूर्ण केली जातात)
+      gloss_or: ସେହି ପଞ୍ଚକୃତ୍ୟ (ସମ୍ପନ୍ନ ହୁଏ)
+      gloss_pa: ਉਹ ਪੰਜ ਕ੍ਰਿਤ (ਸਾਧੇ ਜਾਂਦੇ ਹਨ)
+      gloss_ta: அந்த ஐந்து செயல்கள் (நிறைவேற்றப்படுகின்றன)
+      gloss_te: ఆ పంచకృత్యములు (సాధింపబడును)
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Those five acts (he performs) by way of manifesting, relishing, reflective withdrawal, depositing as seed, and dissolving."
+      ai_assisted: false
+      status: published
 
-      - verse: 12
-        devanagari: तदपरिज्ञाने स्वशक्तिभिर्व्यामोहितता संसारित्वम् ॥१२॥
-        slp1: "tadaparijYAne svazaktiBirvyAmohitatA saMsAritvam"
-        iast: "tad-aparijñāne sva-śaktibhir vyāmohitatā saṃsāritvam"
-        meter: sūtra
-        word_glosses:
-          - word: तत्-अपरिज्ञाने
-            iast: tat-aparijñāne
-            gloss_en: when there is non-recognition of that (true nature)
-            morph: loc. sg. n. cpd.
-          - word: स्व-शक्तिभिः
-            iast: sva-śaktibhiḥ
-            gloss_en: by one's own powers
-            morph: inst. pl. f. cpd.
-          - word: व्यामोहितता
-            iast: vyāmohitatā
-            gloss_en: the state of being utterly deluded
-            morph: nom. sg. f.
-          - word: संसारित्वम्
-            iast: saṃsāritvam
-            gloss_en: is transmigratory existence
-            morph: nom. sg. n.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "When that (true nature) is not recognized, being deluded by one's own powers constitutes bondage to saṃsāra."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: আভাসন (সৃষ্টি), ৰক্তি (স্থিতি), বিমৰ্শন (সংহাৰ), বীজৰূপে অৱস্থাপন (তিৰোধান) আৰু বিলাপন (অনুগ্ৰহ) — এইবোৰৰ দ্বাৰাই সেই (পঞ্চকৃত্য) সম্পাদিত হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: আভাসন, রক্তি, বিমর্শন, বীজাবস্থাপন ও বিলাপন — এই (পাঁচ ক্রিয়ার) দ্বারা সেই (পঞ্চকৃত্যসমূহ সম্পন্ন হয়)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: આભાસન (પ્રકટ કરવું), રક્તિ (આસ્વાદન), વિમર્શન (પ્રતિવિચાર-સંહાર), બીજાવસ્થાપન (બીજરૂપે મૂકવું) અને વિલાપન (ગાળી દેવું) — એ રીતે તે પાંચ કૃત્યો સંપન્ન થાય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: वे (पाँच कृत्य) आभासन (प्रकटीकरण = सृष्टि), रक्ति (आस्वादन = स्थिति), विमर्शन (विमर्श = संहार), बीजावस्थापन (बीजरूप में स्थापन = तिरोधान) और विलापन (विलय = अनुग्रह) — इनके द्वारा (सम्पन्न होते हैं)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆಭಾಸನ (ಸೃಷ್ಟಿ), ರಕ್ತಿ (ಸ್ಥಿತಿ), ವಿಮರ್ಶನ (ಸಂಹಾರ), ಬೀಜಾವಸ್ಥಾಪನ (ತಿರೋಧಾನ) ಮತ್ತು ವಿಲಾಪನ (ಅನುಗ್ರಹ) — ಇವುಗಳ ಮೂಲಕ ಆ ಐದು ಕೃತ್ಯಗಳು (ನಡೆಯುತ್ತವೆ).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ആഭാസനം (പ്രകടനം), രക്തി (ആസ്വാദനം), വിമർശനം (പ്രതിഫലനാത്മക ഗ്രഹണം), ബീജാവസ്ഥാപനം (ബീജരൂപത്തിൽ സ്ഥാപിക്കൽ), വിലാപനം (ലയിപ്പിക്കൽ) — ഇവയിലൂടെ ആ അഞ്ചു കൃത്യങ്ങൾ (നിർവഹിക്കപ്പെടുന്നു).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ती पाच कृत्ये आभासन (प्रकट करणे), रक्ती (आस्वादन), विमर्शन (अंतर्ग्रहण), बीजावस्थापन (बीजरूपाने ठेवणे) आणि विलापन (विलीन करणे) यांच्याद्वारे (केली जातात).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଆଭାସନ (ପ୍ରକଟନ), ରକ୍ତି (ଆସ୍ୱାଦନ), ବିମର୍ଶନ (ପ୍ରତ୍ୟବେକ୍ଷଣ), ବୀଜାବସ୍ଥାପନ (ବୀଜରୂପେ ସ୍ଥାପନ) ଓ ବିଳାପନ (ଲୟ) ଦ୍ୱାରା ସେହି (ପଞ୍ଚକୃତ୍ୟ) ସମ୍ପନ୍ନ ହୁଏ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਹ (ਪੰਜ ਕ੍ਰਿਤ) ਆਭਾਸਨ (ਪ੍ਰਗਟਾਉਣਾ = ਸ੍ਰਿਸ਼ਟੀ), ਰਕਤਿ (ਆਸਵਾਦਨ = ਸਥਿਤੀ), ਵਿਮਰਸ਼ਨ (ਅੰਤਰ-ਚਿੰਤਨ = ਸੰਹਾਰ), ਬੀਜਾਵਸਥਾਪਨ (ਬੀਜ-ਰੂਪ ਵਿੱਚ ਸਥਾਪਨਾ = ਤਿਰੋਧਾਨ) ਅਤੇ ਵਿਲਾਪਨ (ਵਿਲਯ = ਅਨੁਗ੍ਰਹਿ) — ਇਹਨਾਂ ਰਾਹੀਂ (ਸਾਧੇ ਜਾਂਦੇ ਹਨ)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: வெளிப்படுத்துதல், ருசித்தல், விமர்சித்தல், விதையாய் நிலைநிறுத்துதல், கரைத்தல் — இவற்றினால் அந்த (ஐந்து செயல்கள் நிறைவேற்றப்படுகின்றன).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆభాసనము (సృష్టి), రక్తి (స్థితి), విమర్శనము (సంహారము), బీజావస్థాపనము (తిరోధానము), విలాపనము (అనుగ్రహము) - వీటి ద్వారా ఆ (పంచ) కృత్యములు (నెరవేరుచున్నవి).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 12
+    devanagari: तदपरिज्ञाने स्वशक्तिभिर्व्यामोहितता संसारित्वम् ॥१२॥
+    slp1: "tadaparijYAne svazaktiBirvyAmohitatA saMsAritvam"
+    iast: "tad-aparijñāne sva-śaktibhir vyāmohitatā saṃsāritvam"
+    meter: sūtra
+    word_glosses:
+    - word: तत्-अपरिज्ञाने
+      iast: tat-aparijñāne
+      gloss_en: when there is non-recognition of that (true nature)
+      morph: loc. sg. n. cpd.
+      gloss_as: সেই (স্বৰূপৰ) অপৰিজ্ঞান হোৱাত
+      gloss_bn: তাঁহার (স্বরূপের) অপরিজ্ঞান হইলে
+      gloss_gu: તે(સ્વસ્વરૂપ)ના અપરિજ્ઞાનમાં (ઓળખ ન થતાં)
+      gloss_hi: उस (स्वस्वरूप) का परिज्ञान न होने पर
+      gloss_kn: ತತ್-ಅಪರಿಜ್ಞಾನೇ — ಅದರ (ನಿಜಸ್ವರೂಪದ) ಅಪರಿಜ್ಞಾನವಿರುವಾಗ
+      gloss_ml: തത്-അപരിജ്ഞാനേ — ആ (യഥാർഥ സ്വരൂപത്തിന്റെ) അപരിജ്ഞാനത്തിൽ
+      gloss_mr: त्या (खऱ्या स्वरूपा)चे अपरिज्ञान असताना
+      gloss_or: ସେହି (ସ୍ୱରୂପ)ର ଅପରିଜ୍ଞାନ ହେଲେ
+      gloss_pa: ਉਸ (ਸੱਚੇ ਸਰੂਪ) ਦਾ ਪਰਿਜਨਾਨ ਨਾ ਹੋਣ 'ਤੇ
+      gloss_ta: அதை (உண்மை இயல்பை) அறியாத நிலையில்
+      gloss_te: ఆ (నిజ స్వరూపము) యొక్క అపరిజ్ఞానమున
+    - word: स्व-शक्तिभिः
+      iast: sva-śaktibhiḥ
+      gloss_en: by one's own powers
+      morph: inst. pl. f. cpd.
+      gloss_as: নিজৰ শক্তিসমূহৰ দ্বাৰা
+      gloss_bn: আপন শক্তিসমূহের দ্বারা
+      gloss_gu: પોતાની જ શક્તિઓ વડે
+      gloss_hi: अपनी ही शक्तियों के द्वारा
+      gloss_kn: ಸ್ವ-ಶಕ್ತಿಭಿಃ — ತನ್ನದೇ ಶಕ್ತಿಗಳಿಂದ
+      gloss_ml: സ്വ-ശക്തിഭിഃ — സ്വന്തം ശക്തികളാൽ
+      gloss_mr: स्वतःच्या शक्तींनी
+      gloss_or: ନିଜ ଶକ୍ତିଗୁଡ଼ିକ ଦ୍ୱାରା
+      gloss_pa: ਆਪਣੀਆਂ ਹੀ ਸ਼ਕਤੀਆਂ ਨਾਲ
+      gloss_ta: தனது சொந்த சக்திகளால்
+      gloss_te: తన స్వంత శక్తులచేత
+    - word: व्यामोहितता
+      iast: vyāmohitatā
+      gloss_en: the state of being utterly deluded
+      morph: nom. sg. f.
+      gloss_as: ব্যামোহিত হোৱা অৱস্থা
+      gloss_bn: ব্যামোহিত হওয়ার অবস্থা
+      gloss_gu: વ્યામોહિતતા (અત્યંત મોહિત થવાની સ્થિતિ)
+      gloss_hi: व्यामोहित अवस्था — पूर्णतः मोहग्रस्त होने की स्थिति
+      gloss_kn: ವ್ಯಾಮೋಹಿತತಾ — ಅತ್ಯಂತ ಮೋಹಗೊಂಡ ಸ್ಥಿತಿ
+      gloss_ml: വ്യാമോഹിതതാ — പൂർണ്ണമായി മോഹിക്കപ്പെട്ട അവസ്ഥ
+      gloss_mr: पूर्णपणे मोहित होण्याची अवस्था
+      gloss_or: ବ୍ୟାମୋହିତ ହେବାର ସ୍ଥିତି
+      gloss_pa: ਪੂਰੀ ਤਰ੍ਹਾਂ ਮੋਹਿਤ ਹੋ ਜਾਣ ਦੀ ਅਵਸਥਾ
+      gloss_ta: முற்றிலும் மயக்கப்பட்ட நிலை
+      gloss_te: పూర్తిగా వ్యామోహించబడుట
+    - word: संसारित्वम्
+      iast: saṃsāritvam
+      gloss_en: is transmigratory existence
+      morph: nom. sg. n.
+      gloss_as: সংসাৰিত্ব — সাংসাৰিক বন্ধন
+      gloss_bn: সংসারিত্ব, সংসারে আবদ্ধতা
+      gloss_gu: સંસારીપણું, સંસારમાં બદ્ધતા
+      gloss_hi: संसारित्व — संसार में बद्ध रहने का स्वरूप
+      gloss_kn: ಸಂಸಾರಿತ್ವಂ — ಸಂಸಾರಿತ್ವ, ಸಂಸಾರ ಬಂಧನ
+      gloss_ml: സംസാരിത്വം — സംസാരി-അവസ്ഥ, ജനനമരണബന്ധനം
+      gloss_mr: संसारीपण, जन्ममरणाचे बंधन
+      gloss_or: ସଂସାରିତ୍ୱ (ଜନ୍ମ-ମରଣଚକ୍ରର ବନ୍ଧନ)
+      gloss_pa: ਸੰਸਾਰਿਤਵ ਹੈ — ਆਵਾਗਮਨ-ਬੱਧ ਜੀਵਨ
+      gloss_ta: சம்சாரித்தன்மை, பிறவி-மீளி வாழ்க்கை
+      gloss_te: సంసారిత్వము (సంసారబద్ధత)
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "When that (true nature) is not recognized, being deluded by one's own powers constitutes bondage to saṃsāra."
+      ai_assisted: false
+      status: published
 
-      - verse: 13
-        devanagari: तत्परिज्ञाने चित्तमेव अन्तर्मुखीभावेन चेतनपदाध्यारोहाच्चितिः ॥१३॥
-        slp1: "tatparijYAne cittameva antarmuKIBAvena cetanapadADyArohAccitiH"
-        iast: "tat-parijñāne cittam eva antarmukhī-bhāvena cetana-padādhyārohāc citiḥ"
-        meter: sūtra
-        word_glosses:
-          - word: तत्-परिज्ञाने
-            iast: tat-parijñāne
-            gloss_en: when there is full recognition of that
-            morph: loc. sg. n. cpd.
-          - word: चित्तम्
-            iast: cittam
-            gloss_en: the (limited) mind
-            morph: nom. sg. n.
-          - word: एव
-            iast: eva
-            gloss_en: itself
-            morph: ptcl. emph.
-          - word: अन्तर्मुखी-भावेन
-            iast: antarmukhī-bhāvena
-            gloss_en: by becoming inward-facing
-            morph: inst. sg. m. cpd.
-          - word: चेतन-पद-अध्यारोहात्
-            iast: cetana-pada-adhyārohāt
-            gloss_en: through ascent to the level of the (free) experient
-            morph: abl. sg. m. cpd.
-          - word: चितिः
-            iast: citiḥ
-            gloss_en: becomes Citi (universal Consciousness)
-            morph: nom. sg. f.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "When that is recognized, the mind itself, turning inward and ascending to the plane of the conscious subject, becomes Consciousness."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (স্বৰূপৰ) অপৰিজ্ঞান হোৱাত, নিজৰ শক্তিসমূহৰ দ্বাৰাই ব্যামোহিত অৱস্থাই সংসাৰিত্ব।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (স্বরূপের) অপরিজ্ঞান হইলে, আপন শক্তিসমূহ দ্বারা ব্যামোহিত হওয়াই সংসারিত্ব।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તે(સ્વસ્વરૂપ)નું અપરિજ્ઞાન (ઓળખનો અભાવ) થતાં, પોતાની જ શક્તિઓથી વ્યામોહિત થવું એ જ સંસારીપણું છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: उस (स्वस्वरूप) का परिज्ञान न होने पर अपनी ही शक्तियों से मोहित हो जाना ही संसारित्व (बद्ध दशा) है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆ (ನಿಜಸ್ವರೂಪದ) ಅಪರಿಜ್ಞಾನವಿರುವಾಗ, ತನ್ನದೇ ಶಕ್ತಿಗಳಿಂದ ವ್ಯಾಮೋಹಿತನಾಗುವುದೇ ಸಂಸಾರಿತ್ವ (ಸಂಸಾರ ಬಂಧನ).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ആ (യഥാർഥ സ്വരൂപത്തിന്റെ) അപരിജ്ഞാനത്തിൽ, സ്വന്തം ശക്തികളാൽത്തന്നെ വ്യാമോഹിതനായിത്തീരുന്നതാണ് സംസാരിത്വം.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: त्या (खऱ्या स्वरूपा)चे अपरिज्ञान होते तेव्हा स्वतःच्याच शक्तींनी पूर्णपणे मोहित होणे — हेच संसारीपण आहे.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେହି (ସ୍ୱରୂପ)ର ଅପରିଜ୍ଞାନ ହେଲେ ନିଜ ଶକ୍ତିଗୁଡ଼ିକ ଦ୍ୱାରା ବ୍ୟାମୋହିତ ହେବା ହିଁ ସଂସାରିତ୍ୱ (ଜନ୍ମମରଣଚକ୍ର) ଅଟେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਸ (ਆਪਣੇ ਸਰੂਪ) ਦਾ ਪਰਿਜਨਾਨ ਨਾ ਹੋਣ 'ਤੇ ਆਪਣੀਆਂ ਹੀ ਸ਼ਕਤੀਆਂ ਨਾਲ ਮੋਹਿਤ ਹੋ ਜਾਣਾ ਹੀ ਸੰਸਾਰਿਤਵ (ਬੱਧ ਅਵਸਥਾ) ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அதை அறியாத நிலையில், தனது சொந்த சக்திகளால் முற்றிலும் மயக்கப்பட்டிருத்தலே சம்சாரித்தன்மை (பந்தம்) ஆகும்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆ (నిజ స్వరూపము) యొక్క అపరిజ్ఞానము వలన తన స్వశక్తులచేతనే వ్యామోహమునకు లోనగుట సంసారిత్వము.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 13
+    devanagari: तत्परिज्ञाने चित्तमेव अन्तर्मुखीभावेन चेतनपदाध्यारोहाच्चितिः ॥१३॥
+    slp1: "tatparijYAne cittameva antarmuKIBAvena cetanapadADyArohAccitiH"
+    iast: "tat-parijñāne cittam eva antarmukhī-bhāvena cetana-padādhyārohāc citiḥ"
+    meter: sūtra
+    word_glosses:
+    - word: तत्-परिज्ञाने
+      iast: tat-parijñāne
+      gloss_en: when there is full recognition of that
+      morph: loc. sg. n. cpd.
+      gloss_as: সেই (স্বৰূপৰ) পূৰ্ণ পৰিজ্ঞান হোৱাত
+      gloss_bn: তাঁহার (স্বরূপের) পরিজ্ঞান হইলে
+      gloss_gu: તે(સ્વસ્વરૂપ)ના પૂર્ણ પરિજ્ઞાનમાં
+      gloss_hi: उस (स्वस्वरूप) का पूर्ण परिज्ञान होने पर
+      gloss_kn: ತತ್-ಪರಿಜ್ಞಾನೇ — ಅದರ ಪೂರ್ಣ ಪರಿಜ್ಞಾನವಾದಾಗ
+      gloss_ml: തത്-പരിജ്ഞാനേ — അതിന്റെ പൂർണ്ണ പരിജ്ഞാനത്തിൽ
+      gloss_mr: त्याचे (खऱ्या स्वरूपाचे) परिज्ञान झाल्यावर
+      gloss_or: ସେହି ସ୍ୱରୂପର ପୂର୍ଣ୍ଣ ପରିଜ୍ଞାନ ହେଲେ
+      gloss_pa: ਉਸ (ਸੱਚੇ ਸਰੂਪ) ਦਾ ਪੂਰਨ ਪਰਿਜਨਾਨ ਹੋਣ 'ਤੇ
+      gloss_ta: அதை முழுமையாக அறியும்போது
+      gloss_te: ఆ (స్వరూపము) యొక్క పూర్ణ పరిజ్ఞానము కలిగినప్పుడు
+    - word: चित्तम्
+      iast: cittam
+      gloss_en: the (limited) mind
+      morph: nom. sg. n.
+      gloss_as: চিত্ত, সীমিত মন
+      gloss_bn: চিত্ত (সীমিত মন)
+      gloss_gu: ચિત્ત (મર્યાદિત મન)
+      gloss_hi: चित्त (सीमित मन)
+      gloss_kn: ಚಿತ್ತಂ — (ಸಂಕುಚಿತ) ಮನಸ್ಸು
+      gloss_ml: ചിത്തം — (പരിമിത) മനസ്സ്
+      gloss_mr: (मर्यादित) चित्त
+      gloss_or: ଚିତ୍ତ (ସୀମିତ ମନ)
+      gloss_pa: (ਸੀਮਿਤ) ਚਿੱਤ
+      gloss_ta: (வரம்புள்ள) சித்தமே, மனமே
+      gloss_te: (పరిమిత) చిత్తము
+    - word: एव
+      iast: eva
+      gloss_en: itself
+      morph: ptcl. emph.
+      gloss_as: এৱ — নিজেই
+      gloss_bn: স্বয়ং
+      gloss_gu: જ, એ જ
+      gloss_hi: ही, स्वयं
+      gloss_kn: ಏವ — ಸ್ವತಃ
+      gloss_ml: ഏവ — തന്നെ
+      gloss_mr: च, स्वतःच
+      gloss_or: ସ୍ୱୟଂ, ହିଁ
+      gloss_pa: ਹੀ, ਖ਼ੁਦ
+      gloss_ta: தானே (வலியுறுத்தும் இடைச்சொல்)
+      gloss_te: తానే
+    - word: अन्तर्मुखी-भावेन
+      iast: antarmukhī-bhāvena
+      gloss_en: by becoming inward-facing
+      morph: inst. sg. m. cpd.
+      gloss_as: অন্তৰ্মুখী হোৱাৰ দ্বাৰা
+      gloss_bn: অন্তর্মুখী ভাবের দ্বারা
+      gloss_gu: અંતર્મુખ થવાથી
+      gloss_hi: अन्तर्मुख होकर
+      gloss_kn: ಅಂತರ್ಮುಖೀ-ಭಾವೇನ — ಅಂತರ್ಮುಖವಾಗುವುದರಿಂದ
+      gloss_ml: അന്തർമുഖീ-ഭാവേന — അന്തർമുഖമായിത്തീരുന്നതിലൂടെ
+      gloss_mr: अंतर्मुख होऊन
+      gloss_or: ଅନ୍ତର୍ମୁଖୀ ହେବା ଦ୍ୱାରା
+      gloss_pa: ਅੰਤਰਮੁਖ ਹੋਣ ਨਾਲ
+      gloss_ta: உள்முகமாகும் தன்மையால்
+      gloss_te: అంతర్ముఖత్వము వలన
+    - word: चेतन-पद-अध्यारोहात्
+      iast: cetana-pada-adhyārohāt
+      gloss_en: through ascent to the level of the (free) experient
+      morph: abl. sg. m. cpd.
+      gloss_as: চেতন-পদলৈ আৰোহণ কৰাৰ কাৰণে
+      gloss_bn: (মুক্ত) চেতন-পদে আরোহণ দ্বারা
+      gloss_gu: ચેતન-પદ (શુદ્ધ વિષયી-ભૂમિકા) પર આરોહણ કરવાથી
+      gloss_hi: (स्वतन्त्र) चेतन-पद पर आरोहण करने से
+      gloss_kn: ಚೇತನ-ಪದ-ಅಧ್ಯಾರೋಹಾತ್ — (ಸ್ವತಂತ್ರ) ಅನುಭವಿಯ ಪದಕ್ಕೆ ಆರೋಹಿಸುವುದರಿಂದ
+      gloss_ml: ചേതന-പദ-അധ്യാരോഹാത് — സ്വതന്ത്ര ചേതന-പദത്തിലേക്കുള്ള ആരോഹണത്താൽ
+      gloss_mr: चेतनपदावर आरोहणामुळे (मुक्त अनुभवकर्त्याच्या स्तरापर्यंत चढून)
+      gloss_or: ଚେତନ-ପଦରେ ଆରୋହଣ ଦ୍ୱାରା
+      gloss_pa: ਚੇਤਨ-ਪਦ ਉੱਤੇ ਆਰੋਹਣ ਕਾਰਨ — (ਮੁਕਤ) ਅਨੁਭਵੀ ਦੇ ਪੱਧਰ ਤੱਕ ਚੜ੍ਹਨ ਨਾਲ
+      gloss_ta: சேதன நிலைக்கு (சுதந்திர அனுபவிப்போனின் நிலைக்கு) ஏறுவதனால்
+      gloss_te: (స్వేచ్ఛాయుత) చేతనపదమునకు ఆరోహణము వలన
+    - word: चितिः
+      iast: citiḥ
+      gloss_en: becomes Citi (universal Consciousness)
+      morph: nom. sg. f.
+      gloss_as: চিতি হৈ যায়
+      gloss_bn: চিতি (বিশ্বচৈতন্য) হইয়া ওঠে
+      gloss_gu: ચિતિ (પરમ ચૈતન્ય) બની જાય છે
+      gloss_hi: चिति (परम चैतन्य) बन जाता है
+      gloss_kn: ಚಿತಿಃ — ಚಿತಿಯಾಗುತ್ತದೆ (ಸಾರ್ವತ್ರಿಕ ಚೈತನ್ಯ)
+      gloss_ml: ചിതിഃ — ചിതി (പരമബോധം) ആയിത്തീരുന്നു
+      gloss_mr: चिती (परम चैतन्य) बनते
+      gloss_or: ଚିତି (ସର୍ବବ୍ୟାପୀ ଚୈତନ୍ୟ) ହୋଇଯାଏ
+      gloss_pa: ਚਿਤਿ (ਸਰਬ-ਵਿਆਪੀ ਚੇਤਨਾ) ਬਣ ਜਾਂਦਾ ਹੈ
+      gloss_ta: சித் (பேரறிவு) ஆகிறது
+      gloss_te: చితి (విశ్వ చైతన్యము) యగును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "When that is recognized, the mind itself, turning inward and ascending to the plane of the conscious subject, becomes Consciousness."
+      ai_assisted: false
+      status: published
 
-      - verse: 14
-        devanagari: चितिवह्निरवरोहपदे छन्नोऽपि मात्रया मेयेन्धनं प्लुष्यति ॥१४॥
-        slp1: "citivahniravarohapade Canno'pi mAtrayA meyendhanaM pluzyati"
-        iast: "citi-vahnir avaroha-pade channo 'pi mātrayā meyendhanaṃ pluṣyati"
-        meter: sūtra
-        word_glosses:
-          - word: चिति-वह्निः
-            iast: citi-vahniḥ
-            gloss_en: the fire of Consciousness
-            morph: nom. sg. m. cpd.
-          - word: अवरोह-पदे
-            iast: avaroha-pade
-            gloss_en: at the level of descent (= the bound state)
-            morph: loc. sg. n. cpd.
-          - word: छन्नः
-            iast: channaḥ
-            gloss_en: though concealed
-            morph: nom. sg. m. ppp.
-          - word: अपि
-            iast: api
-            gloss_en: even
-            morph: ptcl.
-          - word: मात्रया
-            iast: mātrayā
-            gloss_en: partially
-            morph: inst. sg. f.
-          - word: मेय-इन्धनम्
-            iast: meya-indhanam
-            gloss_en: the fuel of objects of knowledge
-            morph: acc. sg. n. cpd.
-          - word: प्लुष्यति
-            iast: pluṣyati
-            gloss_en: burns up
-            morph: 3sg. pres. √pluṣ
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "The fire of Consciousness, even when veiled in the descended state, still partially consumes the fuel of objective phenomena."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (স্বৰূপৰ) পৰিজ্ঞান হোৱাত, চিত্তই অন্তৰ্মুখী হৈ চেতন-পদলৈ আৰোহণ কৰি চিতি হৈ যায়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সেই (স্বরূপের) পরিজ্ঞান হইলে, চিত্ত স্বয়ংই অন্তর্মুখী হইয়া চেতন-পদে আরোহণ করিয়া চিতিতে পরিণত হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: તે(સ્વસ્વરૂપ)ના પરિજ્ઞાન (પૂર્ણ ઓળખ) થતાં, ચિત્ત જ અંતર્મુખ થઈને ચેતન-પદ પર આરોહણ કરી ચિતિ બની જાય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: उस (स्वस्वरूप) का पूर्ण परिज्ञान होने पर चित्त ही अन्तर्मुख होकर चेतन-पद पर आरूढ़ होकर चिति (परम चैतन्य) बन जाता है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆ (ಸ್ವರೂಪ)ದ ಪರಿಜ್ಞಾನವಾದಾಗ, ಚಿತ್ತವೇ ಅಂತರ್ಮುಖವಾಗಿ ಚೇತನಪದಕ್ಕೆ ಆರೋಹಿಸಿ ಚಿತಿಯಾಗುತ್ತದೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: അതിന്റെ പരിജ്ഞാനത്തിൽ (സമ്പൂർണ തിരിച്ചറിവിൽ), ചിത്തംതന്നെ അന്തർമുഖമായി ചേതനപദത്തിലേക്ക് ആരോഹണംചെയ്ത് ചിതിയായി മാറുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: त्याचे परिज्ञान (पूर्ण ओळख) झाल्यावर चित्तच अंतर्मुख होऊन, चेतनपदावर आरोहण केल्यामुळे, चिती बनते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସେହି ସ୍ୱରୂପର ପରିଜ୍ଞାନ ହେଲେ ଚିତ୍ତ ସ୍ୱୟଂ ଅନ୍ତର୍ମୁଖୀ ହୋଇ ଚେତନ ପଦରେ ଆରୋହଣ କରି ଚିତି ହୋଇଯାଏ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਸ (ਆਪਣੇ ਸਰੂਪ) ਦਾ ਪੂਰਨ ਪਰਿਜਨਾਨ ਹੋਣ 'ਤੇ ਚਿੱਤ ਹੀ ਅੰਤਰਮੁਖ ਹੋ ਕੇ ਚੇਤਨ-ਪਦ ਉੱਤੇ ਆਰੂੜ੍ਹ ਹੋ ਕੇ ਚਿਤਿ (ਪਰਮ ਚੈਤੰਨ) ਬਣ ਜਾਂਦਾ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அதை முழுமையாக அறியும்போது, சித்தமே உள்முகமாகி, சேதன நிலைக்கு ஏறி, சித்தாக ஆகிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఆ (నిజ స్వరూపము) యొక్క పరిజ్ఞానము కలిగినప్పుడు, చిత్తమే అంతర్ముఖమై చేతనపదమునకు అధిరోహించుట వలన చితియై తీరును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 14
+    devanagari: चितिवह्निरवरोहपदे छन्नोऽपि मात्रया मेयेन्धनं प्लुष्यति ॥१४॥
+    slp1: "citivahniravarohapade Canno'pi mAtrayA meyendhanaM pluzyati"
+    iast: "citi-vahnir avaroha-pade channo 'pi mātrayā meyendhanaṃ pluṣyati"
+    meter: sūtra
+    word_glosses:
+    - word: चिति-वह्निः
+      iast: citi-vahniḥ
+      gloss_en: the fire of Consciousness
+      morph: nom. sg. m. cpd.
+      gloss_as: চিতি-ৰূপ অগ্নি
+      gloss_bn: চিতি-বহ্নি, চৈতন্যের অগ্নি
+      gloss_gu: ચિતિરૂપી અગ્નિ
+      gloss_hi: चिति-रूप अग्नि
+      gloss_kn: ಚಿತಿ-ವಹ್ನಿಃ — ಚಿತಿಯೆಂಬ ಅಗ್ನಿ
+      gloss_ml: ചിതി-വഹ്നിഃ — ചിതിയാകുന്ന അഗ്നി
+      gloss_mr: चितीरूपी अग्नी
+      gloss_or: ଚିତି-ବହ୍ନି, ଚୈତନ୍ୟରୂପୀ ଅଗ୍ନି
+      gloss_pa: ਚਿਤਿ-ਰੂਪੀ ਅੱਗ
+      gloss_ta: சித் என்னும் அக்னி (சைதன்ய நெருப்பு)
+      gloss_te: చైతన్యమను అగ్ని
+    - word: अवरोह-पदे
+      iast: avaroha-pade
+      gloss_en: at the level of descent (= the bound state)
+      morph: loc. sg. n. cpd.
+      gloss_as: অৱৰোহ-পদত (বন্ধন অৱস্থাত)
+      gloss_bn: অবরোহ-পদে (অর্থাৎ বদ্ধ অবস্থায়)
+      gloss_gu: અવરોહ-પદ (બદ્ધ અવસ્થા)માં
+      gloss_hi: अवरोह-दशा में (बद्ध अवस्था में)
+      gloss_kn: ಅವರೋಹ-ಪದೇ — ಅವರೋಹ ಸ್ಥಾನದಲ್ಲಿ (= ಬದ್ಧಸ್ಥಿತಿಯಲ್ಲಿ)
+      gloss_ml: അവരോഹ-പദേ — അവരോഹപദത്തിൽ (= ബദ്ധാവസ്ഥയിൽ)
+      gloss_mr: अवरोहपदात (खाली उतरलेल्या बद्ध अवस्थेत)
+      gloss_or: ଅବରୋହ-ପଦରେ (ବଦ୍ଧାବସ୍ଥାରେ)
+      gloss_pa: ਅਵਰੋਹ-ਪਦ ਵਿੱਚ (= ਬੱਧ ਅਵਸਥਾ ਵਿੱਚ)
+      gloss_ta: இறக்க நிலையில் (கட்டுண்ட நிலையில்)
+      gloss_te: అవరోహ స్థితిలో (= బద్ధ స్థితిలో)
+    - word: छन्नः
+      iast: channaḥ
+      gloss_en: though concealed
+      morph: nom. sg. m. ppp.
+      gloss_as: ছন্ন, আবৃত
+      gloss_bn: ছন্ন, আবৃত
+      gloss_gu: છન્ન, ઢંકાયેલ
+      gloss_hi: आच्छन्न, ढकी हुई होकर भी
+      gloss_kn: ಛನ್ನಃ — ಮುಚ್ಚಲ್ಪಟ್ಟಿದ್ದರೂ
+      gloss_ml: ഛന്നഃ — മറയ്ക്കപ്പെട്ടവൻ
+      gloss_mr: झाकलेला, आच्छादित
+      gloss_or: ଆଚ୍ଛାଦିତ ହୋଇ ମଧ୍ୟ
+      gloss_pa: ਢੱਕੀ ਹੋਣ
+      gloss_ta: மறைந்திருந்தாலும்
+      gloss_te: ఆవరింపబడినప్పటికీ
+    - word: अपि
+      iast: api
+      gloss_en: even
+      morph: ptcl.
+      gloss_as: অপি — তথাপি
+      gloss_bn: অপি, যদিও
+      gloss_gu: પણ, છતાં
+      gloss_hi: भी, तथापि
+      gloss_kn: ಅಪಿ — ಸಹ
+      gloss_ml: അപി — പോലും
+      gloss_mr: तरीही
+      gloss_or: ସୁଦ୍ଧା, ତଥାପି
+      gloss_pa: ਦੇ ਬਾਵਜੂਦ
+      gloss_ta: கூட
+      gloss_te: కూడా
+    - word: मात्रया
+      iast: mātrayā
+      gloss_en: partially
+      morph: inst. sg. f.
+      gloss_as: মাত্ৰাৰূপে, আংশিকভাৱে
+      gloss_bn: মাত্রায়, আংশিকভাবে
+      gloss_gu: અંશતઃ, માત્ર ભાગે
+      gloss_hi: आंशिक रूप से
+      gloss_kn: ಮಾತ್ರಯಾ — ಭಾಗಶಃ, ಅಲ್ಪಮಾತ್ರವಾಗಿ
+      gloss_ml: മാത്രയാ — ഭാഗികമായി
+      gloss_mr: अंशतः, थोड्या प्रमाणात
+      gloss_or: ଅଂଶତଃ, ଆଂଶିକ ଭାବେ
+      gloss_pa: ਅੰਸ਼ਿਕ ਰੂਪ ਵਿੱਚ, ਥੋੜ੍ਹੀ-ਥੋੜ੍ਹੀ ਕਰਕੇ
+      gloss_ta: ஓரளவு, பகுதியளவு
+      gloss_te: పాక్షికముగా
+    - word: मेय-इन्धनम्
+      iast: meya-indhanam
+      gloss_en: the fuel of objects of knowledge
+      morph: acc. sg. n. cpd.
+      gloss_as: জ্ঞেয়-ৰূপ ইন্ধন
+      gloss_bn: মেয় (জ্ঞেয়) ইন্ধন
+      gloss_gu: મેય (જ્ઞેય વિષય)રૂપી ઈંધણ
+      gloss_hi: ज्ञेय-रूपी ईंधन को
+      gloss_kn: ಮೇಯ-ಇಂಧನಂ — ಜ್ಞೇಯ ವಿಷಯಗಳೆಂಬ ಇಂಧನವನ್ನು
+      gloss_ml: മേയ-ഇന്ധനം — ജ്ഞേയവിഷയങ്ങളാകുന്ന ഇന്ധനത്തെ
+      gloss_mr: ज्ञेय विषयांचे इंधन
+      gloss_or: ମେୟ-ଇନ୍ଧନ (ଜ୍ଞେୟ-ବିଷୟରୂପୀ କାଷ୍ଠ)କୁ
+      gloss_pa: ਮੇਯ (ਜਾਣਨ-ਯੋਗ ਪਦਾਰਥਾਂ) ਰੂਪੀ ਬਾਲਣ
+      gloss_ta: அறியப்படுபொருள்கள் என்னும் எரிபொருள்
+      gloss_te: మేయ (జ్ఞేయవస్తువుల) ఇంధనమును
+    - word: प्लुष्यति
+      iast: pluṣyati
+      gloss_en: burns up
+      morph: 3sg. pres. √pluṣ
+      gloss_as: দগ্ধ কৰে
+      gloss_bn: দগ্ধ করে
+      gloss_gu: બાળે છે
+      gloss_hi: जलाती है, भस्म करती है
+      gloss_kn: ಪ್ಲುಷ್ಯತಿ — ಸುಡುತ್ತದೆ
+      gloss_ml: പ്ലുഷ്യതി — ദഹിപ്പിക്കുന്നു, ചുട്ടെരിക്കുന്നു
+      gloss_mr: जाळून टाकतो
+      gloss_or: ଦଗ୍ଧ କରେ, ଭସ୍ମ କରେ
+      gloss_pa: ਸਾੜਦੀ ਹੈ, ਜਲਾਉਂਦੀ ਹੈ
+      gloss_ta: எரிக்கிறது, சுட்டெரிக்கிறது
+      gloss_te: దహించును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "The fire of Consciousness, even when veiled in the descended state, still partially consumes the fuel of objective phenomena."
+      ai_assisted: false
+      status: published
 
-      - verse: 15
-        devanagari: बललाभे विश्वमात्मसात्करोति ॥१५॥
-        slp1: "balalABe vizvamAtmasAtkaroti"
-        iast: "bala-lābhe viśvam ātmasāt karoti"
-        meter: sūtra
-        word_glosses:
-          - word: बल-लाभे
-            iast: bala-lābhe
-            gloss_en: on attaining the power (of Citi)
-            morph: loc. sg. m. cpd.
-          - word: विश्वम्
-            iast: viśvam
-            gloss_en: the universe
-            morph: acc. sg. n.
-          - word: आत्मसात्
-            iast: ātmasāt
-            gloss_en: as one's own self
-            morph: indecl. (sāc-affix)
-          - word: करोति
-            iast: karoti
-            gloss_en: one makes
-            morph: 3sg. pres. √kṛ
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "On gaining (its full) power, it assimilates the whole universe to itself."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিতি-অগ্নি অৱৰোহ-পদত আবৃত হৈ থাকিলেও মাত্ৰাৰূপে জ্ঞেয়-ৰূপ ইন্ধনক দগ্ধ কৰে।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: অবরোহ-অবস্থায় ছন্ন থাকিলেও, চিতি-অগ্নি আংশিকভাবে মেয় (জ্ঞেয়) ইন্ধনকে দগ্ধ করে।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ચિતિરૂપી અગ્નિ અવરોહ-પદ (બદ્ધ અવસ્થા)માં છન્ન (ઢંકાયેલ) હોવા છતાં પણ, અંશતઃ મેય (જ્ઞેય વિષય)રૂપી ઈંધણને બાળે છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिति-रूप अग्नि अवरोह-दशा (बद्ध अवस्था) में आच्छन्न (ढकी) होते हुए भी आंशिक रूप से ज्ञेय-रूपी ईंधन को जलाती रहती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಚಿತಿಯೆಂಬ ಅಗ್ನಿಯು ಅವರೋಹಪದದಲ್ಲಿ (ಬದ್ಧಸ್ಥಿತಿಯಲ್ಲಿ) ಮುಚ್ಚಲ್ಪಟ್ಟಿದ್ದರೂ ಸಹ, ಮೇಯ (ಜ್ಞೇಯ ವಿಷಯಗಳ) ಎಂಬ ಇಂಧನವನ್ನು ಭಾಗಶಃ ಸುಡುತ್ತದೆ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ചിതിയാകുന്ന അഗ്നി, അവരോഹപദത്തിൽ (ബദ്ധാവസ്ഥയിൽ) മറയ്ക്കപ്പെട്ടിരുന്നാലും, ഭാഗികമായി മേയരൂപമായ ഇന്ധനത്തെ (ജ്ഞേയവിഷയങ്ങളെ) ദഹിപ്പിക്കുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चितीरूपी अग्नी अवरोहपदात (बद्ध अवस्थेत) झाकलेला असला तरीही, अंशतः ज्ञेय विषयांच्या इंधनाला जाळतच असतो.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଚିତି-ବହ୍ନି (ଚୈତନ୍ୟରୂପୀ ଅଗ୍ନି) ଅବରୋହ ପଦ (ବଦ୍ଧାବସ୍ଥା)ରେ ଆଚ୍ଛାଦିତ ହୋଇ ମଧ୍ୟ ଅଂଶତଃ ମେୟରୂପୀ ଇନ୍ଧନ (ଜ୍ଞେୟବିଷୟ)କୁ ଦଗ୍ଧ କରେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਚਿਤਿ-ਰੂਪੀ ਅੱਗ ਅਵਰੋਹ-ਦਸ਼ਾ (ਬੱਧ ਅਵਸਥਾ) ਵਿੱਚ ਢੱਕੀ ਹੋਣ ਦੇ ਬਾਵਜੂਦ ਵੀ ਅੰਸ਼ਿਕ ਰੂਪ ਵਿੱਚ ਜਾਣਨਯੋਗ ਪਦਾਰਥਾਂ ਰੂਪੀ ਬਾਲਣ ਨੂੰ ਸਾੜਦੀ ਰਹਿੰਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சித் என்னும் அக்னி, இறக்கநிலையில் மறைந்திருந்தாலும், ஓரளவு அறியப்படும் பொருள்களாகிய எரிபொருளை எரித்துக் கொண்டே இருக்கிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: చితి అను అగ్ని, అవరోహ స్థితిలో (బద్ధ స్థితిలో) ఆవరింపబడినప్పటికీ, పాక్షికముగా మేయ (జ్ఞేయవస్తువుల) ఇంధనమును దహించుచుండును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 15
+    devanagari: बललाभे विश्वमात्मसात्करोति ॥१५॥
+    slp1: "balalABe vizvamAtmasAtkaroti"
+    iast: "bala-lābhe viśvam ātmasāt karoti"
+    meter: sūtra
+    word_glosses:
+    - word: बल-लाभे
+      iast: bala-lābhe
+      gloss_en: on attaining the power (of Citi)
+      morph: loc. sg. m. cpd.
+      gloss_as: (চিতিৰ) বল লাভ হোৱাত
+      gloss_bn: (চিতির) বল লাভ হইলে
+      gloss_gu: (ચિતિની) શક્તિ પ્રાપ્ત થતાં
+      gloss_hi: (चिति के) बल की प्राप्ति होने पर
+      gloss_kn: ಬಲ-ಲಾಭೇ — (ಚಿತಿಯ) ಬಲವನ್ನು ಪಡೆದಾಗ
+      gloss_ml: ബല-ലാഭേ — (ചിതിയുടെ) ബലം ലഭിക്കുമ്പോൾ
+      gloss_mr: बल (चितीचे सामर्थ्य) मिळाल्यावर
+      gloss_or: ବଳ-ଲାଭ ହେଲେ (ଚିତିଶକ୍ତି ପ୍ରାପ୍ତ ହେଲେ)
+      gloss_pa: ਬਲ-ਪ੍ਰਾਪਤੀ ਉੱਤੇ — (ਚਿਤਿ ਦੀ) ਸ਼ਕਤੀ ਦੀ ਪ੍ਰਾਪਤੀ ਹੋਣ 'ਤੇ
+      gloss_ta: (சித்தின்) பலத்தை அடைந்தபோது
+      gloss_te: (చితి యొక్క) బలము లభించినప్పుడు
+    - word: विश्वम्
+      iast: viśvam
+      gloss_en: the universe
+      morph: acc. sg. n.
+      gloss_as: বিশ্বক
+      gloss_bn: বিশ্বকে
+      gloss_gu: વિશ્વને
+      gloss_hi: विश्व को
+      gloss_kn: ವಿಶ್ವಂ — ವಿಶ್ವವನ್ನು
+      gloss_ml: വിശ്വം — പ്രപഞ്ചത്തെ
+      gloss_mr: विश्वाला
+      gloss_or: ବିଶ୍ୱକୁ
+      gloss_pa: ਵਿਸ਼ਵ ਨੂੰ
+      gloss_ta: பிரபஞ்சத்தை
+      gloss_te: విశ్వమును
+    - word: आत्मसात्
+      iast: ātmasāt
+      gloss_en: as one's own self
+      morph: indecl. (sāc-affix)
+      gloss_as: আত্মসাৎ, নিজস্ব ৰূপে
+      gloss_bn: আত্মসাৎ, আপনার সহিত একাত্ম
+      gloss_gu: પોતાનું, આત્મસાત્
+      gloss_hi: आत्म-रूप, स्वयं के अनुरूप
+      gloss_kn: ಆತ್ಮಸಾತ್ — ತನ್ನದಾಗಿ, ಸ್ವಸ್ವರೂಪವಾಗಿ
+      gloss_ml: ആത്മസാത് — ആത്മസാത് (തന്റേതാക്കി)
+      gloss_mr: स्वतःशी एकरूप, आत्मसात
+      gloss_or: ଆତ୍ମସାତ୍, ନିଜର ବୋଲି
+      gloss_pa: ਆਪਣੇ-ਆਪ ਵਿੱਚ, ਆਤਮਸਾਤ
+      gloss_ta: தன்வயமாக, தனது சொந்த ஆத்மாவாக
+      gloss_te: తన ఆత్మస్వరూపముగా
+    - word: करोति
+      iast: karoti
+      gloss_en: one makes
+      morph: 3sg. pres. √kṛ
+      gloss_as: কৰে
+      gloss_bn: করেন
+      gloss_gu: કરી લે છે
+      gloss_hi: कर लेती है
+      gloss_kn: ಕರೋತಿ — ಮಾಡಿಕೊಳ್ಳುತ್ತದೆ
+      gloss_ml: കരോതി — ചെയ്യുന്നു
+      gloss_mr: करतो
+      gloss_or: କରେ
+      gloss_pa: ਕਰ ਲੈਂਦਾ ਹੈ
+      gloss_ta: ஆக்குகிறது
+      gloss_te: చేయును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "On gaining (its full) power, it assimilates the whole universe to itself."
+      ai_assisted: false
+      status: published
 
-      - verse: 16
-        devanagari: चिदानन्दलाभे देहादिषु चेत्यमानेष्वपि चिदैकात्म्यप्रतिपत्तिदार्ढ्यं जीवन्मुक्तिः ॥१६॥
-        slp1: "cidAnandalABe dehAdizu cetyamAnezvapi cidEkAtmyapratipattidArQyaM jIvanmuktiH"
-        iast: "cid-ānanda-lābhe dehādiṣu cetyamāneṣv api cid-aikātmya-pratipatti-dārḍhyaṃ jīvan-muktiḥ"
-        meter: sūtra
-        word_glosses:
-          - word: चित्-आनन्द-लाभे
-            iast: cit-ānanda-lābhe
-            gloss_en: on attaining the bliss of Consciousness
-            morph: loc. sg. m. cpd.
-          - word: देह-आदिषु
-            iast: deha-ādiṣu
-            gloss_en: in the body and other objects
-            morph: loc. pl. m. cpd.
-          - word: चेत्यमानेषु
-            iast: cetyamāneṣu
-            gloss_en: while being objectified
-            morph: loc. pl. n. pass. part.
-          - word: अपि
-            iast: api
-            gloss_en: even
-            morph: ptcl.
-          - word: चित्-ऐकात्म्य-प्रतिपत्ति-दार्ढ्यम्
-            iast: cit-aikātmya-pratipatti-dārḍhyam
-            gloss_en: the firm conviction of one’s identity with Consciousness
-            morph: nom. sg. n. cpd.
-          - word: जीवन्-मुक्तिः
-            iast: jīvan-muktiḥ
-            gloss_en: is liberation-while-living
-            morph: nom. sg. f. cpd.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "When the bliss of Consciousness is gained, the firm conviction of identity with Consciousness — even when body and the rest are perceived as objects — is liberation-in-life."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (নিজৰ পূৰ্ণ) বল লাভ কৰাত তেওঁ বিশ্বক আত্মসাৎ কৰে।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (চিতির) পূর্ণ বল লাভ হইলে তিনি বিশ্বকে আত্মসাৎ করেন।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (ચિતિની) શક્તિ પ્રાપ્ત થતાં તે વિશ્વને પોતાનું (આત્મસાત્) કરી લે છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (चिति के पूर्ण) बल की प्राप्ति होने पर वह सम्पूर्ण विश्व को आत्म-रूप कर लेती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಬಲವನ್ನು ಪಡೆದಾಗ (ಚಿತಿಯ ಪೂರ್ಣ ಶಕ್ತಿ ಪ್ರಾಪ್ತವಾದಾಗ) ಅದು ವಿಶ್ವವನ್ನು ತನ್ನದಾಗಿ ಮಾಡಿಕೊಳ್ಳುತ್ತದೆ (ಆತ್ಮಸಾತ್ ಮಾಡುತ್ತದೆ).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (ചിതിയുടെ) ബലം ലഭിക്കുമ്പോൾ അവൻ വിശ്വത്തെ മുഴുവൻ ആത്മസാത്കരിക്കുന്നു (തന്റേതാക്കിത്തീർക്കുന്നു).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: बल (चितीचे सामर्थ्य) प्राप्त झाल्यावर तो विश्वाला आत्मसात करून घेतो.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ବଳଲାଭ (ଚିତିଶକ୍ତିର ପ୍ରାପ୍ତି) ହେଲେ ସେ ବିଶ୍ୱକୁ ଆତ୍ମସାତ୍ କରେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (ਚਿਤਿ ਦੀ ਪੂਰਨ) ਸ਼ਕਤੀ ਦੀ ਪ੍ਰਾਪਤੀ ਹੋਣ 'ਤੇ ਉਹ ਸਾਰੇ ਵਿਸ਼ਵ ਨੂੰ ਆਪਣੇ-ਆਪ ਵਿੱਚ ਸਮੇਟ ਲੈਂਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (சித்தின்) பலத்தை அடைந்தபோது, பிரபஞ்சத்தை முழுவதையும் தன்வயமாக்கிக் கொள்கிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: (చితి యొక్క) బలము లభించినప్పుడు, విశ్వమంతటిని తన ఆత్మస్వరూపముగా చేసుకొనును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 16
+    devanagari: चिदानन्दलाभे देहादिषु चेत्यमानेष्वपि चिदैकात्म्यप्रतिपत्तिदार्ढ्यं जीवन्मुक्तिः ॥१६॥
+    slp1: "cidAnandalABe dehAdizu cetyamAnezvapi cidEkAtmyapratipattidArQyaM jIvanmuktiH"
+    iast: "cid-ānanda-lābhe dehādiṣu cetyamāneṣv api cid-aikātmya-pratipatti-dārḍhyaṃ jīvan-muktiḥ"
+    meter: sūtra
+    word_glosses:
+    - word: चित्-आनन्द-लाभे
+      iast: cit-ānanda-lābhe
+      gloss_en: on attaining the bliss of Consciousness
+      morph: loc. sg. m. cpd.
+      gloss_as: চিদানন্দ (চিৎৰ আনন্দ)ৰ লাভ হোৱাত
+      gloss_bn: চিৎ-আনন্দ লাভ হইলে
+      gloss_gu: ચિદાનંદ (ચૈતન્યના આનંદ)ની પ્રાપ્તિ થતાં
+      gloss_hi: चित्-आनन्द की प्राप्ति होने पर
+      gloss_kn: ಚಿತ್-ಆನಂದ-ಲಾಭೇ — ಚಿತಿಯ ಆನಂದದ ಲಾಭವಾದಾಗ
+      gloss_ml: ചിത്-ആനന്ദ-ലാഭേ — ചിത്സ്വരൂപമായ ആനന്ദലബ്ധിയിൽ
+      gloss_mr: चिदानंदाची प्राप्ती झाल्यावर
+      gloss_or: ଚିଦାନନ୍ଦର ଲାଭ ହେଲେ
+      gloss_pa: ਚਿਦਾਨੰਦ (ਚੇਤਨਾ ਦੇ ਆਨੰਦ) ਦੀ ਪ੍ਰਾਪਤੀ ਹੋਣ 'ਤੇ
+      gloss_ta: சித்-ஆனந்தத்தை அடைந்தபோது
+      gloss_te: చైతన్యానందము లభించినప్పుడు
+    - word: देह-आदिषु
+      iast: deha-ādiṣu
+      gloss_en: in the body and other objects
+      morph: loc. pl. m. cpd.
+      gloss_as: দেহ আদি বিষয়সমূহত
+      gloss_bn: দেহ আদিতে
+      gloss_gu: દેહ વગેરેમાં
+      gloss_hi: देह आदि (विषयों) में
+      gloss_kn: ದೇಹ-ಆದಿಷು — ದೇಹ ಮೊದಲಾದವುಗಳಲ್ಲಿ
+      gloss_ml: ദേഹ-ആദിഷു — ദേഹം മുതലായവയിൽ
+      gloss_mr: देह आदी (पदार्थां)मध्ये
+      gloss_or: ଦେହ ଆଦି (ଶରୀର ଓ ଅନ୍ୟାନ୍ୟ ବିଷୟ)ରେ
+      gloss_pa: ਦੇਹ ਆਦਿ ਵਿਸ਼ਿਆਂ ਵਿੱਚ
+      gloss_ta: உடல் முதலானவற்றில்
+      gloss_te: దేహాది (వస్తువులు)
+    - word: चेत्यमानेषु
+      iast: cetyamāneṣu
+      gloss_en: while being objectified
+      morph: loc. pl. n. pass. part.
+      gloss_as: জ্ঞেয়ৰূপে অনুভূত হোৱাৰ সময়তো
+      gloss_bn: চেত্যমান (বিষয়রূপে অনুভূত) হইলেও
+      gloss_gu: જ્યારે વિષય તરીકે ભાસતા હોય ત્યારે પણ
+      gloss_hi: विषय-रूप में अनुभूत होते हुए भी
+      gloss_kn: ಚೇತ್ಯಮಾನೇಷು — ವಿಷಯವಾಗಿ ಗ್ರಹಿಸಲ್ಪಡುತ್ತಿರುವಾಗ
+      gloss_ml: ചേത്യമാനേഷു — വിഷയീകരിക്കപ്പെടുമ്പോൾ
+      gloss_mr: विषय म्हणून जाणवत असताना
+      gloss_or: ଚେତ୍ୟ (ଜ୍ଞେୟ) ରୂପେ ପ୍ରତୀତ ହେଉଥିଲେ
+      gloss_pa: ਜਦੋਂ ਉਹ ਵਿਸ਼ੇ ਰੂਪ ਵਿੱਚ ਅਨੁਭਵ ਹੋ ਰਹੇ ਹੋਣ
+      gloss_ta: பொருளாக உணரப்படும்போது
+      gloss_te: విషయీకరింపబడుచుండగా
+    - word: अपि
+      iast: api
+      gloss_en: even
+      morph: ptcl.
+      gloss_as: অপি — যদিও
+      gloss_bn: অপি, এমনকি
+      gloss_gu: પણ, છતાં
+      gloss_hi: भी, यद्यपि
+      gloss_kn: ಅಪಿ — ಸಹಿತ
+      gloss_ml: അപി — പോലും
+      gloss_mr: देखील
+      gloss_or: ସୁଦ୍ଧା, ମଧ୍ୟ
+      gloss_pa: ਫਿਰ ਵੀ, ਉਦੋਂ ਵੀ
+      gloss_ta: கூட
+      gloss_te: కూడా
+    - word: चित्-ऐकात्म्य-प्रतिपत्ति-दार्ढ्यम्
+      iast: cit-aikātmya-pratipatti-dārḍhyam
+      gloss_en: the firm conviction of one’s identity with Consciousness
+      morph: nom. sg. n. cpd.
+      gloss_as: চিৎৰ সৈতে একাত্ম্যৰ দৃঢ় প্ৰতিপত্তি
+      gloss_bn: চৈতন্যের সহিত একাত্ম্যের দৃঢ় প্রতিপত্তি
+      gloss_gu: ચિત્ સાથેની એકાત્મ્ય-પ્રતિપત્તિ(ઓળખ)નું દાર્ઢ્ય (દૃઢતા)
+      gloss_hi: चित् के साथ ऐक्य-प्रतिपत्ति की दृढ़ता
+      gloss_kn: ಚಿತ್-ಐಕಾತ್ಮ್ಯ-ಪ್ರತಿಪತ್ತಿ-ದಾರ್ಢ್ಯಂ — ಚಿತಿಯೊಂದಿಗಿನ ಏಕಾತ್ಮ್ಯದ ದೃಢವಾದ ಪ್ರತೀತಿ
+      gloss_ml: ചിത്-ഐകാത്മ്യ-പ്രതിപത്തി-ദാർഢ്യം — ചിതിയോടുള്ള ഏകാത്മ്യപ്രതിപത്തിയുടെ ദൃഢത
+      gloss_mr: चित्-स्वरूपाशी एकात्म्याची दृढ प्रतीती
+      gloss_or: ଚିତ୍-ସହିତ ଏକାତ୍ମ୍ୟର ଦୃଢ଼ ପ୍ରତିପତ୍ତି
+      gloss_pa: ਚੇਤਨਾ ਨਾਲ ਆਪਣੇ ਏਕਾਤਮ੍ਯ ਦੀ ਦ੍ਰਿੜ੍ਹ ਪ੍ਰਤਿਪੱਤੀ
+      gloss_ta: சித்துடன் ஒன்றேதான் என்ற உறுதியான உணர்வு
+      gloss_te: చైతన్యముతో ఏకాత్మ్య ప్రతిపత్తి యొక్క దృఢత
+    - word: जीवन्-मुक्तिः
+      iast: jīvan-muktiḥ
+      gloss_en: is liberation-while-living
+      morph: nom. sg. f. cpd.
+      gloss_as: জীৱন্মুক্তি — জীয়াই থাকোঁতেই মোক্ষ
+      gloss_bn: জীবন্মুক্তি — জীবিত অবস্থায় মুক্তি
+      gloss_gu: જીવનમુક્તિ (જીવતાં મુક્તિ)
+      gloss_hi: जीवन्मुक्ति — जीते-जी मुक्ति
+      gloss_kn: ಜೀವನ್-ಮುಕ್ತಿಃ — ಜೀವಿತ ಸ್ಥಿತಿಯಲ್ಲಿಯೇ ಮುಕ್ತಿ
+      gloss_ml: ജീവന്-മുക്തിഃ — ജീവിച്ചിരിക്കുമ്പോൾത്തന്നെയുള്ള മുക്തി
+      gloss_mr: जीवन्मुक्ती — जिवंतपणीच मुक्ती
+      gloss_or: ଜୀବନ୍ମୁକ୍ତି (ଜୀବନକାଳରେ ମୁକ୍ତି) ଅଟେ
+      gloss_pa: ਜੀਵਨ-ਮੁਕਤੀ ਹੈ — ਜੀਵਿਤ ਅਵਸਥਾ ਵਿੱਚ ਹੀ ਮੁਕਤੀ
+      gloss_ta: ஜீவன்முக்தி, உயிருடன் இருக்கையில் கிடைக்கும் விடுதலை
+      gloss_te: జీవన్ముక్తి (జీవించుచుండగానే ముక్తి)
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "When the bliss of Consciousness is gained, the firm conviction of identity with Consciousness — even when body and the rest are perceived as objects — is liberation-in-life."
+      ai_assisted: false
+      status: published
 
-      - verse: 17
-        devanagari: मध्यविकासाच्चिदानन्दलाभः ॥१७॥
-        slp1: "maDyavikAsAccidAnandalABaH"
-        iast: "madhya-vikāsāc cid-ānanda-lābhaḥ"
-        meter: sūtra
-        word_glosses:
-          - word: मध्य-विकासात्
-            iast: madhya-vikāsāt
-            gloss_en: by unfoldment of the centre (the central channel)
-            morph: abl. sg. m. cpd.
-          - word: चित्-आनन्द-लाभः
-            iast: cit-ānanda-lābhaḥ
-            gloss_en: is the attainment of the bliss of Consciousness
-            morph: nom. sg. m. cpd.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "From the unfoldment of the centre arises the attainment of the bliss of Consciousness."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিদানন্দ লাভ হোৱাত, দেহাদি বিষয়সমূহ জ্ঞেয়ৰূপে অনুভূত হলেও চিৎৰ সৈতে একাত্ম্যৰ দৃঢ় প্ৰতিপত্তিয়েই জীৱন্মুক্তি।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: চিদানন্দ লাভ হইলে, দেহাদি বিষয়সমূহ চেত্যমান (অর্থাৎ বিষয়রূপে অনুভূত) হইলেও, চৈতন্যের সহিত একাত্ম্যের দৃঢ় প্রতিপত্তিই জীবন্মুক্তি।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ચિદાનંદની પ્રાપ્તિ થતાં, દેહ વગેરે વિષય-રૂપે ભાસતા હોવા છતાં પણ, ચિત્ સાથેની એકાત્મ્ય-પ્રતિપત્તિ(ઓળખ)નું દાર્ઢ્ય (દૃઢતા) — એ જ જીવનમુક્તિ છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिदानन्द की प्राप्ति होने पर देह आदि के विषय-रूप में अनुभूत होते रहने पर भी चिति के साथ एकात्म्य-प्रतिपत्ति की दृढ़ता ही जीवन्मुक्ति है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಚಿದಾನಂದದ ಲಾಭವಾದಾಗ, ದೇಹ ಮೊದಲಾದವುಗಳು ವಿಷಯವಾಗಿ ಗ್ರಹಿಸಲ್ಪಡುತ್ತಿದ್ದರೂ ಚಿತಿಯೊಂದಿಗಿನ ಏಕಾತ್ಮ್ಯದ ಪ್ರತಿಪತ್ತಿಯ (ಅರಿವಿನ) ದಾರ್ಢ್ಯವೇ ಜೀವನ್ಮುಕ್ತಿ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ചിദാനന്ദലബ്ധിയിൽ, ദേഹാദികൾ വിഷയങ്ങളായി അനുഭവിക്കപ്പെടുമ്പോൾപോലും, ചിതിയോടുള്ള ഏകാത്മ്യപ്രതിപത്തിയുടെ ദാർഢ്യമാണ് ജീവന്മുക്തി.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: चिदानंदाची प्राप्ती झाल्यावर, देहादी पदार्थ विषय म्हणून जाणवत असतानाही, चित्-स्वरूपाशी एकात्म्याची दृढ प्रतीती — हीच जीवन्मुक्ती होय.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଚିଦାନନ୍ଦ-ଲାଭ ହେଲେ ଦେହ ଆଦି (ବିଷୟଗୁଡ଼ିକ) ଚେତ୍ୟ (ଜ୍ଞେୟ) ରୂପେ ପ୍ରତୀତ ହେଉଥିଲେ ମଧ୍ୟ ଚିତ୍-ସହିତ ଏକାତ୍ମ୍ୟର ଦୃଢ଼ ପ୍ରତିପତ୍ତି ହିଁ ଜୀବନ୍ମୁକ୍ତି ଅଟେ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਚਿਦਾਨੰਦ ਦੀ ਪ੍ਰਾਪਤੀ ਹੋਣ 'ਤੇ ਦੇਹ ਆਦਿ ਦੇ ਵਿਸ਼ੇ-ਰੂਪ ਵਿੱਚ ਅਨੁਭਵ ਹੁੰਦੇ ਰਹਿਣ 'ਤੇ ਵੀ ਚਿਤਿ ਨਾਲ ਏਕਾਤਮ੍ਯ-ਪ੍ਰਤਿਪੱਤੀ ਦੀ ਦ੍ਰਿੜ੍ਹਤਾ ਹੀ ਜੀਵਨਮੁਕਤੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சித்-ஆனந்தத்தை அடைந்தபோது, உடல் முதலியவை பொருளாக உணரப்பட்டாலும், சித்துடன் ஒன்றேதான் என்ற உறுதியான உணர்வே ஜீவன்முக்தி (உயிருடன் இருக்கும்போதே விடுதலை) ஆகும்.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: చిదానందము లభించినప్పుడు, దేహాది (వస్తువులు) చేత్యమానములుగా (విషయములుగా) తోచుచున్నప్పటికీ, చిత్‌తో ఏకాత్మ్య ప్రతిపత్తి యొక్క దృఢతయే జీవన్ముక్తి.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 17
+    devanagari: मध्यविकासाच्चिदानन्दलाभः ॥१७॥
+    slp1: "maDyavikAsAccidAnandalABaH"
+    iast: "madhya-vikāsāc cid-ānanda-lābhaḥ"
+    meter: sūtra
+    word_glosses:
+    - word: मध्य-विकासात्
+      iast: madhya-vikāsāt
+      gloss_en: by unfoldment of the centre (the central channel)
+      morph: abl. sg. m. cpd.
+      gloss_as: মধ্যৰ (মধ্য-নাড়ীৰ) বিকাশৰ দ্বাৰা
+      gloss_bn: মধ্য (মধ্যনাড়ী)-এর বিকাশ হইতে
+      gloss_gu: મધ્ય (કેન્દ્રીય નાડી/મધ્યમ ભૂમિ)ના વિકાસથી
+      gloss_hi: मध्य (केन्द्र / मध्य नाड़ी) के विकास से
+      gloss_kn: ಮಧ್ಯ-ವಿಕಾಸಾತ್ — ಮಧ್ಯ (ಮಧ್ಯ ನಾಡಿ)ದ ವಿಕಾಸದಿಂದ
+      gloss_ml: മധ്യ-വികാസാത് — മധ്യത്തിന്റെ (മധ്യനാഡിയുടെ) വികാസത്താൽ
+      gloss_mr: मध्याच्या (मध्यवर्ती नाडीच्या) विकासाने
+      gloss_or: ମଧ୍ୟ (ମଧ୍ୟନାଡ଼ୀ/ସୁଷୁମ୍ନା)ର ବିକାଶରୁ
+      gloss_pa: ਮੱਧ (ਮੱਧ ਨਾੜੀ / ਕੇਂਦਰ) ਦੇ ਵਿਕਾਸ ਤੋਂ
+      gloss_ta: மத்தியின் (மைய நாடியின்) விகாசத்தினால், விரிவினால்
+      gloss_te: మధ్యము (కేంద్ర నాడి/సుషుమ్నా) యొక్క వికాసము వలన
+    - word: चित्-आनन्द-लाभः
+      iast: cit-ānanda-lābhaḥ
+      gloss_en: is the attainment of the bliss of Consciousness
+      morph: nom. sg. m. cpd.
+      gloss_as: চিদানন্দৰ লাভ
+      gloss_bn: চিৎ-আনন্দের প্রাপ্তি
+      gloss_gu: ચિદાનંદની પ્રાપ્તિ
+      gloss_hi: चित्-आनन्द की प्राप्ति होती है
+      gloss_kn: ಚಿತ್-ಆನಂದ-ಲಾಭಃ — ಚಿತಿಯ ಆನಂದದ ಲಾಭ
+      gloss_ml: ചിത്-ആനന്ദ-ലാഭഃ — ചിത്സ്വരൂപമായ ആനന്ദലബ്ധി
+      gloss_mr: चिदानंदाची प्राप्ती (होते)
+      gloss_or: ଚିଦାନନ୍ଦର ଲାଭ
+      gloss_pa: ਚਿਦਾਨੰਦ (ਚੇਤਨਾ ਦੇ ਆਨੰਦ) ਦੀ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ
+      gloss_ta: சித்-ஆனந்தத்தின் (பேரறிவின் பேரின்பத்தின்) லாபம், அடைதல்
+      gloss_te: చైతన్యానందము యొక్క ప్రాప్తి
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "From the unfoldment of the centre arises the attainment of the bliss of Consciousness."
+      ai_assisted: false
+      status: published
 
-      - verse: 18
-        devanagari: विकल्पक्षयशक्तिसङ्कोचविकासवाहच्छेदाद्यन्तकोटिनिभालनादय इहोपायाः ॥१८॥
-        slp1: "vikalpakzayazaktisaNkocavikAsavAhacCedAdyantakoTiniBAlanAdaya ihopAyAH"
-        iast: "vikalpa-kṣaya-śakti-saṅkoca-vikāsa-vāha-cchedādy-antakoṭi-nibhālanādaya ihopāyāḥ"
-        meter: sūtra
-        word_glosses:
-          - word: विकल्प-क्षय
-            iast: vikalpa-kṣaya
-            gloss_en: dissolution of thought-constructs
-            morph: stem in cpd.
-          - word: शक्ति-सङ्कोच-विकास
-            iast: śakti-saṅkoca-vikāsa
-            gloss_en: contraction and expansion of powers
-            morph: stem in cpd.
-          - word: वाह-च्छेद
-            iast: vāha-ccheda
-            gloss_en: cutting the flow (of prāṇa/apāna)
-            morph: stem in cpd.
-          - word: आदि
-            iast: ādi
-            gloss_en: and so forth
-            morph: ptcl. in cpd.
-          - word: अन्त-कोटि-निभालन
-            iast: anta-koṭi-nibhālana
-            gloss_en: attentive watching of the two end-points
-            morph: stem in cpd.
-          - word: आदयः
-            iast: ādayaḥ
-            gloss_en: etc. (these and similar)
-            morph: nom. pl. m.
-          - word: इह
-            iast: iha
-            gloss_en: here (in this teaching)
-            morph: adv.
-          - word: उपायाः
-            iast: upāyāḥ
-            gloss_en: are the means
-            morph: nom. pl. m.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Here the means are: dissolution of mental constructs, contraction and expansion of the powers, cutting of the prāṇa-currents, contemplation of the beginning and end points, and so on."
-            ai_assisted: true
-            status: draft
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: মধ্যৰ (মধ্য-নাড়ীৰ) বিকাশৰ দ্বাৰাই চিদানন্দৰ লাভ হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: মধ্য (মধ্যনাড়ী)-এর বিকাশ হইতেই চিদানন্দ লাভ হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: મધ્ય (કેન્દ્રીય નાડી/મધ્યમ ભૂમિ)ના વિકાસથી ચિદાનંદની પ્રાપ્તિ થાય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: मध्य (मध्य नाड़ी / केन्द्र) के विकास से चिदानन्द की प्राप्ति होती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಮಧ್ಯ (ಮಧ್ಯ ನಾಡಿ, ಕೇಂದ್ರ)ದ ವಿಕಾಸದಿಂದ ಚಿದಾನಂದದ ಲಾಭ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: മധ്യത്തിന്റെ (മധ്യനാഡിയുടെ) വികാസത്താൽ ചിദാനന്ദലബ്ധിയുണ്ടാകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: मध्याच्या (मध्यवर्ती नाडीच्या) विकासाने चिदानंदाची प्राप्ती होते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ମଧ୍ୟ (ମଧ୍ୟନାଡ଼ୀ/ସୁଷୁମ୍ନା)ର ବିକାଶରୁ ଚିଦାନନ୍ଦର ଲାଭ ହୁଏ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਮੱਧ (ਮੱਧ ਨਾੜੀ / ਕੇਂਦਰ) ਦੇ ਵਿਕਾਸ ਤੋਂ ਚਿਦਾਨੰਦ ਦੀ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: மத்திய நாடியின் (மையத்தின்) விகாசத்தினால் சித்-ஆனந்த லாபம் ஏற்படுகிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: మధ్యము (కేంద్రము/సుషుమ్నా) యొక్క వికాసము వలన చిదానంద ప్రాప్తి కలుగును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 18
+    devanagari: विकल्पक्षयशक्तिसङ्कोचविकासवाहच्छेदाद्यन्तकोटिनिभालनादय इहोपायाः ॥१८॥
+    slp1: "vikalpakzayazaktisaNkocavikAsavAhacCedAdyantakoTiniBAlanAdaya ihopAyAH"
+    iast: "vikalpa-kṣaya-śakti-saṅkoca-vikāsa-vāha-cchedādy-antakoṭi-nibhālanādaya ihopāyāḥ"
+    meter: sūtra
+    word_glosses:
+    - word: विकल्प-क्षय
+      iast: vikalpa-kṣaya
+      gloss_en: dissolution of thought-constructs
+      morph: stem in cpd.
+      gloss_as: বিকল্পক্ষয় — চিন্তা-বিকল্পৰ ক্ষয়
+      gloss_bn: বিকল্প-ক্ষয়, চিন্তা-কল্পনার বিলয়
+      gloss_gu: વિકલ્પ-ક્ષય — વિચાર-તરંગોનો વિલય
+      gloss_hi: विकल्पों का क्षय — विचार-वृत्तियों का विलय
+      gloss_kn: ವಿಕಲ್ಪ-ಕ್ಷಯ — ವಿಕಲ್ಪಗಳ (ಮಾನಸಿಕ ಕಲ್ಪನೆಗಳ) ಲಯ
+      gloss_ml: വികൽപ-ക്ഷയ — സങ്കല്പവികല്പങ്ങളുടെ വിലയം
+      gloss_mr: विकल्पांचा क्षय (मानसिक विचार-रचनांचा निरास)
+      gloss_or: ବିକଳ୍ପ-କ୍ଷୟ (ସଂକଳ୍ପର ଲୟ)
+      gloss_pa: ਵਿਕਲਪ-ਕਸ਼ਯ — ਵਿਚਾਰਾਂ/ਕਲਪਨਾਵਾਂ ਦਾ ਨਾਸ਼
+      gloss_ta: விகல்பங்களின் (எண்ண-ஓட்டங்களின்) க்ஷயம் (கரைதல்)
+      gloss_te: వికల్పముల (సంకల్పముల) క్షయము
+    - word: शक्ति-सङ्कोच-विकास
+      iast: śakti-saṅkoca-vikāsa
+      gloss_en: contraction and expansion of powers
+      morph: stem in cpd.
+      gloss_as: শক্তিৰ সঙ্কোচ আৰু বিকাশ
+      gloss_bn: শক্তির সঙ্কোচ ও বিকাশ
+      gloss_gu: શક્તિઓનો સંકોચ અને વિકાસ
+      gloss_hi: शक्तियों का संकोच और विकास
+      gloss_kn: ಶಕ್ತಿ-ಸಂಕೋಚ-ವಿಕಾಸ — ಶಕ್ತಿಗಳ ಸಂಕೋಚ ಮತ್ತು ವಿಕಾಸ
+      gloss_ml: ശക്തി-സങ്കോച-വികാസ — ശക്തിയുടെ സങ്കോചവും വികാസവും
+      gloss_mr: शक्तींचा संकोच आणि विकास
+      gloss_or: ଶକ୍ତିର ସଙ୍କୋଚ ଓ ବିକାଶ
+      gloss_pa: ਸ਼ਕਤੀਆਂ ਦਾ ਸੰਕੋਚ ਅਤੇ ਵਿਕਾਸ
+      gloss_ta: சக்திகளின் சங்கோசம்-விகாசம் (சுருக்கம்-விரிவு)
+      gloss_te: శక్తుల సంకోచ-వికాసము
+    - word: वाह-च्छेद
+      iast: vāha-ccheda
+      gloss_en: cutting the flow (of prāṇa/apāna)
+      morph: stem in cpd.
+      gloss_as: বাহ-চ্ছেদ — প্ৰাণ-অপানৰ প্ৰবাহ ছেদন
+      gloss_bn: (প্রাণ-অপান) বাহের ছেদ
+      gloss_gu: વાહ-ચ્છેદ — પ્રાણ-અપાન પ્રવાહનો છેદ
+      gloss_hi: वाह-छेद — (प्राण-अपान के) प्रवाह का छेदन
+      gloss_kn: ವಾಹ-ಚ್ಛೇದ — (ಪ್ರಾಣ-ಅಪಾನ) ಪ್ರವಾಹದ ಛೇದನ
+      gloss_ml: വാഹ-ച്ഛേദ — പ്രവാഹം ഛേദിക്കൽ (പ്രാണ-അപാന പ്രവാഹം)
+      gloss_mr: (प्राण-अपानाच्या) प्रवाहाचा छेद
+      gloss_or: ବାହ-ଚ୍ଛେଦ (ପ୍ରାଣ-ଅପାନ ପ୍ରବାହର ବିଚ୍ଛେଦ)
+      gloss_pa: ਵਾਹ-ਛੇਦ — (ਪ੍ਰਾਣ/ਅਪਾਨ ਦੇ) ਪ੍ਰਵਾਹ ਨੂੰ ਕੱਟਣਾ
+      gloss_ta: வாஹத்தை அறுத்தல் (ப்ராண-அபான ஓட்டத்தை அறுத்தல்)
+      gloss_te: వాహ ఛేదము (ప్రాణ-అపాన ప్రవాహమును ఛేదించుట)
+    - word: आदि
+      iast: ādi
+      gloss_en: and so forth
+      morph: ptcl. in cpd.
+      gloss_as: আদি, ইত্যাদি
+      gloss_bn: আদি, ইত্যাদি
+      gloss_gu: ઇત્યાદિ, વગેરે
+      gloss_hi: आदि — इत्यादि
+      gloss_kn: ಆದಿ — ಮೊದಲಾದ
+      gloss_ml: ആദി — മുതലായവ
+      gloss_mr: इत्यादी
+      gloss_or: ଇତ୍ୟାଦି
+      gloss_pa: ਆਦਿ, ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਹੋਰ
+      gloss_ta: முதலான
+      gloss_te: మొదలగునవి
+    - word: अन्त-कोटि-निभालन
+      iast: anta-koṭi-nibhālana
+      gloss_en: attentive watching of the two end-points
+      morph: stem in cpd.
+      gloss_as: আদ্য-অন্ত কোটিৰ নিভালন — দুই প্ৰান্তবিন্দুৰ মনোযোগী দৰ্শন
+      gloss_bn: অন্ত-কোটি-নিভালন, আদি ও অন্ত বিন্দুর একাগ্র দর্শন
+      gloss_gu: આદિ-અંત-કોટિનું નિભાલન — પ્રારંભ અને અંતના બિંદુઓનું ધ્યાનપૂર્વક અવલોકન
+      gloss_hi: अन्त-कोटि-निभालन — आदि-अन्त दोनों कोटियों का सावधान अवलोकन
+      gloss_kn: ಅಂತ-ಕೋಟಿ-ನಿಭಾಲನ — ಆದಿ-ಅಂತ್ಯ ಬಿಂದುಗಳ ಧ್ಯಾನಪೂರ್ವಕ ವೀಕ್ಷಣೆ
+      gloss_ml: അന്ത-കോടി-നിഭാലന — ആരംഭ-അന്ത്യബിന്ദുക്കളിലെ ശ്രദ്ധാപൂർവമായ നിരീക്ഷണം
+      gloss_mr: आदी-अंत-बिंदूंचे निभालन (एकाग्र निरीक्षण)
+      gloss_or: ଆଦି ଓ ଅନ୍ତ କୋଟି (ଆରମ୍ଭ ଓ ଶେଷ ବିନ୍ଦୁ)ର ନିଭାଳନ (ଧ୍ୟାନପୂର୍ବକ ପର୍ଯ୍ୟବେକ୍ଷଣ)
+      gloss_pa: ਆਦਿ-ਅੰਤ ਕੋਟੀਆਂ ਦਾ ਨਿਭਾਲਨ — ਆਰੰਭ ਅਤੇ ਅੰਤ ਬਿੰਦੂਆਂ ਦਾ ਸਾਵਧਾਨ ਅਵਲੋਕਨ
+      gloss_ta: ஆதி-அந்தக் கோடிகளை உற்று நோக்குதல் (இரு முனைகளையும் கவனித்தல்)
+      gloss_te: అంత-కోటి-నిభాలనము (రెండు అంత్యబిందువుల ఏకాగ్ర పరిశీలన)
+    - word: आदयः
+      iast: ādayaḥ
+      gloss_en: etc. (these and similar)
+      morph: nom. pl. m.
+      gloss_as: আদি — এনে আৰু সদৃশ
+      gloss_bn: আদয়ঃ, ইত্যাদি (এইরূপ অন্যান্য)
+      gloss_gu: વગેરે (આ અને આના જેવા)
+      gloss_hi: आदि — इत्यादि (ये तथा अन्य समान)
+      gloss_kn: ಆದಯಃ — ಮೊದಲಾದವು
+      gloss_ml: ആദയഃ — മുതലായവ (ഇവയും സദൃശങ്ങളും)
+      gloss_mr: इत्यादी (हे आणि असे प्रकार)
+      gloss_or: ଆଦି (ଏବଂ ସମାନ ଅନ୍ୟ)
+      gloss_pa: ਆਦਿ (ਇਹ ਅਤੇ ਹੋਰ ਇਸੇ ਤਰ੍ਹਾਂ ਦੇ)
+      gloss_ta: இவை முதலியவை
+      gloss_te: ఇత్యాదులు (ఇవి మరియు ఇట్టివి)
+    - word: इह
+      iast: iha
+      gloss_en: here (in this teaching)
+      morph: adv.
+      gloss_as: ইয়াত (এই শাস্ত্ৰত)
+      gloss_bn: ইহ, এই (শাস্ত্রে)
+      gloss_gu: અહીં (આ ઉપદેશમાં)
+      gloss_hi: यहाँ (इस उपदेश में)
+      gloss_kn: ಇಹ — ಇಲ್ಲಿ (ಈ ಸಿದ್ಧಾಂತದಲ್ಲಿ)
+      gloss_ml: ഇഹ — ഇവിടെ (ഈ ഉപദേശത്തിൽ)
+      gloss_mr: येथे (या उपदेशात)
+      gloss_or: ଏଠାରେ (ଏହି ଶିକ୍ଷାରେ)
+      gloss_pa: ਇੱਥੇ (ਇਸ ਉਪਦੇਸ਼ ਵਿੱਚ)
+      gloss_ta: இங்கு (இந்த உபதேசத்தில்)
+      gloss_te: ఇచట (ఈ ఉపదేశములో)
+    - word: उपायाः
+      iast: upāyāḥ
+      gloss_en: are the means
+      morph: nom. pl. m.
+      gloss_as: উপায়সমূহ
+      gloss_bn: উপায়সমূহ
+      gloss_gu: ઉપાય, સાધનો
+      gloss_hi: उपाय — साधन
+      gloss_kn: ಉಪಾಯಾಃ — ಉಪಾಯಗಳು, ಸಾಧನಗಳು
+      gloss_ml: ഉപായാഃ — ഉപായങ്ങൾ, മാർഗങ്ങൾ
+      gloss_mr: उपाय आहेत
+      gloss_or: ଉପାୟଗୁଡ଼ିକ
+      gloss_pa: ਉਪਾਅ, ਸਾਧਨ ਹਨ
+      gloss_ta: உபாயங்கள், வழிமுறைகள்
+      gloss_te: ఉపాయములు
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Here the means are: dissolution of mental constructs, contraction and expansion of the powers, cutting of the prāṇa-currents, contemplation of the beginning and end points, and so on."
+      ai_assisted: true
+      status: draft
 
-      - verse: 19
-        devanagari: समाधिसंस्कारवति व्युत्थाने भूयो भूयश्चिदैक्यामर्शान्नित्योदितसमाधिलाभः ॥१९॥
-        slp1: "samADisaMskAravati vyutTAne BUyo BUyazcidEkyAmarzAnnityoditasamADilABaH"
-        iast: "samādhi-saṃskāravati vyutthāne bhūyo bhūyaś cid-aikyāmarśān nityodita-samādhi-lābhaḥ"
-        meter: sūtra
-        word_glosses:
-          - word: समाधि-संस्कारवति
-            iast: samādhi-saṃskāravati
-            gloss_en: in the post-samādhi state still bearing its impression
-            morph: loc. sg. n. cpd.
-          - word: व्युत्थाने
-            iast: vyutthāne
-            gloss_en: during emergence (return to outer activity)
-            morph: loc. sg. n.
-          - word: भूयो भूयः
-            iast: bhūyo bhūyaḥ
-            gloss_en: again and again
-            morph: adv.
-          - word: चित्-ऐक्य-आमर्शात्
-            iast: cit-aikya-āmarśāt
-            gloss_en: by reflective awareness of identity with Consciousness
-            morph: abl. sg. m. cpd.
-          - word: नित्य-उदित-समाधि-लाभः
-            iast: nitya-udita-samādhi-lābhaḥ
-            gloss_en: comes the attainment of ever-arising samādhi
-            morph: nom. sg. m. cpd.
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "In the post-samādhi state, by repeatedly reflecting on identity with Consciousness, one attains the ever-present samādhi."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ইয়াত উপায়সমূহ হ’ল — বিকল্পক্ষয়, শক্তিৰ সঙ্কোচ-বিকাশ, প্ৰাণ-অপানৰ বাহ-চ্ছেদ আদি, আদ্য-অন্ত কোটিৰ নিভালন আদি।
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: এই (শাস্ত্রে) উপায়সমূহ — বিকল্প-ক্ষয়, শক্তির সঙ্কোচ ও বিকাশ, (প্রাণাদি) বাহের ছেদ, আদি ও অন্ত কোটির নিভালন (একাগ্র দর্শন), ইত্যাদি।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: અહીં ઉપાયો છે — વિકલ્પ-ક્ષય, શક્તિ-સંકોચ અને વિકાસ, વાહ-ચ્છેદ (પ્રાણ-પ્રવાહનો છેદ), આદિ-અંત-કોટિનું નિભાલન (પ્રારંભ-અંતના બિંદુઓનું ધ્યાનપૂર્વક અવલોકન), ઇત્યાદિ.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: यहाँ (इस मार्ग में) विकल्प-क्षय, शक्ति का संकोच-विकास, (प्राण-अपान के) वाह का छेद, आदि-अन्त कोटियों का निभालन (सावधान अवलोकन) इत्यादि उपाय हैं।
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಇಲ್ಲಿ (ಈ ಸಿದ್ಧಾಂತದಲ್ಲಿ) ಉಪಾಯಗಳೆಂದರೆ — ವಿಕಲ್ಪಕ್ಷಯ (ವಿಚಾರಗಳ ಲಯ), ಶಕ್ತಿಯ ಸಂಕೋಚ ಮತ್ತು ವಿಕಾಸ, ವಾಹಚ್ಛೇದ (ಪ್ರಾಣಾಪಾನ ಪ್ರವಾಹಗಳ ಛೇದನ), ಆದಿ-ಅಂತ ಕೋಟಿಗಳ ನಿಭಾಲನ (ಆರಂಭ ಮತ್ತು ಅಂತ್ಯ ಬಿಂದುಗಳ ಚಿಂತನೆ) ಮೊದಲಾದವು.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: വികൽപക്ഷയം, ശക്തിയുടെ സങ്കോചവികാസം, വാഹച്ഛേദം (പ്രാണ-അപാന പ്രവാഹം മുറിക്കൽ), ആദ്യന്തകോടി-നിഭാലനം (ആരംഭാന്ത്യബിന്ദുക്കളിലെ ധ്യാനം) മുതലായവയാണ് ഇവിടെ (ഈ ഉപദേശത്തിൽ) ഉപായങ്ങൾ.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: येथे (या मार्गात) उपाय असे आहेत — विकल्पांचा क्षय, शक्तींचा संकोच व विकास, (प्राण-अपानाच्या) प्रवाहाचा छेद, आदी-अंत-बिंदूंचे निभालन (एकाग्र निरीक्षण) इत्यादी.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ଏଠାରେ ଉପାୟଗୁଡ଼ିକ ହେଲା — ବିକଳ୍ପକ୍ଷୟ (ସଂକଳ୍ପର ଲୟ), ଶକ୍ତିର ସଙ୍କୋଚ ଓ ବିକାଶ, ବାହ-ଚ୍ଛେଦ (ପ୍ରାଣପ୍ରବାହର ବିଚ୍ଛେଦ), ଆଦି-ଅନ୍ତ କୋଟି (ଆରମ୍ଭ ଓ ଶେଷ ବିନ୍ଦୁ)ର ନିଭାଳନ ଇତ୍ୟାଦି।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਇੱਥੇ (ਇਸ ਮਾਰਗ ਵਿੱਚ) ਵਿਕਲਪ-ਕਸ਼ਯ (ਵਿਚਾਰਾਂ ਦਾ ਨਾਸ਼), ਸ਼ਕਤੀ ਦਾ ਸੰਕੋਚ-ਵਿਕਾਸ, (ਪ੍ਰਾਣ-ਅਪਾਨ ਦੇ) ਵਾਹ ਦਾ ਛੇਦ, ਆਦਿ-ਅੰਤ ਕੋਟੀਆਂ ਦਾ ਨਿਭਾਲਨ (ਸਾਵਧਾਨ ਅਵਲੋਕਨ) ਆਦਿ ਉਪਾਅ ਹਨ।
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: விகல்பங்களின் க்ஷயம், சக்தியின் சங்கோச-விகாசம், ப்ராண-வாஹத்தை அறுத்தல், ஆதி-அந்த கோடிகளை உற்று நோக்குதல் — இவை போன்றவை இங்கே (இந்த உபதேசத்தில்) உபாயங்களாகும்.
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ఇచట (ఈ సాధనలో) ఉపాయములు - వికల్ప క్షయము, శక్తుల సంకోచ-వికాసము, [draft] ప్రాణవాహ ఛేదనము, ఆది-అంత కోటుల నిభాలనము (ధ్యానము) మొదలగునవి.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 19
+    devanagari: समाधिसंस्कारवति व्युत्थाने भूयो भूयश्चिदैक्यामर्शान्नित्योदितसमाधिलाभः ॥१९॥
+    slp1: "samADisaMskAravati vyutTAne BUyo BUyazcidEkyAmarzAnnityoditasamADilABaH"
+    iast: "samādhi-saṃskāravati vyutthāne bhūyo bhūyaś cid-aikyāmarśān nityodita-samādhi-lābhaḥ"
+    meter: sūtra
+    word_glosses:
+    - word: समाधि-संस्कारवति
+      iast: samādhi-saṃskāravati
+      gloss_en: in the post-samādhi state still bearing its impression
+      morph: loc. sg. n. cpd.
+      gloss_as: সমাধিৰ সংস্কাৰ যুক্ত অৱস্থাত
+      gloss_bn: সমাধি-সংস্কারযুক্ত (সমাধির ছাপ-বহনকারী)
+      gloss_gu: સમાધિના સંસ્કાર (છાપ) જેમાં છે તેવી
+      gloss_hi: समाधि के संस्कार से युक्त दशा में
+      gloss_kn: ಸಮಾಧಿ-ಸಂಸ್ಕಾರವತಿ — ಸಮಾಧಿಯ ಸಂಸ್ಕಾರವನ್ನು ಹೊಂದಿರುವ
+      gloss_ml: സമാധി-സംസ്കാരവതി — സമാധിയുടെ സംസ്കാരം ശേഷിക്കുന്ന
+      gloss_mr: समाधीच्या संस्कारांनी युक्त
+      gloss_or: ସମାଧି-ସଂସ୍କାରଯୁକ୍ତ (ସମାଧିର ସଂସ୍କାର ବହନ କରୁଥିବା)
+      gloss_pa: ਸਮਾਧੀ ਦੇ ਸੰਸਕਾਰ ਨਾਲ ਯੁਕਤ — ਸਮਾਧੀ ਦੀ ਛਾਪ ਅਜੇ ਵੀ ਧਾਰਨ ਕਰਨ ਵਾਲੀ ਅਵਸਥਾ
+      gloss_ta: சமாதியின் ஸம்ஸ்காரம் (பதிவு) தொடரும் நிலையில்
+      gloss_te: సమాధి సంస్కారము (ఇంకా) నిలిచియున్న స్థితిలో
+    - word: व्युत्थाने
+      iast: vyutthāne
+      gloss_en: during emergence (return to outer activity)
+      morph: loc. sg. n.
+      gloss_as: ব্যুত্থানত (বাহ্যিক ক্ৰিয়ালৈ উত্থান হোৱাত)
+      gloss_bn: ব্যুত্থানে, বাহ্য কর্মে প্রত্যাবর্তনের অবস্থায়
+      gloss_gu: વ્યુત્થાન — (બાહ્ય વ્યવહારમાં પાછા ઊઠવા) સમયે
+      gloss_hi: व्युत्थान में — समाधि से उठकर बाहरी क्रिया में आने पर
+      gloss_kn: ವ್ಯುತ್ಥಾನೇ — ವ್ಯುತ್ಥಾನ ಸ್ಥಿತಿಯಲ್ಲಿ (ಬಾಹ್ಯ ಚಟುವಟಿಕೆಗೆ ಮರಳಿದಾಗ)
+      gloss_ml: വ്യുത്ഥാനേ — വ്യുത്ഥാനത്തിൽ (ബാഹ്യ പ്രവർത്തനത്തിലേക്കു മടങ്ങുമ്പോൾ)
+      gloss_mr: व्युत्थानामध्ये (बाह्य व्यवहारात परतण्याच्या अवस्थेत)
+      gloss_or: ବ୍ୟୁତ୍ଥାନ (ସମାଧି-ପରବର୍ତ୍ତୀ ବାହ୍ୟବ୍ୟବହାର) ସମୟରେ
+      gloss_pa: ਵਿਉਥਾਨ ਵਿੱਚ — ਬਾਹਰੀ ਕਿਰਿਆ ਵਿੱਚ ਪਰਤਣ ਸਮੇਂ
+      gloss_ta: வ்யுத்தான நிலையில் (வெளி-வினைகளுக்குத் திரும்பும்போது)
+      gloss_te: వ్యుత్థానమున (బాహ్య కార్యకలాపములకు తిరిగివచ్చినప్పుడు)
+    - word: भूयो भूयः
+      iast: bhūyo bhūyaḥ
+      gloss_en: again and again
+      morph: adv.
+      gloss_as: বাৰে বাৰে
+      gloss_bn: বারংবার
+      gloss_gu: વારંવાર, ફરી ફરી
+      gloss_hi: बार-बार
+      gloss_kn: ಭೂಯೋ ಭೂಯಃ — ಪುನಃಪುನಃ, ಮತ್ತೆಮತ್ತೆ
+      gloss_ml: ഭൂയോ ഭൂയഃ — വീണ്ടും വീണ്ടും
+      gloss_mr: पुन्हा पुन्हा
+      gloss_or: ବାରମ୍ବାର, ଅନେକ ଥର
+      gloss_pa: ਵਾਰ-ਵਾਰ
+      gloss_ta: மீண்டும் மீண்டும்
+      gloss_te: మరల మరల
+    - word: चित्-ऐक्य-आमर्शात्
+      iast: cit-aikya-āmarśāt
+      gloss_en: by reflective awareness of identity with Consciousness
+      morph: abl. sg. m. cpd.
+      gloss_as: চিৎৰ সৈতে ঐক্যৰ আমৰ্শ (পৰাবৰ্তিত সচেতনতা)ৰ দ্বাৰা
+      gloss_bn: চৈতন্য-একতার আমর্শ (পরামর্শ) দ্বারা
+      gloss_gu: ચિત્ સાથેની એકતાના આમર્શ (પ્રતિવિચાર)થી
+      gloss_hi: चित् के साथ ऐक्य के आमर्शन (विमर्श) से
+      gloss_kn: ಚಿತ್-ಐಕ್ಯ-ಆಮರ್ಶಾತ್ — ಚಿತಿಯೊಂದಿಗಿನ ಐಕ್ಯದ ವಿಮರ್ಶಾತ್ಮಕ ಚಿಂತನೆಯಿಂದ
+      gloss_ml: ചിത്-ഐക്യ-ആമർശാത് — ചിതിയോടുള്ള ഏകത്വ-പ്രതിഫലനത്താൽ
+      gloss_mr: चित्-ऐक्याच्या आमर्शाने (चैतन्याशी एकत्वाच्या परावर्तनाने)
+      gloss_or: ଚିତ୍-ଏକତ୍ୱର ଆମର୍ଶ (ପ୍ରତ୍ୟବେକ୍ଷଣ) ଦ୍ୱାରା
+      gloss_pa: ਚਿਤ ਨਾਲ ਏਕਤਾ ਦੇ ਆਮਰਸ਼ਨ (ਅੰਤਰ-ਚਿੰਤਨ/ਪਰਾਮਰਸ਼) ਦੁਆਰਾ
+      gloss_ta: சித்துடன் ஒன்றுபட்ட ஆமர்சனத்தினால் (உணர்வுப்பற்றினால்)
+      gloss_te: చైతన్యముతో ఏకత్వము యొక్క ఆమర్శనము వలన
+    - word: नित्य-उदित-समाधि-लाभः
+      iast: nitya-udita-samādhi-lābhaḥ
+      gloss_en: comes the attainment of ever-arising samādhi
+      morph: nom. sg. m. cpd.
+      gloss_as: নিত্যোদিত সমাধিৰ লাভ
+      gloss_bn: নিত্যোদিত (সদা উদিত) সমাধির লাভ
+      gloss_gu: નિત્યોદિત (સદા ઉદય પામતી) સમાધિની પ્રાપ્તિ
+      gloss_hi: नित्योदित समाधि — सदा उदित रहने वाली समाधि की प्राप्ति
+      gloss_kn: ನಿತ್ಯ-ಉದಿತ-ಸಮಾಧಿ-ಲಾಭಃ — ನಿತ್ಯೋದಿತ ಸಮಾಧಿಯ ಲಾಭ
+      gloss_ml: നിത്യ-ഉദിത-സമാധി-ലാഭഃ — നിത്യോദിത സമാധിയുടെ ലബ്ധി
+      gloss_mr: नित्योदित (कायम उगवती) समाधीची प्राप्ती होते
+      gloss_or: ନିତ୍ୟୋଦିତ (ସର୍ବଦାବର୍ତ୍ତମାନ) ସମାଧିର ଲାଭ
+      gloss_pa: ਨਿਤ੍ਯ-ਉਦਿਤ ਸਮਾਧੀ (ਸਦਾ ਚੜ੍ਹੀ ਰਹਿਣ ਵਾਲੀ ਸਮਾਧੀ) ਦੀ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ
+      gloss_ta: எப்போதும் உதித்திருக்கும் சமாதியின் லாபம்
+      gloss_te: నిత్యోదిత సమాధి యొక్క ప్రాప్తి కలుగును
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "In the post-samādhi state, by repeatedly reflecting on identity with Consciousness, one attains the ever-present samādhi."
+      ai_assisted: false
+      status: published
 
-      - verse: 20
-        devanagari: तदा प्रकाशानन्दसारमहामन्त्रवीर्यात्मकपूर्णाहन्तावेशात् सदा सर्वसर्गसंहारकारिनिजसंविद्देवताचक्रेश्वरताप्राप्तिर्भवतीति शिवम् ॥२०॥
-        slp1: "tadA prakAzAnandasAramahAmantravIryAtmakapUrNAhantAvezAt sadA sarvasargasaMhArakArinijasaMviddevatAcakrezvaratAprAptirBavatIti zivam"
-        iast: "tadā prakāśānanda-sāra-mahā-mantra-vīryātmaka-pūrṇāhantā-veśāt sadā sarva-sarga-saṃhāra-kāri-nija-saṃvid-devatā-cakreśvaratā-prāptir bhavatīti śivam"
-        meter: sūtra
-        word_glosses:
-          - word: तदा
-            iast: tadā
-            gloss_en: then
-            morph: adv.
-          - word: प्रकाश-आनन्द-सार
-            iast: prakāśa-ānanda-sāra
-            gloss_en: whose essence is light and bliss
-            morph: stem in cpd.
-          - word: महा-मन्त्र-वीर्य-आत्मक
-            iast: mahā-mantra-vīrya-ātmaka
-            gloss_en: constituted of the potency of the great mantra (Aham)
-            morph: stem in cpd.
-          - word: पूर्ण-अहन्ता-वेशात्
-            iast: pūrṇa-ahantā-veśāt
-            gloss_en: through entry into the perfect ‘I-ness’
-            morph: abl. sg. m. cpd.
-          - word: सदा सर्व-सर्ग-संहार-कारि
-            iast: sadā sarva-sarga-saṃhāra-kāri
-            gloss_en: ever performing all creation and dissolution
-            morph: stem in cpd.
-          - word: निज-संविद्-देवता-चक्र-ईश्वरता-प्राप्तिः
-            iast: nija-saṃvid-devatā-cakra-īśvaratā-prāptiḥ
-            gloss_en: comes the attainment of lordship over the wheel of one’s own deities of Consciousness
-            morph: nom. sg. f. cpd.
-          - word: भवति
-            iast: bhavati
-            gloss_en: arises
-            morph: 3sg. pres. √bhū
-          - word: इति शिवम्
-            iast: iti śivam
-            gloss_en: thus, all is auspicious
-            morph: phrase
-        translations:
-          - lang: en
-            translator: "public-domain composite"
-            source: "synthesized from PD-era English renderings"
-            license: PD
-            text: "Then, through absorption in the full I-consciousness — whose essence is the bliss of luminous Awareness and whose nature is the potency of the great Mantra — one attains forever the lordship over the wheel of deities of one's own Consciousness, which performs all creation and dissolution. Thus, may there be auspiciousness (śivam)."
-            ai_assisted: false
-            status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সমাধিৰ সংস্কাৰ যুক্ত ব্যুত্থান অৱস্থাত, বাৰে বাৰে চিতৰ সৈতে ঐক্যৰ আমৰ্শৰ দ্বাৰাই নিত্যোদিত সমাধিৰ লাভ হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: সমাধির সংস্কারযুক্ত ব্যুত্থান-অবস্থায় বারংবার চৈতন্য-একতার আমর্শ (পরামর্শ) দ্বারা নিত্যোদিত সমাধির লাভ হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: સમાધિના સંસ્કારવાળા વ્યુત્થાન (વ્યવહારમાં પાછા આવવા) સમયે, ચિત્ સાથેની એકતાના વારંવાર આમર્શ (પ્રતિવિચાર)થી નિત્યોદિત (સદા ઉદય પામતી) સમાધિની પ્રાપ્તિ થાય છે.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: समाधि के संस्कार से युक्त व्युत्थान-दशा में चित् के साथ ऐक्य के बार-बार आमर्शन (विमर्श) से नित्योदित समाधि की प्राप्ति होती है।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಸಮಾಧಿಯ ಸಂಸ್ಕಾರವುಳ್ಳ ವ್ಯುತ್ಥಾನ ಸ್ಥಿತಿಯಲ್ಲಿ (ಸಮಾಧಿಯ ನಂತರದ ಬಾಹ್ಯ ಸ್ಥಿತಿಯಲ್ಲಿ) ಪುನಃಪುನಃ ಚಿತಿಯೊಂದಿಗಿನ ಐಕ್ಯದ ಆಮರ್ಶ (ಚಿಂತನೆ)ದಿಂದ ನಿತ್ಯೋದಿತ ಸಮಾಧಿಯ ಲಾಭ.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: സമാധിയുടെ സംസ്കാരം ശേഷിക്കുന്ന വ്യുത്ഥാനാവസ്ഥയിൽ, ചിത്തോട് ഏകത്വം വീണ്ടും വീണ്ടും ആമർശിക്കുന്നതുമൂലം നിത്യോദിതസമാധി ലഭ്യമാകുന്നു.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: समाधीच्या संस्कारांनी युक्त असलेल्या व्युत्थानामध्ये (समाधीनंतरच्या अवस्थेत), पुन्हा पुन्हा चित्-ऐक्याच्या आमर्शाने (परावर्तनाने), नित्योदित समाधीची प्राप्ती होते.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ସମାଧି-ସଂସ୍କାରଯୁକ୍ତ ବ୍ୟୁତ୍ଥାନ (ସମାଧି-ପରବର୍ତ୍ତୀ ବାହ୍ୟବ୍ୟବହାର) ସମୟରେ ବାରମ୍ବାର ଚିତ୍-ଏକତ୍ୱର ଆମର୍ଶ (ପ୍ରତ୍ୟବେକ୍ଷଣ) ଦ୍ୱାରା ନିତ୍ୟୋଦିତ (ସର୍ବଦାବର୍ତ୍ତମାନ) ସମାଧିର ଲାଭ ହୁଏ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਸਮਾਧੀ ਦੇ ਸੰਸਕਾਰ ਨਾਲ ਯੁਕਤ ਵਿਉਥਾਨ-ਦਸ਼ਾ ਵਿੱਚ ਚਿਤ ਨਾਲ ਏਕਤਾ ਦੇ ਵਾਰ-ਵਾਰ ਆਮਰਸ਼ਨ (ਅੰਤਰ-ਚਿੰਤਨ) ਦੁਆਰਾ ਨਿਤ੍ਯ-ਉਦਿਤ ਸਮਾਧੀ ਦੀ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: சமாதியின் ஸம்ஸ்காரம் தொடரும் வ்யுத்தான நிலையில், மீண்டும் மீண்டும் சித்துடன் ஒன்றுபட்ட உணர்வினால், எப்போதும் உதித்திருக்கும் சமாதியின் லாபம் கைகூடுகிறது.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: సమాధి సంస్కారము గల వ్యుత్థాన (సమాధి అనంతర) స్థితిలో, మరల మరల చిత్‌తో ఏకత్వము యొక్క ఆమర్శనము వలన నిత్యోదిత సమాధి యొక్క లాభము కలుగును.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+  - verse: 20
+    devanagari: तदा प्रकाशानन्दसारमहामन्त्रवीर्यात्मकपूर्णाहन्तावेशात् सदा सर्वसर्गसंहारकारिनिजसंविद्देवताचक्रेश्वरताप्राप्तिर्भवतीति शिवम् ॥२०॥
+    slp1: "tadA prakAzAnandasAramahAmantravIryAtmakapUrNAhantAvezAt sadA sarvasargasaMhArakArinijasaMviddevatAcakrezvaratAprAptirBavatIti zivam"
+    iast: "tadā prakāśānanda-sāra-mahā-mantra-vīryātmaka-pūrṇāhantā-veśāt sadā sarva-sarga-saṃhāra-kāri-nija-saṃvid-devatā-cakreśvaratā-prāptir bhavatīti śivam"
+    meter: sūtra
+    word_glosses:
+    - word: तदा
+      iast: tadā
+      gloss_en: then
+      morph: adv.
+      gloss_as: তেতিয়া
+      gloss_bn: তদা, তখন
+      gloss_gu: ત્યારે
+      gloss_hi: तब
+      gloss_kn: ತದಾ — ಆಗ
+      gloss_ml: തദാ — അപ്പോൾ
+      gloss_mr: तेव्हा
+      gloss_or: ତତ୍ପରେ, ସେତେବେଳେ
+      gloss_pa: ਉਦੋਂ, ਤਦ
+      gloss_ta: அப்போது
+      gloss_te: అప్పుడు
+    - word: प्रकाश-आनन्द-सार
+      iast: prakāśa-ānanda-sāra
+      gloss_en: whose essence is light and bliss
+      morph: stem in cpd.
+      gloss_as: প্ৰকাশ আৰু আনন্দ যাৰ সাৰ
+      gloss_bn: প্রকাশ ও আনন্দ যাঁহার সার
+      gloss_gu: પ્રકાશ અને આનંદ જેનું સાર છે
+      gloss_hi: जिसका सार प्रकाश और आनन्द है
+      gloss_kn: ಪ್ರಕಾಶ-ಆನಂದ-ಸಾರ — ಪ್ರಕಾಶ ಮತ್ತು ಆನಂದವೇ ಸಾರವಾಗಿರುವ
+      gloss_ml: പ്രകാശ-ആനന്ദ-സാര — പ്രകാശവും ആനന്ദവും സാരമായവൻ
+      gloss_mr: ज्याचे सार प्रकाश आणि आनंद आहे
+      gloss_or: ପ୍ରକାଶ ଓ ଆନନ୍ଦ ଯାହାର ସାର
+      gloss_pa: ਜਿਸਦਾ ਸਾਰ ਪ੍ਰਕਾਸ਼ ਅਤੇ ਆਨੰਦ ਹੈ
+      gloss_ta: ப்ரகாசம்-ஆனந்தம் சாரமாகக் கொண்ட
+      gloss_te: ప్రకాశానంద సారము (కాంతి-ఆనందములే సారముగా కలది)
+    - word: महा-मन्त्र-वीर्य-आत्मक
+      iast: mahā-mantra-vīrya-ātmaka
+      gloss_en: constituted of the potency of the great mantra (Aham)
+      morph: stem in cpd.
+      gloss_as: মহামন্ত্ৰৰ (অহম্‌) বীৰ্যৰ স্বৰূপ
+      gloss_bn: মহামন্ত্র (অহম্)-এর বীর্যাত্মক
+      gloss_gu: મહામંત્ર (અહમ્)ના વીર્ય (શક્તિ)રૂપ
+      gloss_hi: महामन्त्र (अहम्) के वीर्य से युक्त
+      gloss_kn: ಮಹಾ-ಮಂತ್ರ-ವೀರ್ಯ-ಆತ್ಮಕ — ಮಹಾಮಂತ್ರದ (ಅಹಂ) ವೀರ್ಯಸ್ವರೂಪವಾದ
+      gloss_ml: മഹാ-മന്ത്ര-വീര്യ-ആത്മക — മഹാമന്ത്രമായ 'അഹം'-ന്റെ വീര്യാത്മകൻ
+      gloss_mr: महामंत्राच्या (अहम्-च्या) वीर्याने युक्त
+      gloss_or: ମହାମନ୍ତ୍ର (ଅହଂ)ର ବୀର୍ଯ୍ୟସ୍ୱରୂପ
+      gloss_pa: ਮਹਾ-ਮੰਤਰ (ਅਹਮ੍) ਦੇ ਵੀਰਯ ਨਾਲ ਬਣਿਆ
+      gloss_ta: மஹாமந்த்ரத்தின் (அஹம்) வீரியத்தை இயல்பாகக் கொண்ட
+      gloss_te: మహామంత్ర వీర్యాత్మకము (మహా మంత్రము 'అహం' యొక్క వీర్యముతో కూడినది)
+    - word: पूर्ण-अहन्ता-वेशात्
+      iast: pūrṇa-ahantā-veśāt
+      gloss_en: through entry into the perfect ‘I-ness’
+      morph: abl. sg. m. cpd.
+      gloss_as: পূৰ্ণ অহন্তাত আৱেশৰ দ্বাৰা
+      gloss_bn: পূর্ণ অহন্তায় আবেশের দ্বারা
+      gloss_gu: પૂર્ણ અહંતા (પૂર્ણ ‘હું’-ભાવ)માં પ્રવેશ થવાથી
+      gloss_hi: पूर्ण अहन्ता में आवेश (प्रवेश) से
+      gloss_kn: ಪೂರ್ಣ-ಅಹಂತಾ-ಆವೇಶಾತ್ — ಪೂರ್ಣ 'ಅಹಂ'ತೆಯ ಆವೇಶದಿಂದ
+      gloss_ml: പൂർണ്ണ-അഹന്താ-വേശാത് — പൂർണ്ണമായ അഹന്തയിലുള്ള ആവേശംമൂലം
+      gloss_mr: पूर्ण अहंतेमध्ये (परिपूर्ण 'मी'-भावात) प्रवेशामुळे
+      gloss_or: ପୂର୍ଣ୍ଣ ଅହନ୍ତାରେ ଆବେଶ ଦ୍ୱାରା
+      gloss_pa: ਪੂਰਨ 'ਅਹੰਤਾ' (ਮੈਂ-ਪਣ) ਵਿੱਚ ਆਵੇਸ਼ ਦੁਆਰਾ
+      gloss_ta: பூரண அஹந்தாவில் (முழு 'நான்'-உணர்வில்) நுழைவதனால்
+      gloss_te: పూర్ణ అహంతా ఆవేశము వలన (పరిపూర్ణ 'నేను'-భావములో ప్రవేశము వలన)
+    - word: सदा सर्व-सर्ग-संहार-कारि
+      iast: sadā sarva-sarga-saṃhāra-kāri
+      gloss_en: ever performing all creation and dissolution
+      morph: stem in cpd.
+      gloss_as: সদায় সকলো সৃষ্টি-সংহাৰ কৰোঁতা
+      gloss_bn: সদা সর্ব সৃষ্টি ও সংহারকারী
+      gloss_gu: સદા સર્વ સર્ગ (સૃષ્ટિ) અને સંહારની ક્રિયા કરતા
+      gloss_hi: सदा समस्त सृष्टि और संहार करने वाले
+      gloss_kn: ಸದಾ ಸರ್ವ-ಸರ್ಗ-ಸಂಹಾರ-ಕಾರಿ — ಸದಾ ಸಮಸ್ತ ಸೃಷ್ಟಿ ಮತ್ತು ಸಂಹಾರವನ್ನು ಮಾಡುತ್ತಿರುವ
+      gloss_ml: സദാ സർവ-സർഗ-സംഹാര-കാരി — സദാ സർവ സൃഷ്ടി-സംഹാരം ചെയ്യുന്ന
+      gloss_mr: सतत सर्व सर्ग (सृष्टी) आणि संहार करणाऱ्या
+      gloss_or: ସର୍ବଦା ସମସ୍ତ ସୃଷ୍ଟି ଓ ସଂହାରକାରୀ
+      gloss_pa: ਸਦਾ ਸਾਰੀ ਸ੍ਰਿਸ਼ਟੀ ਅਤੇ ਸੰਹਾਰ ਕਰਨ ਵਾਲੇ
+      gloss_ta: எப்போதும் அனைத்து ஸ்ருஷ்டி-ஸம்ஹாரத்தையும் செய்யும்
+      gloss_te: నిరంతరము సర్వ సృష్టి-సంహారములను చేయుచున్న
+    - word: निज-संविद्-देवता-चक्र-ईश्वरता-प्राप्तिः
+      iast: nija-saṃvid-devatā-cakra-īśvaratā-prāptiḥ
+      gloss_en: comes the attainment of lordship over the wheel of one’s own deities of Consciousness
+      morph: nom. sg. f. cpd.
+      gloss_as: নিজ সংবিৎ-দেৱতা চক্ৰৰ ঈশ্বৰত্বৰ প্ৰাপ্তি
+      gloss_bn: আপন সংবিদ্-দেবতাচক্রের ঈশ্বরত্বের প্রাপ্তি
+      gloss_gu: પોતાના સંવિદ્-દેવતા-ચક્ર (ચૈતન્યના દેવી-ચક્ર) પર ઈશ્વરતા (અધિપતિત્વ)ની પ્રાપ્તિ
+      gloss_hi: अपने ही संविद्-देवता-चक्र की ईश्वरता (स्वामित्व) की प्राप्ति
+      gloss_kn: ನಿಜ-ಸಂವಿತ್-ದೇವತಾ-ಚಕ್ರ-ಈಶ್ವರತಾ-ಪ್ರಾಪ್ತಿಃ — ತನ್ನದೇ ಸಂವಿತ್ತಿನ ದೇವತಾಚಕ್ರಕ್ಕೆ ಈಶ್ವರತ್ವದ ಪ್ರಾಪ್ತಿ
+      gloss_ml: നിജ-സംവിത്-ദേവതാ-ചക്ര-ഈശ്വരതാ-പ്രാപ്തിഃ — സ്വന്തം സംവിത്-ദേവതാചക്രത്തിന്റെ ഈശ്വരത്വം എന്ന പ്രാപ്തി
+      gloss_mr: स्वतःच्याच संविद्-देवतांच्या चक्रावरील ईश्वरत्वाची प्राप्ती
+      gloss_or: ନିଜ ସଂବିତ୍-ଦେବତାଚକ୍ରର ଈଶ୍ୱରତାର ପ୍ରାପ୍ତି
+      gloss_pa: ਆਪਣੇ ਹੀ ਸੰਵਿਦ੍-ਦੇਵਤਾ-ਚੱਕਰ (ਚੇਤਨਾ ਦੇ ਦੇਵਤਿਆਂ ਦੇ ਚੱਕਰ) ਦੀ ਈਸ਼ਵਰਤਾ ਦੀ ਪ੍ਰਾਪਤੀ
+      gloss_ta: தனது சொந்த ஸம்வித்-தேவதைகளின் சக்கரத்திற்கு ஈஸ்வரத்துவம் என்னும் பேறு
+      gloss_te: తన స్వంత సంవిద్దేవతా చక్రముపై ఈశ్వరత్వ ప్రాప్తి
+    - word: भवति
+      iast: bhavati
+      gloss_en: arises
+      morph: 3sg. pres. √bhū
+      gloss_as: হয়, উদিত হয়
+      gloss_bn: ভবতি, ঘটে
+      gloss_gu: થાય છે
+      gloss_hi: होती है
+      gloss_kn: ಭವತಿ — ಆಗುತ್ತದೆ, ಸಂಭವಿಸುತ್ತದೆ
+      gloss_ml: ഭവതി — സംഭവിക്കുന്നു, ഉണ്ടാകുന്നു
+      gloss_mr: होते
+      gloss_or: ହୁଏ, ଘଟେ
+      gloss_pa: ਹੁੰਦੀ ਹੈ
+      gloss_ta: ஆகின்றது
+      gloss_te: కలుగును
+    - word: इति शिवम्
+      iast: iti śivam
+      gloss_en: thus, all is auspicious
+      morph: phrase
+      gloss_as: এইদৰে শিৱম্‌ — সকলো মঙ্গলময়
+      gloss_bn: ইতি শিবম্ — ইহাই মঙ্গল
+      gloss_gu: એમ શિવ (કલ્યાણ) હો
+      gloss_hi: इति शिवम् — इस प्रकार सर्वत्र मंगल हो
+      gloss_kn: ಇತಿ ಶಿವಂ — ಹೀಗೆ, ಮಂಗಳವಾಗಲಿ
+      gloss_ml: ഇതി ശിവം — ഇപ്രകാരം, എല്ലാം മംഗളം
+      gloss_mr: अशा रीतीने (सर्व) शिवमय (मंगल) आहे
+      gloss_or: ଏହିପରି ଶିବମ୍ (ଶିବମୟ ମଙ୍ଗଳ ହେଉ)
+      gloss_pa: ਇਤਿ ਸ਼ਿਵਮ੍ — ਇਸ ਤਰ੍ਹਾਂ ਸਰਬੱਤ ਮੰਗਲ
+      gloss_ta: இவ்வாறு, சிவம் (மங்களம்)
+      gloss_te: అట్లు, సర్వము శివమగుగాక
+    translations:
+    - lang: en
+      translator: "public-domain composite"
+      source: "synthesized from PD-era English renderings"
+      license: PD
+      text: "Then, through absorption in the full I-consciousness — whose essence is the bliss of luminous Awareness and whose nature is the potency of the great Mantra — one attains forever the lordship over the wheel of deities of one's own Consciousness, which performs all creation and dissolution. Thus, may there be auspiciousness (śivam)."
+      ai_assisted: false
+      status: published
+    - lang: as
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তেতিয়া প্ৰকাশ আৰু আনন্দ যাৰ সাৰ, মহামন্ত্ৰৰ বীৰ্য যাৰ আত্মা, এনে পূৰ্ণ-অহন্তাত আৱেশৰ দ্বাৰাই সদায় সকলো সৃষ্টি-সংহাৰ কৰোঁতা নিজ সংবিৎ-দেৱতা চক্ৰৰ ঈশ্বৰত্বৰ প্ৰাপ্তি হয়। এইদৰে শিৱম্‌ (মঙ্গলময়)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: bn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: তখন প্রকাশ ও আনন্দ যাঁহার সার, মহামন্ত্রের বীর্যস্বরূপ — সেই পূর্ণ অহন্তায় আবেশের দ্বারা, সর্বদা সর্ব সৃষ্টি ও সংহার-কারী আপন সংবিদ্-দেবতাচক্রের ঈশ্বরত্বের প্রাপ্তি ঘটে। ইহাই শিবম্ (পরম মঙ্গল)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: gu
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ત્યારે, પ્રકાશ અને આનંદ જેનું સાર છે, અને જે મહામંત્ર (અહમ્)ના વીર્યરૂપ છે — એવી પૂર્ણ અહંતામાં પ્રવેશ થવાથી, સદા સર્વ સર્ગ-સંહારની ક્રિયા કરતા પોતાના સંવિદ્-દેવતા-ચક્ર પર ઈશ્વરતા (અધિપતિત્વ)ની પ્રાપ્તિ થાય છે. એમ શિવ (કલ્યાણ) હો.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: hi
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: तब प्रकाश और आनन्द जिसका सार है तथा महामन्त्र (अहम्) का वीर्य जिसका स्वरूप है — ऐसी पूर्ण अहन्ता के आवेश से, सदा समस्त सृष्टि-संहार करने वाले अपने ही संविद्-देवता-चक्र की ईश्वरता की प्राप्ति होती है — इति शिवम् (इस प्रकार सर्वत्र मंगल हो)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: kn
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ಆಗ, ಪ್ರಕಾಶ ಮತ್ತು ಆನಂದ ಸಾರವಾದ, ಮಹಾಮಂತ್ರವೀರ್ಯಾತ್ಮಕವಾದ ಪೂರ್ಣ ಅಹಂತೆಯ ಆವೇಶದಿಂದ, ನಿರಂತರವಾಗಿ ಸಮಸ್ತ ಸೃಷ್ಟಿ-ಸಂಹಾರ ಕಾರಿಣಿಗಳಾದ ತನ್ನದೇ ಸಂವಿತ್ತಿನ ದೇವತಾಚಕ್ರಕ್ಕೆ ಈಶ್ವರತ್ವದ ಪ್ರಾಪ್ತಿಯಾಗುತ್ತದೆ. ಹೀಗೆ ಶಿವಂ (ಮಂಗಳವಾಗಲಿ).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ml
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: അപ്പോൾ, പ്രകാശാനന്ദസാരവും മഹാമന്ത്ര(അഹം)വീര്യാത്മകവുമായ പൂർണ്ണ അഹന്തയിൽ ആവേശത്താൽ, എപ്പോഴും സർവസർഗസംഹാരം ചെയ്യുന്ന തന്റെ സംവിത്-ദേവതാചക്രത്തിന്റെ ഈശ്വരത്വം ലഭ്യമാകുന്നു. ഇതാണ് ശിവം (മംഗളം).
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: mr
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: तेव्हा — प्रकाश आणि आनंद हे ज्याचे सार आहे, महामंत्राच्या (अहम्-च्या) वीर्याने युक्त अशा पूर्ण अहंतेमध्ये प्रवेश झाल्यामुळे — सतत सर्व सर्ग आणि संहार करणाऱ्या स्वतःच्याच संविद्-देवतांच्या चक्रावरील ईश्वरत्व प्राप्त होते. अशा रीतीने (सर्व) शिवमय (मंगल) आहे.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: or
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ତତ୍ପରେ ପ୍ରକାଶ ଓ ଆନନ୍ଦସାର, ମହାମନ୍ତ୍ର (ଅହଂ)ର ବୀର୍ଯ୍ୟସ୍ୱରୂପ ପୂର୍ଣ୍ଣ ଅହନ୍ତାରେ ଆବେଶ ଦ୍ୱାରା, ସର୍ବଦା ସମସ୍ତ ସୃଷ୍ଟି ଓ ସଂହାରକାରୀ ନିଜ ସଂବିତ୍-ଦେବତାଚକ୍ରର ଈଶ୍ୱରତା ପ୍ରାପ୍ତ ହୁଏ। ଏହିପରି ଶିବମ୍ (ଶିବମୟ ମଙ୍ଗଳ ହେଉ)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: pa
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: ਉਦੋਂ ਪ੍ਰਕਾਸ਼ ਅਤੇ ਆਨੰਦ ਜਿਸਦਾ ਸਾਰ ਹੈ, ਅਤੇ ਮਹਾ-ਮੰਤਰ (ਅਹਮ੍) ਦਾ ਵੀਰਯ ਜਿਸਦਾ ਸਰੂਪ ਹੈ — ਅਜਿਹੀ ਪੂਰਨ ਅਹੰਤਾ ਦੇ ਆਵੇਸ਼ ਨਾਲ, ਸਦਾ ਸਮੁੱਚੀ ਸ੍ਰਿਸ਼ਟੀ-ਸੰਹਾਰ ਕਰਨ ਵਾਲੇ ਆਪਣੇ ਹੀ ਸੰਵਿਦ੍-ਦੇਵਤਾ-ਚੱਕਰ ਦੀ ਈਸ਼ਵਰਤਾ ਦੀ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ — ਇਤਿ ਸ਼ਿਵਮ੍ (ਇਸ ਤਰ੍ਹਾਂ ਸਰਬੱਤ ਮੰਗਲ ਹੋਵੇ)।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: ta
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: அப்போது, ப்ரகாசம்-ஆனந்தம் சாரமாகவும், மஹாமந்த்ர வீரியத்தை இயல்பாகவும் கொண்ட பூரண அஹந்தாவில் (முழு 'நான்'-உணர்வில்) நுழைவதனால், எப்போதும் எல்லா ஸ்ருஷ்டி-ஸம்ஹாரத்தையும் செய்யும் தனது சொந்த ஸம்வித்-தேவதைகளின் சக்கரத்திற்கு ஈஸ்வரத்துவம் என்னும் பேறு கிட்டுகிறது. இவ்வாறு, சிவம் (மங்களம் உண்டாகட்டும்).
+      ai_assisted: true
+      status: draft
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded
+    - lang: te
+      translator: sohamhamso (claude-opus-4-7)
+      license: CC-BY-SA
+      text: అప్పుడు, ప్రకాశానంద సారమైన, మహామంత్ర వీర్యాత్మకమైన పూర్ణాహంతా ఆవేశము వలన, నిరంతరము సర్వ సర్గ-సంహారములను చేయుచున్న తన స్వంత సంవిద్దేవతా చక్రమునకు ఈశ్వరత్వ ప్రాప్తి కలుగును - అట్లు శివమగుగాక.
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-7
+      prompt_version: v1-sanskrit-grounded

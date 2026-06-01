@@ -224,7 +224,7 @@ export function parseTextYaml(filePath: string): TextYaml {
     const verses = versesRaw.map((v) => {
       const verse_num = typeof v.verse_num === "number" ? v.verse_num : typeof v.verse === "number" ? v.verse : v.verse_num;
       const glossesRaw = Array.isArray(v.word_glosses) ? (v.word_glosses as Record<string, unknown>[]) : [];
-      const word_glosses = glossesRaw.map((g, i) => {
+      const word_glosses = glossesRaw.flatMap((g, i) => {
         // Some YAML files (e.g. Śiva Sūtras) store the surface form in
         // IAST instead of Devanāgarī. The ScriptSwitcher island treats
         // word_sa as the canonical Devanāgarī source for on-page
@@ -237,15 +237,41 @@ export function parseTextYaml(filePath: string): TextYaml {
         const explicitIast = (g.lemma_iast ?? g.iast ?? null) as string | null;
         const lemma_iast =
           explicitIast ?? (rawWord && !isDevanagari(rawWord) ? rawWord : null);
-        return {
-          word_idx: typeof g.word_idx === "number" ? g.word_idx : i,
-          word_sa,
-          lemma_sa: (g.lemma_sa ?? null) as string | null,
-          lemma_iast,
-          gloss_lang: (g.gloss_lang ?? "en") as string,
-          gloss_text: (g.gloss_text ?? g.gloss_en ?? g.gloss ?? "") as string,
-          morph: (g.morph ?? null) as string | null,
-        };
+        const word_idx = typeof g.word_idx === "number" ? g.word_idx : i;
+        const lemma_sa = (g.lemma_sa ?? null) as string | null;
+        const morph = (g.morph ?? null) as string | null;
+
+        // English gloss — backward-compatible via gloss_text / gloss_en / gloss.
+        // If gloss_lang is explicitly set, honour it instead of defaulting to en.
+        const englishText = (g.gloss_text ?? g.gloss_en ?? g.gloss ?? "") as string;
+        const englishLang = (g.gloss_lang ?? "en") as string;
+
+        const out: Array<{
+          word_idx: number;
+          word_sa: string;
+          lemma_sa: string | null;
+          lemma_iast: string | null;
+          gloss_lang: string;
+          gloss_text: string;
+          morph: string | null;
+        }> = [];
+        if (englishText) {
+          out.push({ word_idx, word_sa, lemma_sa, lemma_iast, gloss_lang: englishLang, gloss_text: englishText, morph });
+        }
+
+        // Multi-language extension: pick up any `gloss_{lang}` field with a
+        // 2-letter ISO code (excluding the legacy gloss_en handled above)
+        // and emit an additional row.
+        for (const [key, val] of Object.entries(g)) {
+          const m = /^gloss_([a-z]{2})$/.exec(key);
+          if (!m) continue;
+          const lang = m[1];
+          if (lang === "en") continue; // already handled
+          if (typeof val !== "string" || !val.trim()) continue;
+          out.push({ word_idx, word_sa, lemma_sa, lemma_iast, gloss_lang: lang, gloss_text: val, morph });
+        }
+
+        return out;
       });
       const translationsRaw = Array.isArray(v.translations) ? (v.translations as Record<string, unknown>[]) : [];
       const translations = translationsRaw.map((t) => ({

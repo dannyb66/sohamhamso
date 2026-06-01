@@ -115,6 +115,7 @@ interface Settings {
   theme: "light" | "sepia" | "dark" | "oled";
   defaultLang: string;
   defaultScript: string;
+  readerLang: string;
 }
 
 const DEFAULTS: Settings = {
@@ -125,10 +126,12 @@ const DEFAULTS: Settings = {
   theme: "light",
   defaultLang: "en",
   defaultScript: "devanagari",
+  readerLang: "en",
 };
 
 const STORAGE_KEY = "sohamhamso:settings";
 const LEGACY_THEME_KEY = "sohamhamso:theme";
+const READER_LANG_KEY = "sohamhamso:reader-lang";
 
 // ─── Apply settings to <html> as CSS vars / data-attrs ────────────────
 function applySettings(s: Settings) {
@@ -163,9 +166,14 @@ function loadSettings(): Settings {
   if (typeof localStorage === "undefined") return { ...DEFAULTS };
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { ...DEFAULTS };
-    const parsed = JSON.parse(raw) as Partial<Settings>;
-    return { ...DEFAULTS, ...parsed };
+    const dedicatedReaderLang = localStorage.getItem(READER_LANG_KEY);
+    const base = raw
+      ? { ...DEFAULTS, ...(JSON.parse(raw) as Partial<Settings>) }
+      : { ...DEFAULTS };
+    // The dedicated key takes precedence — it's the source of truth for
+    // ReaderLangSwap; if a user (or test) wrote it directly, honor it.
+    if (dedicatedReaderLang) base.readerLang = dedicatedReaderLang;
+    return base;
   } catch {
     return { ...DEFAULTS };
   }
@@ -174,6 +182,10 @@ function loadSettings(): Settings {
 function saveSettings(s: Settings) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+    // Mirror reader-lang to its own dedicated key so ReaderLangSwap (and
+    // any future island) can read it in isolation without parsing the
+    // whole settings blob.
+    localStorage.setItem(READER_LANG_KEY, s.readerLang);
   } catch {
     /* ignore */
   }
@@ -194,10 +206,21 @@ export default function SettingsSheet() {
   let touchDelta = 0;
 
   const update = (patch: Partial<Settings>) => {
-    const next = { ...settings(), ...patch };
+    const prev = settings();
+    const next = { ...prev, ...patch };
     setSettings(next);
     applySettings(next);
     saveSettings(next);
+    // Reader-language is a special-case: a separate event so any
+    // ReaderLangSwap island on a verse page can do a near-instant
+    // client-side swap of gloss + translation text.
+    if (patch.readerLang !== undefined && patch.readerLang !== prev.readerLang) {
+      document.dispatchEvent(
+        new CustomEvent("sohamhamso:reader-lang-change", {
+          detail: { lang: next.readerLang },
+        }),
+      );
+    }
   };
 
   const openSheet = () => {
@@ -444,6 +467,26 @@ export default function SettingsSheet() {
               value={settings().defaultLang}
               onChange={(e) =>
                 update({ defaultLang: e.currentTarget.value })
+              }
+            >
+              <For each={LANGS}>
+                {(l) => <option value={l.code}>{l.label}</option>}
+              </For>
+            </select>
+          </fieldset>
+
+          {/* Reader language — swaps the WHOLE verse anatomy (glosses +
+              primary translation) into the chosen language on the verse
+              page. English fallback when no content. */}
+          <fieldset class="settings__fs">
+            <legend>
+              <label for="settings-reader-lang">Reader language</label>
+            </legend>
+            <select
+              id="settings-reader-lang"
+              value={settings().readerLang}
+              onChange={(e) =>
+                update({ readerLang: e.currentTarget.value })
               }
             >
               <For each={LANGS}>

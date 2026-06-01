@@ -1,0 +1,154 @@
+{
+  "text_slug": "pratyabhijna-hrdayam",
+  "lang": "or",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "ଚୈତନ୍ୟ, ପରମ ବୋଧ"},
+      {"word_idx": 1, "gloss_text": "ସ୍ୱତନ୍ତ୍ର, ସ୍ୱାଧୀନ, ସ୍ୱାୟତ୍ତ"},
+      {"word_idx": 2, "gloss_text": "ବିଶ୍ୱ, ସମଗ୍ର"},
+      {"word_idx": 3, "gloss_text": "ସିଦ୍ଧି, ଅଭିବ୍ୟକ୍ତି, ପ୍ରତିଷ୍ଠା"},
+      {"word_idx": 4, "gloss_text": "କାରଣ"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "ନିଜ ଇଚ୍ଛାରେ"},
+      {"word_idx": 1, "gloss_text": "ନିଜ ଭିତ୍ତି (ଆତ୍ମରୂପୀ ପଟ) ଉପରେ"},
+      {"word_idx": 2, "gloss_text": "ବିଶ୍ୱକୁ"},
+      {"word_idx": 3, "gloss_text": "ଉନ୍ମୀଳିତ କରେ, ପ୍ରକଟ କରେ"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "ତାହା (ବିଶ୍ୱ)"},
+      {"word_idx": 1, "gloss_text": "ନାନା, ବହୁବିଧ"},
+      {"word_idx": 2, "gloss_text": "ଅନୁରୂପ, ଅନୁକୂଳ"},
+      {"word_idx": 3, "gloss_text": "ଗ୍ରାହ୍ୟ, ଜ୍ଞେୟ ବିଷୟ"},
+      {"word_idx": 4, "gloss_text": "ଗ୍ରାହକ, ଜ୍ଞାତା"},
+      {"word_idx": 5, "gloss_text": "ଭେଦ ହେତୁ"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "ଚିତିର ସଙ୍କୋଚକୁ ସ୍ୱରୂପ ଭାବେ ଧାରଣ କରୁଥିବା"},
+      {"word_idx": 1, "gloss_text": "ଚେତନ, ଜୀବ, ଅନୁଭବକର୍ତ୍ତା"},
+      {"word_idx": 2, "gloss_text": "ମଧ୍ୟ, ସୁଦ୍ଧା"},
+      {"word_idx": 3, "gloss_text": "ସଙ୍କୁଚିତ, ସଂକୁଚିତ"},
+      {"word_idx": 4, "gloss_text": "ବିଶ୍ୱମୟ, ବିଶ୍ୱ-ସ୍ୱରୂପ"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "ଚିତି ସ୍ୱୟଂ"},
+      {"word_idx": 1, "gloss_text": "ହିଁ, ନିଶ୍ଚୟ"},
+      {"word_idx": 2, "gloss_text": "ଚେତନ-ପଦରୁ (ସ୍ୱତନ୍ତ୍ର ଅନୁଭବକର୍ତ୍ତାର ସ୍ତରରୁ)"},
+      {"word_idx": 3, "gloss_text": "ଅବତରଣ କରି, ଅବରୋହଣ କରି"},
+      {"word_idx": 4, "gloss_text": "ଚେତ୍ୟ (ଜ୍ଞେୟ ବିଷୟ)ଦ୍ୱାରା ସଙ୍କୁଚିତ ହେଉଥିବା"},
+      {"word_idx": 5, "gloss_text": "ଚିତ୍ତ (ବ୍ୟକ୍ତିଗତ ମନ) ହୁଏ"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "ସେହି (ଚିତ୍ତ)ମୟ"},
+      {"word_idx": 1, "gloss_text": "ମାୟା-ପ୍ରମାତା (ମାୟାବଦ୍ଧ ଜୀବାତ୍ମା)"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "ସେ (ଅନୁଭବକର୍ତ୍ତା)"},
+      {"word_idx": 1, "gloss_text": "ଏବଂ"},
+      {"word_idx": 2, "gloss_text": "ଏକ (ସ୍ୱରୂପତଃ)"},
+      {"word_idx": 3, "gloss_text": "ଦୁଇ ରୂପର (ଶିବ-ଶକ୍ତି)"},
+      {"word_idx": 4, "gloss_text": "ତିନି ମୟ (ଆଣବ/ଶାକ୍ତ/ଶାମ୍ଭବ ବା ତିନି ମଳ)"},
+      {"word_idx": 5, "gloss_text": "ଚାରି ଆତ୍ମା (ଚାରି ଚୈତନ୍ୟାବସ୍ଥା)"},
+      {"word_idx": 6, "gloss_text": "ସପ୍ତ-ପଞ୍ଚକ (ସାତ ପଞ୍ଚକ)"},
+      {"word_idx": 7, "gloss_text": "ସ୍ୱଭାବ ସମ୍ପନ୍ନ"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ସେହି (ଏକ ଚୈତନ୍ୟ)ର ଭୂମିକା/ସ୍ତର"},
+      {"word_idx": 1, "gloss_text": "ସମସ୍ତ"},
+      {"word_idx": 2, "gloss_text": "ଦର୍ଶନ, ଦାର୍ଶନିକ ମତ"},
+      {"word_idx": 3, "gloss_text": "ସ୍ଥିତିଗୁଡ଼ିକ, ସ୍ୱୀକୃତିଗୁଡ଼ିକ"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "ଚିତ୍-ସ୍ୱରୂପ ହୋଇ ମଧ୍ୟ"},
+      {"word_idx": 1, "gloss_text": "ନିଜ ଶକ୍ତିର ସଙ୍କୋଚ ଯୋଗୁଁ"},
+      {"word_idx": 2, "gloss_text": "ମଳ ଦ୍ୱାରା ଆଚ୍ଛାଦିତ"},
+      {"word_idx": 3, "gloss_text": "ସଂସାରୀ (ଜନ୍ମ-ମରଣଚକ୍ରବର୍ତ୍ତୀ) ହୁଏ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "ତଥାପି, ସତ୍ତ୍ୱେ"},
+      {"word_idx": 1, "gloss_text": "ତାଙ୍କ (ଶିବ) ଭଳି"},
+      {"word_idx": 2, "gloss_text": "ପଞ୍ଚକୃତ୍ୟ (ସୃଷ୍ଟି, ସ୍ଥିତି, ସଂହାର, ତିରୋଧାନ, ଅନୁଗ୍ରହ)"},
+      {"word_idx": 3, "gloss_text": "କରେ"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "ଆଭାସନ (ପ୍ରକଟନ = ସୃଷ୍ଟି)"},
+      {"word_idx": 1, "gloss_text": "ରକ୍ତି (ଆସ୍ୱାଦନ = ସ୍ଥିତି)"},
+      {"word_idx": 2, "gloss_text": "ବିମର୍ଶନ (ପ୍ରତ୍ୟବେକ୍ଷଣ = ସଂହାର)"},
+      {"word_idx": 3, "gloss_text": "ବୀଜରୂପେ ସ୍ଥାପନ (= ତିରୋଧାନ)"},
+      {"word_idx": 4, "gloss_text": "ଓ ବିଳାପନ (ଲୟ = ଅନୁଗ୍ରହ) — ଏଗୁଡ଼ିକଦ୍ୱାରା"},
+      {"word_idx": 5, "gloss_text": "ସେହି ପଞ୍ଚକୃତ୍ୟ (ସମ୍ପନ୍ନ ହୁଏ)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "ସେହି (ସ୍ୱରୂପ)ର ଅପରିଜ୍ଞାନ ହେଲେ"},
+      {"word_idx": 1, "gloss_text": "ନିଜ ଶକ୍ତିଗୁଡ଼ିକ ଦ୍ୱାରା"},
+      {"word_idx": 2, "gloss_text": "ବ୍ୟାମୋହିତ ହେବାର ସ୍ଥିତି"},
+      {"word_idx": 3, "gloss_text": "ସଂସାରିତ୍ୱ (ଜନ୍ମ-ମରଣଚକ୍ରର ବନ୍ଧନ)"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "ସେହି ସ୍ୱରୂପର ପୂର୍ଣ୍ଣ ପରିଜ୍ଞାନ ହେଲେ"},
+      {"word_idx": 1, "gloss_text": "ଚିତ୍ତ (ସୀମିତ ମନ)"},
+      {"word_idx": 2, "gloss_text": "ସ୍ୱୟଂ, ହିଁ"},
+      {"word_idx": 3, "gloss_text": "ଅନ୍ତର୍ମୁଖୀ ହେବା ଦ୍ୱାରା"},
+      {"word_idx": 4, "gloss_text": "ଚେତନ-ପଦରେ ଆରୋହଣ ଦ୍ୱାରା"},
+      {"word_idx": 5, "gloss_text": "ଚିତି (ସର୍ବବ୍ୟାପୀ ଚୈତନ୍ୟ) ହୋଇଯାଏ"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "ଚିତି-ବହ୍ନି, ଚୈତନ୍ୟରୂପୀ ଅଗ୍ନି"},
+      {"word_idx": 1, "gloss_text": "ଅବରୋହ-ପଦରେ (ବଦ୍ଧାବସ୍ଥାରେ)"},
+      {"word_idx": 2, "gloss_text": "ଆଚ୍ଛାଦିତ ହୋଇ ମଧ୍ୟ"},
+      {"word_idx": 3, "gloss_text": "ସୁଦ୍ଧା, ତଥାପି"},
+      {"word_idx": 4, "gloss_text": "ଅଂଶତଃ, ଆଂଶିକ ଭାବେ"},
+      {"word_idx": 5, "gloss_text": "ମେୟ-ଇନ୍ଧନ (ଜ୍ଞେୟ-ବିଷୟରୂପୀ କାଷ୍ଠ)କୁ"},
+      {"word_idx": 6, "gloss_text": "ଦଗ୍ଧ କରେ, ଭସ୍ମ କରେ"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "ବଳ-ଲାଭ ହେଲେ (ଚିତିଶକ୍ତି ପ୍ରାପ୍ତ ହେଲେ)"},
+      {"word_idx": 1, "gloss_text": "ବିଶ୍ୱକୁ"},
+      {"word_idx": 2, "gloss_text": "ଆତ୍ମସାତ୍, ନିଜର ବୋଲି"},
+      {"word_idx": 3, "gloss_text": "କରେ"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "ଚିଦାନନ୍ଦର ଲାଭ ହେଲେ"},
+      {"word_idx": 1, "gloss_text": "ଦେହ ଆଦି (ଶରୀର ଓ ଅନ୍ୟାନ୍ୟ ବିଷୟ)ରେ"},
+      {"word_idx": 2, "gloss_text": "ଚେତ୍ୟ (ଜ୍ଞେୟ) ରୂପେ ପ୍ରତୀତ ହେଉଥିଲେ"},
+      {"word_idx": 3, "gloss_text": "ସୁଦ୍ଧା, ମଧ୍ୟ"},
+      {"word_idx": 4, "gloss_text": "ଚିତ୍-ସହିତ ଏକାତ୍ମ୍ୟର ଦୃଢ଼ ପ୍ରତିପତ୍ତି"},
+      {"word_idx": 5, "gloss_text": "ଜୀବନ୍ମୁକ୍ତି (ଜୀବନକାଳରେ ମୁକ୍ତି) ଅଟେ"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "ମଧ୍ୟ (ମଧ୍ୟନାଡ଼ୀ/ସୁଷୁମ୍ନା)ର ବିକାଶରୁ"},
+      {"word_idx": 1, "gloss_text": "ଚିଦାନନ୍ଦର ଲାଭ"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "ବିକଳ୍ପ-କ୍ଷୟ (ସଂକଳ୍ପର ଲୟ)"},
+      {"word_idx": 1, "gloss_text": "ଶକ୍ତିର ସଙ୍କୋଚ ଓ ବିକାଶ"},
+      {"word_idx": 2, "gloss_text": "ବାହ-ଚ୍ଛେଦ (ପ୍ରାଣ-ଅପାନ ପ୍ରବାହର ବିଚ୍ଛେଦ)"},
+      {"word_idx": 3, "gloss_text": "ଇତ୍ୟାଦି"},
+      {"word_idx": 4, "gloss_text": "ଆଦି ଓ ଅନ୍ତ କୋଟି (ଆରମ୍ଭ ଓ ଶେଷ ବିନ୍ଦୁ)ର ନିଭାଳନ (ଧ୍ୟାନପୂର୍ବକ ପର୍ଯ୍ୟବେକ୍ଷଣ)"},
+      {"word_idx": 5, "gloss_text": "ଆଦି (ଏବଂ ସମାନ ଅନ୍ୟ)"},
+      {"word_idx": 6, "gloss_text": "ଏଠାରେ (ଏହି ଶିକ୍ଷାରେ)"},
+      {"word_idx": 7, "gloss_text": "ଉପାୟଗୁଡ଼ିକ"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ସମାଧି-ସଂସ୍କାରଯୁକ୍ତ (ସମାଧିର ସଂସ୍କାର ବହନ କରୁଥିବା)"},
+      {"word_idx": 1, "gloss_text": "ବ୍ୟୁତ୍ଥାନ (ସମାଧି-ପରବର୍ତ୍ତୀ ବାହ୍ୟବ୍ୟବହାର) ସମୟରେ"},
+      {"word_idx": 2, "gloss_text": "ବାରମ୍ବାର, ଅନେକ ଥର"},
+      {"word_idx": 3, "gloss_text": "ଚିତ୍-ଏକତ୍ୱର ଆମର୍ଶ (ପ୍ରତ୍ୟବେକ୍ଷଣ) ଦ୍ୱାରା"},
+      {"word_idx": 4, "gloss_text": "ନିତ୍ୟୋଦିତ (ସର୍ବଦାବର୍ତ୍ତମାନ) ସମାଧିର ଲାଭ"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "ତତ୍ପରେ, ସେତେବେଳେ"},
+      {"word_idx": 1, "gloss_text": "ପ୍ରକାଶ ଓ ଆନନ୍ଦ ଯାହାର ସାର"},
+      {"word_idx": 2, "gloss_text": "ମହାମନ୍ତ୍ର (ଅହଂ)ର ବୀର୍ଯ୍ୟସ୍ୱରୂପ"},
+      {"word_idx": 3, "gloss_text": "ପୂର୍ଣ୍ଣ ଅହନ୍ତାରେ ଆବେଶ ଦ୍ୱାରା"},
+      {"word_idx": 4, "gloss_text": "ସର୍ବଦା ସମସ୍ତ ସୃଷ୍ଟି ଓ ସଂହାରକାରୀ"},
+      {"word_idx": 5, "gloss_text": "ନିଜ ସଂବିତ୍-ଦେବତାଚକ୍ରର ଈଶ୍ୱରତାର ପ୍ରାପ୍ତି"},
+      {"word_idx": 6, "gloss_text": "ହୁଏ, ଘଟେ"},
+      {"word_idx": 7, "gloss_text": "ଏହିପରି ଶିବମ୍ (ଶିବମୟ ମଙ୍ଗଳ ହେଉ)"}
+    ]
+  }
+}
