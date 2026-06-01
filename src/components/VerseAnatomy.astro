@@ -35,6 +35,44 @@ const verseLabel =
 // Pick the primary translation (first one in the list — db.ts orders
 // `ai_assisted ASC, created_at ASC` so PD/human translations land first).
 const primaryTranslation = translations[0] ?? null;
+
+// Break Sanskrit verses on the half-verse danda (Devanāgarī ।, ॥; IAST | , || ).
+// Vedabase / SuttaCentral convention: each pāda-pair on its own line.
+// The verse-number bracket ॥N॥ / ||N|| stays attached to its preceding pāda
+// (it marks the end of the verse). Paired with `white-space: pre-line` in
+// CSS below.
+function formatDanda(s: string | null | undefined): string {
+  if (!s) return "";
+  // Protect verse-number brackets so the internal dandas don't get split.
+  // Devanāgarī forms: ॥४९॥, ॥ ४९ ॥. IAST forms: ||49||, || 49 ||.
+  const protected_: string[] = [];
+  let work = s
+    .replace(/॥\s*([\d०-९]+)\s*॥/g, (_m, n) => {
+      protected_.push(`॥${n}॥`);
+      return `${protected_.length - 1}`;
+    })
+    .replace(/\|\|\s*(\d+)\s*\|\|/g, (_m, n) => {
+      protected_.push(`||${n}||`);
+      return `${protected_.length - 1}`;
+    });
+
+  work = work
+    // Newline after Devanāgarī dandas
+    .replace(/॥/g, "॥\n")
+    .replace(/।/g, "।\n")
+    // Newline after IAST dandas — || before single |
+    .replace(/\|\|/g, "||\n")
+    .replace(/(^|[^|])\|(?!\|)/g, "$1|\n");
+
+  // Restore the protected verse-number brackets
+  work = work.replace(/(\d+)/g, (_m, i) => protected_[Number(i)]);
+
+  // Collapse multiple newlines + trim
+  return work.replace(/[ \t]*\n[ \t]*/g, "\n").replace(/\n+/g, "\n").trim();
+}
+
+const devanagariFormatted = formatDanda(verse.devanagari);
+const iastFormatted = formatDanda(verse.iast);
 ---
 
 <article class="verse-anatomy" data-verse-id={verse.id}>
@@ -51,13 +89,13 @@ const primaryTranslation = translations[0] ?? null;
     class="verse-devanagari"
     lang="sa"
     data-sa
-    data-sa-source={verse.devanagari}
+    data-sa-source={devanagariFormatted}
   >
-    {verse.devanagari}
+    {devanagariFormatted}
   </div>
 
   {verse.iast ? (
-    <div class="verse-iast" lang="sa-Latn">{verse.iast}</div>
+    <div class="verse-iast" lang="sa-Latn">{iastFormatted}</div>
   ) : null}
 
   {verse.meter ? (
@@ -175,6 +213,8 @@ const primaryTranslation = translations[0] ?? null;
     line-height: 1.75;
     color: var(--color-ink);
     max-width: var(--width-reader);
+    /* Preserve danda line breaks injected by formatDanda(). Each pāda-pair on its own line. */
+    white-space: pre-line;
   }
   @media (min-width: 1024px) {
     .verse-devanagari {
@@ -189,6 +229,8 @@ const primaryTranslation = translations[0] ?? null;
     color: var(--color-ink-muted);
     line-height: 1.5;
     max-width: var(--width-reader);
+    /* Match the Devanāgarī line-break behaviour. */
+    white-space: pre-line;
   }
   @media (min-width: 1024px) {
     .verse-iast {
