@@ -1,0 +1,138 @@
+---
+/**
+ * /donate — non-profit donation page.
+ *
+ * Honest about what funds do and what stage the project is at. No
+ * impact metrics we can't substantiate. Payment links are placeholders
+ * until accounts are set up.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Masthead from "../components/Masthead.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Donate — sohamhamso"
+  description="sohamhamso is a non-profit project. Donations fund corpus expansion, human reviewer compensation, source permissions, and hosting."
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Donate</h1>
+      <p class="lede">
+        sohamhamso is a non-profit project. The reader, the dataset, and
+        the pipeline are free to use and free to redistribute under
+        CC-BY-SA 4.0. Donations keep the work moving and stay inside the
+        work — they do not produce shareholder returns and there are no
+        shareholders.
+      </p>
+
+      <h2 id="use-of-funds">Use of funds</h2>
+      <p>
+        We will publish a brief annual statement once there are funds to
+        account for. The intended allocation, in rough priority:
+      </p>
+      <ol>
+        <li>
+          <strong>Corpus expansion.</strong> Ingesting more texts:
+          paying for OCR cleanup, manuscript photography access, and
+          structural conversion to our verse-anatomy schema.
+        </li>
+        <li>
+          <strong>Human reviewer compensation.</strong> Sanskrit
+          scholars accepting AI-drafted translations into the
+          <em>reviewed</em> tier (per the
+          <a href="/about/methodology#llm-judge">methodology</a>).
+          Reviewers are paid; this is not volunteer scholarship.
+        </li>
+        <li>
+          <strong>Source permissions.</strong> Negotiating written
+          redistribution agreements — most immediately with the
+          <a href="https://muktabodha.org/">Muktabodha Indological Research
+          Institute</a> — so more of the corpus can be included in the
+          dataset bundle rather than served reader-only.
+        </li>
+        <li>
+          <strong>Hosting and infrastructure.</strong> Edge hosting,
+          database replication, model inference for the translation
+          pipeline.
+        </li>
+        <li>
+          <strong>Deferred — audio commissioning (V2).</strong> Recording
+          recitations by trained reciters. Not in scope for V1, listed
+          here for transparency.
+        </li>
+      </ol>
+
+      <h2 id="how-to-give">How to give</h2>
+      <p>
+        We are still setting these up. Links will land here as accounts
+        open; the page is honest about its placeholder state rather than
+        promising channels that do not yet exist.
+      </p>
+      <ul>
+        <li><strong>GitHub Sponsors</strong> — <em>account pending</em></li>
+        <li><strong>Open Collective</strong> — <em>account pending</em></li>
+        <li><strong>Direct (Stripe / PayPal)</strong> — <em>TBD</em></li>
+      </ul>
+      <p>
+        In the meantime, the most useful contribution is non-monetary:
+        file issues on
+        <a href="https://github.com/sohamhamso/sohamhamso/issues">GitHub</a>,
+        flag translation errors, or — if you read Sanskrit and would
+        like to review — say so in the
+        <a href="https://github.com/sohamhamso/sohamhamso/discussions">discussions</a>.
+      </p>
+
+      <h2 id="honest-notes">Honest notes</h2>
+      <ul>
+        <li>The project is early. There are no impact metrics yet because there is no impact yet to measure honestly.</li>
+        <li>We are not (yet) a registered 501(c)(3) or equivalent. Donations are not currently tax-deductible. This page will be updated when status changes.</li>
+        <li>Funds will be administered transparently; a public ledger is on the V1.x roadmap.</li>
+      </ul>
+
+      <p class="provenance">
+        Last revised: 2026-05-31.
+      </p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article p, article ul, article ol {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article ul, article ol { padding-left: 1.25rem; }
+  article li { margin-bottom: var(--spacing-2); }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>

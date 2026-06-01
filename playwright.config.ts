@@ -18,7 +18,9 @@ export default defineConfig({
     },
     {
       name: 'mobile-iphone-13',
-      use: { ...devices['iPhone 13'] },
+      // iPhone 13 device descriptor defaults to webkit; pin to chromium so
+      // CI doesn't require a second browser download. Viewport + UA preserved.
+      use: { ...devices['iPhone 13'], browserName: 'chromium' },
     },
   ],
   webServer: {

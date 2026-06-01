@@ -1,4 +1,7 @@
 ---
+import SettingsSheet from "../components/SettingsSheet.solid.tsx";
+import SearchBox from "../components/SearchBox.solid.tsx";
+
 interface Props {
   title?: string;
   description?: string;
@@ -37,6 +40,14 @@ const {
 </head>
 <body>
   <slot />
+  <!--
+    Global islands: SettingsSheet listens for `sohamhamso:open-settings`
+    (dispatched by [Aa] chrome buttons) and SearchBox intercepts the
+    Masthead's `[data-search-trigger]` clicks + ⌘K/Ctrl-K in capture phase
+    so it supersedes the V1 placeholder dialog when present.
+  -->
+  <SettingsSheet client:idle />
+  <SearchBox client:idle />
 </body>
 </html>
 

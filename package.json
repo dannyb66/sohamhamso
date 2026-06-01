@@ -30,12 +30,13 @@
     "better-sqlite3": "^11.5.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/js-yaml": "^4.0.9",
-    "@types/better-sqlite3": "^7.6.11",
-    "typescript": "^5.6.0",
-    "vitest": "^2.0.0",
+    "@axe-core/playwright": "^4.11.3",
+    "@biomejs/biome": "^1.9.0",
     "@playwright/test": "^1.48.0",
-    "@biomejs/biome": "^1.9.0"
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
   }
 }

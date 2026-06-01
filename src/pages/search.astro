@@ -1,0 +1,277 @@
+---
+/**
+ * /search?q=... — full search results page.
+ *
+ * Server-side runs `blendedSearch` (B2) if available. If B2 hasn't
+ * landed, renders a friendly placeholder so the route still works.
+ *
+ * SSR note: Astro is `output: 'static'`. This page renders at request
+ * time only when an adapter is wired up; under pure static export it
+ * will be prerendered with an empty query and the client should rely on
+ * the SearchBox overlay instead. We opt-out of prerender so once an
+ * adapter lands the page just works.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Masthead from "../components/Masthead.astro";
+
+export const prerender = false;
+
+interface VerseHit {
+  text_id: string;
+  text_slug: string;
+  text_title: string;
+  tradition: string;
+  chapter: number;
+  verse_num: number;
+  devanagari: string;
+  iast: string | null;
+  translation_excerpt: string | null;
+  score?: number;
+}
+
+const qRaw = (Astro.url.searchParams.get("q") ?? "").trim();
+const q = qRaw.slice(0, 500);
+const lang = (Astro.url.searchParams.get("lang") ?? "en").toLowerCase();
+const limit = 50;
+
+// Try the B2 helper. If absent, fall back to a placeholder render so
+// B9/B10 is shippable independently.
+let results: VerseHit[] = [];
+let stub = false;
+let took_ms = 0;
+let searchError: string | null = null;
+
+if (q) {
+  const t0 = performance.now();
+  try {
+    // @ts-expect-error — module may not exist until B2 lands.
+    const lib = await import("../lib/search.ts").catch(() => null);
+    if (lib && typeof lib.blendedSearch === "function") {
+      const out = await lib.blendedSearch(q, lang, limit);
+      results = Array.isArray(out) ? out : [];
+    } else {
+      stub = true;
+    }
+  } catch (e) {
+    searchError = (e as Error)?.message ?? "Search failed.";
+  }
+  took_ms = Math.round(performance.now() - t0);
+}
+
+const verseHref = (h: VerseHit) =>
+  `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
+const verseLabel = (h: VerseHit) =>
+  `${h.text_title} ${h.chapter}.${h.verse_num}`;
+
+const title = q
+  ? `Search: ${q} — sohamhamso`
+  : "Search — sohamhamso";
+---
+
+<BaseLayout title={title} description={`Search results for "${q}"`}>
+  <Masthead />
+
+  <main class="search-page" id="main">
+    <header class="search-page__head">
+      <h1 class="search-page__title">
+        {q ? (
+          <>
+            Search results for <span class="search-page__q">“{q}”</span>
+          </>
+        ) : (
+          "Search"
+        )}
+      </h1>
+      {q && !stub && !searchError ? (
+        <p class="search-page__meta">
+          {results.length} {results.length === 1 ? "result" : "results"}
+          {took_ms ? ` · ${took_ms}ms` : ""}
+        </p>
+      ) : null}
+    </header>
+
+    {!q ? (
+      <section class="search-page__empty">
+        <p>
+          Use the magnifier in the top-right (or press <kbd>⌘</kbd>+<kbd>K</kbd>)
+          to search verses, lemmas, and translations across the entire
+          corpus. Try queries like <em>pratyabhijñā</em>,
+          <em> wherever the mind goes</em>, or <em>कृष्ण</em>.
+        </p>
+      </section>
+    ) : stub ? (
+      <section class="search-page__stub">
+        <p>
+          Semantic search arrives in V1.1. For now, try a verse permalink
+          directly — e.g.{" "}
+          <a href="/trika/siva-sutras/1/1">/trika/siva-sutras/1/1</a> — or
+          <a href="/texts"> browse all texts</a>.
+        </p>
+      </section>
+    ) : searchError ? (
+      <section class="search-page__err" role="alert">
+        <p>Search failed: {searchError}</p>
+        <p>
+          Try a simpler query or <a href="/texts">browse all texts</a>.
+        </p>
+      </section>
+    ) : results.length === 0 ? (
+      <section class="search-page__none">
+        <p>
+          No verses matched <em>“{q}”</em>. Try <code>kṛṣṇa</code> instead
+          of <code>krishna</code> — or
+          <a href="/texts"> browse all texts →</a>
+        </p>
+      </section>
+    ) : (
+      <ol class="search-page__list">
+        {results.map((h) => (
+          <li class="search-page__item">
+            <a class="search-page__link" href={verseHref(h)}>
+              <div class="search-page__crumb">{verseLabel(h)}</div>
+              <div class="search-page__sa" lang="sa" data-sa data-sa-source={h.devanagari}>
+                {h.devanagari}
+              </div>
+              {h.iast ? (
+                <div class="search-page__iast" lang="sa-Latn">{h.iast}</div>
+              ) : null}
+              {h.translation_excerpt ? (
+                <p class="search-page__en">{h.translation_excerpt}</p>
+              ) : null}
+            </a>
+          </li>
+        ))}
+      </ol>
+    )}
+
+    {q && !stub && results.length >= limit ? (
+      <footer class="search-page__pagination">
+        <a
+          class="search-page__more"
+          href={`/search?q=${encodeURIComponent(q)}&limit=${limit + 50}`}
+        >
+          More results →
+        </a>
+      </footer>
+    ) : null}
+  </main>
+</BaseLayout>
+
+<style>
+  .search-page {
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: var(--spacing-6) var(--spacing-4) var(--spacing-9);
+  }
+  .search-page__head {
+    display: grid;
+    gap: var(--spacing-2);
+    padding-block-end: var(--spacing-5);
+    border-block-end: 1px solid var(--color-rule);
+    margin-block-end: var(--spacing-5);
+  }
+  .search-page__title {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--color-ink);
+    line-height: 1.3;
+  }
+  .search-page__q {
+    font-style: italic;
+    color: var(--color-accent);
+  }
+  .search-page__meta {
+    margin: 0;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-muted);
+  }
+  .search-page__empty,
+  .search-page__stub,
+  .search-page__none,
+  .search-page__err {
+    padding: var(--spacing-5);
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    border-radius: 6px;
+    font-family: var(--font-iast);
+    font-size: var(--text-base);
+    color: var(--color-ink);
+    line-height: 1.6;
+  }
+  .search-page__err { border-color: var(--color-error); }
+  .search-page__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+  }
+  .search-page__item {
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .search-page__link {
+    display: grid;
+    gap: var(--spacing-2);
+    padding-block: var(--spacing-4);
+    color: inherit;
+    text-decoration: none;
+  }
+  .search-page__link:hover {
+    background: var(--color-surface);
+  }
+  .search-page__link:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+  .search-page__crumb {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-muted);
+  }
+  .search-page__sa {
+    font-family: var(--font-sa-body);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+  .search-page__iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    max-width: var(--width-reader);
+  }
+  .search-page__en {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-base);
+    line-height: 1.55;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+  .search-page__pagination {
+    padding-block-start: var(--spacing-5);
+    display: flex;
+    justify-content: center;
+  }
+  .search-page__more {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: var(--spacing-2) var(--spacing-4);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+  }
+  .search-page__more:hover {
+    border-color: var(--color-accent);
+  }
+</style>

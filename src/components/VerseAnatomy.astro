@@ -77,7 +77,7 @@ const primaryTranslation = translations[0] ?? null;
             data-sa-source={g.word_sa}
             lang="sa"
           >
-            {g.word_sa}
+            <em>{g.lemma_iast || g.word_sa}</em>
           </button>
           <span class="sa-gloss"> — {g.gloss_text}</span>
           {i < wordGlosses.length - 1 ? (
@@ -222,12 +222,15 @@ const primaryTranslation = translations[0] ?? null;
     padding: 0 2px;
     margin: 0;
     cursor: pointer;
-    font-family: var(--font-sa-body);
+    font-family: var(--font-iast);
     font-size: 0.9375rem;
     color: var(--color-ink);
     text-decoration: underline dotted var(--color-rule);
     text-underline-offset: 3px;
     transition: text-decoration-color var(--motion-fast) var(--easing-out);
+  }
+  .sa-word em {
+    font-style: italic;
   }
   .sa-word:hover,
   .sa-word:focus-visible {

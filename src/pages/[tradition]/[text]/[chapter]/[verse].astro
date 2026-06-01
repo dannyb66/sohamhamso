@@ -12,7 +12,8 @@ import VerseAnatomy from "../../../../components/VerseAnatomy.astro";
 import AIAssistedBadge from "../../../../components/AIAssistedBadge.astro";
 import ScriptSwitcher from "../../../../components/ScriptSwitcher.solid";
 import WordSheet from "../../../../components/WordSheet.solid";
-import { listTexts, listAllVerses, getVerse } from "../../../../lib/db";
+import TranslationDrawer from "../../../../components/TranslationDrawer.solid";
+import { listTexts, listAllVerses, getVerse, getVerseTranslations } from "../../../../lib/db";
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -74,6 +75,20 @@ const glossesPayload = {
     morph: g.morph,
   })),
 };
+
+// All translations across every language for the TranslationDrawer.
+// Drawer renders chips for the locked 11 langs and surfaces an honest
+// "Not yet translated to {Lang}" empty state for missing ones.
+const allTranslations = getVerseTranslations(verseRow.id);
+const translationsPayload = allTranslations.map((t) => ({
+  lang: t.lang,
+  translator: t.translator,
+  translation_text: t.translation_text,
+  judge_score: t.judge_score,
+  ai_assisted: t.ai_assisted,
+  status: t.status,
+  model: t.model,
+}));
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -161,8 +176,10 @@ const glossesPayload = {
   </main>
 
   <WordSheet client:idle />
+  <TranslationDrawer client:idle />
 
   <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
+  <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
 </BaseLayout>
 
 <style>

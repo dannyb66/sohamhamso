@@ -1,0 +1,157 @@
+---
+/**
+ * /cite — citation formats for the dataset and per-text translations.
+ *
+ * Regenerated each release. Until the first Zenodo deposit lands, the
+ * DOI is a placeholder and per-text examples are illustrative.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Masthead from "../components/Masthead.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Cite — sohamhamso"
+  description="How to cite the sohamhamso dataset and individual texts: BibTeX, Chicago, MLA, and per-text examples."
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Cite</h1>
+      <p class="lede">
+        Citation strings for the dataset bundle and, once the first
+        human-reviewed texts ship, per-text examples. This page is
+        regenerated on each tagged release; the DOI below is a
+        placeholder until the first Zenodo deposit lands.
+      </p>
+
+      <h2 id="dataset-bibtex">Dataset — BibTeX</h2>
+      <pre><code>@dataset{`{`}sohamhamso_vYYYY_MM_DD,
+  author    = {`{`}sohamhamso contributors{`}`},
+  title     = {`{`}sohamhamso: Tantric Sanskrit canon dataset{`}`},
+  year      = {`{`}YYYY{`}`},
+  version   = {`{`}vYYYY.MM.DD{`}`},
+  doi       = {`{`}10.5281/zenodo.PLACEHOLDER{`}`},
+  publisher = {`{`}Zenodo{`}`},
+  url       = {`{`}https://doi.org/10.5281/zenodo.PLACEHOLDER{`}`},
+  license   = {`{`}CC-BY-SA-4.0{`}`}
+{`}`}</code></pre>
+
+      <h2 id="dataset-chicago">Dataset — Chicago (author-date)</h2>
+      <pre><code>sohamhamso contributors. YYYY. "sohamhamso: Tantric Sanskrit Canon
+Dataset (vYYYY.MM.DD)." Zenodo. https://doi.org/10.5281/zenodo.PLACEHOLDER.</code></pre>
+
+      <h2 id="dataset-mla">Dataset — MLA</h2>
+      <pre><code>sohamhamso contributors. "sohamhamso: Tantric Sanskrit Canon Dataset."
+Version vYYYY.MM.DD, Zenodo, YYYY, doi:10.5281/zenodo.PLACEHOLDER.</code></pre>
+
+      <h2 id="per-text">Per-text citations</h2>
+      <p>
+        Per-text citations name the source revision (which upstream
+        edition we ingested), the dataset release version, and — for
+        translations — the translation status. The examples below are
+        illustrative; real per-text entries appear here once the first
+        human-reviewed translations land in V1.x.
+      </p>
+
+      <h3 id="example-verse">Citing a single verse</h3>
+      <pre><code>Śiva Sūtras 1.1. Sanskrit text from GRETIL (revision: 2024-08-15).
+English translation: AI-generated, sohamhamso dataset vYYYY.MM.DD,
+LLM-judge score 8/10. CC-BY-SA 4.0.
+https://sohamhamso.org/trika/siva-sutras/1.1</code></pre>
+
+      <h3 id="example-reviewed">Citing a human-reviewed translation</h3>
+      <pre><code>Vijñāna Bhairava Tantra 1.47. Sanskrit text from GRETIL (revision:
+2024-08-15). English translation: AI-drafted, human-reviewed by
+[Reviewer Name], sohamhamso dataset vYYYY.MM.DD. CC-BY-SA 4.0.
+https://sohamhamso.org/tantric/vijnana-bhairava/1.47</code></pre>
+
+      <h2 id="upstream">Upstream sources</h2>
+      <p>
+        When citing sohamhamso, please also credit the relevant upstream
+        Sanskrit source — GRETIL, Muktabodha, sanskritdocuments.org,
+        Wikisource, or SARIT — as listed on the
+        <a href="/about/sources">Sources</a> page. Each text row in the
+        dataset records its <code>source</code> and
+        <code>source_revision</code>; please carry both through.
+      </p>
+
+      <h2 id="format-notes">Notes on the format</h2>
+      <ul>
+        <li>BibTeX <code>@dataset</code> is the modern recommendation for Zenodo deposits and is supported by current biblatex.</li>
+        <li>Chicago and MLA examples follow each style's data-set guidance as of the most recent edition.</li>
+        <li>Versioned DOIs resolve to a specific release; the concept DOI (when published) always resolves to the latest. Prefer the versioned DOI for reproducibility.</li>
+      </ul>
+
+      <p class="provenance">
+        Last revised: 2026-05-31 ·
+        Regenerated on each tagged release.
+      </p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article h3 {
+    font-family: var(--font-iast);
+    font-size: 1.0625rem;
+    line-height: 1.3;
+    margin: var(--spacing-5) 0 var(--spacing-2);
+  }
+  article p, article ul, article ol {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article ul { padding-left: 1.25rem; }
+  article li { margin-bottom: var(--spacing-2); }
+  article code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--color-rule);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  article pre {
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    padding: var(--spacing-3);
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  article pre code {
+    background: transparent;
+    padding: 0;
+  }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>

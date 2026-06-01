@@ -1,0 +1,187 @@
+---
+/**
+ * /about/methodology — how translations are produced and badged.
+ *
+ * Audience: scholars, sadhakas, journalists. Plain, precise, no marketing.
+ * Cross-references STATUS-CONTRACT.md (badge rules) and /about/license
+ * (CC-BY-SA 4.0 + per-source terms).
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Masthead from "../../components/Masthead.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Methodology — sohamhamso"
+  description="How sohamhamso translates the Tantric Sanskrit canon: Sanskrit-grounded pipeline, LLM-as-judge rubric, AI-assist badges, editorial and reviewer policy."
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Methodology</h1>
+      <p class="lede">
+        This page documents how each translation on the site is produced,
+        evaluated, and labelled. It is the public companion to the
+        <a href="https://github.com/sohamhamso/sohamhamso/blob/main/STATUS-CONTRACT.md">
+          Translation Status Contract
+        </a>
+        in the repository.
+      </p>
+
+      <h2 id="how-we-translate">How we translate</h2>
+      <p>
+        The pipeline is <strong>Sanskrit-grounded</strong>, not anchor-grounded.
+        For each verse, the translation model receives the Devanāgarī text,
+        an IAST transliteration, the Vidyut morphological segmentation
+        (lemmas, case, number, gender, sandhi splits), Cologne C-SALT glosses
+        per lemma from Monier-Williams and Apte, the Skrutable meter tag,
+        and the preceding two verses for citation-aware context. A
+        public-domain English translation may be passed as a reference
+        signal — explicitly marked as such — but is never the source of
+        truth. When the English anchor and the Sanskrit morphology
+        disagree, the model is instructed to trust the Sanskrit.
+      </p>
+
+      <h2 id="llm-judge">The LLM-as-judge</h2>
+      <p>
+        Every draft is scored 1–10 for Sanskrit fidelity by a second model
+        running the same input bundle (Devanāgarī + morphology + glosses +
+        meter + context). The judge returns a score, a rationale, and a
+        list of concerns; these are stored alongside the translation row.
+      </p>
+      <ul>
+        <li><strong>Score ≥ 7</strong> — promote from <code>draft</code> to <code>published</code>; visible on the site behind the <em>AI · not verified</em> badge.</li>
+        <li><strong>Score ≥ 8</strong> — flagged high-confidence (a subtle badge variant lands in V1.x).</li>
+        <li><strong>Score &lt; 7</strong> — stays <code>draft</code>; excluded from public display until revised or human-reviewed.</li>
+      </ul>
+      <p>
+        Calibration is checked quarterly by human spot-audit of 50 random
+        published translations per language. Audit outcomes feed back into
+        prompt versions, which are themselves recorded per translation
+        row (<code>prompt_version</code>) so any score is reproducible.
+      </p>
+
+      <h2 id="badges">AI-assist badge legend</h2>
+      <p>
+        Each translation carries a badge inline with its verse number. The
+        badge state is derived from two fields: <code>ai_assisted</code>
+        (boolean) and <code>status</code> (<code>draft | published | reviewed</code>).
+        The full state table — including badge colours, public-display
+        rules, and the V1.1 five-state expansion — lives in the
+        <a href="https://github.com/sohamhamso/sohamhamso/blob/main/STATUS-CONTRACT.md">
+          Translation Status Contract
+        </a>. License terms for the translated text itself are documented
+        on the <a href="/about/license">License</a> page.
+      </p>
+
+      <h2 id="no-commentary">Why no commentary is glued under verses</h2>
+      <p>
+        The classical auto-commentaries — Kṣemarāja's Śivasūtravimarśinī
+        on the Śiva Sūtras, Abhinavagupta's Tantrāloka-viveka, Jayaratha's
+        commentary on the Tantrāloka — are full texts in their own right.
+        They are not annotations to be folded under the base sūtras. We
+        ingest each one as a sibling text under the same verse-anatomy
+        schema. The Vimarśinī, for example, lives at its own route
+        (<code>/trika/siva-sutras-vimarsini</code>), not nested under the
+        Śiva Sūtras. Readers who want both can open them side by side;
+        the structural hierarchy of the site does not imply that the
+        commentary is subordinate.
+      </p>
+
+      <h2 id="english-anchors">Public-domain English anchors</h2>
+      <p>
+        Pre-1930 translations by John Woodroffe (Arthur Avalon), Ralph
+        Griffith, George Thibaut, Max Müller, W. D. Whitney, and J. H. Woods
+        are present in the pipeline as <em>reference signals only</em>.
+        They are never the ground truth, never displayed unattributed,
+        and never used to override Sanskrit morphology when the two
+        conflict. Full per-translator attribution lives on the
+        <a href="/about/sources">Sources</a> page.
+      </p>
+
+      <h2 id="editorial">Editorial policy</h2>
+      <p>
+        Per-text source-of-truth is recorded in the
+        <code>texts.source_revision</code> column — the exact GRETIL or
+        Muktabodha or sanskritdocuments.org revision we ingested, with
+        date. Critical-edition emendation (proposing variant readings,
+        reconciling manuscript traditions) is out of scope for V1; we
+        publish the source revision as-is and link the upstream so
+        scholars can verify. V1.x will add a <code>variants</code> column
+        for recorded alternate readings without committing to an emended
+        text.
+      </p>
+
+      <h2 id="reviewer-policy">Reviewer policy</h2>
+      <p>
+        Human reviewers — when V1.x opens the review pipeline — work
+        from the Sanskrit and morphology, never from copyrighted modern
+        translations. Pasting from Jaideva Singh, Mark Dyczkowski, Lilian
+        Silburn, Alexis Sanderson, or any other in-copyright translator is
+        not permitted. Reviewers may consult those works for orientation;
+        the accepted English (or other-language) wording must be the
+        reviewer's own and grounded in the source.
+      </p>
+
+      <h2 id="limitations">Known limitations</h2>
+      <ul>
+        <li>V1 ships AI-only translations behind explicit badges. No translation on the public site is human-verified yet.</li>
+        <li>The judge has not been audited at scale; calibration is best-effort until the first quarterly spot-check.</li>
+        <li>Coverage is uneven — some texts have richer Cologne lemma coverage than others; the model receives whatever the corpus offers.</li>
+        <li>Eleven Indic target languages are planned; only English is published at launch (per the language picker, others are explicitly marked <em>soon</em>).</li>
+      </ul>
+
+      <p class="provenance">
+        Last revised: 2026-05-31 ·
+        Source: <a href="https://github.com/sohamhamso/sohamhamso/blob/main/STATUS-CONTRACT.md">STATUS-CONTRACT.md</a>
+        and the V1 plan document.
+      </p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article p, article ul, article ol, article dl {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article ul, article ol { padding-left: 1.25rem; }
+  article li { margin-bottom: var(--spacing-2); }
+  article code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--color-rule);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>

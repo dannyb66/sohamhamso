@@ -150,14 +150,32 @@ function dbPath(): string {
 /**
  * Returns the shared Database instance. Opens read-only (`readonly: true`)
  * because every reader-path query in this module is a SELECT.
+ *
+ * When `path` is provided, opens a fresh non-cached connection at that
+ * path (intended for tests with `:memory:` or temp DBs). The optional
+ * `readonly` flag (default `true`) lets tests open a writable handle
+ * for seeding fixtures.
  */
-export function getDb(): Database {
+export function getDb(path?: string, readonly = true): Database {
+  if (path !== undefined) {
+    const db = new Database(path, { readonly });
+    if (readonly) db.exec("PRAGMA query_only = ON;");
+    return db;
+  }
   if (_db) return _db;
-  const path = dbPath();
-  _db = new Database(path, { readonly: true });
+  _db = new Database(dbPath(), { readonly: true });
   // Slightly faster reads; safe for read-only conn.
   _db.exec("PRAGMA query_only = ON;");
   return _db;
+}
+
+/**
+ * Inject a Database instance as the module-level singleton (test hook).
+ * Pass `null` to clear the cache and force the next `getDb()` to reopen
+ * from disk. Production code should never call this.
+ */
+export function __setDbForTests(db: Database | null): void {
+  _db = db;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -373,4 +391,27 @@ export function getVerse(
     prev,
     next,
   };
+}
+
+/**
+ * Return ALL translations for a verse across every language. Powers the
+ * TranslationDrawer's multi-select chip availability + stacked preview.
+ *
+ * Same status filter as getVerse (published + reviewed only — drafts
+ * stay hidden). ai_assisted is normalized from 0/1 to boolean.
+ */
+export function getVerseTranslations(verseId: number): Translation[] {
+  const db = getDb();
+  const rows = db
+    .query<
+      Omit<Translation, "ai_assisted"> & { ai_assisted: number },
+      [number]
+    >(`
+      SELECT *
+      FROM translations
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, ai_assisted ASC, created_at ASC
+    `)
+    .all(verseId);
+  return rows.map((t) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));
 }

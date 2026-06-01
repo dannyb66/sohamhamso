@@ -1,0 +1,106 @@
+# Test fixture: Śiva Sūtras 1.1 + 1.2 in canonical (non-aliased) shape.
+# Used by tests/unit/ingest.test.ts. Keep this file minimal — it is the
+# golden-path fixture for the ingest happy-path test.
+id: siva-sutras
+slug: siva-sutras
+title_sa: शिवसूत्राणि
+title_en: Śiva Sūtras
+title_iast: Śivasūtrāṇi
+author: Vasugupta
+tradition: trika
+school: kashmir-shaivism
+era: "9th century CE"
+source: "GRETIL"
+source_url: "https://gretil.sub.uni-goettingen.de/"
+source_revision: "test-fixture"
+license: CC-BY-4.0
+attribution_html: null
+parent_text_id: null
+manuscript_url: null
+description: "Test fixture — two sūtras from the Śāmbhavopāya."
+
+chapters:
+  - chapter: 1
+    verses:
+      - verse_num: 1
+        devanagari: चैतन्यमात्मा ॥१॥
+        slp1: "caitanyamAtmA"
+        iast: "caitanyam ātmā"
+        meter: sūtra
+        word_glosses:
+          - word_idx: 0
+            word_sa: "caitanyam"
+            lemma_sa: "caitanya"
+            lemma_iast: "caitanya"
+            gloss_lang: en
+            gloss_text: "pure consciousness, sentience"
+            morph: "nom. sg. n."
+          - word_idx: 1
+            word_sa: "ātmā"
+            lemma_sa: "ātman"
+            lemma_iast: "ātman"
+            gloss_lang: en
+            gloss_text: "the Self, true nature"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            translation_text: "Consciousness is the Self."
+            source: "synthesized from PD-era English renderings"
+            license: PD
+            status: published
+            ai_assisted: false
+            model: null
+            model_version: null
+            prompt_version: null
+            judge_score: null
+            reviewer: null
+            reviewed_at: null
+          - lang: en
+            translator: "ai-test"
+            translation_text: "The Self is pure consciousness."
+            source: null
+            license: CC-BY-4.0
+            status: reviewed
+            ai_assisted: true
+            model: "claude-test"
+            model_version: "0.0.0"
+            prompt_version: "v1"
+            judge_score: 0.92
+            reviewer: "vidya-acharya"
+            reviewed_at: "2026-01-15T00:00:00Z"
+
+      - verse_num: 2
+        devanagari: ज्ञानं बन्धः ॥२॥
+        slp1: "jYAnaM banDaH"
+        iast: "jñānaṃ bandhaḥ"
+        meter: sūtra
+        word_glosses:
+          - word_idx: 0
+            word_sa: "jñānam"
+            lemma_sa: "jñāna"
+            lemma_iast: "jñāna"
+            gloss_lang: en
+            gloss_text: "(limited, dualistic) knowledge"
+            morph: "nom. sg. n."
+          - word_idx: 1
+            word_sa: "bandhaḥ"
+            lemma_sa: "bandha"
+            lemma_iast: "bandha"
+            gloss_lang: en
+            gloss_text: "bondage"
+            morph: "nom. sg. m."
+        translations:
+          - lang: en
+            translator: "public-domain composite"
+            translation_text: "Limited knowledge is bondage."
+            source: null
+            license: PD
+            status: published
+            ai_assisted: false
+            model: null
+            model_version: null
+            prompt_version: null
+            judge_score: null
+            reviewer: null
+            reviewed_at: null
