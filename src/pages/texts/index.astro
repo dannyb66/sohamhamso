@@ -86,12 +86,12 @@ const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
 
   <main id="main" class="texts-page">
     <header class="texts-header">
-      <p class="texts-eyebrow">Corpus</p>
-      <h1 class="texts-title">All texts</h1>
+      <p class="texts-eyebrow" data-i18n="texts.eyebrow">Corpus</p>
+      <h1 class="texts-title" data-i18n="texts.title">All texts</h1>
       <p class="texts-lede">
-        {sorted.length} {sorted.length === 1 ? "text" : "texts"}, flat
-        alphabetical. Translations in eleven Indic languages are AI-assisted
-        and not yet human-verified — see <a href="/about/methodology">methodology</a>.
+        {sorted.length} <span data-i18n={sorted.length === 1 ? "texts.lede.prefix_text" : "texts.lede.prefix_texts"}>{sorted.length === 1
+          ? "text, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"
+          : "texts, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"}</span> <a href="/about/methodology" data-i18n="texts.lede.methodology">methodology</a><span data-i18n="texts.lede.suffix">.</span>
       </p>
     </header>
 
@@ -101,10 +101,10 @@ const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
       <table class="texts-table">
         <thead>
           <tr>
-            <th scope="col" class="col-title">Text</th>
-            <th scope="col" class="col-tradition">Tradition</th>
-            <th scope="col" class="col-count">Verses</th>
-            <th scope="col" class="col-license">License</th>
+            <th scope="col" class="col-title" data-i18n="texts.table.text">Text</th>
+            <th scope="col" class="col-tradition" data-i18n="texts.table.tradition">Tradition</th>
+            <th scope="col" class="col-count" data-i18n="texts.table.verses">Verses</th>
+            <th scope="col" class="col-license" data-i18n="texts.table.license">License</th>
           </tr>
         </thead>
         <tbody>

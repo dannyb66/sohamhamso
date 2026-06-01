@@ -80,6 +80,13 @@ const iastFormatted = formatDanda(verse.iast);
 
 <article class="verse-anatomy" data-verse-id={verse.id}>
   <header class="verse-header">
+    <!--
+      aria-label interpolates the verse locator (`Verse 1.1`). We swap
+      only the static word "Verse" via the prefix key + a hidden i18n
+      bearer attribute on the span; the label-with-locator stays in the
+      aria-label so screen readers always hear a locator. (Phase B can
+      teach I18nSwap to template the verse number into the aria-label.)
+    -->
     <span class="verse-number" aria-label={`Verse ${verseLabel}`}>
       {verseLabel}
     </span>
@@ -102,11 +109,11 @@ const iastFormatted = formatDanda(verse.iast);
   ) : null}
 
   {verse.meter ? (
-    <div class="verse-meter" aria-label="meter">{verse.meter}</div>
+    <div class="verse-meter" aria-label="meter" data-i18n-attr-aria-label="verse.meter_aria">{verse.meter}</div>
   ) : null}
 
   {wordGlosses.length > 0 ? (
-    <section class="synonyms" aria-label="word-by-word synonyms">
+    <section class="synonyms" aria-label="word-by-word synonyms" data-i18n-attr-aria-label="verse.synonyms_aria">
       {wordGlosses.map((g, i) => (
         <>
           <button
@@ -136,7 +143,7 @@ const iastFormatted = formatDanda(verse.iast);
   ) : null}
 
   {translations.length > 1 ? (
-    <section class="alt-translations" aria-label="additional translations">
+    <section class="alt-translations" aria-label="additional translations" data-i18n-attr-aria-label="verse.alt_translations_aria">
       {translations.slice(1).map((t) => (
         <p class="translation translation-alt" lang={t.lang}>
           {t.translation_text}

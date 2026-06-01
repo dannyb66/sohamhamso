@@ -28,7 +28,7 @@ const description = `${textsInTradition.length} texts in the ${traditionLabel} t
 
 <BaseLayout title={pageTitle} description={description}>
   <header class="chrome">
-    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <a href="/" class="chrome__back" aria-label="Home" data-i18n-attr-aria-label="tradition.home_aria">←</a>
     <div class="chrome__title">{traditionLabel}</div>
   </header>
 
@@ -36,9 +36,9 @@ const description = `${textsInTradition.length} texts in the ${traditionLabel} t
     <article class="tradition-overview">
       <h1 class="tradition-title">{traditionLabel}</h1>
       <p class="tradition-meta">
-        {textsInTradition.length} text{textsInTradition.length === 1 ? "" : "s"}
+        {textsInTradition.length} <span data-i18n={textsInTradition.length === 1 ? "tradition.text_suffix" : "tradition.texts_suffix"}>{textsInTradition.length === 1 ? "text" : "texts"}</span>
         <span aria-hidden="true"> · </span>
-        {totalVerses} verses
+        {totalVerses} <span data-i18n="tradition.verses_suffix">verses</span>
       </p>
 
       <hr class="shirorekha-rule" />
@@ -46,10 +46,10 @@ const description = `${textsInTradition.length} texts in the ${traditionLabel} t
       <table class="text-table">
         <thead>
           <tr>
-            <th scope="col">Text</th>
-            <th scope="col">Author</th>
-            <th scope="col">Verses</th>
-            <th scope="col">Read</th>
+            <th scope="col" data-i18n="tradition.table.text">Text</th>
+            <th scope="col" data-i18n="tradition.table.author">Author</th>
+            <th scope="col" data-i18n="tradition.table.verses">Verses</th>
+            <th scope="col" data-i18n="tradition.table.read">Read</th>
           </tr>
         </thead>
         <tbody>
@@ -62,7 +62,7 @@ const description = `${textsInTradition.length} texts in the ${traditionLabel} t
               <td>{t.author ?? "—"}</td>
               <td>{t.verse_count ?? 0}</td>
               <td>
-                <a href={`/${tradition}/${t.slug}`}>
+                <a href={`/${tradition}/${t.slug}`} data-i18n="tradition.open">
                   Open →
                 </a>
               </td>

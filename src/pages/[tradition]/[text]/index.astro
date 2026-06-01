@@ -55,7 +55,7 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
 
 <BaseLayout title={pageTitle} description={textRow.description ?? undefined}>
   <header class="chrome">
-    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <a href="/" class="chrome__back" aria-label="Home" data-i18n-attr-aria-label="text_overview.home_aria">←</a>
     <div class="chrome__title">
       <span>{textRow.title_en}</span>
     </div>
@@ -70,7 +70,7 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
         <p class="text-title-iast">{textRow.title_iast}</p>
       ) : null}
       {textRow.author ? (
-        <p class="text-author">by {textRow.author}</p>
+        <p class="text-author"><span data-i18n="text_overview.by_prefix">by</span> {textRow.author}</p>
       ) : null}
 
       <hr class="shirorekha-rule" />
@@ -80,9 +80,9 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
       ) : null}
 
       <div class="text-meta">
-        <span>{totalVerses} verses</span>
+        <span>{totalVerses} <span data-i18n="text_overview.verses_suffix">verses</span></span>
         <span>·</span>
-        <span>{chapters.length} chapter{chapters.length === 1 ? "" : "s"}</span>
+        <span>{chapters.length} <span data-i18n={chapters.length === 1 ? "text_overview.chapter_suffix" : "text_overview.chapters_suffix"}>{chapters.length === 1 ? "chapter" : "chapters"}</span></span>
         <span>·</span>
         <span>{textRow.tradition}</span>
         {textRow.school ? (
@@ -98,9 +98,9 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
       <table class="chapter-table">
         <thead>
           <tr>
-            <th scope="col">Chapter</th>
-            <th scope="col">Verses</th>
-            <th scope="col">Read</th>
+            <th scope="col" data-i18n="text_overview.table.chapter">Chapter</th>
+            <th scope="col" data-i18n="text_overview.table.verses">Verses</th>
+            <th scope="col" data-i18n="text_overview.table.read">Read</th>
           </tr>
         </thead>
         <tbody>
@@ -110,7 +110,7 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
               <td>{c.verse_count}</td>
               <td>
                 <a href={`/${tradition}/${text}/${c.chapter}/1`}>
-                  Read chapter {c.chapter} →
+                  <span data-i18n="text_overview.read_chapter_prefix">Read chapter</span> {c.chapter} →
                 </a>
               </td>
             </tr>
@@ -121,9 +121,9 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
       {textRow.source || textRow.manuscript_url ? (
         <footer class="text-attribution">
           <p>
-            {textRow.source ? <span>Source: {textRow.source}</span> : null}
+            {textRow.source ? <span><span data-i18n="text_overview.source_prefix">Source:</span> {textRow.source}</span> : null}
             {textRow.source && textRow.license ? " · " : null}
-            {textRow.license ? <span>License: {textRow.license}</span> : null}
+            {textRow.license ? <span><span data-i18n="text_overview.license_prefix">License:</span> {textRow.license}</span> : null}
           </p>
           {textRow.manuscript_url ? (
             <p>
@@ -132,7 +132,7 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                📜 View manuscript ↗
+                📜 <span data-i18n="text_overview.view_manuscript">View manuscript ↗</span>
               </a>
             </p>
           ) : null}

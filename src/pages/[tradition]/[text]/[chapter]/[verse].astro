@@ -190,7 +190,12 @@ const readerDataPayload = {
 
 <BaseLayout title={pageTitle} description={pageDescription}>
   <header class="chrome">
-    <a href={`/${tradition}/${text}`} class="chrome__back" aria-label="Back to text">
+    <a
+      href={`/${tradition}/${text}`}
+      class="chrome__back"
+      aria-label="Back to text"
+      data-i18n-attr-aria-label="verse_page.back_aria"
+    >
       ←
     </a>
     <div class="chrome__title">
@@ -203,6 +208,7 @@ const readerDataPayload = {
         type="button"
         class="chrome__settings"
         aria-label="Reading settings"
+        data-i18n-attr-aria-label="verse_page.settings_aria"
         data-settings-trigger
         onclick="document.dispatchEvent(new CustomEvent('sohamhamso:open-settings'))"
       >
@@ -241,16 +247,16 @@ const readerDataPayload = {
             rel="noopener noreferrer"
             class="manuscript-link"
           >
-            📜 View manuscript at {textRow.source ?? "source"}
+            📜 <span data-i18n="verse.manuscript_prefix">View manuscript at</span> {textRow.source ?? "source"}
             {verseRow.manuscript_folio_ref ? (
-              <span> · folio {verseRow.manuscript_folio_ref}</span>
+              <span> · <span data-i18n="verse.manuscript_folio_prefix">folio</span> {verseRow.manuscript_folio_ref}</span>
             ) : null}
           </a>
         ) : null}
       </Fragment>
     </VerseAnatomy>
 
-    <nav class="verse-nav" aria-label="Verse navigation">
+    <nav class="verse-nav" aria-label="Verse navigation" data-i18n-attr-aria-label="verse_page.nav_aria">
       {prev ? (
         <a
           href={`/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`}
