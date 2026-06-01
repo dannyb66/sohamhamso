@@ -1,0 +1,401 @@
+{
+  "text_slug": "spanda-karikas",
+  "lang": "as",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "যাৰ"},
+      {"word_idx": 1, "gloss_text": "(চকুৰ) মেলা আৰু মুদাৰে"},
+      {"word_idx": 2, "gloss_text": "জগতৰ"},
+      {"word_idx": 3, "gloss_text": "প্ৰলয় আৰু উদয়"},
+      {"word_idx": 4, "gloss_text": "শক্তি-চক্ৰৰ বিভৱৰ উৎস"},
+      {"word_idx": 5, "gloss_text": "শঙ্কৰক (শিৱ, কল্যাণদাতা)"},
+      {"word_idx": 6, "gloss_text": "আমি স্তুতি কৰোঁ"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "যাৰ ভিতৰত"},
+      {"word_idx": 1, "gloss_text": "প্ৰতিষ্ঠিত"},
+      {"word_idx": 2, "gloss_text": "এই সকলো"},
+      {"word_idx": 3, "gloss_text": "কাৰ্য (কৰিবলগীয়া)"},
+      {"word_idx": 4, "gloss_text": "যাৰ পৰা"},
+      {"word_idx": 5, "gloss_text": "আৰু (সকলো) ওলাই আহিছে"},
+      {"word_idx": 6, "gloss_text": "তেওঁৰ"},
+      {"word_idx": 7, "gloss_text": "অনাবৃত স্বৰূপৰ কাৰণে"},
+      {"word_idx": 8, "gloss_text": "কোনো নিৰোধ নাই"},
+      {"word_idx": 9, "gloss_text": "ক'তো"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "জাগ্ৰত আদি অৱস্থাৰ ভেদত"},
+      {"word_idx": 1, "gloss_text": "তেওঁৰ পৰা অভিন্ন (হৈ)"},
+      {"word_idx": 2, "gloss_text": "প্ৰসৰি গলেও"},
+      {"word_idx": 3, "gloss_text": "বিচলিত হয়, ঘূৰি যায়"},
+      {"word_idx": 4, "gloss_text": "নিজ স্বভাৱৰ পৰা"},
+      {"word_idx": 5, "gloss_text": "উপলব্ধাৰূপে (দ্ৰষ্টাৰূপে)"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "'মই সুখী'"},
+      {"word_idx": 1, "gloss_text": "দুখী"},
+      {"word_idx": 2, "gloss_text": "অনুৰক্ত"},
+      {"word_idx": 3, "gloss_text": "সংবিদসমূহ (জ্ঞানবোৰ)"},
+      {"word_idx": 4, "gloss_text": "সুখ আদি অৱস্থাত অনুসূত (সুতাৰ দৰে ভিতৰে চলি যোৱা)ত"},
+      {"word_idx": 5, "gloss_text": "অন্য (এক আশ্ৰয়)ত"},
+      {"word_idx": 6, "gloss_text": "স্পষ্টকৈ"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "দুখ"},
+      {"word_idx": 1, "gloss_text": "সুখ"},
+      {"word_idx": 2, "gloss_text": "গ্ৰাহ্য (জ্ঞানৰ বিষয়)"},
+      {"word_idx": 3, "gloss_text": "গ্ৰাহক (জ্ঞাতা)"},
+      {"word_idx": 4, "gloss_text": "মূঢ়-ভাৱ (জড়তাৰ অৱস্থা)"},
+      {"word_idx": 5, "gloss_text": "পৰমাৰ্থত"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "কৰণ-সমূহ (ইন্দ্ৰিয়ৰ গোট)"},
+      {"word_idx": 1, "gloss_text": "জড়"},
+      {"word_idx": 2, "gloss_text": "অজড়ৰ দৰে"},
+      {"word_idx": 3, "gloss_text": "অন্তৰ্-চক্ৰ (অন্তঃকৰণ)ৰ সৈতে"},
+      {"word_idx": 4, "gloss_text": "প্ৰৱৃত্তি, স্থিতি, সংহাৰ"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "সেই (তত্ত্ব)ৰ বাবে যত্নেৰে"},
+      {"word_idx": 1, "gloss_text": "পৰীক্ষণীয় (পৰীক্ষা কৰিবলগীয়া)"},
+      {"word_idx": 2, "gloss_text": "তত্ত্ব (প্ৰকৃত সত্য)"},
+      {"word_idx": 3, "gloss_text": "স্বাধীনতা (স্বতন্ত্ৰতা)"},
+      {"word_idx": 4, "gloss_text": "অকৃত্ৰিম, স্বাভাৱিক"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ইচ্ছাৰ প্ৰেৰণাৰ"},
+      {"word_idx": 1, "gloss_text": "প্ৰেৰক হিচাপে"},
+      {"word_idx": 2, "gloss_text": "আত্ম-বলৰ স্পৰ্শৰ পৰা"},
+      {"word_idx": 3, "gloss_text": "পুৰুষ (ব্যক্তি)"},
+      {"word_idx": 4, "gloss_text": "সেই (পৰম তত্ত্ব)ৰ সমান"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "নিজা অশুদ্ধি"},
+      {"word_idx": 1, "gloss_text": "অসমৰ্থ জনৰ"},
+      {"word_idx": 2, "gloss_text": "কৰ্তব্য-কৰ্মত"},
+      {"word_idx": 3, "gloss_text": "অভিলাষীৰ"},
+      {"word_idx": 4, "gloss_text": "ক্ষোভ (অশান্তি)"},
+      {"word_idx": 5, "gloss_text": "বিলয় হয় (লীন হয়)"},
+      {"word_idx": 6, "gloss_text": "পৰম পদ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "অকৃত্ৰিম (স্বাভাৱিক)"},
+      {"word_idx": 1, "gloss_text": "স্বৰূপ, স্বভাৱ"},
+      {"word_idx": 2, "gloss_text": "সৰ্বজ্ঞতা আৰু সৰ্বকৰ্তৃত্ব লক্ষণযুক্ত"},
+      {"word_idx": 3, "gloss_text": "ইচ্ছিত (অভীষ্ট)"},
+      {"word_idx": 4, "gloss_text": "জানে"},
+      {"word_idx": 5, "gloss_text": "কৰে"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "অধিষ্ঠাতা-ভাৱেৰে (নিয়ন্ত্ৰক হিচাপে)"},
+      {"word_idx": 1, "gloss_text": "নিজ স্বভাৱক"},
+      {"word_idx": 2, "gloss_text": "দৰ্শন কৰি"},
+      {"word_idx": 3, "gloss_text": "বিস্ময়েৰে হাঁহি থকা"},
+      {"word_idx": 4, "gloss_text": "কুসৃতি (সংসাৰৰ দুৰ্গতি)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "অভাৱ (শূন্যতা)"},
+      {"word_idx": 1, "gloss_text": "ধ্যানৰ বিষয়তা"},
+      {"word_idx": 2, "gloss_text": "অমূঢ়তা (চেতনতা)"},
+      {"word_idx": 3, "gloss_text": "অভিযোগৰ (পিছৰ চিন্তনৰ) স্পৰ্শৰ পৰা"},
+      {"word_idx": 4, "gloss_text": "নিশ্চয় (দৃঢ় নিৰ্ণয়)"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "কৃত্ৰিম (গঢ়ি লোৱা)"},
+      {"word_idx": 1, "gloss_text": "জ্ঞেয় (জনিবলগীয়া)"},
+      {"word_idx": 2, "gloss_text": "সুষুপ্তি পদৰ দৰে"},
+      {"word_idx": 3, "gloss_text": "স্মৰণৰ বিষয় হোৱা অৱস্থা"},
+      {"word_idx": 4, "gloss_text": "সেই (পৰম) তত্ত্ব"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "এযোৰ অৱস্থা"},
+      {"word_idx": 1, "gloss_text": "কাৰ্য আৰু কৰ্তৃত্ব নামে অভিহিত"},
+      {"word_idx": 2, "gloss_text": "কাৰ্যতা (কৰ্ম-হোৱাৰ অৱস্থা)"},
+      {"word_idx": 3, "gloss_text": "ক্ষয়শীল, নশ্বৰ"},
+      {"word_idx": 4, "gloss_text": "কৰ্তৃত্ব (কৰ্তা হোৱাৰ অৱস্থা)"},
+      {"word_idx": 5, "gloss_text": "অক্ষয়, অবিনশ্বৰ"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "কাৰ্যাভিমুখ (কৰ্ম-অভিমুখী)"},
+      {"word_idx": 1, "gloss_text": "প্ৰযত্ন (প্ৰচেষ্টা)"},
+      {"word_idx": 2, "gloss_text": "লুপ্ত হয় (স্থগিত হয়)"},
+      {"word_idx": 3, "gloss_text": "বিলুপ্ত (ধ্বংস হোৱা)"},
+      {"word_idx": 4, "gloss_text": "অবুধ (অজ্ঞানী ব্যক্তি)"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "অন্তৰ্মুখ (ভিতৰলৈ চোৱা)"},
+      {"word_idx": 1, "gloss_text": "ভাৱ (স্বৰূপ, সত্তা)"},
+      {"word_idx": 2, "gloss_text": "সৰ্বজ্ঞতা-গুণৰ আস্পদ (আশ্ৰয়)"},
+      {"word_idx": 3, "gloss_text": "উপলব্ধি-লোপ (অনুভৱৰ অভাৱ)"},
+      {"word_idx": 4, "gloss_text": "অনুপলম্ভক (অনুভৱ নকৰাজন)"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "উপলব্ধা (উপলব্ধিকাৰী, দ্ৰষ্টা)"},
+      {"word_idx": 1, "gloss_text": "তিনি অৱস্থাত অব্যভিচাৰী (নিৰৱচ্ছিন্ন)"},
+      {"word_idx": 2, "gloss_text": "সুপ্ৰবুদ্ধৰ (সম্পূৰ্ণ জাগ্ৰতৰ)"},
+      {"word_idx": 3, "gloss_text": "সেই (অৱস্থা)ৰ আদি আৰু অন্তত"},
+      {"word_idx": 4, "gloss_text": "অন্যজনৰ (অপ্ৰবুদ্ধৰ)"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "জ্ঞান আৰু জ্ঞেয়ৰ স্বৰূপ ধাৰণকাৰিণী (শক্তিৰে)"},
+      {"word_idx": 1, "gloss_text": "পৰম শক্তিৰ সৈতে"},
+      {"word_idx": 2, "gloss_text": "দুই পদত (জাগ্ৰত আৰু স্বপ্ন)"},
+      {"word_idx": 3, "gloss_text": "বিভু (সৰ্বব্যাপী)"},
+      {"word_idx": 4, "gloss_text": "কেৱল চিন্মাত্ৰ (শুদ্ধ চেতনা)"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "গুণ আদিৰ স্পন্দ-নিষ্যন্দসমূহ (বিশেষ স্পন্দ-ধাৰাবোৰ)"},
+      {"word_idx": 1, "gloss_text": "সামান্য স্পন্দৰ আশ্ৰয়ৰ পৰা"},
+      {"word_idx": 2, "gloss_text": "আত্ম-লাভ পোৱা (অস্তিত্ব পোৱা)"},
+      {"word_idx": 3, "gloss_text": "জ্ঞানীৰ"},
+      {"word_idx": 4, "gloss_text": "অপৰিপন্থী (বাধক নোহোৱা)"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "অপ্ৰবুদ্ধ-বুদ্ধিৰ (অজ্ঞানীসকলৰ)"},
+      {"word_idx": 1, "gloss_text": "নিজ স্থিতি ঢাকিবলৈ উদ্যত"},
+      {"word_idx": 2, "gloss_text": "পেলাই দিয়ে"},
+      {"word_idx": 3, "gloss_text": "দুৰুত্তৰ (পাৰ হ'বলৈ কঠিন)"},
+      {"word_idx": 4, "gloss_text": "সংসাৰৰ পথত"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "সদায় উদ্যত (চেষ্টাশীল)"},
+      {"word_idx": 1, "gloss_text": "স্পন্দ-তত্ত্বৰ বিৱেচনাৰ বাবে"},
+      {"word_idx": 2, "gloss_text": "জাগ্ৰত অৱস্থাতেই"},
+      {"word_idx": 3, "gloss_text": "নিজা ভাৱ (প্ৰকৃত স্বৰূপ)"},
+      {"word_idx": 4, "gloss_text": "অচিৰে (নিলম্ব নোহোৱাকৈ)"},
+      {"word_idx": 5, "gloss_text": "প্ৰাপ্ত কৰে"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "অতিক্ৰুদ্ধ (অতিশয় ক্ৰোধিত)"},
+      {"word_idx": 1, "gloss_text": "প্ৰহৃষ্ট (অত্যন্ত আনন্দিত)"},
+      {"word_idx": 2, "gloss_text": "'কি কৰিম'"},
+      {"word_idx": 3, "gloss_text": "ভাৱি থকা, বিভ্ৰান্ত"},
+      {"word_idx": 4, "gloss_text": "দৌৰি থকা"},
+      {"word_idx": 5, "gloss_text": "যি পদ (অৱস্থা)"},
+      {"word_idx": 6, "gloss_text": "প্ৰতিষ্ঠিত (দৃঢ়ভাৱে আছে)"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "আশ্ৰয় লৈ"},
+      {"word_idx": 1, "gloss_text": "ক'ব"},
+      {"word_idx": 2, "gloss_text": "নিশ্চয়, অৱশ্যেই"},
+      {"word_idx": 3, "gloss_text": "মই কৰিম"},
+      {"word_idx": 4, "gloss_text": "সঙ্কল্প কৰি"},
+      {"word_idx": 5, "gloss_text": "থাকে, অৱস্থিত হয়"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "সেই (অৱস্থা)ৰ আশ্ৰয় লৈ"},
+      {"word_idx": 1, "gloss_text": "ঊৰ্ধ্ব-পথেৰে"},
+      {"word_idx": 2, "gloss_text": "চন্দ্ৰ আৰু সূৰ্য (ইডা-পিঙ্গলা / প্ৰাণ-অপান)"},
+      {"word_idx": 3, "gloss_text": "সুষুম্না নাড়ীত"},
+      {"word_idx": 4, "gloss_text": "অস্তমিত হয় (লীন হয়)"},
+      {"word_idx": 5, "gloss_text": "ব্ৰহ্মাণ্ডৰ গোচৰ (পৰিসৰ)"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "মহাব্যোম (চৈতন্যৰ মহা-আকাশ)ত"},
+      {"word_idx": 1, "gloss_text": "চন্দ্ৰ আৰু সূৰ্য প্ৰলীন হোৱা ঠাইত"},
+      {"word_idx": 2, "gloss_text": "সুষুপ্তি পদৰ দৰে"},
+      {"word_idx": 3, "gloss_text": "মূঢ় (অজ্ঞানী)"},
+      {"word_idx": 4, "gloss_text": "প্ৰবুদ্ধ (জাগ্ৰত জ্ঞানী)"},
+      {"word_idx": 5, "gloss_text": "অনাবৃত (পৰ্দাহীন)"}
+    ],
+    "2.1": [
+      {"word_idx": 0, "gloss_text": "সেই বল আক্ৰমণ কৰি (আশ্ৰয় লৈ)"},
+      {"word_idx": 1, "gloss_text": "মন্ত্ৰসমূহ"},
+      {"word_idx": 2, "gloss_text": "সৰ্বজ্ঞ-বল-শালী (সৰ্বজ্ঞতাৰ শক্তিৰে যুক্ত)"},
+      {"word_idx": 3, "gloss_text": "অধিকাৰৰ বাবে (নিজ কাৰ্যৰ বাবে)"},
+      {"word_idx": 4, "gloss_text": "কৰণসমূহ (ইন্দ্ৰিয়)ৰ দৰে"}
+    ],
+    "2.2": [
+      {"word_idx": 0, "gloss_text": "সম্পূৰ্ণ লীন হয়"},
+      {"word_idx": 1, "gloss_text": "শান্ত-ৰূপ"},
+      {"word_idx": 2, "gloss_text": "নিৰঞ্জন (নিৰ্মল)"},
+      {"word_idx": 3, "gloss_text": "আৰাধক-চিত্তৰ সৈতে"},
+      {"word_idx": 4, "gloss_text": "শিৱ-ধৰ্মী (শিৱ-স্বভাৱযুক্ত)"}
+    ],
+    "2.3": [
+      {"word_idx": 0, "gloss_text": "সকলোময় (সৰ্বাত্মক)"},
+      {"word_idx": 1, "gloss_text": "জীৱ"},
+      {"word_idx": 2, "gloss_text": "সকলো ভাৱৰ উৎপত্তিৰ কাৰণে"},
+      {"word_idx": 3, "gloss_text": "তাৰ সংবেদন-ৰূপেৰে (অনুভৱৰ ৰূপত)"},
+      {"word_idx": 4, "gloss_text": "তাদাত্ম্য-প্ৰতিপত্তিৰ পৰা (একতাৰ স্বীকাৰৰ পৰা)"}
+    ],
+    "2.4": [
+      {"word_idx": 0, "gloss_text": "শব্দ-অৰ্থৰ চিন্তাসমূহত"},
+      {"word_idx": 1, "gloss_text": "অৱস্থা"},
+      {"word_idx": 2, "gloss_text": "শিৱ"},
+      {"word_idx": 3, "gloss_text": "ভোক্তা (অনুভৱকাৰী)"},
+      {"word_idx": 4, "gloss_text": "ভোগ্য-ৰূপেৰে"},
+      {"word_idx": 5, "gloss_text": "অৱস্থিত"}
+    ],
+    "2.5": [
+      {"word_idx": 0, "gloss_text": "সংবিত্তি (উপলব্ধি)"},
+      {"word_idx": 1, "gloss_text": "ক্ৰীড়াৰূপে (শিৱৰ খেলৰ ৰূপত)"},
+      {"word_idx": 2, "gloss_text": "সমগ্ৰ জগত"},
+      {"word_idx": 3, "gloss_text": "দেখি"},
+      {"word_idx": 4, "gloss_text": "সদায় যুক্ত (এই বোধত প্ৰতিষ্ঠিত)"},
+      {"word_idx": 5, "gloss_text": "জীৱন্মুক্ত (জীয়াই থাকোঁতে মুক্ত)"}
+    ],
+    "2.6": [
+      {"word_idx": 0, "gloss_text": "উদয় (উত্থান)"},
+      {"word_idx": 1, "gloss_text": "ধ্যেয়ৰ (ধ্যানৰ বিষয়ৰ)"},
+      {"word_idx": 2, "gloss_text": "ধ্যানীৰ চিত্তত"},
+      {"word_idx": 3, "gloss_text": "তাদাত্ম্য-সমাপত্তি (সেইৰূপে একতাৰ প্ৰাপ্তি)"},
+      {"word_idx": 4, "gloss_text": "ইচ্ছুক সাধকৰ"}
+    ],
+    "2.7": [
+      {"word_idx": 0, "gloss_text": "অমৃত-প্ৰাপ্তি (অমৃতৰ লাভ)"},
+      {"word_idx": 1, "gloss_text": "আত্মাৰ গ্ৰহণ (আত্মপ্ৰাপ্তি)"},
+      {"word_idx": 2, "gloss_text": "নিৰ্বাণ-দীক্ষা (মুক্তিৰ দীক্ষা)"},
+      {"word_idx": 3, "gloss_text": "শিৱ-সদ্‌ভাৱ-দায়িনী (শিৱৰ প্ৰকৃত সত্তা প্ৰদায়িনী)"}
+    ],
+    "3.1": [
+      {"word_idx": 0, "gloss_text": "ইচ্ছানুসৰি প্ৰাৰ্থিত"},
+      {"word_idx": 1, "gloss_text": "ধাতা (স্পন্দ-পোষক)"},
+      {"word_idx": 2, "gloss_text": "জাগ্ৰত ব্যক্তিৰ"},
+      {"word_idx": 3, "gloss_text": "সোম-সূৰ্যৰ উদয় (অপান-প্ৰাণৰ উদয়)"},
+      {"word_idx": 4, "gloss_text": "সম্পাদন কৰে (সিদ্ধ কৰে)"},
+      {"word_idx": 5, "gloss_text": "দেহীৰ বাবে"}
+    ],
+    "3.2": [
+      {"word_idx": 0, "gloss_text": "অভীষ্ট অৰ্থবোৰ (ইচ্ছিত বিষয়)"},
+      {"word_idx": 1, "gloss_text": "প্ৰণয়ৰ (ভক্ত-প্ৰাৰ্থনাৰ) অতিক্ৰম নকৰাৰ ফলত"},
+      {"word_idx": 2, "gloss_text": "স্ফুটতৰ (অধিক স্পষ্ট)"},
+      {"word_idx": 3, "gloss_text": "মধ্যত (কেন্দ্ৰত) অৱস্থিত"},
+      {"word_idx": 4, "gloss_text": "প্ৰকাশ কৰিব"}
+    ],
+    "3.3": [
+      {"word_idx": 0, "gloss_text": "স্বতন্ত্ৰ (স্বাধীন)"},
+      {"word_idx": 1, "gloss_text": "সৃষ্টি"},
+      {"word_idx": 2, "gloss_text": "তাৰ (স্পন্দৰ) ধৰ্ম যুক্ত হোৱা কাৰণে"},
+      {"word_idx": 3, "gloss_text": "লৌকিক (সাধাৰণ) ব্যক্তিৰ"},
+      {"word_idx": 4, "gloss_text": "জাগ্ৰত আৰু স্বপ্ন দুই পদত"}
+    ],
+    "3.4": [
+      {"word_idx": 0, "gloss_text": "অৰ্থ (বিষয়)"},
+      {"word_idx": 1, "gloss_text": "অস্ফুট (অস্পষ্ট)"},
+      {"word_idx": 2, "gloss_text": "সাৱধান চিত্তত"},
+      {"word_idx": 3, "gloss_text": "স্ফুটতৰ (অধিক স্পষ্ট)"},
+      {"word_idx": 4, "gloss_text": "নিজৰ বলৰ উদ্যোগেৰে ভাৱিত"}
+    ],
+    "3.5": [
+      {"word_idx": 0, "gloss_text": "পৰমাৰ্থত"},
+      {"word_idx": 1, "gloss_text": "স্থিত (অৱস্থিত)"},
+      {"word_idx": 2, "gloss_text": "বল আক্ৰমণ কৰি (স্পন্দ-বল অৱলম্বন কৰি)"},
+      {"word_idx": 3, "gloss_text": "অচিৰে (কিছু সময়ৰ ভিতৰত)"},
+      {"word_idx": 4, "gloss_text": "প্ৰৱৰ্তিত হয়"}
+    ],
+    "3.6": [
+      {"word_idx": 0, "gloss_text": "দুৰ্বল (ব্যক্তি)"},
+      {"word_idx": 1, "gloss_text": "সেই (স্পন্দ) আক্ৰমণ কৰি"},
+      {"word_idx": 2, "gloss_text": "কাৰ্যত"},
+      {"word_idx": 3, "gloss_text": "প্ৰৱৃত্ত হয়"},
+      {"word_idx": 4, "gloss_text": "বুভুক্ষা (ক্ষুধা) ঢাকি ৰাখিব"},
+      {"word_idx": 5, "gloss_text": "অতিশয় ক্ষুধাৰ্ত"}
+    ],
+    "3.7": [
+      {"word_idx": 0, "gloss_text": "(স্পন্দৰ দ্বাৰা) অধিষ্ঠিত দেহত"},
+      {"word_idx": 1, "gloss_text": "সৰ্বজ্ঞতা আদি"},
+      {"word_idx": 2, "gloss_text": "নিজা আত্মাত অধিষ্ঠানৰ পৰা"},
+      {"word_idx": 3, "gloss_text": "সৰ্বত্ৰ"},
+      {"word_idx": 4, "gloss_text": "এনেদৰে"}
+    ],
+    "3.8": [
+      {"word_idx": 0, "gloss_text": "গ্লানি (অৱসাদ, ক্লান্তি)"},
+      {"word_idx": 1, "gloss_text": "লুণ্ঠনকাৰিণী (চুৰ কৰোঁতা)"},
+      {"word_idx": 2, "gloss_text": "অজ্ঞানৰ পৰা"},
+      {"word_idx": 3, "gloss_text": "সৃতি (উত্থান, উৎপত্তি)"},
+      {"word_idx": 4, "gloss_text": "সেই উন্মেষৰ দ্বাৰা বিলুপ্ত"},
+      {"word_idx": 5, "gloss_text": "অহেতুক (কাৰণ অবিহনে)"}
+    ],
+    "3.9": [
+      {"word_idx": 0, "gloss_text": "এক চিন্তাত নিবিষ্টজনৰ"},
+      {"word_idx": 1, "gloss_text": "আন একৰ উদয় (অন্য চিন্তাৰ উত্থান)"},
+      {"word_idx": 2, "gloss_text": "উন্মেষ (খুলা, উদ্‌ভাস)"},
+      {"word_idx": 3, "gloss_text": "জ্ঞেয় (জনিবলগীয়া)"},
+      {"word_idx": 4, "gloss_text": "উপলক্ষণ কৰিব (লক্ষ্য কৰিব)"}
+    ],
+    "3.10": [
+      {"word_idx": 0, "gloss_text": "বিন্দু (আলোকৰ বিন্দু)"},
+      {"word_idx": 1, "gloss_text": "নাদ (অন্তৰ-শব্দ)"},
+      {"word_idx": 2, "gloss_text": "ৰূপ (আকাৰ/বৰণ)"},
+      {"word_idx": 3, "gloss_text": "ৰস (সূক্ষ্ম স্বাদ)"},
+      {"word_idx": 4, "gloss_text": "ক্ষোভকৰূপে (অশান্তি জগোৱা ভাৱে)"}
+    ],
+    "3.11": [
+      {"word_idx": 0, "gloss_text": "দেখাৰ ইচ্ছাৰে যেন"},
+      {"word_idx": 1, "gloss_text": "সকলো অৰ্থ (বিষয়) ব্যাপি"},
+      {"word_idx": 2, "gloss_text": "অৱস্থিত হয়"},
+      {"word_idx": 3, "gloss_text": "বহু কথা কৈ কি লাভ"},
+      {"word_idx": 4, "gloss_text": "নিজেই জানিব / উপলব্ধি কৰিব"}
+    ],
+    "3.12": [
+      {"word_idx": 0, "gloss_text": "প্ৰবুদ্ধ (জাগ্ৰত জ্ঞানী)"},
+      {"word_idx": 1, "gloss_text": "থাকিব লাগে"},
+      {"word_idx": 2, "gloss_text": "জ্ঞানেৰে দেখি (পৰ্যালোচনা কৰি)"},
+      {"word_idx": 3, "gloss_text": "গোচৰ (ইন্দ্ৰিয়-বিষয়ৰ পৰিসৰ)"},
+      {"word_idx": 4, "gloss_text": "এক ঠাইত (এক তত্ত্বত) আৰোপ কৰিব"},
+      {"word_idx": 5, "gloss_text": "পীড়িত নহয়"}
+    ],
+    "3.13": [
+      {"word_idx": 0, "gloss_text": "শব্দ-ৰাশিৰ পৰা উদ্‌গত"},
+      {"word_idx": 1, "gloss_text": "শক্তি-বৰ্গৰ (শক্তি-সমূহৰ)"},
+      {"word_idx": 2, "gloss_text": "ভোগ্যতা (ভোগৰ বিষয় হোৱা অৱস্থা)"},
+      {"word_idx": 3, "gloss_text": "কলাৰ দ্বাৰা বিলুপ্ত বিভৱ (যাৰ মহিমা সীমা-শক্তিৰে ঢকা)"},
+      {"word_idx": 4, "gloss_text": "পশু (বদ্ধ জীৱ, লক্ষ্যত পশু-জন্তু নহয়)"}
+    ],
+    "3.14": [
+      {"word_idx": 0, "gloss_text": "পৰম-অমৃত-ৰসৰ লোপ (শ্ৰেষ্ঠ অমৃত-ৰসৰ অপায়)"},
+      {"word_idx": 1, "gloss_text": "প্ৰত্যয়োদ্‌ভৱ (মানসিক বিকল্পৰ উত্থান)"},
+      {"word_idx": 2, "gloss_text": "অস্বাতন্ত্ৰ্য (স্বাধীনতাহীনতা)"},
+      {"word_idx": 3, "gloss_text": "তন্মাত্ৰ-গোচৰ (সূক্ষ্ম উপাদানৰ পৰিসৰ)"}
+    ],
+    "3.15": [
+      {"word_idx": 0, "gloss_text": "স্বৰূপ আচ্ছাদনৰ বাবে (প্ৰকৃত স্বৰূপ ঢাকিবলৈ)"},
+      {"word_idx": 1, "gloss_text": "শক্তিসমূহ"},
+      {"word_idx": 2, "gloss_text": "সদা উত্থিত (সদায় ক্ৰিয়াশীল)"},
+      {"word_idx": 3, "gloss_text": "শব্দৰ অনুবেধেৰে (বাক্যৰ ভিতৰ-ভেদেৰে)"},
+      {"word_idx": 4, "gloss_text": "প্ৰত্যয়োদ্‌ভৱ (বিকল্পৰ উত্থান)"}
+    ],
+    "3.16": [
+      {"word_idx": 0, "gloss_text": "ক্ৰিয়াত্মিকা শক্তি (কৰ্ম-স্বৰূপা শক্তি)"},
+      {"word_idx": 1, "gloss_text": "পশু-বৰ্তিনী (বদ্ধ জীৱত ক্ৰিয়াশীল)"},
+      {"word_idx": 2, "gloss_text": "বন্ধয়িত্ৰী (বন্ধনকাৰিণী)"},
+      {"word_idx": 3, "gloss_text": "নিজ পথত অৱস্থিত"},
+      {"word_idx": 4, "gloss_text": "সিদ্ধি-উপপাদিকা (সিদ্ধি প্ৰদায়িনী)"}
+    ],
+    "3.17": [
+      {"word_idx": 0, "gloss_text": "তন্মাত্ৰাৰ উদয়-ৰূপ"},
+      {"word_idx": 1, "gloss_text": "মন-অহং-বুদ্ধিৰূপে ক্ৰিয়াশীল"},
+      {"word_idx": 2, "gloss_text": "পুৰ্যষ্টকৰ দ্বাৰা (অষ্টপুৰী সূক্ষ্ম দেহৰ দ্বাৰা)"},
+      {"word_idx": 3, "gloss_text": "সংৰুদ্ধ (চাৰিওফালে আবদ্ধ)"},
+      {"word_idx": 4, "gloss_text": "তাৰ পৰা উদ্‌গত বিকল্পৰ উত্থান"}
+    ],
+    "3.18": [
+      {"word_idx": 0, "gloss_text": "ভোগ কৰে (অনুভৱ কৰে)"},
+      {"word_idx": 1, "gloss_text": "পৰৰ অধীন"},
+      {"word_idx": 2, "gloss_text": "ভোগ (অভিজ্ঞতা)"},
+      {"word_idx": 3, "gloss_text": "সংসৰণ কৰে (সংসাৰত ঘূৰে)"},
+      {"word_idx": 4, "gloss_text": "কাৰণ"},
+      {"word_idx": 5, "gloss_text": "আমি বৰ্ণনা কৰিম"}
+    ],
+    "3.19": [
+      {"word_idx": 0, "gloss_text": "এক ঠাইত (এক পৰম-তত্ত্বত) দৃঢ়ভাৱে স্থাপিত"},
+      {"word_idx": 1, "gloss_text": "লয় আৰু উদয় (সংহাৰ আৰু উত্থান)"},
+      {"word_idx": 2, "gloss_text": "নিয়ন্ত্ৰণ কৰি"},
+      {"word_idx": 3, "gloss_text": "ভোক্তৃত্ব (প্ৰকৃত ভোক্তা হোৱাৰ অৱস্থা)"},
+      {"word_idx": 4, "gloss_text": "চক্ৰেশ্বৰ (শক্তি-চক্ৰৰ প্ৰভু)"}
+    ],
+    "4.1": [
+      {"word_idx": 0, "gloss_text": "অগাধ সংশয়-সাগৰ (অপাৰ সন্দেহৰ সাগৰ)"},
+      {"word_idx": 1, "gloss_text": "পাৰ কৰি দিওঁতা (উদ্ধাৰকাৰিণী)"},
+      {"word_idx": 2, "gloss_text": "মই বন্দনা কৰোঁ"},
+      {"word_idx": 3, "gloss_text": "বিচিত্ৰ অৰ্থযুক্ত পদেৰে"},
+      {"word_idx": 4, "gloss_text": "চিত্ৰা (বিচিত্ৰ, অপৰূপ)"},
+      {"word_idx": 5, "gloss_text": "গুৰু-ভাৰতী (গুৰুৰ বাণী)"}
+    ]
+  }
+}

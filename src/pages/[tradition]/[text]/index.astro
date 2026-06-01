@@ -6,15 +6,48 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import KaulaContentAdvisory from "../../../components/KaulaContentAdvisory.astro";
 import { listTexts, listChapters, getText } from "../../../lib/db";
+import { enumerateRedirectPairs, resolveAlias } from "../../../lib/aliases";
 
 export async function getStaticPaths() {
   const texts = listTexts();
-  return texts.map((t) => ({
+  const paths: Array<{
+    params: { tradition: string; text: string };
+    props: { redirectTo: string | null };
+  }> = texts.map((t) => ({
     params: { tradition: t.tradition, text: t.slug },
+    props: { redirectTo: null },
   }));
+
+  // Wrong-tradition + slug-alias redirects for the text-overview URL.
+  // Mirrors the verse-page enumeration so /trika/karpuradi-stotra (no
+  // chapter/verse) also redirects to /shakta/karpuradi-stotra.
+  for (const pair of enumerateRedirectPairs(texts)) {
+    paths.push({
+      params: { tradition: pair.wrongTradition, text: pair.wrongSlug },
+      props: {
+        redirectTo: `/${pair.canonicalTradition}/${pair.canonicalSlug}`,
+      },
+    });
+  }
+
+  return paths;
 }
 
 const { tradition, text } = Astro.params;
+
+const { redirectTo } = Astro.props as { redirectTo: string | null };
+if (redirectTo) {
+  return Astro.redirect(redirectTo, 301);
+}
+
+const aliasCheck = resolveAlias(tradition!, text!);
+if (aliasCheck && !aliasCheck.canonical) {
+  return Astro.redirect(
+    `/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`,
+    301,
+  );
+}
+
 const textRow = getText(text!);
 if (!textRow) throw new Error(`Text not found: ${text}`);
 const chapters = listChapters(text!);

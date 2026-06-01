@@ -1,0 +1,401 @@
+{
+  "text_slug": "spanda-karikas",
+  "lang": "pa",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "ਜਿਸ ਦਾ"},
+      {"word_idx": 1, "gloss_text": "ਖੁੱਲ੍ਹਣ ਤੇ ਮੀਟਣ (ਨੇਤਰਾਂ ਦੇ) ਨਾਲ"},
+      {"word_idx": 2, "gloss_text": "ਜਗਤ ਦਾ"},
+      {"word_idx": 3, "gloss_text": "ਪ੍ਰਲੈ ਤੇ ਉਦੈ"},
+      {"word_idx": 4, "gloss_text": "ਸ਼ਕਤੀ-ਚੱਕਰ ਦੀ ਮਹਿਮਾ ਦੇ ਮੂਲ"},
+      {"word_idx": 5, "gloss_text": "ਸ਼ੰਕਰ (ਸ਼ਿਵ, ਕਲਿਆਣਕਾਰੀ) ਨੂੰ"},
+      {"word_idx": 6, "gloss_text": "ਅਸੀਂ ਸਤੁਤੀ ਕਰਦੇ ਹਾਂ"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "ਜਿਸ ਵਿੱਚ"},
+      {"word_idx": 1, "gloss_text": "ਟਿਕਿਆ ਹੋਇਆ"},
+      {"word_idx": 2, "gloss_text": "ਇਹ ਸਾਰਾ"},
+      {"word_idx": 3, "gloss_text": "ਕਾਰਜ (ਕਰਨ-ਯੋਗ)"},
+      {"word_idx": 4, "gloss_text": "ਜਿਸ ਤੋਂ"},
+      {"word_idx": 5, "gloss_text": "ਅਤੇ (ਸਭ) ਨਿਕਲਿਆ ਹੈ"},
+      {"word_idx": 6, "gloss_text": "ਉਸ ਦੇ ਲਈ"},
+      {"word_idx": 7, "gloss_text": "ਅਣਢਕੇ ਸਰੂਪ ਕਾਰਨ"},
+      {"word_idx": 8, "gloss_text": "ਨਿਰੋਧ ਨਹੀਂ ਹੈ"},
+      {"word_idx": 9, "gloss_text": "ਕਿਤੇ ਵੀ"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "ਜਾਗਰਤ ਆਦਿ ਦੇ ਭੇਦ ਵਿੱਚ"},
+      {"word_idx": 1, "gloss_text": "ਉਹਨਾਂ ਤੋਂ ਅਭਿੰਨ ਰਹਿ ਕੇ"},
+      {"word_idx": 2, "gloss_text": "ਫੈਲਦਾ ਹੋਇਆ"},
+      {"word_idx": 3, "gloss_text": "ਹਟਦਾ, ਨਿਵ੍ਰਿੱਤ ਹੁੰਦਾ"},
+      {"word_idx": 4, "gloss_text": "ਆਪਣੇ ਸੁਭਾਅ ਤੋਂ"},
+      {"word_idx": 5, "gloss_text": "ਉਪਲਬਧੀ-ਕਰਤਾ (ਅਨੁਭਵੀ) ਵਜੋਂ"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "ਮੈਂ ਸੁਖੀ"},
+      {"word_idx": 1, "gloss_text": "ਦੁਖੀ"},
+      {"word_idx": 2, "gloss_text": "ਅਨੁਰਾਗੀ"},
+      {"word_idx": 3, "gloss_text": "ਚੇਤਨਾਵਾਂ"},
+      {"word_idx": 4, "gloss_text": "ਸੁਖ ਆਦਿ ਅਵਸਥਾਵਾਂ ਵਿੱਚੋਂ ਪਿਰੋਇਆ ਹੋਇਆ (ਆਧਾਰ) ਵਿੱਚ"},
+      {"word_idx": 5, "gloss_text": "ਹੋਰ (ਆਧਾਰ) ਵਿੱਚ"},
+      {"word_idx": 6, "gloss_text": "ਸਪਸ਼ਟ"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "ਦੁੱਖ"},
+      {"word_idx": 1, "gloss_text": "ਸੁੱਖ"},
+      {"word_idx": 2, "gloss_text": "ਗ੍ਰਾਹਯ (ਜਾਣਨ-ਯੋਗ)"},
+      {"word_idx": 3, "gloss_text": "ਗ੍ਰਾਹਕ (ਜਾਣਨ ਵਾਲਾ)"},
+      {"word_idx": 4, "gloss_text": "ਮੂੜ੍ਹ-ਭਾਵ (ਜੜਤਾ)"},
+      {"word_idx": 5, "gloss_text": "ਪਰਮਾਰਥ ਰੂਪ ਵਿੱਚ"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "ਇੰਦ੍ਰੀ-ਸਮੂਹ"},
+      {"word_idx": 1, "gloss_text": "ਜੜ"},
+      {"word_idx": 2, "gloss_text": "ਚੇਤੰਨ ਵਾਂਗ"},
+      {"word_idx": 3, "gloss_text": "ਅੰਤਰ-ਚੱਕਰ (ਅੰਤਃਕਰਣ) ਸਮੇਤ"},
+      {"word_idx": 4, "gloss_text": "ਪ੍ਰਵ੍ਰਿੱਤੀ, ਸਥਿਤੀ, ਸੰਹਾਰ"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "ਉਸ ਲਈ ਯਤਨ ਨਾਲ"},
+      {"word_idx": 1, "gloss_text": "ਖੋਜਨ-ਯੋਗ"},
+      {"word_idx": 2, "gloss_text": "ਤੱਤ (ਪਰਮ ਸਚਾਈ)"},
+      {"word_idx": 3, "gloss_text": "ਸੁਤੰਤਰਤਾ"},
+      {"word_idx": 4, "gloss_text": "ਅਕ੍ਰਿਤਿਮ (ਸੁਭਾਵਿਕ)"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ਇੱਛਾ ਦੀ ਪ੍ਰੇਰਣਾ ਦਾ"},
+      {"word_idx": 1, "gloss_text": "ਪ੍ਰੇਰਕ ਵਜੋਂ"},
+      {"word_idx": 2, "gloss_text": "ਆਤਮ-ਬਲ ਦੇ ਸਪਰਸ਼ ਨਾਲ"},
+      {"word_idx": 3, "gloss_text": "ਪੁਰਖ"},
+      {"word_idx": 4, "gloss_text": "ਉਸ (ਪਰਮ ਤੱਤ) ਦੇ ਸਮਾਨ"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "ਅੰਦਰੂਨੀ ਅਸ਼ੁੱਧੀ"},
+      {"word_idx": 1, "gloss_text": "ਅਸਮਰੱਥ ਦੀ"},
+      {"word_idx": 2, "gloss_text": "ਕਰਨ-ਯੋਗ ਕੰਮਾਂ ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਇੱਛੁਕ ਦੀ"},
+      {"word_idx": 4, "gloss_text": "ਖੌਫ਼ਲਾਉ, ਉਥਲ-ਪੁਥਲ"},
+      {"word_idx": 5, "gloss_text": "ਲੀਨ ਹੋ ਜਾਵੇ"},
+      {"word_idx": 6, "gloss_text": "ਪਰਮ ਪਦ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "ਅਕ੍ਰਿਤਿਮ (ਸੁਭਾਵਿਕ)"},
+      {"word_idx": 1, "gloss_text": "ਧਰਮ (ਸੁਭਾਅ, ਗੁਣ)"},
+      {"word_idx": 2, "gloss_text": "ਸਰਵਗਿਆਤਾ ਤੇ ਸਰਵਕਰਤਾ-ਪਣ ਦਾ ਲੱਛਣ"},
+      {"word_idx": 3, "gloss_text": "ਚਾਹਿਆ ਹੋਇਆ"},
+      {"word_idx": 4, "gloss_text": "ਜਾਣਦਾ ਹੈ"},
+      {"word_idx": 5, "gloss_text": "ਕਰਦਾ ਹੈ"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "ਅਧਿਸ਼ਠਾਤਾ (ਪ੍ਰਮੁੱਖ ਕਰਤਾ) ਦੇ ਭਾਵ ਨਾਲ"},
+      {"word_idx": 1, "gloss_text": "ਆਪਣੇ ਸੁਭਾਅ ਨੂੰ"},
+      {"word_idx": 2, "gloss_text": "ਨਿਹਾਰਦਾ ਹੋਇਆ"},
+      {"word_idx": 3, "gloss_text": "ਅਚੰਭਿਤ, ਮੁਸਕਰਾਉਂਦਾ"},
+      {"word_idx": 4, "gloss_text": "ਨੀਚ ਮਾਰਗ (ਸੰਸਾਰ)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "[draft] ਅਭਾਵ (ਨਾਸਤਿੱਤਵ, ਸ਼ੂਨਯ)"},
+      {"word_idx": 1, "gloss_text": "[draft] ਧਿਆਨ ਦਾ ਵਿਸ਼ਾ ਬਣਨਾ"},
+      {"word_idx": 2, "gloss_text": "ਅਮੂੜ੍ਹਤਾ (ਚੇਤਨਾ)"},
+      {"word_idx": 3, "gloss_text": "[draft] ਬਾਅਦ ਦੇ ਚਿੰਤਨ ਦੇ ਸੰਪਰਕ ਨਾਲ"},
+      {"word_idx": 4, "gloss_text": "ਨਿਸ਼ਚਾ"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "ਕ੍ਰਿਤਿਮ (ਬਣਾਇਆ ਹੋਇਆ)"},
+      {"word_idx": 1, "gloss_text": "ਜਾਣਨ-ਯੋਗ"},
+      {"word_idx": 2, "gloss_text": "ਡੂੰਘੀ ਨੀਂਦ ਦੀ ਅਵਸਥਾ ਵਾਂਗ"},
+      {"word_idx": 3, "gloss_text": "[draft] ਸਮਰਣ-ਯੋਗ ਹੋਣਾ"},
+      {"word_idx": 4, "gloss_text": "ਉਹ ਤੱਤ (ਅਸਲੀਅਤ)"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "ਅਵਸਥਾਵਾਂ ਦਾ ਜੋੜਾ"},
+      {"word_idx": 1, "gloss_text": "ਕਾਰਜਤਾ ਤੇ ਕਰਤ੍ਰਿੱਤਵ ਨਾਮਕ"},
+      {"word_idx": 2, "gloss_text": "ਕਾਰਜਤਾ"},
+      {"word_idx": 3, "gloss_text": "ਖ਼ਤਮ ਹੋਣ ਵਾਲੀ"},
+      {"word_idx": 4, "gloss_text": "ਕਰਤ੍ਰਿੱਤਵ"},
+      {"word_idx": 5, "gloss_text": "ਅਖ਼ਤਮ (ਅਮਰ)"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "ਕਾਰਜਾਂ ਵੱਲ ਮੁਖੀ"},
+      {"word_idx": 1, "gloss_text": "ਯਤਨ"},
+      {"word_idx": 2, "gloss_text": "ਲੋਪ ਹੁੰਦਾ ਹੈ"},
+      {"word_idx": 3, "gloss_text": "ਨਾਸ਼"},
+      {"word_idx": 4, "gloss_text": "ਅਗਿਆਨੀ"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "ਅੰਤਰ-ਮੁਖੀ"},
+      {"word_idx": 1, "gloss_text": "ਭਾਵ (ਹੋਂਦ)"},
+      {"word_idx": 2, "gloss_text": "ਸਰਵਗਿਆਤਾ-ਗੁਣ ਦਾ ਆਸ਼੍ਰਯ"},
+      {"word_idx": 3, "gloss_text": "ਉਪਲਬਧੀ ਦਾ ਲੋਪ"},
+      {"word_idx": 4, "gloss_text": "ਅਨੁਪਲਬਧੀ-ਕਰਤਾ"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "ਉਪਲਬਧਾ (ਅਨੁਭਵੀ)"},
+      {"word_idx": 1, "gloss_text": "ਤਿੰਨਾਂ ਅਵਸਥਾਵਾਂ ਵਿੱਚ ਅਵਿਚੱਲ"},
+      {"word_idx": 2, "gloss_text": "ਸੁਪ੍ਰਬੁੱਧ (ਚੰਗੀ ਤਰ੍ਹਾਂ ਜਾਗ੍ਰਤ) ਦਾ"},
+      {"word_idx": 3, "gloss_text": "ਉਸ (ਅਵਸਥਾ) ਦੇ ਆਦਿ-ਅੰਤ ਵਿੱਚ"},
+      {"word_idx": 4, "gloss_text": "ਦੂਜੇ (ਘੱਟ ਜਾਗ੍ਰਤ) ਦੇ"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "ਗਿਆਨ ਤੇ ਗਿਆਨ-ਯੋਗ ਦਾ ਰੂਪ ਰੱਖਣ ਵਾਲੀ"},
+      {"word_idx": 1, "gloss_text": "ਪਰਮ ਸ਼ਕਤੀ ਨਾਲ"},
+      {"word_idx": 2, "gloss_text": "ਦੋ ਅਵਸਥਾਵਾਂ (ਜਾਗਰਤ ਤੇ ਸੁਪਨ) ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਵਿਭੁ (ਸਰਵਵਿਆਪੀ)"},
+      {"word_idx": 4, "gloss_text": "ਚਿਤ-ਮਾਤਰ (ਕੇਵਲ ਚੇਤਨਾ)"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ਗੁਣਾਂ ਆਦਿ ਦੇ ਸਪੰਦ-ਪ੍ਰਵਾਹ"},
+      {"word_idx": 1, "gloss_text": "ਸਾਮਾਨਯ ਸਪੰਦ ਦੇ ਆਸਰੇ ਨਾਲ"},
+      {"word_idx": 2, "gloss_text": "ਆਪਣੀ ਹੋਂਦ ਪ੍ਰਾਪਤ ਕਰਨ ਵਾਲੇ"},
+      {"word_idx": 3, "gloss_text": "ਗਿਆਨੀ ਲਈ"},
+      {"word_idx": 4, "gloss_text": "ਰੋਕਾਵਟ ਨਾ ਬਣਨ ਵਾਲੇ"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "ਅਪ੍ਰਬੁੱਧ-ਬੁੱਧੀ ਵਾਲਿਆਂ ਨੂੰ"},
+      {"word_idx": 1, "gloss_text": "ਆਪਣੀ ਸਥਿਤੀ ਨੂੰ ਢੱਕਣ ਲਈ ਤਿਆਰ"},
+      {"word_idx": 2, "gloss_text": "ਡੇਗ ਦਿੰਦੀਆਂ ਹਨ"},
+      {"word_idx": 3, "gloss_text": "ਪਾਰ ਕਰਨ ਵਿੱਚ ਔਖਾ"},
+      {"word_idx": 4, "gloss_text": "ਸੰਸਾਰ-ਮਾਰਗ ਵਿੱਚ"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "ਸਦਾ ਯਤਨਸ਼ੀਲ"},
+      {"word_idx": 1, "gloss_text": "ਸਪੰਦ-ਤੱਤ ਦੇ ਵਿਵੇਕ ਲਈ"},
+      {"word_idx": 2, "gloss_text": "ਜਾਗਰਤ ਅਵਸਥਾ ਵਿੱਚ ਹੀ"},
+      {"word_idx": 3, "gloss_text": "ਆਪਣੇ ਅਸਲ ਭਾਵ ਨੂੰ"},
+      {"word_idx": 4, "gloss_text": "ਜਲਦੀ"},
+      {"word_idx": 5, "gloss_text": "ਪ੍ਰਾਪਤ ਕਰ ਲੈਂਦਾ ਹੈ"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "ਅਤਿ-ਕ੍ਰੋਧਿਤ"},
+      {"word_idx": 1, "gloss_text": "ਪਰਮ-ਪ੍ਰਸੰਨ"},
+      {"word_idx": 2, "gloss_text": "'ਮੈਂ ਕੀ ਕਰਾਂ'"},
+      {"word_idx": 3, "gloss_text": "ਸੋਚਦਾ, ਉਲਝਣ ਵਿੱਚ"},
+      {"word_idx": 4, "gloss_text": "ਦੌੜਦਾ"},
+      {"word_idx": 5, "gloss_text": "ਜਿਸ ਅਵਸਥਾ (ਨੂੰ ਮਨੁੱਖ ਪਹੁੰਚੇ)"},
+      {"word_idx": 6, "gloss_text": "ਪ੍ਰਤਿਸ਼ਠਿਤ ਹੈ"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "[draft] ਆਸਰਾ ਲੈ ਕੇ"},
+      {"word_idx": 1, "gloss_text": "ਕਹੇਗਾ"},
+      {"word_idx": 2, "gloss_text": "ਜ਼ਰੂਰ"},
+      {"word_idx": 3, "gloss_text": "ਮੈਂ ਕਰਾਂਗਾ"},
+      {"word_idx": 4, "gloss_text": "ਸੰਕਲਪ ਕਰ ਕੇ"},
+      {"word_idx": 5, "gloss_text": "ਟਿਕਿਆ ਰਹਿੰਦਾ ਹੈ"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "ਉਸ (ਅਵਸਥਾ) ਦਾ ਆਸਰਾ ਲੈ ਕੇ"},
+      {"word_idx": 1, "gloss_text": "ਉੱਪਰ ਵਾਲੇ ਮਾਰਗ ਦੁਆਰਾ"},
+      {"word_idx": 2, "gloss_text": "ਚੰਦ੍ਰਮਾ ਤੇ ਸੂਰਜ (ਇੜਾ ਤੇ ਪਿੰਗਲਾ / ਪ੍ਰਾਣ ਤੇ ਅਪਾਨ)"},
+      {"word_idx": 3, "gloss_text": "ਸੁਸ਼ੁਮਨਾ ਮਾਰਗ ਵਿੱਚ"},
+      {"word_idx": 4, "gloss_text": "ਅਸਤ ਹੋ ਗਏ (ਲੀਨ)"},
+      {"word_idx": 5, "gloss_text": "ਬ੍ਰਹਮਾਂਡ ਦੇ ਖੇਤਰ ਨੂੰ"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "ਮਹਾਨ ਆਕਾਸ਼ ਵਿੱਚ (ਚੇਤਨਾ ਦਾ)"},
+      {"word_idx": 1, "gloss_text": "ਜਿੱਥੇ ਚੰਦ੍ਰਮਾ ਤੇ ਸੂਰਜ ਲੀਨ ਹੋਏ ਹਨ"},
+      {"word_idx": 2, "gloss_text": "ਡੂੰਘੀ ਨੀਂਦ ਦੀ ਅਵਸਥਾ ਵਾਂਗ"},
+      {"word_idx": 3, "gloss_text": "ਮੂੜ੍ਹ (ਅਗਿਆਨੀ)"},
+      {"word_idx": 4, "gloss_text": "ਪ੍ਰਬੁੱਧ (ਜਾਗ੍ਰਤ)"},
+      {"word_idx": 5, "gloss_text": "ਅਨਾਵ੍ਰਿਤ (ਬੇ-ਆਵਰਣ)"}
+    ],
+    "2.1": [
+      {"word_idx": 0, "gloss_text": "ਉਸ ਬਲ ਨੂੰ ਆਕ੍ਰਮ ਕੇ"},
+      {"word_idx": 1, "gloss_text": "ਮੰਤ੍ਰ"},
+      {"word_idx": 2, "gloss_text": "ਸਰਵਗਿਆ-ਬਲ ਨਾਲ ਸ਼ੋਭਨਯੁਕਤ"},
+      {"word_idx": 3, "gloss_text": "ਅਧਿਕਾਰ (ਨਿਯੁਕਤ ਕਾਰਜ) ਲਈ"},
+      {"word_idx": 4, "gloss_text": "ਇੰਦ੍ਰੀਆਂ ਵਾਂਗ"}
+    ],
+    "2.2": [
+      {"word_idx": 0, "gloss_text": "ਸੰਪੂਰਣ ਲੀਨ ਹੋ ਜਾਂਦੇ ਹਨ"},
+      {"word_idx": 1, "gloss_text": "ਸ਼ਾਂਤ-ਰੂਪ"},
+      {"word_idx": 2, "gloss_text": "ਨਿਰੰਜਨ (ਨਿਰਮਲ)"},
+      {"word_idx": 3, "gloss_text": "ਆਰਾਧਕ ਦੇ ਚਿੱਤ ਨਾਲ"},
+      {"word_idx": 4, "gloss_text": "ਸ਼ਿਵ-ਸੁਭਾਅ ਵਾਲੇ"}
+    ],
+    "2.3": [
+      {"word_idx": 0, "gloss_text": "ਸਰਵਮਯ"},
+      {"word_idx": 1, "gloss_text": "ਜੀਵ"},
+      {"word_idx": 2, "gloss_text": "ਸਾਰੇ ਪਦਾਰਥਾਂ ਦੇ ਉਪਜਣ ਕਾਰਨ"},
+      {"word_idx": 3, "gloss_text": "ਉਸ ਦੇ ਸੰਵੇਦਨ-ਰੂਪ ਨਾਲ"},
+      {"word_idx": 4, "gloss_text": "ਤਾਦਾਤਮਯ (ਏਕਤਾ) ਦੀ ਪ੍ਰਤੀਤੀ ਨਾਲ"}
+    ],
+    "2.4": [
+      {"word_idx": 0, "gloss_text": "ਸ਼ਬਦ ਤੇ ਅਰਥ ਦੇ ਚਿੰਤਨਾਂ ਵਿੱਚ"},
+      {"word_idx": 1, "gloss_text": "ਅਵਸਥਾ"},
+      {"word_idx": 2, "gloss_text": "ਸ਼ਿਵ"},
+      {"word_idx": 3, "gloss_text": "ਭੋਕਤਾ (ਅਨੁਭਵੀ)"},
+      {"word_idx": 4, "gloss_text": "ਭੋਗਯ-ਭਾਵ (ਅਨੁਭਵ-ਯੋਗ) ਦੇ ਰੂਪ ਵਿੱਚ"},
+      {"word_idx": 5, "gloss_text": "ਪ੍ਰਤਿਸ਼ਠਿਤ"}
+    ],
+    "2.5": [
+      {"word_idx": 0, "gloss_text": "ਸੰਵਿੱਤੀ (ਅਨੁਭਵ, ਪ੍ਰਤੀਤੀ)"},
+      {"word_idx": 1, "gloss_text": "ਕ੍ਰੀੜਾ ਦੇ ਰੂਪ ਵਿੱਚ"},
+      {"word_idx": 2, "gloss_text": "ਸਾਰਾ ਜਗਤ"},
+      {"word_idx": 3, "gloss_text": "ਵੇਖਦਾ ਹੋਇਆ"},
+      {"word_idx": 4, "gloss_text": "ਯੁਕਤ (ਇਸ ਅਨੁਭਵ ਵਿੱਚ ਟਿਕਿਆ)"},
+      {"word_idx": 5, "gloss_text": "ਜੀਵਨ-ਮੁਕਤ"}
+    ],
+    "2.6": [
+      {"word_idx": 0, "gloss_text": "ਉਦੈ (ਪ੍ਰਗਟ ਹੋਣਾ)"},
+      {"word_idx": 1, "gloss_text": "ਧਿਆਨ-ਯੋਗ ਦਾ"},
+      {"word_idx": 2, "gloss_text": "ਧਿਆਯੀ (ਸਾਧਕ) ਦੇ ਚਿੱਤ ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਉਸ ਨਾਲ ਤਾਦਾਤਮਯ ਦੀ ਪ੍ਰਾਪਤੀ"},
+      {"word_idx": 4, "gloss_text": "ਇੱਛੁਕ ਸਾਧਕ ਦੀ"}
+    ],
+    "2.7": [
+      {"word_idx": 0, "gloss_text": "ਅੰਮ੍ਰਿਤ ਦੀ ਪ੍ਰਾਪਤੀ"},
+      {"word_idx": 1, "gloss_text": "ਆਤਮਾ ਦਾ ਗ੍ਰਹਣ"},
+      {"word_idx": 2, "gloss_text": "ਨਿਰਵਾਣ ਦੀ ਦੀਖਿਆ"},
+      {"word_idx": 3, "gloss_text": "ਸ਼ਿਵ ਦੀ ਅਸਲ ਹੋਂਦ ਪ੍ਰਦਾਨ ਕਰਨ ਵਾਲੀ"}
+    ],
+    "3.1": [
+      {"word_idx": 0, "gloss_text": "ਇੱਛਾ ਅਨੁਸਾਰ ਪ੍ਰਾਰਥਨਾ ਕੀਤਾ ਹੋਇਆ"},
+      {"word_idx": 1, "gloss_text": "ਧਾਤਾ (ਪਾਲਣਹਾਰ ਸਪੰਦ)"},
+      {"word_idx": 2, "gloss_text": "ਜਾਗਰਤ ਅਵਸਥਾ ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਸੋਮ ਤੇ ਸੂਰਜ ਦਾ ਉਦੈ (ਅਪਾਨ ਤੇ ਪ੍ਰਾਣ)"},
+      {"word_idx": 4, "gloss_text": "ਪ੍ਰਾਪਤ ਕਰਵਾਉਂਦਾ ਹੈ"},
+      {"word_idx": 5, "gloss_text": "ਦੇਹਧਾਰੀ ਲਈ"}
+    ],
+    "3.2": [
+      {"word_idx": 0, "gloss_text": "ਅਭੀਸ਼ਟ (ਮਨਪਸੰਦ) ਪਦਾਰਥ"},
+      {"word_idx": 1, "gloss_text": "ਪ੍ਰੇਮ-ਪ੍ਰਾਰਥਨਾ ਦਾ ਉਲੰਘਣ ਨਾ ਕਰ ਕੇ"},
+      {"word_idx": 2, "gloss_text": "ਹੋਰ ਵੀ ਸਪਸ਼ਟ ਰੂਪ ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਮੱਧ (ਕੇਂਦਰ) ਵਿੱਚ ਟਿਕਿਆ"},
+      {"word_idx": 4, "gloss_text": "ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੇ"}
+    ],
+    "3.3": [
+      {"word_idx": 0, "gloss_text": "ਸੁਤੰਤਰ"},
+      {"word_idx": 1, "gloss_text": "ਸ੍ਰਿਸ਼ਟੀ"},
+      {"word_idx": 2, "gloss_text": "[draft] ਉਸ (ਸਪੰਦ) ਦੇ ਸੁਭਾਅ ਨਾਲ ਸਾਂਝ ਕਾਰਨ"},
+      {"word_idx": 3, "gloss_text": "ਸਾਧਾਰਣ (ਲੌਕਿਕ) ਜੀਵ ਦੀ"},
+      {"word_idx": 4, "gloss_text": "ਜਾਗਰਤ ਤੇ ਸੁਪਨ ਦੋ ਅਵਸਥਾਵਾਂ ਵਿੱਚ"}
+    ],
+    "3.4": [
+      {"word_idx": 0, "gloss_text": "ਪਦਾਰਥ"},
+      {"word_idx": 1, "gloss_text": "ਅਸਪਸ਼ਟ"},
+      {"word_idx": 2, "gloss_text": "ਸਾਵਧਾਨ ਮਨ ਨਾਲ ਵੀ"},
+      {"word_idx": 3, "gloss_text": "ਹੋਰ ਸਪਸ਼ਟ"},
+      {"word_idx": 4, "gloss_text": "ਆਪਣੇ ਬਲ ਦੇ ਉਦਯੋਗ ਨਾਲ ਪ੍ਰਭਾਵਿਤ"}
+    ],
+    "3.5": [
+      {"word_idx": 0, "gloss_text": "ਪਰਮਾਰਥ ਰੂਪ ਵਿੱਚ"},
+      {"word_idx": 1, "gloss_text": "ਟਿਕਿਆ ਹੋਇਆ"},
+      {"word_idx": 2, "gloss_text": "(ਸਪੰਦ) ਬਲ ਨੂੰ ਆਕ੍ਰਮ ਕੇ"},
+      {"word_idx": 3, "gloss_text": "ਜਲਦੀ"},
+      {"word_idx": 4, "gloss_text": "ਪ੍ਰਗਟ ਹੁੰਦਾ ਹੈ"}
+    ],
+    "3.6": [
+      {"word_idx": 0, "gloss_text": "ਕਮਜ਼ੋਰ"},
+      {"word_idx": 1, "gloss_text": "ਉਸ (ਸਪੰਦ) ਦਾ ਆਸਰਾ ਲੈ ਕੇ"},
+      {"word_idx": 2, "gloss_text": "ਕਾਰਜ ਵਿੱਚ"},
+      {"word_idx": 3, "gloss_text": "ਪ੍ਰਵ੍ਰਿੱਤ ਹੁੰਦਾ"},
+      {"word_idx": 4, "gloss_text": "ਭੁੱਖ ਨੂੰ ਢੱਕ ਲਵੇ"},
+      {"word_idx": 5, "gloss_text": "ਅਤਿ ਭੁੱਖਾ"}
+    ],
+    "3.7": [
+      {"word_idx": 0, "gloss_text": "ਇਸ (ਸਪੰਦ) ਦੁਆਰਾ ਅਧਿਸ਼ਠਿਤ ਦੇਹ ਵਿੱਚ"},
+      {"word_idx": 1, "gloss_text": "ਸਰਵਗਿਆਤਾ ਆਦਿ"},
+      {"word_idx": 2, "gloss_text": "ਆਪਣੇ ਆਤਮਾ ਉੱਪਰ ਅਧਿਸ਼ਠਾਨ ਨਾਲ"},
+      {"word_idx": 3, "gloss_text": "ਸਭ ਥਾਈਂ"},
+      {"word_idx": 4, "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"}
+    ],
+    "3.8": [
+      {"word_idx": 0, "gloss_text": "ਗਲਾਨੀ (ਥਕਾਵਟ, ਉਦਾਸੀ)"},
+      {"word_idx": 1, "gloss_text": "ਚੋਰ (ਲੁੱਟਣ ਵਾਲੀ)"},
+      {"word_idx": 2, "gloss_text": "ਅਗਿਆਨ ਤੋਂ"},
+      {"word_idx": 3, "gloss_text": "ਨਿਕਲਣਾ"},
+      {"word_idx": 4, "gloss_text": "ਉਸ (ਸਪੰਦ) ਦੇ ਉਨਮੇਸ਼ ਨਾਲ ਨਾਸ਼"},
+      {"word_idx": 5, "gloss_text": "ਬਿਨਾਂ ਕਾਰਨ"}
+    ],
+    "3.9": [
+      {"word_idx": 0, "gloss_text": "ਇੱਕ ਚਿੰਤਨ ਵਿੱਚ ਲੀਨ ਦਾ"},
+      {"word_idx": 1, "gloss_text": "ਕਿਸੇ ਹੋਰ (ਚਿੰਤਨ) ਦਾ ਉਦੈ"},
+      {"word_idx": 2, "gloss_text": "ਉਨਮੇਸ਼ (ਖੁੱਲ੍ਹਣਾ / ਪ੍ਰਕਾਸ਼ਨਾ)"},
+      {"word_idx": 3, "gloss_text": "ਜਾਣਨ-ਯੋਗ"},
+      {"word_idx": 4, "gloss_text": "ਪਛਾਣੇ, ਵੇਖੇ"}
+    ],
+    "3.10": [
+      {"word_idx": 0, "gloss_text": "ਬਿੰਦੁ (ਪ੍ਰਕਾਸ਼-ਬਿੰਦੁ)"},
+      {"word_idx": 1, "gloss_text": "ਨਾਦ (ਅੰਦਰੂਨੀ ਧੁਨੀ)"},
+      {"word_idx": 2, "gloss_text": "ਰੂਪ"},
+      {"word_idx": 3, "gloss_text": "ਰਸ (ਸੂਖਮ ਸੁਆਦ)"},
+      {"word_idx": 4, "gloss_text": "ਖੌਫ਼ਲਾਉਣ ਵਾਲੇ ਅਨੁਭਵ ਵਜੋਂ"}
+    ],
+    "3.11": [
+      {"word_idx": 0, "gloss_text": "ਵੇਖਣ ਦੀ ਇੱਛਾ ਨਾਲ"},
+      {"word_idx": 1, "gloss_text": "ਸਾਰੇ ਪਦਾਰਥਾਂ ਨੂੰ ਵਿਆਪ ਕੇ"},
+      {"word_idx": 2, "gloss_text": "ਟਿਕਦਾ ਹੈ"},
+      {"word_idx": 3, "gloss_text": "ਬਹੁਤ ਕਹਿਣ ਦੀ ਕੀ ਲੋੜ"},
+      {"word_idx": 4, "gloss_text": "ਅਨੁਭਵ ਹੋ ਜਾਵੇਗਾ"}
+    ],
+    "3.12": [
+      {"word_idx": 0, "gloss_text": "ਪ੍ਰਬੁੱਧ (ਜਾਗ੍ਰਤ)"},
+      {"word_idx": 1, "gloss_text": "ਟਿਕੇ"},
+      {"word_idx": 2, "gloss_text": "ਗਿਆਨ ਨਾਲ ਵੇਖਦਿਆਂ"},
+      {"word_idx": 3, "gloss_text": "ਗੋਚਰ (ਇੰਦ੍ਰੀਆਂ ਦਾ ਵਿਸ਼ਾ)"},
+      {"word_idx": 4, "gloss_text": "ਇੱਕ (ਪਰਮ ਤੱਤ) ਵਿੱਚ ਆਰੋਪਿਤ ਕਰੇ"},
+      {"word_idx": 5, "gloss_text": "ਪੀੜਿਤ ਨਹੀਂ ਹੁੰਦਾ"}
+    ],
+    "3.13": [
+      {"word_idx": 0, "gloss_text": "ਸ਼ਬਦ-ਰਾਸ਼ੀ (ਅੱਖਰਾਂ ਦੇ ਸਮੂਹ) ਤੋਂ ਉਪਜੀਆਂ"},
+      {"word_idx": 1, "gloss_text": "ਸ਼ਕਤੀ-ਸਮੂਹ ਦੀ"},
+      {"word_idx": 2, "gloss_text": "ਭੋਗਯ-ਅਵਸਥਾ ਨੂੰ"},
+      {"word_idx": 3, "gloss_text": "ਜਿਸ ਦਾ ਵਿਭਵ ਕਲਾ (ਸੀਮਿਤ ਸ਼ਕਤੀ) ਨਾਲ ਢੱਕਿਆ"},
+      {"word_idx": 4, "gloss_text": "ਪਸ਼ੁ (ਬੰਧਨ-ਯੁਕਤ ਜੀਵ)"}
+    ],
+    "3.14": [
+      {"word_idx": 0, "gloss_text": "ਪਰਮ ਅੰਮ੍ਰਿਤ-ਰਸ ਦਾ ਨਾਸ਼"},
+      {"word_idx": 1, "gloss_text": "[draft] ਪ੍ਰਤਯਯਾਂ (ਮਾਨਸਿਕ ਸੰਕਲਪਾਂ) ਦਾ ਉਦੈ"},
+      {"word_idx": 2, "gloss_text": "ਅਸੁਤੰਤਰਤਾ ਨੂੰ"},
+      {"word_idx": 3, "gloss_text": "[draft] ਕੇਵਲ ਤਨਮਾਤਰਾਂ ਦਾ ਖੇਤਰ"}
+    ],
+    "3.15": [
+      {"word_idx": 0, "gloss_text": "ਆਪਣੇ ਸਰੂਪ ਨੂੰ ਢੱਕਣ ਲਈ"},
+      {"word_idx": 1, "gloss_text": "ਸ਼ਕਤੀਆਂ"},
+      {"word_idx": 2, "gloss_text": "ਨਿਰੰਤਰ ਉੱਠਣ ਵਾਲੀਆਂ"},
+      {"word_idx": 3, "gloss_text": "ਸ਼ਬਦ ਦੇ ਅਨੁਵੇਧ (ਵਿੰਨ੍ਹਣ) ਨਾਲ"},
+      {"word_idx": 4, "gloss_text": "ਮਾਨਸਿਕ ਸੰਕਲਪਾਂ ਦਾ ਉਦੈ"}
+    ],
+    "3.16": [
+      {"word_idx": 0, "gloss_text": "ਕ੍ਰਿਯਾਤਮਕ ਸ਼ਕਤੀ"},
+      {"word_idx": 1, "gloss_text": "ਪਸ਼ੁ ਵਿੱਚ ਪ੍ਰਵ੍ਰਿੱਤ"},
+      {"word_idx": 2, "gloss_text": "ਬੰਧਨ ਪਾਉਣ ਵਾਲੀ"},
+      {"word_idx": 3, "gloss_text": "ਆਪਣੇ (ਅਸਲ) ਮਾਰਗ ਉੱਤੇ ਟਿਕੀ"},
+      {"word_idx": 4, "gloss_text": "ਸਿੱਧੀ ਪ੍ਰਦਾਨ ਕਰਨ ਵਾਲੀ"}
+    ],
+    "3.17": [
+      {"word_idx": 0, "gloss_text": "ਤਨਮਾਤਰਾਂ ਤੋਂ ਉਪਜਣ ਵਾਲੇ ਰੂਪ"},
+      {"word_idx": 1, "gloss_text": "ਮਨ-ਅਹੰਕਾਰ-ਬੁੱਧੀ ਦੇ ਰੂਪ ਵਿੱਚ ਚੱਲਣ ਵਾਲੇ"},
+      {"word_idx": 2, "gloss_text": "ਪੁਰਯਸ਼ਟਕ (ਅੱਠ-ਅੰਗੀ ਸੂਖਮ ਸਰੀਰ) ਨਾਲ"},
+      {"word_idx": 3, "gloss_text": "ਘੇਰਿਆ ਹੋਇਆ"},
+      {"word_idx": 4, "gloss_text": "ਉਸ ਤੋਂ ਉੱਠਣ ਵਾਲੇ ਸੰਕਲਪਾਂ ਦਾ ਉਦੈ"}
+    ],
+    "3.18": [
+      {"word_idx": 0, "gloss_text": "ਭੋਗਦਾ ਹੈ"},
+      {"word_idx": 1, "gloss_text": "ਪਰਾਧੀਨ (ਦੂਜੇ ਦੇ ਵੱਸ)"},
+      {"word_idx": 2, "gloss_text": "ਭੋਗ (ਅਨੁਭਵ)"},
+      {"word_idx": 3, "gloss_text": "ਸੰਸਾਰ-ਚੱਕਰ ਵਿੱਚ ਘੁੰਮੇ"},
+      {"word_idx": 4, "gloss_text": "ਕਾਰਨ"},
+      {"word_idx": 5, "gloss_text": "ਅਸੀਂ ਦੱਸਾਂਗੇ"}
+    ],
+    "3.19": [
+      {"word_idx": 0, "gloss_text": "ਇੱਕ (ਪਰਮ ਤੱਤ) ਵਿੱਚ ਦ੍ਰਿੜ੍ਹ"},
+      {"word_idx": 1, "gloss_text": "ਲਯ ਤੇ ਉਦੈ"},
+      {"word_idx": 2, "gloss_text": "ਨਿਯੰਤ੍ਰਿਤ ਕਰਦਾ"},
+      {"word_idx": 3, "gloss_text": "ਸੱਚੀ ਭੋਕਤ੍ਰਿਤਾ ਨੂੰ"},
+      {"word_idx": 4, "gloss_text": "ਚੱਕ੍ਰੇਸ਼ਵਰ (ਸ਼ਕਤੀ-ਚੱਕਰ ਦਾ ਸੁਆਮੀ)"}
+    ],
+    "4.1": [
+      {"word_idx": 0, "gloss_text": "ਅਥਾਹ ਸੰਸ਼ੈ-ਸਾਗਰ"},
+      {"word_idx": 1, "gloss_text": "ਪਾਰ ਉਤਾਰਨ ਵਾਲੀ"},
+      {"word_idx": 2, "gloss_text": "ਮੈਂ ਪ੍ਰਣਾਮ ਕਰਦਾ ਹਾਂ"},
+      {"word_idx": 3, "gloss_text": "ਅਨੇਕ-ਅਰਥਾਂ ਵਾਲੇ ਪਦਾਂ ਵਾਲੀ"},
+      {"word_idx": 4, "gloss_text": "ਚਿੱਤ੍ਰ (ਅਦਭੁਤ)"},
+      {"word_idx": 5, "gloss_text": "ਗੁਰੂ-ਬਾਣੀ"}
+    ]
+  }
+}

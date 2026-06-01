@@ -16,6 +16,7 @@ import WordSheet from "../../../../components/WordSheet.solid";
 import TranslationDrawer from "../../../../components/TranslationDrawer.solid";
 import ReaderLangSwap from "../../../../components/ReaderLangSwap.solid";
 import { listTexts, listAllVerses, getVerse, getVerseTranslations, getVerseAllLanguages, getDb } from "../../../../lib/db";
+import { enumerateRedirectPairs, resolveAlias } from "../../../../lib/aliases";
 
 export async function getStaticPaths() {
   const texts = listTexts();
@@ -26,8 +27,13 @@ export async function getStaticPaths() {
       chapter: string;
       verse: string;
     };
+    props: {
+      redirectTo: string | null;
+    };
   }> = [];
 
+  // 1. Canonical verse pages — one entry per (tradition, slug, chapter, verse)
+  //    matching the DB.
   for (const t of texts) {
     const verses = listAllVerses(t.slug);
     for (const v of verses) {
@@ -37,6 +43,27 @@ export async function getStaticPaths() {
           text: t.slug,
           chapter: String(v.chapter),
           verse: String(v.verse_num),
+        },
+        props: { redirectTo: null },
+      });
+    }
+  }
+
+  // 2. Redirect entries — for every wrong-tradition or aliased-slug
+  //    combination, emit a static HTML page that redirects to canonical.
+  //    Cloudflare's static-pages adapter turns these into real 301s.
+  for (const pair of enumerateRedirectPairs(texts)) {
+    const canonVerses = listAllVerses(pair.canonicalSlug);
+    for (const v of canonVerses) {
+      paths.push({
+        params: {
+          tradition: pair.wrongTradition,
+          text: pair.wrongSlug,
+          chapter: String(v.chapter),
+          verse: String(v.verse_num),
+        },
+        props: {
+          redirectTo: `/${pair.canonicalTradition}/${pair.canonicalSlug}/${v.chapter}/${v.verse_num}`,
         },
       });
     }
@@ -48,6 +75,25 @@ export async function getStaticPaths() {
 const { tradition, text, chapter, verse } = Astro.params;
 const chapterNum = Number(chapter);
 const verseNum = Number(verse);
+
+// Defensive: if this build path was emitted as a redirect entry, return a
+// 301 immediately. In static mode Astro materializes this as a meta-refresh
+// HTML file; the Cloudflare adapter promotes redirects to real Location
+// headers at the edge.
+const { redirectTo } = Astro.props as { redirectTo: string | null };
+if (redirectTo) {
+  return Astro.redirect(redirectTo, 301);
+}
+
+// Belt-and-suspenders: if a request slips through with non-canonical
+// params (e.g. dev-server hot-reload race), normalize via the alias table.
+const aliasCheck = resolveAlias(tradition!, text!);
+if (aliasCheck && !aliasCheck.canonical) {
+  return Astro.redirect(
+    `/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}/${verseNum}`,
+    301,
+  );
+}
 
 const data = getVerse(text!, chapterNum, verseNum, "en");
 if (!data) {

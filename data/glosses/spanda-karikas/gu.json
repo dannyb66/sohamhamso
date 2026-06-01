@@ -1,0 +1,401 @@
+{
+  "text_slug": "spanda-karikas",
+  "lang": "gu",
+  "translator": "sohamhamso (claude-opus-4-7)",
+  "license": "CC-BY-SA",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {"word_idx": 0, "gloss_text": "જેમના"},
+      {"word_idx": 1, "gloss_text": "ઉન્મેષ અને નિમેષ (નેત્રો ખોલવા-મીંચવા) દ્વારા"},
+      {"word_idx": 2, "gloss_text": "જગતનો"},
+      {"word_idx": 3, "gloss_text": "પ્રલય અને ઉદય"},
+      {"word_idx": 4, "gloss_text": "શક્તિચક્રના વૈભવના સ્રોત"},
+      {"word_idx": 5, "gloss_text": "શંકરને (શિવ, કલ્યાણકારી)"},
+      {"word_idx": 6, "gloss_text": "અમે સ્તુતિ કરીએ છીએ"}
+    ],
+    "1.2": [
+      {"word_idx": 0, "gloss_text": "જેમાં"},
+      {"word_idx": 1, "gloss_text": "સ્થિત છે"},
+      {"word_idx": 2, "gloss_text": "આ સર્વ"},
+      {"word_idx": 3, "gloss_text": "કાર્ય (કૃત જગત)"},
+      {"word_idx": 4, "gloss_text": "જેમાંથી"},
+      {"word_idx": 5, "gloss_text": "અને (સર્વ) નિર્ગત થયું છે"},
+      {"word_idx": 6, "gloss_text": "તેને માટે"},
+      {"word_idx": 7, "gloss_text": "અનાવૃત સ્વરૂપને કારણે"},
+      {"word_idx": 8, "gloss_text": "નિરોધ નથી"},
+      {"word_idx": 9, "gloss_text": "ક્યાંય"}
+    ],
+    "1.3": [
+      {"word_idx": 0, "gloss_text": "જાગ્રત આદિ અવસ્થાઓના ભેદમાં"},
+      {"word_idx": 1, "gloss_text": "તેનાથી અભિન્ન"},
+      {"word_idx": 2, "gloss_text": "પ્રસરે છે છતાં"},
+      {"word_idx": 3, "gloss_text": "નિવૃત્ત થાય છે (નહીં)"},
+      {"word_idx": 4, "gloss_text": "પોતાના સ્વભાવમાંથી"},
+      {"word_idx": 5, "gloss_text": "ઉપલબ્ધા (પ્રત્યક્ષકર્તા) રૂપે"}
+    ],
+    "1.4": [
+      {"word_idx": 0, "gloss_text": "'હું સુખી'"},
+      {"word_idx": 1, "gloss_text": "દુઃખી"},
+      {"word_idx": 2, "gloss_text": "આસક્ત"},
+      {"word_idx": 3, "gloss_text": "સંવિત્તિઓ (બોધો)"},
+      {"word_idx": 4, "gloss_text": "સુખાદિ અવસ્થાઓમાં અનુસ્યૂત (પરોવાયેલ)માં"},
+      {"word_idx": 5, "gloss_text": "અન્યત્ર (બીજા આશ્રયમાં)"},
+      {"word_idx": 6, "gloss_text": "સ્પષ્ટ રીતે"}
+    ],
+    "1.5": [
+      {"word_idx": 0, "gloss_text": "દુઃખ"},
+      {"word_idx": 1, "gloss_text": "સુખ"},
+      {"word_idx": 2, "gloss_text": "ગ્રાહ્ય (વિષય)"},
+      {"word_idx": 3, "gloss_text": "ગ્રાહક (વિષયી)"},
+      {"word_idx": 4, "gloss_text": "મૂઢ-ભાવ (જડતાની સ્થિતિ)"},
+      {"word_idx": 5, "gloss_text": "પરમાર્થે (પરમ સત્યમાં)"}
+    ],
+    "1.6": [
+      {"word_idx": 0, "gloss_text": "કરણસમૂહ (ઇન્દ્રિય-સમૂહ)"},
+      {"word_idx": 1, "gloss_text": "વિમૂઢ (જડ)"},
+      {"word_idx": 2, "gloss_text": "જાણે અમૂઢ (ચેતન) હોય તેમ"},
+      {"word_idx": 3, "gloss_text": "અંતર (અંતઃકરણ) ચક્ર સહિત"},
+      {"word_idx": 4, "gloss_text": "પ્રવૃત્તિ, સ્થિતિ, સંહૃતિઓ"}
+    ],
+    "1.7": [
+      {"word_idx": 0, "gloss_text": "તે માટેના પ્રયત્નથી"},
+      {"word_idx": 1, "gloss_text": "પરીક્ષણીય"},
+      {"word_idx": 2, "gloss_text": "તત્ત્વ (પરમ સત્ય)"},
+      {"word_idx": 3, "gloss_text": "સ્વતંત્રતા"},
+      {"word_idx": 4, "gloss_text": "અકૃત્રિમ (સ્વાભાવિક)"}
+    ],
+    "1.8": [
+      {"word_idx": 0, "gloss_text": "ઇચ્છાની પ્રેરણાનો"},
+      {"word_idx": 1, "gloss_text": "પ્રેરક રૂપે"},
+      {"word_idx": 2, "gloss_text": "આત્મ-બળના સ્પર્શથી"},
+      {"word_idx": 3, "gloss_text": "પુરુષ"},
+      {"word_idx": 4, "gloss_text": "તેની સમાન"}
+    ],
+    "1.9": [
+      {"word_idx": 0, "gloss_text": "નિજ અશુદ્ધિ (પોતાની અશુદ્ધિ)"},
+      {"word_idx": 1, "gloss_text": "અસમર્થનો"},
+      {"word_idx": 2, "gloss_text": "કર્તવ્યોમાં"},
+      {"word_idx": 3, "gloss_text": "અભિલાષીનો"},
+      {"word_idx": 4, "gloss_text": "ક્ષોભ"},
+      {"word_idx": 5, "gloss_text": "વિલીન થાય"},
+      {"word_idx": 6, "gloss_text": "પરમ પદ"}
+    ],
+    "1.10": [
+      {"word_idx": 0, "gloss_text": "અકૃત્રિમ"},
+      {"word_idx": 1, "gloss_text": "ધર્મ (સ્વભાવ)"},
+      {"word_idx": 2, "gloss_text": "જ્ઞત્વ અને કર્તૃત્વ લક્ષણવાળો"},
+      {"word_idx": 3, "gloss_text": "ઇચ્છિત"},
+      {"word_idx": 4, "gloss_text": "જાણે છે"},
+      {"word_idx": 5, "gloss_text": "કરે છે"}
+    ],
+    "1.11": [
+      {"word_idx": 0, "gloss_text": "અધિષ્ઠાતા-ભાવે"},
+      {"word_idx": 1, "gloss_text": "સ્વભાવને"},
+      {"word_idx": 2, "gloss_text": "જોતો"},
+      {"word_idx": 3, "gloss_text": "વિસ્મયથી હસતો (જેવો)"},
+      {"word_idx": 4, "gloss_text": "કુસૃતિ (દુષ્ટ માર્ગ — સંસાર)"}
+    ],
+    "1.12": [
+      {"word_idx": 0, "gloss_text": "અભાવ (શૂન્ય)"},
+      {"word_idx": 1, "gloss_text": "ભાવ્યતા (ધ્યાન-વિષય હોવાની સ્થિતિ)"},
+      {"word_idx": 2, "gloss_text": "[draft] અમૂઢતા (જાગૃતિ)"},
+      {"word_idx": 3, "gloss_text": "[draft] અભિયોગ-સંસ્પર્શથી (પાછળથી થતા વિચારના સ્પર્શથી)"},
+      {"word_idx": 4, "gloss_text": "નિશ્ચય (દૃઢ બોધ)"}
+    ],
+    "1.13": [
+      {"word_idx": 0, "gloss_text": "કૃત્રિમ (કલ્પિત)"},
+      {"word_idx": 1, "gloss_text": "જ્ઞેય (જાણવા યોગ્ય)"},
+      {"word_idx": 2, "gloss_text": "સુષુપ્તિ-પદની જેમ"},
+      {"word_idx": 3, "gloss_text": "[draft] સ્મર્યમાણત્વ (સ્મૃતિનો વિષય બનવાની સ્થિતિ)"},
+      {"word_idx": 4, "gloss_text": "તે તત્ત્વ (પરમ સત્ય)"}
+    ],
+    "1.14": [
+      {"word_idx": 0, "gloss_text": "અવસ્થા-યુગલ (બે અવસ્થા)"},
+      {"word_idx": 1, "gloss_text": "કાર્ય અને કર્તૃત્વ — એમ નામિત"},
+      {"word_idx": 2, "gloss_text": "કાર્યતા (કાર્ય હોવાની સ્થિતિ)"},
+      {"word_idx": 3, "gloss_text": "ક્ષયશીલ"},
+      {"word_idx": 4, "gloss_text": "કર્તૃત્વ"},
+      {"word_idx": 5, "gloss_text": "અક્ષય"}
+    ],
+    "1.15": [
+      {"word_idx": 0, "gloss_text": "કાર્યોન્મુખ (કાર્ય તરફ વળેલો)"},
+      {"word_idx": 1, "gloss_text": "પ્રયત્ન"},
+      {"word_idx": 2, "gloss_text": "લોપ પામે છે (દબાય છે)"},
+      {"word_idx": 3, "gloss_text": "વિલુપ્ત (નષ્ટ)"},
+      {"word_idx": 4, "gloss_text": "અબુધ (અવિવેકી)"}
+    ],
+    "1.16": [
+      {"word_idx": 0, "gloss_text": "અંતર્મુખ"},
+      {"word_idx": 1, "gloss_text": "ભાવ (પ્રિન્સિપલ)"},
+      {"word_idx": 2, "gloss_text": "સર્વજ્ઞત્વ-ગુણનું આશ્રયસ્થાન"},
+      {"word_idx": 3, "gloss_text": "ઉપલબ્ધિનો લોપ (પ્રત્યક્ષનો અભાવ)"},
+      {"word_idx": 4, "gloss_text": "અનુપલમ્ભક (ન-પ્રત્યક્ષ-કર્તા)"}
+    ],
+    "1.17": [
+      {"word_idx": 0, "gloss_text": "ઉપલબ્ધા (પ્રત્યક્ષકર્તા)"},
+      {"word_idx": 1, "gloss_text": "ત્રિપદ (ત્રણ અવસ્થા)માં અવ્યભિચારી"},
+      {"word_idx": 2, "gloss_text": "સુપ્રબુદ્ધ (પૂર્ણ જાગૃત)નો"},
+      {"word_idx": 3, "gloss_text": "તેના આદિ અને અંતે"},
+      {"word_idx": 4, "gloss_text": "બીજાનો (અપૂર્ણ જાગૃત)"}
+    ],
+    "1.18": [
+      {"word_idx": 0, "gloss_text": "જ્ઞાન અને જ્ઞેયના સ્વરૂપવાળી"},
+      {"word_idx": 1, "gloss_text": "પરમા શક્તિ સાથે"},
+      {"word_idx": 2, "gloss_text": "બે પદો (જાગ્રત-સ્વપ્ન)માં"},
+      {"word_idx": 3, "gloss_text": "વિભુ (પ્રભુ)"},
+      {"word_idx": 4, "gloss_text": "ચિન્માત્ર (કેવળ ચૈતન્ય)"}
+    ],
+    "1.19": [
+      {"word_idx": 0, "gloss_text": "ગુણ આદિના સ્પંદ-નિષ્યન્દો (વિશેષ સ્પંદ-પ્રવાહો)"},
+      {"word_idx": 1, "gloss_text": "સામાન્ય સ્પંદના આશ્રયથી"},
+      {"word_idx": 2, "gloss_text": "પોતાની સત્તા પ્રાપ્ત"},
+      {"word_idx": 3, "gloss_text": "જ્ઞાનીના"},
+      {"word_idx": 4, "gloss_text": "અપરિપંથી (અવરોધક નહીં)"}
+    ],
+    "1.20": [
+      {"word_idx": 0, "gloss_text": "અપ્રબુદ્ધ બુદ્ધિવાળાઓને"},
+      {"word_idx": 1, "gloss_text": "સ્વ-સ્થિતિને ઢાંકવા તત્પર"},
+      {"word_idx": 2, "gloss_text": "પાડી દે છે (નાખે છે)"},
+      {"word_idx": 3, "gloss_text": "દુરુત્તાર (પાર કરવો કઠિન)"},
+      {"word_idx": 4, "gloss_text": "સંસાર-માર્ગમાં"}
+    ],
+    "1.21": [
+      {"word_idx": 0, "gloss_text": "સતત ઉદ્યુક્ત (પ્રયત્નશીલ)"},
+      {"word_idx": 1, "gloss_text": "સ્પંદ-તત્ત્વના વિવેક માટે"},
+      {"word_idx": 2, "gloss_text": "જાગ્રતમાં જ"},
+      {"word_idx": 3, "gloss_text": "પોતાનો સાચો ભાવ"},
+      {"word_idx": 4, "gloss_text": "થોડા સમયમાં"},
+      {"word_idx": 5, "gloss_text": "પ્રાપ્ત કરે છે"}
+    ],
+    "1.22": [
+      {"word_idx": 0, "gloss_text": "અતિક્રુદ્ધ"},
+      {"word_idx": 1, "gloss_text": "અતિપ્રહૃષ્ટ"},
+      {"word_idx": 2, "gloss_text": "'હું શું કરું?'"},
+      {"word_idx": 3, "gloss_text": "વિચારતો"},
+      {"word_idx": 4, "gloss_text": "દોડતો"},
+      {"word_idx": 5, "gloss_text": "જે પદ (અવસ્થા)"},
+      {"word_idx": 6, "gloss_text": "પ્રતિષ્ઠિત છે"}
+    ],
+    "1.23": [
+      {"word_idx": 0, "gloss_text": "આશ્રય લઈને"},
+      {"word_idx": 1, "gloss_text": "[draft] કહેશે"},
+      {"word_idx": 2, "gloss_text": "અવશ્ય"},
+      {"word_idx": 3, "gloss_text": "હું કરીશ"},
+      {"word_idx": 4, "gloss_text": "[draft] સંકલ્પ કરીને"},
+      {"word_idx": 5, "gloss_text": "રહે છે"}
+    ],
+    "1.24": [
+      {"word_idx": 0, "gloss_text": "તેનો આશ્રય લઈને"},
+      {"word_idx": 1, "gloss_text": "ઊર્ધ્વ માર્ગથી"},
+      {"word_idx": 2, "gloss_text": "ચંદ્ર અને સૂર્ય (ઇડા-પિંગળા / પ્રાણ-અપાન)"},
+      {"word_idx": 3, "gloss_text": "સૌષુમ્ન માર્ગમાં"},
+      {"word_idx": 4, "gloss_text": "અસ્ત થયેલા (વિલીન)"},
+      {"word_idx": 5, "gloss_text": "બ્રહ્માંડ-ગોચર (બ્રહ્માંડનો ક્ષેત્ર)"}
+    ],
+    "1.25": [
+      {"word_idx": 0, "gloss_text": "મહાવ્યોમ (ચૈતન્યના મહા આકાશ)માં"},
+      {"word_idx": 1, "gloss_text": "જ્યાં ચંદ્ર-સૂર્ય પ્રલીન થયા છે"},
+      {"word_idx": 2, "gloss_text": "સુષુપ્તિ-પદની જેમ"},
+      {"word_idx": 3, "gloss_text": "મૂઢ (અજ્ઞાની)"},
+      {"word_idx": 4, "gloss_text": "પ્રબુદ્ધ (જાગૃત)"},
+      {"word_idx": 5, "gloss_text": "અનાવૃત (અનાચ્છાદિત)"}
+    ],
+    "2.1": [
+      {"word_idx": 0, "gloss_text": "તે બળને આક્રમીને"},
+      {"word_idx": 1, "gloss_text": "મંત્રો"},
+      {"word_idx": 2, "gloss_text": "સર્વજ્ઞ-બળથી શાલિન (સંપન્ન)"},
+      {"word_idx": 3, "gloss_text": "અધિકાર (પોતાના કાર્ય) માટે"},
+      {"word_idx": 4, "gloss_text": "જેમ કરણો (ઇન્દ્રિયો)"}
+    ],
+    "2.2": [
+      {"word_idx": 0, "gloss_text": "સંપૂર્ણપણે વિલીન થાય છે"},
+      {"word_idx": 1, "gloss_text": "શાંત રૂપવાળાં"},
+      {"word_idx": 2, "gloss_text": "નિરંજન (નિર્મલ)"},
+      {"word_idx": 3, "gloss_text": "આરાધક (ઉપાસક)ના ચિત્ત સહિત"},
+      {"word_idx": 4, "gloss_text": "શિવ-ધર્મી (શિવ-સ્વભાવ)"}
+    ],
+    "2.3": [
+      {"word_idx": 0, "gloss_text": "સર્વમય (સર્વસ્વરૂપ)"},
+      {"word_idx": 1, "gloss_text": "જીવ"},
+      {"word_idx": 2, "gloss_text": "સર્વ ભાવોના સમુદ્ભવને કારણે"},
+      {"word_idx": 3, "gloss_text": "તે અંગેની સંવેદન-રૂપે"},
+      {"word_idx": 4, "gloss_text": "તાદાત્મ્ય-પ્રતિપત્તિથી (એકતાના બોધથી)"}
+    ],
+    "2.4": [
+      {"word_idx": 0, "gloss_text": "શબ્દ અને અર્થના ચિંતનોમાં"},
+      {"word_idx": 1, "gloss_text": "અવસ્થા"},
+      {"word_idx": 2, "gloss_text": "શિવ"},
+      {"word_idx": 3, "gloss_text": "ભોક્તા"},
+      {"word_idx": 4, "gloss_text": "ભોગ્યના રૂપે"},
+      {"word_idx": 5, "gloss_text": "સંસ્થિત (પ્રતિષ્ઠિત)"}
+    ],
+    "2.5": [
+      {"word_idx": 0, "gloss_text": "સંવિત્તિ (દૃઢ બોધ)"},
+      {"word_idx": 1, "gloss_text": "ક્રીડારૂપે (શિવની લીલા તરીકે)"},
+      {"word_idx": 2, "gloss_text": "સમગ્ર જગત"},
+      {"word_idx": 3, "gloss_text": "જોતો"},
+      {"word_idx": 4, "gloss_text": "યુક્ત (સતત આ બોધમાં જોડાયેલો)"},
+      {"word_idx": 5, "gloss_text": "જીવન્મુક્ત"}
+    ],
+    "2.6": [
+      {"word_idx": 0, "gloss_text": "ઉદય"},
+      {"word_idx": 1, "gloss_text": "ધ્યેયનો (ધ્યાન-વિષયનો)"},
+      {"word_idx": 2, "gloss_text": "ધ્યાયિ-ચિત્તમાં (ધ્યાન કરનારના ચિત્તમાં)"},
+      {"word_idx": 3, "gloss_text": "તાદાત્મ્ય-સમાપત્તિ (એકાત્મ-પ્રાપ્તિ)"},
+      {"word_idx": 4, "gloss_text": "ઇચ્છુક સાધકની"}
+    ],
+    "2.7": [
+      {"word_idx": 0, "gloss_text": "અમૃત-પ્રાપ્તિ"},
+      {"word_idx": 1, "gloss_text": "આત્માનો ગ્રહ (પોતાનું ગ્રહણ)"},
+      {"word_idx": 2, "gloss_text": "નિર્વાણ-દીક્ષા"},
+      {"word_idx": 3, "gloss_text": "શિવના સદ્ભાવને આપતી"}
+    ],
+    "3.1": [
+      {"word_idx": 0, "gloss_text": "ઇચ્છા પ્રમાણે પ્રાર્થના કરાયેલ"},
+      {"word_idx": 1, "gloss_text": "ધાતા (ધારણ કરનાર — સ્પંદ)"},
+      {"word_idx": 2, "gloss_text": "જાગ્રત (વ્યક્તિ)નો"},
+      {"word_idx": 3, "gloss_text": "સોમ-સૂર્યનો ઉદય (અપાન-પ્રાણનો)"},
+      {"word_idx": 4, "gloss_text": "સંપાદિત કરે છે"},
+      {"word_idx": 5, "gloss_text": "દેહધારી માટે"}
+    ],
+    "3.2": [
+      {"word_idx": 0, "gloss_text": "અભીષ્ટ અર્થો (ઇચ્છિત વસ્તુઓ)"},
+      {"word_idx": 1, "gloss_text": "પ્રણયને અતિક્રમ્યા વિના"},
+      {"word_idx": 2, "gloss_text": "વધુ સ્પષ્ટ રીતે"},
+      {"word_idx": 3, "gloss_text": "મધ્યમાં સ્થિત"},
+      {"word_idx": 4, "gloss_text": "પ્રકાશિત કરે"}
+    ],
+    "3.3": [
+      {"word_idx": 0, "gloss_text": "[draft] સ્વતંત્ર"},
+      {"word_idx": 1, "gloss_text": "સૃષ્ટિ"},
+      {"word_idx": 2, "gloss_text": "[draft] તેની (સ્પંદની) ધર્મકતાને કારણે"},
+      {"word_idx": 3, "gloss_text": "લૌકિક (અપ્રબુદ્ધ વ્યક્તિ)નું"},
+      {"word_idx": 4, "gloss_text": "જાગ્રત-સ્વપ્ન — એ બે પદોમાં"}
+    ],
+    "3.4": [
+      {"word_idx": 0, "gloss_text": "અર્થ (વસ્તુ)"},
+      {"word_idx": 1, "gloss_text": "અસ્ફુટ (અસ્પષ્ટ)"},
+      {"word_idx": 2, "gloss_text": "સાવધાન ચિત્તમાં"},
+      {"word_idx": 3, "gloss_text": "વધુ સ્ફુટ (વધુ સ્પષ્ટ)"},
+      {"word_idx": 4, "gloss_text": "સ્વ-બળના ઉદ્યોગથી ભાવિત"}
+    ],
+    "3.5": [
+      {"word_idx": 0, "gloss_text": "પરમાર્થે"},
+      {"word_idx": 1, "gloss_text": "સ્થિત"},
+      {"word_idx": 2, "gloss_text": "બળને આક્રમીને"},
+      {"word_idx": 3, "gloss_text": "અલ્પ સમયમાં (થોડા સમયમાં)"},
+      {"word_idx": 4, "gloss_text": "પ્રવર્તે છે"}
+    ],
+    "3.6": [
+      {"word_idx": 0, "gloss_text": "દુર્બળ"},
+      {"word_idx": 1, "gloss_text": "તેને આક્રમીને"},
+      {"word_idx": 2, "gloss_text": "કાર્યમાં"},
+      {"word_idx": 3, "gloss_text": "પ્રવૃત્ત થાય છે"},
+      {"word_idx": 4, "gloss_text": "ભૂખને દબાવી દે"},
+      {"word_idx": 5, "gloss_text": "અતિ ભૂખ્યો"}
+    ],
+    "3.7": [
+      {"word_idx": 0, "gloss_text": "અધિષ્ઠિત દેહમાં (સ્પંદ-અધિષ્ઠિત શરીરમાં)"},
+      {"word_idx": 1, "gloss_text": "સર્વજ્ઞતા આદિ"},
+      {"word_idx": 2, "gloss_text": "સ્વ-આત્મામાં અધિષ્ઠાનથી"},
+      {"word_idx": 3, "gloss_text": "સર્વત્ર"},
+      {"word_idx": 4, "gloss_text": "એ રીતે"}
+    ],
+    "3.8": [
+      {"word_idx": 0, "gloss_text": "ગ્લાનિ (થાક-ઉદાસીનતા)"},
+      {"word_idx": 1, "gloss_text": "વિલુણ્ઠિકા (લૂંટનારી)"},
+      {"word_idx": 2, "gloss_text": "અજ્ઞાનથી"},
+      {"word_idx": 3, "gloss_text": "સૃતિ (ઉદ્ભવ)"},
+      {"word_idx": 4, "gloss_text": "તેના (સ્પંદના) ઉન્મેષથી નષ્ટ"},
+      {"word_idx": 5, "gloss_text": "અહેતુક (વિના કારણે)"}
+    ],
+    "3.9": [
+      {"word_idx": 0, "gloss_text": "એક ચિંતામાં લીન વ્યક્તિના"},
+      {"word_idx": 1, "gloss_text": "બીજા (વિચાર)નો ઉદય"},
+      {"word_idx": 2, "gloss_text": "ઉન્મેષ (ખુલવું / ઝબકાર)"},
+      {"word_idx": 3, "gloss_text": "જ્ઞેય (જાણવા યોગ્ય)"},
+      {"word_idx": 4, "gloss_text": "નિરીક્ષણ કરવો"}
+    ],
+    "3.10": [
+      {"word_idx": 0, "gloss_text": "બિન્દુ (પ્રકાશનું બિન્દુ)"},
+      {"word_idx": 1, "gloss_text": "નાદ (આંતરિક ધ્વનિ)"},
+      {"word_idx": 2, "gloss_text": "રૂપ/રંગ"},
+      {"word_idx": 3, "gloss_text": "રસ (સૂક્ષ્મ સ્વાદ)"},
+      {"word_idx": 4, "gloss_text": "ક્ષોભક (ઉત્તેજક) રૂપે"}
+    ],
+    "3.11": [
+      {"word_idx": 0, "gloss_text": "જોવાની ઇચ્છાથી"},
+      {"word_idx": 1, "gloss_text": "સર્વ અર્થોને વ્યાપીને"},
+      {"word_idx": 2, "gloss_text": "રહે છે (અવસ્થિત છે)"},
+      {"word_idx": 3, "gloss_text": "વધુ કહેવાથી શું"},
+      {"word_idx": 4, "gloss_text": "જાણી લેવાશે"}
+    ],
+    "3.12": [
+      {"word_idx": 0, "gloss_text": "પ્રબુદ્ધ (જાગૃત)"},
+      {"word_idx": 1, "gloss_text": "રહેવો જોઈએ"},
+      {"word_idx": 2, "gloss_text": "જ્ઞાન વડે જોઈને"},
+      {"word_idx": 3, "gloss_text": "ગોચર (ઇન્દ્રિય-ક્ષેત્ર)"},
+      {"word_idx": 4, "gloss_text": "એક (તત્ત્વ)માં આરોપિત કરે"},
+      {"word_idx": 5, "gloss_text": "પીડિત થતો નથી"}
+    ],
+    "3.13": [
+      {"word_idx": 0, "gloss_text": "શબ્દરાશિ (વર્ણસમૂહ)માંથી સમુત્થિતના"},
+      {"word_idx": 1, "gloss_text": "શક્તિવર્ગના (શક્તિ-સમૂહના)"},
+      {"word_idx": 2, "gloss_text": "ભોગ્યતા (ભોગ-વિષય હોવાની સ્થિતિ)"},
+      {"word_idx": 3, "gloss_text": "કલા (પરિમિત-કરનારી શક્તિ) દ્વારા વૈભવ લુપ્ત"},
+      {"word_idx": 4, "gloss_text": "પશુ (બદ્ધ જીવ — અક્ષરશઃ પશુ)"}
+    ],
+    "3.14": [
+      {"word_idx": 0, "gloss_text": "[draft] પરમ-અમૃત-રસનો અપાય (નાશ)"},
+      {"word_idx": 1, "gloss_text": "[draft] પ્રત્યયોદ્ભવ (વિકલ્પોનો ઉદય)"},
+      {"word_idx": 2, "gloss_text": "અસ્વતંત્રતા"},
+      {"word_idx": 3, "gloss_text": "[draft] તન્માત્ર-ગોચર (કેવળ સૂક્ષ્મ ભૂતોનું ક્ષેત્ર)"}
+    ],
+    "3.15": [
+      {"word_idx": 0, "gloss_text": "સ્વરૂપાવરણમાં (પોતાના સ્વરૂપને ઢાંકવામાં)"},
+      {"word_idx": 1, "gloss_text": "શક્તિઓ"},
+      {"word_idx": 2, "gloss_text": "સતત ઉત્થિત (સતત જાગૃત)"},
+      {"word_idx": 3, "gloss_text": "શબ્દના અનુવેધથી (વાણીના પ્રવેશથી)"},
+      {"word_idx": 4, "gloss_text": "પ્રત્યયોદ્ભવ (વિકલ્પનો ઉદય)"}
+    ],
+    "3.16": [
+      {"word_idx": 0, "gloss_text": "ક્રિયાત્મિકા શક્તિ (ક્રિયા-સ્વરૂપ શક્તિ)"},
+      {"word_idx": 1, "gloss_text": "પશુવર્તિની (બદ્ધ જીવમાં વર્તતી)"},
+      {"word_idx": 2, "gloss_text": "બંધનકારી"},
+      {"word_idx": 3, "gloss_text": "સ્વ-માર્ગ પર સ્થિત"},
+      {"word_idx": 4, "gloss_text": "સિદ્ધ્યુપપાદિકા (સિદ્ધિ ઉત્પન્ન કરનારી)"}
+    ],
+    "3.17": [
+      {"word_idx": 0, "gloss_text": "તન્માત્રોદય રૂપે"},
+      {"word_idx": 1, "gloss_text": "મન, અહંકાર, બુદ્ધિ રૂપે વર્તતા"},
+      {"word_idx": 2, "gloss_text": "પુર્યષ્ટક (આઠ-નગર — સૂક્ષ્મ શરીર) દ્વારા"},
+      {"word_idx": 3, "gloss_text": "સંરુદ્ધ (ઘેરાયેલ)"},
+      {"word_idx": 4, "gloss_text": "તેમાંથી ઉત્પન્ન પ્રત્યયોદ્ભવ (વિકલ્પ-ઉદય)"}
+    ],
+    "3.18": [
+      {"word_idx": 0, "gloss_text": "ભોગવે છે"},
+      {"word_idx": 1, "gloss_text": "પરવશ (બીજાને આધીન)"},
+      {"word_idx": 2, "gloss_text": "ભોગ (અનુભવ)"},
+      {"word_idx": 3, "gloss_text": "સંસરણ કરે (સંસારમાં ફરે)"},
+      {"word_idx": 4, "gloss_text": "કારણ"},
+      {"word_idx": 5, "gloss_text": "અમે કહીશું (ઘોષણા કરીશું)"}
+    ],
+    "3.19": [
+      {"word_idx": 0, "gloss_text": "એક (તત્ત્વ)માં દૃઢ સ્થાપિત"},
+      {"word_idx": 1, "gloss_text": "લય અને ઉદય"},
+      {"word_idx": 2, "gloss_text": "નિયંત્રિત કરતો"},
+      {"word_idx": 3, "gloss_text": "ભોક્તૃત્વ (સાચું ભોગ-કરવાપણું)"},
+      {"word_idx": 4, "gloss_text": "ચક્રેશ્વર (શક્તિચક્રનો સ્વામી)"}
+    ],
+    "4.1": [
+      {"word_idx": 0, "gloss_text": "અગાધ સંશય-સાગર"},
+      {"word_idx": 1, "gloss_text": "પાર ઉતારનારી"},
+      {"word_idx": 2, "gloss_text": "વંદન કરું છું"},
+      {"word_idx": 3, "gloss_text": "વિચિત્ર-અર્થવાળાં પદો ધરાવનારી"},
+      {"word_idx": 4, "gloss_text": "વિચિત્ર (અદ્ભુત)"},
+      {"word_idx": 5, "gloss_text": "ગુરુ-ભારતી (ગુરુની વાણી)"}
+    ]
+  }
+}
