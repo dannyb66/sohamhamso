@@ -1,0 +1,54 @@
+=== GATE 2: unit ===
+$ bun --bun vitest run
+
+ RUN  v2.1.9 /Users/danny/Documents/GitHub/sohamhamso
+
+ ✓ tests/unit/ai-assisted-badge.test.ts (19 tests) 4ms
+ ✓ tests/unit/db.test.ts (10 tests) 9ms
+ ✓ tests/unit/aliases.test.ts (11 tests) 5ms
+ ✓ tests/unit/transliteration.test.ts (32 tests) 8ms
+ ✓ tests/unit/search.test.ts (11 tests) 34ms
+ ✓ tests/unit/api-subscribe.test.ts (25 tests) 12ms
+ ✓ tests/unit/dataset-publish.test.ts (14 tests) 56ms
+stdout | tests/unit/ingest.test.ts > run() — full pipeline > parses a valid corpus YAML and writes texts + verses + glosses + translations
+Ingested 2 verses, 4 glosses, 3 translations  (siva-sutras <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-gg5lCN/corpus/siva-sutras.yaml)
+
+Total: 2 verses across 1 texts  (4 glosses, 3 translations)
+
+stdout | tests/unit/ingest.test.ts > run() — full pipeline > is idempotent — running twice does not duplicate rows
+Ingested 2 verses, 4 glosses, 3 translations  (siva-sutras <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-uV3Vzh/corpus/siva-sutras.yaml)
+
+Total: 2 verses across 1 texts  (4 glosses, 3 translations)
+Ingested 2 verses, 4 glosses, 3 translations  (siva-sutras <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-uV3Vzh/corpus/siva-sutras.yaml)
+
+Total: 2 verses across 1 texts  (4 glosses, 3 translations)
+
+stdout | tests/unit/ingest.test.ts > run() — full pipeline > handles uncommon meter strings without truncating Unicode (triṣṭubh, sūtra, anuṣṭubh)
+Ingested 3 verses, 0 glosses, 0 translations  (meter-test <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-udYPL4/corpus/meter-test.yaml)
+
+Total: 3 verses across 1 texts  (0 glosses, 0 translations)
+
+stderr | tests/unit/ingest.test.ts > run() — failure modes > throws when corpus YAML is missing required fields
+FAILED /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-3eeeMt/corpus/bad.yaml: /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-3eeeMt/corpus/bad.yaml: missing required field 'id'
+
+stdout | tests/unit/ingest.test.ts > run() — failure modes > no-ops with an empty summary when corpus dir is empty
+No YAML files found in /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-nc7SSR/corpus.
+
+stdout | tests/unit/ingest.test.ts > UNIQUE (text_id, chapter, verse_num) — upsert semantics > treats a duplicate (text_id, chapter, verse_num) as an UPDATE, not an INSERT
+Ingested 2 verses, 4 glosses, 3 translations  (siva-sutras <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-gVN09y/corpus/siva-sutras.yaml)
+
+Total: 2 verses across 1 texts  (4 glosses, 3 translations)
+Ingested 2 verses, 4 glosses, 3 translations  (siva-sutras <- /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-gVN09y/corpus/siva-sutras.yaml)
+
+Total: 2 verses across 1 texts  (4 glosses, 3 translations)
+
+stderr | tests/unit/ingest.test.ts > per-file transaction semantics > rolls back the entire file when a mid-file verse is malformed
+FAILED /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-6eCpg3/corpus/tx-test.yaml: /var/folders/sg/kcn3_yt10l3g4gtrfr3k_zw40000gn/T/.ctx-mode-j0XTDt/sohamhamso-ingest-6eCpg3/corpus/tx-test.yaml: tx-test 2.1 missing 'devanagari'
+
+ ✓ tests/unit/ingest.test.ts (9 tests) 93ms
+
+ Test Files  8 passed (8)
+      Tests  131 passed (131)
+   Start at  12:24:29
+   Duration  286ms (transform 285ms, setup 0ms, collect 460ms, tests 220ms, environment 2ms, prepare 243ms)
+

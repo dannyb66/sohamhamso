@@ -1,0 +1,274 @@
+=== GATE 3: e2e ===
+$ playwright test
+
+Running 156 tests using 7 workers
+
+[1A[2K(node:88551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88554) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88554) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[1/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:44:3 › AIAssistedBadge — slate (PD) state › aria-label on the <details> matches the visible label
+[1A[2K[2/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:54:3 › AIAssistedBadge — slate (PD) state › pill renders on a single line (no vertical-blob regression)
+[1A[2K[3/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:25:3 › AIAssistedBadge — slate (PD) state › slate variant pill is visible with PD provenance
+[1A[2K[4/156] [desktop-chrome] › tests/e2e/a11y.spec.ts:49:3 › accessibility (WCAG AA) › skip link present (or noted absent)
+[1A[2K[5/156] [desktop-chrome] › tests/e2e/a11y.spec.ts:42:3 › accessibility (WCAG AA) › focus visible: Tab navigation reaches interactive elements
+[1A[2K[6/156] [desktop-chrome] › tests/e2e/a11y.spec.ts:5:3 › accessibility (WCAG AA) › homepage: axe scan, report violations
+[1A[2K[7/156] [desktop-chrome] › tests/e2e/a11y.spec.ts:24:3 › accessibility (WCAG AA) › verse page: axe scan, report violations
+[1A[2K[8/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:76:3 › AIAssistedBadge — slate (PD) state › summary exposes a ≥44px tap target
+[1A[2K[9/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:104:3 › AIAssistedBadge — slate (PD) state › clicking the summary opens the disclosure with provenance details
+[1A[2K[10/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:128:3 › AIAssistedBadge — slate (PD) state › methodology link in the body points to /about/methodology
+[1A[2K[11/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:146:3 › AIAssistedBadge — amber (AI, not yet reviewed) state › amber variant pill is visible with 'AI · not verified' label
+[1A[2K[12/156] [desktop-chrome] › tests/e2e/ai-badge.spec.ts:160:3 › AIAssistedBadge — amber (AI, not yet reviewed) state › amber pill is also single-line (nowrap)
+[1A[2K[13/156] [desktop-chrome] › tests/e2e/font-loading.spec.ts:34:3 › font loading › homepage <link> references every required font family
+[1A[2K[14/156] [desktop-chrome] › tests/e2e/font-loading.spec.ts:55:3 › font loading › verse reader page also serves the full font stack
+[1A[2K[15/156] [desktop-chrome] › tests/e2e/homepage.spec.ts:4:3 › homepage › loads quickly and renders wordmark
+[1A[2K[16/156] [desktop-chrome] › tests/e2e/homepage.spec.ts:19:3 › homepage › featured verse hero renders Devanagari + IAST + English
+[1A[2K[17/156] [desktop-chrome] › tests/e2e/homepage.spec.ts:31:3 › homepage › curated entries section: all three entry points present
+[1A[2K[18/156] [desktop-chrome] › tests/e2e/homepage.spec.ts:43:3 › homepage › subscribe band: email input and submit button
+[1A[2K[19/156] [desktop-chrome] › tests/e2e/homepage.spec.ts:55:3 › homepage › footer: required link texts present
+[1A[2K[20/156] [desktop-chrome] › tests/e2e/parallel-chip.spec.ts:19:3 › parallel chip (verse-page parallels disclosure) › chip is hidden when the verse has no parallels
+[1A[2K[21/156] [desktop-chrome] › tests/e2e/parallel-chip.spec.ts:30:3 › parallel chip (verse-page parallels disclosure) › verse page renders without the chip in the chips slot
+[1A[2K[22/156] [desktop-chrome] › tests/e2e/reader-lang-swap.spec.ts:31:3 › reader-lang swap (verse page) › Hindi swap: karpuradi 1.1 .translation contains Devanāgarī
+[1A[2K[23/156] [desktop-chrome] › tests/e2e/reader-lang-swap.spec.ts:60:3 › reader-lang swap (verse page) › Tamil swap: karpuradi 1.1 .translation contains Tamil-script chars
+[1A[2K[24/156] [desktop-chrome] › tests/e2e/reader-lang-swap.spec.ts:90:3 › reader-lang swap (verse page) › fallback: unknown reader-lang ('xx') keeps the rendered English content
+[1A[2K[25/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › wrong tradition: trika → shakta (karpuradi-stotra is shakta)
+[1A[2K[26/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › wrong tradition on text-overview URL
+[1A[2K[27/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: hridayam (with i) → hrdayam (vocalic ṛ)
+[1A[2K[28/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias + wrong tradition combined (hridayam + shakta)
+[1A[2K[29/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: shiva-sutras (sh) → siva-sutras (s)
+[1A[2K[30/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: spanda-karika (singular) → spanda-karikas
+[1A[2K[31/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:71:3 › routing redirects › canonical URLs are NOT redirected
+[1A[2K[32/156] [desktop-chrome] › tests/e2e/redirects.spec.ts:88:3 › routing redirects › unknown slug returns 404 (no fuzzy match)
+[1A[2K[33/156] [desktop-chrome] › tests/e2e/responsive.spec.ts:4:3 › responsive layout › mobile iPhone 13: no horizontal scroll on verse page
+[1A[2K[34/156] [desktop-chrome] › tests/e2e/responsive.spec.ts:18:3 › responsive layout › desktop: verse page renders without horizontal scroll
+[1A[2K[35/156] [desktop-chrome] › tests/e2e/responsive.spec.ts:30:3 › responsive layout › theme switching: data-theme attribute updates on <html>
+[1A[2K[36/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:10:1 › 01 homepage mobile
+[1A[2K[37/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:28:1 › 03 verse page mobile
+[1A[2K[38/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:46:1 › 05 sample
+[1A[2K[39/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:58:1 › 07 dark theme attempt
+[1A[2K[40/156] [desktop-chrome] › tests/e2e/script-switcher.spec.ts:4:3 › script switcher (best-effort) › round-trip Devanagari → Tamil → Devanagari preserves content
+[1A[2K[41/156] [desktop-chrome] › tests/e2e/search-overlay.spec.ts:18:3 › search overlay (⌘K combobox) › ⌘K (or Ctrl+K) opens the overlay from the homepage
+[1A[2K[42/156] [desktop-chrome] › tests/e2e/search-overlay.spec.ts:31:3 › search overlay (⌘K combobox) › clicking [data-search-trigger] in the masthead opens the overlay
+[1A[2K[43/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:65:1 › 08 sepia theme attempt
+[1A[2K[44/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:37:1 › 04 verse page desktop
+[1A[2K[45/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:19:1 › 02 homepage desktop
+[1A[2K[46/156] [desktop-chrome] › tests/e2e/screenshots.spec.ts:52:1 › 06 texts index
+[1A[2K[47/156] [desktop-chrome] › tests/e2e/search-overlay.spec.ts:47:3 › search overlay (⌘K combobox) › typing a query surfaces at least one result row
+[1A[2K[48/156] [desktop-chrome] › tests/e2e/search-overlay.spec.ts:96:3 › search overlay (⌘K combobox) › Enter on the first result navigates to that verse page
+[1A[2K[49/156] [desktop-chrome] › tests/e2e/search-overlay.spec.ts:151:3 › search overlay (⌘K combobox) › Escape closes the overlay
+[1A[2K[50/156] [desktop-chrome] › tests/e2e/settings-sheet.spec.ts:25:3 › settings sheet (Aa) › clicking the Aa button opens the sheet
+[1A[2K[51/156] [desktop-chrome] › tests/e2e/settings-sheet.spec.ts:35:3 › settings sheet (Aa) › changing the theme to Dark sets <html data-theme="dark">
+[1A[2K[52/156] [desktop-chrome] › tests/e2e/settings-sheet.spec.ts:57:3 › settings sheet (Aa) › changing font size updates the --text-base CSS variable on <html>
+[1A[2K[53/156] [desktop-chrome] › tests/e2e/settings-sheet.spec.ts:80:3 › settings sheet (Aa) › localStorage `sohamhamso:settings` persists and survives reload
+[1A[2K[54/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:10:3 › subscribe form — API › valid email returns success message
+[1A[2K[55/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:25:3 › subscribe form — API › invalid email returns 400 with helpful message
+[1A[2K[56/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:39:3 › subscribe form — API › idempotent resubmit: subscribing twice with the same email returns 200 both times
+[1A[2K[57/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:64:3 › subscribe form — API › language picker: reflects DB availability — disabled iff no published translations exist
+[1A[2K[58/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:91:3 › subscribe form — UI › clicking subscribe in the band submits the form and shows success state
+[1A[2K[59/156] [desktop-chrome] › tests/e2e/subscribe.spec.ts:113:3 › subscribe form — UI › UI idempotent resubmit: same email twice still shows success
+[1A[2K[60/156] [desktop-chrome] › tests/e2e/translation-drawer.spec.ts:18:3 › translation drawer (verse page) › opens with 12 chips when the trigger is tapped
+[1A[2K[61/156] [desktop-chrome] › tests/e2e/translation-drawer.spec.ts:39:3 › translation drawer (verse page) › Hindi chip either renders Hindi text or the 'not yet translated' state
+[1A[2K[62/156] [desktop-chrome] › tests/e2e/translation-drawer.spec.ts:77:3 › translation drawer (verse page) › English chip renders an English translation line under the verse list
+[1A[2K[63/156] [desktop-chrome] › tests/e2e/translation-drawer.spec.ts:99:3 › translation drawer (verse page) › localStorage `sohamhamso:translation-langs` persists selection
+[1A[2K[64/156] [desktop-chrome] › tests/e2e/translation-drawer.spec.ts:130:3 › translation drawer (verse page) › close button (×) dismisses the drawer
+[1A[2K[65/156] [desktop-chrome] › tests/e2e/verse-anatomy-shape.spec.ts:6:3 › verse anatomy shape (Vedabase pattern) › DOM order: Devanagari → IAST → synonyms → translation
+[1A[2K[66/156] [desktop-chrome] › tests/e2e/verse-anatomy-shape.spec.ts:21:3 › verse anatomy shape (Vedabase pattern) › synonyms use dash-joined Vedabase pattern
+[1A[2K[67/156] [desktop-chrome] › tests/e2e/verse-anatomy-shape.spec.ts:28:3 › verse anatomy shape (Vedabase pattern) › translation paragraph max-width ≤ 65ch
+[1A[2K[68/156] [desktop-chrome] › tests/e2e/verse-anatomy-shape.spec.ts:47:3 › verse anatomy shape (Vedabase pattern) › interactive elements ≥ 44px touch target
+[1A[2K[69/156] [desktop-chrome] › tests/e2e/verse-page.spec.ts:6:3 › verse page — Śiva Sūtra 1.1 › renders full verse anatomy with no console errors
+[1A[2K[70/156] [desktop-chrome] › tests/e2e/verse-page.spec.ts:20:3 › verse page — Śiva Sūtra 1.1 › AI-assist badge visible near verse number
+[1A[2K[71/156] [desktop-chrome] › tests/e2e/verse-page.spec.ts:27:3 › verse page — Śiva Sūtra 1.1 › prev/next navigation works
+[1A[2K[72/156] [desktop-chrome] › tests/e2e/verse-page.spec.ts:41:3 › verse page — Śiva Sūtra 1.1 › script switcher button present in top bar
+[1A[2K[73/156] [desktop-chrome] › tests/e2e/verse-page.spec.ts:50:3 › verse page — Śiva Sūtra 1.1 › settings (Aa) button present
+[1A[2K[74/156] [desktop-chrome] › tests/e2e/wordsheet.spec.ts:16:3 › word sheet (tap a Sanskrit word) › tapping a .sa-word opens the bottom sheet with lemma + gloss
+[1A[2K[75/156] [desktop-chrome] › tests/e2e/wordsheet.spec.ts:43:3 › word sheet (tap a Sanskrit word) › drag handle is visible on the sheet
+[1A[2K[76/156] [desktop-chrome] › tests/e2e/wordsheet.spec.ts:61:3 › word sheet (tap a Sanskrit word) › close button (×) dismisses the sheet
+[1A[2K[77/156] [desktop-chrome] › tests/e2e/wordsheet.spec.ts:76:3 › word sheet (tap a Sanskrit word) › Escape closes the sheet
+[1A[2K[78/156] [desktop-chrome] › tests/e2e/wordsheet.spec.ts:91:3 › word sheet (tap a Sanskrit word) › scrim click dismisses the sheet
+[1A[2K(node:88835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[79/156] [mobile-iphone-13] › tests/e2e/a11y.spec.ts:5:3 › accessibility (WCAG AA) › homepage: axe scan, report violations
+[1A[2K[80/156] [mobile-iphone-13] › tests/e2e/a11y.spec.ts:24:3 › accessibility (WCAG AA) › verse page: axe scan, report violations
+[1A[2K(node:88845) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88845) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[81/156] [mobile-iphone-13] › tests/e2e/a11y.spec.ts:42:3 › accessibility (WCAG AA) › focus visible: Tab navigation reaches interactive elements
+[1A[2K(node:88847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[82/156] [mobile-iphone-13] › tests/e2e/a11y.spec.ts:49:3 › accessibility (WCAG AA) › skip link present (or noted absent)
+[1A[2K(node:88848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[83/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:25:3 › AIAssistedBadge — slate (PD) state › slate variant pill is visible with PD provenance
+[1A[2K(node:88859) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88859) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:88861) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[84/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:44:3 › AIAssistedBadge — slate (PD) state › aria-label on the <details> matches the visible label
+[1A[2K(node:88861) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[85/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:76:3 › AIAssistedBadge — slate (PD) state › summary exposes a ≥44px tap target
+[1A[2K[86/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:104:3 › AIAssistedBadge — slate (PD) state › clicking the summary opens the disclosure with provenance details
+[1A[2K[87/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:54:3 › AIAssistedBadge — slate (PD) state › pill renders on a single line (no vertical-blob regression)
+[1A[2K[88/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:128:3 › AIAssistedBadge — slate (PD) state › methodology link in the body points to /about/methodology
+[1A[2K[89/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:146:3 › AIAssistedBadge — amber (AI, not yet reviewed) state › amber variant pill is visible with 'AI · not verified' label
+[1A[2K[90/156] [mobile-iphone-13] › tests/e2e/ai-badge.spec.ts:160:3 › AIAssistedBadge — amber (AI, not yet reviewed) state › amber pill is also single-line (nowrap)
+[1A[2K[91/156] [mobile-iphone-13] › tests/e2e/font-loading.spec.ts:34:3 › font loading › homepage <link> references every required font family
+[1A[2K[92/156] [mobile-iphone-13] › tests/e2e/font-loading.spec.ts:55:3 › font loading › verse reader page also serves the full font stack
+[1A[2K[93/156] [mobile-iphone-13] › tests/e2e/homepage.spec.ts:4:3 › homepage › loads quickly and renders wordmark
+[1A[2K[94/156] [mobile-iphone-13] › tests/e2e/homepage.spec.ts:19:3 › homepage › featured verse hero renders Devanagari + IAST + English
+[1A[2K[95/156] [mobile-iphone-13] › tests/e2e/homepage.spec.ts:31:3 › homepage › curated entries section: all three entry points present
+[1A[2K[96/156] [mobile-iphone-13] › tests/e2e/homepage.spec.ts:43:3 › homepage › subscribe band: email input and submit button
+[1A[2K[97/156] [mobile-iphone-13] › tests/e2e/homepage.spec.ts:55:3 › homepage › footer: required link texts present
+[1A[2K[98/156] [mobile-iphone-13] › tests/e2e/parallel-chip.spec.ts:19:3 › parallel chip (verse-page parallels disclosure) › chip is hidden when the verse has no parallels
+[1A[2K[99/156] [mobile-iphone-13] › tests/e2e/parallel-chip.spec.ts:30:3 › parallel chip (verse-page parallels disclosure) › verse page renders without the chip in the chips slot
+[1A[2K[100/156] [mobile-iphone-13] › tests/e2e/reader-lang-swap.spec.ts:31:3 › reader-lang swap (verse page) › Hindi swap: karpuradi 1.1 .translation contains Devanāgarī
+[1A[2K[101/156] [mobile-iphone-13] › tests/e2e/reader-lang-swap.spec.ts:60:3 › reader-lang swap (verse page) › Tamil swap: karpuradi 1.1 .translation contains Tamil-script chars
+[1A[2K[102/156] [mobile-iphone-13] › tests/e2e/reader-lang-swap.spec.ts:90:3 › reader-lang swap (verse page) › fallback: unknown reader-lang ('xx') keeps the rendered English content
+[1A[2K[103/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › wrong tradition: trika → shakta (karpuradi-stotra is shakta)
+[1A[2K[104/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › wrong tradition on text-overview URL
+[1A[2K[105/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: hridayam (with i) → hrdayam (vocalic ṛ)
+[1A[2K[106/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias + wrong tradition combined (hridayam + shakta)
+[1A[2K[107/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: shiva-sutras (sh) → siva-sutras (s)
+[1A[2K[108/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:57:5 › routing redirects › slug alias: spanda-karika (singular) → spanda-karikas
+[1A[2K[109/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:71:3 › routing redirects › canonical URLs are NOT redirected
+[1A[2K[110/156] [mobile-iphone-13] › tests/e2e/redirects.spec.ts:88:3 › routing redirects › unknown slug returns 404 (no fuzzy match)
+[1A[2K[111/156] [mobile-iphone-13] › tests/e2e/responsive.spec.ts:4:3 › responsive layout › mobile iPhone 13: no horizontal scroll on verse page
+[1A[2K[112/156] [mobile-iphone-13] › tests/e2e/responsive.spec.ts:18:3 › responsive layout › desktop: verse page renders without horizontal scroll
+[1A[2K[113/156] [mobile-iphone-13] › tests/e2e/responsive.spec.ts:30:3 › responsive layout › theme switching: data-theme attribute updates on <html>
+[1A[2K[114/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:10:1 › 01 homepage mobile
+[1A[2K[115/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:28:1 › 03 verse page mobile
+[1A[2K[116/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:46:1 › 05 sample
+[1A[2K[117/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:58:1 › 07 dark theme attempt
+[1A[2K[118/156] [mobile-iphone-13] › tests/e2e/script-switcher.spec.ts:4:3 › script switcher (best-effort) › round-trip Devanagari → Tamil → Devanagari preserves content
+[1A[2K[119/156] [mobile-iphone-13] › tests/e2e/search-overlay.spec.ts:18:3 › search overlay (⌘K combobox) › ⌘K (or Ctrl+K) opens the overlay from the homepage
+[1A[2K[120/156] [mobile-iphone-13] › tests/e2e/search-overlay.spec.ts:31:3 › search overlay (⌘K combobox) › clicking [data-search-trigger] in the masthead opens the overlay
+[1A[2K[121/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:65:1 › 08 sepia theme attempt
+[1A[2K[122/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:37:1 › 04 verse page desktop
+[1A[2K[123/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:19:1 › 02 homepage desktop
+[1A[2K[124/156] [mobile-iphone-13] › tests/e2e/screenshots.spec.ts:52:1 › 06 texts index
+[1A[2K[125/156] [mobile-iphone-13] › tests/e2e/search-overlay.spec.ts:47:3 › search overlay (⌘K combobox) › typing a query surfaces at least one result row
+[1A[2K[126/156] [mobile-iphone-13] › tests/e2e/search-overlay.spec.ts:96:3 › search overlay (⌘K combobox) › Enter on the first result navigates to that verse page
+[1A[2K[127/156] [mobile-iphone-13] › tests/e2e/search-overlay.spec.ts:151:3 › search overlay (⌘K combobox) › Escape closes the overlay
+[1A[2K[128/156] [mobile-iphone-13] › tests/e2e/settings-sheet.spec.ts:25:3 › settings sheet (Aa) › clicking the Aa button opens the sheet
+[1A[2K[129/156] [mobile-iphone-13] › tests/e2e/settings-sheet.spec.ts:35:3 › settings sheet (Aa) › changing the theme to Dark sets <html data-theme="dark">
+[1A[2K[130/156] [mobile-iphone-13] › tests/e2e/settings-sheet.spec.ts:57:3 › settings sheet (Aa) › changing font size updates the --text-base CSS variable on <html>
+[1A[2K[131/156] [mobile-iphone-13] › tests/e2e/settings-sheet.spec.ts:80:3 › settings sheet (Aa) › localStorage `sohamhamso:settings` persists and survives reload
+[1A[2K[132/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:10:3 › subscribe form — API › valid email returns success message
+[1A[2K[133/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:25:3 › subscribe form — API › invalid email returns 400 with helpful message
+[1A[2K[134/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:39:3 › subscribe form — API › idempotent resubmit: subscribing twice with the same email returns 200 both times
+[1A[2K[135/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:64:3 › subscribe form — API › language picker: reflects DB availability — disabled iff no published translations exist
+[1A[2K[136/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:91:3 › subscribe form — UI › clicking subscribe in the band submits the form and shows success state
+[1A[2K[137/156] [mobile-iphone-13] › tests/e2e/subscribe.spec.ts:113:3 › subscribe form — UI › UI idempotent resubmit: same email twice still shows success
+[1A[2K[138/156] [mobile-iphone-13] › tests/e2e/translation-drawer.spec.ts:18:3 › translation drawer (verse page) › opens with 12 chips when the trigger is tapped
+[1A[2K[139/156] [mobile-iphone-13] › tests/e2e/translation-drawer.spec.ts:39:3 › translation drawer (verse page) › Hindi chip either renders Hindi text or the 'not yet translated' state
+[1A[2K[140/156] [mobile-iphone-13] › tests/e2e/translation-drawer.spec.ts:77:3 › translation drawer (verse page) › English chip renders an English translation line under the verse list
+[1A[2K[141/156] [mobile-iphone-13] › tests/e2e/translation-drawer.spec.ts:99:3 › translation drawer (verse page) › localStorage `sohamhamso:translation-langs` persists selection
+[1A[2K[142/156] [mobile-iphone-13] › tests/e2e/translation-drawer.spec.ts:130:3 › translation drawer (verse page) › close button (×) dismisses the drawer
+[1A[2K[143/156] [mobile-iphone-13] › tests/e2e/verse-anatomy-shape.spec.ts:6:3 › verse anatomy shape (Vedabase pattern) › DOM order: Devanagari → IAST → synonyms → translation
+[1A[2K[144/156] [mobile-iphone-13] › tests/e2e/verse-anatomy-shape.spec.ts:21:3 › verse anatomy shape (Vedabase pattern) › synonyms use dash-joined Vedabase pattern
+[1A[2K[145/156] [mobile-iphone-13] › tests/e2e/verse-anatomy-shape.spec.ts:28:3 › verse anatomy shape (Vedabase pattern) › translation paragraph max-width ≤ 65ch
+[1A[2K[146/156] [mobile-iphone-13] › tests/e2e/verse-anatomy-shape.spec.ts:47:3 › verse anatomy shape (Vedabase pattern) › interactive elements ≥ 44px touch target
+[1A[2K[147/156] [mobile-iphone-13] › tests/e2e/verse-page.spec.ts:6:3 › verse page — Śiva Sūtra 1.1 › renders full verse anatomy with no console errors
+[1A[2K[148/156] [mobile-iphone-13] › tests/e2e/verse-page.spec.ts:20:3 › verse page — Śiva Sūtra 1.1 › AI-assist badge visible near verse number
+[1A[2K[149/156] [mobile-iphone-13] › tests/e2e/verse-page.spec.ts:27:3 › verse page — Śiva Sūtra 1.1 › prev/next navigation works
+[1A[2K[150/156] [mobile-iphone-13] › tests/e2e/verse-page.spec.ts:41:3 › verse page — Śiva Sūtra 1.1 › script switcher button present in top bar
+[1A[2K[151/156] [mobile-iphone-13] › tests/e2e/verse-page.spec.ts:50:3 › verse page — Śiva Sūtra 1.1 › settings (Aa) button present
+[1A[2K[152/156] [mobile-iphone-13] › tests/e2e/wordsheet.spec.ts:16:3 › word sheet (tap a Sanskrit word) › tapping a .sa-word opens the bottom sheet with lemma + gloss
+[1A[2K[153/156] [mobile-iphone-13] › tests/e2e/wordsheet.spec.ts:43:3 › word sheet (tap a Sanskrit word) › drag handle is visible on the sheet
+[1A[2K[154/156] [mobile-iphone-13] › tests/e2e/wordsheet.spec.ts:61:3 › word sheet (tap a Sanskrit word) › close button (×) dismisses the sheet
+[1A[2K[155/156] [mobile-iphone-13] › tests/e2e/wordsheet.spec.ts:76:3 › word sheet (tap a Sanskrit word) › Escape closes the sheet
+[1A[2K[156/156] [mobile-iphone-13] › tests/e2e/wordsheet.spec.ts:91:3 › word sheet (tap a Sanskrit word) › scrim click dismisses the sheet
+[1A[2K  156 passed (20.6s)

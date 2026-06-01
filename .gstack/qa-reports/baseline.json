@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-01",
+  "url": "http://localhost:4321",
+  "branch": "main",
+  "mode": "exhaustive",
+  "healthScore": 92,
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "title": "Two divergent VerseHit interfaces (lib + api + page)",
+      "severity": "high",
+      "category": "functional",
+      "fixStatus": "verified",
+      "commit": "d4eadfd"
+    },
+    {
+      "id": "ISSUE-002",
+      "title": "bun:sqlite missing type declarations (7 instances)",
+      "severity": "medium",
+      "category": "functional",
+      "fixStatus": "verified",
+      "commit": "1418423"
+    },
+    {
+      "id": "ISSUE-003",
+      "title": "Unused @ts-expect-error directive on Sanscript import",
+      "severity": "low",
+      "category": "content",
+      "fixStatus": "verified",
+      "commit": "ab47052"
+    }
+  ],
+  "deferred": {
+    "biomeLints": 79,
+    "reason": "pre-existing style preferences (organizeImports + noNonNullAssertion); separate cleanup pass"
+  },
+  "gates": {
+    "typecheck": { "errors": 0, "delta": -10 },
+    "unit": { "passing": 134, "total": 134, "delta": 3 },
+    "e2e": { "passing": 156, "total": 156, "delta": 0 },
+    "biome": { "errors": 79, "delta": 0 }
+  },
+  "matrixProbes": {
+    "crossTextLang": { "pass": 120, "total": 120 },
+    "apiSmoke": { "pass": 8, "total": 8 }
+  },
+  "categoryScores": {
+    "console": 100,
+    "links": 100,
+    "visual": 85,
+    "functional": 100,
+    "ux": 95,
+    "performance": 90,
+    "content": 100,
+    "accessibility": 70
+  },
+  "corpus": {
+    "texts": 5,
+    "verses": 334,
+    "translations": 4008,
+    "wordGlosses": 28018,
+    "languages": 12
+  }
+}

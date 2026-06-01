@@ -1,0 +1,296 @@
+=== GATE 4: biome ===
+$ biome check .
+./pipeline/embed/runner.ts:32:1 suppressions/unused ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Suppression comment has no effect. Remove the suppression or make sure you are suppressing the correct rule.
+  
+    30 │  */
+    31 │ 
+  > 32 │ // biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
+       │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    33 │ import { Database } from 'bun:sqlite';
+    34 │ import { dirname, resolve } from 'node:path';
+  
+
+./pipeline/dataset/zenodo-deposit.ts:316:26 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Template literals are preferred over string concatenation.
+  
+    315 │   const outPath = join(args.dir, 'zenodo-deposit.json');
+  > 316 │   writeFileSync(outPath, JSON.stringify(provenance, null, 2) + '\n', 'utf8');
+        │                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    317 │ 
+    318 │   console.log('zenodo-deposit complete:');
+  
+  i Unsafe fix: Use a template literal.
+  
+    314 314 │   
+    315 315 │     const outPath = join(args.dir, 'zenodo-deposit.json');
+    316     │ - ··writeFileSync(outPath,·JSON.stringify(provenance,·null,·2)·+·'\n',·'utf8');
+        316 │ + ··writeFileSync(outPath,·`${JSON.stringify(provenance,·null,·2)}\n`,·'utf8');
+    317 317 │   
+    318 318 │     console.log('zenodo-deposit complete:');
+  
+
+./pipeline/ingest/ingest.ts:622:122 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Template literals are preferred over string concatenation.
+  
+    620 │       stats.push(s);
+    621 │       console.log(
+  > 622 │         `Ingested ${s.verses} verses, ${s.glosses} glosses, ${s.translations} translations  (${doc.id} <- ${file.replace(PROJECT_ROOT + '/', '')})`,
+        │                                                                                                                          ^^^^^^^^^^^^^^^^^^
+    623 │       );
+    624 │     } catch (err) {
+  
+  i Unsafe fix: Use a template literal.
+  
+    620 620 │         stats.push(s);
+    621 621 │         console.log(
+    622     │ - ········`Ingested·${s.verses}·verses,·${s.glosses}·glosses,·${s.translations}·translations··(${doc.id}·<-·${file.replace(PROJECT_ROOT·+·'/',·'')})`,
+        622 │ + ········`Ingested·${s.verses}·verses,·${s.glosses}·glosses,·${s.translations}·translations··(${doc.id}·<-·${file.replace(`${PROJECT_ROOT}/`,·'')})`,
+    623 623 │         );
+    624 624 │       } catch (err) {
+  
+
+./tests/unit/transliteration.test.ts:93:18 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    91 │     const out = toScript(deva, 'devanagari', target);
+    92 │     expect(out.length).toBeGreaterThan(0);
+  > 93 │     const code = out.codePointAt(0)!;
+       │                  ^^^^^^^^^^^^^^^^^^^
+    94 │     expect(code).toBeGreaterThanOrEqual(lo.codePointAt(0)!);
+    95 │     expect(code).toBeLessThanOrEqual(hi.codePointAt(0)!);
+  
+
+./tests/unit/transliteration.test.ts:94:41 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    92 │     expect(out.length).toBeGreaterThan(0);
+    93 │     const code = out.codePointAt(0)!;
+  > 94 │     expect(code).toBeGreaterThanOrEqual(lo.codePointAt(0)!);
+       │                                         ^^^^^^^^^^^^^^^^^^
+    95 │     expect(code).toBeLessThanOrEqual(hi.codePointAt(0)!);
+    96 │   });
+  
+
+./tests/unit/transliteration.test.ts:95:38 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    93 │     const code = out.codePointAt(0)!;
+    94 │     expect(code).toBeGreaterThanOrEqual(lo.codePointAt(0)!);
+  > 95 │     expect(code).toBeLessThanOrEqual(hi.codePointAt(0)!);
+       │                                      ^^^^^^^^^^^^^^^^^^
+    96 │   });
+    97 │ });
+  
+
+./tests/unit/transliteration.test.ts:1:1 suppressions/unused ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Suppression comment has no effect. Remove the suppression or make sure you are suppressing the correct rule.
+  
+  > 1 │ // biome-ignore lint/correctness/noUndeclaredDependencies: package ships types
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    2 │ import Sanscript from '@indic-transliteration/sanscript';
+    3 │ /**
+  
+
+./src/components/VerseAnatomy.astro:68:24 lint/suspicious/noControlCharactersInRegex ━━━━━━━━━━━━━━━
+
+  × Unexpected control character in a regular expression.
+  
+    67 │   // Restore the protected verse-number brackets
+  > 68 │   work = work.replace(/U+1(\d+)U+1/g, (_m, i) => protected_[Number(i)]);
+       │                        
+    69 │ 
+    70 │   // Collapse multiple newlines + trim
+  
+  i Control characters are unusual and potentially incorrect inputs, so they are disallowed.
+  
+
+./src/components/VerseAnatomy.astro:68:30 lint/suspicious/noControlCharactersInRegex ━━━━━━━━━━━━━━━
+
+  × Unexpected control character in a regular expression.
+  
+    67 │   // Restore the protected verse-number brackets
+  > 68 │   work = work.replace(/U+1(\d+)U+1/g, (_m, i) => protected_[Number(i)]);
+       │                             
+    69 │ 
+    70 │   // Collapse multiple newlines + trim
+  
+  i Control characters are unusual and potentially incorrect inputs, so they are disallowed.
+  
+
+./src/components/ScriptSwitcher.solid.tsx:114:9 lint/a11y/useKeyWithClickEvents ━━━━━━━━━━━━━━━━━━━━
+
+  × Enforce to have the onClick mouse event with the onKeyUp, the onKeyDown, or the onKeyPress keyboard event.
+  
+    113 │       <Show when={open()}>
+  > 114 │         <div class="script-switcher__scrim" onClick={() => setOpen(false)} aria-hidden="true" />
+        │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    115 │         <dialog open class="script-switcher__sheet" aria-label="Choose script">
+    116 │           <header class="script-switcher__head">
+  
+  i Actions triggered using mouse events should have corresponding keyboard events to account for keyboard-only navigation.
+  
+
+./src/lib/transliteration.ts:10:1 suppressions/unused ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Suppression comment has no effect. Remove the suppression or make sure you are suppressing the correct rule.
+  
+     8 │  */
+     9 │ 
+  > 10 │ // biome-ignore lint/correctness/noUndeclaredDependencies: package ships its
+       │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    11 │ // own types via the CommonJS entrypoint.
+    12 │ import Sanscript from '@indic-transliteration/sanscript';
+  
+
+./src/components/TranslationDrawer.solid.tsx:216:9 lint/a11y/useKeyWithClickEvents ━━━━━━━━━━━━━━━━━
+
+  × Enforce to have the onClick mouse event with the onKeyUp, the onKeyDown, or the onKeyPress keyboard event.
+  
+    215 │       <Show when={open()}>
+  > 216 │         <div class="td-scrim" onClick={closeSheet} aria-hidden="true" />
+        │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    217 │         <dialog
+    218 │           open
+  
+  i Actions triggered using mouse events should have corresponding keyboard events to account for keyboard-only navigation.
+  
+
+./src/components/TranslationDrawer.solid.tsx:220:27 lint/a11y/useSemanticElements ━━━━━━━━━━━━━━━━━━
+
+  × The elements with the following roles can be changed to the following elements:
+    <dialog>
+  
+  
+    218 │           open
+    219 │           ref={sheetEl}
+  > 220 │           class="td-sheet"
+        │                           
+  > 221 │           role="dialog"
+        │           ^^^^^^^^^^^^^
+    222 │           aria-modal="true"
+    223 │           aria-labelledby={titleId}
+  
+  i For examples and more information, see WAI-ARIA Roles
+  
+
+./src/components/TranslationDrawer.solid.tsx:221:16 lint/a11y/noRedundantRoles  FIXABLE  ━━━━━━━━━━━
+
+  × Using the role attribute 'dialog' on the 'dialog' element is redundant, because it is implied by the semantic 'dialog' element.
+  
+    219 │           ref={sheetEl}
+    220 │           class="td-sheet"
+  > 221 │           role="dialog"
+        │                ^^^^^^^^
+    222 │           aria-modal="true"
+    223 │           aria-labelledby={titleId}
+  
+  i Unsafe fix: Remove the role attribute.
+  
+    219 219 │             ref={sheetEl}
+    220 220 │             class="td-sheet"
+    221     │ - ··········role="dialog"
+    222 221 │             aria-modal="true"
+    223 222 │             aria-labelledby={titleId}
+  
+
+./src/components/TranslationDrawer.solid.tsx:244:35 lint/a11y/useSemanticElements ━━━━━━━━━━━━━━━━━━
+
+  × The elements with the following roles can be changed to the following elements:
+    <fieldset>
+  
+  
+    242 │           <div class="td-body">
+    243 │             {/* Chip grid — 11 langs */}
+  > 244 │             <div class="td-chips" role="group" aria-label="Select languages">
+        │                                   ^^^^^^^^^^^^
+    245 │               <For each={LANGS}>
+    246 │                 {(l) => {
+  
+  i For examples and more information, see WAI-ARIA Roles
+  
+
+./src/components/WordSheet.solid.tsx:115:7 lint/a11y/useKeyWithClickEvents ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Enforce to have the onClick mouse event with the onKeyUp, the onKeyDown, or the onKeyPress keyboard event.
+  
+    113 │   return (
+    114 │     <Show when={open()}>
+  > 115 │       <div class="word-sheet__scrim" onClick={close} aria-hidden="true" />
+        │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    116 │       <dialog
+    117 │         open
+  
+  i Actions triggered using mouse events should have corresponding keyboard events to account for keyboard-only navigation.
+  
+
+./src/components/WordSheet.solid.tsx:160:19 lint/correctness/useJsxKeyInIterable ━━━━━━━━━━━━━━━━━━━
+
+  × Missing key property for this element in iterable.
+  
+    158 │                 .filter(Boolean)
+    159 │                 .map((chip) => (
+  > 160 │                   <span class="word-sheet__chip">{chip}</span>
+        │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    161 │                 ))}
+    162 │             </div>
+  
+  i The order of the items may change, and having a key can help React identify which item was moved.
+  
+  i Check the React documentation. 
+  
+
+./src/pages/[tradition]/[text]/index.astro:43:33 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    41 │ }
+    42 │ 
+  > 43 │ const aliasCheck = resolveAlias(tradition!, text!);
+       │                                 ^^^^^^^^^^
+    44 │ if (aliasCheck && !aliasCheck.canonical) {
+    45 │   return Astro.redirect(`/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+  
+
+./src/pages/[tradition]/[text]/index.astro:43:45 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    41 │ }
+    42 │ 
+  > 43 │ const aliasCheck = resolveAlias(tradition!, text!);
+       │                                             ^^^^^
+    44 │ if (aliasCheck && !aliasCheck.canonical) {
+    45 │   return Astro.redirect(`/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+  
+
+./src/pages/[tradition]/[text]/index.astro:48:25 lint/style/noNonNullAssertion ━━━━━━━━━━━━━━━━━━━━━
+
+  × Forbidden non-null assertion.
+  
+    46 │ }
+    47 │ 
+  > 48 │ const textRow = getText(text!);
+       │                         ^^^^^
+    49 │ if (!textRow) throw new Error(`Text not found: ${text}`);
+    50 │ const chapters = listChapters(text!);
+  
+
+The number of diagnostics exceeds the number allowed by Biome.
+Diagnostics not shown: 79.
+Checked 80 files in 27ms. No fixes applied.
+Found 79 errors.
+Found 12 warnings.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "check" exited with code 1

@@ -1,0 +1,32 @@
+=== GATE 1: typecheck ===
+$ tsc --noEmit
+pipeline/dataset/publish.ts(35,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+pipeline/embed/runner.ts(33,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+pipeline/ingest/ingest.ts(54,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+pipeline/ingest/ingest.ts(660,26): error TS2868: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun` and then add 'bun' to the types field in your tsconfig.
+pipeline/ingest/init-db.ts(14,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+pipeline/ingest/init-db.ts(66,11): error TS7006: Parameter 'r' implicitly has an 'any' type.
+pipeline/ingest/init-db.ts(85,26): error TS2868: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun` and then add 'bun' to the types field in your tsconfig.
+pipeline/translate/runner.ts(31,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+pipeline/translate/runner.ts(238,11): error TS7006: Parameter 'r' implicitly has an 'any' type.
+pipeline/translate/runner.ts(474,26): error TS2868: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun` and then add 'bun' to the types field in your tsconfig.
+src/components/ScriptSwitcher.solid.tsx(1,1): error TS2578: Unused '@ts-expect-error' directive.
+src/lib/db.ts(17,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+src/lib/db.ts(349,60): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/lib/db.ts(577,28): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/lib/db.ts(598,20): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/lib/search.ts(27,31): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+src/pages/api/search.ts(58,5): error TS2578: Unused '@ts-expect-error' directive.
+src/pages/api/search.ts(60,12): error TS2352: Conversion of type 'typeof import("/Users/danny/Documents/GitHub/sohamhamso/src/lib/search")' to type '{ lexicalSearch?: ((q: string, lang: string, limit: number) => VerseHit[] | Promise<VerseHit[]>) | undefined; semanticSearch?: ((q: string, lang: string, limit: number) => VerseHit[] | Promise<...>) | undefined; blendedSearch?: ((q: string, lang: string, limit: number) => VerseHit[] | Promise<...>) | undefined; }' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  The types returned by 'lexicalSearch(...)' are incompatible between these types.
+    Type 'Promise<VerseHit[]>' is not comparable to type 'VerseHit[] | Promise<VerseHit[]>'.
+      Type 'Promise<import("/Users/danny/Documents/GitHub/sohamhamso/src/lib/search").VerseHit[]>' is not comparable to type 'Promise<import("/Users/danny/Documents/GitHub/sohamhamso/src/pages/api/search").VerseHit[]>'.
+        Type 'import("/Users/danny/Documents/GitHub/sohamhamso/src/lib/search").VerseHit[]' is not comparable to type 'import("/Users/danny/Documents/GitHub/sohamhamso/src/pages/api/search").VerseHit[]'.
+          Type 'VerseHit' is missing the following properties from type 'VerseHit': text_id, text_title, tradition, translation_excerpt
+tests/unit/api-subscribe.test.ts(2,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+tests/unit/dataset-publish.test.ts(2,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+tests/unit/db.test.ts(2,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+tests/unit/ingest.test.ts(2,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
+tests/unit/ingest.test.ts(88,30): error TS7006: Parameter 'r' implicitly has an 'any' type.
+tests/unit/ingest.test.ts(143,15): error TS7006: Parameter 'r' implicitly has an 'any' type.
+tests/unit/search.test.ts(2,26): error TS2307: Cannot find module 'bun:sqlite' or its corresponding type declarations.
