@@ -1,15 +1,21 @@
 ---
 import { getAvailableLanguages } from '../lib/db';
+import { READING_MODES } from '../lib/reading-modes';
 /**
  * Masthead — top chrome. Wordmark left · search icon middle/right ·
  * language picker right. Hairline border-bottom (var(--color-rule)).
  * Persistent across pages.
  *
  * The search trigger is intercepted by the global SearchBox Solid island
- * (mounted in BaseLayout); this component just renders the button. Language
- * availability is sourced from the corpus DB at build time: any language
- * with at least one published/reviewed translation anywhere in the corpus
- * renders as available; the rest get the greyed `soon` tag.
+ * (mounted in BaseLayout); this component just renders the button. The
+ * language picker uses the unified READING_MODES catalogue (see
+ * src/lib/reading-modes.ts) so the entries + behavior match the
+ * verse-page ScriptSwitcher and the SettingsSheet. Picking a row writes
+ * BOTH sohamhamso:script + sohamhamso:reader-lang and dispatches
+ * sohamhamso:reader-lang-change — the same contract every other picker
+ * obeys. Availability is sourced from the corpus DB at build time:
+ * langs with at least one published/reviewed translation render
+ * available; the rest get the greyed `soon` tag.
  */
 import Wordmark from './Wordmark.astro';
 
@@ -18,29 +24,15 @@ interface Props {
 }
 const { currentLang = 'EN' } = Astro.props;
 
-// Build-time intersection: catalogue of 12 langs × DB-reported coverage.
-// DB codes are lowercase ISO; catalogue display codes are uppercase — we
-// normalize for the membership test.
+// Build-time intersection: catalogue rows × DB-reported coverage.
+// DB codes are lowercase ISO; catalogue display codes match.
 const availableSet = getAvailableLanguages();
 
-const LANG_CATALOGUE: Array<{ code: string; label: string }> = [
-  { code: 'EN', label: 'English' },
-  { code: 'HI', label: 'हिन्दी (Hindi)' },
-  { code: 'TA', label: 'தமிழ் (Tamil)' },
-  { code: 'TE', label: 'తెలుగు (Telugu)' },
-  { code: 'BN', label: 'বাংলা (Bengali)' },
-  { code: 'MR', label: 'मराठी (Marathi)' },
-  { code: 'GU', label: 'ગુજરાતી (Gujarati)' },
-  { code: 'KN', label: 'ಕನ್ನಡ (Kannada)' },
-  { code: 'ML', label: 'മലയാളം (Malayalam)' },
-  { code: 'PA', label: 'ਪੰਜਾਬੀ (Punjabi)' },
-  { code: 'OR', label: 'ଓଡ଼ିଆ (Odia)' },
-  { code: 'AS', label: 'অসমীয়া (Assamese)' },
-];
-
-const languages = LANG_CATALOGUE.map((l) => ({
-  ...l,
-  available: availableSet.has(l.code.toLowerCase()),
+const languages = READING_MODES.map((m) => ({
+  code: m.langCode.toUpperCase(),
+  langCode: m.langCode,
+  label: m.englishName === m.nativeLabel ? m.englishName : `${m.nativeLabel} (${m.englishName})`,
+  available: availableSet.has(m.langCode),
 }));
 ---
 
@@ -71,7 +63,7 @@ const languages = LANG_CATALOGUE.map((l) => ({
           data-lang-trigger
         >
           <span lang="sa" data-sa class="lang-glyph">अ</span>
-          <span class="lang-current">{currentLang}</span>
+          <span class="lang-current" data-lang-current>{currentLang}</span>
           <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -83,6 +75,8 @@ const languages = LANG_CATALOGUE.map((l) => ({
               aria-selected={l.code === currentLang}
               aria-disabled={!l.available}
               data-available={l.available}
+              data-lang-code={l.langCode}
+              data-lang-display={l.code}
               title={l.available ? "" : "Translation coming soon — see methodology"}
             >
               <span class="lang-code">{l.code}</span>
@@ -97,31 +91,78 @@ const languages = LANG_CATALOGUE.map((l) => ({
 </header>
 
 <script>
-  // Wire the language menu. The [data-search-trigger] button is intercepted
-  // by the SearchBox Solid island (mounted globally in BaseLayout), so this
-  // file does not bind a click handler for it. ⌘K / Ctrl-K is handled by
-  // the same island in capture phase.
+  // Wire the language menu to the unified reading-mode contract:
+  //   - Pick = write BOTH localStorage keys + dispatch reader-lang-change.
+  //   - The [data-search-trigger] button is intercepted by the SearchBox
+  //     Solid island (mounted globally in BaseLayout) and ⌘K is handled
+  //     by the same island in capture phase, so we don't bind either here.
+  import { applyReadingMode } from '../lib/reading-modes';
+
   (() => {
     const langTrigger = document.querySelector<HTMLButtonElement>("[data-lang-trigger]");
     const langMenu = document.querySelector<HTMLUListElement>("[data-lang-menu]");
-    if (langTrigger && langMenu) {
-      langTrigger.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const open = !langMenu.hasAttribute("hidden");
-        if (open) {
-          langMenu.setAttribute("hidden", "");
-          langTrigger.setAttribute("aria-expanded", "false");
-        } else {
-          langMenu.removeAttribute("hidden");
-          langTrigger.setAttribute("aria-expanded", "true");
+    const langCurrent = document.querySelector<HTMLSpanElement>("[data-lang-current]");
+    if (!langTrigger || !langMenu) return;
+
+    const closeMenu = () => {
+      langMenu.setAttribute("hidden", "");
+      langTrigger.setAttribute("aria-expanded", "false");
+    };
+    const openMenu = () => {
+      langMenu.removeAttribute("hidden");
+      langTrigger.setAttribute("aria-expanded", "true");
+    };
+
+    langTrigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (langMenu.hasAttribute("hidden")) openMenu();
+      else closeMenu();
+    });
+
+    document.addEventListener("click", (e) => {
+      if (
+        !langMenu.hasAttribute("hidden") &&
+        !langMenu.contains(e.target as Node) &&
+        e.target !== langTrigger
+      ) {
+        closeMenu();
+      }
+    });
+
+    // Delegate row clicks. Skip disabled ("soon") rows.
+    langMenu.addEventListener("click", (e) => {
+      const li = (e.target as HTMLElement | null)?.closest<HTMLLIElement>("li[data-lang-code]");
+      if (!li) return;
+      if (li.getAttribute("aria-disabled") === "true") return;
+      const lang = li.dataset.langCode;
+      const display = li.dataset.langDisplay;
+      if (!lang) return;
+      applyReadingMode(lang);
+      // Update the trigger label in-place so the user sees the pick land.
+      if (langCurrent && display) langCurrent.textContent = display;
+      // Mark the chosen row aria-selected; clear the others.
+      for (const row of langMenu.querySelectorAll<HTMLLIElement>("li[role='option']")) {
+        row.setAttribute("aria-selected", row === li ? "true" : "false");
+      }
+      closeMenu();
+    });
+
+    // Restore the trigger label from any prior pick so the chrome reflects
+    // the persisted reading mode across pages.
+    try {
+      const saved = localStorage.getItem("sohamhamso:reader-lang");
+      if (saved && langCurrent) {
+        const row = langMenu.querySelector<HTMLLIElement>(`li[data-lang-code="${saved}"]`);
+        const display = row?.dataset.langDisplay;
+        if (display) {
+          langCurrent.textContent = display;
+          for (const r of langMenu.querySelectorAll<HTMLLIElement>("li[role='option']")) {
+            r.setAttribute("aria-selected", r === row ? "true" : "false");
+          }
         }
-      });
-      document.addEventListener("click", (e) => {
-        if (!langMenu.hasAttribute("hidden") && !langMenu.contains(e.target as Node) && e.target !== langTrigger) {
-          langMenu.setAttribute("hidden", "");
-          langTrigger.setAttribute("aria-expanded", "false");
-        }
-      });
+      }
+    } catch {
+      /* localStorage unavailable */
     }
   })();
 </script>
