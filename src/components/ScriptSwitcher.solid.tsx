@@ -50,7 +50,7 @@ const READER_LANG_KEY = 'sohamhamso:reader-lang';
 // remains the override path for power users (e.g. Marathi readers who
 // want Devanāgarī script with Marathi glosses).
 const SCRIPT_TO_LANG: Record<string, string> = {
-  devanagari: 'hi',
+  devanagari: 'en',
   iast: 'en',
   bengali: 'bn',
   assamese: 'as',
@@ -66,16 +66,30 @@ const SCRIPT_TO_LANG: Record<string, string> = {
 /**
  * Re-render every `[data-sa]` element on the page from its preserved
  * source Devanāgarī string into the target script.
+ *
+ * Design contract (per user spec 2026-06-01):
+ *   - Line 1 `.verse-devanagari` carries NO `data-sa` — it stays in
+ *     Devanāgarī always. The Sanskrit original is never transliterated
+ *     away from its source script.
+ *   - Line 2 `.verse-iast`, lemma `.sa-word` buttons, and any other
+ *     `[data-sa]` elements get the "effective" target script:
+ *       devanagari → iast    (Devanāgarī mode = IAST transliteration line + IAST lemmas)
+ *       iast       → iast
+ *       <other>    → <other>
+ *     This way Devanāgarī mode reads as the Vedabase scholar view
+ *     (Devanāgarī verse + IAST below), and Indic modes read as
+ *     "Devanāgarī + transliteration into that Indic script."
  */
 function applyScript(target: string) {
   if (typeof document === 'undefined') return;
+  const effective = target === 'devanagari' ? 'iast' : target;
   const nodes = document.querySelectorAll<HTMLElement>('[data-sa]');
   for (const el of nodes) {
     const src = el.dataset.saSource ?? el.textContent ?? '';
     // Preserve source on first run so repeated switches stay lossless.
     if (!el.dataset.saSource) el.dataset.saSource = src;
     try {
-      el.textContent = Sanscript.t(src, 'devanagari', target);
+      el.textContent = Sanscript.t(src, 'devanagari', effective);
     } catch {
       // Fall back to source on any transliteration failure (e.g.,
       // unmapped Vedic glyph). Keep the source visible rather than

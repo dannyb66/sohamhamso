@@ -88,17 +88,17 @@ const iastFormatted = formatDanda(verse.iast);
     <slot name="chips" />
   </div>
 
-  <div
-    class="verse-devanagari"
-    lang="sa"
-    data-sa
-    data-sa-source={devanagariFormatted}
-  >
+  <div class="verse-devanagari" lang="sa">
     {devanagariFormatted}
   </div>
 
   {verse.iast ? (
-    <div class="verse-iast" lang="sa-Latn">{iastFormatted}</div>
+    <div
+      class="verse-iast"
+      lang="sa-Latn"
+      data-sa
+      data-sa-source={devanagariFormatted}
+    >{iastFormatted}</div>
   ) : null}
 
   {verse.meter ? (
