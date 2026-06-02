@@ -115,7 +115,7 @@ describe('sendPendingConfirmations() — happy path with injected DB + fetch', (
 
     // Fetch was called once, to the Resend endpoint, with Bearer auth.
     expect(fetchImpl).toHaveBeenCalledTimes(1);
-    const [url, init] = fetchImpl.mock.calls[0] as [string, RequestInit];
+    const [url, init] = fetchImpl.mock.calls[0] as unknown as [string, RequestInit];
     expect(url).toBe('https://api.resend.com/emails');
     expect((init.headers as Record<string, string>).Authorization).toBe('Bearer rk_test');
 
