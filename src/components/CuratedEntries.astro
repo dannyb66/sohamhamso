@@ -13,16 +13,11 @@
  *   const textCount = getTextCount();
  */
 
-// Live count from the corpus DB — stays honest as texts are ingested.
-// `listTexts()` already exists in src/lib/db.ts and returns one row per
-// text, so .length is the canonical "All texts (N)" number.
-import { listTexts } from '../lib/db';
-const textCount = listTexts().length;
-
-// The third entry's title interpolates a live count, so it gets a
-// custom render path below (static label + bare `(N)` sibling) rather
-// than a single i18n key — that lets I18nSwap rewrite the label while
-// the count stays correct.
+// Per design audit recommendation #19: dropping the live "(N)" count
+// from the "All texts" link. Pluralizing the count in the label leaked
+// the smallness of the V1 corpus ("All texts (5)" reads as "we have 5
+// things" before the visitor has even clicked through). "All texts →"
+// is cleaner and stays honest as the corpus grows.
 const entries = [
   {
     titleKey: 'curated.if_new.title',
@@ -44,7 +39,6 @@ const entries = [
     href: '/texts',
     descriptionKey: 'curated.all_texts.description',
     description: 'Browse the full corpus.',
-    countSuffix: ` (${textCount})`,
   },
 ] as const;
 ---
@@ -55,7 +49,7 @@ const entries = [
       <li class="curated-item">
         <a href={entry.href} class="curated-link">
           <span class="curated-title">
-            <span data-i18n={entry.titleKey}>{entry.title}</span>{"countSuffix" in entry ? entry.countSuffix : ""}
+            <span data-i18n={entry.titleKey}>{entry.title}</span>
           </span>
           <span class="curated-description" data-i18n={entry.descriptionKey}>{entry.description}</span>
         </a>

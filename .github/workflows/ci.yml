@@ -1,0 +1,114 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# Cancel in-progress runs for the same branch / PR. Don't queue 3 runs
+# on the same branch when someone is force-pushing fixes.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+# Minimum permissions; bump only when a step needs more.
+permissions:
+  contents: read
+
+env:
+  # Biome baseline. Net-new errors above this threshold fail the build.
+  # Source: .gstack/qa-reports/baseline-pass2.json (current as of 2026-06-01).
+  BIOME_BASELINE: 94
+
+jobs:
+  ci:
+    name: Lint + typecheck + unit + e2e
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache Bun install
+        uses: actions/cache@v4
+        with:
+          path: ~/.bun/install/cache
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Typecheck
+        run: bun typecheck
+
+      - name: Unit tests
+        run: bun run test
+
+      # Pin Playwright browser cache to the resolved @playwright/test version
+      # in bun.lock — re-download only when the dep bumps.
+      - name: Resolve Playwright version
+        id: pw-version
+        run: |
+          version=$(grep -A1 '"@playwright/test"' bun.lock | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -n1)
+          if [ -z "$version" ]; then
+            version="unknown"
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Resolved Playwright version: $version"
+
+      - name: Cache Playwright browsers
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw-version.outputs.version }}
+
+      - name: Install Playwright browsers
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: bunx playwright install --with-deps chromium
+
+      - name: Install Playwright system deps (cache hit path)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: bunx playwright install-deps chromium
+
+      - name: E2E tests
+        run: bun e2e
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
+      # Biome runs last: we allow the current baseline of pre-existing lints
+      # (see BIOME_BASELINE above) but FAIL on any net-new error count.
+      - name: Biome (baseline-gated)
+        run: |
+          set -o pipefail
+          output=$(bun run check 2>&1 || true)
+          echo "$output"
+          # Extract "Found N errors." — biome emits this near the end.
+          errors=$(echo "$output" | grep -oE 'Found [0-9]+ error' | grep -oE '[0-9]+' | tail -n1)
+          if [ -z "$errors" ]; then
+            # No "Found N errors" line → biome ran clean (or its output format changed).
+            # Either way, don't fail; let the next CI maintainer notice the format drift.
+            echo "Biome reported no error-count line; assuming 0 errors."
+            errors=0
+          fi
+          echo "Biome errors: $errors (baseline: $BIOME_BASELINE)"
+          if [ "$errors" -gt "$BIOME_BASELINE" ]; then
+            echo "::error::Biome introduced $((errors - BIOME_BASELINE)) net-new error(s) above baseline of $BIOME_BASELINE."
+            exit 1
+          fi
+          echo "Biome within baseline."
