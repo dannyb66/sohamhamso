@@ -75,6 +75,17 @@ const THEMES = [
   { id: 'sepia', label: 'Sepia', swatchBg: '#EFE3CC', swatchInk: '#2C2620' },
   { id: 'dark', label: 'Dark', swatchBg: '#14110D', swatchInk: '#ECE5D6' },
   { id: 'oled', label: 'OLED', swatchBg: '#000000', swatchInk: '#ECE5D6' },
+  // `auto` resolves to light or dark at runtime via prefers-color-scheme.
+  // Stored as `auto` (user intent), but the legacy `sohamhamso:theme`
+  // key always gets the *resolved* concrete value so BaseLayout's
+  // pre-paint script — which only understands light/sepia/dark/oled —
+  // hydrates the right theme on the next page load.
+  {
+    id: 'auto',
+    label: 'Auto',
+    swatchBg: 'linear-gradient(135deg, #FAF6EE 0 50%, #14110D 50% 100%)',
+    swatchInk: '#1C1A17',
+  },
 ];
 
 // Sourced from the unified READING_MODES catalogue (src/lib/reading-modes.ts)
@@ -107,7 +118,7 @@ interface Settings {
   latinFont: string;
   fontSizePx: number;
   lineHeight: number;
-  theme: 'light' | 'sepia' | 'dark' | 'oled';
+  theme: 'light' | 'sepia' | 'dark' | 'oled' | 'auto';
   defaultLang: string;
   defaultScript: string;
   readerLang: string;
@@ -128,6 +139,16 @@ const STORAGE_KEY = 'sohamhamso:settings';
 const LEGACY_THEME_KEY = 'sohamhamso:theme';
 const READER_LANG_KEY = 'sohamhamso:reader-lang';
 
+// Resolve a stored theme to the concrete value applied to <html>.
+// `auto` follows the system via `prefers-color-scheme`; the four
+// concrete themes are identity. Centralized so applySettings and the
+// matchMedia change-listener stay in lock-step.
+function resolveTheme(theme: Settings['theme']): 'light' | 'sepia' | 'dark' | 'oled' {
+  if (theme !== 'auto') return theme;
+  if (typeof window === 'undefined' || !window.matchMedia) return 'light';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
 // ─── Apply settings to <html> as CSS vars / data-attrs ────────────────
 function applySettings(s: Settings) {
   if (typeof document === 'undefined') return;
@@ -141,16 +162,21 @@ function applySettings(s: Settings) {
   // whole rhythm scales smoothly. Stored as px, written as px.
   root.style.setProperty('--text-base', `${s.fontSizePx}px`);
   root.style.setProperty('--line-height-iast', String(s.lineHeight));
-  // Theme drives swatch tokens via [data-theme] in tokens.css.
-  if (s.theme === 'light') {
+  // Theme drives swatch tokens via [data-theme] in tokens.css. For
+  // `auto` we resolve via prefers-color-scheme so the rendered theme
+  // tracks the system; user intent (`auto`) stays in the settings blob.
+  const resolved = resolveTheme(s.theme);
+  if (resolved === 'light') {
     root.removeAttribute('data-theme');
   } else {
-    root.setAttribute('data-theme', s.theme);
+    root.setAttribute('data-theme', resolved);
   }
-  // Keep BaseLayout's pre-paint theme bootstrap in sync.
+  // Keep BaseLayout's pre-paint theme bootstrap in sync. The legacy
+  // key only understands concrete themes, so we write the *resolved*
+  // value (not `auto`); next pre-paint hydrates the right theme.
   try {
-    if (s.theme === 'light') localStorage.removeItem(LEGACY_THEME_KEY);
-    else localStorage.setItem(LEGACY_THEME_KEY, s.theme);
+    if (resolved === 'light') localStorage.removeItem(LEGACY_THEME_KEY);
+    else localStorage.setItem(LEGACY_THEME_KEY, resolved);
   } catch {
     /* localStorage unavailable */
   }
@@ -194,6 +220,10 @@ export default function SettingsSheet() {
   // Touch-drag dismiss state (mobile only)
   let touchStartY = 0;
   let touchDelta = 0;
+  // `auto` theme listener — re-applies whenever the system flips
+  // light↔dark so the rendered theme tracks the OS in real time.
+  let mql: MediaQueryList | null = null;
+  let mqlHandler: ((e: MediaQueryListEvent) => void) | null = null;
 
   const update = (patch: Partial<Settings>) => {
     const prev = settings();
@@ -314,12 +344,26 @@ export default function SettingsSheet() {
     document.addEventListener('sohamhamso:open-settings', handleOpenRequest);
     document.addEventListener('sohamhamso:settings-changed', handleExternalChange);
     document.addEventListener('keydown', handleKey);
+    // Track the system color scheme so `theme: 'auto'` re-renders when
+    // the OS flips. Listener is live for the lifetime of the island,
+    // not gated on `open()`, so the page stays in sync even when the
+    // sheet is closed.
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      mql = window.matchMedia('(prefers-color-scheme: dark)');
+      mqlHandler = () => {
+        if (settings().theme === 'auto') applySettings(settings());
+      };
+      mql.addEventListener('change', mqlHandler);
+    }
   });
   onCleanup(() => {
     if (typeof document === 'undefined') return;
     document.removeEventListener('sohamhamso:open-settings', handleOpenRequest);
     document.removeEventListener('sohamhamso:settings-changed', handleExternalChange);
     document.removeEventListener('keydown', handleKey);
+    if (mql && mqlHandler) mql.removeEventListener('change', mqlHandler);
+    mql = null;
+    mqlHandler = null;
   });
 
   // Live-preview sample. Uses current saFont and fontSizePx via the
@@ -668,8 +712,15 @@ export default function SettingsSheet() {
           }
           .settings__themes {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            /* 5 themes (Light/Sepia/Dark/OLED/Auto) wrap to two rows on
+               narrow phones, single row on wider sheets. */
+            grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: var(--spacing-2);
+          }
+          @media (max-width: 380px) {
+            .settings__themes {
+              grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
           }
           .settings__theme {
             display: grid;
