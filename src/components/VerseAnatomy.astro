@@ -124,6 +124,7 @@ const iastFormatted = formatDanda(verse.iast);
             data-sa
             data-sa-source={g.word_sa}
             lang="sa"
+            aria-label={`Look up: ${g.lemma_iast || g.word_sa}`}
           >
             <em>{g.lemma_iast || g.word_sa}</em>
           </button>
