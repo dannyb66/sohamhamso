@@ -266,6 +266,29 @@ export default function SettingsSheet() {
 
   const handleOpenRequest = () => openSheet();
 
+  // External settings updates (e.g., the Masthead one-tap theme toggle)
+  // re-sync the local signal so the theme-swatch "pressed" state and any
+  // other displayed value reflect reality. We ignore events we ourselves
+  // dispatched by comparing the detail.theme against the current signal.
+  const handleExternalChange = (e: Event) => {
+    const detail = (e as CustomEvent<Partial<Settings>>).detail;
+    if (!detail) return;
+    const current = settings();
+    // Only react if at least one field differs — avoids feedback loops
+    // from our own dispatch above.
+    let dirty = false;
+    for (const k of Object.keys(detail) as (keyof Settings)[]) {
+      if (detail[k] !== undefined && detail[k] !== current[k]) {
+        dirty = true;
+        break;
+      }
+    }
+    if (!dirty) return;
+    const next = loadSettings();
+    setSettings(next);
+    // No applySettings here — whoever dispatched already applied.
+  };
+
   // Touch-drag dismiss (mobile sheet only).
   const handleTouchStart = (e: TouchEvent) => {
     touchStartY = e.touches[0].clientY;
@@ -289,11 +312,13 @@ export default function SettingsSheet() {
     setSettings(initial);
     applySettings(initial);
     document.addEventListener('sohamhamso:open-settings', handleOpenRequest);
+    document.addEventListener('sohamhamso:settings-changed', handleExternalChange);
     document.addEventListener('keydown', handleKey);
   });
   onCleanup(() => {
     if (typeof document === 'undefined') return;
     document.removeEventListener('sohamhamso:open-settings', handleOpenRequest);
+    document.removeEventListener('sohamhamso:settings-changed', handleExternalChange);
     document.removeEventListener('keydown', handleKey);
   });
 

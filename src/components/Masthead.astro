@@ -55,6 +55,58 @@ const languages = READING_MODES.map((m) => ({
         </svg>
       </button>
 
+      <!--
+        One-tap light↔dark toggle. The 4-way picker (light / sepia / dark /
+        oled) still lives in SettingsSheet for power users; this is the
+        quick-access daily preference. Two inline SVG glyphs swap purely
+        via CSS based on `[data-theme]` on <html>. No icon library, per
+        anti-pattern list.
+      -->
+      <button
+        type="button"
+        class="icon-button theme-toggle"
+        aria-label="Toggle dark mode"
+        data-i18n-attr-aria-label="masthead.theme.aria"
+        data-theme-toggle
+      >
+        <svg
+          class="theme-toggle__sun"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="10" cy="10" r="3.25" stroke="currentColor" stroke-width="1.5" />
+          <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="10" y1="2" x2="10" y2="4" />
+            <line x1="10" y1="16" x2="10" y2="18" />
+            <line x1="2" y1="10" x2="4" y2="10" />
+            <line x1="16" y1="10" x2="18" y2="10" />
+            <line x1="4.34" y1="4.34" x2="5.76" y2="5.76" />
+            <line x1="14.24" y1="14.24" x2="15.66" y2="15.66" />
+            <line x1="4.34" y1="15.66" x2="5.76" y2="14.24" />
+            <line x1="14.24" y1="5.76" x2="15.66" y2="4.34" />
+          </g>
+        </svg>
+        <svg
+          class="theme-toggle__moon"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M15.5 12.5 A6.5 6.5 0 1 1 7.5 4.5 a5 5 0 0 0 8 8 z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+            fill="none"
+          />
+        </svg>
+      </button>
+
       <div class="lang-picker">
         <button
           type="button"
@@ -168,6 +220,55 @@ const languages = READING_MODES.map((m) => ({
     } catch {
       /* localStorage unavailable */
     }
+
+    // ── One-tap theme toggle ────────────────────────────────────────────
+    // Rule: if currently dark or oled → flip to light; otherwise → dark.
+    // This keeps the toggle predictable for users who picked Sepia or
+    // OLED via the full 4-way picker in SettingsSheet — one tap returns
+    // them to light, another tap takes them straight to dark.
+    //
+    // Persistence: writes BOTH the legacy `sohamhamso:theme` key (which
+    // the BaseLayout pre-paint script reads) AND the unified
+    // `sohamhamso:settings` blob (which SettingsSheet's loadSettings
+    // reads on mount). If we only updated the legacy key, opening
+    // SettingsSheet later would silently revert the toggle's pick because
+    // applySettings would re-write the legacy key from the stale blob.
+    // Dispatches `sohamhamso:settings-changed` so a mounted SettingsSheet
+    // can re-sync its picker state.
+    const themeToggle = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
+    if (themeToggle) {
+      const SETTINGS_KEY = "sohamhamso:settings";
+      const THEME_KEY = "sohamhamso:theme";
+
+      themeToggle.addEventListener("click", () => {
+        const root = document.documentElement;
+        const current = root.getAttribute("data-theme");
+        const isDarkish = current === "dark" || current === "oled";
+        const next = isDarkish ? "light" : "dark";
+
+        if (next === "light") root.removeAttribute("data-theme");
+        else root.setAttribute("data-theme", next);
+
+        try {
+          if (next === "light") localStorage.removeItem(THEME_KEY);
+          else localStorage.setItem(THEME_KEY, next);
+
+          // Read-modify-write the unified settings blob so SettingsSheet's
+          // next mount/load reflects the toggle. Tolerate a missing or
+          // malformed blob — partial write is fine.
+          const raw = localStorage.getItem(SETTINGS_KEY);
+          const blob = raw ? JSON.parse(raw) : {};
+          blob.theme = next;
+          localStorage.setItem(SETTINGS_KEY, JSON.stringify(blob));
+        } catch {
+          /* localStorage unavailable */
+        }
+
+        document.dispatchEvent(
+          new CustomEvent("sohamhamso:settings-changed", { detail: { theme: next } }),
+        );
+      });
+    }
   })();
 </script>
 
@@ -220,6 +321,24 @@ const languages = READING_MODES.map((m) => ({
     transition: background var(--motion-fast) var(--easing-out);
   }
   .icon-button:hover { background: var(--color-rule); }
+
+  /*
+   * Theme-toggle glyph swap. The sun lives in dark/oled themes (it's the
+   * action: "switch to light"); the moon lives in light/sepia themes
+   * ("switch to dark"). Toggling is purely CSS off the [data-theme]
+   * attribute on <html>. Hairline-only fill matches the masthead's
+   * minimal icon language.
+   */
+  .theme-toggle__sun { display: none; }
+  .theme-toggle__moon { display: inline-block; }
+  :root[data-theme="dark"] .theme-toggle__sun,
+  :root[data-theme="oled"] .theme-toggle__sun {
+    display: inline-block;
+  }
+  :root[data-theme="dark"] .theme-toggle__moon,
+  :root[data-theme="oled"] .theme-toggle__moon {
+    display: none;
+  }
 
   .lang-picker { position: relative; }
 
