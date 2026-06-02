@@ -14,6 +14,16 @@
  * pinning + double opt-in) ships English-only at V1.0. Source of truth
  * for the active set is src/lib/subscribe-langs.ts; both this picker
  * and the API import from there so they cannot drift.
+ *
+ * Language picker:
+ *   The visible control is a styled pill that mirrors the Masthead's
+ *   अ EN ⌄ chip pattern — same visual language, same listbox semantics.
+ *   A hidden <input name="language"> is the actual form-submit carrier;
+ *   the pill writes to it whenever the selection changes. With JS off,
+ *   the hidden input still carries `language=en` (the default), so the
+ *   form posts successfully — progressive enhancement contract preserved.
+ *   The picker's scope is subscription-only — it does NOT write the
+ *   site-wide reader-lang localStorage keys; that is the Masthead's job.
  */
 import { ACTIVE_LANGUAGES } from '../lib/subscribe-langs';
 
@@ -36,6 +46,10 @@ const languages = LANG_CATALOGUE.map((l) => ({
   ...l,
   available: ACTIVE_LANGUAGES.has(l.code),
 }));
+
+// Default selection — the first available language. V1: 'en'.
+const defaultLang = languages.find((l) => l.available)?.code ?? 'en';
+const defaultLabel = languages.find((l) => l.code === defaultLang)?.label ?? 'English';
 ---
 
 <section class="subscribe" aria-labelledby="subscribe-heading">
@@ -64,19 +78,47 @@ const languages = LANG_CATALOGUE.map((l) => ({
       />
 
       <div class="subscribe-lang">
-        <label class="subscribe-lang-label" for="subscribe-lang" data-i18n="subscribe.lang.label">language:</label>
-        <select id="subscribe-lang" name="language">
-          {languages.map((l) => (
-            <option
-              value={l.code}
-              disabled={!l.available}
-              title={l.available ? "" : "Coming soon — see methodology"}
-              data-i18n-attr-title={l.available ? undefined : "subscribe.lang.soon_title"}
-            >
-              {l.label}{!l.available ? " (soon)" : ""}
-            </option>
-          ))}
-        </select>
+        <span class="subscribe-lang-label" id="subscribe-lang-label" data-i18n="picker.translation_language">Translation language</span>
+        <!--
+          Hidden carrier — the form's actual `language` field. Defaults
+          to the first ACTIVE language (V1: `en`), so even with JS off
+          the no-JS POST includes a valid `language` value.
+        -->
+        <input type="hidden" name="language" value={defaultLang} data-subscribe-lang-input />
+        <div class="lang-picker" data-subscribe-lang-picker>
+          <button
+            type="button"
+            class="lang-trigger"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-labelledby="subscribe-lang-label"
+            data-subscribe-lang-trigger
+          >
+            <span lang="sa" data-sa class="lang-glyph">अ</span>
+            <span class="lang-current" data-subscribe-lang-current>{defaultLabel}</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+              <path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <ul class="lang-menu" role="listbox" aria-labelledby="subscribe-lang-label" hidden data-subscribe-lang-menu>
+            {languages.map((l) => (
+              <li
+                role="option"
+                aria-selected={l.code === defaultLang}
+                aria-disabled={!l.available}
+                data-available={l.available}
+                data-lang-code={l.code}
+                data-lang-label={l.label}
+                tabindex={l.available ? '-1' : undefined}
+                title={l.available ? "" : "Coming soon — see methodology"}
+                data-i18n-attr-title={l.available ? undefined : "subscribe.lang.soon_title"}
+              >
+                <span class="lang-label">{l.label}</span>
+                {!l.available && <span class="lang-soon" data-i18n="subscribe.lang.soon">soon</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <button type="submit" class="subscribe-button" data-i18n="subscribe.button">subscribe</button>
@@ -121,7 +163,10 @@ const languages = LANG_CATALOGUE.map((l) => ({
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
-      const language = (form.elements.namedItem("language") as HTMLSelectElement).value;
+      // The carrier is a hidden <input>, NOT a <select> — the pill UI
+      // writes its selection into this input on every change so the
+      // form's source-of-truth for `language` is always this field.
+      const language = (form.elements.namedItem("language") as HTMLInputElement).value;
 
       status.hidden = false;
       status.textContent = msg("pending");
@@ -146,6 +191,143 @@ const languages = LANG_CATALOGUE.map((l) => ({
         status.textContent = msg("error");
         status.dataset.state = "error";
       }
+    });
+
+    // ── Custom language picker ──────────────────────────────────────────
+    // Visual pattern mirrors the Masthead chip, but the behaviour is
+    // SUBSCRIPTION-SCOPED only: it writes the hidden form input and
+    // nothing else. It does NOT touch the global reading-language
+    // localStorage keys (that's the Masthead's job — different scope).
+    //
+    // Keyboard contract per a11y APG combobox/listbox-button pattern:
+    //   - Tab: focuses the trigger pill.
+    //   - Enter / Space / ArrowDown / ArrowUp on trigger: opens menu.
+    //   - ArrowDown / ArrowUp: move focus across AVAILABLE options.
+    //   - Home / End: jump to first/last available option.
+    //   - Enter / Space on option: select + close + return focus to trigger.
+    //   - Escape: close + return focus to trigger.
+    //   - Click outside: close (focus stays where the click landed).
+    const picker = form.querySelector<HTMLElement>("[data-subscribe-lang-picker]");
+    const trigger = form.querySelector<HTMLButtonElement>("[data-subscribe-lang-trigger]");
+    const menu = form.querySelector<HTMLUListElement>("[data-subscribe-lang-menu]");
+    const current = form.querySelector<HTMLSpanElement>("[data-subscribe-lang-current]");
+    const hidden = form.querySelector<HTMLInputElement>("[data-subscribe-lang-input]");
+    if (!picker || !trigger || !menu || !current || !hidden) return;
+
+    const availableOptions = (): HTMLLIElement[] =>
+      Array.from(
+        menu.querySelectorAll<HTMLLIElement>(
+          "li[role='option'][data-available='true']",
+        ),
+      );
+
+    const openMenu = (focusFirst = false) => {
+      menu.removeAttribute("hidden");
+      trigger.setAttribute("aria-expanded", "true");
+      const opts = availableOptions();
+      // Focus the currently-selected available option if it's still
+      // available; otherwise fall back to the first available option
+      // (or, on explicit ArrowUp open, the last one).
+      const selected = opts.find(
+        (o) => o.getAttribute("aria-selected") === "true",
+      );
+      const target = focusFirst ? opts[0] : selected ?? opts[0];
+      target?.focus();
+    };
+
+    const closeMenu = (returnFocus = true) => {
+      menu.setAttribute("hidden", "");
+      trigger.setAttribute("aria-expanded", "false");
+      if (returnFocus) trigger.focus();
+    };
+
+    const selectOption = (li: HTMLLIElement) => {
+      if (li.getAttribute("aria-disabled") === "true") return;
+      const code = li.dataset.langCode;
+      const label = li.dataset.langLabel;
+      if (!code || !label) return;
+      hidden.value = code;
+      current.textContent = label;
+      for (const row of menu.querySelectorAll<HTMLLIElement>("li[role='option']")) {
+        row.setAttribute("aria-selected", row === li ? "true" : "false");
+      }
+      // Notify any external consumer that wants to react to picker
+      // changes (e.g. a future "remember my subscription language"
+      // affordance). Bubbles through the form so the form's "change"
+      // listener catches it as if a native control fired.
+      hidden.dispatchEvent(new Event("change", { bubbles: true }));
+    };
+
+    trigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (menu.hasAttribute("hidden")) openMenu();
+      else closeMenu();
+    });
+
+    trigger.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown") {
+        e.preventDefault();
+        openMenu();
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        // ArrowUp on a closed trigger opens AND focuses the last item,
+        // per APG listbox-button pattern.
+        openMenu();
+        const opts = availableOptions();
+        opts[opts.length - 1]?.focus();
+      }
+    });
+
+    menu.addEventListener("click", (e) => {
+      const li = (e.target as HTMLElement | null)?.closest<HTMLLIElement>(
+        "li[role='option']",
+      );
+      if (!li) return;
+      if (li.getAttribute("aria-disabled") === "true") return;
+      selectOption(li);
+      closeMenu();
+    });
+
+    menu.addEventListener("keydown", (e) => {
+      const opts = availableOptions();
+      if (!opts.length) return;
+      const activeIndex = opts.findIndex((o) => o === document.activeElement);
+
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeMenu();
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const next = opts[(activeIndex + 1 + opts.length) % opts.length];
+        next?.focus();
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const prev = opts[(activeIndex - 1 + opts.length) % opts.length];
+        prev?.focus();
+      } else if (e.key === "Home") {
+        e.preventDefault();
+        opts[0]?.focus();
+      } else if (e.key === "End") {
+        e.preventDefault();
+        opts[opts.length - 1]?.focus();
+      } else if (e.key === "Enter" || e.key === " ") {
+        const li = (document.activeElement as HTMLElement | null)?.closest<HTMLLIElement>(
+          "li[role='option']",
+        );
+        if (!li) return;
+        e.preventDefault();
+        selectOption(li);
+        closeMenu();
+      } else if (e.key === "Tab") {
+        // Tab leaves the listbox — close without trapping focus.
+        closeMenu(false);
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (menu.hasAttribute("hidden")) return;
+      if (picker.contains(e.target as Node)) return;
+      closeMenu(false);
     });
   })();
 </script>
@@ -222,25 +404,123 @@ const languages = LANG_CATALOGUE.map((l) => ({
   .subscribe-lang {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     font-family: var(--font-chrome);
     font-size: 13px;
     color: var(--color-ink-muted);
   }
 
-  .subscribe-lang select {
+  .subscribe-lang-label {
+    font-family: var(--font-chrome);
+    font-size: 13px;
+    color: var(--color-ink-muted);
+  }
+
+  /* Pill picker — mirrors Masthead's .lang-trigger / .lang-menu visuals
+     so the subscribe form quits looking like a different product. */
+  .lang-picker { position: relative; }
+
+  .lang-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    color: var(--color-ink);
     font-family: var(--font-chrome);
     font-size: 14px;
-    color: var(--color-ink);
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid var(--color-rule);
-    padding: 4px 2px;
+    font-weight: 500;
+    letter-spacing: -0.005em;
     cursor: pointer;
+    transition: background var(--motion-fast) var(--easing-out);
   }
-  .subscribe-lang select:focus {
+  .lang-trigger:hover { background: var(--color-rule); }
+  .lang-trigger:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+
+  .lang-glyph {
+    font-family: var(--font-sa-body);
+    font-size: 16px;
+    line-height: 1;
+    color: var(--color-ink-muted);
+  }
+
+  .lang-current {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lang-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 4px);
+    margin: 0;
+    padding: var(--spacing-2) 0;
+    list-style: none;
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    min-width: 220px;
+    max-height: 360px;
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    font-family: var(--font-chrome);
+    font-size: 14px;
+    z-index: 10;
+  }
+
+  /* On narrow viewports promote the menu to a bottom-sheet so a 12-row
+     list never gets clipped by the form's bottom edge. Mirrors the
+     site-wide picker affordance pattern. */
+  @media (max-width: 600px) {
+    .lang-menu {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: auto;
+      width: 100%;
+      max-width: 100%;
+      max-height: 70dvh;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+      padding: var(--spacing-3) 0 calc(env(safe-area-inset-bottom, 0) + var(--spacing-3));
+    }
+  }
+
+  .lang-menu li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: 10px var(--spacing-4);
+    cursor: pointer;
+    color: var(--color-ink);
+  }
+  .lang-menu li[aria-disabled="true"] {
+    color: var(--color-ink-muted);
+    cursor: not-allowed;
+  }
+  .lang-menu li[aria-selected="true"] {
+    background: var(--color-rule);
+  }
+  .lang-menu li[data-available="true"]:hover {
+    background: var(--color-rule);
+  }
+  .lang-menu li:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+
+  .lang-label { flex: 1; }
+  .lang-soon {
+    font-size: 11px;
+    color: var(--color-ink-muted);
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
   }
 
   /* Text button, NOT solid pill — per anti-pattern list */

@@ -64,25 +64,53 @@ test.describe('subscribe form — API', () => {
   test('language picker: reflects DB availability — disabled iff no published translations exist', async ({
     page,
   }) => {
+    // Picker contract (post recommendation #5 — replaced native <select>
+    // with a styled pill listbox to match the rest of the site chrome):
+    //   - The form submits `language` via a hidden <input>, defaulted
+    //     to `en`. This is what no-JS submits use.
+    //   - The visible UI is a button (role implicit) + listbox of all
+    //     12 languages. Available rows have data-available="true";
+    //     unavailable rows have aria-disabled="true" + a "soon" badge.
+    //   - English is selected by default; selecting an option (when one
+    //     becomes available in the future) writes the hidden input.
+    // Test pins the data contract — same intent as the ISSUE-007
+    // regression that birthed this test, just against the new control.
     await page.goto('/');
-    const select = page.locator('select[name="language"], select#language').first();
-    if (!(await select.count())) {
-      test.info().annotations.push({ type: 'skip', description: 'language picker not a select' });
-      return;
-    }
-    const opts = await select.locator('option').evaluateAll((nodes) =>
+
+    // 1) Hidden carrier exists and defaults to `en`.
+    const hidden = page.locator('input[type="hidden"][name="language"]');
+    await expect(hidden).toHaveCount(1);
+    await expect(hidden).toHaveValue('en');
+
+    // 2) No native <select> survives anywhere in the form — the whole
+    //    point of the redesign is cross-platform consistency.
+    const form = page.locator('[data-subscribe-form]');
+    await expect(form.locator('select[name="language"]')).toHaveCount(0);
+
+    // 3) Listbox renders all 12 catalogue rows.
+    const rows = page.locator('[data-subscribe-lang-menu] li[role="option"]');
+    await expect(rows).toHaveCount(12);
+
+    // 4) Every row's disabled-vs-available state matches its label —
+    //    "soon" badges go on aria-disabled=true, no others. This is the
+    //    inverted, structural form of the original ISSUE-007 assertion.
+    const states = await rows.evaluateAll((nodes) =>
       nodes.map((n) => ({
-        value: (n as HTMLOptionElement).value,
-        disabled: (n as HTMLOptionElement).disabled,
+        code: (n as HTMLElement).dataset.langCode || '',
+        available: (n as HTMLElement).dataset.available === 'true',
+        disabled: n.getAttribute('aria-disabled') === 'true',
         text: n.textContent || '',
       })),
     );
-    const en = opts.find((o) => o.value === 'en');
+    const en = states.find((s) => s.code === 'en');
     expect(en, 'English option must exist').toBeDefined();
+    expect(en?.available).toBe(true);
     expect(en?.disabled).toBe(false);
-    for (const o of opts) {
-      const looksUnavailable = /soon|unavailable|not\s+yet/i.test(o.text);
-      expect(o.disabled).toBe(looksUnavailable);
+    for (const s of states) {
+      const looksUnavailable = /soon/i.test(s.text);
+      // available <=> NOT disabled <=> no "soon" label
+      expect(s.disabled).toBe(looksUnavailable);
+      expect(s.available).toBe(!looksUnavailable);
     }
   });
 });
