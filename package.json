@@ -17,7 +17,8 @@
     "test:watch": "bun --bun vitest",
     "e2e": "playwright test",
     "ingest": "bun pipeline/ingest/ingest.ts",
-    "db:init": "bun pipeline/ingest/init-db.ts"
+    "db:init": "bun pipeline/ingest/init-db.ts",
+    "preflight": "bash scripts/preflight.sh"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.100.1",
