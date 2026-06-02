@@ -217,6 +217,14 @@ const readerDataPayload = {
   </header>
 
   <main id="main" class="reader">
+    {/*
+      Visually-hidden primary heading. Screen readers need an <h1> as the
+      page landmark; visually the verse-number rail (1.47) inside
+      VerseAnatomy continues to serve as the visual title. See audit
+      2026-06-01 recommendation #8.
+    */}
+    <h1 class="visually-hidden">{textRow.title_en} {chapterNum}.{verseNum}</h1>
+
     <VerseAnatomy
       verse={verseRow}
       wordGlosses={wordGlosses}
