@@ -123,18 +123,25 @@ export default function ScriptSwitcher() {
         class="script-switcher__trigger"
         aria-haspopup="dialog"
         aria-expanded={open()}
-        aria-label={`Reading mode: ${currentLabel()} — tap to change`}
+        aria-label={`Translation language: ${currentLabel()} — tap to change`}
         onClick={() => setOpen((v) => !v)}
       >
-        <span aria-hidden="true">अ</span>
+        {/*
+          अ Devanāgarī glyph removed per audit-2026-06-01 rec #18: the
+          catalogue (src/lib/reading-modes.ts) binds language + script in
+          one motion, but the user-load-bearing axis is the language. The
+          glyph signalled "script picker" and misled users. Trigger now
+          reads as a plain language label, matching the Masthead chip and
+          the TranslationDrawer sheet title.
+        */}
         <span class="script-switcher__label">{currentLabel()}</span>
       </button>
 
       <Show when={open()}>
         <div class="script-switcher__scrim" onClick={() => setOpen(false)} aria-hidden="true" />
-        <dialog open class="script-switcher__sheet" aria-label="Choose reading mode">
+        <dialog open class="script-switcher__sheet" aria-label="Translation language">
           <header class="script-switcher__head">
-            <h2>Reading mode</h2>
+            <h2>Translation language</h2>
             <button
               type="button"
               class="script-switcher__close"
