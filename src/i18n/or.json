@@ -1,9 +1,10 @@
 {
   "skip.to_content": "ବିଷୟବସ୍ତୁକୁ ଯାଆନ୍ତୁ",
   "masthead.search.aria": "ଶ୍ଳୋକ, ଶବ୍ଦ କିମ୍ବା ଧାରଣା ଖୋଜନ୍ତୁ",
-  "masthead.lang.aria": "ପଠନ ଭାଷା",
+  "masthead.lang.aria": "ଅନୁବାଦ ଭାଷା",
   "masthead.lang.soon": "ଶୀଘ୍ର",
   "masthead.lang.soon_title": "ଅନୁବାଦ ଶୀଘ୍ର ଆସୁଛି — ପଦ୍ଧତି ଦେଖନ୍ତୁ",
+  "picker.translation_language": "ଅନୁବାଦ ଭାଷା",
   "footer.link.sources": "ଉତ୍ସ",
   "footer.link.methodology": "ପଦ୍ଧତି",
   "footer.link.license": "ଅନୁମତି (CC-BY-SA 4.0)",

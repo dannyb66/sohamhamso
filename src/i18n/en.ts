@@ -36,9 +36,20 @@ export const en = {
 
   // ── Masthead (Masthead.astro) ──────────────────────────────────────────
   'masthead.search.aria': 'Search verses, words, or concepts',
-  'masthead.lang.aria': 'Reading language',
+  // Deprecated: use `picker.translation_language` instead. Kept for one
+  // release while Masthead's data-i18n-attr-aria-label is rewired in the
+  // next commit.
+  'masthead.lang.aria': 'Translation language',
   'masthead.lang.soon': 'soon',
   'masthead.lang.soon_title': 'Translation coming soon — see methodology',
+
+  // ── Picker (cross-surface — Masthead chip, ScriptSwitcher trigger, ──
+  // TranslationDrawer trigger). Canonical name for the action "choose
+  // which language the translation + glosses render in." Reserve "Script"
+  // for the Sanscript-driven writing-system choice; this catalogue does
+  // both in one motion (see src/lib/reading-modes.ts) but the user
+  // language is the load-bearing concept.
+  'picker.translation_language': 'Translation language',
 
   // ── Footer (Footer.astro) ──────────────────────────────────────────────
   'footer.link.sources': 'Sources',
@@ -172,14 +183,15 @@ export const en = {
   'texts.table.license': 'License',
 
   // ── TODO Phase B (commented for the next translation pass) ─────────────
-  // 'script_switcher.heading': 'Reading mode',
+  // The ScriptSwitcher trigger label + sheet title and the TranslationDrawer
+  // sheet title now share `picker.translation_language` above — when Phase B
+  // wires Solid-island i18n, reuse that key (no per-component duplicate).
   // 'settings.section.theme': 'Theme',
   // 'settings.section.font_size': 'Font size',
   // 'settings.section.script': 'Script',
   // 'wordsheet.heading': 'Word',
   // 'wordsheet.morph_label': 'Morphology',
   // 'wordsheet.more_occurrences': 'more occurrences →',
-  // 'translation_drawer.heading': 'Translations',
   // 'translation_drawer.empty': 'Not yet translated to',
 } as const;
 

@@ -1,9 +1,10 @@
 {
   "skip.to_content": "ವಿಷಯಕ್ಕೆ ತೆರಳಿ",
   "masthead.search.aria": "ಶ್ಲೋಕಗಳು, ಪದಗಳು ಅಥವಾ ಪರಿಕಲ್ಪನೆಗಳನ್ನು ಹುಡುಕಿ",
-  "masthead.lang.aria": "ಓದುವ ಭಾಷೆ",
+  "masthead.lang.aria": "ಭಾಷಾಂತರ ಭಾಷೆ",
   "masthead.lang.soon": "ಶೀಘ್ರದಲ್ಲೇ",
   "masthead.lang.soon_title": "ಅನುವಾದ ಶೀಘ್ರದಲ್ಲೇ — ವಿಧಾನವನ್ನು ನೋಡಿ",
+  "picker.translation_language": "ಭಾಷಾಂತರ ಭಾಷೆ",
   "footer.link.sources": "ಮೂಲಗಳು",
   "footer.link.methodology": "ವಿಧಾನ",
   "footer.link.license": "ಪರವಾನಗಿ (CC-BY-SA 4.0)",

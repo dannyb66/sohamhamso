@@ -1,9 +1,10 @@
 {
   "skip.to_content": "મુખ્ય સામગ્રી પર જાઓ",
   "masthead.search.aria": "શ્લોકો, શબ્દો અથવા સંકલ્પનાઓ શોધો",
-  "masthead.lang.aria": "વાચન ભાષા",
+  "masthead.lang.aria": "અનુવાદ ભાષા",
   "masthead.lang.soon": "ટૂંકમાં",
   "masthead.lang.soon_title": "અનુવાદ ટૂંકમાં આવી રહ્યો છે — પદ્ધતિ જુઓ",
+  "picker.translation_language": "અનુવાદ ભાષા",
   "footer.link.sources": "સ્રોતો",
   "footer.link.methodology": "પદ્ધતિ",
   "footer.link.license": "પરવાનો (CC-BY-SA 4.0)",

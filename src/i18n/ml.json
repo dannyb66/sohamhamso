@@ -1,9 +1,10 @@
 {
   "skip.to_content": "ഉള്ളടക്കത്തിലേക്ക് പോകുക",
   "masthead.search.aria": "ശ്ലോകങ്ങൾ, പദങ്ങൾ, അല്ലെങ്കിൽ ആശയങ്ങൾ തിരയുക",
-  "masthead.lang.aria": "വായനാ ഭാഷ",
+  "masthead.lang.aria": "വിവർത്തന ഭാഷ",
   "masthead.lang.soon": "ഉടൻ",
   "masthead.lang.soon_title": "വിവർത്തനം ഉടൻ വരുന്നു — രീതിശാസ്ത്രം കാണുക",
+  "picker.translation_language": "വിവർത്തന ഭാഷ",
   "footer.link.sources": "ഉറവിടങ്ങൾ",
   "footer.link.methodology": "രീതിശാസ്ത്രം",
   "footer.link.license": "അനുമതിപത്രം (CC-BY-SA 4.0)",

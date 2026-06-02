@@ -1,9 +1,10 @@
 {
   "skip.to_content": "உள்ளடக்கத்திற்குச் செல்",
   "masthead.search.aria": "சுலோகங்கள், சொற்கள் அல்லது கருத்துகளைத் தேடு",
-  "masthead.lang.aria": "வாசிப்பு மொழி",
+  "masthead.lang.aria": "மொழிபெயர்ப்பு மொழி",
   "masthead.lang.soon": "விரைவில்",
   "masthead.lang.soon_title": "மொழிபெயர்ப்பு விரைவில் வரவிருக்கிறது — செயல்முறையைக் காண்க",
+  "picker.translation_language": "மொழிபெயர்ப்பு மொழி",
   "footer.link.sources": "மூலங்கள்",
   "footer.link.methodology": "செயல்முறை",
   "footer.link.license": "உரிமம் (CC-BY-SA 4.0)",

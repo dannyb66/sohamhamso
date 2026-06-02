@@ -1,9 +1,10 @@
 {
   "skip.to_content": "मजकुराकडे जा",
   "masthead.search.aria": "श्लोक, शब्द किंवा संकल्पना शोधा",
-  "masthead.lang.aria": "वाचनाची भाषा",
+  "masthead.lang.aria": "भाषांतर भाषा",
   "masthead.lang.soon": "लवकरच",
   "masthead.lang.soon_title": "अनुवाद लवकरच येत आहे — कार्यपद्धती पाहा",
+  "picker.translation_language": "भाषांतर भाषा",
   "footer.link.sources": "स्रोत",
   "footer.link.methodology": "कार्यपद्धती",
   "footer.link.license": "परवाना (CC-BY-SA 4.0)",
