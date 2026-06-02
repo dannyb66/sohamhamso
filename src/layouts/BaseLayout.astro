@@ -41,11 +41,23 @@ const {
   -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400..700&family=Noto+Serif+Tamil:wght@400..700&family=Noto+Serif+Telugu:wght@400..700&family=Noto+Serif+Bengali:wght@400..700&family=Noto+Serif+Kannada:wght@400..700&family=Noto+Serif+Malayalam:wght@400..700&family=Noto+Serif+Gujarati:wght@400..700&family=Noto+Serif+Gurmukhi:wght@400..700&family=Noto+Serif+Oriya:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Inter:wght@400..700&display=swap" />
   <script is:inline>
-    // Apply persisted theme before paint to avoid flash
+    // Apply persisted theme before paint to avoid flash.
+    // First-visit fallback: respect the OS prefers-color-scheme so users
+    // on a dark-mode device land in dark instead of cream. A saved
+    // preference always wins. Note: tokens.css already cascades correctly
+    // for `:root:not([data-theme])` under `@media (prefers-color-scheme:
+    // dark)`, so this JS exists for state observability (so the masthead
+    // toggle can read the *effective* theme via data-theme), not visual
+    // correctness on first paint.
     (() => {
       try {
-        const t = localStorage.getItem('sohamhamso:theme');
-        if (t) document.documentElement.setAttribute('data-theme', t);
+        const root = document.documentElement;
+        const saved = localStorage.getItem('sohamhamso:theme');
+        const prefersDark =
+          typeof matchMedia === 'function' &&
+          matchMedia('(prefers-color-scheme: dark)').matches;
+        const initial = saved || (prefersDark ? 'dark' : null);
+        if (initial && initial !== 'light') root.setAttribute('data-theme', initial);
       } catch {}
     })();
   </script>
