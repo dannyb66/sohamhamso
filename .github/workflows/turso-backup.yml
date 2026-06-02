@@ -1,0 +1,103 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Weekly Turso backup — deployment plan item #14.
+#
+# Dumps the production PII DB to a gzipped SQL file and uploads it as a
+# GitHub Actions artifact (90-day retention). On failure, opens a GitHub
+# Issue so the operator notices without needing to watch the Actions tab.
+#
+# Required GitHub secrets:
+#   TURSO_API_TOKEN  — account-level token (`turso auth api-tokens mint backup-ci`)
+#
+# Optional GitHub secrets (enable R2 upload):
+#   R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ENDPOINT_URL
+#
+# Manual trigger: Actions tab → "Weekly Turso backup" → Run workflow.
+# ──────────────────────────────────────────────────────────────────────────────
+name: Weekly Turso backup
+
+on:
+  schedule:
+    # Sundays at 03:00 UTC — low-traffic window for the US/EU userbase.
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      db_name:
+        description: 'Turso DB name to back up (default: sohamhamso-pii)'
+        required: false
+        default: 'sohamhamso-pii'
+
+permissions:
+  contents: read
+  issues: write   # used by the failure-notification step
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TURSO_DB_NAME: ${{ github.event.inputs.db_name || 'sohamhamso-pii' }}
+      # Account-level Turso token — distinct from the per-DB runtime
+      # auth token (TURSO_PII_AUTH_TOKEN) used by the edge worker. The
+      # CLI reads this env var for non-interactive auth.
+      TURSO_API_TOKEN: ${{ secrets.TURSO_API_TOKEN }}
+      # ── Optional R2 path — set in repo secrets to enable. ────────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Turso CLI
+        run: |
+          curl -sSfL https://get.tur.so/install.sh | bash
+          echo "$HOME/.turso" >> "$GITHUB_PATH"
+
+      - name: Verify CLI auth
+        run: |
+          if [[ -z "${TURSO_API_TOKEN:-}" ]]; then
+            echo "::error::TURSO_API_TOKEN secret is not set."
+            exit 1
+          fi
+          turso db list >/dev/null
+
+      - name: Run backup
+        run: |
+          chmod +x scripts/turso-backup.sh
+          BACKUP_DIR="./backups" scripts/turso-backup.sh "$TURSO_DB_NAME"
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: turso-backup-${{ env.TURSO_DB_NAME }}-${{ github.run_id }}
+          path: backups/*.sql.gz
+          retention-days: 90
+          if-no-files-found: error
+
+      # Surface failures as a GitHub Issue — cheaper than wiring an
+      # external pager for a once-a-week job.
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Turso backup failed — ${process.env.TURSO_DB_NAME} — ${new Date().toISOString().slice(0,10)}`;
+            const body = [
+              `Weekly Turso backup for **${process.env.TURSO_DB_NAME}** failed.`,
+              ``,
+              `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `- Commit: ${context.sha}`,
+              ``,
+              `Investigate: check the run logs, confirm \`TURSO_API_TOKEN\` is valid (not expired), and re-run via the Actions tab.`,
+              ``,
+              `Deployment plan item #14 — \`.gstack/launch/deployment-plan-2026-06-01.md\``,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['ops', 'backup-failure'],
+            });
