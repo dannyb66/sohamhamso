@@ -172,8 +172,8 @@ test.describe('settings sheet — design audit 2026-06-01 regressions', () => {
     await page.keyboard.press('Escape');
     await expect(page.locator(SETTINGS_DIALOG)).toHaveCount(0);
 
-    const restoredToTrigger = await page.evaluate(() =>
-      !!document.activeElement?.hasAttribute('data-settings-trigger'),
+    const restoredToTrigger = await page.evaluate(
+      () => !!document.activeElement?.hasAttribute('data-settings-trigger'),
     );
     expect(restoredToTrigger).toBe(true);
   });
