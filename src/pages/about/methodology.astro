@@ -144,6 +144,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
+  /*
+   * Tighten the long-form prose column on desktop to ~64ch
+   * (audit-2026-06-01 recommendation #14). The shared .reader container
+   * uses --width-reader (65ch) but the rendered text on this page
+   * measured ~75ch — likely because the global token is sized against
+   * the body font while methodology prose uses --font-iast at a larger
+   * ch metric. Scoped locally so other .reader pages keep their default.
+   */
+  main.reader {
+    max-width: 64ch;
+  }
   article h1 {
     font-family: var(--font-iast);
     font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
