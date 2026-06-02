@@ -223,6 +223,10 @@ const readerDataPayload = {
       translations={translations}
     >
       <Fragment slot="chips">
+        <ParallelChip parallels={parallels} />
+      </Fragment>
+
+      <Fragment slot="footer">
         {translations.map((t) => (
           <AIAssistedBadge
             aiAssisted={t.ai_assisted}
@@ -235,10 +239,6 @@ const readerDataPayload = {
             generatedAt={t.reviewed_at}
           />
         ))}
-        <ParallelChip parallels={parallels} />
-      </Fragment>
-
-      <Fragment slot="footer">
         {textRow.manuscript_url ? (
           <a
             href={textRow.manuscript_url}
