@@ -185,6 +185,14 @@ const readerDataPayload = {
   glosses_by_lang: allLang?.glosses_by_lang ?? {},
   translations_by_lang: allLang?.translations_by_lang ?? {},
 };
+
+// Short-verse heuristic (audit 2026-06-01 #13): aphoristic sūtras like
+// Śiva Sūtra 1.1 ("Consciousness is the Self.") leave huge empty space
+// below the prev/next nav. When translation < 200 chars OR no
+// word-by-word glosses, render a quiet "Continue reading" affordance
+// linking back to the text overview so the reader has somewhere to go.
+const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
+const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -285,6 +293,22 @@ const readerDataPayload = {
         <span class="verse-nav__spacer" />
       )}
     </nav>
+
+    {isShortVerse ? (
+      <aside class="verse-continue" aria-label="Continue reading">
+        <a class="verse-continue__link" href={`/${tradition}/${text}`}>
+          <span data-i18n="verse.continue.about_text">About this text</span> →
+        </a>
+        {next ? (
+          <a
+            class="verse-continue__link"
+            href={`/${tradition}/${text}/${next.chapter}/${next.verse_num}`}
+          >
+            <span data-i18n="verse.continue.next_verse">Next verse</span> →
+          </a>
+        ) : null}
+      </aside>
+    ) : null}
   </main>
 
   <WordSheet client:idle />
@@ -405,5 +429,29 @@ const readerDataPayload = {
   }
   .verse-nav__spacer {
     width: 1px;
+  }
+
+  /*
+   * Empty-state CTA for short verses (audit 2026-06-01 #13). Aphoristic
+   * sūtras leave vast whitespace below the prev/next nav; this gives
+   * the reader 1–2 quiet next-step links instead. Single column,
+   * ink-muted, font-chrome — no card grid, no SaaS patterns.
+   */
+  .verse-continue {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding-block: var(--spacing-6);
+    border-block-start: 1px solid var(--color-rule);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .verse-continue__link {
+    color: var(--color-ink-muted);
+    text-decoration: none;
+  }
+  .verse-continue__link:hover,
+  .verse-continue__link:focus-visible {
+    color: var(--color-ink);
   }
 </style>
