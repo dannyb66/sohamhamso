@@ -11,6 +11,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   adapter: cloudflare({ imageService: 'compile' }),
   integrations: [solid()],
+  devToolbar: { enabled: false },
   vite: {
     plugins: [tailwindcss()],
   },
