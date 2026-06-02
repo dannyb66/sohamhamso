@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+/* Accessibility — visually hide an element while keeping it in the a11y tree
+ * for screen readers. Used for off-screen headings (verse-page <h1>) and
+ * form labels paired with visible inputs. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Accessibility — keyboard skip-link, hidden until focused. */
 .skip-link {
   position: absolute;
@@ -172,7 +187,13 @@ a:hover {
   margin: var(--spacing-6) 0;
 }
 
-/* Reduced motion */
+/*
+ * Reduced motion — vestibular accessibility (audit recommendation #16).
+ * Collapses every animation/transition (including bottom-sheet slide-ins,
+ * drawer transforms, and transition-based hover affordances) to ~instant
+ * when the user prefers reduced motion. `scroll-behavior: auto` cancels
+ * any smooth-scroll behaviour for in-page anchors as well.
+ */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -180,6 +201,7 @@ a:hover {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
