@@ -224,6 +224,34 @@ export default function SettingsSheet() {
   // light↔dark so the rendered theme tracks the OS in real time.
   let mql: MediaQueryList | null = null;
   let mqlHandler: ((e: MediaQueryListEvent) => void) | null = null;
+  // Body-scroll-lock: stash the pre-open scrollY so we can restore the
+  // exact position on close. iOS Safari otherwise jumps to 0 when
+  // `position:fixed` is removed from <body>.
+  let lockedScrollY = 0;
+
+  const lockBodyScroll = () => {
+    if (typeof document === 'undefined') return;
+    lockedScrollY = window.scrollY || window.pageYOffset || 0;
+    const body = document.body;
+    body.style.position = 'fixed';
+    body.style.top = `-${lockedScrollY}px`;
+    body.style.left = '0';
+    body.style.right = '0';
+    body.style.width = '100%';
+    body.style.overflow = 'hidden';
+  };
+
+  const unlockBodyScroll = () => {
+    if (typeof document === 'undefined') return;
+    const body = document.body;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.left = '';
+    body.style.right = '';
+    body.style.width = '';
+    body.style.overflow = '';
+    window.scrollTo(0, lockedScrollY);
+  };
 
   const update = (patch: Partial<Settings>) => {
     const prev = settings();
@@ -246,6 +274,7 @@ export default function SettingsSheet() {
   const openSheet = () => {
     lastFocused = (document.activeElement as HTMLElement | null) ?? null;
     setOpen(true);
+    lockBodyScroll();
     // After paint, move focus into the sheet.
     queueMicrotask(() => {
       sheetEl
@@ -259,6 +288,7 @@ export default function SettingsSheet() {
   const closeSheet = () => {
     setOpen(false);
     if (sheetEl) sheetEl.style.transform = '';
+    unlockBodyScroll();
     // Restore focus to whatever opened us.
     queueMicrotask(() => lastFocused?.focus?.());
   };
@@ -364,6 +394,9 @@ export default function SettingsSheet() {
     if (mql && mqlHandler) mql.removeEventListener('change', mqlHandler);
     mql = null;
     mqlHandler = null;
+    // If we unmount while the sheet is open (e.g., HMR, page nav),
+    // make sure the body isn't left in the locked state.
+    if (open()) unlockBodyScroll();
   });
 
   // Live-preview sample. Uses current saFont and fontSizePx via the
@@ -574,14 +607,23 @@ export default function SettingsSheet() {
             padding: 0;
             width: 100%;
             max-width: 100%;
-            max-height: 85vh;
+            /* dvh tracks the *dynamic* viewport so the sheet doesn't
+               clip its bottom row when the iOS Safari URL bar collapses.
+               85dvh guarantees ~100px of scrim visible above the sheet
+               on a 667-tall iPhone SE viewport. */
+            max-height: 85dvh;
             background: var(--color-surface);
             color: var(--color-ink);
             border: 0;
             border-top: 1px solid var(--color-rule);
             border-radius: 16px 16px 0 0;
             z-index: 71;
-            overflow-y: auto;
+            /* Sheet is a flex column: handle + sticky header stay
+               pinned; the body scrolls internally. Overflow lives on
+               .settings__body, not the dialog itself. */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
             touch-action: pan-y;
             transition: transform var(--motion-base) var(--easing-out);
           }
@@ -596,7 +638,7 @@ export default function SettingsSheet() {
               top: 64px;
               transform: translateX(-50%);
               width: 480px;
-              max-height: 80vh;
+              max-height: 80dvh;
               border-radius: 12px;
               border: 1px solid var(--color-rule);
             }
@@ -643,6 +685,17 @@ export default function SettingsSheet() {
             padding: var(--spacing-4);
             display: grid;
             gap: var(--spacing-5);
+            /* Internal scroll for the body so the sticky header
+               (legend + close) stays visible while the user reaches
+               line-height, theme, language, script, reset on a short
+               viewport. min-height:0 lets flex children shrink below
+               their content; webkit-overflow-scrolling:touch keeps
+               inertia smooth on iOS. */
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
           }
           .settings__preview {
             padding: var(--spacing-4);
