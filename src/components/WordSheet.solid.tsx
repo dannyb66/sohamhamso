@@ -151,17 +151,11 @@ export default function WordSheet() {
             <p class="word-sheet__gloss">{gloss()?.gloss_text}</p>
           </Show>
 
-          <Show when={gloss()?.morph}>
-            <div class="word-sheet__morph" aria-label="morphology">
-              {gloss()
-                ?.morph?.split(/[,\s]+/)
-                .filter(Boolean)
-                .map((chip) => (
-                  <span class="word-sheet__chip">{chip}</span>
-                ))}
-            </div>
-          </Show>
-
+          {/*
+            Audit recommendation #10: hoist "N more occurrences" above grammar
+            chips. Renders directly under the gloss so corpus depth surfaces
+            before the morphology metadata.
+          */}
           <Show when={(gloss()?.occurrence_count ?? 0) > 0 && gloss()?.lemma_iast}>
             <p class="word-sheet__occurrences">
               <a
@@ -172,6 +166,17 @@ export default function WordSheet() {
                 {gloss()?.occurrence_count === 1 ? '' : 's'} in this text →
               </a>
             </p>
+          </Show>
+
+          <Show when={gloss()?.morph}>
+            <div class="word-sheet__morph" aria-label="morphology">
+              {gloss()
+                ?.morph?.split(/[,\s]+/)
+                .filter(Boolean)
+                .map((chip) => (
+                  <span class="word-sheet__chip">{chip}</span>
+                ))}
+            </div>
           </Show>
 
           <p class="word-sheet__cologne">
