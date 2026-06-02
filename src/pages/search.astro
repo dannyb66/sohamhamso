@@ -108,22 +108,45 @@ const title = q ? `Search: ${q} — sohamhamso` : 'Search — sohamhamso';
       </section>
     ) : (
       <ol class="search-page__list">
-        {results.map((h) => (
-          <li class="search-page__item">
-            <a class="search-page__link" href={verseHref(h)}>
-              <div class="search-page__crumb">{verseLabel(h)}</div>
-              <div class="search-page__sa" lang="sa" data-sa data-sa-source={h.devanagari}>
-                {h.devanagari}
-              </div>
-              {h.iast ? (
-                <div class="search-page__iast" lang="sa-Latn">{h.iast}</div>
-              ) : null}
-              {h.translation_excerpt ? (
-                <p class="search-page__en">{h.translation_excerpt}</p>
-              ) : null}
-            </a>
-          </li>
-        ))}
+        {(() => {
+          // Group consecutive results by text_slug so each text title appears
+          // once as a section header, with its matching verses listed beneath
+          // (audit-2026-06-01 recommendation #7). Server already returns
+          // results in a stable order; we only collapse the header — the
+          // underlying data shape from blendedSearch() is unchanged.
+          const groups: { slug: string; title: string; hits: VerseHit[] }[] = [];
+          for (const h of results) {
+            const last = groups[groups.length - 1];
+            if (last && last.slug === h.text_slug) {
+              last.hits.push(h);
+            } else {
+              groups.push({ slug: h.text_slug, title: h.text_title, hits: [h] });
+            }
+          }
+          return groups.map((g) => (
+            <li class="search-page__group">
+              <h2 class="search-page__group-title">{g.title}</h2>
+              <ol class="search-page__group-list">
+                {g.hits.map((h) => (
+                  <li class="search-page__item">
+                    <a class="search-page__link" href={verseHref(h)}>
+                      <div class="search-page__crumb">{`${h.chapter}.${h.verse_num}`}</div>
+                      <div class="search-page__sa" lang="sa" data-sa data-sa-source={h.devanagari}>
+                        {h.devanagari}
+                      </div>
+                      {h.iast ? (
+                        <div class="search-page__iast" lang="sa-Latn">{h.iast}</div>
+                      ) : null}
+                      {h.translation_excerpt ? (
+                        <p class="search-page__en">{h.translation_excerpt}</p>
+                      ) : null}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </li>
+          ));
+        })()}
       </ol>
     )}
 
@@ -142,8 +165,13 @@ const title = q ? `Search: ${q} — sohamhamso` : 'Search — sohamhamso';
 
 <style>
   .search-page {
-    max-width: var(--width-content);
-    margin: 0 auto;
+    /*
+     * Cap reader column at 64ch (audit-2026-06-01 recommendation #7) —
+     * the shared --width-content (760px) reads ~75ch which is too long
+     * for prose excerpts on desktop.
+     */
+    max-width: 64ch;
+    margin-inline: auto;
     padding: var(--spacing-6) var(--spacing-4) var(--spacing-9);
   }
   .search-page__head {
@@ -192,10 +220,35 @@ const title = q ? `Search: ${q} — sohamhamso` : 'Search — sohamhamso';
     margin: 0;
     padding: 0;
     display: grid;
+    gap: var(--spacing-6);
+  }
+  .search-page__group {
+    display: grid;
+    gap: var(--spacing-2);
+  }
+  .search-page__group-title {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: 0;
+    text-transform: none;
+    padding-block-end: var(--spacing-2);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .search-page__group-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
     gap: 0;
   }
   .search-page__item {
     border-block-end: 1px solid var(--color-rule);
+  }
+  .search-page__group-list .search-page__item:last-child {
+    border-block-end: 0;
   }
   .search-page__link {
     display: grid;
