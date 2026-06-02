@@ -1,0 +1,141 @@
+---
+import Footer from '../components/Footer.astro';
+import Masthead from '../components/Masthead.astro';
+/**
+ * /confirmed — thank-you landing after a successful click-through from
+ * the double-opt-in confirmation email.
+ *
+ * BEHAVIOR:
+ *   - No-error case (`/confirmed`): the celebratory copy from the
+ *     deployment plan — "You're in. Tomorrow at sunrise, the first
+ *     verse arrives."
+ *   - Error case (`/confirmed?error=unknown` | `error=server`): a
+ *     quieter copy that doesn't reveal whether the token was
+ *     malformed, expired, or unknown. The hardest part of double
+ *     opt-in is being honest without leaking enumeration signal — see
+ *     `src/pages/api/confirm.ts` for the routing rules.
+ *
+ * NO TRACKING:
+ *   - No analytics pixels. No third-party fonts beyond the existing
+ *     BaseLayout stack. The whole point of the plan's email + confirm
+ *     surface is to be quiet — every byte the user sees here ships
+ *     from the same edge that served the rest of the site.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Read `?error=` once at SSR time so the page renders without JS.
+// Astro's `output: 'static'` would prerender this with no query string;
+// `prerender = false` is required so the query is observable.
+export const prerender = false;
+
+const errorParam = (Astro.url.searchParams.get('error') ?? '').trim();
+const hasError = errorParam.length > 0;
+
+const pageTitle = hasError
+  ? "We couldn't confirm that link — sohamhamso"
+  : "You're confirmed — sohamhamso";
+const pageDescription = hasError
+  ? "The confirmation link couldn't be matched. It may have expired or already been used."
+  : 'Your subscription is confirmed. Tomorrow at sunrise, the first verse arrives.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="confirmed">
+    <article>
+      {hasError ? (
+        <>
+          <h1>Link not recognized</h1>
+          <p class="lede">
+            We couldn't match that confirmation link to a subscription.
+            It may have expired, already been used, or been altered in
+            transit.
+          </p>
+          <p>
+            If you meant to subscribe to the daily verse, head back to
+            the <a href="/daily">daily verse</a> page and submit your
+            email again — confirmation links last 24 hours.
+          </p>
+          <p>
+            If you keep seeing this page, the address listed on the
+            <a href="/about/colophon">colophon</a> reaches a human.
+          </p>
+        </>
+      ) : (
+        <>
+          <h1>You're in.</h1>
+          <p class="lede">
+            Tomorrow at sunrise, the first verse arrives.
+          </p>
+          <p>
+            The corpus stays open at
+            <a href="/">sohamhamso.org</a> — read at your own pace
+            whenever you like. Every email includes a one-click
+            unsubscribe link tied to your row.
+          </p>
+          <p class="quiet">
+            English at launch. More languages roll out as translations
+            are reviewed.
+          </p>
+        </>
+      )}
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .confirmed {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4) var(--spacing-9);
+    font-family: var(--font-iast);
+    color: var(--color-ink);
+  }
+
+  @media (min-width: 768px) {
+    .confirmed {
+      padding: var(--spacing-9) var(--spacing-6) var(--spacing-10);
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-3);
+  }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 40px; }
+  }
+
+  .lede {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-5);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-4);
+  }
+
+  .quiet {
+    font-family: var(--font-chrome);
+    font-size: 13px;
+    color: var(--color-ink-muted);
+    margin-top: var(--spacing-6);
+  }
+
+  a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>
