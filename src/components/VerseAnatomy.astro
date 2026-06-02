@@ -259,20 +259,27 @@ const iastFormatted = formatDanda(verse.iast);
   .synonyms {
     font-family: var(--font-iast);
     font-size: 0.9375rem; /* 15px */
-    line-height: 1.55;
+    /* Bleed-style tap-target expansion: combined with .sa-word's vertical
+       padding (14px top + 14px bottom + ~15px glyph) the effective tap
+       surface on each inline lemma reaches the 44px WCAG 2.5.5 (AAA) floor
+       without breaking inline flow. Line-height absorbs the padding so the
+       visual rhythm is preserved (rows don't double-space). */
+    line-height: 2.0;
     color: var(--color-ink-muted);
     max-width: var(--width-reader);
   }
 
   .sa-word {
     /* Override the global 44px touch-target floor — these are inline.
-       Tap surface gets the floor via the WordSheet sheet bounce area. */
+       Tap surface reaches 44px via padding-block bleed (see .synonyms). */
     min-height: 0;
     min-width: 0;
     appearance: none;
     background: transparent;
     border: 0;
-    padding: 0 2px;
+    /* padding-block bleeds the tap surface to ~44px tall; horizontal padding
+       keeps the dotted underline tight to the glyph. */
+    padding: 14px 2px;
     margin: 0;
     cursor: pointer;
     font-family: var(--font-iast);
