@@ -1,5 +1,6 @@
 ---
 import I18nSwap from '../components/I18nSwap.solid.tsx';
+import ReaderLangSwap from '../components/ReaderLangSwap.solid.tsx';
 import SearchBox from '../components/SearchBox.solid.tsx';
 import SettingsSheet from '../components/SettingsSheet.solid.tsx';
 
@@ -60,10 +61,15 @@ const {
     so it supersedes the V1 placeholder dialog when present. I18nSwap
     walks the SSR DOM after hydrate and rewrites every [data-i18n]
     element to the user's chosen reader-lang (no-op for English).
+    ReaderLangSwap is mounted site-wide: pages that inject a
+    `window.__readerData` payload (verse page + homepage hero) get the
+    `.translation` text swapped to the chosen reader-lang; pages
+    without a payload are a no-op.
   -->
   <SettingsSheet client:idle />
   <SearchBox client:idle />
   <I18nSwap client:idle />
+  <ReaderLangSwap client:idle />
 </body>
 </html>
 

@@ -1,7 +1,6 @@
 ---
 import AIAssistedBadge from '../../../../components/AIAssistedBadge.astro';
 import ParallelChip from '../../../../components/ParallelChip.astro';
-import ReaderLangSwap from '../../../../components/ReaderLangSwap.solid';
 import ScriptSwitcher from '../../../../components/ScriptSwitcher.solid';
 import TranslationDrawer from '../../../../components/TranslationDrawer.solid';
 import VerseAnatomy from '../../../../components/VerseAnatomy.astro';
@@ -282,7 +281,8 @@ const readerDataPayload = {
 
   <WordSheet client:idle />
   <TranslationDrawer client:idle />
-  <ReaderLangSwap client:idle />
+  {/* ReaderLangSwap is mounted globally in BaseLayout — it consumes
+      the `window.__readerData` payload injected below. */}
 
   <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
   <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
