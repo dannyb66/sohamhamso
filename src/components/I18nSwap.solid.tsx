@@ -158,10 +158,18 @@ export default function I18nSwap() {
     // Only kick off the swap if the user has picked a non-EN reading
     // mode. The English visitor sees zero DOM writes — preserves the
     // byte-identical SSR output guarantee.
+    //
+    // Lang attribute (audit 2026-06-01 #9): SSR renders <html lang="en">
+    // unconditionally. On hydrate, sync to the persisted reader-lang so
+    // screen readers, :lang() CSS, and SEO crawlers see the correct
+    // ISO 639-1 code. EN case is a defensive no-op write (idempotent —
+    // attribute already 'en') so the contract holds even if a future
+    // change has the SSR layer emit a different default.
     if (initial !== 'en') {
       void swapTo(initial);
     } else {
       lastAppliedLang = 'en';
+      document.documentElement.setAttribute('lang', 'en');
     }
     document.addEventListener('sohamhamso:reader-lang-change', handleChange);
   });
