@@ -113,11 +113,18 @@ const languages = READING_MODES.map((m) => ({
           class="lang-trigger"
           aria-haspopup="listbox"
           aria-expanded="false"
-          aria-label="Reading language"
-          data-i18n-attr-aria-label="masthead.lang.aria"
+          aria-label="Translation language"
+          data-i18n-attr-aria-label="picker.translation_language"
           data-lang-trigger
         >
-          <span lang="sa" data-sa class="lang-glyph">अ</span>
+          {/*
+            अ glyph removed per design audit recommendation #18: it visually
+            implies the picker mutates the Sanskrit script when in fact this
+            chip picks the reader language (see src/lib/reading-modes.ts —
+            language + script are bound, but the user-load-bearing axis is
+            language). With the prefix gone the chip reads as "EN ⌄" — the
+            language code, a chevron, no semantic ambiguity.
+          */}
           <span class="lang-current" data-lang-current>{currentLang}</span>
           <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" stroke-linejoin="round" />
@@ -360,13 +367,6 @@ const languages = READING_MODES.map((m) => ({
     transition: background var(--motion-fast) var(--easing-out);
   }
   .lang-trigger:hover { background: var(--color-rule); }
-
-  .lang-glyph {
-    font-family: var(--font-sa-body);
-    font-size: 16px;
-    line-height: 1;
-    color: var(--color-ink-muted);
-  }
 
   .lang-current {
     font-variant-numeric: tabular-nums;

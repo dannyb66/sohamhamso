@@ -36,10 +36,9 @@ export const en = {
 
   // ── Masthead (Masthead.astro) ──────────────────────────────────────────
   'masthead.search.aria': 'Search verses, words, or concepts',
-  // Deprecated: use `picker.translation_language` instead. Kept for one
-  // release while Masthead's data-i18n-attr-aria-label is rewired in the
-  // next commit.
-  'masthead.lang.aria': 'Translation language',
+  // Note: `masthead.lang.aria` was retired alongside Masthead's switch to
+  // `picker.translation_language` — the catalogue picker has one canonical
+  // i18n key now, used by every surface (audit-2026-06-01 rec #4).
   'masthead.lang.soon': 'soon',
   'masthead.lang.soon_title': 'Translation coming soon — see methodology',
 
