@@ -1,0 +1,34 @@
+# Cloudflare Pages config for sohamhamso.
+#
+# Why this file exists:
+#   `@astrojs/cloudflare` v12.6.13 does NOT auto-set `nodejs_compat` or
+#   write a wrangler config of its own — it only `addWatchFile`s
+#   wrangler.{toml,json,jsonc} at the project root so Vite reloads on
+#   binding changes (verified: grep `compatibility_flag` /
+#   `nodejs_compat` across the adapter dist returns zero hits).
+#
+#   Without `nodejs_compat`, the Worker runtime rejects `node:crypto`
+#   (used by `src/pages/api/subscribe.ts` for `createHmac` + `randomBytes`)
+#   and the `@libsql/client/web` driver's internal `node:buffer` usage,
+#   causing subscribe POSTs to 500 on first request in production.
+#
+# Compatibility date:
+#   2026-06-01 — matches launch date. Pinning the date freezes Worker
+#   runtime semantics so a Workerd upgrade doesn't silently change
+#   behavior (e.g., URL parsing, streams). Bump deliberately after
+#   reviewing the Cloudflare changelog.
+#
+# Compatibility flags:
+#   `nodejs_compat` enables the Node.js polyfills for `node:crypto`,
+#   `node:buffer`, `node:util`, etc. on workerd. Required for the
+#   subscribe endpoint and any future Worker that needs Node built-ins.
+#
+# pages_build_output_dir:
+#   `dist` — Astro's `@astrojs/cloudflare` adapter writes the Pages-
+#   compatible bundle (`_worker.js/`, `_routes.json`, static assets)
+#   directly to `dist/` during `astro build`. No separate build step.
+
+name = "sohamhamso"
+compatibility_date = "2026-06-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
