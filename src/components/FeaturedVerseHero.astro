@@ -10,7 +10,17 @@
  *
  * Whole hero is one tap-target to the reading page; `Read →` link is
  * a redundant explicit affordance, per the homepage IA spec.
+ *
+ * Translation i18n: the English translation paragraph also carries the
+ * `.translation` class + `lang="en"` so the site-wide ReaderLangSwap
+ * island can swap it in place when the user picks a non-English reader
+ * language. We pre-bundle every supported language's translation into
+ * `window.__readerData` (no extra round trip; same shape as the verse
+ * page injects). Glosses are zeroed-out here — the hero has no
+ * synonyms section, so ReaderLangSwap's gloss loop becomes a no-op.
  */
+import { getVerseAllLanguages } from '../lib/db';
+
 interface Props {
   // Allow override for empty-corpus / preview contexts later.
   href?: string;
@@ -27,6 +37,17 @@ const {
   iast = "yatra yatra mano yāti bāhye vābhyantare 'pi vā\ntatra tatra śivāvasthā vyāpakatvāt kva yāsyati",
   english = 'Wherever the mind wanders, outside or within, there is the state of Śiva. Since it pervades all, where else could it go?',
 } = Astro.props;
+
+// Pre-bundle every supported reader-language's translation for the
+// hardcoded daily verse (VBT 1.47). Canonical DB slug is
+// `vijnana-bhairava-tantra`; the hero's public `href` uses the
+// `vijnana-bhairava` alias which 301s to canonical. Glosses are
+// intentionally empty — no synonyms section in the hero.
+const allLang = getVerseAllLanguages('vijnana-bhairava-tantra', 1, 47);
+const readerDataPayload = {
+  translations_by_lang: allLang?.translations_by_lang ?? {},
+  glosses_by_lang: {},
+};
 ---
 
 <section class="hero" aria-labelledby="hero-citation">
@@ -41,11 +62,13 @@ const {
       {iast.split("\n").map((line) => <p>{line}</p>)}
     </div>
 
-    <p class="hero-english">{english}</p>
+    <p class="hero-english translation" lang="en">{english}</p>
   </a>
 
   <a href={href} class="hero-read"><span data-i18n="hero.read">Read</span> <span aria-hidden="true">→</span></a>
 </section>
+
+<script is:inline set:html={`window.__readerData = ${JSON.stringify(readerDataPayload)};`} />
 
 <style>
   .hero {
