@@ -1,0 +1,113 @@
+---
+import Footer from '../components/Footer.astro';
+import Masthead from '../components/Masthead.astro';
+/**
+ * /unsubscribed — goodbye landing after a click-through from a
+ * daily-verse email's unsubscribe link.
+ *
+ * BEHAVIOR:
+ *   - Single copy regardless of whether the token matched a real row.
+ *     The /api/unsubscribe handler redirects here for both successful
+ *     deletes AND malformed/unknown tokens (enumeration defense), so
+ *     this page must read gracefully in both cases.
+ *   - No tracking, no analytics, no third-party. Same byte budget as
+ *     /confirmed.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Prerender stays off so the URL is server-rendered. There's no
+// query-string to read here (the unsubscribe endpoint never appends
+// one), but consistency with /confirmed keeps the routing rules
+// uniform across the email surface.
+export const prerender = false;
+
+const pageTitle = "You're unsubscribed — sohamhamso";
+const pageDescription =
+  "You've been removed from the daily-verse list. The corpus stays open at sohamhamso.org if you ever come back.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="unsubscribed">
+    <article>
+      <h1>You're unsubscribed.</h1>
+      <p class="lede">
+        The corpus stays open at <a href="/">sohamhamso.org</a> if you
+        ever come back.
+      </p>
+      <p>
+        Your row has been removed from the subscribers database. We
+        keep no record of your address — there's nothing left to delete
+        and nothing to share.
+      </p>
+      <p>
+        If you weren't expecting this page, the unsubscribe link is
+        idempotent: clicking it twice (or clicking it for an address
+        that was never subscribed) lands here either way, with no
+        side-effect.
+      </p>
+      <p class="quiet">
+        The privacy posture is documented on
+        <a href="/about/privacy">/about/privacy</a> — collection is
+        minimum, deletion is one click.
+      </p>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .unsubscribed {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4) var(--spacing-9);
+    font-family: var(--font-iast);
+    color: var(--color-ink);
+  }
+
+  @media (min-width: 768px) {
+    .unsubscribed {
+      padding: var(--spacing-9) var(--spacing-6) var(--spacing-10);
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-3);
+  }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 40px; }
+  }
+
+  .lede {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-5);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-4);
+  }
+
+  .quiet {
+    font-family: var(--font-chrome);
+    font-size: 13px;
+    color: var(--color-ink-muted);
+    margin-top: var(--spacing-6);
+  }
+
+  a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>
