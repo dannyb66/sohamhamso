@@ -1,0 +1,47 @@
+sohamhamso — license mapping
+============================
+
+This project is dual-licensed. The full license texts are in `LICENSE`.
+
+  - MIT License → applies to source code.
+  - Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)
+    → applies to corpus content and prose documentation.
+
+Per-directory mapping (authoritative; supersedes any ambiguity in headers
+of individual files):
+
+  CC-BY-SA 4.0 (content)
+  ----------------------
+    data/                 — corpus YAML, per-text source material
+    dataset/              — generated release bundles (CSV, JSON, TEI-XML)
+    db/sohamhamso.db      — built corpus snapshot (regenerable from data/)
+    docs/                 — prose documentation and runbooks
+    ATTRIBUTION.md        — per-source attribution log
+    STATUS-CONTRACT.md    — translation status semantics (prose)
+    README.md             — project overview prose
+    CONTRIBUTING.md       — contributor guide prose
+
+  MIT License (code)
+  ------------------
+    src/                  — application source (Astro / Solid / TS)
+    pipeline/             — ingest, translate, embed, dataset scripts
+    scripts/              — operational shell + TS scripts
+    tests/                — unit and e2e test code
+    db/schema.sql         — schema (DDL, code artifact)
+    .github/              — workflows, templates, issue forms
+    astro.config.mjs      — Astro config
+    biome.json            — linter/formatter config
+    package.json          — manifest
+    playwright.config.ts  — e2e config
+    tsconfig.json         — TypeScript config
+    vitest.config.ts      — unit-test config
+    wrangler.toml         — Cloudflare Pages config (when present)
+
+Upstream per-source licenses (per `ATTRIBUTION.md`) may impose additional
+or alternative terms on specific files within `data/` and `dataset/`. The
+most-restrictive applicable license governs. When in doubt about a
+specific file in `data/`, consult the `license` field of the
+corresponding corpus YAML.
+
+Contributions land under these terms automatically; see CONTRIBUTING.md
+section 8.
