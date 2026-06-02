@@ -23,11 +23,16 @@
  * back to lexical-only with `source: 'lexical'` so the UI never explodes.
  */
 
-// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import type { Database } from 'bun:sqlite';
 import { LRUCache } from 'lru-cache';
 import OpenAI from 'openai';
-import { getDb } from './db';
+// IMPORTANT — DO NOT add `import { getDb } from './db'` here. `db.ts` does a
+// TOP-LEVEL `import { Database } from 'bun:sqlite'`, and this module is
+// reachable from `/api/search` (which ships as a Cloudflare Pages
+// Function). A static import would pull `bun:sqlite` into the worker
+// bundle and 500 on the first request. The corpus-db factory below
+// uses a runtime-gated DYNAMIC import to keep the edge bundle clean.
+// Reference: `.gstack/launch/edge-audit-2026-06-01.md` §2a.
+import { type CorpusDb, getCorpusDb } from './corpus-db';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -151,14 +156,12 @@ async function embedQuery(query: string): Promise<Float32Array | null> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 let _ftsAvailable: boolean | null = null;
-function ftsAvailable(db: Database): boolean {
+async function ftsAvailable(db: CorpusDb): Promise<boolean> {
   if (_ftsAvailable !== null) return _ftsAvailable;
   try {
-    const row = db
-      .query<{ name: string }, []>(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name='verses_fts' LIMIT 1",
-      )
-      .get();
+    const row = await db.get<{ name: string }>(
+      "SELECT name FROM sqlite_master WHERE type='table' AND name='verses_fts' LIMIT 1",
+    );
     _ftsAvailable = !!row;
   } catch {
     _ftsAvailable = false;
@@ -186,19 +189,18 @@ interface LexicalRow {
 
 export async function lexicalSearch(query: string, lang = 'en', limit = 10): Promise<VerseHit[]> {
   if (!query.trim()) return [];
-  const db = getDb();
+  const db = await getCorpusDb();
   const variants = expandSynonyms(query);
   const safeLimit = Math.max(1, Math.floor(Number(limit) || 10));
 
   let rows: LexicalRow[];
 
-  if (ftsAvailable(db)) {
+  if (await ftsAvailable(db)) {
     // FTS5 path — assumes `verses_fts(verse_id UNINDEXED, iast, devanagari, translation_text)`
     // exists with content from verses + translations. Score = bm25.
     const ftsQuery = variants.map((v) => `"${v.replace(/"/g, '""')}"`).join(' OR ');
-    rows = db
-      .query<LexicalRow, [string, string, number]>(
-        `
+    rows = await db.all<LexicalRow>(
+      `
         SELECT
           v.id        AS verse_id,
           t.id        AS text_id,
@@ -219,8 +221,8 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         ORDER BY score ASC
         LIMIT ?
 `,
-      )
-      .all(lang, ftsQuery, safeLimit);
+      [lang, ftsQuery, safeLimit],
+    );
   } else {
     // LIKE fallback — slower, but works on any SQLite build.
     const ors = variants
@@ -233,9 +235,8 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
     }
     params.push(safeLimit);
 
-    rows = db
-      .query<LexicalRow, (string | number)[]>(
-        `
+    rows = await db.all<LexicalRow>(
+      `
         SELECT
           v.id        AS verse_id,
           t.id        AS text_id,
@@ -255,8 +256,8 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         WHERE ${ors}
         LIMIT ?
 `,
-      )
-      .all(...params);
+      params,
+    );
   }
 
   return rows.map((r) => ({ ...r, source: 'lexical' as const }));
@@ -317,19 +318,18 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
     return [];
   }
 
-  const db = getDb();
+  const db = await getCorpusDb();
 
   // V1: full scan. Acceptable to ~100k rows under PRAGMA defaults.
   // Production (libSQL): swap for `SELECT verse_id FROM vector_top_k(...)`.
-  const embedRows = db
-    .query<EmbedRow, [string, string]>(
-      `
+  const embedRows = await db.all<EmbedRow>(
+    `
       SELECT verse_id, embedding
       FROM verse_embeddings
       WHERE lang = ? AND model = ?
       `,
-    )
-    .all(lang, EMBED_MODEL);
+    [lang, EMBED_MODEL],
+  );
 
   if (embedRows.length === 0) return [];
 
@@ -348,9 +348,8 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
   // Hydrate verse metadata + translation in one query.
   const ids = top.map((t) => t.verse_id);
   const placeholders = ids.map(() => '?').join(',');
-  const meta = db
-    .query<VerseMetaRow, (string | number)[]>(
-      `
+  const meta = await db.all<VerseMetaRow>(
+    `
       SELECT
         v.id        AS verse_id,
         t.id        AS text_id,
@@ -367,8 +366,8 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
       JOIN texts t ON t.id = v.text_id
       WHERE v.id IN (${placeholders})
       `,
-    )
-    .all(lang, ...ids);
+    [lang, ...ids],
+  );
 
   const metaById = new Map<number, VerseMetaRow>();
   for (const m of meta) metaById.set(m.verse_id, m);
