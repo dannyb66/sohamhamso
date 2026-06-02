@@ -204,7 +204,7 @@ export default function TranslationDrawer() {
       <button
         type="button"
         class="td-trigger"
-        aria-label="Open translation drawer"
+        aria-label="Translation language"
         aria-haspopup="dialog"
         aria-expanded={open() ? 'true' : 'false'}
         onClick={openSheet}
@@ -228,7 +228,7 @@ export default function TranslationDrawer() {
           <div class="td-handle" aria-hidden="true" />
 
           <header class="td-head">
-            <h2 id={titleId}>Translations</h2>
+            <h2 id={titleId}>Translation language</h2>
             <button
               type="button"
               class="td-close"

@@ -4,15 +4,20 @@ import { expect, test } from '@playwright/test';
  * TranslationDrawer.solid.tsx — verse-page bottom-sheet language picker.
  *
  * Trigger: floating .td-trigger button (🌐 emoji) with
- * `aria-label="Open translation drawer"`. The drawer is `client:idle`-
- * hydrated, so we wait for `networkidle` before interaction.
+ * `aria-label="Translation language"` (canonical picker label, audit
+ * 2026-06-01 rec #4). The drawer is `client:idle`-hydrated, so we wait
+ * for `networkidle` before interaction.
  *
  * Per spec: 12 language chips (English + 11 Indic). Selection persists in
  * localStorage `sohamhamso:translation-langs`.
  */
 test.describe('translation drawer (verse page)', () => {
   const VERSE_URL = '/trika/siva-sutras/1/1';
-  const TRIGGER = 'button[aria-label="Open translation drawer"]';
+  // The trigger uses the canonical picker label so screen readers hear
+  // the same name as the Masthead chip and the ScriptSwitcher pill.
+  // Filter by `.td-trigger` class to disambiguate from the Masthead chip
+  // (which carries the same aria-label on every page).
+  const TRIGGER = 'button.td-trigger[aria-label="Translation language"]';
   const DIALOG = '[role="dialog"][aria-modal="true"]';
 
   test('opens with 12 chips when the trigger is tapped', async ({ page }) => {
