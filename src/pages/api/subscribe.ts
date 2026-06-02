@@ -29,7 +29,11 @@
 
 import { createHmac, randomBytes } from 'node:crypto';
 import type { APIRoute } from 'astro';
-import { getWritableDb } from '../../lib/db';
+import {
+  SubscriberUniqueViolation,
+  getSubscriberDb,
+  isEdgeRuntime,
+} from '../../lib/subscriber-db';
 
 // Server-rendered endpoint — Astro's default `output: 'static'` would
 // prerender this route and reject POST. The opt-out keeps the rest of
@@ -81,24 +85,47 @@ const EU_COUNTRIES = new Set([
 ]);
 
 // Dev-only pepper fallback. NEVER use this value in production — the
-// runtime guard below warns once if it leaks through with NODE_ENV=production.
+// runtime guard below throws a 500 if it leaks through at the edge.
 const DEV_PEPPER = 'dev-pepper-CHANGE-IN-PROD';
+
+/**
+ * Thrown when the SUBSCRIBER_HASH_PEPPER env var is missing or equals
+ * the dev fallback AT THE EDGE. Surfaced to the operator as a 500 with
+ * an explicit "server misconfigured" message rather than silently
+ * shipping with the dev pepper (which would let an attacker enumerate
+ * subscriber emails post-breach, because HMAC keys derived from a
+ * publicly-known pepper are functionally not secret).
+ */
+export class PepperNotConfiguredError extends Error {
+  constructor() {
+    super(
+      'Server misconfigured: SUBSCRIBER_HASH_PEPPER is not set (or is the dev default) in a production runtime. ' +
+        'Set a 32+ char random string as a Cloudflare Pages secret: ' +
+        '`wrangler pages secret put SUBSCRIBER_HASH_PEPPER --project sohamhamso`.',
+    );
+    this.name = 'PepperNotConfiguredError';
+  }
+}
 
 let _pepperWarned = false;
 function loadPepper(): string {
   const env = process.env.SUBSCRIBER_HASH_PEPPER;
-  if (env && env.length > 0) {
-    // Guard against the dev default being copy-pasted into a prod env.
-    if (env === DEV_PEPPER && process.env.NODE_ENV === 'production') {
-      if (!_pepperWarned) {
-        // biome-ignore lint/suspicious/noConsole: intentional one-time
-        // operator warning at module load
-        console.warn(
-          '[subscribe] SUBSCRIBER_HASH_PEPPER is set to the dev default in production — rotate immediately.',
-        );
-        _pepperWarned = true;
-      }
+  const edge = isEdgeRuntime();
+
+  // Edge: HARD ERROR if unset or stuck on the dev default. The previous
+  // behavior — a one-line `console.warn` — was a footgun: the operator
+  // would never see the warning in Workers logs until after the breach.
+  if (edge) {
+    if (!env || env.length === 0 || env === DEV_PEPPER) {
+      throw new PepperNotConfiguredError();
     }
+    return env;
+  }
+
+  // Dev / bun runtime: keep the lenient fallback so the local dev loop
+  // doesn't require any env wiring. One-time warn so the operator still
+  // hears the nudge before they ship.
+  if (env && env.length > 0) {
     return env;
   }
   if (!_pepperWarned) {
@@ -154,21 +181,6 @@ function json(body: unknown, init: ResponseInit = {}): Response {
   });
 }
 
-// `bun:sqlite` SQLiteError shape — we only need the code field.
-function isUniqueViolation(err: unknown): boolean {
-  if (err == null || typeof err !== 'object') return false;
-  const e = err as { code?: unknown; message?: unknown };
-  if (typeof e.code === 'string' && e.code === 'SQLITE_CONSTRAINT_UNIQUE') {
-    return true;
-  }
-  // Fallback for drivers/wrappers that surface the constraint name via
-  // message rather than code (defensive — base path uses .code above).
-  if (typeof e.message === 'string' && /UNIQUE constraint failed/i.test(e.message)) {
-    return true;
-  }
-  return false;
-}
-
 export const POST: APIRoute = async ({ request }) => {
   let email = '';
   let language = 'en';
@@ -213,22 +225,36 @@ export const POST: APIRoute = async ({ request }) => {
     );
   }
 
-  const pepper = loadPepper();
+  let pepper: string;
+  try {
+    pepper = loadPepper();
+  } catch (err) {
+    if (err instanceof PepperNotConfiguredError) {
+      // biome-ignore lint/suspicious/noConsole: operator-facing 500
+      console.error('[subscribe]', err.message);
+      return json(
+        { ok: false, message: 'Server misconfigured. Please contact the operator.' },
+        { status: 500 },
+      );
+    }
+    throw err;
+  }
   const email_hash = hashEmail(email, pepper);
   const unsubscribe_token = generateUnsubscribeToken();
   const region = regionForRequest(request.headers);
   const subscribed_at = new Date().toISOString();
 
   try {
-    const db = getWritableDb();
-    const stmt = db.prepare(`
-      INSERT INTO subscribers
-        (email_hash, language, subscribed_at, unsubscribe_token, region)
-      VALUES (?, ?, ?, ?, ?)
-    `);
-    stmt.run(email_hash, language, subscribed_at, unsubscribe_token, region);
+    const db = await getSubscriberDb();
+    await db.insertSubscriber({
+      email_hash,
+      language,
+      subscribed_at,
+      unsubscribe_token,
+      region,
+    });
   } catch (err) {
-    if (isUniqueViolation(err)) {
+    if (err instanceof SubscriberUniqueViolation) {
       // Idempotent: same email + same language already subscribed.
       // Return success with the same copy — never leak the
       // already-subscribed signal (enumeration defense).

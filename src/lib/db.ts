@@ -186,39 +186,13 @@ export function __setDbForTests(db: Database | null): void {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Writable connection (pii-DB writes — subscribers, etc.)
+// NOTE — writable DB MOVED to `src/lib/subscriber-db.ts`.
+//
+// The subscribe endpoint ships into a Cloudflare Pages Function bundle where
+// `bun:sqlite` (the top-level import in this file) is unavailable. The
+// writable path lives in its own module that dynamic-imports `bun:sqlite`
+// only in the bun runtime, and uses `@libsql/client/web` at the edge.
 // ─────────────────────────────────────────────────────────────────────────────
-
-let _wdb: Database | null = null;
-
-/**
- * Returns a SHARED writable Database handle. Distinct from `getDb()` so the
- * read-only default (and its `PRAGMA query_only`) stay safe for the rest of
- * the codebase. Today the only writer is `POST /api/subscribe`; if more
- * writers land they should reuse this handle.
- *
- * In production this is the pii Turso DB; locally it's the same SQLite file
- * as the corpus (single-DB dev layout).
- */
-export function getWritableDb(path?: string): Database {
-  if (path !== undefined) {
-    return new Database(path);
-  }
-  if (_wdb) return _wdb;
-  _wdb = new Database(dbPath());
-  // WAL mode keeps concurrent readers (the read-only `getDb()` handle) happy
-  // alongside this writer in dev. Safe to set repeatedly.
-  _wdb.exec('PRAGMA journal_mode = WAL;');
-  return _wdb;
-}
-
-/**
- * Inject a writable Database instance as the module-level singleton (test
- * hook). Pass `null` to clear. Production code should never call this.
- */
-export function __setWritableDbForTests(db: Database | null): void {
-  _wdb = db;
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Queries

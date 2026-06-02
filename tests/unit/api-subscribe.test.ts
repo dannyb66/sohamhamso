@@ -17,12 +17,57 @@ import { resolve } from 'node:path';
  * Run with: `bun --bun vitest run tests/unit/api-subscribe.test.ts`
  */
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
-import { __setWritableDbForTests } from '../../src/lib/db';
+import {
+  SubscriberUniqueViolation,
+  __setSubscriberDbForTests,
+  type SubscriberDb,
+} from '../../src/lib/subscriber-db';
 import { POST, hashEmail, regionForRequest } from '../../src/pages/api/subscribe';
 
 const SCHEMA_PATH = resolve(__dirname, '..', '..', 'db', 'schema.sql');
 
 let db: Database;
+
+// Build a `SubscriberDb` impl backed by an in-memory bun:sqlite handle.
+// Mirrors the real bun backend in `src/lib/subscriber-db.ts` — same
+// SQL, same UNIQUE → SubscriberUniqueViolation translation — but skips
+// the file-path dance so the test can drive a `:memory:` DB.
+function makeInMemorySubscriberDb(memDb: Database): SubscriberDb {
+  const insertStmt = memDb.prepare(
+    `INSERT INTO subscribers
+       (email_hash, language, subscribed_at, unsubscribe_token, region)
+     VALUES (?, ?, ?, ?, ?)`,
+  );
+  const existsStmt = memDb.prepare(
+    `SELECT 1 AS one FROM subscribers
+     WHERE email_hash = ? AND language = ?
+     LIMIT 1`,
+  );
+  return {
+    async insertSubscriber(row) {
+      try {
+        insertStmt.run(
+          row.email_hash,
+          row.language,
+          row.subscribed_at,
+          row.unsubscribe_token,
+          row.region,
+        );
+      } catch (err) {
+        const e = err as { code?: unknown; message?: unknown };
+        const isUnique =
+          (typeof e.code === 'string' && e.code === 'SQLITE_CONSTRAINT_UNIQUE') ||
+          (typeof e.message === 'string' && /UNIQUE constraint failed/i.test(e.message));
+        if (isUnique) throw new SubscriberUniqueViolation();
+        throw err;
+      }
+    },
+    async isAlreadySubscribed(email_hash, language) {
+      const row = existsStmt.get(email_hash, language);
+      return row != null;
+    },
+  };
+}
 
 beforeAll(() => {
   // Pin a deterministic pepper so determinism assertions are stable.
@@ -30,11 +75,11 @@ beforeAll(() => {
 
   db = new Database(':memory:');
   db.exec(readFileSync(SCHEMA_PATH, 'utf8'));
-  __setWritableDbForTests(db);
+  __setSubscriberDbForTests(makeInMemorySubscriberDb(db));
 });
 
 afterAll(() => {
-  __setWritableDbForTests(null);
+  __setSubscriberDbForTests(null);
   db.close();
 });
 
