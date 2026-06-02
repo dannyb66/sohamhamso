@@ -95,28 +95,40 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
 
       <hr class="shirorekha-rule" />
 
-      <table class="chapter-table">
-        <thead>
-          <tr>
-            <th scope="col" data-i18n="text_overview.table.chapter">Chapter</th>
-            <th scope="col" data-i18n="text_overview.table.verses">Verses</th>
-            <th scope="col" data-i18n="text_overview.table.read">Read</th>
-          </tr>
-        </thead>
-        <tbody>
+      {/*
+        Chapter index (audit 2026-06-01 #11). The original <table>
+        layout limited the tap target to the "Read chapter N →" anchor
+        text on the right. We switched to a semantic <ul> of anchors
+        so each row is one <a> — the entire row, including the
+        chapter number and verse-count columns, navigates with one tap.
+        The grid layout preserves the original "Chapter | Verses |
+        Read →" visual rhythm; the header row mirrors the same grid
+        for column alignment.
+      */}
+      <div class="chapter-table">
+        <div class="chapter-row chapter-row--head" role="presentation">
+          <span class="chapter-row__col-num" data-i18n="text_overview.table.chapter">Chapter</span>
+          <span class="chapter-row__col-count" data-i18n="text_overview.table.verses">Verses</span>
+          <span class="chapter-row__col-cta" data-i18n="text_overview.table.read">Read</span>
+        </div>
+        <ul class="chapter-list">
           {chapters.map((c) => (
-            <tr>
-              <td>{c.chapter}</td>
-              <td>{c.verse_count}</td>
-              <td>
-                <a href={`/${tradition}/${text}/${c.chapter}/1`}>
+            <li>
+              <a
+                href={`/${tradition}/${text}/${c.chapter}/1`}
+                class="chapter-row chapter-row__link"
+                aria-label={`Read chapter ${c.chapter} — ${c.verse_count} verses`}
+              >
+                <span class="chapter-row__col-num">{c.chapter}</span>
+                <span class="chapter-row__col-count">{c.verse_count}</span>
+                <span class="chapter-row__col-cta">
                   <span data-i18n="text_overview.read_chapter_prefix">Read chapter</span> {c.chapter} →
-                </a>
-              </td>
-            </tr>
+                </span>
+              </a>
+            </li>
           ))}
-        </tbody>
-      </table>
+        </ul>
+      </div>
 
       {textRow.source || textRow.manuscript_url ? (
         <footer class="text-attribution">
@@ -220,29 +232,53 @@ const pageTitle = `${textRow.title_en} — sohamhamso`;
 
   .chapter-table {
     width: 100%;
-    border-collapse: collapse;
     font-family: var(--font-chrome);
     font-size: var(--text-sm);
   }
-  .chapter-table th,
-  .chapter-table td {
-    text-align: left;
+  .chapter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .chapter-list li {
+    margin: 0;
+  }
+
+  /*
+   * Whole-row tap target (audit 2026-06-01 #11). Each row is one
+   * <a> with a 3-column grid that preserves the original
+   * "Chapter | Verses | Read chapter N →" rhythm. min-height pulls
+   * the row above WCAG 2.5.5 (44px). Hover/focus state cascades to
+   * the entire row, not just the link text.
+   */
+  .chapter-row {
+    display: grid;
+    grid-template-columns: 96px 96px 1fr;
+    align-items: center;
     padding: var(--spacing-3) var(--spacing-2);
     border-block-end: 1px solid var(--color-rule);
+    min-height: 44px;
   }
-  .chapter-table th {
+  .chapter-row--head {
     font-weight: 500;
     color: var(--color-ink-muted);
     text-transform: uppercase;
     font-size: var(--text-xs);
     letter-spacing: 0.06em;
   }
-  .chapter-table td:first-child {
-    font-variant-numeric: tabular-nums;
-    width: 96px;
+  .chapter-row__link {
+    color: inherit;
+    text-decoration: none;
   }
-  .chapter-table td:nth-child(2) {
-    width: 96px;
+  .chapter-row__link:hover,
+  .chapter-row__link:focus-visible {
+    background: var(--color-rule);
+    text-decoration: none;
+  }
+  .chapter-row__col-num {
+    font-variant-numeric: tabular-nums;
+  }
+  .chapter-row__col-count {
     color: var(--color-ink-muted);
   }
 
