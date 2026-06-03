@@ -173,8 +173,13 @@ function isBunUniqueViolation(err: unknown): boolean {
 // Turso PII DB self-heals on first cold-start. Idempotent — re-runs are
 // no-ops. If you'd rather run a one-shot via `turso db shell` instead,
 // it's safe to remove this and document the manual step in `.env.example`.
-const SUBSCRIBERS_SCHEMA = `
-  CREATE TABLE IF NOT EXISTS subscribers (
+//
+// MUST be an array of single statements — libSQL HTTP `execute()` rejects
+// multi-statement SQL with `SQL_MANY_STATEMENTS`. We apply via `batch()`
+// (atomic, runs the whole bootstrap as one transaction) so a partial
+// success on a fresh DB doesn't leave us with a table-without-index.
+const SUBSCRIBERS_SCHEMA_STATEMENTS = [
+  `CREATE TABLE IF NOT EXISTS subscribers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email_hash TEXT NOT NULL,
     language TEXT NOT NULL DEFAULT 'en',
@@ -184,9 +189,9 @@ const SUBSCRIBERS_SCHEMA = `
     confirmed INTEGER NOT NULL DEFAULT 0 CHECK(confirmed IN (0,1)),
     confirmed_at TEXT,
     UNIQUE (email_hash, language)
-  );
-  CREATE INDEX IF NOT EXISTS idx_subscribers_email_hash ON subscribers(email_hash);
-`;
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_subscribers_email_hash ON subscribers(email_hash)`,
+];
 
 async function makeEdgeBackend(): Promise<SubscriberDb> {
   const url = process.env.TURSO_PII_URL;
@@ -212,9 +217,11 @@ async function makeEdgeBackend(): Promise<SubscriberDb> {
   const client = createClient({ url, authToken });
 
   // Cold-start bootstrap — first request on a fresh worker instance
-  // ensures the subscribers table exists. Subsequent requests on the
-  // same instance reuse the resolved promise (no extra round trips).
-  await client.execute(SUBSCRIBERS_SCHEMA);
+  // ensures the subscribers table + index exist. Subsequent requests
+  // on the same instance reuse the resolved promise (no extra round
+  // trips). MUST use `batch()` not `execute()` because libSQL HTTP
+  // rejects multi-statement SQL strings; the schema is 2 statements.
+  await client.batch(SUBSCRIBERS_SCHEMA_STATEMENTS, 'deferred');
 
   return {
     async insertSubscriber(row) {
