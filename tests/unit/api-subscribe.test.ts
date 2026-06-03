@@ -124,8 +124,8 @@ describe('POST /api/subscribe — validation', () => {
     expect(res.status).toBe(200);
     const body = (await res.json()) as { ok: boolean; message: string };
     expect(body.ok).toBe(true);
-    expect(body.message).toMatch(/inbox/i);
-    expect(body.message).toMatch(/confirm/i);
+    expect(body.message).toMatch(/subscribed/i);
+    expect(body.message).toMatch(/verse arrives at sunrise/i);
   });
 
   it("returns 200 + ok:true when language is explicitly 'en'", async () => {
@@ -233,7 +233,8 @@ describe('POST /api/subscribe — persistence', () => {
     expect(second.status).toBe(200);
     const body = (await second.json()) as { ok: boolean; message: string };
     expect(body.ok).toBe(true);
-    expect(body.message).toMatch(/inbox/i);
+    expect(body.message).toMatch(/subscribed/i);
+    expect(body.message).toMatch(/verse arrives at sunrise/i);
     // Still exactly one row — re-subscribe absorbed.
     expect(allSubscribers()).toHaveLength(1);
   });

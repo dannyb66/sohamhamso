@@ -19,7 +19,7 @@ test.describe('subscribe form — API', () => {
       return { status: r.status, body: await r.text() };
     }, email);
     expect(apiOk.status, `body: ${apiOk.body}`).toBe(200);
-    expect(apiOk.body).toMatch(/inbox|confirm|ok/i);
+    expect(apiOk.body).toMatch(/subscribed|verse arrives at sunrise|ok/i);
   });
 
   test('invalid email returns 400 with helpful message', async ({ page }) => {
@@ -58,7 +58,7 @@ test.describe('subscribe form — API', () => {
     expect(both.first.body.ok).toBe(true);
     expect(both.second.status).toBe(200);
     expect(both.second.body.ok).toBe(true);
-    expect(both.second.body.message).toMatch(/inbox|confirm/i);
+    expect(both.second.body.message).toMatch(/subscribed|verse arrives at sunrise/i);
   });
 
   test('language picker: reflects DB availability — disabled iff no published translations exist', async ({
@@ -133,9 +133,10 @@ test.describe('subscribe form — UI', () => {
     await submitBtn.click();
 
     // The script flips status to data-state="success" after a successful
-    // fetch and shows the "Check your inbox" copy.
+    // fetch and shows the "You're subscribed. The first verse arrives at
+    // sunrise." copy.
     await expect(status).toHaveAttribute('data-state', 'success', { timeout: 5000 });
-    await expect(status).toContainText(/inbox|confirm/i);
+    await expect(status).toContainText(/subscribed|verse arrives at sunrise/i);
   });
 
   test('UI idempotent resubmit: same email twice still shows success', async ({ page }) => {
