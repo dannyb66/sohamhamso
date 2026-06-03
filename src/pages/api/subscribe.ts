@@ -260,7 +260,7 @@ export const POST: APIRoute = async ({ request }) => {
       // already-subscribed signal (enumeration defense).
       return json({
         ok: true,
-        message: 'Check your inbox to confirm — link expires in 24h.',
+        message: "You're subscribed. The first verse arrives at sunrise.",
       });
     }
     // biome-ignore lint/suspicious/noConsole: server-side error trace
@@ -273,7 +273,7 @@ export const POST: APIRoute = async ({ request }) => {
 
   return json({
     ok: true,
-    message: 'Check your inbox to confirm — link expires in 24h.',
+    message: "You're subscribed. The first verse arrives at sunrise.",
   });
 };
 

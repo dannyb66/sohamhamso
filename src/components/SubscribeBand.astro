@@ -133,7 +133,7 @@ const defaultLabel = languages.find((l) => l.code === defaultLang)?.label ?? 'En
       without a separate IPC contract between the island and the script.
     -->
     <span data-i18n-msg="pending" data-i18n="subscribe.status.pending" hidden>Subscribing…</span>
-    <span data-i18n-msg="success" data-i18n="subscribe.status.success" hidden>Check your inbox to confirm — link expires in 24h.</span>
+    <span data-i18n-msg="success" data-i18n="subscribe.status.success" hidden>You're subscribed. The first verse arrives at sunrise.</span>
     <span data-i18n-msg="error" data-i18n="subscribe.status.error" hidden>Couldn't subscribe. Try again or email us.</span>
   </div>
 </section>
@@ -156,7 +156,7 @@ const defaultLabel = languages.find((l) => l.code === defaultLang)?.label ?? 'En
       );
       if (node?.textContent) return node.textContent;
       if (kind === "pending") return "Subscribing…";
-      if (kind === "success") return "Check your inbox to confirm — link expires in 24h.";
+      if (kind === "success") return "You're subscribed. The first verse arrives at sunrise.";
       return "Couldn't subscribe. Try again or email us.";
     }
 

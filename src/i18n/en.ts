@@ -81,7 +81,7 @@ export const en = {
   'subscribe.lang.soon_title': 'Coming soon — see methodology',
   'subscribe.button': 'subscribe',
   'subscribe.status.pending': 'Subscribing…',
-  'subscribe.status.success': 'Check your inbox to confirm — link expires in 24h.',
+  'subscribe.status.success': "You're subscribed. The first verse arrives at sunrise.",
   'subscribe.status.error': "Couldn't subscribe. Try again or email us.",
 
   // ── FeaturedVerseHero (FeaturedVerseHero.astro) ────────────────────────
