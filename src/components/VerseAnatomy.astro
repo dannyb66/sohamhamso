@@ -260,27 +260,30 @@ const iastFormatted = formatDanda(verse.iast);
   .synonyms {
     font-family: var(--font-iast);
     font-size: 0.9375rem; /* 15px */
-    /* Bleed-style tap-target expansion: combined with .sa-word's vertical
-       padding (14px top + 14px bottom + ~15px glyph) the effective tap
-       surface on each inline lemma reaches the 44px WCAG 2.5.5 (AAA) floor
-       without breaking inline flow. Line-height absorbs the padding so the
-       visual rhythm is preserved (rows don't double-space). */
-    line-height: 2.0;
+    /* Density matches the Vedabase reference (~1.55 line-height for dash-
+       joined synonyms). The tap-target floor is met by .sa-word's vertical
+       padding alone (~31px per WCAG 2.5.5 Level AA's 24px minimum — we
+       step back from AAA's 44px in favor of the tighter visual rhythm).
+       Adjacent buttons may overlap a few pixels vertically; that's fine
+       for inline tappables since finger contact is wider than the
+       overlap zone. */
+    line-height: 1.55;
     color: var(--color-ink-muted);
     max-width: var(--width-reader);
   }
 
   .sa-word {
     /* Override the global 44px touch-target floor — these are inline.
-       Tap surface reaches 44px via padding-block bleed (see .synonyms). */
+       Tap surface reaches ~31px via padding-block (WCAG 2.5.5 AA). */
     min-height: 0;
     min-width: 0;
     appearance: none;
     background: transparent;
     border: 0;
-    /* padding-block bleeds the tap surface to ~44px tall; horizontal padding
-       keeps the dotted underline tight to the glyph. */
-    padding: 14px 2px;
+    /* padding-block 8px keeps the button at ~31px (8+15+8) — comfortably
+       above WCAG 2.5.5 Level AA's 24px minimum. Horizontal padding keeps
+       the dotted underline tight to the glyph. */
+    padding: 8px 2px;
     margin: 0;
     cursor: pointer;
     font-family: var(--font-iast);
