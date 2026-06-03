@@ -43,6 +43,12 @@ const primaryTranslation = translations[0] ?? null;
 // CSS below.
 function formatDanda(s: string | null | undefined): string {
   if (!s) return '';
+  // Normalize slash-style IAST dandas (Karpūrādi Stotra and some other
+  // corpora use / and // instead of | and || for pāda separators) to
+  // pipe-style so the existing logic below handles both uniformly.
+  // Slashes don't occur in normal IAST text, so this is a safe rewrite.
+  // Order matters: replace // before / so the longer match wins.
+  s = s.replace(/\/\//g, '||').replace(/\//g, '|');
   // Protect verse-number brackets so the internal dandas don't get split.
   // Devanāgarī forms: ॥४९॥, ॥ ४९ ॥. IAST forms: ||49||, || 49 ||.
   const protected_: string[] = [];
