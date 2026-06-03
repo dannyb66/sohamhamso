@@ -32,9 +32,14 @@ test.describe('parallel chip (verse-page parallels disclosure)', () => {
     await page.waitForLoadState('networkidle');
 
     // The chips slot still exists (AI-assist badges live there) — we're
-    // asserting it just doesn't include a parallels chip.
+    // asserting it just doesn't include a parallels chip. Assert DOM
+    // presence with toHaveCount(1) rather than toBeVisible(): when the
+    // slot has no children it collapses to a 0×0 box (see
+    // VerseAnatomy.astro:94 — `<div class="verse-chips">` is always
+    // rendered as a flex container with no `:empty` rule), which
+    // Playwright reports as hidden even though the element exists.
     const chipsSlot = page.locator('.verse-chips');
-    await expect(chipsSlot).toBeVisible();
+    await expect(chipsSlot).toHaveCount(1);
     await expect(chipsSlot.locator('.parallels-chip')).toHaveCount(0);
   });
 });
