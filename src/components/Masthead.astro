@@ -1,5 +1,4 @@
 ---
-import { getAvailableLanguages } from '../lib/db';
 import { READING_MODES } from '../lib/reading-modes';
 /**
  * Masthead — top chrome. Wordmark left · search icon middle/right ·
@@ -13,9 +12,27 @@ import { READING_MODES } from '../lib/reading-modes';
  * verse-page ScriptSwitcher and the SettingsSheet. Picking a row writes
  * BOTH sohamhamso:script + sohamhamso:reader-lang and dispatches
  * sohamhamso:reader-lang-change — the same contract every other picker
- * obeys. Availability is sourced from the corpus DB at build time:
- * langs with at least one published/reviewed translation render
- * available; the rest get the greyed `soon` tag.
+ * obeys.
+ *
+ * EDGE COMPATIBILITY (launch blocker #2, final-bundle-audit-2026-06-03):
+ *   Masthead is rendered by three `prerender = false` SSR routes
+ *   (`/search`, `/confirmed`, `/unsubscribed`) which ship into the
+ *   Cloudflare Pages Function bundle (workerd). `src/lib/db.ts` does
+ *   a TOP-LEVEL `import { Database } from 'bun:sqlite'` and is bun-only
+ *   by design — pulling it from Masthead (even just for the
+ *   `getAvailableLanguages()` set) drags `bun:sqlite` into the worker
+ *   chunk and 500s the first request to any of the three pages with
+ *   `No such module "bun:sqlite"`.
+ *
+ *   Fix: availability is now sourced from the static
+ *   `READING_MODES[i].availableInDb` flag in `reading-modes.ts` (the
+ *   source of truth for the 12-entry catalogue). The corpus state
+ *   is stable — every published reading mode in the catalogue has
+ *   at least one published/reviewed translation in the corpus — so
+ *   the static flag is a faithful pre-computation of what
+ *   `getAvailableLanguages()` returned at build time. If a row ever
+ *   stops being available, flip its `availableInDb` to false in
+ *   `reading-modes.ts`. DO NOT re-import `db.ts` from this file.
  */
 import Wordmark from './Wordmark.astro';
 
@@ -24,15 +41,14 @@ interface Props {
 }
 const { currentLang = 'EN' } = Astro.props;
 
-// Build-time intersection: catalogue rows × DB-reported coverage.
-// DB codes are lowercase ISO; catalogue display codes match.
-const availableSet = getAvailableLanguages();
-
+// Static catalogue → render rows. `availableInDb` is the hand-curated
+// source of truth (see reading-modes.ts header) — edge-safe, no DB
+// import, no `bun:sqlite` static dep leaking into the worker bundle.
 const languages = READING_MODES.map((m) => ({
   code: m.langCode.toUpperCase(),
   langCode: m.langCode,
   label: m.englishName === m.nativeLabel ? m.englishName : `${m.nativeLabel} (${m.englishName})`,
-  available: availableSet.has(m.langCode),
+  available: m.availableInDb,
 }));
 ---
 
