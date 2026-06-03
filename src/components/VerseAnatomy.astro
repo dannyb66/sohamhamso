@@ -260,13 +260,12 @@ const iastFormatted = formatDanda(verse.iast);
   .synonyms {
     font-family: var(--font-iast);
     font-size: 0.9375rem; /* 15px */
-    /* Density matches the Vedabase reference (~1.55 line-height for dash-
-       joined synonyms). The tap-target floor is met by .sa-word's vertical
-       padding alone (~31px per WCAG 2.5.5 Level AA's 24px minimum — we
-       step back from AAA's 44px in favor of the tighter visual rhythm).
-       Adjacent buttons may overlap a few pixels vertically; that's fine
-       for inline tappables since finger contact is wider than the
-       overlap zone. */
+    /* Density matches the Vedabase reference: ~23px per row (15px × 1.55).
+       The line-height alone drives row height now — buttons are no longer
+       inline-block-with-padding, so they don't inflate the line-box. Tap
+       targets are handled by a .sa-word::before overlay (see below) which
+       is position:absolute and OUT OF FLOW — it adds zero pixels to the
+       visual line-box. */
     line-height: 1.55;
     color: var(--color-ink-muted);
     max-width: var(--width-reader);
@@ -274,17 +273,19 @@ const iastFormatted = formatDanda(verse.iast);
 
   .sa-word {
     /* Override the global 44px touch-target floor — these are inline.
-       Tap surface reaches ~31px via padding-block (WCAG 2.5.5 AA). */
+       Tap surface is created by the ::before pseudo-element below. */
     min-height: 0;
     min-width: 0;
     appearance: none;
     background: transparent;
     border: 0;
-    /* padding-block 8px keeps the button at ~31px (8+15+8) — comfortably
-       above WCAG 2.5.5 Level AA's 24px minimum. Horizontal padding keeps
-       the dotted underline tight to the glyph. */
-    padding: 8px 2px;
+    /* No padding-block — the button's visible box is just its text height
+       (~15px). The hit area is created by ::before below (absolute,
+       out-of-flow). This preserves the dense Vedabase-style line rhythm
+       while still passing WCAG 2.5.5 AAA tap-target floor. */
+    padding: 0 2px;
     margin: 0;
+    position: relative;
     cursor: pointer;
     font-family: var(--font-iast);
     font-size: 0.9375rem;
@@ -295,6 +296,22 @@ const iastFormatted = formatDanda(verse.iast);
   }
   .sa-word em {
     font-style: italic;
+  }
+  /* Invisible hit-area overlay extends the tappable region 15px above and
+     below the visible button (text ~15px + 15px×2 overlay = ~45px hit
+     area, comfortably above WCAG 2.5.5 AAA's 44px floor). The pseudo
+     is position:absolute so it does NOT contribute to the inline-flow
+     line-box — the dense visual rhythm is preserved.
+     Adjacent buttons in different visual lines overlap their hit areas
+     by ~7px each side, which is harmless: finger contact (typically
+     ~40-50px diameter) is wider than the overlap zone anyway. */
+  .sa-word::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -15px;
+    bottom: -15px;
   }
   .sa-word:hover,
   .sa-word:focus-visible {
