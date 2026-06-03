@@ -77,7 +77,6 @@ export const en = {
   'subscribe.sub': 'One verse, one translation. No commentary. Unsubscribe anytime.',
   'subscribe.email.label': 'Email address',
   'subscribe.email.placeholder': 'your email',
-  'subscribe.lang.label': 'language:',
   'subscribe.lang.soon_suffix': ' (soon)',
   'subscribe.lang.soon_title': 'Coming soon — see methodology',
   'subscribe.button': 'subscribe',
