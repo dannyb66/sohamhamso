@@ -11,7 +11,18 @@
  * (planned for the content-loading workstream), wire it via:
  *   import { getTextCount } from "../lib/db";
  *   const textCount = getTextCount();
+ *
+ * Props:
+ *   centered — opt-in desktop layout that clusters the three entries
+ *     under a centered focal element (e.g. the homepage hero) instead of
+ *     the default `space-between` posture. Mobile is unaffected.
  */
+
+interface Props {
+  centered?: boolean;
+}
+
+const { centered = false } = Astro.props;
 
 // Per design audit recommendation #19: dropping the live "(N)" count
 // from the "All texts" link. Pluralizing the count in the label leaked
@@ -44,7 +55,7 @@ const entries = [
 ---
 
 <section class="curated" aria-label="Where to begin" data-i18n-attr-aria-label="curated.aria">
-  <ul class="curated-list">
+  <ul class="curated-list" data-centered={centered ? '' : undefined}>
     {entries.map((entry) => (
       <li class="curated-item">
         <a href={entry.href} class="curated-link">
@@ -88,6 +99,21 @@ const entries = [
     }
     .curated-item {
       flex: 1;
+    }
+
+    /*
+     * centered={true} — opt-in alignment for pages where the curated row
+     * is a follow-on to a centered focal element (e.g. the homepage hero
+     * at max-width 62ch). Clusters the three entries under the hero
+     * instead of spanning the full 1080px container. Mobile (single-
+     * column stack) is unaffected.
+     */
+    .curated-list[data-centered] {
+      justify-content: center;
+      gap: var(--spacing-8);
+    }
+    .curated-list[data-centered] .curated-item {
+      flex: 0 1 220px;
     }
   }
 

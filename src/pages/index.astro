@@ -27,7 +27,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <hr class="shirorekha-rule" aria-hidden="true" />
 
-    <CuratedEntries />
+    <CuratedEntries centered={true} />
 
     <hr class="shirorekha-rule" aria-hidden="true" />
 
@@ -36,32 +36,3 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <Footer />
 </BaseLayout>
-
-<!--
-  Homepage-scoped alignment override (audit-2026-06-01, recommendation
-  in "Desktop" notes): the three curated entries were left-aligned in a
-  3-column `justify-content: space-between` grid which reads ragged
-  against the centered hero (max-width 62ch, centered). Center the
-  curated row on desktop so it clusters under the hero instead of
-  spanning the full 1080px container.
-
-  This override lives here (NOT in CuratedEntries.astro) because the
-  curated grid's *default* `space-between` posture is the right one for
-  pages where the curated entries are the main content; on the
-  homepage the hero is the focal point and the curated entries are a
-  follow-on. Only the homepage wants this alignment. If a second page
-  starts adopting it, hoist into CuratedEntries with a prop.
-
-  Mobile is untouched — the single-column stack still flows naturally.
--->
-<style is:global>
-  @media (min-width: 768px) {
-    main .curated-list {
-      justify-content: center;
-      gap: var(--spacing-8);
-    }
-    main .curated-item {
-      flex: 0 1 220px;
-    }
-  }
-</style>
