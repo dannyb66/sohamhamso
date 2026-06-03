@@ -19,6 +19,12 @@ db/*.sqlite
 db/*.sqlite-journal
 db/*.db-wal
 db/*.db-shm
+# Exception: the launch corpus DB IS the build input — CF Pages SSG reads it
+# via getStaticPaths during `astro build`. Without this exception, CF Pages
+# clones an empty db/ and the build fails with "unable to open database file".
+# The data is public anyway (CC-BY-SA, planned Zenodo deposit), and no PII
+# lives here (subscribers go to the separate sohamhamso-pii Turso DB).
+!db/sohamhamso.db
 
 # Local dev caches
 .turso/
