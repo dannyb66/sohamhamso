@@ -349,16 +349,25 @@ const defaultLabel = languages.find((l) => l.code === defaultLang)?.label ?? 'En
     align-items: stretch;
   }
 
-  @media (min-width: 900px) {
+  /* Tablet + desktop side-by-side layout via CSS grid. The 3-area grid
+     ("copy form" / "copy status") prevents the status message from
+     becoming a third flex sibling that squeezes the copy + form
+     columns when the success banner shows. */
+  @media (min-width: 1024px) {
     .subscribe-inner {
-      flex-direction: row;
-      align-items: center;
-      gap: var(--spacing-6);
+      display: grid;
+      grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+      grid-template-areas:
+        "copy form"
+        "copy status";
+      column-gap: var(--spacing-6);
+      row-gap: var(--spacing-2);
+      align-items: start;
       padding: var(--spacing-6) var(--spacing-6);
     }
-    .subscribe-copy {
-      flex: 1;
-    }
+    .subscribe-copy { grid-area: copy; }
+    .subscribe-form { grid-area: form; flex-wrap: nowrap; }
+    .subscribe-status { grid-area: status; margin: 0; }
   }
 
   .subscribe-heading {
@@ -386,7 +395,7 @@ const defaultLabel = languages.find((l) => l.code === defaultLang)?.label ?? 'En
   }
 
   .subscribe-form input[type="email"] {
-    flex: 1 1 240px;
+    flex: 1 1 200px;
     min-width: 0;
     font-family: var(--font-iast);
     font-size: 16px;
