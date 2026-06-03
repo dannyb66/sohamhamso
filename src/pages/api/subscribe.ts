@@ -265,6 +265,34 @@ export const POST: APIRoute = async ({ request }) => {
     }
     // biome-ignore lint/suspicious/noConsole: server-side error trace
     console.error('[subscribe] insert failed', err);
+    // TEMP DIAGNOSTIC (remove after launch): when ?_debug=1 query param is
+    // set, surface the actual error class + message + env-presence flags in
+    // the response. CF Pages Functions logs are awkward to read from
+    // outside the dashboard; this gives us a one-curl diagnostic. Revert
+    // this block once the root cause is fixed.
+    const url = new URL(request.url);
+    const isDebug = url.searchParams.get('_debug') === '1';
+    if (isDebug) {
+      const e = err as Error & { code?: string };
+      return json(
+        {
+          ok: false,
+          message: 'Something went wrong on our end. Try again in a moment.',
+          _debug: {
+            err_name: e?.name ?? typeof err,
+            err_message: e?.message ?? String(err),
+            err_code: e?.code,
+            env_has_pii_url: !!process.env.TURSO_PII_URL,
+            env_has_pii_token: !!process.env.TURSO_PII_AUTH_TOKEN,
+            env_pii_url_len: process.env.TURSO_PII_URL?.length ?? 0,
+            env_pii_token_len: process.env.TURSO_PII_AUTH_TOKEN?.length ?? 0,
+            env_pii_url_prefix: process.env.TURSO_PII_URL?.slice(0, 20),
+            env_pii_token_prefix: process.env.TURSO_PII_AUTH_TOKEN?.slice(0, 12),
+          },
+        },
+        { status: 500 },
+      );
+    }
     return json(
       { ok: false, message: 'Something went wrong on our end. Try again in a moment.' },
       { status: 500 },
