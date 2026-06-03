@@ -18,9 +18,9 @@ import { resolve } from 'node:path';
  */
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import {
+  type SubscriberDb,
   SubscriberUniqueViolation,
   __setSubscriberDbForTests,
-  type SubscriberDb,
 } from '../../src/lib/subscriber-db';
 import { POST, hashEmail, regionForRequest } from '../../src/pages/api/subscribe';
 

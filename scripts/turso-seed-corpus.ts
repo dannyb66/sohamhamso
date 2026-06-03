@@ -34,7 +34,7 @@
 import { Database } from 'bun:sqlite';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { type Client, createClient, type InValue } from '@libsql/client/web';
+import { type Client, type InValue, createClient } from '@libsql/client/web';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Config / pre-flight
@@ -153,7 +153,9 @@ async function seedTable(
     }
     attempted += chunk.length;
     const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-    console.log(`  [${table} ${batchNum}/${batches}] +${chunk.length} (running ${attempted}/${total}) ✓`);
+    console.log(
+      `  [${table} ${batchNum}/${batches}] +${chunk.length} (running ${attempted}/${total}) ✓`,
+    );
   }
   return { attempted, affected };
 }

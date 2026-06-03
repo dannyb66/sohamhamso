@@ -23,9 +23,7 @@ test.describe('audit 2026-06-01 #9 — html lang reflects reader language', () =
     expect(lang).toBe('en');
   });
 
-  test('persisted Hindi preference → html.lang becomes "hi" after hydrate', async ({
-    page,
-  }) => {
+  test('persisted Hindi preference → html.lang becomes "hi" after hydrate', async ({ page }) => {
     // Seed the preference, then reload so I18nSwap sees it on mount.
     await page.goto(VERSE);
     await page.evaluate(() => {
@@ -42,16 +40,12 @@ test.describe('audit 2026-06-01 #9 — html lang reflects reader language', () =
       .toBe('hi');
   });
 
-  test('dispatching reader-lang-change re-syncs html.lang on the fly', async ({
-    page,
-  }) => {
+  test('dispatching reader-lang-change re-syncs html.lang on the fly', async ({ page }) => {
     await page.goto(VERSE);
     await page.waitForLoadState('networkidle');
 
     // Baseline.
-    await expect
-      .poll(async () => await page.locator('html').getAttribute('lang'))
-      .toBe('en');
+    await expect.poll(async () => await page.locator('html').getAttribute('lang')).toBe('en');
 
     // Simulate the ScriptSwitcher picking Tamil.
     await page.evaluate(() => {

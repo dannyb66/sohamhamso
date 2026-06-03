@@ -10,7 +10,7 @@
 // against regression: any new [draft] bracket-tag in any data/translations
 // or data/glosses file fails the gate with the exact file + verse key.
 
-import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 

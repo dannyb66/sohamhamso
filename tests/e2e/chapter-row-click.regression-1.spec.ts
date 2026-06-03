@@ -10,9 +10,7 @@ import { expect, test } from '@playwright/test';
 const OVERVIEW = '/trika/spanda-karikas';
 
 test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
-  test('every row is wrapped in a single anchor pointing to chapter/1', async ({
-    page,
-  }) => {
+  test('every row is wrapped in a single anchor pointing to chapter/1', async ({ page }) => {
     await page.goto(OVERVIEW);
     await page.waitForLoadState('networkidle');
 
@@ -27,9 +25,7 @@ test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
     }
   });
 
-  test('clicking the chapter-number cell (far left of the row) navigates', async ({
-    page,
-  }) => {
+  test('clicking the chapter-number cell (far left of the row) navigates', async ({ page }) => {
     await page.goto(OVERVIEW);
     await page.waitForLoadState('networkidle');
 
@@ -45,9 +41,7 @@ test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
     expect(page.url()).toMatch(/\/trika\/spanda-karikas\/\d+\/1$/);
   });
 
-  test('row has min-height ≥ 44px (WCAG 2.5.5 tap target)', async ({
-    page,
-  }) => {
+  test('row has min-height ≥ 44px (WCAG 2.5.5 tap target)', async ({ page }) => {
     await page.goto(OVERVIEW);
     const firstRow = page.locator('a.chapter-row__link').first();
     const box = await firstRow.boundingBox();

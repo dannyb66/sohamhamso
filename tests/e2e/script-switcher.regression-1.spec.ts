@@ -42,18 +42,13 @@ test.describe('ISSUE-004 — script switcher drives reader-language', () => {
 
     // localStorage must reflect the language change (the dedicated key the
     // verse-page island reads — sohamhamso:reader-lang, NOT the settings blob).
-    const readerLang = await page.evaluate(() =>
-      localStorage.getItem('sohamhamso:reader-lang'),
-    );
+    const readerLang = await page.evaluate(() => localStorage.getItem('sohamhamso:reader-lang'));
     expect(readerLang).toBe('ta');
 
     // The .translation paragraph must have lang="ta" once the swap fires.
     // We don't assert the exact text body (translator-dependent) — only that
     // ReaderLangSwap reacted to the event and re-tagged the paragraph.
-    const translationLang = await page
-      .locator('.translation')
-      .first()
-      .getAttribute('lang');
+    const translationLang = await page.locator('.translation').first().getAttribute('lang');
     expect(translationLang).toBe('ta');
   });
 
@@ -84,9 +79,7 @@ test.describe('ISSUE-004 — script switcher drives reader-language', () => {
     await english.click();
     await page.waitForTimeout(300);
 
-    const readerLang = await page.evaluate(() =>
-      localStorage.getItem('sohamhamso:reader-lang'),
-    );
+    const readerLang = await page.evaluate(() => localStorage.getItem('sohamhamso:reader-lang'));
     expect(readerLang).toBe('en');
   });
 });

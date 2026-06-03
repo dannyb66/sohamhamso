@@ -43,9 +43,7 @@ describe('edge bundle — wrangler.toml launch config', () => {
     // Match either inline array or multiline TOML array shape.
     const m = src.match(/^\s*compatibility_flags\s*=\s*\[([^\]]+)\]/m);
     expect(m, 'compatibility_flags = [...] line not found').not.toBeNull();
-    const flags = (m?.[1] ?? '')
-      .split(',')
-      .map((s) => s.trim().replace(/^["']|["']$/g, ''));
+    const flags = (m?.[1] ?? '').split(',').map((s) => s.trim().replace(/^["']|["']$/g, ''));
     expect(flags).toContain('nodejs_compat');
   });
 

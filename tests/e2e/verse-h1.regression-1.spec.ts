@@ -8,9 +8,7 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('audit 2026-06-01 #8 — verse page has exactly one h1', () => {
-  test('Vijñāna Bhairava 1.47 exposes a single h1 with title + verse locator', async ({
-    page,
-  }) => {
+  test('Vijñāna Bhairava 1.47 exposes a single h1 with title + verse locator', async ({ page }) => {
     await page.goto('/trika/vijnana-bhairava-tantra/1/47');
 
     const h1Locator = page.locator('main h1');

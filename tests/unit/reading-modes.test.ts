@@ -13,8 +13,8 @@
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import {
-  type ReadingMode,
   READING_MODES,
+  type ReadingMode,
   applyReadingMode,
   getReadingModeByLang,
   getReadingModeByScript,
@@ -25,20 +25,7 @@ describe('READING_MODES catalogue', () => {
     // The 12-row shape is locked. Hindi and Marathi BOTH appear despite
     // sharing scriptId='devanagari' — they're distinct reader languages
     // and we never want to collapse them in the picker UI.
-    const expectedOrder = [
-      'en',
-      'hi',
-      'mr',
-      'bn',
-      'as',
-      'gu',
-      'pa',
-      'kn',
-      'ml',
-      'or',
-      'ta',
-      'te',
-    ];
+    const expectedOrder = ['en', 'hi', 'mr', 'bn', 'as', 'gu', 'pa', 'kn', 'ml', 'or', 'ta', 'te'];
     expect(READING_MODES.map((m) => m.langCode)).toEqual(expectedOrder);
     expect(READING_MODES).toHaveLength(12);
   });
@@ -117,8 +104,7 @@ describe('applyReadingMode', () => {
     expect(mode?.scriptId).toBe('bengali');
     expect(localStorage.getItem('sohamhamso:script')).toBe('bengali');
     expect(localStorage.getItem('sohamhamso:reader-lang')).toBe('bn');
-    const events = (globalThis as unknown as { document: { __events: Event[] } }).document
-      .__events;
+    const events = (globalThis as unknown as { document: { __events: Event[] } }).document.__events;
     expect(events).toHaveLength(1);
     const evt = events[0] as CustomEvent<{ lang: string }>;
     expect(evt.type).toBe('sohamhamso:reader-lang-change');

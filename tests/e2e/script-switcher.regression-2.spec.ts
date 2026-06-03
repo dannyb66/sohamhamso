@@ -48,9 +48,7 @@ test.describe('ISSUE-005 — verse-anatomy script layout contract', () => {
     expect(line2 ?? '').toMatch(/[a-zA-Z]/);
   });
 
-  test('Bengali mode: line 1 stays Devanāgarī, line 2 becomes Bengali script', async ({
-    page,
-  }) => {
+  test('Bengali mode: line 1 stays Devanāgarī, line 2 becomes Bengali script', async ({ page }) => {
     await page.goto('/trika/siva-sutras/1/1');
     await page.evaluate(() => {
       localStorage.removeItem('sohamhamso:script');
@@ -105,9 +103,7 @@ test.describe('ISSUE-005 — verse-anatomy script layout contract', () => {
     expect(line2, 'line 2 must contain Tamil glyphs').toMatch(TAMIL_RANGE);
   });
 
-  test('Hindi mode: line 2 stays IAST (effective script = iast fallback)', async ({
-    page,
-  }) => {
+  test('Hindi mode: line 2 stays IAST (effective script = iast fallback)', async ({ page }) => {
     // Post-2026-06-01: the unified READING_MODES catalogue is lang-keyed,
     // so there is no standalone "Devanāgarī" row anymore — Hindi
     // (scriptId='devanagari', langCode='hi') and Marathi
@@ -140,9 +136,7 @@ test.describe('ISSUE-005 — verse-anatomy script layout contract', () => {
     expect(line2 ?? '').not.toMatch(BENGALI_RANGE);
 
     // The Hindi reading mode persists reader-lang='hi'.
-    const readerLang = await page.evaluate(() =>
-      localStorage.getItem('sohamhamso:reader-lang'),
-    );
+    const readerLang = await page.evaluate(() => localStorage.getItem('sohamhamso:reader-lang'));
     expect(readerLang).toBe('hi');
   });
 });
