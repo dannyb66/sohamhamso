@@ -1,0 +1,81 @@
+---
+import Footer from '../components/Footer.astro';
+import Masthead from '../components/Masthead.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo } from '../lib/seo';
+
+const pageSeo = buildChromeSeo({
+  basePath: '/404',
+  description: "This verse isn't in the corpus. Yet. Try searching, browsing the texts, or telling us what's missing.",
+  lang: 'en',
+  noindex: true,
+  title: 'Not Found — sohamhamso',
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang="en"
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang="EN" />
+
+  <main id="main" class="not-found">
+    <p class="not-found__eyebrow">404</p>
+    <h1 class="not-found__title">This verse isn&apos;t in the corpus. Yet.</h1>
+    <p class="not-found__lede">
+      Try searching, browsing the 5 texts, or telling us what&apos;s missing.
+    </p>
+    <nav class="not-found__actions" aria-label="Next steps">
+      <a href="/search">Search the corpus</a>
+      <a href="/texts">Browse all texts</a>
+      <a href="/about/methodology">Read the methodology</a>
+    </nav>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .not-found {
+    max-width: 60ch;
+    margin: 0 auto;
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-12);
+  }
+  .not-found__eyebrow {
+    margin: 0 0 var(--spacing-3);
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+  .not-found__title {
+    margin: 0 0 var(--spacing-4);
+    font-family: var(--font-iast);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--color-ink);
+  }
+  .not-found__lede {
+    margin: 0 0 var(--spacing-6);
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+  }
+  .not-found__actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    font-family: var(--font-chrome);
+  }
+  .not-found__actions a {
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+</style>
