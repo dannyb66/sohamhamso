@@ -1,7 +1,7 @@
 import type { Text, TextSummary, Verse } from '../db';
 import type { LangCode } from '../reading-modes';
 import { filterIndexableTextLangs, getTextSeoOverrides } from './corpus-overrides';
-import { resolveTextDescription } from './descriptions';
+import { resolveTextDescription, resolveVerseDescription } from './descriptions';
 import { buildHreflangEntries, type HreflangEntry } from './hreflang';
 import { absoluteLocaleUrl } from './i18n-routes';
 import {
@@ -49,12 +49,20 @@ export function buildVerseSeo(input: {
   const corpusSeo = getTextSeoOverrides(input.text.slug, input.lang);
   const locator = `${input.verse.chapter}.${input.verse.verse_num}`;
   const title = `${titlePrefix(input.lang)}${input.text.title_en} ${locator} — sohamhamso`;
+  const resolved = resolveVerseDescription({
+    lang: input.lang,
+    text: input.text,
+    chapter: input.verse.chapter,
+    verseNum: input.verse.verse_num,
+    translation: input.translation,
+  });
   const description = truncate(
-    input.translation ??
+    resolved ??
       `${input.text.title_en} ${locator} — Sanskrit verse anatomy with translation and word-by-word glosses.`,
   );
   const canonical = absoluteLocaleUrl(input.basePath, input.lang);
-  const noindex = input.indexable === false || corpusSeo.noindex || !input.translation;
+  const noindex =
+    input.indexable === false || corpusSeo.noindex || resolved === null || !input.translation;
   const hreflang = noindex ? [] : buildHreflangEntries(input.basePath, allowedLangs);
   const breadcrumbs = buildBreadcrumbList([
     { name: 'Home', item: absoluteLocaleUrl('/', input.lang) },
