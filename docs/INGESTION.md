@@ -68,9 +68,11 @@ Record the exact source location, revision, and accessed-on date in the YAML (`s
 
 ### Step 5 — Author the YAML corpus file
 
-- **Path:** `data/corpus/{slug}.yaml` — one file per text. The ingest discovers files by directory scan and the order is alphabetical by filename.
-- **Canonical reference:** `data/corpus/siva-sutras.yaml` is the template — copy it and edit.
+- **Path:** `data/corpus/{slug}.yaml` — one file per text. The ingest discovers corpus files by directory scan and alphabetical filename order, but skips underscore-prefixed templates and `*.faq.yaml` siblings.
+- **Canonical reference:** `data/corpus/_template.yaml` is the contributor template — copy it and edit.
 - **Two accepted shapes:** flat (top-level fields + `chapters:`) OR wrapped (`text: {...}` + sibling `chapters:`). Either works (see `parseTextYaml` in `pipeline/ingest/ingest.ts`). Phase 1 uses the wrapped form.
+- **Optional SEO-only fields:** top-level `seo` and `faq_file` are validated during ingest, but they are consumed by the SEO builders rather than stored in SQLite.
+- **FAQ siblings:** when `faq_file` is present, it must point at a sibling `./{slug}.faq.yaml` file. Use `data/corpus/_template.faq.yaml` + `data/corpus/faq.schema.json` for authoring.
 - **Required top-level fields:** `id`, `slug`, `title_sa`, `title_en`, `tradition`, `license`. Optional but recommended: `title_iast`, `author`, `school`, `era`, `source`, `source_url`, `source_revision`, `attribution_html`, `parent_text_id` (for sibling commentaries), `manuscript_url`, `description`.
 - **Required per-verse fields:** `verse_num` (or `verse`), `devanagari`. Optional: `book`, `slp1`, `iast`, `meter`, `manuscript_folio_ref`.
 - **Per-verse `word_glosses`** are an inline list. Each gloss entry uses `word` or `word_sa` for the surface form, optional `lemma_sa` / `lemma_iast` / `morph`, and EITHER `gloss_en` / `gloss_text` for the English gloss OR per-language `gloss_xx` keys (`gloss_hi`, `gloss_ta`, `gloss_pa`, `gloss_or`, …) — the ingest accepts a 2-letter ISO code and emits one `word_glosses` row per `(verse, word_idx, gloss_lang)`. **This `gloss_xx` field pattern is correct ONLY in the YAML corpus file**; the per-lang JSON files in `data/glosses/{slug}/{lang}.json` use the canonical `gloss_text` field (see Case 3 below).
@@ -153,7 +155,7 @@ The field name is **`gloss_text`** — exactly that, no lang-suffix, no extra en
 ### Step 11 — Ingest + verify
 
 - **Initial DB setup (one-time):** `bun pipeline/ingest/init-db.ts` — applies `db/schema.sql` to `db/sohamhamso.db`.
-- **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every `data/corpus/*.yaml`, runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. Run options: `--db custom.db` and `--dir data/corpus`. Prints per-text and total row counts on success.
+- **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every corpus text YAML in `data/corpus/` (excluding underscore templates and `*.faq.yaml`), validates optional `seo` / `faq_file` blocks, then runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. Run options: `--db custom.db` and `--dir data/corpus`. Prints per-text and total row counts on success.
 - **Schema (key tables — see `db/schema.sql` for canonical):**
   - `texts(id, slug, title_sa, title_en, title_iast, author, tradition, school, era, source, source_url, source_revision, license, attribution_html, parent_text_id, manuscript_url, description, updated_at)`
   - `verses(text_id, book, chapter, verse_num, devanagari, slp1, iast, meter, manuscript_folio_ref)` — unique on `(text_id, chapter, verse_num)`

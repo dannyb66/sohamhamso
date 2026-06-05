@@ -57,6 +57,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Sanscript from '@indic-transliteration/sanscript';
 import { load as yamlLoad } from 'js-yaml';
+import { parseCorpusDocument, parseCorpusFaqDocument } from '../../src/lib/seo/corpus-schema';
 
 // ---------------------------------------------------------------
 // Script normalisation
@@ -172,6 +173,10 @@ export interface TextYaml {
   chapters: ChapterYaml[];
 }
 
+function isCorpusSourceFile(name: string): boolean {
+  return (name.endsWith('.yaml') || name.endsWith('.yml')) && !/\.faq\.ya?ml$/i.test(name) && !name.startsWith('_');
+}
+
 export interface FileStats {
   file: string;
   text_id: string;
@@ -206,26 +211,22 @@ function nz<T>(v: T | undefined | null): T | null {
  */
 export function parseTextYaml(filePath: string): TextYaml {
   const raw = readFileSync(filePath, 'utf8');
-  const loaded = yamlLoad(raw) as unknown as Record<string, unknown>;
+  const loaded = yamlLoad(raw);
   if (!loaded || typeof loaded !== 'object') {
     throw new Error(`${filePath}: YAML root is not an object`);
   }
-  // Support both flat and wrapped ({ text: {...}, chapters: [...] }) shapes.
-  let docRaw: Record<string, unknown>;
-  if ('text' in loaded && loaded.text && typeof loaded.text === 'object') {
-    docRaw = {
-      ...(loaded.text as Record<string, unknown>),
-      chapters:
-        (loaded as Record<string, unknown>).chapters ??
-        (loaded.text as Record<string, unknown>).chapters,
-    };
-  } else {
-    docRaw = loaded;
+  const document = parseCorpusDocument(loaded);
+  if (document.faq_file) {
+    const faqPath = resolve(dirname(filePath), document.faq_file);
+    if (!existsSync(faqPath)) {
+      throw new Error(`${filePath}: faq_file not found: ${document.faq_file}`);
+    }
+    const faqRaw = yamlLoad(readFileSync(faqPath, 'utf8'));
+    parseCorpusFaqDocument(faqRaw);
   }
+
   // Normalise per-verse field aliases so downstream code can stay strict.
-  const chaptersRaw = Array.isArray(docRaw.chapters)
-    ? (docRaw.chapters as Record<string, unknown>[])
-    : [];
+  const chaptersRaw = document.chapters as Array<Record<string, unknown>>;
   const chapters = chaptersRaw.map((ch) => {
     const versesRaw = Array.isArray(ch.verses) ? (ch.verses as Record<string, unknown>[]) : [];
     const verses = versesRaw.map((v) => {
@@ -324,7 +325,7 @@ export function parseTextYaml(filePath: string): TextYaml {
     });
     return { ...ch, verses } as unknown as ChapterYaml;
   });
-  const doc = { ...docRaw, chapters } as unknown as TextYaml;
+  const doc = { ...document.text, chapters } as unknown as TextYaml;
   if (!doc.id) throw new Error(`${filePath}: missing required field 'id'`);
   if (!doc.slug) throw new Error(`${filePath}: missing required field 'slug'`);
   if (!doc.title_sa) throw new Error(`${filePath}: missing required field 'title_sa'`);
@@ -581,7 +582,7 @@ export interface IngestOptions {
 export function listYamlFiles(dir: string): string[] {
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
-    .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
+    .filter(isCorpusSourceFile)
     .sort()
     .map((f) => join(dir, f));
 }

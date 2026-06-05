@@ -50,6 +50,12 @@ jobs:
       - name: Typecheck
         run: bun typecheck
 
+      - name: SEO build
+        run: bun run seo:build
+
+      - name: SEO validate
+        run: bun run seo:validate
+
       - name: Unit tests
         run: bun run test
 
