@@ -1,0 +1,80 @@
+---
+import { type BreadcrumbItem, buildBreadcrumbAriaProps } from './breadcrumb-utils';
+
+interface Props {
+  items: BreadcrumbItem[];
+  lang?: string;
+}
+const { items, lang = 'en' } = Astro.props;
+const showNav = items?.length > 0;
+---
+{showNav && (
+  <nav aria-label="Breadcrumb" class="breadcrumb-nav" lang={lang}>
+    <ol class="breadcrumb-list">
+      {items.map((item, idx) => {
+        const { asLink, ariaCurrent } = buildBreadcrumbAriaProps(item, idx, items.length);
+        return (
+          <li class="breadcrumb-item">
+            {asLink ? (
+              <a href={item.href}>{item.name}</a>
+            ) : (
+              <span aria-current={ariaCurrent}>{item.name}</span>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </nav>
+)}
+
+<style>
+  .breadcrumb-nav {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+    margin-block: var(--spacing-3);
+  }
+  .breadcrumb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+  }
+  .breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    max-width: 24ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .breadcrumb-item:not(:first-child)::before {
+    content: '›';
+    margin-inline-end: var(--spacing-2);
+    color: var(--color-rule);
+  }
+  .breadcrumb-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--motion-fast) var(--easing-out);
+  }
+  .breadcrumb-item a:hover,
+  .breadcrumb-item a:focus-visible {
+    color: var(--color-ink);
+    text-decoration: underline;
+  }
+  .breadcrumb-item [aria-current='page'] {
+    color: var(--color-ink);
+    font-weight: 500;
+  }
+  @media (max-width: 767px) {
+    .breadcrumb-list:has(.breadcrumb-item:nth-child(n+4)) .breadcrumb-item:not(:nth-last-child(-n+2)) {
+      display: none;
+    }
+    .breadcrumb-list:has(.breadcrumb-item:nth-child(n+4)) .breadcrumb-item:nth-last-child(2)::before {
+      content: '… ›';
+    }
+  }
+</style>
