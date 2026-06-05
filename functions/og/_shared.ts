@@ -1,4 +1,4 @@
-import { CorpusNotConfiguredError, getCorpusDb } from '../../src/lib/corpus-db';
+import { type CorpusDb, CorpusNotConfiguredError, getCorpusDb } from '../../src/lib/corpus-db';
 import { FONT_ASSET_PATHS } from '../../src/lib/font-assets';
 import {
   type LemmaOgPayload,
@@ -62,13 +62,39 @@ async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRou
   const cached = cache ? await cache.match(cacheKey) : undefined;
   if (cached) return cached;
 
+  // AbortController-backed timeout for the DB step. When TURSO env vars are
+  // present we route through a per-request libsql client whose custom `fetch`
+  // wires `controller.signal` into the upstream HTTP request — so an expired
+  // timer ACTUALLY tears down the socket instead of merely racing the response
+  // away (the prior `Promise.race` shape leaked subrequests under slow Turso).
+  const dbController = new AbortController();
+  const dbTimer = setTimeout(() => dbController.abort(), OG_QUERY_TIMEOUT_MS);
+  let payload: T | null;
   try {
-    const db = await withTimeout(getCorpusDb(), OG_QUERY_TIMEOUT_MS, 'Corpus DB init timed out.');
-    const payload = await withTimeout(loader(db, route), OG_QUERY_TIMEOUT_MS, 'OG payload query timed out.');
-    if (!payload) {
-      return shortCacheResponse('OG payload not found.', 404);
+    const db = await getAbortableCorpusDb(dbController.signal);
+    try {
+      payload = await loader(db, route);
+    } catch (error) {
+      if (dbController.signal.aborted) {
+        throw new Error('OG payload query timed out.');
+      }
+      throw error;
     }
+  } catch (error) {
+    clearTimeout(dbTimer);
+    if (error instanceof CorpusNotConfiguredError) {
+      return fallbackResponse(context, route.cacheKeyUrl, error.message);
+    }
+    const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
+    return fallbackResponse(context, route.cacheKeyUrl, message);
+  }
+  clearTimeout(dbTimer);
 
+  if (!payload) {
+    return shortCacheResponse('OG payload not found.', 404);
+  }
+
+  try {
     const png = await withTimeout(renderOgPng(context, payload), OG_RENDER_TIMEOUT_MS, 'OG render timed out.');
     const response = pngResponse(png, OG_SUCCESS_CACHE_CONTROL, {
       'X-OG-Cache-Key': route.cacheKeyUrl,
@@ -537,6 +563,70 @@ async function fetchAssetBytes(context: OgFunctionContext, assetPath: string): P
 function getDefaultCache(): Cache | undefined {
   if (typeof caches === 'undefined') return undefined;
   return (caches as CacheStorage & { default: Cache }).default;
+}
+
+/**
+ * Build a `CorpusDb` whose underlying libsql HTTP requests honor the supplied
+ * `AbortSignal`. When the OG request's 500ms timer fires, the signal aborts,
+ * the libsql custom `fetch` propagates the abort to the upstream Turso socket,
+ * and the in-flight subrequest is actually canceled — preventing the worker
+ * subrequest pileup the audit flagged as a DoS amplification risk.
+ *
+ * Falls back to the shared `getCorpusDb()` singleton (which honors
+ * `__setCorpusDbForTests` and the bun-runtime path) when no Turso env vars
+ * are present. This preserves bun/SSG/test behavior unchanged.
+ */
+async function getAbortableCorpusDb(signal: AbortSignal): Promise<CorpusDb> {
+  const url = typeof process !== 'undefined' ? process.env.TURSO_CORPUS_URL : undefined;
+  const authToken =
+    typeof process !== 'undefined' ? process.env.TURSO_CORPUS_AUTH_TOKEN : undefined;
+  if (!url || !authToken) {
+    return getCorpusDb();
+  }
+
+  // Per-request libsql client. Cold-start cost is acceptable here because the
+  // alternative — sharing a module-scoped client with no per-request abort
+  // wiring — is exactly the DoS amplification path we're fixing.
+  const { createClient } = await import('@libsql/client/web');
+  const client = createClient({
+    url,
+    authToken,
+    // Custom fetch closes over our `signal`. Merges with any libsql-supplied
+    // init (e.g. headers, body) so we don't clobber the driver's request shape.
+    fetch: ((input: RequestInfo | URL, init?: RequestInit) =>
+      fetch(input as RequestInfo, { ...(init ?? {}), signal })) as unknown as (
+      ...args: unknown[]
+    ) => Promise<Response>,
+  });
+
+  function adaptRow<T>(row: Record<string, unknown>): T {
+    if ('embedding' in row && row.embedding != null) {
+      const v = row.embedding;
+      let buf: Buffer;
+      if (Buffer.isBuffer(v)) buf = v;
+      else if (v instanceof ArrayBuffer) buf = Buffer.from(v);
+      else if (v instanceof Uint8Array) buf = Buffer.from(v.buffer, v.byteOffset, v.byteLength);
+      else if (typeof v === 'string') buf = Buffer.from(v, 'base64');
+      else throw new Error(`og corpus-db: unexpected BLOB type: ${typeof v}`);
+      return { ...row, embedding: buf } as T;
+    }
+    return row as T;
+  }
+
+  return {
+    async all<T>(sql: string, params: ReadonlyArray<string | number | null> = []): Promise<T[]> {
+      const res = await client.execute({ sql, args: [...params] });
+      return res.rows.map((r) => adaptRow<T>(r as unknown as Record<string, unknown>));
+    },
+    async get<T>(
+      sql: string,
+      params: ReadonlyArray<string | number | null> = [],
+    ): Promise<T | undefined> {
+      const res = await client.execute({ sql, args: [...params] });
+      if (res.rows.length === 0) return undefined;
+      return adaptRow<T>(res.rows[0] as unknown as Record<string, unknown>);
+    },
+  };
 }
 
 async function withTimeout<T>(promise: Promise<T>, ms: number, message: string): Promise<T> {
