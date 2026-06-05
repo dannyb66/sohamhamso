@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="sohamhamso">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f0df" />
+      <stop offset="100%" stop-color="#ead9b5" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="42" y="42" width="1116" height="546" rx="28" fill="#fffaf0" stroke="#d6c5a1" stroke-width="2" />
+  <text x="84" y="138" fill="#7a6241" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="1.6">THE TANTRIC CANON</text>
+  <text x="84" y="248" fill="#1d1209" font-family="Georgia, 'Times New Roman', serif" font-size="66">sohamhamso</text>
+  <text x="84" y="322" fill="#5f4a2d" font-family="Georgia, 'Times New Roman', serif" font-size="34">Sanskrit texts, translations, and verse-by-verse reading.</text>
+  <line x1="84" y1="420" x2="1116" y2="420" stroke="#d6c5a1" stroke-width="2" />
+  <text x="84" y="486" fill="#2f2617" font-family="'Noto Serif Devanagari', serif" font-size="42">सोऽहम्हंसः</text>
+  <text x="84" y="546" fill="#7a6241" font-family="Georgia, 'Times New Roman', serif" font-size="24">https://sohamhamso.org</text>
+</svg>
