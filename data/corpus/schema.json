@@ -1,0 +1,540 @@
+{
+  "$ref": "#/definitions/SohamhamsoCorpusDocument",
+  "definitions": {
+    "SohamhamsoCorpusDocument": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "number",
+          "const": 1,
+          "default": 1
+        },
+        "faq_file": {
+          "type": "string",
+          "allOf": [
+            {
+              "pattern": "^\\.\\/"
+            },
+            {
+              "pattern": "\\.faq\\.ya?ml$"
+            }
+          ]
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "number",
+              "const": 1,
+              "default": 1
+            },
+            "descriptions": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "hi": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "mr": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "bn": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "as": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "gu": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "pa": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "kn": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "ml": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "or": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "ta": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                "te": {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "keywords": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "hi": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "mr": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "bn": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "as": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "gu": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "pa": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "kn": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "ml": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "or": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "ta": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                },
+                "te": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                  },
+                  "minItems": 1
+                }
+              },
+              "additionalProperties": false,
+              "default": {}
+            },
+            "noindex_langs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "hi",
+                  "mr",
+                  "bn",
+                  "as",
+                  "gu",
+                  "pa",
+                  "kn",
+                  "ml",
+                  "or",
+                  "ta",
+                  "te"
+                ]
+              },
+              "default": []
+            }
+          },
+          "additionalProperties": false
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "slug": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "title_sa": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+            },
+            "title_en": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+            },
+            "title_iast": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "author": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "tradition": {
+              "type": "string",
+              "enum": [
+                "trika",
+                "shakta",
+                "kaula",
+                "shaiva"
+              ]
+            },
+            "school": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "era": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "source": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "source_revision": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "license": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+            },
+            "attribution_html": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "parent_text_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "manuscript_url": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/source_url"
+            },
+            "description": {
+              "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "title_sa",
+            "title_en",
+            "tradition",
+            "license"
+          ],
+          "additionalProperties": false
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "chapter": {
+                "type": "integer",
+                "exclusiveMinimum": 0
+              },
+              "title_sa": {
+                "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+              },
+              "title_iast": {
+                "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+              },
+              "title_en": {
+                "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+              },
+              "verses": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "verse": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0
+                    },
+                    "verse_num": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0
+                    },
+                    "book": {
+                      "anyOf": [
+                        {
+                          "type": "integer",
+                          "exclusiveMinimum": 0
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "devanagari": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en"
+                    },
+                    "slp1": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                    },
+                    "iast": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                    },
+                    "meter": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                    },
+                    "manuscript_folio_ref": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                    },
+                    "word_glosses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "word_idx": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "word": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "word_sa": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "iast": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "lemma_sa": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "lemma_iast": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "gloss": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_text": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "morph": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "gloss_en": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_hi": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_mr": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_bn": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_as": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_gu": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_pa": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_kn": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_ml": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_or": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_ta": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "gloss_te": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "translations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "lang": {
+                            "type": "string",
+                            "enum": [
+                              "en",
+                              "hi",
+                              "mr",
+                              "bn",
+                              "as",
+                              "gu",
+                              "pa",
+                              "kn",
+                              "ml",
+                              "or",
+                              "ta",
+                              "te"
+                            ],
+                            "default": "en"
+                          },
+                          "translator": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "translation_text": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "text": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
+                          },
+                          "source": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "license": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/seo/properties/descriptions/properties/en",
+                            "default": "PD"
+                          },
+                          "status": {
+                            "type": "string",
+                            "enum": [
+                              "draft",
+                              "reviewed",
+                              "published"
+                            ],
+                            "default": "published"
+                          },
+                          "ai_assisted": {
+                            "anyOf": [
+                              {
+                                "anyOf": [
+                                  {
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "type": "number",
+                                    "const": 0
+                                  },
+                                  {
+                                    "type": "number",
+                                    "const": 1
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "model": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "model_version": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "prompt_version": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "judge_score": {
+                            "anyOf": [
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "reviewer": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "reviewed_at": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "devanagari"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "chapter",
+              "verses"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "text",
+        "chapters"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

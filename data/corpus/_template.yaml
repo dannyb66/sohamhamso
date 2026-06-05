@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=./schema.json
+schema_version: 1
+
+# Optional sibling FAQ file for text-page FAQPage JSON-LD.
+# faq_file: ./example-text.faq.yaml
+
+# Optional SEO overrides. Omit the entire block unless you need an override.
+# seo:
+#   schema_version: 1
+#   descriptions:
+#     en: "Short description override for the text page."
+#     hi: "..."
+#   keywords:
+#     en: [example text, kashmir shaivism]
+#     hi: [उदाहरण, कश्मीर शैव]
+#   noindex_langs: [bn, gu]
+
+text:
+  id: example-text
+  slug: example-text
+  title_sa: उदाहरणपाठः
+  title_en: Example Text
+  title_iast: Udaharanapathah
+  author: Example Author
+  tradition: trika
+  school: kashmir-shaivism
+  era: "11th century CE"
+  source: "Muktabodha Indological Research Institute"
+  source_url: "https://example.org/source"
+  source_revision: "2026-06-03"
+  license: CC-BY-SA
+  attribution_html:
+  parent_text_id:
+  manuscript_url:
+  description: |
+    One paragraph describing the text, its lineage, and what this file covers.
+    Keep this factual: the SEO pipeline will derive default descriptions from
+    corpus metadata unless you add an explicit `seo.descriptions` override.
+
+chapters:
+  - chapter: 1
+    title_sa: प्रथमः परिच्छेदः
+    title_iast: Prathamah Paricchedah
+    title_en: Chapter 1
+    verses:
+      - verse: 1 # `verse_num` is also accepted; use one or the other.
+        devanagari: उदाहरणम् ॥१॥
+        slp1: "udAharaRam"
+        iast: "udaharanaṃ"
+        meter: sūtra
+        # book:
+        # manuscript_folio_ref:
+        word_glosses:
+          - word: udaharanaṃ # `word_sa` is also accepted.
+            # word_idx: 0 # Optional; omitted entries are indexed by list order.
+            iast: udaharanaṃ # `lemma_iast` is also accepted.
+            lemma_sa: उदाहरण
+            gloss_en: example
+            # gloss_hi: उदाहरण
+            morph: "nom. sg. n."
+        translations:
+          - lang: en
+            translator: sohamhamso
+            source: "Grounded on the Sanskrit only"
+            license: CC-BY-SA
+            status: published
+            ai_assisted: true
+            text: "This is an example translation."
+            model: claude-opus-4-7
+            prompt_version: v1-sanskrit-grounded

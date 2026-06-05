@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=./faq.schema.json
+schema_version: 1
+
+faqs:
+  - question: "What is this text?"
+    answer: "One-sentence factual answer for the English text page."
+
+  - question:
+      hi: "यह पाठ क्या है?"
+      ta: "இந்த நூல் என்ன?"
+    answer:
+      hi: "हिन्दी उत्तर।"
+      ta: "தமிழ் பதில்."
