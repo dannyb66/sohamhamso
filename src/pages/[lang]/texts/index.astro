@@ -1,0 +1,313 @@
+---
+import Footer from '../../../components/Footer.astro';
+import Masthead from '../../../components/Masthead.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { LangCode } from '../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildChromeSeo,
+  getChromeAvailableLangs,
+  isLiveLocale,
+  localePathFor,
+} from '../../../lib/seo';
+
+type TextRow = {
+  href: string;
+  title_sa: string;
+  title_en: string;
+  tradition: string;
+  author: string | null;
+  verse_count: number;
+  license: string;
+};
+
+const texts: TextRow[] = [
+  {
+    href: '/trika/siva-sutras/1/1',
+    title_sa: 'शिवसूत्राणि',
+    title_en: 'Śiva Sūtras',
+    tradition: 'Trika',
+    author: 'Vasugupta',
+    verse_count: 77,
+    license: 'CC-BY-SA 4.0',
+  },
+  {
+    href: '/trika/spanda-karikas/1/1',
+    title_sa: 'स्पन्दकारिकाः',
+    title_en: 'Spanda Kārikās',
+    tradition: 'Trika',
+    author: 'Vasugupta',
+    verse_count: 52,
+    license: 'CC-BY-SA 4.0',
+  },
+  {
+    href: '/trika/pratyabhijna-hrdayam/1/1',
+    title_sa: 'प्रत्यभिज्ञाहृदयम्',
+    title_en: 'Pratyabhijñā Hṛdayam',
+    tradition: 'Trika',
+    author: 'Kṣemarāja',
+    verse_count: 20,
+    license: 'CC-BY-SA 4.0',
+  },
+  {
+    href: '/trika/vijnana-bhairava-tantra/1/1',
+    title_sa: 'विज्ञानभैरवतन्त्रम्',
+    title_en: 'Vijñāna Bhairava Tantra',
+    tradition: 'Trika / Kaula',
+    author: null,
+    verse_count: 163,
+    license: 'CC-BY-SA 4.0',
+  },
+  {
+    href: '/shakta/karpuradi-stotra/1/1',
+    title_sa: 'कर्पूरादिस्तोत्रम्',
+    title_en: 'Karpūrādi Stotra',
+    tradition: 'Śākta',
+    author: null,
+    verse_count: 22,
+    license: 'Public Domain (Woodroffe 1922)',
+  },
+];
+
+export async function getStaticPaths() {
+  return NON_ENGLISH_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid localized chrome route: ${lang ?? '<missing>'}`);
+}
+
+const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
+const currentLang = lang as LangCode;
+const basePath = '/texts';
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath,
+  description: 'The full corpus of Tantric, Kashmir Shaiva, Trika, and Kaula texts available on sohamhamso.',
+  indexable: isLiveLocale(currentLang),
+  lang: currentLang,
+  title: `${currentLang.toUpperCase()} · All texts — sohamhamso`,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang={currentLang.toUpperCase()} homeHref={localePathFor('/', currentLang)} />
+
+  <main id="main" class="texts-page">
+    <header class="texts-header">
+      <p class="texts-eyebrow" data-i18n="texts.eyebrow">Corpus</p>
+      <h1 class="texts-title" data-i18n="texts.title">All texts</h1>
+      <p class="texts-lede">
+        {sorted.length} <span data-i18n={sorted.length === 1 ? "texts.lede.prefix_text" : "texts.lede.prefix_texts"}>{sorted.length === 1
+          ? "text, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"
+          : "texts, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"}</span> <a href={localePathFor('/about/methodology', currentLang)} data-i18n="texts.lede.methodology">methodology</a><span data-i18n="texts.lede.suffix">.</span>
+      </p>
+    </header>
+
+    <hr class="shirorekha-rule" aria-hidden="true" />
+
+    <div class="texts-table-wrap" role="region" aria-labelledby="texts-title">
+      <table class="texts-table">
+        <thead>
+          <tr>
+            <th scope="col" class="col-title" data-i18n="texts.table.text">Text</th>
+            <th scope="col" class="col-tradition" data-i18n="texts.table.tradition">Tradition</th>
+            <th scope="col" class="col-count" data-i18n="texts.table.verses">Verses</th>
+            <th scope="col" class="col-license" data-i18n="texts.table.license">License</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map((t) => (
+            <tr>
+              <td class="col-title">
+                <a href={localePathFor(t.href, currentLang)} class="text-link">
+                  <span class="text-title-en">{t.title_en}</span>
+                  <span class="text-title-sa" lang="sa" data-sa>{t.title_sa}</span>
+                  {t.author && <span class="text-author">{t.author}</span>}
+                </a>
+              </td>
+              <td class="col-tradition" data-label="Tradition">{t.tradition}</td>
+              <td class="col-count" data-label="Verses">{t.verse_count.toLocaleString()}</td>
+              <td class="col-license" data-label="License">{t.license}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <Footer currentLang={currentLang} />
+</BaseLayout>
+
+<style>
+  .texts-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-7) var(--spacing-4) var(--spacing-9);
+  }
+
+  @media (min-width: 768px) {
+    .texts-page {
+      padding: var(--spacing-9) var(--spacing-6) var(--spacing-10);
+    }
+  }
+
+  .texts-header {
+    max-width: 62ch;
+  }
+  .texts-eyebrow {
+    font-family: var(--font-chrome);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--spacing-3);
+  }
+  .texts-title {
+    font-family: var(--font-iast);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.15;
+    color: var(--color-ink);
+    margin: 0 0 var(--spacing-4);
+  }
+  @media (min-width: 768px) {
+    .texts-title { font-size: 44px; }
+  }
+  .texts-lede {
+    font-family: var(--font-iast);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+    margin: 0;
+  }
+
+  .texts-table-wrap {
+    margin-top: var(--spacing-5);
+  }
+
+  .texts-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-iast);
+    font-size: 15px;
+  }
+
+  .texts-table thead th {
+    text-align: left;
+    font-family: var(--font-chrome);
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-muted);
+    padding: var(--spacing-3) var(--spacing-3);
+    border-bottom: 1px solid var(--color-rule);
+    white-space: nowrap;
+  }
+
+  .texts-table tbody td {
+    padding: var(--spacing-4) var(--spacing-3);
+    border-bottom: 1px solid var(--color-rule);
+    vertical-align: top;
+    color: var(--color-ink);
+    min-width: 0;
+  }
+
+  .texts-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .text-link {
+    display: grid;
+    gap: 2px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .text-link:hover .text-title-en {
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 4px;
+  }
+
+  .text-title-en {
+    font-weight: 600;
+  }
+
+  .text-title-sa,
+  .text-author {
+    color: var(--color-ink-muted);
+    font-size: 14px;
+  }
+
+  @media (max-width: 639px) {
+    .texts-table,
+    .texts-table thead,
+    .texts-table tbody,
+    .texts-table tr,
+    .texts-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .texts-table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .texts-table tbody tr {
+      padding: var(--spacing-4) 0;
+      border-bottom: 1px solid var(--color-rule);
+    }
+
+    .texts-table tbody tr:last-child {
+      border-bottom: 0;
+    }
+
+    .texts-table tbody td {
+      padding: 0;
+      border: 0;
+    }
+
+    .texts-table tbody td.col-title {
+      margin-bottom: var(--spacing-3);
+    }
+
+    .texts-table tbody td:not(.col-title) {
+      display: flex;
+      align-items: baseline;
+      gap: var(--spacing-2);
+      font-size: 14px;
+      color: var(--color-ink-muted);
+      margin-bottom: var(--spacing-2);
+    }
+
+    .texts-table tbody td:not(.col-title)::before {
+      content: attr(data-label);
+      font-family: var(--font-chrome);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-ink-muted);
+      min-width: 5.5rem;
+    }
+  }
+</style>

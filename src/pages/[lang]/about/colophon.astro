@@ -1,0 +1,187 @@
+---
+import Footer from '../../../components/Footer.astro';
+import Masthead from '../../../components/Masthead.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { LangCode } from '../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildChromeSeo,
+  getChromeAvailableLangs,
+  isLiveLocale,
+  localePathFor,
+} from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  return NON_ENGLISH_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid localized chrome route: ${lang ?? '<missing>'}`);
+}
+
+const currentLang = lang as LangCode;
+const basePath = '/about/colophon';
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath,
+  description: 'Colophon for sohamhamso: tools, typography, palette, motif, and contributors behind the reader.',
+  indexable: isLiveLocale(currentLang),
+  lang: currentLang,
+  title: `${currentLang.toUpperCase()} · Colophon — sohamhamso`,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang={currentLang.toUpperCase()} homeHref={localePathFor('/', currentLang)} />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Colophon</h1>
+      <p class="lede">
+        The site is a static reader served from the edge, with two small
+        interactive islands. This page records what built it and what it
+        is set in.
+      </p>
+
+      <h2 id="stack">Stack</h2>
+      <dl>
+        <dt>Astro</dt>
+        <dd><p>Static site generator. Pages are server-rendered to HTML at build; interactive islands hydrate selectively. <a href="https://astro.build/">astro.build</a> · MIT.</p></dd>
+        <dt>Solid</dt>
+        <dd><p>Fine-grained reactive UI for the two islands: <code>ScriptSwitcher</code> and <code>WordSheet</code>. <a href="https://www.solidjs.com/">solidjs.com</a> · MIT.</p></dd>
+        <dt>Bun</dt>
+        <dd><p>Runtime, package manager, and bundler. <a href="https://bun.sh/">bun.sh</a> · MIT.</p></dd>
+        <dt>Turso (libSQL)</dt>
+        <dd><p>Edge-replicated SQLite for the corpus. <a href="https://turso.tech/">turso.tech</a> · MIT (libSQL).</p></dd>
+        <dt>Cloudflare</dt>
+        <dd><p>Pages hosting and edge runtime. <a href="https://www.cloudflare.com/">cloudflare.com</a>.</p></dd>
+      </dl>
+
+      <h2 id="dependencies">Open-source dependencies</h2>
+      <p>
+        The corpus pipeline leans on Vidyut (morphology), DCS (lemma data),
+        Cologne C-SALT (dictionaries), Skrutable (meter), Sanscript.js
+        and Aksharamukha (script conversion). Full attribution and
+        licenses on the <a href={localePathFor('/about/sources', currentLang)}>Sources</a> page.
+      </p>
+
+      <h2 id="typography">Typography</h2>
+      <dl>
+        <dt>Noto Serif Devanagari</dt>
+        <dd>
+          <p>Devanāgarī script body face. Foundry: Google Fonts / Noto project. <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Devanagari">specimen</a> · <a href="https://openfontlicense.org/">SIL Open Font License 1.1</a>.</p>
+        </dd>
+        <dt>Shobhika</dt>
+        <dd>
+          <p>Alternate Devanāgarī face for headings and titling. Foundry: Sanskrit Library / Charles Wikner. <a href="https://github.com/Sandhi-IITBombay/Shobhika">project</a> · SIL Open Font License 1.1.</p>
+        </dd>
+        <dt>Source Serif 4</dt>
+        <dd>
+          <p>Latin / IAST body face with diacritic support across the full transliteration range. Foundry: Adobe / Frank Grießhammer. <a href="https://fonts.google.com/specimen/Source+Serif+4">specimen</a> · SIL Open Font License 1.1.</p>
+        </dd>
+        <dt>Inter</dt>
+        <dd>
+          <p>Chrome and UI face — masthead, footer, language picker. Foundry: Rasmus Andersson. <a href="https://rsms.me/inter/">project</a> · SIL Open Font License 1.1.</p>
+        </dd>
+      </dl>
+
+      <h2 id="palette">Palette — manuscript at dawn</h2>
+      <p>
+        The default surface is a warm cream rather than white — paper, not
+        screen. Ink is a soft near-black with brown undertone. A single
+        accent borrowed from <em>sindūra</em> (vermilion) marks emphasis
+        and active state; nothing else is in colour. The theme tokens
+        (<code>--color-bg</code>, <code>--color-ink</code>,
+        <code>--color-ink-muted</code>, <code>--color-rule</code>,
+        <code>--color-surface</code>, <code>--color-accent</code>) carry
+        sepia, dark, and OLED variants that maintain WCAG AA contrast.
+      </p>
+
+      <h2 id="motif">Motif — the shirorekha</h2>
+      <p>
+        Devanāgarī letters hang from a single overhead line — the
+        <em>shirorekha</em>. We borrow that line as the only decorative
+        element on the site: a hairline rule used as the page-band divider
+        between sections. It does the work of any ornament and has the
+        virtue of belonging to the script the reader is here for.
+      </p>
+
+      <h2 id="contributors">Contributors</h2>
+      <p>
+        Code contributors are tracked via git history; substantial
+        contributors with consent will be listed here. Reviewer credits
+        — for human-accepted translations — will appear on the
+        <a href={localePathFor('/about/sources', currentLang)}>Sources</a> page as the review pipeline
+        opens in V1.x. None yet.
+      </p>
+
+      <p class="provenance">
+        Last revised: 2026-05-31.
+      </p>
+    </article>
+  </main>
+
+  <Footer currentLang={currentLang} />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article p, article ul, article ol, article dl {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article dt {
+    font-family: var(--font-iast);
+    font-weight: 600;
+    margin-top: var(--spacing-4);
+  }
+  article dd {
+    margin: var(--spacing-2) 0 var(--spacing-4) 0;
+    padding-left: var(--spacing-4);
+    border-left: 1px solid var(--color-rule);
+  }
+  article dd p { margin: 0; font-size: 0.9375rem; }
+  article code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--color-rule);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>

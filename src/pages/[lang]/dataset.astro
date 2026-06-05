@@ -1,0 +1,201 @@
+---
+import Footer from '../../components/Footer.astro';
+import Masthead from '../../components/Masthead.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { LangCode } from '../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildChromeSeo,
+  getChromeAvailableLangs,
+  isLiveLocale,
+  localePathFor,
+} from '../../lib/seo';
+
+export async function getStaticPaths() {
+  return NON_ENGLISH_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid localized chrome route: ${lang ?? '<missing>'}`);
+}
+
+const currentLang = lang as LangCode;
+const basePath = '/dataset';
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath,
+  description:
+    'The sohamhamso dataset: CSV, JSON, and TEI bundles of the Tantric Sanskrit canon, released to Zenodo under CC-BY-SA 4.0 with SHA-256 integrity and DOI citation.',
+  indexable: isLiveLocale(currentLang),
+  lang: currentLang,
+  title: `${currentLang.toUpperCase()} · Dataset — sohamhamso`,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang={currentLang.toUpperCase()} homeHref={localePathFor('/', currentLang)} />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Dataset</h1>
+      <p class="lede">
+        Every tagged release of sohamhamso publishes a dataset bundle to
+        Zenodo. It contains the same verses, glosses, and translations the
+        site renders — packaged for analysis, archival, and downstream
+        reuse.
+      </p>
+
+      <h2 id="contents">What's in it</h2>
+      <ul>
+        <li><strong>CSV</strong> — flat tables: <code>texts.csv</code>, <code>verses.csv</code>, <code>word_glosses.csv</code>, <code>translations.csv</code>. Easiest to load into pandas, DuckDB, or a spreadsheet.</li>
+        <li><strong>JSON shards</strong> — one file per text, with nested verse/word/translation structure preserved.</li>
+        <li><strong>TEI-XML</strong> — one document per text, structured to interoperate with SARIT and other Indological TEI corpora.</li>
+        <li><strong>checksums.sha256</strong> — SHA-256 digests of every file in the bundle, signed alongside the release.</li>
+      </ul>
+
+      <h2 id="load">Loading the data</h2>
+      <p>The CSV bundle loads directly with pandas:</p>
+      <pre><code>import pandas as pd
+
+texts        = pd.read_csv("texts.csv")
+verses       = pd.read_csv("verses.csv")
+translations = pd.read_csv("translations.csv")
+
+ss = verses[verses.text_id == texts.loc[texts.slug == "shiva-sutras", "id"].iloc[0]]
+print(ss.head())</code></pre>
+
+      <h2 id="versioning">Versioning</h2>
+      <p>
+        Release tags follow <code>vYYYY.MM.DD</code>. Schema changes are
+        additive within a year; any breaking change is announced in the
+        release notes and the changelog. The
+        <a href="https://github.com/sohamhamso/sohamhamso/blob/main/STATUS-CONTRACT.md">
+          Translation Status Contract
+        </a>
+        documents the stability guarantees for the badge-relevant
+        provenance fields (<code>ai_assisted</code>, <code>status</code>,
+        <code>model</code>, <code>model_version</code>,
+        <code>prompt_version</code>, <code>judge_score</code>).
+      </p>
+
+      <h2 id="integrity">Integrity</h2>
+      <p>
+        Every bundle ships with <code>checksums.sha256</code>. Verify
+        before use:
+      </p>
+      <pre><code>sha256sum --check checksums.sha256</code></pre>
+
+      <h2 id="cite">Citation</h2>
+      <p>
+        The Zenodo deposit issues a versioned DOI per release and a
+        concept DOI that always resolves to the latest. Until the first
+        release lands, the DOI is a placeholder.
+      </p>
+      <pre><code>@dataset{`{`}sohamhamso_vYYYY_MM_DD,
+  author    = {`{`}sohamhamso contributors{`}`},
+  title     = {`{`}sohamhamso: Tantric Sanskrit canon dataset{`}`},
+  year      = {`{`}YYYY{`}`},
+  version   = {`{`}vYYYY.MM.DD{`}`},
+  doi       = {`{`}10.5281/zenodo.PLACEHOLDER{`}`},
+  publisher = {`{`}Zenodo{`}`},
+  url       = {`{`}https://doi.org/10.5281/zenodo.PLACEHOLDER{`}`},
+  license   = {`{`}CC-BY-SA-4.0{`}`}
+{`}`}</code></pre>
+      <p>
+        Additional citation formats — Chicago, MLA, plain — live on
+        <a href={localePathFor('/cite', currentLang)}>/cite</a> and are regenerated on each release.
+      </p>
+
+      <h2 id="license">License</h2>
+      <p>
+        The dataset is released under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>:
+        free to share and adapt, including commercially, provided you
+        credit the source and license derivatives under the same terms.
+        Where an upstream source carries stricter terms (e.g., Muktabodha
+        pending-permission), the most-restrictive applicable license
+        governs that file. Full details on the
+        <a href={localePathFor('/about/license', currentLang)}>License</a> page; per-source attribution
+        on <a href={localePathFor('/about/sources', currentLang)}>Sources</a>.
+      </p>
+
+      <h2 id="links">Where to get it</h2>
+      <ul>
+        <li>Zenodo deposit (concept DOI): <em>TBD on first release</em></li>
+        <li>GitHub release tags: <a href="https://github.com/sohamhamso/sohamhamso/releases">github.com/sohamhamso/sohamhamso/releases</a></li>
+      </ul>
+
+      <p class="provenance">
+        Last revised: 2026-05-31.
+      </p>
+    </article>
+  </main>
+
+  <Footer currentLang={currentLang} />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article p, article ul, article ol, article dl {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article ul { padding-left: 1.25rem; }
+  article li { margin-bottom: var(--spacing-2); }
+  article code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--color-rule);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  article pre {
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    padding: var(--spacing-3);
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  article pre code {
+    background: transparent;
+    padding: 0;
+  }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>

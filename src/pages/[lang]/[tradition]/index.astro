@@ -1,0 +1,186 @@
+---
+import LangSwitcher from '../../../components/seo/LangSwitcher.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { KNOWN_TRADITIONS } from '../../../lib/aliases';
+import type { LangCode } from '../../../lib/reading-modes';
+import { getTexts } from '../../../lib/seo/corpus-bundle';
+import { NON_ENGLISH_LANGS, buildTraditionSeo, liveLocaleSet, summarizeTradition } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const texts = getTexts();
+  const traditions = Array.from(new Set(texts.map((text) => text.tradition)));
+  const paths: Array<{ params: { lang: string; tradition: string } }> = [];
+  for (const lang of NON_ENGLISH_LANGS) {
+    if (KNOWN_TRADITIONS.includes(lang as (typeof KNOWN_TRADITIONS)[number]) || lang === 'en') {
+      throw new Error(`Locale route collision: ${lang}`);
+    }
+    for (const tradition of traditions) {
+      paths.push({ params: { lang, tradition } });
+    }
+  }
+  return paths;
+}
+
+const { lang, tradition } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid locale route: ${lang ?? '<missing>'}`);
+}
+const allTexts = getTexts();
+const textsInTradition = allTexts.filter((text) => text.tradition === tradition);
+if (textsInTradition.length === 0) {
+  return Astro.redirect(`/${lang}/texts`);
+}
+
+const currentLang = lang as LangCode;
+const liveLangs = liveLocaleSet();
+const availableLangs = Array.from(liveLangs).sort() as LangCode[];
+const traditionLabel = tradition!.charAt(0).toUpperCase() + tradition!.slice(1);
+const basePath = `/${tradition}`;
+const summary = summarizeTradition({ texts: allTexts, tradition: tradition! });
+const pageSeo = buildTraditionSeo({
+  availableLangs,
+  basePath,
+  indexable: liveLangs.has(currentLang),
+  lang: currentLang,
+  tradition: tradition!,
+  textCount: summary.textCount,
+  totalVerses: summary.totalVerses,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <header class="chrome">
+    <a href={`/${lang}`} class="chrome__back" aria-label="Home" data-i18n-attr-aria-label="tradition.home_aria">←</a>
+    <div class="chrome__title">{traditionLabel}</div>
+  </header>
+
+  <main id="main" class="reader">
+    <article class="tradition-overview">
+      <h1 class="tradition-title">{traditionLabel}</h1>
+      <p class="tradition-meta">
+        {textsInTradition.length} <span data-i18n={textsInTradition.length === 1 ? "tradition.text_suffix" : "tradition.texts_suffix"}>{textsInTradition.length === 1 ? "text" : "texts"}</span>
+        <span aria-hidden="true"> · </span>
+        {summary.totalVerses} <span data-i18n="tradition.verses_suffix">verses</span>
+      </p>
+
+      <hr class="shirorekha-rule" />
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+      <hr class="shirorekha-rule" />
+
+      <table class="text-table">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="tradition.table.text">Text</th>
+            <th scope="col" data-i18n="tradition.table.author">Author</th>
+            <th scope="col" data-i18n="tradition.table.verses">Verses</th>
+            <th scope="col" data-i18n="tradition.table.read">Read</th>
+          </tr>
+        </thead>
+        <tbody>
+          {textsInTradition.map((text) => (
+            <tr>
+              <td>
+                <span class="text-title-en">{text.title_en}</span>
+                <span class="text-title-sa" lang="sa">{text.title_sa}</span>
+              </td>
+              <td>{text.author ?? "—"}</td>
+              <td>{text.verse_count ?? 0}</td>
+              <td>
+                <a href={`/${lang}/${tradition}/${text.slug}`} data-i18n="tradition.open">
+                  Open →
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+  .tradition-overview {
+    padding-block: var(--spacing-6);
+  }
+  .tradition-title {
+    font-family: var(--font-iast);
+    font-size: var(--text-xl);
+    margin: 0;
+    color: var(--color-ink);
+    text-transform: capitalize;
+  }
+  .tradition-meta {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    margin: var(--spacing-2) 0 0 0;
+  }
+  .text-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .text-table th,
+  .text-table td {
+    text-align: left;
+    padding: var(--spacing-3) var(--spacing-2);
+    border-block-end: 1px solid var(--color-rule);
+    vertical-align: top;
+  }
+  .text-table th {
+    font-weight: 500;
+    color: var(--color-ink-muted);
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+  }
+  .text-title-en {
+    display: block;
+    font-family: var(--font-iast);
+    color: var(--color-ink);
+  }
+  .text-title-sa {
+    display: block;
+    font-family: var(--font-sa-display);
+    color: var(--color-ink-muted);
+    margin-top: 2px;
+  }
+</style>

@@ -1,0 +1,265 @@
+---
+import KaulaContentAdvisory from '../../../../components/KaulaContentAdvisory.astro';
+import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { KNOWN_TRADITIONS, resolveAlias } from '../../../../lib/aliases';
+import { getText, listChapters } from '../../../../lib/db';
+import type { LangCode } from '../../../../lib/reading-modes';
+import { getTexts } from '../../../../lib/seo/corpus-bundle';
+import {
+  NON_ENGLISH_LANGS,
+  buildTextSeo,
+  filterIndexableTextLangs,
+  liveLocaleSet,
+} from '../../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths: Array<{ params: { lang: string; tradition: string; text: string } }> = [];
+  for (const lang of NON_ENGLISH_LANGS) {
+    if (KNOWN_TRADITIONS.includes(lang as (typeof KNOWN_TRADITIONS)[number]) || lang === 'en') {
+      throw new Error(`Locale route collision: ${lang}`);
+    }
+    for (const text of getTexts()) {
+      paths.push({
+        params: { lang, tradition: text.tradition, text: text.slug },
+      });
+    }
+  }
+  return paths;
+}
+
+const { lang, tradition, text } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid locale route: ${lang ?? '<missing>'}`);
+}
+const aliasCheck = resolveAlias(tradition!, text!);
+if (aliasCheck && !aliasCheck.canonical) {
+  return Astro.redirect(`/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+}
+
+const currentLang = lang as LangCode;
+const textRow = getText(text!);
+if (!textRow) throw new Error(`Text not found: ${text}`);
+const chapters = listChapters(text!);
+const totalVerses = chapters.reduce((sum, chapter) => sum + chapter.verse_count, 0);
+const liveLangs = liveLocaleSet();
+const availableLangs = filterIndexableTextLangs(
+  textRow.slug,
+  Array.from(liveLangs).sort() as LangCode[],
+);
+const basePath = `/${tradition}/${text}`;
+const pageSeo = buildTextSeo({
+  availableLangs,
+  basePath,
+  indexable: liveLangs.has(currentLang),
+  lang: currentLang,
+  text: textRow,
+  totalVerses,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  keywords={pageSeo.keywords}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <header class="chrome">
+    <a href={`/${lang}/${tradition}`} class="chrome__back" aria-label="Home" data-i18n-attr-aria-label="text_overview.home_aria">←</a>
+    <div class="chrome__title">
+      <span>{textRow.title_en}</span>
+    </div>
+  </header>
+
+  <main id="main" class="reader">
+    <article class="text-overview">
+      <KaulaContentAdvisory school={textRow.school} />
+      <h1 class="text-title-en">{textRow.title_en}</h1>
+      <p class="text-title-sa" lang="sa">{textRow.title_sa}</p>
+      {textRow.title_iast ? <p class="text-title-iast">{textRow.title_iast}</p> : null}
+      {textRow.author ? (
+        <p class="text-author"><span data-i18n="text_overview.by_prefix">by</span> {textRow.author}</p>
+      ) : null}
+
+      <hr class="shirorekha-rule" />
+
+      {textRow.description ? <p class="text-description">{textRow.description}</p> : null}
+
+      <div class="text-meta">
+        <span>{totalVerses} <span data-i18n="text_overview.verses_suffix">verses</span></span>
+        <span>·</span>
+        <span>{chapters.length} <span data-i18n={chapters.length === 1 ? "text_overview.chapter_suffix" : "text_overview.chapters_suffix"}>{chapters.length === 1 ? "chapter" : "chapters"}</span></span>
+        <span>·</span>
+        <span>{textRow.tradition}</span>
+        {textRow.school ? (
+          <>
+            <span>·</span>
+            <span>{textRow.school}</span>
+          </>
+        ) : null}
+      </div>
+
+      <hr class="shirorekha-rule" />
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+      <hr class="shirorekha-rule" />
+
+      <div class="chapter-table">
+        <div class="chapter-row chapter-row--head" role="presentation">
+          <span class="chapter-row__col-num" data-i18n="text_overview.table.chapter">Chapter</span>
+          <span class="chapter-row__col-count" data-i18n="text_overview.table.verses">Verses</span>
+          <span class="chapter-row__col-cta" data-i18n="text_overview.table.read">Read</span>
+        </div>
+        <ul class="chapter-list">
+          {chapters.map((chapter) => (
+            <li>
+              <a
+                href={`/${lang}/${tradition}/${text}/${chapter.chapter}/1`}
+                class="chapter-row chapter-row__link"
+                aria-label={`Read chapter ${chapter.chapter} — ${chapter.verse_count} verses`}
+              >
+                <span class="chapter-row__col-num">{chapter.chapter}</span>
+                <span class="chapter-row__col-count">{chapter.verse_count}</span>
+                <span class="chapter-row__col-cta">
+                  <span data-i18n="text_overview.read_chapter_prefix">Read chapter</span> {chapter.chapter} →
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {textRow.source || textRow.manuscript_url ? (
+        <footer class="text-attribution">
+          <p>
+            {textRow.source ? <span><span data-i18n="text_overview.source_prefix">Source:</span> {textRow.source}</span> : null}
+            {textRow.source && textRow.license ? " · " : null}
+            {textRow.license ? <span><span data-i18n="text_overview.license_prefix">License:</span> {textRow.license}</span> : null}
+          </p>
+          {textRow.manuscript_url ? (
+            <p>
+              <a href={textRow.manuscript_url} target="_blank" rel="noopener noreferrer">
+                📜 <span data-i18n="text_overview.view_manuscript">View manuscript ↗</span>
+              </a>
+            </p>
+          ) : null}
+        </footer>
+      ) : null}
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+  .text-overview {
+    padding-block: var(--spacing-6);
+  }
+  .text-title-en {
+    font-family: var(--font-iast);
+    font-size: var(--text-xl);
+    margin: 0;
+    color: var(--color-ink);
+  }
+  .text-title-sa {
+    font-family: var(--font-sa-display);
+    font-size: var(--text-lg);
+    margin: var(--spacing-2) 0 0 0;
+    color: var(--color-ink);
+  }
+  .text-title-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    color: var(--color-ink-muted);
+    margin: 0;
+  }
+  .text-author {
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    margin: var(--spacing-2) 0 0 0;
+  }
+  .text-description {
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+  .text-meta {
+    display: flex;
+    gap: var(--spacing-2);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    flex-wrap: wrap;
+  }
+  .chapter-table {
+    width: 100%;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .chapter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .chapter-row {
+    display: grid;
+    grid-template-columns: 72px 72px 1fr;
+    gap: var(--spacing-3);
+    align-items: center;
+    padding: var(--spacing-3) 0;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .chapter-row--head {
+    color: var(--color-ink-muted);
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .chapter-row__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .chapter-row__col-cta {
+    justify-self: end;
+  }
+  .text-attribution {
+    margin-top: var(--spacing-6);
+    color: var(--color-ink-muted);
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+  }
+</style>

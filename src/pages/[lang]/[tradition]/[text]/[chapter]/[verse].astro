@@ -1,0 +1,402 @@
+---
+import AIAssistedBadge from '../../../../../components/AIAssistedBadge.astro';
+import ParallelChip from '../../../../../components/ParallelChip.astro';
+import ScriptSwitcher from '../../../../../components/ScriptSwitcher.solid';
+import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
+import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
+import TranslationDrawer from '../../../../../components/TranslationDrawer.solid';
+import VerseAnatomy from '../../../../../components/VerseAnatomy.astro';
+import WordSheet from '../../../../../components/WordSheet.solid';
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import { KNOWN_TRADITIONS, resolveAlias } from '../../../../../lib/aliases';
+import { getDb, getVerseAllLanguages, getVerseTranslations } from '../../../../../lib/db';
+import type { LangCode } from '../../../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildDefinedTermJsonLd,
+  buildVerseSeo,
+  filterIndexableTextLangs,
+  getCanonicalVerseRoutes,
+  getLemmaSummaryByIast,
+  getVerseAvailability,
+  getVersePageCached,
+  liveLocaleSet,
+  localePathFor,
+} from '../../../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths: Array<{
+    params: { chapter: string; lang: string; text: string; tradition: string; verse: string };
+  }> = [];
+
+  for (const lang of NON_ENGLISH_LANGS) {
+    if (KNOWN_TRADITIONS.includes(lang as (typeof KNOWN_TRADITIONS)[number]) || lang === 'en') {
+      throw new Error(`Locale route collision: ${lang}`);
+    }
+    for (const route of getCanonicalVerseRoutes()) {
+      paths.push({
+        params: {
+          lang,
+          tradition: route.tradition,
+          text: route.text,
+          chapter: String(route.chapter),
+          verse: String(route.verse),
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { lang, tradition, text, chapter, verse } = Astro.params;
+const chapterNum = Number(chapter);
+const verseNum = Number(verse);
+
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid locale route: ${lang ?? '<missing>'}`);
+}
+
+const aliasCheck = resolveAlias(tradition!, text!);
+if (aliasCheck && !aliasCheck.canonical) {
+  return Astro.redirect(
+    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}/${verseNum}`,
+    301,
+  );
+}
+
+const currentLang = lang as LangCode;
+const data = getVersePageCached(text!, chapterNum, verseNum, currentLang);
+if (!data) {
+  throw new Error(`Verse not found: ${lang}/${tradition}/${text}/${chapterNum}/${verseNum}`);
+}
+
+const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } = data;
+const lemmaIasts = Array.from(
+  new Set(wordGlosses.map((g) => g.lemma_iast).filter((s): s is string => !!s)),
+);
+const occurrenceCounts = new Map<string, number>();
+if (lemmaIasts.length > 0) {
+  const db = getDb();
+  const placeholders = lemmaIasts.map(() => '?').join(',');
+  const rows = db
+    .query<{ lemma_iast: string; n: number }, (string | number)[]>(`
+      SELECT g.lemma_iast AS lemma_iast, COUNT(DISTINCT g.verse_id) AS n
+      FROM word_glosses g
+      JOIN verses v ON v.id = g.verse_id
+      WHERE v.text_id = ?
+        AND g.verse_id != ?
+        AND g.lemma_iast IN (${placeholders})
+      GROUP BY g.lemma_iast
+    `)
+    .all(textRow.id, verseRow.id, ...lemmaIasts);
+  for (const row of rows) occurrenceCounts.set(row.lemma_iast, row.n);
+}
+
+const glossesPayload = {
+  [String(verseRow.id)]: wordGlosses.map((g) => ({
+    lemma_href:
+      g.lemma_iast && (() => {
+        const summary = getLemmaSummaryByIast(g.lemma_iast);
+        return summary && summary.occurrenceCount >= 3
+          ? localePathFor(`/lemma/${summary.slug}`, currentLang)
+          : null;
+      })(),
+    word_idx: g.word_idx,
+    word_sa: g.word_sa,
+    lemma_sa: g.lemma_sa,
+    lemma_iast: g.lemma_iast,
+    gloss_text: g.gloss_text,
+    morph: g.morph,
+    occurrence_count: g.lemma_iast ? (occurrenceCounts.get(g.lemma_iast) ?? 0) : 0,
+    text_slug: textRow.slug,
+  })),
+};
+
+const allTranslations = getVerseTranslations(verseRow.id);
+const translationsPayload = allTranslations.map((t) => ({
+  lang: t.lang,
+  translator: t.translator,
+  translation_text: t.translation_text,
+  judge_score: t.judge_score,
+  ai_assisted: t.ai_assisted,
+  status: t.status,
+  model: t.model,
+}));
+
+const allLang = getVerseAllLanguages(text!, chapterNum, verseNum);
+const basePath = `/${tradition}/${text}/${chapterNum}/${verseNum}`;
+const liveLangs = liveLocaleSet();
+const availableLangs = filterIndexableTextLangs(
+  textRow.slug,
+  getVerseAvailability(text!, chapterNum, verseNum).filter((item) => liveLangs.has(item)),
+);
+const pageSeo = buildVerseSeo({
+  availableLangs,
+  basePath,
+  indexable: liveLangs.has(currentLang),
+  lang: currentLang,
+  text: textRow,
+  translation: translations[0]?.translation_text ?? null,
+  verse: verseRow,
+});
+const lowFrequencyTermJsonLd = Array.from(
+  wordGlosses.reduce((terms, gloss) => {
+    if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
+    const summary = getLemmaSummaryByIast(gloss.lemma_iast);
+    if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
+    terms.set(
+      gloss.lemma_iast,
+      buildDefinedTermJsonLd({
+        alternateName: gloss.lemma_sa,
+        description: gloss.gloss_text,
+        inLanguage: currentLang,
+        name: gloss.lemma_iast,
+        termCode: gloss.lemma_iast,
+        url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
+      }),
+    );
+    return terms;
+  }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>()).values(),
+);
+const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
+const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
+const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
+
+const breadcrumbItems = [
+  { name: 'Home', href: localePathFor('/', currentLang) },
+  { name: tradition!, href: localePathFor(`/${tradition}`, currentLang) },
+  { name: textRow.title_en, href: localePathFor(`/${tradition}/${textRow.slug}`, currentLang) },
+  { name: `${verseRow.chapter}.${verseRow.verse_num}` },
+];
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageJsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  ogImageUrl={pageSeo.ogImageUrl}
+  title={pageSeo.title}
+>
+  <header class="chrome">
+    <a
+      href={`/${lang}/${tradition}/${text}`}
+      class="chrome__back"
+      aria-label="Back to text"
+      data-i18n-attr-aria-label="verse_page.back_aria"
+    >
+      ←
+    </a>
+    <div class="chrome__title">
+      <span class="chrome__text">{textRow.title_en}</span>
+      <span class="chrome__verse">· {chapterNum}.{verseNum}</span>
+    </div>
+    <div class="chrome__tools">
+      <ScriptSwitcher client:idle />
+      <button
+        type="button"
+        class="chrome__settings"
+        aria-label="Reading settings"
+        data-i18n-attr-aria-label="verse_page.settings_aria"
+        data-settings-trigger
+        onclick="document.dispatchEvent(new CustomEvent('sohamhamso:open-settings'))"
+      >
+        Aa
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="reader">
+    <Breadcrumbs items={breadcrumbItems} lang={currentLang} />
+    <h1 class="visually-hidden">{textRow.title_en} {chapterNum}.{verseNum}</h1>
+
+    <VerseAnatomy verse={verseRow} wordGlosses={wordGlosses} translations={translations}>
+      <Fragment slot="chips">
+        <ParallelChip parallels={parallels} />
+      </Fragment>
+
+      <Fragment slot="footer">
+        <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+        {translations.map((t) => (
+          <AIAssistedBadge
+            aiAssisted={t.ai_assisted}
+            status={t.status}
+            translator={t.translator}
+            model={t.model}
+            modelVersion={t.model_version}
+            promptVersion={t.prompt_version}
+            reviewerName={t.reviewer}
+            generatedAt={t.reviewed_at}
+          />
+        ))}
+        {textRow.manuscript_url ? (
+          <a
+            href={textRow.manuscript_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="manuscript-link"
+          >
+            📜 <span data-i18n="verse.manuscript_prefix">View manuscript at</span> {textRow.source ?? "source"}
+            {verseRow.manuscript_folio_ref ? (
+              <span> · <span data-i18n="verse.manuscript_folio_prefix">folio</span> {verseRow.manuscript_folio_ref}</span>
+            ) : null}
+          </a>
+        ) : null}
+      </Fragment>
+    </VerseAnatomy>
+
+    <nav class="verse-nav" aria-label="Verse navigation" data-i18n-attr-aria-label="verse_page.nav_aria">
+      {prev ? (
+        <a href={`/${lang}/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`} class="verse-nav__prev">
+          ← {prev.chapter}.{prev.verse_num}
+        </a>
+      ) : (
+        <span class="verse-nav__spacer" />
+      )}
+      {next ? (
+        <a href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`} class="verse-nav__next">
+          {next.chapter}.{next.verse_num} →
+        </a>
+      ) : (
+        <span class="verse-nav__spacer" />
+      )}
+    </nav>
+
+    {isShortVerse ? (
+      <aside class="verse-continue" aria-label="Continue reading">
+        <a class="verse-continue__link" href={`/${lang}/${tradition}/${text}`}>
+          <span data-i18n="verse.continue.about_text">About this text</span> →
+        </a>
+        {next ? (
+          <a class="verse-continue__link" href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`}>
+            <span data-i18n="verse.continue.next_verse">Next verse</span> →
+          </a>
+        ) : null}
+      </aside>
+    ) : null}
+  </main>
+
+  <WordSheet client:idle />
+  <TranslationDrawer client:idle />
+
+  <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
+  <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+    backdrop-filter: none;
+  }
+  .chrome__back {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .chrome__title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+  }
+  .chrome__text {
+    font-weight: 500;
+  }
+  .chrome__verse {
+    color: var(--color-ink-muted);
+    margin-left: 4px;
+  }
+  .chrome__tools {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+  .chrome__settings {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--color-rule);
+    border-radius: 999px;
+    padding: 8px 12px;
+    min-height: 44px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+  .chrome__settings:hover {
+    border-color: var(--color-ink-muted);
+  }
+  .manuscript-link {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+  }
+  .verse-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--spacing-6);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .verse-nav__prev,
+  .verse-nav__next {
+    color: var(--color-ink);
+    text-decoration: none;
+    padding: var(--spacing-3) var(--spacing-4);
+    border: 1px solid var(--color-rule);
+    border-radius: 8px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .verse-nav__prev:hover,
+  .verse-nav__next:hover {
+    border-color: var(--color-ink-muted);
+  }
+  .verse-nav__spacer {
+    width: 1px;
+  }
+  .verse-continue {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding-block: var(--spacing-6);
+    border-block-start: 1px solid var(--color-rule);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .verse-continue__link {
+    color: var(--color-ink-muted);
+    text-decoration: none;
+  }
+  .verse-continue__link:hover,
+  .verse-continue__link:focus-visible {
+    color: var(--color-ink);
+  }
+</style>

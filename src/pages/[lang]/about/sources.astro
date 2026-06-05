@@ -1,0 +1,247 @@
+---
+import Footer from '../../../components/Footer.astro';
+import Masthead from '../../../components/Masthead.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { LangCode } from '../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildChromeSeo,
+  getChromeAvailableLangs,
+  isLiveLocale,
+  localePathFor,
+} from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  return NON_ENGLISH_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid localized chrome route: ${lang ?? '<missing>'}`);
+}
+
+const currentLang = lang as LangCode;
+const basePath = '/about/sources';
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath,
+  description:
+    'Per-source attribution for sohamhamso: Sanskrit primary texts, public-domain English anchors, computational resources, and translation models.',
+  indexable: isLiveLocale(currentLang),
+  lang: currentLang,
+  title: `${currentLang.toUpperCase()} · Sources — sohamhamso`,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang={currentLang.toUpperCase()} homeHref={localePathFor('/', currentLang)} />
+
+  <main id="main" class="reader">
+    <article>
+      <h1>Sources</h1>
+      <p class="lede">
+        Every text, dictionary, parser, and model the project depends on,
+        with its license and the role it plays. The canonical, machine-
+        parseable copy is
+        <a href="https://github.com/sohamhamso/sohamhamso/blob/main/ATTRIBUTION.md">
+          ATTRIBUTION.md
+        </a>
+        in the repository; this page mirrors it for readers.
+      </p>
+
+      <h2 id="sanskrit-primary">Sanskrit primary sources</h2>
+
+      <dl>
+        <dt>GRETIL — Göttingen Register of Electronic Texts in Indian Languages</dt>
+        <dd>
+          <p><a href="https://gretil.sub.uni-goettingen.de/">gretil.sub.uni-goettingen.de</a></p>
+          <p><strong>License:</strong> per-file, mostly CC-BY 4.0; some files carry stricter terms parsed from the header at ingestion.</p>
+          <p><strong>Role:</strong> primary source for the bulk of the canon. Per-text source revision is recorded in <code>texts.source_revision</code>.</p>
+        </dd>
+
+        <dt>Muktabodha Indological Research Institute (MIRI)</dt>
+        <dd>
+          <p><a href="https://muktabodha.org/">muktabodha.org</a> · library: <a href="https://muktalib7.com/">muktalib7.com</a></p>
+          <p><strong>License:</strong> written redistribution permission <em>pending</em>. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until permission lands. For reader display we operate under Muktabodha's scholarly-use terms.</p>
+          <p><strong>Role:</strong> primary source for Kashmir Shaivism / Trika / Kaula texts not covered elsewhere.</p>
+        </dd>
+
+        <dt>sanskritdocuments.org</dt>
+        <dd>
+          <p><a href="https://sanskritdocuments.org/">sanskritdocuments.org</a></p>
+          <p><strong>License:</strong> non-commercial scholarly use; redistribution requires per-text permission.</p>
+          <p><strong>Role:</strong> fallback source for texts not covered by GRETIL or Muktabodha. Per-text volunteer transcriber credits preserved in <code>texts.attribution_html</code>.</p>
+        </dd>
+
+        <dt>Wikisource (Sanskrit)</dt>
+        <dd>
+          <p><a href="https://sa.wikisource.org/">sa.wikisource.org</a></p>
+          <p><strong>License:</strong> CC-BY-SA 4.0 + GFDL.</p>
+          <p><strong>Role:</strong> license-clean fallback source.</p>
+        </dd>
+
+        <dt>SARIT — South Asian Resources for Indic Texts</dt>
+        <dd>
+          <p><a href="https://sarit.indology.info/">sarit.indology.info</a></p>
+          <p><strong>License:</strong> CC-BY-SA per text, with TEI-XML markup preserved upstream.</p>
+          <p><strong>Role:</strong> reference TEI structure and selected texts.</p>
+        </dd>
+      </dl>
+
+      <h2 id="english-anchors">Public-domain English translations</h2>
+      <p>
+        These are passed to the LLM-as-judge as reference signals only, not as ground
+        truth. See <a href={localePathFor('/about/methodology', currentLang) + '#english-anchors'}>methodology</a>.
+        All translators below either died before 1956 or their cited works are
+        unambiguously pre-1930 US-public-domain as of 2026.
+      </p>
+
+      <dl>
+        <dt>John Woodroffe (Arthur Avalon)</dt>
+        <dd>
+          <p><em>The Great Liberation</em> (Mahānirvāṇa Tantra, 1913); <em>Principles of Tantra</em> (1914–1916); <em>Śakti and Śākta</em> (1918); <em>The Garland of Letters</em> (1922); <em>Karpūrādi Stotra</em>.</p>
+        </dd>
+        <dt>Ralph T. H. Griffith</dt>
+        <dd>
+          <p><em>Hymns of the Rigveda</em> (1889–1896); <em>White Yajurveda</em> (1899); <em>Sāmaveda</em> (1893); <em>Atharvaveda</em> (1895–1896).</p>
+        </dd>
+        <dt>George Thibaut</dt>
+        <dd>
+          <p><em>Brahma Sūtra with Śaṅkara Bhāṣya</em> (Sacred Books of the East 34, 38; 1890–1896).</p>
+        </dd>
+        <dt>Max Müller</dt>
+        <dd>
+          <p><em>Principal Upaniṣads</em> (Sacred Books of the East 1, 15; 1879, 1884).</p>
+        </dd>
+        <dt>W. D. Whitney</dt>
+        <dd>
+          <p><em>Atharvaveda</em> (1905).</p>
+        </dd>
+        <dt>J. H. Woods</dt>
+        <dd>
+          <p><em>Yoga Sūtras of Patañjali</em> (Harvard Oriental Series 17, 1914).</p>
+        </dd>
+      </dl>
+
+      <h2 id="computational">Computational resources</h2>
+
+      <dl>
+        <dt>Vidyut</dt>
+        <dd>
+          <p><a href="https://github.com/ambuda-org/vidyut">github.com/ambuda-org/vidyut</a> · Rust toolkit from the Ambuda project.</p>
+          <p><strong>License:</strong> MIT / Apache-2.0.</p>
+          <p><strong>Role:</strong> Sanskrit morphological segmentation — lemmas, case, number, gender, sandhi splits.</p>
+        </dd>
+
+        <dt>DCS — Digital Corpus of Sanskrit</dt>
+        <dd>
+          <p><a href="http://www.sanskrit-linguistics.org/dcs/">sanskrit-linguistics.org/dcs</a></p>
+          <p><strong>License:</strong> CC-BY 3.0. Cite Hellwig, Oliver (2010–present).</p>
+          <p><strong>Role:</strong> lemmatised, POS-tagged corpus used where coverage exists.</p>
+        </dd>
+
+        <dt>Cologne C-SALT Sanskrit Dictionaries</dt>
+        <dd>
+          <p><a href="https://cceh.github.io/c-salt_sanskrit_data/">cceh.github.io/c-salt_sanskrit_data</a></p>
+          <p><strong>License:</strong> CC-BY-SA.</p>
+          <p><strong>Role:</strong> Monier-Williams, Apte, and 20+ other Sanskrit dictionaries via REST and GraphQL. Provides per-lemma glosses fed to the translator and the judge.</p>
+        </dd>
+
+        <dt>Skrutable</dt>
+        <dd>
+          <p><a href="https://github.com/tylergneill/skrutable">github.com/tylergneill/skrutable</a></p>
+          <p><strong>License:</strong> MIT.</p>
+          <p><strong>Role:</strong> meter identification per verse (anuṣṭubh, triṣṭubh, etc.) feeding the meter tag in <code>verses.meter</code>.</p>
+        </dd>
+
+        <dt>Sanscript.js</dt>
+        <dd>
+          <p><a href="https://github.com/indic-transliteration/sanscript.js">github.com/indic-transliteration/sanscript.js</a></p>
+          <p><strong>License:</strong> MIT.</p>
+          <p><strong>Role:</strong> client-side script conversion between Devanāgarī, IAST, SLP1, and other Indic scripts.</p>
+        </dd>
+
+        <dt>Aksharamukha</dt>
+        <dd>
+          <p><a href="https://www.aksharamukha.com/">aksharamukha.com</a></p>
+          <p><strong>License:</strong> MIT / AGPL per component.</p>
+          <p><strong>Role:</strong> server-side script conversion (~120 scripts) for build-time transliterations.</p>
+        </dd>
+      </dl>
+
+      <h2 id="models">Translation models</h2>
+
+      <dl>
+        <dt>Anthropic Claude Sonnet</dt>
+        <dd>
+          <p>Used for translation generation. The exact model and version is recorded per row in <code>translations.model</code> and <code>translations.model_version</code>; the prompt hash is recorded in <code>translations.prompt_version</code>.</p>
+        </dd>
+        <dt>OpenAI text-embedding-3-large</dt>
+        <dd>
+          <p>Used to embed verses and glosses for the semantic-search index (search workstream, V1.x).</p>
+        </dd>
+      </dl>
+
+      <p class="provenance">
+        Last revised: 2026-05-31 ·
+        Source: <a href="https://github.com/sohamhamso/sohamhamso/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.
+      </p>
+    </article>
+  </main>
+
+  <Footer currentLang={currentLang} />
+</BaseLayout>
+
+<style>
+  article h1 {
+    font-family: var(--font-iast);
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-2);
+  }
+  article h2 {
+    font-family: var(--font-iast);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: var(--spacing-7) 0 var(--spacing-3);
+  }
+  article p, article ul, article ol, article dl {
+    font-family: var(--font-iast);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 var(--spacing-4);
+    color: var(--color-ink);
+  }
+  article dt {
+    font-family: var(--font-iast);
+    font-weight: 600;
+    margin-top: var(--spacing-4);
+  }
+  article dd {
+    margin: var(--spacing-2) 0 var(--spacing-4) 0;
+    padding-left: var(--spacing-4);
+    border-left: 1px solid var(--color-rule);
+  }
+  article dd p { margin: 0 0 var(--spacing-2); font-size: 0.9375rem; }
+  .lede {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  .provenance {
+    margin-top: var(--spacing-7);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-rule);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+  }
+</style>
