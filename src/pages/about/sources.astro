@@ -8,11 +8,27 @@ import Masthead from '../../components/Masthead.astro';
  * entry surfaces name, URL, license, and the role it plays in the project.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/about/sources',
+  description:
+    'Per-source attribution for sohamhamso: Sanskrit primary texts, public-domain English anchors, computational resources, and translation models.',
+  lang: currentLang,
+  title: 'Sources — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Sources — sohamhamso"
-  description="Per-source attribution for sohamhamso: Sanskrit primary texts, public-domain English anchors, computational resources, and translation models."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

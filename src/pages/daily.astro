@@ -13,13 +13,30 @@ import SubscribeBand from '../components/SubscribeBand.astro';
  * email send via Resend.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
 
+const currentLang = 'en' as const;
 const pageTitle = 'Daily verse — sohamhamso';
 const pageDescription =
   'A verse arrives in your inbox each morning at sunrise. English only at launch; more languages soon.';
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/daily',
+  description: pageDescription,
+  lang: currentLang,
+  title: pageTitle,
+});
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
   <Masthead />
 
   <main id="main" class="daily">

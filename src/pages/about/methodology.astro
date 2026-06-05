@@ -9,11 +9,27 @@ import Masthead from '../../components/Masthead.astro';
  * (CC-BY-SA 4.0 + per-source terms).
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/about/methodology',
+  description:
+    'How sohamhamso translates the Tantric Sanskrit canon: Sanskrit-grounded pipeline, LLM-as-judge rubric, AI-assist badges, editorial and reviewer policy.',
+  lang: currentLang,
+  title: 'Methodology — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Methodology — sohamhamso"
-  description="How sohamhamso translates the Tantric Sanskrit canon: Sanskrit-grounded pipeline, LLM-as-judge rubric, AI-assist badges, editorial and reviewer policy."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

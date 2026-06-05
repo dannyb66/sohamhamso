@@ -9,11 +9,26 @@ import Masthead from '../../components/Masthead.astro';
  * it earns its place by carrying the dividing line on every page.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/about/colophon',
+  description: 'Colophon for sohamhamso: tools, typography, palette, motif, and contributors behind the reader.',
+  lang: currentLang,
+  title: 'Colophon — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Colophon — sohamhamso"
-  description="Colophon for sohamhamso: tools, typography, palette, motif, and contributors behind the reader."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

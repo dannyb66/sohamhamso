@@ -123,6 +123,7 @@ const iastFormatted = formatDanda(verse.iast);
       {wordGlosses.map((g, i) => (
         <>
           <button
+            id={`word-${g.word_idx}`}
             type="button"
             class="sa-word"
             data-word-idx={g.word_idx}

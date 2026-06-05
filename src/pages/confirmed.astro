@@ -22,6 +22,7 @@ import Masthead from '../components/Masthead.astro';
  *     from the same edge that served the rest of the site.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo } from '../lib/seo';
 
 // Read `?error=` once at SSR time so the page renders without JS.
 // Astro's `output: 'static'` would prerender this with no query string;
@@ -37,9 +38,25 @@ const pageTitle = hasError
 const pageDescription = hasError
   ? "The confirmation link couldn't be matched. It may have expired or already been used."
   : 'Your subscription is confirmed. Tomorrow at sunrise, the first verse arrives.';
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  basePath: '/confirmed',
+  description: pageDescription,
+  lang: currentLang,
+  noindex: true,
+  title: pageTitle,
+});
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
   <Masthead currentLang="EN" />
 
   <main id="main" class="confirmed">

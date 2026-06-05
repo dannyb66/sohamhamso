@@ -4,29 +4,49 @@
  * Lists every text in the tradition. Quiet table, same shape as
  * /texts but scoped to one tradition.
  */
+import LangSwitcher from '../../components/seo/LangSwitcher.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { listTexts } from '../../lib/db';
+import type { LangCode } from '../../lib/reading-modes';
+import { getTexts } from '../../lib/seo/corpus-bundle';
+import { buildTraditionSeo, liveLocaleSet, summarizeTradition } from '../../lib/seo';
 
 export async function getStaticPaths() {
-  const texts = listTexts();
+  const texts = getTexts();
   const traditions = Array.from(new Set(texts.map((t) => t.tradition)));
   return traditions.map((tradition) => ({ params: { tradition } }));
 }
 
 const { tradition } = Astro.params;
-const allTexts = listTexts();
+const allTexts = getTexts();
 const textsInTradition = allTexts.filter((t) => t.tradition === tradition);
 if (textsInTradition.length === 0) {
   return Astro.redirect('/texts');
 }
 
 const traditionLabel = tradition!.charAt(0).toUpperCase() + tradition!.slice(1);
-const totalVerses = textsInTradition.reduce((sum, t) => sum + (t.verse_count ?? 0), 0);
-const pageTitle = `${traditionLabel} — sohamhamso`;
-const description = `${textsInTradition.length} texts in the ${traditionLabel} tradition, ${totalVerses} verses.`;
+const currentLang: LangCode = 'en';
+const availableLangs = Array.from(liveLocaleSet()).sort() as LangCode[];
+const basePath = `/${tradition}`;
+const summary = summarizeTradition({ texts: allTexts, tradition: tradition! });
+const pageSeo = buildTraditionSeo({
+  availableLangs,
+  basePath,
+  lang: currentLang,
+  tradition: tradition!,
+  textCount: summary.textCount,
+  totalVerses: summary.totalVerses,
+});
 ---
 
-<BaseLayout title={pageTitle} description={description}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  title={pageSeo.title}
+>
   <header class="chrome">
     <a href="/" class="chrome__back" aria-label="Home" data-i18n-attr-aria-label="tradition.home_aria">←</a>
     <div class="chrome__title">{traditionLabel}</div>
@@ -38,9 +58,11 @@ const description = `${textsInTradition.length} texts in the ${traditionLabel} t
       <p class="tradition-meta">
         {textsInTradition.length} <span data-i18n={textsInTradition.length === 1 ? "tradition.text_suffix" : "tradition.texts_suffix"}>{textsInTradition.length === 1 ? "text" : "texts"}</span>
         <span aria-hidden="true"> · </span>
-        {totalVerses} <span data-i18n="tradition.verses_suffix">verses</span>
+        {summary.totalVerses} <span data-i18n="tradition.verses_suffix">verses</span>
       </p>
 
+      <hr class="shirorekha-rule" />
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
       <hr class="shirorekha-rule" />
 
       <table class="text-table">

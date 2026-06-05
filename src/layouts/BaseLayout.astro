@@ -3,43 +3,81 @@ import I18nSwap from '../components/I18nSwap.solid.tsx';
 import ReaderLangSwap from '../components/ReaderLangSwap.solid.tsx';
 import SearchBox from '../components/SearchBox.solid.tsx';
 import SettingsSheet from '../components/SettingsSheet.solid.tsx';
+import AcceptLanguageBanner from '../components/seo/AcceptLanguageBanner.astro';
+import HeadSeo from '../components/seo/HeadSeo.astro';
+import { CORE_PRELOADED_FONT_ASSETS } from '../lib/font-assets';
+import type { LangCode } from '../lib/reading-modes';
+import type { HreflangEntry } from '../lib/seo';
+import { buildWebPageJsonLd, type JsonLdNode } from '../lib/seo/jsonld';
 
 interface Props {
+  canonical?: string;
   title?: string;
   description?: string;
+  hreflang?: HreflangEntry[];
+  jsonLd?: JsonLdNode[];
+  keywords?: string[];
   lang?: string;
+  localeBasePath?: string;
+  noindex?: boolean;
+  ogImageUrl?: string;
 }
 const {
+  canonical,
   title = 'sohamhamso — The Tantric canon, read in eleven tongues',
   description = 'Modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages.',
+  hreflang = [],
+  jsonLd = [],
+  keywords = [],
   lang = 'en',
+  localeBasePath,
+  noindex = false,
+  ogImageUrl,
 } = Astro.props;
+const siteUrl = Astro.site ?? Astro.url;
+const requestPath =
+  Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
+const resolvedCanonical = canonical ?? new URL(requestPath, siteUrl).toString();
+const resolvedOgImageUrl = ogImageUrl ?? new URL('/og-default.png', siteUrl).toString();
+const currentLangCode = lang as LangCode;
+const resolvedJsonLd =
+  jsonLd.length > 0
+    ? jsonLd
+    : [
+        buildWebPageJsonLd({
+          title,
+          description,
+          url: resolvedCanonical,
+          inLanguage: lang,
+        }),
+      ];
+const preloadedFonts = CORE_PRELOADED_FONT_ASSETS;
 ---
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} data-locale-base-path={localeBasePath}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#FAF6EE" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#14110D" media="(prefers-color-scheme: dark)" />
-  <meta name="description" content={description} />
-  <title>{title}</title>
+  <HeadSeo
+    canonical={resolvedCanonical}
+    description={description}
+    hreflang={hreflang}
+    jsonLd={resolvedJsonLd}
+    keywords={keywords}
+    noindex={noindex}
+    ogImageUrl={resolvedOgImageUrl}
+    title={title}
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <!-- Font preconnect for Google Fonts (we'll self-host later) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!--
-    Indic font stack — variable-font URLs for body weight range 400..700.
-    Each `Noto Serif <Script>` family is auto-subset by Google to that script's
-    code-point range, so total payload stays small. `display=swap` applies to
-    every family in the URL — never block paint on font load.
-    Covers: Devanagari (Sanskrit/Hindi/Marathi), Tamil, Telugu, Bengali
-    (also Assamese), Kannada, Malayalam, Gujarati, Gurmukhi, Oriya (Odia).
-    Plus Source Serif 4 for IAST/Latin and Inter for UI chrome.
-    Shobhika (Devanāgarī display face) is NOT loaded for V1 — `--font-sa-display`
-    falls back to Noto Serif Devanagari cleanly.
-  -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400..700&family=Noto+Serif+Tamil:wght@400..700&family=Noto+Serif+Telugu:wght@400..700&family=Noto+Serif+Bengali:wght@400..700&family=Noto+Serif+Kannada:wght@400..700&family=Noto+Serif+Malayalam:wght@400..700&family=Noto+Serif+Gujarati:wght@400..700&family=Noto+Serif+Gurmukhi:wght@400..700&family=Noto+Serif+Oriya:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Inter:wght@400..700&display=swap" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  {preloadedFonts.map((href) => (
+    <link rel="preload" as="font" href={href} crossorigin="anonymous" />
+  ))}
   <script is:inline>
     // Apply persisted theme before paint to avoid flash.
     // First-visit fallback: respect the OS prefers-color-scheme so users
@@ -59,6 +97,21 @@ const {
         const initial = saved || (prefersDark ? 'dark' : null);
         if (initial && initial !== 'light') root.setAttribute('data-theme', initial);
       } catch {}
+    })();
+  </script>
+  <script is:inline>
+    (() => {
+      if (typeof document === 'undefined') return;
+      document.addEventListener('sohamhamso:reader-lang-change', (event) => {
+        const detail = event instanceof CustomEvent ? event.detail : null;
+        const lang = detail?.lang;
+        const basePath = document.documentElement.dataset.localeBasePath;
+        if (!lang || !basePath) return;
+        const next = lang === 'en' ? basePath : `/${lang}${basePath === '/' ? '' : basePath}`;
+        if (next !== window.location.pathname) {
+          window.location.assign(next);
+        }
+      });
     })();
   </script>
   <slot name="head" />
@@ -82,9 +135,11 @@ const {
   <SearchBox client:idle />
   <I18nSwap client:idle />
   <ReaderLangSwap client:idle />
+  <AcceptLanguageBanner currentLang={currentLangCode} localeBasePath={localeBasePath} />
 </body>
 </html>
 
 <style is:global>
+  @import "../styles/fonts.css";
   @import "../styles/global.css";
 </style>

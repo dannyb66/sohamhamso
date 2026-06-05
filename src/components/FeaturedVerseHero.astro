@@ -31,7 +31,7 @@ interface Props {
 }
 
 const {
-  href = '/trika/vijnana-bhairava/1/47',
+  href = '/trika/vijnana-bhairava-tantra/1/47',
   citation = 'Vijñāna Bhairava · 1 · 47',
   devanagari = 'यत्र यत्र मनो याति बाह्ये वाभ्यन्तरेऽपि वा ।\nतत्र तत्र शिवावस्था व्यापकत्वात्क्व यास्यति ॥',
   iast = "yatra yatra mano yāti bāhye vābhyantare 'pi vā\ntatra tatra śivāvasthā vyāpakatvāt kva yāsyati",
@@ -39,9 +39,8 @@ const {
 } = Astro.props;
 
 // Pre-bundle every supported reader-language's translation for the
-// hardcoded daily verse (VBT 1.47). Canonical DB slug is
-// `vijnana-bhairava-tantra`; the hero's public `href` uses the
-// `vijnana-bhairava` alias which 301s to canonical. Glosses are
+// hardcoded daily verse (VBT 1.47). Use the canonical public path so
+// the homepage and /daily don't depend on alias redirects. Glosses are
 // intentionally empty — no synonyms section in the hero.
 const allLang = getVerseAllLanguages('vijnana-bhairava-tantra', 1, 47);
 const readerDataPayload = {

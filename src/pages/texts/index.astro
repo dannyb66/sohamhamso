@@ -14,9 +14,10 @@ import Masthead from '../../components/Masthead.astro';
  * table in db/schema.sql, so swapping is mechanical.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
 
 type TextRow = {
-  slug: string;
+  href: string;
   title_sa: string;
   title_en: string;
   tradition: string;
@@ -28,7 +29,7 @@ type TextRow = {
 // TODO: const texts = getAllTexts(); from src/lib/db.ts
 const texts: TextRow[] = [
   {
-    slug: 'siva-sutras',
+    href: '/trika/siva-sutras/1/1',
     title_sa: 'शिवसूत्राणि',
     title_en: 'Śiva Sūtras',
     tradition: 'Trika',
@@ -37,7 +38,7 @@ const texts: TextRow[] = [
     license: 'CC-BY-SA 4.0',
   },
   {
-    slug: 'spanda-karikas',
+    href: '/trika/spanda-karikas/1/1',
     title_sa: 'स्पन्दकारिकाः',
     title_en: 'Spanda Kārikās',
     tradition: 'Trika',
@@ -46,16 +47,16 @@ const texts: TextRow[] = [
     license: 'CC-BY-SA 4.0',
   },
   {
-    slug: 'pratyabhijna-hridayam',
+    href: '/trika/pratyabhijna-hrdayam/1/1',
     title_sa: 'प्रत्यभिज्ञाहृदयम्',
     title_en: 'Pratyabhijñā Hṛdayam',
-    tradition: 'Pratyabhijñā',
+    tradition: 'Trika',
     author: 'Kṣemarāja',
     verse_count: 20,
     license: 'CC-BY-SA 4.0',
   },
   {
-    slug: 'vijnana-bhairava',
+    href: '/trika/vijnana-bhairava-tantra/1/1',
     title_sa: 'विज्ञानभैरवतन्त्रम्',
     title_en: 'Vijñāna Bhairava Tantra',
     tradition: 'Trika / Kaula',
@@ -64,10 +65,10 @@ const texts: TextRow[] = [
     license: 'CC-BY-SA 4.0',
   },
   {
-    slug: 'karpuradi-stotra',
+    href: '/shakta/karpuradi-stotra/1/1',
     title_sa: 'कर्पूरादिस्तोत्रम्',
     title_en: 'Karpūrādi Stotra',
-    tradition: 'Kaula',
+    tradition: 'Śākta',
     author: null,
     verse_count: 22,
     license: 'Public Domain (Woodroffe 1922)',
@@ -76,11 +77,24 @@ const texts: TextRow[] = [
 
 // Sort alphabetical by English title — flat list, no faceting.
 const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/texts',
+  description: 'The full corpus of Tantric, Kashmir Shaiva, Trika, and Kaula texts available on sohamhamso.',
+  lang: currentLang,
+  title: 'All texts — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="All texts — sohamhamso"
-  description="The full corpus of Tantric, Kashmir Shaiva, Trika, and Kaula texts available on sohamhamso."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 
@@ -111,7 +125,7 @@ const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
           {sorted.map((t) => (
             <tr>
               <td class="col-title">
-                <a href={`/trika/${t.slug}/1/1`} class="text-link">
+                <a href={t.href} class="text-link">
                   <span class="text-title-en">{t.title_en}</span>
                   <span class="text-title-sa" lang="sa" data-sa>{t.title_sa}</span>
                   {t.author && <span class="text-author">{t.author}</span>}

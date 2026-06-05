@@ -13,6 +13,7 @@ import WordSheet from '../components/WordSheet.solid';
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { Translation, Verse, WordGloss } from '../lib/db';
+import { buildChromeSeo } from '../lib/seo';
 
 // ─── Hardcoded sample data ──────────────────────────────────────────────────
 // Vijñāna Bhairava Tantra, dhāraṇā 1.47:
@@ -33,6 +34,15 @@ const verse: Verse = {
   meter: 'anuṣṭubh',
   manuscript_folio_ref: null,
 };
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  basePath: '/sample',
+  description: 'Sample verse anatomy page used for layout testing before corpus ingestion lands.',
+  lang: currentLang,
+  noindex: true,
+  title: 'Sample verse page — sohamhamso',
+});
 
 const wordGlosses: WordGloss[] = [
   {
@@ -182,8 +192,13 @@ const glossesPayload = {
 ---
 
 <BaseLayout
-  title="Vijñāna Bhairava 1.47 — sohamhamso (sample)"
-  description="Sample verse-page render: Vijñāna Bhairava Tantra, dhāraṇā 1.47."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <header class="chrome">
     <a href="/" class="chrome__back" aria-label="Home">←</a>

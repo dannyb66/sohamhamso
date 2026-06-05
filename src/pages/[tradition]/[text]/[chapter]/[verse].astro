@@ -2,6 +2,8 @@
 import AIAssistedBadge from '../../../../components/AIAssistedBadge.astro';
 import ParallelChip from '../../../../components/ParallelChip.astro';
 import ScriptSwitcher from '../../../../components/ScriptSwitcher.solid';
+import Breadcrumbs from '../../../../components/seo/Breadcrumbs.astro';
+import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 import TranslationDrawer from '../../../../components/TranslationDrawer.solid';
 import VerseAnatomy from '../../../../components/VerseAnatomy.astro';
 import WordSheet from '../../../../components/WordSheet.solid';
@@ -14,82 +16,39 @@ import WordSheet from '../../../../components/WordSheet.solid';
  * Spec: see /Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl-agent-aa24b14e8caa90241.md
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-import { enumerateRedirectPairs, resolveAlias } from '../../../../lib/aliases';
+import { resolveAlias } from '../../../../lib/aliases';
 import {
   getDb,
-  getVerse,
   getVerseAllLanguages,
   getVerseTranslations,
-  listAllVerses,
-  listTexts,
 } from '../../../../lib/db';
+import type { LangCode } from '../../../../lib/reading-modes';
+import {
+  buildDefinedTermJsonLd,
+  buildVerseSeo,
+  filterIndexableTextLangs,
+  getCanonicalVerseRoutes,
+  getLemmaSummaryByIast,
+  getVerseAvailability,
+  getVersePageCached,
+  liveLocaleSet,
+  localePathFor,
+} from '../../../../lib/seo';
 
 export async function getStaticPaths() {
-  const texts = listTexts();
-  const paths: Array<{
+  return getCanonicalVerseRoutes().map((route) => ({
     params: {
-      tradition: string;
-      text: string;
-      chapter: string;
-      verse: string;
-    };
-    props: {
-      redirectTo: string | null;
-    };
-  }> = [];
-
-  // 1. Canonical verse pages — one entry per (tradition, slug, chapter, verse)
-  //    matching the DB.
-  for (const t of texts) {
-    const verses = listAllVerses(t.slug);
-    for (const v of verses) {
-      paths.push({
-        params: {
-          tradition: t.tradition,
-          text: t.slug,
-          chapter: String(v.chapter),
-          verse: String(v.verse_num),
-        },
-        props: { redirectTo: null },
-      });
-    }
-  }
-
-  // 2. Redirect entries — for every wrong-tradition or aliased-slug
-  //    combination, emit a static HTML page that redirects to canonical.
-  //    Cloudflare's static-pages adapter turns these into real 301s.
-  for (const pair of enumerateRedirectPairs(texts)) {
-    const canonVerses = listAllVerses(pair.canonicalSlug);
-    for (const v of canonVerses) {
-      paths.push({
-        params: {
-          tradition: pair.wrongTradition,
-          text: pair.wrongSlug,
-          chapter: String(v.chapter),
-          verse: String(v.verse_num),
-        },
-        props: {
-          redirectTo: `/${pair.canonicalTradition}/${pair.canonicalSlug}/${v.chapter}/${v.verse_num}`,
-        },
-      });
-    }
-  }
-
-  return paths;
+      tradition: route.tradition,
+      text: route.text,
+      chapter: String(route.chapter),
+      verse: String(route.verse),
+    },
+  }));
 }
 
 const { tradition, text, chapter, verse } = Astro.params;
 const chapterNum = Number(chapter);
 const verseNum = Number(verse);
-
-// Defensive: if this build path was emitted as a redirect entry, return a
-// 301 immediately. In static mode Astro materializes this as a meta-refresh
-// HTML file; the Cloudflare adapter promotes redirects to real Location
-// headers at the edge.
-const { redirectTo } = Astro.props as { redirectTo: string | null };
-if (redirectTo) {
-  return Astro.redirect(redirectTo, 301);
-}
 
 // Belt-and-suspenders: if a request slips through with non-canonical
 // params (e.g. dev-server hot-reload race), normalize via the alias table.
@@ -101,7 +60,8 @@ if (aliasCheck && !aliasCheck.canonical) {
   );
 }
 
-const data = getVerse(text!, chapterNum, verseNum, 'en');
+const currentLang: LangCode = 'en';
+const data = getVersePageCached(text!, chapterNum, verseNum, currentLang);
 if (!data) {
   // Astro 5: throw to surface a build-time error if the path made it here
   // without a matching DB row (shouldn't happen — paths come from same source).
@@ -109,11 +69,6 @@ if (!data) {
 }
 
 const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } = data;
-
-const pageTitle = `${textRow.title_en} · ${chapterNum}.${verseNum} — sohamhamso`;
-const pageDescription =
-  translations[0]?.translation_text?.slice(0, 160) ??
-  `${textRow.title_en}, verse ${chapterNum}.${verseNum} — Sanskrit verse anatomy with word-by-word translation.`;
 
 // Compute "more occurrences in this text" counts for each lemma in this
 // verse's glosses. Counts DISTINCT verses (excluding the current verse)
@@ -150,6 +105,13 @@ if (lemmaIasts.length > 0) {
 // needing additional payload.
 const glossesPayload = {
   [String(verseRow.id)]: wordGlosses.map((g) => ({
+    lemma_href:
+      g.lemma_iast && (() => {
+        const summary = getLemmaSummaryByIast(g.lemma_iast);
+        return summary && summary.occurrenceCount >= 3
+          ? localePathFor(`/lemma/${summary.slug}`, currentLang)
+          : null;
+      })(),
     word_idx: g.word_idx,
     word_sa: g.word_sa,
     lemma_sa: g.lemma_sa,
@@ -185,6 +147,40 @@ const readerDataPayload = {
   glosses_by_lang: allLang?.glosses_by_lang ?? {},
   translations_by_lang: allLang?.translations_by_lang ?? {},
 };
+const basePath = `/${tradition}/${text}/${chapterNum}/${verseNum}`;
+const liveLangs = liveLocaleSet();
+const availableLangs = filterIndexableTextLangs(
+  textRow.slug,
+  getVerseAvailability(text!, chapterNum, verseNum).filter((lang) => liveLangs.has(lang)),
+);
+const pageSeo = buildVerseSeo({
+  availableLangs,
+  basePath,
+  lang: currentLang,
+  text: textRow,
+  translation: translations[0]?.translation_text ?? null,
+  verse: verseRow,
+});
+const lowFrequencyTermJsonLd = Array.from(
+  wordGlosses.reduce((terms, gloss) => {
+    if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
+    const summary = getLemmaSummaryByIast(gloss.lemma_iast);
+    if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
+    terms.set(
+      gloss.lemma_iast,
+      buildDefinedTermJsonLd({
+        alternateName: gloss.lemma_sa,
+        description: gloss.gloss_text,
+        inLanguage: currentLang,
+        name: gloss.lemma_iast,
+        termCode: gloss.lemma_iast,
+        url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
+      }),
+    );
+    return terms;
+  }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>()).values(),
+);
+const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
 
 // Short-verse heuristic (audit 2026-06-01 #13): aphoristic sūtras like
 // Śiva Sūtra 1.1 ("Consciousness is the Self.") leave huge empty space
@@ -193,9 +189,26 @@ const readerDataPayload = {
 // linking back to the text overview so the reader has somewhere to go.
 const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
 const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
+
+const breadcrumbItems = [
+  { name: 'Home', href: '/' },
+  { name: tradition!, href: `/${tradition}` },
+  { name: textRow.title_en, href: `/${tradition}/${textRow.slug}` },
+  { name: `${verseRow.chapter}.${verseRow.verse_num}` },
+];
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageJsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  ogImageUrl={pageSeo.ogImageUrl}
+  title={pageSeo.title}
+>
   <header class="chrome">
     <a
       href={`/${tradition}/${text}`}
@@ -225,6 +238,7 @@ const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
   </header>
 
   <main id="main" class="reader">
+    <Breadcrumbs items={breadcrumbItems} lang={currentLang} />
     {/*
       Visually-hidden primary heading. Screen readers need an <h1> as the
       page landmark; visually the verse-number rail (1.47) inside
@@ -243,6 +257,7 @@ const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
       </Fragment>
 
       <Fragment slot="footer">
+        <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
         {translations.map((t) => (
           <AIAssistedBadge
             aiAssisted={t.ai_assisted}

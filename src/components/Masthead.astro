@@ -1,5 +1,6 @@
 ---
 import { READING_MODES } from '../lib/reading-modes';
+import { localePathFor } from '../lib/seo/i18n-routes';
 /**
  * Masthead — top chrome. Wordmark left · search icon middle/right ·
  * language picker right. Hairline border-bottom (var(--color-rule)).
@@ -38,8 +39,10 @@ import Wordmark from './Wordmark.astro';
 
 interface Props {
   currentLang?: string;
+  homeHref?: string;
 }
-const { currentLang = 'EN' } = Astro.props;
+const { currentLang = 'EN', homeHref } = Astro.props;
+const wordmarkHref = homeHref ?? localePathFor('/', currentLang.toLowerCase());
 
 // Static catalogue → render rows. `availableInDb` is the hand-curated
 // source of truth (see reading-modes.ts header) — edge-safe, no DB
@@ -54,7 +57,7 @@ const languages = READING_MODES.map((m) => ({
 
 <header class="masthead" role="banner">
   <div class="masthead-inner">
-    <Wordmark size="sm" showDevanagari={true} />
+    <Wordmark href={wordmarkHref} size="sm" showDevanagari={true} />
 
     <nav class="masthead-actions" aria-label="Site">
       <button

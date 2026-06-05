@@ -10,13 +10,27 @@ import Masthead from '../../components/Masthead.astro';
  * is meant to be readable in under two minutes.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
 
 const updated = '2026-05-31';
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/about/privacy',
+  description: 'What sohamhamso collects (almost nothing) and why.',
+  lang: currentLang,
+  title: 'Privacy — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Privacy — sohamhamso"
-  description="What sohamhamso collects (almost nothing) and why."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

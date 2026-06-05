@@ -13,6 +13,7 @@ import Masthead from '../components/Masthead.astro';
  * adapter lands the page just works.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo } from '../lib/seo';
 import type { VerseHit } from '../lib/search';
 
 export const prerender = false;
@@ -48,10 +49,28 @@ if (q) {
 const verseHref = (h: VerseHit) => `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
 const verseLabel = (h: VerseHit) => `${h.text_title} ${h.chapter}.${h.verse_num}`;
 
+const currentLang = 'en' as const;
 const title = q ? `Search: ${q} — sohamhamso` : 'Search — sohamhamso';
+const pageSeo = buildChromeSeo({
+  basePath: '/search',
+  description: q
+    ? `Search results for "${q}" across the sohamhamso corpus.`
+    : 'Search verses, lemmas, and translations across the sohamhamso corpus.',
+  lang: currentLang,
+  noindex: true,
+  title,
+});
 ---
 
-<BaseLayout title={title} description={`Search results for "${q}"`}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
   <Masthead />
 
   <main class="search-page" id="main">

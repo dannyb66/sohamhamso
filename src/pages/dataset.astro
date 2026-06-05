@@ -9,11 +9,27 @@ import Masthead from '../components/Masthead.astro';
  * Zenodo DOI (placeholder until first release).
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/dataset',
+  description:
+    'The sohamhamso dataset: CSV, JSON, and TEI bundles of the Tantric Sanskrit canon, released to Zenodo under CC-BY-SA 4.0 with SHA-256 integrity and DOI citation.',
+  lang: currentLang,
+  title: 'Dataset — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Dataset — sohamhamso"
-  description="The sohamhamso dataset: CSV, JSON, and TEI bundles of the Tantric Sanskrit canon, released to Zenodo under CC-BY-SA 4.0 with SHA-256 integrity and DOI citation."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

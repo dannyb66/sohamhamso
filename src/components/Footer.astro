@@ -5,10 +5,13 @@
  * (populated once the first Zenodo release lands).
  */
 
+import { localePathFor } from '../lib/seo/i18n-routes';
+
 interface Props {
   doi?: string | null;
+  currentLang?: string;
 }
-const { doi = null } = Astro.props;
+const { doi = null, currentLang = 'en' } = Astro.props;
 
 // Single source of truth for footer links — easy to extend later.
 // Each row carries an `i18nKey` so the I18nSwap island can rewrite the
@@ -24,6 +27,7 @@ const links = [
   { href: '/about/privacy', label: 'Privacy', i18nKey: 'footer.link.privacy' },
   { href: '/about/colophon', label: 'Colophon', i18nKey: 'footer.link.colophon' },
 ];
+const localizedHref = (href: string) => (href.startsWith('/') ? localePathFor(href, currentLang) : href);
 ---
 
 <footer class="footer" role="contentinfo">
@@ -32,7 +36,7 @@ const links = [
       <ul>
         {links.map((l, i) => (
           <li>
-            <a href={l.href} data-i18n={l.i18nKey}>{l.label}</a>
+            <a href={localizedHref(l.href)} data-i18n={l.i18nKey}>{l.label}</a>
             {i < links.length - 1 && <span class="sep" aria-hidden="true"> · </span>}
           </li>
         ))}
@@ -51,7 +55,7 @@ const links = [
         <a href="https://gretil.sub.uni-goettingen.de/" data-i18n="footer.attribution.source_gretil">GRETIL</a>,
         <a href="https://www.muktabodha.org/" data-i18n="footer.attribution.source_muktabodha">Muktabodha (MIRI)</a>,
         and <a href="https://sanskritdocuments.org/" data-i18n="footer.attribution.source_sanskritdocuments">sanskritdocuments.org</a>
-        <span data-i18n="footer.attribution.middle">under their respective licenses. AI-assisted translations not human-verified — see</span> <a href="/about/methodology" data-i18n="footer.attribution.methodology_link">methodology</a><span data-i18n="footer.attribution.suffix">.</span>
+        <span data-i18n="footer.attribution.middle">under their respective licenses. AI-assisted translations not human-verified — see</span> <a href={localizedHref('/about/methodology')} data-i18n="footer.attribution.methodology_link">methodology</a><span data-i18n="footer.attribution.suffix">.</span>
       </p>
       {doi && (
         <p class="footer-doi">

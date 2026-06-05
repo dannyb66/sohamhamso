@@ -14,6 +14,7 @@ import Masthead from '../components/Masthead.astro';
  *     /confirmed.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo } from '../lib/seo';
 
 // Prerender stays off so the URL is server-rendered. There's no
 // query-string to read here (the unsubscribe endpoint never appends
@@ -24,9 +25,25 @@ export const prerender = false;
 const pageTitle = "You're unsubscribed — sohamhamso";
 const pageDescription =
   "You've been removed from the daily-verse list. The corpus stays open at sohamhamso.org if you ever come back.";
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  basePath: '/unsubscribed',
+  description: pageDescription,
+  lang: currentLang,
+  noindex: true,
+  title: pageTitle,
+});
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
   <Masthead currentLang="EN" />
 
   <main id="main" class="unsubscribed">

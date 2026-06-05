@@ -8,11 +8,26 @@ import Masthead from '../components/Masthead.astro';
  * DOI is a placeholder and per-text examples are illustrative.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/cite',
+  description: 'How to cite the sohamhamso dataset and individual texts: BibTeX, Chicago, MLA, and per-text examples.',
+  lang: currentLang,
+  title: 'Cite — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Cite — sohamhamso"
-  description="How to cite the sohamhamso dataset and individual texts: BibTeX, Chicago, MLA, and per-text examples."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

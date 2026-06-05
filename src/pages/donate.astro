@@ -9,11 +9,27 @@ import Masthead from '../components/Masthead.astro';
  * until accounts are set up.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  availableLangs: getChromeAvailableLangs(),
+  basePath: '/donate',
+  description:
+    'sohamhamso is a non-profit project. Donations fund corpus expansion, human reviewer compensation, source permissions, and hosting.',
+  lang: currentLang,
+  title: 'Donate — sohamhamso',
+});
 ---
 
 <BaseLayout
-  title="Donate — sohamhamso"
-  description="sohamhamso is a non-profit project. Donations fund corpus expansion, human reviewer compensation, source permissions, and hosting."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 

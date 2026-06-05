@@ -19,6 +19,7 @@ interface GlossEntry {
   word_sa: string;
   lemma_sa?: string | null;
   lemma_iast?: string | null;
+  lemma_href?: string | null;
   gloss_text: string;
   morph?: string | null;
   /** Number of other verses in the same text containing this lemma. */
@@ -160,10 +161,14 @@ export default function WordSheet() {
             <p class="word-sheet__occurrences">
               <a
                 class="word-sheet__occurrences-link"
-                href={`/search?q=${encodeURIComponent(gloss()?.lemma_iast ?? '')}`}
+                href={
+                  gloss()?.lemma_href ??
+                  `/search?q=${encodeURIComponent(gloss()?.lemma_iast ?? '')}`
+                }
               >
-                {gloss()?.occurrence_count} more occurrence
-                {gloss()?.occurrence_count === 1 ? '' : 's'} in this text →
+                {gloss()?.lemma_href
+                  ? `${gloss()?.occurrence_count} occurrence${gloss()?.occurrence_count === 1 ? '' : 's'} in the corpus →`
+                  : `${gloss()?.occurrence_count} more occurrence${gloss()?.occurrence_count === 1 ? '' : 's'} in this text →`}
               </a>
             </p>
           </Show>

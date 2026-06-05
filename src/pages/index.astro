@@ -14,11 +14,24 @@ import SubscribeBand from '../components/SubscribeBand.astro';
  * The verse is the only marketing the site needs.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildHomeSeo, liveLocaleSet } from '../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildHomeSeo({
+  availableLangs: Array.from(liveLocaleSet()).sort(),
+  lang: currentLang,
+});
 ---
 
 <BaseLayout
-  title="sohamhamso — The Tantric canon, read in eleven tongues"
-  description="A modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages."
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath="/"
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
 >
   <Masthead currentLang="EN" />
 
