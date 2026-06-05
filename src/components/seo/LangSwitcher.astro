@@ -1,0 +1,65 @@
+---
+import type { LangCode } from '../../lib/reading-modes';
+import { localePathFor } from '../../lib/seo/i18n-routes';
+
+interface Props {
+  availableLangs: LangCode[];
+  basePath: string;
+  currentLang: LangCode;
+}
+
+const { availableLangs, basePath, currentLang } = Astro.props;
+const labels: Record<LangCode, string> = {
+  en: 'EN',
+  hi: 'हिं',
+  mr: 'मरा',
+  bn: 'বং',
+  as: 'অস',
+  gu: 'ગુ',
+  pa: 'ਪੰ',
+  kn: 'ಕಂ',
+  ml: 'മ',
+  or: 'ଓ',
+  ta: 'தம்',
+  te: 'తె',
+};
+---
+
+<nav class="lang-strip" aria-label="Also available in">
+  {availableLangs.map((lang) => (
+    <a
+      href={localePathFor(basePath, lang)}
+      class:list={['lang-strip__chip', currentLang === lang && 'is-current']}
+      aria-current={currentLang === lang ? 'page' : undefined}
+    >
+      {labels[lang]}
+    </a>
+  ))}
+</nav>
+
+<style>
+  .lang-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+  }
+
+  .lang-strip__chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--color-rule);
+    color: var(--color-ink-muted);
+    text-decoration: none;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+  }
+
+  .lang-strip__chip.is-current {
+    color: var(--color-ink);
+    border-color: var(--color-ink-muted);
+  }
+</style>

@@ -1,0 +1,168 @@
+---
+import { READING_MODES, type LangCode } from '../../lib/reading-modes';
+import { liveLocaleSet } from '../../lib/seo';
+
+interface Props {
+  currentLang: LangCode;
+  localeBasePath?: string;
+}
+
+const { currentLang, localeBasePath } = Astro.props;
+const liveLocales = Array.from(liveLocaleSet());
+const localeLabels = Object.fromEntries(
+  READING_MODES.filter((mode) => liveLocales.includes(mode.langCode)).map((mode) => [
+    mode.langCode,
+    mode.englishName,
+  ]),
+);
+---
+
+{
+  localeBasePath ? (
+    <>
+      <aside class="lang-banner" hidden data-lang-banner>
+        <p class="lang-banner__copy" data-lang-banner-copy />
+        <div class="lang-banner__actions">
+          <button type="button" class="lang-banner__accept" data-lang-banner-accept>
+            Switch language
+          </button>
+          <button type="button" class="lang-banner__dismiss" data-lang-banner-dismiss>
+            Dismiss
+          </button>
+        </div>
+      </aside>
+
+      <script
+        is:inline
+        set:html={`(() => {
+  const DISMISS_KEY = 'sohamhamso:lang-banner-dismissed';
+  const liveLocales = ${JSON.stringify(liveLocales)};
+  const localeLabels = ${JSON.stringify(localeLabels)};
+  const currentLang = ${JSON.stringify(currentLang)};
+  const basePath = ${JSON.stringify(localeBasePath)};
+  const banner = document.querySelector('[data-lang-banner]');
+  const copy = document.querySelector('[data-lang-banner-copy]');
+  const accept = document.querySelector('[data-lang-banner-accept]');
+  const dismiss = document.querySelector('[data-lang-banner-dismiss]');
+  if (!banner || !copy || !accept || !dismiss || !basePath) return;
+
+  const aliasMap = {
+    bn: 'bn',
+    en: 'en',
+    gu: 'gu',
+    hi: 'hi',
+    kn: 'kn',
+    ml: 'ml',
+    mr: 'mr',
+    or: 'or',
+    pa: 'pa',
+    ta: 'ta',
+    te: 'te',
+  };
+
+  const localePathFor = (path, lang) => {
+    const normalized = !path || path === '/' ? '/' : path.startsWith('/') ? path.replace(/\\/+$/, '') || '/' : '/' + path.replace(/\\/+$/, '');
+    if (!lang || lang === 'en') return normalized;
+    return normalized === '/' ? '/' + lang : '/' + lang + normalized;
+  };
+
+  const detectPreferredLocale = () => {
+    const candidates = Array.from(new Set([...(navigator.languages || []), navigator.language].filter(Boolean)));
+    for (const candidate of candidates) {
+      const lowered = String(candidate).toLowerCase();
+      if (liveLocales.includes(lowered)) return lowered;
+      const short = lowered.split('-')[0];
+      if (short && aliasMap[short] && liveLocales.includes(aliasMap[short])) return aliasMap[short];
+    }
+    return null;
+  };
+
+  try {
+    if (localStorage.getItem(DISMISS_KEY) === '1') return;
+  } catch {}
+
+  const preferred = detectPreferredLocale();
+  if (!preferred || preferred === currentLang) return;
+
+  copy.textContent = 'Read this page in ' + (localeLabels[preferred] || preferred.toUpperCase()) + '?';
+  accept.addEventListener('click', () => {
+    try {
+      localStorage.setItem('sohamhamso:reader-lang', preferred);
+    } catch {}
+    window.location.assign(localePathFor(basePath, preferred));
+  });
+  dismiss.addEventListener('click', () => {
+    try {
+      localStorage.setItem(DISMISS_KEY, '1');
+    } catch {}
+    banner.setAttribute('hidden', '');
+  });
+
+  banner.removeAttribute('hidden');
+})();`}
+      />
+    </>
+  ) : null
+}
+
+<style>
+  .lang-banner {
+    position: fixed;
+    right: var(--spacing-4);
+    bottom: calc(var(--spacing-4) + env(safe-area-inset-bottom));
+    z-index: 45;
+    display: grid;
+    gap: var(--spacing-3);
+    width: min(26rem, calc(100vw - var(--spacing-6)));
+    padding: var(--spacing-4);
+    background: color-mix(in srgb, var(--color-surface) 92%, var(--color-bg) 8%);
+    border: 1px solid var(--color-rule);
+    border-radius: 12px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .lang-banner__copy {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+
+  .lang-banner__actions {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+  }
+
+  .lang-banner__accept,
+  .lang-banner__dismiss {
+    appearance: none;
+    min-height: 40px;
+    border-radius: 999px;
+    padding: 0 14px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    cursor: pointer;
+  }
+
+  .lang-banner__accept {
+    border: 1px solid var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .lang-banner__dismiss {
+    border: 1px solid var(--color-rule);
+    background: transparent;
+    color: var(--color-ink-muted);
+  }
+
+  @media (max-width: 640px) {
+    .lang-banner {
+      right: var(--spacing-3);
+      left: var(--spacing-3);
+      width: auto;
+    }
+  }
+ </style>
