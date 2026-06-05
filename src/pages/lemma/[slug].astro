@@ -1,0 +1,248 @@
+---
+import LangSwitcher from '../../components/seo/LangSwitcher.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { LangCode } from '../../lib/reading-modes';
+import {
+  buildLemmaSeo,
+  getLemmaPageCached,
+  getLemmaRoutes,
+  liveLocaleSet,
+  localePathFor,
+} from '../../lib/seo';
+
+export async function getStaticPaths() {
+  return getLemmaRoutes().map((route) => ({ params: { slug: route.slug } }));
+}
+
+const { slug } = Astro.params;
+if (!slug) throw new Error('Missing lemma slug.');
+
+const currentLang: LangCode = 'en';
+const data = getLemmaPageCached(slug, currentLang);
+if (!data) throw new Error(`Lemma not found: ${slug}`);
+
+const basePath = `/lemma/${slug}`;
+const availableLangs = data.availableLangs.filter((lang) => liveLocaleSet().has(lang));
+const switcherLangs = availableLangs.includes(currentLang)
+  ? availableLangs
+  : [currentLang, ...availableLangs];
+const pageSeo = buildLemmaSeo({
+  availableLangs,
+  basePath,
+  gloss: data.gloss,
+  lang: currentLang,
+  lemmaIast: data.lemmaIast,
+  lemmaSa: data.lemmaSa,
+  occurrenceCount: data.occurrenceCount,
+  samplePath: data.samplePath,
+});
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={pageSeo.noindex}
+  ogImageUrl={pageSeo.ogImageUrl}
+  title={pageSeo.title}
+>
+  <header class="chrome">
+    <a href="/" class="chrome__back" aria-label="Home">←</a>
+    <div class="chrome__title">Lemma</div>
+  </header>
+
+  <main id="main" class="reader">
+    <article class="lemma-page">
+      <p class="lemma-page__eyebrow">Lemma</p>
+      <h1 class="lemma-page__title">{data.lemmaIast}</h1>
+      {data.lemmaSa ? (
+        <p class="lemma-page__sa" lang="sa">{data.lemmaSa}</p>
+      ) : null}
+
+      <p class="lemma-page__gloss">{data.gloss}</p>
+      <p class="lemma-page__meta">
+        {data.occurrenceCount} verses
+        {data.glossLang !== currentLang ? ` · definition shown in ${data.glossLang.toUpperCase()}` : ''}
+      </p>
+
+      <hr class="shirorekha-rule" />
+      <LangSwitcher availableLangs={switcherLangs} basePath={basePath} currentLang={currentLang} />
+      <hr class="shirorekha-rule" />
+
+      {data.morphologies.length > 0 ? (
+        <section aria-labelledby="lemma-morph">
+          <h2 id="lemma-morph" class="lemma-page__section-title">Morphology</h2>
+          <div class="lemma-page__chips">
+            {data.morphologies.map((morph) => (
+              <span class="lemma-page__chip">{morph}</span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      <section aria-labelledby="lemma-occurrences">
+        <div class="lemma-page__section-head">
+          <h2 id="lemma-occurrences" class="lemma-page__section-title">Occurrences</h2>
+          <a class="lemma-page__context-link" href={localePathFor(data.samplePath, currentLang)}>
+            Read in context →
+          </a>
+        </div>
+
+        <ol class="lemma-page__occurrences">
+          {data.occurrences.map((occurrence) => (
+            <li class="lemma-page__occurrence">
+              <a href={localePathFor(occurrence.basePath, currentLang)} class="lemma-page__occurrence-link">
+                <div class="lemma-page__citation">
+                  {occurrence.textTitleEn} {occurrence.chapter}.{occurrence.verse}
+                </div>
+                <div class="lemma-page__preview" lang="sa">
+                  {occurrence.devanagari}
+                </div>
+                {occurrence.glossText ? (
+                  <p class="lemma-page__occurrence-gloss">{occurrence.glossText}</p>
+                ) : null}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-ink);
+    text-decoration: none;
+    font-size: var(--text-lg);
+  }
+  .chrome__title {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+  .lemma-page {
+    padding-block: var(--spacing-6);
+  }
+  .lemma-page__eyebrow {
+    margin: 0 0 var(--spacing-2);
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .lemma-page__title {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+    color: var(--color-ink);
+  }
+  .lemma-page__sa {
+    margin: var(--spacing-2) 0 0 0;
+    font-family: var(--font-sa-display);
+    font-size: var(--text-xl);
+    color: var(--color-ink);
+  }
+  .lemma-page__gloss {
+    margin: var(--spacing-4) 0 0 0;
+    max-width: 60ch;
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+  }
+  .lemma-page__meta {
+    margin: var(--spacing-3) 0 0 0;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+  }
+  .lemma-page__section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+  }
+  .lemma-page__section-title {
+    margin: var(--spacing-6) 0 var(--spacing-3);
+    font-family: var(--font-iast);
+    font-size: var(--text-lg);
+  }
+  .lemma-page__context-link {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .lemma-page__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+  }
+  .lemma-page__chip {
+    display: inline-flex;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--color-rule);
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+  }
+  .lemma-page__occurrences {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--spacing-3);
+  }
+  .lemma-page__occurrence-link {
+    display: block;
+    padding: var(--spacing-4);
+    border: 1px solid var(--color-rule);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--color-surface);
+  }
+  .lemma-page__citation {
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+  .lemma-page__preview {
+    margin-top: var(--spacing-2);
+    font-family: var(--font-sa-body);
+    font-size: var(--text-md);
+    line-height: 1.7;
+    color: var(--color-ink);
+  }
+  .lemma-page__occurrence-gloss {
+    margin: var(--spacing-2) 0 0 0;
+    font-family: var(--font-iast);
+    color: var(--color-ink-muted);
+    line-height: 1.5;
+  }
+</style>
