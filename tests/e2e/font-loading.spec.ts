@@ -1,58 +1,72 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
+import {
+  CORE_PRELOADED_FONT_ASSETS,
+  FONT_FAMILY_ASSETS,
+} from '../../src/lib/font-assets';
 
 /**
  * Font-loading audit — guards the design contract that every script the
  * ScriptSwitcher offers actually has a dedicated webfont loaded. Without
  * this, scripts (Tamil, Bengali, …) silently fall back to system serif
  * and the project's typographic premise breaks.
- *
- * The test only checks that the Google Fonts <link rel="stylesheet">
- * href in the document head names each required family. Visual quality
- * still requires a human eyeball — but a missing family is caught here.
  */
 
-const REQUIRED_FAMILIES = [
-  // Latin + UI — were already loaded; assert anyway so a future "trim"
-  // refactor cannot quietly drop them.
-  'Source+Serif+4',
-  'Inter',
-  // Devanagari — Sanskrit body face.
-  'Noto+Serif+Devanagari',
-  // Eight Indic scripts driven by ScriptSwitcher. Assamese piggybacks on
-  // Bengali, so 8 families cover the 9 non-Devanagari script options.
-  'Noto+Serif+Tamil',
-  'Noto+Serif+Telugu',
-  'Noto+Serif+Bengali',
-  'Noto+Serif+Kannada',
-  'Noto+Serif+Malayalam',
-  'Noto+Serif+Gujarati',
-  'Noto+Serif+Gurmukhi',
-  'Noto+Serif+Oriya',
-];
+async function collectFontFaces(page: Page): Promise<FontFaceRecord[]> {
+  return page.evaluate(() => {
+    const fontFaces: FontFaceRecord[] = [];
+    for (const sheet of Array.from(document.styleSheets)) {
+      try {
+        for (const rule of Array.from(sheet.cssRules)) {
+          if (!(rule instanceof CSSFontFaceRule)) continue;
+          const family = rule.style.getPropertyValue('font-family').replaceAll('"', '').trim();
+          fontFaces.push({
+            family,
+            src: rule.style.getPropertyValue('src'),
+          });
+        }
+      } catch {
+        // Ignore stylesheets the browser refuses to expose.
+      }
+    }
+    return fontFaces;
+  });
+}
 
 test.describe('font loading', () => {
-  test('homepage <link> references every required font family', async ({ page }) => {
+  test('homepage self-hosts every required font family', async ({ page }) => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
 
-    // Collect every stylesheet link's href. Family names live as URL-encoded
-    // tokens in the Google Fonts CSS2 query string.
-    const hrefs = await page
+    const stylesheetHrefs = await page
       .locator('link[rel="stylesheet"]')
       .evaluateAll((els) => els.map((el) => (el as HTMLLinkElement).href));
-    const joined = hrefs.join('\n');
+    const joinedStylesheets = stylesheetHrefs.join('\n');
 
-    for (const family of REQUIRED_FAMILIES) {
+    expect(joinedStylesheets).not.toMatch(/fonts\.(googleapis|gstatic)\.com/);
+
+    const fontFaces = await collectFontFaces(page);
+    for (const { asset, family } of FONT_FAMILY_ASSETS) {
+      const face = fontFaces.find(
+        (fontFace: FontFaceRecord) =>
+          fontFace.family === family && fontFace.src.includes(asset),
+      );
       expect(
-        joined,
-        `expected <link rel="stylesheet"> to reference ${family} (joined hrefs: ${joined})`,
-      ).toContain(family);
+        face,
+        `expected an @font-face for ${family} (available: ${JSON.stringify(fontFaces, null, 2)})`,
+      ).toBeTruthy();
+      expect(face?.src, `${family} should load from a repo-served asset`).toContain(asset);
+      expect(face?.src, `${family} should not depend on local() lookup`).not.toContain('local(');
     }
 
-    // font-display:swap is non-negotiable — never block paint on a webfont.
-    expect(joined).toMatch(/display=swap/);
+    const preloadHrefs = await page
+      .locator('link[rel="preload"][as="font"]')
+      .evaluateAll((els) => els.map((el) => (el as HTMLLinkElement).href));
+    const joinedPreloads = preloadHrefs.join('\n');
+    for (const href of CORE_PRELOADED_FONT_ASSETS) {
+      expect(joinedPreloads, `expected preload for ${href}`).toContain(href);
+    }
   });
 
-  test('verse reader page also serves the full font stack', async ({ page }) => {
+  test('verse reader page also serves the full self-hosted font stack', async ({ page }) => {
     // Reader pages share BaseLayout, but assert at least one non-homepage
     // route in case a future refactor splits layouts.
     const res = await page.goto('/shakta/karpuradi-stotra/1/1', {
@@ -66,12 +80,18 @@ test.describe('font loading', () => {
       });
       return;
     }
-    const hrefs = await page
-      .locator('link[rel="stylesheet"]')
-      .evaluateAll((els) => els.map((el) => (el as HTMLLinkElement).href));
-    const joined = hrefs.join('\n');
-    for (const family of REQUIRED_FAMILIES) {
-      expect(joined, `reader page missing ${family}`).toContain(family);
+    const fontFaces = await collectFontFaces(page);
+    for (const { asset, family } of FONT_FAMILY_ASSETS) {
+      const face = fontFaces.find(
+        (fontFace: FontFaceRecord) =>
+          fontFace.family === family && fontFace.src.includes(asset),
+      );
+      expect(face, `reader page missing ${family}`).toBeTruthy();
+      expect(face?.src, `reader page should self-host ${family}`).toContain(asset);
     }
   });
 });
+interface FontFaceRecord {
+  family: string;
+  src: string;
+}

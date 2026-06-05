@@ -11,7 +11,7 @@
  *   shape AND the storage-key/event contract applyReadingMode owes
  *   every island downstream.
  */
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
   READING_MODES,
   type ReadingMode,
@@ -63,29 +63,47 @@ describe('READING_MODES catalogue', () => {
 });
 
 describe('applyReadingMode', () => {
-  // Minimal localStorage shim — vitest's default Node env has no
-  // localStorage. We only need .setItem / .getItem semantics here.
-  const store: Record<string, string> = {};
-  const localStorageMock = {
-    getItem: (k: string) => (k in store ? store[k] : null),
-    setItem: (k: string, v: string) => {
-      store[k] = String(v);
-    },
-    removeItem: (k: string) => {
-      delete store[k];
-    },
-    clear: () => {
-      for (const k of Object.keys(store)) delete store[k];
-    },
-  };
+  const originalLocalStorage = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+  const originalDocument = Object.getOwnPropertyDescriptor(globalThis, 'document');
+  let store: Record<string, string>;
+  let events: Event[];
+
+  function installGlobal(name: 'localStorage' | 'document', value: unknown) {
+    Object.defineProperty(globalThis, name, {
+      configurable: true,
+      writable: true,
+      value,
+    });
+  }
+
+  function restoreGlobal(name: 'localStorage' | 'document', descriptor?: PropertyDescriptor) {
+    if (descriptor) {
+      Object.defineProperty(globalThis, name, descriptor);
+      return;
+    }
+    delete (globalThis as Record<string, unknown>)[name];
+  }
 
   beforeEach(() => {
-    localStorageMock.clear();
-    vi.stubGlobal('localStorage', localStorageMock);
+    store = {};
+    events = [];
+
+    installGlobal('localStorage', {
+      getItem: (k: string) => (k in store ? store[k] : null),
+      setItem: (k: string, v: string) => {
+        store[k] = String(v);
+      },
+      removeItem: (k: string) => {
+        delete store[k];
+      },
+      clear: () => {
+        store = {};
+      },
+    });
+
     // Tiny document stub: we only call dispatchEvent + need CustomEvent
     // to be constructable. Node 22's global CustomEvent is sufficient.
-    const events: Event[] = [];
-    vi.stubGlobal('document', {
+    installGlobal('document', {
       dispatchEvent: (e: Event) => {
         events.push(e);
         return true;
@@ -95,7 +113,8 @@ describe('applyReadingMode', () => {
   });
 
   afterEach(() => {
-    vi.unstubAllGlobals();
+    restoreGlobal('localStorage', originalLocalStorage);
+    restoreGlobal('document', originalDocument);
   });
 
   it("applyReadingMode('bn') writes both localStorage keys + dispatches the event", () => {
@@ -129,5 +148,7 @@ describe('applyReadingMode', () => {
     expect(result).toBeUndefined();
     expect(localStorage.getItem('sohamhamso:script')).toBeNull();
     expect(localStorage.getItem('sohamhamso:reader-lang')).toBeNull();
+    const dispatchedEvents = (globalThis as unknown as { document: { __events: Event[] } }).document.__events;
+    expect(dispatchedEvents).toHaveLength(0);
   });
 });

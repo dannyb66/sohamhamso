@@ -17,6 +17,7 @@ import { join, resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
   ingestText,
+  listYamlFiles,
   openDb,
   parseTextYaml,
   prepareStatements,
@@ -146,6 +147,54 @@ chapters:
       db.close();
     }
   });
+
+  it('accepts wrapped corpus files with seo + faq_file and validates the sibling FAQ file', () => {
+    const corpusYaml = `
+schema_version: 1
+faq_file: ./wrapped-text.faq.yaml
+seo:
+  schema_version: 1
+  descriptions:
+    en: "Wrapped override description."
+  keywords:
+    en: [wrapped text, trika]
+  noindex_langs: [hi]
+text:
+  id: wrapped-text
+  slug: wrapped-text
+  title_sa: आवृतपाठः
+  title_en: Wrapped Text
+  tradition: trika
+  license: PD
+chapters:
+  - chapter: 1
+    verses:
+      - verse: 1
+        devanagari: "आवृतम्"
+        translations:
+          - lang: en
+            text: "Wrapped translation."
+            license: PD
+            status: published
+`;
+    const faqYaml = `
+schema_version: 1
+faqs:
+  - question: "What is this wrapped text?"
+    answer: "A test-only FAQ."
+`;
+    rmSync(join(corpusDir, 'siva-sutras.yaml'));
+    writeFileSync(join(corpusDir, 'wrapped-text.yaml'), corpusYaml, 'utf8');
+    writeFileSync(join(corpusDir, 'wrapped-text.faq.yaml'), faqYaml, 'utf8');
+
+    const parsed = parseTextYaml(join(corpusDir, 'wrapped-text.yaml'));
+    expect(parsed.slug).toBe('wrapped-text');
+    expect(parsed.chapters[0]?.verses[0]?.verse_num).toBe(1);
+
+    const summary = run({ dbPath, corpusDir });
+    expect(summary.total_texts).toBe(1);
+    expect(summary.total_verses).toBe(1);
+  });
 });
 
 describe('run() — failure modes', () => {
@@ -157,11 +206,37 @@ describe('run() — failure modes', () => {
       'chapters:\n  - chapter: 1\n    verses: []\n',
       'utf8',
     );
-    expect(() => run({ dbPath, corpusDir })).toThrow(/missing required field/);
+    expect(() => run({ dbPath, corpusDir })).toThrow(/Invalid input|Required/);
   });
 
   it('throws when DB file does not exist', () => {
     expect(() => run({ dbPath: join(tmp, 'no.db'), corpusDir })).toThrow(/DB not found/);
+  });
+
+  it('throws when faq_file points at a missing sibling YAML file', () => {
+    rmSync(join(corpusDir, 'siva-sutras.yaml'));
+    writeFileSync(
+      join(corpusDir, 'bad-faq.yaml'),
+      `
+schema_version: 1
+faq_file: ./missing.faq.yaml
+text:
+  id: bad-faq
+  slug: bad-faq
+  title_sa: दोषः
+  title_en: Bad FAQ
+  tradition: trika
+  license: PD
+chapters:
+  - chapter: 1
+    verses:
+      - verse: 1
+        devanagari: "दोषः"
+`,
+      'utf8',
+    );
+
+    expect(() => parseTextYaml(join(corpusDir, 'bad-faq.yaml'))).toThrow(/faq_file not found/);
   });
 
   it('no-ops with an empty summary when corpus dir is empty', () => {
@@ -174,6 +249,19 @@ describe('run() — failure modes', () => {
       total_glosses: 0,
       total_translations: 0,
     });
+  });
+
+  it('skips faq files and underscore templates when listing corpus YAML files', () => {
+    writeFileSync(join(corpusDir, '_template.yaml'), 'schema_version: 1\n', 'utf8');
+    writeFileSync(
+      join(corpusDir, 'sample.faq.yaml'),
+      'schema_version: 1\nfaqs:\n  - question: "Q"\n    answer: "A"\n',
+      'utf8',
+    );
+
+    expect(listYamlFiles(corpusDir).map((file) => file.split('/').at(-1))).toEqual([
+      'siva-sutras.yaml',
+    ]);
   });
 });
 
@@ -207,9 +295,10 @@ describe('UNIQUE (text_id, chapter, verse_num) — upsert semantics', () => {
 });
 
 describe('per-file transaction semantics', () => {
-  it('rolls back the entire file when a mid-file verse is malformed', () => {
+  it('rejects malformed files before any ingest work starts', () => {
     // YAML with TWO chapters: chapter 1 verse 1 is valid; chapter 2 verse 1
-    // is missing 'devanagari', which `ingestText` throws on.
+    // is missing 'devanagari'. Schema validation now rejects this before
+    // `ingestText()` opens its per-file transaction.
     const yaml = `
 id: tx-test
 slug: tx-test
@@ -231,19 +320,7 @@ chapters:
     rmSync(join(corpusDir, 'siva-sutras.yaml'));
     writeFileSync(join(corpusDir, 'tx-test.yaml'), yaml, 'utf8');
 
-    expect(() => run({ dbPath, corpusDir })).toThrow(/missing 'devanagari'/);
-
-    // After the throw, the transaction should have rolled back: zero verses
-    // landed (the chapter-1 verse 1 INSERT must be reverted).
-    const db = new Database(dbPath, { readonly: true });
-    try {
-      expect(rowCount(db, 'verses')).toBe(0);
-      // Note: the `texts` row may also have rolled back since both INSERTs
-      // ran in the same `db.transaction(...)`. Assert that too.
-      expect(rowCount(db, 'texts')).toBe(0);
-    } finally {
-      db.close();
-    }
+    expect(() => run({ dbPath, corpusDir })).toThrow(/Invalid input|devanagari|Required/);
   });
 });
 
