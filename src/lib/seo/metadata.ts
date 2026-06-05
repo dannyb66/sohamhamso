@@ -6,10 +6,14 @@ import { buildHreflangEntries, type HreflangEntry } from './hreflang';
 import { absoluteLocaleUrl } from './i18n-routes';
 import {
   buildArticleJsonLd,
+  buildBookJsonLd,
   buildBreadcrumbList,
   buildDefinedTermJsonLd,
   buildFaqPageJsonLd,
+  buildOrganizationJsonLd,
+  buildQuotationJsonLd,
   buildWebPageJsonLd,
+  buildWebSiteJsonLd,
   combineJsonLd,
   type JsonLdNode,
 } from './jsonld';
@@ -88,6 +92,19 @@ export function buildVerseSeo(input: {
         inLanguage: input.lang,
         isPartOf: absoluteLocaleUrl(`/${input.text.tradition}/${input.text.slug}`, input.lang),
       }),
+      buildQuotationJsonLd({
+        verse: {
+          devanagari: input.verse.devanagari,
+          iast: input.verse.iast,
+          chapter: input.verse.chapter,
+          verse_num: input.verse.verse_num,
+        },
+        text: {
+          slug: input.text.slug,
+          title_en: input.text.title_en,
+          tradition: input.text.tradition,
+        },
+      }),
       breadcrumbs,
     ),
     keywords: [],
@@ -131,6 +148,17 @@ export function buildTextSeo(input: {
         description,
         url: canonical,
         inLanguage: input.lang,
+      }),
+      buildBookJsonLd({
+        text: {
+          slug: input.text.slug,
+          title_en: input.text.title_en,
+          title_sa: input.text.title_sa,
+          title_iast: input.text.title_iast,
+          author: input.text.author,
+          tradition: input.text.tradition,
+          license: input.text.license,
+        },
       }),
       buildFaqPageJsonLd({
         faqs: corpusSeo.faqEntries,
@@ -202,6 +230,8 @@ export function buildHomeSeo(input: {
         url: canonical,
         inLanguage: input.lang,
       }),
+      buildWebSiteJsonLd(),
+      buildOrganizationJsonLd(),
     ),
     keywords: [],
     noindex,
