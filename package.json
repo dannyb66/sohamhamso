@@ -30,7 +30,14 @@
     "seo:scaffold": "bun scripts/seo-scaffold-existing.ts",
     "seo:build": "bun run seo:redirects && bun --bun astro build",
     "seo:rebuild": "bun run seo:ingest && bun run seo:build && bun run seo:validate",
-    "seo": "bun run seo:build && bun run seo:validate"
+    "seo": "bun run seo:build && bun run seo:validate",
+    "seo:preflight": "bun scripts/seo-preflight-invariants.ts",
+    "seo:noindex-sweep": "bun scripts/seo-dist-noindex-sweep.ts",
+    "seo:hreflang-closure": "bun scripts/seo-hreflang-closure.ts",
+    "seo:og-sample": "bun scripts/seo-og-live-sample.ts",
+    "seo:cache-freshness": "bun scripts/seo-cache-freshness.ts",
+    "seo:live-noindex-sweep": "bun scripts/seo-live-noindex-sweep.ts",
+    "cf:wait": "bun scripts/cf-pages-deploy-wait.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.100.1",

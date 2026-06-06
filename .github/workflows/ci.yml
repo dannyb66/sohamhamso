@@ -53,6 +53,18 @@ jobs:
       - name: SEO build
         run: bun run seo:build
 
+      - name: SEO preflight invariants
+        run: bun run seo:preflight
+
+      - name: SEO build-time noindex sweep
+        run: bun run seo:noindex-sweep
+
+      - name: SEO hreflang closure
+        run: bun run seo:hreflang-closure
+
+      - name: SEO verify phase-0
+        run: bun run seo:verify-phase0
+
       - name: SEO validate
         run: bun run seo:validate
 
