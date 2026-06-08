@@ -6,23 +6,33 @@ import LangSwitcher from '../../../components/seo/LangSwitcher.astro';
  * Lists chapters + verse counts.
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { resolveAlias } from '../../../lib/aliases';
+import { enumerateRedirectPairs, resolveAlias } from '../../../lib/aliases';
 import { getText, listChapters } from '../../../lib/db';
 import type { LangCode } from '../../../lib/reading-modes';
 import { getTexts } from '../../../lib/seo/corpus-bundle';
 import { buildTextSeo, filterIndexableTextLangs, liveLocaleSet } from '../../../lib/seo';
 
 export async function getStaticPaths() {
-  return getTexts().map((text) => ({
+  const canonical = getTexts().map((text) => ({
     params: { tradition: text.tradition, text: text.slug },
+    props: { redirectTo: null as string | null },
   }));
+
+  const aliases = enumerateRedirectPairs().map(
+    ({ wrongTradition, wrongSlug, canonicalTradition, canonicalSlug }) => ({
+      params: { tradition: wrongTradition, text: wrongSlug },
+      props: { redirectTo: `/${canonicalTradition}/${canonicalSlug}` },
+    }),
+  );
+
+  return [...canonical, ...aliases];
 }
 
+const { redirectTo } = Astro.props;
 const { tradition, text } = Astro.params;
 
-const aliasCheck = resolveAlias(tradition!, text!);
-if (aliasCheck && !aliasCheck.canonical) {
-  return Astro.redirect(`/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+if (redirectTo) {
+  return Astro.redirect(redirectTo, 301);
 }
 
 const textRow = getText(text!);
