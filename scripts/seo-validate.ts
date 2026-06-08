@@ -693,7 +693,9 @@ function validateCrossDocumentRules(
   const docsByCanonical = new Map<string, ValidationFileReport>();
 
   for (const file of files) {
-    if (file.canonicalUrl) docsByCanonical.set(file.canonicalUrl, file);
+    // Skip redirect stubs: they point their canonical at the real page but are
+    // themselves noindex, so they must not overwrite the real page in this map.
+    if (file.canonicalUrl && !file.isRedirect) docsByCanonical.set(file.canonicalUrl, file);
   }
 
   for (const file of files) {
