@@ -14,7 +14,6 @@ import { type OgFunctionContext, handleVerseOgRequest } from '../../../functions
 // Static .wasm import — wrangler's rollup plugin pre-compiles this into a
 // WebAssembly.Module at bundle time, avoiding the dynamic instantiate() call
 // that CF modules Workers block ("Wasm code generation disallowed").
-// @ts-expect-error — resolved by src/wasm.d.ts; vite passes through to wrangler
 import resvgWasm from '../../../public/og-runtime/resvg-index_bg.wasm';
 
 export const prerender = false;

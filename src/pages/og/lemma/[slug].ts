@@ -9,7 +9,6 @@
 
 import type { APIRoute } from 'astro';
 import { type OgFunctionContext, handleLemmaOgRequest } from '../../../../functions/og/_shared';
-// @ts-expect-error — resolved by src/wasm.d.ts; see src/pages/og/[...path].ts
 import resvgWasm from '../../../../public/og-runtime/resvg-index_bg.wasm';
 
 export const prerender = false;
