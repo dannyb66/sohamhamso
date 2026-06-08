@@ -32,10 +32,3 @@ name = "sohamhamso"
 compatibility_date = "2026-06-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
-
-# OG image renderer — pre-compile resvg WASM at deploy time.
-# CF Workers blocks dynamic WebAssembly.instantiate() at runtime;
-# declaring the module here gives the Worker a pre-compiled
-# WebAssembly.Module in env.RESVG_WASM, bypassing that restriction.
-[wasm_modules]
-RESVG_WASM = "public/og-runtime/resvg-index_bg.wasm"
