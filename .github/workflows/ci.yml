@@ -20,6 +20,9 @@ env:
   # Biome baseline. Net-new errors above this threshold fail the build.
   # Source: .gstack/qa-reports/baseline-pass2.json (current as of 2026-06-01).
   BIOME_BASELINE: 94
+  # Match the production CF Pages env var so SEO tools test the live config:
+  # all 12 locales indexable, full hreflang clusters, no Disallow on locale paths.
+  LOCALE_URLS_LIVE: "true"
 
 jobs:
   ci:
