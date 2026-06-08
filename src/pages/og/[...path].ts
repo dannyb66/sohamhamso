@@ -14,15 +14,17 @@ import { type OgFunctionContext, handleVerseOgRequest } from '../../../functions
 
 export const prerender = false;
 
-export const GET: APIRoute = async ({ request }) => {
+export const GET: APIRoute = async ({ request, locals }) => {
+  // CF wasm_modules binding injected by wrangler.toml [wasm_modules].
+  // Bypasses the dynamic WebAssembly.instantiate() blocked in _worker.js.
+  const runtimeEnv = (locals as { runtime?: { env?: Record<string, unknown> } }).runtime?.env ?? {};
   const ctx: OgFunctionContext = {
     request,
     env: {
-      // ASSETS binding: wrap fetch so the handler can load static assets
-      // (fallback PNG, wasm, fonts) via their absolute public URLs.
       ASSETS: { fetch: (input: RequestInfo | URL) => fetch(input as RequestInfo) },
       TURSO_CORPUS_URL: process.env.TURSO_CORPUS_URL,
       TURSO_CORPUS_AUTH_TOKEN: process.env.TURSO_CORPUS_AUTH_TOKEN,
+      RESVG_WASM: runtimeEnv.RESVG_WASM as WebAssembly.Module | undefined,
     },
     waitUntil: () => {},
   };

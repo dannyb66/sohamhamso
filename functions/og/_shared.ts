@@ -32,6 +32,9 @@ export interface OgEnv {
   ASSETS: { fetch: typeof fetch };
   TURSO_CORPUS_URL?: string;
   TURSO_CORPUS_AUTH_TOKEN?: string;
+  /** Pre-compiled WebAssembly.Module from wrangler.toml [wasm_modules].
+   *  Avoids dynamic instantiation which is blocked in _worker.js context. */
+  RESVG_WASM?: WebAssembly.Module;
 }
 
 export interface OgFunctionContext {
@@ -526,11 +529,22 @@ async function ensureResvgReady(
   if (!_resvgReadyPromise) {
     _resvgReadyPromise = (async () => {
       const resvg = await _resvgModulePromise;
-      const wasmResponse = await context.env.ASSETS.fetch(new URL(OG_RUNTIME_WASM_ASSET, context.request.url));
-      if (!wasmResponse.ok) {
-        throw new Error(`OG renderer wasm asset unavailable: ${OG_RUNTIME_WASM_ASSET}.`);
-      }
-      await resvg.initWasm(wasmResponse);
+      // Prefer the pre-compiled WebAssembly.Module injected via wrangler.toml
+      // [wasm_modules] — CF Workers blocks dynamic WebAssembly.instantiate()
+      // in the _worker.js context (Wasm code generation disallowed).
+      // Fall back to fetching the .wasm asset only when the binding is absent
+      // (e.g., local dev or the legacy CF Pages Functions path).
+      const wasmSource: WebAssembly.Module | Response = context.env.RESVG_WASM
+        ?? await (async () => {
+          const wasmResponse = await context.env.ASSETS.fetch(
+            new URL(OG_RUNTIME_WASM_ASSET, context.request.url),
+          );
+          if (!wasmResponse.ok) {
+            throw new Error(`OG renderer wasm asset unavailable: ${OG_RUNTIME_WASM_ASSET}.`);
+          }
+          return wasmResponse;
+        })();
+      await resvg.initWasm(wasmSource);
       return resvg;
     })().catch((error) => {
       _resvgReadyPromise = null;
