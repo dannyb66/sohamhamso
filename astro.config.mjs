@@ -9,7 +9,16 @@ export default defineConfig({
   site: 'https://sohamhamso.org',
   output: 'static',
   trailingSlash: 'ignore',
-  adapter: cloudflare({ imageService: 'compile' }),
+  adapter: cloudflare({
+    imageService: 'compile',
+    routes: {
+      extend: {
+        // OG image Pages Function lives in functions/og/ — not an Astro endpoint,
+        // so the adapter doesn't auto-add it to _routes.json include list.
+        include: [{ pattern: '/og/*' }],
+      },
+    },
+  }),
   integrations: [solid()],
   devToolbar: { enabled: false },
   vite: {
