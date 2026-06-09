@@ -1,0 +1,19 @@
+# Cloudflare Pages `_headers` — long-cache immutable assets.
+#
+# Astro emits content-hashed filenames for `_astro/*` and we ship the
+# self-hosted font files with no content-hash but a stable filename per
+# asset (Source Serif 4 Roman/Italic, Inter, Noto Serif Devanagari, etc).
+# Both are safe to mark immutable: changing a font swaps the asset path
+# at build time, and `_astro/*` bundles have unique hashes per build.
+#
+# This file ships unchanged on every deploy. Edit when adding new asset
+# directories under /public.
+#
+# Goal: shed the re-validate roundtrip on repeat-view (CrUX field p75)
+# rather than the cold-load Lighthouse number.
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
