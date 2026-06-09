@@ -267,13 +267,19 @@ const iastFormatted = formatDanda(verse.iast);
   .synonyms {
     font-family: var(--font-iast);
     font-size: 0.9375rem; /* 15px */
-    /* Density matches the Vedabase reference: ~23px per row (15px × 1.55).
-       The line-height alone drives row height now — buttons are no longer
-       inline-block-with-padding, so they don't inflate the line-box. Tap
-       targets are handled by a .sa-word::before overlay (see below) which
-       is position:absolute and OUT OF FLOW — it adds zero pixels to the
-       visual line-box. */
-    line-height: 1.55;
+    /* Density matches the Vedabase reference. The line-height drives row
+       height — buttons are not inline-block-with-padding, so they don't
+       inflate the line-box. Tap targets are handled by a .sa-word::before
+       overlay (see below) which is position:absolute and OUT OF FLOW.
+
+       The overlay must NOT be taller than the line-box, or a wrapped word
+       on the next visual line would have its hit-area extend up over the
+       previous line's word and intercept its clicks (Playwright refuses to
+       click through an intercepting element; real fingers near the line
+       boundary would also mis-target). So row height and overlay extent are
+       coupled: ~26px rows (15px × 1.75) leave ~11px of leading, split into
+       a ~5px overlay extension on each side of the ~15px glyph box. */
+    line-height: 1.75;
     color: var(--color-ink-muted);
     max-width: var(--width-reader);
   }
@@ -304,21 +310,36 @@ const iastFormatted = formatDanda(verse.iast);
   .sa-word em {
     font-style: italic;
   }
-  /* Invisible hit-area overlay extends the tappable region 15px above and
-     below the visible button (text ~15px + 15px×2 overlay = ~45px hit
-     area, comfortably above WCAG 2.5.5 AAA's 44px floor). The pseudo
-     is position:absolute so it does NOT contribute to the inline-flow
-     line-box — the dense visual rhythm is preserved.
-     Adjacent buttons in different visual lines overlap their hit areas
-     by ~7px each side, which is harmless: finger contact (typically
-     ~40-50px diameter) is wider than the overlap zone anyway. */
+  /* Invisible hit-area overlay extends the tappable region above and below
+     the visible glyph box. CRITICAL: the extension is capped at ~5px each
+     side so the overlay stays INSIDE the line-box leading (line-height 1.75
+     ⇒ ~26px row, ~15px glyph ⇒ ~5.5px leading per side). This guarantees a
+     wrapped word's overlay never reaches over an adjacent line's word, so
+     clicks are never intercepted. On the dense desktop layout this yields a
+     ~25px tap target (mouse pointer — WCAG 2.5.8 AA 24px is met).
+     Coarse-pointer (touch) devices get a true 44px target below. */
   .sa-word::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    top: -15px;
-    bottom: -15px;
+    top: -5px;
+    bottom: -5px;
+  }
+  /* Touch devices: open the rows up to a full 44px rhythm and size the
+     overlay to fill the line-box exactly (≈ -14px each side). This restores
+     the WCAG 2.5.5 AAA 44px tap floor for fingers while STILL keeping each
+     word's hit-area within its own line — no adjacent-line interception. The
+     density cost (taller rows) lands only where it buys real ergonomic value;
+     desktop/mouse keeps the tight Vedabase rhythm. */
+  @media (pointer: coarse) {
+    .synonyms {
+      line-height: 2.95; /* ~44px rows at 15px */
+    }
+    .sa-word::before {
+      top: -14px;
+      bottom: -14px;
+    }
   }
   .sa-word:hover,
   .sa-word:focus-visible {
