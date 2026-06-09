@@ -67,3 +67,6 @@ test-results/
 dataset/build/
 checksums.sha256.unsigned
 .gstack/
+
+# Claude Code agent harness (local worktrees, session state)
+.claude/
