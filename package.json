@@ -24,6 +24,7 @@
     "seo:check-fonts": "bun scripts/seo-check-fonts.ts",
     "seo:redirects": "bun scripts/seo-build-redirects.ts public/_redirects",
     "seo:ping": "bun scripts/seo-ping.ts",
+    "seo:indexnow": "bun scripts/seo-indexnow-submit.ts",
     "seo:preview": "bun scripts/seo-preview.ts",
     "seo:verify-phase0": "bun scripts/seo-verify-phase0.ts --json",
     "seo:validate": "bun scripts/seo-validate.ts",
