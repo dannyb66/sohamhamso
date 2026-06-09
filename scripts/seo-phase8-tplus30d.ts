@@ -66,16 +66,14 @@ export interface LhResult {
 }
 
 export function runLighthouse(url: string): LhResult {
-  const outPath = join(tmpdir(), `phase8-lh-${Date.now()}-${Math.random().toString(36).slice(2, 8)}.json`);
+  const outPath = join(
+    tmpdir(),
+    `phase8-lh-${Date.now()}-${Math.random().toString(36).slice(2, 8)}.json`,
+  );
   try {
     // --quiet shrinks stdout. We read the JSON file directly afterwards.
     execSync(
-      `npx -y lighthouse "${url}" ` +
-        `--quiet --no-enable-error-reporting ` +
-        `--output=json --output-path="${outPath}" ` +
-        `--chrome-flags="--headless=new --no-sandbox" ` +
-        `--only-categories=performance ` +
-        `--throttling-method=simulate`,
+      `npx -y lighthouse "${url}" --quiet --no-enable-error-reporting --output=json --output-path="${outPath}" --chrome-flags="--headless=new --no-sandbox" --only-categories=performance --throttling-method=simulate`,
       { stdio: ['ignore', 'pipe', 'pipe'], timeout: 180_000 },
     );
     const raw = readFileSync(outPath, 'utf8');
@@ -232,9 +230,7 @@ export async function main(): Promise<number> {
       if (res.lcpMs === null || res.lcpMs >= LCP_THRESHOLD_MS) anyFail = true;
       const lcpStr = res.lcpMs === null ? 'n/a' : `${Math.round(res.lcpMs)}ms`;
       const perfStr = res.performance === null ? 'n/a' : (res.performance * 100).toFixed(0);
-      console.log(
-        `  ${url.slice(0, 56).padEnd(56)} ${lcpStr.padEnd(10)} ${perfStr} ${flag}`,
-      );
+      console.log(`  ${url.slice(0, 56).padEnd(56)} ${lcpStr.padEnd(10)} ${perfStr} ${flag}`);
     }
     console.log(`  Threshold: LCP < ${LCP_THRESHOLD_MS}ms`);
   }
@@ -255,7 +251,7 @@ export async function main(): Promise<number> {
     for (const url of TARGET_URLS) {
       const res = await fetchCrux(url, cruxKey);
       const lcpStr = res.p75LcpMs === null ? 'n/a' : `${Math.round(res.p75LcpMs)}ms`;
-      const note = res.status === 'no-data' ? '(no data — expected)' : res.reason ?? res.status;
+      const note = res.status === 'no-data' ? '(no data — expected)' : (res.reason ?? res.status);
       console.log(`  ${url.slice(0, 56).padEnd(56)} ${lcpStr.padEnd(12)} ${note}`);
       // CrUX is best-effort: do NOT fail the run on missing field data.
     }
@@ -270,7 +266,9 @@ export async function main(): Promise<number> {
   if (args.skipGsc || !token) {
     printGscManualChecklist(site);
     if (process.env.GITHUB_ACTIONS === 'true') {
-      console.log('::warning title=GSC Phase 8 T+30d::Manual checklist required (GSC_ACCESS_TOKEN unset)');
+      console.log(
+        '::warning title=GSC Phase 8 T+30d::Manual checklist required (GSC_ACCESS_TOKEN unset)',
+      );
     }
   } else {
     const r = await fetchGscNoindex(token, site);
@@ -295,9 +293,13 @@ export async function main(): Promise<number> {
   console.log('══════════════════════════════════════════════════════════');
   console.log('Summary');
   console.log('══════════════════════════════════════════════════════════');
-  console.log(`  Lighthouse LCP < ${LCP_THRESHOLD_MS}ms:   ${args.skipLighthouse ? 'SKIPPED' : anyFail ? 'see above' : 'PASS'}`);
-  console.log(`  CrUX field data:          best-effort (does not affect exit code)`);
-  console.log(`  GSC zero errors:          ${args.skipGsc || !token ? 'MANUAL' : anyFail ? 'see above' : 'PASS'}`);
+  console.log(
+    `  Lighthouse LCP < ${LCP_THRESHOLD_MS}ms:   ${args.skipLighthouse ? 'SKIPPED' : anyFail ? 'see above' : 'PASS'}`,
+  );
+  console.log('  CrUX field data:          best-effort (does not affect exit code)');
+  console.log(
+    `  GSC zero errors:          ${args.skipGsc || !token ? 'MANUAL' : anyFail ? 'see above' : 'PASS'}`,
+  );
   return anyFail ? 1 : 0;
 }
 

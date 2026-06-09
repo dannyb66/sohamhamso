@@ -24,7 +24,7 @@
  *                       `sc-domain:sohamhamso.org` or `https://sohamhamso.org/`.
  */
 
-import { probeOg, summarizeOgResults, type OgProbeResult } from './seo-og-live-sample';
+import { type OgProbeResult, probeOg, summarizeOgResults } from './seo-og-live-sample';
 
 // ──────────────────────────────────────────────────────────────────────────
 // CLI args
@@ -132,8 +132,8 @@ export function stratifiedRandomSample(
   const picked: string[] = [];
   // First pass: 1 per locale.
   for (const lang of langs) {
-    const pool = byLang.get(lang)!;
-    if (pool.length === 0) continue;
+    const pool = byLang.get(lang);
+    if (!pool || pool.length === 0) continue;
     const idx = Math.floor(rng() * pool.length);
     picked.push(pool[idx]);
   }
@@ -175,7 +175,9 @@ export async function runOgCheck(
   const picked = stratifiedRandomSample(urls, sample);
   console.log(`  Sampled:         ${picked.length}`);
 
-  const probes = picked.map((u) => deriveOgUrl(u)!);
+  const probes = picked
+    .map((u) => deriveOgUrl(u))
+    .filter((p): p is NonNullable<typeof p> => p !== null);
   const CONCURRENCY = 10;
   const results: OgProbeResult[] = [];
   for (let i = 0; i < probes.length; i += CONCURRENCY) {
@@ -271,7 +273,7 @@ export async function queryCfAnalytics(
   const r = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -291,7 +293,10 @@ export async function queryCfAnalytics(
  * else 'en' (or 'static' for non-localized paths like `/og/...`, `/sitemap*`).
  */
 export function reduceCfRows(
-  rows: Array<{ count: number; dimensions: { edgeResponseStatus: number; clientRequestPath: string } }>,
+  rows: Array<{
+    count: number;
+    dimensions: { edgeResponseStatus: number; clientRequestPath: string };
+  }>,
 ): CfLocaleStat[] {
   const byLang = new Map<string, { total: number; e4: number; e5: number }>();
   for (const row of rows) {
@@ -300,7 +305,12 @@ export function reduceCfRows(
     const m = path.match(/^\/([a-z]{2,3})(\/|$)/);
     if (m && INDIC_LOCALES.includes(m[1])) {
       lang = m[1];
-    } else if (path === '/' || path.startsWith('/trika') || path.startsWith('/about') || path.startsWith('/shakta')) {
+    } else if (
+      path === '/' ||
+      path.startsWith('/trika') ||
+      path.startsWith('/about') ||
+      path.startsWith('/shakta')
+    ) {
       lang = 'en';
     } else {
       lang = 'static';
@@ -324,7 +334,7 @@ export function reduceCfRows(
 }
 
 export async function runCfCheck(threshold: number): Promise<CfCheckResult> {
-  console.log(`\n[2/3] CF Analytics 4xx/5xx rate (last 24h)`);
+  console.log('\n[2/3] CF Analytics 4xx/5xx rate (last 24h)');
   console.log('-'.repeat(60));
 
   const token = process.env.CF_ANALYTICS_TOKEN;
@@ -351,12 +361,23 @@ export async function runCfCheck(threshold: number): Promise<CfCheckResult> {
 
   // Narrow the response shape.
   const rows =
-    (res.data as {
-      viewer?: { zones?: Array<{ httpRequestsAdaptiveGroups?: Array<{ count: number; dimensions: { edgeResponseStatus: number; clientRequestPath: string } }> }> };
-    }).viewer?.zones?.[0]?.httpRequestsAdaptiveGroups ?? [];
+    (
+      res.data as {
+        viewer?: {
+          zones?: Array<{
+            httpRequestsAdaptiveGroups?: Array<{
+              count: number;
+              dimensions: { edgeResponseStatus: number; clientRequestPath: string };
+            }>;
+          }>;
+        };
+      }
+    ).viewer?.zones?.[0]?.httpRequestsAdaptiveGroups ?? [];
 
   const stats = reduceCfRows(rows);
-  console.log(`  ${'Locale'.padEnd(8)} ${'Total'.padEnd(8)} ${'4xx'.padEnd(8)} ${'5xx'.padEnd(8)} ErrRate`);
+  console.log(
+    `  ${'Locale'.padEnd(8)} ${'Total'.padEnd(8)} ${'4xx'.padEnd(8)} ${'5xx'.padEnd(8)} ErrRate`,
+  );
   let anyFail = false;
   for (const s of stats) {
     const flag = s.errorRate > threshold ? '[FAIL]' : '[ok]';
@@ -402,7 +423,7 @@ export interface GscInspectResult {
 }
 
 export async function runGscInspection(): Promise<GscInspectResult> {
-  console.log(`\n[3/3] GSC URL inspection (3 URLs per live locale)`);
+  console.log('\n[3/3] GSC URL inspection (3 URLs per live locale)');
   console.log('-'.repeat(60));
 
   const token = process.env.GSC_ACCESS_TOKEN;
@@ -413,7 +434,9 @@ export async function runGscInspection(): Promise<GscInspectResult> {
     console.log('  See scripts/seo/PHASE8-README.md for OAuth setup steps.');
     console.log('  ');
     console.log('  Inspect these URLs manually in GSC:');
-    console.log('    https://search.google.com/search-console/inspect?resource_id=' + encodeURIComponent(site));
+    console.log(
+      `    https://search.google.com/search-console/inspect?resource_id=${encodeURIComponent(site)}`,
+    );
     console.log('  ');
     const perUrl: Array<{ url: string; lang: string; verdict: string; ok: boolean }> = [];
     for (const [lang, urls] of Object.entries(GSC_SAMPLE_URLS)) {
@@ -434,17 +457,14 @@ export async function runGscInspection(): Promise<GscInspectResult> {
   let anyFail = false;
   for (const [lang, urls] of Object.entries(GSC_SAMPLE_URLS)) {
     for (const url of urls) {
-      const r = await fetch(
-        'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect',
-        {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ inspectionUrl: url, siteUrl: site }),
+      const r = await fetch('https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
         },
-      );
+        body: JSON.stringify({ inspectionUrl: url, siteUrl: site }),
+      });
       if (!r.ok) {
         const errTxt = await r.text();
         console.error(`  [FAIL] ${url} — GSC API ${r.status}: ${errTxt.slice(0, 200)}`);
@@ -494,8 +514,12 @@ export async function main(): Promise<number> {
   console.log('\n══════════════════════════════════════════════════════════');
   console.log('Summary');
   console.log('══════════════════════════════════════════════════════════');
-  console.log(`  OG fallback rate:    ${og.passed ? 'PASS' : 'FAIL'} (${og.fallbackRate.toFixed(2)}% vs ${og.threshold}%)`);
-  console.log(`  CF 4xx/5xx rate:     ${cf.passed ? 'PASS' : 'FAIL'}${cf.reason ? ' (' + cf.reason + ')' : ''}`);
+  console.log(
+    `  OG fallback rate:    ${og.passed ? 'PASS' : 'FAIL'} (${og.fallbackRate.toFixed(2)}% vs ${og.threshold}%)`,
+  );
+  console.log(
+    `  CF 4xx/5xx rate:     ${cf.passed ? 'PASS' : 'FAIL'}${cf.reason ? ` (${cf.reason})` : ''}`,
+  );
   console.log(`  GSC URL inspection:  ${gsc.passed ? 'PASS' : 'FAIL'} (${gsc.mode} mode)`);
 
   const allPassed = og.passed && cf.passed && gsc.passed;

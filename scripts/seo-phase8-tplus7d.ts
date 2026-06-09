@@ -53,7 +53,9 @@ function printManualChecklist(site: string): void {
   console.log(
     `     https://search.google.com/search-console/performance/search-analytics?resource_id=${encodeURIComponent(site)}`,
   );
-  console.log('     Filter: last 7 days, group by Page, filter Page contains "/hi/" (and "/ta/", etc.)');
+  console.log(
+    '     Filter: last 7 days, group by Page, filter Page contains "/hi/" (and "/ta/", etc.)',
+  );
   console.log('     Pass criteria: impressions > 0 for ANY Indic locale.');
   console.log(`     Indic locales: ${INDIC_LOCALES.join(', ')}`);
 }
@@ -149,15 +151,21 @@ export async function fetchIndicImpressions(
       const u = new URL(page);
       const m = u.pathname.match(/^\/([a-z]{2,3})(\/|$)/);
       if (m && INDIC_LOCALES.includes(m[1])) {
-        const e = byLang.get(m[1])!;
-        e.impressions += Number(row.impressions ?? 0);
-        e.clicks += Number(row.clicks ?? 0);
+        const e = byLang.get(m[1]);
+        if (e) {
+          e.impressions += Number(row.impressions ?? 0);
+          e.clicks += Number(row.clicks ?? 0);
+        }
       }
     } catch {
       // ignore malformed URL
     }
   }
-  return [...byLang.entries()].map(([lang, v]) => ({ lang, impressions: v.impressions, clicks: v.clicks }));
+  return [...byLang.entries()].map(([lang, v]) => ({
+    lang,
+    impressions: v.impressions,
+    clicks: v.clicks,
+  }));
 }
 
 // ──────────────────────────────────────────────────────────────────────────
@@ -175,7 +183,9 @@ export async function main(): Promise<number> {
     printManualChecklist(site);
     // GitHub Actions surfaces this as a workflow annotation.
     if (process.env.GITHUB_ACTIONS === 'true') {
-      console.log('::warning title=GSC Phase 8 T+7d::Manual checklist required (GSC_ACCESS_TOKEN unset)');
+      console.log(
+        '::warning title=GSC Phase 8 T+7d::Manual checklist required (GSC_ACCESS_TOKEN unset)',
+      );
     }
     return 0;
   }
