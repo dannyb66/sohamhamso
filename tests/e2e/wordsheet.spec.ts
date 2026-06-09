@@ -15,7 +15,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
 
   test('tapping a .sa-word opens the bottom sheet with lemma + gloss', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('load');
     const word = page.locator('.sa-word').first();
     if (!(await word.count())) {
       test.info().annotations.push({
@@ -42,7 +42,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
 
   test('drag handle is visible on the sheet', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('load');
     const word = page.locator('.sa-word').first();
     if (!(await word.count())) {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
@@ -60,7 +60,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
 
   test('close button (×) dismisses the sheet', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('load');
     const word = page.locator('.sa-word').first();
     if (!(await word.count())) {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
@@ -75,7 +75,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
 
   test('Escape closes the sheet', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('load');
     const word = page.locator('.sa-word').first();
     if (!(await word.count())) {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
@@ -90,7 +90,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
 
   test('scrim click dismisses the sheet', async ({ page }) => {
     await page.goto(VERSE_URL);
-    await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('load');
     const word = page.locator('.sa-word').first();
     if (!(await word.count())) {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
