@@ -44,6 +44,26 @@ export function absoluteLocaleUrl(basePath: string, lang: string): string {
   return new URL(localePathFor(basePath, lang), SITE_URL).toString();
 }
 
+/**
+ * Map an internal LangCode to a BCP-47 tag suitable for JSON-LD
+ * `inLanguage` on locale-specific page nodes (WebPage, Article, FAQPage,
+ * DefinedTerm). Sanskrit `sa` (used on Book and Quotation source nodes)
+ * is intentionally NOT routed through here — those describe the source
+ * work, not the page locale, and have no region tag.
+ *
+ * Why `-IN` for non-English:
+ *   - pa-IN vs pa-PK disambiguates Gurmukhi from Shahmukhi (this site
+ *     only ships pa-IN Gurmukhi).
+ *   - bn-IN vs bn-BD disambiguates the Indian Bengali register we
+ *     translate into.
+ *   - For other Indic langs the -IN suffix is conventionally redundant
+ *     but harmless; using it uniformly keeps the rule one-liner.
+ */
+export function inLanguageTag(lang: LangCode): string {
+  if (lang === 'en') return 'en';
+  return `${lang}-IN`;
+}
+
 export function currentLangLabel(lang: string): string {
   return isLangCode(lang) ? lang.toUpperCase() : DEFAULT_LANG.toUpperCase();
 }
