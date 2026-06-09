@@ -11,6 +11,8 @@
  *   bun scripts/seo-indexnow-submit.ts --limit=100 # cap submissions
  */
 
+export {};
+
 const HOST = 'sohamhamso.org';
 const KEY = 'c2a4f8280a57eee77934f6ed5aab3845fd81a9bdcdec354564a1dde2020d9dc7';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
