@@ -59,9 +59,7 @@ describe('verse SEO translationOfWork', () => {
       verse,
     });
     const article = seo.jsonLd.find((node) => node['@type'] === 'Article');
-    expect(article?.translationOfWork).toBe(
-      'https://sohamhamso.org/trika/test-text/1/1',
-    );
+    expect(article?.translationOfWork).toBe('https://sohamhamso.org/trika/test-text/1/1');
   });
 
   it('points the Tamil verse Article back to the EN canonical', () => {
@@ -74,9 +72,7 @@ describe('verse SEO translationOfWork', () => {
       verse,
     });
     const article = seo.jsonLd.find((node) => node['@type'] === 'Article');
-    expect(article?.translationOfWork).toBe(
-      'https://sohamhamso.org/trika/test-text/1/1',
-    );
+    expect(article?.translationOfWork).toBe('https://sohamhamso.org/trika/test-text/1/1');
   });
 
   it('does not attach translationOfWork to the Quotation node (Sanskrit is the source)', () => {

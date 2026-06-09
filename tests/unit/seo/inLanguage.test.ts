@@ -1,10 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import {
-  buildHomeSeo,
-  buildTextSeo,
-  buildVerseSeo,
-  inLanguageTag,
-} from '../../../src/lib/seo';
+import { buildHomeSeo, buildTextSeo, buildVerseSeo, inLanguageTag } from '../../../src/lib/seo';
 
 const text = {
   id: 'test-text',
@@ -78,9 +73,7 @@ describe('JSON-LD integration — page-locale inLanguage routes through inLangua
       translation: 'चैतन्य ही आत्मा है।',
       verse,
     });
-    const byType = Object.fromEntries(
-      seo.jsonLd.map((n) => [n['@type'] as string, n]),
-    );
+    const byType = Object.fromEntries(seo.jsonLd.map((n) => [n['@type'] as string, n]));
     expect(byType.WebPage?.inLanguage).toBe('hi-IN');
     expect(byType.Article?.inLanguage).toBe('hi-IN');
     expect(byType.Quotation?.inLanguage).toBe('sa');
@@ -95,9 +88,7 @@ describe('JSON-LD integration — page-locale inLanguage routes through inLangua
       translation: 'Consciousness is the Self.',
       verse,
     });
-    const byType = Object.fromEntries(
-      seo.jsonLd.map((n) => [n['@type'] as string, n]),
-    );
+    const byType = Object.fromEntries(seo.jsonLd.map((n) => [n['@type'] as string, n]));
     expect(byType.WebPage?.inLanguage).toBe('en');
     expect(byType.Article?.inLanguage).toBe('en');
     expect(byType.Quotation?.inLanguage).toBe('sa');
@@ -108,9 +99,7 @@ describe('JSON-LD integration — page-locale inLanguage routes through inLangua
       availableLangs: ['en', 'ta'],
       lang: 'ta',
     });
-    const byType = Object.fromEntries(
-      seo.jsonLd.map((n) => [n['@type'] as string, n]),
-    );
+    const byType = Object.fromEntries(seo.jsonLd.map((n) => [n['@type'] as string, n]));
     expect(byType.WebPage?.inLanguage).toBe('ta-IN');
     expect(Array.isArray(byType.WebSite?.inLanguage)).toBe(true);
     // WebSite is a site-wide availability list; intentionally bare codes
@@ -138,9 +127,7 @@ describe('JSON-LD integration — page-locale inLanguage routes through inLangua
       text,
       totalVerses: 12,
     });
-    const byType = Object.fromEntries(
-      seo.jsonLd.map((n) => [n['@type'] as string, n]),
-    );
+    const byType = Object.fromEntries(seo.jsonLd.map((n) => [n['@type'] as string, n]));
     expect(byType.WebPage?.inLanguage).toBe('hi-IN');
     expect(byType.Book?.inLanguage).toBe('sa');
   });
