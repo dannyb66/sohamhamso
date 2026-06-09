@@ -3,7 +3,7 @@ import type { LangCode } from '../reading-modes';
 import { filterIndexableTextLangs, getTextSeoOverrides } from './corpus-overrides';
 import { resolveTextDescription, resolveVerseDescription } from './descriptions';
 import { buildHreflangEntries, type HreflangEntry } from './hreflang';
-import { absoluteLocaleUrl } from './i18n-routes';
+import { absoluteLocaleUrl, inLanguageTag } from './i18n-routes';
 import {
   buildArticleJsonLd,
   buildBookJsonLd,
@@ -83,14 +83,16 @@ export function buildVerseSeo(input: {
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
       buildArticleJsonLd({
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
         isPartOf: absoluteLocaleUrl(`/${input.text.tradition}/${input.text.slug}`, input.lang),
+        translationOfWork:
+          input.lang === 'en' ? undefined : absoluteLocaleUrl(input.basePath, 'en'),
       }),
       buildQuotationJsonLd({
         verse: {
@@ -147,7 +149,7 @@ export function buildTextSeo(input: {
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
       buildBookJsonLd({
         text: {
@@ -162,7 +164,7 @@ export function buildTextSeo(input: {
       }),
       buildFaqPageJsonLd({
         faqs: corpusSeo.faqEntries,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
         url: canonical,
       }),
       buildBreadcrumbList([
@@ -200,7 +202,7 @@ export function buildTraditionSeo(input: {
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
     ),
     keywords: [],
@@ -228,7 +230,7 @@ export function buildHomeSeo(input: {
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
       buildWebSiteJsonLd(),
       buildOrganizationJsonLd(),
@@ -261,7 +263,7 @@ export function buildChromeSeo(input: {
         title: input.title,
         description: truncate(input.description),
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
     ),
     keywords: [],
@@ -296,19 +298,19 @@ export function buildLemmaSeo(input: {
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
       }),
       buildArticleJsonLd({
         title,
         description,
         url: canonical,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
         isPartOf: absoluteLocaleUrl('/', input.lang),
       }),
       buildDefinedTermJsonLd({
         alternateName: input.lemmaSa,
         description: input.gloss,
-        inLanguage: input.lang,
+        inLanguage: inLanguageTag(input.lang),
         name: input.lemmaIast,
         termCode: input.lemmaIast,
         url: canonical,

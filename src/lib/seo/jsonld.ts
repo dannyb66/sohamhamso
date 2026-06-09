@@ -44,6 +44,7 @@ export function buildArticleJsonLd(input: {
   url: string;
   inLanguage: string;
   isPartOf?: string;
+  translationOfWork?: string;
   ogImageUrl?: string;
   textSourceRevision?: string;
 }): JsonLdNode {
@@ -55,6 +56,7 @@ export function buildArticleJsonLd(input: {
     url: input.url,
     inLanguage: input.inLanguage,
     isPartOf: input.isPartOf,
+    translationOfWork: input.translationOfWork,
     author: { '@type': 'Organization' as const, name: 'sohamhamso', url: SITE_URL },
     datePublished: input.textSourceRevision ?? '2026-06-01',
     dateModified: input.textSourceRevision ?? '2026-06-01',
