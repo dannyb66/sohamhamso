@@ -37,6 +37,9 @@
     "seo:og-sample": "bun scripts/seo-og-live-sample.ts",
     "seo:cache-freshness": "bun scripts/seo-cache-freshness.ts",
     "seo:live-noindex-sweep": "bun scripts/seo-live-noindex-sweep.ts",
+    "seo:cf-logpush:setup": "bun scripts/seo-cf-logpush-setup.ts",
+    "seo:cf-logpush:tail": "bun scripts/seo-cf-logpush-tail.ts",
+    "seo:cf-logpush:disable": "bun scripts/seo-cf-logpush-disable.ts",
     "cf:wait": "bun scripts/cf-pages-deploy-wait.ts"
   },
   "dependencies": {

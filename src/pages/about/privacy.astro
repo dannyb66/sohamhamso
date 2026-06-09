@@ -12,7 +12,7 @@ import Masthead from '../../components/Masthead.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
 
-const updated = '2026-05-31';
+const updated = '2026-06-08';
 const currentLang = 'en' as const;
 const pageSeo = buildChromeSeo({
   availableLangs: getChromeAvailableLangs(),
@@ -64,11 +64,34 @@ const pageSeo = buildChromeSeo({
 
       <h2 id="what-we-dont">What we don't use</h2>
       <ul>
-        <li>No analytics scripts (no GA, no Plausible, no Fathom).</li>
+        <li>No client-side analytics scripts (no GA, no Plausible, no Fathom).</li>
         <li>No advertising or remarketing networks.</li>
         <li>No third-party social embeds.</li>
         <li>No fingerprinting, session replay, or A/B testing tools.</li>
+        <li>No cookies. The site sets none.</li>
       </ul>
+
+      <h2 id="server-side-analytics">Server-side request data</h2>
+      <p>
+        The site is hosted on Cloudflare, which proxies every request
+        to our edge. As a side effect of routing, Cloudflare sees the
+        same request metadata any web host sees: source IP, requested
+        URL, user agent, response status. We use Cloudflare's free
+        zone-level <em>Web Analytics</em> view of that data
+        (aggregate pageviews and unique visitors) so we can tell
+        whether the site is up and which pages are read. This is
+        server-side observation: we do not deliver a client-side
+        beacon script, do not set cookies, and do not associate
+        requests with any persistent visitor identifier.
+      </p>
+      <p>
+        During the first 72 hours after launch (2026-06-08 →
+        2026-06-11), Cloudflare also writes request logs to a private
+        backup bucket so we can spot broken links and server errors.
+        That window is single-purpose and ends with the logs being
+        purged. See <code>docs/CF-OBSERVABILITY-SETUP.md</code> in
+        the public repo for the operator runbook.
+      </p>
 
       <h2 id="unsubscribe">Unsubscribe</h2>
       <p>
