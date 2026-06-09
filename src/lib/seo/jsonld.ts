@@ -44,6 +44,8 @@ export function buildArticleJsonLd(input: {
   url: string;
   inLanguage: string;
   isPartOf?: string;
+  ogImageUrl?: string;
+  textSourceRevision?: string;
 }): JsonLdNode {
   return {
     '@context': 'https://schema.org',
@@ -53,6 +55,10 @@ export function buildArticleJsonLd(input: {
     url: input.url,
     inLanguage: input.inLanguage,
     isPartOf: input.isPartOf,
+    author: { '@type': 'Organization' as const, name: 'sohamhamso', url: SITE_URL },
+    datePublished: input.textSourceRevision ?? '2026-06-01',
+    dateModified: input.textSourceRevision ?? '2026-06-01',
+    image: input.ogImageUrl,
   };
 }
 
@@ -137,6 +143,7 @@ export function buildQuotationJsonLd(input: {
     verse_num: number;
   };
   text: { slug: string; title_en: string; tradition: string };
+  speaker?: string;
 }): JsonLdNode {
   const { verse, text } = input;
   return {
@@ -151,6 +158,9 @@ export function buildQuotationJsonLd(input: {
       name: text.title_en,
       '@id': `${SITE_URL}/${text.tradition}/${text.slug}`,
     },
+    ...(input.speaker ? {
+      spokenByCharacter: { '@type': 'Person' as const, name: input.speaker }
+    } : {}),
   };
 }
 
@@ -185,5 +195,6 @@ export function buildOrganizationJsonLd(): JsonLdNode {
     description:
       'Modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon.',
     foundingDate: '2026',
+    logo: { '@type': 'ImageObject' as const, url: `${SITE_URL}/apple-touch-icon.png` },
   };
 }
