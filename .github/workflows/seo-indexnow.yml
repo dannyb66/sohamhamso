@@ -1,0 +1,40 @@
+name: SEO IndexNow Submit
+
+on:
+  push:
+    branches: [main]
+
+# Don't pile up duplicate submissions if multiple pushes land quickly.
+concurrency:
+  group: seo-indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    name: Submit sitemap URLs to IndexNow
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Cloudflare Pages deploys asynchronously after the push. Give it time
+      # to publish the new sitemap before we tell IndexNow about its URLs.
+      - name: Wait for Cloudflare Pages deploy
+        run: sleep 90
+
+      - name: Submit URLs to IndexNow
+        continue-on-error: true
+        run: bun seo:indexnow
