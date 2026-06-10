@@ -31,6 +31,7 @@ import {
   getLemmaSummaryByIast,
   getVerseAvailability,
   getVersePageCached,
+  inLanguageTag,
   liveLocaleSet,
   localePathFor,
 } from '../../../../lib/seo';
@@ -192,7 +193,7 @@ const lowFrequencyTermJsonLd = Array.from(
       buildDefinedTermJsonLd({
         alternateName: gloss.lemma_sa,
         description: gloss.gloss_text,
-        inLanguage: currentLang,
+        inLanguage: inLanguageTag(currentLang),
         name: gloss.lemma_iast,
         termCode: gloss.lemma_iast,
         url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
