@@ -1,10 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import {
-  CORE_PRELOADED_FONT_ASSETS,
-  FONT_FAMILY_ASSETS,
-} from '../../src/lib/font-assets';
+import { CORE_PRELOADED_FONT_ASSETS, FONT_FAMILY_ASSETS } from '../../src/lib/font-assets';
 
 const ROOT = resolve(__dirname, '..', '..');
 const FONTS_CSS_PATH = resolve(ROOT, 'src', 'styles', 'fonts.css');
@@ -28,7 +25,11 @@ describe('font delivery wiring', () => {
     const layout = readFileSync(BASE_LAYOUT_PATH, 'utf8');
 
     expect(layout).toContain('CORE_PRELOADED_FONT_ASSETS');
-    expect(CORE_PRELOADED_FONT_ASSETS).toHaveLength(3);
+    // Roman + Italic (Source Serif 4) + Inter + Devanagari = 4 core fonts.
+    // Italic was added to fix the home + verse-page LCP gating (see
+    // `perf(fonts): preload italic variant`).
+    expect(CORE_PRELOADED_FONT_ASSETS).toHaveLength(4);
+    expect(CORE_PRELOADED_FONT_ASSETS).toContain('/fonts/latin/source-serif-4-italic.woff2');
     expect(layout).toContain('rel="preload"');
     expect(layout).toContain('as="font"');
   });

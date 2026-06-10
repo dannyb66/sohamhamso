@@ -53,6 +53,12 @@ export const FONT_ASSET_PATHS = FONT_FAMILY_ASSETS.map(({ asset }) => asset);
 
 export const CORE_PRELOADED_FONT_ASSETS = [
   '/fonts/latin/source-serif-4-roman.woff2',
+  // Italic face is required above-the-fold on:
+  //   • home `/`     → `.hero-iast` IAST transliteration line
+  //   • verse pages  → `<em>{lemma_iast}</em>` inside `.synonyms`
+  // Without preload the italic file loaded ~600 ms later than its
+  // siblings under Slow 4G, delaying the LCP paint.
+  '/fonts/latin/source-serif-4-italic.woff2',
   '/fonts/ui/inter-variable.woff2',
   '/fonts/indic/noto-serif-devanagari-variable.woff2',
 ] as const;
