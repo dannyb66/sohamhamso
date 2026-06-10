@@ -3,6 +3,10 @@ import { extname, resolve } from 'node:path';
 import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import { __setCorpusDbForTests, type CorpusDb } from '../../src/lib/corpus-db';
 import { __resetLemmaIndexForTests } from '../../src/lib/seo/og-payload';
+import {
+  __OG_QUERY_TIMEOUT_MS_FOR_TESTS,
+  __resetLibsqlClientImportForTests,
+} from '../../functions/og/_shared';
 
 const ROOT = resolve(__dirname, '..', '..');
 const fakeDb: CorpusDb = {
@@ -171,6 +175,89 @@ describe('OG function abort-on-timeout (libsql HTTP)', () => {
     // At least one captured signal actually fired — the abort wiring is real.
     expect(capturedSignals.length).toBeGreaterThan(0);
     expect(capturedSignals.some((s) => s.aborted)).toBe(true);
+  });
+});
+
+describe('OG function cold-start budget (regression: 100% fallback bug)', () => {
+  // The production bug was: every OG response returned the default fallback
+  // PNG with `X-OG-Fallback-Reason: OG payload query timed out` because the
+  // per-request `await import('@libsql/client/web')` cost on a cold worker
+  // isolate exceeded the 500ms `OG_QUERY_TIMEOUT_MS` budget. This block
+  // guards both halves of the fix:
+  //   1. Timeout budget is large enough to absorb a real Turso round-trip.
+  //   2. The libsql import is memoized at module scope so only the first
+  //      request per isolate pays the chunk-load cost.
+
+  const originalUrl = process.env.TURSO_CORPUS_URL;
+  const originalToken = process.env.TURSO_CORPUS_AUTH_TOKEN;
+  const originalFetch = globalThis.fetch;
+
+  beforeEach(() => {
+    process.env.TURSO_CORPUS_URL = 'https://example.turso.io';
+    process.env.TURSO_CORPUS_AUTH_TOKEN = 'test-token';
+    __setCorpusDbForTests(null);
+    __resetLibsqlClientImportForTests();
+    __resetLemmaIndexForTests();
+  });
+
+  afterEach(() => {
+    // biome-ignore lint/performance/noDelete: env-var restore — required
+    if (originalUrl === undefined) delete process.env.TURSO_CORPUS_URL;
+    else process.env.TURSO_CORPUS_URL = originalUrl;
+    // biome-ignore lint/performance/noDelete: env-var restore — required
+    if (originalToken === undefined) delete process.env.TURSO_CORPUS_AUTH_TOKEN;
+    else process.env.TURSO_CORPUS_AUTH_TOKEN = originalToken;
+    globalThis.fetch = originalFetch;
+    __setCorpusDbForTests(fakeDb);
+  });
+
+  it('keeps OG_QUERY_TIMEOUT_MS large enough for a cold Turso round-trip', () => {
+    // Production data: warm libsql HTTP queries against Turso complete in
+    // ~450ms; cold isolates push the FIRST request past 500ms. The previous
+    // 500ms budget was the source of the 100% fallback rate in Phase 8. Any
+    // future tightening of this constant MUST be paired with import + client
+    // pre-warming, or the regression returns.
+    expect(__OG_QUERY_TIMEOUT_MS_FOR_TESTS).toBeGreaterThanOrEqual(1500);
+  });
+
+  it('memoizes the @libsql/client/web import across multiple OG requests', async () => {
+    // Drive two cold OG requests through the per-request libsql path. We
+    // stub `globalThis.fetch` to reject immediately so each request takes
+    // the fallback path quickly — we only care that the libsql `/web` chunk
+    // import was paid AT MOST ONCE across both requests.
+    const fetchSpy = vi.fn(() =>
+      Promise.reject(new TypeError('test: synthetic libsql fetch failure')),
+    );
+    globalThis.fetch = fetchSpy as unknown as typeof fetch;
+
+    // Pre-condition: the test hook reset the memoization, so no import paid.
+    const { __libsqlClientImportPaidForTests } = await import('../../functions/og/_shared');
+    expect(__libsqlClientImportPaidForTests()).toBe(false);
+
+    const r1 = await handleVerseOgRequest(
+      makeContext('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=ta'),
+    );
+    expect(r1.status).toBe(200);
+    expect(r1.headers.get('X-OG-Fallback')).toBe('asset');
+
+    // After the first request: import IS paid (memoized).
+    expect(__libsqlClientImportPaidForTests()).toBe(true);
+
+    const r2 = await handleVerseOgRequest(
+      makeContext('https://sohamhamso.org/og/trika/siva-sutras/1/2?lang=ta'),
+    );
+    expect(r2.status).toBe(200);
+    expect(r2.headers.get('X-OG-Fallback')).toBe('asset');
+
+    // Import is still memoized (didn't reset between requests). This is the
+    // load-bearing assertion: if a future refactor accidentally drops the
+    // module-scope memoization, this state would flip and we'd notice.
+    expect(__libsqlClientImportPaidForTests()).toBe(true);
+
+    // Sanity: the per-request libsql client custom-fetch actually ran on
+    // both requests (i.e. we exercised the path under test, not the test
+    // backend).
+    expect(fetchSpy.mock.calls.length).toBeGreaterThanOrEqual(2);
   });
 });
 
