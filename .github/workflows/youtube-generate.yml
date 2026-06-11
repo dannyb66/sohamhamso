@@ -20,7 +20,7 @@ name: YouTube generate (Cron A)
 on:
   schedule:
     # Every 6h — matches the GHA 6h job ceiling and the doc's render cadence.
-    - cron: '0 */6 * * *'
+    - cron: '23 */6 * * *'
   workflow_dispatch:
     inputs:
       text_slug:

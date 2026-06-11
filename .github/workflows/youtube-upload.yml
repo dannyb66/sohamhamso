@@ -21,7 +21,7 @@ name: YouTube upload (Cron B)
 on:
   schedule:
     # Every 4h, 30min offset from Cron A so renders settle before upload.
-    - cron: '30 */4 * * *'
+    - cron: '47 */4 * * *'
   workflow_dispatch:
 
 permissions:

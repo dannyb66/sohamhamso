@@ -19,7 +19,7 @@ name: YouTube digest (Cron D)
 on:
   schedule:
     # Daily at noon UTC — quiet window, one digest per day.
-    - cron: '0 12 * * *'
+    - cron: '13 11 * * *'
   workflow_dispatch:
 
 permissions:

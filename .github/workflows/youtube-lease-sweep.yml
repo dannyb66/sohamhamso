@@ -15,7 +15,7 @@ name: YouTube lease sweep
 on:
   schedule:
     # Hourly — leases expire at 1h, so an hourly sweep bounds recovery latency.
-    - cron: '0 * * * *'
+    - cron: '27 * * * *'
   workflow_dispatch:
 
 permissions:
