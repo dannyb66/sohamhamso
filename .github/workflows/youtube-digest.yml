@@ -72,11 +72,11 @@ jobs:
       - name: Collect status
         id: status
         run: |
-          json=$(bun scripts/youtube-status.ts --json)
-          echo "$json"
+          bun scripts/youtube-status.ts --json > /tmp/yt-status.json
+          cat /tmp/yt-status.json
           {
             echo 'json<<DIGEST_EOF'
-            echo "$json"
+            cat /tmp/yt-status.json
             echo 'DIGEST_EOF'
           } >> "$GITHUB_OUTPUT"
 
@@ -85,12 +85,13 @@ jobs:
       # can be triaged/filtered, per the doc's E7 "review issues" guidance.
       - name: Open ops digest issue
         uses: actions/github-script@v7
-        env:
-          STATUS_JSON: ${{ steps.status.outputs.json }}
         with:
           script: |
+            const fs = require('fs');
             let s = {};
-            try { s = JSON.parse(process.env.STATUS_JSON || '{}'); } catch (e) { s = {}; }
+            try { s = JSON.parse(fs.readFileSync('/tmp/yt-status.json', 'utf8')); } catch (e) { s = {}; }
+            const counts = s.counts || {};
+            const quota = s.quota || {};
             const n = (v) => (v === undefined || v === null ? '—' : v);
             const date = new Date().toISOString().slice(0, 10);
             const title = `YouTube ops digest — ${date}`;
@@ -99,13 +100,13 @@ jobs:
               ``,
               `| Metric | Count |`,
               `|--------|-------|`,
-              `| Rendered | ${n(s.rendered)} |`,
-              `| Approved | ${n(s.approved)} |`,
-              `| Uploaded | ${n(s.uploaded)} |`,
-              `| Failed | ${n(s.failed)} |`,
-              `| Pending | ${n(s.pending)} |`,
-              `| Quota units spent today | ${n(s.quota_units_spent)} |`,
-              `| Uploads today | ${n(s.uploads_today)} |`,
+              `| Rendered | ${n(counts.rendered)} |`,
+              `| Approved | ${n(counts.approved)} |`,
+              `| Uploaded | ${n(counts.uploaded)} |`,
+              `| Failed | ${n(counts.failed)} |`,
+              `| Pending | ${n(counts.pending)} |`,
+              `| Quota units spent today | ${n(quota.unitsSpent)} |`,
+              `| Uploads today | ${n(quota.uploadsCount)} |`,
               ``,
               `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
               `- Review pending videos in YouTube Studio; flip public via \`scripts/youtube-revisit.ts\`.`,

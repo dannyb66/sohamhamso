@@ -79,7 +79,14 @@ async function synth(text: string, voice: string): Promise<{ dataUrl: string; du
   // biome-ignore lint/suspicious/noExplicitAny: dynamic import shape
   const m = mod as any;
   const Client = m.TextToSpeechClient ?? m.default?.TextToSpeechClient;
-  const client = new Client();
+  // Prefer inline service-account JSON (GOOGLE_TTS_CREDENTIALS_JSON — what the
+  // GitHub Actions crons set); the Google auth lib does NOT read that env var
+  // itself, so pass it explicitly. Otherwise fall back to ADC /
+  // GOOGLE_APPLICATION_CREDENTIALS (local dev).
+  const credsJson = process.env.GOOGLE_TTS_CREDENTIALS_JSON;
+  const client = credsJson
+    ? new Client({ credentials: JSON.parse(credsJson) })
+    : new Client();
   const [resp] = await client.synthesizeSpeech({
     input: { text },
     voice: { languageCode: 'en-US', name: voice },

@@ -1,11 +1,25 @@
 # ──────────────────────────────────────────────────────────────────────────────
-# Cron E — daily YouTube analytics sync.
+# Cron E — daily YouTube analytics sync.  *** SCHEDULE INTENTIONALLY DISABLED ***
 #
-# Daily at 05:00 UTC: pulls per-video view/retention/CTR metrics from the
-# YouTube Analytics API and writes the `video_analytics` table. This feeds the
-# Phase-2 kill-switch thresholds (CTR-to-canonical, 3s retention, completion,
-# UTM link-clicks). Analytics queries use a separate quota bucket from uploads,
-# so this never competes with Cron B.
+# This is a TODO placeholder. The real syncer (`scripts/youtube-analytics-sync.ts`)
+# does not exist yet, and the YouTube Analytics API needs the
+# `yt-analytics.readonly` OAuth scope, which we have not re-authed for. The
+# placeholder runs `youtube-status.ts`, which reads the committed
+# `db/sohamhamso.db` — that DB no longer has the youtube tables (they live only in
+# the R2-synced `db/youtube-state.db`), so the placeholder errors with
+# "no such table: videos" and fails daily, opening a noisy failure issue.
+#
+# The `schedule:` trigger below is therefore commented out so this dormant
+# placeholder stops firing+failing every day. `workflow_dispatch:` is kept so it
+# can still be run manually. Re-enable the schedule once BOTH the real analytics
+# syncer and the `yt-analytics.readonly` re-auth are implemented. Until then, the
+# daily digest cron already reports YouTube status.
+#
+# Daily at 05:00 UTC (WHEN ENABLED): pulls per-video view/retention/CTR metrics
+# from the YouTube Analytics API and writes the `video_analytics` table. This
+# feeds the Phase-2 kill-switch thresholds (CTR-to-canonical, 3s retention,
+# completion, UTM link-clicks). Analytics queries use a separate quota bucket
+# from uploads, so this never competes with Cron B.
 #
 # Required GitHub secrets:
 #   YOUTUBE_OAUTH_CLIENT_ID, YOUTUBE_OAUTH_CLIENT_SECRET, YT_REFRESH_TOKEN
@@ -16,9 +30,11 @@
 name: YouTube analytics sync (Cron E)
 
 on:
-  schedule:
-    # Daily at 05:00 UTC — well clear of the upload cadence.
-    - cron: '0 5 * * *'
+  # SCHEDULE DISABLED — see top-of-file note. Re-enable once the real analytics
+  # syncer + `yt-analytics.readonly` re-auth land. Manual runs still work below.
+  # schedule:
+  #   # Daily at 05:00 UTC — well clear of the upload cadence.
+  #   - cron: '0 5 * * *'
   workflow_dispatch:
 
 permissions:
