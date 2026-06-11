@@ -325,7 +325,9 @@ const breadcrumbItems = [
     color: var(--color-ink-muted);
     margin: 0;
     display: flex;
-    gap: var(--spacing-2);
+    /* spacing-1 ≈ a word space — flex drops the literal spaces between
+       the i18n spans and numbers, so the gap supplies them. */
+    gap: var(--spacing-1);
     flex-wrap: wrap;
   }
 
@@ -439,6 +441,9 @@ const breadcrumbItems = [
   .single-verse-link {
     display: inline-flex;
     align-items: center;
+    /* gap restores the space before the trailing arrow (inline-flex
+       strips the whitespace-only text node). */
+    gap: var(--spacing-1);
     min-height: 44px;
     margin-top: var(--spacing-3);
     font-family: var(--font-chrome);
@@ -471,6 +476,10 @@ const breadcrumbItems = [
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+    /* inline-flex drops whitespace-only text nodes between the arrow,
+       the i18n span and the chapter number — gap restores word spacing
+       (matches the verse-page nav's "← 1.25" rhythm). */
+    gap: var(--spacing-1);
   }
   .chapter-nav__prev:hover,
   .chapter-nav__next:hover {
