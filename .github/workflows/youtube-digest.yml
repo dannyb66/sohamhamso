@@ -1,0 +1,139 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Cron D — daily YouTube ops digest.
+#
+# Daily at 12:00 UTC: runs `scripts/youtube-status.ts --json` (SQL-only
+# dashboard) and opens a single ops Issue summarizing rendered / approved /
+# uploaded / failed counts and quota usage over the last 24h. Optionally pings
+# a Slack webhook if one is configured. The digest Issue is the operator's
+# at-a-glance health surface and the human-in-loop audit trail (helps the
+# YouTube compliance-audit narrative).
+#
+# Required GitHub secrets: none for the core digest (reads the DB via the repo).
+# Optional GitHub secrets:
+#   SLACK_WEBHOOK_URL — enables the Slack notification step.
+#
+# Manual trigger: Actions tab → "YouTube digest (Cron D)" → Run workflow.
+# ──────────────────────────────────────────────────────────────────────────────
+name: YouTube digest (Cron D)
+
+on:
+  schedule:
+    # Daily at noon UTC — quiet window, one digest per day.
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write   # the digest is posted as an Issue
+
+# Serialize all YouTube pipeline crons: the single R2 state DB must never be
+# written by two runs at once. cancel-in-progress: false lets in-flight runs
+# finish so partial progress is pushed back rather than discarded. (This job is
+# read-only, but it shares the group so it never reads a half-written DB.)
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      # Hoisted so the optional Slack step's `if:` can test it (secrets are
+      # not allowed directly in step-level `if:` expressions).
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      # ── R2 / S3-compatible storage for the synced state DB. ──────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+      # ── R2-synced state DB (pulled before the read-only status step). ─
+      YOUTUBE_DB_PATH: db/youtube-state.db
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Pull the state DB from R2 so the read-only status query sees shared
+      # state (ephemeral runners start with no DB). No push: this job never
+      # mutates the DB.
+      - name: Pull state DB
+        run: bash scripts/youtube-state-db.sh pull
+
+      # SQL-only dashboard → JSON, captured for the digest steps below.
+      - name: Collect status
+        id: status
+        run: |
+          json=$(bun scripts/youtube-status.ts --json)
+          echo "$json"
+          {
+            echo 'json<<DIGEST_EOF'
+            echo "$json"
+            echo 'DIGEST_EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      # Post a private-style ops Issue. The repo is public for GHA free tier;
+      # keep operational surfaces to the maintainer via the 'ops' label so they
+      # can be triaged/filtered, per the doc's E7 "review issues" guidance.
+      - name: Open ops digest issue
+        uses: actions/github-script@v7
+        env:
+          STATUS_JSON: ${{ steps.status.outputs.json }}
+        with:
+          script: |
+            let s = {};
+            try { s = JSON.parse(process.env.STATUS_JSON || '{}'); } catch (e) { s = {}; }
+            const n = (v) => (v === undefined || v === null ? '—' : v);
+            const date = new Date().toISOString().slice(0, 10);
+            const title = `YouTube ops digest — ${date}`;
+            const body = [
+              `Daily pipeline digest for **@sohamhamso** (last 24h).`,
+              ``,
+              `| Metric | Count |`,
+              `|--------|-------|`,
+              `| Rendered | ${n(s.rendered)} |`,
+              `| Approved | ${n(s.approved)} |`,
+              `| Uploaded | ${n(s.uploaded)} |`,
+              `| Failed | ${n(s.failed)} |`,
+              `| Pending | ${n(s.pending)} |`,
+              `| Quota units spent today | ${n(s.quota_units_spent)} |`,
+              `| Uploads today | ${n(s.uploads_today)} |`,
+              ``,
+              `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `- Review pending videos in YouTube Studio; flip public via \`scripts/youtube-revisit.ts\`.`,
+              ``,
+              `<details><summary>Raw status JSON</summary>`,
+              ``,
+              '```json',
+              JSON.stringify(s, null, 2),
+              '```',
+              ``,
+              `</details>`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['youtube', 'ops'],
+            });
+
+      # Optional Slack mirror — only fires when the webhook secret is present.
+      # (Secrets aren't allowed in step-level `if:`, so the secret is hoisted to
+      # env and the step short-circuits when it's empty.)
+      - name: Notify Slack
+        if: ${{ env.SLACK_WEBHOOK_URL != '' }}
+        env:
+          STATUS_JSON: ${{ steps.status.outputs.json }}
+        run: |
+          payload=$(printf '{"text":"YouTube ops digest %s — rendered/approved/uploaded/failed: see GitHub ops issue. Raw: %s"}' \
+            "$(date -u +%Y-%m-%d)" "$(echo "$STATUS_JSON" | tr -d '\n' | sed 's/"/\\"/g')")
+          curl -sf -X POST -H 'Content-Type: application/json' -d "$payload" "$SLACK_WEBHOOK_URL"

@@ -27,6 +27,13 @@ declare module 'bun:sqlite' {
 // Minimal global declarations for Bun's globals used in pipeline scripts.
 // (Bun.write, Bun.file). The full surface is in bun-types; we only need
 // the entry points the pipeline references so tsc --noEmit stops complaining.
+interface BunSubprocess {
+  readonly exited: Promise<number>;
+  readonly stdout: ReadableStream<Uint8Array>;
+  readonly stderr: ReadableStream<Uint8Array>;
+  kill(signal?: number | string): void;
+}
+
 declare const Bun: {
   write(path: string, data: string | ArrayBuffer | Uint8Array | Blob): Promise<number>;
   file(path: string): {
@@ -36,6 +43,16 @@ declare const Bun: {
     exists(): Promise<boolean>;
     size: number;
   };
+  // Minimal subprocess surface used by the youtube pipeline (aws s3 cp).
+  spawn(
+    cmd: string[],
+    options?: {
+      env?: Record<string, string | undefined>;
+      stdout?: 'pipe' | 'inherit' | 'ignore';
+      stderr?: 'pipe' | 'inherit' | 'ignore';
+      cwd?: string;
+    },
+  ): BunSubprocess;
   env: Record<string, string | undefined>;
   argv: string[];
 };

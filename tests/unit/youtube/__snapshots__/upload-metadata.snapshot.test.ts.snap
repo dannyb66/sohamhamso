@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildUploadMetadata — snapshot > is deterministic for a fixed input 1`] = `
+{
+  "snippet": {
+    "defaultAudioLanguage": "en",
+    "defaultLanguage": "en",
+    "description": "Consciousness is the Self.
+
+Read & study this verse: https://sohamhamso.org/texts/siva-sutras/1/1?utm_source=youtube&utm_medium=short&utm_campaign=verse
+
+License: CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
+Source text & translation via Muktabodha Indological Research Institute and sohamhamso.org. Translation AI-assisted, human-reviewed.",
+    "tags": [
+      "Kashmir Shaivism",
+      "Trika",
+      "Sanskrit",
+      "Śiva Sūtra",
+    ],
+    "title": "Śiva Sūtra 1.1 — Consciousness is the Self.",
+  },
+  "status": {
+    "license": "creativeCommon",
+    "privacyStatus": "unlisted",
+    "selfDeclaredMadeForKids": false,
+  },
+}
+`;

@@ -26,6 +26,12 @@ db/*.db-shm
 # lives here (subscribers go to the separate sohamhamso-pii Turso DB).
 !db/sohamhamso.db
 
+# YouTube pipeline runtime state (R2-synced, never committed). Already covered
+# by `db/*.db` above, but listed explicitly so no one adds a
+# `!db/youtube-state.db` exception by mistake.
+db/youtube-state.db
+db/youtube-state.db-*
+
 # Local dev caches
 .turso/
 .cache/
@@ -36,6 +42,9 @@ db/*.db-shm
 .env
 .env.local
 .env.*.local
+
+# Secrets (OAuth refresh token written by scripts/youtube-oauth-setup.ts)
+.secrets/
 
 # Logs
 *.log
@@ -70,3 +79,6 @@ checksums.sha256.unsigned
 
 # Claude Code agent harness (local worktrees, session state)
 .claude/
+
+# YouTube Shorts preview renders (regenerable via youtube:render-samples)
+samples/*.mp4
