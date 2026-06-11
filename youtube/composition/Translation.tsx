@@ -12,6 +12,12 @@ export type TranslationProps = {
   color: string;
   opacity?: number;
   fontSize?: number;
+  /**
+   * Text measure (content-box width), px. Default = the portrait value —
+   * CASCADE GUARD: the Short composition's output stays byte-identical
+   * (see template-version.test.ts). The landscape Chapter passes ~1400.
+   */
+  maxWidth?: number;
 };
 
 export const Translation: React.FC<TranslationProps> = ({
@@ -20,6 +26,7 @@ export const Translation: React.FC<TranslationProps> = ({
   color,
   opacity = 1,
   fontSize = 56,
+  maxWidth = 820,
 }) => {
   return (
     <div
@@ -30,7 +37,7 @@ export const Translation: React.FC<TranslationProps> = ({
         fontWeight: 400,
         color,
         textAlign: 'center',
-        maxWidth: 820,
+        maxWidth,
         padding: '0 80px',
         opacity,
         textWrap: 'balance',
