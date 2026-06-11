@@ -1,0 +1,483 @@
+---
+import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
+import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
+import SubscribeBand from '../../../../../components/SubscribeBand.astro';
+/**
+ * Localized chapter index page: /{lang}/{tradition}/{text-slug}/{chapter}/
+ *
+ * Non-English twin of /[tradition]/[text]/[chapter]/index.astro — mirrors
+ * the [lang] verse page's locale routing (NON_ENGLISH_LANGS enumeration,
+ * runtime alias redirect). Verse-row translation snippets use the page
+ * language when a translation exists, falling back to English per verse.
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import { KNOWN_TRADITIONS, resolveAlias } from '../../../../../lib/aliases';
+import { getText, listChapters, listChapterSummary } from '../../../../../lib/db';
+import { getReadingModeByLang, type LangCode } from '../../../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  absoluteLocaleUrl,
+  buildBreadcrumbList,
+  buildHreflangEntries,
+  buildWebPageJsonLd,
+  combineJsonLd,
+  filterIndexableTextLangs,
+  getTexts,
+  getTextSeoOverrides,
+  inLanguageTag,
+  liveLocaleSet,
+  localePathFor,
+} from '../../../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths: Array<{
+    params: { chapter: string; lang: string; text: string; tradition: string };
+  }> = [];
+
+  for (const lang of NON_ENGLISH_LANGS) {
+    if (KNOWN_TRADITIONS.includes(lang as (typeof KNOWN_TRADITIONS)[number]) || lang === 'en') {
+      throw new Error(`Locale route collision: ${lang}`);
+    }
+    for (const text of getTexts()) {
+      for (const c of listChapters(text.slug)) {
+        paths.push({
+          params: {
+            lang,
+            tradition: text.tradition,
+            text: text.slug,
+            chapter: String(c.chapter),
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { lang, tradition, text, chapter } = Astro.params;
+const chapterNum = Number(chapter);
+
+if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
+  throw new Error(`Invalid locale route: ${lang ?? '<missing>'}`);
+}
+
+const aliasCheck = resolveAlias(tradition!, text!);
+if (aliasCheck && !aliasCheck.canonical) {
+  return Astro.redirect(
+    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}`,
+    301,
+  );
+}
+
+const currentLang = lang as LangCode;
+const textRow = getText(text!);
+if (!textRow) throw new Error(`Text not found: ${text}`);
+const chapters = listChapters(text!);
+const chapterIdx = chapters.findIndex((c) => c.chapter === chapterNum);
+if (chapterIdx === -1) {
+  throw new Error(`Chapter not found: ${lang}/${tradition}/${text}/${chapterNum}`);
+}
+const verses = listChapterSummary(text!, chapterNum, currentLang);
+const verseCount = verses.length;
+const prevChapter = chapterIdx > 0 ? chapters[chapterIdx - 1] : null;
+const nextChapter = chapterIdx < chapters.length - 1 ? chapters[chapterIdx + 1] : null;
+// 1-verse chapter (e.g. spanda-karikas ch4): inline the full verse instead
+// of rendering a 1-row list.
+const singleVerse = verseCount === 1 ? verses[0] : null;
+
+const basePath = `/${tradition}/${text}/${chapterNum}`;
+const liveLangs = liveLocaleSet();
+const availableLangs = filterIndexableTextLangs(
+  textRow.slug,
+  Array.from(liveLangs).sort() as LangCode[],
+);
+const langName = getReadingModeByLang(currentLang)?.englishName ?? 'English';
+const verseRangeLabel = verseCount === 1 ? 'verse 1' : `verses 1–${verseCount}`;
+const pageTitle = `${currentLang.toUpperCase()} · ${textRow.title_en} — Chapter ${chapterNum} — sohamhamso`;
+const pageDescription = `${textRow.title_en} chapter ${chapterNum}: ${verseRangeLabel} with Devanāgarī, IAST and ${langName} translation.`;
+const canonical = absoluteLocaleUrl(basePath, currentLang);
+const noindex =
+  !liveLangs.has(currentLang) || getTextSeoOverrides(textRow.slug, currentLang).noindex;
+const hreflang = noindex ? [] : buildHreflangEntries(basePath, availableLangs);
+const pageJsonLd = combineJsonLd(
+  buildWebPageJsonLd({
+    title: pageTitle,
+    description: pageDescription,
+    url: canonical,
+    inLanguage: inLanguageTag(currentLang),
+  }),
+  buildBreadcrumbList([
+    { name: 'Home', item: absoluteLocaleUrl('/', currentLang) },
+    { name: textRow.tradition, item: absoluteLocaleUrl(`/${textRow.tradition}`, currentLang) },
+    {
+      name: textRow.title_en,
+      item: absoluteLocaleUrl(`/${textRow.tradition}/${textRow.slug}`, currentLang),
+    },
+    { name: `Chapter ${chapterNum}`, item: canonical },
+  ]),
+);
+
+const breadcrumbItems = [
+  { name: 'Home', href: localePathFor('/', currentLang) },
+  { name: tradition!, href: localePathFor(`/${tradition}`, currentLang) },
+  { name: textRow.title_en, href: localePathFor(`/${tradition}/${textRow.slug}`, currentLang) },
+  { name: `Chapter ${chapterNum}` },
+];
+---
+
+<BaseLayout
+  canonical={canonical}
+  description={pageDescription}
+  hreflang={hreflang}
+  jsonLd={pageJsonLd}
+  lang={currentLang}
+  localeBasePath={basePath}
+  noindex={noindex}
+  title={pageTitle}
+>
+  <header class="chrome">
+    <a
+      href={`/${lang}/${tradition}/${text}`}
+      class="chrome__back"
+      aria-label="Back to text"
+      data-i18n-attr-aria-label="verse_page.back_aria"
+    >
+      ←
+    </a>
+    <div class="chrome__title">
+      <span class="chrome__text">{textRow.title_en}</span>
+      <span class="chrome__verse">· <span data-i18n="text_overview.table.chapter">Chapter</span> {chapterNum}</span>
+    </div>
+  </header>
+
+  <main id="main" class="reader">
+    <Breadcrumbs items={breadcrumbItems} lang={currentLang} />
+    <h1 class="visually-hidden">{textRow.title_en} — Chapter {chapterNum}</h1>
+
+    <article class="chapter-overview">
+      {/* Hero — echoes the chapter-video title card for arrival continuity. */}
+      <header class="chapter-hero">
+        <p class="chapter-title-sa" lang="sa">{textRow.title_sa}</p>
+        {textRow.title_iast ? (
+          <p class="chapter-title-iast" lang="sa">{textRow.title_iast}</p>
+        ) : null}
+        <hr class="shirorekha-rule" />
+        <p class="chapter-meta">
+          <span data-i18n="text_overview.table.chapter">Chapter</span> {chapterNum}
+          <span aria-hidden="true">·</span>
+          {verseCount}{' '}
+          {verseCount === 1 ? (
+            <span data-i18n="chapter_page.verse_suffix">verse</span>
+          ) : (
+            <span data-i18n="text_overview.verses_suffix">verses</span>
+          )}
+        </p>
+      </header>
+
+      <a class="chapter-begin" href={`/${lang}/${tradition}/${text}/${chapterNum}/1`}>
+        <span data-i18n="chapter_page.begin_reading">Begin reading</span>
+        <span aria-hidden="true">→</span>
+        <span><span data-i18n="chapter_page.verse_prefix">Verse</span> 1</span>
+      </a>
+
+      {singleVerse ? (
+        <section class="chapter-single-verse" aria-label={`Verse 1 of ${textRow.title_en} chapter ${chapterNum}`}>
+          <p class="single-verse-sa" lang="sa">{singleVerse.devanagari}</p>
+          {singleVerse.iast ? (
+            <p class="single-verse-iast" lang="sa">{singleVerse.iast}</p>
+          ) : null}
+          {singleVerse.translation_text ? (
+            <p
+              class="single-verse-translation"
+              lang={singleVerse.translation_lang ?? currentLang}
+            >
+              {singleVerse.translation_text}
+            </p>
+          ) : null}
+          <a class="single-verse-link" href={`/${lang}/${tradition}/${text}/${chapterNum}/1`}>
+            <span data-i18n="chapter_page.read_with_glosses">Read with word-by-word glosses</span> →
+          </a>
+        </section>
+      ) : (
+        <ol class="chapter-verse-list">
+          {verses.map((v) => (
+            <li>
+              <a
+                href={`/${lang}/${tradition}/${text}/${chapterNum}/${v.verse_num}`}
+                class="chapter-row chapter-row__link"
+              >
+                <span class="chapter-row__col-num">{v.verse_num}</span>
+                <span class="chapter-row__col-incipit" lang="sa">{v.iast_incipit}</span>
+                <span
+                  class="chapter-row__col-snippet"
+                  lang={v.translation_lang ?? undefined}
+                >
+                  {v.translation_first_clause}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      )}
+
+      {/*
+        TODO(M3 / Agent F): "Watch this chapter on YouTube" CTA slots in
+        here once the video-ID manifest (youtube-state.db → static
+        manifest export, plan §M3) exists at build time. Render only when
+        a manifest entry exists for (text, chapter).
+      */}
+
+      <nav class="chapter-nav" aria-label="Chapter navigation" data-i18n-attr-aria-label="chapter_page.nav_aria">
+        {prevChapter ? (
+          <a href={`/${lang}/${tradition}/${text}/${prevChapter.chapter}`} class="chapter-nav__prev">
+            ← <span data-i18n="text_overview.table.chapter">Chapter</span> {prevChapter.chapter}
+          </a>
+        ) : (
+          <span class="chapter-nav__spacer" />
+        )}
+        <a href={`/${lang}/${tradition}/${text}`} class="chapter-nav__up">↑ {textRow.title_en}</a>
+        {nextChapter ? (
+          <a href={`/${lang}/${tradition}/${text}/${nextChapter.chapter}`} class="chapter-nav__next">
+            <span data-i18n="text_overview.table.chapter">Chapter</span> {nextChapter.chapter} →
+          </a>
+        ) : (
+          <span class="chapter-nav__spacer" />
+        )}
+      </nav>
+
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+    </article>
+
+    <SubscribeBand />
+  </main>
+</BaseLayout>
+
+<style>
+  .chrome {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4);
+    min-height: 48px;
+    background: var(--color-bg);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .chrome__back {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-lg);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chrome__title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+  }
+  .chrome__text {
+    font-weight: 500;
+  }
+  .chrome__verse {
+    color: var(--color-ink-muted);
+    margin-left: 4px;
+  }
+
+  .chapter-overview {
+    padding-block: var(--spacing-6);
+  }
+
+  .chapter-title-sa {
+    font-family: var(--font-sa-display);
+    font-size: var(--text-xl);
+    margin: 0;
+    color: var(--color-ink);
+  }
+  .chapter-title-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    color: var(--color-ink-muted);
+    margin: var(--spacing-1) 0 0 0;
+  }
+  .chapter-meta {
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    margin: 0;
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+  }
+
+  .chapter-begin {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    min-height: 44px;
+    margin-block: var(--spacing-4);
+    padding: var(--spacing-2) var(--spacing-3);
+    border: 1px solid var(--color-rule);
+    border-radius: 8px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .chapter-begin:hover,
+  .chapter-begin:focus-visible {
+    border-color: var(--color-ink-muted);
+  }
+
+  .chapter-verse-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .chapter-verse-list li {
+    margin: 0;
+  }
+  .chapter-row {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: var(--spacing-3);
+    align-items: center;
+    padding: var(--spacing-3) var(--spacing-2);
+    border-block-end: 1px solid var(--color-rule);
+    min-height: 44px;
+  }
+  .chapter-row__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .chapter-row__link:hover,
+  .chapter-row__link:focus-visible {
+    background: var(--color-rule);
+    text-decoration: none;
+  }
+  .chapter-row__col-num {
+    font-variant-numeric: tabular-nums;
+  }
+  .chapter-row__col-incipit {
+    font-family: var(--font-iast);
+    font-style: italic;
+    color: var(--color-ink);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .chapter-row__col-snippet {
+    color: var(--color-ink-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @media (max-width: 600px) {
+    .chapter-row {
+      grid-template-columns: 40px minmax(0, 1fr);
+    }
+    .chapter-row__col-snippet {
+      grid-column: 2;
+    }
+  }
+
+  .chapter-single-verse {
+    padding-block: var(--spacing-4);
+    border-block-start: 1px solid var(--color-rule);
+    border-block-end: 1px solid var(--color-rule);
+  }
+  .single-verse-sa {
+    font-family: var(--font-sa-display);
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-ink);
+    margin: 0;
+    white-space: pre-line;
+  }
+  .single-verse-iast {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-ink-muted);
+    margin: var(--spacing-3) 0 0 0;
+    white-space: pre-line;
+  }
+  .single-verse-translation {
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink);
+    margin: var(--spacing-4) 0 0 0;
+    max-width: var(--width-reader);
+  }
+  .single-verse-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: var(--spacing-3);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+    text-decoration: none;
+  }
+  .single-verse-link:hover,
+  .single-verse-link:focus-visible {
+    color: var(--color-ink);
+  }
+
+  .chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding-block: var(--spacing-6);
+    font-family: var(--font-chrome);
+    font-size: var(--text-sm);
+  }
+  .chapter-nav__prev,
+  .chapter-nav__next {
+    color: var(--color-ink);
+    text-decoration: none;
+    padding: var(--spacing-3) var(--spacing-4);
+    border: 1px solid var(--color-rule);
+    border-radius: 8px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .chapter-nav__prev:hover,
+  .chapter-nav__next:hover {
+    border-color: var(--color-ink-muted);
+  }
+  .chapter-nav__up {
+    color: var(--color-ink-muted);
+    text-decoration: none;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .chapter-nav__up:hover,
+  .chapter-nav__up:focus-visible {
+    color: var(--color-ink);
+  }
+  .chapter-nav__spacer {
+    width: 1px;
+  }
+</style>

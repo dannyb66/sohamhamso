@@ -278,6 +278,131 @@ export function listChapterVerses(textSlug: string, chapter: number): VerseSumma
   return stmt.all(textSlug, chapter);
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Chapter summary (chapter index pages)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface ChapterVerseSummary {
+  verse_num: number;
+  devanagari: string;
+  iast: string | null;
+  /** First ~8 words of the IAST line (verse-row incipit). */
+  iast_incipit: string | null;
+  /** Full text of the picked translation row (used by 1-verse chapters). */
+  translation_text: string | null;
+  /** First clause of the translation, ~90 chars cut at a word boundary. */
+  translation_first_clause: string | null;
+  /** Language of the picked translation (requested lang, or 'en' fallback). */
+  translation_lang: string | null;
+}
+
+/** First `maxWords` words of an IAST line, whitespace-collapsed. */
+function iastIncipit(iast: string | null, maxWords = 8): string | null {
+  if (!iast) return null;
+  const words = iast.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+  if (words.length === 0) return null;
+  const head = words.slice(0, maxWords).join(' ');
+  return words.length > maxWords ? `${head} …` : head;
+}
+
+/**
+ * First clause of a translation, capped at ~`maxChars` characters and cut
+ * at a word boundary. "Clause" = text up to the first sentence-ending or
+ * strong-clause punctuation (. ; ! ?) — em-dashes/colons are NOT
+ * boundaries (they commonly open parentheticals mid-clause); longer
+ * clauses are ellipsized.
+ */
+function translationFirstClause(text: string | null, maxChars = 90): string | null {
+  if (!text) return null;
+  const collapsed = text.replace(/\s+/g, ' ').trim();
+  if (!collapsed) return null;
+  const match = collapsed.match(/^[^.;!?]+[.;!?]?/);
+  const clause = (match ? match[0] : collapsed).trim();
+  if (clause.length <= maxChars) return clause;
+  const cut = clause.slice(0, maxChars);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${cut.slice(0, lastSpace > 40 ? lastSpace : maxChars).trimEnd()}…`;
+}
+
+/**
+ * Lightweight per-verse summary for the chapter index pages
+ * (`/{tradition}/{text}/{chapter}/`): verse number, IAST incipit and a
+ * one-clause translation snippet. Deliberately CHEAP — one query over
+ * `verses` with two correlated `translations` sub-selects; never pulls
+ * glosses/parallels/reader bundles (do NOT swap in `getVerse` here).
+ *
+ * Translation row selection uses explicit status priority
+ * (published → reviewed → draft, then human-first, then oldest) rather
+ * than the alphabetical `ORDER BY status` quirk. For non-EN `lang` the
+ * snippet falls back to English per verse when the requested language
+ * has no row; `translation_lang` reports which language was used.
+ */
+export function listChapterSummary(
+  textSlug: string,
+  chapter: number,
+  lang = 'en',
+): ChapterVerseSummary[] {
+  const db = getDb();
+  type Row = {
+    verse_num: number;
+    devanagari: string;
+    iast: string | null;
+    requested_translation: string | null;
+    english_translation: string | null;
+  };
+  const rows = db
+    .query<Row, [string, string, number]>(`
+      SELECT
+        v.verse_num,
+        v.devanagari,
+        v.iast,
+        (
+          SELECT tr.translation_text
+          FROM translations tr
+          WHERE tr.verse_id = v.id
+            AND tr.lang = ?
+            AND tr.status IN ('published', 'reviewed', 'draft')
+          ORDER BY
+            CASE tr.status WHEN 'published' THEN 0 WHEN 'reviewed' THEN 1 ELSE 2 END,
+            tr.ai_assisted ASC,
+            tr.created_at ASC
+          LIMIT 1
+        ) AS requested_translation,
+        (
+          SELECT tr.translation_text
+          FROM translations tr
+          WHERE tr.verse_id = v.id
+            AND tr.lang = 'en'
+            AND tr.status IN ('published', 'reviewed', 'draft')
+          ORDER BY
+            CASE tr.status WHEN 'published' THEN 0 WHEN 'reviewed' THEN 1 ELSE 2 END,
+            tr.ai_assisted ASC,
+            tr.created_at ASC
+          LIMIT 1
+        ) AS english_translation
+      FROM verses v
+      JOIN texts t ON t.id = v.text_id
+      WHERE t.slug = ? AND v.chapter = ?
+      ORDER BY v.verse_num ASC
+    `)
+    .all(lang, textSlug, chapter);
+
+  return rows.map((row: Row) => {
+    const translation = row.requested_translation ?? row.english_translation;
+    const translationLang =
+      row.requested_translation !== null ? lang : row.english_translation !== null ? 'en' : null;
+    return {
+      verse_num: row.verse_num,
+      devanagari: row.devanagari,
+      iast: row.iast,
+      iast_incipit: iastIncipit(row.iast),
+      translation_text: translation,
+      translation_first_clause: translationFirstClause(translation),
+      translation_lang: translationLang,
+    };
+  });
+}
+
 /**
  * Fetch a single verse with everything the reader page needs:
  * verse row, translations (filtered to `lang`), word_glosses (filtered to

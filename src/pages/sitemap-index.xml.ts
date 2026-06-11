@@ -2,6 +2,7 @@ import { SITE_URL } from '../lib/seo';
 
 const parts = [
   '/sitemap-verses.xml',
+  '/sitemap-chapters.xml',
   '/sitemap-texts.xml',
   '/sitemap-lemmas.xml',
   '/sitemap-chrome.xml',
