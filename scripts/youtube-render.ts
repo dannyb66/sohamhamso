@@ -52,15 +52,17 @@ Exit codes:
 `;
 
 /** Build the work queue: pending first, then failed-with-retry-budget. */
-function pickQueue(
+export function pickQueue(
   db: ReturnType<typeof getVideosDb>,
   limit: number,
   textSlug?: string,
   lang?: string,
 ): VideoRow[] {
   // Push text/lang into SQL (see listByStatus) so the filter reaches matching
-  // rows beyond the first `limit` of the global pending set.
-  const filter = { textId: textSlug, lang };
+  // rows beyond the first `limit` of the global pending set. format:'short'
+  // on BOTH picks (pending AND failed): this orchestrator renders shorts
+  // only — chapter rows (verse_num=0) belong to youtube-render-chapters.
+  const filter = { textId: textSlug, lang, format: 'short' as const };
 
   const pending = listByStatus(db, 'pending', limit, filter);
   let queue = pending;
@@ -165,7 +167,9 @@ async function main(): Promise<void> {
   // expected + retried). Only an unhandled top-level throw is exit 1.
 }
 
-main().catch((e) => {
-  logError(STAGE, e);
-  process.exit(1);
-});
+if (import.meta.main) {
+  main().catch((e) => {
+    logError(STAGE, e);
+    process.exit(1);
+  });
+}

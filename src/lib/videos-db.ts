@@ -42,6 +42,12 @@ export type VideoStatus =
   | 'failed'
   | 'superseded';
 
+/**
+ * Distribution format: 'short' (9:16 one-verse) | 'chapter' (16:9 full
+ * chapter; chapter rows use verse_num=0 — corpus verses start at 1).
+ */
+export type VideoFormat = 'short' | 'chapter';
+
 /** Full `videos` row as stored. Nullable columns are `T | null`. */
 export interface VideoRow {
   id: number;
@@ -51,6 +57,7 @@ export interface VideoRow {
   verse_num: number;
   lang: string;
   short_index: number;
+  format: VideoFormat;
   channel_handle: string;
   kula: string;
   style_preset: string;
@@ -104,6 +111,7 @@ export interface NewVideoRow {
   verse_num: number;
   lang: string;
   short_index?: number;
+  format?: VideoFormat; // defaults to 'short'
   channel_handle?: string;
   kula: string;
   style_preset: string;
@@ -123,6 +131,8 @@ export interface VideoIdent {
   verse_num: number;
   lang: string;
   short_index: number;
+  /** Optional format filter; omitted = any format (pre-M0 behavior). */
+  format?: VideoFormat;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -142,6 +152,29 @@ function dbPath(): string {
   if (existsSync(cwdPath)) return cwdPath;
   const here = dirname(fileURLToPath(import.meta.url));
   return resolve(here, '..', '..', 'db', 'sohamhamso.db');
+}
+
+/**
+ * M0 migration guard: the live state DB is stamped `PRAGMA user_version = 2`
+ * by `scripts/youtube-db-ensure.ts` when the `format` column lands. If this
+ * checkout's schema knowledge predates the column (no `format` on `videos`)
+ * but the DB says post-M0, refuse — a pre-M0 checkout must not silently
+ * process chapter rows (verse_num=0 leakage into the shorts path).
+ * Fresh/empty DBs (user_version 0) pass untouched.
+ */
+function assertCheckoutMatchesDb(db: Database): void {
+  const hasFormat = db
+    .query<{ n: number }, []>(
+      "SELECT COUNT(*) AS n FROM pragma_table_info('videos') WHERE name='format'",
+    )
+    .get();
+  if ((hasFormat?.n ?? 0) > 0) return;
+  const ver = db.query<{ user_version: number }, []>('PRAGMA user_version').get();
+  if ((ver?.user_version ?? 0) >= 2) {
+    throw new Error(
+      'state DB is post-M0 (user_version 2) but this checkout predates the format column — update your checkout',
+    );
+  }
 }
 
 /**
@@ -171,12 +204,14 @@ export function getVideosDb(path?: string, readonly = false): Database {
     const db = new Database(path, openOpts);
     if (readonly) db.exec('PRAGMA query_only = ON;');
     else db.exec('PRAGMA busy_timeout = 5000;');
+    assertCheckoutMatchesDb(db);
     return db;
   }
   if (_db) return _db;
   _db = new Database(dbPath(), openOpts);
   if (readonly) _db.exec('PRAGMA query_only = ON;');
   else _db.exec('PRAGMA busy_timeout = 5000;');
+  assertCheckoutMatchesDb(_db);
   return _db;
 }
 
@@ -206,27 +241,40 @@ const ALL_STATUSES: VideoStatus[] = [
  * row the re-render decision (`shouldSkipRender`) is made against.
  */
 export function getLatestVideo(db: Database, ident: VideoIdent): VideoRow | null {
+  const clauses = ['text_id = ?', 'chapter = ?', 'verse_num = ?', 'lang = ?', 'short_index = ?'];
+  const params: (string | number)[] = [
+    ident.text_id,
+    ident.chapter,
+    ident.verse_num,
+    ident.lang,
+    ident.short_index,
+  ];
+  if (ident.format) {
+    clauses.push('format = ?');
+    params.push(ident.format);
+  }
   const row = db
-    .query<VideoRow, [string, number, number, string, number]>(
-      `SELECT * FROM videos
-       WHERE text_id = ? AND chapter = ? AND verse_num = ? AND lang = ? AND short_index = ?
+    .query<VideoRow, (string | number)[]>(
+      `SELECT * FROM videos WHERE ${clauses.join(' AND ')}
        ORDER BY id DESC LIMIT 1`,
     )
-    .get(ident.text_id, ident.chapter, ident.verse_num, ident.lang, ident.short_index);
+    .get(...params);
   return row ?? null;
 }
 
 /**
- * Rows in a given status, oldest first, capped at `limit`. Optional `text_id` /
- * `lang` filters are pushed into SQL so callers like `youtube-render --text-slug`
- * reach matching rows even when they sit beyond the first `limit` rows of the
- * full pending set (otherwise a post-fetch filter silently returns nothing).
+ * Rows in a given status, oldest first, capped at `limit` (omitted/-1 = no
+ * cap). Optional `text_id` / `lang` / `format` filters are pushed into SQL
+ * so callers like `youtube-render --text-slug` reach matching rows even when
+ * they sit beyond the first `limit` rows of the full pending set (otherwise
+ * a post-fetch filter silently returns nothing). Omitting `format` returns
+ * all formats (pre-M0 behavior, backward compatible).
  */
 export function listByStatus(
   db: Database,
   status: VideoStatus,
-  limit: number,
-  opts: { textId?: string; lang?: string } = {},
+  limit = -1,
+  opts: { textId?: string; lang?: string; format?: VideoFormat } = {},
 ): VideoRow[] {
   const clauses = ['status = ?'];
   const params: (string | number)[] = [status];
@@ -237,6 +285,10 @@ export function listByStatus(
   if (opts.lang) {
     clauses.push('lang = ?');
     params.push(opts.lang);
+  }
+  if (opts.format) {
+    clauses.push('format = ?');
+    params.push(opts.format);
   }
   params.push(limit);
   return db
@@ -261,6 +313,25 @@ export function countByStatus(db: Database): Record<VideoStatus, number> {
   return counts;
 }
 
+/** One (format, status) count row from `countByStatusFormat`. */
+export interface FormatStatusCount {
+  format: VideoFormat;
+  status: VideoStatus;
+  n: number;
+}
+
+/**
+ * Per-format variant of `countByStatus`: one row per (format, status) pair
+ * actually present (no zero-fill — digest callers print what exists).
+ */
+export function countByStatusFormat(db: Database): FormatStatusCount[] {
+  return db
+    .query<FormatStatusCount, []>(
+      'SELECT format, status, COUNT(*) AS n FROM videos GROUP BY format, status ORDER BY format, status',
+    )
+    .all();
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Writes
 // ─────────────────────────────────────────────────────────────────────────────
@@ -274,12 +345,12 @@ export function insertPending(db: Database, row: NewVideoRow): number {
   const info = db
     .query(
       `INSERT OR IGNORE INTO videos (
-         text_id, chapter, verse_num, lang, short_index, channel_handle,
+         text_id, chapter, verse_num, lang, short_index, format, channel_handle,
          kula, style_preset, translation_md5, template_version,
          tts_voice_id, translation_row_id, remotion_version, ffmpeg_version,
          status
        ) VALUES (
-         $text_id, $chapter, $verse_num, $lang, $short_index, $channel_handle,
+         $text_id, $chapter, $verse_num, $lang, $short_index, $format, $channel_handle,
          $kula, $style_preset, $translation_md5, $template_version,
          $tts_voice_id, $translation_row_id, $remotion_version, $ffmpeg_version,
          $status
@@ -291,6 +362,7 @@ export function insertPending(db: Database, row: NewVideoRow): number {
       $verse_num: row.verse_num,
       $lang: row.lang,
       $short_index: row.short_index ?? 0,
+      $format: row.format ?? 'short',
       $channel_handle: row.channel_handle ?? '@sohamhamso',
       $kula: row.kula,
       $style_preset: row.style_preset,

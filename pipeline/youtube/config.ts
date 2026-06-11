@@ -74,12 +74,52 @@ export const DefaultsSchema = z
   })
   .strict();
 
+/**
+ * Chapter-format (16:9 full-chapter videos) block. Pacing knobs live here —
+ * the M1 sample-gate loop is config-edit + re-run, never code-edit.
+ * `min_translation_status` is the PER-FORMAT floor (chapters: draft, per
+ * plan D1); `uploads_enabled` is the enforced upload hold until the shorts
+ * measurement window closes.
+ */
+export const ChaptersConfigSchema = z
+  .object({
+    langs: z.array(z.string().trim().min(1)).min(1, 'expected at least one lang code'),
+    fps: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .int()
+      .positive('expected positive number'),
+    title_card_s: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .positive('expected positive number'),
+    outro_s: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .positive('expected positive number'),
+    min_translation_status: z.enum(['draft', 'reviewed', 'published']),
+    uploads_enabled: z.boolean(),
+    min_seg_s: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .positive('expected positive number'),
+    seg_lead_in_s: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .positive('expected positive number'),
+    seg_tail_s: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .positive('expected positive number'),
+    group_max_verses: z
+      .number({ invalid_type_error: 'expected positive number' })
+      .int()
+      .positive('expected positive number'),
+    encode: z.enum(['cbr8', 'crf18']),
+  })
+  .strict();
+
 export const YoutubeConfigSchema = z
   .object({
     style_presets: z.record(z.string(), StylePresetSchema),
     texts: z.record(z.string(), TextConfigSchema),
     voices: z.record(z.string(), VoiceConfigSchema),
     defaults: DefaultsSchema,
+    chapters: ChaptersConfigSchema,
     forbidden_colors: z.array(HexColor),
     forbidden_iconography: z.array(z.string().trim().min(1)),
   })
@@ -92,6 +132,7 @@ export const YoutubeConfigSchema = z
 export type StylePreset = z.infer<typeof StylePresetSchema>;
 export type TextConfig = z.infer<typeof TextConfigSchema>;
 export type VoiceConfig = z.infer<typeof VoiceConfigSchema>;
+export type ChaptersConfig = z.infer<typeof ChaptersConfigSchema>;
 export type YoutubeConfig = z.infer<typeof YoutubeConfigSchema>;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -99,15 +140,33 @@ export type YoutubeConfig = z.infer<typeof YoutubeConfigSchema>;
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * Load + validate the YouTube pipeline config. Throws (Zod error) on
- * any schema violation. `path` defaults to `data/youtube-config.yaml`
- * resolved against cwd.
+ * Render zod issues as `field.path: message` lines (one per issue) — the
+ * operator sees exactly which yaml field to fix, not a raw issue dump.
+ */
+export function formatZodIssues(error: z.ZodError): string {
+  return error.issues
+    .map((issue) => `${issue.path.join('.') || '(root)'}: ${issue.message}`)
+    .join('\n');
+}
+
+/**
+ * Load + validate the YouTube pipeline config. Throws on any schema
+ * violation with field-path-bearing lines + a one-line remediation
+ * (e.g. `chapters.min_seg_s: expected positive number`). `path` defaults
+ * to `data/youtube-config.yaml` resolved against cwd.
  */
 export function loadYoutubeConfig(path: string = DEFAULT_CONFIG_PATH): YoutubeConfig {
   const abs = resolve(process.cwd(), path);
   const raw = readFileSync(abs, 'utf8');
   const parsed = yamlLoad(raw);
-  return YoutubeConfigSchema.parse(parsed);
+  const result = YoutubeConfigSchema.safeParse(parsed);
+  if (!result.success) {
+    throw new Error(
+      `invalid youtube config (${path}):\n${formatZodIssues(result.error)}\n` +
+        `fix the listed field(s) in ${path}, then re-run: bun scripts/youtube-validate-config.ts`,
+    );
+  }
+  return result.data;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -117,6 +176,11 @@ export function loadYoutubeConfig(path: string = DEFAULT_CONFIG_PATH): YoutubeCo
 /** Look up a text's config by slug. Returns undefined if not present. */
 export function getTextConfig(cfg: YoutubeConfig, slug: string): TextConfig | undefined {
   return cfg.texts[slug];
+}
+
+/** Typed accessor for the chapter-format block (always present post-M0). */
+export function getChaptersConfig(cfg: YoutubeConfig): ChaptersConfig {
+  return cfg.chapters;
 }
 
 /** Resolve a style preset by name. Throws if the preset is missing. */

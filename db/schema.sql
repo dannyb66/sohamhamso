@@ -190,6 +190,10 @@ CREATE TABLE IF NOT EXISTS videos (
   verse_num INTEGER NOT NULL,
   lang TEXT NOT NULL,
   short_index INTEGER NOT NULL DEFAULT 0,
+  -- Distribution format: 'short' (9:16 one-verse) | 'chapter' (16:9 full
+  -- chapter; chapter rows use verse_num=0 — corpus verses start at 1, so the
+  -- UNIQUE determinism key below needs no change).
+  format TEXT NOT NULL DEFAULT 'short' CHECK(format IN ('short','chapter')),
   channel_handle TEXT NOT NULL DEFAULT '@sohamhamso',
   kula TEXT NOT NULL,
   style_preset TEXT NOT NULL,
@@ -249,6 +253,9 @@ CREATE TABLE IF NOT EXISTS video_analytics (
   completion_rate REAL,
   link_clicks_utm INTEGER DEFAULT 0,
   subscribers_gained INTEGER DEFAULT 0,
+  -- Audio-track language dimension for the multi-language-audio test
+  -- (NULL = the video's default track).
+  audio_lang TEXT,
   UNIQUE (video_id, synced_at)
 );
 
@@ -287,5 +294,6 @@ CREATE TABLE IF NOT EXISTS video_events (
 );
 
 CREATE INDEX IF NOT EXISTS idx_videos_status ON videos(status);
+CREATE INDEX IF NOT EXISTS idx_videos_format_status ON videos(format, status);
 CREATE INDEX IF NOT EXISTS idx_videos_verse_lookup ON videos(text_id, chapter, verse_num, lang);
 CREATE INDEX IF NOT EXISTS idx_video_analytics_video ON video_analytics(video_id, synced_at DESC);

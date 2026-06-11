@@ -9,6 +9,7 @@ import { UsageError, parseCommonArgs } from '../pipeline/youtube/cli';
  *     (rejects saffron ±15%, magenta, purple-gold, turquoise, etc.)
  *   - every youtube_eligible:true text references a valid style_preset
  *   - forbidden_iconography is present and non-empty
+ *   - every chapters.langs entry has a voices entry (TTS routing)
  *
  * Exit 0 clean, 3 on any config/gate violation, 2 on usage error.
  * Conforms to CLI-CONVENTIONS (--help/--json).
@@ -72,6 +73,16 @@ function validate(configPath?: string): Summary {
   // 3. forbidden_iconography present + non-empty.
   if (!Array.isArray(cfg.forbidden_iconography) || cfg.forbidden_iconography.length === 0) {
     violations.push('forbidden_iconography must be present and non-empty');
+  }
+
+  // 4. Every chapters.langs entry needs a TTS voice (chapter narration
+  //    routes through the same voices map as shorts).
+  for (const lang of cfg.chapters.langs) {
+    if (!cfg.voices[lang]) {
+      violations.push(
+        `chapters.langs entry "${lang}" has no voices entry — add voices.${lang} to data/youtube-config.yaml`,
+      );
+    }
   }
 
   return {
