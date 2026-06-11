@@ -187,6 +187,9 @@ async function main(): Promise<void> {
   }
 }
 
-if (!process.env.VITEST) {
+// Match the repo convention used in seo-validate / seo-hreflang-closure / etc.
+// Older guard was `!process.env.VITEST`, but that also triggered when this
+// file was imported by another script (e.g. seo-phase8-tplus24h.ts).
+if (import.meta.main) {
   await main();
 }

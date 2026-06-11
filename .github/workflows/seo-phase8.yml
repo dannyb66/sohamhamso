@@ -1,0 +1,140 @@
+name: SEO Phase 8 — Post-launch measurement
+
+# Single recurring workflow that fires once a day and routes to the right
+# T+24h / T+7d / T+30d script based on days-since-launch. Cleaner than three
+# date-pinned workflows because:
+#   - GH Actions `cron:` is recurrence-only (no absolute dates)
+#   - One workflow file, one place to read the schedule + thresholds
+#   - Manual `workflow_dispatch` lets you force-run any tier locally
+#
+# Launch: 2026-06-08 evening (GSC + Bing verified, sitemap-index submitted).
+#   T+24h target window: 2026-06-09 evening UTC
+#   T+7d  target window: 2026-06-15
+#   T+30d target window: 2026-07-08
+#
+# After T+30d + 1d the workflow exits cleanly without doing anything.
+
+on:
+  schedule:
+    # 20:00 UTC every day (post-evening for the launch timezone, low traffic).
+    # Drop to weekly after T+30d by editing this cron — the workflow itself
+    # also no-ops once the 30d window has passed.
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: 'Force which tier to run (auto picks based on date)'
+        required: false
+        type: choice
+        default: 'auto'
+        options:
+          - auto
+          - tplus24h
+          - tplus7d
+          - tplus30d
+
+permissions:
+  contents: read
+
+env:
+  LAUNCH_DATE: '2026-06-08'
+  # Match the production CF Pages config so the OG sampler hits real locales.
+  LOCALE_URLS_LIVE: 'true'
+
+jobs:
+  measure:
+    name: Run T+N measurement
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Setup Node (for lighthouse @ T+30d)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: bun install --frozen-lockfile
+
+      - name: Compute days since launch
+        id: window
+        env:
+          # Pipe the workflow_dispatch input through an env var so we don't
+          # template `github` context into the shell body (GHA injection risk).
+          INPUT_TIER: ${{ github.event.inputs.tier }}
+        run: |
+          launch_epoch=$(date -d "${LAUNCH_DATE}" +%s)
+          now_epoch=$(date -u +%s)
+          delta_days=$(( (now_epoch - launch_epoch) / 86400 ))
+          echo "delta_days=$delta_days" >> "$GITHUB_OUTPUT"
+          # Tier window picker. Each tier has a 24h grace period in case the
+          # scheduled run is delayed.
+          tier="none"
+          # Whitelist allowed values to defang any injected payload that might
+          # sneak past the workflow_dispatch choice constraint.
+          case "$INPUT_TIER" in
+            tplus24h|tplus7d|tplus30d)
+              tier="$INPUT_TIER"
+              ;;
+            ""|auto)
+              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 2 ]; then
+                tier="tplus24h"
+              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 8 ]; then
+                tier="tplus7d"
+              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 31 ]; then
+                tier="tplus30d"
+              fi
+              ;;
+            *)
+              # Unknown input → fall back to auto pick.
+              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 2 ]; then
+                tier="tplus24h"
+              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 8 ]; then
+                tier="tplus7d"
+              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 31 ]; then
+                tier="tplus30d"
+              fi
+              ;;
+          esac
+          echo "tier=$tier" >> "$GITHUB_OUTPUT"
+          echo "Days since launch: $delta_days -> tier=$tier"
+
+      - name: T+24h checks
+        if: steps.window.outputs.tier == 'tplus24h'
+        env:
+          CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: bun scripts/seo-phase8-tplus24h.ts
+
+      - name: T+7d checks
+        if: steps.window.outputs.tier == 'tplus7d'
+        env:
+          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: bun scripts/seo-phase8-tplus7d.ts
+
+      - name: T+30d checks
+        if: steps.window.outputs.tier == 'tplus30d'
+        env:
+          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+        run: bun scripts/seo-phase8-tplus30d.ts
+
+      - name: No-op outside measurement windows
+        if: steps.window.outputs.tier == 'none'
+        env:
+          DELTA_DAYS: ${{ steps.window.outputs.delta_days }}
+        run: |
+          echo "No measurement scheduled for delta=$DELTA_DAYS days."
+          echo "Tiers fire at T+1, T+7, T+30 (with a 1-day grace window)."

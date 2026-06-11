@@ -1,5 +1,3 @@
-// @ts-ignore — Sanscript ships untyped (CJS). The .t signature is stable.
-import Sanscript from '@indic-transliteration/sanscript';
 /**
  * ScriptSwitcher — Solid island for switching the active "reading mode"
  * on a verse page. A reading mode bundles (a) the script the Sanskrit
@@ -30,6 +28,28 @@ import {
 } from '../lib/reading-modes';
 
 /**
+ * Sanscript is ~26 KB minified — the largest single chunk in the
+ * ScriptSwitcher island. Devanāgarī mode is the default and needs zero
+ * transliteration (lines are SSR'd in Devanāgarī already), so most
+ * first-paints don't need this code at all.
+ *
+ * Lazy-load it the first time we need to transliterate, and memoize the
+ * promise so subsequent script switches don't re-import. Restoring a
+ * non-default saved reading-mode at onMount also goes through this path —
+ * Devanāgarī paints first, then swaps after the Sanscript chunk arrives
+ * (single-digit ms after hydrate on warm cache).
+ */
+type SanscriptModule = { default: { t: (src: string, from: string, to: string) => string } };
+let sanscriptPromise: Promise<SanscriptModule> | null = null;
+function loadSanscript(): Promise<SanscriptModule> {
+  if (!sanscriptPromise) {
+    // @ts-ignore — Sanscript ships untyped (CJS). The .t signature is stable.
+    sanscriptPromise = import('@indic-transliteration/sanscript') as Promise<SanscriptModule>;
+  }
+  return sanscriptPromise;
+}
+
+/**
  * Re-render every `[data-sa]` element on the page from its preserved
  * source Devanāgarī string into the target script.
  *
@@ -46,9 +66,10 @@ import {
  *     (Devanāgarī verse + IAST below), and Indic modes read as
  *     "Devanāgarī + transliteration into that Indic script."
  */
-function applyScript(target: string) {
+async function applyScript(target: string) {
   if (typeof document === 'undefined') return;
   const effective = target === 'devanagari' ? 'iast' : target;
+  const { default: Sanscript } = await loadSanscript();
   const nodes = document.querySelectorAll<HTMLElement>('[data-sa]');
   for (const el of nodes) {
     const src = el.dataset.saSource ?? el.textContent ?? '';
@@ -77,13 +98,17 @@ export default function ScriptSwitcher() {
     // Restore from the dedicated reader-lang key. Fall back to the
     // legacy script key when no lang was ever set (first-time visitors
     // upgrading from the pre-catalogue build).
+    //
+    // `applyScript` is async (lazy-imports Sanscript). We `void` the
+    // promise so onMount returns synchronously and Solid's hydrate isn't
+    // blocked; the swap fires when the chunk lands.
     try {
       const savedLang = localStorage.getItem('sohamhamso:reader-lang');
       if (savedLang) {
         const mode = getReadingModeByLang(savedLang);
         if (mode) {
           setCurrent(mode.langCode);
-          if (mode.scriptId !== 'devanagari') applyScript(mode.scriptId);
+          if (mode.scriptId !== 'devanagari') void applyScript(mode.scriptId);
           return;
         }
       }
@@ -93,7 +118,7 @@ export default function ScriptSwitcher() {
         const mode = READING_MODES.find((m) => m.scriptId === savedScript);
         if (mode) {
           setCurrent(mode.langCode);
-          if (mode.scriptId !== 'devanagari') applyScript(mode.scriptId);
+          if (mode.scriptId !== 'devanagari') void applyScript(mode.scriptId);
         }
       }
     } catch {
@@ -105,7 +130,7 @@ export default function ScriptSwitcher() {
     const mode = getReadingModeByLang(langCode);
     if (!mode) return;
     setCurrent(mode.langCode);
-    applyScript(mode.scriptId);
+    void applyScript(mode.scriptId);
     // applyReadingMode handles both localStorage keys + the
     // reader-lang-change CustomEvent, so ReaderLangSwap reacts in the
     // same tick.

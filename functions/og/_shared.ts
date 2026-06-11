@@ -16,7 +16,13 @@ import { getReadingModeByLang } from '../../src/lib/reading-modes';
 
 const OG_SUCCESS_CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const OG_FALLBACK_CACHE_CONTROL = 'public, max-age=60';
-const OG_QUERY_TIMEOUT_MS = 500;
+// 1500ms accommodates the libsql `/web` client's TLS handshake + first HTTP
+// round-trip on a cold worker isolate (warm probes complete in ~450ms, but
+// cold-start probes were blowing the previous 500ms budget — that's the
+// "100% fallback in production" bug Phase 8 caught). 1500ms still leaves
+// ample headroom inside the 2000ms render budget and the CF Workers
+// total-CPU limits.
+const OG_QUERY_TIMEOUT_MS = 1500;
 const OG_RENDER_TIMEOUT_MS = 2000;
 const OG_FALLBACK_ASSET_CANDIDATES = ['/og-default.png', '/og-default.svg'] as const;
 const OG_RUNTIME_WASM_ASSET = '/og-runtime/resvg-index_bg.wasm';
@@ -27,6 +33,14 @@ type OgSuccessRoute = VerseOgRoute | LemmaOgRoute;
 let _resvgModulePromise: Promise<typeof import('@resvg/resvg-wasm')> | null = null;
 let _resvgReadyPromise: Promise<typeof import('@resvg/resvg-wasm')> | null = null;
 let _ogFontBuffersPromise: Promise<Uint8Array[]> | null = null;
+// Module-scope memoization of the libsql `/web` import. Each `await import()`
+// call pays a non-trivial chunk-load cost on a cold worker isolate (~50-200ms
+// in workerd because the chunk must be parsed + linked). Without memoization
+// every OG request re-paid this cost, eating the query timeout budget. We
+// memoize the IMPORT (not the client) so the per-request `createClient(...)`
+// — which owns the AbortSignal closure — can still happen fresh per request
+// without cross-request signal contamination.
+let _libsqlClientImportPromise: Promise<typeof import('@libsql/client/web')> | null = null;
 
 export interface OgEnv {
   ASSETS: { fetch: typeof fetch };
@@ -581,10 +595,10 @@ function getDefaultCache(): Cache | undefined {
 
 /**
  * Build a `CorpusDb` whose underlying libsql HTTP requests honor the supplied
- * `AbortSignal`. When the OG request's 500ms timer fires, the signal aborts,
- * the libsql custom `fetch` propagates the abort to the upstream Turso socket,
- * and the in-flight subrequest is actually canceled — preventing the worker
- * subrequest pileup the audit flagged as a DoS amplification risk.
+ * `AbortSignal`. When the OG request's `OG_QUERY_TIMEOUT_MS` timer fires, the
+ * signal aborts, the libsql custom `fetch` propagates the abort to the upstream
+ * Turso socket, and the in-flight subrequest is actually canceled — preventing
+ * the worker subrequest pileup the audit flagged as a DoS amplification risk.
  *
  * Falls back to the shared `getCorpusDb()` singleton (which honors
  * `__setCorpusDbForTests` and the bun-runtime path) when no Turso env vars
@@ -598,10 +612,14 @@ async function getAbortableCorpusDb(signal: AbortSignal): Promise<CorpusDb> {
     return getCorpusDb();
   }
 
-  // Per-request libsql client. Cold-start cost is acceptable here because the
-  // alternative — sharing a module-scoped client with no per-request abort
-  // wiring — is exactly the DoS amplification path we're fixing.
-  const { createClient } = await import('@libsql/client/web');
+  // Per-request libsql client. The `createClient(...)` call itself is cheap;
+  // the expensive part is the dynamic `import('@libsql/client/web')` chunk
+  // load on a cold isolate, which we now memoize at module scope so only the
+  // FIRST request per isolate pays it. The per-request client (and its
+  // AbortSignal-aware custom fetch) is preserved — concurrent requests would
+  // cross-contaminate signals if we shared a single client.
+  _libsqlClientImportPromise ??= import('@libsql/client/web');
+  const { createClient } = await _libsqlClientImportPromise;
   const client = createClient({
     url,
     authToken,
@@ -656,3 +674,21 @@ async function withTimeout<T>(promise: Promise<T>, ms: number, message: string):
     if (timeoutId !== undefined) clearTimeout(timeoutId);
   }
 }
+
+/**
+ * Test hook — reset the module-scope memoization of the libsql `/web` import.
+ * Lets regression tests assert that the import is paid at most once across
+ * multiple requests within the same isolate. Production code MUST NOT call
+ * this; it exists so the cold-isolate timeout fix has explicit test coverage.
+ */
+export function __resetLibsqlClientImportForTests(): void {
+  _libsqlClientImportPromise = null;
+}
+
+/** Test hook — read-only snapshot of whether the libsql import was paid. */
+export function __libsqlClientImportPaidForTests(): boolean {
+  return _libsqlClientImportPromise !== null;
+}
+
+/** Exported timeout constant so tests can assert the budget didn't regress. */
+export const __OG_QUERY_TIMEOUT_MS_FOR_TESTS = OG_QUERY_TIMEOUT_MS;
