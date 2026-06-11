@@ -110,6 +110,15 @@ else
   fi
 fi
 
+# ---------- gate: youtube config validation ----------
+step "Gate: youtube config (zod + palette/iconography)"
+if MOCK_ALL=true bun scripts/youtube-validate-config.ts >/tmp/preflight-youtube-config.log 2>&1; then
+  pass "youtube-config.yaml valid (schema + forbidden-palette/iconography gates)"
+else
+  fail "youtube config validation failed (see /tmp/preflight-youtube-config.log)"
+  tail -n 30 /tmp/preflight-youtube-config.log || true
+fi
+
 # ---------- soft warning 1: TODO/FIXME/XXX in src/lib ----------
 step "Warning scan: TODO / FIXME / XXX in src/lib"
 if [ -d src/lib ]; then

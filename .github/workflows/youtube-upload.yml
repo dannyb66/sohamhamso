@@ -1,0 +1,102 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Cron B — YouTube Shorts deployment (upload).
+#
+# Every 4h (30min offset from Cron A): pulls the oldest `approved` row with no
+# YouTube id, copies the rendered artifact from R2, and uploads to @sohamhamso
+# as `unlisted` with localized metadata via `scripts/youtube-upload.ts`. Single
+# job, no matrix — one channel. A daily-quota pre-check inside the script
+# prevents 403s; the operator flips videos public later in YouTube Studio.
+#
+# Required GitHub secrets:
+#   YOUTUBE_OAUTH_CLIENT_ID, YOUTUBE_OAUTH_CLIENT_SECRET
+#                              — OAuth client for the @sohamhamso channel
+#   YT_REFRESH_TOKEN           — long-lived refresh token (scope youtube.upload)
+#   R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ENDPOINT_URL
+#                              — S3-compatible R2 access (bucket sohamhamso-backups)
+#
+# Manual trigger: Actions tab → "YouTube upload (Cron B)" → Run workflow.
+# ──────────────────────────────────────────────────────────────────────────────
+name: YouTube upload (Cron B)
+
+on:
+  schedule:
+    # Every 4h, 30min offset from Cron A so renders settle before upload.
+    - cron: '30 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write   # used by the failure-notification step
+
+# Serialize all YouTube pipeline crons: the single R2 state DB must never be
+# written by two runs at once. cancel-in-progress: false lets in-flight runs
+# finish so partial progress is pushed back rather than discarded.
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # ── YouTube OAuth (single chokepoint reads these). ───────────────
+      YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
+      YOUTUBE_OAUTH_CLIENT_SECRET: ${{ secrets.YOUTUBE_OAUTH_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      # ── R2 / S3-compatible storage for rendered artifacts. ───────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+      # ── R2-synced state DB (pulled before / pushed after the run). ────
+      YOUTUBE_DB_PATH: db/youtube-state.db
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Pull the state DB from R2 so the uploader reads/writes shared state
+      # (ephemeral runners start with no DB).
+      - name: Pull state DB
+        run: bash scripts/youtube-state-db.sh pull
+
+      - name: Upload batch
+        run: bun scripts/youtube-upload.ts
+
+      # Push the mutated state DB back to R2 even on failure so partial
+      # progress (e.g. rows flipped to uploading) persists.
+      - name: Push state DB
+        if: always()
+        run: bash scripts/youtube-state-db.sh push
+
+      # Surface failures as a GitHub Issue (precedent: turso-backup.yml).
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `YouTube upload failed — ${new Date().toISOString().slice(0,10)}`;
+            const body = [
+              `Cron B (YouTube upload) failed.`,
+              ``,
+              `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `- Commit: ${context.sha}`,
+              ``,
+              `Investigate: check the run logs, confirm the \`YOUTUBE_OAUTH_*\` / \`YT_REFRESH_TOKEN\` secrets are valid (rotate quarterly — see scripts/youtube/README.md), and that the \`R2_*\`/\`AWS_*\` secrets are set. A 403 quotaExceeded is handled gracefully (exit 0) and should not reach this step.`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['youtube', 'youtube-upload-failure'],
+            });

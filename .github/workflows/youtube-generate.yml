@@ -1,0 +1,147 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Cron A — YouTube Shorts generation (render).
+#
+# Every 6h: picks `pending` (or retryable `failed`) videos rows, runs TTS →
+# Remotion → QA gates → R2 upload → DB update via `scripts/youtube-render.ts`.
+# Render is decoupled from upload (Cron B) so a YouTube quota event never blocks
+# render velocity. On failure, opens a GitHub Issue so the operator notices
+# without watching the Actions tab (precedent: turso-backup.yml).
+#
+# Required GitHub secrets:
+#   GOOGLE_TTS_CREDENTIALS_JSON — Google Cloud TTS service-account JSON
+#   R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ENDPOINT_URL
+#                              — S3-compatible R2 access (bucket sohamhamso-backups)
+#
+# Manual trigger: Actions tab → "YouTube generate (Cron A)" → Run workflow.
+# Dispatch inputs scope a single verse/lang for end-to-end validation.
+# ──────────────────────────────────────────────────────────────────────────────
+name: YouTube generate (Cron A)
+
+on:
+  schedule:
+    # Every 6h — matches the GHA 6h job ceiling and the doc's render cadence.
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      text_slug:
+        description: 'Restrict render to a single text slug (e.g. siva-sutras)'
+        required: false
+        default: ''
+      lang:
+        description: 'Restrict render to a single lang code (e.g. en)'
+        required: false
+        default: ''
+      force:
+        description: 'Force re-render even if the determinism contract matches'
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Plan only — no TTS/Remotion/R2 writes'
+        required: false
+        type: boolean
+        default: false
+      limit:
+        description: 'Max rows this run'
+        required: false
+        default: '50'
+
+permissions:
+  contents: read
+  issues: write   # used by the failure-notification step
+
+# Serialize all YouTube pipeline crons: the single R2 state DB must never be
+# written by two runs at once. cancel-in-progress: false lets in-flight runs
+# finish so partial progress is pushed back rather than discarded.
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      # ── TTS service-account JSON (single chokepoint reads this). ──────
+      GOOGLE_TTS_CREDENTIALS_JSON: ${{ secrets.GOOGLE_TTS_CREDENTIALS_JSON }}
+      # ── R2 / S3-compatible storage for rendered artifacts. ───────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+      # ── R2-synced state DB (pulled before / pushed after the run). ────
+      YOUTUBE_DB_PATH: db/youtube-state.db
+      # ── Dispatch inputs surfaced as env for the renderer. ────────────
+      YT_TEXT_SLUG: ${{ github.event.inputs.text_slug }}
+      YT_LANG: ${{ github.event.inputs.lang }}
+      YT_FORCE: ${{ github.event.inputs.force }}
+      YT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+      YT_LIMIT: ${{ github.event.inputs.limit }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Safety net for system font fallback: Remotion shapes Indic scripts via
+      # Chromium + HarfBuzz, but Linux runners lack Indic fonts by default →
+      # tofu boxes. The composition loads woff2 directly, but install the
+      # system Noto families too so any fallback path still renders correctly.
+      - name: Install fonts (safety net)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-core fonts-noto-extra
+          fc-cache -fv
+
+      # Pull the state DB from R2 so the renderer reads/writes shared state
+      # (ephemeral runners start with no DB).
+      - name: Pull state DB
+        run: bash scripts/youtube-state-db.sh pull
+
+      - name: Render batch
+        run: |
+          flags=""
+          if [[ -n "${YT_TEXT_SLUG:-}" ]]; then flags="$flags --text-slug=${YT_TEXT_SLUG}"; fi
+          if [[ -n "${YT_LANG:-}" ]]; then flags="$flags --lang=${YT_LANG}"; fi
+          if [[ "${YT_FORCE:-}" == "true" ]]; then flags="$flags --force"; fi
+          if [[ "${YT_DRY_RUN:-}" == "true" ]]; then flags="$flags --dry-run"; fi
+          echo "youtube-render.ts --limit=${YT_LIMIT:-50} $flags"
+          bun scripts/youtube-render.ts --limit=${YT_LIMIT:-50} $flags
+
+      # Push the mutated state DB back to R2 even on failure so partial
+      # progress (e.g. rows flipped to rendering) persists.
+      - name: Push state DB
+        if: always()
+        run: bash scripts/youtube-state-db.sh push
+
+      # Surface failures as a GitHub Issue — cheaper than wiring an external
+      # pager for a scheduled job (precedent: turso-backup.yml).
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `YouTube render failed — ${new Date().toISOString().slice(0,10)}`;
+            const body = [
+              `Cron A (YouTube generate) failed.`,
+              ``,
+              `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `- Commit: ${context.sha}`,
+              `- Dispatch: text_slug=\`${process.env.YT_TEXT_SLUG || '(scheduled)'}\` lang=\`${process.env.YT_LANG || '(all)'}\` force=\`${process.env.YT_FORCE || 'false'}\` dry_run=\`${process.env.YT_DRY_RUN || 'false'}\``,
+              ``,
+              `Investigate: check the run logs, confirm \`GOOGLE_TTS_CREDENTIALS_JSON\` and the \`R2_*\`/\`AWS_*\` secrets are valid, and re-run via the Actions tab. Stuck \`rendering\` rows are swept hourly by youtube-lease-sweep.yml.`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['youtube', 'youtube-gen-failure'],
+            });

@@ -138,3 +138,64 @@ jobs:
             exit 1
           fi
           echo "Biome within baseline."
+
+  youtube-rigor:
+    name: YouTube pipeline rigor
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect YouTube-pipeline changes
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            yt:
+              - 'pipeline/youtube/**'
+              - 'youtube/**'
+              - 'scripts/youtube-*.ts'
+              - 'data/youtube-config.yaml'
+              - 'tests/unit/youtube/**'
+              - 'tests/integration/youtube/**'
+              - 'db/schema.sql'
+              - '.github/workflows/ci.yml'
+
+      - name: Setup Bun
+        if: steps.filter.outputs.yt == 'true'
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache Bun install
+        if: steps.filter.outputs.yt == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.bun/install/cache
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
+
+      - name: Install dependencies
+        if: steps.filter.outputs.yt == 'true'
+        run: bun install --frozen-lockfile
+
+      - name: Validate youtube config
+        if: steps.filter.outputs.yt == 'true'
+        env:
+          MOCK_ALL: "true"
+        run: MOCK_ALL=true bun run youtube:validate-config
+
+      - name: Youtube unit tests
+        if: steps.filter.outputs.yt == 'true'
+        env:
+          MOCK_ALL: "true"
+        run: MOCK_ALL=true bun run youtube:test
+
+      - name: Youtube integration (mocked e2e)
+        if: steps.filter.outputs.yt == 'true'
+        env:
+          MOCK_ALL: "true"
+        run: MOCK_ALL=true bun run youtube:integration

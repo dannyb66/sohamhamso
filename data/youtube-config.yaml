@@ -1,0 +1,109 @@
+# ============================================================
+# YouTube Shorts pipeline config (Phase 1)
+#
+# Zod-validated by pipeline/youtube/config.ts::loadYoutubeConfig().
+# Style routes off text slug -> preset (kula is config-only — no
+# kula/school driver exists in the corpus or DB; see reconciled plan).
+#
+# Palettes researched from scholarly publications (SUNY Shaiva
+# Traditions, Motilal, hareesh.org, Dyczkowski, Kinsley UC Press) —
+# deliberately distinct from saffron-political / wellness-slop register.
+# A preset change (rename / bg tweak / footer wording) MUST bump
+# TEMPLATE_VERSION in pipeline/youtube/versions.ts.
+# ============================================================
+
+style_presets:
+  trika-classic:
+    bg: "#0E1B2E"                # midnight-indigo (Kashmiri winter sky)
+    accent: "#C9A961"            # aged-gold (manuscript leaf)
+    text: "#E8E4D8"             # manuscript-cream
+    headline_font: "EB Garamond"
+    body_font: "EB Garamond"
+    devanagari_font: "Noto Serif Devanagari"
+    footer_line: "Trika Śaiva canon · sohamhamso.org"
+    ornament: "none"
+
+  trika-recognition:
+    bg: "#13192B"               # cooler indigo, distinguishes from base Trika
+    accent: "#C9A961"
+    text: "#E8E4D8"
+    headline_font: "EB Garamond"
+    body_font: "EB Garamond"
+    devanagari_font: "Noto Serif Devanagari"
+    footer_line: "Pratyabhijñā lineage · sohamhamso.org"
+    ornament: "none"
+
+  trika-pulse:
+    bg: "#0E2024"               # deep slate, hint of teal for Spanda's "pulse"
+    accent: "#C9A961"
+    text: "#E8E4D8"
+    headline_font: "EB Garamond"
+    body_font: "EB Garamond"
+    devanagari_font: "Noto Serif Devanagari"
+    footer_line: "Spanda lineage · sohamhamso.org"
+    ornament: "none"
+
+  shakta-kali:
+    bg: "#0A0507"               # cremation near-black (Kinsley UC Press)
+    accent: "#8B1A1A"           # oxblood crimson
+    text: "#F2EDE4"             # bone-white
+    headline_font: "EB Garamond"
+    body_font: "EB Garamond"
+    devanagari_font: "Noto Serif Devanagari"
+    footer_line: "Śākta canon · sohamhamso.org"
+    ornament: "none"
+
+texts:
+  siva-sutras:
+    kula: trika
+    style_preset: trika-classic
+    youtube_eligible: true
+    min_translation_status: reviewed
+  pratyabhijna-hrdayam:
+    kula: trika-pratyabhijna
+    style_preset: trika-recognition
+    youtube_eligible: true
+    min_translation_status: reviewed
+  spanda-karikas:
+    kula: trika-spanda
+    style_preset: trika-pulse
+    youtube_eligible: true
+    min_translation_status: reviewed
+  vijnana-bhairava-tantra:
+    kula: trika
+    style_preset: trika-classic
+    youtube_eligible: false
+    reason: "Muktabodha — permission pending"
+  karpuradi-stotra:
+    kula: shakta
+    style_preset: shakta-kali
+    youtube_eligible: false
+    reason: "license verification pending"
+
+voices:
+  en:
+    provider: google
+    voice_id: "en-US-Studio-O"
+
+defaults:
+  channel_handle: "@sohamhamso"
+  visibility: "unlisted"
+  fps: 30
+  duration_s: 18
+
+# Rejected at the youtube-validate-config gate. Saffron is additionally
+# enforced in code as ±15% RGB-distance around #FF9933 (see
+# pipeline/youtube/config.ts::isForbiddenColor / SAFFRON_HEX).
+forbidden_colors:
+  - "#FF9933"   # saffron-orange (BJP/Hindu-nationalist flag); ±15% range enforced in code
+  - "#FF6600"   # bright saffron variant
+  - "#FF00FF"   # magenta — "sacred feminine" neo-tantra signal
+  - "#FF1493"   # hot-pink — neo-tantra signal
+  - "#7B2FBE"   # purple — Sadhguru / New-Age purple-gold register
+  - "#9B59B6"   # purple variant
+  - "#40E0D0"   # turquoise — "om water bottle" appropriation flag
+
+forbidden_iconography:
+  - "om-motif"
+  - "stylized-kali"
+  - "deity-image"

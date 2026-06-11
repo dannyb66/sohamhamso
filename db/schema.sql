@@ -172,3 +172,120 @@ CREATE TABLE IF NOT EXISTS dataset_releases (
   released_at TEXT NOT NULL DEFAULT (datetime('now')),
   notes TEXT
 );
+
+
+-- ============================================================
+-- YOUTUBE SHORTS PIPELINE (Phase 1)
+-- Lifecycle + analytics + run-log + quota + events.
+-- Additive, idempotent. Applied via scripts/turso-apply-schema.sh.
+-- Determinism contract: translation_md5 + template_version
+-- (no input_hash — superseded per Eng review E1).
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS videos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  -- Identity
+  text_id TEXT NOT NULL REFERENCES texts(id),
+  chapter INTEGER NOT NULL,
+  verse_num INTEGER NOT NULL,
+  lang TEXT NOT NULL,
+  short_index INTEGER NOT NULL DEFAULT 0,
+  channel_handle TEXT NOT NULL DEFAULT '@sohamhamso',
+  kula TEXT NOT NULL,
+  style_preset TEXT NOT NULL,
+  -- Determinism (simplified per E1 — no input_hash)
+  translation_md5 TEXT NOT NULL,
+  template_version TEXT NOT NULL,
+  output_file_sha256 TEXT,
+  output_bytes INTEGER,
+  -- Pinned provenance (for replay 6mo later)
+  tts_voice_id TEXT NOT NULL,
+  translation_row_id INTEGER NOT NULL REFERENCES translations(id),
+  remotion_version TEXT NOT NULL,
+  ffmpeg_version TEXT NOT NULL,
+  -- Lifecycle
+  status TEXT NOT NULL CHECK(status IN (
+    'pending','rendering','rendered','approved','rejected',
+    'uploading','uploaded','failed','superseded'
+  )),
+  -- Lease/TTL for crash recovery (E4)
+  rendering_lease_at TEXT,
+  uploading_lease_at TEXT,
+  -- Storage refs
+  r2_key TEXT,
+  duration_s REAL,
+  youtube_video_id TEXT,
+  youtube_url TEXT,
+  visibility TEXT DEFAULT 'unlisted' CHECK(visibility IN ('unlisted','public','private')),
+  -- Lifecycle audit
+  retry_count INTEGER DEFAULT 0,
+  upload_retry_count INTEGER DEFAULT 0,
+  last_error TEXT,                     -- redacted at write-time per E6 (scrubError)
+  last_error_phase TEXT,
+  approved_at TEXT,
+  approved_by TEXT,
+  rendered_at TEXT,
+  uploaded_at TEXT,
+  priority INTEGER DEFAULT 0,
+  -- Supersede policy (E2)
+  supersedes_video_id INTEGER REFERENCES videos(id),
+  superseded_at TEXT,
+  superseded_action TEXT CHECK(superseded_action IN ('auto-private','replace-asset','manual',NULL)),
+  created_at TEXT DEFAULT (datetime('now')),
+  updated_at TEXT DEFAULT (datetime('now')),
+  UNIQUE (text_id, chapter, verse_num, lang, short_index, translation_md5, template_version)
+);
+
+-- Per E3: analytics is its own table. Queryable separately from lifecycle state.
+CREATE TABLE IF NOT EXISTS video_analytics (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  video_id INTEGER NOT NULL REFERENCES videos(id),
+  synced_at TEXT NOT NULL,
+  view_count INTEGER DEFAULT 0,
+  watch_time_s INTEGER DEFAULT 0,
+  ctr REAL,
+  retention_3s REAL,
+  retention_50 REAL,
+  completion_rate REAL,
+  link_clicks_utm INTEGER DEFAULT 0,
+  subscribers_gained INTEGER DEFAULT 0,
+  UNIQUE (video_id, synced_at)
+);
+
+CREATE TABLE IF NOT EXISTS pipeline_runs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id TEXT NOT NULL,
+  video_id INTEGER REFERENCES videos(id),
+  phase TEXT NOT NULL CHECK(phase IN ('plan','render','probe','upload','status','rotation')),
+  status TEXT NOT NULL CHECK(status IN ('ok','err','skip','dryrun')),
+  duration_ms INTEGER,
+  tts_bytes_synthesized INTEGER DEFAULT 0,
+  r2_bytes_written INTEGER DEFAULT 0,
+  youtube_api_units INTEGER DEFAULT 0,
+  error_code TEXT,
+  error_msg TEXT,
+  started_at TEXT DEFAULT (datetime('now')),
+  finished_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS youtube_quota (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  channel_handle TEXT NOT NULL,
+  utc_date TEXT NOT NULL,
+  units_spent INTEGER NOT NULL DEFAULT 0,
+  uploads_count INTEGER NOT NULL DEFAULT 0,
+  exhausted INTEGER NOT NULL DEFAULT 0,
+  UNIQUE (channel_handle, utc_date)
+);
+
+CREATE TABLE IF NOT EXISTS video_events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  video_id INTEGER NOT NULL REFERENCES videos(id),
+  event TEXT NOT NULL,
+  meta TEXT,
+  occurred_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_videos_status ON videos(status);
+CREATE INDEX IF NOT EXISTS idx_videos_verse_lookup ON videos(text_id, chapter, verse_num, lang);
+CREATE INDEX IF NOT EXISTS idx_video_analytics_video ON video_analytics(video_id, synced_at DESC);
