@@ -134,15 +134,21 @@ async function synthesize(
     writeFileSync(outPath, cannedSilentWav(2));
     return;
   }
-  // Touch creds via the chokepoint (hard-fails in prod when absent).
-  getGoogleTtsCreds();
+  // Resolve creds via the chokepoint (hard-fails in prod when absent).
+  const creds = getGoogleTtsCreds();
   const mod = await import('@google-cloud/text-to-speech' as string).catch((e) => {
     throw new Error(`@google-cloud/text-to-speech not installed: ${scrubError(e)}`);
   });
   // biome-ignore lint/suspicious/noExplicitAny: dynamic import shape (dep installed later)
   const m = mod as any;
   const TextToSpeechClient = m.TextToSpeechClient ?? m.default?.TextToSpeechClient;
-  const client = new TextToSpeechClient();
+  // Prefer the inline service-account JSON (GOOGLE_TTS_CREDENTIALS_JSON — what
+  // the GitHub Actions crons set); the Google auth lib does NOT read that env
+  // itself, so pass it explicitly. Otherwise fall back to ADC /
+  // GOOGLE_APPLICATION_CREDENTIALS (local dev).
+  const client = creds.credentialsJson
+    ? new TextToSpeechClient({ credentials: JSON.parse(creds.credentialsJson) })
+    : new TextToSpeechClient();
   const [resp] = await client.synthesizeSpeech(req);
   if (!resp?.audioContent) throw new Error('TTS returned no audioContent');
   writeFileSync(outPath, Buffer.from(resp.audioContent as Uint8Array));
