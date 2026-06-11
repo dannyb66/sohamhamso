@@ -42,6 +42,54 @@ export function loadFonts(): Promise<void> {
       weight: '400 700',
       style: 'normal',
     }),
+    loadFont({
+      family: 'Noto Serif Tamil',
+      url: staticFile('fonts/indic/noto-serif-tamil-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Telugu',
+      url: staticFile('fonts/indic/noto-serif-telugu-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Kannada',
+      url: staticFile('fonts/indic/noto-serif-kannada-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Malayalam',
+      url: staticFile('fonts/indic/noto-serif-malayalam-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Bengali',
+      url: staticFile('fonts/indic/noto-serif-bengali-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Gujarati',
+      url: staticFile('fonts/indic/noto-serif-gujarati-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Gurmukhi',
+      url: staticFile('fonts/indic/noto-serif-gurmukhi-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
+    loadFont({
+      family: 'Noto Serif Oriya',
+      url: staticFile('fonts/indic/noto-serif-oriya-variable.woff2'),
+      weight: '400 700',
+      style: 'normal',
+    }),
   ]).then(() => undefined);
 
   return fontsPromise;

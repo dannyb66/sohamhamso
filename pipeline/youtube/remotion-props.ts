@@ -20,6 +20,8 @@ export interface ShortPropsArgs {
   translation: string;
   preset: StylePreset;
   audioSrc: string | null;
+  /** Per-language script font for the translation line (default EB Garamond). */
+  translationFont?: string;
   /** Measured narration length (seconds). 0/omitted → silent → floor applies. */
   audioDurationS?: number;
   fps?: number;
@@ -76,6 +78,7 @@ export function buildShortProps(a: ShortPropsArgs): ShortProps {
       devanagariFont: a.preset.devanagari_font,
       footerLine: a.preset.footer_line,
     },
+    translationFont: a.translationFont ?? 'EB Garamond',
     audioSrc: a.audioSrc,
     audioStartFrame,
     fps,

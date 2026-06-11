@@ -3,12 +3,13 @@
  * scripts/youtube-backfill-pending.ts
  *
  * One-shot, idempotent populator for the `videos` lifecycle table. For each
- * youtube_eligible:true text in config, iterates its verses and (Phase 1:
- * lang='en' only) inserts a `pending` row per verse whose English
- * translation clears the text's `min_translation_status` floor.
+ * youtube_eligible:true text in config, iterates its verses and inserts a
+ * `pending` row per verse whose translation (in the target --lang, default
+ * 'en') clears the text's `min_translation_status` floor. The target lang
+ * must have a configured voice in cfg.voices (else the run is a clean no-op).
  *
  * Skips a verse when:
- *   - no English translation row exists, OR
+ *   - no translation row exists for the target lang, OR
  *   - its status is below the text's floor (meetsTranslationFloor==false).
  *
  * Idempotent: insertPending is INSERT OR IGNORE on the determinism key.
@@ -27,7 +28,7 @@ import { getDb, getText, listAllVerses } from '../src/lib/db';
 import { getVideosDb, insertPending } from '../src/lib/videos-db';
 
 const STAGE = 'plan';
-const PHASE1_LANG = 'en';
+const DEFAULT_LANG = 'en';
 const PHASE1_FLOOR_TARGET = 149;
 
 const USAGE = `youtube-backfill-pending — idempotent populator for the videos table
@@ -42,7 +43,7 @@ Flags:
   --dry-run         Plan only — print counts, write nothing
   --limit=N         Cap rows inserted/considered this run
   --text-slug=SLUG  Restrict to one eligible text
-  --lang=CODE       Restrict to one lang (Phase 1: only 'en' is processed)
+  --lang=CODE       Target lang to backfill (default 'en'; must have a voice)
 
 Exit codes:
   0 ok    2 usage error    3 config gate
@@ -72,10 +73,11 @@ function getVerseId(
   return r ? r.id : null;
 }
 
-/** Pick the primary English translation row (id, status, text) for a verse. */
-function pickEnglishTranslation(
+/** Pick the primary translation row (id, status, text) for a verse + lang. */
+function pickTranslation(
   corpus: Database,
   verseId: number,
+  lang: string,
 ): { id: number; status: string; text: string } | null {
   // Mirror getVerse() ordering — first published/reviewed/draft row wins.
   const r = corpus
@@ -86,7 +88,7 @@ function pickEnglishTranslation(
         ORDER BY ai_assisted ASC, status ASC, created_at ASC
         LIMIT 1`,
     )
-    .get(verseId, PHASE1_LANG);
+    .get(verseId, lang);
   return r ? { id: r.id, status: r.status, text: r.translation_text } : null;
 }
 
@@ -106,14 +108,32 @@ function main(): void {
     return;
   }
 
-  // Phase 1 only handles English; a non-en --lang is a no-op (warn).
-  if (args.lang && args.lang !== PHASE1_LANG) {
-    log(STAGE, `--lang=${args.lang} ignored — Phase 1 backfills English only`);
-  }
+  const targetLang = args.lang ?? DEFAULT_LANG;
 
   const cfg = loadYoutubeConfig();
   const corpus = getDb();
   const vdb = args.dryRun ? null : getVideosDb();
+
+  // The target lang must have a configured voice (provider + voice_id) — else
+  // the rendered videos would have no narration. Skip cleanly (exit 0) so a
+  // typo'd lang doesn't insert voiceless rows.
+  const voice = cfg.voices[targetLang];
+  if (!voice) {
+    log(
+      STAGE,
+      `lang ${targetLang} has no voice in cfg.voices (known: ${Object.keys(cfg.voices).join(', ')}) — nothing to do`,
+    );
+    if (args.json) {
+      console.log(
+        JSON.stringify(
+          { dryRun: args.dryRun, lang: targetLang, totalInserted: 0, totalCleared: 0, perText: [] },
+          null,
+          2,
+        ),
+      );
+    }
+    return;
+  }
 
   const eligibleSlugs = Object.keys(cfg.texts).filter((s) => isYoutubeEligible(cfg, s));
   const slugs = args.textSlug ? eligibleSlugs.filter((s) => s === args.textSlug) : eligibleSlugs;
@@ -151,7 +171,7 @@ function main(): void {
         stat.skippedNoTranslation += 1;
         continue;
       }
-      const tr = pickEnglishTranslation(corpus, verseId);
+      const tr = pickTranslation(corpus, verseId, targetLang);
       if (!tr) {
         stat.skippedNoTranslation += 1;
         continue;
@@ -173,12 +193,12 @@ function main(): void {
         text_id: text.id,
         chapter,
         verse_num,
-        lang: PHASE1_LANG,
+        lang: targetLang,
         kula: tcfg.kula,
         style_preset: tcfg.style_preset,
         translation_md5: translationMd5(tr.text),
         template_version: TEMPLATE_VERSION,
-        tts_voice_id: cfg.voices[PHASE1_LANG]?.voice_id ?? '',
+        tts_voice_id: voice.voice_id,
         translation_row_id: tr.id,
         remotion_version: REMOTION_VERSION,
         ffmpeg_version: FFMPEG_VERSION,
@@ -193,7 +213,7 @@ function main(): void {
 
   const summary = {
     dryRun: args.dryRun,
-    lang: PHASE1_LANG,
+    lang: targetLang,
     totalInserted,
     totalCleared,
     floorTarget: PHASE1_FLOOR_TARGET,
@@ -221,7 +241,7 @@ function main(): void {
   if (summary.belowFloorTarget) {
     // Warn, do NOT fail (exit 0) — partial corpus is allowed during build-out.
     console.error(
-      `[youtube:${STAGE}] WARNING: only ${totalCleared} English rows clear the floor (< ${PHASE1_FLOOR_TARGET} target)`,
+      `[youtube:${STAGE}] WARNING: only ${totalCleared} ${targetLang} rows clear the floor (< ${PHASE1_FLOOR_TARGET} target)`,
     );
   }
 }

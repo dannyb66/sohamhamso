@@ -84,6 +84,33 @@ voices:
   en:
     provider: google
     voice_id: "en-US-Studio-O"
+  hi:
+    provider: google
+    voice_id: "hi-IN-Wavenet-A"
+  ta:
+    provider: google
+    voice_id: "ta-IN-Wavenet-A"
+  te:
+    provider: google
+    voice_id: "te-IN-Standard-A"
+  kn:
+    provider: google
+    voice_id: "kn-IN-Wavenet-A"
+  ml:
+    provider: google
+    voice_id: "ml-IN-Wavenet-A"
+  bn:
+    provider: google
+    voice_id: "bn-IN-Wavenet-A"
+  mr:
+    provider: google
+    voice_id: "mr-IN-Wavenet-A"
+  gu:
+    provider: google
+    voice_id: "gu-IN-Wavenet-A"
+  pa:
+    provider: google
+    voice_id: "pa-IN-Wavenet-A"
 
 defaults:
   channel_handle: "@sohamhamso"

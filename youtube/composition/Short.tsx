@@ -46,6 +46,7 @@ export type ShortProps = {
   iast: string; // "caitanyam ātmā"
   translation: string; // English translation
   preset: ShortPreset;
+  translationFont: string; // per-language script font for the translation line
   audioSrc: string | null; // narration file/URL; render silence if null
   audioStartFrame: number; // frame the English appears AND narration begins
   fps: number; // 30
@@ -82,6 +83,7 @@ export const ShortVideo: React.FC<ShortProps> = ({
   iast,
   translation,
   preset,
+  translationFont,
   audioSrc,
   audioStartFrame,
 }) => {
@@ -125,7 +127,7 @@ export const ShortVideo: React.FC<ShortProps> = ({
         />
         <Translation
           translation={translation}
-          font={preset.bodyFont}
+          font={translationFont}
           color={preset.text}
           opacity={translationOpacity}
           fontSize={translationFontSize(translation.length)}

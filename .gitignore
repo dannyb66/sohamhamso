@@ -82,3 +82,6 @@ checksums.sha256.unsigned
 
 # YouTube Shorts preview renders (regenerable via youtube:render-samples)
 samples/*.mp4
+
+# Indic pilot preview renders (regenerable)
+samples-indic/

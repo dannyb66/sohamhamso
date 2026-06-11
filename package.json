@@ -55,7 +55,8 @@
     "youtube:render-sample": "bun scripts/youtube-render-sample.ts",
     "youtube:render-samples": "bun scripts/youtube-render-samples.ts",
     "youtube:test": "bash scripts/youtube-test.sh tests/unit/youtube",
-    "youtube:integration": "bash scripts/youtube-test.sh tests/integration/youtube --config vitest.integration.config.ts"
+    "youtube:integration": "bash scripts/youtube-test.sh tests/integration/youtube --config vitest.integration.config.ts",
+    "youtube:render-indic-pilot": "bun scripts/youtube-render-indic-pilot.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.100.1",

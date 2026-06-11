@@ -34,6 +34,7 @@ export const SIVA_SUTRA_1_1: ShortProps = {
   iast: 'caitanyam ātmā',
   translation: 'Consciousness is the Self.',
   preset: { ...TRIKA_CLASSIC },
+  translationFont: 'EB Garamond',
   audioSrc: null,
   audioStartFrame: SAMPLE_AUDIO_START_FRAME,
   fps: SAMPLE_FPS,

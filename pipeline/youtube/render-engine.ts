@@ -28,6 +28,7 @@ import { buildR2Key } from './filename';
 import { log, scrubError } from './log';
 import { cannedSilentWav } from './mocks/canned';
 import { type QaResult, qaChecks } from './qa';
+import { translationFontForLang } from '../../youtube/composition/types';
 import { buildShortProps } from './remotion-props';
 import { getGoogleTtsCreds, getR2Creds } from './secrets';
 import { buildTtsRequest } from './tts-request';
@@ -105,8 +106,9 @@ function resolveContent(
     throw new Error(`content missing for ${video.text_id} ${video.chapter}.${video.verse_num}`);
   }
 
-  // Map en -> en-US for Google voice language codes.
-  const langCode = video.lang === 'en' ? 'en-US' : video.lang;
+  // Map the verse lang to a Google TTS BCP-47 language code. English is
+  // en-US; the Indic langs (hi/ta/te/kn/ml/bn/mr/gu/pa/or/as) are <lang>-IN.
+  const langCode = video.lang === 'en' ? 'en-US' : `${video.lang}-IN`;
 
   return {
     devanagari: verse.devanagari,
@@ -423,6 +425,7 @@ export async function renderOne(
       devanagari: content.devanagari,
       iast: content.iast,
       translation: content.translation,
+      translationFont: translationFontForLang(video.lang),
       preset,
       audioSrc: audioPath,
       audioDurationS,
