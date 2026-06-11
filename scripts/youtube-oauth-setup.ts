@@ -2,21 +2,32 @@
 /**
  * scripts/youtube-oauth-setup.ts
  *
- * Single-channel OAuth bootstrap for @sohamhamso (E5). Scope is
- * `https://www.googleapis.com/auth/youtube.upload` ONLY — never the full
- * `youtube` scope (no channel/comment/playlist mutation blast radius).
+ * Single-channel OAuth bootstrap for @sohamhamso (E5). Scope is the UNION
+ * of exactly the three scopes the pipeline needs (one consent, M0.5):
+ *   - youtube.upload          — Cron B videos.insert
+ *   - yt-analytics.readonly   — Cron E analytics sync (youtube-analytics-sync.ts)
+ *   - youtube.force-ssl       — videos.update (youtube-revisit flip-public,
+ *                               youtube-supersede-sweep auto-private,
+ *                               youtube-update-seo)
+ * NEVER the full `youtube` scope (no channel/comment/playlist mutation
+ * blast radius beyond the explicit three above).
  *
  * Flow:
  *   1. Print the consent URL.
  *   2. Operator authorizes, pastes the code back (--code=...).
  *   3. Exchange code → refresh token; write to .secrets/yt-refresh.txt.
- *   4. Print the `gh secret set YT_REFRESH_TOKEN` command.
+ *   4. Print the GRANTED scopes (from the token response / tokeninfo) and
+ *      warn LOUDLY if any of the three required scopes is missing.
+ *   5. Print the `gh secret set YT_REFRESH_TOKEN` command.
  *
  * NEVER prints secrets to logs — uses scrubError on any thrown error and
- * does not echo the refresh token to stdout (only the file path + gh hint).
+ * does not echo the refresh/access token to stdout (only the file path +
+ * gh hint). The scope list itself is not a secret.
  *
  * `--refresh` documents the quarterly rotation (same flow; revoke old token
- * after via console.cloud.google.com/apis/credentials).
+ * after via console.cloud.google.com/apis/credentials). Re-running this
+ * script is idempotent: prompt=consent always mints a fresh refresh token;
+ * swap the YT_REFRESH_TOKEN secret atomically between cron fires.
  *
  * Client id/secret read via getYoutubeOAuth (secrets chokepoint).
  * Conforms to CLI-CONVENTIONS: --help/--json/--dry-run.
@@ -28,11 +39,17 @@ import { log, logError, scrubError } from '../pipeline/youtube/log';
 import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
 
 const STAGE = 'rotation';
-const SCOPE = 'https://www.googleapis.com/auth/youtube.upload';
+/** The exact scopes the pipeline needs — one consent covers all three crons. */
+const REQUIRED_SCOPES = [
+  'https://www.googleapis.com/auth/youtube.upload', // Cron B videos.insert
+  'https://www.googleapis.com/auth/yt-analytics.readonly', // Cron E analytics sync
+  'https://www.googleapis.com/auth/youtube.force-ssl', // videos.update (revisit/supersede/seo)
+] as const;
+const SCOPE = REQUIRED_SCOPES.join(' ');
 const REDIRECT = 'urn:ietf:wg:oauth:2.0:oob'; // out-of-band, paste code back
 const SECRET_PATH = '.secrets/yt-refresh.txt';
 
-const USAGE = `youtube-oauth-setup — single-channel OAuth bootstrap (scope youtube.upload only)
+const USAGE = `youtube-oauth-setup — single-channel OAuth bootstrap (3-scope union: upload + yt-analytics.readonly + force-ssl)
 
 Usage:
   Step 1 (print consent URL):
@@ -45,24 +62,34 @@ Flags:
   --json        Machine-readable output
   --dry-run     Print the consent URL only; never exchange or write
   --code=CODE   Authorization code from the consent screen (step 2)
-  --refresh     Document the quarterly rotation flow (same steps)
+  --refresh     Document the quarterly rotation flow (same steps; re-running
+                this script is idempotent — prompt=consent always mints a
+                fresh refresh token)
 
 Env (via pipeline/youtube/secrets.ts):
   YOUTUBE_OAUTH_CLIENT_ID, YOUTUBE_OAUTH_CLIENT_SECRET
 
-Scope (locked): ${SCOPE}
+Scopes (locked union):
+${REQUIRED_SCOPES.map((s) => `  ${s}`).join('\n')}
+
+After minting, the GRANTED scopes are printed and a loud warning is shown
+if any of the three is missing (Cron B/E or videos.update would break).
 
 Exit codes:
   0 ok    1 runtime failure    2 usage error
 `;
 
 const ROTATION_DOC = `OAuth quarterly rotation (E5):
-  1. bun scripts/youtube-oauth-setup.ts            # get consent URL
+  1. bun scripts/youtube-oauth-setup.ts            # get consent URL (3-scope union)
   2. bun scripts/youtube-oauth-setup.ts --code=... # writes ${SECRET_PATH}
+     (verify the printed GRANTED scopes include all three — upload,
+      yt-analytics.readonly, force-ssl — or Cron B/E + videos.update regress)
   3. gh secret set YT_REFRESH_TOKEN < ${SECRET_PATH}
   4. Revoke the OLD refresh token at
      https://console.cloud.google.com/apis/credentials
-  5. Log the rotation to pipeline_runs (phase='rotation').`;
+  5. Log the rotation to pipeline_runs (phase='rotation').
+Re-running is idempotent: prompt=consent always mints a fresh token; swap
+the secret atomically between cron fires.`;
 
 function buildConsentUrl(clientId: string): string {
   const params = new URLSearchParams({
@@ -76,7 +103,11 @@ function buildConsentUrl(clientId: string): string {
   return `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
 }
 
-async function exchangeCode(clientId: string, clientSecret: string, code: string): Promise<string> {
+async function exchangeCode(
+  clientId: string,
+  clientSecret: string,
+  code: string,
+): Promise<{ refreshToken: string; grantedScopes: string[] }> {
   const body = new URLSearchParams({
     code,
     client_id: clientId,
@@ -93,11 +124,37 @@ async function exchangeCode(clientId: string, clientSecret: string, code: string
     // Do NOT include the response body verbatim — it can echo the code.
     throw new Error(`token exchange failed: HTTP ${resp.status}`);
   }
-  const json = (await resp.json()) as { refresh_token?: string };
+  const json = (await resp.json()) as {
+    refresh_token?: string;
+    access_token?: string;
+    scope?: string;
+  };
   if (!json.refresh_token) {
     throw new Error('no refresh_token in token response (re-run; prompt=consent forces one)');
   }
-  return json.refresh_token;
+  let grantedScopes = (json.scope ?? '').split(/\s+/).filter(Boolean);
+  // Fallback: token responses normally carry `scope`; if absent, ask
+  // tokeninfo with the (short-lived) access token. Never log either token.
+  if (grantedScopes.length === 0 && json.access_token) {
+    try {
+      const info = await fetch(
+        `https://oauth2.googleapis.com/tokeninfo?access_token=${encodeURIComponent(json.access_token)}`,
+      );
+      if (info.ok) {
+        const infoJson = (await info.json()) as { scope?: string };
+        grantedScopes = (infoJson.scope ?? '').split(/\s+/).filter(Boolean);
+      }
+    } catch {
+      // Non-fatal — scope verification degrades to a warning below.
+    }
+  }
+  return { refreshToken: json.refresh_token, grantedScopes };
+}
+
+/** Required scopes absent from the granted set (empty = all good). */
+function missingScopes(granted: string[]): string[] {
+  const have = new Set(granted);
+  return REQUIRED_SCOPES.filter((s) => !have.has(s));
 }
 
 async function main(): Promise<void> {
@@ -138,7 +195,8 @@ async function main(): Promise<void> {
     } else {
       log(STAGE, 'open this consent URL, authorize, then re-run with --code=PASTED_CODE');
       console.log(url);
-      console.log(`\nScope (locked): ${SCOPE}`);
+      console.log('\nScopes (locked union):');
+      for (const s of REQUIRED_SCOPES) console.log(`  ${s}`);
     }
     return;
   }
@@ -149,13 +207,48 @@ async function main(): Promise<void> {
   }
 
   // Step 2 — exchange the code for a refresh token.
-  const refreshToken = await exchangeCode(oauth.clientId, oauth.clientSecret, code);
+  const { refreshToken, grantedScopes } = await exchangeCode(
+    oauth.clientId,
+    oauth.clientSecret,
+    code,
+  );
   const outPath = resolve(process.cwd(), SECRET_PATH);
   mkdirSync(resolve(process.cwd(), '.secrets'), { recursive: true });
   writeFileSync(outPath, `${refreshToken}\n`, { mode: 0o600 });
 
-  // NEVER print the token. Only the path + the gh command.
+  // NEVER print the token. Only the path + the gh command. Scope names are
+  // not secrets — print exactly what was GRANTED and warn if short.
   log(STAGE, 'refresh token written (not printed)', { path: SECRET_PATH });
+  const missing = missingScopes(grantedScopes);
+  if (grantedScopes.length === 0) {
+    console.error(
+      `[youtube:${STAGE}] WARNING: could not determine granted scopes (no scope in token response or tokeninfo). Verify manually before rotating the secret: the token must cover ${REQUIRED_SCOPES.join(', ')}`,
+    );
+  } else {
+    console.log('\nGranted scopes:');
+    for (const s of grantedScopes) {
+      const required = (REQUIRED_SCOPES as readonly string[]).includes(s);
+      console.log(`  ${required ? '✓' : '·'} ${s}`);
+    }
+  }
+  if (missing.length > 0 && grantedScopes.length > 0) {
+    console.error('');
+    console.error(`[youtube:${STAGE}] ${'!'.repeat(70)}`);
+    console.error(
+      `[youtube:${STAGE}] WARNING: token is MISSING ${missing.length} required scope(s):`,
+    );
+    for (const s of missing) console.error(`[youtube:${STAGE}]   MISSING: ${s}`);
+    console.error(
+      `[youtube:${STAGE}] Cron B (upload), Cron E (analytics sync) and/or videos.update`,
+    );
+    console.error(
+      `[youtube:${STAGE}] (revisit/supersede/seo) will fail 403 with this token. Re-run the`,
+    );
+    console.error(
+      `[youtube:${STAGE}] consent flow and approve ALL requested scopes before rotating the secret.`,
+    );
+    console.error(`[youtube:${STAGE}] ${'!'.repeat(70)}`);
+  }
   console.log(`\nNext: gh secret set YT_REFRESH_TOKEN < ${SECRET_PATH}`);
   console.log('Then revoke any prior token at https://console.cloud.google.com/apis/credentials');
   if (args.json) {
@@ -163,6 +256,8 @@ async function main(): Promise<void> {
       JSON.stringify({
         step: 'exchanged',
         wrote: SECRET_PATH,
+        grantedScopes,
+        missingScopes: missing,
         ghCommand: `gh secret set YT_REFRESH_TOKEN < ${SECRET_PATH}`,
       }),
     );
