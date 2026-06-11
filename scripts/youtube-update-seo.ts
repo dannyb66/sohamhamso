@@ -38,9 +38,10 @@ function resolveMeta(video: VideoRow): {
 } {
   const corpus = getDb();
   const text = corpus
-    .query<{ title_iast: string | null; title_en: string; slug: string }, [string]>(
-      'SELECT title_iast, title_en, slug FROM texts WHERE id = ? LIMIT 1',
-    )
+    .query<
+      { title_iast: string | null; title_en: string; slug: string; tradition: string },
+      [string]
+    >('SELECT title_iast, title_en, slug, tradition FROM texts WHERE id = ? LIMIT 1')
     .get(video.text_id);
   const tr = corpus
     .query<{ translation_text: string }, [number]>(
@@ -56,7 +57,9 @@ function resolveMeta(video: VideoRow): {
   return {
     textTitle: text?.title_iast || text?.title_en || video.text_id,
     translation: tr?.translation_text ?? '',
-    canonicalUrl: `${CANONICAL_BASE}/${slug}/${video.chapter}/${video.verse_num}`,
+    // Site routes are /{tradition}/{text}/{chapter}/{verse} — the tradition
+    // segment is required or the link 404s (same fix as youtube-upload.ts).
+    canonicalUrl: `${CANONICAL_BASE}/${text?.tradition ?? 'trika'}/${slug}/${video.chapter}/${video.verse_num}`,
     iast: verse?.iast ?? '',
     devanagari: verse?.devanagari ?? '',
   };

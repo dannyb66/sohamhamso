@@ -1,0 +1,168 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Cron A2 — YouTube CHAPTER video generation (render, format 2).
+#
+# Twice daily (03:00 / 15:00 UTC — offset from the shorts crons): picks
+# `pending` (or retryable `failed`) format='chapter' rows and runs per-verse
+# TTS → Remotion (16:9 Chapter composition) → QA gates → R2 upload (+ the
+# `.meta.json` timestamp sidecar) → DB update via
+# `scripts/youtube-render-chapters.ts`.
+#
+# Sizing: worst case (siva-sutras ch3, 45 verses ≈ 13–16 min of video) renders
+# in 30–90 min on a 2-core runner → --limit=2 default + timeout-minutes: 330.
+# Shares the `youtube-pipeline` concurrency group with every other YouTube
+# cron (single-writer R2 state DB). NOTE: GH concurrency CANCELS queued
+# sibling runs rather than delaying them — acceptable at 8 chapter videos.
+#
+# The optional `backfill` dispatch input first runs
+# `scripts/youtube-backfill-chapters.ts` (scoped by text_slug/chapter) so the
+# operator can insert fresh chapter rows and render them in one dispatch.
+# NEVER run the backfill locally against a pulled DB — the R2 state push is
+# last-writer-wins.
+#
+# Required GitHub secrets:
+#   GOOGLE_TTS_CREDENTIALS_JSON — Google Cloud TTS service-account JSON
+#   R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ENDPOINT_URL
+#                              — S3-compatible R2 access (bucket sohamhamso-backups)
+#
+# Manual trigger: Actions tab → "YouTube generate chapters (Cron A2)" → Run workflow.
+# ──────────────────────────────────────────────────────────────────────────────
+name: YouTube generate chapters (Cron A2)
+
+on:
+  schedule:
+    # Twice daily, offset from the shorts crons (Cron A fires 0 */6).
+    - cron: '0 3,15 * * *'
+  workflow_dispatch:
+    inputs:
+      text_slug:
+        description: 'Backfill scope: a single text slug (e.g. spanda-karikas; used only when backfill=true)'
+        required: false
+        default: ''
+      chapter:
+        description: 'Backfill scope: a single chapter number (used only when backfill=true)'
+        required: false
+        default: ''
+      backfill:
+        description: 'Run youtube-backfill-chapters.ts first (inserts pending chapter rows)'
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Plan only — no TTS/Remotion/R2 writes'
+        required: false
+        type: boolean
+        default: false
+      limit:
+        description: 'Max chapter rows to render this run'
+        required: false
+        default: '2'
+
+permissions:
+  contents: read
+  issues: write   # used by the failure-notification step
+
+# Serialize all YouTube pipeline crons: the single R2 state DB must never be
+# written by two runs at once. cancel-in-progress: false lets in-flight runs
+# finish so partial progress is pushed back rather than discarded.
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
+
+jobs:
+  generate-chapters:
+    runs-on: ubuntu-latest
+    # Pre-sized for the worst-case chapter (siva-sutras ch3) at --limit=2.
+    timeout-minutes: 330
+    env:
+      # ── TTS service-account JSON (single chokepoint reads this). ──────
+      GOOGLE_TTS_CREDENTIALS_JSON: ${{ secrets.GOOGLE_TTS_CREDENTIALS_JSON }}
+      # ── R2 / S3-compatible storage for rendered artifacts. ───────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+      # ── R2-synced state DB (pulled before / pushed after the run). ────
+      YOUTUBE_DB_PATH: db/youtube-state.db
+      # ── Dispatch inputs surfaced as env. ─────────────────────────────
+      YT_TEXT_SLUG: ${{ github.event.inputs.text_slug }}
+      YT_CHAPTER: ${{ github.event.inputs.chapter }}
+      YT_BACKFILL: ${{ github.event.inputs.backfill }}
+      YT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+      YT_LIMIT: ${{ github.event.inputs.limit }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Safety net for system font fallback: Remotion shapes Indic scripts via
+      # Chromium + HarfBuzz, but Linux runners lack Indic fonts by default →
+      # tofu boxes. The composition loads woff2 directly, but install the
+      # system Noto families too so any fallback path still renders correctly.
+      - name: Install fonts (safety net)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-core fonts-noto-extra
+          fc-cache -fv
+
+      # Pull the state DB from R2 so the renderer reads/writes shared state
+      # (ephemeral runners start with no DB).
+      - name: Pull state DB
+        run: bash scripts/youtube-state-db.sh pull
+
+      # Optional dispatch-only backfill (inserts pending chapter rows) before
+      # rendering — runs inside the youtube-pipeline group, never locally.
+      - name: Backfill chapter rows
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.backfill == 'true' }}
+        run: |
+          flags=""
+          if [[ -n "${YT_TEXT_SLUG:-}" ]]; then flags="$flags --text-slug=${YT_TEXT_SLUG}"; fi
+          if [[ -n "${YT_CHAPTER:-}" ]]; then flags="$flags --chapter=${YT_CHAPTER}"; fi
+          if [[ "${YT_DRY_RUN:-}" == "true" ]]; then flags="$flags --dry-run"; fi
+          echo "youtube-backfill-chapters.ts $flags"
+          bun scripts/youtube-backfill-chapters.ts $flags
+
+      - name: Render chapter batch
+        run: |
+          flags=""
+          if [[ "${YT_DRY_RUN:-}" == "true" ]]; then flags="$flags --dry-run"; fi
+          echo "youtube-render-chapters.ts --limit=${YT_LIMIT:-2} $flags"
+          bun scripts/youtube-render-chapters.ts --limit=${YT_LIMIT:-2} $flags
+
+      # Push the mutated state DB back to R2 even on failure so partial
+      # progress (e.g. rows flipped to rendering) persists.
+      - name: Push state DB
+        if: always()
+        run: bash scripts/youtube-state-db.sh push
+
+      # Surface failures as a GitHub Issue — cheaper than wiring an external
+      # pager for a scheduled job (precedent: turso-backup.yml).
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `YouTube chapter render failed — ${new Date().toISOString().slice(0,10)}`;
+            const body = [
+              `Cron A2 (YouTube generate chapters) failed.`,
+              ``,
+              `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `- Commit: ${context.sha}`,
+              `- Dispatch: text_slug=\`${process.env.YT_TEXT_SLUG || '(scheduled)'}\` chapter=\`${process.env.YT_CHAPTER || '(all)'}\` backfill=\`${process.env.YT_BACKFILL || 'false'}\` dry_run=\`${process.env.YT_DRY_RUN || 'false'}\` limit=\`${process.env.YT_LIMIT || '2'}\``,
+              ``,
+              `Investigate: check the run logs, confirm \`GOOGLE_TTS_CREDENTIALS_JSON\` and the \`R2_*\`/\`AWS_*\` secrets are valid, and re-run via the Actions tab. Recovery for a MAX_RETRY row: \`bun scripts/youtube-revisit.ts --video-id=N --reset-retries\`. Stuck \`rendering\` rows are swept hourly by youtube-lease-sweep.yml.`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['youtube', 'youtube-chapters-failure'],
+            });

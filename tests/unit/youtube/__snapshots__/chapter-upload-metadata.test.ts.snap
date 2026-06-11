@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildChapterUploadMetadata — multi-verse chapter > is deterministic for a fixed input (snapshot) 1`] = `
+{
+  "snippet": {
+    "defaultAudioLanguage": "en",
+    "defaultLanguage": "en",
+    "description": "Grasping that pulsation, the yogi rests in his own nature.
+
+“tadākramya balaṃ mantrāḥ”
+तदाक्रम्य बलं मन्त्राः
+
+Spandakārikā — Chapter 2: all 7 verses with Devanāgarī, IAST and English translation, from a foundational text of Kashmir Śaivism (Trika / Pratyabhijñā). Ancient Sanskrit wisdom on consciousness (cit), Śiva, and the Self (ātman).
+
+📖 Read this chapter verse by verse, with glosses, in 11 languages → https://sohamhamso.org/trika/spanda-karikas/2?utm_source=youtube&utm_medium=chapter&utm_campaign=chapter
+🔔 Subscribe for a new verse each day.
+
+0:00 Spandakārikā — Chapter 2
+0:12 Verse 1
+0:34 Verse 2
+0:58 Verse 3
+1:21 Verse 4
+1:44 Verse 5
+2:10 Verse 6
+2:35 Verse 7
+2:58 Read the full chapter — sohamhamso.org
+
+#KashmirShaivism #Shaivism #Trika #Sanskrit #Spirituality #Meditation #Advaita #Nonduality #Spandakarika
+
+License: CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0). Source text & translation via Muktabodha Indological Research Institute and sohamhamso.org. Translation AI-assisted, human-reviewed.",
+    "tags": [
+      "Kashmir Shaivism",
+      "Trika",
+      "Pratyabhijna",
+      "Shaivism",
+      "Sanskrit",
+      "Spanda",
+      "Shiva Sutras",
+      "Advaita",
+      "nonduality",
+      "meditation",
+      "spirituality",
+      "Indian philosophy",
+      "Hindu philosophy",
+      "full chapter",
+      "Spandakārikā",
+    ],
+    "title": "Spandakārikā — Chapter 2 | All 7 Verses",
+  },
+  "status": {
+    "license": "creativeCommon",
+    "privacyStatus": "unlisted",
+    "selfDeclaredMadeForKids": false,
+  },
+}
+`;

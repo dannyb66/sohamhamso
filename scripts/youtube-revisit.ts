@@ -28,14 +28,20 @@ const USAGE = `youtube-revisit — change visibility/title without re-render (vi
 Usage:
   bun scripts/youtube-revisit.ts --video-id=N --visibility=public|unlisted|private [--title=...]
                                  [--dry-run] [--json]
+  bun scripts/youtube-revisit.ts --video-id=N --reset-retries [--dry-run] [--json]
 
 Flags:
   --help               Show this help and exit 0
   --json               Machine-readable summary
   --dry-run            Plan only — no YouTube call, no DB write
   --video-id=N         videos.id (required)
-  --visibility=V       public | unlisted | private (required)
+  --visibility=V       public | unlisted | private (required unless --reset-retries)
   --title=...          New title (optional)
+  --reset-retries      Recovery mode for a MAX_RETRY 'failed' row: zero the
+                       retry counters and requeue — status 'approved' if it
+                       failed at the upload phase (R2 artifact is fine, Cron B
+                       retries the upload), else 'pending' (fresh render).
+                       DB-only; no YouTube call, no quota spend.
 
 Env:
   MOCK_ALL=true        DB-only, no YouTube call
@@ -77,10 +83,26 @@ async function youtubeUpdate(
   await youtube.videos.update({ part, requestBody });
 }
 
+/**
+ * True if a videos.update 403 means the refresh token lacks the
+ * youtube.force-ssl scope (youtube.upload alone does not authorize updates).
+ */
+function isInsufficientScope(e: unknown): boolean {
+  const s = String(e instanceof Error ? e.message : e);
+  return /insufficient[\s_]*(?:authentication[\s_]*)?(?:scope|permission)|ACCESS_TOKEN_SCOPE_INSUFFICIENT|insufficientPermissions/i.test(
+    s,
+  );
+}
+
 async function main(): Promise<void> {
   let args: ReturnType<typeof parseCommonArgs>;
   try {
-    args = parseCommonArgs(process.argv.slice(2), ['video-id', 'visibility', 'title']);
+    args = parseCommonArgs(process.argv.slice(2), [
+      'video-id',
+      'visibility',
+      'title',
+      'reset-retries',
+    ]);
   } catch (e) {
     if (e instanceof UsageError) {
       console.error(e.message);
@@ -96,6 +118,7 @@ async function main(): Promise<void> {
   const videoIdRaw = args.extra['video-id'];
   const visibility = args.extra.visibility as Visibility | undefined;
   const title = args.extra.title;
+  const resetRetries = 'reset-retries' in args.extra;
 
   if (!videoIdRaw) {
     console.error('[youtube:upload] --video-id=N is required');
@@ -106,6 +129,51 @@ async function main(): Promise<void> {
     console.error('[youtube:upload] --video-id must be an integer');
     process.exit(2);
   }
+
+  // ── --reset-retries: MAX_RETRY recovery, DB-only (no YouTube call). ───────
+  if (resetRetries) {
+    const db = getVideosDb();
+    const row = db.query<VideoRow, [number]>('SELECT * FROM videos WHERE id = ? LIMIT 1').get(dbId);
+    if (!row) {
+      console.error(`[youtube:upload] no video row id=${dbId}`);
+      process.exit(1);
+    }
+    if (row.status !== 'failed') {
+      console.error(
+        `[youtube:upload] --reset-retries expects a 'failed' row; id=${dbId} is '${row.status}' — nothing to do`,
+      );
+      process.exit(1);
+    }
+    // FSM: upload-phase failures already have a good R2 artifact (approved →
+    // uploading → failed), so requeue at 'approved' for Cron B. Anything else
+    // failed before/at render → back to 'pending' for a fresh render pick-up.
+    const target = row.last_error_phase === 'upload' ? 'approved' : 'pending';
+    if (args.dryRun) {
+      log(STAGE, 'dry-run: would reset retries', {
+        video: dbId,
+        from: row.status,
+        to: target,
+        phase: row.last_error_phase ?? '(none)',
+      });
+      if (args.json)
+        console.log(JSON.stringify({ dryRun: true, dbId, resetRetries: true, target }));
+      return;
+    }
+    updateVideoStatus(db, dbId, target, { retry_count: 0, upload_retry_count: 0 });
+    log(STAGE, 'reset retries', {
+      video: dbId,
+      from: 'failed',
+      to: target,
+      phase: row.last_error_phase ?? '(none)',
+      retry_count: 0,
+      upload_retry_count: 0,
+    });
+    if (args.json) {
+      console.log(JSON.stringify({ ok: true, dbId, resetRetries: true, status: target }));
+    }
+    return;
+  }
+
   if (!visibility || !VISIBILITIES.includes(visibility)) {
     console.error(`[youtube:upload] --visibility must be one of ${VISIBILITIES.join('|')}`);
     process.exit(2);
@@ -134,7 +202,18 @@ async function main(): Promise<void> {
     return;
   }
 
-  await youtubeUpdate(row.youtube_video_id, visibility, title);
+  try {
+    await youtubeUpdate(row.youtube_video_id, visibility, title);
+  } catch (e) {
+    // videos.update needs youtube.force-ssl — youtube.upload alone gets a 403.
+    if (isInsufficientScope(e)) {
+      console.error(
+        '[youtube:upload] refresh token lacks youtube.force-ssl — re-run bun scripts/youtube-oauth-setup.ts, then gh secret set YT_REFRESH_TOKEN',
+      );
+      process.exit(1);
+    }
+    throw e;
+  }
   updateVideoStatus(db, dbId, row.status, { visibility });
   addQuotaUnits(db, cfg.defaults.channel_handle, utcDate(), UNITS_PER_UPDATE, 0);
 

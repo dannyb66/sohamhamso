@@ -38,7 +38,9 @@ concurrency:
 jobs:
   upload:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 90 min: chapter videos run to ~1 GB (8 Mbps CBR) — a slow multipart
+    # stream to YouTube can take well over the old 30-min budget.
+    timeout-minutes: 90
     env:
       # ── YouTube OAuth (single chokepoint reads these). ───────────────
       YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
