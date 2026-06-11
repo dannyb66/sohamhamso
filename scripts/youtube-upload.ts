@@ -107,6 +107,8 @@ function resolveMeta(video: VideoRow): {
   textTitle: string;
   translation: string;
   canonicalUrl: string;
+  iast: string;
+  devanagari: string;
 } {
   const corpus = getDb();
   const text = corpus
@@ -119,11 +121,19 @@ function resolveMeta(video: VideoRow): {
       'SELECT translation_text FROM translations WHERE id = ? LIMIT 1',
     )
     .get(video.translation_row_id);
+  // Sanskrit verse (IAST + Devanāgarī) — shared across languages, boosts SEO.
+  const verse = corpus
+    .query<{ iast: string | null; devanagari: string | null }, [string, number, number]>(
+      'SELECT iast, devanagari FROM verses WHERE text_id = ? AND chapter = ? AND verse_num = ? LIMIT 1',
+    )
+    .get(video.text_id, video.chapter, video.verse_num);
   const slug = text?.slug ?? video.text_id;
   return {
     textTitle: text?.title_iast || text?.title_en || video.text_id,
     translation: tr?.translation_text ?? '',
     canonicalUrl: `${CANONICAL_BASE}/${slug}/${video.chapter}/${video.verse_num}`,
+    iast: verse?.iast ?? '',
+    devanagari: verse?.devanagari ?? '',
   };
 }
 
@@ -231,6 +241,8 @@ async function main(): Promise<void> {
         lang: video.lang,
         translation: m.translation,
         canonicalUrl: m.canonicalUrl,
+        iast: m.iast,
+        devanagari: m.devanagari,
       });
 
       const youtubeId = await youtubeInsert(meta, localPath);

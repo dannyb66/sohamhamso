@@ -16,6 +16,10 @@ export interface UploadMetadataArgs {
   lang: string;
   translation: string;
   canonicalUrl: string;
+  /** IAST transliteration (e.g. "caitanyam ātmā") — a strong Sanskrit search term. */
+  iast?: string;
+  /** Devanāgarī of the Sanskrit verse (searchable + adds on-page keywords). */
+  devanagari?: string;
   tags?: string[];
   license?: string;
 }
@@ -48,24 +52,75 @@ function truncate(text: string, max: number): string {
   return `${head.trimEnd()}…`;
 }
 
-/** Build localized, attribution-bearing upload metadata for one video. */
+/** ASCII, space-free hashtag token from a title (e.g. "Śiva Sūtra" → "ShivaSutra"). */
+function hashtagize(s: string): string {
+  return s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '') // strip combining diacritics
+    .replace(/[^A-Za-z0-9]/g, '');
+}
+
+/**
+ * Build SEO-optimized, attribution-bearing upload metadata for one video.
+ *
+ * Description is structured for YouTube search/Shorts discovery: the translation
+ * is front-loaded (first lines weigh most), followed by the searchable IAST +
+ * Devanāgarī, a keyword-rich one-liner, the UTM canonical CTA, a subscribe CTA,
+ * a tight hashtag set (<15 so YouTube honors them), and the licence/attribution
+ * footer. Tags broaden algorithmic reach.
+ */
 export function buildUploadMetadata(a: UploadMetadataArgs): UploadMetadata {
   const utmUrl = `${a.canonicalUrl}?utm_source=youtube&utm_medium=short&utm_campaign=verse`;
-  const title = `${a.textTitle} ${a.chapter}.${a.verseNum} — ${truncate(
-    a.translation,
-    TITLE_TRANSLATION_MAX,
-  )}`;
+  const ref = `${a.textTitle} ${a.chapter}.${a.verseNum}`;
+  const title = `${ref} — ${truncate(a.translation, TITLE_TRANSLATION_MAX)}`;
+
+  const hashtags = [
+    '#Shorts',
+    '#KashmirShaivism',
+    '#Shaivism',
+    '#Trika',
+    '#Sanskrit',
+    '#Spirituality',
+    '#Meditation',
+    '#Advaita',
+    '#Nonduality',
+  ];
+  const tag = hashtagize(a.textTitle);
+  if (tag) hashtags.push(`#${tag}`);
+
+  // Searchable Sanskrit block (IAST quoted + Devanāgarī), omitted if absent.
+  const sanskrit = [a.iast?.trim() ? `“${a.iast.trim()}”` : '', a.devanagari?.trim() ?? '']
+    .filter(Boolean)
+    .join('\n');
 
   const description = [
     a.translation.trim(),
-    '',
-    `Read & study this verse: ${utmUrl}`,
-    '',
-    'License: CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).',
-    'Source text & translation via Muktabodha Indological Research Institute and sohamhamso.org. Translation AI-assisted, human-reviewed.',
-  ].join('\n');
+    sanskrit,
+    `${ref} — a verse from the ${a.textTitle}, a foundational text of Kashmir Śaivism (Trika / Pratyabhijñā). Ancient Sanskrit wisdom on consciousness (cit), Śiva, and the Self (ātman).`,
+    `📖 Read, listen & study every verse in 11 languages → ${utmUrl}\n🔔 Subscribe for a new verse each day.`,
+    hashtags.join(' '),
+    'License: CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0). Source text & translation via Muktabodha Indological Research Institute and sohamhamso.org. Translation AI-assisted, human-reviewed.',
+  ]
+    .filter(Boolean)
+    .join('\n\n');
 
-  const tags = ['Kashmir Shaivism', 'Trika', 'Sanskrit', a.textTitle, ...(a.tags ?? [])];
+  const tags = [
+    'Kashmir Shaivism',
+    'Trika',
+    'Pratyabhijna',
+    'Shaivism',
+    'Sanskrit',
+    'Spanda',
+    'Shiva Sutras',
+    'Advaita',
+    'nonduality',
+    'meditation',
+    'spirituality',
+    'Indian philosophy',
+    'Hindu philosophy',
+    a.textTitle,
+    ...(a.tags ?? []),
+  ];
 
   return {
     snippet: {
