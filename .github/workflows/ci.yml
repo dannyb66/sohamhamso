@@ -61,6 +61,11 @@ jobs:
       - name: SEO build
         run: bun run seo:build
 
+      # Early warning under Cloudflare Pages' 20,000-file deploy limit.
+      # Fails above 18,000 files — see plan item A6 (SSR/CI-built DB migration).
+      - name: Dist file-count guard
+        run: bun scripts/check-dist-filecount.ts
+
       - name: SEO preflight invariants
         run: bun run seo:preflight
 
@@ -138,6 +143,75 @@ jobs:
             exit 1
           fi
           echo "Biome within baseline."
+
+  # Honesty check: the committed db/sohamhamso.db must logically match a fresh
+  # ingest of data/corpus/*.yaml. Catches "YAML changed but DB not re-ingested"
+  # drift. Separate job so it never eats the main job's timeout budget.
+  corpus-verify:
+    name: Corpus DB freshness
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache Bun install
+        uses: actions/cache@v4
+        with:
+          path: ~/.bun/install/cache
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Re-ingest corpus into temp DB
+        run: |
+          bun pipeline/ingest/init-db.ts --db /tmp/corpus-verify.db
+          bun pipeline/ingest/ingest.ts --db /tmp/corpus-verify.db
+
+      # Logical comparison of the four corpus tables ingest writes. Excludes
+      # created_at/updated_at (timestamps differ per ingest run) and surrogate
+      # ids (AUTOINCREMENT values are not stable across fresh ingests) — FK
+      # references are resolved to natural keys via joins instead.
+      - name: Compare against committed db/sohamhamso.db
+        run: |
+          cat > /tmp/corpus-dump.sql <<'SQL'
+          .mode list
+          .separator '|'
+          .nullvalue '<NULL>'
+          SELECT 'texts', id, slug, title_sa, title_en, title_iast, author, tradition, school, era,
+                 source, source_url, source_revision, license, attribution_html, parent_text_id,
+                 manuscript_url, description
+          FROM texts ORDER BY id;
+          SELECT 'verses', text_id, book, chapter, verse_num, devanagari, slp1, iast, meter, manuscript_folio_ref
+          FROM verses ORDER BY text_id, chapter, verse_num;
+          SELECT 'word_glosses', v.text_id, v.chapter, v.verse_num, g.word_idx, g.word_sa, g.lemma_sa,
+                 g.lemma_iast, g.gloss_lang, g.gloss_text, g.morph
+          FROM word_glosses g JOIN verses v ON v.id = g.verse_id
+          ORDER BY v.text_id, v.chapter, v.verse_num, g.word_idx, g.gloss_lang;
+          SELECT 'translations', v.text_id, v.chapter, v.verse_num, t.lang, t.translator, t.translation_text,
+                 t.source, t.license, t.status, t.ai_assisted, t.model, t.model_version, t.prompt_version,
+                 t.judge_score, t.reviewer, t.reviewed_at
+          FROM translations t JOIN verses v ON v.id = t.verse_id
+          ORDER BY v.text_id, v.chapter, v.verse_num, t.lang, t.translator;
+          SQL
+          sqlite3 db/sohamhamso.db < /tmp/corpus-dump.sql > /tmp/dump-committed.txt
+          sqlite3 /tmp/corpus-verify.db < /tmp/corpus-dump.sql > /tmp/dump-fresh.txt
+          if ! diff -u /tmp/dump-committed.txt /tmp/dump-fresh.txt > /tmp/dump-diff.txt; then
+            echo "::error::Corpus YAML changed but db/sohamhamso.db not re-ingested. Run \`bun run ingest\` and commit the DB."
+            echo "First 100 lines of logical diff (committed vs fresh ingest):"
+            head -n 100 /tmp/dump-diff.txt
+            exit 1
+          fi
+          echo "db/sohamhamso.db logically matches a fresh ingest ($(wc -l < /tmp/dump-fresh.txt | tr -d ' ') rows compared)."
 
   youtube-rigor:
     name: YouTube pipeline rigor
