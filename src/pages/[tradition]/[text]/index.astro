@@ -7,7 +7,7 @@ import LangSwitcher from '../../../components/seo/LangSwitcher.astro';
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { enumerateRedirectPairs, resolveAlias } from '../../../lib/aliases';
-import { getText, listChapters } from '../../../lib/db';
+import { getDb, getText, listChapters } from '../../../lib/db';
 import type { LangCode } from '../../../lib/reading-modes';
 import { buildTextSeo, filterIndexableTextLangs, liveLocaleSet } from '../../../lib/seo';
 import { getTexts } from '../../../lib/seo/corpus-bundle';
@@ -35,10 +35,23 @@ if (redirectTo) {
   return Astro.redirect(redirectTo, 301);
 }
 
-const textRow = getText(text!);
+if (!text) throw new Error('Missing text route param');
+const textRow = getText(text);
 if (!textRow) throw new Error(`Text not found: ${text}`);
-const chapters = listChapters(text!);
+const chapters = listChapters(text);
 const totalVerses = chapters.reduce((sum, c) => sum + c.verse_count, 0);
+// Prose texts (plan A4): when the text carries section_type='prose' blocks,
+// the chapter-table column header reads "Passages" instead of "Verses".
+const proseBlockCount =
+  getDb()
+    .query<{ n: number }, [string]>(`
+      SELECT COUNT(*) AS n
+      FROM verses v
+      JOIN texts t ON t.id = v.text_id
+      WHERE t.slug = ? AND v.section_type = 'prose'
+    `)
+    .get(text)?.n ?? 0;
+const isProseText = proseBlockCount > 0;
 const currentLang: LangCode = 'en';
 const availableLangs = filterIndexableTextLangs(
   textRow.slug,
@@ -122,25 +135,34 @@ const pageSeo = buildTextSeo({
       <div class="chapter-table">
         <div class="chapter-row chapter-row--head" role="presentation">
           <span class="chapter-row__col-num" data-i18n="text_overview.table.chapter">Chapter</span>
-          <span class="chapter-row__col-count" data-i18n="text_overview.table.verses">Verses</span>
+          <span class="chapter-row__col-count" data-i18n={isProseText ? "text_overview.table.passages" : "text_overview.table.verses"}>{isProseText ? "Passages" : "Verses"}</span>
           <span class="chapter-row__col-cta" data-i18n="text_overview.table.read">Read</span>
         </div>
         <ul class="chapter-list">
-          {chapters.map((c) => (
+          {chapters.map((c) => {
+            // Wayfinding title ("5 — Creation of the world"); IAST fallback
+            // for chapters whose YAML carries no English title.
+            const chapterTitle = c.title_en ?? c.title_iast;
+            return (
             <li>
               <a
                 href={`/${tradition}/${text}/${c.chapter}`}
                 class="chapter-row chapter-row__link"
-                aria-label={`Read chapter ${c.chapter} — ${c.verse_count} verses`}
+                aria-label={`Read chapter ${c.chapter}${chapterTitle ? ` — ${chapterTitle}` : ""} — ${c.verse_count} verses`}
               >
-                <span class="chapter-row__col-num">{c.chapter}</span>
+                <span class="chapter-row__col-num">
+                  {c.chapter}{chapterTitle ? (
+                    <span class="chapter-row__title"> — {chapterTitle}</span>
+                  ) : null}
+                </span>
                 <span class="chapter-row__col-count">{c.verse_count}</span>
                 <span class="chapter-row__col-cta">
                   <span data-i18n="text_overview.read_chapter_prefix">Read chapter</span> {c.chapter} →
                 </span>
               </a>
             </li>
-          ))}
+            );
+          })}
         </ul>
       </div>
 
@@ -267,7 +289,9 @@ const pageSeo = buildTextSeo({
    */
   .chapter-row {
     display: grid;
-    grid-template-columns: 96px 96px 1fr;
+    /* First column flexes so optional chapter titles ("5 — Creation of the
+       world") fit; fixed/fr tracks keep columns aligned across rows. */
+    grid-template-columns: minmax(96px, 1fr) 96px 1fr;
     align-items: center;
     padding: var(--spacing-3) var(--spacing-2);
     border-block-end: 1px solid var(--color-rule);
@@ -291,6 +315,10 @@ const pageSeo = buildTextSeo({
   }
   .chapter-row__col-num {
     font-variant-numeric: tabular-nums;
+  }
+  .chapter-row__title {
+    color: var(--color-ink-muted);
+    font-variant-numeric: normal;
   }
   .chapter-row__col-count {
     color: var(--color-ink-muted);

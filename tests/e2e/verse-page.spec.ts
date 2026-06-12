@@ -54,4 +54,39 @@ test.describe('verse page — Śiva Sūtra 1.1', () => {
     );
     await expect(settings.first()).toBeVisible();
   });
+
+  test('chrome locator shows verse position with chapter length ("1.1 / N")', async ({ page }) => {
+    await page.goto(url);
+    const locator = page.locator('.chrome__verse');
+    await expect(locator).toBeVisible();
+    const text = (await locator.innerText()).replace(/\s+/g, ' ').trim();
+    const match = text.match(/^·\s*1\.1\s*\/\s*(\d+)$/);
+    expect(match, `chrome locator text was "${text}"`).not.toBeNull();
+    const count = Number(match?.[1]);
+    expect(count).toBeGreaterThanOrEqual(1);
+    // The denominator must match the chapter page's verse list — same
+    // `verses` rows feed both, so they can never disagree.
+    await page.goto('/trika/siva-sutras/1');
+    const verseLinks = page.locator('a[href^="/trika/siva-sutras/1/"]');
+    expect(await verseLinks.count()).toBeGreaterThanOrEqual(count);
+  });
+
+  test('locator stays fully visible in the sticky chrome (mobile-tight widths)', async ({
+    page,
+  }) => {
+    await page.goto(url);
+    const verse = page.locator('.chrome__verse');
+    await expect(verse).toBeVisible();
+    // flex-shrink: 0 contract — the "1.1 / N" span must never be clipped
+    // by the title's ellipsis, including on the iPhone 13 project.
+    const shrink = await verse.evaluate((el) => getComputedStyle(el).flexShrink);
+    expect(shrink).toBe('0');
+    const box = await verse.boundingBox();
+    const viewport = page.viewportSize();
+    expect(box).not.toBeNull();
+    if (box && viewport) {
+      expect(box.x).toBeGreaterThanOrEqual(0);
+      expect(box.x + box.width).toBeLessThanOrEqual(viewport.width);
+    }
+  });
 });

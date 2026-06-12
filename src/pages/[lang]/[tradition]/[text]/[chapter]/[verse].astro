@@ -9,7 +9,13 @@ import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
 import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { KNOWN_TRADITIONS, resolveAlias } from '../../../../../lib/aliases';
-import { getDb, getVerseAllLanguages, getVerseTranslations } from '../../../../../lib/db';
+import {
+  getDb,
+  getVerseAllLanguages,
+  getVerseTranslations,
+  listChapters,
+} from '../../../../../lib/db';
+import { computeIsShortVerse, isProseSection } from '../../../../../lib/prose';
 import type { LangCode } from '../../../../../lib/reading-modes';
 import { safeJsonForScript } from '../../../../../lib/safe-json';
 import {
@@ -166,7 +172,25 @@ const lowFrequencyTermJsonLd = Array.from(
 );
 const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
 const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
-const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
+// computeIsShortVerse (src/lib/prose.ts) carries the short-verse heuristic
+// AND the prose guard: prose blocks ship no word glosses in V1, so the
+// `wordGlosses.length === 0` arm must never fire for section_type='prose'.
+const isShortVerse = computeIsShortVerse({
+  sectionType: verseRow.section_type,
+  translationLength: primaryTranslationLength,
+  glossCount: wordGlosses.length,
+});
+// Wayfinding labels switch verse->passage for prose blocks; the numeric
+// chrome locator ({chapter}.{verse}) is unchanged either way.
+const isProse = isProseSection(verseRow.section_type);
+
+// Verse-position indicator (plan wayfinding): the chrome locator becomes
+// "5.22 / 142" so the reader can sense chapter length. listChapters()
+// derives verse_count from the same `verses` rows the routes come from,
+// so the denominator always matches prev/next navigation. Null-guard
+// keeps the chrome rendering "5.22" if the chapter row is ever missing.
+const chapterVerseCount =
+  listChapters(textRow.slug).find((c) => c.chapter === chapterNum)?.verse_count ?? null;
 
 const breadcrumbItems = [
   { name: 'Home', href: localePathFor('/', currentLang) },
@@ -198,7 +222,7 @@ const breadcrumbItems = [
     </a>
     <div class="chrome__title">
       <span class="chrome__text">{textRow.title_en}</span>
-      <span class="chrome__verse">· {chapterNum}.{verseNum}</span>
+      <span class="chrome__verse">· {chapterNum}.{verseNum}{chapterVerseCount ? <span class="chrome__count"> / {chapterVerseCount}</span> : null}</span>
     </div>
     <div class="chrome__tools">
       <ScriptSwitcher client:idle />
@@ -254,16 +278,28 @@ const breadcrumbItems = [
       </Fragment>
     </VerseAnatomy>
 
-    <nav class="verse-nav" aria-label="Verse navigation" data-i18n-attr-aria-label="verse_page.nav_aria">
+    <nav
+      class="verse-nav"
+      aria-label={isProse ? 'Passage navigation' : 'Verse navigation'}
+      data-i18n-attr-aria-label={isProse ? 'verse_page.nav_aria_passage' : 'verse_page.nav_aria'}
+    >
       {prev ? (
-        <a href={`/${lang}/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`} class="verse-nav__prev">
+        <a
+          href={`/${lang}/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`}
+          class="verse-nav__prev"
+          aria-label={`${isProse ? 'Previous passage' : 'Previous verse'} ${prev.chapter}.${prev.verse_num}`}
+        >
           ← {prev.chapter}.{prev.verse_num}
         </a>
       ) : (
         <span class="verse-nav__spacer" />
       )}
       {next ? (
-        <a href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`} class="verse-nav__next">
+        <a
+          href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`}
+          class="verse-nav__next"
+          aria-label={`${isProse ? 'Next passage' : 'Next verse'} ${next.chapter}.${next.verse_num}`}
+        >
           {next.chapter}.{next.verse_num} →
         </a>
       ) : (
@@ -323,8 +359,8 @@ const breadcrumbItems = [
   .chrome__title {
     flex: 1;
     min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: flex;
+    align-items: baseline;
     white-space: nowrap;
     font-family: var(--font-chrome);
     font-size: var(--text-sm);
@@ -332,10 +368,23 @@ const breadcrumbItems = [
   }
   .chrome__text {
     font-weight: 500;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+  /*
+   * The locator never shrinks: on tight mobile widths the text title
+   * ellipsizes while "5.22 / 142" stays fully visible (wayfinding).
+   */
   .chrome__verse {
     color: var(--color-ink-muted);
     margin-left: 4px;
+    flex-shrink: 0;
+  }
+  /* Chapter-length denominator — typographically quieter than the locator. */
+  .chrome__count {
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
   }
   .chrome__tools {
     display: flex;

@@ -141,11 +141,23 @@ export const en = {
   'verse.alt_translations_aria': 'additional translations',
   'verse.manuscript_prefix': 'View manuscript at',
   'verse.manuscript_folio_prefix': 'folio',
+  // Prose blocks (section_type='prose', plan A4): the rail aria-prefix
+  // reads "Block" and the collapsed-by-default IAST <details> carries a
+  // summary label. Same Phase-B caveat as `verse.number_aria_prefix` for
+  // the locator-bearing aria-label.
+  'verse.block_aria_prefix': 'Block',
+  'verse.prose_iast_summary': 'Transliteration (IAST)',
 
   // ── Verse page chrome ([verse].astro) ──────────────────────────────────
   'verse_page.back_aria': 'Back to text',
   'verse_page.settings_aria': 'Reading settings',
   'verse_page.nav_aria': 'Verse navigation',
+  // Prose wayfinding: nav landmark + prev/next read passage, not verse.
+  'verse_page.nav_aria_passage': 'Passage navigation',
+  'verse_page.prev_verse_aria': 'Previous verse',
+  'verse_page.next_verse_aria': 'Next verse',
+  'verse_page.prev_passage_aria': 'Previous passage',
+  'verse_page.next_passage_aria': 'Next passage',
 
   // ── Text overview page ([text]/index.astro) ────────────────────────────
   'text_overview.home_aria': 'Home',
@@ -155,6 +167,8 @@ export const en = {
   'text_overview.chapters_suffix': 'chapters',
   'text_overview.table.chapter': 'Chapter',
   'text_overview.table.verses': 'Verses',
+  // Column header for prose texts (any section_type='prose' blocks).
+  'text_overview.table.passages': 'Passages',
   'text_overview.table.read': 'Read',
   'text_overview.read_chapter_prefix': 'Read chapter',
   'text_overview.source_prefix': 'Source:',

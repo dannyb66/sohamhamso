@@ -18,6 +18,7 @@
  * can re-render them via Sanscript.t() without a page reload.
  */
 import type { Translation, Verse, WordGloss } from '../lib/db';
+import { formatDanda, isProseSection, splitProseParagraphs } from '../lib/prose';
 
 interface Props {
   verse: Verse;
@@ -36,64 +37,38 @@ const verseLabel =
 // `ai_assisted ASC, created_at ASC` so PD/human translations land first).
 const primaryTranslation = translations[0] ?? null;
 
-// Break Sanskrit verses on the half-verse danda (Devanāgarī ।, ॥; IAST | , || ).
-// Vedabase / SuttaCentral convention: each pāda-pair on its own line.
-// The verse-number bracket ॥N॥ / ||N|| stays attached to its preceding pāda
-// (it marks the end of the verse). Paired with `white-space: pre-line` in
-// CSS below.
-function formatDanda(s: string | null | undefined): string {
-  if (!s) return '';
-  // Normalize slash-style IAST dandas (Karpūrādi Stotra and some other
-  // corpora use / and // instead of | and || for pāda separators) to
-  // pipe-style so the existing logic below handles both uniformly.
-  // Slashes don't occur in normal IAST text, so this is a safe rewrite.
-  // Order matters: replace // before / so the longer match wins.
-  s = s.replace(/\/\//g, '||').replace(/\//g, '|');
-  // Protect verse-number brackets so the internal dandas don't get split.
-  // Devanāgarī forms: ॥४९॥, ॥ ४९ ॥. IAST forms: ||49||, || 49 ||.
-  const protected_: string[] = [];
-  let work = s
-    .replace(/॥\s*([\d०-९]+)\s*॥/g, (_m, n) => {
-      protected_.push(`॥${n}॥`);
-      return `${protected_.length - 1}`;
-    })
-    .replace(/\|\|\s*(\d+)\s*\|\|/g, (_m, n) => {
-      protected_.push(`||${n}||`);
-      return `${protected_.length - 1}`;
-    });
+// Render mode (plan A4): section_type='prose' BYPASSES formatDanda — a
+// running commentary sentence must NOT be shredded into per-danda lines.
+// Prose flows as body-scale paragraphs; the verse path below is unchanged.
+// formatDanda itself lives in src/lib/prose.ts (moved verbatim) so the
+// danda-split vs prose-bypass contract is unit-testable.
+const isProse = isProseSection(verse.section_type);
+const mode = isProse ? 'prose' : 'verse';
 
-  work = work
-    // Newline after Devanāgarī dandas
-    .replace(/॥/g, '॥\n')
-    .replace(/।/g, '।\n')
-    // Newline after IAST dandas — || before single |
-    .replace(/\|\|/g, '||\n')
-    .replace(/(^|[^|])\|(?!\|)/g, '$1|\n');
+// Verse mode: break on the half-verse danda (Devanāgarī ।, ॥; IAST |, ||).
+// Paired with `white-space: pre-line` in CSS below.
+const devanagariFormatted = isProse ? '' : formatDanda(verse.devanagari);
+const iastFormatted = isProse ? '' : formatDanda(verse.iast);
 
-  // Restore the protected verse-number brackets
-  work = work.replace(/(\d+)/g, (_m, i) => protected_[Number(i)]);
-
-  // Collapse multiple newlines + trim
-  return work
-    .replace(/[ \t]*\n[ \t]*/g, '\n')
-    .replace(/\n+/g, '\n')
-    .trim();
-}
-
-const devanagariFormatted = formatDanda(verse.devanagari);
-const iastFormatted = formatDanda(verse.iast);
+// Prose mode: flowing paragraphs — blank-line breaks only, never dandas.
+const devanagariParas = isProse ? splitProseParagraphs(verse.devanagari) : [];
+const iastParas = isProse ? splitProseParagraphs(verse.iast) : [];
+// ScriptSwitcher re-renders [data-sa] nodes from data-sa-source; pair each
+// IAST paragraph with its Devanāgarī source only when the counts line up.
+const iastParasPairable = iastParas.length === devanagariParas.length;
 ---
 
-<article class="verse-anatomy" data-verse-id={verse.id}>
+<article class="verse-anatomy" data-verse-id={verse.id} data-section-type={mode}>
   <header class="verse-header">
     <!--
-      aria-label interpolates the verse locator (`Verse 1.1`). We swap
+      aria-label interpolates the verse locator (`Verse 1.1` — `Block 1.1`
+      for prose, see `verse.block_aria_prefix`). We swap
       only the static word "Verse" via the prefix key + a hidden i18n
       bearer attribute on the span; the label-with-locator stays in the
       aria-label so screen readers always hear a locator. (Phase B can
       teach I18nSwap to template the verse number into the aria-label.)
     -->
-    <span class="verse-number" aria-label={`Verse ${verseLabel}`}>
+    <span class="verse-number" aria-label={`${isProse ? 'Block' : 'Verse'} ${verseLabel}`}>
       {verseLabel}
     </span>
   </header>
@@ -101,24 +76,46 @@ const iastFormatted = formatDanda(verse.iast);
     <slot name="chips" />
   </div>
 
-  <div class="verse-devanagari" lang="sa">
-    {devanagariFormatted}
-  </div>
+  {isProse ? (
+    <div class="prose-devanagari" lang="sa">
+      {devanagariParas.map((p) => (
+        <p>{p}</p>
+      ))}
+    </div>
+  ) : (
+    <div class="verse-devanagari" lang="sa">
+      {devanagariFormatted}
+    </div>
+  )}
 
   {verse.iast ? (
-    <div
-      class="verse-iast"
-      lang="sa-Latn"
-      data-sa
-      data-sa-source={devanagariFormatted}
-    >{iastFormatted}</div>
+    isProse ? (
+      <details class="prose-iast">
+        <summary data-i18n="verse.prose_iast_summary">Transliteration (IAST)</summary>
+        <div class="prose-iast__body" lang="sa-Latn">
+          {iastParas.map((p, i) => (
+            <p
+              data-sa={iastParasPairable ? '' : undefined}
+              data-sa-source={iastParasPairable ? devanagariParas[i] : undefined}
+            >{p}</p>
+          ))}
+        </div>
+      </details>
+    ) : (
+      <div
+        class="verse-iast"
+        lang="sa-Latn"
+        data-sa
+        data-sa-source={devanagariFormatted}
+      >{iastFormatted}</div>
+    )
   ) : null}
 
   {verse.meter ? (
     <div class="verse-meter" aria-label="meter" data-i18n-attr-aria-label="verse.meter_aria">{verse.meter}</div>
   ) : null}
 
-  {wordGlosses.length > 0 ? (
+  {!isProse && wordGlosses.length > 0 ? (
     <section class="synonyms" aria-label="word-by-word synonyms" data-i18n-attr-aria-label="verse.synonyms_aria">
       {wordGlosses.map((g, i) => (
         <>
@@ -145,18 +142,34 @@ const iastFormatted = formatDanda(verse.iast);
   ) : null}
 
   {primaryTranslation ? (
-    <p class="translation" lang={primaryTranslation.lang}>
-      {primaryTranslation.translation_text}
-    </p>
+    isProse ? (
+      <div class="translation translation-prose" lang={primaryTranslation.lang}>
+        {splitProseParagraphs(primaryTranslation.translation_text).map((p) => (
+          <p>{p}</p>
+        ))}
+      </div>
+    ) : (
+      <p class="translation" lang={primaryTranslation.lang}>
+        {primaryTranslation.translation_text}
+      </p>
+    )
   ) : null}
 
   {translations.length > 1 ? (
     <section class="alt-translations" aria-label="additional translations" data-i18n-attr-aria-label="verse.alt_translations_aria">
-      {translations.slice(1).map((t) => (
-        <p class="translation translation-alt" lang={t.lang}>
-          {t.translation_text}
-        </p>
-      ))}
+      {translations.slice(1).map((t) =>
+        isProse ? (
+          <div class="translation translation-alt translation-prose" lang={t.lang}>
+            {splitProseParagraphs(t.translation_text).map((p) => (
+              <p>{p}</p>
+            ))}
+          </div>
+        ) : (
+          <p class="translation translation-alt" lang={t.lang}>
+            {t.translation_text}
+          </p>
+        ),
+      )}
     </section>
   ) : null}
 
@@ -189,7 +202,9 @@ const iastFormatted = formatDanda(verse.iast);
       align-self: flex-start;
     }
     .verse-devanagari,
+    .prose-devanagari,
     .verse-iast,
+    .prose-iast,
     .verse-meter,
     .verse-chips,
     .synonyms,
@@ -390,5 +405,69 @@ const iastFormatted = formatDanda(verse.iast);
   }
   .verse-footer:empty {
     display: none;
+  }
+
+  /* ── Prose blocks (section_type='prose') ────────────────────────────
+     Flowing paragraphs at BODY scale (~18-19px Devanāgarī) — never the
+     26px verse display, never `white-space: pre-line`. Paragraph breaks
+     come from splitProseParagraphs (blank lines), not dandas. */
+  .prose-devanagari {
+    font-family: var(--font-sa-body);
+    font-size: var(--text-md); /* 18px */
+    line-height: 1.9;
+    color: var(--color-ink);
+    max-width: var(--width-reader);
+  }
+  @media (min-width: 1024px) {
+    .prose-devanagari {
+      font-size: 1.1875rem; /* 19px — body scale, not the 26px verse display */
+    }
+  }
+  .prose-devanagari p {
+    margin: 0;
+    white-space: normal;
+  }
+  .prose-devanagari p + p {
+    margin-block-start: var(--spacing-3);
+  }
+
+  /* Collapsible IAST for prose — collapsed by default (no `open`). */
+  .prose-iast {
+    max-width: var(--width-reader);
+  }
+  .prose-iast summary {
+    cursor: pointer;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-block: var(--spacing-2);
+  }
+  .prose-iast summary:hover,
+  .prose-iast summary:focus-visible {
+    color: var(--color-ink);
+  }
+  .prose-iast__body {
+    font-family: var(--font-iast);
+    font-style: italic;
+    font-size: var(--text-base);
+    color: var(--color-ink-muted);
+    line-height: 1.6;
+  }
+  .prose-iast__body p {
+    margin: 0;
+    white-space: normal;
+  }
+  .prose-iast__body p + p {
+    margin-block-start: var(--spacing-3);
+  }
+
+  /* Multi-paragraph prose translations (\n\n in the source). */
+  .translation-prose p {
+    margin: 0;
+  }
+  .translation-prose p + p {
+    margin-block-start: var(--spacing-3);
   }
 </style>
