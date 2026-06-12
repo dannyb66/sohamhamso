@@ -2,11 +2,11 @@
 import AIAssistedBadge from '../../../../components/AIAssistedBadge.astro';
 import ParallelChip from '../../../../components/ParallelChip.astro';
 import ScriptSwitcher from '../../../../components/ScriptSwitcher.solid';
-import Breadcrumbs from '../../../../components/seo/Breadcrumbs.astro';
-import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 import TranslationDrawer from '../../../../components/TranslationDrawer.solid';
 import VerseAnatomy from '../../../../components/VerseAnatomy.astro';
 import WordSheet from '../../../../components/WordSheet.solid';
+import Breadcrumbs from '../../../../components/seo/Breadcrumbs.astro';
+import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 /**
  * Verse-page route: /{tradition}/{text-slug}/{chapter}/{verse}
  *
@@ -17,12 +17,9 @@ import WordSheet from '../../../../components/WordSheet.solid';
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { enumerateRedirectPairs, resolveAlias } from '../../../../lib/aliases';
-import {
-  getDb,
-  getVerseAllLanguages,
-  getVerseTranslations,
-} from '../../../../lib/db';
+import { getDb, getVerseAllLanguages, getVerseTranslations } from '../../../../lib/db';
 import type { LangCode } from '../../../../lib/reading-modes';
+import { safeJsonForScript } from '../../../../lib/safe-json';
 import {
   buildDefinedTermJsonLd,
   buildVerseSeo,
@@ -128,7 +125,8 @@ if (lemmaIasts.length > 0) {
 const glossesPayload = {
   [String(verseRow.id)]: wordGlosses.map((g) => ({
     lemma_href:
-      g.lemma_iast && (() => {
+      g.lemma_iast &&
+      (() => {
         const summary = getLemmaSummaryByIast(g.lemma_iast);
         return summary && summary.occurrenceCount >= 3
           ? localePathFor(`/lemma/${summary.slug}`, currentLang)
@@ -184,23 +182,25 @@ const pageSeo = buildVerseSeo({
   verse: verseRow,
 });
 const lowFrequencyTermJsonLd = Array.from(
-  wordGlosses.reduce((terms, gloss) => {
-    if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
-    const summary = getLemmaSummaryByIast(gloss.lemma_iast);
-    if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
-    terms.set(
-      gloss.lemma_iast,
-      buildDefinedTermJsonLd({
-        alternateName: gloss.lemma_sa,
-        description: gloss.gloss_text,
-        inLanguage: inLanguageTag(currentLang),
-        name: gloss.lemma_iast,
-        termCode: gloss.lemma_iast,
-        url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
-      }),
-    );
-    return terms;
-  }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>()).values(),
+  wordGlosses
+    .reduce((terms, gloss) => {
+      if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
+      const summary = getLemmaSummaryByIast(gloss.lemma_iast);
+      if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
+      terms.set(
+        gloss.lemma_iast,
+        buildDefinedTermJsonLd({
+          alternateName: gloss.lemma_sa,
+          description: gloss.gloss_text,
+          inLanguage: inLanguageTag(currentLang),
+          name: gloss.lemma_iast,
+          termCode: gloss.lemma_iast,
+          url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
+        }),
+      );
+      return terms;
+    }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>())
+    .values(),
 );
 const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
 
@@ -353,9 +353,9 @@ const breadcrumbItems = [
   {/* ReaderLangSwap is mounted globally in BaseLayout — it consumes
       the `window.__readerData` payload injected below. */}
 
-  <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
-  <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
-  <script is:inline set:html={`window.__readerData = ${JSON.stringify(readerDataPayload)};`} />
+  <script is:inline set:html={`window.__wordGlosses = ${safeJsonForScript(glossesPayload)};`} />
+  <script is:inline set:html={`window.__translations = ${safeJsonForScript(translationsPayload)};`} />
+  <script is:inline set:html={`window.__readerData = ${safeJsonForScript(readerDataPayload)};`} />
 </BaseLayout>
 
 <style>
