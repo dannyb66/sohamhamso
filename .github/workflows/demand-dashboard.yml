@@ -1,0 +1,51 @@
+name: Demand dashboard — weekly readout
+
+# Weekly Phase 2 demand-gate readout (docs/INGESTION.md Step 1 →
+# demand-gate note, 2026-06-10). Runs scripts/demand-dashboard.ts and
+# prints the combined subscriber / CF Web Analytics / GSC / per-text
+# demand readout to the job log + GITHUB_STEP_SUMMARY (the script
+# appends the summary itself when the env var is present).
+#
+# Every section degrades gracefully when its secrets are missing, so
+# this cron stays green while credentials are wired up incrementally.
+# Secrets are read-only / counts-only — see the PII guard in the script.
+
+on:
+  schedule:
+    # 06:00 UTC every Monday — before the weekly review, low-traffic hour.
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readout:
+    name: Run demand dashboard
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install deps
+        run: bun install --frozen-lockfile
+
+      - name: Demand dashboard
+        env:
+          TURSO_PII_URL: ${{ secrets.TURSO_PII_URL }}
+          TURSO_PII_AUTH_TOKEN: ${{ secrets.TURSO_PII_AUTH_TOKEN }}
+          TURSO_CORPUS_URL: ${{ secrets.TURSO_CORPUS_URL }}
+          TURSO_CORPUS_AUTH_TOKEN: ${{ secrets.TURSO_CORPUS_AUTH_TOKEN }}
+          CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: bun scripts/demand-dashboard.ts

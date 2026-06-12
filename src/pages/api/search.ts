@@ -75,8 +75,27 @@ function err(message: string, status = 400): Response {
   );
 }
 
+// ─── Demand instrument ────────────────────────────────────────────────
+/**
+ * Fire-and-forget search-miss logging (Phase 2 demand gate). Lazy import
+ * mirrors `loadSearchLib()` — a missing module or a Turso hiccup must
+ * never block or fail the search response. `logSearchMiss` itself never
+ * rejects; the catch here only guards the dynamic import.
+ */
+function recordMiss(q: string, lang: string, type: SearchType, locals: unknown): void {
+  const p = import('../../lib/search-miss')
+    .then((m) => m.logSearchMiss(q, lang, type))
+    .catch(() => {});
+  // On Cloudflare, keep the worker alive long enough for the write to
+  // land. Shape is sniffed defensively — absent in dev/tests is fine.
+  const ctx = (
+    locals as { runtime?: { ctx?: { waitUntil?: (p: Promise<unknown>) => void } } } | undefined
+  )?.runtime?.ctx;
+  ctx?.waitUntil?.(p);
+}
+
 // ─── GET ──────────────────────────────────────────────────────────────
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, locals }) => {
   const t0 = performance.now();
 
   const qRaw = (url.searchParams.get('q') ?? '').trim();
@@ -110,6 +129,10 @@ export const GET: APIRoute = async ({ url }) => {
       if (typeof fn === 'function') {
         const out = await fn(qRaw, lang, limit);
         data = Array.isArray(out) ? out.slice(0, limit) : [];
+        // Zero results from a REAL search run = unmet-demand signal.
+        // Stub / not-implemented paths are excluded — every query is a
+        // "miss" there and the data would be pure noise.
+        if (data.length === 0) recordMiss(qRaw, lang, type, locals);
       } else {
         note = `search-${type}-not-implemented`;
       }
