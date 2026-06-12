@@ -102,6 +102,12 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      # db/sohamhamso.db is no longer committed (plan item A6) — rebuild it
+      # from data/corpus/*.yaml; the chapter backfill reads chapters/verses
+      # from the corpus DB.
+      - name: Build corpus DB from YAML
+        run: bun run db:ensure
+
       # Safety net for system font fallback: Remotion shapes Indic scripts via
       # Chromium + HarfBuzz, but Linux runners lack Indic fonts by default →
       # tofu boxes. The composition loads woff2 directly, but install the

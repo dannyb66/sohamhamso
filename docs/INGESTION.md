@@ -164,6 +164,7 @@ The field name is **`gloss_text`** — exactly that, no lang-suffix, no extra en
 
 ### Step 11 — Ingest + verify
 
+- **Deploy model (plan item A6):** `db/sohamhamso.db` is **not committed** — it is a build cache, not a source of truth. The sources are `data/corpus/*.yaml` + `db/schema.sql` (+ `db/migrations/` for already-provisioned DBs). Every build path is self-sufficient: `bun run build` / `bun run seo:build` start with `bun run db:ensure`, which runs `db:init` + `ingest` when the file is absent (CI and Cloudflare Pages clone a tree without the binary and rebuild it the same way). To force a clean rebuild locally: `rm db/sohamhamso.db && bun run db:build`. Scripts that read the local DB (e.g. `scripts/turso-seed-corpus.ts`) require `bun run db:build` first and die with that message if it is missing.
 - **Initial DB setup (one-time):** `bun pipeline/ingest/init-db.ts` — applies `db/schema.sql` to `db/sohamhamso.db`.
 - **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every corpus text YAML in `data/corpus/` (excluding underscore templates and `*.faq.yaml`), validates optional `seo` / `faq_file` blocks, then runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. Run options: `--db custom.db` and `--dir data/corpus`. Prints per-text and total row counts on success.
 - **Schema (key tables — see `db/schema.sql` for canonical):**

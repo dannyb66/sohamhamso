@@ -66,6 +66,12 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      # db/sohamhamso.db is no longer committed (plan item A6) — rebuild it
+      # from data/corpus/*.yaml; the uploader resolves verse titles and
+      # translations from the corpus DB.
+      - name: Build corpus DB from YAML
+        run: bun run db:ensure
+
       # Pull the state DB from R2 so the uploader reads/writes shared state
       # (ephemeral runners start with no DB).
       - name: Pull state DB

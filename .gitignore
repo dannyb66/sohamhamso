@@ -13,18 +13,17 @@ dist/
 build/
 
 # Local databases
+# db/sohamhamso.db is a build cache, not a source of truth (plan item A6):
+# data/corpus/*.yaml + db/schema.sql (+ db/migrations/) are the sources.
+# Every build path (`bun run build`, `seo:build`, CI, CF Pages) runs
+# `bun run db:ensure`, which reconstructs the DB via db:init + ingest when
+# the file is absent. Do NOT re-add a `!db/sohamhamso.db` exception.
 db/*.db
 db/*.db-journal
 db/*.sqlite
 db/*.sqlite-journal
 db/*.db-wal
 db/*.db-shm
-# Exception: the launch corpus DB IS the build input — CF Pages SSG reads it
-# via getStaticPaths during `astro build`. Without this exception, CF Pages
-# clones an empty db/ and the build fails with "unable to open database file".
-# The data is public anyway (CC-BY-SA, planned Zenodo deposit), and no PII
-# lives here (subscribers go to the separate sohamhamso-pii Turso DB).
-!db/sohamhamso.db
 
 # YouTube pipeline runtime state (R2-synced, never committed). Already covered
 # by `db/*.db` above, but listed explicitly so no one adds a

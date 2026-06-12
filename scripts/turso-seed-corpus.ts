@@ -42,7 +42,14 @@
  * scope. Stale remote rows that INSERT OR IGNORE silently kept are caught
  * and reported with a key-level diff; any mismatch exits nonzero.
  *
+ * Prerequisite: db/sohamhamso.db is NOT committed (plan item A6 — it is a
+ * build cache reconstructed from data/corpus/*.yaml). Build it first:
+ *   bun run db:build        # db:init + ingest
+ * Seeding prod should always start from a deliberate, fresh local ingest —
+ * this script refuses to auto-build the DB for you.
+ *
  * Usage:
+ *   bun run db:build
  *   set -a; source .env.production.local; set +a
  *   bun scripts/turso-seed-corpus.ts [--text <slug>] [--replace | --delete-only] [--backup-confirmed]
  *
@@ -586,7 +593,11 @@ async function main(): Promise<void> {
 
   if (!TURSO_URL) die('TURSO_CORPUS_URL not set (source .env.production.local first).');
   if (!TURSO_TOKEN) die('TURSO_CORPUS_AUTH_TOKEN not set (source .env.production.local first).');
-  if (!existsSync(DB_PATH)) die(`Local SQLite not found at ${DB_PATH}`);
+  if (!existsSync(DB_PATH)) {
+    die(
+      `Local SQLite not found at ${DB_PATH}. The corpus DB is not committed — build it from YAML first: \`bun run db:build\` (db:init + ingest), or point SOHAMHAMSO_DB_PATH at an existing DB.`,
+    );
+  }
   if (!Number.isInteger(BATCH_SIZE) || BATCH_SIZE < 1 || BATCH_SIZE > 500) {
     die(`TURSO_SEED_BATCH_SIZE must be an integer in [1, 500], got ${BATCH_SIZE}`);
   }
