@@ -50,6 +50,26 @@ export const SLUG_ALIASES: Record<string, string> = {
   'vijnana-bhairava': 'vijnana-bhairava-tantra',
   // Spanda Kārikās: singular vs plural
   'spanda-karika': 'spanda-karikas',
+  // Parātrīśikā: "sh" vs "s" for ś, the Parātriṃśikā title variant (ṃś → ms/msh),
+  // and the split compound. NOTE: do NOT alias 'paratrisika-vivarana' here — that
+  // slug is reserved for Abhinavagupta's Vivaraṇa as a future sibling commentary
+  // text (parent_text_id: paratrisika), not a romanization variant of the mūla.
+  paratrishika: 'paratrisika',
+  paratrimsika: 'paratrisika',
+  paratrimshika: 'paratrisika',
+  'para-trisika': 'paratrisika',
+  // Īśvarapratyabhijñā Kārikā: "sh" vs "s" for ś, split compound, plural, and the
+  // bare title without "karika". NOTE: do NOT alias 'isvarapratyabhijna-vrtti' or
+  // 'isvarapratyabhijna-vimarsini' here — those slugs are reserved for Utpaladeva's
+  // auto-commentary and Abhinavagupta's Vimarśinī as future sibling commentary
+  // texts (parent_text_id: isvarapratyabhijna-karika), not romanization variants.
+  'ishvarapratyabhijna-karika': 'isvarapratyabhijna-karika',
+  'isvara-pratyabhijna-karika': 'isvarapratyabhijna-karika',
+  'ishvara-pratyabhijna-karika': 'isvarapratyabhijna-karika',
+  'isvarapratyabhijna-karikas': 'isvarapratyabhijna-karika',
+  'ishvarapratyabhijna-karikas': 'isvarapratyabhijna-karika',
+  isvarapratyabhijna: 'isvarapratyabhijna-karika',
+  ishvarapratyabhijna: 'isvarapratyabhijna-karika',
 };
 
 /**

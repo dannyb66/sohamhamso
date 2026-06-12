@@ -9,6 +9,17 @@ Per-source and per-text attribution. Updated each release; per-text entries land
 - License: per-file (mostly CC-BY 4.0; some files have stricter terms — header-parsed at ingestion)
 - Citation: GRETIL, Universitätsbibliothek Göttingen, accessed YYYY-MM-DD
 - Per-text revisions tracked in `texts.source_revision` column
+- **Parātrīśikā (Parātriṃśikā)** — `data/corpus/paratrisika.yaml` (36 verses, Sanskrit only).
+  - Source file: https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_parAtriMzikA.xml (TEI version 2020-07-31, mass conversion of legacy `1_sanskr/6_sastra/3_phil/saiva/paratriu.htm`; both accessed 2026-06-12).
+  - Data entry: Marino Faliero (July 1998); TEI normalization: Maximilian Mehner; legacy GRETIL conversion: Reinhold Grünendahl.
+  - License (per TEI header): CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+  - IAST is the source of record; Devanagari + SLP1 in the YAML are mechanical Sanscript transliterations. Two legacy-encoding artifacts (verse 19 `ma.ṅdalo`, verse 29 `stha.ṅdilaṃ`) are preserved verbatim, un-emended.
+- **Īśvarapratyabhijñākārikā (Utpaladeva)** — `data/corpus/isvarapratyabhijna-karika.yaml` (190 kārikās, Sanskrit only; the interleaved vṛtti auto-commentary is excluded, reserved for a sibling text).
+  - Source file: https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt (TEI version 2020-07-31, mass conversion of legacy `utipk_au.htm`; accessed 2026-06-12).
+  - Data entry: Somadeva Vasudeva. Edition basis: Madhusudan Kaul Shastri, Srinagar 1921 (Kashmir Series of Texts and Studies 34), revised per Raffaele Torella, Roma 1994 (Serie Orientale Roma 71).
+  - License (per GRETIL header): CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+  - IAST is the source of record; Devanagari + SLP1 in the YAML are mechanical Sanscript transliterations. Upstream transcription quirks (kārikā 1,2.6 `smṛitisiddhau`, 1,2.8 `nārthaprakāsatā`, editorial brackets in 3,2.15 `sauṣupta[ṃ]`) are preserved verbatim, un-emended.
+  - Verse count cross-check: 190 kārikās in 4 adhikāras / 15 āhnikas (5+11+7+8+21+11+14+11 | 8+7+17+21 | 11+20 | 18), identical in the GRETIL e-text and the sanskrit-trikashaivism.com edition (https://www.sanskrit-trikashaivism.com/en/scriptures-trika-scriptures-iishvarapratyabhijnaakaarikaas/1003, accessed 2026-06-12; used for count verification only, no text copied from it).
 
 ### Muktabodha Indological Research Institute (MIRI)
 - URL: https://muktabodha.org/ · library: https://muktalib7.com/

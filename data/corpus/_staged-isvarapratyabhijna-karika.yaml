@@ -1,0 +1,1852 @@
+# STAGED (underscore prefix => ingest skips this file).
+# Per the Phase 2 plan, a text deploys only after EN + 11-lang translations
+# clear the judge (launch policy: no Sanskrit-only thin pages). Rename to
+# isvarapratyabhijna-karika.yaml when the translation pipeline completes for this text.
+# yaml-language-server: $schema=./schema.json
+schema_version: 1
+
+# Sanskrit-only corpus file (Wave 2 sourcing). Translations + glosses are
+# added later by the translation pipeline — do NOT hand-author them here.
+#
+# Provenance: every Devanagari/IAST character below derives verbatim from the
+# GRETIL e-text (IAST source of record, input by Somadeva Vasudeva). Devanagari
+# + SLP1 are mechanical Sanscript transliterations of that IAST, with GRETIL's
+# pada-divider hyphens removed; the closing danda ॥ corresponds to the source's
+# "// Ipk_x" verse marker. Upstream transcription quirks are preserved verbatim,
+# un-emended — e.g. kārikā 1,2.6 "smṛitisiddhau" (sic, for smṛti-), 1,2.8
+# "nārthaprakāsatā" (sic, s for ś), and the editorial restoration brackets in
+# kārikā 3,2.15 "sauṣupta[ṃ]"; all also appear in GRETIL's TEI XML.
+#
+# Sibling slugs reserved for the commentary layer (not aliases of this text):
+#   isvarapratyabhijna-vrtti      — Utpaladeva's auto-commentary (interleaved
+#                                   "ipv:" prose in the GRETIL carrier, excluded here)
+#   isvarapratyabhijna-vimarsini  — Abhinavagupta's Īśvarapratyabhijñāvimarśinī
+#                                   (GRETIL sa_abhinavagupta-IzvarapratyabhijJAvimarzinI)
+
+text:
+  id: isvarapratyabhijna-karika
+  slug: isvarapratyabhijna-karika
+  title_sa: ईश्वरप्रत्यभिज्ञाकारिका
+  title_en: Verses on the Recognition of the Lord
+  title_iast: Īśvarapratyabhijñākārikā
+  author: Utpaladeva
+  tradition: trika
+  school: kashmir-shaivism
+  era: "c. 925-975 CE"
+  source: "GRETIL (Göttingen Register of Electronic Texts in Indian Languages); e-text input by Somadeva Vasudeva, based on the Madhusudan Kaul Shastri ed., Srinagar 1921 (KSTS 34), revised per the Raffaele Torella ed., Roma 1994 (Serie Orientale Roma 71)"
+  source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt"
+  source_revision: "TEI version 2020-07-31 (mass conversion of legacy utipk_au.htm; data entry Somadeva Vasudeva); accessed 2026-06-12"
+  license: CC-BY-NC-SA 4.0
+  expected_verse_count: 190
+  parent_text_id:
+  manuscript_url:
+  description: |
+    The Īśvarapratyabhijñākārikā ("Verses on the Recognition of the Lord")
+    by Utpaladeva is the foundational treatise of the Pratyabhijñā
+    (Recognition) school of non-dual Kashmir Śaivism, later expounded by
+    Abhinavagupta in his Vimarśinī and Vivṛtivimarśinī. The source
+    transmits 190 kārikās in four adhikāras (sections) subdivided into
+    āhnikas (chapters): Jñānādhikāra (8 āhnikas), Kriyādhikāra (4),
+    Āgamādhikāra (2), and the single-āhnika Tattvasaṃgrahādhikāra.
+    Chapter mapping: chapters 1-15 here are the source's āhnikas in
+    order (1-8 = Jñāna 1,1-1,8; 9-12 = Kriyā 2,1-2,4; 13-14 = Āgama
+    3,1-3,2; 15 = Tattvasaṃgraha 4), the verse-level book field records
+    the adhikāra (1-4), and verse numbers keep the source's in-āhnika
+    numbering, so source kārikā A,H.V is chapter-of-āhnika(A,H) verse V.
+    The verse count of 190 (5+11+7+8+21+11+14+11 | 8+7+17+21 | 11+20 |
+    18) matches the GRETIL e-text exactly and is cross-checked against
+    the sanskrit-trikashaivism.com edition of the kārikās, which carries
+    the same 190 verses with identical per-āhnika counts. This file
+    ingests the kārikās only: Utpaladeva's auto-commentary (vṛtti),
+    interleaved in the GRETIL carrier, is excluded and reserved for the
+    sibling slug isvarapratyabhijna-vrtti, as is Abhinavagupta's
+    commentary under isvarapratyabhijna-vimarsini. The jñānādhikāra
+    second-āhnika title is absent as a colophon in the source and is
+    assembled from fragments attested verbatim elsewhere in the file.
+
+chapters:
+- chapter: 1
+  title_sa: ज्ञानाधिकारे प्रथमम् आह्निकम्
+  title_iast: "jñānādhikāre prathamam āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 1"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      कथं चिद् आसाद्य महेश्वरस्य दास्यं जनस्याप्य् उपकारम् इच्छन्
+      समस्तसंपत्समवाप्तिहेतुं तत्प्रत्यभिज्ञाम् उपपादयामि ॥१॥
+    slp1: "kaTaM cid AsAdya maheSvarasya dAsyaM janasyApy upakAram icCan samastasaMpatsamavAptihetuM tatpratyaBijYAm upapAdayAmi"
+    iast: |-
+      kathaṃ cid āsādya maheśvarasya dāsyaṃ janasyāpy upakāram icchan
+      samastasaṃpatsamavāptihetuṃ tatpratyabhijñām upapādayāmi
+  - verse: 2
+    book: 1
+    devanagari: |-
+      कर्तरि ज्ञातरि स्वात्मन्य् आदिसिद्धे महेश्वरे
+      अजडात्मा निषेधं वा सिद्धिं वा विदधीत कः ॥२॥
+    slp1: "kartari jYAtari svAtmany AdisidDe maheSvare ajaqAtmA nizeDaM vA sidDiM vA vidaDIta kaH"
+    iast: |-
+      kartari jñātari svātmany ādisiddhe maheśvare
+      ajaḍātmā niṣedhaṃ vā siddhiṃ vā vidadhīta kaḥ
+  - verse: 3
+    book: 1
+    devanagari: |-
+      किं तु मोहवशाद् अस्मिन् दृष्टे ऽप्य् अनुपलक्षिते
+      शक्त्याविष्करणेनेयं प्रत्यभिज्ञोपदर्श्यते ॥३॥
+    slp1: "kiM tu mohavaSAd asmin dfzwe 'py anupalakzite SaktyAvizkaraReneyaM pratyaBijYopadarSyate"
+    iast: |-
+      kiṃ tu mohavaśād asmin dṛṣṭe 'py anupalakṣite
+      śaktyāviṣkaraṇeneyaṃ pratyabhijñopadarśyate
+  - verse: 4
+    book: 1
+    devanagari: |-
+      तथा हि जडभूतानां प्रतिष्ठा जीवदाश्रया
+      ज्ञानं क्रिया च भूतानां जीवतां जीवनं मतम् ॥४॥
+    slp1: "taTA hi jaqaBUtAnAM pratizWA jIvadASrayA jYAnaM kriyA ca BUtAnAM jIvatAM jIvanaM matam"
+    iast: |-
+      tathā hi jaḍabhūtānāṃ pratiṣṭhā jīvadāśrayā
+      jñānaṃ kriyā ca bhūtānāṃ jīvatāṃ jīvanaṃ matam
+  - verse: 5
+    book: 1
+    devanagari: |-
+      तत्र ज्ञानं स्वतःसिद्धं क्रिया कायाश्रिता सती
+      परैर् अप्य् उपलक्ष्येत तयान्यज्ञानम् ऊह्यते ॥५॥
+    slp1: "tatra jYAnaM svataHsidDaM kriyA kAyASritA satI parEr apy upalakzyeta tayAnyajYAnam Uhyate"
+    iast: |-
+      tatra jñānaṃ svataḥsiddhaṃ kriyā kāyāśritā satī
+      parair apy upalakṣyeta tayānyajñānam ūhyate
+- chapter: 2
+  title_sa: ज्ञानाधिकारे द्वितीयम् आह्निकम्
+  title_iast: "jñānādhikāre dvitīyam āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 2"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      ननु स्वलक्षणाभासं ज्ञानम् एकं परं पुनः
+      साभिलापं विकल्पाख्यं बहुधा नापि तद् द्वयम् ॥१॥
+    slp1: "nanu svalakzaRABAsaM jYAnam ekaM paraM punaH sABilApaM vikalpAKyaM bahuDA nApi tad dvayam"
+    iast: |-
+      nanu svalakṣaṇābhāsaṃ jñānam ekaṃ paraṃ punaḥ
+      sābhilāpaṃ vikalpākhyaṃ bahudhā nāpi tad dvayam
+  - verse: 2
+    book: 1
+    devanagari: |-
+      नित्यस्य कस्य चिद् द्रष्टुस् तस्यात्रानवभासतः
+      अहंप्रतीतिर् अप्य् एषा शरीराद्यवसायिनी ॥२॥
+    slp1: "nityasya kasya cid drazwus tasyAtrAnavaBAsataH ahaMpratItir apy ezA SarIrAdyavasAyinI"
+    iast: |-
+      nityasya kasya cid draṣṭus tasyātrānavabhāsataḥ
+      ahaṃpratītir apy eṣā śarīrādyavasāyinī
+  - verse: 3
+    book: 1
+    devanagari: |-
+      अथानुभवविध्वंसे स्मृतिस् तदनुरोधिनी
+      कथं भवेन् न नित्यः स्याद् आत्मा यद्य् अनुभावकः ॥३॥
+    slp1: "aTAnuBavaviDvaMse smftis tadanuroDinI kaTaM Baven na nityaH syAd AtmA yady anuBAvakaH"
+    iast: |-
+      athānubhavavidhvaṃse smṛtis tadanurodhinī
+      kathaṃ bhaven na nityaḥ syād ātmā yady anubhāvakaḥ
+  - verse: 4
+    book: 1
+    devanagari: |-
+      सत्याप्य् आत्मनि दृङ्नाशात् तद्द्वारा दृष्टवस्तुषु
+      स्मृतिः केनाथ यत्रैवानुभवस् तत्पदैव सा ॥४॥
+    slp1: "satyApy Atmani dfNnASAt taddvArA dfzwavastuzu smftiH kenATa yatrEvAnuBavas tatpadEva sA"
+    iast: |-
+      satyāpy ātmani dṛṅnāśāt taddvārā dṛṣṭavastuṣu
+      smṛtiḥ kenātha yatraivā-nubhavas tatpadaiva sā
+  - verse: 5
+    book: 1
+    devanagari: |-
+      यतो हि पूर्वानुभवसंस्कारात् स्मृतिसंभवः
+      यद्य् एवम् अन्तर्गडुना को ऽर्थः स्यात् स्थायिनात्मना ॥५॥
+    slp1: "yato hi pUrvAnuBavasaMskArAt smftisaMBavaH yady evam antargaqunA ko 'rTaH syAt sTAyinAtmanA"
+    iast: |-
+      yato hi pūrvānubhavasaṃskārāt smṛtisaṃbhavaḥ
+      yady evam antargaḍunā ko 'rthaḥ syāt sthāyinātmanā
+  - verse: 6
+    book: 1
+    devanagari: |-
+      ततो भिन्नेषु धर्मेषु तत्स्वरूपाविशेषतह्
+      संस्कारात् स्मृइतिसिद्धौ स्यात् स्मर्ता द्रष्टेव कल्पितः ॥६॥
+    slp1: "tato Binnezu Darmezu tatsvarUpAviSezatah saMskArAt smfitisidDO syAt smartA drazweva kalpitaH"
+    iast: |-
+      tato bhinneṣu dharmeṣu tatsvarūpāviśeṣatah
+      saṃskārāt smṛitisiddhau syāt smartā draṣṭeva kalpitaḥ
+  - verse: 7
+    book: 1
+    devanagari: |-
+      ज्ञानं च चित्स्वरूपं चेत् तद् अनित्यं किम् आत्मवत्
+      अथापि जडम् एतस्य कथम् अर्थप्रकाशता ॥७॥
+    slp1: "jYAnaM ca citsvarUpaM cet tad anityaM kim Atmavat aTApi jaqam etasya kaTam arTaprakASatA"
+    iast: |-
+      jñānaṃ ca citsvarūpaṃ cet tad anityaṃ kim ātmavat
+      athāpi jaḍam etasya katham arthaprakāśatā
+  - verse: 8
+    book: 1
+    devanagari: |-
+      अथार्थस्य यथा रूपं धत्ते बुद्धिस् तथात्मनः
+      चैतन्यम् अजडा सैवं जाड्ये नार्थप्रकासता ॥८॥
+    slp1: "aTArTasya yaTA rUpaM Datte budDis taTAtmanaH cEtanyam ajaqA sEvaM jAqye nArTaprakAsatA"
+    iast: |-
+      athārthasya yathā rūpaṃ dhatte buddhis tathātmanaḥ
+      caitanyam ajaḍā saivaṃ jāḍye nārthaprakāsatā
+  - verse: 9
+    book: 1
+    devanagari: |-
+      क्रियाप्य् अर्थस्य कायादेस् तत्तद्देशादिजातता
+      नान्यादृष्टेर् न साप्य् एका क्रमिकैकस्य चोचिता ॥९॥
+    slp1: "kriyApy arTasya kAyAdes tattaddeSAdijAtatA nAnyAdfzwer na sApy ekA kramikEkasya cocitA"
+    iast: |-
+      kriyāpy arthasya kāyādes tattaddeśādijātatā
+      nānyādṛṣṭer na sāpy ekā kramikaikasya cocitā
+  - verse: 10
+    book: 1
+    devanagari: |-
+      तत्र तत्र स्थिते तत् तद् भवतीत्य् एव दृश्यते
+      नान्यन् नान्यो ऽस्ति संबन्धः कार्यकारणभावतः ॥१०॥
+    slp1: "tatra tatra sTite tat tad BavatIty eva dfSyate nAnyan nAnyo 'sti saMbanDaH kAryakAraRaBAvataH"
+    iast: |-
+      tatra tatra sthite tat tad bhavatīty eva dṛśyate
+      nānyan nānyo 'sti saṃbandhaḥ kāryakāraṇabhāvataḥ
+  - verse: 11
+    book: 1
+    devanagari: |-
+      द्विष्ठस्यानेकरूपत्वात् सिद्धस्यान्यानपेक्षणात्
+      पारतन्त्र्याद्ययोगाच् च तेन कर्तापि कल्पितः ॥११॥
+    slp1: "dvizWasyAnekarUpatvAt sidDasyAnyAnapekzaRAt pAratantryAdyayogAc ca tena kartApi kalpitaH"
+    iast: |-
+      dviṣṭhasyānekarūpatvāt siddhasyānyānapekṣaṇāt
+      pāratantryādyayogāc ca tena kartāpi kalpitaḥ
+- chapter: 3
+  title_sa: ज्ञानाधिकारे तृतीयम् आह्निकम्
+  title_iast: "jñānādhikāre tṛtīyam āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 3"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      सत्यं किं तु स्मृतिज्ञानं पूर्वानुभवसंस्कृतेः
+      जातम् अप्य् आत्मनिष्ठं तन् नाद्यानुभववेदकम् ॥१॥
+    slp1: "satyaM kiM tu smftijYAnaM pUrvAnuBavasaMskfteH jAtam apy AtmanizWaM tan nAdyAnuBavavedakam"
+    iast: |-
+      satyaṃ kiṃ tu smṛtijñānaṃ pūrvānubhavasaṃskṛteḥ
+      jātam apy ātmaniṣṭhaṃ tan nādyānubhavavedakam
+  - verse: 2
+    book: 1
+    devanagari: |-
+      दृक्स्वाभासैव नान्येन वेद्या रूपदृशेव दृक्
+      रसे संस्कारजत्वं तु तत्तुल्यत्वं न तद्गतिः ॥२॥
+    slp1: "dfksvABAsEva nAnyena vedyA rUpadfSeva dfk rase saMskArajatvaM tu tattulyatvaM na tadgatiH"
+    iast: |-
+      dṛksvābhāsaiva nānyena vedyā rūpadṛśeva dṛk
+      rase saṃskārajatvaṃ tu tattulyatvaṃ na tadgatiḥ
+  - verse: 3
+    book: 1
+    devanagari: |-
+      अथातद्विषयत्वे ऽपि स्मृतेस् तदवसायतः
+      दृष्टालम्बनता भ्रान्त्या तद् एतद् असमञ्जसम् ॥३॥
+    slp1: "aTAtadvizayatve 'pi smftes tadavasAyataH dfzwAlambanatA BrAntyA tad etad asamaYjasam"
+    iast: |-
+      athātadviṣayatve 'pi smṛtes tadavasāyataḥ
+      dṛṣṭālambanatā bhrāntyā tad etad asamañjasam
+  - verse: 4
+    book: 1
+    devanagari: |-
+      स्मृतितैव कथं तावद् भ्रान्तेश् चार्थस्थितिः कथम्
+      पूर्वानुभवसंकारापेक्षा च किम् इतीष्यते ॥४॥
+    slp1: "smftitEva kaTaM tAvad BrAnteS cArTasTitiH kaTam pUrvAnuBavasaMkArApekzA ca kim itIzyate"
+    iast: |-
+      smṛtitaiva kathaṃ tāvad bhrānteś cārthasthitiḥ katham
+      pūrvānubhavasaṃkārā-pekṣā ca kim itīṣyate
+  - verse: 5
+    book: 1
+    devanagari: |-
+      भ्रान्तित्वे चावसायस्य न जडाद् विषयस्थितिः
+      ततो ऽजाड्ये निजोल्लेखनिष्ठान् नार्थस्थितिस् ततः ॥५॥
+    slp1: "BrAntitve cAvasAyasya na jaqAd vizayasTitiH tato 'jAqye nijolleKanizWAn nArTasTitis tataH"
+    iast: |-
+      bhrāntitve cāvasāyasya na jaḍād viṣayasthitiḥ
+      tato 'jāḍye nijollekhaniṣṭhān nārthasthitis tataḥ
+  - verse: 6
+    book: 1
+    devanagari: |-
+      एवम् अन्योन्यभिन्नानाम् अपरस्परवेदिनाम्
+      ज्ञानानाम् अनुसंधानजन्मा नश्येज् जनस्थितिः ॥६॥
+    slp1: "evam anyonyaBinnAnAm aparasparavedinAm jYAnAnAm anusaMDAnajanmA naSyej janasTitiH"
+    iast: |-
+      evam anyonyabhinnānām aparasparavedinām
+      jñānānām anusaṃdhānajanmā naśyej janasthitiḥ
+  - verse: 7
+    book: 1
+    devanagari: |-
+      न चेद् अन्तःकृतानन्तविश्वरूपो महेश्वरः
+      स्याद् एकश् चिद्वपुर् ज्ञानस्मृत्यपोहनशक्तिमान् ॥७॥
+    slp1: "na ced antaHkftAnantaviSvarUpo maheSvaraH syAd ekaS cidvapur jYAnasmftyapohanaSaktimAn"
+    iast: |-
+      na ced antaḥkṛtānantaviśvarūpo maheśvaraḥ
+      syād ekaś cidvapur jñānasmṛtyapohanaśaktimān
+- chapter: 4
+  title_sa: ज्ञानाधिकारे चतुर्थम् आह्निकम्
+  title_iast: "jñānādhikāre caturtham āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 4"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      स हि पूर्वानुभूतार्थोपलब्धा परतो ऽपि सन्
+      विमृशन् स इति स्वैरी स्मरतीत्य् अपदिश्यते ॥१॥
+    slp1: "sa hi pUrvAnuBUtArTopalabDA parato 'pi san vimfSan sa iti svErI smaratIty apadiSyate"
+    iast: |-
+      sa hi pūrvānubhūtārtho-palabdhā parato 'pi san
+      vimṛśan sa iti svairī smaratīty apadiśyate
+  - verse: 2
+    book: 1
+    devanagari: |-
+      भासयेच् च स्वकाले ऽर्थात् पूर्वाभासितम् आमृशन्
+      स्वलक्षणं घटाभासमात्रेणाथाखिलात्मना ॥२॥
+    slp1: "BAsayec ca svakAle 'rTAt pUrvABAsitam AmfSan svalakzaRaM GawABAsamAtreRATAKilAtmanA"
+    iast: |-
+      bhāsayec ca svakāle 'rthāt pūrvābhāsitam āmṛśan
+      svalakṣaṇaṃ ghaṭābhāsamātreṇāthākhilātmanā
+  - verse: 3
+    book: 1
+    devanagari: |-
+      न च युक्तं स्मृतेर् भेदे स्मर्यमाणस्य भासनम्
+      तेनैक्यं भिन्नकालानां संविदां वेदितैष सः ॥३॥
+    slp1: "na ca yuktaM smfter Bede smaryamARasya BAsanam tenEkyaM BinnakAlAnAM saMvidAM veditEza saH"
+    iast: |-
+      na ca yuktaṃ smṛter bhede smaryamāṇasya bhāsanam
+      tenaikyaṃ bhinnakālānāṃ saṃvidāṃ veditaiṣa saḥ
+  - verse: 4
+    book: 1
+    devanagari: |-
+      नैव ह्य् अनुभवो भाति स्मृतौ पूर्वो ऽर्थवत् पृथक्
+      प्राग् अन्वभूवम् अहम् इत्य् आत्मारोहणभासनात् ॥४॥
+    slp1: "nEva hy anuBavo BAti smftO pUrvo 'rTavat pfTak prAg anvaBUvam aham ity AtmArohaRaBAsanAt"
+    iast: |-
+      naiva hy anubhavo bhāti smṛtau pūrvo 'rthavat pṛthak
+      prāg anvabhūvam aham ity ātmārohaṇabhāsanāt
+  - verse: 5
+    book: 1
+    devanagari: |-
+      योगिनाम् अपि भासन्ते न दृशो दर्शनान्तरे
+      स्वसंविदेकमानास् ता भान्ति मेयपदे ऽपि वा ॥५॥
+    slp1: "yoginAm api BAsante na dfSo darSanAntare svasaMvidekamAnAs tA BAnti meyapade 'pi vA"
+    iast: |-
+      yoginām api bhāsante na dṛśo darśanāntare
+      svasaṃvidekamānās tā bhānti meyapade 'pi vā
+  - verse: 6
+    book: 1
+    devanagari: |-
+      स्मर्यते यद् दृग् आसीन् मे सैवम् इत्य् अपि भेदतः
+      तद् व्याकरणम् एवास्या मया दृष्टम् इति स्मृतेः ॥६॥
+    slp1: "smaryate yad dfg AsIn me sEvam ity api BedataH tad vyAkaraRam evAsyA mayA dfzwam iti smfteH"
+    iast: |-
+      smaryate yad dṛg āsīn me saivam ity api bhedataḥ
+      tad vyākaraṇam evāsyā mayā dṛṣṭam iti smṛteḥ
+  - verse: 7
+    book: 1
+    devanagari: |-
+      या च पश्याम्य् अहम् इमं घटो ऽयम् इति वावसा
+      मन्यते समवेतं साप्य् अवसातरि दर्शनम् ॥७॥
+    slp1: "yA ca paSyAmy aham imaM Gawo 'yam iti vAvasA manyate samavetaM sApy avasAtari darSanam"
+    iast: |-
+      yā ca paśyāmy aham imaṃ ghaṭo 'yam iti vāvasā
+      manyate samavetaṃ sāpy avasātari darśanam
+  - verse: 8
+    book: 1
+    devanagari: |-
+      तन् मया दृश्यते दृष्टो ऽयं स इत्य् आमृशत्य् अपि
+      ग्राह्यग्राहकताभिन्नाव् अर्थौ भातः पमातरि ॥८॥
+    slp1: "tan mayA dfSyate dfzwo 'yaM sa ity AmfSaty api grAhyagrAhakatABinnAv arTO BAtaH pamAtari"
+    iast: |-
+      tan mayā dṛśyate dṛṣṭo 'yaṃ sa ity āmṛśaty api
+      grāhyagrāhakatābhinnāv arthau bhātaḥ pamātari
+- chapter: 5
+  title_sa: ज्ञानाधिकारे पञ्चमम् आह्निकम्
+  title_iast: "jñānādhikāre pañcamam āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 5"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      वर्तमानावभासानां भावानाम् अवभासनम्
+      अन्तःस्थितवताम् एव घटते बहिर् आत्मना ॥१॥
+    slp1: "vartamAnAvaBAsAnAM BAvAnAm avaBAsanam antaHsTitavatAm eva Gawate bahir AtmanA"
+    iast: |-
+      vartamānāvabhāsānāṃ bhāvānām avabhāsanam
+      antaḥsthitavatām eva ghaṭate bahir ātmanā
+  - verse: 2
+    book: 1
+    devanagari: |-
+      प्रागिवार्थो ऽप्रकाशः स्यात् प्रकाशात्मतया विना
+      न च प्रकाशो भिन्नः स्याद् आत्मार्थस्य प्रकाशता ॥२॥
+    slp1: "prAgivArTo 'prakASaH syAt prakASAtmatayA vinA na ca prakASo BinnaH syAd AtmArTasya prakASatA"
+    iast: |-
+      prāgivārtho 'prakāśaḥ syāt prakāśātmatayā vinā
+      na ca prakāśo bhinnaḥ syād ātmārthasya prakāśatā
+  - verse: 3
+    book: 1
+    devanagari: |-
+      भिन्ने प्रकाशे चाभिन्ने संकरो विषयस्य तत्
+      प्रकाशात्मा प्रकाश्यो ऽर्थो नाप्रकाशश् च सिद्ध्यति ॥३॥
+    slp1: "Binne prakASe cABinne saMkaro vizayasya tat prakASAtmA prakASyo 'rTo nAprakASaS ca sidDyati"
+    iast: |-
+      bhinne prakāśe cābhinne saṃkaro viṣayasya tat
+      prakāśātmā prakāśyo 'rtho nāprakāśaś ca siddhyati
+  - verse: 4
+    book: 1
+    devanagari: |-
+      तत्तदाकस्मिकाभासो बाह्यं चेद् अनुमापयेत्
+      न ह्य् अभिन्नस्य बोधस्य विचित्राभासहेतुता ॥४॥
+    slp1: "tattadAkasmikABAso bAhyaM ced anumApayet na hy aBinnasya boDasya vicitrABAsahetutA"
+    iast: |-
+      tattadākasmikābhāso bāhyaṃ ced anumāpayet
+      na hy abhinnasya bodhasya vicitrābhāsahetutā
+  - verse: 5
+    book: 1
+    devanagari: |-
+      न वासनाप्रबोधो ऽत्र विचित्रो हेतुताम् इयात्
+      तस्यापि तत्प्रबोधस्य वैचित्र्ये किम् निबन्धनम् ॥५॥
+    slp1: "na vAsanApraboDo 'tra vicitro hetutAm iyAt tasyApi tatpraboDasya vEcitrye kim nibanDanam"
+    iast: |-
+      na vāsanāprabodho 'tra vicitro hetutām iyāt
+      tasyāpi tatprabodhasya vaicitrye kim nibandhanam
+  - verse: 6
+    book: 1
+    devanagari: |-
+      स्याद् एतद् अवभासेषु तेष्व् एवावसिते सति
+      व्यवहारे किम् अन्येन बाह्येनानुपपत्तिना ॥६॥
+    slp1: "syAd etad avaBAsezu tezv evAvasite sati vyavahAre kim anyena bAhyenAnupapattinA"
+    iast: |-
+      syād etad avabhāseṣu teṣv evāvasite sati
+      vyavahāre kim anyena bāhyenānupapattinā
+  - verse: 7
+    book: 1
+    devanagari: |-
+      चिदात्मैव हि देवो ऽन्तःस्थितम् इच्छावशाद् बहिः
+      योगीव निरुपादानम् अर्थजातं प्रकाशयेत् ॥७॥
+    slp1: "cidAtmEva hi devo 'ntaHsTitam icCAvaSAd bahiH yogIva nirupAdAnam arTajAtaM prakASayet"
+    iast: |-
+      cidātmaiva hi devo 'ntaḥsthitam icchāvaśād bahiḥ
+      yogīva nirupādānam arthajātaṃ prakāśayet
+  - verse: 8
+    book: 1
+    devanagari: |-
+      अनुमानम् अनाभातपूर्वे नैवेष्टम् इन्द्रियम्
+      आभातम् एव बीजादेर् आभासाद् धेतुवस्तुनः ॥८॥
+    slp1: "anumAnam anABAtapUrve nEvezwam indriyam ABAtam eva bIjAder ABAsAd DetuvastunaH"
+    iast: |-
+      anumānam anābhātapūrve naiveṣṭam indriyam
+      ābhātam eva bījāder ābhāsād dhetuvastunaḥ
+  - verse: 9
+    book: 1
+    devanagari: |-
+      आभासः पुनराभासद् बाह्यस्यासीत् कथं चन
+      अर्थस्य नैव तेनास्य सिद्धिर् नाप्य् अनुमानतः ॥९॥
+    slp1: "ABAsaH punarABAsad bAhyasyAsIt kaTaM cana arTasya nEva tenAsya sidDir nApy anumAnataH"
+    iast: |-
+      ābhāsaḥ punarābhāsad bāhyasyāsīt kathaṃ cana
+      arthasya naiva tenāsya siddhir nāpy anumānataḥ
+  - verse: 10
+    book: 1
+    devanagari: |-
+      स्वामिनश् चात्मसंस्थस्य भावजातस्य भासनम्
+      अस्त्य् एव न विना तस्माद् इच्छामर्शः प्रवर्तते ॥१०॥
+    slp1: "svAminaS cAtmasaMsTasya BAvajAtasya BAsanam asty eva na vinA tasmAd icCAmarSaH pravartate"
+    iast: |-
+      svāminaś cātmasaṃsthasya bhāvajātasya bhāsanam
+      asty eva na vinā tasmād icchāmarśaḥ pravartate
+  - verse: 11
+    book: 1
+    devanagari: |-
+      स्वभावम् अवभासस्य विमर्शं विदुर् अन्यथा
+      प्रकाशो ऽर्थोपरक्तो ऽपि स्फटिकादिजडोपमः ॥११॥
+    slp1: "svaBAvam avaBAsasya vimarSaM vidur anyaTA prakASo 'rToparakto 'pi sPawikAdijaqopamaH"
+    iast: |-
+      svabhāvam avabhāsasya vimarśaṃ vidur anyathā
+      prakāśo 'rthoparakto 'pi sphaṭikādijaḍopamaḥ
+  - verse: 12
+    book: 1
+    devanagari: |-
+      आत्मात एव चैतन्यं चित्क्रिया चितिकर्तृता
+      तात्पर्येणोदितस् तेन जडात् स हि विलक्षणः ॥१२॥
+    slp1: "AtmAta eva cEtanyaM citkriyA citikartftA tAtparyeRoditas tena jaqAt sa hi vilakzaRaH"
+    iast: |-
+      ātmāta eva caitanyaṃ citkriyā citikartṛtā
+      tātparyeṇoditas tena jaḍāt sa hi vilakṣaṇaḥ
+  - verse: 13
+    book: 1
+    devanagari: |-
+      चितिः प्रत्यवमर्शात्मा परा वाक् स्वरसोदिता
+      स्वातन्त्र्यम् एतन् मुख्यं तद् ऐश्वर्यं परमात्मनः ॥१३॥
+    slp1: "citiH pratyavamarSAtmA parA vAk svarasoditA svAtantryam etan muKyaM tad ESvaryaM paramAtmanaH"
+    iast: |-
+      citiḥ pratyavamarśātmā parā vāk svarasoditā
+      svātantryam etan mukhyaṃ tad aiśvaryaṃ paramātmanaḥ
+  - verse: 14
+    book: 1
+    devanagari: |-
+      सा स्फुरत्ता महासत्ता देशकालाविशेषिनी
+      सैषा सारतया प्रोक्ता हृदयं परमेष्ठिनः ॥१४॥
+    slp1: "sA sPurattA mahAsattA deSakAlAviSezinI sEzA sAratayA proktA hfdayaM paramezWinaH"
+    iast: |-
+      sā sphurattā mahāsattā deśakālāviśeṣinī
+      saiṣā sāratayā proktā hṛdayaṃ parameṣṭhinaḥ
+  - verse: 15
+    book: 1
+    devanagari: |-
+      आत्मानम् अत एवायं ज्ञेयीकुर्यात् पृथक्स्थिति
+      ज्ञेयं न तु तदौन्मुख्यात् खण्ड्येतास्य स्वतन्त्रता ॥१५॥
+    slp1: "AtmAnam ata evAyaM jYeyIkuryAt pfTaksTiti jYeyaM na tu tadOnmuKyAt KaRqyetAsya svatantratA"
+    iast: |-
+      ātmānam ata evāyaṃ jñeyīkuryāt pṛthaksthiti
+      jñeyaṃ na tu tadaunmukhyāt khaṇḍyetāsya svatantratā
+  - verse: 16
+    book: 1
+    devanagari: |-
+      स्वातन्त्र्यामुक्तात्मानं स्वातन्त्र्याद् अद्वयात्मनः
+      प्रभुर् ईशादिसंकल्पैर् निर्माय व्यवहारयेत् ॥१६॥
+    slp1: "svAtantryAmuktAtmAnaM svAtantryAd advayAtmanaH praBur ISAdisaMkalpEr nirmAya vyavahArayet"
+    iast: |-
+      svātantryāmuktātmānaṃ svātantryād advayātmanaḥ
+      prabhur īśādisaṃkalpair nirmāya vyavahārayet
+  - verse: 17
+    book: 1
+    devanagari: |-
+      नाहन्तादिपरामर्शभेदाद् अस्यानयतात्मनः
+      अहंमृश्यतयाइवास्य सृष्तेस् तिङ्वाच्यकर्मवत् ॥१७॥
+    slp1: "nAhantAdiparAmarSaBedAd asyAnayatAtmanaH ahaMmfSyatayAivAsya sfztes tiNvAcyakarmavat"
+    iast: |-
+      nāhantādiparāmarśabhedād asyānayatātmanaḥ
+      ahaṃmṛśyatayāivāsya sṛṣtes tiṅvācyakarmavat
+  - verse: 18
+    book: 1
+    devanagari: |-
+      मायाशक्त्या विभोः सैव भिन्नसंवेद्यगोचरा
+      कथिता ज्ञानसंकल्पाध्यवसायादिनामभिः ॥१८॥
+    slp1: "mAyASaktyA viBoH sEva BinnasaMvedyagocarA kaTitA jYAnasaMkalpADyavasAyAdinAmaBiH"
+    iast: |-
+      māyāśaktyā vibhoḥ saiva bhinnasaṃvedyagocarā
+      kathitā jñānasaṃkalpā-dhyavasāyādināmabhiḥ
+  - verse: 19
+    book: 1
+    devanagari: |-
+      साक्षात्कारक्षणे ऽप्य् अस्ति विमर्शः कथम् अन्यथा
+      धावनाद्य् उपपद्येत प्रतिसंधानवर्जितम् ॥१९॥
+    slp1: "sAkzAtkArakzaRe 'py asti vimarSaH kaTam anyaTA DAvanAdy upapadyeta pratisaMDAnavarjitam"
+    iast: |-
+      sākṣātkārakṣaṇe 'py asti vimarśaḥ katham anyathā
+      dhāvanādy upapadyeta pratisaṃdhānavarjitam
+  - verse: 20
+    book: 1
+    devanagari: |-
+      घटो ऽयम् इत्य् अध्यवसा नामरूपातिरेकिणी
+      परेशशक्तिर् आत्मेव भासते न त्व् इदन्तया ॥२०॥
+    slp1: "Gawo 'yam ity aDyavasA nAmarUpAtirekiRI pareSaSaktir Atmeva BAsate na tv idantayA"
+    iast: |-
+      ghaṭo 'yam ity adhyavasā nāmarūpātirekiṇī
+      pareśaśaktir ātmeva bhāsate na tv idantayā
+  - verse: 21
+    book: 1
+    devanagari: |-
+      केवलं भिन्नसम्वेद्यदेशकालानुरोधतः
+      ज्ञानस्मृत्यवसायादि सक्रमं प्रतिभासते ॥२१॥
+    slp1: "kevalaM BinnasamvedyadeSakAlAnuroDataH jYAnasmftyavasAyAdi sakramaM pratiBAsate"
+    iast: |-
+      kevalaṃ bhinnasamvedyadeśakālānurodhataḥ
+      jñānasmṛtyavasāyādi sakramaṃ pratibhāsate
+- chapter: 6
+  title_sa: ज्ञानाधिकारे षष्ठम् आह्निकम्
+  title_iast: "jñānādhikāre ṣaṣṭham āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 6"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      अहंप्रत्यवमर्शो यः प्रकाशात्मापि वाग्वपुः
+      नासौ विकल्पः स ह्य् उक्तो द्वयाक्षेपी विनिश्चयः ॥१॥
+    slp1: "ahaMpratyavamarSo yaH prakASAtmApi vAgvapuH nAsO vikalpaH sa hy ukto dvayAkzepI viniScayaH"
+    iast: |-
+      ahaṃpratyavamarśo yaḥ prakāśātmāpi vāgvapuḥ
+      nāsau vikalpaḥ sa hy ukto dvayākṣepī viniścayaḥ
+  - verse: 2
+    book: 1
+    devanagari: |-
+      भिन्नयोर् अवभासो हि स्याद् घटाघटयोर् द्वयोः
+      प्रकाशस्येव नान्यस्य भेदिनस् त्व् अवभासनम् ॥२॥
+    slp1: "Binnayor avaBAso hi syAd GawAGawayor dvayoH prakASasyeva nAnyasya Bedinas tv avaBAsanam"
+    iast: |-
+      bhinnayor avabhāso hi syād ghaṭāghaṭayor dvayoḥ
+      prakāśasyeva nānyasya bhedinas tv avabhāsanam
+  - verse: 3
+    book: 1
+    devanagari: |-
+      तदतत्प्रतिभाभाजा मात्रैवातद्व्यपोहनात्
+      तन्निश्चयनमुक्तो हि विकल्पो घट इत्य् अयम् ॥३॥
+    slp1: "tadatatpratiBABAjA mAtrEvAtadvyapohanAt tanniScayanamukto hi vikalpo Gawa ity ayam"
+    iast: |-
+      tadatatpratibhābhājā mātraivātadvyapohanāt
+      tanniścayanamukto hi vikalpo ghaṭa ity ayam
+  - verse: 4
+    book: 1
+    devanagari: |-
+      चित्तत्त्वं मायया हित्वा भिन्न एवावभाति यः
+      देहे बुद्धाव् अथ प्राणे कल्पिते नभसीव वा ॥४॥
+    slp1: "cittattvaM mAyayA hitvA Binna evAvaBAti yaH dehe budDAv aTa prARe kalpite naBasIva vA"
+    iast: |-
+      cittattvaṃ māyayā hitvā bhinna evāvabhāti yaḥ
+      dehe buddhāv atha prāṇe kalpite nabhasīva vā
+  - verse: 5
+    book: 1
+    devanagari: |-
+      प्रमातृत्वेनाहम् इति विमर्शो ऽन्यव्यपोहनात्
+      विकल्प एव स परप्रतियोग्य् अवभासजः ॥५॥
+    slp1: "pramAtftvenAham iti vimarSo 'nyavyapohanAt vikalpa eva sa parapratiyogy avaBAsajaH"
+    iast: |-
+      pramātṛtvenāham iti vimarśo 'nyavyapohanāt
+      vikalpa eva sa parapratiyogy avabhāsajaḥ
+  - verse: 6
+    book: 1
+    devanagari: |-
+      कादाचित्कावभासे या पूर्वाभासादियोजना
+      संस्कारात् कल्पना प्रोक्ता सापि भिन्नावभासिनि ॥६॥
+    slp1: "kAdAcitkAvaBAse yA pUrvABAsAdiyojanA saMskArAt kalpanA proktA sApi BinnAvaBAsini"
+    iast: |-
+      kādācitkāvabhāse yā pūrvābhāsādiyojanā
+      saṃskārāt kalpanā proktā sāpi bhinnāvabhāsini
+  - verse: 7
+    book: 1
+    devanagari: |-
+      तद् एवं व्यवहारे ऽपि प्रभुर् देहादिम् आविशन्
+      भान्तम् एवान्त अर्थौघम् इच्छया भासयेद् बहिः ॥७॥
+    slp1: "tad evaM vyavahAre 'pi praBur dehAdim AviSan BAntam evAnta arTOGam icCayA BAsayed bahiH"
+    iast: |-
+      tad evaṃ vyavahāre 'pi prabhur dehādim āviśan
+      bhāntam evānta arthaugham icchayā bhāsayed bahiḥ
+  - verse: 8
+    book: 1
+    devanagari: |-
+      एवं स्मृतौ विकल्पे वाप्य् अपोहनपरायणे
+      ज्ञाने वाप्य् अन्तराभासः स्थित एवेति निश्चितम् ॥८॥
+    slp1: "evaM smftO vikalpe vApy apohanaparAyaRe jYAne vApy antarABAsaH sTita eveti niScitam"
+    iast: |-
+      evaṃ smṛtau vikalpe vāpy apohanaparāyaṇe
+      jñāne vāpy antarābhāsaḥ sthita eveti niścitam
+  - verse: 9
+    book: 1
+    devanagari: |-
+      किं तु नैसर्गिको ज्ञाने बहिराभासनात्मनि
+      पूर्वानुभवरूपस् तु स्थितः स स्मरणादिषु ॥९॥
+    slp1: "kiM tu nEsargiko jYAne bahirABAsanAtmani pUrvAnuBavarUpas tu sTitaH sa smaraRAdizu"
+    iast: |-
+      kiṃ tu naisargiko jñāne bahirābhāsanātmani
+      pūrvānubhavarūpas tu sthitaḥ sa smaraṇādiṣu
+  - verse: 10
+    book: 1
+    devanagari: |-
+      स नैसर्गिक एवास्ति विकल्पे स्वैरचारिणि
+      यथाभिमतसंस्थानाभासनाद् बुद्धिगोचरे ॥१०॥
+    slp1: "sa nEsargika evAsti vikalpe svEracAriRi yaTABimatasaMsTAnABAsanAd budDigocare"
+    iast: |-
+      sa naisargika evāsti vikalpe svairacāriṇi
+      yathābhimatasaṃsthānā-bhāsanād buddhigocare
+  - verse: 11
+    book: 1
+    devanagari: |-
+      अत एव यथाभीष्टसमुल्लेखावभासनात्
+      ज्ञानक्रिये स्फुटे एव सिद्धे सर्वस्य जीवतः ॥११॥
+    slp1: "ata eva yaTABIzwasamulleKAvaBAsanAt jYAnakriye sPuwe eva sidDe sarvasya jIvataH"
+    iast: |-
+      ata eva yathābhīṣṭasamullekhāvabhāsanāt
+      jñānakriye sphuṭe eva siddhe sarvasya jīvataḥ
+- chapter: 7
+  title_sa: ज्ञानाधिकारे सप्तमम् आह्निकम्
+  title_iast: "jñānādhikāre saptamam āhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 7"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      या चैषा प्रतिभा तत्तत्पदार्थक्रमरूषिता
+      अक्रमानन्तचिद्रूपः प्रमाता स महेश्वरः ॥१॥
+    slp1: "yA cEzA pratiBA tattatpadArTakramarUzitA akramAnantacidrUpaH pramAtA sa maheSvaraH"
+    iast: |-
+      yā caiṣā pratibhā tattatpadārthakramarūṣitā
+      akramānantacidrūpaḥ pramātā sa maheśvaraḥ
+  - verse: 2
+    book: 1
+    devanagari: |-
+      तत्तद्विभिन्नसंवित्तिमुखैर् एकप्रमातरि
+      प्रतितिष्ठत्सु भावेषु ज्ञातेयम् उपपद्यते ॥२॥
+    slp1: "tattadviBinnasaMvittimuKEr ekapramAtari pratitizWatsu BAvezu jYAteyam upapadyate"
+    iast: |-
+      tattadvibhinnasaṃvittimukhair ekapramātari
+      pratitiṣṭhatsu bhāveṣu jñāteyam upapadyate
+  - verse: 3
+    book: 1
+    devanagari: |-
+      देशकालक्रमजुषाम् अर्थानां स्वसमापिनाम्
+      सकृदाभाससाध्यो ऽसाव् अन्यथा कः समन्वयः ॥३॥
+    slp1: "deSakAlakramajuzAm arTAnAM svasamApinAm sakfdABAsasADyo 'sAv anyaTA kaH samanvayaH"
+    iast: |-
+      deśakālakramajuṣām arthānāṃ svasamāpinām
+      sakṛdābhāsasādhyo 'sāv anyathā kaḥ samanvayaḥ
+  - verse: 4
+    book: 1
+    devanagari: |-
+      प्रत्यक्षानुपलम्भानां तत्तद्भिन्नांशपातिनाम्
+      कार्यकारणतासिद्धिहेतुतैकप्रमातृजा ॥४॥
+    slp1: "pratyakzAnupalamBAnAM tattadBinnAMSapAtinAm kAryakAraRatAsidDihetutEkapramAtfjA"
+    iast: |-
+      pratyakṣānupalambhānāṃ tattadbhinnāṃśapātinām
+      kāryakāraṇatāsiddhihetutaikapramātṛjā
+  - verse: 5
+    book: 1
+    devanagari: |-
+      स्मृतौ यैव स्वसंवित्तिः प्रमाणं स्वात्मसंभवे
+      पूर्वानुभवसद्भावे साधनं सैव नापरम् ॥५॥
+    slp1: "smftO yEva svasaMvittiH pramARaM svAtmasaMBave pUrvAnuBavasadBAve sADanaM sEva nAparam"
+    iast: |-
+      smṛtau yaiva svasaṃvittiḥ pramāṇaṃ svātmasaṃbhave
+      pūrvānubhavasadbhāve sādhanaṃ saiva nāparam
+  - verse: 6
+    book: 1
+    devanagari: |-
+      बाध्यबाधकभावो ऽपि स्वात्मनिष्ठाविरोधिनाम्
+      ज्ञानानाम् उदियाद् एकप्रमातृपरिनिष्ठितेः ॥६॥
+    slp1: "bADyabADakaBAvo 'pi svAtmanizWAviroDinAm jYAnAnAm udiyAd ekapramAtfparinizWiteH"
+    iast: |-
+      bādhyabādhakabhāvo 'pi svātmaniṣṭhāvirodhinām
+      jñānānām udiyād ekapramātṛpariniṣṭhiteḥ
+  - verse: 7
+    book: 1
+    devanagari: |-
+      विविक्तभूतलज्ञानं घटाभावमतिर् यथा
+      तथा चेच्छुक्तिकाज्ञानं रूप्यज्ञानाप्रमात्ववित् ॥७॥
+    slp1: "viviktaBUtalajYAnaM GawABAvamatir yaTA taTA cecCuktikAjYAnaM rUpyajYAnApramAtvavit"
+    iast: |-
+      viviktabhūtalajñānaṃ ghaṭābhāvamatir yathā
+      tathā cecchuktikājñānaṃ rūpyajñānāpramātvavit
+  - verse: 8
+    book: 1
+    devanagari: |-
+      नैवं शुद्धस्थलज्ञानात् सिद्ध्येत् तस्याघटात्मना
+      न तूपलब्धियोग्यस्याप्य् अत्राभावो घटात्मनः ॥८॥
+    slp1: "nEvaM SudDasTalajYAnAt sidDyet tasyAGawAtmanA na tUpalabDiyogyasyApy atrABAvo GawAtmanaH"
+    iast: |-
+      naivaṃ śuddhasthalajñānāt siddhyet tasyāghaṭātmanā
+      na tūpalabdhiyogyasyāpy atrābhāvo ghaṭātmanaḥ
+  - verse: 9
+    book: 1
+    devanagari: |-
+      विविक्तं भूतलं शश्वद् भावानां स्वात्मनिष्ठितेः
+      तत् कथं जातु तज्ज्ञानं भिन्नस्याभावसाधनम् ॥९॥
+    slp1: "viviktaM BUtalaM SaSvad BAvAnAM svAtmanizWiteH tat kaTaM jAtu tajjYAnaM BinnasyABAvasADanam"
+    iast: |-
+      viviktaṃ bhūtalaṃ śaśvad bhāvānāṃ svātmaniṣṭhiteḥ
+      tat kathaṃ jātu tajjñānaṃ bhinnasyābhāvasādhanam
+  - verse: 10
+    book: 1
+    devanagari: |-
+      किम् त्व् आलोकचयो ऽन्धस्य स्पर्शो वोष्णादिको मृदुः
+      तत्रास्ति साधयेत् तस्य स्वज्ञानम् अघटात्मताम् ॥१०॥
+    slp1: "kim tv Alokacayo 'nDasya sparSo vozRAdiko mfduH tatrAsti sADayet tasya svajYAnam aGawAtmatAm"
+    iast: |-
+      kim tv ālokacayo 'ndhasya sparśo voṣṇādiko mṛduḥ
+      tatrāsti sādhayet tasya svajñānam aghaṭātmatām
+  - verse: 11
+    book: 1
+    devanagari: |-
+      पिशाचः स्याद् अनालोको ऽप्य् आलोकाभ्यन्तरे यथा
+      अदृश्यो भूतलस्यान्त न निषेध्यः स सर्वथा ॥११॥
+    slp1: "piSAcaH syAd anAloko 'py AlokAByantare yaTA adfSyo BUtalasyAnta na nizeDyaH sa sarvaTA"
+    iast: |-
+      piśācaḥ syād anāloko 'py ālokābhyantare yathā
+      adṛśyo bhūtalasyānta na niṣedhyaḥ sa sarvathā
+  - verse: 12
+    book: 1
+    devanagari: |-
+      एवं रूप्यविदाभावरूपा शुक्तिमतिर् भवेत्
+      न त्व् आद्यरजतज्ञप्तेः स्याद् अप्रामाण्यवेदिका ॥१२॥
+    slp1: "evaM rUpyavidABAvarUpA Suktimatir Bavet na tv AdyarajatajYapteH syAd aprAmARyavedikA"
+    iast: |-
+      evaṃ rūpyavidābhāvarūpā śuktimatir bhavet
+      na tv ādyarajatajñapteḥ syād aprāmāṇyavedikā
+  - verse: 13
+    book: 1
+    devanagari: |-
+      धर्म्यसिद्धेर् अपि भवेद् बाधा नैवानुमानतः
+      स्वसंवेदनसिद्धा तु युक्ता सैकप्रमातृजा ॥१३॥
+    slp1: "DarmyasidDer api Baved bADA nEvAnumAnataH svasaMvedanasidDA tu yuktA sEkapramAtfjA"
+    iast: |-
+      dharmyasiddher api bhaved bādhā naivānumānataḥ
+      svasaṃvedanasiddhā tu yuktā saikapramātṛjā
+  - verse: 14
+    book: 1
+    devanagari: |-
+      इत्थम् अत्यर्थभिन्नार्थावभासखचिते विभौ
+      समलो विमलो वापि व्यवहारो ऽनुभूयते ॥१४॥
+    slp1: "itTam atyarTaBinnArTAvaBAsaKacite viBO samalo vimalo vApi vyavahAro 'nuBUyate"
+    iast: |-
+      ittham atyarthabhinnārthā-vabhāsakhacite vibhau
+      samalo vimalo vāpi vyavahāro 'nubhūyate
+- chapter: 8
+  title_sa: ज्ञानाधिकारे ऽष्टमाह्निकम्
+  title_iast: "jñānādhikāre 'ṣṭamāhnikam"
+  title_en: "Jñānādhikāra (Knowledge) — Āhnika 8"
+  verses:
+  - verse: 1
+    book: 1
+    devanagari: |-
+      तात्कालिकाक्षसामक्ष्यसापेक्षाः केवलं क्व चित्
+      आभासा अन्यथान्यत्र त्व् अन्धान्धतमसादिषु ॥१॥
+    slp1: "tAtkAlikAkzasAmakzyasApekzAH kevalaM kva cit ABAsA anyaTAnyatra tv anDAnDatamasAdizu"
+    iast: |-
+      tātkālikākṣasāmakṣyasāpekṣāḥ kevalaṃ kva cit
+      ābhāsā anyathānyatra tv andhāndhatamasādiṣu
+  - verse: 2
+    book: 1
+    devanagari: |-
+      विशेषो ऽर्थावभासस्य सत्तायां न पुनः क्व चित्
+      विकल्पेषु भवेद् भाविभवद्भूतार्थगामिषु ॥२॥
+    slp1: "viSezo 'rTAvaBAsasya sattAyAM na punaH kva cit vikalpezu Baved BAviBavadBUtArTagAmizu"
+    iast: |-
+      viśeṣo 'rthāvabhāsasya sattāyāṃ na punaḥ kva cit
+      vikalpeṣu bhaved bhāvibhavadbhūtārthagāmiṣu
+  - verse: 3
+    book: 1
+    devanagari: |-
+      सुखादिषु च सौख्यादिहेतुष्व् अपि च वस्तुषु
+      अवभासस्य सद्भावे ऽप्य् अतीतत्वात् तथा स्थितिः ॥३॥
+    slp1: "suKAdizu ca sOKyAdihetuzv api ca vastuzu avaBAsasya sadBAve 'py atItatvAt taTA sTitiH"
+    iast: |-
+      sukhādiṣu ca saukhyādihetuṣv api ca vastuṣu
+      avabhāsasya sadbhāve 'py atītatvāt tathā sthitiḥ
+  - verse: 4
+    book: 1
+    devanagari: |-
+      गाढम् उल्लिख्यमाने तु विकल्पेन सुखादिके
+      तथा स्थितिस् तथैव स्यात् स्फुटम् अस्योपलक्षणात् ॥४॥
+    slp1: "gAQam ulliKyamAne tu vikalpena suKAdike taTA sTitis taTEva syAt sPuwam asyopalakzaRAt"
+    iast: |-
+      gāḍham ullikhyamāne tu vikalpena sukhādike
+      tathā sthitis tathaiva syāt sphuṭam asyopalakṣaṇāt
+  - verse: 5
+    book: 1
+    devanagari: |-
+      भावाभावावभासानां बाह्यतोपाधिर् इष्यते
+      नात्मा सत्ता ततस् तेषाम् आन्तराणां सतां सदा ॥५॥
+    slp1: "BAvABAvAvaBAsAnAM bAhyatopADir izyate nAtmA sattA tatas tezAm AntarARAM satAM sadA"
+    iast: |-
+      bhāvābhāvāvabhāsānāṃ bāhyatopādhir iṣyate
+      nātmā sattā tatas teṣām āntarāṇāṃ satāṃ sadā
+  - verse: 6
+    book: 1
+    devanagari: |-
+      आन्तरत्वात् प्रमात्रैक्ये नैषां भेदनिबन्धना
+      अर्थक्रियापि बाह्यत्वे सा भिन्नाभासभेदतः ॥६॥
+    slp1: "AntaratvAt pramAtrEkye nEzAM BedanibanDanA arTakriyApi bAhyatve sA BinnABAsaBedataH"
+    iast: |-
+      āntaratvāt pramātraikye naiṣāṃ bhedanibandhanā
+      arthakriyāpi bāhyatve sā bhinnābhāsabhedataḥ
+  - verse: 7
+    book: 1
+    devanagari: |-
+      चिन्मयत्वे ऽवभासानाम् अन्त एव स्थितिः सदा
+      मायया भासमानानां बाह्यत्वाद् बहिर् अप्य् असौ ॥७॥
+    slp1: "cinmayatve 'vaBAsAnAm anta eva sTitiH sadA mAyayA BAsamAnAnAM bAhyatvAd bahir apy asO"
+    iast: |-
+      cinmayatve 'vabhāsānām anta eva sthitiḥ sadā
+      māyayā bhāsamānānāṃ bāhyatvād bahir apy asau
+  - verse: 8
+    book: 1
+    devanagari: |-
+      विकल्पे यो ऽयम् उल्लेखः सो ऽपि बाह्यः पृथक्प्रथः
+      प्रमात्रैकात्म्यम् आन्तर्यं ततो भेदो हि बाह्यता ॥८॥
+    slp1: "vikalpe yo 'yam ulleKaH so 'pi bAhyaH pfTakpraTaH pramAtrEkAtmyam AntaryaM tato Bedo hi bAhyatA"
+    iast: |-
+      vikalpe yo 'yam ullekhaḥ so 'pi bāhyaḥ pṛthakprathaḥ
+      pramātraikātmyam āntaryaṃ tato bhedo hi bāhyatā
+  - verse: 9
+    book: 1
+    devanagari: |-
+      उल्लेखस्य सुखादेश् च प्रकाशो बहिर् आत्मना
+      इच्छातो भर्तुर् अध्यक्षरूपो ऽक्षादिभुवां यथा ॥९॥
+    slp1: "ulleKasya suKAdeS ca prakASo bahir AtmanA icCAto Bartur aDyakzarUpo 'kzAdiBuvAM yaTA"
+    iast: |-
+      ullekhasya sukhādeś ca prakāśo bahir ātmanā
+      icchāto bhartur adhyakṣarūpo 'kṣādibhuvāṃ yathā
+  - verse: 10
+    book: 1
+    devanagari: |-
+      तदैक्येन विना न स्यात् संविदां लोकपद्धतिः
+      प्रकाशैक्यात् तद् एकत्वं मातैकः स इति स्थितम् ॥१०॥
+    slp1: "tadEkyena vinA na syAt saMvidAM lokapadDatiH prakASEkyAt tad ekatvaM mAtEkaH sa iti sTitam"
+    iast: |-
+      tadaikyena vinā na syāt saṃvidāṃ lokapaddhatiḥ
+      prakāśaikyāt tad ekatvaṃ mātaikaḥ sa iti sthitam
+  - verse: 11
+    book: 1
+    devanagari: |-
+      स एव विमृशत्त्वेन नियतेन महेश्वरः
+      विमर्श एव देवस्य शुद्धे ज्ञानक्रिये यतः ॥११॥
+    slp1: "sa eva vimfSattvena niyatena maheSvaraH vimarSa eva devasya SudDe jYAnakriye yataH"
+    iast: |-
+      sa eva vimṛśattvena niyatena maheśvaraḥ
+      vimarśa eva devasya śuddhe jñānakriye yataḥ
+- chapter: 9
+  title_sa: क्रियाधिकारे प्रथमम् आह्निकम्
+  title_iast: "kriyādhikāre prathamam āhnikam"
+  title_en: "Kriyādhikāra (Action) — Āhnika 1"
+  verses:
+  - verse: 1
+    book: 2
+    devanagari: |-
+      अत एव यद् अप्य् उक्तं क्रिया नैकस्य सक्रमा
+      एकेत्यादि प्रतिक्षिप्तं तद् एकस्य समर्थनात् ॥१॥
+    slp1: "ata eva yad apy uktaM kriyA nEkasya sakramA eketyAdi pratikziptaM tad ekasya samarTanAt"
+    iast: |-
+      ata eva yad apy uktaṃ kriyā naikasya sakramā
+      eketyādi pratikṣiptaṃ tad ekasya samarthanāt
+  - verse: 2
+    book: 2
+    devanagari: |-
+      सक्रमत्वं च लौकिक्याः क्रियायाः कालशक्तितः
+      घटते न तु शाश्वत्याः प्राभव्याः स्यात् प्रभोर् इव ॥२॥
+    slp1: "sakramatvaM ca lOkikyAH kriyAyAH kAlaSaktitaH Gawate na tu SASvatyAH prABavyAH syAt praBor iva"
+    iast: |-
+      sakramatvaṃ ca laukikyāḥ kriyāyāḥ kālaśaktitaḥ
+      ghaṭate na tu śāśvatyāḥ prābhavyāḥ syāt prabhor iva
+  - verse: 3
+    book: 2
+    devanagari: |-
+      कालः सूर्यादिसंचारस् तत्तत्पुष्पादिजन्म वा
+      शीतोष्णे वाथ तल्लक्ष्यः क्रम एव स तत्त्वतः ॥३॥
+    slp1: "kAlaH sUryAdisaMcAras tattatpuzpAdijanma vA SItozRe vATa tallakzyaH krama eva sa tattvataH"
+    iast: |-
+      kālaḥ sūryādisaṃcāras tattatpuṣpādijanma vā
+      śītoṣṇe vātha tallakṣyaḥ krama eva sa tattvataḥ
+  - verse: 4
+    book: 2
+    devanagari: |-
+      क्रमो भेदाश्रयो भेदो ऽप्य् आभाससदसत्त्वतः
+      आभाससदसत्त्वे तु चित्राभासकृतः प्रभोः ॥४॥
+    slp1: "kramo BedASrayo Bedo 'py ABAsasadasattvataH ABAsasadasattve tu citrABAsakftaH praBoH"
+    iast: |-
+      kramo bhedāśrayo bhedo 'py ābhāsasadasattvataḥ
+      ābhāsasadasattve tu citrābhāsakṛtaḥ prabhoḥ
+  - verse: 5
+    book: 2
+    devanagari: |-
+      मूर्तिवैचित्र्यतो देशक्रमम् आभासयत्य् असौ
+      क्रियावैचित्र्यनिर्भासात् कालक्रमम् अपीश्वरः ॥५॥
+    slp1: "mUrtivEcitryato deSakramam ABAsayaty asO kriyAvEcitryanirBAsAt kAlakramam apISvaraH"
+    iast: |-
+      mūrtivaicitryato deśakramam ābhāsayaty asau
+      kriyāvaicitryanirbhāsāt kālakramam apīśvaraḥ
+  - verse: 6
+    book: 2
+    devanagari: |-
+      सर्वत्राभासभेदो ऽपि भवेत् कालक्रमाकरः
+      विच्छिन्नभासः शून्यादेर् मातुर् भातस्य नो सकृत् ॥६॥
+    slp1: "sarvatrABAsaBedo 'pi Bavet kAlakramAkaraH vicCinnaBAsaH SUnyAder mAtur BAtasya no sakft"
+    iast: |-
+      sarvatrābhāsabhedo 'pi bhavet kālakramākaraḥ
+      vicchinnabhāsaḥ śūnyāder mātur bhātasya no sakṛt
+  - verse: 7
+    book: 2
+    devanagari: |-
+      देशक्रमो ऽपि भावेषु भाति मातुर् मितात्मनः
+      स्वात्मेव स्वात्मना पूर्णा भावा भान्त्य् अमितस्य तु ॥७॥
+    slp1: "deSakramo 'pi BAvezu BAti mAtur mitAtmanaH svAtmeva svAtmanA pUrRA BAvA BAnty amitasya tu"
+    iast: |-
+      deśakramo 'pi bhāveṣu bhāti mātur mitātmanaḥ
+      svātmeva svātmanā pūrṇā bhāvā bhānty amitasya tu
+  - verse: 8
+    book: 2
+    devanagari: |-
+      किं तु निर्माणशक्तिः साप्य् एवं विदुष ईशितुः
+      तथा विज्ञातृविज्ञेयभेदो यद् अवभास्यते ॥८॥
+    slp1: "kiM tu nirmARaSaktiH sApy evaM viduza ISituH taTA vijYAtfvijYeyaBedo yad avaBAsyate"
+    iast: |-
+      kiṃ tu nirmāṇaśaktiḥ sāpy evaṃ viduṣa īśituḥ
+      tathā vijñātṛvijñeyabhedo yad avabhāsyate
+- chapter: 10
+  title_sa: क्रियाधिकारे द्वितीयम् आह्निकम्
+  title_iast: "kriyādhikāre dvitīyam āhnikam"
+  title_en: "Kriyādhikāra (Action) — Āhnika 2"
+  verses:
+  - verse: 1
+    book: 2
+    devanagari: |-
+      क्रियासंबन्धसामान्यद्रव्यदिक्कालबुद्धयः
+      सत्याः स्थैर्योपयोगाभ्याम् एकानेकाश्रया मताः ॥१॥
+    slp1: "kriyAsaMbanDasAmAnyadravyadikkAlabudDayaH satyAH sTEryopayogAByAm ekAnekASrayA matAH"
+    iast: |-
+      kriyāsaṃbandhasāmānyadravyadikkālabuddhayaḥ
+      satyāḥ sthairyopayogābhyām ekānekāśrayā matāḥ
+  - verse: 2
+    book: 2
+    devanagari: |-
+      तत्रैकम् आन्तरं तत्त्वं तद् एवेन्द्रियवेद्यताम्
+      संप्राप्यानेकतां याति देशकालस्वभावतः ॥२॥
+    slp1: "tatrEkam AntaraM tattvaM tad evendriyavedyatAm saMprApyAnekatAM yAti deSakAlasvaBAvataH"
+    iast: |-
+      tatraikam āntaraṃ tattvaṃ tad evendriyavedyatām
+      saṃprāpyānekatāṃ yāti deśakālasvabhāvataḥ
+  - verse: 3
+    book: 2
+    devanagari: |-
+      तद्द्वयालम्बना एता मनो ऽनुव्यवसायि सत्
+      करोति मातृव्यापारमयीः कर्मादिकल्पनाः ॥३॥
+    slp1: "taddvayAlambanA etA mano 'nuvyavasAyi sat karoti mAtfvyApAramayIH karmAdikalpanAH"
+    iast: |-
+      taddvayālambanā etā mano 'nuvyavasāyi sat
+      karoti mātṛvyāpāramayīḥ karmādikalpanāḥ
+  - verse: 4
+    book: 2
+    devanagari: |-
+      स्वात्मनिष्ठा विविक्ताभा भावा एकप्रमातरि
+      अन्योन्यान्वयरूपैक्ययुजः संबन्धधीपदम् ॥४॥
+    slp1: "svAtmanizWA viviktABA BAvA ekapramAtari anyonyAnvayarUpEkyayujaH saMbanDaDIpadam"
+    iast: |-
+      svātmaniṣṭhā viviktābhā bhāvā ekapramātari
+      anyonyānvayarūpaikyayujaḥ saṃbandhadhīpadam
+  - verse: 5
+    book: 2
+    devanagari: |-
+      जातिद्रव्यावभासानाम् बहिर् अप्य् एकरूपताम्
+      व्यक्त्येकदेशभेदं चाप्य् आलम्बन्ते विकल्पनाः ॥५॥
+    slp1: "jAtidravyAvaBAsAnAm bahir apy ekarUpatAm vyaktyekadeSaBedaM cApy Alambante vikalpanAH"
+    iast: |-
+      jātidravyāvabhāsānām bahir apy ekarūpatām
+      vyaktyekadeśabhedaṃ cāpy ālambante vikalpanāḥ
+  - verse: 6
+    book: 2
+    devanagari: |-
+      क्रियाविमर्शविषयः कारकाणां समन्वयः
+      अवध्यवधिमद्भावान्वयालम्बा दिगादिधीः ॥६॥
+    slp1: "kriyAvimarSavizayaH kArakARAM samanvayaH avaDyavaDimadBAvAnvayAlambA digAdiDIH"
+    iast: |-
+      kriyāvimarśaviṣayaḥ kārakāṇāṃ samanvayaḥ
+      avadhyavadhimadbhāvā-nvayālambā digādidhīḥ
+  - verse: 7
+    book: 2
+    devanagari: |-
+      एवम् एवर्थसिद्धिः स्यान् मातुर् अर्थक्रियार्थिनः
+      भेदाभेदवतार्थेन तेन न भ्रान्तिर् ईदृशी ॥७॥
+    slp1: "evam evarTasidDiH syAn mAtur arTakriyArTinaH BedABedavatArTena tena na BrAntir IdfSI"
+    iast: |-
+      evam evarthasiddhiḥ syān mātur arthakriyārthinaḥ
+      bhedābhedavatārthena tena na bhrāntir īdṛśī
+- chapter: 11
+  title_sa: क्रियाधिकारे तृतीयम् आह्निकम्
+  title_iast: "kriyādhikāre tṛtīyam āhnikam"
+  title_en: "Kriyādhikāra (Action) — Āhnika 3"
+  verses:
+  - verse: 1
+    book: 2
+    devanagari: |-
+      इदम् एतादृगित्येवं यद् वशाद् व्यवतिष्ठते
+      वस्तु प्रमाणं तत् सो ऽपि स्वाभासो ऽभिनवोदयः ॥१॥
+    slp1: "idam etAdfgityevaM yad vaSAd vyavatizWate vastu pramARaM tat so 'pi svABAso 'BinavodayaH"
+    iast: |-
+      idam etādṛgityevaṃ yad vaśād vyavatiṣṭhate
+      vastu pramāṇaṃ tat so 'pi svābhāso 'bhinavodayaḥ
+  - verse: 2
+    book: 2
+    devanagari: |-
+      सो ऽन्तस् तथाविमर्शात्मा देशकालाद्यभेदिनि
+      एकाभिधानविषये मितिर् वस्तुन्य् अबाधिता ॥२॥
+    slp1: "so 'ntas taTAvimarSAtmA deSakAlAdyaBedini ekABiDAnavizaye mitir vastuny abADitA"
+    iast: |-
+      so 'ntas tathāvimarśātmā deśakālādyabhedini
+      ekābhidhānaviṣaye mitir vastuny abādhitā
+  - verse: 3
+    book: 2
+    devanagari: |-
+      यथारुचि यथार्थित्वं यथाव्युत्पत्ति भिद्यते
+      आभासो ऽप्य् अर्थ एकस्मिन्न् अनुसंधानसाधिते ॥३॥
+    slp1: "yaTAruci yaTArTitvaM yaTAvyutpatti Bidyate ABAso 'py arTa ekasminn anusaMDAnasADite"
+    iast: |-
+      yathāruci yathārthitvaṃ yathāvyutpatti bhidyate
+      ābhāso 'py artha ekasminn anusaṃdhānasādhite
+  - verse: 4
+    book: 2
+    devanagari: |-
+      दीर्घवृत्तोर्ध्वपुरुषधूमचान्दनतादिभिः
+      यथाभासा विभिद्यन्ते देशकालाविभेदिनः ॥४॥
+    slp1: "dIrGavfttorDvapuruzaDUmacAndanatAdiBiH yaTABAsA viBidyante deSakAlAviBedinaH"
+    iast: |-
+      dīrghavṛttordhvapuruṣadhūmacāndanatādibhiḥ
+      yathābhāsā vibhidyante deśakālāvibhedinaḥ
+  - verse: 5
+    book: 2
+    devanagari: |-
+      तथैव सद्घटद्रव्यकाञ्चनोज्ज्वलतादयः
+      आभासभेदा भिन्नार्थकारिणस् ते पदं ध्वनेः ॥५॥
+    slp1: "taTEva sadGawadravyakAYcanojjvalatAdayaH ABAsaBedA BinnArTakAriRas te padaM DvaneH"
+    iast: |-
+      tathaiva sadghaṭadravyakāñcanojjvalatādayaḥ
+      ābhāsabhedā bhinnārthakāriṇas te padaṃ dhvaneḥ
+  - verse: 6
+    book: 2
+    devanagari: |-
+      आभासभेदाद् वस्तूनां नियतार्थक्रिया पुनः
+      सामानाधिकरण्येन प्रतिभासाद् अभेदिनाम् ॥६॥
+    slp1: "ABAsaBedAd vastUnAM niyatArTakriyA punaH sAmAnADikaraRyena pratiBAsAd aBedinAm"
+    iast: |-
+      ābhāsabhedād vastūnāṃ niyatārthakriyā punaḥ
+      sāmānādhikaraṇyena pratibhāsād abhedinām
+  - verse: 7
+    book: 2
+    devanagari: |-
+      पृथग्दीपप्रकाशानां स्रोतसां सागरे यथा
+      अविरुद्धावभासानाम् एककार्या तथैक्यधीः ॥७॥
+    slp1: "pfTagdIpaprakASAnAM srotasAM sAgare yaTA avirudDAvaBAsAnAm ekakAryA taTEkyaDIH"
+    iast: |-
+      pṛthagdīpaprakāśānāṃ srotasāṃ sāgare yathā
+      aviruddhāvabhāsānām ekakāryā tathaikyadhīḥ
+  - verse: 8
+    book: 2
+    devanagari: |-
+      तत्राविशिष्टे वह्न्यादौ कार्यकारणतोष्णता
+      तत्तच्छब्दार्थताद्यात्मा प्रमाणाद् एकतो मतः ॥८॥
+    slp1: "tatrAviSizwe vahnyAdO kAryakAraRatozRatA tattacCabdArTatAdyAtmA pramARAd ekato mataH"
+    iast: |-
+      tatrāviśiṣṭe vahnyādau kāryakāraṇatoṣṇatā
+      tattacchabdārthatādyātmā pramāṇād ekato mataḥ
+  - verse: 9
+    book: 2
+    devanagari: |-
+      सा तु देशादिकाध्यक्षन्तरभिन्ने स्वलक्षणे
+      तात्कालिकी प्रवृत्तिः स्याद् अर्थिनो ऽप्य् अनुमानतः ॥९॥
+    slp1: "sA tu deSAdikADyakzantaraBinne svalakzaRe tAtkAlikI pravfttiH syAd arTino 'py anumAnataH"
+    iast: |-
+      sā tu deśādikādhyakṣa-ntarabhinne svalakṣaṇe
+      tātkālikī pravṛttiḥ syād arthino 'py anumānataḥ
+  - verse: 10
+    book: 2
+    devanagari: |-
+      दूरान्तिकतयार्थानां परोक्षाध्यक्षतात्मना
+      बाह्यान्तरतया दोषैर् व्यञ्जकस्यान्यथापि वा ॥१०॥
+    slp1: "dUrAntikatayArTAnAM parokzADyakzatAtmanA bAhyAntaratayA dozEr vyaYjakasyAnyaTApi vA"
+    iast: |-
+      dūrāntikatayārthānāṃ parokṣādhyakṣatātmanā
+      bāhyāntaratayā doṣair vyañjakasyānyathāpi vā
+  - verse: 11
+    book: 2
+    devanagari: |-
+      भिन्नावभासच्छायानाम् अपि मुख्यावभासतः
+      एकप्रत्यवमर्शाख्याद् एकत्वम् अनिवारितम् ॥११॥
+    slp1: "BinnAvaBAsacCAyAnAm api muKyAvaBAsataH ekapratyavamarSAKyAd ekatvam anivAritam"
+    iast: |-
+      bhinnāvabhāsacchāyānām api mukhyāvabhāsataḥ
+      ekapratyavamarśākhyād ekatvam anivāritam
+  - verse: 12
+    book: 2
+    devanagari: |-
+      अर्थक्रियापि सहजा नार्थानाम् ईश्वरेच्छया
+      नियता सा हि तेनास्या नाक्रियातो ऽन्यता भवेत् ॥१२॥
+    slp1: "arTakriyApi sahajA nArTAnAm ISvarecCayA niyatA sA hi tenAsyA nAkriyAto 'nyatA Bavet"
+    iast: |-
+      arthakriyāpi sahajā nārthānām īśvarecchayā
+      niyatā sā hi tenāsyā nākriyāto 'nyatā bhavet
+  - verse: 13
+    book: 2
+    devanagari: |-
+      रजतैकविमर्शे ऽपि शुक्तौ न रजतस्थितिः
+      उपाधिदेशासंवादाद् द्विचन्द्रे ऽपि नभो ऽन्यथा ॥१३॥
+    slp1: "rajatEkavimarSe 'pi SuktO na rajatasTitiH upADideSAsaMvAdAd dvicandre 'pi naBo 'nyaTA"
+    iast: |-
+      rajataikavimarśe 'pi śuktau na rajatasthitiḥ
+      upādhideśāsaṃvādād dvicandre 'pi nabho 'nyathā
+  - verse: 14
+    book: 2
+    devanagari: |-
+      गुणैः शब्दादिभिर् भेदो जात्यादिभिर् अभिन्नता
+      भावानाम् इत्थम् एकत्र प्रमातर्य् उपपद्यते ॥१४॥
+    slp1: "guREH SabdAdiBir Bedo jAtyAdiBir aBinnatA BAvAnAm itTam ekatra pramAtary upapadyate"
+    iast: |-
+      guṇaiḥ śabdādibhir bhedo jātyādibhir abhinnatā
+      bhāvānām ittham ekatra pramātary upapadyate
+  - verse: 15
+    book: 2
+    devanagari: |-
+      विश्ववैचित्र्यचित्रस्य समभित्तितलोपमे
+      विरुद्धाभावसंस्पर्शे परमार्थसतीश्वरे ॥१५॥
+    slp1: "viSvavEcitryacitrasya samaBittitalopame virudDABAvasaMsparSe paramArTasatISvare"
+    iast: |-
+      viśvavaicitryacitrasya samabhittitalopame
+      viruddhābhāvasaṃsparśe paramārthasatīśvare
+  - verse: 16
+    book: 2
+    devanagari: |-
+      प्रमातरि पुराणे तु सर्वदा भातविग्रहे
+      किं प्रमाणं नवाभासः सर्वप्रमितिभागिनि ॥१६॥
+    slp1: "pramAtari purARe tu sarvadA BAtavigrahe kiM pramARaM navABAsaH sarvapramitiBAgini"
+    iast: |-
+      pramātari purāṇe tu sarvadā bhātavigrahe
+      kiṃ pramāṇaṃ navābhāsaḥ sarvapramitibhāgini
+  - verse: 17
+    book: 2
+    devanagari: |-
+      अप्रवर्तितपूर्वो ऽत्र केवलं मूढतावशात्
+      शक्तिप्रकाशेनेशादिव्यवहारः प्रवर्त्यते ॥१७॥
+    slp1: "apravartitapUrvo 'tra kevalaM mUQatAvaSAt SaktiprakASeneSAdivyavahAraH pravartyate"
+    iast: |-
+      apravartitapūrvo 'tra kevalaṃ mūḍhatāvaśāt
+      śaktiprakāśeneśādivyavahāraḥ pravartyate
+- chapter: 12
+  title_sa: क्रियाधिकारे चतुर्थम् आह्निकम्
+  title_iast: "kriyādhikāre caturtham āhnikam"
+  title_en: "Kriyādhikāra (Action) — Āhnika 4"
+  verses:
+  - verse: 1
+    book: 2
+    devanagari: |-
+      एष चानन्तशक्तित्वाद् एवम् आभासयत्य् अमून्
+      भावान् इच्छावशाद् एषा क्रिया निर्मातृतास्य सा ॥१॥
+    slp1: "eza cAnantaSaktitvAd evam ABAsayaty amUn BAvAn icCAvaSAd ezA kriyA nirmAtftAsya sA"
+    iast: |-
+      eṣa cānantaśaktitvād evam ābhāsayaty amūn
+      bhāvān icchāvaśād eṣā kriyā nirmātṛtāsya sā
+  - verse: 2
+    book: 2
+    devanagari: |-
+      जडस्य तु न सा शक्तिः सत्ता यद् असतः सतः
+      कर्तृकर्मत्वतत्त्वैव कार्यकारणता ततः ॥२॥
+    slp1: "jaqasya tu na sA SaktiH sattA yad asataH sataH kartfkarmatvatattvEva kAryakAraRatA tataH"
+    iast: |-
+      jaḍasya tu na sā śaktiḥ sattā yad asataḥ sataḥ
+      kartṛkarmatvatattvaiva kāryakāraṇatā tataḥ
+  - verse: 3
+    book: 2
+    devanagari: |-
+      यद् असत् तद् असद्युक्ता नासतः सत्स्वरूपता
+      सतो ऽपि न पुनः सत्तालाभेनार्थो ऽथ चोच्यते ॥३॥
+    slp1: "yad asat tad asadyuktA nAsataH satsvarUpatA sato 'pi na punaH sattAlABenArTo 'Ta cocyate"
+    iast: |-
+      yad asat tad asadyuktā nāsataḥ satsvarūpatā
+      sato 'pi na punaḥ sattā-lābhenārtho 'tha cocyate
+  - verse: 4
+    book: 2
+    devanagari: |-
+      कार्यकारणता लोके सान्तर्विपरिवर्तिनः
+      उभयेन्द्रियवेद्यत्वं तस्य कस्यापि शक्तितः ॥४॥
+    slp1: "kAryakAraRatA loke sAntarviparivartinaH uBayendriyavedyatvaM tasya kasyApi SaktitaH"
+    iast: |-
+      kāryakāraṇatā loke sāntarviparivartinaḥ
+      ubhayendriyavedyatvaṃ tasya kasyāpi śaktitaḥ
+  - verse: 5
+    book: 2
+    devanagari: |-
+      एवम् एका क्रिया सैषा सक्रमान्तर्बहिःस्थितिः
+      एकस्यैवोभयाकारसहिष्णोर् अपपादिता ॥५॥
+    slp1: "evam ekA kriyA sEzA sakramAntarbahiHsTitiH ekasyEvoBayAkArasahizRor apapAditA"
+    iast: |-
+      evam ekā kriyā saiṣā sakramāntarbahiḥsthitiḥ
+      ekasyaivobhayākārasahiṣṇor apapāditā
+  - verse: 6
+    book: 2
+    devanagari: |-
+      बहिस् तस्यैव तत्कार्यं यद् अन्त यद् अपेक्षया
+      प्रमात्रपेक्षया चोक्ता द्वयी बाह्यान्तरस्थितिः ॥६॥
+    slp1: "bahis tasyEva tatkAryaM yad anta yad apekzayA pramAtrapekzayA coktA dvayI bAhyAntarasTitiH"
+    iast: |-
+      bahis tasyaiva tatkāryaṃ yad anta yad apekṣayā
+      pramātrapekṣayā coktā dvayī bāhyāntarasthitiḥ
+  - verse: 7
+    book: 2
+    devanagari: |-
+      मातैव कारणं तेन स चाभासद्वयस्थितौ
+      कार्यस्य स्थित एवैकस् तद् एकस्य क्रियोदिता ॥७॥
+    slp1: "mAtEva kAraRaM tena sa cABAsadvayasTitO kAryasya sTita evEkas tad ekasya kriyoditA"
+    iast: |-
+      mātaiva kāraṇaṃ tena sa cābhāsadvayasthitau
+      kāryasya sthita evaikas tad ekasya kriyoditā
+  - verse: 8
+    book: 2
+    devanagari: |-
+      अत एवाङ्कुरे ऽपीष्टो निमित्तं परमेश्वरः
+      तद् अन्यस्यापि बीजादेर् हेतुता नोपपद्यते ॥८॥
+    slp1: "ata evANkure 'pIzwo nimittaM parameSvaraH tad anyasyApi bIjAder hetutA nopapadyate"
+    iast: |-
+      ata evāṅkure 'pīṣṭo nimittaṃ parameśvaraḥ
+      tad anyasyāpi bījāder hetutā nopapadyate
+  - verse: 9
+    book: 2
+    devanagari: |-
+      तथा हि कुम्भकारो ऽसाव् ऐश्वर्यैव व्यवस्थया
+      तत्तन्मृदादिसंस्कारक्रमेण जनयेद् घटम् ॥९॥
+    slp1: "taTA hi kumBakAro 'sAv ESvaryEva vyavasTayA tattanmfdAdisaMskArakrameRa janayed Gawam"
+    iast: |-
+      tathā hi kumbhakāro 'sāv aiśvaryaiva vyavasthayā
+      tattanmṛdādisaṃskārakrameṇa janayed ghaṭam
+  - verse: 10
+    book: 2
+    devanagari: |-
+      योगिनाम् अपि मृद्बीजे विनैवेच्छावशेन तत्
+      घटादि जायते तत्तत्स्थिरस्वार्थक्रियाकरम् ॥१०॥
+    slp1: "yoginAm api mfdbIje vinEvecCAvaSena tat GawAdi jAyate tattatsTirasvArTakriyAkaram"
+    iast: |-
+      yoginām api mṛdbīje vinaivecchāvaśena tat
+      ghaṭādi jāyate tattatsthirasvārthakriyākaram
+  - verse: 11
+    book: 2
+    devanagari: |-
+      योगिनिर्माणताभावे प्रमाणान्तरनिश्चिते
+      कार्यं हेतुः स्वभावो वात एवोत्पत्तिमूलजः ॥११॥
+    slp1: "yoginirmARatABAve pramARAntaraniScite kAryaM hetuH svaBAvo vAta evotpattimUlajaH"
+    iast: |-
+      yoginirmāṇatābhāve pramāṇāntaraniścite
+      kāryaṃ hetuḥ svabhāvo vā-ta evotpattimūlajaḥ
+  - verse: 12
+    book: 2
+    devanagari: |-
+      भूयस् तत्तत्प्रमात्रेकवह्न्याभासादितो भवेत्
+      परोक्षाद् अप्य् अधिपतेर् धूमाभासादि नूतनम् ॥१२॥
+    slp1: "BUyas tattatpramAtrekavahnyABAsAdito Bavet parokzAd apy aDipater DUmABAsAdi nUtanam"
+    iast: |-
+      bhūyas tattatpramātrekavahnyābhāsādito bhavet
+      parokṣād apy adhipater dhūmābhāsādi nūtanam
+  - verse: 13
+    book: 2
+    devanagari: |-
+      कार्यम् अव्यभिचार्यस्य लिङ्गम् अन्यप्रमातृगात्
+      तदाभासस् तदाभासाद् एव त्व् अधिपतेः परः ॥१३॥
+    slp1: "kAryam avyaBicAryasya liNgam anyapramAtfgAt tadABAsas tadABAsAd eva tv aDipateH paraH"
+    iast: |-
+      kāryam avyabhicāryasya liṅgam anyapramātṛgāt
+      tadābhāsas tadābhāsād eva tv adhipateḥ paraḥ
+  - verse: 14
+    book: 2
+    devanagari: |-
+      अस्मिन् सतीदम् अस्तीति कार्यकारणतापि या
+      साप्य् अपेक्षाविहीनानां जाडानां नोपपद्यते ॥१४॥
+    slp1: "asmin satIdam astIti kAryakAraRatApi yA sApy apekzAvihInAnAM jAqAnAM nopapadyate"
+    iast: |-
+      asmin satīdam astīti kāryakāraṇatāpi yā
+      sāpy apekṣāvihīnānāṃ jāḍānāṃ nopapadyate
+  - verse: 15
+    book: 2
+    devanagari: |-
+      न हि स्वात्मैकनिष्ठानाम् अनुसन्धानवर्जिनाम्
+      सदसत्तापदे ऽप्य् एष सप्तम्यर्थः प्रकल्प्यते ॥१५॥
+    slp1: "na hi svAtmEkanizWAnAm anusanDAnavarjinAm sadasattApade 'py eza saptamyarTaH prakalpyate"
+    iast: |-
+      na hi svātmaikaniṣṭhānām anusandhānavarjinām
+      sadasattāpade 'py eṣa saptamyarthaḥ prakalpyate
+  - verse: 16
+    book: 2
+    devanagari: |-
+      अत एव विभक्त्यर्थः प्रमात्रेकसमाश्रयः
+      क्रियाकारकभावाख्यो युक्तो भावसमन्वयः ॥१६॥
+    slp1: "ata eva viBaktyarTaH pramAtrekasamASrayaH kriyAkArakaBAvAKyo yukto BAvasamanvayaH"
+    iast: |-
+      ata eva vibhaktyarthaḥ pramātrekasamāśrayaḥ
+      kriyākārakabhāvākhyo yukto bhāvasamanvayaḥ
+  - verse: 17
+    book: 2
+    devanagari: |-
+      परस्परस्वभावत्वे कार्यकारणयोर् अपि
+      एकत्वम् एव भेदे हि नैवान्योन्यस्वरूपता ॥१७॥
+    slp1: "parasparasvaBAvatve kAryakAraRayor api ekatvam eva Bede hi nEvAnyonyasvarUpatA"
+    iast: |-
+      parasparasvabhāvatve kāryakāraṇayor api
+      ekatvam eva bhede hi naivānyonyasvarūpatā
+  - verse: 18
+    book: 2
+    devanagari: |-
+      एकात्मनो विभेदश् च क्रिया कालक्रमानुगा
+      तथा स्यात् कर्तृतैवैवं तथापरिणमत् तया ॥१८॥
+    slp1: "ekAtmano viBedaS ca kriyA kAlakramAnugA taTA syAt kartftEvEvaM taTApariRamat tayA"
+    iast: |-
+      ekātmano vibhedaś ca kriyā kālakramānugā
+      tathā syāt kartṛtaivaivaṃ tathāpariṇamat tayā
+  - verse: 19
+    book: 2
+    devanagari: |-
+      न च युक्तं जडस्यैवं भेदाभेदविरोधतः
+      आभासभेदाद् एकत्र चिदात्मनि तु युज्यते ॥१९॥
+    slp1: "na ca yuktaM jaqasyEvaM BedABedaviroDataH ABAsaBedAd ekatra cidAtmani tu yujyate"
+    iast: |-
+      na ca yuktaṃ jaḍasyaivaṃ bhedābhedavirodhataḥ
+      ābhāsabhedād ekatra cidātmani tu yujyate
+  - verse: 20
+    book: 2
+    devanagari: |-
+      वास्तवे ऽपि चिदेकत्वे न स्याद् आभासभिन्नयोः
+      चिकीर्षालक्षणैकत्वपरामर्शं विना क्रिया ॥२०॥
+    slp1: "vAstave 'pi cidekatve na syAd ABAsaBinnayoH cikIrzAlakzaREkatvaparAmarSaM vinA kriyA"
+    iast: |-
+      vāstave 'pi cidekatve na syād ābhāsabhinnayoḥ
+      cikīrṣālakṣaṇaikatvaparāmarśaṃ vinā kriyā
+  - verse: 21
+    book: 2
+    devanagari: |-
+      इत्थं तथा घटपटाद्याभासजगदात्मना
+      तिष्ठासोर् एवम् इच्छैव हेतुता कर्तृता क्रिया ॥२१॥
+    slp1: "itTaM taTA GawapawAdyABAsajagadAtmanA tizWAsor evam icCEva hetutA kartftA kriyA"
+    iast: |-
+      itthaṃ tathā ghaṭapaṭā-dyābhāsajagadātmanā
+      tiṣṭhāsor evam icchaiva hetutā kartṛtā kriyā
+- chapter: 13
+  title_sa: आगमाधिकारे प्रथमम् आह्निकम्
+  title_iast: "āgamādhikāre prathamam āhnikam"
+  title_en: "Āgamādhikāra (Scriptural Tradition) — Āhnika 1"
+  verses:
+  - verse: 1
+    book: 3
+    devanagari: |-
+      एवम् अन्तर्बहिर्वृत्तिः क्रिया कालक्रमानुगा
+      मातुर् एव तदन्योन्यावियुक्ते ज्ञानकर्मणी ॥१॥
+    slp1: "evam antarbahirvfttiH kriyA kAlakramAnugA mAtur eva tadanyonyAviyukte jYAnakarmaRI"
+    iast: |-
+      evam antarbahirvṛttiḥ kriyā kālakramānugā
+      mātur eva tadanyonyā-viyukte jñānakarmaṇī
+  - verse: 2
+    book: 3
+    devanagari: |-
+      किं त्व् आन्तरदशोद्रेकात् सादाख्यं तत्त्वम् आदितः
+      बहिर्भावपरत्वे तु परतः पारमेश्वरम् ॥२॥
+    slp1: "kiM tv AntaradaSodrekAt sAdAKyaM tattvam AditaH bahirBAvaparatve tu parataH pArameSvaram"
+    iast: |-
+      kiṃ tv āntaradaśodrekāt sādākhyaṃ tattvam āditaḥ
+      bahirbhāvaparatve tu parataḥ pārameśvaram
+  - verse: 3
+    book: 3
+    devanagari: |-
+      ईश्वरो बहिर् उन्मेषो निमेषो ऽन्तः सदाशिवः
+      सामानाधिकरण्यं च सद्विद्याहमिदंधियोः ॥३॥
+    slp1: "ISvaro bahir unmezo nimezo 'ntaH sadASivaH sAmAnADikaraRyaM ca sadvidyAhamidaMDiyoH"
+    iast: |-
+      īśvaro bahir unmeṣo nimeṣo 'ntaḥ sadāśivaḥ
+      sāmānādhikaraṇyaṃ ca sadvidyāhamidaṃdhiyoḥ
+  - verse: 4
+    book: 3
+    devanagari: |-
+      इदंभावोपपन्नानां वेद्यभूमिम् उपेयुषाम्
+      भावानां बोधसारत्वाद् यथावस्त्ववलोकनात् ॥४॥
+    slp1: "idaMBAvopapannAnAM vedyaBUmim upeyuzAm BAvAnAM boDasAratvAd yaTAvastvavalokanAt"
+    iast: |-
+      idaṃbhāvopapannānāṃ vedyabhūmim upeyuṣām
+      bhāvānāṃ bodhasāratvād yathāvastvavalokanāt
+  - verse: 5
+    book: 3
+    devanagari: |-
+      अत्रापरत्वम् भावानाम् अनात्मत्वेन भासनात्
+      परताहन्तयाच्छादात् परापरदशा हि सा ॥५॥
+    slp1: "atrAparatvam BAvAnAm anAtmatvena BAsanAt paratAhantayAcCAdAt parAparadaSA hi sA"
+    iast: |-
+      atrāparatvam bhāvānām anātmatvena bhāsanāt
+      paratāhantayācchādāt parāparadaśā hi sā
+  - verse: 6
+    book: 3
+    devanagari: |-
+      भेदधीर् एव भावेषु कर्तुर् बोधात्मनो ऽपि या
+      मायाशक्त्य् एव सा विद्येत्य् अन्ये विद्येश्वरा यथा ॥६॥
+    slp1: "BedaDIr eva BAvezu kartur boDAtmano 'pi yA mAyASakty eva sA vidyety anye vidyeSvarA yaTA"
+    iast: |-
+      bhedadhīr eva bhāveṣu kartur bodhātmano 'pi yā
+      māyāśakty eva sā vidyety anye vidyeśvarā yathā
+  - verse: 7
+    book: 3
+    devanagari: |-
+      तस्यैश्वर्यस्वभावस्य पशुभावे प्रकाशिका
+      विद्याशक्तिः तिरोधानकरी मायाभिधा पुनः ॥७॥
+    slp1: "tasyESvaryasvaBAvasya paSuBAve prakASikA vidyASaktiH tiroDAnakarI mAyABiDA punaH"
+    iast: |-
+      tasyaiśvaryasvabhāvasya paśubhāve prakāśikā
+      vidyāśaktiḥ tirodhānakarī māyābhidhā punaḥ
+  - verse: 8
+    book: 3
+    devanagari: |-
+      भेदे त्व् एकरसे भाते ऽहंतयानात्मनीक्षिते
+      शून्ये बुद्धे शरीरे वा मायाशक्तिर् विजृम्भते ॥८॥
+    slp1: "Bede tv ekarase BAte 'haMtayAnAtmanIkzite SUnye budDe SarIre vA mAyASaktir vijfmBate"
+    iast: |-
+      bhede tv ekarase bhāte 'haṃtayānātmanīkṣite
+      śūnye buddhe śarīre vā māyāśaktir vijṛmbhate
+  - verse: 9
+    book: 3
+    devanagari: |-
+      यश् च प्रमाता शून्यादिः प्रमेये व्यतिरेकिणि
+      माता स मेयः सन् कालादिकपञ्चकवेष्टितः ॥९॥
+    slp1: "yaS ca pramAtA SUnyAdiH prameye vyatirekiRi mAtA sa meyaH san kAlAdikapaYcakavezwitaH"
+    iast: |-
+      yaś ca pramātā śūnyādiḥ prameye vyatirekiṇi
+      mātā sa meyaḥ san kālā-dikapañcakaveṣṭitaḥ
+  - verse: 10
+    book: 3
+    devanagari: |-
+      त्रयोविंशतिधा मेयं यत् कार्यकरणात्मकम्
+      तस्याविभागरूप्य् एकं प्रधानं मूलकारणम् ॥१०॥
+    slp1: "trayoviMSatiDA meyaM yat kAryakaraRAtmakam tasyAviBAgarUpy ekaM praDAnaM mUlakAraRam"
+    iast: |-
+      trayoviṃśatidhā meyaṃ yat kāryakaraṇātmakam
+      tasyāvibhāgarūpy ekaṃ pradhānaṃ mūlakāraṇam
+  - verse: 11
+    book: 3
+    devanagari: |-
+      त्रयोदशविधा चात्र बाह्यान्तःकरणावली
+      कार्यवर्गश् च दशधा स्थूलसूक्ष्मत्वभेदतः ॥११॥
+    slp1: "trayodaSaviDA cAtra bAhyAntaHkaraRAvalI kAryavargaS ca daSaDA sTUlasUkzmatvaBedataH"
+    iast: |-
+      trayodaśavidhā cātra bāhyāntaḥkaraṇāvalī
+      kāryavargaś ca daśadhā sthūlasūkṣmatvabhedataḥ
+- chapter: 14
+  title_sa: आगमाधिकारे द्वितीयम् आह्निकम्
+  title_iast: "āgamādhikāre dvitīyam āhnikam"
+  title_en: "Āgamādhikāra (Scriptural Tradition) — Āhnika 2"
+  verses:
+  - verse: 1
+    book: 3
+    devanagari: |-
+      तत्रैतन् मातृतामात्रस्थितौ रुद्रो ऽधिदैवतम्
+      भिन्नप्रमेयप्रसरे ब्रह्मविष्णू व्यवस्थितौ ॥१॥
+    slp1: "tatrEtan mAtftAmAtrasTitO rudro 'DidEvatam Binnaprameyaprasare brahmavizRU vyavasTitO"
+    iast: |-
+      tatraitan mātṛtāmātrasthitau rudro 'dhidaivatam
+      bhinnaprameyaprasare brahmaviṣṇū vyavasthitau
+  - verse: 2
+    book: 3
+    devanagari: |-
+      एष प्रमाता मायान्धः संसारी कर्मबन्धनः
+      विद्याभिज्ञापितैश्वर्यश् चिद्घनो मुक्त उच्यते ॥२॥
+    slp1: "eza pramAtA mAyAnDaH saMsArI karmabanDanaH vidyABijYApitESvaryaS cidGano mukta ucyate"
+    iast: |-
+      eṣa pramātā māyāndhaḥ saṃsārī karmabandhanaḥ
+      vidyābhijñāpitaiśvaryaś cidghano mukta ucyate
+  - verse: 3
+    book: 3
+    devanagari: |-
+      स्वाङ्गरूपेषु भावेषु प्रमाता कथ्यते पतिः
+      मायातो भेदिषु क्लेशकर्मादिकलुषः पशुः ॥३॥
+    slp1: "svANgarUpezu BAvezu pramAtA kaTyate patiH mAyAto Bedizu kleSakarmAdikaluzaH paSuH"
+    iast: |-
+      svāṅgarūpeṣu bhāveṣu pramātā kathyate patiḥ
+      māyāto bhediṣu kleśakarmādikaluṣaḥ paśuḥ
+  - verse: 4
+    book: 3
+    devanagari: |-
+      स्वातन्त्र्यहानिर् बोधस्य स्वातन्त्र्यस्याप्य् अबोधता
+      द्विधाणवं मलम् इदं स्वस्वरूपापहानितः ॥४॥
+    slp1: "svAtantryahAnir boDasya svAtantryasyApy aboDatA dviDARavaM malam idaM svasvarUpApahAnitaH"
+    iast: |-
+      svātantryahānir bodhasya svātantryasyāpy abodhatā
+      dvidhāṇavaṃ malam idaṃ svasvarūpāpahānitaḥ
+  - verse: 5
+    book: 3
+    devanagari: |-
+      भिन्नवेद्यप्रथात्रैव मायाख्यं जन्मभोगदम्
+      कर्तर्य् अबोधे कार्मं तु मायाशक्त्यैव तत् त्रयम् ॥५॥
+    slp1: "BinnavedyapraTAtrEva mAyAKyaM janmaBogadam kartary aboDe kArmaM tu mAyASaktyEva tat trayam"
+    iast: |-
+      bhinnavedyaprathātraiva māyākhyaṃ janmabhogadam
+      kartary abodhe kārmaṃ tu māyāśaktyaiva tat trayam
+  - verse: 6
+    book: 3
+    devanagari: |-
+      शुद्धबोधात्मकत्वे ऽपि येषां नोत्तमकर्तृता
+      निर्मिताः स्वात्मनो भिन्ना भर्त्रा ते कर्तृतात्ययात् ॥६॥
+    slp1: "SudDaboDAtmakatve 'pi yezAM nottamakartftA nirmitAH svAtmano BinnA BartrA te kartftAtyayAt"
+    iast: |-
+      śuddhabodhātmakatve 'pi yeṣāṃ nottamakartṛtā
+      nirmitāḥ svātmano bhinnā bhartrā te kartṛtātyayāt
+  - verse: 7
+    book: 3
+    devanagari: |-
+      बोधैकलक्षणैक्ये ऽपि तेषाम् अन्योन्यभिन्नता
+      तथेश्वरेच्छाभेदेन ते च विज्ञानकेवलाः ॥७॥
+    slp1: "boDEkalakzaREkye 'pi tezAm anyonyaBinnatA taTeSvarecCABedena te ca vijYAnakevalAH"
+    iast: |-
+      bodhaikalakṣaṇaikye 'pi teṣām anyonyabhinnatā
+      tatheśvarecchābhedena te ca vijñānakevalāḥ
+  - verse: 8
+    book: 3
+    devanagari: |-
+      शून्याद्यबोधरूपास् तु कर्तारः प्रलयाकलाः
+      तेषां कार्मो मलो ऽप्य् अस्ति मायीयस् तु विकल्पितः ॥८॥
+    slp1: "SUnyAdyaboDarUpAs tu kartAraH pralayAkalAH tezAM kArmo malo 'py asti mAyIyas tu vikalpitaH"
+    iast: |-
+      śūnyādyabodharūpās tu kartāraḥ pralayākalāḥ
+      teṣāṃ kārmo malo 'py asti māyīyas tu vikalpitaḥ
+  - verse: 9
+    book: 3
+    devanagari: |-
+      बोधानाम् अपि कर्तृत्वजुषां कार्ममलक्षतौ
+      भिन्नवेद्यजुषां मायामलो विद्येश्वराश् च ते ॥९॥
+    slp1: "boDAnAm api kartftvajuzAM kArmamalakzatO BinnavedyajuzAM mAyAmalo vidyeSvarAS ca te"
+    iast: |-
+      bodhānām api kartṛtvajuṣāṃ kārmamalakṣatau
+      bhinnavedyajuṣāṃ māyāmalo vidyeśvarāś ca te
+  - verse: 10
+    book: 3
+    devanagari: |-
+      देवादीनां च सर्वेषां भविनां त्रिविधं मलम्
+      तत्रापि कार्मम् एवैकम् मुख्यं संसारकारणम् ॥१०॥
+    slp1: "devAdInAM ca sarvezAM BavinAM triviDaM malam tatrApi kArmam evEkam muKyaM saMsArakAraRam"
+    iast: |-
+      devādīnāṃ ca sarveṣāṃ bhavināṃ trividhaṃ malam
+      tatrāpi kārmam evaikam mukhyaṃ saṃsārakāraṇam
+  - verse: 11
+    book: 3
+    devanagari: |-
+      कलोद्बलितम् एतच् च चित्तत्त्वं कर्तृतामयम्
+      अचिद्रूपस्य शून्यादेर् मितं गुणतया स्थितम् ॥११॥
+    slp1: "kalodbalitam etac ca cittattvaM kartftAmayam acidrUpasya SUnyAder mitaM guRatayA sTitam"
+    iast: |-
+      kalodbalitam etac ca cittattvaṃ kartṛtāmayam
+      acidrūpasya śūnyāder mitaṃ guṇatayā sthitam
+  - verse: 12
+    book: 3
+    devanagari: |-
+      मुख्यत्वं कर्तृतायाश् च बोधस्य च चिदात्मनः
+      शून्यादौ तद्गुणे ज्ञानं तत्समावेशलक्षणम् ॥१२॥
+    slp1: "muKyatvaM kartftAyAS ca boDasya ca cidAtmanaH SUnyAdO tadguRe jYAnaM tatsamAveSalakzaRam"
+    iast: |-
+      mukhyatvaṃ kartṛtāyāś ca bodhasya ca cidātmanaḥ
+      śūnyādau tadguṇe jñānaṃ tatsamāveśalakṣaṇam
+  - verse: 13
+    book: 3
+    devanagari: |-
+      शून्ये बुद्ध्याद्यभावात्मन्य् अहन्ताकर्तृतापदे
+      अस्फुटारूपसंस्कारमात्रिणि ज्ञेयशून्यता ॥१३॥
+    slp1: "SUnye budDyAdyaBAvAtmany ahantAkartftApade asPuwArUpasaMskAramAtriRi jYeyaSUnyatA"
+    iast: |-
+      śūnye buddhyādyabhāvātmany ahantākartṛtāpade
+      asphuṭārūpasaṃskāramātriṇi jñeyaśūnyatā
+  - verse: 14
+    book: 3
+    devanagari: |-
+      साक्षाणाम् आन्तरी वृत्तिः प्राणादिप्रेरिका मता
+      जीवनाख्याथवा प्राणे ऽहन्ता पुर्यष्टकात्मिका ॥१४॥
+    slp1: "sAkzARAm AntarI vfttiH prARAdiprerikA matA jIvanAKyATavA prARe 'hantA puryazwakAtmikA"
+    iast: |-
+      sākṣāṇām āntarī vṛttiḥ prāṇādiprerikā matā
+      jīvanākhyāthavā prāṇe 'hantā puryaṣṭakātmikā
+  - verse: 15
+    book: 3
+    devanagari: |-
+      तावन् मात्रस्थितौ प्रोक्तं सौषुप्त[ं] प्रलयोपमम्
+      सवेद्यम् अपवेद्यं च मायामलयुतायुतम् ॥१५॥
+    slp1: "tAvan mAtrasTitO proktaM sOzupta[M] pralayopamam savedyam apavedyaM ca mAyAmalayutAyutam"
+    iast: |-
+      tāvan mātrasthitau proktaṃ sauṣupta[ṃ] pralayopamam
+      savedyam apavedyaṃ ca māyāmalayutāyutam
+  - verse: 16
+    book: 3
+    devanagari: |-
+      मनोमात्रपथे ऽप्य् अक्षविषयत्वेन विभ्रमात्
+      स्पष्टावभासा भावानां सृष्टिः स्वप्नपदं मतम् ॥१६॥
+    slp1: "manomAtrapaTe 'py akzavizayatvena viBramAt spazwAvaBAsA BAvAnAM sfzwiH svapnapadaM matam"
+    iast: |-
+      manomātrapathe 'py akṣaviṣayatvena vibhramāt
+      spaṣṭāvabhāsā bhāvānāṃ sṛṣṭiḥ svapnapadaṃ matam
+  - verse: 17
+    book: 3
+    devanagari: |-
+      सर्वाक्षगोचरत्वेन या तु बाह्यतया स्थिरा
+      सृष्टिः साधारणी सर्वप्रमातॄणां स जागरः ॥१७॥
+    slp1: "sarvAkzagocaratvena yA tu bAhyatayA sTirA sfzwiH sADAraRI sarvapramAtFRAM sa jAgaraH"
+    iast: |-
+      sarvākṣagocaratvena yā tu bāhyatayā sthirā
+      sṛṣṭiḥ sādhāraṇī sarvapramātṝṇāṃ sa jāgaraḥ
+  - verse: 18
+    book: 3
+    devanagari: |-
+      हेया त्रयीयं प्राणादेः प्राधान्यात् कर्तृतागुणे
+      तद्धानोपचयप्रायसुखदुःखादियोगतः ॥१८॥
+    slp1: "heyA trayIyaM prARAdeH prADAnyAt kartftAguRe tadDAnopacayaprAyasuKaduHKAdiyogataH"
+    iast: |-
+      heyā trayīyaṃ prāṇādeḥ prādhānyāt kartṛtāguṇe
+      taddhānopacayaprāyasukhaduḥkhādiyogataḥ
+  - verse: 19
+    book: 3
+    devanagari: |-
+      प्राणापानमयः प्राणः प्रत्येकं सुप्तजाग्रतोः
+      तच्छेदात्मा समानाख्यः सौषुप्ते विषुवत्स्व् इव ॥१९॥
+    slp1: "prARApAnamayaH prARaH pratyekaM suptajAgratoH tacCedAtmA samAnAKyaH sOzupte vizuvatsv iva"
+    iast: |-
+      prāṇāpānamayaḥ prāṇaḥ pratyekaṃ suptajāgratoḥ
+      tacchedātmā samānākhyaḥ sauṣupte viṣuvatsv iva
+  - verse: 20
+    book: 3
+    devanagari: |-
+      मध्योर्ध्वगाम्युदानाख्यस् तुर्यगो हुतभुङ्मयः
+      विज्ञानाकलमन्त्रेशो व्यानो विश्वात्मकः परः ॥२०॥
+    slp1: "maDyorDvagAmyudAnAKyas turyago hutaBuNmayaH vijYAnAkalamantreSo vyAno viSvAtmakaH paraH"
+    iast: |-
+      madhyordhvagāmyudānākhyas turyago hutabhuṅmayaḥ
+      vijñānākalamantreśo vyāno viśvātmakaḥ paraḥ
+- chapter: 15
+  title_sa: तत्त्वसंग्रहाधिकारः
+  title_iast: "tattvasaṃgrahādhikāraḥ"
+  title_en: "Tattvasaṃgrahādhikāra (Summary of the Principles)"
+  verses:
+  - verse: 1
+    book: 4
+    devanagari: |-
+      स्वात्मैव सर्वजन्तूनाम् एक एव महेश्वरः
+      विश्वरूपो ऽहम् इदम् इत्य् अखण्डामर्शबृंहितः ॥१॥
+    slp1: "svAtmEva sarvajantUnAm eka eva maheSvaraH viSvarUpo 'ham idam ity aKaRqAmarSabfMhitaH"
+    iast: |-
+      svātmaiva sarvajantūnām eka eva maheśvaraḥ
+      viśvarūpo 'ham idam ity akhaṇḍāmarśabṛṃhitaḥ
+  - verse: 2
+    book: 4
+    devanagari: |-
+      तत्र स्वसृष्टेदंभागे बुद्ध्यादिग्राहकात्मना
+      अहंकारपरामर्शपदम् नीतम् अनेन तत् ॥२॥
+    slp1: "tatra svasfzwedaMBAge budDyAdigrAhakAtmanA ahaMkAraparAmarSapadam nItam anena tat"
+    iast: |-
+      tatra svasṛṣṭedaṃbhāge buddhyādigrāhakātmanā
+      ahaṃkāraparāmarśapadam nītam anena tat
+  - verse: 3
+    book: 4
+    devanagari: |-
+      स्वस्वरूपापरिज्ञानमयो ऽनेकः पुमान् मतः
+      तत्र सृष्टौ क्रियानन्दौ भोगो दुःखसुखात्मकः ॥३॥
+    slp1: "svasvarUpAparijYAnamayo 'nekaH pumAn mataH tatra sfzwO kriyAnandO Bogo duHKasuKAtmakaH"
+    iast: |-
+      svasvarūpāparijñānamayo 'nekaḥ pumān mataḥ
+      tatra sṛṣṭau kriyānandau bhogo duḥkhasukhātmakaḥ
+  - verse: 4
+    book: 4
+    devanagari: |-
+      स्वाङ्गरूपेषु भावेषु पत्युर् ज्ञानं क्रिया च या
+      मायातृतीये ते एव पशोः सत्त्वं रजस् तमः ॥४॥
+    slp1: "svANgarUpezu BAvezu patyur jYAnaM kriyA ca yA mAyAtftIye te eva paSoH sattvaM rajas tamaH"
+    iast: |-
+      svāṅgarūpeṣu bhāveṣu patyur jñānaṃ kriyā ca yā
+      māyātṛtīye te eva paśoḥ sattvaṃ rajas tamaḥ
+  - verse: 5
+    book: 4
+    devanagari: |-
+      भेदस्थितः शाक्तिमतः शक्तित्वं नापदिश्यते
+      एषां गुणानां करणकार्यत्वपरिणामिनाम् ॥५॥
+    slp1: "BedasTitaH SAktimataH SaktitvaM nApadiSyate ezAM guRAnAM karaRakAryatvapariRAminAm"
+    iast: |-
+      bhedasthitaḥ śāktimataḥ śaktitvaṃ nāpadiśyate
+      eṣāṃ guṇānāṃ karaṇakāryatvapariṇāminām
+  - verse: 6
+    book: 4
+    devanagari: |-
+      सत्तानन्दः क्रिया पत्युस् तदभावो ऽपि सा पशोह्
+      द्वयात्मा तद् रजो दुःखं श्लेषि सत्त्वतमोमयम् ॥६॥
+    slp1: "sattAnandaH kriyA patyus tadaBAvo 'pi sA paSoh dvayAtmA tad rajo duHKaM Slezi sattvatamomayam"
+    iast: |-
+      sattānandaḥ kriyā patyus tadabhāvo 'pi sā paśoh
+      dvayātmā tad rajo duḥkhaṃ śleṣi sattvatamomayam
+  - verse: 7
+    book: 4
+    devanagari: |-
+      ये ऽप्य् असामयिकेदन्तापरामर्शभुवः प्रभोः
+      ते विमिश्रा विभिन्नाश् च तथा चित्रावभासिनः ॥७॥
+    slp1: "ye 'py asAmayikedantAparAmarSaBuvaH praBoH te vimiSrA viBinnAS ca taTA citrAvaBAsinaH"
+    iast: |-
+      ye 'py asāmayikedantā-parāmarśabhuvaḥ prabhoḥ
+      te vimiśrā vibhinnāś ca tathā citrāvabhāsinaḥ
+  - verse: 8
+    book: 4
+    devanagari: |-
+      ते तु भिन्नावभासार्थाः प्रकल्प्याः प्रत्यगात्मनः
+      तत्तद्विभिन्नसंज्ञाभिः स्मृत्युत्प्रेक्षादिगोचरे ॥८॥
+    slp1: "te tu BinnAvaBAsArTAH prakalpyAH pratyagAtmanaH tattadviBinnasaMjYABiH smftyutprekzAdigocare"
+    iast: |-
+      te tu bhinnāvabhāsārthāḥ prakalpyāḥ pratyagātmanaḥ
+      tattadvibhinnasaṃjñābhiḥ smṛtyutprekṣādigocare
+  - verse: 9
+    book: 4
+    devanagari: |-
+      तस्यासाधारणी सृष्टिर् ईशसृष्ट्युपजीविनी
+      सैषाप्य् अज्ञतया सत्यैवेशशाक्त्या तदात्मनः ॥९॥
+    slp1: "tasyAsADAraRI sfzwir ISasfzwyupajIvinI sEzApy ajYatayA satyEveSaSAktyA tadAtmanaH"
+    iast: |-
+      tasyāsādhāraṇī sṛṣṭir īśasṛṣṭyupajīvinī
+      saiṣāpy ajñatayā satyai-veśaśāktyā tadātmanaḥ
+  - verse: 10
+    book: 4
+    devanagari: |-
+      स्वविश्रान्त्युपरोधायाचलया प्राणरूपया
+      विकल्पक्रियया तत्तद्वर्णवैचित्र्यरूपया ॥१०॥
+    slp1: "svaviSrAntyuparoDAyAcalayA prARarUpayA vikalpakriyayA tattadvarRavEcitryarUpayA"
+    iast: |-
+      svaviśrāntyuparodhāyā-calayā prāṇarūpayā
+      vikalpakriyayā tattadvarṇavaicitryarūpayā
+  - verse: 11
+    book: 4
+    devanagari: |-
+      साधारणो ऽन्यथा चैशः सर्गः स्पष्टावभासनात्
+      विकल्पहानैकाग्र्यात् क्रमेणेश्वरतापदम् ॥११॥
+    slp1: "sADAraRo 'nyaTA cESaH sargaH spazwAvaBAsanAt vikalpahAnEkAgryAt krameReSvaratApadam"
+    iast: |-
+      sādhāraṇo 'nyathā caiśaḥ sargaḥ spaṣṭāvabhāsanāt
+      vikalpahānaikāgryāt krameṇeśvaratāpadam
+  - verse: 12
+    book: 4
+    devanagari: |-
+      सर्वो ममायं विभव इत्येवं परिजानतः
+      विश्वात्मनो विकल्पानां प्रसरे ऽपि महेशता ॥१२॥
+    slp1: "sarvo mamAyaM viBava ityevaM parijAnataH viSvAtmano vikalpAnAM prasare 'pi maheSatA"
+    iast: |-
+      sarvo mamāyaṃ vibhava ityevaṃ parijānataḥ
+      viśvātmano vikalpānāṃ prasare 'pi maheśatā
+  - verse: 13
+    book: 4
+    devanagari: |-
+      मेयं साधारणं मुक्तः स्वात्माभेदेन मन्यते
+      महेश्वरो यथा बद्धः पुन अत्यन्तभेदवत् ॥१३॥
+    slp1: "meyaM sADAraRaM muktaH svAtmABedena manyate maheSvaro yaTA badDaH puna atyantaBedavat"
+    iast: |-
+      meyaṃ sādhāraṇaṃ muktaḥ svātmābhedena manyate
+      maheśvaro yathā baddhaḥ puna atyantabhedavat
+  - verse: 14
+    book: 4
+    devanagari: |-
+      सर्वथा त्व् अन्तरालीनानन्ततत्त्वौघनिर्भरः
+      शिवः चिदानन्दघनः परमाक्षरविग्रहः ॥१४॥
+    slp1: "sarvaTA tv antarAlInAnantatattvOGanirBaraH SivaH cidAnandaGanaH paramAkzaravigrahaH"
+    iast: |-
+      sarvathā tv antarālīnā-nantatattvaughanirbharaḥ
+      śivaḥ cidānandaghanaḥ paramākṣaravigrahaḥ
+  - verse: 15
+    book: 4
+    devanagari: |-
+      एवम् आत्मानम् एतस्य सम्यग्ज्ञानक्रिये तथा
+      जानन् यथेप्सितान् पश्यञ् जानाति च करोति च ॥१५॥
+    slp1: "evam AtmAnam etasya samyagjYAnakriye taTA jAnan yaTepsitAn paSyaY jAnAti ca karoti ca"
+    iast: |-
+      evam ātmānam etasya samyagjñānakriye tathā
+      jānan yathepsitān paśyañ jānāti ca karoti ca
+  - verse: 16
+    book: 4
+    devanagari: |-
+      इति प्रकटितो मया सुघट एष मार्गो नवो महागुरुभिर् उच्यते स्म शिवदृष्टिशास्त्रे यथा
+      तद् अत्र निदधत् पदं भुवनकर्तृताम् आत्मनो विभाव्य शिवतामयीम् अनिशम् आविशन् सिद्ध्यति ॥१६॥
+    slp1: "iti prakawito mayA suGawa eza mArgo navo mahAguruBir ucyate sma SivadfzwiSAstre yaTA tad atra nidaDat padaM BuvanakartftAm Atmano viBAvya SivatAmayIm aniSam AviSan sidDyati"
+    iast: |-
+      iti prakaṭito mayā sughaṭa eṣa mārgo navo mahāgurubhir ucyate sma śivadṛṣṭiśāstre yathā
+      tad atra nidadhat padaṃ bhuvanakartṛtām ātmano vibhāvya śivatāmayīm aniśam āviśan siddhyati
+  - verse: 17
+    book: 4
+    devanagari: |-
+      तैस् तैर् अप्य् उपयाचितैर् उपनतस् तन्व्याः स्थितो ऽप्य् अन्तिके कान्तो लोकसमान एवम् अपरिज्ञातो न रन्तुं यथा
+      लोकस्यैष तथानवेक्षितगुणः स्वात्मापि विश्वेश्वरो नैवालं निजवैभवाय तद् इयं तत्प्रत्यभिज्ञोदिता ॥१७॥
+    slp1: "tEs tEr apy upayAcitEr upanatas tanvyAH sTito 'py antike kAnto lokasamAna evam aparijYAto na rantuM yaTA lokasyEza taTAnavekzitaguRaH svAtmApi viSveSvaro nEvAlaM nijavEBavAya tad iyaM tatpratyaBijYoditA"
+    iast: |-
+      tais tair apy upayācitair upanatas tanvyāḥ sthito 'py antike kānto lokasamāna evam aparijñāto na rantuṃ yathā
+      lokasyaiṣa tathānavekṣitaguṇaḥ svātmāpi viśveśvaro naivālaṃ nijavaibhavāya tad iyaṃ tatpratyabhijñoditā
+  - verse: 18
+    book: 4
+    devanagari: |-
+      जनस्यायत्नसिद्ध्यर्थम् उदयाकरसूनुना
+      ईश्वरप्रत्यभिज्ञेयम् उत्पलेनोपपादिता ॥१८॥
+    slp1: "janasyAyatnasidDyarTam udayAkarasUnunA ISvarapratyaBijYeyam utpalenopapAditA"
+    iast: |-
+      janasyāyatnasiddhyartham udayākarasūnunā
+      īśvarapratyabhijñeyam utpalenopapāditā
