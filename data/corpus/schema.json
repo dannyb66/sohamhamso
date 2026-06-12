@@ -346,6 +346,17 @@
                     "manuscript_folio_ref": {
                       "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
                     },
+                    "section_type": {
+                      "type": "string",
+                      "enum": [
+                        "verse",
+                        "prose"
+                      ],
+                      "default": "verse"
+                    },
+                    "prose_block_ref": {
+                      "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                    },
                     "word_glosses": {
                       "type": "array",
                       "items": {

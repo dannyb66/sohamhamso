@@ -8,6 +8,7 @@ export const FAQ_SCHEMA_VERSION = 1 as const;
 
 export const KNOWN_TRADITIONS = ['trika', 'shakta', 'kaula', 'shaiva'] as const;
 export const TRANSLATION_STATUSES = ['draft', 'reviewed', 'published'] as const;
+export const VERSE_SECTION_TYPES = ['verse', 'prose'] as const;
 
 export const CORPUS_LANG_CODES = READING_MODES.map((mode) => mode.langCode) as [
   LangCode,
@@ -47,6 +48,7 @@ export const CorpusLangCodeSchema = z.enum(CORPUS_LANG_CODES);
 export const NonEnglishCorpusLangCodeSchema = z.enum(NON_ENGLISH_CORPUS_LANG_CODES);
 export const CorpusTraditionSchema = z.enum(KNOWN_TRADITIONS);
 export const TranslationStatusSchema = z.enum(TRANSLATION_STATUSES);
+export const VerseSectionTypeSchema = z.enum(VERSE_SECTION_TYPES);
 
 export const CorpusDescriptionOverridesSchema = z
   .object(buildLanguageShape(() => NonEmptyString))
@@ -178,6 +180,10 @@ export const CorpusVerseSchema = z
     iast: NullableString,
     meter: NullableString,
     manuscript_folio_ref: NullableString,
+    // Prose sections: prose blocks share verse numbering (verse_num >= 1 via
+    // the positive() constraints above; verse_num=0 stays reserved).
+    section_type: VerseSectionTypeSchema.default('verse'),
+    prose_block_ref: NullableString,
     word_glosses: z.array(CorpusWordGlossSchema).optional(),
     translations: z.array(CorpusTranslationSchema).optional(),
   })
@@ -188,6 +194,13 @@ export const CorpusVerseSchema = z
         code: z.ZodIssueCode.custom,
         message: "verse entries require 'verse' or 'verse_num'",
         path: ['verse'],
+      });
+    }
+    if (value.prose_block_ref && value.section_type !== 'prose') {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "'prose_block_ref' requires section_type: prose",
+        path: ['prose_block_ref'],
       });
     }
   });

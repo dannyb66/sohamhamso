@@ -24,6 +24,9 @@
  *   ...
  *   chapters:
  *     - chapter: 1
+ *       title_sa: सृष्टिप्रकरणम्        # optional chapter titles -> `chapters`
+ *       title_iast: sṛṣṭi-prakaraṇam   # optional
+ *       title_en: Creation of the world  # optional
  *       verses:
  *         - verse_num: 1
  *           devanagari: "..."
@@ -32,6 +35,8 @@
  *           meter: anushtubh
  *           book: 1                       # optional
  *           manuscript_folio_ref: "..."  # optional
+ *           section_type: prose          # optional ('verse' default | 'prose')
+ *           prose_block_ref: "uddyota-1.1"  # optional, prose blocks only
  *           word_glosses:
  *             - word_idx: 0
  *               word_sa: "यस्य"
@@ -148,12 +153,19 @@ export interface VerseYaml {
   iast?: string | null;
   meter?: string | null;
   manuscript_folio_ref?: string | null;
+  /** Prose blocks share verse numbering (verse_num >= 1; 0 is reserved). */
+  section_type?: 'verse' | 'prose' | null;
+  prose_block_ref?: string | null;
   word_glosses?: WordGlossYaml[];
   translations?: TranslationYaml[];
 }
 
 export interface ChapterYaml {
   chapter: number;
+  /** Optional wayfinding titles — persisted to `chapters` when present. */
+  title_sa?: string | null;
+  title_iast?: string | null;
+  title_en?: string | null;
   verses: VerseYaml[];
 }
 
@@ -416,9 +428,11 @@ export function prepareStatements(db: Database) {
 
   const upsertVerse = db.prepare(`
     INSERT INTO verses (
-      text_id, book, chapter, verse_num, devanagari, slp1, iast, meter, manuscript_folio_ref
+      text_id, book, chapter, verse_num, devanagari, slp1, iast, meter,
+      manuscript_folio_ref, section_type, prose_block_ref
     ) VALUES (
-      $text_id, $book, $chapter, $verse_num, $devanagari, $slp1, $iast, $meter, $manuscript_folio_ref
+      $text_id, $book, $chapter, $verse_num, $devanagari, $slp1, $iast, $meter,
+      $manuscript_folio_ref, $section_type, $prose_block_ref
     )
     ON CONFLICT(text_id, chapter, verse_num) DO UPDATE SET
       book = excluded.book,
@@ -426,12 +440,31 @@ export function prepareStatements(db: Database) {
       slp1 = excluded.slp1,
       iast = excluded.iast,
       meter = excluded.meter,
-      manuscript_folio_ref = excluded.manuscript_folio_ref
+      manuscript_folio_ref = excluded.manuscript_folio_ref,
+      section_type = excluded.section_type,
+      prose_block_ref = excluded.prose_block_ref
     RETURNING id
   `);
 
   const selectVerseId = db.prepare(`
     SELECT id FROM verses WHERE text_id = $text_id AND chapter = $chapter AND verse_num = $verse_num
+  `);
+
+  // Chapter titles are content-conditional: rows exist only for chapters
+  // whose YAML declares at least one of title_sa/title_iast/title_en. The
+  // WHERE guard keeps unchanged re-ingests a true no-op (updated_at stays).
+  const upsertChapterTitle = db.prepare(`
+    INSERT INTO chapters (text_id, chapter, title_sa, title_iast, title_en, updated_at)
+    VALUES ($text_id, $chapter, $title_sa, $title_iast, $title_en, datetime('now'))
+    ON CONFLICT(text_id, chapter) DO UPDATE SET
+      title_sa = excluded.title_sa,
+      title_iast = excluded.title_iast,
+      title_en = excluded.title_en,
+      updated_at = datetime('now')
+    WHERE
+      chapters.title_sa IS NOT excluded.title_sa
+      OR chapters.title_iast IS NOT excluded.title_iast
+      OR chapters.title_en IS NOT excluded.title_en
   `);
 
   const upsertGloss = db.prepare(`
@@ -512,11 +545,18 @@ export function prepareStatements(db: Database) {
     DELETE FROM parallels WHERE source_verse_id = $verse_id OR target_verse_id = $verse_id
   `);
   const deleteVerseById = db.prepare('DELETE FROM verses WHERE id = $id');
+  const selectChapterTitleNumsForText = db.prepare(`
+    SELECT chapter FROM chapters WHERE text_id = $text_id
+  `);
+  const deleteChapterTitle = db.prepare(`
+    DELETE FROM chapters WHERE text_id = $text_id AND chapter = $chapter
+  `);
 
   return {
     upsertText,
     upsertVerse,
     selectVerseId,
+    upsertChapterTitle,
     upsertGloss,
     upsertTranslation,
     selectVerseIdsForText,
@@ -528,6 +568,8 @@ export function prepareStatements(db: Database) {
     deleteTranslationsByVerse,
     deleteParallelsByVerse,
     deleteVerseById,
+    selectChapterTitleNumsForText,
+    deleteChapterTitle,
   };
 }
 
@@ -551,6 +593,7 @@ export function ingestText(
   const keptVerseIds = new Set<number>();
   const keptGlossKeys = new Map<number, Set<string>>(); // verse_id -> "word_idx\x1Fgloss_lang"
   const keptTranslationKeys = new Map<number, Set<string>>(); // verse_id -> "lang\x1Ftranslator"
+  const keptChapterTitleNums = new Set<number>(); // chapters with a titles row in this YAML
 
   const runTx = db.transaction(() => {
     stmts.upsertText.run({
@@ -579,6 +622,19 @@ export function ingestText(
       }
       if (!Array.isArray(chapter.verses)) continue;
 
+      // Content-conditional chapter-titles row: only when the YAML declares
+      // at least one title. Untitled chapters keep no row (reconciled below).
+      if (chapter.title_sa || chapter.title_iast || chapter.title_en) {
+        stmts.upsertChapterTitle.run({
+          $text_id: doc.id,
+          $chapter: chapter.chapter,
+          $title_sa: nz(chapter.title_sa),
+          $title_iast: nz(chapter.title_iast),
+          $title_en: nz(chapter.title_en),
+        });
+        keptChapterTitleNums.add(chapter.chapter);
+      }
+
       for (const verse of chapter.verses) {
         if (typeof verse.verse_num !== 'number') {
           throw new Error(`${file}: chapter ${chapter.chapter} verse missing 'verse_num'`);
@@ -600,6 +656,8 @@ export function ingestText(
           $iast: nz(verse.iast),
           $meter: nz(verse.meter),
           $manuscript_folio_ref: nz(verse.manuscript_folio_ref),
+          $section_type: verse.section_type ?? 'verse',
+          $prose_block_ref: nz(verse.prose_block_ref),
         }) as { id: number } | undefined;
 
         // ON CONFLICT DO UPDATE ... RETURNING is supported in modern SQLite.
@@ -716,6 +774,17 @@ export function ingestText(
         if (t.translator === null || !translationKeys.has(`${t.lang}\x1F${t.translator}`)) {
           stmts.deleteTranslationById.run({ $id: t.id });
         }
+      }
+    }
+
+    // Chapter-titles reconciliation: a row whose chapter dropped its titles
+    // (or vanished entirely) from the YAML is deleted.
+    const existingChapterTitles = stmts.selectChapterTitleNumsForText.all({
+      $text_id: doc.id,
+    }) as Array<{ chapter: number }>;
+    for (const { chapter } of existingChapterTitles) {
+      if (!keptChapterTitleNums.has(chapter)) {
+        stmts.deleteChapterTitle.run({ $text_id: doc.id, $chapter: chapter });
       }
     }
   });

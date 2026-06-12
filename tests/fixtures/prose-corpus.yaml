@@ -1,0 +1,65 @@
+# Test fixture: mixed sūtra + prose-vṛtti text for the prose render branch
+# (plan A4, tests/unit/prose-render.test.ts). The prose block deliberately
+# carries MANY sentence-final dandas inside a single paragraph — the render
+# contract is that those dandas must NOT become line breaks — plus one
+# blank-line paragraph break and a two-paragraph translation.
+#
+# NOT a production corpus file; data/corpus/ is untouched.
+id: prose-render-fixture
+slug: prose-render-fixture
+title_sa: गद्यपरीक्षा
+title_en: Prose Render Fixture
+title_iast: Gadyaparīkṣā
+author: null
+tradition: trika
+school: kashmir-shaivism
+era: "test"
+source: "test-fixture"
+source_url: null
+source_revision: "test-fixture"
+license: CC-BY-4.0
+attribution_html: null
+parent_text_id: null
+manuscript_url: null
+description: "Test fixture — one sūtra and one prose vṛtti block."
+
+chapters:
+  - chapter: 1
+    verses:
+      - verse_num: 1
+        devanagari: चितिः स्वतन्त्रा विश्वसिद्धिहेतुः ॥१॥
+        slp1: null
+        iast: "citiḥ svatantrā viśvasiddhihetuḥ ||1||"
+        meter: sūtra
+        translations:
+          - lang: en
+            translator: "test"
+            translation_text: "Consciousness, in her freedom, is the cause of the accomplishment of the universe."
+            source: null
+            license: CC-BY-4.0
+            status: published
+            ai_assisted: false
+      - verse_num: 2
+        section_type: prose
+        prose_block_ref: vrtti-1.1
+        devanagari: |-
+          चितिप्रसरणमेव जगत् । सा हि भगवती विश्वस्य सिद्धौ हेतुः । स्वातन्त्र्यात् सृष्टिसंहारौ करोति । न हि चित्त्वव्यतिरेकेण किञ्चित् सम्भवति । अत एव सर्वं चिन्मयम् ।
+
+          एवं विश्वं चिन्मयमिति स्थितम् । तदेव परमार्थ इति शिवम् ।
+        slp1: null
+        iast: |-
+          citiprasaraṇam eva jagat | sā hi bhagavatī viśvasya siddhau hetuḥ | svātantryāt sṛṣṭisaṁhārau karoti | na hi cittvavyatirekeṇa kiñcit sambhavati | ata eva sarvaṁ cinmayam |
+
+          evaṁ viśvaṁ cinmayam iti sthitam | tad eva paramārtha iti śivam |
+        meter: null
+        translations:
+          - lang: en
+            translator: "test"
+            translation_text: |-
+              The unfolding of Consciousness alone is the world. That goddess indeed is the cause of the accomplishment of the universe. Out of her own freedom she enacts manifestation and withdrawal. Nothing whatsoever is possible apart from Consciousness. For this very reason everything consists of Consciousness.
+
+              Thus it stands established that the universe is made of Consciousness. That alone is the highest truth — auspiciousness.
+            source: null
+            license: CC-BY-4.0
+            status: published
+            ai_assisted: false

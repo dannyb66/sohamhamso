@@ -67,6 +67,15 @@ export interface Verse {
   iast: string | null;
   meter: string | null;
   manuscript_folio_ref: string | null;
+  /**
+   * Row-type-only addition (plan A4 render side): the columns already flow
+   * through `getVerse`'s `SELECT v.*` — this just types them. 'verse'
+   * renders the danda-split anatomy; 'prose' renders flowing paragraphs.
+   * Optional so pre-existing fixtures stay valid; consumers treat a
+   * missing value as 'verse' (src/lib/prose.ts isProseSection).
+   */
+  section_type?: 'verse' | 'prose';
+  prose_block_ref?: string | null;
 }
 
 export interface VerseSummary {
@@ -260,15 +269,34 @@ export function listAllVerses(textSlug: string): Array<{ chapter: number; verse_
   return stmt.all(textSlug);
 }
 
+export interface ChapterSummary {
+  chapter: number;
+  verse_count: number;
+  /** Optional wayfinding titles from `chapters` (migration 002); NULL when untitled. */
+  title_sa: string | null;
+  title_iast: string | null;
+  title_en: string | null;
+}
+
 /**
  * List all chapters in a text along with their verse counts.
+ *
+ * Chapters stay derived from `verses` (the GROUP BY); the LEFT JOIN onto
+ * `chapters` only decorates each row with its optional editorial titles
+ * (title_sa / title_iast / title_en — NULL when the YAML declares none).
  */
-export function listChapters(textSlug: string): Array<{ chapter: number; verse_count: number }> {
+export function listChapters(textSlug: string): ChapterSummary[] {
   const db = getDb();
-  const stmt = db.query<{ chapter: number; verse_count: number }, [string]>(`
-    SELECT v.chapter, COUNT(*) AS verse_count
+  const stmt = db.query<ChapterSummary, [string]>(`
+    SELECT
+      v.chapter,
+      COUNT(*) AS verse_count,
+      c.title_sa,
+      c.title_iast,
+      c.title_en
     FROM verses v
     JOIN texts t ON t.id = v.text_id
+    LEFT JOIN chapters c ON c.text_id = t.id AND c.chapter = v.chapter
     WHERE t.slug = ?
     GROUP BY v.chapter
     ORDER BY v.chapter ASC
