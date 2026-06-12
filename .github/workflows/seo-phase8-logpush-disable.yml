@@ -1,0 +1,73 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Phase 8 — disable the post-launch CF Logpush job.
+#
+# Why this workflow exists:
+#   `scripts/seo-cf-logpush-setup.ts` creates a short-lived Logpush sink to R2
+#   for ~40-72h of post-launch capture. After the window, the job must be
+#   disabled so logs (which contain client IPs — PII) stop accumulating. The
+#   setup script runs locally and writes the job id to
+#   `.gstack/launch/logpush-job-id.txt` (gitignored), so neither the file nor
+#   the operator's local env is reachable from a `/schedule` cloud cron.
+#   This GHA workflow survives machine state and uses repo secrets.
+#
+# Required GitHub secrets:
+#   CF_API_TOKEN              — token with Zone → Logs → Edit on sohamhamso.org
+#   CF_ZONE_ID                — zone id for sohamhamso.org
+#   PHASE8_LOGPUSH_JOB_ID     — numeric Logpush job id, set after running
+#                               `bun scripts/seo-cf-logpush-setup.ts` locally
+#                               (`gh secret set PHASE8_LOGPUSH_JOB_ID -b "<id>"`).
+#                               Used by the scheduled trigger; the manual
+#                               trigger can override via the `job_id` input.
+#
+# Triggers:
+#   schedule: 2026-06-14 04:00 UTC — disables the launch-window job. GHA cron
+#             is recurrence-only, so this also fires every 2027-06-14 etc.;
+#             once the launch job is disabled the schedule is harmless (a
+#             second PUT {enabled:false} is a no-op) but should be removed in
+#             the Phase 8 archive PR alongside the seo-phase8.yml cron.
+#   workflow_dispatch: ad-hoc disable with optional job_id override.
+# ──────────────────────────────────────────────────────────────────────────────
+name: SEO Phase 8 — disable Logpush job
+
+on:
+  schedule:
+    # 2026-06-14 04:00 UTC — end of the post-launch capture window.
+    - cron: '0 4 14 6 *'
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: 'Numeric CF Logpush job id (overrides PHASE8_LOGPUSH_JOB_ID secret)'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  disable:
+    name: Disable Logpush job
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+      JOB_ID: ${{ github.event.inputs.job_id || secrets.PHASE8_LOGPUSH_JOB_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Disable Logpush job
+        run: |
+          if [ -z "$JOB_ID" ]; then
+            echo "::error::JOB_ID is empty. Provide via workflow_dispatch input or PHASE8_LOGPUSH_JOB_ID secret."
+            exit 1
+          fi
+          bun scripts/seo-cf-logpush-disable.ts --job-id="$JOB_ID"
