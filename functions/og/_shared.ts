@@ -7,6 +7,7 @@ import {
   type OgRouteValidationError,
   type VerseOgPayload,
   type VerseOgRoute,
+  buildVerseOgPayloadFromCache,
   fetchLemmaOgPayload,
   fetchVerseOgPayload,
   parseLemmaOgUrl,
@@ -79,33 +80,50 @@ async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRou
   const cached = cache ? await cache.match(cacheKey) : undefined;
   if (cached) return cached;
 
-  // AbortController-backed timeout for the DB step. When TURSO env vars are
-  // present we route through a per-request libsql client whose custom `fetch`
-  // wires `controller.signal` into the upstream HTTP request — so an expired
-  // timer ACTUALLY tears down the socket instead of merely racing the response
-  // away (the prior `Promise.race` shape leaked subrequests under slow Turso).
-  const dbController = new AbortController();
-  const dbTimer = setTimeout(() => dbController.abort(), OG_QUERY_TIMEOUT_MS);
-  let payload: T | null;
-  try {
-    const db = await getAbortableCorpusDb(dbController.signal);
-    try {
-      payload = await loader(db, route);
-    } catch (error) {
-      if (dbController.signal.aborted) {
-        throw new Error('OG payload query timed out.');
-      }
-      throw error;
-    }
-  } catch (error) {
-    clearTimeout(dbTimer);
-    if (error instanceof CorpusNotConfiguredError) {
-      return fallbackResponse(context, route.cacheKeyUrl, error.message);
-    }
-    const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
-    return fallbackResponse(context, route.cacheKeyUrl, message);
+  // Static-asset precache lookup (verse routes only). `scripts/seo-build-og-cache.ts`
+  // writes one JSON per verse to `public/og-cache/<tradition>/<text>/<chapter>/<verse>.json`
+  // at build time. The OG handler reads it via `ASSETS.fetch(...)` from the
+  // edge cache (~5ms) instead of the libsql HTTPS round-trip (~500ms warm,
+  // 1500ms+ cold tail) — eliminating the DB-timeout failure mode that
+  // Phase 8 T+24h flagged at 6% fallback rate.
+  //
+  // On any cache-miss / parse-fail / lookup-error we fall through to the
+  // DB path below. The DB path is preserved unchanged so verses added
+  // between builds still resolve (rare; production rebuilds happen on
+  // every PR merge).
+  let payload: T | null = null;
+  if (route.kind === 'verse') {
+    payload = (await tryLoadFromOgCache(context, route as VerseOgRoute)) as T | null;
   }
-  clearTimeout(dbTimer);
+
+  if (payload === null) {
+    // AbortController-backed timeout for the DB step. When TURSO env vars are
+    // present we route through a per-request libsql client whose custom `fetch`
+    // wires `controller.signal` into the upstream HTTP request — so an expired
+    // timer ACTUALLY tears down the socket instead of merely racing the response
+    // away (the prior `Promise.race` shape leaked subrequests under slow Turso).
+    const dbController = new AbortController();
+    const dbTimer = setTimeout(() => dbController.abort(), OG_QUERY_TIMEOUT_MS);
+    try {
+      const db = await getAbortableCorpusDb(dbController.signal);
+      try {
+        payload = await loader(db, route);
+      } catch (error) {
+        if (dbController.signal.aborted) {
+          throw new Error('OG payload query timed out.');
+        }
+        throw error;
+      }
+    } catch (error) {
+      clearTimeout(dbTimer);
+      if (error instanceof CorpusNotConfiguredError) {
+        return fallbackResponse(context, route.cacheKeyUrl, error.message);
+      }
+      const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
+      return fallbackResponse(context, route.cacheKeyUrl, message);
+    }
+    clearTimeout(dbTimer);
+  }
 
   if (!payload) {
     return shortCacheResponse('OG payload not found.', 404);
@@ -127,6 +145,38 @@ async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRou
     }
     const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
     return fallbackResponse(context, route.cacheKeyUrl, message);
+  }
+}
+
+/**
+ * Static-asset lookup for the verse OG cache built by
+ * `scripts/seo-build-og-cache.ts`. Returns the materialized
+ * `VerseOgPayload` on hit, or `null` on any miss / parse failure / fetch
+ * error so the caller falls through to the DB path.
+ *
+ * The asset path mirrors the OG route exactly:
+ *   `/og-cache/<tradition>/<text>/<chapter>/<verse>.json`
+ * Compact JSON, one verse + all 12 translations per file (~1-3KB).
+ *
+ * The requested→english fallback logic is applied here (delegated to
+ * `buildVerseOgPayloadFromCache`) so the cache file stays language-
+ * neutral and future query-shape changes don't require a cache rebuild.
+ */
+async function tryLoadFromOgCache(
+  context: OgFunctionContext,
+  route: VerseOgRoute,
+): Promise<VerseOgPayload | null> {
+  try {
+    const cacheUrl = new URL(
+      `/og-cache/${route.tradition}/${route.textSlug}/${route.chapter}/${route.verse}.json`,
+      context.request.url,
+    );
+    const response = await context.env.ASSETS.fetch(cacheUrl);
+    if (!response.ok) return null;
+    const raw = (await response.json()) as unknown;
+    return buildVerseOgPayloadFromCache(raw, route);
+  } catch {
+    return null;
   }
 }
 

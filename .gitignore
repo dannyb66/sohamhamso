@@ -32,6 +32,12 @@ db/*.db-shm
 db/youtube-state.db
 db/youtube-state.db-*
 
+# OG verse text precache — build output of scripts/seo-build-og-cache.ts.
+# Regenerated on every `seo:build` from db/sohamhamso.db. The OG handler
+# in functions/og/_shared.ts reads these JSON files via ASSETS.fetch on
+# the hot path instead of running a libsql HTTP query against Turso.
+public/og-cache/
+
 # Local dev caches
 .turso/
 .cache/

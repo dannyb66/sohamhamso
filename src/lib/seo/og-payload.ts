@@ -1,5 +1,5 @@
 import type { CorpusDb } from '../corpus-db';
-import { READING_MODES, type LangCode } from '../reading-modes';
+import { type LangCode, READING_MODES } from '../reading-modes';
 import { asciiStrip, assignLemmaSlug, slugifyLemmaBase } from './slug';
 
 export const OG_SITE_URL = 'https://sohamhamso.org';
@@ -17,12 +17,7 @@ const TRANSLATION_STATUS_SQL = "('published', 'reviewed', 'draft')";
 export interface OgRouteValidationError {
   ok: false;
   status: 400 | 404;
-  code:
-    | 'invalid_path'
-    | 'invalid_lang'
-    | 'invalid_slug'
-    | 'invalid_tradition'
-    | 'invalid_number';
+  code: 'invalid_path' | 'invalid_lang' | 'invalid_slug' | 'invalid_tradition' | 'invalid_number';
   message: string;
 }
 
@@ -125,7 +120,11 @@ export function parseVerseOgUrl(url: URL): VerseOgRouteParseResult {
 
   const segments = pathnameSegments(url.pathname);
   if (segments.length !== 5 || segments[0] !== 'og') {
-    return invalidOgRoute(404, 'invalid_path', 'Verse OG path must be /og/{tradition}/{text}/{chapter}/{verse}.');
+    return invalidOgRoute(
+      404,
+      'invalid_path',
+      'Verse OG path must be /og/{tradition}/{text}/{chapter}/{verse}.',
+    );
   }
 
   const tradition = segments[1];
@@ -151,7 +150,13 @@ export function parseVerseOgUrl(url: URL): VerseOgRouteParseResult {
   }
 
   const sourcePath = `/og/${tradition}/${textSlug}/${chapter}/${verse}`;
-  const pagePath = buildVersePagePath(tradition as OgKnownTradition, textSlug, chapter, verse, lang.value);
+  const pagePath = buildVersePagePath(
+    tradition as OgKnownTradition,
+    textSlug,
+    chapter,
+    verse,
+    lang.value,
+  );
 
   return {
     ok: true,
@@ -194,6 +199,121 @@ export function parseLemmaOgUrl(url: URL): LemmaOgRouteParseResult {
     pagePath,
     pageUrl: new URL(pagePath, OG_SITE_URL).toString(),
     cacheKeyUrl: buildOgCacheKeyUrl(sourcePath, lang.value, url.origin),
+  };
+}
+
+/**
+ * Build a `VerseOgPayload` from the static OG cache JSON produced by
+ * `scripts/seo-build-og-cache.ts`. Applies the SAME requested→english
+ * fallback logic as `fetchVerseOgPayload` so the cache-hit and DB paths
+ * produce identical PNGs.
+ *
+ * Returns `null` on any shape mismatch — the caller (`tryLoadFromOgCache`
+ * in `functions/og/_shared.ts`) falls through to the DB path.
+ */
+export function buildVerseOgPayloadFromCache(
+  raw: unknown,
+  route: VerseOgRoute,
+): VerseOgPayload | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const r = raw as {
+    tradition?: unknown;
+    textSlug?: unknown;
+    titleEn?: unknown;
+    titleSa?: unknown;
+    chapter?: unknown;
+    verseNum?: unknown;
+    devanagari?: unknown;
+    iast?: unknown;
+    translationsByLang?: unknown;
+  };
+  if (
+    typeof r.tradition !== 'string' ||
+    typeof r.textSlug !== 'string' ||
+    typeof r.titleEn !== 'string' ||
+    typeof r.titleSa !== 'string' ||
+    typeof r.chapter !== 'number' ||
+    typeof r.verseNum !== 'number' ||
+    typeof r.devanagari !== 'string' ||
+    typeof r.translationsByLang !== 'object' ||
+    r.translationsByLang === null
+  ) {
+    return null;
+  }
+  // Cross-check that the cached row matches the requested route — guards
+  // against a stale build serving the wrong verse if cache paths ever drift.
+  if (
+    r.tradition !== route.tradition ||
+    r.textSlug !== route.textSlug ||
+    r.chapter !== route.chapter ||
+    r.verseNum !== route.verse
+  ) {
+    return null;
+  }
+
+  const iast = typeof r.iast === 'string' ? r.iast : null;
+  const trMap = r.translationsByLang as Record<string, unknown>;
+  const requestedRaw = trMap[route.lang];
+  const englishRaw = trMap[OG_DEFAULT_LANG];
+  const requestedTranslation = pickTranslation(requestedRaw);
+  const englishTranslation = pickTranslation(englishRaw);
+
+  const requested = requestedTranslation?.text?.trim() || null;
+  const english = englishTranslation?.text?.trim() || null;
+  const translation = requested ?? english;
+  const translationLang: LangCode | null =
+    requested !== null ? route.lang : english !== null ? OG_DEFAULT_LANG : null;
+  const translator =
+    requested !== null
+      ? (requestedTranslation?.translator ?? null)
+      : (englishTranslation?.translator ?? null);
+
+  if (route.lang === OG_DEFAULT_LANG) {
+    return {
+      kind: 'verse',
+      route,
+      textTitleEn: r.titleEn,
+      textTitleSa: r.titleSa,
+      tradition: r.tradition,
+      citation: `${r.chapter}.${r.verseNum}`,
+      devanagari: r.devanagari,
+      iast,
+      translation,
+      translationLang,
+      translator,
+      secondaryText: iast?.trim() || translation || r.devanagari,
+      secondaryTextKind: iast?.trim() ? 'iast' : 'translation',
+      secondaryTextLang: iast?.trim() ? OG_DEFAULT_LANG : (translationLang ?? OG_DEFAULT_LANG),
+      fallbackUsed: !iast?.trim() && translation !== null,
+    };
+  }
+
+  return {
+    kind: 'verse',
+    route,
+    textTitleEn: r.titleEn,
+    textTitleSa: r.titleSa,
+    tradition: r.tradition,
+    citation: `${r.chapter}.${r.verseNum}`,
+    devanagari: r.devanagari,
+    iast,
+    translation,
+    translationLang,
+    translator,
+    secondaryText: translation || iast?.trim() || r.devanagari,
+    secondaryTextKind: translation ? 'translation' : 'iast',
+    secondaryTextLang: translationLang ?? OG_DEFAULT_LANG,
+    fallbackUsed: translationLang !== route.lang,
+  };
+}
+
+function pickTranslation(raw: unknown): { text: string; translator: string | null } | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const r = raw as { translationText?: unknown; translator?: unknown };
+  if (typeof r.translationText !== 'string') return null;
+  return {
+    text: r.translationText,
+    translator: typeof r.translator === 'string' ? r.translator : null,
   };
 }
 
@@ -278,7 +398,11 @@ export async function fetchVerseOgPayload(
   const englishTranslation = row.english_translation_text?.trim() || null;
   const translation = requestedTranslation ?? englishTranslation;
   const translationLang =
-    requestedTranslation !== null ? route.lang : englishTranslation !== null ? OG_DEFAULT_LANG : null;
+    requestedTranslation !== null
+      ? route.lang
+      : englishTranslation !== null
+        ? OG_DEFAULT_LANG
+        : null;
   const translator =
     requestedTranslation !== null
       ? row.requested_translation_translator
@@ -299,7 +423,7 @@ export async function fetchVerseOgPayload(
       translator,
       secondaryText: row.iast?.trim() || translation || row.devanagari,
       secondaryTextKind: row.iast?.trim() ? 'iast' : 'translation',
-      secondaryTextLang: row.iast?.trim() ? OG_DEFAULT_LANG : translationLang ?? OG_DEFAULT_LANG,
+      secondaryTextLang: row.iast?.trim() ? OG_DEFAULT_LANG : (translationLang ?? OG_DEFAULT_LANG),
       fallbackUsed: !row.iast?.trim() && translation !== null,
     };
   }
@@ -347,7 +471,8 @@ export async function fetchLemmaOgPayload(
     [lemma.lemmaIast, route.lang, route.lang],
   );
 
-  const requestedGloss = glossRows.find((row) => row.gloss_lang === route.lang)?.gloss_text?.trim() || null;
+  const requestedGloss =
+    glossRows.find((row) => row.gloss_lang === route.lang)?.gloss_text?.trim() || null;
   const englishGloss = glossRows.find((row) => row.gloss_lang === 'en')?.gloss_text?.trim() || null;
   const gloss = requestedGloss ?? englishGloss;
   if (!gloss) return null;
