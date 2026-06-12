@@ -2,86 +2,51 @@
 import Footer from '../../components/Footer.astro';
 import Masthead from '../../components/Masthead.astro';
 /**
- * /texts — the flat alphabetical text index.
+ * /texts — the DB-driven text index, sectioned by tradition.
  *
  * Quiet table (NOT a card grid) per the homepage spec §3:
  *   "title, tradition tag, verse count, license, in a quiet table.
  *    Five rows at V1 launch is fine — sparseness reads as curation."
  *
- * V1: hardcoded against the Phase 1 corpus list from the plan.
- * TODO: replace with `getAllTexts()` from src/lib/db.ts once the
- * SQLite reader helper exists. The shape below matches the `texts`
- * table in db/schema.sql, so swapping is mechanical.
+ * Rows come from `listTexts()` (build-time SQLite read): commentaries
+ * (non-null parent_text_id) are excluded and rows arrive tradition-grouped
+ * (Trika first, then Śākta), alphabetical by English title within a group.
+ * Links target the text OVERVIEW page (/{tradition}/{slug}), not verse 1.1.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { type TextSummary, listTexts } from '../../lib/db';
 import { buildChromeSeo, getChromeAvailableLangs } from '../../lib/seo';
 
-type TextRow = {
-  href: string;
-  title_sa: string;
-  title_en: string;
-  tradition: string;
-  author: string | null;
-  verse_count: number;
-  license: string;
+/** Display labels for tradition section headings + the Tradition column. */
+const TRADITION_LABELS: Record<string, string> = {
+  trika: 'Trika',
+  shakta: 'Śākta',
 };
 
-// TODO: const texts = getAllTexts(); from src/lib/db.ts
-const texts: TextRow[] = [
-  {
-    href: '/trika/siva-sutras/1/1',
-    title_sa: 'शिवसूत्राणि',
-    title_en: 'Śiva Sūtras',
-    tradition: 'Trika',
-    author: 'Vasugupta',
-    verse_count: 77,
-    license: 'CC-BY-SA 4.0',
-  },
-  {
-    href: '/trika/spanda-karikas/1/1',
-    title_sa: 'स्पन्दकारिकाः',
-    title_en: 'Spanda Kārikās',
-    tradition: 'Trika',
-    author: 'Vasugupta',
-    verse_count: 52,
-    license: 'CC-BY-SA 4.0',
-  },
-  {
-    href: '/trika/pratyabhijna-hrdayam/1/1',
-    title_sa: 'प्रत्यभिज्ञाहृदयम्',
-    title_en: 'Pratyabhijñā Hṛdayam',
-    tradition: 'Trika',
-    author: 'Kṣemarāja',
-    verse_count: 20,
-    license: 'CC-BY-SA 4.0',
-  },
-  {
-    href: '/trika/vijnana-bhairava-tantra/1/1',
-    title_sa: 'विज्ञानभैरवतन्त्रम्',
-    title_en: 'Vijñāna Bhairava Tantra',
-    tradition: 'Trika / Kaula',
-    author: null,
-    verse_count: 163,
-    license: 'CC-BY-SA 4.0',
-  },
-  {
-    href: '/shakta/karpuradi-stotra/1/1',
-    title_sa: 'कर्पूरादिस्तोत्रम्',
-    title_en: 'Karpūrādi Stotra',
-    tradition: 'Śākta',
-    author: null,
-    verse_count: 22,
-    license: 'Public Domain (Woodroffe 1922)',
-  },
-];
+const texts = listTexts();
 
-// Sort alphabetical by English title — flat list, no faceting.
-const sorted = [...texts].sort((a, b) => a.title_en.localeCompare(b.title_en));
+// Fold the pre-ordered rows into contiguous tradition sections; unknown
+// traditions (already sorted last by listTexts) still get a section.
+const sections: Array<{ tradition: string; label: string; texts: TextSummary[] }> = [];
+for (const t of texts) {
+  const last = sections[sections.length - 1];
+  if (last && last.tradition === t.tradition) {
+    last.texts.push(t);
+  } else {
+    sections.push({
+      tradition: t.tradition,
+      label: TRADITION_LABELS[t.tradition] ?? t.tradition,
+      texts: [t],
+    });
+  }
+}
+
 const currentLang = 'en' as const;
 const pageSeo = buildChromeSeo({
   availableLangs: getChromeAvailableLangs(),
   basePath: '/texts',
-  description: 'The full corpus of Tantric, Kashmir Shaiva, Trika, and Kaula texts available on sohamhamso.',
+  description:
+    'The full corpus of Tantric, Kashmir Shaiva, Trika, and Kaula texts available on sohamhamso.',
   lang: currentLang,
   title: 'All texts — sohamhamso',
 });
@@ -103,9 +68,9 @@ const pageSeo = buildChromeSeo({
       <p class="texts-eyebrow" data-i18n="texts.eyebrow">Corpus</p>
       <h1 class="texts-title" data-i18n="texts.title">All texts</h1>
       <p class="texts-lede">
-        {sorted.length} <span data-i18n={sorted.length === 1 ? "texts.lede.prefix_text" : "texts.lede.prefix_texts"}>{sorted.length === 1
-          ? "text, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"
-          : "texts, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see"}</span> <a href="/about/methodology" data-i18n="texts.lede.methodology">methodology</a><span data-i18n="texts.lede.suffix">.</span>
+        {texts.length} <span data-i18n={texts.length === 1 ? "texts.lede.prefix_text" : "texts.lede.prefix_texts"}>{texts.length === 1
+          ? "text, grouped by tradition. Indic-language translations are AI-assisted and not yet human-verified — see"
+          : "texts, grouped by tradition. Indic-language translations are AI-assisted and not yet human-verified — see"}</span> <a href="/about/methodology" data-i18n="texts.lede.methodology">methodology</a><span data-i18n="texts.lede.suffix">.</span>
       </p>
     </header>
 
@@ -121,22 +86,27 @@ const pageSeo = buildChromeSeo({
             <th scope="col" class="col-license" data-i18n="texts.table.license">License</th>
           </tr>
         </thead>
-        <tbody>
-          {sorted.map((t) => (
-            <tr>
-              <td class="col-title">
-                <a href={t.href} class="text-link">
-                  <span class="text-title-en">{t.title_en}</span>
-                  <span class="text-title-sa" lang="sa" data-sa>{t.title_sa}</span>
-                  {t.author && <span class="text-author">{t.author}</span>}
-                </a>
-              </td>
-              <td class="col-tradition" data-label="Tradition">{t.tradition}</td>
-              <td class="col-count" data-label="Verses">{t.verse_count.toLocaleString()}</td>
-              <td class="col-license" data-label="License">{t.license}</td>
+        {sections.map((s) => (
+          <tbody class="tradition-group">
+            <tr class="tradition-heading-row">
+              <th scope="rowgroup" colspan="4">{s.label}</th>
             </tr>
-          ))}
-        </tbody>
+            {s.texts.map((t) => (
+              <tr>
+                <td class="col-title">
+                  <a href={`/${t.tradition}/${t.slug}`} class="text-link">
+                    <span class="text-title-en">{t.title_en}</span>
+                    <span class="text-title-sa" lang="sa" data-sa>{t.title_sa}</span>
+                    {t.author && <span class="text-author">{t.author}</span>}
+                  </a>
+                </td>
+                <td class="col-tradition" data-label="Tradition">{s.label}</td>
+                <td class="col-count" data-label="Verses">{t.verse_count.toLocaleString()}</td>
+                <td class="col-license" data-label="License">{t.license}</td>
+              </tr>
+            ))}
+          </tbody>
+        ))}
       </table>
     </div>
   </main>
@@ -219,8 +189,21 @@ const pageSeo = buildChromeSeo({
     min-width: 0;
   }
 
-  .texts-table tbody tr:last-child td {
+  .texts-table tbody:last-child tr:last-child td {
     border-bottom: 0;
+  }
+
+  /* Tradition section heading row — same chrome voice as the thead. */
+  .tradition-heading-row th {
+    text-align: left;
+    font-family: var(--font-chrome);
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-ink-muted);
+    padding: var(--spacing-5) var(--spacing-3) var(--spacing-2);
+    border-bottom: 1px solid var(--color-rule);
   }
 
   .col-title { width: 50%; }
@@ -249,9 +232,13 @@ const pageSeo = buildChromeSeo({
     .texts-table thead,
     .texts-table tbody,
     .texts-table tr,
-    .texts-table td {
+    .texts-table td,
+    .texts-table tbody th {
       display: block;
       width: auto;
+    }
+    .tradition-heading-row th {
+      padding: var(--spacing-5) 0 var(--spacing-2);
     }
     .texts-table thead {
       position: absolute;
@@ -268,7 +255,11 @@ const pageSeo = buildChromeSeo({
       padding: var(--spacing-4) 0;
       border-bottom: 1px solid var(--color-rule);
     }
-    .texts-table tbody tr:last-child {
+    .texts-table tbody tr.tradition-heading-row {
+      padding: 0;
+      border-bottom: 0; /* the th carries the rule */
+    }
+    .texts-table tbody:last-child tr:last-child {
       border-bottom: 0;
     }
     .texts-table tbody td {

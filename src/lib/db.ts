@@ -49,8 +49,10 @@ export interface TextSummary {
   title_sa: string;
   title_en: string;
   title_iast: string | null;
+  author: string | null;
   tradition: string;
   school: string | null;
+  license: string;
   verse_count: number;
 }
 
@@ -199,10 +201,17 @@ export function __setDbForTests(db: Database | null): void {
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * List all texts with their verse counts. Used by:
+ * List all top-level texts with their verse counts. Used by:
  * - Homepage "All texts (N)" list
  * - Text index pages
  * - `getStaticPaths` enumeration
+ *
+ * Rows with a non-null `parent_text_id` (future commentary siblings) are
+ * excluded — commentaries surface alongside their root text, never as
+ * standalone index entries.
+ *
+ * Ordering matches the /texts IA: tradition-grouped (trika first, then
+ * shakta, anything else last), alphabetical by `title_en` within a group.
  */
 export function listTexts(): TextSummary[] {
   const db = getDb();
@@ -213,11 +222,16 @@ export function listTexts(): TextSummary[] {
       t.title_sa,
       t.title_en,
       t.title_iast,
+      t.author,
       t.tradition,
       t.school,
+      t.license,
       COALESCE((SELECT COUNT(*) FROM verses v WHERE v.text_id = t.id), 0) AS verse_count
     FROM texts t
-    ORDER BY t.title_en ASC
+    WHERE t.parent_text_id IS NULL
+    ORDER BY
+      CASE t.tradition WHEN 'trika' THEN 0 WHEN 'shakta' THEN 1 ELSE 2 END,
+      t.title_en ASC
   `);
   return stmt.all();
 }
@@ -332,8 +346,10 @@ function translationFirstClause(text: string | null, maxChars = 90): string | nu
  * glosses/parallels/reader bundles (do NOT swap in `getVerse` here).
  *
  * Translation row selection uses explicit status priority
- * (published → reviewed → draft, then human-first, then oldest) rather
- * than the alphabetical `ORDER BY status` quirk. For non-EN `lang` the
+ * (reviewed → published, then human-first, then oldest) rather than
+ * the alphabetical `ORDER BY status` quirk. Drafts are EXCLUDED from
+ * public reads (methodology promise: score<7 stays draft and is never
+ * shown publicly). For non-EN `lang` the
  * snippet falls back to English per verse when the requested language
  * has no row; `translation_lang` reports which language was used.
  */
@@ -361,9 +377,9 @@ export function listChapterSummary(
           FROM translations tr
           WHERE tr.verse_id = v.id
             AND tr.lang = ?
-            AND tr.status IN ('published', 'reviewed', 'draft')
+            AND tr.status IN ('published', 'reviewed')
           ORDER BY
-            CASE tr.status WHEN 'published' THEN 0 WHEN 'reviewed' THEN 1 ELSE 2 END,
+            CASE tr.status WHEN 'reviewed' THEN 0 ELSE 1 END,
             tr.ai_assisted ASC,
             tr.created_at ASC
           LIMIT 1
@@ -373,9 +389,9 @@ export function listChapterSummary(
           FROM translations tr
           WHERE tr.verse_id = v.id
             AND tr.lang = 'en'
-            AND tr.status IN ('published', 'reviewed', 'draft')
+            AND tr.status IN ('published', 'reviewed')
           ORDER BY
-            CASE tr.status WHEN 'published' THEN 0 WHEN 'reviewed' THEN 1 ELSE 2 END,
+            CASE tr.status WHEN 'reviewed' THEN 0 ELSE 1 END,
             tr.ai_assisted ASC,
             tr.created_at ASC
           LIMIT 1
@@ -432,18 +448,19 @@ export function getVerse(
     .get(text.id, chapter, verseNum);
   if (!verse) return null;
 
-  // Translations for the requested language. V1 ships AI-only with the
-  // amber "not verified" badge for draft AND published; agents flag
-  // per-verse uncertainty inline with [draft] prefix and the merge
-  // pipeline promotes those to status='draft'. Both render with the
-  // amber badge. ai_assisted comes back as 0/1 int; normalized below.
+  // Translations for the requested language. Drafts (review score <7) are
+  // EXCLUDED from public reads per the methodology promise — a verse whose
+  // only translations are drafts renders Devanagari+IAST with no translation
+  // paragraph. Reviewed (human-verified) ranks above published, then
+  // human-first, then oldest. ai_assisted comes back as 0/1 int;
+  // normalized below.
   type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
   const rawTranslations = db
     .query<TransRow, [number, string]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed')
+      ORDER BY CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verse.id, lang);
   const translations: Translation[] = rawTranslations.map((t: TransRow) => ({
@@ -620,8 +637,9 @@ export function getVerseAllLanguages(
     });
   }
 
-  // Mirror getVerse() ordering: ai_assisted ASC, created_at ASC — the
-  // first row per lang is the "primary" one VerseAnatomy renders.
+  // Mirror getVerse() ordering: reviewed first, then ai_assisted ASC,
+  // created_at ASC — the first row per lang is the "primary" one
+  // VerseAnatomy renders. Drafts are excluded from public reads.
   const trRows = db
     .query<
       { lang: string; translation_text: string; translator: string | null; ai_assisted: number },
@@ -629,8 +647,8 @@ export function getVerseAllLanguages(
     >(`
       SELECT lang, translation_text, translator, ai_assisted, status
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verse.id);
 
@@ -671,7 +689,7 @@ export function getAvailableLanguages(): Set<string> {
     .query<{ lang: string }, []>(`
       SELECT DISTINCT lang
       FROM translations
-      WHERE status IN ('published', 'reviewed', 'draft')
+      WHERE status IN ('published', 'reviewed')
     `)
     .all();
   return new Set(rows.map((r: { lang: string }) => r.lang.toLowerCase()));
@@ -681,9 +699,9 @@ export function getAvailableLanguages(): Set<string> {
  * Return ALL translations for a verse across every language. Powers the
  * TranslationDrawer's multi-select chip availability + stacked preview.
  *
- * Same status filter as getVerse — drafts surface alongside published/reviewed
- * in V1's AI-only posture (per-verse [draft] uncertainty is communicated
- * through the amber AIAssistedBadge variant). ai_assisted is normalized to bool.
+ * Same status filter as getVerse — drafts are excluded from public reads,
+ * so a language whose only rows are drafts shows the drawer's existing
+ * "Not yet translated" state. ai_assisted is normalized to bool.
  */
 export function getVerseTranslations(verseId: number): Translation[] {
   type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
@@ -692,8 +710,8 @@ export function getVerseTranslations(verseId: number): Translation[] {
     .query<TransRow, [number]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verseId);
   return rows.map((t: TransRow) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));

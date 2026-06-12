@@ -47,7 +47,9 @@ export function computeBadgeState(input: BadgeStateInput): BadgeState {
   }
 
   if (aiAssisted) {
-    // Covers status='published' and the 'draft' fallback if it ever surfaces.
+    // Covers status='published'. Drafts are excluded from public reads in
+    // db.ts/search.ts so the 'draft' input is dead on public pages — kept
+    // defensively so a draft can never pose as reviewed/PD if it leaks.
     return {
       variant: 'amber',
       label: 'AI · not verified',

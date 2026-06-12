@@ -52,8 +52,20 @@ export const SLUG_ALIASES: Record<string, string> = {
   'spanda-karika': 'spanda-karikas',
 };
 
-/** Known traditions (extend if DB grows). */
-export const KNOWN_TRADITIONS = ['trika', 'shakta', 'kaula', 'shaiva'] as const;
+/**
+ * Canonical traditions — the live URL prefixes backed by `texts.tradition`
+ * rows in the DB, in /texts index display order (trika first, then shakta).
+ * Single source of truth: scripts/seo-validate.ts derives its route-shape
+ * checks from this list. Extend when the DB gains a new tradition.
+ */
+export const CANONICAL_TRADITIONS = ['trika', 'shakta'] as const;
+export type CanonicalTradition = (typeof CANONICAL_TRADITIONS)[number];
+
+/**
+ * Known traditions: canonical ones plus prefixes users plausibly mistype.
+ * Non-canonical entries only ever mint redirect pages.
+ */
+export const KNOWN_TRADITIONS = [...CANONICAL_TRADITIONS, 'kaula', 'shaiva'] as const;
 export type KnownTradition = (typeof KNOWN_TRADITIONS)[number];
 
 /**

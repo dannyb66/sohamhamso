@@ -22,6 +22,8 @@ const stubTexts: TextSummary[] = [
     title_iast: 'Karpūrādi-stotra',
     tradition: 'shakta',
     school: null,
+    author: null,
+    license: 'PD',
     verse_count: 22,
   },
   {
@@ -32,6 +34,8 @@ const stubTexts: TextSummary[] = [
     title_iast: 'Pratyabhijñā-hr̥dayam',
     tradition: 'trika',
     school: null,
+    author: 'Kṣemarāja',
+    license: 'PD',
     verse_count: 20,
   },
   {
@@ -42,6 +46,8 @@ const stubTexts: TextSummary[] = [
     title_iast: 'Śiva-sūtra',
     tradition: 'trika',
     school: null,
+    author: 'Vasugupta',
+    license: 'PD',
     verse_count: 77,
   },
 ];

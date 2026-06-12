@@ -212,7 +212,8 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
           v.devanagari,
           v.iast,
           (SELECT substr(tr.translation_text, 1, 140) FROM translations tr
-           WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation_excerpt,
+           WHERE tr.verse_id = v.id AND tr.lang = ?
+             AND tr.status IN ('published', 'reviewed') LIMIT 1) AS translation_excerpt,
           bm25(verses_fts) AS score
         FROM verses_fts
         JOIN verses v ON v.id = verses_fts.verse_id
@@ -253,6 +254,7 @@ export async function lexicalSearch(query: string, lang = 'en', limit = 10): Pro
         JOIN texts t ON t.id = v.text_id
         LEFT JOIN translations tr
           ON tr.verse_id = v.id AND tr.lang = ?
+          AND tr.status IN ('published', 'reviewed')
         WHERE ${ors}
         LIMIT ?
 `,
@@ -361,7 +363,8 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
         v.devanagari,
         v.iast,
         (SELECT substr(tr.translation_text, 1, 140) FROM translations tr
-         WHERE tr.verse_id = v.id AND tr.lang = ? LIMIT 1) AS translation_excerpt
+         WHERE tr.verse_id = v.id AND tr.lang = ?
+           AND tr.status IN ('published', 'reviewed') LIMIT 1) AS translation_excerpt
       FROM verses v
       JOIN texts t ON t.id = v.text_id
       WHERE v.id IN (${placeholders})
