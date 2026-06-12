@@ -856,6 +856,11 @@ unit-tested against.)
    reviewed side-by-side via `--variant` labels + `.timing.json` sidecars;
    pacing knobs are config (`chapters:` block), not code. One full worst-case
    render (ss ch3, 45 verses) before cron enablement.
+   **GATE DECISION (operator, 2026-06-12): PASSED — keep defaults.** Real-TTS
+   samples (spanda ch2 7v, ss ch1 first-8 with all 8 segments at the 10s
+   floor, spanda ch4 1-verse edge) reviewed and approved as-is: per-verse
+   segments, `min_seg_s: 10`, stretch-choreography + scale drift on floored
+   segments, no grouping, no ambient bed. Review packet: `samples/chapters/REVIEW.md`.
 4. **Staged rollout** — `backfill --dry-run` locally (read-only) →
    `workflow_dispatch` of Cron A2 with `backfill=true` + scope inputs →
    `youtube-status.ts --json` → `byFormat`. **Never run the backfill locally**
