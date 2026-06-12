@@ -4,10 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { load as yamlLoad } from 'js-yaml';
 import type { LangCode } from '../reading-modes';
 import {
-  parseCorpusDocument,
-  parseCorpusFaqDocument,
   type CorpusFaqDocument,
   type CorpusFaqEntry,
+  parseCorpusDocument,
+  parseCorpusFaqDocument,
 } from './corpus-schema';
 
 export interface ResolvedFaqEntry {
@@ -89,9 +89,7 @@ function ensureLoaded(): void {
     if (overridesBySlug.has(document.text.slug)) {
       throw new Error(`Duplicate corpus slug for SEO overrides: ${document.text.slug}`);
     }
-    const faqEntries = document.faq_file
-      ? loadFaqDocument(filePath, document.faq_file).faqs
-      : [];
+    const faqEntries = document.faq_file ? loadFaqDocument(filePath, document.faq_file).faqs : [];
     const seo = document.seo ?? {
       descriptions: {},
       keywords: {},

@@ -1,13 +1,13 @@
 import {
+  type Text,
+  type TextSummary,
+  type VersePageData,
   getDb,
   getText,
   getVerse,
   getVerseAllLanguages,
   listAllVerses,
   listTexts,
-  type Text,
-  type TextSummary,
-  type VersePageData,
 } from '../db';
 import type { LangCode } from '../reading-modes';
 import { isLangCode } from './i18n-routes';
@@ -116,7 +116,11 @@ export function getCanonicalVerseRoutes(): VerseRoute[] {
   return verseRouteCache;
 }
 
-export function getVerseAvailability(textSlug: string, chapter: number, verseNum: number): LangCode[] {
+export function getVerseAvailability(
+  textSlug: string,
+  chapter: number,
+  verseNum: number,
+): LangCode[] {
   const key = `${textSlug}:${chapter}:${verseNum}`;
   const cached = verseAvailabilityCache.get(key);
   if (cached) return cached;
@@ -232,7 +236,8 @@ export function getLemmaPageCached(slug: string, lang: LangCode): LemmaPageData 
       ORDER BY CASE WHEN g.gloss_lang = ? THEN 0 ELSE 1 END, g.verse_id ASC, g.word_idx ASC
     `)
     .all(summary.lemmaIast, lang, lang);
-  const requestedGloss = glossRows.find((row) => row.gloss_lang === lang)?.gloss_text?.trim() || null;
+  const requestedGloss =
+    glossRows.find((row) => row.gloss_lang === lang)?.gloss_text?.trim() || null;
   const englishGloss = glossRows.find((row) => row.gloss_lang === 'en')?.gloss_text?.trim() || null;
   const gloss = requestedGloss ?? englishGloss;
   if (!gloss) {

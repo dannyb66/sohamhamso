@@ -1,14 +1,15 @@
 #!/usr/bin/env bun
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { getAvailableLanguages, getText, getVerse, getVerseAllLanguages, listChapters } from '../src/lib/db';
-import { READING_MODES, getReadingModeByLang } from '../src/lib/reading-modes';
 import {
-  type HreflangEntry,
-  inspectHtmlFile,
-  resolveSiteOrigin,
-  toPageUrl,
-} from './seo-validate';
+  getAvailableLanguages,
+  getText,
+  getVerse,
+  getVerseAllLanguages,
+  listChapters,
+} from '../src/lib/db';
+import { READING_MODES, getReadingModeByLang } from '../src/lib/reading-modes';
+import { type HreflangEntry, inspectHtmlFile, resolveSiteOrigin, toPageUrl } from './seo-validate';
 
 export interface SeoPreview {
   source: 'db' | 'build';
@@ -161,7 +162,11 @@ function buildHreflangCluster(
 function buildBreadcrumbs(
   siteOrigin: string,
   entries: Array<{ name: string; path: string }>,
-): { '@context': string; '@type': 'BreadcrumbList'; itemListElement: Array<Record<string, unknown>> } {
+): {
+  '@context': string;
+  '@type': 'BreadcrumbList';
+  itemListElement: Array<Record<string, unknown>>;
+} {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -235,7 +240,10 @@ export function buildSeoPreviewFromDb(input: {
           isPartOf: {
             '@type': 'CreativeWork',
             name: text.title_en,
-            url: toPageUrl(buildLocaleRoutePath(lang, text.tradition, input.textSlug), input.siteOrigin),
+            url: toPageUrl(
+              buildLocaleRoutePath(lang, text.tradition, input.textSlug),
+              input.siteOrigin,
+            ),
           },
           description: buildDescription(
             primaryTranslation ?? '',
@@ -256,8 +264,7 @@ export function buildSeoPreviewFromDb(input: {
         devanagari: versePage.verse.devanagari,
         iast: versePage.verse.iast,
         translationLangRequested: lang,
-        translationLangUsed:
-          versePage.translations[0]?.lang ?? (fallbackTranslation ? 'en' : null),
+        translationLangUsed: versePage.translations[0]?.lang ?? (fallbackTranslation ? 'en' : null),
         availableLangs,
         glossCount: versePage.wordGlosses.length,
       },
@@ -284,7 +291,12 @@ export function buildSeoPreviewFromDb(input: {
     description,
     robots: null,
     ogImage: toPageUrl(`/og${routePath}.png`, input.siteOrigin),
-    hreflang: buildHreflangCluster(availableLangs, input.siteOrigin, text.tradition, input.textSlug),
+    hreflang: buildHreflangCluster(
+      availableLangs,
+      input.siteOrigin,
+      text.tradition,
+      input.textSlug,
+    ),
     jsonLd: [
       {
         '@context': 'https://schema.org',

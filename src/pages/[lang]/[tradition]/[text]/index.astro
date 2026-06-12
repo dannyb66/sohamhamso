@@ -5,13 +5,13 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { KNOWN_TRADITIONS, resolveAlias } from '../../../../lib/aliases';
 import { getText, listChapters } from '../../../../lib/db';
 import type { LangCode } from '../../../../lib/reading-modes';
-import { getTexts } from '../../../../lib/seo/corpus-bundle';
 import {
   NON_ENGLISH_LANGS,
   buildTextSeo,
   filterIndexableTextLangs,
   liveLocaleSet,
 } from '../../../../lib/seo';
+import { getTexts } from '../../../../lib/seo/corpus-bundle';
 
 export async function getStaticPaths() {
   const paths: Array<{ params: { lang: string; tradition: string; text: string } }> = [];
@@ -34,7 +34,10 @@ if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[numb
 }
 const aliasCheck = resolveAlias(tradition!, text!);
 if (aliasCheck && !aliasCheck.canonical) {
-  return Astro.redirect(`/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+  return Astro.redirect(
+    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`,
+    301,
+  );
 }
 
 const currentLang = lang as LangCode;

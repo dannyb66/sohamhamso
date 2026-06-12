@@ -2,9 +2,10 @@ import type { Text, TextSummary, Verse } from '../db';
 import type { LangCode } from '../reading-modes';
 import { filterIndexableTextLangs, getTextSeoOverrides } from './corpus-overrides';
 import { resolveTextDescription, resolveVerseDescription } from './descriptions';
-import { buildHreflangEntries, type HreflangEntry } from './hreflang';
+import { type HreflangEntry, buildHreflangEntries } from './hreflang';
 import { absoluteLocaleUrl, inLanguageTag } from './i18n-routes';
 import {
+  type JsonLdNode,
   buildArticleJsonLd,
   buildBookJsonLd,
   buildBreadcrumbList,
@@ -15,7 +16,6 @@ import {
   buildWebPageJsonLd,
   buildWebSiteJsonLd,
   combineJsonLd,
-  type JsonLdNode,
 } from './jsonld';
 import { resolveTextKeywords } from './keywords';
 
@@ -71,7 +71,10 @@ export function buildVerseSeo(input: {
   const breadcrumbs = buildBreadcrumbList([
     { name: 'Home', item: absoluteLocaleUrl('/', input.lang) },
     { name: input.text.tradition, item: absoluteLocaleUrl(`/${input.text.tradition}`, input.lang) },
-    { name: input.text.title_en, item: absoluteLocaleUrl(`/${input.text.tradition}/${input.text.slug}`, input.lang) },
+    {
+      name: input.text.title_en,
+      item: absoluteLocaleUrl(`/${input.text.tradition}/${input.text.slug}`, input.lang),
+    },
     { name: locator, item: canonical },
   ]);
   return {
@@ -111,7 +114,10 @@ export function buildVerseSeo(input: {
     ),
     keywords: [],
     noindex,
-    ogImageUrl: absoluteLocaleUrl(`/og/${input.text.tradition}/${input.text.slug}/${input.verse.chapter}/${input.verse.verse_num}?lang=${input.lang}`, 'en'),
+    ogImageUrl: absoluteLocaleUrl(
+      `/og/${input.text.tradition}/${input.text.slug}/${input.verse.chapter}/${input.verse.verse_num}?lang=${input.lang}`,
+      'en',
+    ),
     title,
   };
 }
@@ -169,7 +175,10 @@ export function buildTextSeo(input: {
       }),
       buildBreadcrumbList([
         { name: 'Home', item: absoluteLocaleUrl('/', input.lang) },
-        { name: input.text.tradition, item: absoluteLocaleUrl(`/${input.text.tradition}`, input.lang) },
+        {
+          name: input.text.tradition,
+          item: absoluteLocaleUrl(`/${input.text.tradition}`, input.lang),
+        },
         { name: input.text.title_en, item: canonical },
       ]),
     ),
@@ -322,7 +331,10 @@ export function buildLemmaSeo(input: {
     ),
     keywords: [],
     noindex,
-    ogImageUrl: absoluteLocaleUrl(`/og/lemma/${input.basePath.split('/').at(-1)}?lang=${input.lang}`, 'en'),
+    ogImageUrl: absoluteLocaleUrl(
+      `/og/lemma/${input.basePath.split('/').at(-1)}?lang=${input.lang}`,
+      'en',
+    ),
     title,
   };
 }

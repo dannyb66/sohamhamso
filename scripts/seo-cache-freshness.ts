@@ -66,7 +66,10 @@ export interface FreshnessResult {
   url: string;
 }
 
-export async function checkFreshness(origin: string, target: FreshnessTarget): Promise<FreshnessResult> {
+export async function checkFreshness(
+  origin: string,
+  target: FreshnessTarget,
+): Promise<FreshnessResult> {
   const url = new URL(target.path, origin).toString();
   const response = await fetch(url, {
     redirect: 'manual',

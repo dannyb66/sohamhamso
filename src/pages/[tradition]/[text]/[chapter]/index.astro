@@ -1,7 +1,7 @@
 ---
+import SubscribeBand from '../../../../components/SubscribeBand.astro';
 import Breadcrumbs from '../../../../components/seo/Breadcrumbs.astro';
 import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
-import SubscribeBand from '../../../../components/SubscribeBand.astro';
 /**
  * Chapter index page: /{tradition}/{text-slug}/{chapter}/
  *
@@ -14,8 +14,8 @@ import SubscribeBand from '../../../../components/SubscribeBand.astro';
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { enumerateRedirectPairs } from '../../../../lib/aliases';
-import { getText, listChapters, listChapterSummary } from '../../../../lib/db';
-import { getReadingModeByLang, type LangCode } from '../../../../lib/reading-modes';
+import { getText, listChapterSummary, listChapters } from '../../../../lib/db';
+import { type LangCode, getReadingModeByLang } from '../../../../lib/reading-modes';
 import {
   absoluteLocaleUrl,
   buildBreadcrumbList,
@@ -23,8 +23,8 @@ import {
   buildWebPageJsonLd,
   combineJsonLd,
   filterIndexableTextLangs,
-  getTexts,
   getTextSeoOverrides,
+  getTexts,
   inLanguageTag,
   liveLocaleSet,
 } from '../../../../lib/seo';

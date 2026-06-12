@@ -1,10 +1,10 @@
 #!/usr/bin/env bun
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { load as yamlLoad } from 'js-yaml';
+import type { LangCode } from '../src/lib/reading-modes';
 import { parseCorpusDocument } from '../src/lib/seo/corpus-schema';
 import { liveLocaleSet } from '../src/lib/seo/i18n-routes';
-import type { LangCode } from '../src/lib/reading-modes';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -33,15 +33,17 @@ function isCorpusSourceFile(name: string): boolean {
 }
 
 function hasTranslationForLang(
-  translations: Array<{ lang?: string; text?: string | null; translation_text?: string | null }> | undefined,
+  translations:
+    | Array<{ lang?: string; text?: string | null; translation_text?: string | null }>
+    | undefined,
   lang: LangCode,
 ): boolean {
   if (!translations) return false;
   return translations.some(
     (t) =>
       t.lang === lang &&
-      (typeof t.text === 'string' && t.text.trim().length > 0 ||
-        typeof t.translation_text === 'string' && t.translation_text.trim().length > 0),
+      ((typeof t.text === 'string' && t.text.trim().length > 0) ||
+        (typeof t.translation_text === 'string' && t.translation_text.trim().length > 0)),
   );
 }
 

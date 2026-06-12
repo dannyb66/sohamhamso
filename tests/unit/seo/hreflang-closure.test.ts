@@ -337,8 +337,8 @@ describe('seo-hreflang-closure: checkHreflangGraph', () => {
           {
             canonicalUrl: enUrl,
             hreflangByHref: new Map([
-              [hiUrl, 'hi'],       // hiUrl won't link back → asymmetric
-              [orphanUrl, 'xx'],   // not in graph → orphan
+              [hiUrl, 'hi'], // hiUrl won't link back → asymmetric
+              [orphanUrl, 'xx'], // not in graph → orphan
               ['x-default-sentinel', 'x-default'],
             ]),
           },
@@ -348,9 +348,7 @@ describe('seo-hreflang-closure: checkHreflangGraph', () => {
           {
             canonicalUrl: hiUrl,
             // No link back to enUrl
-            hreflangByHref: new Map([
-              ['x-default-sentinel', 'x-default'],
-            ]),
+            hreflangByHref: new Map([['x-default-sentinel', 'x-default']]),
           },
         ],
       ]);

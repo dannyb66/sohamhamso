@@ -142,7 +142,9 @@ async function main(): Promise<void> {
     for (const url of urls.slice(0, 10)) {
       console.log(`  ${url}`);
     }
-    console.log(`\nDry run complete. Would submit ${urls.length} URLs in ${Math.ceil(urls.length / BATCH_SIZE)} batch(es).`);
+    console.log(
+      `\nDry run complete. Would submit ${urls.length} URLs in ${Math.ceil(urls.length / BATCH_SIZE)} batch(es).`,
+    );
     return;
   }
 
@@ -155,14 +157,18 @@ async function main(): Promise<void> {
   for (let i = 0; i < urls.length; i += BATCH_SIZE) {
     batches.push(urls.slice(i, i + BATCH_SIZE));
   }
-  console.log(`Submitting ${urls.length} URLs in ${batches.length} batch(es) of up to ${BATCH_SIZE}...`);
+  console.log(
+    `Submitting ${urls.length} URLs in ${batches.length} batch(es) of up to ${BATCH_SIZE}...`,
+  );
 
   const results: BatchResult[] = [];
   for (let i = 0; i < batches.length; i++) {
     const result = await submitBatch(batches[i], i + 1);
     results.push(result);
     const flag = result.ok ? 'OK' : 'FAIL';
-    console.log(`Batch ${result.batchIndex}/${batches.length}: ${result.status} ${flag} (${result.urlCount} URLs)`);
+    console.log(
+      `Batch ${result.batchIndex}/${batches.length}: ${result.status} ${flag} (${result.urlCount} URLs)`,
+    );
     if (!result.ok) {
       console.error(`  Response body: ${result.body.slice(0, 500)}`);
     }

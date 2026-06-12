@@ -1,12 +1,12 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { extname, resolve } from 'node:path';
 import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
-import { __setCorpusDbForTests, type CorpusDb } from '../../src/lib/corpus-db';
-import { __resetLemmaIndexForTests } from '../../src/lib/seo/og-payload';
 import {
   __OG_QUERY_TIMEOUT_MS_FOR_TESTS,
   __resetLibsqlClientImportForTests,
 } from '../../functions/og/_shared';
+import { type CorpusDb, __setCorpusDbForTests } from '../../src/lib/corpus-db';
+import { __resetLemmaIndexForTests } from '../../src/lib/seo/og-payload';
 
 const ROOT = resolve(__dirname, '..', '..');
 const fakeDb: CorpusDb = {
@@ -83,7 +83,9 @@ afterAll(() => {
 
 describe('OG function rendering', () => {
   it('renders verse OG success responses as PNG', async () => {
-    const response = await handleVerseOgRequest(makeContext('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=ta'));
+    const response = await handleVerseOgRequest(
+      makeContext('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=ta'),
+    );
 
     expect(response.status).toBe(200);
     expect(response.headers.get('Content-Type')).toBe('image/png');
@@ -96,7 +98,9 @@ describe('OG function rendering', () => {
   });
 
   it('renders lemma OG success responses as PNG', async () => {
-    const response = await handleLemmaOgRequest(makeContext('https://sohamhamso.org/og/lemma/siva-2?lang=ta'));
+    const response = await handleLemmaOgRequest(
+      makeContext('https://sohamhamso.org/og/lemma/siva-2?lang=ta'),
+    );
 
     expect(response.status).toBe(200);
     expect(response.headers.get('Content-Type')).toBe('image/png');

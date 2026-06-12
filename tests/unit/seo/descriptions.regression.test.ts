@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LangCode } from '../../../src/lib/reading-modes';
-import {
-  resolveTextDescription,
-  resolveVerseDescription,
-} from '../../../src/lib/seo/descriptions';
+import { resolveTextDescription, resolveVerseDescription } from '../../../src/lib/seo/descriptions';
 
 const text = {
   id: 'test-text',

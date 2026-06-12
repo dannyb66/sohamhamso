@@ -62,9 +62,7 @@ async function probeAudioSeconds(path: string): Promise<number> {
  * Returns null to render silent when `--silent`, MOCK_ALL, or no creds — so
  * the smoke never hard-fails.
  */
-async function synthAudio(
-  silent: boolean,
-): Promise<{ dataUrl: string; durationS: number } | null> {
+async function synthAudio(silent: boolean): Promise<{ dataUrl: string; durationS: number } | null> {
   if (silent || process.env.MOCK_ALL === 'true') return null;
   const hasCreds =
     process.env.GOOGLE_APPLICATION_CREDENTIALS ||

@@ -1,5 +1,5 @@
+import { SITE_URL, filterIndexableTextLangs, liveLocaleSet, localePathFor } from '../lib/seo';
 import { getTexts } from '../lib/seo/corpus-bundle';
-import { filterIndexableTextLangs, liveLocaleSet, localePathFor, SITE_URL } from '../lib/seo';
 import { xmlEscape } from '../lib/seo/xml-escape';
 
 export function GET() {
@@ -12,8 +12,8 @@ export function GET() {
       liveLangs.map((lang) => `${SITE_URL}${xmlEscape(localePathFor(`/${tradition}`, lang))}`),
     ),
     ...texts.flatMap((text) =>
-      filterIndexableTextLangs(text.slug, liveLangs).map((lang) =>
-        `${SITE_URL}${xmlEscape(localePathFor(`/${text.tradition}/${text.slug}`, lang))}`,
+      filterIndexableTextLangs(text.slug, liveLangs).map(
+        (lang) => `${SITE_URL}${xmlEscape(localePathFor(`/${text.tradition}/${text.slug}`, lang))}`,
       ),
     ),
   ];

@@ -1,4 +1,4 @@
-import { type LangCode } from '../reading-modes';
+import type { LangCode } from '../reading-modes';
 import { DEFAULT_LANG, absoluteLocaleUrl } from './i18n-routes';
 
 export interface HreflangEntry {
@@ -6,10 +6,7 @@ export interface HreflangEntry {
   href: string;
 }
 
-export function buildHreflangEntries(
-  basePath: string,
-  langs: Iterable<LangCode>,
-): HreflangEntry[] {
+export function buildHreflangEntries(basePath: string, langs: Iterable<LangCode>): HreflangEntry[] {
   const unique = Array.from(new Set(langs));
   const entries: HreflangEntry[] = unique.map((lang) => ({
     hreflang: lang,

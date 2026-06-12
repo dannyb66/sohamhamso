@@ -3,8 +3,13 @@ import LangSwitcher from '../../../components/seo/LangSwitcher.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { KNOWN_TRADITIONS } from '../../../lib/aliases';
 import type { LangCode } from '../../../lib/reading-modes';
+import {
+  NON_ENGLISH_LANGS,
+  buildTraditionSeo,
+  liveLocaleSet,
+  summarizeTradition,
+} from '../../../lib/seo';
 import { getTexts } from '../../../lib/seo/corpus-bundle';
-import { NON_ENGLISH_LANGS, buildTraditionSeo, liveLocaleSet, summarizeTradition } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const texts = getTexts();

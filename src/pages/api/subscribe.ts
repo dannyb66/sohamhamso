@@ -29,11 +29,7 @@
 
 import { createHmac, randomBytes } from 'node:crypto';
 import type { APIRoute } from 'astro';
-import {
-  SubscriberUniqueViolation,
-  getSubscriberDb,
-  isEdgeRuntime,
-} from '../../lib/subscriber-db';
+import { SubscriberUniqueViolation, getSubscriberDb, isEdgeRuntime } from '../../lib/subscriber-db';
 
 // Server-rendered endpoint — Astro's default `output: 'static'` would
 // prerender this route and reject POST. The opt-out keeps the rest of

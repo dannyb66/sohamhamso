@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { getCanonicalVerseRoutes } from '../../../src/lib/seo/corpus-bundle';
 import { NON_ENGLISH_LANGS } from '../../../src/lib/seo';
+import { getCanonicalVerseRoutes } from '../../../src/lib/seo/corpus-bundle';
 
 describe('localized route collision guard', () => {
   it('localized verse routes never intersect canonical root verse routes', () => {

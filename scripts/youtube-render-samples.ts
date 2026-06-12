@@ -84,9 +84,7 @@ async function synth(text: string, voice: string): Promise<{ dataUrl: string; du
   // itself, so pass it explicitly. Otherwise fall back to ADC /
   // GOOGLE_APPLICATION_CREDENTIALS (local dev).
   const credsJson = process.env.GOOGLE_TTS_CREDENTIALS_JSON;
-  const client = credsJson
-    ? new Client({ credentials: JSON.parse(credsJson) })
-    : new Client();
+  const client = credsJson ? new Client({ credentials: JSON.parse(credsJson) }) : new Client();
   const [resp] = await client.synthesizeSpeech({
     input: { text },
     voice: { languageCode: 'en-US', name: voice },

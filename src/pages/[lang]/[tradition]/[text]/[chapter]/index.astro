@@ -1,7 +1,7 @@
 ---
+import SubscribeBand from '../../../../../components/SubscribeBand.astro';
 import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
 import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
-import SubscribeBand from '../../../../../components/SubscribeBand.astro';
 /**
  * Localized chapter index page: /{lang}/{tradition}/{text-slug}/{chapter}/
  *
@@ -12,8 +12,8 @@ import SubscribeBand from '../../../../../components/SubscribeBand.astro';
  */
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { KNOWN_TRADITIONS, resolveAlias } from '../../../../../lib/aliases';
-import { getText, listChapters, listChapterSummary } from '../../../../../lib/db';
-import { getReadingModeByLang, type LangCode } from '../../../../../lib/reading-modes';
+import { getText, listChapterSummary, listChapters } from '../../../../../lib/db';
+import { type LangCode, getReadingModeByLang } from '../../../../../lib/reading-modes';
 import {
   NON_ENGLISH_LANGS,
   absoluteLocaleUrl,
@@ -22,8 +22,8 @@ import {
   buildWebPageJsonLd,
   combineJsonLd,
   filterIndexableTextLangs,
-  getTexts,
   getTextSeoOverrides,
+  getTexts,
   inLanguageTag,
   liveLocaleSet,
   localePathFor,

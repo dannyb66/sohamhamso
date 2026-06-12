@@ -1,5 +1,5 @@
 import { listChapters } from '../lib/db';
-import { filterIndexableTextLangs, liveLocaleSet, localePathFor, SITE_URL } from '../lib/seo';
+import { SITE_URL, filterIndexableTextLangs, liveLocaleSet, localePathFor } from '../lib/seo';
 import { getTexts } from '../lib/seo/corpus-bundle';
 import { xmlEscape } from '../lib/seo/xml-escape';
 

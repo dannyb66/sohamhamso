@@ -1,18 +1,18 @@
 import type { Text } from '../db';
 import type { LangCode } from '../reading-modes';
 import { getTextSeoOverrides } from './corpus-overrides';
-import * as en from './description-templates/en';
-import * as hi from './description-templates/hi';
-import * as ta from './description-templates/ta';
-import * as te from './description-templates/te';
+import * as as_ from './description-templates/as';
 import * as bn from './description-templates/bn';
-import * as mr from './description-templates/mr';
+import * as en from './description-templates/en';
 import * as gu from './description-templates/gu';
+import * as hi from './description-templates/hi';
 import * as kn from './description-templates/kn';
 import * as ml from './description-templates/ml';
-import * as pa from './description-templates/pa';
+import * as mr from './description-templates/mr';
 import * as or_ from './description-templates/or';
-import * as as_ from './description-templates/as';
+import * as pa from './description-templates/pa';
+import * as ta from './description-templates/ta';
+import * as te from './description-templates/te';
 
 const TEMPLATES: Record<LangCode, typeof en> = {
   en,

@@ -19,15 +19,18 @@
 //   bn / ta / kn / ml → target-script range on .verse-iast (line 2); same
 //               font-family guard.
 
-import { expect, test } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
+import { expect, test } from '@playwright/test';
 
 // Font-rendering tests require a real browser with Noto Serif WOFF2 loaded.
 // In CI (headless Chromium with no font cache), the font stack behaves differently
 // and these assertions produce false positives / false negatives. The separate
 // font-loading.spec.ts already validates @font-face rule presence in CI.
-test.skip(!!process.env.CI, 'combining-mark rendering tests require real browser with font loading');
+test.skip(
+  !!process.env.CI,
+  'combining-mark rendering tests require real browser with font loading',
+);
 
 // ── Unicode ranges ────────────────────────────────────────────────────────────
 // Matches the narrower repo convention from regression-2.spec.ts (U+0900–U+0963
@@ -138,9 +141,7 @@ test.describe('combining-mark rendering — webfont vs system fallback', () => {
 
       // Switch to the target locale via the ScriptSwitcher.
       await page.locator('.script-switcher__trigger').first().click();
-      const modeRow = page
-        .locator(`.script-switcher__row:has-text("${englishName}")`)
-        .first();
+      const modeRow = page.locator(`.script-switcher__row:has-text("${englishName}")`).first();
       if (!(await modeRow.count())) {
         test.info().annotations.push({
           type: 'skip',
@@ -167,19 +168,14 @@ test.describe('combining-mark rendering — webfont vs system fallback', () => {
 
       // ── 2. Script-range check: element contains codepoints in target range ─
       const textContent = await el.textContent();
-      expect(
-        textContent,
-        `${englishName}: ${targetSelector} contains no text`,
-      ).not.toBeNull();
+      expect(textContent, `${englishName}: ${targetSelector} contains no text`).not.toBeNull();
       expect(
         textContent ?? '',
         `${englishName}: ${targetSelector} does not contain ${englishName} script codepoints`,
       ).toMatch(scriptRange);
 
       // ── 3. Font-family check: not a bare system fallback ──────────────────
-      const fontFamily: string = await el.evaluate(
-        (el) => getComputedStyle(el).fontFamily,
-      );
+      const fontFamily: string = await el.evaluate((el) => getComputedStyle(el).fontFamily);
       expect(
         isBareSystemFallback(fontFamily),
         `${englishName}: ${targetSelector} fontFamily is a bare system fallback: "${fontFamily}"`,

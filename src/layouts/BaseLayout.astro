@@ -8,7 +8,7 @@ import HeadSeo from '../components/seo/HeadSeo.astro';
 import { CORE_PRELOADED_FONT_ASSETS } from '../lib/font-assets';
 import type { LangCode } from '../lib/reading-modes';
 import type { HreflangEntry } from '../lib/seo';
-import { buildWebPageJsonLd, type JsonLdNode } from '../lib/seo/jsonld';
+import { type JsonLdNode, buildWebPageJsonLd } from '../lib/seo/jsonld';
 
 interface Props {
   canonical?: string;
@@ -35,8 +35,7 @@ const {
   ogImageUrl,
 } = Astro.props;
 const siteUrl = Astro.site ?? Astro.url;
-const requestPath =
-  Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
+const requestPath = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
 const resolvedCanonical = canonical ?? new URL(requestPath, siteUrl).toString();
 const resolvedOgImageUrl = ogImageUrl ?? new URL('/og-default.png', siteUrl).toString();
 const currentLangCode = lang as LangCode;

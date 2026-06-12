@@ -148,7 +148,8 @@ describe('applyReadingMode', () => {
     expect(result).toBeUndefined();
     expect(localStorage.getItem('sohamhamso:script')).toBeNull();
     expect(localStorage.getItem('sohamhamso:reader-lang')).toBeNull();
-    const dispatchedEvents = (globalThis as unknown as { document: { __events: Event[] } }).document.__events;
+    const dispatchedEvents = (globalThis as unknown as { document: { __events: Event[] } }).document
+      .__events;
     expect(dispatchedEvents).toHaveLength(0);
   });
 });

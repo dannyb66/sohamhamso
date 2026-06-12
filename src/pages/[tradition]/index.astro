@@ -7,8 +7,8 @@
 import LangSwitcher from '../../components/seo/LangSwitcher.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import type { LangCode } from '../../lib/reading-modes';
-import { getTexts } from '../../lib/seo/corpus-bundle';
 import { buildTraditionSeo, liveLocaleSet, summarizeTradition } from '../../lib/seo';
+import { getTexts } from '../../lib/seo/corpus-bundle';
 
 export async function getStaticPaths() {
   const texts = getTexts();

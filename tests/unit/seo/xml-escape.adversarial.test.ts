@@ -56,8 +56,7 @@ describe('xmlEscape — adversarial inputs', () => {
 
   it('escapes long runs of special characters', () => {
     const input = '&&&<<<>>>"""\'\'\'';
-    const expected =
-      '&amp;&amp;&amp;&lt;&lt;&lt;&gt;&gt;&gt;&quot;&quot;&quot;&apos;&apos;&apos;';
+    const expected = '&amp;&amp;&amp;&lt;&lt;&lt;&gt;&gt;&gt;&quot;&quot;&quot;&apos;&apos;&apos;';
     expect(xmlEscape(input)).toBe(expected);
   });
 

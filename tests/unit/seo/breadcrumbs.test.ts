@@ -51,11 +51,7 @@ describe('buildBreadcrumbAriaProps', () => {
     expect(props.ariaCurrent).toBe('page');
 
     // Last item with href must still render as span (current page is not a link)
-    const withHref = buildBreadcrumbAriaProps(
-      { name: 'X', href: '/x' },
-      1,
-      2,
-    );
+    const withHref = buildBreadcrumbAriaProps({ name: 'X', href: '/x' }, 1, 2);
     expect(withHref.asLink).toBe(false);
     expect(withHref.ariaCurrent).toBe('page');
   });

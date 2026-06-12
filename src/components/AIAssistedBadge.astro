@@ -60,10 +60,13 @@ const { variant, label, icon } = computeBadgeState({
 // stitch dynamic substrings and stay un-swapped for V1. Phase B can
 // extend computeBadgeState() to return key + interpolation slots.
 const labelI18nKey =
-  label === 'AI · not verified' ? 'badge.ai.not_verified'
-  : label === 'AI · reviewed' ? 'badge.ai.reviewed'
-  : label === 'Public domain' ? 'badge.public_domain'
-  : null;
+  label === 'AI · not verified'
+    ? 'badge.ai.not_verified'
+    : label === 'AI · reviewed'
+      ? 'badge.ai.reviewed'
+      : label === 'Public domain'
+        ? 'badge.public_domain'
+        : null;
 
 // Stable id pairs the <details> with its label so multiple badges on a
 // page don't collide.

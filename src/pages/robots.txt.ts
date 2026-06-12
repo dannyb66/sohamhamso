@@ -1,4 +1,4 @@
-import { NON_ENGLISH_LANGS, liveLocaleSet, SITE_URL } from '../lib/seo';
+import { NON_ENGLISH_LANGS, SITE_URL, liveLocaleSet } from '../lib/seo';
 
 export function buildRobotsTxt(): string {
   const live = liveLocaleSet();
@@ -19,13 +19,7 @@ export function buildRobotsTxt(): string {
     `Sitemap: ${SITE_URL}/sitemap-lemmas.xml`,
     `Sitemap: ${SITE_URL}/sitemap-chrome.xml`,
   ];
-  return [
-    'User-agent: *',
-    ...baseDisallowed,
-    ...localeDisallowed,
-    '',
-    ...sitemaps,
-  ].join('\n');
+  return ['User-agent: *', ...baseDisallowed, ...localeDisallowed, '', ...sitemaps].join('\n');
 }
 
 export function GET() {

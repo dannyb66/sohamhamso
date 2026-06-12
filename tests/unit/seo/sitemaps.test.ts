@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
-import { GET as getSitemapIndex } from '../../../src/pages/sitemap-index.xml.ts';
 import { GET as getChromeSitemap } from '../../../src/pages/sitemap-chrome.xml.ts';
+import { GET as getSitemapIndex } from '../../../src/pages/sitemap-index.xml.ts';
 import { GET as getLemmaSitemap } from '../../../src/pages/sitemap-lemmas.xml.ts';
 
 const originalLocaleUrlsLiveLangs = process.env.LOCALE_URLS_LIVE_LANGS;

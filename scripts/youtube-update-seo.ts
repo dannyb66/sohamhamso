@@ -1,4 +1,7 @@
 #!/usr/bin/env bun
+import { log, scrubError } from '../pipeline/youtube/log';
+import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
+import { buildUploadMetadata } from '../pipeline/youtube/upload-metadata';
 /**
  * youtube-update-seo.ts — re-apply the SEO-optimized metadata to videos that
  * are already on YouTube (one-time backfill after improving the metadata
@@ -15,10 +18,7 @@
  *   MOCK_ALL=true → DB-only, no YouTube call.
  */
 import { getDb } from '../src/lib/db';
-import { log, scrubError } from '../pipeline/youtube/log';
-import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
-import { buildUploadMetadata } from '../pipeline/youtube/upload-metadata';
-import { addQuotaUnits, getVideosDb, listByStatus, type VideoRow } from '../src/lib/videos-db';
+import { type VideoRow, addQuotaUnits, getVideosDb, listByStatus } from '../src/lib/videos-db';
 
 const STAGE = 'update-seo';
 const CANONICAL_BASE = 'https://sohamhamso.org';
@@ -128,7 +128,11 @@ async function main(): Promise<void> {
       }
       addQuotaUnits(db, v.channel_handle, today, UNITS_PER_UPDATE, 0);
       updated++;
-      log(STAGE, 'updated', { yt: v.youtube_video_id, lang: v.lang, ref: `${v.chapter}.${v.verse_num}` });
+      log(STAGE, 'updated', {
+        yt: v.youtube_video_id,
+        lang: v.lang,
+        ref: `${v.chapter}.${v.verse_num}`,
+      });
     } catch (e) {
       log(STAGE, 'update FAILED', { yt: v.youtube_video_id, error: scrubError(e).slice(0, 160) });
     }

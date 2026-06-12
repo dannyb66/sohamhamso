@@ -155,7 +155,9 @@ async function main(): Promise<void> {
   const summary = summarizeOgResults(results, args.threshold);
 
   // Print table header
-  console.log(`${'Locale'.padEnd(8)} ${'Total'.padEnd(7)} ${'Fallback'.padEnd(10)} ${'Rate'.padEnd(8)} Status`);
+  console.log(
+    `${'Locale'.padEnd(8)} ${'Total'.padEnd(7)} ${'Fallback'.padEnd(10)} ${'Rate'.padEnd(8)} Status`,
+  );
   console.log('-'.repeat(52));
 
   for (const [lang, counts] of summary.byLocale) {
@@ -167,7 +169,9 @@ async function main(): Promise<void> {
   }
 
   console.log('');
-  console.log(`Overall: ${summary.totalFallback}/${summary.total} fallback (${summary.overallRate.toFixed(2)}%)`);
+  console.log(
+    `Overall: ${summary.totalFallback}/${summary.total} fallback (${summary.overallRate.toFixed(2)}%)`,
+  );
 
   // Print individual failures for debugging
   const failures = results.filter((r) => r.fallback);

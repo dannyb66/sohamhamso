@@ -1,9 +1,11 @@
-import { READING_MODES, type LangCode } from '../reading-modes';
+import { type LangCode, READING_MODES } from '../reading-modes';
 
 export const SITE_URL = 'https://sohamhamso.org';
 export const DEFAULT_LANG: LangCode = 'en';
 export const ALL_LANGS = READING_MODES.map((mode) => mode.langCode);
-export const NON_ENGLISH_LANGS = ALL_LANGS.filter((lang): lang is Exclude<LangCode, 'en'> => lang !== 'en');
+export const NON_ENGLISH_LANGS = ALL_LANGS.filter(
+  (lang): lang is Exclude<LangCode, 'en'> => lang !== 'en',
+);
 
 function normalizePath(pathname: string): string {
   if (!pathname || pathname === '/') return '/';
@@ -77,13 +79,14 @@ export function localeUrlsLive(): boolean {
 }
 
 export function liveLocaleSet(): Set<LangCode> {
-  const configured = process.env.LOCALE_URLS_LIVE_LANGS
-    ?.split(',')
+  const configured = process.env.LOCALE_URLS_LIVE_LANGS?.split(',')
     .map((part) => part.trim())
     .filter(isLangCode);
   const live = new Set<LangCode>([DEFAULT_LANG]);
   if (configured && configured.length > 0) {
-    return new Set<LangCode>(configured.includes(DEFAULT_LANG) ? configured : [DEFAULT_LANG, ...configured]);
+    return new Set<LangCode>(
+      configured.includes(DEFAULT_LANG) ? configured : [DEFAULT_LANG, ...configured],
+    );
   }
   if (!localeUrlsLive()) return live;
   for (const lang of NON_ENGLISH_LANGS) live.add(lang);

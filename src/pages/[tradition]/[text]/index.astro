@@ -9,8 +9,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { enumerateRedirectPairs, resolveAlias } from '../../../lib/aliases';
 import { getText, listChapters } from '../../../lib/db';
 import type { LangCode } from '../../../lib/reading-modes';
-import { getTexts } from '../../../lib/seo/corpus-bundle';
 import { buildTextSeo, filterIndexableTextLangs, liveLocaleSet } from '../../../lib/seo';
+import { getTexts } from '../../../lib/seo/corpus-bundle';
 
 export async function getStaticPaths() {
   const canonical = getTexts().map((text) => ({

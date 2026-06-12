@@ -1,5 +1,6 @@
 import { type CorpusDb, CorpusNotConfiguredError, getCorpusDb } from '../../src/lib/corpus-db';
 import { FONT_ASSET_PATHS } from '../../src/lib/font-assets';
+import { getReadingModeByLang } from '../../src/lib/reading-modes';
 import {
   type LemmaOgPayload,
   type LemmaOgRoute,
@@ -12,7 +13,6 @@ import {
   parseLemmaOgUrl,
   parseVerseOgUrl,
 } from '../../src/lib/seo/og-payload';
-import { getReadingModeByLang } from '../../src/lib/reading-modes';
 
 const OG_SUCCESS_CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const OG_FALLBACK_CACHE_CONTROL = 'public, max-age=60';
@@ -112,7 +112,11 @@ async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRou
   }
 
   try {
-    const png = await withTimeout(renderOgPng(context, payload), OG_RENDER_TIMEOUT_MS, 'OG render timed out.');
+    const png = await withTimeout(
+      renderOgPng(context, payload),
+      OG_RENDER_TIMEOUT_MS,
+      'OG render timed out.',
+    );
     const response = pngResponse(png, OG_SUCCESS_CACHE_CONTROL, {
       'X-OG-Cache-Key': route.cacheKeyUrl,
       'X-OG-Format': 'png',
@@ -239,10 +243,16 @@ function renderOgSvg(payload: OgSuccessPayload): string {
 
 function renderVerseSvg(payload: VerseOgPayload): string {
   const devanagari = fitVerseLine(payload.devanagari);
-  const secondary = wrapForSvg(payload.secondaryText, payload.secondaryTextKind === 'translation' ? 46 : 52, 4);
+  const secondary = wrapForSvg(
+    payload.secondaryText,
+    payload.secondaryTextKind === 'translation' ? 46 : 52,
+    4,
+  );
   const title = escapeXml(payload.textTitleEn);
   const citation = escapeXml(payload.citation);
-  const langLabel = escapeXml((getReadingModeByLang(payload.route.lang)?.englishName ?? payload.route.lang).toUpperCase());
+  const langLabel = escapeXml(
+    (getReadingModeByLang(payload.route.lang)?.englishName ?? payload.route.lang).toUpperCase(),
+  );
   const footerRight = escapeXml(
     payload.secondaryTextKind === 'translation'
       ? `${payload.translationLang?.toUpperCase() ?? OG_DEFAULT_LANG.toUpperCase()}${payload.fallbackUsed ? ' fallback' : ''}`
@@ -309,7 +319,9 @@ function renderLemmaSvg(payload: LemmaOgPayload): string {
   const lemmaSa = payload.lemmaSa ? escapeXml(payload.lemmaSa) : ' ';
   const lemmaIast = escapeXml(payload.lemmaIast);
   const glossLines = wrapForSvg(payload.gloss, 56, 4);
-  const glossLang = escapeXml((getReadingModeByLang(payload.glossLang)?.englishName ?? payload.glossLang).toUpperCase());
+  const glossLang = escapeXml(
+    (getReadingModeByLang(payload.glossLang)?.englishName ?? payload.glossLang).toUpperCase(),
+  );
   const glossFontFamily = getOgFontFamilyForLang(payload.glossLang);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -548,8 +560,9 @@ async function ensureResvgReady(
       // in the _worker.js context (Wasm code generation disallowed).
       // Fall back to fetching the .wasm asset only when the binding is absent
       // (e.g., local dev or the legacy CF Pages Functions path).
-      const wasmSource: WebAssembly.Module | Response = context.env.RESVG_WASM
-        ?? await (async () => {
+      const wasmSource: WebAssembly.Module | Response =
+        context.env.RESVG_WASM ??
+        (await (async () => {
           const wasmResponse = await context.env.ASSETS.fetch(
             new URL(OG_RUNTIME_WASM_ASSET, context.request.url),
           );
@@ -557,7 +570,7 @@ async function ensureResvgReady(
             throw new Error(`OG renderer wasm asset unavailable: ${OG_RUNTIME_WASM_ASSET}.`);
           }
           return wasmResponse;
-        })();
+        })());
       await resvg.initWasm(wasmSource);
       return resvg;
     })().catch((error) => {
