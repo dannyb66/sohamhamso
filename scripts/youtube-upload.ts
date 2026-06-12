@@ -55,7 +55,14 @@ import {
 const STAGE = 'upload';
 const DEFAULT_LIMIT = 6; // Cron B ~6/cycle (stagger anti-spam)
 const QUOTA_CEILING = 8000;
-const UNITS_PER_UPLOAD = 100; // post-Dec-2025 videos.insert cost
+const UNITS_PER_UPLOAD = 100; // post-Dec-2025 videos.insert cost (was 1600)
+// Account-level daily upload-count cap. This — NOT the API quota — is the real
+// ceiling: YouTube throttles a channel to a small rolling-24h count
+// (`uploadLimitExceeded`). Research puts an unverified channel at ~10-15/day;
+// this channel was observed succeeding ~17/day before the 403. Stop proactively
+// just under that so we don't spam dead inserts into the wall. Raise via
+// YT_MAX_UPLOADS_PER_DAY once the channel is phone-verified + has clean history.
+const MAX_UPLOADS_PER_DAY = Number(process.env.YT_MAX_UPLOADS_PER_DAY) || 12;
 const CANONICAL_BASE = 'https://sohamhamso.org';
 
 const USAGE = `youtube-upload — Cron B uploader (R2 → YouTube, unlisted)
@@ -289,13 +296,33 @@ function isQuotaExceeded(e: unknown): boolean {
 
 /**
  * True if the error means the channel is not verified for >15-minute uploads
- * (YouTube reasons `longUploadsNotAllowed` / `uploadLimitExceeded`). Checked
- * BEFORE isQuotaExceeded — these arrive as 403s too, and the generic /403/
- * match would otherwise misroute them into the quota path.
+ * (YouTube reason `longUploadsNotAllowed`). Operator-actionable + PERMANENT
+ * until the channel is verified, so this routes to `failed` (no retry).
+ * Checked BEFORE isQuotaExceeded — it arrives as a 403 too, and the generic
+ * /403/ match would otherwise misroute it into the quota path.
+ *
+ * NOTE: `uploadLimitExceeded` is deliberately NOT matched here — that's the
+ * *daily upload-count* cap (see isDailyUploadLimit), which RESETS and must be
+ * retried, not failed permanently.
  */
 function isChannelNotVerified(e: unknown): boolean {
   const s = String(e instanceof Error ? e.message : e);
-  return /longUploadsNotAllowed|uploadLimitExceeded/i.test(s);
+  return /longUploadsNotAllowed/i.test(s);
+}
+
+/**
+ * True if the error is YouTube's *daily upload-count* cap (reason
+ * `uploadLimitExceeded`, human message "exceeded the number of videos they may
+ * upload"). This is a ROLLING 24h limit that RESETS — unlike channel-not-
+ * verified it is NOT permanent, so the row goes back to `approved` and retries
+ * tomorrow (handled exactly like quotaExceeded). Both the reason code AND the
+ * human message are matched: the stringified error often carries only the
+ * message, not the machine reason — which is precisely how the first batch of
+ * these slipped past the old matcher and got stranded as `failed`.
+ */
+function isDailyUploadLimit(e: unknown): boolean {
+  const s = String(e instanceof Error ? e.message : e);
+  return /uploadLimitExceeded|exceeded the number of videos/i.test(s);
 }
 
 /** Network-class failures worth one blind retry on a large streamed upload. */
@@ -372,20 +399,37 @@ async function main(): Promise<void> {
     return;
   }
 
-  const limit = args.limit ?? DEFAULT_LIMIT;
   const cfg = loadYoutubeConfig();
   const channel = cfg.defaults.channel_handle;
   const today = utcDate();
   const db = getVideosDb();
   const runId = randomUUID();
 
-  // 1. Quota pre-check.
+  // 1a. API-quota pre-check (units).
   const quota = getQuotaToday(db, channel, today);
   if (quota && quota.units_spent > QUOTA_CEILING) {
     log(STAGE, 'quota ceiling reached — skipping', { units: quota.units_spent });
     if (args.json) console.log(JSON.stringify({ skipped: 'quota', units: quota.units_spent }));
     return; // exit 0
   }
+
+  // 1b. Account-level daily upload-count cap — the real bottleneck. Skip the
+  // whole run once we've hit the cap (or a prior fire flagged `exhausted` after
+  // a 403 uploadLimitExceeded), so we don't hammer dead inserts at the wall.
+  const uploadsToday = quota?.uploads_count ?? 0;
+  if ((quota?.exhausted ?? 0) === 1 || uploadsToday >= MAX_UPLOADS_PER_DAY) {
+    log(STAGE, 'daily upload cap reached — skipping', {
+      uploads: uploadsToday,
+      cap: MAX_UPLOADS_PER_DAY,
+      exhausted: quota?.exhausted ?? 0,
+    });
+    if (args.json) console.log(JSON.stringify({ skipped: 'uploadCap', uploads: uploadsToday }));
+    return; // exit 0
+  }
+
+  // Clamp this run to the remaining daily budget so a big --limit can't blow
+  // past the account cap in a single fire.
+  const limit = Math.min(args.limit ?? DEFAULT_LIMIT, MAX_UPLOADS_PER_DAY - uploadsToday);
 
   // 2. Pick approved rows; HOLD chapter rows until the operator flips
   //    chapters.uploads_enabled after the shorts measurement window closes.
@@ -515,6 +559,25 @@ async function main(): Promise<void> {
         results.push({ id: video.id, status: 'failed', error: verifyMsg });
         log(STAGE, `upload BLOCKED — ${verifyMsg}`, { video: video.id });
         continue;
+      }
+
+      // Account-level DAILY upload-count cap (`uploadLimitExceeded`, rolling
+      // 24h — RESETS). NOT permanent like channel-not-verified: behave like
+      // quotaExceeded — flag exhausted, put the row back to `approved`, exit 0
+      // so a later fire (after the 24h window slides) retries instead of
+      // stranding it as `failed`. Checked BEFORE isQuotaExceeded — it's a 403
+      // and would otherwise match the generic /403/ in the quota path.
+      if (isDailyUploadLimit(e)) {
+        addQuotaUnits(db, channel, today, 0, 0);
+        db.query(
+          'UPDATE youtube_quota SET exhausted = 1 WHERE channel_handle = ? AND utc_date = ?',
+        ).run(channel, today);
+        updateVideoStatus(db, video.id, 'approved', {});
+        log(STAGE, 'uploadLimitExceeded (daily account cap) — marked exhausted, exiting 0', {
+          video: video.id,
+        });
+        if (args.json) console.log(JSON.stringify({ skipped: 'uploadLimitExceeded', results }));
+        return; // exit 0
       }
 
       // 403 quotaExceeded is expected — set exhausted + exit 0.
