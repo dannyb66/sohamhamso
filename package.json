@@ -18,6 +18,7 @@
     "e2e": "playwright test",
     "ingest": "bun pipeline/ingest/ingest.ts",
     "db:init": "bun pipeline/ingest/init-db.ts",
+    "schema:gen": "bun scripts/schema-gen.ts",
     "preflight": "bash scripts/preflight.sh",
     "seo:ingest": "bun run ingest",
     "seo:audit-lemma-slugs": "bun scripts/seo-audit-lemma-slugs.ts",

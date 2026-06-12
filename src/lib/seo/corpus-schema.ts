@@ -1,4 +1,4 @@
-import { READING_MODES, type LangCode } from '@/lib/reading-modes';
+import { type LangCode, READING_MODES } from '@/lib/reading-modes';
 import * as z from 'zod';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 
@@ -22,7 +22,10 @@ const NonEmptyString = z.string().trim().min(1);
 const OptionalString = NonEmptyString.optional();
 const NullableString = NonEmptyString.nullable().optional();
 const OptionalUrl = z.string().trim().url().nullable().optional();
-const OptionalBooleanFlag = z.union([z.boolean(), z.literal(0), z.literal(1)]).nullable().optional();
+const OptionalBooleanFlag = z
+  .union([z.boolean(), z.literal(0), z.literal(1)])
+  .nullable()
+  .optional();
 
 function buildLanguageShape<T extends z.ZodTypeAny>(
   factory: () => T,
@@ -201,8 +204,14 @@ export const CorpusChapterSchema = z
 
 export const CorpusTextMetadataSchema = z
   .object({
-    id: z.string().trim().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-    slug: z.string().trim().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    id: z
+      .string()
+      .trim()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    slug: z
+      .string()
+      .trim()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     title_sa: NonEmptyString,
     title_en: NonEmptyString,
     title_iast: NullableString,
@@ -214,10 +223,20 @@ export const CorpusTextMetadataSchema = z
     source_url: OptionalUrl,
     source_revision: NullableString,
     license: NonEmptyString,
+    // CONTRACT: attribution_html is third-party-sourced raw HTML. It must
+    // NEVER be rendered with `set:html` (or otherwise injected unescaped)
+    // without sanitization — treat it as hostile until sanitized.
     attribution_html: NullableString,
-    parent_text_id: z.string().trim().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).nullable().optional(),
+    parent_text_id: z
+      .string()
+      .trim()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)
+      .nullable()
+      .optional(),
     manuscript_url: OptionalUrl,
     description: NullableString,
+    pending_miri: z.boolean().optional(),
+    expected_verse_count: z.number().int().positive().optional(),
   })
   .strict();
 

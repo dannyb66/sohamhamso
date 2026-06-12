@@ -270,6 +270,13 @@
             },
             "description": {
               "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+            },
+            "pending_miri": {
+              "type": "boolean"
+            },
+            "expected_verse_count": {
+              "type": "integer",
+              "exclusiveMinimum": 0
             }
           },
           "required": [
@@ -362,6 +369,9 @@
                           },
                           "lemma_iast": {
                             "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/text/properties/title_iast"
+                          },
+                          "gloss_lang": {
+                            "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
                           },
                           "gloss": {
                             "$ref": "#/definitions/SohamhamsoCorpusDocument/properties/chapters/items/properties/title_sa"
