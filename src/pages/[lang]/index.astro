@@ -1,5 +1,6 @@
 ---
 import CuratedEntries from '../../components/CuratedEntries.astro';
+import FeaturedNewText from '../../components/FeaturedNewText.astro';
 import FeaturedVerseHero from '../../components/FeaturedVerseHero.astro';
 import Footer from '../../components/Footer.astro';
 import Masthead from '../../components/Masthead.astro';
@@ -44,6 +45,8 @@ const pageSeo = buildHomeSeo({
     <hr class="shirorekha-rule" aria-hidden="true" />
 
     <CuratedEntries centered={true} />
+
+    <FeaturedNewText lang={currentLang} />
 
     <hr class="shirorekha-rule" aria-hidden="true" />
 

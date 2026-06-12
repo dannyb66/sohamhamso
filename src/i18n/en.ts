@@ -66,7 +66,8 @@ export const en = {
   'footer.attribution.source_gretil': 'GRETIL',
   'footer.attribution.source_muktabodha': 'Muktabodha (MIRI)',
   'footer.attribution.source_sanskritdocuments': 'sanskritdocuments.org',
-  'footer.attribution.middle': 'under their respective licenses. AI-assisted translations not human-verified — see',
+  'footer.attribution.middle':
+    'under their respective licenses. AI-assisted translations not human-verified — see',
   'footer.attribution.methodology_link': 'methodology',
   'footer.attribution.suffix': '.',
   'footer.doi.label': 'DOI',
@@ -98,6 +99,11 @@ export const en = {
   // sibling so the dynamic substitution survives the swap.
   'curated.all_texts.title': 'All texts',
   'curated.all_texts.description': 'Browse the full corpus.',
+
+  // ── FeaturedNewText (FeaturedNewText.astro) ────────────────────────────
+  // Only the static "New" label — the title/descriptor are per-launch
+  // editorial copy living in src/lib/featured-text.ts, not chrome.
+  'featured.new_label': 'New',
 
   // ── KaulaContentAdvisory (KaulaContentAdvisory.astro) ──────────────────
   'kaula.aria': 'Scholarly access notice',
@@ -171,8 +177,10 @@ export const en = {
   'texts.title': 'All texts',
   // Lede is sentence-stitched around the count + the methodology anchor;
   // the component re-stitches `lede.prefix + count + lede.middle + <a> + lede.suffix`.
-  'texts.lede.prefix_text': 'text, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see',
-  'texts.lede.prefix_texts': 'texts, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see',
+  'texts.lede.prefix_text':
+    'text, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see',
+  'texts.lede.prefix_texts':
+    'texts, flat alphabetical. Translations in eleven Indic languages are AI-assisted and not yet human-verified — see',
   'texts.lede.methodology': 'methodology',
   'texts.lede.suffix': '.',
   'texts.table.text': 'Text',

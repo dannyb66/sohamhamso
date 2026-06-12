@@ -1,0 +1,79 @@
+---
+/**
+ * FeaturedNewText — a single self-expiring launch-feature line:
+ *
+ *   New: {title} — {one-line descriptor} →
+ *
+ * Quiet by design: no card, no badge, no accent color — a one-line
+ * postscript to the CuratedEntries row, set in the same muted ink.
+ * Driven entirely by FEATURED_TEXT in src/lib/featured-text.ts; renders
+ * NOTHING when the config is empty or `featured_until` has passed, so
+ * a stale "New" can never rot on the homepage.
+ *
+ * Per-locale title/descriptor come from the config (per-launch editorial
+ * copy, SSR'd per locale route). Only the static "New" label rides the
+ * chrome i18n swap (`featured.new_label`).
+ *
+ * Props:
+ *   lang — locale to resolve config copy + link prefix for. Defaults to
+ *     'en' (root homepage); the /[lang]/ homepage twin passes its locale.
+ */
+import { FEATURED_TEXT, featuredCopy, shouldFeature } from '../lib/featured-text';
+import type { LangCode } from '../lib/reading-modes';
+
+interface Props {
+  lang?: LangCode;
+}
+
+const { lang = 'en' } = Astro.props;
+
+const live = FEATURED_TEXT !== null && shouldFeature(FEATURED_TEXT);
+const copy = live && FEATURED_TEXT ? featuredCopy(FEATURED_TEXT, lang) : null;
+const href =
+  live && FEATURED_TEXT
+    ? lang === 'en'
+      ? `/${FEATURED_TEXT.slug}`
+      : `/${lang}/${FEATURED_TEXT.slug}`
+    : null;
+---
+
+{
+  copy && href && (
+    <p class="featured-new">
+      <a href={href} class="featured-new-link">
+        <span class="featured-new-label" data-i18n="featured.new_label">
+          New
+        </span>
+        : {copy.title} — {copy.descriptor} →
+      </a>
+    </p>
+  )
+}
+
+<style>
+  .featured-new {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4) var(--spacing-6);
+    text-align: center;
+    font-family: var(--font-iast);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .featured-new-link {
+    color: var(--color-ink-muted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 4px;
+    transition: opacity var(--motion-fast) var(--easing-out);
+  }
+  .featured-new-link:hover {
+    opacity: 0.7;
+  }
+
+  .featured-new-label {
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+</style>
