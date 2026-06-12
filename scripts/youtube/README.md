@@ -92,9 +92,17 @@ scripts/youtube-oauth-setup.ts, then gh secret set YT_REFRESH_TOKEN`).
 
 ---
 
-## Quarterly OAuth rotation playbook (E5)
+## OAuth rotation playbook — WEEKLY while the app is in Testing mode (E5)
 
-Rotate `YT_REFRESH_TOKEN` **every quarter**. Running
+**The consent screen is permanently in Testing mode** (publishing to
+production is blocked for this account), so Google hard-expires the refresh
+token **~7 days after mint** (`invalid_grant`). Rotate `YT_REFRESH_TOKEN`
+**every ≤6 days** — last minted **2026-06-12** → next rotation due
+**by 2026-06-18**. The consenting account (the channel owner) must stay in
+the consent screen's *Test users* list. Both the uploader and analytics-sync
+map the expiry to this playbook by name, so a missed rotation fails loudly,
+not mysteriously. (If the app ever reaches *In production* status, this
+drops back to quarterly.) Running
 `bun scripts/youtube-oauth-setup.ts --refresh` prints this playbook — it does
 **not** mint; minting is always the two-step consent flow above, which is
 idempotent (`prompt=consent` forces a fresh refresh token on every run).

@@ -33,6 +33,10 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { UsageError, parseCommonArgs, utcDate } from '../pipeline/youtube/cli';
 import { loadYoutubeConfig } from '../pipeline/youtube/config';
+import {
+  EXPIRED_TOKEN_FIX_MESSAGE,
+  isExpiredRefreshTokenError,
+} from '../pipeline/youtube/analytics-map';
 import { chapterMetaKey } from '../pipeline/youtube/filename';
 import { log, logError, scrubError } from '../pipeline/youtube/log';
 import { getR2Creds, getYoutubeOAuth } from '../pipeline/youtube/secrets';
@@ -536,6 +540,18 @@ async function main(): Promise<void> {
       results.push({ id: video.id, status: 'uploaded', youtubeId });
       log(STAGE, 'uploaded', { video: video.id, youtube: youtubeId });
     } catch (e) {
+      // Weekly Testing-mode token expiry (invalid_grant): the OAuth app
+      // cannot be published, so the refresh token hard-expires ~7 days
+      // after mint. Named rotation fix, row back to `approved` (the upload
+      // never started — nothing is wrong with it), exit 1 so the failure
+      // issue fires with the fix text. NO retry_count bump.
+      if (isExpiredRefreshTokenError(e)) {
+        updateVideoStatus(db, video.id, 'approved', {});
+        log(STAGE, `token expired — ${EXPIRED_TOKEN_FIX_MESSAGE}`, { video: video.id });
+        if (args.json) console.log(JSON.stringify({ failed: 'expiredRefreshToken', results }));
+        process.exit(1);
+      }
+
       // Channel-not-verified (>15-min upload to an unverified channel) is a
       // named, operator-actionable error. NO retry_count bump — retrying
       // cannot succeed until the operator verifies the channel. Checked

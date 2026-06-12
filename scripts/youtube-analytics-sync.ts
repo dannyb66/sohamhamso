@@ -36,11 +36,13 @@
 import {
   ANALYTICS_API_METRICS,
   type AnalyticsReport,
+  EXPIRED_TOKEN_FIX_MESSAGE,
   METRIC_HONESTY_LINE,
   SCOPE_FIX_MESSAGE,
   type VideoAnalyticsUpsert,
   cannedAnalyticsReport,
   chunkVideoIds,
+  isExpiredRefreshTokenError,
   isInsufficientScopeError,
   mapAnalyticsReport,
   toVideoAnalyticsUpsert,
@@ -269,6 +271,11 @@ async function main(): Promise<void> {
       if (isInsufficientScopeError(e)) {
         // Config failure, not transient — named fix, exit 1, NO retries.
         console.error(`[youtube:${STAGE}] ${SCOPE_FIX_MESSAGE}`);
+        process.exit(1);
+      }
+      if (isExpiredRefreshTokenError(e)) {
+        // Weekly Testing-mode token expiry — named rotation fix, exit 1, NO retries.
+        console.error(`[youtube:${STAGE}] ${EXPIRED_TOKEN_FIX_MESSAGE}`);
         process.exit(1);
       }
       throw e; // → main catch → scrubbed log → exit 1

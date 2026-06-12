@@ -243,6 +243,47 @@ export function zeroActivityUpsert(videoRowId: number, syncedAt: string): VideoA
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Expired refresh-token classification (Testing-mode OAuth app)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * The OAuth consent screen is permanently in Testing mode (publishing to
+ * production is blocked for this account), so Google hard-expires the
+ * refresh token after ~7 days. Every consumer of the token maps the
+ * resulting `invalid_grant` to this named weekly-rotation fix instead of a
+ * generic auth error or a retry storm.
+ */
+export const EXPIRED_TOKEN_FIX_MESSAGE = [
+  'problem: Google rejected the refresh token (invalid_grant / token expired or revoked).',
+  'cause:   the OAuth app is in Testing mode (cannot be published for this account), so refresh',
+  '         tokens hard-expire after ~7 days. This is the weekly rotation, not a bug.',
+  'fix:     re-run `bun scripts/youtube-oauth-setup.ts` (consent as the channel account, which must',
+  '         stay in the consent screen’s Test users list), then:',
+  '         gh secret set YT_REFRESH_TOKEN < .secrets/yt-refresh.txt',
+].join('\n');
+
+const EXPIRED_TOKEN_RE = /invalid_grant|token has been expired or revoked/i;
+
+/**
+ * True iff the error is the Testing-mode weekly token expiry (OAuth
+ * `invalid_grant`, usually HTTP 400 from the token endpoint). Scope 403s,
+ * quota errors and transient 5xx all return false.
+ */
+export function isExpiredRefreshTokenError(e: unknown): boolean {
+  if (e === null || typeof e !== 'object') {
+    return typeof e === 'string' && EXPIRED_TOKEN_RE.test(e);
+  }
+  const err = e as GaxiosLikeError;
+  let dataText = '';
+  try {
+    dataText = JSON.stringify(err.response?.data ?? '');
+  } catch {
+    dataText = '';
+  }
+  return EXPIRED_TOKEN_RE.test(`${err.message ?? ''} ${dataText}`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // 403 insufficient-scope classification
 // ─────────────────────────────────────────────────────────────────────────────
 
