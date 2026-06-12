@@ -85,3 +85,6 @@ samples/*.mp4
 
 # Indic pilot preview renders (regenerable)
 samples-indic/
+
+# python bytecode (merge scripts)
+__pycache__/
