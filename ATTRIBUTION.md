@@ -13,6 +13,8 @@ Per-source and per-text attribution. Updated each release; per-text entries land
 ### Muktabodha Indological Research Institute (MIRI)
 - URL: https://muktabodha.org/ · library: https://muktalib7.com/
 - Status: written redistribution permission **pending**. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until this permission lands.
+- Each Muktabodha-derived text carries `pending_miri: true` in its corpus YAML (`data/corpus/*.yaml`); the bundle hold is automated — `pipeline/dataset/publish.ts` reads the flag and excludes flagged texts (and all their verses/translations/glosses/parallels) from every dataset build until the flag is removed.
+- The permission request letter is drafted at [docs/MIRI-PERMISSION-REQUEST.md](docs/MIRI-PERMISSION-REQUEST.md).
 - For browse-only reader display, we operate under Muktabodha's scholarly-use terms.
 
 ### sanskritdocuments.org

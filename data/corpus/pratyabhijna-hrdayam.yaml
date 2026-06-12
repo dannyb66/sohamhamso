@@ -43,6 +43,7 @@ text:
   source_url: "https://muktabodha.org"
   source_revision: pending
   license: PD
+  pending_miri: true
   parent_text_id:
   manuscript_url:
   description: |

@@ -43,6 +43,7 @@ text:
   source_url: "https://sanskritdocuments.org/doc_tantra/vijnAna_bhairava.html"
   source_revision: pending
   license: NC
+  pending_miri: true
   parent_text_id:
   manuscript_url:
   description: |
