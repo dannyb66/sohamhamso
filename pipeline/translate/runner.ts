@@ -18,6 +18,10 @@
  *   bun pipeline/translate/runner.ts --lang en --text siva-sutras
  *   bun pipeline/translate/runner.ts --lang ta --text vijnana-bhairava --limit 10
  *   bun pipeline/translate/runner.ts --lang en --text siva-sutras --dry-run
+ *   bun pipeline/translate/runner.ts --lang hi --text siva-sutras --json --translator "sohamhamso AI pipeline (claude-sonnet-4-6)"
+ *
+ * --json prints a machine-readable RunSummary as the final stdout line (consumed
+ * by pipeline/translate/dispatch.ts). Exit code is 2 if any verse failed.
  *
  * Env:
  *   ANTHROPIC_API_KEY  required (skipped with warning if missing — dry-run still works)
@@ -44,8 +48,8 @@ const PROMPT_JUDGE_PATH = join(__dirname, 'prompts', 'v1-judge.md');
 
 // ---- constants pinned to the contract ----
 
-const MODEL = 'claude-sonnet-4-5-20250929';
-const MODEL_DISPLAY = 'claude-sonnet-4-6'; // logical name written to translations.model per STATUS-CONTRACT.md
+export const MODEL = 'claude-sonnet-4-5-20250929';
+export const MODEL_DISPLAY = 'claude-sonnet-4-6'; // logical name written to translations.model per STATUS-CONTRACT.md
 const PROMPT_VERSION_TRANSLATE = 'v1-sanskrit-grounded';
 const PROMPT_VERSION_JUDGE = 'v1-judge';
 const JUDGE_PUBLISH_THRESHOLD = 7;
@@ -82,6 +86,29 @@ interface CliOpts {
   limit?: number;
   dryRun: boolean;
   dbPath: string;
+  json: boolean; // emit a machine-readable RunSummary as the final stdout line
+  translator: string; // canonical translator label written to translations.translator
+}
+
+// Machine-readable result types consumed by dispatch.ts (and the manifest).
+
+export interface VerseFailure {
+  verse_id: number;
+  ref: string; // "slug ch.verse"
+  error: string;
+}
+
+export interface RunSummary {
+  text: string;
+  lang: string;
+  dry_run: boolean;
+  found: number;
+  processed: number;
+  published: number;
+  draft: number;
+  skipped: number;
+  failed: number;
+  failures: VerseFailure[];
 }
 
 interface VerseRow {
@@ -146,7 +173,12 @@ interface JudgeResult {
 // ---- CLI ----
 
 function parseArgs(argv: string[]): CliOpts {
-  const opts: Partial<CliOpts> = { dryRun: false, dbPath: DEFAULT_DB_PATH };
+  const opts: Partial<CliOpts> = {
+    dryRun: false,
+    dbPath: DEFAULT_DB_PATH,
+    json: false,
+    translator: DEFAULT_TRANSLATOR_LABEL,
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--lang' && argv[i + 1]) opts.lang = argv[++i];
@@ -154,6 +186,8 @@ function parseArgs(argv: string[]): CliOpts {
     else if (a === '--limit' && argv[i + 1]) opts.limit = Number.parseInt(argv[++i], 10);
     else if (a === '--dry-run') opts.dryRun = true;
     else if (a === '--db' && argv[i + 1]) opts.dbPath = argv[++i];
+    else if (a === '--json') opts.json = true;
+    else if (a === '--translator' && argv[i + 1]) opts.translator = argv[++i];
   }
   if (!opts.lang) throw new Error('Missing required --lang (e.g. --lang en)');
   if (!opts.text) throw new Error('Missing required --text (e.g. --text siva-sutras)');
@@ -276,6 +310,7 @@ function insertTranslation(
   result: TranslationResult,
   judge: JudgeResult,
   license: string,
+  translator: string,
 ): void {
   const status = judge.score >= JUDGE_PUBLISH_THRESHOLD ? 'published' : 'draft';
   db.query(
@@ -286,7 +321,7 @@ function insertTranslation(
   ).run(
     verseId,
     lang,
-    DEFAULT_TRANSLATOR_LABEL,
+    translator,
     result.translation,
     `AI pipeline ${PROMPT_VERSION_TRANSLATE} + judge ${PROMPT_VERSION_JUDGE}`,
     license,
@@ -383,7 +418,8 @@ async function processVerse(
   templates: { translate: string; judge: string },
   dryRun: boolean,
   textLicense: string,
-): Promise<void> {
+  translator: string,
+): Promise<'published' | 'draft' | 'skipped' | 'dry-run'> {
   const glosses = loadGlosses(db, verse.id, lang);
   const { morphology, lexicon_glosses } = formatGlosses(glosses);
   const prev = loadPrevContext(db, verse);
@@ -416,7 +452,7 @@ async function processVerse(
     console.log(
       `  would then judge with v1-judge prompt, write status='published' if judge_score >= ${JUDGE_PUBLISH_THRESHOLD}`,
     );
-    return;
+    return 'dry-run';
   }
 
   // 1. translation
@@ -427,7 +463,7 @@ async function processVerse(
   );
   if (rawTranslate === null) {
     console.log(`  [skip] no API client; verse ${verse.id} not translated`);
-    return;
+    return 'skipped';
   }
   const translationResult = parseJsonStrict<TranslationResult>(rawTranslate, 'translation');
   await sleep(RATE_LIMIT_SLEEP_MS);
@@ -445,17 +481,18 @@ async function processVerse(
   );
   if (rawJudge === null) {
     console.log(`  [skip] no API client during judge step; verse ${verse.id} not written`);
-    return;
+    return 'skipped';
   }
   const judgeResult = parseJsonStrict<JudgeResult>(rawJudge, 'judge');
   await sleep(RATE_LIMIT_SLEEP_MS);
 
   // 3. write
-  insertTranslation(db, verse.id, lang, translationResult, judgeResult, textLicense);
+  insertTranslation(db, verse.id, lang, translationResult, judgeResult, textLicense, translator);
   const status = judgeResult.score >= JUDGE_PUBLISH_THRESHOLD ? 'published' : 'draft';
   console.log(
     `  [${status}] ${verse.text_slug} ${verse.chapter}.${verse.verse_num} judge=${judgeResult.score} confidence=${translationResult.confidence}`,
   );
+  return status;
 }
 
 function sleep(ms: number): Promise<void> {
@@ -470,7 +507,7 @@ function loadTextLicense(db: Database, textSlug: string): string {
   return row?.license ?? 'CC-BY-SA-4.0';
 }
 
-export async function main(): Promise<void> {
+export async function main(): Promise<RunSummary> {
   const opts = parseArgs(Bun.argv.slice(2));
 
   if (!existsSync(opts.dbPath)) {
@@ -499,9 +536,23 @@ export async function main(): Promise<void> {
   );
   console.log(`Found ${verses.length} verse(s) without a ${opts.lang} translation.`);
 
+  const summary: RunSummary = {
+    text: opts.text,
+    lang: opts.lang,
+    dry_run: opts.dryRun,
+    found: verses.length,
+    processed: 0,
+    published: 0,
+    draft: 0,
+    skipped: 0,
+    failed: 0,
+    failures: [],
+  };
+
   if (verses.length === 0) {
     db.close();
-    return;
+    if (opts.json) console.log(JSON.stringify(summary));
+    return summary;
   }
 
   const textLicense = loadTextLicense(db, opts.text);
@@ -511,22 +562,43 @@ export async function main(): Promise<void> {
   );
 
   for (const verse of verses) {
+    const ref = `${verse.text_slug} ${verse.chapter}.${verse.verse_num}`;
     try {
-      await processVerse(db, verse, opts.lang, templates, opts.dryRun, textLicense);
-    } catch (err) {
-      console.error(
-        `[err] verse ${verse.id} (${verse.text_slug} ${verse.chapter}.${verse.verse_num}):`,
-        (err as Error).message,
+      const outcome = await processVerse(
+        db,
+        verse,
+        opts.lang,
+        templates,
+        opts.dryRun,
+        textLicense,
+        opts.translator,
       );
+      summary.processed++;
+      if (outcome === 'published') summary.published++;
+      else if (outcome === 'draft') summary.draft++;
+      else if (outcome === 'skipped') summary.skipped++;
+    } catch (err) {
+      summary.failed++;
+      summary.failures.push({ verse_id: verse.id, ref, error: (err as Error).message });
+      console.error(`[err] verse ${verse.id} (${ref}):`, (err as Error).message);
     }
   }
 
   db.close();
+  // Machine-readable summary as the LAST stdout line — dispatch.ts parses this.
+  if (opts.json) console.log(JSON.stringify(summary));
+  return summary;
 }
 
 if (import.meta.main) {
-  main().catch((err) => {
-    console.error(err);
-    process.exit(1);
-  });
+  main()
+    .then((summary) => {
+      // Per-verse failures are no longer swallowed: a partial run exits nonzero
+      // so orchestrators (dispatch.ts, CI) can detect and retry it.
+      if (summary.failed > 0) process.exit(2);
+    })
+    .catch((err) => {
+      console.error(err);
+      process.exit(1);
+    });
 }
