@@ -103,5 +103,7 @@
   "texts.table.text": "ગ્રંથ",
   "texts.table.tradition": "પરંપરા",
   "texts.table.verses": "શ્લોકો",
-  "texts.table.license": "પરવાનો"
+  "texts.table.license": "પરવાનો",
+  "upcoming.in_preparation": "તૈયાર થઈ રહી છે",
+  "upcoming.get_notified": "સૂચના મેળવો"
 }

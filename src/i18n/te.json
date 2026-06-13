@@ -103,5 +103,7 @@
   "texts.table.text": "గ్రంథం",
   "texts.table.tradition": "సంప్రదాయం",
   "texts.table.verses": "శ్లోకాలు",
-  "texts.table.license": "అనుమతి"
+  "texts.table.license": "అనుమతి",
+  "upcoming.in_preparation": "సిద్ధమవుతోంది",
+  "upcoming.get_notified": "సూచన పొందండి"
 }

@@ -103,5 +103,7 @@
   "texts.table.text": "গ্রন্থ",
   "texts.table.tradition": "পরম্পরা",
   "texts.table.verses": "শ্লোক",
-  "texts.table.license": "লাইসেন্স"
+  "texts.table.license": "লাইসেন্স",
+  "upcoming.in_preparation": "প্রস্তুত হচ্ছে",
+  "upcoming.get_notified": "বিজ্ঞপ্তি পান"
 }

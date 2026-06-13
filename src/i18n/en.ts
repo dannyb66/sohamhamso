@@ -202,6 +202,14 @@ export const en = {
   'texts.table.verses': 'Verses',
   'texts.table.license': 'License',
 
+  // ── Upcoming-text notice (search.astro zero-results + 404.astro) ───────
+  // Rendered as "{Title} <in_preparation> — <get_notified>": the {Title}
+  // (EN/IAST display title from src/lib/upcoming-texts.ts) and the em-dash
+  // separator are bare siblings that survive the swap; only these two leaf
+  // strings are localized. `upcoming.get_notified` is an <a href="/daily">.
+  'upcoming.in_preparation': 'is in preparation',
+  'upcoming.get_notified': 'get notified',
+
   // ── TODO Phase B (commented for the next translation pass) ─────────────
   // The ScriptSwitcher trigger label + sheet title and the TranslationDrawer
   // sheet title now share `picker.translation_language` above — when Phase B

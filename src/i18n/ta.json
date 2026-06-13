@@ -103,5 +103,7 @@
   "texts.table.text": "நூல்",
   "texts.table.tradition": "மரபு",
   "texts.table.verses": "சுலோகங்கள்",
-  "texts.table.license": "உரிமம்"
+  "texts.table.license": "உரிமம்",
+  "upcoming.in_preparation": "தயாராகி வருகிறது",
+  "upcoming.get_notified": "அறிவிப்பு பெறுங்கள்"
 }

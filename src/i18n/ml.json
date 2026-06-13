@@ -103,5 +103,7 @@
   "texts.table.text": "ഗ്രന്ഥം",
   "texts.table.tradition": "പാരമ്പര്യം",
   "texts.table.verses": "ശ്ലോകങ്ങൾ",
-  "texts.table.license": "അനുമതിപത്രം"
+  "texts.table.license": "അനുമതിപത്രം",
+  "upcoming.in_preparation": "തയ്യാറാകുന്നു",
+  "upcoming.get_notified": "അറിയിപ്പ് നേടുക"
 }

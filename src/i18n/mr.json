@@ -103,5 +103,7 @@
   "texts.table.text": "ग्रंथ",
   "texts.table.tradition": "परंपरा",
   "texts.table.verses": "श्लोक",
-  "texts.table.license": "परवाना"
+  "texts.table.license": "परवाना",
+  "upcoming.in_preparation": "तयार होत आहे",
+  "upcoming.get_notified": "सूचना मिळवा"
 }
