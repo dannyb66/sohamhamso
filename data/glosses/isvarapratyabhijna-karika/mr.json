@@ -1,0 +1,7851 @@
+{
+  "text_slug": "isvarapratyabhijna-karika",
+  "lang": "mr",
+  "translator": "sohamhamso (session-opus)",
+  "license": "CC-BY-SA",
+  "model": "opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कसे तरी, काही अंशी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्राप्त करून, मिळवून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "महेश्वराचे (महान् प्रभूचे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "दास्य, सेवकत्व"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "लोकांचे, मानवांचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुद्धा, ही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "उपकार, हित"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "इच्छित असता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "समस्त संपत्तीच्या प्राप्तीचे कारण"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्या (परमेश्वरा)ची प्रत्यभिज्ञा (ओळख)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रतिपादन करतो, सिद्ध करतो"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कर्ता असता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्ञाता असता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वतःचा आत्मा असता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आदिसिद्ध असलेल्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "महेश्वर असता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अजड (चेतन) जीव"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "निषेध, नकार"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "किंवा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सिद्धी, स्थापना"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "करू शकेल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कोण?"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मोहामुळे, भ्रमामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "या (परमेश्वरा)त"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "दिसत असूनही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जरी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "न ओळखला गेलेला"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शक्तींच्या आविष्करणाने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रत्यभिज्ञा (ओळख)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "दाखवली जाते"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जड वस्तूंची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रतिष्ठा, स्थिर अस्तित्व"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जीवावर आश्रित"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्ञान"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "जीवांचे, प्राण्यांचे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जिवंतांचे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जीवन, चैतन्य"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "मानले जाते"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यांपैकी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्ञान"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वतःसिद्ध"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "देहाश्रित"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "असल्यामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "इतरांकडून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जाणली जाऊ शकते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तिच्याद्वारे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अन्याचे ज्ञान"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अनुमानले जाते"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "खरोखर (आक्षेपारंभ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्वलक्षणाचा आभास असलेले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्ञान"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एक (प्रकारचे)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दुसरे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पुन्हा, उलट"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शब्दाने युक्त"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विकल्प नावाचे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अनेक प्रकारचे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ते (ज्ञान)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "द्वैत (ग्राह्य-ग्राहक)"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नित्याचा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कोणत्या तरी (एका)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "द्रष्ट्याचा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्या (द्रष्ट्या)चा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "येथे (ज्ञानात)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "न भासल्यामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'अहं'ची प्रतीती"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "शरीरादिकांचा निश्चय करणारी"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आता (आक्षेप)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अनुभव नष्ट झाला असता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्मृती"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्याला अनुसरणारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कशी?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "उद्भवेल"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नित्य"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आत्मा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अनुभवकर्ता"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(आत्मा) असता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आत्मा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "दृष्टी नष्ट झाल्यामुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तिच्याद्वारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पाहिलेल्या वस्तूंविषयी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्मृती"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कशाने? कशी?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "शिवाय, मग"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ज्या ठिकाणीच"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अनुभव (झाला)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "त्याच ठिकाणाची"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ती (स्मृती)"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पूर्व अनुभवाच्या संस्कारापासून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्मृतीचा उद्भव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अंतर्गत गाठीने (निरर्थक)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "काय?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रयोजन, उपयोग"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "स्थायी (नित्य)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आत्म्याने"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भिन्न (क्षणिक)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "धर्मांमध्ये"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्यांच्या स्वरूपातील अभेदामुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "संस्कारापासून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्मृती सिद्ध होता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्मरणकर्ता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "द्रष्ट्याप्रमाणे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "कल्पित"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ज्ञान"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "चित्स्वरूप (चैतन्यमय)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अनित्य"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "का?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आत्म्याप्रमाणे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पण जर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जड"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "त्याचे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "कसे?"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "अर्थांचे प्रकाशन"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थाचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्याप्रमाणे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "रूप"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "धारण करते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "बुद्धी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्याप्रमाणे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आत्म्याचे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "चैतन्य"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अजड (असल्यामुळे)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ती (बुद्धी)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "जडत्व असेल तर"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "अर्थांचे प्रकाशन"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अर्थाची"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देहादिकांची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्या-त्या देशादिकांत होणारी उत्पत्ती"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अन्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "न दिसल्यामुळे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही (ही)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ती (क्रिया)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "क्रमिक (अनुक्रमिक)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "एकाला"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "उचित, योग्य"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या-त्या (अवस्थेत)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्थित असता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ते-ते"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "होते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दिसते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अन्य काही नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अन्य नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "संबंध"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "कार्यकारणभावाहून"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दोहोंत राहणाऱ्याचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अनेक रूप असल्यामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सिद्ध (वस्तू)चे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अन्याची अपेक्षा नसल्यामुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पारतंत्र्यादी लागू न होण्यामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कर्ता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "कल्पित"
+      }
+    ],
+    "3.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सत्य (मान्य)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्मृतिज्ञान"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पूर्व अनुभवाच्या संस्कारापासून"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "उत्पन्न"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जरी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आत्म्यात (ज्ञात्यात) स्थित"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मूळ अनुभव जाणवून देणारे"
+      }
+    ],
+    "3.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दृष्टी (ज्ञान)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्वतःच प्रकाशमान"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अन्याकडून नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जाणण्याजोगी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "रूपाच्या दृष्टीप्रमाणे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दृष्टी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "रसाच्या (बाबतीत)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "संस्कारापासून जन्म"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्या (मूळा)शी सादृश्य"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "त्याचे ज्ञान"
+      }
+    ],
+    "3.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आता जर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "त्याचा (मूळाचा) विषय नसताही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्मृतीचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्याच्या निश्चयामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पाहिलेल्या वस्तूला आलंबन (आधार)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भ्रांतीने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ही असली"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "असमंजस, विसंगत"
+      }
+    ],
+    "3.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्मृतीचे स्वरूपच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कसे?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रथमतः"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भ्रांतीत"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अर्थाची स्थिती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कशी?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पूर्व अनुभवाच्या संस्काराची अपेक्षा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "का?"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "मानले जाते"
+      }
+    ],
+    "3.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भ्रांत असेल तर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "निश्चयाचा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जडापासून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विषयाची स्थिती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्यापासून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अजडत्व (चैतन्य) असेल तर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्वतःच्या उल्लेखात निष्ठ असल्यामुळे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अर्थाची स्थिती"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "त्यापासून"
+      }
+    ],
+    "3.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परस्पर भिन्न"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "एकमेकांना न जाणणाऱ्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्ञानांच्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अनुसंधानापासून उद्भवणारी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नष्ट होईल"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "लोकव्यवहाराची स्थिती"
+      }
+    ],
+    "3.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जर (नसता)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनंत विश्वरूप अंतरंगात सामावलेला"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "महेश्वर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "चित्स्वरूप देहाचा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ज्ञान-स्मृती-अपोहन शक्तींनी युक्त"
+      }
+    ],
+    "4.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तो (परमेश्वर, ज्ञाता)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पूर्वी अनुभवलेल्या अर्थाचा उपलब्धकर्ता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नंतरही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "असता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "विमर्श करत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तोच (हा)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "स्वतंत्रपणे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "स्मरण करतो"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "संबोधले जाते"
+      }
+    ],
+    "4.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रकाशित करेल"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आपल्या (वर्तमान) काळी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अवश्य, निश्चयाने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पूर्वी प्रकाशित झालेल्याचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आमर्श (परावर्तन) करत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वलक्षणाला"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "'घट' या आभासमात्राने"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "संपूर्ण स्वरूपाने"
+      }
+    ],
+    "4.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शक्य, योग्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्मृतीचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भेद असेल तर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्मरल्या जाणाऱ्याचे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रकाशन"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ऐक्य"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भिन्न-कालीन (संविदांचे)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "संविदांचे (जाणिवांचे)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ज्ञाता"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "हाच तो"
+      }
+    ],
+    "4.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मुळीच नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनुभव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भासतो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्मृतीत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पूर्व"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्थासारखा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "वेगळा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पूर्वी"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मी अनुभवले"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "मी"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "आत्म्यात आरूढ होऊन भासल्यामुळे"
+      }
+    ],
+    "4.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "योग्यांनासुद्धा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भासतात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दृष्टी (ज्ञाने)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दुसऱ्या ज्ञानात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वतःच्या संवेदनानेच ज्ञेय"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्या (दृष्टी)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "भासतात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ज्ञेयाच्या स्थानी"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अथवा (असेल तर)"
+      }
+    ],
+    "4.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्मरली जाते"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जी (दृष्टी)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "दृष्टी (ज्ञान)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "होती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "माझी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ती अशी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "भेदाने"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "व्याकरण (स्पष्टीकरण)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "या (स्मृती)चे"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "माझ्याकडून"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "पाहिले गेले"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "स्मृतीचे"
+      }
+    ],
+    "4.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'मी हे पाहतो'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'हा घट आहे'"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "निश्चयरूप (अवसा)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मानली जाते"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "समवेत (अंतर्भूत)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "निश्चय करणाऱ्या (ज्ञात्या)त"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "दर्शन (ज्ञान)"
+      }
+    ],
+    "4.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'माझ्याकडून पाहिले जाते'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'हा तोच पाहिलेला'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आमर्श करतो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ग्राह्यता-ग्राहकतेने विभक्त दोन्ही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "दोन अर्थ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "भासतात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "प्रमात्यात"
+      }
+    ],
+    "5.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वर्तमानात आभासणाऱ्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भावांचे (वस्तूंचे)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अवभासन (प्रकटन)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अंतरंगात स्थित असलेल्यांचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "घडते, शक्य आहे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "बाहेर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्वतःच्या रूपाने"
+      }
+    ],
+    "5.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पूर्वीप्रमाणे (केवळ आंतरिक)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अप्रकाश (अप्रकट)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रकाशस्वरूपतेने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणि नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "प्रकाश"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "भिन्न"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अर्थाच्या स्वतःच्या (आत्म्याची)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "प्रकाशता"
+      }
+    ],
+    "5.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भिन्न असेल तर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रकाश"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अभिन्न असेल तर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "संकर (गोंधळ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विषयाचा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "प्रकाशस्वरूप"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रकाशित होणारा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अर्थ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अप्रकाश"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "सिद्ध होतो"
+      }
+    ],
+    "5.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या-त्या अकस्मात होणाऱ्या आभासाने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बाह्य (वस्तू)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अनुमान करवेल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अभिन्न (अखंड)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बोधाचे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "विचित्र आभासांचे कारण होणे"
+      }
+    ],
+    "5.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वासनांचा प्रबोध"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "येथे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विचित्र"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कारणत्वाला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पावेल"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्या"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्या प्रबोधाच्या"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "विचित्रतेत"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "काय?"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "निबंधन, आधार"
+      }
+    ],
+    "5.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "हे असू शकेल"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभासांमध्ये"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्याच (आभासांत)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पूर्ण होत असता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "व्यवहार"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "काय (उपयोग)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अन्याने"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "बाह्याने"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सिद्ध न होणाऱ्या"
+      }
+    ],
+    "5.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "चित्स्वरूप (देव)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अंतरंगात स्थित (अर्था)ला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "इच्छेच्या बळावर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "बाहेर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "योग्याप्रमाणे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "उपादानावाचून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अर्थसमूहाला"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "प्रकाशित करतो"
+      }
+    ],
+    "5.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अनुमान"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पूर्वी न भासलेल्या (वस्तू)विषयी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मुळीच नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मान्य"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "इंद्रिय (शक्ती)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भासलेलेच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "बीजादिकांच्या"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आभासावरून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "कारणवस्तूच्या"
+      }
+    ],
+    "5.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आभास"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पुन्हा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आभासापासून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बाह्याचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "झाला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कसातरी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्थाचा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मुळीच नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्याद्वारे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "या (अर्था)ची"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सिद्धी"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "नाही सुद्धा"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "अनुमानाने"
+      }
+    ],
+    "5.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रभूचे (स्वामीचे)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वतःमध्ये स्थित"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भावसमूहाचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आभासन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आहेच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्यावाचून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्यामुळे, म्हणून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "इच्छेचा आमर्श (विमर्श)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रवृत्त होतो"
+      }
+    ],
+    "5.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वभाव म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभासाचा (प्रकाशाचा)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विमर्शाला"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जाणतात (ज्ञानी)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्यथा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रकाश"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्थाने उपरक्त (रंगलेला) असूनही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्फटिकादी जडासारखा (असेल)"
+      }
+    ],
+    "5.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आत्मा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "चैतन्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "चित्क्रिया (जाणण्याची क्रिया)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "चितिकर्तृता (जाणण्याचे कर्तृत्व)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तात्पर्याने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हटले जाते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्यामुळे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जडाहून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "विलक्षण (भिन्न)"
+      }
+    ],
+    "5.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "चिती (गतिशील जाणीव)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रत्यवमर्शस्वरूप (आत्मविमर्शरूप)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परा वाक् (परम वाणी)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्वतःच्या रसाने उदित (स्वयमेव प्रकटलेली)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वातंत्र्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मुख्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ऐश्वर्य"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "परमात्म्याचे"
+      }
+    ],
+    "5.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ती (चिती)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्फुरत्ता (स्फुरण)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "महासत्ता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देश-काळाने अनवच्छिन्न (अमर्याद)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तीच ही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सार म्हणून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हटली आहे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हृदय"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "परमेष्ठीचे (परमशिवाचे)"
+      }
+    ],
+    "5.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हा (परमेश्वर)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्ञेय करेल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "वेगळे अस्तित्व असलेले"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्ञेय"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्या (आत्म-)औन्मुख्यामुळे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "खंडित होईल"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "याचे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "स्वातंत्र्य"
+      }
+    ],
+    "5.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वातंत्र्यापासून मुक्त (भासणारे) आत्मे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्वातंत्र्याने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अद्वयस्वरूपाचा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रभू"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ईश' इत्यादी संकल्पांनी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "निर्माण करून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "व्यवहारात प्रवृत्त करतो"
+      }
+    ],
+    "5.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही (हानी)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'अहं' इत्यादी परामर्शाच्या भेदामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "याचे (परमेश्वराचे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्याचे स्वरूप (स्वतःहून) नेले जात नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'अहं'ने मृश्य (विमर्शनीय) म्हणूनच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "याच्या (परमेश्वराच्या)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सृष्टीचे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तिङन्त क्रियापदात अभिप्रेत कर्माप्रमाणे"
+      }
+    ],
+    "5.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मायाशक्तीमुळे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "व्यापकाची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तीच (विमर्शशक्ती)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भिन्न ज्ञेयांना विषय करणारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "म्हटली जाते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'ज्ञान', 'संकल्प', 'अध्यवसाय' इत्यादी नावांनी"
+      }
+    ],
+    "5.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "साक्षात्काराच्या (प्रत्यक्षाच्या) क्षणीसुद्धा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विमर्श"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कसे (अन्यथा)?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अन्यथा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "धावणे इत्यादी (हेतुपूर्ण क्रिया)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "संभवेल"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रतिसंधानरहित (अनुसंधानावाचून)"
+      }
+    ],
+    "5.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'हा घट आहे'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "असा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अध्यवसाय (निश्चय)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाम-रूपाच्या पलीकडचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परमेश्वराची शक्ती"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आत्म्यासारखाच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भासतो"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "'इदंते'ने (विषयरूपाने)"
+      }
+    ],
+    "5.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भिन्न ज्ञेय-देश-काळांना अनुसरून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्ञान-स्मृती-अध्यवसाय इत्यादी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रमबद्ध (सक्रम)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भासतात"
+      }
+    ],
+    "6.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'अहं' हा प्रत्यवमर्श"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रकाशस्वरूप असूनही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जरी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "वाक्स्वरूप (शब्दात्मक)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तो ('अहं'-विमर्श)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विकल्प"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तो (विकल्प)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "कारण खरोखर"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "म्हटला"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "द्वैताचा आक्षेप करणारा"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "विनिश्चय (निश्चय)"
+      }
+    ],
+    "6.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भिन्न दोहोंचा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभास"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कारण खरोखर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हवा (असेल)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "घट-अघट अशा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दोहोंचा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रकाशाप्रमाणे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अन्याचे (वगळल्या जाणाऱ्याचे)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भिन्नाचे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आभासन"
+      }
+    ],
+    "6.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'तत्'-'अतत्' यांच्या प्रतिभेत भागीदार (चैतन्या)ने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मात्रेने (केवळ बुद्धीने)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'अतत्'च्या व्यपोहनाने (वगळण्याने)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्याचा निश्चय म्हटला जाणारा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विकल्प"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'घट'"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "असा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हा"
+      }
+    ],
+    "6.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "चित्तत्त्व"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मायेमुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सोडून (स्वरूप त्यागून)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भिन्नच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भासतो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जो (मर्यादित प्रमाता)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "देहात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बुद्धीत"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "प्राणात"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कल्पित (आत्मा म्हणून लादलेल्या)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आकाशात (शून्यात) जणू"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "अथवा"
+      }
+    ],
+    "6.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(मर्यादित) प्रमातृत्वाने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'मी'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "असा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विमर्श"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्याच्या व्यपोहनामुळे (वगळण्यामुळे)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विकल्पच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अन्य प्रतियोगी असलेला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आभासापासून जन्मलेला"
+      }
+    ],
+    "6.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कधीतरी होणाऱ्या आभासाविषयी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पूर्व आभासादिकांची योजना (जोडणी)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संस्कारापासून"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कल्पना"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "म्हटली"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ती सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भिन्न (वस्तू) भासणाऱ्या (चैतन्या)त"
+      }
+    ],
+    "6.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "व्यवहारातही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रभू"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "देहादिकांत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रवेश करत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भासणाऱ्या (आभासमान असलेल्या)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अंतरंगात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अर्थौघाला (अर्थसमूहाला)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "इच्छेने"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आभासित करतो"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "बाहेर"
+      }
+    ],
+    "6.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्मृतीत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विकल्पात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "व्यपोहनपरायण (वगळण्यात निष्ठ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्ञानात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आंतरिक आभास"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्थित आहेच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "निश्चित"
+      }
+    ],
+    "6.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "नैसर्गिक (स्वाभाविक)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्ञानात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बहिराभासस्वरूप"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पूर्व अनुभवाच्या रूपाने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्थित"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्मरणादिकांत"
+      }
+    ],
+    "6.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "नैसर्गिकच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विकल्पात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वैरचारी (स्वच्छंद)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "यथेच्छ संस्थानांच्या (आकारांच्या) आभासनामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "बुद्धिगोचर (असलेल्या)"
+      }
+    ],
+    "6.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "यथेष्ट (इच्छेप्रमाणे) समुल्लेखाच्या आभासनामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्ञान व क्रिया"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्पष्टच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सिद्ध"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रत्येक"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जिवंताला (जीवाला)"
+      }
+    ],
+    "7.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आणि हीच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रतिभा (प्रकाशमान ज्ञान)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्या-त्या पदार्थांच्या क्रमाने उपरक्त (रंगलेली)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अक्रम-अनंत-चित्स्वरूप असलेला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रमाता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "महेश्वर"
+      }
+    ],
+    "7.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या-त्या भिन्न संविदांच्या द्वारांनी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "एका प्रमात्यात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विश्रांत होत असता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भाव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे ज्ञातृत्व"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "संभवते"
+      }
+    ],
+    "7.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देश-काळाच्या क्रमाला अधीन असलेल्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थांचा (विषयांचा)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वतःत समाप्त होणाऱ्या (स्वसमापी)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "युगपत् आभासाने साधता येणारा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हा (समन्वय)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अन्यथा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कोणता?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "समन्वय, संगती"
+      }
+    ],
+    "7.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रत्यक्ष व अनुपलंभ (अनुपलब्धी) यांची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "त्या-त्या भिन्न अंशांवर पडणाऱ्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कार्यकारणता सिद्ध करण्याची क्षमता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एका प्रमात्यापासून उद्भवणारी"
+      }
+    ],
+    "7.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्मृतीत"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जी एकच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वसंवित्ती (स्व-जाणीव)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रमाण"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वतःच्या उद्भवाविषयी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पूर्व अनुभवाच्या अस्तित्वाविषयी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "साधन"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तीच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अन्य नाही"
+      }
+    ],
+    "7.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "बाध्य-बाधकभाव"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वतःत निष्ठ असल्यामुळे (अन्यथा) अविरोधी अशा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्ञानांचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "उद्भवू शकेल"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "एका प्रमात्यात परिनिष्ठित असल्यामुळे"
+      }
+    ],
+    "7.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शुद्ध भूतलाचे ज्ञान"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "घटाभावाचे ज्ञान (आहे)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्याप्रमाणे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्याप्रमाणे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "शुक्तिकेचे ज्ञान"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "रजत-ज्ञानाच्या अप्रामाण्याला जाणणारे (आहे, असे)"
+      }
+    ],
+    "7.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "असे नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "शुद्ध भूतलाच्या ज्ञानावरून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सिद्ध होईल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्याचे (भूतलाचे)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अघटस्वरूप म्हणून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "उपलब्धियोग्य (दृश्य) (वस्तू)चा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "येथे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अभाव"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "घटस्वरूप (वस्तू)चा"
+      }
+    ],
+    "7.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विविक्त (वेगळे)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भूतल"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नेहमी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भावांचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वतःच्या स्वरूपात निष्ठ असल्यामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कसे?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कधी, मुळीच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्याचे (भूतलाचे) ज्ञान"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भिन्न (वस्तू)चे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अभावाचे साधन"
+      }
+    ],
+    "7.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परंतु, उलट"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रकाशसमूह"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आंधळ्याला (किंवा डोळसाला)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्पर्श"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "उष्णादी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मृदू (मऊ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तेथे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "असतो"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सिद्ध करेल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "त्याचे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "स्वतःचे ज्ञान"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "अघटस्वरूप"
+      }
+    ],
+    "7.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पिशाच्च (प्रेत)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "असू शकेल"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अदृश्य (प्रकाशाने न दिसणारे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रकाशाच्या मध्ये"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्याप्रमाणे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अदृश्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भूतलाच्या"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आत"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "निषेध्य (नाकारता येणारे)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "सर्वथा"
+      }
+    ],
+    "7.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "रजत-ज्ञानाच्या अभावरूप"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शुक्तिकेचे ज्ञान"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मूळ रजत-ज्ञानाच्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ते असेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अप्रामाण्याला जाणवून देणारे"
+      }
+    ],
+    "7.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "धर्मी (आधार) सिद्ध नसल्यामुळे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "होईल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बाधा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मुळीच नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अनुमानाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वसंवेदनाने सिद्ध"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "युक्त"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ती (बाधा)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "एका प्रमात्यापासून उद्भवणारी"
+      }
+    ],
+    "7.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अत्यंत भिन्न अर्थांच्या आभासांनी खचित (जडित)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "व्यापक (परमेश्वरा)त"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मलिन (दोषयुक्त)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "निर्मल"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "व्यवहार"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अनुभवला जातो"
+      }
+    ],
+    "8.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या वेळच्या इंद्रिय-सान्निध्यावर अवलंबून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "काही ठिकाणी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आभास"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्यथा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अन्यत्र"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आंधळ्यांत, गाढ अंधारात इत्यादीत"
+      }
+    ],
+    "8.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विशेष (भेद)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थाच्या आभासाचा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सत्तेत (अस्तित्वात)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कोठेही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विकल्पांमध्ये"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भविष्य-वर्तमान-भूत अर्थांना विषय करणाऱ्या"
+      }
+    ],
+    "8.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सुखादिकांविषयी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुखादिकांच्या कारणांविषयी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(वास्तव) वस्तूंविषयी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आभासाची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सत्ता विद्यमान असता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अतीत असल्यामुळे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तशी"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "स्थिती"
+      }
+    ],
+    "8.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "गाढपणे (तीव्रतेने)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "उल्लिखित (चित्रित) होत असता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विकल्पाने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुखादिक"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तशी स्थिती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तशीच"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्पष्टपणे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "याचे (सुखादिकाचे)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "जाणवण्यामुळे"
+      }
+    ],
+    "8.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भाव-अभाव आभासांची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बाह्यता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उपाधी (आगंतुक विशेषण)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मानली जाते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आत्मा (स्वरूप)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सत्ता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्यांची"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आंतरिक"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सत् (असलेल्या)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सदैव"
+      }
+    ],
+    "8.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आंतरिक असल्यामुळे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रमात्याच्या ऐक्यात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "या (आभासां)ची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भेदावर अवलंबून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अर्थक्रिया"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बाह्यता असेल तेव्हा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भिन्न आभासांच्या भेदामुळे"
+      }
+    ],
+    "8.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "चिन्मय (चैतन्यमय) असल्यामुळे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभासांची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अंतरंगातच"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्थिती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मायेने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भासणाऱ्यांची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बाह्यतेमुळे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "बाहेर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ती (स्थिती)"
+      }
+    ],
+    "8.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विकल्पात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जो हा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उल्लेख (प्रतिनिधान)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तोसुद्धा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "बाह्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "वेगळ्या रूपाने भासणारा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रमात्याशी एकात्म्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आंतर्य (अंतरंगता)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्याहून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भेद"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "बाह्यता"
+      }
+    ],
+    "8.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "उल्लेखाचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुखादिकांचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रकाशन"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "बाहेर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्वतःच्या रूपाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "इच्छेने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भर्त्याच्या (परमेश्वराच्या)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रत्यक्ष-स्वरूपाचे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "इंद्रियादिकांपासून उद्भवणाऱ्यांप्रमाणे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ज्याप्रमाणे"
+      }
+    ],
+    "8.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या (प्रमात्या)च्या ऐक्यावाचून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नसेल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संविदांची (जाणिवांची)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "लोकपद्धती (व्यवहारक्रम)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रकाशाच्या ऐक्यामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "एकत्व"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रमाता एकच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सिद्ध, स्थिर"
+      }
+    ],
+    "8.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तोच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "नियत (अपरिहार्य) विमर्शत्वामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नियत असलेल्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "महेश्वर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "विमर्शच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "देवाचे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शुद्ध"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ज्ञान-क्रिया"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "कारण"
+      }
+    ],
+    "9.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जे काही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "म्हटले होते (विरोध्याने)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "एकाची नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सक्रम (अनुक्रमिक) असल्याने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'(ती) एक (नाही)'"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "इत्यादी"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "खंडित होते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "एका (प्रमात्या)चे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "समर्थन झाल्यामुळे"
+      }
+    ],
+    "9.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सक्रमत्व (अनुक्रमपूर्णता)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "लौकिक"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रियेचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "काळशक्तीमुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "घडते"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परंतु नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "शाश्वत (क्रियेचे)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्राभव (प्रभूच्या) क्रियेचे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रभूच्या (बाबतीत असे)"
+      }
+    ],
+    "9.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "काळ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सूर्यादिकांचा संचार"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्या-त्या पुष्पादिकांचा उद्भव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शीत-उष्ण"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अथवा पुन्हा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्या (चिन्हां)नी ओळखला जाणारा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "केवळ क्रमच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तो (काळ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तत्त्वतः (खरोखर)"
+      }
+    ],
+    "9.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "क्रम"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भेदावर अवलंबून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भेद"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आभासाच्या सत्ता-असत्तेमुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आभासाची सत्ता-असत्ता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विचित्र आभासकरणामुळे झालेली"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रभूच्या"
+      }
+    ],
+    "9.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मूर्तीच्या (आकारांच्या) वैचित्र्याने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "देशक्रम"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आभासित करतो"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तो (परमेश्वर)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "क्रियेच्या वैचित्र्याच्या निर्भासापासून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कालक्रम"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ईश्वर"
+      }
+    ],
+    "9.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्वत्र"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभासाचा भेद"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "होऊ शकेल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कालक्रमाचे उगमस्थान"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्याचे भासणे विच्छिन्न (खंडित)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शून्यादी अशा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(मर्यादित) प्रमात्याला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जो भासतो"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "युगपत् नव्हे"
+      }
+    ],
+    "9.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देशक्रम"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भावांमध्ये"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भासतो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रमात्याला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मर्यादित स्वरूपाच्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वतःच्या स्वरूपासारखे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्वतःच्या आत्म्याने"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पूर्ण"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भाव"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "भासतात"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अमर्याद (प्रमात्या)ला"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "परंतु, उलट"
+      }
+    ],
+    "9.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "निर्माणशक्ती"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ती सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जाणणाऱ्या (सर्वज्ञ परमेश्वरा)ची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ईशिता (सार्वभौम प्रभू)ची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अशा रीतीने की"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ज्ञाता-ज्ञेय असा भेद"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आभासित केला जातो"
+      }
+    ],
+    "10.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "क्रिया-संबंध-सामान्य-द्रव्य-दिक्-काल या बुद्धी (ज्ञाने)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सत्य (वास्तव)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्थैर्य व उपयोगामुळे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एक व अनेकांवर आश्रित"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मानल्या जातात"
+      }
+    ],
+    "10.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यांपैकी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आंतरिक"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तत्त्व"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तेच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "इंद्रियवेद्यतेला"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्राप्त करून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अनेकत्वाला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पावते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "देश-काल-स्वभावामुळे"
+      }
+    ],
+    "10.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या दोहोंवर आश्रित"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "या (बुद्धी)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मन"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अनुव्यवसायी (अनुगामी निश्चय करणारे)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "करते (निर्माण करते)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रमात्याच्या व्यापारमय"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कर्मादी कल्पना"
+      }
+    ],
+    "10.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःच्या स्वरूपात निष्ठ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "विविक्त (वेगळे) भासणारे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भाव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एकाच प्रमात्यात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परस्पर अन्वयरूपी ऐक्याने युक्त"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "संबंध-बुद्धीचे स्थान (आधार)"
+      }
+    ],
+    "10.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जाती-द्रव्य आभासांच्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बाहेर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एकरूपतेला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "व्यक्ती-एकदेश भेदाला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आलंबन (आधार) म्हणून घेतात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विकल्प (कल्पना)"
+      }
+    ],
+    "10.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "क्रियेच्या विमर्शाला विषय करणारा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कारकांचा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "समन्वय"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अवधी व अवधिमान् यांच्या भावान्वयावर आश्रित"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दिक् (देश) आदींची बुद्धी"
+      }
+    ],
+    "10.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशाच रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थसिद्धी (इष्ट प्राप्ती)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "होईल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रमात्याला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अर्थक्रियेची इच्छा करणाऱ्या"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भेद-अभेदयुक्त"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्थाने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भ्रांती"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अशा प्रकारची"
+      }
+    ],
+    "11.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'हे असे आहे'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्याच्या बळावर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निश्चितपणे ठरते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "वस्तू"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ते प्रमाण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि तेही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्वतःचा आभास"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अभिनव (नव्याने) उदित"
+      }
+    ],
+    "11.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तो (आभास)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'हे असे आहे' अशा विमर्शस्वरूपाचा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देश-कालादींनी अभिन्न (वस्तू)विषयी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "एका अभिधानाचा (नावाचा) विषय असलेल्या"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मिती (प्रमाण-ज्ञान)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वस्तूविषयी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अबाधित (अविरोधित)"
+      }
+    ],
+    "11.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "रुचीनुसार"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "गरजेनुसार (अर्थित्वानुसार)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "व्युत्पत्तीनुसार (शिक्षणानुसार)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भिन्न होतो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आभास"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्थात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "एका (आणि त्याच)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अनुसंधानाने सिद्ध झालेल्या"
+      }
+    ],
+    "11.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "लांब-गोल-उभा-पुरुष-धूर-चंदनता इत्यादी (विशेषणां)नी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आभासानुसार"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विभक्त केले जातात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देश-काळाने अभिन्न (अखंड) असूनही"
+      }
+    ],
+    "11.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याचप्रमाणे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सत्-घट-द्रव्य-कांचन-उज्ज्वलता इत्यादी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आभासभेद"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भिन्न अर्थ निर्माण करणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्थान (आधार)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ध्वनीचे (शब्दाचे)"
+      }
+    ],
+    "11.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आभासाच्या भेदामुळे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वस्तूंची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नियत (निश्चित) अर्थक्रिया"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पुन्हा (तर)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सामानाधिकरण्याने (एका आधारावरील समान वृत्तीने)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आभासामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अभिन्न भासणाऱ्या (आभासां)च्या"
+      }
+    ],
+    "11.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वेगवेगळ्या दिव्यांच्या प्रकाशांचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रवाहांचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "समुद्रात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्याप्रमाणे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परस्परविरोधी नसलेल्या आभासांची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "एकच कार्य करणारी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्याप्रमाणे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ऐक्यबुद्धी"
+      }
+    ],
+    "11.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तेथे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अविशिष्ट (अभिन्न)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अग्नी आदींमध्ये"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कार्यकारणत्व-उष्णता (इत्यादी गुण)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्याचे स्वरूप त्या-त्या शब्दाची अर्थता इत्यादी आहे ते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रमाणाद्वारे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "एक म्हणून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मानले जाते"
+      }
+    ],
+    "11.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ती (अर्थक्रिया, प्रवृत्ती)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देशादिकांच्या भिन्न प्रत्यक्षाने वेगळ्या केलेल्या (स्वलक्षणा)त"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्वलक्षणाविषयी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्या वेळची (तात्कालिक)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रवृत्ती (क्रिया)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "इच्छुका (अर्थी)ला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अनुमानानेही"
+      }
+    ],
+    "11.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दूर-जवळ असण्याने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अर्थांच्या (आभासांचा भेद)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परोक्ष-प्रत्यक्ष असण्याने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बाह्य-आंतरिक असण्याने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दोषांनी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "व्यंजकाच्या (प्रकटकर्त्याच्या)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अन्यथा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अथवा"
+      }
+    ],
+    "11.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भिन्न आभासांची छाया धारण करणाऱ्यांचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मुख्य आभासापासून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एकप्रत्यवमर्श नावाच्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ऐक्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अनिवार्य (न रोखलेले)"
+      }
+    ],
+    "11.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अर्थक्रिया"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सहज (स्वाभाविक)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अर्थांची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ईश्वराच्या इच्छेने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नियत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्याच्या (इच्छेने)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "तिची"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "(त्याच्या) अक्रियेपासून"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "अन्यता (भेद)"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "उद्भवेल"
+      }
+    ],
+    "11.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'(हे) रजत' असा एकच विमर्श असला तरी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शुक्तिकेत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "रजताची (खरी) स्थिती"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "उपाधी-देश यांचा संवाद (अनुरूपता) नसल्यामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "द्विचंद्रात (दोन चंद्रांच्या प्रतीतीत)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आकाश"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अन्यथा (वेगळेच)"
+      }
+    ],
+    "11.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "गुणांनी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "शब्दादी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भेद"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जात्यादिकांनी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अभिन्नता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भावांची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "एकाच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रमात्यात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "उपपन्न (सिद्ध) होते"
+      }
+    ],
+    "11.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विश्वाच्या वैचित्र्यरूपी चित्राच्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "समान (सपाट) भिंतीच्या पृष्ठभागासारखा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विरुद्ध व अभाव यांच्या स्पर्शरहित"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "परमार्थतः सत् (खरोखर असलेला)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ईश्वराविषयी"
+      }
+    ],
+    "11.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रमात्याविषयी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पुराण (आदिम)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्याचा विग्रह (स्वरूप) भासमान"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कोणता?"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रमाण"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नवा आभास"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सर्व प्रमितींत (ज्ञानांत) भाग घेणाऱ्या"
+      }
+    ],
+    "11.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पूर्वी कधीच प्रवर्तित न केला गेलेला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "येथे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मूढतेच्या (अज्ञानाच्या) बळामुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शक्तींच्या प्रकाशनाद्वारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'ईश' इत्यादी व्यवहार (ओळख)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रवर्तित केला जातो"
+      }
+    ],
+    "12.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "हा (परमेश्वर)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनंत शक्तींनी युक्त असल्यामुळे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आभासित करतो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "या (भावां)ना"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भावांना"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "इच्छेच्या बळावर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(त्याची) क्रिया"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "निर्मातृता (कर्तृत्व)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "त्याची"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ती"
+      }
+    ],
+    "12.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जडाची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ती शक्ती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सत्ता (अस्तित्व-दान)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असताची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सताची (असताला सत् करणारी)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ज्याचे स्वरूप कर्तृत्व-कर्मत्व आहे अशीच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "कार्यकारणता"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "म्हणून"
+      }
+    ],
+    "12.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जे असत्"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "असताशी जखडलेले"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असताची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सत्स्वरूपता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सताचीही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पुन्हा नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सत्ता-लाभाने"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रयोजन"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आणि तरीही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "म्हटले जाते (काहींकडून)"
+      }
+    ],
+    "12.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कार्यकारणता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "लोकव्यवहारात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अंतर्गत परिवर्तन पावणाऱ्याची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दोन्ही इंद्रियांनी वेद्यता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कोणत्यातरी (एका तत्त्वा)ची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(परमेश्वराच्या) शक्तीमुळे"
+      }
+    ],
+    "12.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "एकच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ही (तीच)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जिची सक्रम स्थिती आंतरिक व बाह्य आहे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "एका (परमेश्वरा)चीच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दोन्ही रूपे सहन करणाऱ्या"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "प्रतिपादन केली आहे"
+      }
+    ],
+    "12.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "बाह्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "त्या (प्रमात्या)चेच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ते कार्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जे आंतरिक"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्याच्या अपेक्षेने (आंतरिक म्हटले जाते)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रमात्याच्या अपेक्षेने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सांगितली आहे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "दुहेरी"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "बाह्य-आंतरिक स्थिती"
+      }
+    ],
+    "12.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रमाताच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(कारण-कार्य अशा) दोन आभासांच्या स्थितीत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कार्याच्या"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "एकच राहतो"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "एका (प्रमात्या)ची"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "क्रिया प्रतिपादन केली"
+      }
+    ],
+    "12.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अंकुराविषयी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मानला जातो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "निमित्त (कारण)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "परमेश्वर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अन्याचे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "बीजादिकांचे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कारणत्व"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "उपपन्न होत नाही"
+      }
+    ],
+    "12.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण (स्पष्ट करण्यासाठी)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कुंभकार (कुंभार)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(परमेश्वराच्या) ऐश्वर्यानेच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(त्याच्या) व्यवस्थेने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्या-त्या मृत्तिकादिकांच्या संस्कारक्रमाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "निर्माण करेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "घट"
+      }
+    ],
+    "12.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "योग्यांना"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मृत्तिका व बीज"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वाचूनच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "इच्छेच्या बळाने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "घटादिक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "उत्पन्न होतो"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्या-त्या स्थिर व प्रभावी अर्थक्रिया करणारा"
+      }
+    ],
+    "12.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "योग्याची निर्माणक्रिया असता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अन्य प्रमाणाने निश्चित झालेली असता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कार्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कारण (हेतू)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(त्याचा) स्वभाव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "उत्पत्तीच्या मूळापासून (इच्छेपासून) उद्भवणारे"
+      }
+    ],
+    "12.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पुन्हा (शिवाय)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "त्या-त्या एका प्रमात्यातील अग्नीच्या आभासापासून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उद्भवेल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "परोक्ष अशा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अधिपती (परमेश्वरा)पासून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "धूराचा आभास इत्यादी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नवा"
+      }
+    ],
+    "12.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कार्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अव्यभिचारी (अपरिहार्य कारणा)चे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "लिंग (अनुमानचिन्ह)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अन्य प्रमात्यातील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्या (कार्या)चा आभास"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्या (कारणा)च्या आभासापासून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अधिपती (परमेश्वरा)हून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "भिन्न"
+      }
+    ],
+    "12.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'हे असता'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'हे असते'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अशा रूपाची"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कार्यकारणता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ती सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परस्पर अपेक्षेने रहित अशा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जडांची"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "उपपन्न होत नाही"
+      }
+    ],
+    "12.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्वतःच्या आत्म्यातच केवळ निष्ठ अशा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनुसंधानरहित अशा (वस्तूं)चा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सत्-असत्तेच्या बाबतीत"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सप्तमीचा (अधिकरणाचा) अर्थ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कल्पिता येतो"
+      }
+    ],
+    "12.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणूनच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "विभक्तींचा अर्थ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "एका प्रमात्यावर आश्रित"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रिया-कारकभाव नावाचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "युक्त (सिद्ध)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भावांचा समन्वय"
+      }
+    ],
+    "12.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रत्येक अन्याचे स्वरूप असेल तर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कार्य-कारणांचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एकत्वच (होईल)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भेद असेल तर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परस्परांचे स्वरूप होणे"
+      }
+    ],
+    "12.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "एकात्म्य असलेल्या (प्रमात्या)चा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "विभेद"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कालक्रमाला अनुसरणारी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तशी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असेल"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कर्तृत्वच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्या प्रकारे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "परिणाम न पावता"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "त्या (क्रिये)द्वारे"
+      }
+    ],
+    "12.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आणि नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "युक्त"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "जडासाठी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भेद-अभेदाच्या विरोधामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आभासाच्या भेदामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "एका (प्रमात्या)त"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "चित्स्वरूप अशा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "युक्त ठरते"
+      }
+    ],
+    "12.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वास्तविक"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "चैतन्याचे एकत्व असता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "असणार नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आभासाने भिन्न झालेल्या दोहोंची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "चिकीर्षा (कृतीची इच्छा) हे लक्षण असलेल्या एकत्व-परामर्शा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "क्रिया"
+      }
+    ],
+    "12.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तसे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "घट-पटादिकांच्या आभासरूपी जगत् स्वरूपाने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "राहण्याची इच्छा करणाऱ्या (परमेश्वरा)ची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "इच्छाच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "हेतुता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कर्तृता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "क्रिया"
+      }
+    ],
+    "13.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आंतरिक-बाह्य प्रवृत्तीची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कालक्रमाला अनुसरणारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रमात्याचीच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परस्पर अवियुक्त (अविभाज्य)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ज्ञान-क्रिया"
+      }
+    ],
+    "13.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आंतरिक अवस्थेच्या उद्रेकामुळे (प्रबलतेमुळे)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सादाख्य (सदाशिव) तत्त्व"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तत्त्व"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रथम"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "बहिर्भावाकडे प्रवृत्ती होताना"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्यानंतर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पारमेश्वर (ईश्वर) तत्त्व"
+      }
+    ],
+    "13.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ईश्वर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बाह्य"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उन्मेष (उघडणे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निमेष (मिटणे)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आंतरिक"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सदाशिव"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सामानाधिकरण्य (एकाधिकरणत्व)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सद्विद्येतील 'अहं'-'इदं' ज्ञानांचे"
+      }
+    ],
+    "13.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'इदं'भावाने (हे-पणाने) युक्त"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्ञेयाच्या भूमीला"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पावलेल्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भावांचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्यांचे सार बोध (चैतन्य) असल्यामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "वस्तू जशी आहे तशी पाहण्यामुळे"
+      }
+    ],
+    "13.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "येथे (या स्तरावर)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अपरत्व (कनिष्ठता)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भावांचे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अनात्मरूपाने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भासल्यामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "परत्व (श्रेष्ठता)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अहंतेने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आच्छादनामुळे (व्याप्तीमुळे)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "परापर (श्रेष्ठ-कनिष्ठ) अवस्था"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "खरोखर"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ती (सद्विद्या)"
+      }
+    ],
+    "13.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भेदबुद्धी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "च (तीच)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भावांविषयी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कर्त्याची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "बोधस्वरूप अशा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मायाशक्तीच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "विद्या (म्हटली)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अन्य (काही जण म्हणतात)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "विद्येश्वर म्हणून"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "जसे"
+      }
+    ],
+    "13.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्याचे स्वरूप ऐश्वर्य आहे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पशुभावात (बद्ध अवस्थेत)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रकट करणारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "विद्याशक्ती"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तिरोधान (आच्छादन) करणारी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मायानामक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मात्र (दुसरीकडे)"
+      }
+    ],
+    "13.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भेद"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "एकरस (एकसारखा)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भासत असता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अहंतेने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अनात्म्यात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "पाहिले गेले असता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "शून्यात"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "बुद्धीत"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "शरीरात"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "मायाशक्ती"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "विकसित (प्रकट) होते"
+      }
+    ],
+    "13.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रमाता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शून्यादी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रमेय (असता)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "वेगळे (व्यतिरिक्त) भासत असता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रमाता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रमेय (ज्ञेय)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असूनही"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कालादी पंचकाने (कंचुकांनी) वेष्टित"
+      }
+    ],
+    "13.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तेविसप्रकारचे (त्रयोविंशतिविध)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्ञेय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "जे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कार्य-करण (इंद्रिये) रूप"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्याचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अविभाग रूप"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "प्रधान (मूल प्रकृती)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मूळ कारण"
+      }
+    ],
+    "13.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तेरा प्रकारची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "येथे (यांत)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बाह्य व अंतःकरणांची ओळ (समूह)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कार्यवर्ग"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दहा प्रकारचा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्थूल-सूक्ष्म भेदाने"
+      }
+    ],
+    "14.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यांपैकी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "केवळ मातृतेच्या (शुद्ध प्रमातृत्वाच्या) अवस्थेत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "रुद्र"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अधिदैवत (अधिष्ठात्री देवता)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भिन्न प्रमेयांच्या प्रसरात (विस्तारात)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ब्रह्मा-विष्णू"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्थित (अधिष्ठाते म्हणून)"
+      }
+    ],
+    "14.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "हा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रमाता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मायेने आंधळा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संसारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कर्माने बद्ध"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विद्येने ऐश्वर्य ज्ञापित (प्रकट) झालेला"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "चिद्घन (चैतन्यघन)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मुक्त"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "म्हटला जातो"
+      }
+    ],
+    "14.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःच्या अंगांच्या रूपात असता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भाव"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रमाता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "म्हटला जातो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पती (स्वामी)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मायेमुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भेदयुक्त भासता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "क्लेश-कर्मादींनी कलुषित (मलिन)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पशू (बद्ध जीव)"
+      }
+    ],
+    "14.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वातंत्र्याची हानी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बोधाच्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्वातंत्र्याची"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अबोधता (बोधाची हानी)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दोन प्रकारचे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणवम्"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मल (अशुद्धी)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "स्वतःच्या स्वरूपाच्या हानीतून"
+      }
+    ],
+    "14.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भिन्न ज्ञेयांचा प्रथा (विस्तार)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "येथे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मायीय (माया-मल) नावाचा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जन्म-भोग देणारा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कर्त्यात"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अबोध अशा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कार्म (कर्म-मल)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मायाशक्तीनेच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तो (मलांचा) त्रिक"
+      }
+    ],
+    "14.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शुद्ध बोधस्वरूप असूनही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ज्यांना"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "उत्तम (श्रेष्ठ) कर्तृत्व"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "निर्माण केले गेलेले"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वतःच्या आत्म्यापासून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भिन्न"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "भर्त्याने (परमेश्वराने)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कर्तृत्वाच्या अत्ययामुळे (न्यूनतेमुळे)"
+      }
+    ],
+    "14.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "बोध हेच एकमेव लक्षण असे ऐक्य असूनही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्यांची"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "परस्पर भिन्नता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ईश्वराच्या इच्छेच्या भेदाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "विज्ञानकेवल (विज्ञानाकल)"
+      }
+    ],
+    "14.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शून्यादी अबोधरूप"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कर्ते (असलेले)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रलयाकल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्यांचा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कार्ममल"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "असतो"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मायीय (मल)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "विकल्पित (केवळ संस्कारशेषरूपाने)"
+      }
+    ],
+    "14.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "बोधांचेसुद्धा (जे आहेत त्यांचा)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कर्तृत्वयुक्त"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कार्ममल नष्ट झाला असता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भिन्न ज्ञेयांना भोगणाऱ्या"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(केवळ) मायामल (राहतो)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "विद्येश्वर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ते"
+      }
+    ],
+    "14.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देवादिकांना"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संसारी (जीवां)ना"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्रिविध"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मल"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्यांतही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कार्म हाच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "एकमेव"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मुख्य"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "संसाराचे कारण"
+      }
+    ],
+    "14.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलेने उद्बलित (बलवान) झालेले"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "चित्तत्त्व"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कर्तृत्वमय"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अचिद्रूप (अचेतन) अशा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शून्यादिकांचे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मर्यादित"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "गुणरूपाने (गौण रूपाने)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "स्थित राहते"
+      }
+    ],
+    "14.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मुख्यता (प्रधानता)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कर्तृत्वाची"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बोधाची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "चिदात्म्याची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शून्यादिकात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "जे त्याचे गुण (गौण) बनले होते"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(योग्य) ज्ञान"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्या (चैतन्या)त समावेश हे ज्याचे लक्षण"
+      }
+    ],
+    "14.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शून्यात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "बुद्ध्यादिकांच्या अभावरूप अशा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अहंता-कर्तृतेचे स्थान असलेल्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "केवळ अस्फुट-अरूप संस्कारच असलेल्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्ञेयशून्यता"
+      }
+    ],
+    "14.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "इंद्रियसहित (प्रमात्यां)ची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आंतरिक वृत्ती"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्राणादिकांना प्रेरणा देणारी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मानली जाते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'जीवन' (जीवननामक)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्राणात (स्थित)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अहंता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पुर्यष्टकस्वरूप (सूक्ष्म देहरूप)"
+      }
+    ],
+    "14.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तेवढ्या मात्र"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(बाह्य प्रमातृत्वाच्या) अवस्थेत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "म्हटले आहे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुषुप्त (गाढ निद्रेची अवस्था)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रलयासारखे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सवेद्य (विषयासह)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अपवेद्य (विषयरहित)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मायामलयुक्त किंवा मायामलरहित"
+      }
+    ],
+    "14.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मनोमात्राच्या (केवळ मनाच्या) मार्गावरही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "इंद्रियविषयतेमुळे (जणू इंद्रियविषय असल्यासारखे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भ्रमामुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्पष्ट आभास असलेली"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भावांची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सृष्टी (निर्मिती)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्वप्न-अवस्था"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मानली जाते"
+      }
+    ],
+    "14.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्व इंद्रियांचा विषय होण्याने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "बाह्यतेमुळे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्थिर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सृष्टी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "साधारण (समान)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सर्व प्रमात्यांना"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जागृती (जागृत अवस्था)"
+      }
+    ],
+    "14.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याज्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "त्रयी (या तीन अवस्था)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्राणादिकांचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्राधान्यामुळे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कर्तृत्व गौण असता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्या (प्राणा)च्या क्षय-वृद्धीप्राय सुख-दुःखादिकांच्या योगामुळे"
+      }
+    ],
+    "14.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्राण-अपानमय"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्राण"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनुक्रमे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जागृती व निद्रेत"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्या दोहोंच्या छेदस्वरूप (संधिरूप)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "समाननामक"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सुषुप्तीत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विषुववृत्तांत (सूर्य) असतो तसा"
+      }
+    ],
+    "14.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मध्य (नाडी)तून ऊर्ध्वगामी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "उदाननामक"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तुर्यगामी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अग्निमय"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्याचा अधिपती विज्ञानाकल व मंत्रेश"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "व्यान"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "विश्वात्मक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पर (परावस्थेशी संबद्ध)"
+      }
+    ],
+    "15.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःचा आत्माच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सर्व जीवांचा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "एकमेव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "महेश्वर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्याचे रूप विश्व आहे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'मी हे (आहे)'"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अखंड आमर्शाने (विमर्शाने) बृंहित (पुष्ट)"
+      }
+    ],
+    "15.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्वतः निर्मिलेल्या 'इदं'भागात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "बुद्ध्यादी ग्राहक (प्रमातृ) रूपाने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अहंकार-परामर्शाच्या (अहंभाव-विमर्शाच्या) स्तरावर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आणले"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्याने (परमेश्वराने)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ते (भाग)"
+      }
+    ],
+    "15.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःच्या स्वरूपाच्या अपरिज्ञानमय (न-ओळखीने भरलेला)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अनेक (विविध)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पुमान् (जीव)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मानला जातो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्याला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सृष्टीत (क्रियेत)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "क्रिया व आनंद"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भोग"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "दुःख-सुखस्वरूप"
+      }
+    ],
+    "15.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःच्या अंगांच्या रूपात असलेल्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भावांविषयी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पतीचे (परमेश्वराचे)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्ञान"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मायेने तृतीय (मायेच्या भरीने) झाली असता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तीच (ती दोन)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पशूचे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सत्त्व-रज-तम"
+      }
+    ],
+    "15.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भेदात स्थित अशा दृष्टिकोनातून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "शक्तिमंताचे (परमेश्वराचे)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शक्तित्व (शक्तीपण)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संबोधले जात नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "या"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "गुणांना (सत्त्व-रज-तम)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "करण व कार्यरूपाने परिणाम पावणाऱ्या"
+      }
+    ],
+    "15.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सत्तानंद (असण्याचा आनंद)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "क्रिया"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पतीची (परमेश्वराची)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्या (आनंदा)चा अभाव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तीच (ती क्रिया)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "पशूची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "द्वैतस्वरूप (दुःख-सुख)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "रज"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "दुःख (म्हणून)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "श्लेषी (जखडणारा)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "सत्त्व-तममय"
+      }
+    ],
+    "15.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रभूच्या असामयिक (अनौपचारिक) इदंता-परामर्शापासून जन्मलेले"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रभूचे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मिश्र (एकत्र)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "विभिन्न (वेगळे)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "विचित्र रूपाने भासणारे"
+      }
+    ],
+    "15.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ते (अर्थ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भिन्न आभास असलेले अर्थ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कल्पावे (रचावे) लागतात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रत्यगात्म्याकडून (वैयक्तिक जीवाकडून)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्या-त्या भिन्न संज्ञांनी (नावांनी)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्मृती-उत्प्रेक्षादिकांच्या क्षेत्रात"
+      }
+    ],
+    "15.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याची (वैयक्तिक जीवाची)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "असाधारण (खाजगी)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सृष्टी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ईश्वराच्या सृष्टीवर उपजीवन करणारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ती ही (खाजगी सृष्टी)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अज्ञानामुळे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सत्यच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ईश्वराच्या शक्तीमुळे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ज्याचा आत्मा तो (ईश्वर)"
+      }
+    ],
+    "15.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वतःमधील विश्रांतीला अडथळा आणणाऱ्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अचल (अविरत)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्राणरूप"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विकल्प-क्रियेने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्या-त्या वर्णांच्या (अक्षरांच्या) वैचित्र्याचे रूप असलेल्या"
+      }
+    ],
+    "15.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "साधारण (सर्वसामान्य, सामायिक)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अन्यथा (दुसऱ्या रीतीने)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ईश्वराची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सृष्टी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्पष्ट आभासनामुळे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "विकल्पांचा त्याग करणाऱ्या एकाग्रतेने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "क्रमशः"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ईश्वरत्वाचे पद"
+      }
+    ],
+    "15.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "हे सर्व"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माझेच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वैभव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "असे, अशा रीतीने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पूर्णपणे ओळखणाऱ्याला"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ज्याचा आत्मा विश्व आहे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विकल्पांच्या"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रसरातही (विस्तारात)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "महेशता (महेश्वरत्व)"
+      }
+    ],
+    "15.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ज्ञेयाला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "साधारण (सामायिक)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मुक्त (पुरुष)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्वतःच्या आत्म्याशी अभिन्न"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मानतो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "महेश्वर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जसे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बद्ध (जीव)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "उलट (दुसरीकडे)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अत्यंत भिन्न (मानतो)"
+      }
+    ],
+    "15.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्वथा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परंतु"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अंतरंगात विलीन झालेल्या अनंत तत्त्वौघाने परिपूर्ण"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शिव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "चिदानंदघन (चैतन्य-आनंदाचा घनरूप)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्याचा विग्रह (देह) परम अक्षर आहे"
+      }
+    ],
+    "15.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आत्मा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "या (परमेश्वरा)चा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सम्यक् ज्ञान-क्रिया"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तसेच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जाणत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "यथेच्छ (मनाजोग्या) अर्थांना"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पाहत"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(खरोखर) जाणतो"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आणि करतो"
+      }
+    ],
+    "15.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "प्रकट केला"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सुघटित (सुसंगत)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हा मार्ग"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नवा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "महागुरूंनी (सोमानंदांनी)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सांगितला होता"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "शिवदृष्टि-शास्त्रात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जसा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "येथे (या मार्गात)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ठेवत"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "पाऊल"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "आत्म्याचे भुवनकर्तृत्व"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "आत्म्याचे"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "जाणून (विचारून)"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "शिवतामय"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "अविरत"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "प्रवेश करत"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "सिद्धी पावतो"
+      }
+    ],
+    "15.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्या-त्या (साधनां)नी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "याचनांनी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जवळ आणला गेलेला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कृश (नाजूक) प्रियेच्या"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "उभा असूनही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सुद्धा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "जवळ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रियकर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सामान्य माणसाप्रमाणे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "अशा रीतीने"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अपरिज्ञात (न ओळखला गेलेला)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "रमवू न शकणारा"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ज्याप्रमाणे"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "लोकांसाठी"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "हा"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "त्याचप्रमाणे"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "ज्याचे गुण अनवेक्षित (न पाहिलेले)"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "स्वतःचा आत्मा"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "असूनही"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "विश्वेश्वर"
+      },
+      {
+        "word_idx": 21,
+        "gloss_text": "मुळीच पुरेसा (समर्थ) नाही"
+      },
+      {
+        "word_idx": 22,
+        "gloss_text": "स्वतःच्या वैभवासाठी"
+      },
+      {
+        "word_idx": 23,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 24,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 25,
+        "gloss_text": "त्याची प्रत्यभिज्ञा प्रतिपादन केली"
+      }
+    ],
+    "15.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "लोकांना"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अनायासे (विनासायास) सिद्धीसाठी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उदयाकराच्या पुत्राने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ईश्वरप्रत्यभिज्ञा' (हा ग्रंथ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "उत्पलाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "रचली (प्रतिपादन केली)"
+      }
+    ]
+  }
+}

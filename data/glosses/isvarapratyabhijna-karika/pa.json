@@ -1,0 +1,7851 @@
+{
+  "text_slug": "isvarapratyabhijna-karika",
+  "lang": "pa",
+  "translator": "sohamhamso (session-opus)",
+  "license": "CC-BY-SA",
+  "model": "opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਸੇ ਤਰ੍ਹਾਂ, ਕੁਝ ਹੱਦ ਤੱਕ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰਕੇ, ਪਹੁੰਚ ਕੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ (ਮਹਾਨ ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਦਾਸਤਾ, ਦਾਸ ਹੋਣ ਦੀ ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਲੋਕਾਂ ਦੀ, ਮਨੁੱਖਤਾ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੀ, ਵੀ ਉਵੇਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਪਕਾਰ, ਭਲਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਚਾਹੁੰਦਿਆਂ, ਇੱਛਾ ਰੱਖਦਿਆਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਾਰੀ ਸੰਪੱਤੀ ਦੀ ਪ੍ਰਾਪਤੀ ਦਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ (ਪ੍ਰਭੂ) ਦੀ ਪ੍ਰਤਿਅਭਿਗਿਆ (ਪਛਾਣ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਮੈਂ ਪ੍ਰਗਟ ਕਰਦਾ ਹਾਂ, ਸਥਾਪਿਤ ਕਰਦਾ ਹਾਂ"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਰਤਾ (ਕਰਨ ਵਾਲੇ) ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਗਿਆਤਾ (ਜਾਣਨਹਾਰ) ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੇ ਆਤਮਾ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਆਦਿ ਤੋਂ ਸਿੱਧ ਹੈ, ਮੂਲ ਤੋਂ ਪ੍ਰਮਾਣਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਜੜ੍ਹ-ਆਤਮਾ (ਚੇਤਨ ਪ੍ਰਾਣੀ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਸ਼ੇਧ, ਖੰਡਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਾਂ, ਚਾਹੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਿੱਧੀ, ਪ੍ਰਮਾਣ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਰ ਸਕਦਾ ਹੈ, ਸਾਧ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕੌਣ?"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰ, ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੋਹ ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਸ (ਪ੍ਰਭੂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਭਾਵੇਂ) ਵੇਖਿਆ, ਪ੍ਰਤੱਖ ਹੁੰਦਿਆਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ, ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਣਪਛਾਤਾ, ਚੰਗੀ ਤਰ੍ਹਾਂ ਨਾ ਲਕਸ਼ਿਆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਉਸ ਦੀਆਂ) ਸ਼ਕਤੀਆਂ ਦੇ ਪ੍ਰਗਟਾਵੇ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਤਿਅਭਿਗਿਆ (ਪਛਾਣ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਦਰਸਾਈ ਜਾਂਦੀ ਹੈ, ਦਿਖਾਈ ਜਾਂਦੀ ਹੈ"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਪ੍ਰਕਾਰ, ਕਿਉਂਕਿ ਇਉਂ ਹੈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੜ੍ਹ ਵਸਤੂਆਂ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਤਿਸ਼੍ਠਾ, ਸਥਾਪਿਤ ਸਥਿਤੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੀਵੰਤ ਪ੍ਰਾਣੀ ਉੱਤੇ ਆਸ਼੍ਰਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਗਿਆਨ, ਬੋਧ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜੀਵਾਂ ਦਾ, ਪ੍ਰਾਣੀਆਂ ਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੀਵੰਤਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੀਵਨ, ਪ੍ਰਾਣਮਯਤਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਦੋਹਾਂ ਵਿੱਚੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਗਿਆਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੇ-ਆਪ ਤੋਂ ਸਿੱਧ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦੇਹ ਵਿੱਚ ਆਸ਼੍ਰਿਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੁੰਦਿਆਂ, ਕਿਉਂਕਿ ਉਹ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਰਨਾਂ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ, ਵੀ ਉਵੇਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵੇਖੀ ਜਾ ਸਕਦੀ ਹੈ, ਲਕਸ਼ੀ ਜਾ ਸਕਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ (ਕਿਰਿਆ) ਰਾਹੀਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਦੂਜੇ ਦਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਨੁਮਾਨਿਆ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ, ਹੁਣ (ਸ਼ੰਕਾ ਉਠਾਉਂਦਿਆਂ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ੍ਵਲਕਸ਼ਣ (ਨਿਰੋਲ ਵਿਸ਼ੇਸ਼) ਵਜੋਂ ਭਾਸਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗਿਆਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇੱਕ (ਕਿਸਮ) ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦੂਜੀ (ਕਿਸਮ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਫਿਰ, ਦੂਜੇ ਪਾਸੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਬਦ-ਯੁਕਤ, ਨਿਸ਼ਚਯਾਤਮਕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਕਲਪ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਨੇਕ-ਵਿਧ, ਕਈ ਤਰ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਵੀ, ਇਸ ਤੋਂ ਵੱਧ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਹ (ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਦ੍ਵੈਤ (ਵਿਸ਼ਈ ਤੇ ਵਿਸ਼ੇ ਦਾ)"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿੱਤ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਸੇ (ਇਕਹਿਰੇ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦ੍ਰਸ਼੍ਟਾ (ਵੇਖਣ ਵਾਲੇ ਵਿਸ਼ਈ) ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸ (ਦ੍ਰਸ਼੍ਟਾ) ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇੱਥੇ, ਇਸ (ਗਿਆਨ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਉਸ ਦੇ) ਨਾ-ਭਾਸਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'ਅਹੰ' ਦੀ ਪ੍ਰਤੀਤੀ, 'ਮੈਂ' ਦਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਦੇਹ ਆਦਿ ਨੂੰ ('ਅਹੰ' ਵਜੋਂ) ਨਿਸ਼ਚਿਤ ਕਰਨ ਵਾਲੀ"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੁਣ, ਜੇ (ਇਹ ਸ਼ੰਕਾ ਹੋਵੇ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਦੋਂ (ਮੂਲ) ਅਨੁਭਵ ਨਸ਼੍ਟ ਹੋ ਜਾਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ, ਸਮਰਣ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸ (ਅਨੁਭਵ) ਦੇ ਅਨੁਰੂਪ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਵੇਂ?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਪਜ ਸਕਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਿੱਤ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹੋਵੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਆਤਮਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜੇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਨੁਭਵ ਕਰਨ ਵਾਲਾ"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਆਤਮਾ ਨੂੰ) ਮੰਨ ਵੀ ਲਈਏ, (ਆਤਮਾ ਦੇ) ਹੁੰਦਿਆਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ, ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਤਮਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਦ੍ਰਿਸ਼੍ਟੀ (ਗਿਆਨ) ਦੇ ਨਾਸ਼ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ (ਦ੍ਰਿਸ਼੍ਟੀ) ਰਾਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਪਹਿਲਾਂ) ਵੇਖੀਆਂ ਵਸਤੂਆਂ ਬਾਰੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਿਸ ਰਾਹੀਂ? ਕਿਵੇਂ?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਤੇ ਫਿਰ, ਇਸ ਤੋਂ ਇਲਾਵਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਠੀਕ ਜਿੱਥੇ (ਜਿਸ ਆਸ਼੍ਰਯ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਅਨੁਭਵ (ਹੋਇਆ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸੇ ਆਸ਼੍ਰਯ ਦੀ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਉਹ (ਸਮ੍ਰਿਤੀ)"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ, ਜਦੋਂ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਉਂਕਿ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪੂਰਵ ਅਨੁਭਵ ਦੇ ਸੰਸਕਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਦਾ ਉਪਜਣਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅੰਦਰੂਨੀ ਫੋੜੇ ਨਾਲ (ਫ਼ਾਲਤੂ ਉਭਾਰ ਨਾਲ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੀ?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਯੋਜਨ, ਲਾਭ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਠਹਿਰਨ ਵਾਲੇ (ਨਿੱਤ) ਨਾਲ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਆਤਮਾ ਨਾਲ"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਲਈ, ਇਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਿੰਨ (ਖਣਿਕ) (ਧਰਮਾਂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਧਰਮਾਂ (ਮਾਨਸਿਕ ਘਟਨਾਵਾਂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਦੇ ਸਰੂਪ ਦੀ ਅਵਿਸ਼ੇਸ਼ਤਾ (ਸਮਾਨਤਾ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੰਸਕਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਦੋਂ ਸਮ੍ਰਿਤੀ ਸਿੱਧ ਹੁੰਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਮਰਣ ਕਰਨ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਦ੍ਰਸ਼੍ਟਾ ਵਾਂਗ (ਮਹਿਜ਼ ਮੰਨਿਆ ਹੋਇਆ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਲਪਿਤ, ਕਲਪਨਾ ਨਾਲ ਘੜਿਆ"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗਿਆਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ, ਇਸ ਤੋਂ ਅੱਗੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਚਿਤ੍-ਸ੍ਵਰੂਪ (ਜਿਸ ਦਾ ਸਰੂਪ ਚੇਤਨਾ ਹੈ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ (ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਨਿੱਤ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਵੇਂ, ਕਿਉਂ (ਅਨਿੱਤ)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਤਮਾ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰ ਜੇ (ਦੂਜੇ ਪਾਸੇ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੜ੍ਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਸ (ਗਿਆਨ) ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਕਿਵੇਂ?"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਅਰਥ-ਪ੍ਰਕਾਸ਼ਕਤਾ"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹੁਣ (ਅੱਗੇ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥ (ਵਿਸ਼ੇ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਰੂਪ, ਆਕਾਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਧਾਰਨ ਕਰਦੀ ਹੈ, ਲੈਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਬੁੱਧੀ, ਗਿਆਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਵੇਂ ਹੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਤਮਾ ਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਚੈਤੰਨ੍ਯ (ਚੇਤਨਾ ਦਾ ਰੂਪ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ਹੁੰਦਿਆਂ) ਅਜੜ੍ਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਹ (ਬੁੱਧੀ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਜੇ ਜੜ੍ਹਤਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਨਹੀਂ, ਨਹੀਂ ਹੋ ਸਕਦਾ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ਅਰਥ-ਪ੍ਰਕਾਸ਼ਨ"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਰਥ (ਵਸਤੂ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਦੇਹ ਆਦਿ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ-ਉਸ ਦੇਸ਼ ਆਦਿ ਵਿੱਚ ਉਪਜਣਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਰ (ਉਸ ਉਪਜਣ ਤੋਂ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਿਉਂਕਿ (ਹੋਰ ਕੁਝ) ਨਹੀਂ ਵੇਖਿਆ ਜਾਂਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਨਾ ਹੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ (ਕਿਰਿਆ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇੱਕ (ਇਕਹਿਰੀ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਕ੍ਰਮਿਕ, ਲੜੀਵਾਰ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਇੱਕ (ਵਸਤੂ) ਲਈ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ਉਚਿਤ, ਯੋਗ"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ-ਉਸ (ਅਵਸਥਾ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਦੋਂ (ਕੁਝ) ਮੌਜੂਦ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ-ਉਹ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਪਜਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ (ਉੱਧਰਣ-ਚਿੰਨ੍ਹ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕੇਵਲ, ਮਾਤਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੇਖਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਹੋਰ ਕੁਝ ਨਹੀਂ (ਵੇਖਿਆ ਜਾਂਦਾ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕੋਈ ਹੋਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸੰਬੰਧ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਕਾਰ੍ਯ-ਕਾਰਣ ਭਾਵ ਤੋਂ (ਇਲਾਵਾ)"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੋਹਾਂ (ਕਾਰਨ ਤੇ ਕਾਰ੍ਯ) ਵਿੱਚ ਰਹਿਣ ਵਾਲੇ ਦੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਨੇਕ-ਰੂਪ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ (ਪਹਿਲਾਂ) ਸਿੱਧ ਹੈ ਉਸ ਦੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੋਰ ਉੱਤੇ ਨਾ-ਨਿਰਭਰ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਰਤੰਤਰਤਾ ਆਦਿ ਦੀ ਅਯੋਗਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਰਤਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵੀ, ਵੀ ਉਵੇਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਲਪਿਤ, ਕਲਪਨਾ ਨਾਲ ਘੜਿਆ"
+      }
+    ],
+    "3.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸੱਤ੍ਯ (ਮੰਨਿਆ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ, ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ-ਗਿਆਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪੂਰਵ ਅਨੁਭਵ ਦੇ ਸੰਸਕਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਪਜਿਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਤਮਾ ਵਿੱਚ ਟਿਕਿਆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ (ਸਮ੍ਰਿਤੀ-ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਮੂਲ ਅਨੁਭਵ ਨੂੰ ਜਣਾਉਣ ਵਾਲਾ"
+      }
+    ],
+    "3.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦ੍ਰਿਕ੍ (ਗਿਆਨ, ਵੇਖਣ ਦੀ ਕਿਰਿਆ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ੍ਵ-ਆਭਾਸ ਹੀ (ਸ੍ਵਯੰ-ਪ੍ਰਕਾਸ਼)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਸੇ ਹੋਰ ਦੁਆਰਾ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਣਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਰੂਪ ਦੀ ਦ੍ਰਿਸ਼੍ਟੀ ਵਾਂਗ (ਹੋਰ ਦੁਆਰਾ ਨਹੀਂ ਜਾਣੀ ਜਾਂਦੀ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਗਿਆਨ (ਦ੍ਰਿਕ੍)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਰਸ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ (ਰਸ ਦੀ ਸਮ੍ਰਿਤੀ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸੰਸਕਾਰ ਤੋਂ ਉਪਜਣਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰ, ਕੇਵਲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ (ਮੂਲ) ਨਾਲ ਸਮਾਨਤਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸ (ਮੂਲ ਅਨੁਭਵ) ਦਾ ਗਿਆਨ"
+      }
+    ],
+    "3.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੇ ਹੁਣ (ਇਹ ਕਿਹਾ ਜਾਵੇ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਾਵੇਂ (ਸਮ੍ਰਿਤੀ ਦਾ ਵਿਸ਼ਾ) ਉਹ (ਮੂਲ ਅਨੁਭਵ) ਨਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਹ ਉਸ (ਅਰਥ) ਦਾ ਨਿਸ਼ਚਯ ਕਰਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੇਖੀ ਵਸਤੂ ਨੂੰ ਆਲੰਬਨ ਬਣਾਉਣਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭ੍ਰਾਂਤੀ ਨਾਲ, ਭੁਲੇਖੇ ਨਾਲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਹੋ (ਮਤ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਸੰਗਤ, ਅਣਘੜਿਆ"
+      }
+    ],
+    "3.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਹੋਣ ਦਾ ਸੁਭਾਅ ਹੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਵੇਂ (ਘਟੇਗਾ)?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਹਿਲਾਂ ਤਾਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਅਜਿਹੀ) ਭ੍ਰਾਂਤੀ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਰਥ ਦੀ ਸਥਿਤੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਵੇਂ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪੂਰਵ ਅਨੁਭਵ ਦੇ ਸੰਸਕਾਰ ਉੱਤੇ ਨਿਰਭਰਤਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਿਉਂ (ਮੰਨੀ ਜਾਵੇ)?"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਮੰਨੀ ਜਾਂਦੀ ਹੈ, ਚਾਹੀ ਜਾਂਦੀ ਹੈ"
+      }
+    ],
+    "3.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੇ (ਨਿਸ਼ਚਯ) ਭ੍ਰਾਂਤ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਸ਼ਚਯ (ਅਵਸਾਯ) ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੜ੍ਹ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਰਥ ਦੀ ਸਥਿਤੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਤੋਂ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜੇ ਅਜੜ੍ਹਤਾ (ਚੇਤਨਤਾ) ਹੋਵੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਹ ਆਪਣੇ ਹੀ ਉੱਲੇਖ ਵਿੱਚ ਟਿਕਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(ਬਾਹਰੀ) ਅਰਥ ਦੀ ਸਥਿਤੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸ ਤੋਂ"
+      }
+    ],
+    "3.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ, ਇਸ ਮਤ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਪਸ ਵਿੱਚ ਭਿੰਨ (ਗਿਆਨਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਕ-ਦੂਜੇ ਨੂੰ ਨਾ ਜਾਣਨ ਵਾਲੇ (ਗਿਆਨਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਗਿਆਨਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਨੁਸੰਧਾਨ ਤੋਂ ਉਪਜਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਸ਼੍ਟ ਹੋ ਜਾਵੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਲੋਕ-ਵਿਵਸਥਾ, ਆਮ ਵਿਵਹਾਰ"
+      }
+    ],
+    "3.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਹੀਂ (ਇਉਂ ਨਾ ਹੁੰਦਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੇ (ਨਾ ਹੁੰਦਾ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਸ ਨੇ ਅਨੰਤ ਵਿਸ਼੍ਵ ਨੂੰ ਆਪਣੇ ਅੰਦਰ ਕਰ ਲਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੁੰਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇੱਕ (ਇਕੋ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਿਸ ਦੀ ਦੇਹ ਚਿਤ੍ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਗਿਆਨ, ਸਮ੍ਰਿਤੀ ਅਤੇ ਅਪੋਹਨ (ਭੇਦ) ਦੀਆਂ ਸ਼ਕਤੀਆਂ ਵਾਲਾ"
+      }
+    ],
+    "4.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਪ੍ਰਭੂ, ਜਾਣਨ ਵਾਲਾ ਵਿਸ਼ਈ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ, ਕਿਉਂਕਿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪੂਰਵ ਅਨੁਭੂਤ ਅਰਥ ਨੂੰ ਉਪਲਬਧ ਕਰਨ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਅਦ ਵਿੱਚ, ਪਿੱਛੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਉਹੀ) ਰਹਿੰਦਿਆਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਮਰਸ਼ ਕਰਦਿਆਂ (ਵਿਮਰਸ਼ ਨਾਲ ਗ੍ਰਹਿਣ ਕਰਦਿਆਂ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "'ਉਹ (ਉਹੀ ਹੈ)'"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸੁਤੰਤਰ, ਸ੍ਵੈਰੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸਮਰਣ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ, ਨਿਰਦਿਸ਼੍ਟ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "4.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੇਗਾ, ਭਾਸਾਏਗਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੇ (ਵਰਤਮਾਨ) ਕਾਲ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਵੱਸ਼, ਆਪਣੇ-ਆਪ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪੂਰਵ-ਪ੍ਰਕਾਸ਼ਿਤ ਨੂੰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਮਰਸ਼ ਕਰਦਿਆਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ੍ਵਲਕਸ਼ਣ ਨੂੰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੇਵਲ 'ਘੜਾ' ਆਭਾਸ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪੂਰੇ (ਸਮੁੱਚੇ) ਸ੍ਵਰੂਪ ਵਿੱਚ"
+      }
+    ],
+    "4.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਯੁਕਤ, ਸੰਭਵ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ (ਸਮਰਣ ਕਰਨ ਵਾਲੇ) ਦੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੇ (ਉਹ ਪੂਰਵ ਅਨੁਭਵ ਤੋਂ) ਭਿੰਨ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਮਰਣ-ਯੋਗ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਨ, ਭਾਸਣਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਏਕਤਾ, ਏਕ੍ਯ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਭਿੰਨ ਕਾਲਾਂ ਦੀਆਂ (ਸੰਵਿਦਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸੰਵਿਦਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਵੇਤ੍ਤਾ, ਜਾਣਨ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਇਹੋ ਉਹ (ਪ੍ਰਭੂ)"
+      }
+    ],
+    "4.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਿਲਕੁਲ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਉਂਕਿ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਮੂਲ) ਅਨੁਭਵ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਸਦਾ ਹੈ, ਪ੍ਰਕਾਸ਼ਮਾਨ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪੂਰਵ (ਅਨੁਭਵ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਰਥ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੱਖਰਾ, ਭਿੰਨ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਹਿਲਾਂ, ਪੂਰਵ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਮੈਂ ਅਨੁਭਵ ਕੀਤਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਮੈਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਹ 'ਅਹੰ' (ਪ੍ਰਮਾਤਾ) ਵਿੱਚ ਆਰੋਹਣ ਵਜੋਂ ਭਾਸਦਾ ਹੈ"
+      }
+    ],
+    "4.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਯੋਗੀਆਂ ਲਈ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਸਦੀਆਂ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦ੍ਰਿਸ਼੍ਟੀਆਂ (ਗਿਆਨ, ਵੇਖਣ ਦੇ ਕਾਰਜ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਸੇ ਹੋਰ ਦਰਸ਼ਨ (ਗਿਆਨ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕੇਵਲ ਆਪਣੀ ਸ੍ਵ-ਸੰਵਿਦ੍ ਦੁਆਰਾ ਮਾਪਣਯੋਗ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ (ਦ੍ਰਿਸ਼੍ਟੀਆਂ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਾਸਦੀਆਂ ਹਨ, ਪ੍ਰਕਾਸ਼ਦੀਆਂ ਹਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਮੇਯ-ਪਦ (ਜਾਣਨ-ਯੋਗ ਦੀ ਸਥਿਤੀ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜਾਂ ਫਿਰ (ਜੇ ਕਦੇ)"
+      }
+    ],
+    "4.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਮਰਣ ਕੀਤਾ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ, ਅਰਥਾਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਕ ਦ੍ਰਿਕ੍ (ਗਿਆਨ, 'ਵੇਖਣਾ')"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੇਰਾ, ਮੇਰੇ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ ਇਉਂ (ਸੀ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ, ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਿੰਨ ਵਜੋਂ (ਵੱਖ ਕਰਕੇ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਵਿਆਕਰਣ, ਵਿਸਤਾਰ (ਭੇਦ ਵਿੱਚ ਉਘਾੜਨਾ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਕੇਵਲ, ਮਾਤਰ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਇਸ (ਸਮ੍ਰਿਤੀ) ਦਾ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਮੇਰੇ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "(ਇਹ) ਵੇਖਿਆ ਗਿਆ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਦਾ (ਇਸ ਰੂਪ ਵਿੱਚ)"
+      }
+    ],
+    "4.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ (ਨਿਸ਼ਚਯ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'ਮੈਂ ਇਸ ਨੂੰ ਵੇਖਦਾ ਹਾਂ'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ਇਹ ਘੜਾ ਹੈ'"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ (ਇਸ ਰੂਪ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਵਸਾ (ਨਿਸ਼ਚਯ, ਨਿਸ਼ਚਯਾਤਮਕ ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ, ਸੋਚਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਮਵੇਤ ਵਜੋਂ (ਵਿਸ਼ਈ ਵਿੱਚ ਅੰਤਰਨਿਹਿਤ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ (ਨਿਸ਼ਚਯ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਨਿਸ਼ਚਯ ਕਰਨ ਵਾਲੇ (ਪ੍ਰਮਾਤਾ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਦਰਸ਼ਨ (ਗਿਆਨ ਦਾ ਇੱਕ ਰੂਪ)"
+      }
+    ],
+    "4.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਲਈ, ਇਉਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਇਹ ਮੇਰੇ ਦੁਆਰਾ ਵੇਖਿਆ ਜਾਂਦਾ ਹੈ'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'ਇਹ ਉਹੀ ਹੈ ਜੋ ਵੇਖਿਆ ਸੀ'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ ਵਿਮਰਸ਼ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੀ, ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਗ੍ਰਾਹ੍ਯਤਾ ਤੇ ਗ੍ਰਾਹਕਤਾ ਵਜੋਂ ਭਿੰਨ ਦੋਵੇਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਦੋਵੇਂ ਅਰਥ (ਵਿਸ਼ਾ ਤੇ ਵਿਸ਼ਈ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਾਸਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ਇੱਕ) ਪ੍ਰਮਾਤਾ ਵਿੱਚ"
+      }
+    ],
+    "5.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਨ੍ਹਾਂ ਭਾਵਾਂ ਦਾ ਆਭਾਸ ਵਰਤਮਾਨ ਹੈ, ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਾਵਾਂ ਦਾ, ਵਸਤੂਆਂ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਭਾਸਨ, ਪ੍ਰਗਟਾਵਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ (ਚੇਤਨਾ ਦੇ) ਅੰਦਰ ਟਿਕੇ ਹਨ ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕੇਵਲ, ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਘਟਦਾ ਹੈ, ਸੰਭਵ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਬਾਹਰ, ਬਾਹਰੀ ਤੌਰ 'ਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਆਪਣੇ) ਰੂਪ ਵਿੱਚ"
+      }
+    ],
+    "5.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮਾਨੋਂ ਪਹਿਲਾਂ (ਅਜੇ ਕੇਵਲ ਅੰਦਰ ਹੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥ (ਵਸਤੂ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਪ੍ਰਕਾਸ਼, ਨਾ-ਭਾਸਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼-ਸ੍ਵਰੂਪਤਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤੋਂ ਬਿਨਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਤੇ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ (ਚੇਤਨਾ ਦਾ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਿੰਨ, ਵੱਖਰਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਅਰਥ ਦੇ ਆਪਣੇ (ਆਤਮਾ) ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "(ਜੋ ਉਸ ਦੀ) ਪ੍ਰਕਾਸ਼ਤਾ ਹੈ"
+      }
+    ],
+    "5.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੇ ਪ੍ਰਕਾਸ਼ ਭਿੰਨ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ (ਹੋਣ 'ਤੇ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਂ ਅਭਿੰਨ (ਹੋਣ 'ਤੇ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੰਕਰ, ਮਿਲਾਵਟ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਸ਼ੇ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼-ਆਤਮਾ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੋ ਪ੍ਰਕਾਸ਼ਿਤ ਹੋਣ-ਯੋਗ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਰਥ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਪ੍ਰਕਾਸ਼ (ਨਾ-ਭਾਸਣ ਵਾਲਾ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਸਿੱਧ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "5.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ-ਉਸ (ਵਿਚਿੱਤਰ) ਦਾ ਆਕਸਮਿਕ ਆਭਾਸ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹਰੀ (ਅਰਥ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੇ (ਕਿਹਾ ਜਾਵੇ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਨੁਮਾਨ ਕਰਾਏਗਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਹੀਂ (ਇਉਂ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਉਂਕਿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਭਿੰਨ (ਅਖੰਡ ਬੋਧ) ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਬੋਧ (ਚੇਤਨਾ) ਦੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵਿਚਿੱਤਰ ਆਭਾਸਾਂ ਦੀ ਹੇਤੁਤਾ"
+      }
+    ],
+    "5.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਾਸਨਾਵਾਂ ਦਾ ਪ੍ਰਬੋਧ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਥੇ, ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਆਪ) ਵਿਚਿੱਤਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੇਤੁਤਾ (ਕਾਰਨਪਣ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸ ਪ੍ਰਬੋਧ (ਵਾਸਨਾ-ਜਾਗ੍ਰਤੀ) ਦੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ਉਸ ਦੀ) ਵਿਚਿੱਤਰਤਾ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕੀ?"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਨਿਬੰਧਨ, ਆਧਾਰ"
+      }
+    ],
+    "5.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਹ ਹੋ ਸਕਦਾ ਹੈ (ਇੰਨਾ ਕਿਹਾ ਜਾ ਸਕਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਹੀ (ਆਭਾਸਾਂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਦੋਂ (ਵਿਵਹਾਰ) ਸਿੱਧ ਹੋ ਜਾਵੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੁੰਦਿਆਂ (ਇਉਂ ਹੋਣ 'ਤੇ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਵਹਾਰ, ਵਿਆਵਹਾਰਿਕ ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕੀ (ਪ੍ਰਯੋਜਨ)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਿਸੇ ਹੋਰ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਬਾਹਰੀ (ਅਰਥ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੋ ਅਣਘੜ੍ਹ (ਸਿੱਧ ਨਾ ਹੋਣ ਯੋਗ) ਹੈ"
+      }
+    ],
+    "5.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਚਿਤ੍ ਹੈ (ਉਹੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ, ਕਿਉਂਕਿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਦੇਵ (ਦਿਵ੍ਯ ਆਤਮਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅੰਦਰ ਟਿਕੇ (ਅਰਥ) ਨੂੰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਆਪਣੀ) ਇੱਛਾ ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਬਾਹਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਯੋਗੀ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਪਾਦਾਨ (ਪਦਾਰਥਕ ਕਾਰਨ) ਤੋਂ ਰਹਿਤ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਰਥ-ਸਮੂਹ ਨੂੰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੇਗਾ"
+      }
+    ],
+    "5.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਨੁਮਾਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਪਹਿਲਾਂ ਆਭਾਸਿਤ ਨਾ ਹੋਇਆ ਹੋਵੇ ਉਸ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬਿਲਕੁਲ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੰਨਿਆ ਗਿਆ (ਪ੍ਰਮਾਣ ਵਜੋਂ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇੰਦ੍ਰੀ (ਜੋ ਸ਼ਕਤੀ ਅਨੁਮਾਨੀ ਜਾਂਦੀ ਹੈ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕੇਵਲ ਜੋ (ਪਹਿਲਾਂ) ਆਭਾਸਿਤ ਹੋ ਚੁੱਕੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਬੀਜ ਆਦਿ ਤੋਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹੇਤੁ-ਵਸਤੂ (ਪੁੰਗਰ ਆਦਿ) ਦੀ"
+      }
+    ],
+    "5.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਭਾਸ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਫਿਰ, ਇਸ ਤੋਂ ਅੱਗੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਪੂਰਵ) ਆਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਹਰੀ (ਅਰਥ) ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਪਜਿਆ, ਹੋਇਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਸੇ ਵੀ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਬਾਹਰੀ) ਅਰਥ ਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਬਿਲਕੁਲ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸ (ਆਭਾਸ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ (ਅਰਥ) ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸਿੱਧੀ, ਪ੍ਰਮਾਣ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਨਾ ਹੀ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਅਨੁਮਾਨ ਤੋਂ"
+      }
+    ],
+    "5.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ੍ਵਾਮੀ (ਪ੍ਰਭੂ) ਲਈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੇ ਅੰਦਰ ਟਿਕੇ ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵ-ਸਮੂਹ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਭਾਸਨ, ਭਾਸਣਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜ਼ਰੂਰ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ (ਆਭਾਸਨ) ਤੋਂ ਬਿਨਾਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸ ਤੋਂ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇੱਛਾ ਦਾ ਆਮਰਸ਼ ('ਮੈਂ ਚਾਹੁੰਦਾ ਹਾਂ' ਦਾ ਨਿਸ਼ਚਯ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਪ੍ਰਵ੍ਰਿੱਤ ਹੁੰਦਾ ਹੈ, ਕਾਰਜਸ਼ੀਲ ਹੁੰਦਾ ਹੈ"
+      }
+    ],
+    "5.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ੍ਵਭਾਵ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸ (ਭਾਸਣ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਮਰਸ਼ (ਪ੍ਰਤਿਫਲਨ-ਆਤਮਕ ਚੇਤਨਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ (ਵਿਦਵਾਨ) ਜਾਣਦੇ ਹਨ, ਮੰਨਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਹੀਂ ਤਾਂ, ਹੋਰ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ (ਨਿਰੋਲ ਪ੍ਰਕਾਸ਼ਮਾਨਤਾ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਭਾਵੇਂ) ਅਰਥ ਨਾਲ ਉਪਰੰਜਿਤ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਫਟਿਕ ਆਦਿ ਜੜ੍ਹ (ਵਸਤੂਆਂ) ਵਰਗਾ ਹੋਵੇਗਾ"
+      }
+    ],
+    "5.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਤਮਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਚੈਤੰਨ੍ਯ (ਕਿਹਾ ਜਾਂਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿਤ੍-ਕਿਰਿਆ (ਚੇਤਨ ਅਨੁਭਵ ਦਾ ਕਾਰਜ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਚਿਤਿ ਦੀ ਕਰਤ੍ਰਿਤਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤਾਤਪਰ੍ਯ ਨਾਲ (ਅਸਲ ਮਤਲਬ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ, ਨਿਰਦਿਸ਼੍ਟ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੜ੍ਹ ਤੋਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ (ਆਤਮਾ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਤਿ-ਭਿੰਨ, ਵਿਲਕਸ਼ਣ"
+      }
+    ],
+    "5.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਿਤਿ (ਗਤੀਸ਼ੀਲ ਚੇਤਨਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਪ੍ਰਤ੍ਯਵਮਰਸ਼ (ਪ੍ਰਤਿ-ਆਤਮ-ਵਿਮਰਸ਼) ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰਾ ਵਾਕ੍ (ਆਦਿ-ਵਾਣੀ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਣੇ ਰਸ ਤੋਂ ਸ੍ਵਤਃ ਉਦਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ੍ਵਤੰਤਰਤਾ, ਸ੍ਵਾਤੰਤ੍ਰ੍ਯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮੁੱਖ, ਪ੍ਰਧਾਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਐਸ਼੍ਵਰ੍ਯ, ਪ੍ਰਭੁਤਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪਰਮਾਤਮਾ ਦਾ"
+      }
+    ],
+    "5.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਚਿਤਿ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਫੁਰੱਤਾ (ਪ੍ਰਕੰਪਮਾਨ ਪ੍ਰਕਾਸ਼, ਸੱਤਾ ਦੀ ਝਿਲਮਿਲ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਹਾਸੱਤਾ (ਪਰਮ ਅਸਤਿੱਤਵ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਦੇਸ਼-ਕਾਲ ਤੋਂ ਅਨਿਯੰਤਰਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹੋ (ਚਿਤਿ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਾਰ-ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਹੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਹਿਰਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰਮੇਸ਼੍ਠੀ (ਪਰਮ ਪ੍ਰਭੂ) ਦਾ"
+      }
+    ],
+    "5.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ-ਆਪ ਨੂੰ, ਆਤਮਾ ਨੂੰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ (ਪ੍ਰਭੂ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਗਿਆਨ ਦਾ ਵਿਸ਼ਾ ਬਣਾ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੱਖਰੇ ਟਿਕੇ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਣਨ-ਯੋਗ ਵਸਤੂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਸ (ਆਤਮ-)ਅਭਿਮੁਖਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਖੰਡਿਤ ਹੋਵੇਗੀ, ਟੁੱਟੇਗੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸ੍ਵਤੰਤਰਤਾ, ਆਜ਼ਾਦੀ"
+      }
+    ],
+    "5.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਉਨ੍ਹਾਂ) ਆਤਮਿਆਂ ਨੂੰ ਜੋ ਆਪਣੀ (ਅਸਲ) ਸ੍ਵਤੰਤਰਤਾ ਤੋਂ ਮੁਕਤ (ਵਾਂਝੇ) ਹਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(ਆਪਣੀ) ਸ੍ਵਤੰਤਰਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਦ੍ਵੈਤ-ਆਤਮਾ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਭੂ (ਸ੍ਵਾਮੀ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ਈਸ਼' ਆਦਿ ਸੰਕਲਪਾਂ (ਸੀਮਿਤ ਵਿਸ਼ਈਆਂ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਰਚ ਕੇ, ਨਿਰਮਾਣ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਵਹਾਰ ਵਿੱਚ ਪ੍ਰਵਿਰਤ ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "5.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਹੀਂ (ਕੋਈ ਹਾਨੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਅਹੰ' ਆਦਿ ਪਰਾਮਰਸ਼ ਦੇ ਭੇਦ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ (ਆਪਣੇ-ਆਪ ਤੋਂ) ਦੂਰ ਨਹੀਂ ਜਾਂਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ਅਹੰ' ਵਜੋਂ ਮ੍ਰਿਸ਼੍ਯ (ਪਰਾਮਰਸ਼-ਯੋਗ) ਹੋਣ ਕਾਰਨ ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ (ਨਿਰਮਿਤ ਜਗਤ) ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਤਿਙ੍ (ਕਿਰਿਆ-ਪਦ) ਦੁਆਰਾ ਵਾਚ੍ਯ ਕਰਮ ਵਾਂਗ"
+      }
+    ],
+    "5.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮਾਯਾ-ਸ਼ਕਤੀ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਭੁ (ਸਰਬ-ਵ੍ਯਾਪੀ ਪ੍ਰਭੂ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹੋ (ਵਿਮਰਸ਼)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਿੰਨ ਸੰਵੇਦ੍ਯ ਨੂੰ ਆਪਣਾ ਗੋਚਰ ਬਣਾਉਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਗਿਆਨ, ਸੰਕਲਪ, ਅਧ੍ਯਵਸਾਯ ਆਦਿ ਨਾਵਾਂ ਨਾਲ"
+      }
+    ],
+    "5.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਾਕਸ਼ਾਤਕਾਰ (ਪ੍ਰਤੱਖ-ਅਨੁਭਵ) ਦੇ ਖਣ ਵਿੱਚ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੈ, ਮੌਜੂਦ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਮਰਸ਼"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਵੇਂ (ਨਹੀਂ ਤਾਂ)?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਹੀਂ ਤਾਂ, ਹੋਰ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦੌੜਨਾ ਆਦਿ (ਉਦੇਸ਼-ਪੂਰਨ ਕਿਰਿਆ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਘਟੇਗੀ, ਸੰਭਵ ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਤਿਸੰਧਾਨ (ਜੋੜਨ ਵਾਲੇ ਸੰਬੰਧ) ਤੋਂ ਰਹਿਤ"
+      }
+    ],
+    "5.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਇਹ ਘੜਾ ਹੈ'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਉਂ (ਇਸ ਰੂਪ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਧ੍ਯਵਸਾ (ਨਿਸ਼ਚਯਾਤਮਕ ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਾਮ-ਰੂਪ ਤੋਂ ਪਰੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਰਮੇਸ਼੍ਵਰ ਦੀ ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਤਮਾ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭਾਸਦੀ ਹੈ, ਪ੍ਰਕਾਸ਼ਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਦੰਤਾ (ਇਹਪਣ, ਮਹਿਜ਼ ਵਿਸ਼ੇਪਣ) ਵਜੋਂ"
+      }
+    ],
+    "5.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕੇਵਲ, ਮਾਤਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਿੰਨ ਸੰਵੇਦ੍ਯ, ਦੇਸ਼ ਤੇ ਕਾਲ ਦੇ ਅਨੁਰੋਧ ਨਾਲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗਿਆਨ, ਸਮ੍ਰਿਤੀ, ਅਧ੍ਯਵਸਾਯ ਆਦਿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕ੍ਰਮ-ਯੁਕਤ, ਲੜੀਵਾਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਤੀਤ ਹੁੰਦੇ ਹਨ, ਭਾਸਦੇ ਹਨ"
+      }
+    ],
+    "6.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਅਹੰ' ਦਾ ਪ੍ਰਤ੍ਯਵਮਰਸ਼"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼-ਆਤਮਾ (ਜਿਸ ਦਾ ਸਾਰ ਪ੍ਰਕਾਸ਼ ਹੈ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਾਕ੍-ਰੂਪ (ਵਾਣੀ ਦਾ ਆਕਾਰ ਵਾਲਾ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ ('ਅਹੰ'-ਆਮਰਸ਼)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਕਲਪ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ (ਵਿਕਲਪ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਿਉਂਕਿ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕਿਹਾ ਗਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਦ੍ਵੈਤ ਨੂੰ ਆਖੇਪਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਵਿਨਿਸ਼ਚਯ (ਨਿਸ਼ਚਯਾਤਮਕ ਗਿਆਨ)"
+      }
+    ],
+    "6.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੋ ਭਿੰਨ (ਵਸਤੂਆਂ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਉਂਕਿ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਘੜੇ ਤੇ ਅਘੜੇ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦੋਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ (ਚੇਤਨਾ) ਦੇ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹੋਰ (ਅਪਵਰਜਿਤ ਵਸਤੂ) ਦਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੋ ਭਿੰਨ ਹੈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਆਭਾਸਨ, ਭਾਸਣਾ"
+      }
+    ],
+    "6.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਤਤ੍' ਤੇ 'ਅਤਤ੍' ਦੀ ਪ੍ਰਤਿਭਾ ਨੂੰ ਧਾਰਨ ਕਰਨ ਵਾਲੀ (ਚਿਤ੍-ਮਾਤਰਾ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕੇਵਲ (ਚਿਤ੍-)ਮਾਤਰਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤਤ੍ ਦੇ ਅਪੋਹਨ (ਭੇਦ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ਤਤ੍' ਦਾ ਨਿਸ਼ਚਯ ਕਹਾਉਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਕਲਪ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'ਘੜਾ'"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਹ"
+      }
+    ],
+    "6.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਚਿਤ੍-ਤੱਤ੍ਵ ਨੂੰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮਾਯਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਛੱਡ ਕੇ (ਆਪਣੇ ਅਸਲ ਸਰੂਪ ਨੂੰ ਤਿਆਗ ਕੇ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕੇਵਲ ਭਿੰਨ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭਾਸਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ (ਸੀਮਿਤ ਵਿਸ਼ਈ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦੇਹ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਬੁੱਧੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪ੍ਰਾਣ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜੋ (ਆਤਮਾ ਵਜੋਂ) ਕਲਪਿਤ ਹੈ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਜਾਂ ਮਾਨੋਂ ਆਕਾਸ਼ (ਸ਼ੂਨ੍ਯ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਜਾਂ"
+      }
+    ],
+    "6.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਵਜੋਂ (ਸੀਮਿਤ ਵਿਸ਼ਈ ਵਜੋਂ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਅਹੰ' (ਮੈਂ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਮਰਸ਼"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੋਰ ਦੇ ਅਪੋਹਨ (ਭੇਦ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ ਵਿਕਲਪ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ (ਵਿਮਰਸ਼)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਿਸ ਦਾ ਪ੍ਰਤਿਯੋਗੀ ਉਹ ਹੋਰ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਆਭਾਸ ਤੋਂ ਉਪਜਿਆ"
+      }
+    ],
+    "6.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਸੇ ਕਾਦਾਚਿਤਕ (ਕਦੇ-ਕਦਾਈਂ) ਆਭਾਸ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪੂਰਵ-ਆਭਾਸ ਆਦਿ ਨਾਲ (ਉਸ ਦਾ) ਜੋੜ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੰਸਕਾਰ ਤੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਲਪਨਾ (ਕਾਲਪਨਿਕ ਰਚਨਾ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਹੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਉਸ ਚੇਤਨਾ ਵਿੱਚ) ਜਿੱਥੇ ਭਿੰਨ (ਵਸਤੂਆਂ) ਭਾਸਦੀਆਂ ਹਨ"
+      }
+    ],
+    "6.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਲਈ, ਇਉਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਵਹਾਰ ਵਿੱਚ ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਭੂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦੇਹ ਆਦਿ ਨੂੰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਵੇਸ਼ ਕਰਦਿਆਂ, ਵ੍ਯਾਪਦਿਆਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜੋ ਅੰਦਰ ਪਹਿਲਾਂ ਹੀ ਭਾਸ ਰਿਹਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅੰਦਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਰਥ-ਸਮੂਹ (ਅਰਥਾਂ ਦਾ ਹੜ੍ਹ) ਨੂੰ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(ਆਪਣੀ) ਇੱਛਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਿਤ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਬਾਹਰ"
+      }
+    ],
+    "6.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਕਲਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਅਪੋਹਨ (ਭੇਦ) ਪਰਾਯਣ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਗਿਆਨ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅੰਦਰਲਾ ਆਭਾਸ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮੌਜੂਦ ਹੀ ਰਹਿੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਿਸ਼ਚਿਤ ਹੈ"
+      }
+    ],
+    "6.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰ, ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨੈਸਰਗਿਕ, ਸੁਭਾਵਿਕ (ਉਹ ਆਭਾਸ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਪ੍ਰਤੱਖ) ਗਿਆਨ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਿਸ ਦਾ ਸਰੂਪ ਬਾਹਰੀ ਆਭਾਸਨ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪੂਰਵ-ਅਨੁਭਵ ਦੇ ਰੂਪ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰ, ਜਦਕਿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਟਿਕਿਆ ਹੈ, ਮੌਜੂਦ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ (ਅੰਦਰਲਾ ਆਭਾਸ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਮਰਣ ਆਦਿ ਵਿੱਚ"
+      }
+    ],
+    "6.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਅੰਦਰਲਾ ਆਭਾਸ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨੈਸਰਗਿਕ (ਸੁਭਾਵਿਕ) ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੈ, ਮੌਜੂਦ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਕਲਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਸੁਤੰਤਰ-ਵਿਚਰਣ ਵਾਲਾ ਹੈ (ਮਨ-ਮਰਜ਼ੀ ਕਾਰਜਸ਼ੀਲ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਸ ਵਿੱਚ ਆਕਾਰ ਮਨ-ਚਾਹੇ ਅਨੁਸਾਰ ਭਾਸਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਿਸ ਦਾ ਗੋਚਰ ਬੁੱਧੀ ਹੈ"
+      }
+    ],
+    "6.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮਨ-ਚਾਹੇ ਅਨੁਸਾਰ ਉੱਲੇਖਾਂ ਦੇ ਆਭਾਸਨ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਗਿਆਨ ਅਤੇ ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਪਸ਼੍ਟ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਿੱਧ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹਰ ਲਈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੀਵੰਤ ਪ੍ਰਾਣੀ (ਦੇ)"
+      }
+    ],
+    "7.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਤੇ ਇਹੋ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਤਿਭਾ (ਪ੍ਰਕਾਸ਼ਮਾਨ ਗਿਆਨ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸ-ਉਸ ਪਦਾਰਥ ਦੇ ਕ੍ਰਮ ਨਾਲ ਉਪਰੰਜਿਤ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਿਸ ਦਾ ਰੂਪ ਅਕ੍ਰਮ, ਅਨੰਤ ਚਿਤ੍ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ (ਜਾਣਨ ਵਾਲਾ ਵਿਸ਼ਈ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ"
+      }
+    ],
+    "7.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ-ਉਸ ਭਿੰਨ ਸੰਵਿੱਤੀ ਦੇ ਮੁਖਾਂ (ਦੁਆਰਾਂ) ਰਾਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੱਕ ਪ੍ਰਮਾਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਦੋਂ (ਭਾਵ) ਟਿਕ ਜਾਂਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵ (ਵਸਤੂਆਂ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹ ਗਿਆਤ੍ਰਿਤਾ (ਜਾਣਨਹਾਰਪਣ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਘਟਦੀ ਹੈ, ਸਿੱਧ ਹੁੰਦੀ ਹੈ"
+      }
+    ],
+    "7.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੇਸ਼-ਕਾਲ ਦੇ ਕ੍ਰਮ ਵਿੱਚ ਪਏ (ਅਰਥਾਂ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਆਪਣੇ-ਆਪ ਵਿੱਚ ਸਮਾਪਤ ਹੁੰਦੇ ਹਨ (ਸ੍ਵੈ-ਸਮਾਪਤ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇੱਕ-ਸਾਥ ਆਭਾਸ ਨਾਲ ਸਾਧ੍ਯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹ (ਸਮਨ੍ਵਯ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਹੀਂ ਤਾਂ, ਹੋਰ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਹੜਾ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਮਨ੍ਵਯ, ਜੁੜਵਾਂ ਕ੍ਰਮ (ਮੇਲ)"
+      }
+    ],
+    "7.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਤੱਖਾਂ ਤੇ ਅਨੁਪਲੰਭਾਂ (ਨਾ-ਉਪਲਬਧੀਆਂ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਉਸ-ਉਸ ਭਿੰਨ ਅੰਸ਼ ਉੱਤੇ ਪੈਂਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਾਰ੍ਯ-ਕਾਰਣਤਾ-ਸਿੱਧੀ ਦਾ ਹੇਤੁਪਣ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇੱਕ ਪ੍ਰਮਾਤਾ ਤੋਂ ਉਪਜਦਾ ਹੈ"
+      }
+    ],
+    "7.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਹੀ (ਕੇਵਲ ਜੋ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ੍ਵ-ਸੰਵਿੱਤੀ (ਆਤਮ-ਚੇਤਨਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਮਾਣ (ਵੈਧ ਗਿਆਨ ਦਾ ਸਾਧਨ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਪਣੇ ਉਪਜਣ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪੂਰਵ-ਅਨੁਭਵ ਦੀ ਮੌਜੂਦਗੀ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਾਧਨ, ਪ੍ਰਮਾਣ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹੋ ਹੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਹੋਰ ਕੋਈ ਨਹੀਂ"
+      }
+    ],
+    "7.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਾਧ੍ਯ-ਬਾਧਕ ਭਾਵ (ਖੰਡਿਤ ਤੇ ਖੰਡਨ ਕਰਨ ਵਾਲੇ ਦਾ ਸੰਬੰਧ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਆਪਣੇ-ਆਪ ਵਿੱਚ ਟਿਕੇ ਹੋਣ ਕਾਰਨ (ਆਪਸ ਵਿੱਚ) ਅਵਿਰੋਧੀ ਹਨ ਉਨ੍ਹਾਂ (ਗਿਆਨਾਂ) ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਗਿਆਨਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਪਜ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਉਂਕਿ (ਉਹ) ਇੱਕ ਪ੍ਰਮਾਤਾ ਵਿੱਚ ਪੂਰੀ ਤਰ੍ਹਾਂ ਟਿਕੇ ਹੋਏ ਹਨ"
+      }
+    ],
+    "7.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਨਿਰੋਲ ਭੂਤਲ ਦਾ ਗਿਆਨ (ਘੜੇ ਤੋਂ ਮੁਕਤ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਘੜੇ ਦੇ ਅਭਾਵ ਦਾ ਗਿਆਨ (ਹੈ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਵੇਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੇ (ਕਿਹਾ ਜਾਵੇ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਿੱਪ ਦਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਚਾਂਦੀ-ਗਿਆਨ ਦੀ) ਅਪ੍ਰਮਾਣਤਾ ਨੂੰ ਜਣਾਉਣ ਵਾਲਾ"
+      }
+    ],
+    "7.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ੁੱਧ ਸਥਲ (ਭੂਤਲ) ਦੇ ਗਿਆਨ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਿੱਧ ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸ (ਭੂਤਲ) ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਘੜਾ-ਆਤਮਾ ਵਜੋਂ (ਜੋ ਘੜਾ ਨਹੀਂ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ ਉਪਲਬਧੀ-ਯੋਗ ਹੈ ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇੱਥੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਭਾਵ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਘੜੇ-ਆਤਮਾ (ਘੜਾ-ਸਰੂਪ ਵਸਤੂ) ਦਾ"
+      }
+    ],
+    "7.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਿਵਿਕਤ, ਭਿੰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੂਤਲ (ਨਿਰੋਲ ਫ਼ਰਸ਼)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਦਾ, ਸਦੀਵ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵਾਂ ਦੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਹ ਆਪਣੇ-ਆਪ ਵਿੱਚ ਟਿਕੇ ਰਹਿੰਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਵੇਂ?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਦੇ, ਬਿਲਕੁਲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸ (ਭੂਤਲ) ਦਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਿਸੇ ਭਿੰਨ (ਵਸਤੂ) ਦਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਅਭਾਵ ਦਾ ਸਾਧਨ"
+      }
+    ],
+    "7.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰ, ਸਗੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ ਦਾ ਪੁੰਜ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੰਨ੍ਹੇ ਲਈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਪਰਸ਼"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਗਰਮ ਆਦਿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਰਮ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉੱਥੇ (ਭੂਤਲ ਉੱਤੇ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮੌਜੂਦ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸਿੱਧ ਕਰੇਗਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸ ਦਾ ਆਪਣਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਅਘੜਾ-ਸਰੂਪਤਾ ਨੂੰ"
+      }
+    ],
+    "7.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਿਸ਼ਾਚ (ਫ਼ਾਂਟਮ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੋ ਸਕਦਾ ਹੈ, ਮੌਜੂਦ ਹੋ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ ਨਾਲ ਅਪ੍ਰਤੱਖ (ਅਦ੍ਰਿਸ਼੍ਯ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ ਦੇ (ਠੀਕ) ਵਿਚਕਾਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਦ੍ਰਿਸ਼੍ਯ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭੂਤਲ ਦੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅੰਦਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਿਸ਼ੇਧ ਕਰਨ-ਯੋਗ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਹ (ਪਿਸ਼ਾਚ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਕਿਸੇ ਤਰ੍ਹਾਂ, ਬਿਲਕੁਲ"
+      }
+    ],
+    "7.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚਾਂਦੀ-ਗਿਆਨ ਦੇ ਅਭਾਵ ਦੇ ਰੂਪ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਿੱਪ ਦਾ ਗਿਆਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮੂਲ ਚਾਂਦੀ-ਗਿਆਨ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਉਸ ਦੀ) ਅਪ੍ਰਮਾਣਤਾ ਨੂੰ ਜਣਾਉਣ ਵਾਲਾ"
+      }
+    ],
+    "7.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ ਧਰਮੀ (ਆਧਾਰ) ਸਿੱਧ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ, ਇਸ ਤੋਂ ਅੱਗੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੋ ਸਕਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਧਾ, ਵਿਰੋਧ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਬਿਲਕੁਲ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਨੁਮਾਨ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ੍ਵ-ਸੰਵੇਦਨ ਤੋਂ ਸਿੱਧ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰ, ਸਗੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਯੁਕਤ, ਉਚਿਤ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ (ਬਾਧਾ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇੱਕ ਪ੍ਰਮਾਤਾ ਤੋਂ ਉਪਜਣ ਵਾਲੀ"
+      }
+    ],
+    "7.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤਿ-ਭਿੰਨ ਅਰਥਾਂ ਦੇ ਆਭਾਸਾਂ ਨਾਲ ਜੜੇ (ਪ੍ਰਭੂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵਿਭੁ (ਸਰਬ-ਵ੍ਯਾਪੀ ਪ੍ਰਭੂ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਲੀਨ (ਭ੍ਰਾਂਤੀ ਨਾਲ ਦੂਸ਼ਿਤ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਰਮਲ, ਸ਼ੁੱਧ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਵਹਾਰ, ਵਿਆਵਹਾਰਿਕ ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਨੁਭਵਿਆ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "8.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ ਸਮੇਂ ਦੀ ਇੰਦ੍ਰੀ-ਸਮੀਪਤਾ ਉੱਤੇ ਨਿਰਭਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕੇਵਲ, ਮਾਤਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੁਝ ਹਾਲਤਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਭਾਸ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੋਰ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਹੋਰ ਹਾਲਤਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅੰਨ੍ਹਿਆਂ ਵਿੱਚ, ਘੋਰ ਅੰਧਕਾਰ ਆਦਿ ਵਿੱਚ"
+      }
+    ],
+    "8.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭੇਦ, ਅੰਤਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥ ਦੇ ਆਭਾਸ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਉਸ ਦੀ) ਸੱਤਾ (ਅਸਤਿੱਤਵ) ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਸੇ ਵੀ ਹਾਲਤ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਵੇਗਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜੋ ਭਵਿੱਖ, ਵਰਤਮਾਨ ਤੇ ਅਤੀਤ ਅਰਥਾਂ ਉੱਤੇ ਚੱਲਦੇ ਹਨ"
+      }
+    ],
+    "8.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸੁਖ ਆਦਿ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸੁਖ ਆਦਿ ਦੇ ਹੇਤੁਆਂ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਤੇ ਨਾਲ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਅਸਲ) ਵਸਤੂਆਂ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਭਾਸ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਦੋਂ (ਉਸ ਦੀ) ਮੌਜੂਦਗੀ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦੇ) ਅਤੀਤ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇਉਂ, ਉਸ (ਅਤੀਤ) ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਦੀ ਸਥਿਤੀ"
+      }
+    ],
+    "8.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਡੂੰਘਾਈ ਨਾਲ, ਪ੍ਰਬਲ ਤੌਰ 'ਤੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਦੋਂ (ਸੁਖ) ਉੱਲੇਖਿਆ ਜਾ ਰਿਹਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਕਲਪ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੁਖ ਆਦਿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ-ਰੂਪ ਸਥਿਤੀ (ਇਉਂ ਹੋਣ ਦੀ ਅਵਸਥਾ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਠੀਕ ਉਸੇ (ਪ੍ਰਬਲ) ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਪਸ਼੍ਟ ਤੌਰ 'ਤੇ, ਪ੍ਰਗਟ ਤੌਰ 'ਤੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਸ ਦੇ ਇਉਂ ਉਪਲਕਸ਼ਿਤ (ਪਛਾਣੇ) ਹੋਣ ਕਾਰਨ"
+      }
+    ],
+    "8.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭਾਵ ਤੇ ਅਭਾਵ ਦੇ ਆਭਾਸਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹ੍ਯਤਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਪਾਧੀ (ਆਗੰਤੁਕ ਵਿਸ਼ੇਸ਼ਣ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੰਨੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਤਮਾ (ਅਸਲ ਸਰੂਪ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸੱਤਾ (ਅਸਤਿੱਤਵ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਨ੍ਹਾਂ (ਆਭਾਸਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜੋ ਅੰਦਰਲੇ ਹਨ ਉਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜੋ ਸਤ੍ (ਵਾਸਤਵਿਕ) ਹਨ ਉਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਸਦਾ"
+      }
+    ],
+    "8.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦੇ) ਅੰਦਰਲੇ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਦੀ ਏਕਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਨ੍ਹਾਂ (ਆਭਾਸਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭੇਦ ਨਾਲ ਬੱਝੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਰਥ-ਕ੍ਰਿਆ (ਕਾਰਜਕਾਰੀ ਸ਼ਕਤੀ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਦੋਂ ਬਾਹ੍ਯਤਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ (ਅਰਥ-ਕ੍ਰਿਆ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਭਿੰਨ ਆਭਾਸਾਂ ਦੇ ਭੇਦ ਤੋਂ (ਉਪਜਦੀ ਹੈ)"
+      }
+    ],
+    "8.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ (ਉਹ) ਚਿਨ੍ਮਯ (ਚਿਤ੍-ਸਰੂਪ) ਹਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੰਦਰ ਹੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਥਿਤੀ, ਟਿਕਣਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਾਯਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ ਭਾਸਦੇ ਹਨ ਉਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦੀ ਮੰਨੀ) ਬਾਹ੍ਯਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਬਾਹਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਹ (ਸਥਿਤੀ)"
+      }
+    ],
+    "8.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਿਕਲਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਹ ਜੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉੱਲੇਖ (ਰੇਖਾਂਕਣ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ ਵੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਬਾਹਰੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਪ੍ਰਥਮਾਨ ਵੱਖਰੇ ਵਜੋਂ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਨਾਲ ਏਕਾਤਮ੍ਯ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅੰਦਰਪਣ, ਆਂਤਰਿਕਤਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਸ ਤੋਂ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਭੇਦ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕਿਉਂਕਿ, ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਬਾਹ੍ਯਤਾ"
+      }
+    ],
+    "8.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉੱਲੇਖ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੁਖ ਆਦਿ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼, ਪ੍ਰਗਟਾਵਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਬਾਹਰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਆਪਣੇ) ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਪ੍ਰਭੂ ਦੀ) ਇੱਛਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭਰਤਾ (ਪ੍ਰਭੂ, ਪਾਲਣਹਾਰ) ਦਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਧ੍ਯਕਸ਼ (ਪ੍ਰਤੱਖ) ਰੂਪ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇੰਦ੍ਰੀ ਆਦਿ ਤੋਂ ਜਨਮੇ (ਆਭਾਸਾਂ) ਦਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜਿਵੇਂ"
+      }
+    ],
+    "8.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ (ਪ੍ਰਮਾਤਾ) ਦੀ ਏਕਤਾ ਤੋਂ ਬਿਨਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਤੋਂ ਬਿਨਾਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਹੀਂ ਹੋ ਸਕਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੰਵਿਦਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਲੋਕ-ਪੱਧਤੀ (ਜਗਤ ਦਾ ਵ੍ਯਵਸਥਿਤ ਕ੍ਰਮ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ ਦੀ ਏਕਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਏਕਤਾ, ਏਕਤ੍ਵ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ (ਮਾਤਾ) ਇੱਕ (ਹੈ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਸਿੱਧ ਹੈ"
+      }
+    ],
+    "8.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹੋ ਹੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(ਆਪਣੇ) ਵਿਮਰਸ਼ਪਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਨਿਸ਼ਚਿਤ (ਨਿਤ੍ਯ) ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ (ਹੈ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਮਰਸ਼ ਹੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦੇਵ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੁੱਧ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਗਿਆਨ ਤੇ ਕਿਰਿਆ (ਉਸ ਦੇ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕਿਉਂਕਿ"
+      }
+    ],
+    "9.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਵਿਰੋਧੀ ਦੁਆਰਾ) ਕਿਹਾ ਗਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇੱਕ (ਕਰਤਾ) ਦੀ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕ੍ਰਮਿਕ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'(ਨਾ ਹੀ ਉਹ) ਇੱਕ ਹੈ'"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਦਿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਖੰਡਿਤ ਹੈ, ਰੱਦ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇੱਕ (ਪ੍ਰਮਾਤਾ) ਦੇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਸਿੱਧ ਹੋਣ ਕਾਰਨ"
+      }
+    ],
+    "9.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕ੍ਰਮਿਕਤਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਲੌਕਿਕ (ਕਿਰਿਆ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਰਿਆ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਾਲ-ਸ਼ਕਤੀ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਘਟਦੀ ਹੈ, ਸੰਭਵ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸ਼ਾਸ਼੍ਵਤ (ਨਿੱਤ ਕਿਰਿਆ) ਦੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਭੂ ਨਾਲ ਸੰਬੰਧਿਤ (ਕਿਰਿਆ) ਦੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੋਵੇਗੀ (ਵੱਖਰੀ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਪ੍ਰਭੂ ਲਈ ਵਾਂਗ"
+      }
+    ],
+    "9.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੂਰਜ ਆਦਿ ਦਾ ਸੰਚਾਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਸ-ਉਸ ਫੁੱਲ ਆਦਿ ਦਾ ਜਨਮ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਰਦੀ ਤੇ ਗਰਮੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਨ੍ਹਾਂ (ਚਿੰਨ੍ਹਾਂ) ਦੁਆਰਾ ਲਕਸ਼ਿਤ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੇਵਲ ਕ੍ਰਮ ਹੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ (ਕਾਲ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵਾਸਤਵ ਵਿੱਚ, ਅਸਲ ਵਿੱਚ"
+      }
+    ],
+    "9.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕ੍ਰਮ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭੇਦ ਉੱਤੇ ਆਸ਼੍ਰਿਤ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੇਦ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੀ, ਨਾਲ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਭਾਸ ਦੀ ਸੱਤਾ ਤੇ ਅਸੱਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਭਾਸ ਦੀ ਸੱਤਾ ਤੇ ਅਸੱਤਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਪ੍ਰਭੂ ਦੇ) ਚਿੱਤਰ-ਆਭਾਸਨ ਦੁਆਰਾ ਕੀਤੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਭੂ ਦੀ"
+      }
+    ],
+    "9.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੂਰਤੀ (ਆਕਾਰ) ਦੀ ਵਿਚਿੱਤਰਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਦੇਸ਼-ਕ੍ਰਮ ਨੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਭਾਸਿਤ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ (ਪ੍ਰਭੂ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਰਿਆ ਦੀ ਵਿਚਿੱਤਰਤਾ ਦੇ ਨਿਰਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਾਲ-ਕ੍ਰਮ ਨੂੰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਈਸ਼੍ਵਰ"
+      }
+    ],
+    "9.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹਰ ਥਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸ ਦਾ ਭੇਦ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੋ ਸਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਾਲ-ਕ੍ਰਮ ਦਾ ਸ੍ਰੋਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਭਾਸ ਵਿੱਛਿੰਨ (ਟੁੱਟਵਾਂ) ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਆਦਿ ਦੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਸੀਮਿਤ) ਪ੍ਰਮਾਤਾ ਦੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੋ ਭਾਸਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇੱਕ-ਸਾਥ ਨਹੀਂ"
+      }
+    ],
+    "9.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੇਸ਼-ਕ੍ਰਮ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਸਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਸਰੂਪ ਮਿਤ (ਸੀਮਿਤ) ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਪਣੇ ਹੀ ਆਤਮਾ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਪਣੇ ਹੀ ਆਤਮਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪੂਰਨ, ਸੰਪੂਰਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਭਾਵ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਭਾਸਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਮਿਤ (ਅਸੀਮ ਪ੍ਰਮਾਤਾ) ਲਈ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਪਰ, ਜਦਕਿ"
+      }
+    ],
+    "9.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰ, ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਿਰਮਾਣ-ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਜਾਣਦਾ ਹੈ ਉਸ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਈਸ਼ਿਤਾ (ਸ੍ਵਾਮੀ) ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸ ਤਰ੍ਹਾਂ ਕਿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਗ੍ਯਾਤ੍ਰਿ ਤੇ ਵਿਗ੍ਯੇਯ (ਜਾਣਨਹਾਰ ਤੇ ਜਾਣਨ-ਯੋਗ) ਦਾ ਭੇਦ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜਿਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਆਭਾਸਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "10.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਰਿਆ, ਸੰਬੰਧ, ਸਾਮਾਨ੍ਯ, ਦ੍ਰਵ੍ਯ, ਦਿਸ਼ਾ ਤੇ ਕਾਲ ਦੀਆਂ ਬੁੱਧੀਆਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸੱਤ੍ਯ, ਵੈਧ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਪਣੀ ਸਥਿਰਤਾ ਤੇ ਉਪਯੋਗ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇੱਕ ਤੇ ਅਨੇਕ ਉੱਤੇ ਆਸ਼੍ਰਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੰਨੀਆਂ ਜਾਂਦੀਆਂ ਹਨ"
+      }
+    ],
+    "10.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ, ਉਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੱਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੰਦਰਲਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਤੱਤ੍ਵ, ਯਥਾਰਥ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹੋ (ਤੱਤ੍ਵ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇੰਦ੍ਰੀ-ਵੇਦ੍ਯਤਾ (ਇੰਦ੍ਰੀਆਂ ਦੁਆਰਾ ਜਾਣਨ-ਯੋਗਤਾ) ਨੂੰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਨੇਕਤਾ ਨੂੰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਦੇਸ਼-ਕਾਲ ਦੇ ਸ੍ਵਭਾਵ ਕਾਰਨ"
+      }
+    ],
+    "10.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਦੋਹਾਂ (ਇੱਕ ਤੇ ਅਨੇਕ) ਉੱਤੇ ਆਸ਼੍ਰਿਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਨੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਅਨੁਵ੍ਯਵਸਾਯੀ ਹੈ (ਪਿੱਛੋਂ ਨਿਸ਼ਚਯ ਕਰਨ ਵਾਲਾ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਹੁੰਦਿਆਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਰਚਦਾ ਹੈ, ਪੈਦਾ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਦੇ ਵ੍ਯਾਪਾਰ ਨਾਲ ਬਣੀਆਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਰਮ ਆਦਿ (ਕਾਰਕ) ਕਲਪਨਾਵਾਂ ਨੂੰ"
+      }
+    ],
+    "10.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ-ਆਪ ਵਿੱਚ ਟਿਕੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਵਿਕਤ (ਭਿੰਨ) ਭਾਸਣ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇੱਕ ਪ੍ਰਮਾਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਪਸੀ ਅਨ੍ਵਯ ਦੀ ਏਕਤਾ ਨਾਲ ਜੁੜੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸੰਬੰਧ-ਗਿਆਨ ਦਾ ਪਦ (ਆਧਾਰ)"
+      }
+    ],
+    "10.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਾਤੀ ਤੇ ਦ੍ਰਵ੍ਯ ਦੇ ਆਭਾਸਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਏਕ-ਰੂਪਤਾ (ਇੱਕ-ਸਮਾਨ ਰੂਪ) ਨੂੰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵ੍ਯਕਤੀਆਂ ਤੇ ਅੰਸ਼ਾਂ ਦੇ ਭੇਦ ਨੂੰ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ ਨਾਲ ਹੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਲੰਬਨ ਬਣਾਉਂਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਕਲਪ (ਕਾਲਪਨਿਕ ਰਚਨਾਵਾਂ)"
+      }
+    ],
+    "10.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਿਸ ਦਾ ਵਿਸ਼ਾ ਕਿਰਿਆ ਦਾ ਵਿਮਰਸ਼ ਹੈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਾਰਕਾਂ (ਕਿਰਿਆ ਦੇ ਭਾਗੀਆਂ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਮਨ੍ਵਯ (ਜੁੜਵਾਂ ਕ੍ਰਮ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਵਧੀ (ਸੀਮਾ) ਤੇ ਅਵਧੀਮਾਨ ਦੇ ਅਨ੍ਵਯ ਉੱਤੇ ਆਸ਼੍ਰਿਤ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦਿਸ਼ਾ (ਦੇਸ਼) ਆਦਿ ਦੀ ਬੁੱਧੀ"
+      }
+    ],
+    "10.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥ-ਸਿੱਧੀ (ਪ੍ਰਯੋਜਨ ਦੀ ਪ੍ਰਾਪਤੀ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਲਈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਅਰਥ-ਕ੍ਰਿਆ ਦਾ ਚਾਹਵਾਨ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ ਭੇਦ ਤੇ ਅਭੇਦ ਦੋਵੇਂ ਵਾਲਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਰਥ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਭ੍ਰਾਂਤੀ, ਭੁਲੇਖਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਅਜਿਹੀ (ਜਿਵੇਂ ਵਿਰੋਧੀ ਨੇ ਕਿਹਾ)"
+      }
+    ],
+    "11.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਇਹ ਇਸ ਤਰ੍ਹਾਂ ਦੀ ਹੈ'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਉਂ, ਇਸ ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਸ ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਿਸ਼ਚਿਤ ਰੂਪ ਵਿੱਚ ਟਿਕ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਸਤੂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹੋ ਪ੍ਰਮਾਣ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ ਉਹ ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ੍ਵ-ਆਭਾਸ (ਸ੍ਵਯੰ-ਪ੍ਰਕਾਸ਼ ਆਭਾਸ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਵਾਂ ਉਦਿਤ"
+      }
+    ],
+    "11.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਆਭਾਸ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਦਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਉਹ ਵਿਮਰਸ਼ ਹੈ ('ਇਹ ਇਸ ਤਰ੍ਹਾਂ ਦੀ ਹੈ')"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਉਸ ਵਸਤੂ ਵਿੱਚ) ਜੋ ਦੇਸ਼-ਕਾਲ ਆਦਿ ਤੋਂ ਅਭਿੰਨ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਇੱਕੋ ਅਭਿਧਾਨ (ਨਾਮ) ਦਾ ਵਿਸ਼ਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਿਤੀ (ਪ੍ਰਮਾ, ਵੈਧ ਮਾਪ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਸਤੂ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਬਾਧਿਤ, ਅਖੰਡਿਤ"
+      }
+    ],
+    "11.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਰੁਚੀ ਦੇ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥਿਤਾ (ਲੋੜ) ਦੇ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵ੍ਯੁਤਪੱਤੀ (ਸਿੱਖਿਆ) ਦੇ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਿੰਨ ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਭਾਸ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਇੱਕੋ) ਅਰਥ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇੱਕੋ-ਇੱਕ (ਅਰਥ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਨੁਸੰਧਾਨ ਨਾਲ ਸਿੱਧ"
+      }
+    ],
+    "11.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਲੰਮਾ, ਗੋਲ, ਖੜ੍ਹਵਾਂ, ਪੁਰਸ਼, ਧੂੰਆਂ, ਚੰਦਨਤਾ ਆਦਿ (ਵਿਸ਼ੇਸ਼ਣਾਂ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਭਾਸਾਂ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਿੰਨ ਹੁੰਦੇ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਆਪਣੇ ਵਿੱਚ) ਦੇਸ਼-ਕਾਲ ਤੋਂ ਅਭਿੰਨ"
+      }
+    ],
+    "11.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਤ੍, ਘੜਾ, ਦ੍ਰਵ੍ਯ, ਸੋਨਾ, ਉੱਜਲਤਾ ਆਦਿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਆਭਾਸਾਂ ਦੇ ਭੇਦ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਿੰਨ ਅਰਥ ਪੈਦਾ ਕਰਨ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਧਾਰ (ਪਦ, ਅਰਥ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ਬਦ (ਧ੍ਵਨੀ) ਦਾ"
+      }
+    ],
+    "11.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਭਾਸਾਂ ਦੇ ਭੇਦ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਸਤੂਆਂ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਿਯਤ ਅਰਥ-ਕ੍ਰਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਫਿਰ, ਬਦਲੇ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਾਮਾਨਾਧਿਕਰਣ੍ਯ (ਇੱਕੋ ਅਧਿਕਰਣ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਉਨ੍ਹਾਂ) ਆਭਾਸਾਂ ਦੀ ਜੋ ਅਭਿੰਨ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ ਅਭਿੰਨ (ਭਾਸਦੇ) ਹਨ ਉਨ੍ਹਾਂ ਦੀ"
+      }
+    ],
+    "11.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਕਈ) ਦੀਪਾਂ ਦੇ ਵੱਖਰੇ ਪ੍ਰਕਾਸ਼ਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਨਦੀਆਂ ਦੀ (ਧਾਰਾਵਾਂ ਦੀ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਮੁੰਦਰ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਵਿਰੁੱਧ ਆਭਾਸਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇੱਕੋ ਕਾਰ੍ਯ ਪੈਦਾ ਕਰਨ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਵੇਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਏਕ੍ਯ-ਬੁੱਧੀ (ਏਕਤਾ ਦਾ ਗਿਆਨ)"
+      }
+    ],
+    "11.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉੱਥੇ, ਉਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਵਿਸ਼ਿਸ਼੍ਟ (ਅਭਿੰਨ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਗਨੀ ਆਦਿ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਾਰ੍ਯਤਾ, ਕਾਰਣਤਾ, ਉਸ਼੍ਣਤਾ (ਆਦਿ ਗੁਣ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਉਸ-ਉਸ ਸ਼ਬਦ ਦੀ ਅਰਥਤਾ ਆਦਿ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਮਾਣ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇੱਕ ਵਜੋਂ (ਏਕ-ਰੂਪ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "11.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਅਰਥ-ਕ੍ਰਿਆ/ਪ੍ਰਵ੍ਰਿੱਤੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ੍ਵਲਕਸ਼ਣ ਵਿੱਚ ਜੋ ਦੇਸ਼ ਆਦਿ ਦੇ ਭਿੰਨ ਪ੍ਰਤੱਖ ਦੁਆਰਾ ਵੱਖ ਕੀਤਾ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ੍ਵਲਕਸ਼ਣ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਖਣ ਨਾਲ ਸੰਬੰਧਿਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਵ੍ਰਿੱਤੀ (ਪ੍ਰਭਾਵੀ ਕਿਰਿਆ/ਜੁੜਾਅ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਰਥੀ (ਚਾਹਵਾਨ) ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਨੁਮਾਨ ਤੋਂ"
+      }
+    ],
+    "11.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਅਰਥਾਂ ਦੀ) ਦੂਰੀ-ਨੇੜਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਰਥਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰੋਕਸ਼-ਪ੍ਰਤੱਖ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਹਰੀ-ਅੰਦਰਲੇ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦੋਸ਼ਾਂ (ਪ੍ਰਤੱਖਕਾਰ ਦੇ ਨੁਕਸਾਂ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵ੍ਯੰਜਕ (ਪ੍ਰਗਟ ਕਰਨ ਵਾਲੇ ਹੇਤੁ) ਦੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਰ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      }
+    ],
+    "11.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭਿੰਨ ਆਭਾਸਾਂ ਦੀ ਛਾਯਾ ਵਾਲਿਆਂ (ਆਭਾਸਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੁੱਖ ਆਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਇੱਕ ਪ੍ਰਤ੍ਯਵਮਰਸ਼ ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਏਕਤਾ, ਏਕਤ੍ਵ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਿਵਾਰੀ ਨਹੀਂ, ਅਪ੍ਰਤਿਬੰਧਿਤ"
+      }
+    ],
+    "11.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਰਥ-ਕ੍ਰਿਆ (ਕਾਰਜਕਾਰੀ ਸ਼ਕਤੀ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਹਜ (ਅਰਥਾਂ ਨੂੰ ਸੁਭਾਵਿਕ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਰਥਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਈਸ਼੍ਵਰ ਦੀ ਇੱਛਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਿਯਤ, ਨਿਸ਼ਚਿਤ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ (ਅਰਥ-ਕ੍ਰਿਆ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ ਦੁਆਰਾ, ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਸ (ਅਰਥ-ਕ੍ਰਿਆ) ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "(ਪ੍ਰਭੂ ਦੇ) ਅਕ੍ਰਿਆ (ਅ-ਕਾਰਜ) ਤੋਂ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਅਨ੍ਯਤਾ, ਵਿਭਿੰਨਤਾ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ਹੋਵੇਗੀ"
+      }
+    ],
+    "11.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਚਾਂਦੀ' ਦੇ ਇੱਕ ਵਿਮਰਸ਼ ਦੇ ਹੁੰਦਿਆਂ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਿੱਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ (ਕੋਈ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਚਾਂਦੀ ਦੀ ਅਸਲ ਸਥਿਤੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਪਾਧੀ-ਦੇਸ਼ (ਅਤੇ ਕਾਲ) ਦੇ ਅਸੰਵਾਦ (ਅਮੇਲ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦੋ-ਚੰਦਰ (ਪ੍ਰਤੀਤੀ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਆਕਾਸ਼ (ਆਧਾਰ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ਅਸਲੀ ਦੂਜੇ ਚੰਦ ਨਾਲੋਂ) ਹੋਰ ਤਰ੍ਹਾਂ"
+      }
+    ],
+    "11.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਗੁਣਾਂ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ਬਦ ਆਦਿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭੇਦ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਾਤੀ ਆਦਿ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਭਿੰਨਤਾ, ਏਕਤਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਾਵਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇੱਕ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਘਟਦੇ ਹਨ, ਸੰਭਵ ਹਨ"
+      }
+    ],
+    "11.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਿਸ਼੍ਵ ਦੀ ਵਿਚਿੱਤਰ ਵੰਨ-ਸੁਵੰਨਤਾ ਰੂਪੀ ਚਿੱਤਰ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਮਤਲ ਭਿੱਤੀ (ਕੈਨਵਸ) ਵਾਂਗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਸੇ ਵਿਰੁੱਧ ਜਾਂ ਅਭਾਵ ਤੋਂ ਅਛੂਤਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪਰਮਾਰਥ-ਸਤ੍ (ਅਸਲ ਵਿੱਚ ਵਾਸਤਵਿਕ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਈਸ਼੍ਵਰ ਵਿੱਚ"
+      }
+    ],
+    "11.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪੁਰਾਣਾ, ਆਦਿ (ਪ੍ਰਾਚੀਨ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦੀ ਦੇਹ ਸਦਾ ਪ੍ਰਕਾਸ਼ਮਾਨ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਹੜਾ?"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਮਾਣ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਵਾਂ (ਨਵ-ਉਪਜਿਆ) ਆਭਾਸ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੋ ਹਰ ਪ੍ਰਮਿਤੀ ਵਿੱਚ ਭਾਗੀ ਹੈ"
+      }
+    ],
+    "11.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ ਪਹਿਲਾਂ ਕਦੇ ਪ੍ਰਵਰਤਿਤ ਨਹੀਂ ਕੀਤਾ ਗਿਆ (ਹੁਣ ਤੱਕ ਨਹੀਂ ਕੀਤਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੱਥੇ, ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੇਵਲ, ਮਾਤਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੂੜ੍ਹਤਾ (ਮੋਹ) ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਉਸ ਦੀਆਂ) ਸ਼ਕਤੀਆਂ ਦੇ ਪ੍ਰਕਾਸ਼ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'ਈਸ਼' ਆਦਿ ਵਜੋਂ (ਪਛਾਣ ਦਾ) ਵਿਵਹਾਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਵਰਤਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "12.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਪ੍ਰਭੂ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਨੰਤ-ਸ਼ਕਤੀ ਵਾਲਾ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਭਾਸਿਤ ਕਰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਨ੍ਹਾਂ (ਭਾਵਾਂ) ਨੂੰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭਾਵਾਂ ਨੂੰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਆਪਣੀ) ਇੱਛਾ ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ਉਸ ਦੀ) ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਨਿਰਮਾਤ੍ਰਿਤਾ (ਰਚਨਾਕਾਰਤਾ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਉਹ"
+      }
+    ],
+    "12.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੜ੍ਹ ਵਸਤੂ ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸੱਤਾ (ਸੱਤਾ-ਪ੍ਰਦਾਨ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ (ਅਰਥਾਤ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਸਤ੍ ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਤ੍ ਦੀ (ਅਸਤ੍ ਨੂੰ ਸਤ੍ ਬਣਾਉਂਦੀ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਠੀਕ ਕਰਤ੍ਰਿਤਾ ਤੇ ਕਰਮਤਾ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਕਾਰ੍ਯ-ਕਾਰਣਤਾ (ਕਾਰ੍ਯ ਤੇ ਕਾਰਨ ਦਾ ਸੰਬੰਧ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਸ ਲਈ, ਉਸ ਤੋਂ"
+      }
+    ],
+    "12.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ ਅਸਤ੍ ਹੈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਸਤ੍ ਨਾਲ ਜੁੜਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ (ਕੋਈ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਸਤ੍ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਤ੍-ਸ੍ਵਰੂਪਤਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਤ੍ ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਫਿਰ ਨਹੀਂ (ਕੋਈ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸੱਤਾ-ਲਾਭ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਪ੍ਰਯੋਜਨ, ਮਤਲਬ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਤੇ ਫਿਰ ਵੀ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ (ਕੁਝ ਦੁਆਰਾ)"
+      }
+    ],
+    "12.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਰ੍ਯ-ਕਾਰਣਤਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਲੋਕ ਵਿੱਚ (ਆਮ ਵਿਵਹਾਰ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ (ਕਾਰ੍ਯ-ਕਾਰਣਤਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਅੰਦਰੋਂ ਪਰਿਵਰਤਨਸ਼ੀਲ ਹੈ ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਦੋਹਾਂ (ਪ੍ਰਕਾਰ ਦੀਆਂ) ਇੰਦ੍ਰੀਆਂ ਦੁਆਰਾ ਵੇਦ੍ਯਤਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਸੇ (ਇੱਕ ਤੱਤ੍ਵ) ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਪ੍ਰਭੂ ਦੀ) ਸ਼ਕਤੀ ਤੋਂ"
+      }
+    ],
+    "12.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੱਕੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਹੋ (ਕਿਰਿਆ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦੀ ਕ੍ਰਮਿਕ ਸਥਿਤੀ ਅੰਦਰ ਤੇ ਬਾਹਰ (ਦੋਵੇਂ) ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ ਇੱਕ (ਪ੍ਰਭੂ) ਦੀ ਹੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ ਦੋਵੇਂ ਆਕਾਰ ਸਹਿਣ ਯੋਗ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਿੱਧ ਕੀਤੀ ਗਈ"
+      }
+    ],
+    "12.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬਾਹਰੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਸੇ (ਪ੍ਰਮਾਤਾ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ ਕਾਰ੍ਯ (ਉਸ ਦਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਅੰਦਰਲਾ (ਹੈ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦੀ ਅਪੇਕਸ਼ਾ ਨਾਲ (ਇਉਂ ਕਿਹਾ ਜਾਂਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ ਦੀ ਅਪੇਕਸ਼ਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਹੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਦੋਹਰੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਬਾਹਰੀ ਤੇ ਅੰਦਰਲੀ ਸਥਿਤੀ"
+      }
+    ],
+    "12.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ (ਮਾਤਾ) ਹੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਾਰਨ (ਹੈ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਾਰ੍ਯ ਦੇ ਦੋ ਆਭਾਸਾਂ (ਕਾਰਨ ਤੇ ਕਾਰ੍ਯ) ਦੀ ਸਥਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਾਰ੍ਯ ਦੇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇੱਕ ਹੀ ਟਿਕਿਆ ਰਹਿੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇੱਕ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇੱਕ (ਪ੍ਰਮਾਤਾ) ਦੀ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਕਿਰਿਆ ਕਹੀ ਗਈ ਹੈ"
+      }
+    ],
+    "12.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਕੁਰ (ਪੁੰਗਰ) ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਨਿਮਿੱਤ (ਅਸਲ ਕਾਰਨ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਮੇਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਿਸੇ ਹੋਰ ਦੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਬੀਜ ਆਦਿ ਦੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਹੇਤੁਤਾ (ਕਾਰਨ ਹੋਣ ਦੀ ਸਥਿਤੀ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਨਹੀਂ ਘਟਦੀ"
+      }
+    ],
+    "12.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ, ਅਰਥਾਤ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਘੁਮਿਆਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਹ (ਘੁਮਿਆਰ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਪ੍ਰਭੂ ਦੀ) ਐਸ਼੍ਵਰ੍ਯ-ਸ਼ਕਤੀ ਨਾਲ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਉਸ ਦੀ) ਵ੍ਯਵਸਥਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ-ਉਸ ਮਿੱਟੀ ਆਦਿ ਦੇ ਸੰਸਕਾਰ ਦੇ ਕ੍ਰਮ ਰਾਹੀਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪੈਦਾ ਕਰੇਗਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਘੜਾ"
+      }
+    ],
+    "12.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਯੋਗੀਆਂ ਲਈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਿੱਟੀ ਤੇ ਬੀਜ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਤੋਂ ਬਿਨਾਂ ਹੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਆਪਣੀ) ਇੱਛਾ ਦੇ ਵੱਸ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਘੜਾ ਆਦਿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪੈਦਾ ਹੋ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੋ ਉਸ-ਉਸ ਸਥਿਰ, ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਕਾਰਜ ਨੂੰ ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "12.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਦੋਂ ਯੋਗੀ ਦਾ ਨਿਰਮਾਣ ਮੌਜੂਦ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(ਕਿਸੇ) ਹੋਰ ਪ੍ਰਮਾਣ ਦੁਆਰਾ ਨਿਸ਼ਚਿਤ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਾਰ੍ਯ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਹੇਤੁ (ਕਾਰਨ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦਾ) ਸ੍ਵਭਾਵ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਤਪੱਤੀ ਦੇ ਮੂਲ (ਇੱਛਾ) ਤੋਂ ਉਪਜਣ ਵਾਲੇ"
+      }
+    ],
+    "12.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਫਿਰ, ਅੱਗੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਸ-ਉਸ ਇੱਕ ਪ੍ਰਮਾਤਾ ਵਿੱਚ ਅਗਨੀ ਆਦਿ ਦੇ ਆਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਪਜੇਗਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪਰੋਕਸ਼ (ਅਪ੍ਰਤੱਖ) ਤੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਧਿਪਤੀ (ਪ੍ਰਭੂ) ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਧੂੰਏਂ ਆਦਿ ਦਾ ਆਭਾਸ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਵਾਂ, ਤਾਜ਼ਾ"
+      }
+    ],
+    "12.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਾਰ੍ਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਵ੍ਯਭਿਚਾਰੀ (ਅਟੱਲ ਕਾਰਨ) ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਲਿੰਗ (ਅਨੁਮਾਨ-ਚਿੰਨ੍ਹ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਸੇ ਹੋਰ ਪ੍ਰਮਾਤਾ ਵਿੱਚ ਟਿਕਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ (ਕਾਰ੍ਯ) ਦਾ ਆਭਾਸ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ (ਕਾਰਨ) ਦੇ ਆਭਾਸ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕੇਵਲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਧਿਪਤੀ (ਪ੍ਰਭੂ) ਤੋਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੋਰ, ਭਿੰਨ"
+      }
+    ],
+    "12.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਇਸ ਦੇ ਹੁੰਦਿਆਂ'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ਇਹ ਹੁੰਦਾ ਹੈ'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਉਂ (ਇਸ ਰੂਪ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਾਰ੍ਯ-ਕਾਰਣਤਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਆਪਸੀ) ਅਪੇਕਸ਼ਾ (ਸੰਬੰਧ-ਯੋਗ੍ਯਤਾ) ਤੋਂ ਰਹਿਤ (ਵਸਤੂਆਂ) ਦੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੜ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਹੀਂ ਘਟਦੀ"
+      }
+    ],
+    "12.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਿਉਂਕਿ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ ਆਪਣੇ ਹੀ ਆਤਮਾ ਵਿੱਚ ਇਕੱਲੀਆਂ ਟਿਕੀਆਂ ਹਨ ਉਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਅਨੁਸੰਧਾਨ ਤੋਂ ਰਹਿਤ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੱਤਾ-ਅਸੱਤਾ ਦੇ ਪ੍ਰਸੰਗ ਵਿੱਚ (ਸਪਤਮੀ-ਅਰਥ ਦੇ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਪਤਮੀ-ਅਰਥ ('ਜਦੋਂ ਇਹ ਮੌਜੂਦ ਹੋਵੇ')"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਘੜਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਕਲਪਿਆ ਜਾ ਸਕਦਾ ਹੈ"
+      }
+    ],
+    "12.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਸੇ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਭਕਤੀ-ਅਰਥ (ਕਾਰਕ-ਚਿੰਨ੍ਹਾਂ ਦਾ ਅਰਥ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਇੱਕ ਪ੍ਰਮਾਤਾ ਉੱਤੇ ਆਸ਼੍ਰਿਤ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਰਿਆ-ਕਾਰਕ ਭਾਵ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਯੁਕਤ, ਉਚਿਤ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਾਵਾਂ ਦਾ ਸਮਨ੍ਵਯ (ਜੁੜਵਾਂ ਕ੍ਰਮ)"
+      }
+    ],
+    "12.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੇ ਹਰ ਇੱਕ ਦੂਜੇ ਦਾ ਸ੍ਵਭਾਵ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਾਰ੍ਯ ਤੇ ਕਾਰਨ ਦੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕੇਵਲ ਏਕਤਾ ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੇ ਭੇਦ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਿਉਂਕਿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਨਹੀਂ (ਬਿਲਕੁਲ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਇੱਕ-ਦੂਜੇ ਦਾ ਸ੍ਵਰੂਪ ਹੋਣਾ"
+      }
+    ],
+    "12.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇੱਕ-ਆਤਮਾ (ਪ੍ਰਮਾਤਾ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵਿਭੇਦ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਾਲ-ਕ੍ਰਮ ਦੇ ਅਨੁਸਾਰ ਚੱਲਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਇਉਂ, ਉਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੋਵੇਗੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਰਤ੍ਰਿਤਾ ਹੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(ਆਪ ਅਸਲ ਵਿੱਚ) ਨਾ ਪਰਿਣਮਦਿਆਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਉਸ (ਕਿਰਿਆ) ਦੁਆਰਾ"
+      }
+    ],
+    "12.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਅਤੇ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਯੁਕਤ, ਸੰਭਵ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੜ੍ਹ ਵਸਤੂ ਲਈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਭੇਦ ਤੇ ਅਭੇਦ ਦੇ ਵਿਰੋਧ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਆਭਾਸਾਂ ਦੇ ਭੇਦ ਤੋਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇੱਕ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਚਿਤ੍ ਹੈ ਉਸ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਯੁਕਤ ਹੈ, ਘਟਦਾ ਹੈ"
+      }
+    ],
+    "12.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਵਾਸਤਵਿਕ, ਅਸਲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਚਿਤ੍ ਦੀ ਏਕਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ ਹੋ ਸਕਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਆਭਾਸਾਂ ਵਜੋਂ ਭਿੰਨ ਦੋਹਾਂ (ਕਾਰਕਾਂ) ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਚਿਕੀਰਸ਼ਾ (ਕਰਨ ਦੀ ਇੱਛਾ) ਜਿਸ ਦਾ ਲਕਸ਼ਣ ਹੈ ਅਜਿਹਾ ਏਕਤਾ-ਪਰਾਮਰਸ਼"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਤੋਂ ਬਿਨਾਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਿਰਿਆ"
+      }
+    ],
+    "12.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਘੜੇ, ਕੱਪੜੇ ਆਦਿ ਦੇ ਆਭਾਸਾਂ ਵਾਲੇ ਜਗਤ-ਆਤਮਾ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਇਉਂ ਪ੍ਰਗਟ) ਟਿਕਣ ਦੀ ਇੱਛਾ ਰੱਖਣ ਵਾਲੇ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਉਸ ਦੀ) ਇੱਛਾ ਹੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਹੇਤੁਤਾ (ਕਾਰਨਪਣ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਰਤ੍ਰਿਤਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕਿਰਿਆ"
+      }
+    ],
+    "13.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਦਰ ਤੇ ਬਾਹਰ ਚੱਲਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਾਲ-ਕ੍ਰਮ ਦੇ ਅਨੁਸਾਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕੇਵਲ ਪ੍ਰਮਾਤਾ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਪਸ ਵਿੱਚ ਅਵਿਯੁਕਤ (ਅਟੁੱਟ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਗਿਆਨ ਤੇ ਕਰਮ (ਕਿਰਿਆ)"
+      }
+    ],
+    "13.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪਰ, ਅੱਗੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਦਰਲੀ ਦਸ਼ਾ ਦੀ ਪ੍ਰਬਲਤਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਦਾਖ੍ਯ (ਸਦਾਸ਼ਿਵ) ਤੱਤ੍ਵ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਤੱਤ੍ਵ, ਯਥਾਰਥ-ਪੱਧਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਹਿਲਾਂ, ਆਰੰਭ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਦੋਂ (ਆਭਾਸਨ) ਬਾਹ੍ਯ-ਭਾਵ ਵੱਲ ਝੁਕਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਿੱਛੋਂ, ਉਸ ਤੋਂ ਅੱਗੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਾਰਮੇਸ਼੍ਵਰ (ਈਸ਼੍ਵਰ) ਤੱਤ੍ਵ"
+      }
+    ],
+    "13.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਈਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਾਹਰੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਨ੍ਮੇਸ਼ (ਉਘੜਨਾ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਿਮੇਸ਼ (ਮੀਟਣਾ, ਸੰਕੋਚ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅੰਦਰਲਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਦਾਸ਼ਿਵ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਾਮਾਨਾਧਿਕਰਣ੍ਯ (ਇੱਕੋ-ਅਧਿਕਰਣਪਣ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸਦ੍ਵਿਦ੍ਯਾ (ਸ਼ੁੱਧਵਿਦ੍ਯਾ) ਵਿੱਚ 'ਅਹੰ' ਤੇ 'ਇਦੰ' ਦੀਆਂ ਬੁੱਧੀਆਂ ਦਾ"
+      }
+    ],
+    "13.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ਇਦੰ' (ਇਹਪਣ) ਨਾਲ ਯੁਕਤ (ਭਾਵਾਂ) ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੇਦ੍ਯ (ਜਾਣਨ-ਯੋਗ) ਦੀ ਭੂਮੀ ਨੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਪਹੁੰਚ ਚੁੱਕੇ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਵਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਦਾ ਸਾਰ ਬੋਧ (ਚਿਤ੍) ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਨੂੰ ਜਿਉਂ-ਦਾ-ਤਿਉਂ ਵੇਖਣ ਤੋਂ"
+      }
+    ],
+    "13.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇੱਥੇ (ਇਸ ਪੱਧਰ 'ਤੇ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਪਰਤ੍ਵ (ਨੀਵਾਂਪਣ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਨਾਤਮਾ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦੇ) ਭਾਸਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਪਰਤਾ (ਉੱਚਾਪਣ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਅਹੰਤਾ ('ਅਹੰ' ਵਜੋਂ ਗ੍ਰਹਿਣ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ਉਸ ਦੇ) ਆਛਾਦਨ (ਢਕਣ/ਵ੍ਯਾਪਣ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਰਾਪਰ ਦਸ਼ਾ (ਉੱਚ-ਨੀਚ ਦੀ ਅਵਸਥਾ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਉਹ (ਸਦ੍ਵਿਦ੍ਯਾ)"
+      }
+    ],
+    "13.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭੇਦ ਦੀ ਬੁੱਧੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੀ, ਨਿਸ਼ਚੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਾਵਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਰਤਾ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਬੋਧ (ਚਿਤ੍) ਹੈ ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਿਸ਼ਚੇ ਹੀ ਮਾਯਾ-ਸ਼ਕਤੀ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵਿਦ੍ਯਾ (ਵੀ ਕਹੀ ਜਾਂਦੀ ਹੈ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਹੋਰ (ਲੋਕ ਕਹਿੰਦੇ ਹਨ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਵਿਦ੍ਯੇਸ਼੍ਵਰ (ਗਿਆਨ ਦੇ ਸ੍ਵਾਮੀ) ਵਜੋਂ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਜਿਵੇਂ"
+      }
+    ],
+    "13.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਿਸ ਦਾ ਸ੍ਵਭਾਵ ਐਸ਼੍ਵਰ੍ਯ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਸ਼ੁ-ਭਾਵ (ਬੰਧਨ-ਅਵਸਥਾ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਕਾਸ਼ਿਕਾ (ਪ੍ਰਗਟ ਕਰਨ ਵਾਲੀ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵਿਦ੍ਯਾ-ਸ਼ਕਤੀ (ਹੈ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਤਿਰੋਧਾਨ (ਛੁਪਾਉਣਾ) ਕਰਨ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਾਯਾ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਫਿਰ, ਦੂਜੇ ਪਾਸੇ"
+      }
+    ],
+    "13.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜਦੋਂ ਭੇਦ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਕ-ਰਸ (ਇੱਕ-ਸਮਾਨ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਭਾਸਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਹੰਤਾ ਨਾਲ ('ਅਹੰ' ਵਜੋਂ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਨਾਤਮਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਜੋ) ਵੇਖਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਬੁੱਧੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਸ਼ਰੀਰ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਜਾਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਮਾਯਾ-ਸ਼ਕਤੀ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਪਸਰ ਜਾਂਦੀ ਹੈ, ਫੈਲਦੀ ਹੈ"
+      }
+    ],
+    "13.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਆਦਿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਦੋਂ ਪ੍ਰਮੇਯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਿੰਨ (ਵੱਖਰਾ) ਖੜ੍ਹਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਾਤਾ (ਜਾਣਨਹਾਰ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮੇਯ (ਜਾਣਨ-ਯੋਗ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਹੁੰਦਿਆਂ (ਆਪ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕਾਲ ਆਦਿ ਪੰਜ (ਕੰਚੁਕਾਂ) ਨਾਲ ਘਿਰਿਆ"
+      }
+    ],
+    "13.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਤੇਈਹ-ਗੁਣਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੇਯ (ਜਾਣਨ-ਯੋਗ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਾਰ੍ਯ ਤੇ ਕਰਣ-ਆਤਮਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਇੱਕ ਅਵਿਭਾਗ-ਰੂਪ ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇੱਕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪ੍ਰਧਾਨ (ਮੂਲ ਪ੍ਰਕ੍ਰਿਤੀ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮੂਲ ਕਾਰਨ"
+      }
+    ],
+    "13.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਤੇਰ੍ਹਾਂ-ਗੁਣੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਥੇ, ਇਨ੍ਹਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬਾਹਰੀ ਤੇ ਅੰਦਰਲੇ ਕਰਣਾਂ (ਇੰਦ੍ਰੀਆਂ) ਦੀ ਆਵਲੀ (ਲੜੀ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਾਰ੍ਯ-ਵਰਗ (ਵਸਤੂਗਤ ਉਤਪਾਦ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਦਸ-ਗੁਣਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਥੂਲ ਤੇ ਸੂਖ਼੍ਮ ਦੇ ਭੇਦ ਨਾਲ"
+      }
+    ],
+    "14.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉੱਥੇ, ਉਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕੇਵਲ ਮਾਤ੍ਰਿਤਾ (ਪ੍ਰਮਾਤਾਪਣ) ਦੀ ਸਥਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਰੁਦ੍ਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਧਿਦੇਵਤਾ (ਹੈ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਿੰਨ ਪ੍ਰਮੇਯਾਂ ਦੇ ਪ੍ਰਸਾਰ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਬ੍ਰਹਮਾ ਤੇ ਵਿਸ਼੍ਣੁ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨਿਯੁਕਤ ਹਨ (ਅਧਿਦੇਵਤਾ ਵਜੋਂ)"
+      }
+    ],
+    "14.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਾਯਾ ਨਾਲ ਅੰਨ੍ਹਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੰਸਾਰੀ (ਆਵਾਗਮਨ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਰਮ ਨਾਲ ਬੱਝਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਐਸ਼੍ਵਰ੍ਯ (ਸੱਚੇ) ਗਿਆਨ ਦੁਆਰਾ ਜਣਾਇਆ ਗਿਆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਚਿਦ੍ਘਨ (ਚਿਤ੍ ਦਾ ਪੁੰਜ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮੁਕਤ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      }
+    ],
+    "14.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਆਪਣੇ) ਅੰਗਾਂ ਵਜੋਂ ਭਾਸਣ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਦੋਂ ਭਾਵ (ਇਉਂ ਹੋਣ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਮਾਤਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਕਿਹਾ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪਤੀ (ਪ੍ਰਭੂ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਾਯਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਦੋਂ (ਭਾਵ) ਭਿੰਨ (ਹੋਣ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕਲੇਸ਼, ਕਰਮ ਆਦਿ ਨਾਲ ਮਲੀਨ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪਸ਼ੁ (ਬੱਧ ਜੀਵ)"
+      }
+    ],
+    "14.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ੍ਵਤੰਤਰਤਾ ਦੀ ਹਾਨੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬੋਧ (ਚੇਤਨਾ) ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ੍ਵਤੰਤਰਤਾ ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵੀ, ਅਤੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਬੋਧਤਾ (ਬੋਧ ਦੀ ਹਾਨੀ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਦੋ-ਪ੍ਰਕਾਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਣਵ (ਅਣੁ-ਜੀਵ ਨਾਲ ਸੰਬੰਧਿਤ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮਲ (ਅਸ਼ੁੱਧੀ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਆਪਣੇ ਹੀ ਸ੍ਵਰੂਪ ਦੇ ਤਿਆਗ ਤੋਂ"
+      }
+    ],
+    "14.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭਿੰਨ ਵੇਦ੍ਯ ਦਾ ਪਸਾਰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇੱਥੇ ਹੀ (ਇਸ ਪ੍ਰਸੰਗ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਾਯੀਯ (ਮਲ) ਨਾਮਕ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਜਨਮ ਤੇ ਭੋਗ ਦੇਣ ਵਾਲਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕਰਤਾ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ ਅਬੋਧ (ਨਾ-ਜਾਣਨ ਵਾਲਾ) ਹੈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਾਰਮ (ਮਲ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮਾਯਾ-ਸ਼ਕਤੀ ਦੁਆਰਾ ਹੀ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ ਤਿੰਨ (ਮਲ)"
+      }
+    ],
+    "14.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਜਿਨ੍ਹਾਂ ਦੀ) ਸ਼ੁੱਧ-ਬੋਧ-ਆਤਮਕਤਾ ਹੁੰਦਿਆਂ ਵੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜਿਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉੱਤਮ ਕਰਤ੍ਰਿਤਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਰਚੇ ਗਏ, ਨਿਰਮਿਤ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਆਪਣੇ ਆਤਮਾ ਤੋਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭਿੰਨ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਭਰਤਾ (ਪ੍ਰਭੂ, ਪਾਲਣਹਾਰ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(ਪੂਰਨ) ਕਰਤ੍ਰਿਤਾ ਦੇ ਅਤ੍ਯਯ (ਨਾਸ਼) ਕਾਰਨ"
+      }
+    ],
+    "14.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭਾਵੇਂ (ਉਨ੍ਹਾਂ ਦੀ) ਇੱਕੋ-ਇੱਕ ਲਕਸ਼ਣ ਬੋਧ ਵਿੱਚ ਏਕਤਾ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਸੀ ਭੇਦ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ, ਉਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਈਸ਼੍ਵਰ ਦੀ ਇੱਛਾ ਦੇ ਭੇਦ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਵਿਗ੍ਯਾਨਾਕਲ (ਸ਼ੁੱਧ ਗਿਆਨ ਵਿੱਚ ਇਕੱਲੇ)"
+      }
+    ],
+    "14.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਆਦਿ ਅਬੋਧ-ਰੂਪ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ਫਿਰ ਵੀ) ਕਰਤਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਲਯਾਕਲ (ਪ੍ਰਲਯ ਵਿੱਚ ਇਕੱਲੇ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਕਾਰਮ ਮਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਹੁੰਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮਾਯੀਯ (ਮਲ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਕੇਵਲ ਸੰਸਕਾਰ-ਰੂਪ ਵਿੱਚ (ਅਵਸ਼ੇਸ਼ ਵਜੋਂ)"
+      }
+    ],
+    "14.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਬੋਧ (ਚੇਤਨ) ਵਾਲਿਆਂ ਦਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਕਰਤ੍ਰਿਤਾ ਵਾਲੇ ਹਨ ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜਦੋਂ ਕਾਰਮ ਮਲ ਨਸ਼੍ਟ ਹੋ ਜਾਵੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਅਜੇ ਭਿੰਨ ਵੇਦ੍ਯ ਨਾਲ ਯੁਕਤ ਹਨ ਉਨ੍ਹਾਂ ਦਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਾਯਾ-ਮਲ (ਕੇਵਲ ਰਹਿੰਦਾ ਹੈ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਦ੍ਯੇਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ"
+      }
+    ],
+    "14.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਦੇਵ ਆਦਿ ਦੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸਾਰੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੰਸਾਰੀ (ਆਵਾਗਮਨ ਵਾਲੇ) ਜੀਵਾਂ ਦੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਤਿੰਨ-ਪ੍ਰਕਾਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਲ (ਅਸ਼ੁੱਧੀ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਵਿੱਚ ਵੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕੇਵਲ ਕਾਰਮ ਹੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਇੱਕੋ-ਇੱਕ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਮੁੱਖ, ਪ੍ਰਧਾਨ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸੰਸਾਰ ਦਾ ਕਾਰਨ"
+      }
+    ],
+    "14.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕਲਾ ਦੁਆਰਾ ਉੱਦੀਪਤ (ਪ੍ਰਬਲ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਚਿਤ੍-ਤੱਤ੍ਵ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੋ ਕਰਤ੍ਰਿਤਾ-ਮਯ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਚਿਤ੍-ਰੂਪ ਦਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਆਦਿ ਦਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਮਿਤ (ਸੀਮਿਤ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਗੌਣ (ਗੁਣ) ਵਜੋਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਟਿਕਿਆ ਰਹਿੰਦਾ ਹੈ"
+      }
+    ],
+    "14.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੁੱਖਤਾ (ਪ੍ਰਾਥਮਿਕਤਾ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਰਤ੍ਰਿਤਾ ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਬੋਧ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਚਿਤ੍ ਹੈ ਉਸ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਆਦਿ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਜੋ ਉਸ ਦਾ ਗੌਣ (ਗੁਣ) ਸੀ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(ਉਹ ਸੱਚਾ) ਗਿਆਨ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜਿਸ ਦਾ ਲਕਸ਼ਣ ਉਸ (ਚਿਤ੍) ਵਿੱਚ ਸਮਾਵੇਸ਼ ਹੈ"
+      }
+    ],
+    "14.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸ਼ੂਨ੍ਯ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਬੁੱਧੀ ਆਦਿ ਦਾ ਅਭਾਵ ਹੈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਅਹੰਤਾ ਤੇ ਕਰਤ੍ਰਿਤਾ ਦਾ ਪਦ (ਆਧਾਰ) ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਜੋ ਕੇਵਲ ਅਸਫੁਟ, ਅਰੂਪ ਸੰਸਕਾਰਾਂ ਵਾਲਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਗ੍ਯੇਯ (ਜਾਣਨ-ਯੋਗ) ਦੀ ਸ਼ੂਨ੍ਯਤਾ"
+      }
+    ],
+    "14.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਾਕਸ਼ (ਇੰਦ੍ਰੀ-ਯੁਕਤ ਪ੍ਰਮਾਤਿਆਂ) ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅੰਦਰਲੀ ਵ੍ਰਿੱਤੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਪ੍ਰਾਣ ਆਦਿ ਨੂੰ ਪ੍ਰੇਰਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੰਨੀ ਜਾਂਦੀ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜੀਵਨ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਂ ਫਿਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਾਣ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਹੰਤਾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਜੋ ਪੁਰ੍ਯਸ਼੍ਟਕ (ਸੂਖ਼੍ਮ ਸ਼ਰੀਰ) ਆਤਮਕ ਹੈ"
+      }
+    ],
+    "14.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕੇਵਲ ਇੰਨੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(ਮਾਤ੍ਰ-ਪ੍ਰਮਾਤਾ ਦੀ) ਸਥਿਤੀ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕਿਹਾ ਗਿਆ ਹੈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੁਸ਼ੁਪਤੀ (ਗੂੜ੍ਹੀ ਨੀਂਦ) ਦੀ ਅਵਸਥਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਲਯ ਵਰਗੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੇਦ੍ਯ ਸਹਿਤ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵੇਦ੍ਯ ਰਹਿਤ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮਾਯਾ-ਮਲ ਨਾਲ ਯੁਕਤ ਜਾਂ ਅਯੁਕਤ"
+      }
+    ],
+    "14.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਕੇਵਲ ਮਨ ਦੇ ਮਾਰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਾਨੋਂ ਇੰਦ੍ਰੀਆਂ ਦਾ ਵਿਸ਼ਾ ਹੋਣ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਭ੍ਰਮ (ਭ੍ਰਾਂਤੀ) ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਪਸ਼੍ਟ ਆਭਾਸ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਭਾਵਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸ੍ਵਪਨ-ਪਦ (ਸੁਪਨ-ਅਵਸਥਾ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਮੰਨੀ ਜਾਂਦੀ ਹੈ"
+      }
+    ],
+    "14.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਾਰੀਆਂ ਇੰਦ੍ਰੀਆਂ ਦਾ ਵਿਸ਼ਾ ਹੋਣ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(ਆਪਣੀ) ਬਾਹ੍ਯਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸਥਿਰ, ਟਿਕੀ ਰਹਿਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਾਂਝੀ, ਸਾਧਾਰਨ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸਾਰੇ ਪ੍ਰਮਾਤਿਆਂ ਲਈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜਾਗਰ (ਜਾਗ੍ਰਤ-ਅਵਸਥਾ)"
+      }
+    ],
+    "14.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਤਿਆਗਣ-ਯੋਗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਤਿੰਨ (ਅਵਸਥਾਵਾਂ) ਦਾ ਸਮੂਹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਾਣ ਆਦਿ ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਧਾਨਤਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਦੋਂ ਕਰਤ੍ਰਿਤਾ ਗੌਣ ਹੋਵੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਸ (ਪ੍ਰਾਣ) ਦੀ ਹਾਨੀ ਤੇ ਵਾਧੇ ਆਦਿ ਨਾਲ ਬਣੇ ਸੁਖ-ਦੁੱਖ ਆਦਿ ਦੇ ਯੋਗ ਕਾਰਨ"
+      }
+    ],
+    "14.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਪ੍ਰਾਣ ਤੇ ਅਪਾਨ-ਮਯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਾਣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਕ੍ਰਮਵਾਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨੀਂਦ ਤੇ ਜਾਗ੍ਰਤ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਉਨ੍ਹਾਂ ਦੋਹਾਂ ਦਾ ਛੇਦ (ਸੰਧੀ) ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸਮਾਨ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸੁਸ਼ੁਪਤੀ (ਗੂੜ੍ਹੀ ਨੀਂਦ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਸ਼ੁਵਤ (ਸਮ-ਦਿਨ-ਰਾਤ) ਵਾਂਗ"
+      }
+    ],
+    "14.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੱਧ-ਨਾੜੀ ਦੁਆਰਾ ਉੱਪਰ ਜਾਣ ਵਾਲਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਉਦਾਨ ਨਾਮਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਤੁਰੀਯ (ਚੌਥੀ ਅਵਸਥਾ) ਵਿੱਚ ਟਿਕਿਆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਗਨੀ-ਮਯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(ਜਿਸ ਦਾ ਈਸ਼) ਵਿਗ੍ਯਾਨਾਕਲ ਤੇ ਮੰਤ੍ਰੇਸ਼ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵ੍ਯਾਨ (ਫੈਲਿਆ ਪ੍ਰਾਣ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਸ਼੍ਵਾਤਮਕ (ਸਰਬ-ਵ੍ਯਾਪੀ, ਜਿਸ ਦਾ ਆਤਮਾ ਵਿਸ਼੍ਵ ਹੈ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਪਰ, ਸਰਵੋੱਚ (ਤੁਰੀਯਾਤੀਤ-ਅਨੁਰੂਪ)"
+      }
+    ],
+    "15.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣਾ ਆਤਮਾ ਹੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਾਰੇ ਪ੍ਰਾਣੀਆਂ ਦਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇੱਕੋ-ਇੱਕ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਜਿਸ ਦਾ ਰੂਪ ਵਿਸ਼੍ਵ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'ਮੈਂ (ਹਾਂ) ਇਹ'"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਖੰਡ ਆਮਰਸ਼ (ਵਿਮਰਸ਼) ਨਾਲ ਪੁਸ਼੍ਟ"
+      }
+    ],
+    "15.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉੱਥੇ, ਉਸ ਪ੍ਰਸੰਗ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਪਣੀ ਰਚੀ 'ਇਦੰ' (ਇਹਪਣ) ਦੀ ਖੰਡ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਬੁੱਧੀ ਆਦਿ ਗ੍ਰਾਹਕ (ਪ੍ਰਮਾਤਾ) ਦੇ ਰੂਪ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਅਹੰਕਾਰ-ਪਰਾਮਰਸ਼ ਦੇ ਪਦ ਤੱਕ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਲਿਆਂਦੀ ਗਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ (ਪ੍ਰਭੂ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਉਹ (ਖੰਡ)"
+      }
+    ],
+    "15.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਸ੍ਵਰੂਪ ਦੇ ਅਪਰਿਗ੍ਯਾਨ (ਅਣਪਛਾਣ) ਨਾਲ ਬਣਿਆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਨੇਕ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪੁਰਸ਼ (ਜੀਵ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉੱਥੇ, ਉਸ ਲਈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ (ਕਿਰਿਆ) ਵਿੱਚ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਕਿਰਿਆ ਤੇ ਆਨੰਦ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਭੋਗ (ਸੰਸਾਰਿਕ ਅਨੁਭਵ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਦੁੱਖ ਤੇ ਸੁਖ-ਆਤਮਕ"
+      }
+    ],
+    "15.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ਆਪਣੇ) ਅੰਗਾਂ ਵਜੋਂ ਭਾਸਣ ਵਾਲੇ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਭਾਵਾਂ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਤੀ (ਪ੍ਰਭੂ) ਦਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਗਿਆਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਅਤੇ ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਉਹੋ ਦੋਵੇਂ, ਜਦੋਂ ਮਾਯਾ ਤੀਜੀ (ਹੋਵੇ, ਮਾਯਾ ਨਾਲ ਢਕੇ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹੋ ਹੀ (ਦੋਵੇਂ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਪਸ਼ੁ (ਬੱਧ ਜੀਵ) ਦੇ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਸੱਤ੍ਵ, ਰਜਸ ਤੇ ਤਮਸ (ਬਣ ਜਾਂਦੇ ਹਨ)"
+      }
+    ],
+    "15.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਭੇਦ ਵਿੱਚ ਟਿਕਣ ਦੇ ਦ੍ਰਿਸ਼੍ਟੀਕੋਣ ਤੋਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸ਼ਕਤੀਮਾਨ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ਼ਕਤੀ ਵਜੋਂ (ਸ਼ਕਤੀ ਹੋਣ ਦੀ ਸਥਿਤੀ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨਹੀਂ ਆਖੀ ਜਾਂਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਨ੍ਹਾਂ ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਗੁਣਾਂ (ਸੱਤ੍ਵ, ਰਜਸ, ਤਮਸ) ਦੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜੋ ਕਰਣਾਂ ਤੇ ਕਾਰ੍ਯਾਂ ਵਿੱਚ ਪਰਿਣਮਦੇ ਹਨ"
+      }
+    ],
+    "15.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸੱਤਾ ਦਾ ਆਨੰਦ (ਸੱਤ੍ਵ ਆਨੰਦ ਵਜੋਂ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਕਿਰਿਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪਤੀ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਉਸ (ਆਨੰਦ) ਦਾ ਅਭਾਵ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਹ (ਉਹੋ ਕਿਰਿਆ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪਸ਼ੁ (ਬੱਧ ਜੀਵ) ਦੀ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਦੋ-ਆਤਮਾ (ਸੁਖ ਤੇ ਦੁੱਖ ਵਾਲੀ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਰਜਸ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(ਜੋ) ਦੁੱਖ (ਹੈ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਚਿਪਕਣ ਵਾਲਾ (ਦੋਵਾਂ ਨੂੰ ਜੋੜਨ ਵਾਲਾ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਜੋ ਸੱਤ੍ਵ ਤੇ ਤਮਸ-ਮਯ ਹੈ"
+      }
+    ],
+    "15.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਜੋ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ, ਨਾਲ ਹੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਜੋ ਅਸਾਮਯਿਕ (ਅ-ਪਰੰਪਰਾਗਤ) 'ਇਦੰਤਾ' ਦੇ ਪਰਾਮਰਸ਼ ਤੋਂ ਜਨਮੇ ਹਨ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਪ੍ਰਭੂ ਦੇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਿਸ਼੍ਰਿਤ (ਮਿਲੇ-ਜੁਲੇ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭਿੰਨ (ਵੱਖਰੇ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਚਿੱਤਰ (ਵੰਨ-ਸੁਵੰਨੇ) ਵਜੋਂ ਭਾਸਣ ਵਾਲੇ"
+      }
+    ],
+    "15.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਹ (ਉਹ ਅਰਥ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਭਿੰਨ-ਆਭਾਸ ਵਾਲੇ ਅਰਥ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਘੜੇ ਜਾਣ ਵਾਲੇ ਹਨ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਪ੍ਰਤ੍ਯਗ੍-ਆਤਮਾ (ਅੰਦਰਲੇ ਜੀਵ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਸ-ਉਸ ਭਿੰਨ ਨਾਮ ਨਾਲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਸਮ੍ਰਿਤੀ, ਉਤਪ੍ਰੇਕਸ਼ਾ (ਕਲਪਨਾ) ਆਦਿ ਦੇ ਗੋਚਰ ਵਿੱਚ"
+      }
+    ],
+    "15.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ (ਜੀਵ) ਦੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਅਸਾਧਾਰਨ (ਨਿੱਜੀ, ਨਾ-ਸਾਂਝੀ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਈਸ਼ (ਪ੍ਰਭੂ) ਦੀ ਸ੍ਰਿਸ਼੍ਟੀ ਉੱਤੇ ਨਿਰਭਰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹੋ (ਨਿੱਜੀ ਸ੍ਰਿਸ਼੍ਟੀ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ਉਸ ਦੀ) ਅਗਿਆਨਤਾ ਨਾਲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਸੱਤ੍ਯ ਹੀ (ਵਾਸਤਵਿਕ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਈਸ਼ ਦੀ ਸ਼ਕਤੀ ਨਾਲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਉਸ (ਜੀਵ) ਦੀ ਜਿਸ ਦਾ ਆਤਮਾ ਉਹ (ਈਸ਼) ਹੈ"
+      }
+    ],
+    "15.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਆਪਣੇ ਵਿੱਚ ਵਿਸ਼੍ਰਾਂਤੀ ਨੂੰ ਰੋਕਣ ਵੱਲ ਝੁਕਣ ਵਾਲੀ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਚੰਚਲ (ਕਦੇ ਨਾ ਠਹਿਰਨ ਵਾਲੀ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਪ੍ਰਾਣ-ਰੂਪ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਕਲਪ ਦੀ ਕਿਰਿਆ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸ-ਉਸ ਵਰਣ (ਅੱਖਰ) ਦੀ ਵਿਚਿੱਤਰਤਾ-ਰੂਪ"
+      }
+    ],
+    "15.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਸਾਂਝੀ, ਸਾਧਾਰਨ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਹੋਰ ਤਰ੍ਹਾਂ (ਦੂਜੇ ਢੰਗ ਨਾਲ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅਤੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਈਸ਼ (ਪ੍ਰਭੂ) ਦੀ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਸ੍ਰਿਸ਼੍ਟੀ (ਸਰਗ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(ਉਸ ਦੀ) ਸਪਸ਼੍ਟ ਆਭਾਸਨਾ ਕਾਰਨ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਨੂੰ ਤਿਆਗਣ ਦੀ ਏਕਾਗ੍ਰਤਾ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਕ੍ਰਮਵਾਰ, ਕ੍ਰਮ ਨਾਲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਈਸ਼੍ਵਰਤਾ ਦਾ ਪਦ"
+      }
+    ],
+    "15.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਹ ਸਾਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਮੇਰਾ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਵਿਭਵ (ਵਿਸਤਾਰ, ਮਹਿਮਾ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜੋ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਛਾਣਦਾ ਹੈ ਉਸ ਦੇ ਲਈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਿਸ ਦਾ ਆਤਮਾ ਵਿਸ਼੍ਵ ਹੈ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵਿਕਲਪਾਂ ਦੇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(ਉਨ੍ਹਾਂ ਦੇ) ਪਸਾਰ ਵਿੱਚ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਮਹੇਸ਼ਤਾ (ਮਹੇਸ਼੍ਵਰਪਣ)"
+      }
+    ],
+    "15.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਮੇਯ (ਜਾਣਨ-ਯੋਗ) ਨੂੰ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਸਾਂਝਾ, ਸਾਧਾਰਨ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੁਕਤ (ਜੀਵ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਆਪਣੇ ਆਤਮਾ ਤੋਂ ਅਭਿੰਨ ਵਜੋਂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਮੰਨਦਾ ਹੈ, ਸਮਝਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਮਹੇਸ਼੍ਵਰ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਬੱਧ (ਜੀਵ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਫਿਰ, ਦੂਜੇ ਪਾਸੇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਤਿ-ਭਿੰਨ ਵਜੋਂ"
+      }
+    ],
+    "15.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਹਰ ਤਰ੍ਹਾਂ, ਪੂਰੀ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪਰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਅੰਦਰ ਲੀਨ ਅਨੰਤ ਤੱਤ੍ਵਾਂ ਦੇ ਪ੍ਰਵਾਹ ਨਾਲ ਭਰਪੂਰ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸ਼ਿਵ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਚਿਦਾਨੰਦ-ਘਨ (ਚਿਤ੍ ਤੇ ਆਨੰਦ ਦਾ ਪੁੰਜ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਿਸ ਦੀ ਦੇਹ ਪਰਮ ਅਕਸ਼ਰ (ਅਵਿਨਾਸ਼ੀ) ਹੈ"
+      }
+    ],
+    "15.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਆਤਮਾ ਨੂੰ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਇਸ (ਪ੍ਰਭੂ) ਦੇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸਮ੍ਯਕ੍ ਗਿਆਨ ਤੇ ਕਿਰਿਆ ਨੂੰ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਜਾਣਦਿਆਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਨ-ਚਾਹੇ (ਅਰਥਾਂ) ਨੂੰ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਵੇਖਦਿਆਂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਉਹ (ਸੱਚਮੁੱਚ) ਜਾਣਦਾ ਹੈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਅਤੇ ਉਹ (ਸੱਚਮੁੱਚ) ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "15.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਇਉਂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਪ੍ਰਗਟ ਕੀਤਾ ਗਿਆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮੇਰੇ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਸੁਘੜ (ਚੰਗੀ ਤਰ੍ਹਾਂ ਘੜਿਆ, ਸੰਗਤ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹ ਮਾਰਗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਨਵਾਂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਮਹਾਨ ਗੁਰੂਆਂ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਆਖਿਆ ਗਿਆ ਸੀ (ਪਹਿਲਾਂ ਹੀ ਸਿਖਾਇਆ ਗਿਆ ਸੀ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਸ਼ਿਵਦ੍ਰਿਸ਼੍ਟੀ ਸ਼ਾਸ੍ਤ੍ਰ ਵਿੱਚ (ਸੋਮਾਨੰਦ ਦੇ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਇੱਥੇ (ਇਸ ਮਾਰਗ ਵਿੱਚ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਟਿਕਾਉਂਦਿਆਂ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਪੈਰ, ਕਦਮ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ਆਤਮਾ ਦੀ ਭੁਵਨ-ਕਰਤ੍ਰਿਤਾ (ਸੰਸਾਰ-ਰਚਨਾ-ਸ਼ਕਤੀ) ਨੂੰ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ਆਤਮਾ ਦੀ"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "ਅਨੁਭਵ ਕਰਕੇ, ਚਿੰਤਨ ਕਰਕੇ"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "ਸ਼ਿਵਤਾ-ਮਯ (ਸ਼ਿਵ-ਹੋਣ ਨਾਲ ਬਣੀ)"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "ਨਿਰੰਤਰ, ਸਦਾ"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "(ਉਸ ਵਿੱਚ) ਪ੍ਰਵੇਸ਼ ਕਰਦਿਆਂ"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "ਸਿੱਧੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ (ਪੂਰਨ ਹੁੰਦਾ ਹੈ)"
+      }
+    ],
+    "15.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਉਸ-ਉਸ (ਸਾਧਨ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਮਿੰਨਤਾਂ (ਪੁਚਕਾਰਾਂ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਨੇੜੇ ਲਿਆਂਦਾ, ਖਿੱਚਿਆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਕੋਮਲ-ਅੰਗੀ (ਪ੍ਰੇਮਿਕਾ) ਦੀ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਖੜ੍ਹਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਭਾਵੇਂ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ਨੇੜੇ, ਕੋਲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ਪ੍ਰੇਮੀ, ਪ੍ਰੇਮ-ਪਾਤਰ ਪੁਰਸ਼"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ਇੱਕ ਆਮ ਮਨੁੱਖ ਵਾਂਗ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ਇਉਂ, ਇਸ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ਅਣਪਛਾਤਾ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ਆਨੰਦ ਦੇਣ ਨੂੰ (ਨ ਸਮਰੱਥ)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ਜਿਵੇਂ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ਲੋਕ (ਲੋਕਾਈ) ਲਈ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "ਉਸੇ ਤਰ੍ਹਾਂ"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "ਜਿਸ ਦੇ ਗੁਣ ਅਣਵੇਖੇ ਹਨ"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "(ਭਾਵੇਂ) ਆਪਣਾ ਹੀ ਆਤਮਾ"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "ਵੀ"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "ਵਿਸ਼੍ਵੇਸ਼੍ਵਰ (ਸਾਰੇ ਦਾ ਈਸ਼੍ਵਰ)"
+      },
+      {
+        "word_idx": 21,
+        "gloss_text": "ਬਿਲਕੁਲ ਸਮਰੱਥ ਨਹੀਂ"
+      },
+      {
+        "word_idx": 22,
+        "gloss_text": "ਆਪਣੇ ਨਿੱਜ ਵੈਭਵ ਲਈ"
+      },
+      {
+        "word_idx": 23,
+        "gloss_text": "ਇਸ ਲਈ"
+      },
+      {
+        "word_idx": 24,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 25,
+        "gloss_text": "ਉਸ ਦੀ ਪ੍ਰਤਿਅਭਿਗਿਆ (ਪਛਾਣ) ਪ੍ਰਗਟ ਕੀਤੀ ਗਈ ਹੈ"
+      }
+    ],
+    "15.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ਲੋਕਾਂ ਦੀ, ਮਨੁੱਖਤਾ ਲਈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ਬਿਨਾਂ ਯਤਨ ਦੇ (ਆਪਣਾ ਲਕਸ਼) ਸਿੱਧ ਕਰਨ ਲਈ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ਉਦਯਾਕਰ ਦੇ ਪੁੱਤਰ ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ਈਸ਼੍ਵਰ-ਪ੍ਰਤਿਅਭਿਗਿਆ (ਪ੍ਰਭੂ ਦੀ ਪਛਾਣ, ਇਹ ਗ੍ਰੰਥ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ਇਹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ਉਤਪਲ(ਦੇਵ) ਦੁਆਰਾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ਪ੍ਰਗਟ ਕੀਤੀ ਗਈ ਹੈ (ਸਥਾਪਿਤ ਕੀਤੀ ਗਈ ਹੈ)"
+      }
+    ]
+  }
+}
