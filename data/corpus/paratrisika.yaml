@@ -11,6 +11,35 @@ schema_version: 1
 # a literal character (NOT a danda): verse 19 "adṛṣṭama.ṅdalo", verse 29
 # "stha.ṅdilaṃ". They also appear in GRETIL's legacy paratriu.htm and TEI XML.
 
+seo:
+  descriptions:
+    en: "Parātrīśikā: a 36-verse Trika tantra on the anuttara, parā-vāk and the supreme Śakti, illumined by Abhinavagupta's celebrated Vivaraṇa."
+    hi: "परात्रिंशिका: अनुत्तर, परा-वाक् एवं परा शक्ति पर ३६ श्लोकों का त्रिक तन्त्र; अभिनवगुप्त के प्रसिद्ध विवरण द्वारा प्रकाशित।"
+    mr: "परात्रिंशिका: अनुत्तर, परा-वाक् व परा शक्ती यांवरील ३६ श्लोकांचे त्रिक तन्त्र; अभिनवगुप्तांच्या प्रसिद्ध विवरणाने प्रकाशित."
+    bn: "পরাত্রিংশিকা: অনুত্তর, পরা-বাক্ ও পরা শক্তির উপর ৩৬ শ্লোকের ত্রিক তন্ত্র; অভিনবগুপ্তের প্রসিদ্ধ বিবরণ দ্বারা আলোকিত."
+    as: "পৰাত্ৰিংশিকা: অনুত্তৰ, পৰা-বাক্ আৰু পৰা শক্তিৰ ওপৰত ৩৬ শ্লোকৰ ত্ৰিক তন্ত্ৰ; অভিনৱগুপ্তৰ প্ৰসিদ্ধ বিৱৰণৰ দ্বাৰা পোহৰাই তোলা."
+    gu: "પરાત્રિંશિકા: અનુત્તર, પરા-વાક્ અને પરા શક્તિ પરનું ૩૬ શ્લોકોનું ત્રિક તંત્ર; અભિનવગુપ્તના પ્રસિદ્ધ વિવરણ દ્વારા પ્રકાશિત."
+    pa: "ਪਰਾਤ੍ਰਿੰਸ਼ਿਕਾ: ਅਨੁੱਤਰ, ਪਰਾ-ਵਾਕ੍ ਅਤੇ ਪਰਾ ਸ਼ਕਤੀ ਉੱਤੇ ੩੬ ਸ਼ਲੋਕਾਂ ਦਾ ਤ੍ਰਿਕ ਤੰਤਰ; ਅਭਿਨਵਗੁਪਤ ਦੇ ਪ੍ਰਸਿੱਧ ਵਿਵਰਣ ਦੁਆਰਾ ਪ੍ਰਕਾਸ਼ਿਤ।"
+    kn: "ಪರಾತ್ರಿಂಶಿಕಾ: ಅನುತ್ತರ, ಪರಾ-ವಾಕ್ ಮತ್ತು ಪರಾ ಶಕ್ತಿಯ ಕುರಿತ ೩೬ ಶ್ಲೋಕಗಳ ತ್ರಿಕ ತಂತ್ರ; ಅಭಿನವಗುಪ್ತರ ಪ್ರಸಿದ್ಧ ವಿವರಣದಿಂದ ಬೆಳಗಿದ ಗ್ರಂಥ."
+    ml: "പരാത്രിംശികാ: അനുത്തരം, പരാ-വാക്ക്, പരാ ശക്തി എന്നിവയെക്കുറിച്ചുള്ള 36 ശ്ലോകങ്ങളുള്ള ത്രിക തന്ത്രം; അഭിനവഗുപ്തന്റെ പ്രസിദ്ധ വിവരണത്താൽ വിശദീകരിക്കപ്പെട്ടത്."
+    or: "ପରାତ୍ରିଂଶିକା: ଅନୁତ୍ତର, ପରା-ବାକ୍ ଓ ପରା ଶକ୍ତି ଉପରେ ୩୬ ଶ୍ଲୋକର ତ୍ରିକ ତନ୍ତ୍ର; ଅଭିନବଗୁପ୍ତଙ୍କ ପ୍ରସିଦ୍ଧ ବିବରଣ ଦ୍ୱାରା ଆଲୋକିତ."
+    ta: "பராத்ரிம்சிகா: அனுத்தரம், பரா-வாக்கு, பரா சக்தி குறித்த 36 சுலோகங்கள் கொண்ட திரிக தந்திரம்; அபிநவகுப்தரின் புகழ்பெற்ற விவரணத்தால் விளக்கப்பட்டது."
+    te: "పరాత్రింశికా: అనుత్తర, పరా-వాక్ మరియు పరా శక్తి గురించి 36 శ్లోకాల త్రిక తంత్రం; అభినవగుప్తుని ప్రసిద్ధ వివరణతో ప్రకాశితం."
+  keywords:
+    en: [paratrisika, anuttara, para-vak, kashmir-shaivism, trika, abhinavagupta, shakti]
+    hi: [परात्रिंशिका, अनुत्तर, परा-वाक्, काश्मीर शैव, त्रिक, अभिनवगुप्त, शक्ति]
+    mr: [परात्रिंशिका, अनुत्तर, परा-वाक्, काश्मीर शैव, त्रिक, अभिनवगुप्त, शक्ती]
+    bn: [পরাত্রিংশিকা, অনুত্তর, পরা-বাক্, কাশ্মীর শৈব, ত্রিক, অভিনবগুপ্ত, শক্তি]
+    as: [পৰাত্ৰিংশিকা, অনুত্তৰ, পৰা-বাক্, কাশ্মীৰ শৈৱ, ত্ৰিক, অভিনৱগুপ্ত, শক্তি]
+    gu: [પરાત્રિંશિકા, અનુત્તર, પરા-વાક્, કાશ્મીર શૈવ, ત્રિક, અભિનવગુપ્ત, શક્તિ]
+    pa: [ਪਰਾਤ੍ਰਿੰਸ਼ਿਕਾ, ਅਨੁੱਤਰ, ਪਰਾ-ਵਾਕ੍, ਕਾਸ਼ਮੀਰ ਸ਼ੈਵ, ਤ੍ਰਿਕ, ਅਭਿਨਵਗੁਪਤ, ਸ਼ਕਤੀ]
+    kn: [ಪರಾತ್ರಿಂಶಿಕಾ, ಅನುತ್ತರ, ಪರಾ-ವಾಕ್, ಕಾಶ್ಮೀರ ಶೈವ, ತ್ರಿಕ, ಅಭಿನವಗುಪ್ತ, ಶಕ್ತಿ]
+    ml: [പരാത്രിംശികാ, അനുത്തരം, പരാ-വാക്ക്, കാശ്മീര ശൈവ, ത്രിക, അഭിനവഗുപ്തൻ, ശക്തി]
+    or: [ପରାତ୍ରିଂଶିକା, ଅନୁତ୍ତର, ପରା-ବାକ୍, କାଶ୍ମୀର ଶୈବ, ତ୍ରିକ, ଅଭିନବଗୁପ୍ତ, ଶକ୍ତି]
+    ta: [பராத்ரிம்சிகா, அனுத்தரம், பரா-வாக்கு, காஷ்மீர சைவம், திரிக, அபிநவகுப்தர், சக்தி]
+    te: [పరాత్రింశికా, అనుత్తర, పరా-వాక్, కశ్మీర శైవం, త్రిక, అభినవగుప్తుడు, శక్తి]
+  noindex_langs: []
+
 text:
   id: paratrisika
   slug: paratrisika
@@ -268,12 +297,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ശ്രീദേവി പറഞ്ഞു — ഹേ ദേവ, ഏതൊന്നു സ്വയമേവ കൗലികസിദ്ധിയെ (കുലത്തിന്റേതായ ശക്തിയെ) പ്രദാനംചെയ്യുന്നുവോ, ഏതൊന്നിന്റെ കേവലജ്ഞാനംകൊണ്ടുമാത്രം (സാധകൻ) ഖേചരിയോട് (ആകാശസഞ്ചാരിണിയായ ശക്തി-അവസ്ഥയോട്) സമത്വം പ്രാപിക്കുമോ, ആ അനുത്തരം (ഏതിനപ്പുറം ഒന്നുമില്ലാത്ത പരമം) എപ്രകാരമാകുന്നു?
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -551,12 +580,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഹേ പ്രഭോ, ഈ ഗുഹ്യത്തെ, ഈ മഹാഗുഹ്യത്തെ എനിക്കു പറഞ്ഞുതന്നാലും — ഹൃദയത്തിൽ വസിക്കുന്ന ഏതൊരു ശക്തിയുണ്ടോ, ആ കൗലിനിയെ (കുലത്തിന്റെ ശക്തിയെ), കുലനായികയെ (കുലത്തിന്റെ അധീശ്വരിയെ).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -879,12 +908,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഹേ ദേവേശ, ഏതിനാൽ ഞാൻ തൃപ്തി പ്രാപിക്കുമോ, അവളെക്കുറിച്ച് എനിക്കു പറഞ്ഞുതന്നാലും. ശ്രീഭൈരവൻ പറഞ്ഞു — ഹേ ദേവി, ഹേ മഹാഭാഗേ, ഉത്തരത്തെക്കാളും (ശ്രേഷ്ഠത്തെക്കാളും) അപ്പുറമുള്ള ആ അനുത്തരത്തെ കേട്ടാലും.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -1162,12 +1191,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഞാൻ (അതിനെ) പറയുന്നു, സന്ദേഹമില്ല — തത്ക്ഷണം കൗലികസിദ്ധിയെ പ്രദാനംചെയ്യുന്ന അതിനെ. ഹേ ദേവി, ഈ കൗലികവിധി എന്റെ ഹൃദയാകാശത്തിൽ (ഹൃദ്-വ്യോമത്തിൽ) സ്ഥിതിചെയ്യുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -1415,12 +1444,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇനി, ആദ്യങ്ങളായ തിഥികളെല്ലാം ബിന്ദുവിൽ (അനുസ്വാരത്തിൽ) അവസാനിക്കുന്ന സ്വരങ്ങളാകുന്നു; അവയുടെ അന്ത്യത്തിൽ, കാലയോഗത്താൽ, സോമനും സൂര്യനും (അന്ത്യമായ രണ്ടെണ്ണം — ം, ഃ) പ്രകീർത്തിക്കപ്പെട്ടിരിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -1653,12 +1682,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഹേ സുവ്രതേ, പൃഥിവി മുതൽ പുരുഷൻവരെയുള്ള തത്ത്വങ്ങൾ, ക്രമമായി, 'ക'യിൽ ആരംഭിച്ച് 'മ'യിൽ അവസാനിക്കുന്ന അഞ്ചു വർഗങ്ങളിൽ (വ്യഞ്ജനസമൂഹങ്ങളിൽ സ്ഥിതിചെയ്യുന്നു).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -1861,12 +1890,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: (പിന്നെ) വായു, അഗ്നി, സലിലം, ഇന്ദ്രൻ എന്നിവയുടെ ധാരണകളുടെ ചതുഷ്ടയം (നാലെണ്ണത്തിന്റെ കൂട്ടം); അതിനു മുകളിൽ, അഗ്രേ, 'ശ'യിൽ ആരംഭിക്കുന്നതെന്നു വിഖ്യാതമായ ബ്രഹ്മപഞ്ചകം (ശ ഷ സ ഹ ക്ഷ എന്ന അഞ്ച്).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -2144,12 +2173,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: മൂലരഹിതയായി, ആ ക്രമമുള്ളവളായി, 'ക്ഷ'യിൽ അവസാനിക്കുന്നവളായി — ഇതാണ് സൃഷ്ടി (അക്ഷരങ്ങളുടെ ഉദ്ഭവം, വർണങ്ങളുടെ പ്രാപഞ്ചികോദ്ഗാരം) എന്നു അറിയേണ്ടത്; ഹേ യശസ്വിനി, സർവമന്ത്രങ്ങളുടെയും വിദ്യകളുടെയും (ഉത്പത്തിസ്രോതസ്സായി) ഇതു ഉദാഹരിക്കപ്പെട്ടിരിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -2442,12 +2471,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: സർവതന്ത്രങ്ങളിലും എപ്പോഴും ഇതാണ് യോനി (ഗർഭം, സ്രോതസ്സ്) എന്നു സമാഖ്യാതമായിരിക്കുന്നു. ഹേ ഭദ്രേ, പതിന്നാലാമത്തേതുമായി (ഔ എന്ന സ്വരത്തോട്) യുക്തമായി, തിഥീശാന്തത്തോട് (വിസർഗത്തോട് — ഃ) സമന്വിതമായി — ഹേ സുശ്രോണി, ഈ തൃതീയബ്രഹ്മംതന്നെ ഭൈരവസ്വരൂപത്തിന്റെ ഹൃദയമാകുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -2710,12 +2739,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: യോഗിനിയിൽ ജനിച്ച ഒരുവനോ ഒരു രുദ്രനോ ഇതിനെ സ്ഫുടമായി പ്രാപിക്കുന്നില്ല — ദേവദേവന്റെ ഈ ഹൃദയം, തത്ക്ഷണം യോഗവും വിമോക്ഷവും പ്രദാനംചെയ്യുന്നതാണ്.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -2948,12 +2977,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇതിന്റെ ഉച്ചാരം സമ്യക്കായി ചെയ്യപ്പെടുമ്പോൾ, മന്ത്രമുദ്രകളുടെ മഹത്തായ ഗണം തത്ക്ഷണം സന്മുഖമായിത്തീരുന്നു — സ്വന്തം ദേഹത്തിലെ ആവേശത്താൽ (പ്രവേശത്താൽ) ലക്ഷിതമായി.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -3231,12 +3260,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: നാഭിയിൽ മുദ്രിതനായി, ചുംബകത്തിൽ (സംഗമസ്ഥാനത്ത്) ഒരു മുഹൂർത്തനേരത്തേക്കെങ്കിലും ഇതിനെ സ്മരിക്കുന്ന ആ നരൻ, അപ്പോൾ തന്റെ ദേഹത്തെ മന്ത്രമുദ്രകളുടെ ഗണമായി ബന്ധിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -3484,12 +3513,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ചോദിക്കപ്പെട്ടാൽ അവൻ അതീതവും അനാഗതവുമായ വിഷയങ്ങളെപ്പോലും പറയുന്നു; ദേവതാരൂപത്തെ ഉച്ചരിച്ചുകൊണ്ട്, ഒരു പ്രഹരത്തിനുള്ളിൽ അഭിപ്രേതമായ ഏതും (പ്രകടമാക്കുന്നു).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -3722,12 +3751,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: രുദ്രശക്തികളാൽ ആകൃഷ്ടമായ (ദേവതയെ) അവൻ സന്ദേഹമെന്യേ സാക്ഷാത്തായി ദർശിക്കുന്നു; രണ്ടു പ്രഹരംമാത്രംകൊണ്ട്, സ്മരിച്ചുകൊണ്ട്, അവൻ വ്യോമസ്ഥനായി (ശൂന്യാകാശത്തിൽ വസിക്കുന്നവനായി) ഭവിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -3975,12 +4004,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഈ ത്രയത്താൽ സകല മാതൃകകളും, മഹാബലകളായ യോഗേശ്വരിമാരും, വീരന്മാരും, വീരേശ്വരന്മാരും, സിദ്ധന്മാരും, ബലവത്തായ ശാകിനീഗണവും (വശീകൃതമാകുന്നു).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -4258,12 +4287,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: (അവരെല്ലാം) വന്ന്, സമയത്തെ (പ്രതിജ്ഞയെ) നൽകി, ഭൈരവനാൽ പ്രചോദിതരായി, പരമമായ സിദ്ധിയെ, അഥവാ അഭിലഷിതമായ ഏതു ഫലത്തെയും പ്രദാനംചെയ്യുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -4451,12 +4480,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇതിനാൽ സിദ്ധന്മാർ സിദ്ധി പ്രാപിക്കും, മന്ത്രികളും (മന്ത്രസാധകരും) തങ്ങളുടെ ലക്ഷ്യങ്ങൾ സാധിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -4689,12 +4718,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഭൈരവതന്ത്രത്തിൽ എന്തുണ്ടോ അതെല്ലാം ഇതിൽനിന്നു സിദ്ധിക്കുന്നു — മന്ത്രവീര്യത്തിലെ ആവേശത്തിന്റെ (സമാവേശത്തിന്റെ) പ്രഭാവത്താൽ, അല്ലാതെ യാതൊരു നിയന്ത്രകത്താലുമല്ല.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -5032,12 +5061,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: മണ്ഡലം കാണാത്തവനായാലും, ഇപ്രകാരം ഇതിനെ തത്ത്വതഃ ആരെങ്കിലും അറിയുന്നുവോ, അവൻ എപ്പോഴും സിദ്ധിഭാഗിയായി (സിദ്ധിയുള്ളവനായി) ഭവിക്കും; അവൻതന്നെ യോഗി, അവൻതന്നെ (യഥാർഥത്തിൽ) ദീക്ഷിതൻ.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -5270,12 +5299,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇതിന്റെ കേവലജ്ഞാനംകൊണ്ടുമാത്രം (സാധകൻ) സർവശക്തികളാലും അറിയപ്പെടുന്നു; യോഗംകൂടാതെപോലും അവൻ ശാകിനീകുലസാമാന്യൻ (ആ കുലത്തിന്റെ സജാതീയൻ) ആയിത്തീരുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -5523,12 +5552,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: വിധിയറിയാത്തവൻപോലും യജനത്തെ സംബന്ധിച്ച് വിധാനജ്ഞനായി (രീതിയറിയുന്നവനായി) ഭവിക്കുന്നു — കാലാഗ്നിയെ ആദിയിൽനിന്ന് (താഴെനിന്ന്) ആരംഭിച്ച്, മായവരെ, ബ്രഹ്മദേഹത്തിൽ വ്യാപിച്ച (തത്ത്വക്രമത്തെ ധ്യാനിച്ചുകൊണ്ട്).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -5776,12 +5805,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ശിവൻ, വിശ്വം മുതൽ അനന്തൻവരെ (വ്യാപിച്ച്), അതിനപ്പുറവും — ശക്തിത്രയം ഇപ്രകാരം മതമാകുന്നു; അതിനുള്ളിൽ വർത്തിക്കുന്ന എന്തുണ്ടോ, അതു ശുദ്ധമാർഗത്തിൽ വ്യവസ്ഥിതമായിരിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -6044,12 +6073,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: അണു (ബദ്ധജീവൻ) അചിരേണ വിശുദ്ധമായ ഐശ്വരജ്ഞാനത്തെ (ഈശ്വരസംബന്ധിയായ ജ്ഞാനത്തെ) പ്രാപിക്കുന്നു; അതിന്റെ പ്രേരകനായ ശിവൻ അറിയപ്പെടേണ്ടവനാകുന്നു — സർവജ്ഞനായ പരമേശ്വരൻ.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -6297,12 +6326,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: സർവഗതനായി, നിർമലനായി, സ്വച്ഛനായി, തൃപ്തനായി, സ്വായതനനായി (സ്വന്തം ആധാരത്തിൽ വസിക്കുന്നവനായി), ശുചിയായി — ന്യഗ്രോധബീജത്തിൽ (ആൽവിത്തിൽ) ശക്തിരൂപമായി (സാധ്യതാരൂപമായി) മഹാദ്രുമം എപ്രകാരം സ്ഥിതിചെയ്യുന്നുവോ,
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -6565,12 +6594,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: അപ്രകാരംതന്നെ ചരാചരമായ ഈ ജഗത്തു മുഴുവൻ ഹൃദയബീജത്തിൽ സ്ഥിതിചെയ്യുന്നു. ഇപ്രകാരം ഇതിനെ തത്ത്വേന ആരറിയുന്നുവോ, അവന് (ദീക്ഷ) നിർവാണത്തിലേക്കു നയിക്കുന്നതാകുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -6848,12 +6877,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ദീക്ഷ, സന്ദേഹമെന്യേ, തിലത്തിന്റെയും ആജ്യത്തിന്റെയും (നെയ്യിന്റെയും) ആഹുതികൂടാതെതന്നെ സംഭവിക്കുന്നു — മൂർധാവിലും (ശിരസ്സിലും), വക്ത്രത്തിലും (മുഖത്തും), ഹൃദയത്തിലും, ഗുഹ്യസ്ഥാനത്തും, അപ്രകാരംതന്നെ മൂർത്തിയിലും (ദേഹത്തിലും).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -7116,12 +7145,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ന്യാസംചെയ്ത്, ഇരുപത്തിയേഴുവട്ടം മന്ത്രിതമായ ശിഖയെ (ചൂഡയെ) ബന്ധിച്ച്, ഓരോന്നുകൊണ്ടും (ഓരോ മന്ത്രംകൊണ്ടും) പത്തു ദിക്കുകളുടെയും ബന്ധം ചെയ്യിക്കണം.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -7339,12 +7368,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: വിഘ്നശാന്തിക്കായി ആദ്യം മൂന്നു താളം സശബ്ദമായി നൽകി (കൊട്ടി), പിന്നെ ശിഖയുടെ സംഖ്യയോളംവട്ടം അഭിജപ്തമായ (മന്ത്രിച്ച) ജലംകൊണ്ട് അഭ്യുക്ഷണംചെയ്യണം (തളിക്കണം).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -7592,12 +7621,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: പുഷ്പാദികളെല്ലാം ക്രമമായി, അഥവാ ലിംഗം, അഥവാ സ്ഥണ്ഡിലം (വേദീഭൂമി) — പതിന്നാലുവട്ടം അഭിജപ്തമായ പുഷ്പംകൊണ്ട് ആസനകല്പന (ചെയ്യപ്പെടുന്നു).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -7890,12 +7919,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: അവിടെ വീരൻ സൃഷ്ടിയെ (വർണസൃഷ്ടിക്രമത്തെ) യജിക്കണം, പിന്നെ വീണ്ടും ആസനത്തെ; സൃഷ്ടിയെ സമ്പുടീകരിച്ച് (ഇരുവശത്തുനിന്നും ആവരണംചെയ്ത്) അനന്തരം യജനം ആരംഭിക്കണം.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -8083,12 +8112,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: സർവതത്ത്വങ്ങളാൽ സുസമ്പൂർണയും, സർവാവയവങ്ങളാൽ ശോഭിതയും, ഇരുപത്തിയേഴുവട്ടം മന്ത്രിതയുമായ ദേവിയെ മഹാഭാഗ (സാധകൻ) യജിക്കണം.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -8351,12 +8380,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: പിന്നെ സുഗന്ധിപുഷ്പങ്ങൾകൊണ്ട് യഥാശക്തി സമർചനംചെയ്യണം, പരമമായ ഭക്തിയോടെ പൂജിക്കണം, സ്വന്തം ആത്മാവിനെയും നിവേദിക്കണം (സമർപ്പിക്കണം).
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -8634,12 +8663,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇപ്രകാരം യജനം ആഖ്യാതമായി; അഗ്നികാര്യത്തിലും (ഹോമകർമത്തിലും) ഈ വിധിതന്നെ. പൂജാവിധി സമ്യക്കായി അനുഷ്ഠിച്ച്, ബീജത്തെ ശരിയായി സ്മരിച്ചുകൊണ്ട് (സാധകൻ) സിദ്ധിക്കുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -8872,12 +8901,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ആദ്യന്തരഹിതമായി, വികസിച്ചുകൊണ്ട്, തിഥികളുടെ (സ്വരങ്ങളുടെ) മധ്യത്തിൽ സ്ഥിതമായി, ഹൃത്പദ്മത്തിനുള്ളിൽ അന്തർഗതമായ ആ ബീജത്തെ — സോമാംശുവിനെ (ചന്ദ്രരശ്മിയെ) — ധ്യാനിക്കണം, നിത്യവും അഭ്യസിക്കണം.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -9155,12 +9184,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഏതേതു കാമങ്ങളെ അവൻ കാമിക്കുന്നുവോ, അവയവയെ അവൻ ശീഘ്രം പ്രാപിക്കും; അജ്ഞനും പ്രത്യക്ഷതയെ (സാക്ഷാദ്ബോധത്തെ) പ്രാപിക്കുന്നു, സർവജ്ഞത്വത്തെയും — സംശയമില്ല.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
@@ -9408,12 +9437,12 @@ chapters:
       model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (session-opus)
+      translator: sohamhamso (claude-opus-4-8)
       license: CC-BY-SA
       text: ഇപ്രകാരമാണ് മന്ത്രഫലാവാപ്തി — ഇതാണ് രുദ്രയാമലം. ഇതിന്റെ അഭ്യാസത്താൽ സിദ്ധിയും സർവജ്ഞത്വവും അവാപ്തമാകുന്നു.
       ai_assisted: true
       status: published
-      model: opus-4-8
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-8)
