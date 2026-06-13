@@ -1,0 +1,5171 @@
+{
+  "text_slug": "mahanirvana-tantra",
+  "lang": "kn",
+  "translator": "sohamhamso (claude-opus-4-8)",
+  "license": "CC-BY-NC",
+  "model": "claude-opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಗಿರೀಂದ್ರಶಿಖರೆ — ಪರ್ವತರಾಜನ (ಹಿಮಾಲಯದ) ಶಿಖರದ ಮೇಲೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ರಮ್ಯವಾದ, ಮನೋಹರವಾದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಾನಾ ರತ್ನಗಳಿಂದ ಶೋಭಿಸುವ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಾನಾ ವೃಕ್ಷಲತೆಗಳಿಂದ ತುಂಬಿದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಾನಾ ಪಕ್ಷಿಗಳ ಕೂಗುಗಳಿಂದ ಕೂಡಿದ"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಲ್ಲ ಋತುಗಳ ಹೂವುಗಳ ಪರಿಮಳದಿಂದ ಸುಗಂಧಮಯವಾದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅತ್ಯಂತ ಮನೋಹರವಾದ, ಹೃದಯವನ್ನು ಸೆಳೆಯುವ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತಂಪು-ಸುಗಂಧ-ಮೃದುತ್ವಗಳಿಂದ ಸಮೃದ್ಧವಾದ ಗಾಳಿಗಳಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಬೀಸಲ್ಪಡುವ, ನಿಧಾನವಾಗಿ ಬೀಸಲ್ಪಡುವ"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅಪ್ಸರೆಯರ ಗಣದ ಮಧುರ ಇಂಪಾದ ಗಾನದ ನಾದದಿಂದ ಮೊಳಗುವ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸ್ಥಿರ ನೆರಳನ್ನು ನೀಡುವ ಮರಗಳ ನೆರಳಿನಿಂದ ಆವೃತವಾದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನುಣುಪಾದ ಮತ್ತು ಸುಂದರವಾದ"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮತ್ತ ಕೋಗಿಲೆಗಳ ಸಮೂಹಗಳಿಂದ ಪ್ರತಿಧ್ವನಿಸುವ ವನಾಂತರದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸದಾ, ಎಲ್ಲ ಕಾಲಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತನ್ನ ಪರಿವಾರ/ಗಣಗಳೊಡನೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಜೊತೆಗೆ, ಸಹಿತ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಋತುರಾಜನಿಂದ (ವಸಂತದಿಂದ) ಸೇವಿಸಲ್ಪಡುವ"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸಿದ್ಧ-ಚಾರಣ-ಗಂಧರ್ವ-ಗಣಪತ್ಯ ಗಣಗಳಿಂದ ಸುತ್ತುವರಿಯಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮೌನವನ್ನು ಧರಿಸಿದ, ನಿಶ್ಚಲನಾದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ದೇವನನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಚರಾಚರ ಜಗತ್ತಿನ ಗುರುವನ್ನು"
+      }
+    ],
+    "1.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸದಾಶಿವನನ್ನು (ಸದಾ ಮಂಗಲನನ್ನು)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸದಾನಂದಮಯನನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕರುಣಾಮೃತದ ಸಾಗರನನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕರ್ಪೂರ ಮತ್ತು ಮಲ್ಲಿಗೆಯಂತೆ ಶ್ವೇತವರ್ಣನನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶುದ್ಧ ಸತ್ತ್ವಮಯನನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸರ್ವವ್ಯಾಪಿ ಪ್ರಭುವನ್ನು"
+      }
+    ],
+    "1.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ದಿಗಂಬರನನ್ನು (ದಿಕ್ಕುಗಳನ್ನೇ ಉಡುಪಾಗಿ ಧರಿಸಿದವನನ್ನು)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದೀನರ ನಾಥನನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಯೋಗಿಗಳ ಒಡೆಯನನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯೋಗಿಗಳ ಪ್ರಿಯನನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಗಂಗೆಯ ಜಲಬಿಂದುಗಳಿಂದ ಸಿಂಚಿತವಾದ ಜಟಾಮಂಡಲದಿಂದ ಅಲಂಕೃತನನ್ನು"
+      }
+    ],
+    "1.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ವಿಭೂತಿಯಿಂದ ಅಲಂಕೃತನನ್ನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಶಾಂತನನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸರ್ಪಮಾಲೆಯನ್ನು ಧರಿಸಿದವನನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕಪಾಲಧಾರಿಯನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮೂರು ಕಣ್ಣುಗಳುಳ್ಳವನನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಮೂರು ಲೋಕಗಳ ಒಡೆಯನನ್ನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಶ್ರೇಷ್ಠ ತ್ರಿಶೂಲವನ್ನು ಹಿಡಿದವನನ್ನು"
+      }
+    ],
+    "1.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬೇಗ ಪ್ರಸನ್ನನಾಗುವವನನ್ನು (ಆಶುತೋಷನನ್ನು)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಜ್ಞಾನಮಯನನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕೈವಲ್ಯದ (ಪರಮ ಮುಕ್ತಿಯ) ಫಲವನ್ನು ನೀಡುವವನನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಿರ್ವಿಕಲ್ಪನನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಿರ್ಭಯನನ್ನು, ನಿರಾತಂಕನನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಿರ್ವಿಶೇಷನನ್ನು, ಭೇದರಹಿತನನ್ನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿರಂಜನನನ್ನು, ನಿಷ್ಕಲಂಕನನ್ನು"
+      }
+    ],
+    "1.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸರ್ವರ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹಿತವನ್ನು ಮಾಡುವವನನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದೇವದೇವನನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಿರಾಮಯನನ್ನು (ರೋಗರಹಿತನನ್ನು)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪ್ರಸನ್ನ ಮುಖವುಳ್ಳವನನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನೋಡಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಲೋಕಗಳ/ಜನರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಹಿತದ ಬಯಕೆಯಿಂದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ವಿನಯದಿಂದ ಬಾಗಿದ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ದೇವಿಯು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಪಾರ್ವತಿಯು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಶಿವನಿಗೆ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಹೇಳಿದಳು"
+      }
+    ],
+    "1.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶ್ರೀಪಾರ್ವತಿ ಹೇಳಿದಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಓ ದೇವದೇವನೇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ಜಗನ್ನಾಥನೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ನನ್ನ ನಾಥನೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ಕರುಣಾನಿಧಿಯೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಿನಗೆ ಅಧೀನಳಾದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗಿದ್ದೇನೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಓ ದೇವೇಶನೇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಿನ್ನ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆಜ್ಞೆಯನ್ನು ಪಾಲಿಸುವವಳು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸದಾ"
+      }
+    ],
+    "1.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲದೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಆಜ್ಞೆ, ಅಪ್ಪಣೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಏನನ್ನೂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹೇಳಲು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಎಂದೂ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸಾಧ್ಯವಿಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸ್ವಲ್ಪ ಕೃಪೆಯ ಲೇಶ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನನ್ನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಒಂದು ವೇಳೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸ್ನೇಹ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಒಂದು ವೇಳೆ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ನನ್ನ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ಕಡೆಗೆ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ಆಗ"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "ಅರಿಕೆ ಮಾಡಲಾಗುತ್ತದೆ"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "ಸ್ವಲ್ಪ, ಏನಾದರೂ"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "ಮನಸ್ಸಿನಿಂದ"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "ಯಾವುದನ್ನು ವಿಚಾರ ಮಾಡಿದ್ದೇನೋ"
+      }
+    ],
+    "1.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿನ್ನ ಹೊರತು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸಂದೇಹದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮೂರು ಲೋಕಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಮಹೇಶ್ವರನೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿವಾರಕನು, ಛೇದಿಸುವವನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಆಗಲು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಯೋಗ್ಯನು, ಸಮರ್ಥನು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅಥವಾ, ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸರ್ವಜ್ಞನು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸರ್ವಶಾಸ್ತ್ರಗಳನ್ನು ಬಲ್ಲವನು"
+      }
+    ],
+    "1.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶ್ರೀಸದಾಶಿವ ಹೇಳಿದನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಏನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಹೇಳಬೇಕು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ಮಹಾಪ್ರಾಜ್ಞಳೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹೇಳಲ್ಪಡಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಪ್ರಾಣವಲ್ಲಭಳೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಯಾವುದನ್ನು ಹೇಳಬಾರದೋ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಗಣೇಶನಿಗೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸ್ಕಂದನಿಗೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸೇನಾಪತಿಗೆ (ಸ್ಕಂದನಿಗೆ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸಹ"
+      }
+    ],
+    "1.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿನ್ನ ಮುಂದೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೇಳುತ್ತೇನೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಚೆನ್ನಾಗಿ ಗೋಪ್ಯವಾದುದನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಅದು ಏನೇ ಆಗಿರಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಏನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮೂರರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಲೋಕಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮುಚ್ಚಿಡಬೇಕಾದುದು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ನಿನ್ನ ಮುಂದೆ"
+      }
+    ],
+    "1.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನನ್ನ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸ್ವರೂಪ, ಸ್ವಭಾವ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಆಗಿರುವೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ದೇವಿಯೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನೀನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಭೇದ, ವ್ಯತ್ಯಾಸ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಿನ್ನೊಡನೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನನ್ನ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸರ್ವಜ್ಞಳೇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಏನು / ಏಕೆ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ತಿಳಿಯುವೆ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ತಿಳಿಯದವಳಂತೆ"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "ಕೇಳುತ್ತಿರುವೆ"
+      }
+    ],
+    "1.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಹೀಗೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದೇವನ ಮಾತುಗಳನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕೇಳಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಪಾರ್ವತಿಯು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹರ್ಷಿತ ಮನಸ್ಸುಳ್ಳವಳಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ವಿನಯದಿಂದ ಬಾಗಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸಾಧ್ವಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪ್ರಶ್ನಿಸಿದಳು, ಕೇಳಿದಳು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಶಂಕರನನ್ನು"
+      }
+    ],
+    "1.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶ್ರೀ ಆದ್ಯಾ (ಆದಿಶಕ್ತಿ) ಹೇಳಿದಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಓ ಭಗವಂತನೇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ಸರ್ವಭೂತಗಳ ಒಡೆಯನೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸರ್ವಧರ್ಮಗಳನ್ನು ಬಲ್ಲವರ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ಶ್ರೇಷ್ಠನೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕರುಣಾಳುವಾದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಭಗವಂತನಾದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಬ್ರಹ್ಮಸ್ವರೂಪಿ ಅಂತರ್ಯಾಮಿಯಾದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹಿಂದೆ, ಪೂರ್ವದಲ್ಲಿ"
+      }
+    ],
+    "1.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಪ್ರಕಟಿಸಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನಾಲ್ಕು ವೇದಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸರ್ವಧರ್ಮಗಳಿಂದ ಪರಿಪೂರ್ಣವಾದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವರ್ಣ-ಆಶ್ರಮ ಮೊದಲಾದವುಗಳ ನಿಯಮಗಳು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವುದರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪ್ರತಿಷ್ಠಿತವಾಗಿವೆ"
+      }
+    ],
+    "1.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವುಗಳಲ್ಲಿ ವಿಧಿಸಲ್ಪಟ್ಟ ಯೋಗ-ಯಜ್ಞ ಮೊದಲಾದವುಗಳಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕರ್ಮಗಳಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಭೂಮಿಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮಾನವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ದೇವತೆಗಳನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪಿತೃಗಳನ್ನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪ್ರೀತಿಪಡಿಸುತ್ತಾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪುಣ್ಯಶೀಲರಾಗಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಕೃತಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಯುಗದಲ್ಲಿ"
+      }
+    ],
+    "1.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸ್ವಾಧ್ಯಾಯ-ಧ್ಯಾನ-ತಪಸ್ಸಿನಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದಯೆ ಮತ್ತು ದಾನಗಳಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಇಂದ್ರಿಯಗಳನ್ನು ಜಯಿಸಿದವರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮಹಾಬಲರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಹಾವೀರ್ಯರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಮಹಾಸತ್ತ್ವ-ಪರಾಕ್ರಮಿಗಳು"
+      }
+    ],
+    "1.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ದೇವತೆಗಳ ದೇವಾಲಯಗಳಿಗೆ ಹೋಗುವವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮರ್ತ್ಯರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದೇವಸಮಾನರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ದೃಢವ್ರತರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸತ್ಯ-ಧರ್ಮಪರರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಎಲ್ಲರೂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸಾಧುಗಳು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸತ್ಯವಾದಿಗಳು"
+      }
+    ],
+    "1.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ರಾಜರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸತ್ಯಸಂಕಲ್ಪರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪ್ರಜೆಗಳ ಪಾಲನೆಯಲ್ಲಿ ತತ್ಪರರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ತಾಯಿಯಂತೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪರಸ್ತ್ರೀಯರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪುತ್ರನಂತೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪರರ ಪುತ್ರರಲ್ಲಿ"
+      }
+    ],
+    "1.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮಣ್ಣಿನ ಹೆಂಟೆಯಂತೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪರರ ಸಂಪತ್ತಿನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕಾಣುತ್ತಾ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮಾನವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಆಗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗಿದ್ದರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸ್ವಧರ್ಮನಿರತರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸದಾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸನ್ಮಾರ್ಗದಲ್ಲಿ ನಡೆಯುವವರು"
+      }
+    ],
+    "1.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಿಥ್ಯಾಭಾಷಿಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಯಾರೂ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪ್ರಮಾದನಿರತರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಎಲ್ಲಿಯೂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಕಳ್ಳರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಪರರಿಗೆ ದ್ರೋಹ ಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ದುಷ್ಟ ಆಶಯವುಳ್ಳವರು"
+      }
+    ],
+    "1.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ಸರಿಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಅತಿಕ್ರೋಧಿಗಳಲ್ಲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅತಿಲೋಭಿಗಳಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕಾಮುಕರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಶುದ್ಧ ಅಂತಃಕರಣವುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಎಲ್ಲರೂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸದಾ ಆನಂದಮಯ ಮನಸ್ಸುಳ್ಳವರು"
+      }
+    ],
+    "1.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಭೂಮಿಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸರ್ವ ಬೆಳೆಗಳಿಂದ ಸಮೃದ್ಧವಾದವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮೋಡಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕಾಲಕ್ಕೆ ತಕ್ಕಂತೆ ಮಳೆ ಸುರಿಸುವವು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹಸುಗಳು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹಾಲಿನಿಂದ ತುಂಬಿದವು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮರಗಳು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಫಲಗಳಿಂದ ಭರಿತವಾದವು"
+      }
+    ],
+    "1.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅಕಾಲಮೃತ್ಯುವಿಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅಲ್ಲಿ, ಆಗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಇತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬರಗಾಲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅಥವಾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ರೋಗಗಳು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹರ್ಷಿತರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಪುಷ್ಟರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸದಾ ಆರೋಗ್ಯವಂತರು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ತೇಜಸ್ಸು-ಸೌಂದರ್ಯದ ಗುಣಗಳಿಂದ ಕೂಡಿದವರು"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸ್ತ್ರೀಯರು"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ವ್ಯಭಿಚಾರಿಣಿಯರು"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ಪತಿಭಕ್ತಿಪರಾಯಣರು"
+      }
+    ],
+    "1.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬ್ರಾಹ್ಮಣರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕ್ಷತ್ರಿಯರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ವೈಶ್ಯರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶೂದ್ರರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ತಮ್ಮ ಆಚಾರದಲ್ಲಿ ನೆಲೆಸಿದವರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ತಮ್ಮ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ತಮ್ಮ ಧರ್ಮಗಳಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಯಜಿಸುತ್ತಾ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಅವರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮುಕ್ತಿಯ ಮಾರ್ಗವನ್ನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಹೊಂದಿದರು"
+      }
+    ],
+    "1.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕೃತಯುಗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕಳೆದ ಮೇಲೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತ್ರೇತಾಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕಂಡು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಧರ್ಮದ ಉಲ್ಲಂಘನೆಯನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ವೇದೋಕ್ತ ಕರ್ಮಗಳಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮರ್ತ್ಯರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸಮರ್ಥರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ತಮ್ಮ ಇಷ್ಟಸಾಧನೆಯಲ್ಲಿ"
+      }
+    ],
+    "1.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬಹಳ ಕ್ಲೇಶವನ್ನುಂಟುಮಾಡುವ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕರ್ಮ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ವೈದಿಕ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅಪಾರ ಸಾಧನಗಳನ್ನು ಬೇಡುವ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಾಡಲು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಯೋಗ್ಯರು, ಸಮರ್ಥರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮನುಷ್ಯರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಚಿಂತೆಯಿಂದ ವ್ಯಾಕುಲಗೊಂಡ ಮನಸ್ಸುಳ್ಳವರು"
+      }
+    ],
+    "1.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ತ್ಯಜಿಸಲು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಾಡಲು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಮರ್ಥರು, ಯೋಗ್ಯರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸದಾ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕಾತರ ಮನಸ್ಸುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ವೇದಾರ್ಥಕ್ಕೆ ಅನುಗುಣವಾದ ಶಾಸ್ತ್ರಗಳನ್ನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸ್ಮೃತಿರೂಪವಾದವುಗಳನ್ನು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಭೂಮಿಯ ಮೇಲೆ"
+      }
+    ],
+    "1.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಆಗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನೀನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪ್ರಕಟಿಸಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ತಪಸ್ಸಿನಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸ್ವಾಧ್ಯಾಯದಲ್ಲಿ ದುರ್ಬಲರಾದವರನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಜನರನ್ನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪಾರುಮಾಡಿದೆ, ದಾಟಿಸಿದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪಾಪದಿಂದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ದುಃಖ-ಶೋಕ-ರೋಗಗಳನ್ನು ನೀಡುವ (ಪಾಪದಿಂದ)"
+      }
+    ],
+    "1.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿನ್ನ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೊರತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇದ್ದಾರೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಜೀವಿಗಳಿಗೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಭಯಂಕರ ಸಂಸಾರಸಾಗರದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಭರ್ತೃ, ಪೋಷಕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ರಕ್ಷಕ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಉದ್ಧಾರಕ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ತಂದೆಯಂತೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಹಿತ ಮಾಡುವ, ಪ್ರಿಯ ಮಾಡುವ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಪ್ರಭು"
+      }
+    ],
+    "1.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಆ ಬಳಿಕ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದ್ವಾಪರಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಬಂದಾಗ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸ್ಮೃತ್ಯುಕ್ತ ಸತ್ಕರ್ಮಗಳು ತ್ಯಜಿಸಲ್ಪಟ್ಟಾಗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಧರ್ಮ ಅರ್ಧ ನಷ್ಟವಾದಾಗ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮನುಷ್ಯರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಆಧಿ-ವ್ಯಾಧಿಗಳಿಂದ ಪೀಡಿತರಾದಾಗ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸಂಹಿತಾದಿಗಳ ಉಪದೇಶದಿಂದ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನೀನೊಬ್ಬನೇ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಉದ್ಧರಿಸಿದೆ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಮನುಷ್ಯರನ್ನು"
+      }
+    ],
+    "1.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬಂದಾಗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಾಪಿಷ್ಠ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕಲಿಯುಗ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸರ್ವಧರ್ಮವನ್ನು ನಾಶಮಾಡುವ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ದುರಾಚಾರದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದುಷ್ಟ ಪ್ರಪಂಚದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ದುಷ್ಕರ್ಮವನ್ನು ಪ್ರವರ್ತಿಸುವ"
+      }
+    ],
+    "1.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ವೇದಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಫಲಪ್ರದ, ಸಮರ್ಥ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅದರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸ್ಮೃತಿಗಳ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸ್ಮರಣೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಎಲ್ಲಿಂದ, ಹೇಗೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇತಿಹಾಸದೊಡನೆ ಕೂಡಿದ ನಾನಾ (ಕೃತಿಗಳ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಾನಾ ಮಾರ್ಗಗಳನ್ನು ತೋರಿಸುವವುಗಳ"
+      }
+    ],
+    "1.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬಹಳ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪುರಾಣಗಳ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ವಿನಾಶ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಆಗುತ್ತದೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ವಿಭುವೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಜನರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಆಗುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಧರ್ಮ-ಕರ್ಮಗಳಿಂದ ವಿಮುಖರು"
+      }
+    ],
+    "1.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಉಚ್ಛೃಂಖಲರು, ಲಗಾಮಿಲ್ಲದವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮದದಿಂದ ಉನ್ಮತ್ತರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪಾಪಕರ್ಮನಿರತರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸದಾ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಕಾಮುಕರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲೋಲುಪರು, ಆಸೆಬುರುಕರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕ್ರೂರರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿಷ್ಠುರರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ದುರ್ಮುಖರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಶಠರು, ವಂಚಕರು"
+      }
+    ],
+    "1.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅತ್ಯಲ್ಪ ಆಯುಸ್ಸುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಂದಬುದ್ಧಿಯವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ರೋಗ-ಶೋಕಗಳಿಂದ ವ್ಯಾಕುಲರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶ್ರೀಹೀನರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಿರ್ಬಲರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನೀಚರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನೀಚಾಚಾರನಿರತರು"
+      }
+    ],
+    "1.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನೀಚರ ಸಹವಾಸದಲ್ಲಿ ಸಂತೋಷಪಡುವವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪರರ ಸಂಪತ್ತನ್ನು ಅಪಹರಿಸುವವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪರನಿಂದೆ-ಪರದ್ರೋಹ-ಪರಿವಾದಗಳಲ್ಲಿ ತತ್ಪರರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಖಲರು"
+      }
+    ],
+    "1.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಪರಸ್ತ್ರೀಯರ ಅಪಹರಣದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಾಪದ ಶಂಕೆ ಮತ್ತು ಭಯವಿಲ್ಲದವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಿರ್ಧನರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮಲಿನರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ದೀನರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದರಿದ್ರರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಚಿರರೋಗಿಗಳು"
+      }
+    ],
+    "1.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬ್ರಾಹ್ಮಣರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಶೂದ್ರರಂತೆ ನಡೆದುಕೊಳ್ಳುವವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸಂಧ್ಯಾವಂದನೆಯನ್ನು ಬಿಟ್ಟವರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಜ್ಞಕ್ಕೆ ಅನರ್ಹರಿಗೆ ಪೌರೋಹಿತ್ಯ ಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಲೋಭಿಗಳು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದುರ್ವೃತ್ತರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪಾಪಕಾರಿಗಳು"
+      }
+    ],
+    "1.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅಸತ್ಯವಾದಿಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮೂರ್ಖರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದಂಭಿಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ದುಷ್ಟ ಮೋಸದ ವ್ಯವಹಾರವುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ತಮ್ಮ ಕನ್ಯೆಯರನ್ನು ಮಾರುವವರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ವ್ರಾತ್ಯರು (ಪತಿತರು, ಸಂಸ್ಕಾರಹೀನರು)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ತಪಸ್ಸು-ವ್ರತಗಳಿಂದ ವಿಮುಖರು"
+      }
+    ],
+    "1.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಜನರನ್ನು ವಂಚಿಸುವುದಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಜಪ-ಪೂಜೆಗಳಲ್ಲಿ (ತೋರಿಕೆಗೆ) ತತ್ಪರರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪಾಷಂಡಿಗಳು, ಕಪಟಿಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ತಾವೇ ಪಂಡಿತರೆಂದು ಭಾವಿಸುವವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶ್ರದ್ಧೆ-ಭಕ್ತಿಯಿಲ್ಲದವರು"
+      }
+    ],
+    "1.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅಶುದ್ಧ ಆಹಾರ ಸೇವಿಸುವವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನೀಚಾಚಾರವುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸಂಬಳಕ್ಕೆ ದುಡಿಯುವ ಸೇವಕರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶೂದ್ರರ ಸೇವಕರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶೂದ್ರನ ಅನ್ನ ತಿನ್ನುವವರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕ್ರೂರರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನೀಚಜಾತಿಯ ಸ್ತ್ರೀಯರನ್ನು ಬಯಸುವವರು"
+      }
+    ],
+    "1.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕೊಡುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಧನದ ಲೋಭದಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತಮ್ಮ ಪತ್ನಿಯರನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನೀಚಜಾತಿಗಳಿಗೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬ್ರಾಹ್ಮಣತ್ವದ ಚಿಹ್ನೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಷ್ಟು ಮಾತ್ರ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕೇವಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಯಜ್ಞೋಪವೀತ ಧರಿಸುವುದು"
+      }
+    ],
+    "1.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲವೇ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಾನ ಮೊದಲಾದವುಗಳ ನಿಯಮ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಭಕ್ಷ್ಯ-ಅಭಕ್ಷ್ಯಗಳ ವಿವೇಚನೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಧರ್ಮಶಾಸ್ತ್ರದ ಬಗ್ಗೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸದಾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಿಂದೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸಾಧುಗಳಿಗೆ ದ್ರೋಹ ಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿರಂತರ"
+      }
+    ],
+    "1.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸತ್ಕಥೆಯ ಮಾತು ಮಾತ್ರವೂ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅವರ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮನಸ್ಸಿನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಎಂದೂ, ಎಲ್ಲಿಯೂ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ರಚಿಸಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ತಂತ್ರಗಳು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಜೀವಿಗಳ ಉದ್ಧಾರಕ್ಕಾಗಿ"
+      }
+    ],
+    "1.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿಗಮ-ಆಗಮಗಳಾಗಿ ಉದಿಸಿದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಭೋಗ-ಮುಕ್ತಿಗಳನ್ನು ನೀಡುವ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ದೇವಿಯರ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವುದರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದೇವತೆಗಳ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಂತ್ರ-ಯಂತ್ರ ಮೊದಲಾದ ಸಾಧನಗಳು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿವೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಅನೇಕ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನ್ಯಾಸಗಳು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸೃಷ್ಟಿ-ಸ್ಥಿತಿ ಮೊದಲಾದವುಗಳ ಲಕ್ಷಣವುಳ್ಳವು"
+      }
+    ],
+    "1.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬದ್ಧ ಪದ್ಮಾಸನ ಮೊದಲಾದವು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವಿಪುಲವಾಗಿ, ಬಹುವಿಧವಾಗಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪಶು-ವೀರ-ದಿವ್ಯ ಭಾವಗಳು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದೇವತೆಗಳು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಂತ್ರಸಿದ್ಧಿಯನ್ನು ನೀಡುವವರು"
+      }
+    ],
+    "1.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶವಾಸನ (ಶವಾಸನ ಆಚರಣೆ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಚಿತಾರೋಹಣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮುಂಡಸಾಧನೆ (ಕಪಾಲದ ಆಚರಣೆ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲತಾಸಾಧನೆಯ ಕರ್ಮಗಳು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿನ್ನಿಂದ ಹೇಳಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸಾವಿರಾರು ಬಗೆಯಾಗಿ"
+      }
+    ],
+    "1.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಪಶುಭಾವ ಮತ್ತು ದಿವ್ಯಭಾವ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನೀನೇ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಿವಾರಿಸಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪಶುಭಾವ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ದಿವ್ಯಭಾವ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಎಲ್ಲಿಂದ, ಹೇಗೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆದೀತು"
+      }
+    ],
+    "1.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಲೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೂವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಫಲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನೀರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ತಾನೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ತರಬೇಕು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪಶು (ಪಶುಭಾವದ ಸಾಧಕ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಶೂದ್ರನ ದರ್ಶನ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮಾಡಬೇಕು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಮನಸ್ಸಿನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸ್ತ್ರೀಯನ್ನು"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಸ್ಮರಿಸಬೇಕು"
+      }
+    ],
+    "1.55": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ದಿವ್ಯನು (ದಿವ್ಯಭಾವದವನು)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದೇವತೆಗೆ ಸಮಾನ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶುದ್ಧ ಅಂತಃಕರಣವುಳ್ಳವನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸದಾ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ದ್ವಂದ್ವಗಳನ್ನು ಮೀರಿದವನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ರಾಗರಹಿತನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸರ್ವಭೂತಗಳಲ್ಲಿ ಸಮನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಕ್ಷಮಾಶೀಲನು"
+      }
+    ],
+    "1.56": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಲಿಯ ಕಲ್ಮಷದಿಂದ ಕೂಡಿದವರ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸದಾ ಚಂಚಲ ಮನಸ್ಸುಳ್ಳವರ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಿದ್ರೆ-ಆಲಸ್ಯಗಳಲ್ಲಿ ಮುಳುಗಿದವರ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಭಾವಶುದ್ಧಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹೇಗೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆದೀತು"
+      }
+    ],
+    "1.57": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ವೀರಸಾಧನೆಯ ಕರ್ಮಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಂಚತತ್ತ್ವಗಳಿಂದ ಹೇಳಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮದ್ಯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಾಂಸ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹಾಗೆಯೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮೀನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮುದ್ರೆ (ಹುರಿದ ಧಾನ್ಯ) ಮತ್ತು ಮೈಥುನ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಇವು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಪಂಚತತ್ತ್ವಗಳು"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಪ್ರೋಕ್ತವಾದವು"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ಓ ಶಂಕರನೇ"
+      }
+    ],
+    "1.58": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ ಹುಟ್ಟಿದವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಾನವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಲೋಭಿಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಹೊಟ್ಟೆ-ಜನನೇಂದ್ರಿಯದಲ್ಲಿ ಆಸಕ್ತರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಲೋಭದಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಅದರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಬೀಳುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮಾಡುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸಾಧನೆಯನ್ನು (ಸರಿಯಾದ ಆಚರಣೆಯನ್ನು)"
+      }
+    ],
+    "1.59": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಂದ್ರಿಯಗಳ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸುಖಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕುಡಿದು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಥೇಷ್ಟವಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಮದ್ಯ, ಮಧು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮದದಿಂದ ಉನ್ಮತ್ತರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಒಳಿತು-ಕೆಡುಕುಗಳ ಪರಿವೆಯಿಲ್ಲದವರು"
+      }
+    ],
+    "1.60": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಪರಸ್ತ್ರೀಯರನ್ನು ಕೆಡಿಸುವವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕೆಲವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಡಕಾಯಿತರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅನೇಕರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಭೂಮಿಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಾಡುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅವರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮತ್ತರಾಗಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಪಾಪಮಯ ನೀಚ ಮೂಲದ ಬಗ್ಗೆ ವಿಚಾರ"
+      }
+    ],
+    "1.61": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅತಿಪಾನ ಮೊದಲಾದ ದೋಷದಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ರೋಗಿಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಅನೇಕರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಭೂಮಿಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶಕ್ತಿಹೀನರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಬುದ್ಧಿಹೀನರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಇಂದ್ರಿಯಗಳು ಕೆಟ್ಟವರು"
+      }
+    ],
+    "1.62": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸರೋವರದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಗುಂಡಿಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಬಯಲಿನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಅರಮನೆಯಿಂದ/ಮಹಡಿಯಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪರ್ವತದಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಬೀಳುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸಾಯುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮನುಷ್ಯರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಮದದಿಂದ ತೂರಾಡುವವರು"
+      }
+    ],
+    "1.63": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕೆಲವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಜಗಳವಾಡುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಗುರು-ಹಿರಿಯರೊಡನೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸ್ವಜನರೊಡನೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕೆಲವರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮೌನಿಗಳು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸತ್ತಂತಿರುವವರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಇತರರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಎಡೆಬಿಡದೆ ಮಾತನಾಡುವವರು"
+      }
+    ],
+    "1.64": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮಾಡಬಾರದ ಕೃತ್ಯಗಳನ್ನು ಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕ್ರೂರರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಧರ್ಮಮಾರ್ಗವನ್ನು ನಾಶಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಹಿತಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕರ್ಮಗಳು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿವೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಓ ಪ್ರಭುವೇ"
+      }
+    ],
+    "1.65": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಾನು ಭಾವಿಸುತ್ತೇನೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ಮಹಾದೇವನೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವಿಪರೀತವಾಗಿ ಪರಿಣಮಿಸುತ್ತವೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಾನವರಿಗೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅಥವಾ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಯೋಗವನ್ನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮಾಡುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನ್ಯಾಸಮಯ ವಿಷಯಗಳನ್ನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಯಾರು ತಾನೇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಅಥವಾ"
+      }
+    ],
+    "1.66": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸ್ತೋತ್ರಪಠಣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಯಂತ್ರಲೇಖನ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪುರಶ್ಚರಣೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ಜಗತ್ಪತಿಯೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯುಗಧರ್ಮದ ಪ್ರಭಾವದಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸ್ವಭಾವದಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮನುಷ್ಯರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಆಗುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅತ್ಯಂತ ದುರ್ವೃತ್ತರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸರ್ವಥಾ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಪಾಪಕಾರಿಗಳು"
+      }
+    ],
+    "1.67": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವರಿಗೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಉಪಾಯವನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ದೀನೇಶನೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕರುಣೆಯಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹೇಳು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಪ್ರಭುವೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ದೀರ್ಘಾಯುಸ್ಸು-ಆರೋಗ್ಯ-ತೇಜಸ್ಸನ್ನು ನೀಡುವ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಬಲ-ವೀರ್ಯವನ್ನು ವೃದ್ಧಿಸುವ"
+      }
+    ],
+    "1.68": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ವಿದ್ಯೆ-ಬುದ್ಧಿಯನ್ನು ನೀಡುವ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮನುಷ್ಯರಿಗೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪ್ರಯತ್ನವಿಲ್ಲದೆ ಶುಭವನ್ನುಂಟುಮಾಡುವ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾವುದರಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಜನರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಹಾಬಲ-ಪರಾಕ್ರಮಿಗಳು"
+      }
+    ],
+    "1.69": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶುದ್ಧ ಚಿತ್ತವುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪರಹಿತನಿರತರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತಾಯಿ-ತಂದೆಯರಿಗೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಪ್ರಿಯ ಮಾಡುವವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ತಮ್ಮ ಪತ್ನಿಯರಲ್ಲಿ ನಿಷ್ಠರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಮನುಷ್ಯರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪರಸ್ತ್ರೀಯರಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ವಿಮುಖರು"
+      }
+    ],
+    "1.70": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ದೇವತೆ-ಗುರುವಿನಲ್ಲಿ ಭಕ್ತರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತಮ್ಮ ಮಕ್ಕಳು-ಸ್ವಜನರನ್ನು ಪೋಷಿಸುವವರು"
+      }
+    ],
+    "1.71": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬ್ರಹ್ಮಜ್ಞರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಬ್ರಹ್ಮವಿದ್ಯೆಯುಳ್ಳವರು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಬ್ರಹ್ಮಚಿಂತನೆಯಲ್ಲಿ ಮನಸ್ಸಿಟ್ಟವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಿದ್ಧಿಗಾಗಿ, ಹಿತಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲೋಕಯಾತ್ರೆಯ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹೇಳು, ಘೋಷಿಸು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಹಿತಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಯಾವುದು (ಯೋಗ್ಯವೋ)"
+      }
+    ],
+    "1.72": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮಾಡಬೇಕಾದುದು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಯಾವುದು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಾಡಬಾರದುದು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವರ್ಣ-ಆಶ್ರಮಗಳ ಭೇದದ ಪ್ರಕಾರ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಇಲ್ಲದೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಿನ್ನ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸರ್ವಲೋಕಗಳ/ಜನರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ರಕ್ಷಕನು, ತ್ರಾತೃ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮೂರು ಲೋಕಗಳಲ್ಲಿ"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಹೀಗೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದೇವಿಯ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಾತುಗಳನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕೇಳಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶಂಕರನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲೋಕದ ಹಿತಕಾರಿಯು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹೇಳಿದನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸತ್ಯವಾಗಿ, ತತ್ತ್ವತಃ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮಹಾಕರುಣೆಯ ಸಾಗರನು"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶ್ರೀಸದಾಶಿವ ಹೇಳಿದನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಒಳ್ಳೆಯದು, ಸರಿಯಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕೇಳಲ್ಪಟ್ಟಿತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ಮಹಾಭಾಗ್ಯಶಾಲಿನಿಯೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಲೋಕಗಳಿಗೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಹಿತ ಮಾಡುವವಳೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇಂಥ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಶುಭ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಪ್ರಶ್ನೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಯಾರಿಂದಲೂ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಮಾಡಲ್ಪಟ್ಟ, ಕೇಳಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಹಿಂದೆ"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಧನ್ಯಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಆಗಿರುವೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸತ್ಕರ್ಮವನ್ನು ಬಲ್ಲವಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಆಗಿರುವೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹಿತಕಾರಿಣಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗಿರುವೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ ಹುಟ್ಟಿದವರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಯಾವ ಯಾವುದನ್ನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿತೋ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಓ ಭದ್ರೆಯೇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸತ್ಯ (ಒತ್ತಿ)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಯಥಾರ್ಥವಾಗಿ"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸರ್ವಜ್ಞಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನೀನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತ್ರಿಕಾಲಜ್ಞಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಧರ್ಮಜ್ಞಳು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ಪರಮೇಶ್ವರಿಯೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಭೂತ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ವರ್ತಮಾನ ಮತ್ತು ಭವಿಷ್ಯತ್ತು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಧರ್ಮಸಂಬಂಧಿಯಾದ ಎಲ್ಲವೂ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಿನಗೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸತ್ಯಕ್ಕೆ ಅನುಗುಣವಾಗಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನ್ಯಾಯಕ್ಕೆ ಅನುಗುಣವಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಯೋಗ್ಯವಾದಂತೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಂಶಯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕಲಿಯ ಕಲ್ಮಷದಿಂದ ದೀನರಾದವರ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ದ್ವಿಜರೇ ಮೊದಲಾದವರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಓ ಸುರೇಶ್ವರಿಯೇ"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶುದ್ಧ-ಅಶುದ್ಧಗಳ ವಿಚಾರವಿಲ್ಲದವರ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಶುದ್ಧಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವೈದಿಕ (ಶ್ರುತಿ) ಕರ್ಮದಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸಂಹಿತಾದಿಗಳಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸ್ಮೃತಿಗಳಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇಷ್ಟಸಿದ್ಧಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮನುಷ್ಯರಿಗೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆದೀತು"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸತ್ಯ (ಒತ್ತಿ)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನನ್ನಿಂದ ಹೇಳಲ್ಪಡುತ್ತದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇಲ್ಲದೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆಗಮ ಮಾರ್ಗದಿಂದ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಗತಿ, ದಾರಿ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಶ್ರುತಿ-ಸ್ಮೃತಿ-ಪುರಾಣಾದಿಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನನ್ನಿಂದಲೇ ಹೇಳಲ್ಪಟ್ಟಿತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಹಿಂದೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಓ ಶಿವೆಯೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಆಗಮದಲ್ಲಿ ವಿಧಿಸಿದ ವಿಧಾನದಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ದೇವತೆಗಳನ್ನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪೂಜಿಸಬೇಕು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಬುದ್ಧಿವಂತನು"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಆಗಮವನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮೀರಿ, ಉಲ್ಲಂಘಿಸಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬೇರೆ ಮಾರ್ಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಡೆಯುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅವನಿಗೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಗತಿ, ಮುಕ್ತಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಎಂದು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸತ್ಯ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ಸಂಶಯ"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಲ್ಲ ವೇದಗಳಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು ಪುರಾಣಗಳಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸ್ಮೃತಿಗಳಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಂಹಿತಾದಿಗಳಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪ್ರತಿಪಾದಿಸಲ್ಪಡುವವನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗಿದ್ದೇನೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಬೇರೆ ಯಾರೂ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಪ್ರಭು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಜಗತ್ತಿನಲ್ಲಿ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ನನ್ನ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಹೊರತು, ಬಿಟ್ಟು"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸಾರುತ್ತವೆ, ಹೇಳುತ್ತವೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಅವು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನನ್ನ ಪದವನ್ನು/ಸ್ಥಾನವನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲೋಕವನ್ನು ಪಾವನಗೊಳಿಸುವ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನನ್ನ ಮಾರ್ಗದಿಂದ ವಿಮುಖರಾದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಜನರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಪಾಷಂಡಿಗಳು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಬ್ರಹ್ಮಘಾತಕರು"
+      }
+    ],
+    "2.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಆದ್ದರಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನನ್ನ ಮತವನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತ್ಯಜಿಸಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕರ್ಮ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಾಡುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿಷ್ಫಲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಅದು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆಗುತ್ತದೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಓ ದೇವಿಯೇ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಮಾಡುವವನು"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ನರಕಗಾಮಿ"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "ಆಗುತ್ತಾನೆ"
+      }
+    ],
+    "2.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮೂಢನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನನ್ನ ಮತವನ್ನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತ್ಯಜಿಸಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬೇರೆ ಮತವನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಶ್ರಯಿಸುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಬ್ರಹ್ಮಹತ್ಯೆ ಮಾಡಿದವನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪಿತೃಹತ್ಯೆ ಮಾಡಿದವನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸ್ತ್ರೀಹತ್ಯೆ ಮಾಡಿದವನು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಆಗುತ್ತಾನೆ (ಸಮಾನ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಇದರಲ್ಲಿ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಸಂಶಯ"
+      }
+    ],
+    "2.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ತಂತ್ರದಲ್ಲಿ ಹೇಳಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಂತ್ರಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಿದ್ಧವಾದವು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಶೀಘ್ರ ಫಲವನ್ನು ನೀಡುವವು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪ್ರಶಸ್ತವಾದವು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕರ್ಮಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಜಪ-ಯಜ್ಞ-ಕ್ರಿಯಾದಿಗಳಲ್ಲಿ"
+      }
+    ],
+    "2.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿರ್ವೀರ್ಯವಾದವು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ವೈದಿಕ ಜಾತಿಯವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ವಿಷವಿಲ್ಲದ ಸರ್ಪಗಳಂತೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸತ್ಯಾದಿ ಯುಗಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಫಲಪ್ರದವಾದವು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗಿದ್ದವು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಅವು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸತ್ತವು, ನಿರ್ಜೀವ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಎಂಬಂತೆ"
+      }
+    ],
+    "2.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಚಿತ್ರಿಸಿದ ಆಕೃತಿಗಳು, ಗೊಂಬೆಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಗೋಡೆಯ ಮೇಲೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಎಲ್ಲ ಅಂಗಗಳಿಂದ ಕೂಡಿದ (ತೋರಿಕೆಯಲ್ಲಿ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಆದರೂ ಕಾರ್ಯ ಮಾಡಲು ಅಶಕ್ತ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಕಾರ್ಯಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹಾಗೆಯೇ ಆ ಇತರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮಂತ್ರಸಮೂಹಗಳು"
+      }
+    ],
+    "2.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇತರ ಮಂತ್ರಗಳಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಾಡಿದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕರ್ಮ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಬಂಜೆ ಸ್ತ್ರೀಯೊಡನೆ ಸಂಗಮ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅದರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಫಲಸಿದ್ಧಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಆದೀತು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಶ್ರಮ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಮಾತ್ರ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಕೇವಲ"
+      }
+    ],
+    "2.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಲಿಯುಗದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಬೇರೆ ಕಡೆ ಹೇಳಿದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಾರ್ಗಗಳಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಿದ್ಧಿಯನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬಯಸುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮನುಷ್ಯ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಬಾಯಾರಿದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಗಂಗಾ (ಜಾಹ್ನವೀ) ತೀರದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಬಾವಿಯನ್ನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ತೋಡುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಮೂರ್ಖ"
+      }
+    ],
+    "2.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನನ್ನ ಬಾಯಿಯಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೊರಟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಧರ್ಮವನ್ನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಬಿಟ್ಟು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬೇರೆ ಧರ್ಮವನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಬಯಸುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅಮೃತವನ್ನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ತನ್ನ ಮನೆಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಬಿಟ್ಟು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಹಾಲನ್ನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಎಕ್ಕದ (ಕಹಿ) ರಸವನ್ನು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಬಯಸುತ್ತಾನೆ"
+      }
+    ],
+    "2.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಬೇರೆ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮಾರ್ಗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮುಕ್ತಿಯ ಕಾರಣ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲಿ (ಈ ಲೋಕದಲ್ಲಿ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪರಲೋಕದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸುಖಪ್ರಾಪ್ತಿಗಾಗಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ತಂತ್ರದಲ್ಲಿ ಹೇಳಿದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮಾರ್ಗ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮುಕ್ತಿಗಾಗಿ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸುಖಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಮತ್ತು"
+      }
+    ],
+    "2.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ತಂತ್ರಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಬಹುವಿಧವಾಗಿ ಹೇಳಲ್ಪಟ್ಟವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಾನಾ ಆಖ್ಯಾನಗಳಿಂದ ಕೂಡಿದವು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಿದ್ಧರ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸಾಧಕರ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ವಿಧಾನಗಳು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ವಿಪುಲವಾಗಿ"
+      }
+    ],
+    "2.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅಧಿಕಾರಿಗಳ ಭೇದದ ಪ್ರಕಾರ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಶುಗಳ ಬಾಹುಳ್ಯದ ಕಾರಣ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಕುಲಾಚಾರ ಎಂದು ಹೇಳಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಧರ್ಮವನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಗೋಪ್ಯತೆಗಾಗಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿತು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅಲ್ಲಲ್ಲಿ"
+      }
+    ],
+    "2.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಜೀವಿಗಳ ಪ್ರವೃತ್ತಿಯನ್ನು ಪ್ರೇರೇಪಿಸುವ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕೆಲವು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿವೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ದೇವತೆಗಳು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ನಾನಾ ಬಗೆಯ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪ್ರೋಕ್ತರಾಗಿದ್ದಾರೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ದೇವಿಯರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಬಹುವಿಧವಾದ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      }
+    ],
+    "2.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಭೈರವರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು ನಿಜವಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ವೇತಾಲರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವಟುಕರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಾಯಿಕೆಯರು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಗಣಗಳು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಶಾಕ್ತರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಶೈವರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮತ್ತು ವೈಷ್ಣವರು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸೌರರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಗಾಣಪತ್ಯರೇ ಮೊದಲಾದವರು"
+      }
+    ],
+    "2.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮತ್ತು ನಾನಾ ಮಂತ್ರಗಳು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಯಂತ್ರಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸಿದ್ಧ ಉಪಾಯಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅನೇಕ ಬಗೆಯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಹಾ ಪ್ರಯತ್ನದಿಂದ ಸಾಧ್ಯವಾದವು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹೇಳಿದಂತೆ ಫಲ ನೀಡುವವು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮತ್ತು"
+      }
+    ],
+    "2.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಯಾವ ಯಾವ ರೀತಿಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಕೇಳಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪ್ರಶ್ನೆಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯಾರಿಂದ ಯಾರಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವಾಗ ಯಾವಾಗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಗ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅವನ ಉಪಕಾರಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಆ ರೀತಿಯಲ್ಲೇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹೇಳಲ್ಪಟ್ಟಿತು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      }
+    ],
+    "2.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಸರ್ವಲೋಕಗಳ ಉಪಕಾರಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸರ್ವ ಪ್ರಾಣಿಗಳ ಹಿತಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಯುಗಧರ್ಮಕ್ಕೆ ಅನುಗುಣವಾಗಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಥಾರ್ಥವಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಪಾರ್ವತಿಯೇ"
+      }
+    ],
+    "2.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಎಂಥ ಪ್ರಶ್ನೆಗಳು ಕೇಳಲ್ಪಟ್ಟವೋ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಪ್ರಶ್ನೆಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾರಿಂದಲೂ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹಿಂದೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಮಾಡಲ್ಪಟ್ಟ, ಕೇಳಲ್ಪಟ್ಟ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿನ್ನ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸ್ನೇಹದಿಂದ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಹೇಳುತ್ತೇನೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸಾರದ ಸಾರವನ್ನು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಪರಾತ್ಪರವಾದುದನ್ನು"
+      }
+    ],
+    "2.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ವೇದಗಳ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮತ್ತು ಆಗಮಗಳ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು ತಂತ್ರಗಳ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ವಿಶೇಷವಾಗಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಾರವನ್ನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹೊರತೆಗೆದು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಓ ದೇವೇಶಿಯೇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಿನ್ನ ಮುಂದೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹೇಳಲ್ಪಡುತ್ತದೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ನನ್ನಿಂದ"
+      }
+    ],
+    "2.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಮನುಷ್ಯರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತಂತ್ರಜ್ಞರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನದಿಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಗಂಗೆ (ಜಾಹ್ನವೀ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಾನು (ಶ್ರೇಷ್ಠನಾಗಿರುವಂತೆ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸ್ವರ್ಗದ ಒಡೆಯರಲ್ಲಿ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಆಗಮಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಇದು (ಕೃತಿ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಹಾಗೆ"
+      }
+    ],
+    "2.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಏನು (ಪ್ರಯೋಜನ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ವೇದಗಳಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಏನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮತ್ತು ಪುರಾಣಗಳಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಏನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಶಾಸ್ತ್ರಗಳಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅನೇಕ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಓ ಶಿವೆಯೇ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ತಿಳಿದಾಗ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಈ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಮಹಾತಂತ್ರ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಸರ್ವಸಿದ್ಧಿಗಳ ಒಡೆಯ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಆಗುತ್ತಾನೆ"
+      }
+    ],
+    "2.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಏಕೆಂದರೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಲೋಕದ ಹಿತಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಿನ್ನಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಾನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಿಯೋಜಿಸಲ್ಪಟ್ಟಿದ್ದೇನೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆದ್ದರಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿನಗೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಹೇಳುತ್ತೇನೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಯಾವುದು ಸರ್ವರ ಹಿತ ಮಾಡುತ್ತದೋ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಆಗಲಿ"
+      }
+    ],
+    "2.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮಾಡಿದಾಗ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸರ್ವರ ಹಿತ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ದೇವಿಯೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸರ್ವರ ಒಡೆಯ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ಪರಮೇಶ್ವರಿಯೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಪ್ರೀತನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗುತ್ತಾನೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸರ್ವಾತ್ಮನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಏಕೆಂದರೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ವಿಶ್ವವು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಅವನನ್ನು ಆಶ್ರಯಿಸಿದೆ"
+      }
+    ],
+    "2.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಒಬ್ಬನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಾತ್ರ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸತ್ಸ್ವರೂಪನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸತ್ಯನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಅದ್ವೈತನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಪರಾತ್ಪರನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸ್ವಪ್ರಕಾಶನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸದಾಪೂರ್ಣನು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸಚ್ಚಿದಾನಂದ ಸ್ವರೂಪನು"
+      }
+    ],
+    "2.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ನಿರ್ವಿಕಾರನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನಿರಾಧಾರನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನಿರ್ವಿಶೇಷನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಿರಾಕುಲನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಗುಣಾತೀತನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸರ್ವಸಾಕ್ಷಿಯು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸರ್ವಾತ್ಮನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸರ್ವದೃಷ್ಟಿಯುಳ್ಳ ಸರ್ವವ್ಯಾಪಿಯು"
+      }
+    ],
+    "2.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಗೂಢನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಭೂತಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸರ್ವವ್ಯಾಪಿಯು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸನಾತನನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸರ್ವ ಇಂದ್ರಿಯಗಳ ಗುಣಗಳ ಪ್ರಕಾಶನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆದರೂ ಸರ್ವ ಇಂದ್ರಿಯಗಳಿಂದ ರಹಿತನು"
+      }
+    ],
+    "2.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಲೋಕಾತೀತನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಲೋಕದ ಕಾರಣನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮಾತು-ಮನಸ್ಸಿಗೆ ಮೀರಿದವನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಬಲ್ಲನು"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ವಿಶ್ವವನ್ನು"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸರ್ವಜ್ಞನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅವನನ್ನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ತಿಳಿಯುವನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಯಾರೂ"
+      }
+    ],
+    "2.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವನಿಗೆ ಅಧೀನವಾದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಜಗತ್ತು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮೂರು ಲೋಕಗಳು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಚರಾಚರ ಸಹಿತ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಅವನನ್ನು ಆಶ್ರಯಿಸಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನಿಲ್ಲುತ್ತದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅಚಿಂತ್ಯವಾದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಜಗತ್ತು"
+      }
+    ],
+    "2.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವನ ಸತ್ಯತೆಯನ್ನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಆಶ್ರಯಿಸಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಸತ್ಯವೋ ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಭಾಸವಾಗುತ್ತದೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪ್ರತ್ಯೇಕ ಪ್ರತ್ಯೇಕವಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆ ಕಾರಣದಿಂದಲೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಕಾರಣವಾದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ನಾವು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹುಟ್ಟಿದ್ದೇವೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಓ ಮಹೇಶ್ವರಿಯೇ"
+      }
+    ],
+    "2.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಾರಣ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಸರ್ವ ಭೂತಗಳ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಒಬ್ಬನೇ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಪರಮೇಶ್ವರ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಲೋಕಗಳಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸೃಷ್ಟಿಯ ಕಾರ್ಯದಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸ್ರಷ್ಟೃ, ಸೃಷ್ಟಿಕರ್ತ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಬ್ರಹ್ಮ ಎಂದು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಹಾಡಲ್ಪಡುತ್ತಾನೆ"
+      }
+    ],
+    "2.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ವಿಷ್ಣುವಾಗಿ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪಾಲಕನು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಓ ದೇವಿಯೇ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಂಹಾರಕನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನಾನು (ಆಗಿರುವೆ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಅವನ ಇಚ್ಛೆಯಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇಂದ್ರನೇ ಮೊದಲಾದವರು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಲೋಕಪಾಲಕರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅವನ ವಶದಲ್ಲಿರುವವರು"
+      }
+    ],
+    "2.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ತಮ್ಮ ತಮ್ಮ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅಧಿಕಾರದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ತೊಡಗಿದವರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅವರು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಆಳುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಅವನ ಆಜ್ಞೆಯಿಂದ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ನೀನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪರಮ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಪ್ರಕೃತಿ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅವನ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಪೂಜ್ಯಳು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಆಗಿರುವೆ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಮೂರು ಲೋಕಗಳಲ್ಲಿ"
+      }
+    ],
+    "2.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವನಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಅಂತರ್ಯಾಮಿ ಸ್ವರೂಪನಾಗಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಆಯಾ ವಿಷಯಗಳಿಗೆ ಜೋಡಿಸಲ್ಪಟ್ಟು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ತಮ್ಮ ತಮ್ಮ ಕರ್ಮವನ್ನು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮಾಡುತ್ತವೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಸ್ವತಂತ್ರ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಎಂದೂ"
+      }
+    ],
+    "2.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಯಾರ ಭಯದಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಬೀಸುತ್ತದೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಗಾಳಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಸಹ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸೂರ್ಯ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ತಪಿಸುತ್ತಾನೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಯಾರ ಭಯದಿಂದ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಮಳೆ ಸುರಿಸುತ್ತವೆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಮೋಡಗಳು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಕಾಲಕ್ಕೆ ತಕ್ಕಂತೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಹೂ ಬಿಡುತ್ತವೆ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಮರಗಳು"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ವನದಲ್ಲಿ"
+      }
+    ],
+    "2.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಕಾಲವನ್ನು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪ್ರೇರೇಪಿಸುತ್ತಾನೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಕಾಲದಲ್ಲಿ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಮೃತ್ಯುವಿನ ಮೃತ್ಯುವು"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಭಯದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಭಯವು (ಸ್ವತಃ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ವೇದಾಂತದಿಂದ ತಿಳಿಯಲ್ಪಡುವ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಭಗವಂತ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "'ತತ್' ಮತ್ತು 'ಯತ್' ಶಬ್ದಗಳಿಂದ ಸೂಚಿತ"
+      }
+    ],
+    "2.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದೇವತೆಗಳು"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು ದೇವಿಯರು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಅವನಿಂದಲೇ ಆಗಿದ್ದಾರೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಓ ಸುರವಂದಿತೆಯೇ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಬ್ರಹ್ಮನಿಂದ ಹುಲ್ಲಿನ ಕುಡಿಯ ತನಕ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅವನಿಂದಲೇ ಆಗಿದೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಸಮಸ್ತ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಜಗತ್ತು"
+      }
+    ],
+    "2.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಅವನು (ಪ್ರೀತನಾದಾಗ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಪ್ರೀತನಾದಾಗ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಜಗತ್ತು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಪ್ರೀತವಾಗುತ್ತದೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಸಂತುಷ್ಟನಾದಾಗ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಸಂತುಷ್ಟ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಜಗತ್ತು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅವನನ್ನು ಆರಾಧಿಸುವುದರಿಂದ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಓ ದೇವಿಯೇ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಸರ್ವರ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಸಂತೃಪ್ತಿ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಆಗುತ್ತದೆ"
+      }
+    ],
+    "2.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಮರದ ಬೇರಿಗೆ ನೀರೆರೆಯುವುದರಿಂದ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಅದರ ಕೊಂಬೆ-ಚಿಗುರುಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ತೃಪ್ತಿಯಾಗುತ್ತವೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಅವನ ಆ ಆರಾಧನೆಯಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹಾಗೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಎಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅಮರರೇ ಮೊದಲಾದವರು"
+      }
+    ],
+    "2.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ನಿನ್ನ ಅರ್ಚನೆಯಿಂದ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಧ್ಯಾನದಿಂದ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಪೂಜೆಯಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಜಪದಿಂದ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಆಗುತ್ತಾರೆ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪ್ರೀತರು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸುಂದರಿಯರು (ದೇವಿಯರು)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಹಾಗೆ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ತಿಳಿ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಓ ಸುವ್ರತೆಯೇ"
+      }
+    ],
+    "2.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಎಂಬಂತೆ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಹೋಗುತ್ತವೆ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ನದಿಗಳು"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಚ್ಛೆಯಿಲ್ಲದಿದ್ದರೂ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ನದಿಗಳ ಒಡೆಯನೆಡೆಗೆ (ಸಮುದ್ರದೆಡೆಗೆ)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಹಾಗೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅರ್ಚನೆ ಮೊದಲಾದವು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಕರ್ಮಗಳು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಅವನನ್ನೇ ಉದ್ದೇಶಿಸಿರುತ್ತವೆ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಓ ಪಾರ್ವತಿಯೇ"
+      }
+    ],
+    "2.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಯಾರು ಯಾರು"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಯಾವ ಯಾವ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ದೇವತೆಗಳನ್ನು ಪೂಜಿಸುತ್ತಾನೋ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶ್ರದ್ಧೆಯಿಂದ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಯಾವ ಯಾವ ಫಲಕ್ಕಾಗಿ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಆಯಾ (ಫಲಗಳನ್ನು) ನೀಡುತ್ತಾನೆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಅವನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅಧ್ಯಕ್ಷನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಆಯಾ ದೇವಗಣಗಳ ಮೂಲಕ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಓ ಶಿವೆಯೇ"
+      }
+    ],
+    "2.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಹೆಚ್ಚು (ಹೇಳಿ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಇಲ್ಲಿ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಹೇಳುವುದೇನು ಪ್ರಯೋಜನ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ನಿನ್ನ ಮುಂದೆ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಹೇಳಲ್ಪಡುತ್ತದೆ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಓ ಪ್ರಿಯೆಯೇ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಧ್ಯಾನಿಸಬೇಕಾದವನು"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಪೂಜಿಸಬೇಕಾದವನು"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಸುಲಭವಾಗಿ ಪ್ರಸನ್ನನಾಗುವವನು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಅವನನ್ನು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಇಲ್ಲದೆ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ಮುಕ್ತಿಗೆ"
+      }
+    ],
+    "2.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಪ್ರಯತ್ನವಿಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಮತ್ತು ಉಪವಾಸ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಶರೀರದ ಕಷ್ಟ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಇದೆ, ಬೇಕಾಗಿಲ್ಲ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಇಲ್ಲವೇ ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಆಚಾರ ಮೊದಲಾದವುಗಳ ನಿಯಮ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಮತ್ತು ಉಪಚಾರಗಳು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ವಿಪುಲವಾಗಿ"
+      }
+    ],
+    "2.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ದಿಕ್ಕು-ಕಾಲಗಳ ವಿಚಾರ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ಇದೆ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ಇಲ್ಲ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ಮುದ್ರೆ-ನ್ಯಾಸಗಳ ಸಮೂಹ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ಯಾರ ಆರಾಧನೆಯಲ್ಲಿ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ಓ ಕುಲೇಶಾನಿಯೇ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ಅವನ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ಹೊರತು"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ಯಾರು"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ಬೇರೆಯವನನ್ನು"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ಆಶ್ರಯಿಸಿಯಾನು"
+      }
+    ]
+  }
+}

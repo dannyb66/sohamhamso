@@ -1,0 +1,5171 @@
+{
+  "text_slug": "mahanirvana-tantra",
+  "lang": "mr",
+  "translator": "sohamhamso (claude-opus-4-8)",
+  "license": "CC-BY-NC",
+  "model": "claude-opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "गिरिराजाच्या (हिमालयाच्या) शिखरावर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "रमणीय, मनोहर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नानाविध रत्नांनी शोभणाऱ्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नानाविध वृक्ष-वेलींनी भरलेल्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नानाविध पक्ष्यांच्या कलरवाने युक्त"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्व ऋतूंतील फुलांच्या सुगंधाने सुगंधित"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अत्यंत मनोहर, चित्तहारी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शीतलता-सुगंध-मांद्याने समृद्ध वाऱ्यांनी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हळुवार वारा घालणाऱ्या (वीजन केलेल्या)"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अप्सरांच्या समूहाच्या मधुर गीतध्वनींनी निनादणाऱ्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "स्थिर छाया देणाऱ्या वृक्षांच्या छायेने आच्छादलेल्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्निग्ध व मनोहर"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मत्त कोकिळांच्या थव्यांनी गुंजणाऱ्या वनप्रदेशात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सदैव, सर्वकाळ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आपल्या गणांसह"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सोबत, सह"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ऋतुराजाने (वसंताने) सेवित"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सिद्ध, चारण, गंधर्व व गाणपत्य गणांनी वेढलेल्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तेथे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मौन धारण करणाऱ्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देवाला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "चराचर जगाच्या गुरूला"
+      }
+    ],
+    "1.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सदाशिवाला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सदानंदाला"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "करुणारूपी अमृताच्या सागराला"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कापूर व कुंदाप्रमाणे धवल अशा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शुद्ध सत्त्वमय"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सर्वव्यापी विभूला"
+      }
+    ],
+    "1.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दिगंबराला (आकाशवस्त्र, नग्न)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "दीनांच्या नाथाला"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "योगींद्राला"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "योग्यांच्या प्रिय अशा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "गंगेच्या तुषारांनी सिक्त जटामंडलाने मंडित"
+      }
+    ],
+    "1.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भस्माने भूषित"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "शांत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सर्पांच्या माळा धारण करणाऱ्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कपालधारी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्रिलोचन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्रिलोकेश"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "श्रेष्ठ त्रिशूल धारण करणाऱ्या"
+      }
+    ],
+    "1.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शीघ्र प्रसन्न होणाऱ्या (आशुतोष)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्ञानमय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कैवल्यफल देणाऱ्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निर्विकल्प"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "निरातंक (भयरहित)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "निर्विशेष, अभेद"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "निरंजन, निष्कलंक"
+      }
+    ],
+    "1.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्वांचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "हितकर्ता, उपकारक"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देवांच्या देवाला"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निरामय, रोगरहित"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रसन्नवदन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पाहून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "लोकांचे, जनांचे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हिताच्या इच्छेने"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "विनयाने नम्र झालेली"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "देवी"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "पार्वती"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "शिवाला"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "म्हणाली, बोलली"
+      }
+    ],
+    "1.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "श्रीपार्वती म्हणाली"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "हे देवदेव"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे जगन्नाथ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे माझ्या नाथा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे करुणानिधे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तुझ्या अधीन"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मी आहे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हे देवेश"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तुझी"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आज्ञा पाळणारी"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सदैव"
+      }
+    ],
+    "1.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वाचून, शिवाय"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आज्ञेने, परवानगीने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "माझ्याकडून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "काहीही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "बोलणे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "शक्य"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाहीच"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "थोडीशी कृपा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "माझ्यावर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "स्नेह"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "जर"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "मला"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "प्रती"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "तर"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "मांडले जाते, निवेदित होते"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "काहीतरी"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "मनाने"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "जे विचारले आहे"
+      }
+    ],
+    "1.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तुझ्याशिवाय"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "या संशयाचा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तिन्ही लोकांत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे महेश्वर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "छेद करणारा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "होण्यास"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "योग्य, समर्थ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सर्वज्ञ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सर्वशास्त्रवेत्ता"
+      }
+    ],
+    "1.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "श्रीसदाशिव म्हणाला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "काय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सांगायचे आहे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे महाप्राज्ञे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सांगितले जावो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे प्राणवल्लभे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जे सांगता येणार नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "गणेशाला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "स्कंदाला"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सेनापतीला (स्कंदाला)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "देखील"
+      }
+    ],
+    "1.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तुझ्यासमोर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मी सांगेन"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अत्यंत गुप्त असे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जे काही असेल"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "काय"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तिन्ही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "लोकांत"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "गुप्त ठेवण्यासारखे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "तुझ्यासमोर"
+      }
+    ],
+    "1.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "माझे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "रूप, स्वरूप"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तू आहेस"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे देवी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तू"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भेद, फरक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तुझ्यात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "माझा"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सर्वज्ञ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "काय, का"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "जाणतेस"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "अनभिज्ञासारखी"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "सारखी, जणू"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "विचारतेस"
+      }
+    ],
+    "1.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा प्रकारे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "देवाचे वचन"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ऐकून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पार्वती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रसन्नचित्त"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विनयाने नम्र"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "साध्वी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विचारले"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "शंकराला"
+      }
+    ],
+    "1.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "श्रीआद्या (आदिदेवी) म्हणाली"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "हे भगवन"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे सर्वभूतेश"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सर्वधर्मवेत्त्यांमधील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "श्रेष्ठ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कृपावंताकडून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भगवानाकडून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ब्रह्मरूपी अंतर्याम्याकडून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पूर्वी, प्राचीन काळी"
+      }
+    ],
+    "1.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "प्रकट केले गेले"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "चारही वेद"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सर्व धर्मांनी समृद्ध"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वर्णाश्रमादींचे नियम"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्यांत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणि निश्चितच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रतिष्ठित झाले"
+      }
+    ],
+    "1.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यात सांगितलेल्या योग-यज्ञादींनी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कर्मांनी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पृथ्वीवर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "देवांना"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पितरांना"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "प्रसन्न करत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पुण्यशील"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "कृत (सत्य) युगात"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "युगात"
+      }
+    ],
+    "1.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्वाध्याय, ध्यान व तपाने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "दया व दानांनी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "जितेंद्रिय"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "महाबल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "महावीर्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "महान सत्त्व व पराक्रम असलेली"
+      }
+    ],
+    "1.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देवालयांत जाणारी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मर्त्य माणसे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देवांसमान"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "दृढव्रत"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सत्य व धर्मात तत्पर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "साधू, सद्गुणी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सत्यवादी"
+      }
+    ],
+    "1.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "राजे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सत्यसंकल्प"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रजापालनात तत्पर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मातेसमान"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परस्त्रियांकडे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पुत्रासमान"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परक्यांच्या पुत्रांकडे"
+      }
+    ],
+    "1.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मातीच्या ढेकळासमान"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परक्याच्या धनाकडे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पाहत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "तेव्हा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "होती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वधर्मनिष्ठ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सन्मार्गाने चालणारी"
+      }
+    ],
+    "1.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मिथ्याभाषी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कोणी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रमादात रत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कोठेही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "चोर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "परद्रोह करणारे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "दुष्ट हेतू असणारे"
+      }
+    ],
+    "1.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मत्सरी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अतिक्रोधी नव्हते"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अतिलोभी नव्हते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कामुक"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शुद्ध अंतःकरणाचे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सदैव आनंदी मनाचे"
+      }
+    ],
+    "1.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भूमी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सर्व पिकांनी समृद्ध"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मेघ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "यथाकाली वर्षणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "गायी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दुग्धसंपन्न"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "वृक्ष"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "फळांनी लगडलेले"
+      }
+    ],
+    "1.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अकाली मृत्यू नव्हता"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तेथे, तेव्हा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "होता"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दुष्काळ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "रोग"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रसन्न"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पुष्ट"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सदैव निरोगी"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "तेज व रूपगुणांनी युक्त"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "स्त्रिया"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "व्यभिचारिणी"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "पतिभक्तीत तत्पर"
+      }
+    ],
+    "1.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ब्राह्मण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "क्षत्रिय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वैश्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शूद्र"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आपापल्या आचारात राहणारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आपापल्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आपापल्या धर्मांनी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "यजन करत"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "निस्तारपदवीला (मुक्तिमार्गाला)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "पोहोचले"
+      }
+    ],
+    "1.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कृतयुग"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "संपून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्रेतायुगात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पाहून"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "धर्माचा भंग"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "वेदोक्त कर्मांनी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मर्त्य माणसे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "समर्थ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आपला इष्ट हेतू साधण्यास"
+      }
+    ],
+    "1.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अति क्लेशकारक"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "कर्म"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वैदिक"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अमाप साधनसामग्री लागणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "करण्यास"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "योग्य, समर्थ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "चिंतेने व्याकूळ मनाची"
+      }
+    ],
+    "1.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सोडण्यास"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "करण्यास"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "योग्य, समर्थ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कातर मनाची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "वेदार्थाशी सुसंगत शास्त्रे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्मृतिरूप"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पृथ्वीवर"
+      }
+    ],
+    "1.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तेव्हा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तू"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रकट करून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तपाने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वाध्यायात दुर्बल असलेल्यांना"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोकांना"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तू तारलेस"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पापातून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "दुःख-शोक-रोग देणाऱ्या"
+      }
+    ],
+    "1.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तुझ्याशिवाय"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जीवांचा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "घोर संसारसागरात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "भर्ता, धारणकर्ता"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पाता, रक्षक"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "समुद्धर्ता, उद्धारकर्ता"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पित्यासमान"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रियकर्ता, उपकारक"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "प्रभू"
+      }
+    ],
+    "1.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यानंतर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "द्वापरयुगात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आल्यावर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्मृतीने सांगितली सुकृते लुप्त झाल्यावर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "धर्म अर्धा नष्ट झाल्यावर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "माणसांत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आधि-व्याधींनी व्याकूळ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "संहितादींच्या उपदेशाने"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तू एकट्यानेच"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "उद्धरली गेली"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "माणसे"
+      }
+    ],
+    "1.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आल्यावर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पापी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कलियुग"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सर्व धर्मांचा लोप करणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दुराचारी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दुष्प्रपंची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दुष्ट कर्मांना प्रवृत्त करणारे"
+      }
+    ],
+    "1.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वेद"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रभावी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्यात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्मृतींचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्मरण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कोठून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नाना इतिहासांनी युक्त"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाना मार्ग दाखवणाऱ्या"
+      }
+    ],
+    "1.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "असंख्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पुराणांचा"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाश"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "होईल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे विभो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तेव्हा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "लोक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "होतील"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "धर्म व कर्मापासून पराङ्मुख"
+      }
+    ],
+    "1.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "उच्छृंखल, बेबंद"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मदाने उन्मत्त"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पापकर्मात रत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कामुक"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोभी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "क्रूर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "निष्ठुर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "दुर्मुख"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "शठ, कपटी"
+      }
+    ],
+    "1.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अल्पायुषी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मंदबुद्धी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "रोग व शोकाने व्याकूळ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निःश्री, श्रीहीन"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "निर्बल"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नीच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नीचाचारात तत्पर"
+      }
+    ],
+    "1.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नीच संगतीत रत"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परक्याचे धन हरण करणारे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "परनिंदा-परद्रोह-परिवादात मग्न"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "खल, दुष्ट"
+      }
+    ],
+    "1.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परस्त्रीहरणात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पापाची शंका वा भय न बाळगणारे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "निर्धन"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मलिन"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "दीन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दरिद्री"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "चिररोगी"
+      }
+    ],
+    "1.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ब्राह्मण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "शूद्रांसारख्या आचाराचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "संध्यावंदन सोडणारे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अयाज्यांचे याजक"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "लोभी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "दुर्वृत्त"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "पापकारी"
+      }
+    ],
+    "1.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "असत्यभाषी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मूर्ख"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "दांभिक"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "दुष्प्रपंची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कन्याविक्रय करणारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "व्रात्य (पतित)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तप व व्रतापासून पराङ्मुख"
+      }
+    ],
+    "1.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "लोकांना फसवण्यासाठी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जप-पूजेत तत्पर (दिखाव्याचे)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पाषंडी, ढोंगी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्वतःला पंडित समजणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "श्रद्धा व भक्तीने रहित"
+      }
+    ],
+    "1.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अभक्ष्य खाणारे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "दुराचारी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भाडोत्री नोकर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शूद्रांचे सेवक"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शूद्रांचे अन्न खाणारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "क्रूर"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वृषलींच्या (हीन जातीच्या स्त्रियांच्या) अति कामुक"
+      }
+    ],
+    "1.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देतील"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "धनलोभाने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आपल्या पत्नींना"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नीच जातींना"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ब्राह्मणत्वाचे चिन्ह"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "इतकेच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सूत्र (जानवे) धारण करणे"
+      }
+    ],
+    "1.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाहीच"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पान आदींचा नियम"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भक्ष्य-अभक्ष्याचा विवेक"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "धर्मशास्त्राप्रती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "निंदा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "साधूंशी द्रोही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "निरंतर"
+      }
+    ],
+    "1.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सत्कथेची साधी चर्चाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्यांच्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मनात"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कधीही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "रचलेली"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तंत्रे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जीवांच्या उद्धारासाठी"
+      }
+    ],
+    "1.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "निगम व आगमरूपाने प्रकट झालेली"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भुक्ति व मुक्ति देणारी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देवींच्या"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ज्यांत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "देवांच्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मंत्र-यंत्रादी साधने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सांगितली"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "अनेक"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "न्यास"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सृष्टि-स्थित्यादी लक्षणांचे"
+      }
+    ],
+    "1.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "बद्ध पद्मासनादी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सांगितली"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पुष्कळ, अनेक प्रकारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पशु-वीर-दिव्य भाव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "देवता"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मंत्रसिद्धी देणाऱ्या"
+      }
+    ],
+    "1.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शवासन"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "चितारोह (चितेवर आरोहण)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मुंडसाधन"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निश्चितच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लतासाधनाची कर्मे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तुझ्याकडून सांगितली"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हजारोंनी"
+      }
+    ],
+    "1.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पशुभाव व दिव्यभाव"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तू स्वतःच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "निवारलेस, बाजूला ठेवलेस"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पशुभाव"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "दिव्यभाव"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "कोठून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असेल"
+      }
+    ],
+    "1.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "पान"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पुष्प"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "फळ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जल"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वतःच"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आणावे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "पशू (हीन भावाचा उपासक)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "शूद्राचे दर्शन"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "करावे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "मनाने"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "स्त्रीला"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "स्मरण करावे"
+      }
+    ],
+    "1.55": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दिव्य (दिव्यभावाचा)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देवतेसमान"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शुद्ध अंतःकरणाचा"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सदैव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "द्वंद्वातीत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वीतराग"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सर्व भूतांविषयी समभाव"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "क्षमाशील"
+      }
+    ],
+    "1.56": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलीच्या कल्मषाने युक्त"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सदैव अस्थिर चित्ताच्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "निद्रा व आळसात मग्न"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भावशुद्धी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कशी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "होणार"
+      }
+    ],
+    "1.57": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वीरसाधनाची कर्मे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पंचतत्त्वांसह सांगितलेली"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मद्य"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मांस"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तसेच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मत्स्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मुद्रा व मैथुन"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "निश्चितच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ही"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "पंचतत्त्वे"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "सांगितली"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "हे शंकर"
+      }
+    ],
+    "1.58": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलिजात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "लोभी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "शिश्न व उदरात गुंतलेली"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "लोभापायी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्यात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "पडतील"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "करणार"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(योग्य) साधन"
+      }
+    ],
+    "1.59": [
+      {
+        "word_idx": 0,
+        "gloss_text": "इंद्रियांच्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सुखासाठी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्राशन करून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पुष्कळ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मद्य"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "होतील"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मदाने उन्मत्त"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हित-अहिताचे भान विसरलेली"
+      }
+    ],
+    "1.60": [
+      {
+        "word_idx": 0,
+        "gloss_text": "परस्त्रींवर बलात्कार करणारे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "काही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "दस्यू, लुटारू"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पुष्कळ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पृथ्वीवर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "करणार"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मत्त"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पापमय हीन वर्तनाचा विचार"
+      }
+    ],
+    "1.61": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अतिपानादी दोषाने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "रोगी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पुष्कळ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पृथ्वीवर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शक्तिहीन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "बुद्धिहीन"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "होऊन"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "विकल इंद्रियांचे"
+      }
+    ],
+    "1.62": [
+      {
+        "word_idx": 0,
+        "gloss_text": "डोहात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "खड्ड्यात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ओसाड प्रदेशात"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रासादावरून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पर्वतावरून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पडतील"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मरतील"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "मदाने व्याकूळ"
+      }
+    ],
+    "1.63": [
+      {
+        "word_idx": 0,
+        "gloss_text": "काही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "भांडतील"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "गुरूंशी, वडीलधाऱ्यांशी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "स्वजनांशी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "काही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मौन"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "मृतवत"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "इतर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पुष्कळ बडबड करणारे"
+      }
+    ],
+    "1.64": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अकार्य करणारे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "क्रूर"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "धर्ममार्गाचा लोप करणारे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हितासाठी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कर्मे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सांगितली"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हे प्रभो"
+      }
+    ],
+    "1.65": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मला वाटते"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ती"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे महादेव"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विपरीत ठरतील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "माणसांसाठी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अथवा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "योग"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "करतील"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "न्यासरूप साधने"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "अथवा"
+      }
+    ],
+    "1.66": [
+      {
+        "word_idx": 0,
+        "gloss_text": "स्तोत्रपाठ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "यंत्रलेखन"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पुरश्चर्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे जगत्पते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "युगधर्माच्या प्रभावाने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "स्वभावाने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "होतील"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "अतिशय दुर्वृत्त"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सर्वतोपरी"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "पापकारी"
+      }
+    ],
+    "1.67": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्यांच्यासाठी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "उपाय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे दीनेश"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कृपेने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सांग"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे प्रभो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आयुष्य, आरोग्य व तेज देणारा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "बल व वीर्य वाढवणारा"
+      }
+    ],
+    "1.68": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विद्या व बुद्धी देणारा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माणसांना"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अनायासे शुभ करणारा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्यायोगे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "लोक"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "होतील"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "महाबल व पराक्रमी"
+      }
+    ],
+    "1.69": [
+      {
+        "word_idx": 0,
+        "gloss_text": "शुद्धचित्त"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "परोपकारी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "माता-पित्याचे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "प्रिय करणारे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "स्वपत्नीनिष्ठ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "माणसे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परस्त्रियांविषयी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पराङ्मुख"
+      }
+    ],
+    "1.70": [
+      {
+        "word_idx": 0,
+        "gloss_text": "देवता व गुरूचे भक्त"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पुत्र व स्वजनांचे पोषक"
+      }
+    ],
+    "1.71": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ब्रह्मज्ञ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ब्रह्मविद्यासंपन्न"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ब्रह्मचिंतनात मग्न"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सिद्धीसाठी, हितासाठी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोकयात्रेच्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सांग, कथन कर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हितासाठी"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जे (योग्य असेल)"
+      }
+    ],
+    "1.72": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कर्तव्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अकर्तव्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वर्णाश्रमभेदानुसार"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तुला"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सर्व लोकांचा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्राता, रक्षक"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तिन्ही भुवनांत"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अशा प्रकारे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "देवीचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वचन"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ऐकून"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शंकर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोकांचे कल्याण करणारा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सांगितले"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "यथार्थपणे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "महाकरुणेचा सागर"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "श्रीसदाशिव म्हणाला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "उत्तम"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विचारलेस"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे महाभाग्यवती"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जगतांचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हितकर्ती"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "असा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "शुभ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रश्न"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कोणीही"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "केला"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "पूर्वी, कधीही"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "धन्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तू आहेस"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सुकृत जाणणारी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तू आहेस"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हितकर्ती"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तू आहेस"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कलिजन्म्यांची"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "जे जे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सांगितले"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "हे भद्रे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "सत्य (आग्रहाने)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "यथार्थतः"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्वज्ञ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तू"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्रिकालज्ञ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "धर्मज्ञ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे परमेश्वरी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भूत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वर्तमान व भविष्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "धर्माशी संबंधित सर्व"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "तुला"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "हे प्रिये"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "यथातत्त्व"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "यथान्याय"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "यथायोग्य"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "संशय"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कलिकल्मषाने दीन झालेल्या"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "द्विजादींविषयी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हे सुरेश्वरी"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मेध्य-अमेध्याचा विचार न करणाऱ्यांची"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "शुद्धी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "श्रौतकर्माने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "संहितादींनी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्मृतींनी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "इष्टसिद्धी"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "माणसांना"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "होईल"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सत्य (आग्रहाने)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पुन्हा"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "माझ्याकडून सांगितले जाते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "निश्चितच"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आगममार्गाने"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "गती (मुक्तिमार्ग)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "हे प्रिये"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "श्रुति-स्मृति-पुराणादींत"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मी स्वतःच सांगितले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "पूर्वी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "हे शिवे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "आगमोक्त विधीने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "देवांचे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "यजन करावे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुज्ञाने"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आगमाचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "उल्लंघन करून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्य मार्गाने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रवृत्त होतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्याला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "गती (मुक्ती)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "असे"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "संशय"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्व वेदांनी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि पुराणांनी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "स्मृतींनी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संहितादींनी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रतिपाद्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "मी आहे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "दुसरा कोणी नाही"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रभू"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जगात"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "माझ्या"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "वाचून, खेरीज"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कथन करतात, सांगतात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "माझ्या पदाचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोकपावन"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "माझ्या मार्गापासून विमुख"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "लोक"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "पाषंडी"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ब्रह्मघातकी"
+      }
+    ],
+    "2.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माझे मत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सोडून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जे काही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कर्म"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "करील"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "निष्फळ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "होईल"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "हे देवी"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "कर्ता"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "नरकगामी"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "होईल"
+      }
+    ],
+    "2.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "मूढ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माझे मत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सोडून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्य मताचा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आश्रय घेतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ब्रह्महत्या करणारा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पितृहत्या करणारा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्त्रीहत्या करणारा"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "होतो (समान)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "यात नाही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "संशय"
+      }
+    ],
+    "2.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तंत्रात सांगितलेले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मंत्र"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सिद्ध, पूर्ण सामर्थ्यवान"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्वरित फल देणारे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रशस्त, प्रशंसित"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "कर्मांत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जप-यज्ञ-क्रियादींत"
+      }
+    ],
+    "2.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "निर्वीर्य"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "श्रौत वर्गातील"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "विषहीन सर्प"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सारखे"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सत्यादी युगांत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "फलदायी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "होते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मृतवत"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "जणू"
+      }
+    ],
+    "2.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "चित्रे, बाहुल्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जशी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भिंतीवर"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सर्व अंगांनी युक्त (दिसणारी)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कार्यांत असमर्थ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "कार्यांत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तसेच इतर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(त्या) मंत्रांचे समूह"
+      }
+    ],
+    "2.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "इतर मंत्रांनी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "केलेले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "कर्म"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वंध्या स्त्रीशी संगम"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सारखे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्यात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "फलसिद्धी"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "होईल"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "श्रम"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "केवळ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "निश्चितच"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "फक्त"
+      }
+    ],
+    "2.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कलियुगात"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अन्यत्र सांगितलेल्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मार्गांनी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सिद्धी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "इच्छितो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "मनुष्य"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तहानलेला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "गंगातीरी (जान्हवीतीरी)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "विहीर"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "खणतो"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "मूर्ख, दुर्बुद्धी"
+      }
+    ],
+    "2.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "माझ्या मुखातून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "निघालेला"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "धर्म"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सोडून"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "अन्य धर्माची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "इच्छा करतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अमृत"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आपल्या घरात"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सोडून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "दूध"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "आर्क (रुईचा कडू रस)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "इच्छितो"
+      }
+    ],
+    "2.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "दुसरा नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "मार्ग"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "मुक्तीचा हेतू"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "इहलोकी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परलोकी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सुखप्राप्तीसाठी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जसा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तंत्रोक्त"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मार्ग"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मोक्षासाठी"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सुखासाठी"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "आणि"
+      }
+    ],
+    "2.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तंत्रे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अनेक प्रकारे सांगितली"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नाना आख्यानांनी युक्त"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सिद्धांची"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "साधकांची"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विधाने, प्रक्रिया"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पुष्कळ"
+      }
+    ],
+    "2.22": [
+      {
+        "word_idx": 0,
+        "gloss_text": "अधिकारीभेदानुसार"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पशूंच्या बाहुल्यामुळे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे प्रिये"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कुलाचारात सांगितलेला"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "धर्म"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "गुप्ततेसाठी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सांगितला"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "क्वचित, ठिकठिकाणी"
+      }
+    ],
+    "2.23": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जीवांना प्रवृत्त करणारी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "काही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सांगितली"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "देव"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नानाविध"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सांगितले"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "देवी"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "पुष्कळ प्रकारच्या"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "हे प्रिये"
+      }
+    ],
+    "2.24": [
+      {
+        "word_idx": 0,
+        "gloss_text": "भैरव"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि निश्चितच"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वेताल"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "वटुक"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नायिका"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "गण"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "शाक्त"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "शैव"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आणि वैष्णव"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सौर (सूर्योपासक)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "गाणपत्य आदी"
+      }
+    ],
+    "2.25": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आणि नाना मंत्र"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "यंत्रे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सिद्ध साधने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अनेक प्रकारची"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "पुष्कळ प्रयासाने साध्य होणारी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सांगितल्याप्रमाणे फल देणारी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "आणि"
+      }
+    ],
+    "2.26": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जसजसे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "केले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रश्न"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ज्याने ज्याने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जेव्हा जेव्हा"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तेव्हा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्याच्या उपकारासाठी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तसेच"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सांगितले"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "माझ्याकडून"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "हे प्रिये"
+      }
+    ],
+    "2.27": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्व लोकांच्या उपकारासाठी"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सर्व प्राण्यांच्या हितासाठी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "युगधर्मानुसार"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "यथातथ्याने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे पार्वती"
+      }
+    ],
+    "2.28": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जसे केलेले"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "प्रश्न"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "कोणीही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "पूर्वी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "केले"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तुझ्या"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "स्नेहामुळे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "मी सांगेन"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "सारांतील सार"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "परात्पर"
+      }
+    ],
+    "2.29": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वेदांचे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आणि आगमांचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि तंत्रांचे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विशेषतः"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सार"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "काढून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "हे देवेशी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तुझ्यासमोर"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सांगितले जाते"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "माझ्याकडून"
+      }
+    ],
+    "2.30": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जसे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "माणसांत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तंत्रज्ञ (श्रेष्ठ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नद्यांत"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जान्हवी (गंगा)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "जसा"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जसा मी (श्रेष्ठ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्वर्गातील देवांत"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "आगमांत"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "हे (तंत्र)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "तसे"
+      }
+    ],
+    "2.31": [
+      {
+        "word_idx": 0,
+        "gloss_text": "काय (उपयोग)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वेदांनी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "काय"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आणि पुराणांनी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "काय"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "शास्त्रांनी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अनेक"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "हे शिवे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जाणल्यावर"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "या"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "महातंत्र"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "सर्वसिद्धींचा ईश्वर"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "होईल"
+      }
+    ],
+    "2.32": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जगाच्या मंगलासाठी"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तुझ्याकडून"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नियुक्त केला"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "म्हणून"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तुला"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सांगेन"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जे विश्वहितकारक"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "असेल"
+      }
+    ],
+    "2.33": [
+      {
+        "word_idx": 0,
+        "gloss_text": "केल्यावर"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "विश्वहित"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे देवी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "विश्वेश"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे परमेश्वरी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रसन्न"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "होतो"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "विश्वात्मा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "विश्व"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "त्याच्याच आश्रयाने आहे"
+      }
+    ],
+    "2.34": [
+      {
+        "word_idx": 0,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "एक"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "अलाच"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सद्रूप (अस्तित्वस्वरूप)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सत्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "अद्वैत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "परात्पर"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्वप्रकाश"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सदा पूर्ण"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सच्चिदानंदलक्षण"
+      }
+    ],
+    "2.35": [
+      {
+        "word_idx": 0,
+        "gloss_text": "निर्विकार"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "निराधार"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "निर्विशेष"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "निराकुल, अविचलित"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "गुणातीत"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सर्वसाक्षी"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सर्वात्मा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सर्वदृक् व विभू"
+      }
+    ],
+    "2.36": [
+      {
+        "word_idx": 0,
+        "gloss_text": "गूढ, गुप्त"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सर्वांत"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "भूतांत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "सर्वव्यापी"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सनातन"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "सर्व इंद्रियांच्या गुणांचा आभास"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तरीही सर्व इंद्रियांनी रहित"
+      }
+    ],
+    "2.37": [
+      {
+        "word_idx": 0,
+        "gloss_text": "लोकातीत"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "लोकहेतू"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वाणी व मनाच्या पलीकडे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जाणतो"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "विश्व"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सर्वज्ञ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्याला"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जाणत"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "कोणीही"
+      }
+    ],
+    "2.38": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याच्या अधीन"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जग"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्रैलोक्य"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "चराचरांसह"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्याच्या आधाराने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "टिकते, राहते"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अतर्क्य"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "जग"
+      }
+    ],
+    "2.39": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याच्या सत्यतेचा"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "आश्रय घेऊन"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सत्यासारखे (सद्वत्)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "भासते, शोभते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रत्येक वस्तू वेगवेगळी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्या (कारणा)मुळेच"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "हेतुभूत झालेल्या"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आम्ही"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जन्मलो"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "हे महेश्वरी"
+      }
+    ],
+    "2.40": [
+      {
+        "word_idx": 0,
+        "gloss_text": "कारण"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "सर्व भूतांचे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "एकच"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "परमेश्वर"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "लोकांत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सृष्टी करण्यामुळे"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "स्रष्टा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ब्रह्मा म्हणून"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "गायिला जातो, म्हटला जातो"
+      }
+    ],
+    "2.41": [
+      {
+        "word_idx": 0,
+        "gloss_text": "विष्णू म्हणून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "पालनकर्ता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "हे देवी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "संहर्ता"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मी (आहे)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्याच्या इच्छेने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "इंद्रादी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "लोकपाल"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्याच्या वशवर्ती"
+      }
+    ],
+    "2.42": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आपापल्या"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अधिकारात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "रत"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ते"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "शासन करतात"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "त्याच्या आज्ञेने"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तू"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "परा"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "प्रकृती"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्याची"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "पूज्य"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "तू आहेस"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "तिन्ही भुवनांत"
+      }
+    ],
+    "2.43": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याच्याकडून"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "अंतर्यामीरूपाने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्या त्या विषयांना जोडलेल्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "आपापले कार्य"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "करतात"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "स्वतंत्र"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कधीही"
+      }
+    ],
+    "2.44": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ज्याच्या भयाने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "वाहतो"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "वायू"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "देखील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सूर्य"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तापतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ज्याच्या भयाने"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "वर्षतात"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "मेघ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "यथाकाली"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "फुलतात"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "वृक्ष"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "वनात"
+      }
+    ],
+    "2.45": [
+      {
+        "word_idx": 0,
+        "gloss_text": "काळाला"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "चालवतो"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "काळातच"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "मृत्यूचा मृत्यू"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "भयाचे"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "भय"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "वेदांताने जाणण्याजोगा"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "भगवान"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "'यत्' व 'तत्' शब्दांनी निर्देशित"
+      }
+    ],
+    "2.46": [
+      {
+        "word_idx": 0,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "देव"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि देवी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "त्याच्यामय"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "हे सुरवंदिते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ब्रह्म्यापासून तृणाच्या काडीपर्यंत"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "त्याच्यामय"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "सकल"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "जग"
+      }
+    ],
+    "2.47": [
+      {
+        "word_idx": 0,
+        "gloss_text": "त्याच्यात/तो"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तुष्ट होता"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "जग"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तुष्ट"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "प्रसन्न होता"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "प्रसन्न"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "जग"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्याच्या आराधनेने"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "हे देवी"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "सर्वांचे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "प्रीणन, तृप्ती"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "होते"
+      }
+    ],
+    "2.48": [
+      {
+        "word_idx": 0,
+        "gloss_text": "वृक्षाच्या मुळाला पाणी घातल्याने"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जसे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "त्याच्या फांद्या व पालवी"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तृप्त होतात"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "त्याच्या (ब्रह्माच्या) आराधनेने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तसे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "सर्व"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अमरादी"
+      }
+    ],
+    "2.49": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जसे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "तुझ्या अर्चनाने"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ध्यानाने"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "पूजनाने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जपाने"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे प्रिये"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "होतात"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "तुष्ट"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुंदरी (देवी)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "तसे"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "जाण"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "हे सुव्रते"
+      }
+    ],
+    "2.50": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जसे"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "जातात"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "नद्या"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "अवशपणे (अपरिहार्यपणे) देखील"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सरित्पतीकडे (सागराकडे)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "तसे"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "अर्चनादी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "कर्मे"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्याच्याकडे निर्देशित"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "हे पार्वती"
+      }
+    ],
+    "2.51": [
+      {
+        "word_idx": 0,
+        "gloss_text": "जो जो"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ज्या ज्या"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "देवांचे यजन करतो"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "श्रद्धेने"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "जे जे मिळवण्यासाठी"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ते ते देतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "तो"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "अध्यक्ष"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "त्या त्या देवगणांद्वारे"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "हे शिवे"
+      }
+    ],
+    "2.52": [
+      {
+        "word_idx": 0,
+        "gloss_text": "फार (सांगून)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "येथे"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "सांगण्याची काय गरज"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "तुझ्यासमोर"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "सांगितले जाते"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "हे प्रिये"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ध्येय"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "पूज्य"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "सुखाने आराधनीय"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "त्याच्या"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "वाचून"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "मुक्तीसाठी"
+      }
+    ],
+    "2.53": [
+      {
+        "word_idx": 0,
+        "gloss_text": "आयास नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आणि उपवास"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "कायक्लेश"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "आहे, लागतो"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "नाहीच"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "आचारादींचा नियम"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "आणि उपचार"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "पुष्कळ"
+      }
+    ],
+    "2.54": [
+      {
+        "word_idx": 0,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "दिक्-कालाचा विचार"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "आहे"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "नाही"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "मुद्रा-न्यासांचा समूह"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ज्याच्या साधनात"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "हे कुलेशानी"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "त्याच्या"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "वाचून, खेरीज"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "कोण"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "दुसऱ्या"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "आश्रय घेईल"
+      }
+    ]
+  }
+}
