@@ -1,10 +1,14 @@
 # MIRI permission request letter (draft)
 
-Status: **draft — ready to send**. Fill in the bracketed fields, then email to
-the Muktabodha Indological Research Institute (contact via https://muktabodha.org/).
-Track the outcome here: until written permission lands, every Muktabodha-derived
-text carries `pending_miri: true` in its corpus YAML and is automatically held
-out of dataset releases by `pipeline/dataset/publish.ts` (see ATTRIBUTION.md).
+Status: **SENT 2026-06-12** to the Muktabodha Indological Research Institute
+(via https://muktabodha.org/). Awaiting reply. Until written permission lands,
+every Muktabodha-derived text carries `pending_miri: true` in its corpus YAML
+and is automatically held out of dataset releases by `pipeline/dataset/publish.ts`
+(see ATTRIBUTION.md). On a grant, flip `pending_miri: false` per text and
+re-run the dataset publish. Texts covered by this request: Pratyabhijñā Hṛdayam,
+Vijñāna Bhairava Tantra, Śivadṛṣṭi (prospective), Tantrasāra, Gītārthasaṃgraha
+(M00244), Mahānirvāṇa Tantra (M00049). Site display proceeds in the interim per
+operator decision; dataset/Zenodo inclusion waits on the reply.
 
 ---
 
@@ -33,10 +37,12 @@ derived from your library.
 - *Pratyabhijñāhṛdayam* (Kṣemarāja) — currently prepared, publication held pending your permission
 - *Vijñāna Bhairava Tantra* — currently prepared, publication held pending your permission
 
-and, prospectively, as the corpus grows:
+and, as the corpus grows:
 
-- *Śivadṛṣṭi* (Somānanda)
-- *Tantrasāra* (Abhinavagupta)
+- *Gītārthasaṃgraha* (Abhinavagupta; Muktabodha M00244) — prepared, held pending permission
+- *Mahānirvāṇa Tantra* ullāsas 1–3 (Muktabodha M00049) — prepared, held pending permission
+- *Śivadṛṣṭi* (Somānanda; Muktabodha M00081) — prospective, sourcing deferred
+- *Tantrasāra* (Abhinavagupta) — prepared (note: our copy is the public-domain GRETIL/KSTS-1918 e-text, so it may not require this permission; included for completeness)
 
 **Our two requests.** Because these are distinct uses, we would be grateful
 for your answer to each separately:

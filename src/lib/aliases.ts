@@ -70,6 +70,21 @@ export const SLUG_ALIASES: Record<string, string> = {
   'ishvarapratyabhijna-karikas': 'isvarapratyabhijna-karika',
   isvarapratyabhijna: 'isvarapratyabhijna-karika',
   ishvarapratyabhijna: 'isvarapratyabhijna-karika',
+  // Gītārthasaṃgraha: Abhinavagupta's Gītā commentary. Spelling + sandhi variants.
+  gitarthasamgraha: 'gitartha-samgraha',
+  gitarthasangraha: 'gitartha-samgraha',
+  'gita-artha-samgraha': 'gitartha-samgraha',
+  'gitartha-sangraha': 'gitartha-samgraha',
+  bhagavadgitarthasamgraha: 'gitartha-samgraha',
+  // Tantrasāra (prose).
+  'tantra-sara': 'tantrasara',
+  tantrasaram: 'tantrasara',
+  // Mahānirvāṇa Tantra (Śākta; sample ullāsas 1–3).
+  'mahanirvana-tantram': 'mahanirvana-tantra',
+  'maha-nirvana-tantra': 'mahanirvana-tantra',
+  // Śivadṛṣṭi: deferred (mūla not separable from the sole digital witness M00081).
+  // When a clean mūla source lands, add: shivadrishti, siva-drsti, shiva-drishti
+  // → sivadrsti; and reserve sivadrsti-vrtti for Utpaladeva's Vṛtti sibling.
 };
 
 /**

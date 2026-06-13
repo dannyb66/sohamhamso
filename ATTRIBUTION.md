@@ -23,7 +23,7 @@ Per-source and per-text attribution. Updated each release; per-text entries land
 
 ### Muktabodha Indological Research Institute (MIRI)
 - URL: https://muktabodha.org/ · library: https://muktalib7.com/
-- Status: written redistribution permission **pending**. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until this permission lands.
+- Status: written redistribution permission **requested — letter SENT 2026-06-12**, awaiting reply. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until this permission lands.
 - Each Muktabodha-derived text carries `pending_miri: true` in its corpus YAML (`data/corpus/*.yaml`); the bundle hold is automated — `pipeline/dataset/publish.ts` reads the flag and excludes flagged texts (and all their verses/translations/glosses/parallels) from every dataset build until the flag is removed.
 - The permission request letter is drafted at [docs/MIRI-PERMISSION-REQUEST.md](docs/MIRI-PERMISSION-REQUEST.md).
 - For browse-only reader display, we operate under Muktabodha's scholarly-use terms.
@@ -91,3 +91,24 @@ sohamhamso contributors. (YYYY). sohamhamso: Tantric Sanskrit canon dataset (vYY
 ```
 
 BibTeX template available at `/cite` on the live site (V1.x).
+
+### Gītārthasaṃgraha (gitartha-samgraha)
+- **Text:** Gītārthasaṃgraha — Abhinavagupta's commentary on the Bhagavad Gītā (Kashmirian recension)
+- **Author:** Abhinavagupta (c. 975–1025 CE)
+- **Source:** Muktabodha Indological Research Institute, catalog no. M00244 (bhagavadgītārthasaṃgraha); based on the edition of Lakṣmaṇa Raina Brahmacārī (Lakshman Joo), Kashmiri Pratap Steam Press, Srinagar 1933.
+- **URL:** https://muktalib7.com/DL_CATALOG_ROOT/MUKTABODHA-LIBRARY-IAST/bhagavadgItA-M00244-IAST.txt
+- **Revision:** Muktabodha revision 0, 2012-02-05; accessed 2026-06-12
+- **License:** CC-BY-NC 4.0 (`pending_miri: true` — held from dataset releases until MIRI permission).
+
+### Tantrasāra (tantrasara)
+- **Text:** Tantrasāra (prose) by Abhinavagupta
+- **Source:** GRETIL Devanāgarī e-text (input by Oliver Hellwig), based on the public-domain editio princeps — Mukund Rām Śāstrī (ed.), *The Tantrasāra of Abhinava Gupta*, Nirnaya Sagara Press, Bombay, 1918 (Kashmir Series of Texts and Studies 17).
+- **Revision:** retrieved via the sanskrit/raw_etexts mirror, accessed 2026-06-12
+- **License:** underlying text public domain (KSTS 1918). Flagged `pending_miri: true` conservatively pending a Muktabodha/critical-edition cross-check; relaxable since the source is GRETIL/PD, not Muktabodha.
+
+### Mahānirvāṇa Tantra (mahanirvana-tantra), ullāsas 1–3
+- **Text:** Mahānirvāṇa Tantra (Śākta; public/reformist Kaula), sample ullāsas 1–3 (mūla only; Hariharānanda Bhāratī's ṭīkā excluded)
+- **Source:** Muktabodha Indological Research Institute, catalog M00049; data entered from Tantrik Series Vol. 13, ed. Arthur Avalon (Sir John Woodroffe), Luzac & Co., Calcutta, 1926; accessed via Sanskrit Wikisource.
+- **URL:** https://sa.wikisource.org/wiki/महानिर्वाणतन्त्रम्
+- **Revision:** accessed 2026-06-12
+- **License:** CC-BY-NC 4.0 (`pending_miri: true` — held from dataset releases until MIRI permission).
