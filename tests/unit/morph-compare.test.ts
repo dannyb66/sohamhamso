@@ -1,3 +1,4 @@
+import Sanscript from '@indic-transliteration/sanscript';
 import {
   type CorpusVerse,
   type MorphToken,
@@ -5,7 +6,9 @@ import {
   alignVerse,
   buildAudit,
   iastToSlp1,
+  lemmaMatchKind,
   normalizeSlp1,
+  slp1ToIast,
 } from '@pipeline/morph/compare';
 /**
  * Unit tests for the morph trust-audit comparison logic
@@ -60,6 +63,67 @@ describe('normalizeSlp1', () => {
   it('does not touch word-internal H or M', () => {
     expect(normalizeSlp1('duHKa')).toBe('duHKa');
     expect(normalizeSlp1('saMsAra')).toBe('saMsAra');
+  });
+
+  it('folds anusvara/class-nasal spelling variants before stops', () => {
+    expect(normalizeSlp1('SaNkara')).toBe(normalizeSlp1('SaMkara'));
+    expect(normalizeSlp1('sanDAna')).toBe(normalizeSlp1('saMDAna'));
+    // nasal before a non-stop is untouched
+    expect(normalizeSlp1('anya')).toBe('anya');
+  });
+});
+
+describe('slp1ToIast', () => {
+  it('inverts the deterministic SLP1 table', () => {
+    expect(slp1ToIast('Atman')).toBe('ātman');
+    expect(slp1ToIast('BErava')).toBe('bhairava');
+    expect(slp1ToIast('kfzRa')).toBe('kṛṣṇa');
+    expect(slp1ToIast('saMhf')).toBe('saṃhṛ');
+    expect(slp1ToIast('Sakti')).toBe('śakti');
+  });
+
+  it('agrees with @indic-transliteration/sanscript (the ingest convention)', () => {
+    for (const lemma of ['Atman', 'BErava', 'kfzRa', 'saMhf', 'Sakti', 'jYAna', 'udyama']) {
+      expect(slp1ToIast(lemma)).toBe(Sanscript.t(lemma, 'slp1', 'iast'));
+    }
+  });
+
+  it('round-trips through iastToSlp1', () => {
+    for (const lemma of ['Atman', 'BErava', 'kfzRa', 'Sakti', 'aDizWAna']) {
+      expect(iastToSlp1(slp1ToIast(lemma))).toBe(lemma);
+    }
+  });
+});
+
+describe('lemmaMatchKind (lemma normalizer ladder)', () => {
+  it('exact match, including for dhatu lemmas', () => {
+    expect(lemmaMatchKind('iti', 'iti', false)).toBe('exact');
+    expect(lemmaMatchKind('tris', 'tris', true)).toBe('exact');
+  });
+
+  it('visarga / final-vowel nominal stem variants', () => {
+    expect(lemmaMatchKind('udyamas', 'udyama', false)).toBe('variant'); // -aḥ ~ -a
+    expect(lemmaMatchKind('jYAnam', 'jYAna', false)).toBe('variant'); // -am ~ -a
+    expect(lemmaMatchKind('AtmA', 'Atman', false)).toBe('variant'); // -ā ~ -an
+    expect(lemmaMatchKind('sanDAne', 'sanDAna', false)).toBe('variant'); // loc. -e ~ -a
+    expect(lemmaMatchKind('Saktis', 'Sakti', false)).toBe('variant'); // -iḥ ~ -i
+    expect(lemmaMatchKind('vaDu', 'vaDU', false)).toBe('variant'); // vowel length
+  });
+
+  it('suppletive pronominal paradigms count as variants', () => {
+    expect(lemmaMatchKind('tezAm', 'tad', false)).toBe('variant');
+    expect(lemmaMatchKind('yas', 'yad', false)).toBe('variant');
+    expect(lemmaMatchKind('asO', 'adas', false)).toBe('variant');
+  });
+
+  it('guarded stem-prefix match for nominal lemmas only', () => {
+    expect(lemmaMatchKind('banDas', 'banD', false)).toBe('stem');
+    expect(lemmaMatchKind('cEtanyam', 'i', false)).toBeNull(); // micro-stem guard
+  });
+
+  it('dhatu lemmas are never variant/stem force-matched', () => {
+    expect(lemmaMatchKind('jYAnam', 'jYA', true)).toBeNull();
+    expect(lemmaMatchKind('udyamas', 'udyam', true)).toBeNull();
   });
 });
 
@@ -147,6 +211,137 @@ describe('alignVerse', () => {
     const a = alignVerse(['॥1॥', 'jYAnam'], [tok('jYAnam', 'jYA')]);
     expect(a.words).toHaveLength(1);
     expect(a.words[0].word).toBe('jYAnam');
+  });
+});
+
+describe('alignVerse — calibrated agreement (sandhi-aware sets + normalizer)', () => {
+  const vtok = (
+    surface: string,
+    lemma: string | null,
+    pos?: string,
+    entry?: string,
+  ): MorphToken => ({ surface, lemma, pos: pos ?? null, entry: entry ?? null });
+
+  it('sandhi-split case: a hyphenated gloss compound agrees when ANY aligned pada lemma matches its part', () => {
+    // gloss keeps viśva-saṃhāraḥ whole; vidyut splits viSva + saMhAras
+    const a = alignVerse(
+      ['viSva-saMhAraH'],
+      [
+        vtok('viSva', 'viSva', 'subanta'),
+        vtok(
+          'saMhAras',
+          'saMhf',
+          'subanta',
+          'PadaEntry.Subanta(pratipadika_entry=PratipadikaEntry.Krdanta(dhatu_entry=DhatuEntry(...)))',
+        ),
+      ],
+    );
+    expect(a.mode).toBe('exact-span');
+    expect(a.words[0].classification).toBe('split');
+    expect(a.words[0].tokenIndices).toEqual([0, 1]);
+    expect(a.words[0].parts).toEqual(['viSva', 'saMhAras']);
+    // viSva matched exactly -> the gloss word agrees (ANY-pada rule)
+    expect(a.words[0].lemmaAgreement).toBe(true);
+    expect(a.words[0].matchKind).toBe('exact');
+    expect(a.words[0].partsMatched).toBe(1);
+    // saMhf is a dhatu lemma vs the derived stem saMhAra: flagged, not forced
+    expect(a.words[0].dhatuFlag).toBe(true);
+    expect(a.words[0].category).toBeNull();
+  });
+
+  it('visarga case: gloss -aḥ form vs vidyut nominal stem is a variant agreement', () => {
+    const a = alignVerse([iastToSlp1('śaktiḥ')], [vtok('Saktis', 'Sakti', 'subanta')]);
+    expect(a.words[0].classification).toBe('match');
+    expect(a.words[0].lemmaAgreement).toBe(true);
+    expect(a.words[0].matchKind).toBe('variant');
+  });
+
+  it('SLP1/anusvara case: nasal spelling variants align and agree', () => {
+    const a = alignVerse([iastToSlp1('śaṅkaram')], [vtok('SaMkaram', 'SaMkara', 'subanta')]);
+    expect(a.mode).toBe('exact-span');
+    expect(a.words[0].classification).toBe('match');
+    expect(a.words[0].lemmaAgreement).toBe(true);
+    expect(a.words[0].matchKind).toBe('variant');
+  });
+
+  it('DP fallback: diverged sandhi resolution still aligns word-to-pada spans', () => {
+    // gloss: turya-ābhogaḥ | sambhavaḥ ; vidyut: turyAs + Boga + samBavas
+    const a = alignVerse(
+      ['turya-ABogaH', 'samBavaH'],
+      [
+        vtok('turyAs', 'turya', 'subanta'),
+        vtok('Boga', 'Boga', 'subanta'),
+        vtok('samBavas', 'samBava', 'subanta'),
+      ],
+    );
+    expect(a.mode).toBe('greedy');
+    expect(a.words[0].classification).toBe('mismatch'); // a+A coalesced differently
+    expect(a.words[0].tokenIndices).toEqual([0, 1]);
+    expect(a.words[0].lemmaAgreement).toBe(true); // turya matched exactly
+    expect(a.words[1].classification).toBe('match');
+    expect(a.words[1].lemmaAgreement).toBe(true);
+    expect(a.words[1].matchKind).toBe('variant');
+  });
+
+  it('dhatu vs derived stem: flagged, not matched, categorized as legitimate ambiguity', () => {
+    const a = alignVerse(
+      ['ullasanti'],
+      [vtok('ut', 'u', 'subanta'), vtok('lasanti', 'las', 'tinanta')],
+    );
+    expect(a.words[0].lemmaAgreement).toBe(false);
+    expect(a.words[0].dhatuFlag).toBe(true);
+    expect(a.words[0].category).toBe('legitimate_ambiguity');
+  });
+
+  it('pronominal suppletion agrees; vidyut pronoun lemma quirks go to the vidyut bucket', () => {
+    const agree = alignVerse(['tezAm'], [vtok('tezAm', 'tad', 'subanta')]);
+    expect(agree.words[0].lemmaAgreement).toBe(true);
+    expect(agree.words[0].matchKind).toBe('variant');
+
+    // vidyut lemmatizes yas to I (a quirk); we know yas belongs to yad
+    const quirk = alignVerse(['yaH'], [vtok('yas', 'I', 'subanta')]);
+    expect(quirk.words[0].lemmaAgreement).toBe(false);
+    expect(quirk.words[0].category).toBe('vidyut_segmentation');
+  });
+
+  it('null-lemma kosha misses are categorized as vidyut-side', () => {
+    const a = alignVerse(['yoni-vargaH'], [vtok('yonivargas', null)]);
+    expect(a.words[0].lemmaAgreement).toBe(false);
+    expect(a.words[0].category).toBe('vidyut_segmentation');
+  });
+
+  it('micro-token shredding is categorized as vidyut segmentation error', () => {
+    const a = alignVerse(
+      ['cEtanyam', 'AtmA'],
+      [
+        vtok('ca', 'ca', 'subanta'),
+        vtok('Et', 'i', 'tinanta'),
+        vtok('an', 'aYji', 'subanta'),
+        vtok('yam', 'I', 'subanta'),
+        vtok('AtmA', 'Atman', 'subanta'),
+      ],
+    );
+    expect(a.words[0].lemmaAgreement).toBe(false);
+    expect(a.words[0].category).toBe('vidyut_segmentation');
+    expect(a.words[1].lemmaAgreement).toBe(true);
+    expect(a.words[1].matchKind).toBe('variant');
+  });
+
+  it('words with no aligned padas are unresolved', () => {
+    const a = alignVerse(['jYAnam', 'banDas'], [tok('jYAnam', 'jYAna')]);
+    expect(a.words[1].classification).toBe('unmatched');
+    expect(a.words[1].category).toBe('unresolved_alignment');
+  });
+
+  it('multi-word gloss entries (spaces) align part-by-part', () => {
+    const a = alignVerse(
+      ['idaM sarvam'],
+      [vtok('idam', 'idam', 'subanta'), vtok('sarvam', 'sarva', 'subanta')],
+    );
+    expect(a.words[0].classification).toBe('split');
+    expect(a.words[0].parts).toEqual(['idam', 'sarvam']);
+    expect(a.words[0].partsMatched).toBe(2);
+    expect(a.words[0].lemmaAgreement).toBe(true);
   });
 });
 
@@ -252,5 +447,24 @@ describe('buildAudit', () => {
     expect(audit.summary.words_total).toBe(0);
     expect(audit.summary.agreement_rate).toBe(0);
     expect(audit.verses).toHaveLength(0);
+  });
+
+  it('emits calibration fields: aligned rate, match kinds, categories, per-row triage', () => {
+    const audit = buildAudit('test-text', corpus, morph);
+    const s = audit.summary;
+    expect(s.words_aligned).toBe(4);
+    expect(s.aligned_rate).toBe(1);
+    expect(s.match_kinds.variant + s.match_kinds.exact + s.match_kinds.stem).toBe(s.lemma_agree);
+    expect(s.categories.vidyut_segmentation).toBe(1); // caitanyam shredded into cE+tanyam
+    expect(s.categories.llm_gloss_error).toBe(0);
+
+    const caitanyam = audit.verses[0].words[0];
+    expect(caitanyam.category).toBe('vidyut_segmentation');
+    expect(caitanyam.parts_total).toBe(1);
+    expect(caitanyam.parts_matched).toBe(0);
+
+    const atma = audit.verses[0].words[1];
+    expect(atma.category).toBeNull();
+    expect(atma.match_kind).toBe('variant'); // AtmA ~ Atman
   });
 });

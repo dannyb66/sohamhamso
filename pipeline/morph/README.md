@@ -107,35 +107,105 @@ uses the raw field if you want to audit exactly that. Fixing the corpus
 
 `data/morph/{slug}-audit.json` (audit): per gloss word, the aligned Vidyut
 tokens, a classification (`match` / `split` / `merged` / `split_crossing` /
-`mismatch` / `unmatched`), and a lemma-level `lemma_agreement` boolean, plus
-a summary with the overall agreement rate. Alignment is exact by character
-spans when sandhi resolution lines up, with a bounded greedy fallback
-otherwise (`alignment_mode` is recorded per verse). All comparison logic is
-pure and lives in `compare.ts`; tests in `tests/unit/morph-compare.test.ts`
-run with fixtures only — no Vidyut required.
+`mismatch` / `unmatched`), a lemma-level `lemma_agreement` boolean with its
+`match_kind`, a `dhatu_flag`, and — for disagreements — a triage `category`,
+plus a summary with aligned/agreement rates and category counts. All
+comparison logic is pure and lives in `compare.ts`; tests in
+`tests/unit/morph-compare.test.ts` run with fixtures only — no Vidyut
+required.
+
+## Calibration methodology (v2, 2026-06)
+
+The first audit compared raw lemma strings and read 24–47% agreement. Most
+of those "disagreements" were methodological, not semantic, so the
+comparator was calibrated in three ways:
+
+**1. Sandhi-aware alignment (word -> pada SET).** vidyut-cheda sandhi-splits
+surface words that the YAML `word_glosses` keep whole (and vice versa: the
+glosses hyphenate compounds and sometimes carry multi-word entries like
+`idaṃ sarvam`). Each gloss word is split on hyphens/whitespace into parts
+and aligned to one-or-more contiguous Vidyut padas by surface coverage:
+exact character spans when the normalized concatenations agree
+(`alignment_mode: "exact-span"`), otherwise spans are projected through a
+character-level Levenshtein alignment of the two concatenations
+(`alignment_mode: "greedy"`), which keeps word→pada mapping stable even
+when the two sides resolved sandhi differently (`turya-ābhogaḥ` vs
+`turyās + bhoga`). A gloss word counts as agreeing if **any** aligned
+pada's lemma matches the word or its covering part after normalization.
+
+**2. Lemma normalization.** Comparison happens in SLP1 (IAST intake is
+NFC-normalized and lowercased; SLP1 itself stays case-sensitive, i.e.
+diacritic-exact). The normalizer covers the systematic convention gaps:
+
+- SLP1 <-> IAST transliteration (`slp1ToIast` mirrors what
+  `pipeline/ingest/ingest.ts` does via `@indic-transliteration/sanscript`;
+  cross-checked against sanscript in the unit tests);
+- visarga/anusvāra variants (`-aḥ ~ -as ~ -a`, `-ṃ ~ -m`) and
+  anusvāra/class-nasal spelling (`śaṅkara ~ śaṃkara`);
+- final-vowel nominal-stem variants (`-am/-a`, `-ā/-an`, loc. `-e/-a`,
+  `-au/-i|-u|-a`, abl. `-āt/-a`, common oblique endings, final vowel
+  length) plus a guarded stem-prefix rule (lemma must cover >= half the
+  word);
+- suppletive pronominal paradigms (`teṣām ~ tad`, `yaḥ ~ yad`,
+  `asau ~ adas`) via an explicit form table;
+- **dhātu vs derived stem is flagged, never force-matched**: vidyut
+  lemmatizes tiṅantas and kṛdanta-derived nouns to the root (`saṃhāraḥ ->
+  saṃhṛ`, `jñānam -> jñā`). Those rows get `dhatu_flag: true` and stay in
+  the disagree column — they are convention differences, not refutations.
+
+**3. Disagreement categories.** Every disagreeing row gets a `category`
+(deterministic heuristics — triage, not verdicts):
+
+- `vidyut_segmentation` — null lemmas (kosha misses), micro-token
+  shredding (`caitanyam -> ca/Et/an/yam`), splits with no lemma support,
+  known pronoun/indeclinable forms given quirky lemmas (`yaḥ -> I`);
+- `legitimate_ambiguity` — dhātu-vs-derived-stem convention (the large
+  majority), alternative sandhi resolutions, related lexeme choices;
+- `unresolved_alignment` — no padas to align (incl. verses where the
+  Chedaka returned an empty segmentation), boundary-straddling tokens, or
+  >50% character divergence;
+- `llm_gloss_error` — alignment exact, a single clean non-dhātu pada, and
+  an unrelated lemma: the strongest string-level signal that the
+  gloss-side analysis is off.
 
 ## How to read the audit (important)
 
 **Disagreement does not mean the LLM gloss is wrong.** vidyut-cheda 0.4 is
 experimental and visibly over-segments terse sūtra text and vocabulary
-absent from its kosha (e.g. it shreds `caitanyam ātmā` into
-`ca/Et/an/yamAt/mA`, while handling `udyamo bhairavaḥ` perfectly). Observed
-lemma-agreement rates on this corpus (2026-06, vidyut 0.4.0 / data 0.4.0):
+absent from its kosha. Calibrated results on this corpus (2026-06, vidyut
+0.4.0 / data 0.4.0); "dhātu-conv." is the share of disagreements that are
+the flagged root-vs-derived-stem convention:
 
-| text | words | agreement |
-|---|---|---|
-| karpuradi-stotra | 489 | 47.2% |
-| siva-sutras | 189 | 43.9% |
-| spanda-karikas | 533 | 41.5% |
-| pratyabhijna-hrdayam | 104 | 26.9% |
-| vijnana-bhairava-tantra | 1074 | 23.8% |
+| text | words | aligned | lemma agree | + dhātu-conv. | vidyut-side | unresolved | LLM-error |
+|---|---|---|---|---|---|---|---|
+| siva-sutras | 189 | 98.9% | 50.3% | 85.2% | 23 | 2 | 0 |
+| karpuradi-stotra | 489 | 93.5% | 48.9% | 79.6% | 57 | 30 | 0 |
+| spanda-karikas | 533 | 96.8% | 46.0% | 85.2% | 62 | 13 | 0 |
+| vijnana-bhairava-tantra | 1074 | 88.8% | 43.8% | 69.1% | 239 | 70 | 0 |
+| pratyabhijna-hrdayam | 104 | 97.1% | 39.4% | 83.7% | 13 | 2 | 0 |
 
-Treat the audit as a **human-review triage queue**: `match` rows are
-independently corroborated; `split`/`merged` rows are usually compound- or
-sandhi-splitting conventions differing; `mismatch`/`unmatched` rows need a
-human with a grammar. What the methodology page may honestly claim today is
-"morphology cross-checked against Vidyut, with the disagreement audit
-published" — not "morphology generated by Vidyut".
+Honest caveats that remain:
+
+- The categories are **string-level heuristics**. They cannot judge whether
+  a gloss's *meaning* or case/number labels are right — only whether the
+  implied lexeme is corroborated. A human with a grammar still owns
+  `vidyut_segmentation` and `unresolved_alignment` rows.
+- The ANY-pada rule is deliberately generous: one matching pada vouches for
+  a whole compound. `parts_matched`/`parts_total` per row shows how much of
+  a compound was actually corroborated.
+- The dhātu flag marks convention, not correctness: `jñānam -> jñā` is
+  consistent derivation, but the comparator does not verify the derivation
+  itself.
+- vidyut returns an **empty segmentation** for some whole verses (e.g.
+  vijnana-bhairava-tantra 1.13, karpuradi-stotra 1.6); their words land in
+  `unresolved_alignment`, which is why vijnana's aligned% is lowest.
+- `llm_gloss_error: 0` across all five texts means no gloss was *refuted*
+  at the string level — it is evidence of soundness, not proof.
+
+Treat the audit as a **human-review triage queue**. What the methodology
+page may honestly claim today is "morphology cross-checked against Vidyut,
+with the disagreement audit published" — not "morphology generated by
+Vidyut".
 
 ## MW headwords
 

@@ -102,7 +102,10 @@ function main(): number {
     note:
       'Disagreement does not mean the LLM gloss is wrong: vidyut-cheda is ' +
       'experimental and struggles on terse sutra text and proper nouns ' +
-      'absent from its kosha. Treat disagreements as a human-review queue.',
+      'absent from its kosha. Treat disagreements as a human-review queue; ' +
+      'each disagreeing row carries a heuristic triage `category` ' +
+      '(llm_gloss_error | vidyut_segmentation | legitimate_ambiguity | ' +
+      'unresolved_alignment) — see pipeline/morph/README.md.',
   };
 
   mkdirSync(MORPH, { recursive: true });
@@ -115,9 +118,13 @@ function main(): number {
     `  verses compared: ${s.verses_compared} (no morph: ${s.verses_without_morph}, no glosses: ${s.verses_without_glosses})`,
   );
   console.log(
-    `  words: ${s.words_total}  lemma agree: ${s.lemma_agree}  disagree: ${s.lemma_disagree}  rate: ${(s.agreement_rate * 100).toFixed(1)}%`,
+    `  words: ${s.words_total}  aligned: ${s.words_aligned} (${(s.aligned_rate * 100).toFixed(1)}%)  lemma agree: ${s.lemma_agree}  disagree: ${s.lemma_disagree}  rate: ${(s.agreement_rate * 100).toFixed(1)}%`,
   );
   console.log(`  classifications: ${JSON.stringify(s.classifications)}`);
+  console.log(
+    `  match kinds: ${JSON.stringify(s.match_kinds)}  dhatu-flagged: ${s.dhatu_flagged}`,
+  );
+  console.log(`  disagreement categories: ${JSON.stringify(s.categories)}`);
   return 0;
 }
 
