@@ -106,19 +106,20 @@ describe.each([
 ])('%s — chrome position indicator', (_label, pagePath) => {
   const src = readSource(pagePath);
 
-  it('imports listChapters from lib/db', () => {
-    expect(src).toMatch(/import\s*\{[^}]*\blistChapters\b[^}]*\}\s*from\s*'[./]+lib\/db'/);
-  });
-
-  it('derives chapterVerseCount from listChapters for the current chapter', () => {
-    expect(src).toMatch(
-      /const chapterVerseCount =\s*\n?\s*listChapters\(textRow\.slug\)\.find\(\(c\) => c\.chapter === chapterNum\)\?\.verse_count \?\? null/,
-    );
+  it('derives chapterVerseCount from the batched SSR read (A6 phase 2)', () => {
+    // The pages are `prerender = false` since A6 phase 2 and must NOT
+    // value-import lib/db (bun:sqlite is absent in the worker — see
+    // tests/unit/verse-ssr-edge-compat.test.ts). The denominator now
+    // arrives via readVersePage()'s single batch, whose chapter-count
+    // statement GROUPs the same `verses` rows listChapters() derives
+    // from — the invariant this spec exists to pin.
+    expect(src).not.toMatch(/import\s*\{[^}]*\blistChapters\b[^}]*\}\s*from\s*'[./]+lib\/db'/);
+    expect(src).toMatch(/chapterVerseCount:\s*data\.chapterVerseCount/);
   });
 
   it('renders the null-guarded "/ N" span inside the chrome locator', () => {
     expect(src).toContain(
-      '<span class="chrome__verse">· {chapterNum}.{verseNum}{chapterVerseCount ? <span class="chrome__count"> / {chapterVerseCount}</span> : null}</span>',
+      '<span class="chrome__verse">· {chapterNum}.{verseNum}{view.chapterVerseCount ? <span class="chrome__count"> / {view.chapterVerseCount}</span> : null}</span>',
     );
   });
 

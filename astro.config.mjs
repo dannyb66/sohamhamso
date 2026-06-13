@@ -7,6 +7,13 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://sohamhamso.org',
+  // `output: 'static'` is correct even though the two verse routes render
+  // on demand: Astro 5 folded the old 'hybrid' mode into 'static' — any
+  // route exporting `prerender = false` (the verse pages, /search, /api/*)
+  // runs in the Cloudflare worker at request time while everything else
+  // stays prerendered. The verse routes moved to SSR in A6 phase 2 to keep
+  // dist/ far below CF Pages' 20,000-file deploy limit (one static file
+  // per verse × 12 locales did not scale past the first two texts).
   output: 'static',
   // `trailingSlash: 'never'` + `build.format: 'file'` makes Astro emit
   // `dist/foo.html` (not `dist/foo/index.html`), so Cloudflare Pages serves

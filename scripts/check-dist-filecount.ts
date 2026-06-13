@@ -4,8 +4,16 @@
  *
  * Counts files under dist/ and fails when the count exceeds the limit.
  * Cloudflare Pages hard-rejects deploys with more than 20,000 files; we gate
- * at 18,000 to get an early warning while there is still headroom to act
- * (see plan item A6: migrate verse pages off file-per-route static output).
+ * at 18,000 to get an early warning while there is still headroom to act.
+ *
+ * MARGIN STORY (A6 phase 2, 2026-06): verse pages are now SERVER-RENDERED
+ * (`prerender = false` on the two verse routes) — dist/ no longer contains
+ * one HTML file per verse × locale, which dropped the count from ~8,900 to
+ * ~2,200. File growth is now driven by chapter/text/lemma pages and assets
+ * (roughly: 12 files per new chapter, not 12 per verse), so un-staging the
+ * two sourced texts (226 verses) costs dozens of files, not ~10k. The
+ * 18,000 gate stays as a tripwire in case a future route reintroduces
+ * per-verse static output.
  *
  * Exit 0 — file count within limit; prints the count.
  * Exit 1 — file count above limit (deploy is at risk).

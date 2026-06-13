@@ -97,6 +97,29 @@ export interface CorpusDb {
    * so they can append `LIMIT 1` hints where appropriate.
    */
   get<T>(sql: string, params?: ReadonlyArray<string | number | null>): Promise<T | undefined>;
+
+  /**
+   * Run several SELECTs in ONE round-trip and return their row arrays
+   * in statement order. This is the latency-critical verb for the SSR
+   * verse routes: `getVerse()`-shaped reads need ~10 statements, and
+   * sequential HTTPS round-trips to Turso would blow the per-page
+   * budget. The edge backend maps to libsql `client.batch(stmts,
+   * 'read')` (single HTTP exchange); the bun backend just loops the
+   * sync driver (local file — no round-trip cost).
+   *
+   * OPTIONAL so pre-existing test fakes (which only implement
+   * `all`/`get`) keep compiling. Callers must fall back to sequential
+   * `all()` when absent — `corpusBatch()` in verse-read.ts does this.
+   */
+  batch?(
+    stmts: ReadonlyArray<CorpusBatchStatement>,
+  ): Promise<Array<Array<Record<string, unknown>>>>;
+}
+
+/** One statement in a {@link CorpusDb.batch} round-trip. */
+export interface CorpusBatchStatement {
+  sql: string;
+  args?: ReadonlyArray<string | number | null>;
 }
 
 /* ─────────────────────────────────────────────────────────────────────
@@ -147,6 +170,19 @@ async function makeBunBackend(): Promise<CorpusDb> {
       const row = stmt.get(...(params as any[])) as T | null;
       return row ?? undefined;
     },
+    async batch(
+      stmts: ReadonlyArray<CorpusBatchStatement>,
+    ): Promise<Array<Array<Record<string, unknown>>>> {
+      // Local sync driver: sequential statement execution has no
+      // round-trip cost, so "batch" is just a loop. Kept in statement
+      // order to mirror the libsql contract exactly.
+      return stmts.map((s) => {
+        // biome-ignore lint/suspicious/noExplicitAny: see all()
+        const stmt = db.query<Record<string, unknown>, any>(s.sql);
+        // biome-ignore lint/suspicious/noExplicitAny: see all()
+        return stmt.all(...((s.args ?? []) as any[]));
+      });
+    },
   };
 }
 
@@ -173,6 +209,10 @@ let _libsqlClient: any | null = null;
 
 async function getLibsqlClient(): Promise<{
   execute: (q: { sql: string; args: unknown[] }) => Promise<{ rows: Record<string, unknown>[] }>;
+  batch: (
+    stmts: Array<{ sql: string; args: unknown[] }>,
+    mode?: 'read' | 'write' | 'deferred',
+  ) => Promise<Array<{ rows: Record<string, unknown>[] }>>;
 }> {
   if (_libsqlClient) return _libsqlClient;
   const url = process.env.TURSO_CORPUS_URL;
@@ -254,6 +294,19 @@ async function makeEdgeBackend(): Promise<CorpusDb> {
       const res = await client.execute({ sql, args: [...params] });
       if (res.rows.length === 0) return undefined;
       return adaptRow<T>(res.rows[0]);
+    },
+    async batch(
+      stmts: ReadonlyArray<CorpusBatchStatement>,
+    ): Promise<Array<Array<Record<string, unknown>>>> {
+      // 'read' mode: read-only batch over a single HTTP exchange. All
+      // statements here are SELECTs (the corpus DB is read-only from
+      // the worker), so the read transaction mode is both correct and
+      // the cheapest option on Turso.
+      const results = await client.batch(
+        stmts.map((s) => ({ sql: s.sql, args: [...(s.args ?? [])] })),
+        'read',
+      );
+      return results.map((res) => res.rows.map((r) => adaptRow<Record<string, unknown>>(r)));
     },
   };
 }

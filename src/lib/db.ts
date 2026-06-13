@@ -11,13 +11,46 @@
  * Local dev / static build: single SQLite file at `db/sohamhamso.db`.
  */
 
-// `bun:sqlite` ships with Bun. The import is resolved by Bun's runtime;
-// TypeScript may not have built-in types — declare-module fallback below.
-// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import { Database } from 'bun:sqlite';
+// `bun:sqlite` ships with Bun. The TYPE import below is erased at compile
+// time; the runtime constructor is loaded lazily (guarded top-level await)
+// so this module is safe to EVALUATE in non-bun runtimes (workerd).
+import type { Database } from 'bun:sqlite';
 import { existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Runtime detection + lazy driver load (A6 phase 2 — reader abstraction)
+//
+// This module is ONE OF TWO reader impls:
+//   1. THIS file — synchronous `bun:sqlite` against `db/sohamhamso.db`.
+//      Used at build time (`astro build` / getStaticPaths), in `astro dev`,
+//      and in tests. The ONLY runtime where it works is bun.
+//   2. `src/lib/corpus-db.ts` (+ `src/lib/verse-read.ts`) — async libsql
+//      over HTTPS against the Turso corpus DB. Used by request-time code
+//      in the deployed Cloudflare worker (SSR verse routes, /api/search,
+//      OG functions).
+//
+// Environment detection is EXPLICIT: `process.versions.bun` is the
+// canonical bun-only marker (same sniff as corpus-db.ts/subscriber-db.ts).
+// Historically the top-level `import { Database } from 'bun:sqlite'` made
+// any static import chain into this file fatal in workerd ("No such module
+// bun:sqlite" at chunk-evaluation time — see the launch-blocker notes in
+// corpus-db.ts). The guarded dynamic import below keeps workerd from ever
+// touching `bun:sqlite` while preserving the synchronous API for bun.
+// ─────────────────────────────────────────────────────────────────────────────
+
+function isBunRuntime(): boolean {
+  return typeof process !== 'undefined' && typeof process.versions?.bun === 'string';
+}
+
+type DatabaseCtor = typeof import('bun:sqlite').Database;
+
+let _DatabaseCtor: DatabaseCtor | null = null;
+if (isBunRuntime()) {
+  // Top-level await: resolved once at module init, so `getDb()` stays sync.
+  ({ Database: _DatabaseCtor } = await import('bun:sqlite'));
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -175,13 +208,21 @@ function dbPath(): string {
  * for seeding fixtures.
  */
 export function getDb(path?: string, readonly = true): Database {
+  if (!_DatabaseCtor) {
+    throw new Error(
+      'db.ts: bun:sqlite is unavailable in this runtime. The synchronous ' +
+        'SQLite reader only works in bun (build/dev/tests). Request-time ' +
+        'code in the deployed worker must read through corpus-db.ts ' +
+        '(libsql → Turso) instead — see src/lib/verse-read.ts.',
+    );
+  }
   if (path !== undefined) {
-    const db = new Database(path, { readonly });
+    const db = new _DatabaseCtor(path, { readonly });
     if (readonly) db.exec('PRAGMA query_only = ON;');
     return db;
   }
   if (_db) return _db;
-  _db = new Database(dbPath(), { readonly: true });
+  _db = new _DatabaseCtor(dbPath(), { readonly: true });
   // Slightly faster reads; safe for read-only conn.
   _db.exec('PRAGMA query_only = ON;');
   return _db;
