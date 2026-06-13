@@ -157,7 +157,7 @@ describe('prose translations with blank-line paragraph breaks', () => {
 // ---------------------------------------------------------------
 
 describe('computeIsShortVerse', () => {
-  it('never fires for prose blocks (no glosses by design in V1)', () => {
+  it('never fires for prose blocks (prose is never a short verse)', () => {
     expect(
       computeIsShortVerse({ sectionType: 'prose', translationLength: 800, glossCount: 0 }),
     ).toBe(false);
@@ -230,8 +230,12 @@ describe('VerseAnatomy.astro source contract', () => {
     expect(source).toMatch(/data-i18n="verse\.prose_iast_summary"/);
   });
 
-  it('skips the synonyms region for prose blocks (no word-glosses in V1)', () => {
-    expect(source).toMatch(/\{!isProse && wordGlosses\.length > 0 \? \(/);
+  it('renders the synonyms region for any block (verse OR prose) that carries word-glosses', () => {
+    // Format parity: prose blocks show the word-by-word region just like
+    // verse texts when glosses are present (gated only on glossCount, not
+    // section_type). The prose still renders as flowing paragraphs above.
+    expect(source).toMatch(/\{wordGlosses\.length > 0 \? \(/);
+    expect(source).not.toMatch(/\{!isProse && wordGlosses\.length > 0 \? \(/);
   });
 
   it('renders prose translations as multiple <p> on blank lines', () => {

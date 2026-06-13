@@ -115,7 +115,7 @@ const iastParasPairable = iastParas.length === devanagariParas.length;
     <div class="verse-meter" aria-label="meter" data-i18n-attr-aria-label="verse.meter_aria">{verse.meter}</div>
   ) : null}
 
-  {!isProse && wordGlosses.length > 0 ? (
+  {wordGlosses.length > 0 ? (
     <section class="synonyms" aria-label="word-by-word synonyms" data-i18n-attr-aria-label="verse.synonyms_aria">
       {wordGlosses.map((g, i) => (
         <>
