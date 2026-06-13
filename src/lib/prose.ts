@@ -77,18 +77,31 @@ export function formatDanda(s: string | null | undefined): string {
   // Order matters: replace // before / so the longer match wins.
   // (Local variable instead of reassigning `s` — biome noParameterAssign;
   // the .astro original predates linting and reassigned the parameter.)
-  const normalized = s.replace(/\/\//g, '||').replace(/\//g, '|');
+  // Normalize non-pipe IAST danda conventions to pipe-style so the logic
+  // below handles them uniformly. Karpūrādi uses / and //; Mahānirvāṇa and
+  // other Muktabodha/GRETIL IAST e-texts use space-delimited dots ( . / .. )
+  // for half- and full-dandas. Match dots only when space-delimited (or at
+  // string end) so genuine punctuation is never touched — pure IAST verse
+  // text has no other periods. Order: longer match (.. , //) before single.
+  const normalized = s
+    .replace(/\/\//g, '||')
+    .replace(/\//g, '|')
+    .replace(/ \.\.(?= |\d|$)/g, ' ||')
+    .replace(/ \.(?= |\d|$)/g, ' |');
   // Protect verse-number brackets so the internal dandas don't get split.
   // Devanāgarī forms: ॥४९॥, ॥ ४९ ॥. IAST forms: ||49||, || 49 ||.
+  // Placeholders use NUL sentinels (\x00N\x00) so a real unprotected digit
+  // in the text (e.g. a dot-danda verse number that wasn't bracket-wrapped)
+  // can never collide with a placeholder index on restore.
   const protected_: string[] = [];
   let work = normalized
     .replace(/॥\s*([\d०-९]+)\s*॥/g, (_m, n) => {
       protected_.push(`॥${n}॥`);
-      return `${protected_.length - 1}`;
+      return `\x00${protected_.length - 1}\x00`;
     })
     .replace(/\|\|\s*(\d+)\s*\|\|/g, (_m, n) => {
       protected_.push(`||${n}||`);
-      return `${protected_.length - 1}`;
+      return `\x00${protected_.length - 1}\x00`;
     });
 
   work = work
@@ -99,8 +112,8 @@ export function formatDanda(s: string | null | undefined): string {
     .replace(/\|\|/g, '||\n')
     .replace(/(^|[^|])\|(?!\|)/g, '$1|\n');
 
-  // Restore the protected verse-number brackets
-  work = work.replace(/(\d+)/g, (_m, i) => protected_[Number(i)]);
+  // Restore the protected verse-number brackets (NUL-delimited indices)
+  work = work.replace(/\x00(\d+)\x00/g, (_m, i) => protected_[Number(i)]);
 
   // Collapse multiple newlines + trim
   return work

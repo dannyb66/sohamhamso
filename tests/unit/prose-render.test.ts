@@ -342,3 +342,26 @@ describe('db row type carries section_type through to the pages', () => {
     expect(source).toMatch(/prose_block_ref\?: string \| null;/);
   });
 });
+
+// ---------------------------------------------------------------
+// Regression: dot-danda IAST (Mahānirvāṇa) — bare verse number must
+// not collide with the protect-placeholder restore (was rendering
+// "undefined"). MNT IAST uses " . " / " .. N .. " for dandas.
+// ---------------------------------------------------------------
+describe('formatDanda — dot-danda IAST verse numbers (MNT)', () => {
+  it('renders the verse number, never "undefined"', () => {
+    const out = formatDanda('nānāpakṣiravairyute .. 1 ..');
+    expect(out).not.toContain('undefined');
+    expect(out).toContain('||1||');
+  });
+  it('breaks on the half-danda dot and keeps the full-danda number bracket', () => {
+    const out = formatDanda('a b c . d e f .. 7 ..');
+    expect(out).toContain('||7||');
+    expect(out.split('\n').length).toBeGreaterThanOrEqual(2);
+  });
+  it('does not eat a non-danda use (no space-delimited dot)', () => {
+    // pipe + slash conventions still work, no regression
+    expect(formatDanda('x || 5 ||')).toContain('||5||');
+    expect(formatDanda('y // 2 //')).toContain('||2||');
+  });
+});
