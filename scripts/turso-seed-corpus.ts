@@ -200,6 +200,8 @@ export const TABLE_SPECS: TableSpec[] = [
       'meter',
       'manuscript_folio_ref',
       'created_at',
+      'section_type',
+      'prose_block_ref',
     ],
     orderBy: 'id ASC',
     scopedWhere: 'text_id = ?',
