@@ -2441,7 +2441,7 @@ chapters:
       license: CC-BY-SA
       text: ഹേ പുഞ്ചിരിതൂകുന്ന മുഖമുള്ളവളേ, കാമാന്തകന്റെ പത്നീ — അഗ്നിസ്ഥമായ വർഗാദ്യാക്ഷരം [ക], ചന്ദ്രബിന്ദുവോടുകൂടിയ അതിലളിതമായ ഈ ത്രയം, രണ്ടു കൂർച്ചങ്ങൾ, രണ്ടു ലജ്ജാബീജങ്ങൾ, പിന്നെ അവയ്ക്കു താഴെ വരുന്ന രണ്ടും — ഇവയെ യഥാക്രമം യോജിപ്പിച്ച്, അവിടത്തെ സ്വരൂപത്തെ ധ്യാനിച്ചുകൊണ്ട് ജപിക്കുന്നവർ, അമ്മേ, ലക്ഷ്മിയുടെ ലാസ്യലീലയ്ക്കു സമമായ താമരയിതൾപോലുള്ള കണ്ണുകളോടെ കാമരൂപികളായിത്തീരുന്നു.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -4678,7 +4678,7 @@ chapters:
       license: CC-BY-SA
       text: பக்தன் இரவில், ஆடைகளற்று, கூந்தல் தொங்கவிட, பருத்த தனங்களும் அகன்ற இடுப்பும் கொண்ட இளம்பெண்களின் தழுவலில் ஈடுபட்டிருந்தாலும், உன்னைத் தியானித்து உனது மந்திரத்தை ஜபித்தால் — அனைத்துச் சித்தித் திரள்களும் அவனுக்கு வசப்படுகின்றன; அவன் கவியாகி பூமியில் மிக நெடுங்காலம் வாழ்கிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -5053,7 +5053,7 @@ chapters:
       license: CC-BY-SA
       text: நெடுங்காலம் நிலைத்தநிலையில் இருந்து, மஹாகாலனோடு மிக ஆழமாய்ச் சம்போகத்தில் இருக்கும் உன்னை விபரீத ஆசனத்தில் தியானித்து ஜபிப்பானாயின் — அந்த ஞானி இப்பூமியில் சஞ்சரிக்கையில், புரஹரனின் (சிவனின்) மனைவியும், சித்தித் திரள்களும் அவனது தாமரைக்கையில் வசப்பட்டுவிடுகின்றன.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -6247,7 +6247,7 @@ chapters:
       license: CC-BY-SA
       text: পৃথিৱী, জল, অগ্নি, বায়ু, আকাশ — হে কালি, হে গিৰিশৰমণী (শিৱৰ প্ৰিয়া), তুমিয়েই একমাত্ৰ কল্যাণী, তুমিয়েই সকলো। তুমি মোৰ প্ৰতি প্ৰসন্না হোৱা, আৰু এই সংসাৰৰ পাছত মোৰ আৰু জন্ম নহওক।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: bn
@@ -6255,7 +6255,7 @@ chapters:
       license: CC-BY-SA
       text: পৃথিবী, জল, অগ্নি, বায়ু, আকাশ — হে কালী, হে গিরিশ-রমণী (শিবপ্রিয়া), তুমি একাই কল্যাণী এবং তুমিই সকল। তুমি প্রসন্না হও — আমার যেন আর সংসারে জন্ম না হয়।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -6263,7 +6263,7 @@ chapters:
       license: CC-BY-SA
       text: પૃથ્વી, જળ, અગ્નિ, વાયુ, આકાશ — હે કલ્યાણી, હે ગિરિશ (શિવ)ની રમણી, હે કાલિ! તું એક જ સકલરૂપ છે. તું મારા પર પ્રસન્ન થા, અને આ સંસારમાં મારો ફરી જન્મ ન થાય.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -6271,7 +6271,7 @@ chapters:
       license: CC-BY-SA
       text: पृथ्वी, जल, अग्नि, वायु, आकाश — हे काली, हे गिरीश-प्रिये, हे कल्याणी! तू ही अकेली यह सब कुछ है। तू मुझ पर प्रसन्न हो, और अब इस संसार में मेरा पुनर्जन्म न हो।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
@@ -6279,7 +6279,7 @@ chapters:
       license: CC-BY-SA
       text: ಪೃಥ್ವಿ, ಜಲ, ಅಗ್ನಿ, ವಾಯು, ಆಕಾಶ — ಓ ಕಾಳಿ, ಗಿರಿಶ (ಶಿವ)ನ ಪ್ರಿಯೇ, ಓ ಕಲ್ಯಾಣಿ, ನೀನೊಬ್ಬಳೇ ಈ ಸಕಲವೂ. ನೀನು ನನಗೆ ಪ್ರಸನ್ನಳಾಗು — ಸಂಸಾರದಲ್ಲಿ ನನಗೆ ಇನ್ನು ಮುಂದೆ ಜನ್ಮವಾಗದಿರಲಿ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -6287,7 +6287,7 @@ chapters:
       license: CC-BY-SA
       text: ധരിത്രി, ജലം, അഗ്നി, വായു, ആകാശം — ഹേ കല്യാണീ, ഗിരീശപ്രിയേ, കാളീ, അവിടുന്നൊരുവൾ മാത്രമാണ് സർവവും. അവിടുന്നു പ്രസന്നയായാലും; ഈ സംസാരത്തിൽ എനിക്ക് ഇനിയൊരു ജന്മം ഉണ്ടാകാതിരിക്കട്ടെ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -6303,7 +6303,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ କାଳୀ, ହେ ଗିରିଶ (ଶିବ)ଙ୍କ ରମଣୀ, ହେ କଲ୍ୟାଣୀ — ପୃଥିବୀ, ଜଳ, ଅଗ୍ନି, ବାୟୁ, ଆକାଶ — ତୁମ୍ଭେ ଏକା ସମସ୍ତ । ତୁମ୍ଭେ ମୋ ଉପରେ ପ୍ରସନ୍ନ ହୁଅ, ଏବଂ ସଂସାର-ଚକ୍ରରେ ମୋର ଆଉ ଜନ୍ମ ନ ହେଉ ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -6319,7 +6319,7 @@ chapters:
       license: CC-BY-SA
       text: பூமி, நீர், அக்னி, காற்று, ஆகாயம் — காளியே, கிரிசரமணியே (கிரிஸனின் தேவியே)! நீ ஒருத்தியே மங்களகரமாய் இவையனைத்தும். எனக்கு ப்ரஸன்னமாகுவாயாக; இனி எனக்கு இவ்வுலகில் ஒரு பிறப்பும் ஏற்படாதிருக்கட்டும்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -6327,7 +6327,7 @@ chapters:
       license: CC-BY-SA
       text: భూమి, నీరు, అగ్ని, వాయువు, ఆకాశము — ఓ కల్యాణీ! గిరిశరమణీ! కాళీ! సర్వము నీవే. నీవు ప్రసన్నురాలవు కమ్ము — నాకు మరల ఈ సంసారమునందు జన్మ లేకుండు గాక.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 15
@@ -6724,7 +6724,7 @@ chapters:
       license: CC-BY-SA
       text: மஹாகாளியே! சுடுகாட்டில் நன்கு நிலைபெற்று, கூந்தல் தொங்கவிட்ட நிலையில், திக்குகளையே ஆடையாய்த் தரித்து, தனது விழுந்த விந்துவால் தோய்த்த ஆயிரம் அர்க்க (எருக்கம்) புஷ்பங்களை அர்ப்பணித்து, உனது தியானத்தில் மூழ்கி, தனிமையில் உனது மந்திரத்தை ஜபிப்பவன் — அவன் தனது விருப்பப்படி பூமியின் தலைவன் ஆகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -7143,7 +7143,7 @@ chapters:
       license: CC-BY-SA
       text: காளியே! வீட்டில் கூட்டும்போது சேகரிக்கப்பட்ட கூந்தலை, விழுந்த விந்துடன், வேருடன், செவ்வாய்க்கிழமை மத்தியானத்தில் சிதையில் அர்ப்பணித்து, அன்போடு உனது மந்திரத்தை ஒருமுறை உச்சரிப்பவன் — அவன் என்றென்றும் யானைமீதேறி பூமியின் தலைவனாய், உண்மையான கவிகளில் சிறந்தவனாய் விளங்குகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -7532,7 +7532,7 @@ chapters:
       license: CC-BY-SA
       text: புஷ்பதனுசின் (காமனின்) கோயிலை — தன் சொந்தப் புஷ்பங்கள் சிதறக்கிடக்கும் இடத்தை — மீண்டும் மீண்டும் தியானித்துக்கொண்டே பக்தன் உனது மந்திரத்தை ஜபித்தால், அவன் கந்தர்வ கணங்களின் தலைவன் ஆகி, கவித்துவம் என்ற அம்ருத நதியின் இடையறா ஓட்டமாகி, இறுதியில் பரமபதத்தில் லயம் ஆகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8410,7 +8410,7 @@ chapters:
       license: CC-BY-SA
       text: ഹേ അസിതേ — രോമവും അസ്ഥിയും സഹിതം, പൂച്ച, ഒട്ടകം, ആട്, മനുഷ്യൻ, പോത്ത്, അല്ലെങ്കിൽ കോലാട് — ഏതു മാംസവും അവിടത്തെ പൂജയിൽ ബലിയായി സ്വച്ഛന്ദമായി അർപ്പിക്കുന്ന, ഭൂമിയിൽ വസിക്കുന്ന സജ്ജനങ്ങൾക്ക് ഓരോ പടിയിലും അപൂർവമായ സർവസിദ്ധികളും ഉദിച്ചുവരുന്നു.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -8442,7 +8442,7 @@ chapters:
       license: CC-BY-SA
       text: அசிதையே (கருமையானவளே)! மண்ணில் வாழ்வோர்கள் — மயிர், எலும்புடன், சுதந்திரமாக — பூனை, ஒட்டகம், செம்மறி, மனிதன், எருமை, அல்லது வெள்ளாட்டின் மாமிசத்தை உனது பூஜையில் பலியாக அர்ப்பணிப்பாராயின், அந்த நல்லோருக்கு ஒவ்வொரு அடியிலும் முன்னெப்போதும் இல்லாத சகல சித்திகளும் தோன்றுகின்றன.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8847,7 +8847,7 @@ chapters:
       license: CC-BY-SA
       text: தாயே! தன்னை அடக்கி, ஹவிஸ் உணவில் வாழ்ந்து, பகலில் உனது இருதிருவடிகளின் தியானத்தில் தேர்ந்தவனாய், ஒருலட்சம் முறை மந்திரத்தை ஜபித்து; பின்னர் இரவில் நிர்வாணியாய், நிதுவன (சம்போக) விளையாட்டில் ஈடுபட்டுக்கொண்டே மற்றொரு லட்சம் முறை ஜபிப்பவன் — அவன் இவ்வுலகில் ஸ்மரஹரனுக்கு (சிவனுக்கு) ஒப்பாகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te

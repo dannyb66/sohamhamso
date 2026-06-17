@@ -7587,100 +7587,100 @@ chapters:
       gloss_te: హీన (అవస్థ) ఉత్పత్తి
     translations:
     - lang: en
-      translator: "public-domain composite"
-      source: "synthesized from PD-era English renderings"
-      license: PD
-      text: "In the intermediate (phase), there is the production of an inferior (experience)."
-      ai_assisted: true
-      status: draft
-
-    - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: মধ্যৱৰ্তী (অৱস্থা)ত অৱৰ (নিকৃষ্ট অৱস্থাৰ) প্ৰসৱ হয়।
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: "In the intermediate (state, between turya and another), there is the production of an inferior (experience)."
       ai_assisted: true
       status: published
-      model: claude-opus-4-7
+      model: claude-opus-4-8
+      prompt_version: v1-sanskrit-grounded
+    - lang: as
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: মধ্যৱৰ্তী (তুৰীয়া আৰু আন এক অৱস্থাৰ মাজৰ) অৱস্থাত অৱৰ (নিকৃষ্ট অনুভৱৰ) প্ৰসৱ হয়।
+      ai_assisted: true
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: মধ্যবর্তী (অবস্থায়) অবরপ্রসব (নিম্নতর অনুভবের উদ্ভব)।
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: মধ্যবর্তী (তুরীয় ও অপর অবস্থার মধ্যবর্তী) অবস্থায় অবর-প্রসব (নিম্নতর অনুভবের উৎপত্তি) হয়।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: મધ્ય (તુર્ય અને અન્ય અવસ્થા વચ્ચેની)માં (કદાચ) અવર (નિમ્ન) અવસ્થાનો પ્રસવ (ઉદ્ભવ) થાય છે.
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: મધ્ય (તુર્ય અને અન્ય અવસ્થા વચ્ચેની) અવસ્થામાં અવર (નિમ્ન અનુભવ)નો પ્રસવ (ઉદ્ભવ) થાય છે.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: मध्य (अवस्था) में अवर (निम्नतर) का प्रसव (उत्पत्ति) होता है।
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: मध्य (तुर्य और अन्य अवस्था के बीच की) अवस्था में अवर (निम्नतर अनुभव) का प्रसव (उत्पत्ति) होता है।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: ಮಧ್ಯದಲ್ಲಿ (ತುರ್ಯ ಮತ್ತು ಇನ್ನೊಂದು ಅವಸ್ಥೆಯ ನಡುವಿನ ಸಂಧಿಯಲ್ಲಿ) ಅವರ-ಪ್ರಸವ (ಕೆಳಗಿನ ಅವಸ್ಥೆಯ ಉತ್ಪತ್ತಿ) ಆಗುತ್ತದೆ.
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: ಮಧ್ಯದಲ್ಲಿ (ತುರ್ಯ ಮತ್ತು ಇನ್ನೊಂದು ಅವಸ್ಥೆಯ ನಡುವಿನ ಸಂಧಿಯಲ್ಲಿ) ಅವರ-ಪ್ರಸವ (ಕೆಳಗಿನ ಅನುಭವದ ಉತ್ಪತ್ತಿ) ಆಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: മധ്യാവസ്ഥയിൽ (തുര്യത്തിനും മറ്റവസ്ഥയ്ക്കും ഇടയിൽ) അവരപ്രസവം (നികൃഷ്ടാനുഭവത്തിന്റെ ഉത്പത്തി) ഉണ്ടാകുന്നു.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: मध्ये (तुर्य व इतर अवस्थांच्या मधल्या अवस्थेत) अवर-प्रसव (कनिष्ठ अनुभवाची उत्पत्ती) होते.
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: मध्य (तुर्य व अन्य अवस्थांच्या मधल्या) अवस्थेत अवर-प्रसव (कनिष्ठ अनुभवाची उत्पत्ती) होतो.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: ମଧ୍ୟ (ଅବସ୍ଥା)ରେ ଅବର (ନିମ୍ନ) ଅନୁଭବର ଉତ୍ପତ୍ତି ହୁଏ।
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: ମଧ୍ୟ (ତୁରୀୟ ଓ ଅନ୍ୟ ଅବସ୍ଥା ମଧ୍ୟବର୍ତ୍ତୀ) ଅବସ୍ଥାରେ ଅବର (ନିମ୍ନ ଅନୁଭବର) ପ୍ରସବ (ଉତ୍ପତ୍ତି) ହୁଏ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: ਮੱਧ (ਅਵਸਥਾ) ਵਿਚ ਨੀਚੀ (ਅਨੁਭੂਤੀ) ਦੀ ਉਤਪੱਤੀ ਹੁੰਦੀ ਹੈ।
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: ਮੱਧ (ਤੁਰੀਆ ਅਤੇ ਹੋਰ ਅਵਸਥਾ ਵਿਚਕਾਰਲੀ) ਅਵਸਥਾ ਵਿਚ ਅਵਰ (ਨੀਚੀ ਅਨੁਭੂਤੀ) ਦੀ ਉਤਪੱਤੀ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: நடு நிலையில், தாழ்ந்த (அனுபவத்தின்) உற்பத்தி (உண்டாகிறது).
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: நடு நிலையில் (துரியத்திற்கும் மற்றொரு நிலைக்கும் இடையில்) தாழ்ந்த (அனுபவத்தின்) உற்பத்தி உண்டாகிறது.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: మధ్యలో (తుర్యము మరియు అన్యావస్థల నడుమ) హీన అనుభవ ఉత్పత్తి కలుగును.
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: మధ్యలో (తుర్యము మరియు అన్యావస్థల నడుమ) హీన (అనుభవ) ఉత్పత్తి కలుగును.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
   - verse: 24
     devanagari: मात्रास्वप्रत्ययसन्धाने नष्टस्य पुनरुत्थानम् ॥२४॥
@@ -7740,7 +7740,7 @@ chapters:
       license: PD
       text: "By joining (turya) with the cognition of objects, what was lost rises again."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -7755,7 +7755,7 @@ chapters:
       license: CC-BY-SA
       text: মাত্রাসব-প্রত্যয়ের সঙ্গে সন্ধানে নষ্ট (তুরীয়) পুনরায় উত্থিত হয়।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -7763,7 +7763,7 @@ chapters:
       license: CC-BY-SA
       text: માત્રા-સ્વ-પ્રત્યય (પોતાની વિષય-માત્રાના બોધ) સાથેના સંધાનથી, જે (તુર્ય) ખોવાયું હતું તેનું પુનઃ ઉત્થાન થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -7771,7 +7771,7 @@ chapters:
       license: CC-BY-SA
       text: मात्राओं (विषय-अनुभूतियों) के प्रत्ययों के साथ अनुसन्धान करने से नष्ट (तुर्य) का पुनरुत्थान होता है।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
@@ -7779,7 +7779,7 @@ chapters:
       license: CC-BY-SA
       text: (ತುರ್ಯವನ್ನು) ತನ್ನ ವಿಷಯ-ಅನುಭವದ ಮಾತ್ರೆಗಳ ಪ್ರತ್ಯಯದೊಡನೆ ಸಂಧಾನ ಮಾಡಿದಾಗ, ಕಳೆದುಹೋದದ್ದು (ತುರ್ಯ-ಸ್ಥಿತಿ) ಪುನಃ ಎದ್ದು ಬರುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -7787,7 +7787,7 @@ chapters:
       license: CC-BY-SA
       text: സ്വന്തം മാത്രകളുമായുള്ള (വിഷയാനുഭവത്തിന്റെ അളവുകളുമായുള്ള) പ്രത്യയസന്ധാനത്തിൽ നഷ്ടമായതിന്റെ (തുര്യാവസ്ഥയുടെ) പുനരുത്ഥാനം ഉണ്ടാകുന്നു.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -7795,7 +7795,7 @@ chapters:
       license: CC-BY-SA
       text: मात्रांच्या (विषय-अनुभवांच्या मापांच्या) स्वतःच्या प्रत्ययांशी (जाणिवांशी) अनुसंधान केल्यावर नष्ट झालेल्याचा (तुर्य अवस्थेचा) पुन्हा उत्थान (पुनरुदय) होतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -7803,7 +7803,7 @@ chapters:
       license: CC-BY-SA
       text: ମାତ୍ରା-ସ୍ୱ-ପ୍ରତ୍ୟୟ (ବିଷୟ-ଅନୁଭବର ମାତ୍ରାର ସଂଜ୍ଞାନ) ସହିତ ସନ୍ଧାନ କଲେ, ନଷ୍ଟ (ତୁରୀୟ ଅବସ୍ଥା) ପୁନଃ ଉତ୍ଥିତ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -7811,7 +7811,7 @@ chapters:
       license: CC-BY-SA
       text: (ਆਪਣੇ ਅਨੁਭਵ-ਮਾਤਰਾਵਾਂ ਦੇ) ਪ੍ਰਤਯ ਨਾਲ ਜੋੜਨ ਉੱਤੇ ਜੋ ਨਸ਼ਟ ਹੋਇਆ ਸੀ (ਤੁਰੀਆ) ਉਹ ਮੁੜ ਉੱਠਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -7819,7 +7819,7 @@ chapters:
       license: CC-BY-SA
       text: (சொந்த) அனுபவ அளவீடுகளின் கருத்துடன் இணைக்கும்போது, இழந்ததின் (துரியத்தின்) மறு எழுச்சி (உண்டாகிறது).
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -7827,7 +7827,7 @@ chapters:
       license: CC-BY-SA
       text: (విషయ) మాత్రల ప్రత్యయములతో సంధానము చేసినపుడు, నష్టమైనది (తుర్యావస్థ) తిరిగి ఉత్థానమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 25
@@ -8435,14 +8435,14 @@ chapters:
       license: PD
       text: "He who is established (as protector of the sense-flock) is (also) the cause of (their) knowledge."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
       text: যিজন (ইন্দ্ৰিয়-)পশুৰ ৰক্ষকৰূপে প্ৰতিষ্ঠিত, সেই জনেই (তেওঁলোকৰ) জ্ঞানৰো হেতু।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: bn
@@ -8450,7 +8450,7 @@ chapters:
       license: CC-BY-SA
       text: যিনি (ইন্দ্রিয়-পালের) পদে স্থিত, তিনিই (তাদের) জ্ঞানের হেতু।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -8458,7 +8458,7 @@ chapters:
       license: CC-BY-SA
       text: જે (ઇન્દ્રિય-)સમૂહના રક્ષણમાં સ્થિત છે, તે જ (તેમના) જ્ઞાનનો હેતુ (કારણ) પણ છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -8466,7 +8466,7 @@ chapters:
       license: CC-BY-SA
       text: जो (इन्द्रिय-समूह के) रक्षक के पद पर स्थित है, वही (उनके) ज्ञान का हेतु भी है।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
@@ -8474,7 +8474,7 @@ chapters:
       license: CC-BY-SA
       text: (ಇಂದ್ರಿಯ)ಗುಂಪಿನ ಪಾಲನೆಯಲ್ಲಿ ನೆಲೆಗೊಂಡವನು (ಅವುಗಳ) ಜ್ಞಾನಕ್ಕೆ ಹೇತುವೂ ಆಗಿರುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -8482,7 +8482,7 @@ chapters:
       license: CC-BY-SA
       text: ഇന്ദ്രിയസമൂഹത്തിന്റെ പാലകനായവൻ (അവയ്ക്ക്) ജ്ഞാനഹേതുവുമാകുന്നു.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -8490,7 +8490,7 @@ chapters:
       license: CC-BY-SA
       text: जो (इंद्रिय-)पशू-समूहाच्या रक्षणात स्थित आहे, तोच (त्यांच्या) ज्ञानाचा हेतू (कारण) आहे.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -8498,7 +8498,7 @@ chapters:
       license: CC-BY-SA
       text: ଯେ (ଇନ୍ଦ୍ରିୟରୂପ ପଶୁ-ଯୂଥର) ରକ୍ଷାରେ ସ୍ଥିତ, ସେ ହିଁ (ସେମାନଙ୍କର) ଜ୍ଞାନର ହେତୁ ମଧ୍ୟ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -8506,7 +8506,7 @@ chapters:
       license: CC-BY-SA
       text: ਜੋ (ਇੰਦਰੀ-ਪਸ਼ੂਆਂ ਦਾ) ਰਾਖਾ ਹੈ, ਉਹੀ (ਉਹਨਾਂ ਦੇ) ਗਿਆਨ ਦਾ ਕਾਰਨ ਵੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -8514,7 +8514,7 @@ chapters:
       license: CC-BY-SA
       text: (புலன் கூட்டத்தைப்) பாதுகாப்பவனாக நிலைபெற்றவன், (அவற்றின்) ஞானத்திற்கும் காரணம்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8522,7 +8522,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవడు (ఇంద్రియ) పశుపాలకుడై స్థితుడో, వాడే (వారికి) జ్ఞాన హేతువు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 30
@@ -10595,14 +10595,14 @@ chapters:
       license: PD
       text: "By saṃyama on the inner middle of the nose (the center of breath), what need is there (to dwell) on the iḍā, piṅgalā, or suṣumnā?"
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
       text: নাসিকাৰ অন্তৰ-মধ্যত সংযম কৰিলে, ইয়াত ইডা, পিঙ্গলা বা সুষুম্নাৰ কথা কি (প্ৰয়োজন)?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: bn
@@ -10610,7 +10610,7 @@ chapters:
       license: CC-BY-SA
       text: নাসিকার অন্তর্মধ্যে সংযম দ্বারা — এখানে সব্য (ইডা), অপসব্য (পিঙ্গলা) ও সৌষুম্ন নাড়ীর কী প্রয়োজন?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -10618,7 +10618,7 @@ chapters:
       license: CC-BY-SA
       text: નાસિકાના આંતરિક મધ્યભાગ (પ્રાણ-કેન્દ્ર) પર સંયમ કરવાથી, અહીં ઇડા, પિંગલા અને સુષુમ્ણાનો શો ઉપયોગ રહે છે?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -10626,7 +10626,7 @@ chapters:
       license: CC-BY-SA
       text: नासिका के भीतर के मध्य भाग (प्राण के केन्द्र) पर संयम से, यहाँ इडा, पिङ्गला और सुषुम्ना (नाडियों) पर (विचार करने की) क्या आवश्यकता है?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
@@ -10634,7 +10634,7 @@ chapters:
       license: CC-BY-SA
       text: ನಾಸಿಕದ ಒಳಗಿನ ಮಧ್ಯದಲ್ಲಿ (ಪ್ರಾಣ-ಕೇಂದ್ರದಲ್ಲಿ) ಸಂಯಮ ಮಾಡಿದರೆ, ಇಲ್ಲಿ ಇಡಾ, ಪಿಂಗಲಾ, ಸುಷುಮ್ನಾಗಳ ಬಗ್ಗೆ ಚಿಂತೆಯೇಕೆ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -10642,7 +10642,7 @@ chapters:
       license: CC-BY-SA
       text: നാസികയുടെ ഉൾഭാഗത്തിന്റെ മധ്യത്തിലെ സംയമത്താൽ — ഇവിടെ ഇഡ, പിംഗള, സുഷുമ്ന എന്നിവയെക്കുറിച്ച് എന്താവശ്യം?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -10658,7 +10658,7 @@ chapters:
       license: CC-BY-SA
       text: ନାସିକାର ଅନ୍ତର-ମଧ୍ୟରେ ସଂଯମ ଦ୍ୱାରା, ଇଡ଼ା, ପିଙ୍ଗଳା ଓ ସୁଷୁମ୍ନା (ନାଡ଼ୀ ବିଷୟରେ) ଆଉ କଣ ଆବଶ୍ୟକ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -10666,7 +10666,7 @@ chapters:
       license: CC-BY-SA
       text: ਨੱਕ ਦੇ ਅੰਦਰਲੇ ਮੱਧ (ਸਾਹ ਦੇ ਕੇਂਦਰ) ਉੱਤੇ ਸੰਯਮ ਕਰਨ ਨਾਲ, ਇੱਥੇ ਇੜਾ, ਪਿੰਗਲਾ ਅਤੇ ਸੁਸ਼ੁਮਨਾ (ਨਾੜੀਆਂ) ਦੀ ਕੀ ਲੋੜ ਹੈ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -10674,7 +10674,7 @@ chapters:
       license: CC-BY-SA
       text: மூக்கின் உள்-நடுவில் (சுவாசத்தின் மையத்தில்) சம்யமம் செய்வதால், இடா, பிங்கலா, சுஷும்னா நாடிகளில் (கவலை கொள்ள) என்ன தேவை?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -10682,7 +10682,7 @@ chapters:
       license: CC-BY-SA
       text: నాసిక లోపలి మధ్యభాగమునందు సంయమము చేసినపుడు, ఇచట సవ్య (ఇడా), అపసవ్య (పింగళ), సుషుమ్న నాడుల గురించి చింత ఎందుకు?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 45

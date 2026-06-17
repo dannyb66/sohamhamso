@@ -1865,12 +1865,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: அந்தத் தத்துவத்தை சிரத்தையோடு முழு முயற்சியால் ஆராய வேண்டும்; ஏனெனில் அதன் இயல்பான, செயற்கையற்ற சுதந்திரம் எங்கும் காணப்படுகிறது.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
@@ -3190,15 +3190,15 @@ chapters:
       license: PD
       text: "Non-being (śūnya) cannot become an object of meditation, nor is there in it any awareness; yet from the touch of subsequent reflection arises the conviction 'that was'."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: অভাৱ (শূন্যতা) ভাৱ্যতা (ধ্যানৰ বিষয়) হ'ব নোৱাৰে, আৰু তাত অমূঢ়তা (চেতনতা)ও নাই; পিছত অভিযোগৰ সংস্পৰ্শৰ পৰাহে 'তেতিয়া সেইটো আছিল' — এনে নিশ্চয় হয়।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
       translator: sohamhamso (claude-opus-4-7)
@@ -3209,12 +3209,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: અભાવ (શૂન્ય) ભાવ્યતા (ધ્યાન-વિષય) પામતું નથી, ન તો તેમાં અમૂઢતા (જ્ઞાન) છે; તેમ છતાં અભિયોગ (પાછળથી થતા વિચાર)ના સ્પર્શથી 'તે ત્યારે હતું' — એવો નિશ્ચય થાય છે.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
       translator: sohamhamso (claude-opus-4-7)
@@ -3225,52 +3225,52 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ಅಭಾವವು (ಶೂನ್ಯವು) ಭಾವ್ಯತೆಯನ್ನು (ಧ್ಯಾನವಿಷಯತೆಯನ್ನು) ಪಡೆಯಲಾರದು; ಅಲ್ಲಿ ಅಮೂಢತೆಯೂ (ಎಚ್ಚರಿಕೆಯೂ) ಇಲ್ಲ. ಆದರೂ ನಂತರದ ಅಭಿಯೋಗದ (ಪರ್ಯಾಲೋಚನೆಯ) ಸ್ಪರ್ಶದಿಂದ ‘ಆಗ ಅದು ಇತ್ತು’ ಎಂಬ ನಿಶ್ಚಯವುಂಟಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: അഭാവം (ശൂന്യത) ധ്യാനവിഷയമാകുന്നില്ല; അതിൽ അമൂഢതയും (ജാഗ്രതാബോധവും) ഇല്ല; എന്നാൽ പിന്നീടുള്ള പര്യാലോചനയുടെ സ്പർശത്താൽ 'അത് ഉണ്ടായിരുന്നു' എന്ന നിശ്ചയം ഉണ്ടാകുന്നു.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: अभाव (शून्य) हा ध्यानाचा विषय बनू शकत नाही, आणि त्यामध्ये अमूढता (जागृत जाणीव) देखील नसते; तरीही 'ते (तेव्हा) होते' अशी निश्चिती मागाहून येणाऱ्या अनुसंधानाच्या स्पर्शामुळेच होते.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ଅଭାବ (ଶୂନ୍ୟ) ଭାବ୍ୟ (ଧ୍ୟାନର ବିଷୟ) ହୋଇପାରେ ନାହିଁ, କିଅବା ତାହାଠାରେ ଅମୂଢତା (ଜ୍ଞାନ) ନାହିଁ; କିନ୍ତୁ ପରବର୍ତ୍ତୀ ଅଭିଯୋଗ (ସ୍ମୃତି)ର ସ୍ପର୍ଶରୁ 'ତାହା ଥିଲା' ଏହି ନିଶ୍ଚୟ ଜାତ ହୁଏ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਅਭਾਵ (ਸ਼ੂਨਯ) ਧਿਆਨ ਦਾ ਵਿਸ਼ਾ ਨਹੀਂ ਬਣ ਸਕਦਾ, ਨਾ ਹੀ ਉਸ ਵਿੱਚ ਚੇਤਨਾ (ਅਮੂੜ੍ਹਤਾ) ਹੈ; ਫਿਰ ਵੀ ਬਾਅਦ ਦੇ ਚਿੰਤਨ ਦੇ ਸੰਪਰਕ ਨਾਲ 'ਉਹ ਸੀ' — ਇਹ ਨਿਸ਼ਚਾ ਹੁੰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: இல்லாமை (சூன்யம்) தியானத்தின் பொருளாக ஆகாது; அதில் விழிப்புணர்வும் இல்லை; எனினும் பின்வரும் சிந்தனையின் தொடுகையினால் ‘அப்போது அது இருந்தது’ என்ற துணிபு எழுகிறது.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
@@ -3458,15 +3458,15 @@ chapters:
       license: PD
       text: "Therefore that (void) is to be regarded as something fabricated, like the state of deep sleep; the true Reality does not attain to such a state of being a mere object of memory."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: সেয়েহে সেই (শূন্যতা)ক সুষুপ্তি পদৰ দৰে কৃত্ৰিম বুলিয়েই জানিব লাগে; কিন্তু সেইদৰে স্মৰণৰ বিষয় হোৱা অৱস্থা সেই (পৰম) তত্ত্বই প্ৰাপ্ত নহয়।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
       translator: sohamhamso (claude-opus-4-7)
@@ -3477,12 +3477,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: તેથી તે (શૂન્ય-ભાવ) સદા સુષુપ્તિ-પદની જેમ કૃત્રિમ (કલ્પિત) જ જાણવો; પણ આ રીતે સ્મર્યમાણત્વ (સ્મૃતિ-વિષય હોવું) તે પરમ તત્ત્વને પ્રાપ્ત થતું નથી.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
       translator: sohamhamso (claude-opus-4-7)
@@ -3493,52 +3493,52 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ಆದ್ದರಿಂದ ಆ (ಶೂನ್ಯವು) ಸುಷುಪ್ತಪದದಂತೆ ಸದಾ ಕೃತ್ರಿಮ ಎಂದು ತಿಳಿಯಬೇಕು; ನಿಜವಾದ ತತ್ತ್ವವು ಹೀಗೆ ಸ್ಮರ್ಯಮಾಣತೆಯನ್ನು (ಕೇವಲ ಸ್ಮೃತಿವಿಷಯವಾಗುವಿಕೆಯನ್ನು) ಪಡೆಯುವುದಿಲ್ಲ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: അതിനാൽ ആ (ശൂന്യാവസ്ഥ) സുഷുപ്തിയുടെ പദംപോലെ കൃത്രിമമായി ജ്ഞേയമാണ്; എന്നാൽ ആ പരമതത്ത്വം അങ്ങനെ സ്മൃതിവിഷയമാകുന്ന അവസ്ഥയിലേക്ക് വരുന്നില്ല.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: म्हणून ते (शून्य) नेहमी कृत्रिम (बनावट) म्हणूनच जाणावे — गाढ निद्रेच्या अवस्थेप्रमाणे; पण खरे तत्त्व अशा (केवळ) स्मृतीचा विषय होणे स्वीकारत नाही.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ତେଣୁ ସେହି (ଅଭାବ)କୁ ସୁଷୁପ୍ତ ପଦ ସଦୃଶ କୃତ୍ରିମ ଓ ଜ୍ଞେୟ ବୋଲି ବୁଝିବାକୁ ହେବ; ପ୍ରକୃତ ତତ୍ତ୍ୱ କିନ୍ତୁ ଏପ୍ରକାର ସ୍ମରଣୀୟ-ବିଷୟତ୍ୱକୁ ପ୍ରାପ୍ତ ହୁଏ ନାହିଁ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਇਸ ਲਈ ਉਹ (ਸ਼ੂਨਯ) ਸਦਾ ਡੂੰਘੀ ਨੀਂਦ ਦੀ ਅਵਸਥਾ ਵਾਂਗ ਕ੍ਰਿਤਿਮ (ਬਣਾਇਆ ਹੋਇਆ) ਹੀ ਜਾਣਨਾ ਚਾਹੀਦਾ ਹੈ; ਪਰ ਅਸਲ ਤੱਤ ਇਸ ਤਰ੍ਹਾਂ ਸਮਰਣ-ਯੋਗ ਵਸਤੂ ਨਹੀਂ ਬਣਦਾ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ஆகவே அந்த (சூன்யம்) ஆழ்ந்த உறக்க நிலையைப் போல எப்போதும் செயற்கையானதாகவே அறியப்படுகிறது; ஆனால் உண்மை தத்துவம் அவ்வாறு வெறும் நினைவின் பொருளாகுந்தன்மையை அடைவதில்லை.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
@@ -6063,95 +6063,95 @@ chapters:
       license: PD
       text: "The state which one assumes resolving, 'whatever this person will tell me I shall certainly do' — (that very steadiness is Spanda)."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: যি অৱস্থাৰ আশ্ৰয় লৈ মানুহে — 'এইজনে যিয়েই ক'ব মই অৱশ্যেই কৰিম' বুলি সঙ্কল্প কৰি — স্থিৰ হৈ থাকে, (সেই দৃঢ় স্থিতিও স্পন্দৰে প্ৰকাশ)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: যে অবস্থা অবলম্বন করে সাধক সঙ্কল্প করেন — 'এই (আত্মা) আমাকে যা বলবেন তা আমি অবশ্যই করব' — সেই (অবস্থায়ই স্পন্দ প্রতিষ্ঠিত)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: જે અવસ્થાનો આશ્રય લઈને 'આ વ્યક્તિ મને જે કહેશે તે હું અવશ્ય કરીશ' — એમ સંકલ્પ કરીને રહે છે — (તે જ સ્થિરતામાં સ્પંદ છે).
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: जिस अवस्था का आश्रय लेकर वह संकल्प करता है कि 'यह (पुरुष) मुझसे जो कहेगा, मैं उसे अवश्य करूँगा' — और (उसी में स्थिर) रहता है (उसी स्थिरता में स्पन्द है)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ‘ಈ ವ್ಯಕ್ತಿ ನನಗೆ ಏನು ಹೇಳುತ್ತಾನೆಯೋ ಅದನ್ನು ಅವಶ್ಯವಾಗಿ ಮಾಡುತ್ತೇನೆ’ ಎಂದು ಸಂಕಲ್ಪಿಸಿ ಯಾವ ಅವಸ್ಥೆಯನ್ನು ಆಶ್ರಯಿಸಿ ಅವನು ನಿಲ್ಲುತ್ತಾನೋ — (ಅದರಲ್ಲಿಯೂ ಸ್ಪಂದವು ಪ್ರತಿಷ್ಠಿತವಾಗಿದೆ).
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: "'ഇവൻ എന്നോട് എന്തു പറയുമോ, അത് അവശ്യം ഞാൻ ചെയ്യും' എന്നു സങ്കൽപിച്ച് ഏതു അവസ്ഥയെ ആലംബിച്ച് ഒരുവൻ നിലനിൽക്കുന്നുവോ (ആ സ്ഥിരതയിലും സ്പന്ദമുണ്ട്)."
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: "'हा जे काही मला सांगेल ते मी अवश्य करीन' असा संकल्प करून, ज्या अवस्थेचा आश्रय घेऊन (साधक) स्थिर राहतो — (ती स्थिरताच स्पंद आहे)."
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ଯେଉଁ ଅବସ୍ଥାକୁ ଆଶ୍ରୟ କରି ବ୍ୟକ୍ତି 'ଏ ଲୋକ ଯାହା ମୋତେ କହିବ ତାହା ମୁଁ ଅବଶ୍ୟ କରିବି' ଏହି ସଙ୍କଳ୍ପ କରି ସ୍ଥିତ ରହେ — (ସେହି ସ୍ଥିତି ହିଁ ସ୍ପନ୍ଦ)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਜਿਸ ਅਵਸਥਾ ਦਾ ਆਸਰਾ ਲੈ ਕੇ — 'ਜੋ ਕੁਝ ਇਹ (ਗੁਰੂ ਜਾਂ ਆਦਰਣੀਯ) ਮੈਨੂੰ ਕਹੇਗਾ, ਉਹ ਮੈਂ ਜ਼ਰੂਰ ਕਰਾਂਗਾ' — ਅਜਿਹਾ ਸੰਕਲਪ ਕਰ ਕੇ (ਮਨੁੱਖ) ਟਿਕਿਆ ਰਹਿੰਦਾ ਹੈ (ਉਹ ਸਥਿਰਤਾ ਹੀ ਸਪੰਦ ਹੈ)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ‘இவன் என்னிடம் என்ன சொல்வானோ அதை நான் கட்டாயம் செய்வேன்’ என்று உறுதிகொண்டு, எந்த நிலையைப் பற்றிக்கொண்டு அவன் நிற்கிறானோ — (அந்த நிலைத்திருத்தலே ஸ்பந்தம்).
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: "'ఈయన (గురువు/అధిష్ఠాత) నాకు ఏది చెప్పునో, దానిని తప్పక చేయుదును' అని సంకల్పించి ఏ అవస్థను ఆశ్రయించి తిష్ఠించునో (అదే స్పందము యొక్క నిష్ఠ)."
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
   - verse: 24
     devanagari: तामाश्रित्योर्ध्वमार्गेण चन्द्रसूर्यावुभावपि । सौषुम्नेऽध्वन्यस्तमितो हित्वा ब्रह्माण्डगोचरम् ॥२४॥
@@ -9034,95 +9034,95 @@ chapters:
       license: PD
       text: "Otherwise, owing to its sharing the nature of Spanda, creation would be independent — as it always is for the worldly person — in the pair of waking and dream states."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: অন্যথা, (স্পন্দ)ৰ ধৰ্ম-যুক্ত হোৱা কাৰণে সৃষ্টি স্বতন্ত্ৰ হ'ব — যিদৰে লৌকিক (অপ্ৰবুদ্ধ) ব্যক্তিৰ ক্ষেত্ৰত জাগ্ৰত আৰু স্বপ্ন উভয় অৱস্থাত সদায় হৈয়ে আহিছে।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: অন্যথা, তদ্ধর্মকত্বের কারণে সৃষ্টি স্বতন্ত্র হত — যেমন লৌকিকের ক্ষেত্রে জাগ্রত-স্বপ্ন এই দ্বয়ে সর্বদা (তা ঘটে)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: અન્યથા, (સ્પંદની) તે જ ધર્મકતાને કારણે, સૃષ્ટિ સ્વતંત્ર બની જાય — જે જાગ્રત અને સ્વપ્ન — એ બે પદોમાં લૌકિક (અપ્રબુદ્ધ) જન માટે સતત (દેખાતી) હોય છે તેમ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: अन्यथा (यदि स्पन्द का अधिष्ठान न हो तो) सृष्टि उसी (स्पन्द) के धर्म वाली होने से स्वतन्त्र हो जाएगी — जैसा कि लौकिक (अज्ञानी) पुरुष के लिए जाग्रत् और स्वप्न दोनों पदों में सदा (होता प्रतीत होता) है।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ಇಲ್ಲದಿದ್ದರೆ, (ಸ್ಪಂದ-) ತತ್ತ್ವದ ಸ್ವಭಾವದಿಂದಾಗಿ ಸೃಷ್ಟಿಯು ಸ್ವತಂತ್ರವಾಗುತ್ತಿತ್ತು — ಲೌಕಿಕನಿಗೆ ಜಾಗ್ರತ್-ಸ್ವಪ್ನಗಳೆಂಬ ಎರಡು ಅವಸ್ಥೆಗಳಲ್ಲಿ ಯಾವಾಗಲೂ ಆಗುವಂತೆ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: അല്ലെങ്കിൽ, അതിന് (സ്പന്ദത്തിന്) സൃഷ്ടി തദ്ധർമ്മകത്വം നിമിത്തം സ്വതന്ത്രമായിത്തീരും — സാധാരണ ലൗകികനു സദാ സംഭവിക്കുന്നതുപോലെ — ജാഗ്രത്-സ്വപ്നം എന്നീ പദദ്വയങ്ങളിൽ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: अन्यथा त्याचा (स्पंदाचा) धर्म धारण करणारी सृष्टी स्वतंत्र होईल — जागृती व स्वप्न या दोन्ही अवस्थांमध्ये सामान्य लौकिक माणसाच्या बाबतीत जशी ती (नेहमी असते) तशी.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ଅନ୍ୟଥା, ତଦ୍ଧର୍ମକତ୍ୱ ହେତୁ ସୃଷ୍ଟି ସ୍ୱତନ୍ତ୍ର ହୋଇଯିବ — ଯେପରି ଲୌକିକ (ଅଜ୍ଞ) ବ୍ୟକ୍ତିଙ୍କ ପକ୍ଷେ ଜାଗ୍ରତ-ସ୍ୱପ୍ନ ଯୁଗଳ ଅବସ୍ଥାରେ ସତତ (ଦୃଷ୍ଟ ହୁଏ)।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਨਹੀਂ ਤਾਂ, ਉਸ (ਸਪੰਦ) ਦੇ ਸੁਭਾਅ ਦੇ ਸਾਂਝੇਪਣ ਕਾਰਨ, ਸ੍ਰਿਸ਼ਟੀ (ਜੀਵ ਤੋਂ) ਸੁਤੰਤਰ ਹੋ ਜਾਂਦੀ — ਜਿਵੇਂ ਕਿ ਸਾਧਾਰਣ ਜੀਵ ਦੇ ਜਾਗਰਤ ਅਤੇ ਸੁਪਨ — ਇਨ੍ਹਾਂ ਦੋ ਅਵਸਥਾਵਾਂ ਵਿੱਚ ਸਦਾ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: அல்லாமலிருந்தால், அதன் (ஸ்பந்தத்தின்) தன்மையை உடையதனால், படைப்பு என்பது சுதந்திரமாக இருந்திருக்கும் — உலகியல் மனிதனுக்கு விழிப்பு-கனவு இரு நிலைகளிலும் எப்போதும் அவ்வாறே இருப்பதைப் போல.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: అన్యథా (స్పంద శక్తి ప్రభావము లేకున్నచో), సృష్టి దాని (స్పంద) ధర్మము కారణముగా స్వతంత్రమై - లౌకికుని (అప్రబుద్ధుని) జాగ్రత్-స్వప్న పదద్వయమునందు సతతము సంభవించుచున్నట్లే - (సంభవించును).
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
   - verse: 4
     devanagari: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥४॥
@@ -11937,87 +11937,87 @@ chapters:
       license: PD
       text: "The rising of mental constructs in him is the loss of the flavour of the supreme nectar; through that he comes to non-autonomy, and (his world) is the field of mere tanmātras."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: তেওঁৰ পৰম-অমৃত-ৰসৰ অপায় (লোপ) সেই প্ৰত্যয়োদ্‌ভৱ (মানসিক বিকল্পৰ উত্থান); তাৰ বাবেই তেওঁ অস্বাতন্ত্ৰ্য প্ৰাপ্ত হয় আৰু সেই (জীৱ)ৰ গোচৰ কেৱল তন্মাত্ৰাৰ পৰিসৰহে।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: পরামৃত-রসের অপচয়ই তাঁর প্রত্যয়-উদ্ভব; তা দ্বারা তিনি অস্বাতন্ত্র্য প্রাপ্ত হন, এবং (তাঁর জগৎ) তন্মাত্রসমূহের গোচর-মাত্র।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: તેને જે પ્રત્યયોદ્ભવ (વિકલ્પોનો ઉદય) થાય છે, તે જ પરમ-અમૃત-રસનો અપાય (નાશ) છે; તેના કારણે તે અસ્વતંત્રતા પામે છે, અને તેનો વિષય માત્ર તન્માત્રાઓ બને છે.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: उसके लिए परा-अमृत के रस का अपगम (हानि) ही प्रत्यय (मानसिक संकल्प) का उद्भव है; उसी के द्वारा वह अस्वतन्त्रता को प्राप्त होता है, और उसका (विषय-)क्षेत्र तन्मात्र-गोचर (केवल सूक्ष्म तत्त्व) तक सीमित रहता है।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ಅವನಲ್ಲಿ ಯಾವ ಪ್ರತ್ಯಯೋದ್ಭವವಿದೆಯೋ (ವಿಕಲ್ಪ-ಉದಯವಿದೆಯೋ) ಅದು ಪರಮಾಮೃತದ ರಸದ ಅಪಾಯ; ಅದರಿಂದ ಅವನು ಅಸ್ವಾತಂತ್ರ್ಯವನ್ನು ಹೊಂದುತ್ತಾನೆ, ಮತ್ತು ಅವನ (ವಿಷಯ-) ಗೋಚರವು ತನ್ಮಾತ್ರಗಳಿಗೆ ಮಾತ್ರ ಸೀಮಿತ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: അവനു പ്രത്യയങ്ങളുടെ (മാനസികസങ്കൽപങ്ങളുടെ) ഉദ്ഭവം പരാമൃതരസത്തിന്റെ അപായ(നഷ്ട)മാകുന്നു; അതിനാൽ അവൻ അസ്വാതന്ത്ര്യം പ്രാപിക്കുന്നു; അവന്റെ വിഷയം തന്മാത്രകൾ മാത്രമാകുന്നു.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: त्याच्या ठिकाणी जो प्रत्ययांचा (विकल्पांचा, मनातील संकल्पनांचा) उद्भव आहे — हाच परम अमृत-रसाचा अपाय (नाश) आहे; त्यामुळे तो असवतंत्र (परतंत्र) बनतो, आणि त्याचे (अनुभव-)क्षेत्र मात्र तन्मात्रांपुरतेच (सूक्ष्म-तत्त्वांपुरतेच) राहते.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ତାହାଙ୍କଠାରେ ଯେଉଁ ପ୍ରତ୍ୟୟର ଉଦ୍‌ଭବ — ତାହା ପରମ ଅମୃତ-ରସର ଅପାୟ (ହାନି); ତା ଦ୍ୱାରା ସେ ଅସ୍ୱତନ୍ତ୍ରତା ପ୍ରାପ୍ତ କରନ୍ତି, ଏବଂ ତାହାର (ଗୋଚର) ତନ୍ମାତ୍ର-ମାତ୍ର।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਉਸ (ਪਸ਼ੁ) ਨੂੰ ਜੋ ਪ੍ਰਤਯਯਾਂ (ਮਾਨਸਿਕ ਸੰਕਲਪਾਂ) ਦਾ ਉਦੈ ਹੁੰਦਾ ਹੈ, ਉਹੀ ਪਰਮ ਅੰਮ੍ਰਿਤ-ਰਸ ਦਾ ਅਪਾਯ (ਨਾਸ਼) ਹੈ; ਉਸ ਨਾਲ ਉਹ ਅਸੁਤੰਤਰਤਾ ਨੂੰ ਪ੍ਰਾਪਤ ਹੋ ਜਾਂਦਾ ਹੈ ਅਤੇ ਕੇਵਲ ਤਨਮਾਤਰਾਂ ਦੇ ਖੇਤਰ ਵਿੱਚ ਰਹਿ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: அவனுக்கு எழும் ப்ரத்ய(மன-நிர்மாணங்க)யோத்பவம் பரம-அமிர்த-ரசத்தின் இழப்பாகும்; அதனால் அவன் சுதந்திரமின்மையை அடைகிறான்; அவனுடைய எல்லை வெறும் தன்மாத்திரைகளின் களமாகவே ஆகிறது.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
       translator: sohamhamso (claude-opus-4-7)

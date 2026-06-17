@@ -727,7 +727,7 @@ chapters:
       license: CC-BY-SA
       text: অথবা ভৈরবরূপী ভৈরবে নবাত্ম-ভেদ দ্বারা কি? নাকি ত্রিশিরঃ-ভেদে বিভক্ত? নাকি তিন শক্তির সমষ্টি?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -735,7 +735,7 @@ chapters:
       license: CC-BY-SA
       text: શું તે ભૈરવમાં ભૈરવાકૃતિ રૂપે નવ આત્માઓના ભેદ વડે છે? કે ત્રિશિરસના ભેદથી વિભક્ત છે? કે શક્તિત્રય સ્વરૂપ છે?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -775,7 +775,7 @@ chapters:
       license: CC-BY-SA
       text: ତାହା କ'ଣ ଭୈରବାକୃତିରେ ଭୈରବଠାରେ ନବାତ୍ମା-ବିଭାଗ ଦ୍ୱାରା? କିମ୍ବା ତ୍ରିଶିର-ବିଭାଗ ଦ୍ୱାରା ବିଭକ୍ତ? କିମ୍ବା ଶକ୍ତିତ୍ରୟାତ୍ମକ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -950,7 +950,7 @@ chapters:
       license: PD
       text: "Or does it consist of nāda and bindu? Or of the half-moon and the obstructress (nirodhikā)? Or is it mounted on the cakra and vowel-less? Or is it the very form of Śakti?"
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -965,7 +965,7 @@ chapters:
       license: CC-BY-SA
       text: নাকি তা নাদ-বিন্দুময়? নাকি অর্ধচন্দ্র ও নিরোধিকা-সমূহ? নাকি চক্রারূঢ় ও অনচ্ক (স্বরহীন)? নাকি শক্তির স্বরূপই?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -973,7 +973,7 @@ chapters:
       license: CC-BY-SA
       text: શું તે નાદ અને બિન્દુથી બનેલું છે? કે અર્ધચન્દ્ર અને નિરોધિકાઓ રૂપે છે? કે ચક્ર પર આરૂઢ સ્વર-રહિત (અનચ્ક) રૂપે છે? કે શક્તિના સ્વરૂપ રૂપે છે?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -1013,7 +1013,7 @@ chapters:
       license: CC-BY-SA
       text: କିମ୍ବା ତାହା ନାଦ-ବିନ୍ଦୁମୟ? କିମ୍ବା ଅର୍ଦ୍ଧଚନ୍ଦ୍ର ଓ ନିରୋଧିକା? କିମ୍ବା ଚକ୍ରାରୂଢ ଅନଚ୍କ? କିମ୍ବା କେବଳ ଶକ୍ତିର ସ୍ୱରୂପ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -1021,7 +1021,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਾਂ ਨਾਦ ਤੇ ਬਿੰਦੂ ਦਾ ਬਣਿਆ ਹੈ? ਜਾਂ ਅਰਧ-ਚੰਦਰ ਅਤੇ ਨਿਰੋਧਿਕਾ ਰੂਪ? ਜਾਂ ਚੱਕਰ ਉੱਤੇ ਚੜ੍ਹਿਆ ਸਵਰ-ਰਹਿਤ? ਜਾਂ ਸ਼ਕਤੀ ਦਾ ਆਪਣਾ ਸਰੂਪ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -1029,7 +1029,7 @@ chapters:
       license: CC-BY-SA
       text: அல்லது நாதம் மற்றும் பிந்து ஆகியவற்றால் ஆனதா? அல்லது அர்த்த-சந்திரன் மற்றும் நிரோதிகை வடிவமா? அல்லது சக்கரத்தின் மீது ஏறி, உயிர் எழுத்து இல்லாத (வெறும் மெய் வடிவ)த் தன்மையா? அல்லது சக்தியின் சொரூபமா?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -1233,7 +1233,7 @@ chapters:
       license: PD
       text: "Or is it the totality of parāparā and aparā? But if Parā too were of the same nature, her supremacy would be contradicted."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -1248,7 +1248,7 @@ chapters:
       license: CC-BY-SA
       text: নাকি পরাপরা ও অপরার সকল-রূপ? কিন্তু যদি পরাও সেই-রকম হন, তবে তাঁর পরত্ব বিরোধিত হয়।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -1256,7 +1256,7 @@ chapters:
       license: CC-BY-SA
       text: શું તે પરાપરા અને અપરાના સકલ રૂપે છે? પણ જો પરા પણ તે જ રીતે હોય તો તેનું પરત્વ વિરોધી થશે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -1272,7 +1272,7 @@ chapters:
       license: CC-BY-SA
       text: ಅಥವಾ ಪರಾಪರಾ ಮತ್ತು ಅಪರೆಯರ ಸಂಪೂರ್ಣತೆಯೇ? ಆದರೆ ಪರೆಯೂ ಹಾಗೆಯೇ ಆದರೆ ಆಕೆಯ ಪರತ್ವ ವಿರೋಧವಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -1296,7 +1296,7 @@ chapters:
       license: CC-BY-SA
       text: କିମ୍ବା ତାହା ପରାପରା ଓ ଅପରାର ସମଗ୍ର ସମଷ୍ଟି? କିନ୍ତୁ ଯଦି ପରା ମଧ୍ୟ ସେହିପରି ହୁଅନ୍ତି, ତାଙ୍କର ପରତ୍ୱ ବିରୋଧ ପାଇବ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -1304,7 +1304,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਾਂ ਪਰਾਪਰਾ ਤੇ ਅਪਰਾ ਦਾ ਪੂਰਾ ਸਮੁੱਚ? ਜੇ ਪਰਾ ਵੀ ਉਨ੍ਹਾਂ ਵਰਗੀ ਹੁੰਦੀ, ਤਾਂ ਉਸ ਦੀ ਸਰਬੋੱਚਤਾ ਖੰਡਿਤ ਹੋ ਜਾਂਦੀ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -2275,7 +2275,7 @@ chapters:
       license: PD
       text: "That Supreme which is partless, O Goddess, beyond the reach of all categories — that cannot be described here. Yet by intent (icchā), it can be indicated."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -2298,7 +2298,7 @@ chapters:
       license: CC-BY-SA
       text: હે દેવિ, જે પરમ, નિષ્કલ અને સર્વ તત્ત્વોની પેલે પાર છે, તે ખરેખર શબ્દોમાં કહી શકાય તેવું નથી; પરંતુ ઇચ્છા (સંકલ્પ) દ્વારા સંકેત કરી શકાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -2314,7 +2314,7 @@ chapters:
       license: CC-BY-SA
       text: ದೇವಿಯೇ, ಯಾವುದು ಪರವೂ ನಿಷ್ಕಲವೂ ಸರ್ವತತ್ತ್ವಾತೀತವೂ ಆಗಿದೆಯೋ ಅದನ್ನು ಇಲ್ಲಿ ಹೇಳಲಸಾಧ್ಯ — ಆದರೆ ಇಚ್ಛೆಯಿಂದ ಸೂಚಿಸಲು ಸಾಧ್ಯ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -2338,7 +2338,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ଦେବୀ, ଯାହା ପର, ନିଷ୍କଳ, ସମସ୍ତ ତତ୍ତ୍ୱର ସୀମା ବାହାରେ — ତାହା ଶବ୍ଦରେ ବର୍ଣ୍ଣନା କରିହେବ ନାହିଁ; କେବଳ ଇଚ୍ଛା ଦ୍ୱାରା ତାହା ସୂଚାଇ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -2346,7 +2346,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਦੇਵੀ, ਜੋ ਪਰਮ, ਨਿਸ਼ਕਲ, ਸਾਰੇ ਤੱਤਾਂ ਤੋਂ ਪਰੇ ਹੈ, ਉਸ ਨੂੰ ਇੱਥੇ ਸ਼ਬਦਾਂ ਵਿਚ ਕਹਿਣਾ ਸੰਭਵ ਨਹੀਂ। ਫਿਰ ਵੀ ਇੱਛਾ (ਇੱਛਾਸ਼ਕਤੀ) ਰਾਹੀਂ ਉਸ ਦਾ ਸੰਕੇਤ ਹੋ ਸਕਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -2513,7 +2513,7 @@ chapters:
       license: PD
       text: "O Goddess, that which has the form of Prakṛti — what form can be ascribed to it? In the state of being composed of parts, all imagining of non-duality is only an idea of vikalpas."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -2536,7 +2536,7 @@ chapters:
       license: CC-BY-SA
       text: હે દેવિ, જે પ્રકૃતિરૂપા છે, તેનું શું સ્વરૂપ કહી શકાય? સકલત્વમાં વિકલ્પોની સ્થિતિ રહે છે — તે માત્ર સકલ-અદ્વૈતની કલ્પના છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -2552,7 +2552,7 @@ chapters:
       license: CC-BY-SA
       text: ದೇವಿಯೇ, ಪ್ರಕೃತಿಸ್ವರೂಪಿಣಿಯಾದ ಆಕೆಯ ರೂಪ ಏನೆಂದು ಹೇಳಬೇಕು? ಸಕಲತ್ವದಲ್ಲಿ ವಿಕಲ್ಪಗಳ ಸಕಲಾದ್ವೈತಕಲ್ಪನೆಯಷ್ಟೇ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -2568,7 +2568,7 @@ chapters:
       license: CC-BY-SA
       text: हे देवी, जी प्रकृति-रूपा आहे, तिचे रूप कोणते सांगावे? सकलतेच्या अवस्थेत विकल्पांचा जो सकल-अद्वैत-कल्पना उरतो — तीच केवळ राहते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -2576,7 +2576,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ଦେବୀ, ଯିଏ ପ୍ରକୃତିରୂପା ସେ, ତାଙ୍କର କେଉଁ ରୂପ କୁହାଯିବ? ସକଳତ୍ୱରେ ବିକଳ୍ପସମୂହର ସକଳ-ଅଦ୍ୱୈତ କଳ୍ପନା ମାତ୍ର।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -2584,7 +2584,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਦੇਵੀ, ਜਿਹੜੀ ਪ੍ਰਕ੍ਰਿਤੀ-ਰੂਪਾ ਹੈ, ਉਸ ਦਾ ਕਿਹੜਾ ਰੂਪ ਕਿਹਾ ਜਾਵੇ? ਸਕਲ ਅਵਸਥਾ ਵਿਚ ਅਦਵੈਤ ਦੀ ਕਲਪਨਾ ਕੇਵਲ ਵਿਕਲਪਾਂ ਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -2592,7 +2592,7 @@ chapters:
       license: CC-BY-SA
       text: தேவியே, பிரகிருதி வடிவாயுள்ள அவளுக்கு என்ன ரூபம் சொல்லப்பட முடியும்? சகல (பகுதியுள்ள) நிலையில் — அத்வைதம் என்பது வெறும் விகற்பங்களின் கற்பனையே ஆகும்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -2736,7 +2736,7 @@ chapters:
       license: PD
       text: "Then in that Great Void, when sun and moon are dissolved, a tamasic sleep arises as if one is sunk in obstructed range."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -2759,7 +2759,7 @@ chapters:
       license: CC-BY-SA
       text: ત્યારે તે મહાવ્યોમમાં ચંદ્ર અને સૂર્ય લય પામતાં, ખિલગોચરમાં ડૂબેલા જેવી તામસી નિદ્રા ઊભી થઈ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -2775,7 +2775,7 @@ chapters:
       license: CC-BY-SA
       text: ಆಗ ಆ ಮಹಾವ್ಯೋಮದಲ್ಲಿ ಚಂದ್ರ-ಸೂರ್ಯರು ಲೀನವಾದಾಗ, ಮುಳುಗಿದಂತೆ, ಖಿಲಗೋಚರದಲ್ಲಿ ತಾಮಸನಿದ್ರೆ ಉಂಟಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -2791,7 +2791,7 @@ chapters:
       license: CC-BY-SA
       text: तेव्हा त्या महाव्योमात, चंद्र व सूर्य विलीन होताच, बुडल्यासारखी अंधकारमय निद्रा त्या निःशब्द क्षेत्रात उद्भवते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -2799,7 +2799,7 @@ chapters:
       license: CC-BY-SA
       text: ସେତେବେଳେ ସେହି ମହାବ୍ୟୋମରେ, ଯେତେବେଳେ ଚନ୍ଦ୍ର ଓ ସୂର୍ଯ୍ୟ ଲୟ ପ୍ରାପ୍ତ, ଶୂନ୍ୟଗୋଚରରେ ଡୁବିଯିବା ପରି ଏକ ତାମସୀ ନିଦ୍ରା ଉଦୟ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -2807,7 +2807,7 @@ chapters:
       license: CC-BY-SA
       text: ਉਸ ਮਹਾਨ ਆਕਾਸ਼ ਵਿਚ ਜਦੋਂ ਸੂਰਜ ਤੇ ਚੰਦਰ ਲੀਨ ਹੋ ਜਾਂਦੇ ਹਨ, ਖਾਲੀ ਖੇਤਰ ਵਿਚ ਡੁੱਬੇ ਜੀਵ ਵਾਂਗ, ਤਾਮਸੀ ਨੀਂਦ ਪੈਦਾ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -2959,7 +2959,7 @@ chapters:
       license: PD
       text: "Such is the state of Bhairava which is celebrated. As the supreme form, she is proclaimed the Supreme Goddess, Parā."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -2982,7 +2982,7 @@ chapters:
       license: CC-BY-SA
       text: આવી જે ભૈરવની અવસ્થા ગવાય છે, તે પરાસ્વરૂપે પરા દેવી તરીકે પ્રકીર્તિત છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -2998,7 +2998,7 @@ chapters:
       license: CC-BY-SA
       text: ಭೈರವನ ಯಾವ ಅವಸ್ಥೆಯು ಇಂಥದ್ದೆಂದು ಕೀರ್ತಿಸಲ್ಪಡುತ್ತದೋ ಅದು ಪರಾ; ಪರಸ್ವರೂಪದಿಂದ ಆಕೆ ಪರಾದೇವಿಯೆಂದು ಪ್ರಕೀರ್ತಿಸಲ್ಪಡುತ್ತಾಳೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -3022,7 +3022,7 @@ chapters:
       license: CC-BY-SA
       text: ଭୈରବଙ୍କର ଯେଉଁ ଅବସ୍ଥା ଏହିପରି ବର୍ଣ୍ଣିତ — ସେ ପର ସ୍ୱରୂପରେ ପରା, ପରମା ଦେବୀ ରୂପେ ପ୍ରକୀର୍ତ୍ତିତ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -3030,7 +3030,7 @@ chapters:
       license: CC-BY-SA
       text: ਭੈਰਵ ਦੀ ਅਜਿਹੀ ਜੋ ਅਵਸਥਾ ਗਾਈ ਜਾਂਦੀ ਹੈ, ਉਹੀ ਪਰਾ-ਰੂਪ ਵਿਚ ਪਰਾ ਦੇਵੀ ਪੁਕਾਰੀ ਗਈ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -3522,7 +3522,7 @@ chapters:
       license: CC-BY-SA
       text: అది దేహరూపము కాదు; సర్వ తత్త్వములచే పరిపూర్ణమై వ్యాపించి యుండును. విక్షేపము లేనిది, ఏ విషయము గోచరించనిది — అదియే భైరవ స్వరూపము.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 15
@@ -4149,7 +4149,7 @@ chapters:
       license: PD
       text: "The Goddess said: O God of gods, marked with the trident, adorned with skulls — that reality is void of direction, place, and time, free of all designation."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -4172,7 +4172,7 @@ chapters:
       license: CC-BY-SA
       text: 'શ્રીદેવી બોલ્યાં: હે દેવોના દેવ, ત્રિશૂલચિહ્નિત, કપાલોથી શોભિત, જે દિશા, દેશ અને કાળથી રહિત છે અને સર્વ વ્યપદેશથી મુક્ત છે,'
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -4188,7 +4188,7 @@ chapters:
       license: CC-BY-SA
       text: 'ಶ್ರೀದೇವಿಯು ಹೇಳಿದಳು: ಹೇ ದೇವದೇವ, ತ್ರಿಶೂಲಧಾರಿ, ಕಪಾಲಭೂಷಣ — ಆ ತತ್ತ್ವವು ದಿಕ್ಕು-ದೇಶ-ಕಾಲಶೂನ್ಯವೂ ವ್ಯಪದೇಶರಹಿತವೂ ಆಗಿದೆ.'
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -4212,7 +4212,7 @@ chapters:
       license: CC-BY-SA
       text: 'ଶ୍ରୀଦେବୀ କହିଲେ: ହେ ଦେବଦେବ, ତ୍ରିଶୂଳାଙ୍କ, କପାଳକୃତଭୂଷଣ, ସେ ତତ୍ତ୍ୱ ଦିଗ-ଦେଶ-କାଳ ଶୂନ୍ୟ ଓ ସମସ୍ତ ଅଭିଧାନରୁ ମୁକ୍ତ।'
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -4220,7 +4220,7 @@ chapters:
       license: CC-BY-SA
       text: 'ਸ਼੍ਰੀ ਦੇਵੀ ਨੇ ਕਿਹਾ: ਹੇ ਦੇਵਾਂ ਦੇ ਦੇਵ, ਤ੍ਰਿਸ਼ੂਲ-ਚਿੰਨ੍ਹਿਤ, ਖੋਪੜੀਆਂ ਨਾਲ ਸ਼ਿੰਗਾਰੇ — ਉਹ ਸੱਚ ਦਿਸ਼ਾ, ਸਥਾਨ ਅਤੇ ਕਾਲ ਤੋਂ ਖਾਲੀ ਅਤੇ ਹਰ ਨਾਮ-ਰੂਪ ਤੋਂ ਪਰੇ ਹੈ।'
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -4236,7 +4236,7 @@ chapters:
       license: CC-BY-SA
       text: అట్లే అగ్నిలో దహన శక్తి తేజోరూపము కాగా అగ్ని జ్వాలతోనే తెలియదగును; ఆ తేజోజ్వాలయే అగ్నికి ముఖము — తదుపదేశమునకు ఏకరూపము.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 18
@@ -4863,7 +4863,7 @@ chapters:
       license: PD
       text: "From the non-return of the pair-of-voids of the breath — within or without — thus, O Bhairavī, is the body of Bhairava revealed through Bhairavī."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -4886,7 +4886,7 @@ chapters:
       license: CC-BY-SA
       text: શ્વાસ અંદર કે બહાર બંધ થયેલા વિયત-યુગલના નિવર્તનથી — હે ભૈરવી, આ રીતે ભૈરવી દ્વારા ભૈરવનું વપુ પ્રગટ થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -4902,7 +4902,7 @@ chapters:
       license: CC-BY-SA
       text: ಒಳಗೆ ಅಥವಾ ಹೊರಗೆ ಶ್ವಾಸದ ವಿಯತ್‌-ಯುಗ್ಮ ನಿವೃತ್ತಿಯಾಗುವುದರಿಂದ — ಹೀಗೆ, ಭೈರವಿಯೇ, ಭೈರವಿಯ ಮೂಲಕ ಭೈರವನ ವಪು ವ್ಯಕ್ತವಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -4926,7 +4926,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ଭୈରବୀ, ଭିତରେ କିମ୍ବା ବାହାରେ ଶ୍ୱାସର ଯୁଗଳ-ଶୂନ୍ୟର ଅନିବୃତ୍ତିରୁ — ଏହିପରି ଭୈରବୀଠାରୁ ଭୈରବଙ୍କର ବପୁ ପ୍ରକାଶିତ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -4934,7 +4934,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਭੈਰਵੀ, ਅੰਦਰ ਜਾਂ ਬਾਹਰ ਪ੍ਰਾਣ ਦੇ ਉਸ ਦੁਹਰੇ-ਸ਼ੂਨਯ ਦੇ ਵਾਪਸ ਨਾ ਆਉਣ ਤੋਂ, ਇਉਂ ਭੈਰਵੀ ਰਾਹੀਂ ਭੈਰਵ ਦਾ ਸਰੂਪ ਪ੍ਰਕਟ ਹੁੰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -5188,7 +5188,7 @@ chapters:
       license: CC-BY-SA
       text: అదియే భైరవస్వరూపము — పరం, నిర్మలము. స్వీయ ఆకాశ-సదృశమైన నిష్కల తేజస్సు ఇచ్చట అర్థము కాదగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 22
@@ -5456,7 +5456,7 @@ chapters:
       license: CC-BY-SA
       text: అట్టి స్వరూపము ఎల్ల ప్రమాణముల కంటెను అతీతము. అది శరణుగాని, రోదనకు అతీతము, వ్యాధులకు అతీతము — తేజోరూపము.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 23
@@ -6023,7 +6023,7 @@ chapters:
       license: PD
       text: "The twelvefold sequence, divided exactly into twelve syllables, traversed through gross, subtle, and supreme stages — and released, released — finally one becomes Śiva."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -6046,7 +6046,7 @@ chapters:
       license: CC-BY-SA
       text: દ્વાદશ ક્રમ, બાર અક્ષરો વડે વિભક્ત, સ્થૂળ-સૂક્ષ્મ-પર સ્થિતિઓ વડે ત્યાગીને ત્યાગીને — અંતે શિવ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -6062,7 +6062,7 @@ chapters:
       license: CC-BY-SA
       text: ಹನ್ನೆರಡು ಅಕ್ಷರಗಳಿಂದ ವಿಭಜಿತವಾದ ಹನ್ನೆರಡು ಕ್ರಮಗಳನ್ನು ಸ್ಥೂಲ-ಸೂಕ್ಷ್ಮ-ಪರಸ್ಥಿತಿಗಳಿಂದ ಬಿಟ್ಟು ಬಿಟ್ಟು — ಕೊನೆಗೆ ಶಿವನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -6086,7 +6086,7 @@ chapters:
       license: CC-BY-SA
       text: ବାର-ସ୍ଥାନର କ୍ରମକୁ ସମ୍ୟକ୍ ଭାବେ, ବାର ଅକ୍ଷର ଦ୍ୱାରା ବିଭକ୍ତ, ସ୍ଥୂଳ-ସୂକ୍ଷ୍ମ-ପର ସ୍ଥିତି ଦ୍ୱାରା, ମୁକ୍ତ କରୁ କରୁ ଶେଷରେ ଶିବ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -6094,7 +6094,7 @@ chapters:
       license: CC-BY-SA
       text: ਠੀਕ ਬਾਰਾਂ ਅੱਖਰਾਂ ਨਾਲ ਵੰਡੇ ਬਾਰਾਂ ਪੜਾਵਾਂ ਨੂੰ ਸਥੂਲ, ਸੂਖਮ, ਪਰਾ — ਤਿੰਨੇ ਸਥਿਤੀਆਂ ਵਿਚ ਪਾਰ ਕਰ ਕੇ, ਇਕ-ਇਕ ਛੱਡਦੇ ਹੋਏ, ਅੰਤ ਵਿਚ ਸ਼ਿਵ ਹੀ ਰਹਿ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -6110,7 +6110,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవరి యెడ సంహారము లేదో, ఎవరికి ధ్యానము నిర్మోచనమో, ఎవరి యెడ యోగము లేదో — అట్టి స్థితి యోగీశ్వరులకు ఆరాధ్యము.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 26
@@ -6363,7 +6363,7 @@ chapters:
       license: CC-BY-SA
       text: తత్త్వజ్ఞులైన భగవంతుని భక్తులకు యోగధారణ ద్వారా అదియే లక్ష్యము. స్థూల-సూక్ష్మ-పర రూపములను అనుభవిస్తూ సాధకుడు భైరవ స్థితిని పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 27
@@ -7674,7 +7674,7 @@ chapters:
       license: PD
       text: "Meditating on a dot, like a subtle fiery tilaka arising from the inner agitation of one's own light — at the top of the flame, in the heart — at the end, absorption (laya) arises."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -7697,7 +7697,7 @@ chapters:
       license: CC-BY-SA
       text: ધામની અંતઃક્ષોભથી ઉદ્ભવેલા, સૂક્ષ્મ અગ્નિ-તિલકાકાર બિન્દુનું શિખાંતે હૃદયમાં લયાંતે ધ્યાન કરનારને લય થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -7713,7 +7713,7 @@ chapters:
       license: CC-BY-SA
       text: ಧಾಮದೊಳಗಿನ ಕ್ಷೋಭದಿಂದ ಉಂಟಾದ ಸೂಕ್ಷ್ಮ ಅಗ್ನಿಯ ತಿಲಕಾಕೃತಿ ಬಿಂದುವನ್ನು ಶಿಖಾಂತದಲ್ಲಿ, ಹೃದಯದಲ್ಲಿ ಲಯಾಂತದಲ್ಲಿ ಧ್ಯಾನಿಸುವವನಿಗೆ ಲಯ ಉಂಟಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -7737,7 +7737,7 @@ chapters:
       license: CC-BY-SA
       text: ନିଜ ଆଭ୍ୟନ୍ତରୀଣ କ୍ଷୋଭରୁ ଉତ୍ପନ୍ନ ସୂକ୍ଷ୍ମ ଅଗ୍ନି-ତିଳକ ଆକୃତିର ବିନ୍ଦୁକୁ ଶିଖାର ଅଗ୍ରଭାଗରେ, ହୃଦୟରେ, ଲୟର ଶେଷରେ ଧ୍ୟାନ କଲେ — ଲୟ ଆସେ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -7745,7 +7745,7 @@ chapters:
       license: CC-BY-SA
       text: ਅੰਦਰਲੇ ਪ੍ਰਕਾਸ਼ ਦੀ ਖਲਬਲੀ ਤੋਂ ਉਪਜੇ ਸੂਖਮ ਅਗਨੀ-ਤਿਲਕ ਜਿਹੇ ਬਿੰਦੂ ਨੂੰ ਜੋਤੀ ਦੇ ਸਿਰੇ ਉੱਤੇ, ਹਿਰਦੇ ਵਿਚ, ਲੈਅ ਦੇ ਅੰਤ 'ਤੇ ਧਿਆਉਣ ਵਾਲੇ ਨੂੰ ਲੈਅ ਪ੍ਰਾਪਤ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -7976,7 +7976,7 @@ chapters:
       license: CC-BY-SA
       text: பாத்திரமான காதில், ஆற்றைப் போல் ஓடும், சிதைவின்றி தொடரும், அநாஹத (தாக்கம் இல்லாமல் எழும்) ஒலியில் — சப்த-பிரம்மத்தில் ஆழ்ந்தவர் பரம பிரம்மத்தை அடைகிறார்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8169,7 +8169,7 @@ chapters:
       license: CC-BY-SA
       text: ப்ரணவம் முதலியவற்றை நீட்டி உச்சரித்து, அதன் ப்லுத (நீண்ட) முடிவில் சூனியத்தை பாவித்து — சூனியமான பரா சக்தியின் வழியாக, பைரவியே, ஒருவர் சூனியத்தை அடைகிறார்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8669,7 +8669,7 @@ chapters:
       license: PD
       text: "Of any embodied mantra whatever, traversed through its gross phonemes in sequence, ending in the half-moon, bindu, and nāda — by the void-uttering at the end, one becomes Śiva."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -8692,7 +8692,7 @@ chapters:
       license: CC-BY-SA
       text: દરેક પિંડ-મંત્રનો સ્થૂળ વર્ણ-ક્રમ વડે, અર્ધેન્દુ-બિન્દુ-નાદાંતે, શૂન્ય-ઉચ્ચારથી શિવ બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -8708,7 +8708,7 @@ chapters:
       license: CC-BY-SA
       text: ಯಾವುದೇ ಪಿಂಡಮಂತ್ರದ ಸ್ಥೂಲ ವರ್ಣಕ್ರಮದಿಂದ ಅರ್ಧೇಂದು-ಬಿಂದು-ನಾದಾಂತದ ಶೂನ್ಯೋಚ್ಚಾರದಿಂದ ಶಿವನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -8732,7 +8732,7 @@ chapters:
       license: CC-BY-SA
       text: ସମସ୍ତ ପିଣ୍ଡ-ମନ୍ତ୍ରର ସ୍ଥୂଳ-ବର୍ଣ୍ଣ-କ୍ରମରେ, ଅର୍ଦ୍ଧେନ୍ଦୁ-ବିନ୍ଦୁ-ନାଦାନ୍ତ ପର୍ଯ୍ୟନ୍ତ, ଶୂନ୍ୟ-ଉଚ୍ଚାରଣ ଦ୍ୱାରା — ସେ ଶିବ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -8740,7 +8740,7 @@ chapters:
       license: CC-BY-SA
       text: ਹਰ ਪਿੰਡ-ਮੰਤਰ ਨੂੰ ਠੀਕ ਸਥੂਲ ਅੱਖਰ-ਕ੍ਰਮ ਨਾਲ ਉਚਾਰ ਕੇ, ਅਰਧ-ਚੰਦਰ, ਬਿੰਦੂ, ਨਾਦ ਦੇ ਅੰਤ ਉੱਤੇ — ਸ਼ੂਨਯ-ਉਚਾਰਨ ਨਾਲ ਜੀਵ ਸ਼ਿਵ ਬਣ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -8748,7 +8748,7 @@ chapters:
       license: CC-BY-SA
       text: எல்லா பிண்ட-மந்திரங்களையும் ஸ்தூலமான எழுத்துகளின் வரிசைப்படி (உச்சரித்து), அர்த்தசந்திரன், பிந்து, நாதம் ஆகியவற்றின் (அமைதியான) முடிவில் — சூனியத்தில் உச்சரிப்பை விட்டுவிட்டால் — சிவன் ஆகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -8756,7 +8756,7 @@ chapters:
       license: CC-BY-SA
       text: కుంభక స్థితిలో సూర్యుని కిరణములు చతుర్దశీ యందు పూర్ణముగా రాజిల్లుచు, లయరూపము పొందినప్పుడు భైరవీ స్వరూపము ప్రకటమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 38
@@ -8979,7 +8979,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చట ద్వాదశ-ద్వాదశ స్థానములందు లయము జరుగునో — ఆ ఆనన్యమైన అత్యున్నత స్థితి — చిత్తము ఆ స్థితిలో అత్యంత నిష్కల్మషముగా అగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 39
@@ -9187,7 +9187,7 @@ chapters:
       license: CC-BY-SA
       text: కపాలాంతరమునందు చిత్తమును నిలుపుచు, నేత్రములు తెరిచి యుండగా, నిమేషోన్మేషముల చింతనను త్యజించి భైరవ స్వరూపమునందు ప్రవేశించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 40
@@ -9603,7 +9603,7 @@ chapters:
       license: CC-BY-SA
       text: వహ్నిచక్రమునందు త్రయోదశ-త్రయోదశ యోగము జరిగినప్పుడు, శూన్యమునందు సంసారము లయించునప్పుడు — అదియే పరమ స్థితి.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 42
@@ -9811,7 +9811,7 @@ chapters:
       license: CC-BY-SA
       text: రణగంభీర-సదృశమైన శబ్ద-ప్రకాశమునందు — శక్తి ఆకాశతత్త్వమునందు లయించును. తదుపరి, ఆ స్థితి సమస్తము పరమ స్వరూపమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 43
@@ -9932,7 +9932,7 @@ chapters:
       license: PD
       text: "Within the body, one should contemplate the skin-boundary as only a wall, with nothing inside it. Meditating thus, one becomes a sharer in the unthinkable."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -9955,7 +9955,7 @@ chapters:
       license: CC-BY-SA
       text: દેહની અંદર ચામડીના વિભાગને ભીંત જેવો ચિંતવો; તેની અંદર કંઈ ન ધ્યાવતા તે અધ્યેયનો ભોક્તા થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -9971,7 +9971,7 @@ chapters:
       license: CC-BY-SA
       text: ದೇಹದೊಳಗೆ ಚರ್ಮವಿಭಾಗವನ್ನು ಗೋಡೆಯಂತೆ ಚಿಂತಿಸಬೇಕು; ಒಳಗೆ ಏನೂ ಇಲ್ಲ ಎಂದು ಧ್ಯಾನಿಸುವವನು ಅಧ್ಯೇಯಭಾಗಿಯಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -9995,7 +9995,7 @@ chapters:
       license: CC-BY-SA
       text: ଦେହ ଭିତରେ, ତ୍ୱକ୍-ବିଭାଗକୁ କେବଳ କାନ୍ଥ ସଦୃଶ ଭାବନା କରନ୍ତୁ, ଭିତରେ କିଛି ନାହିଁ। ଏହିପରି ଧ୍ୟାନ କଲେ, ଅଧ୍ୟେୟ-ଭାଗୀ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -10003,7 +10003,7 @@ chapters:
       license: CC-BY-SA
       text: ਸਰੀਰ ਦੇ ਅੰਦਰ ਚਮੜੀ ਦੇ ਘੇਰੇ ਨੂੰ ਕੰਧ-ਮਾਤਰ ਮੰਨ ਕੇ ਚਿੰਤਨ ਕਰੋ; ਅੰਦਰ ਕੁਝ ਨਹੀਂ — ਇਉਂ ਧਿਆਉਣ ਵਾਲਾ ਅਧਯੇਯ (ਅ-ਚਿੰਤਨੀ) ਦਾ ਭਾਗੀ ਹੋ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -10019,7 +10019,7 @@ chapters:
       license: CC-BY-SA
       text: త్రిశూలము ద్వాదశాంతమునందు భేదమొందినదిగా చింతించుచు, శూన్యత్రయము ద్వారా బ్రహ్మరంధ్రములో ప్రవేశించుచు, శాశ్వత భైరవోదయము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 44
@@ -10212,7 +10212,7 @@ chapters:
       license: CC-BY-SA
       text: కపాలాంతరమునందు హృదయము కేంద్రముగా చింతించి, ఇంద్రియములను ఏకాగ్రముగా చేయుచు, పరమ స్థితిని ఆరోహించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 45
@@ -10658,7 +10658,7 @@ chapters:
       license: CC-BY-SA
       text: శిఖినదుఁ గల కుండలినీశక్తి సూక్ష్మాతిసూక్ష్మముగా చింతించుచు, హృదయము నుండి ద్వాదశాంతము వరకు ఎదుగుచు, ఆ విశ్రాంతిని పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 47
@@ -11164,7 +11164,7 @@ chapters:
       license: CC-BY-SA
       text: ఇంద్రియ సముదాయము సుషుప్తి సన్నివేశమునందు హృదయపద్మమునందు ఏకీభవించుచు, మనస్సు లేని స్థితిని పొందుచు, పరమ ఆనందమును అనుభవించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 49
@@ -11402,7 +11402,7 @@ chapters:
       license: CC-BY-SA
       text: హృదయపద్మ-అంతరమునందు భూదలమునందు భగవంతుని వ్యోమ స్వరూపముగా చింతించుచు, తేజస్సుచే వ్యాపించుచు ఆ స్వరూపమునందు లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 50
@@ -11508,7 +11508,7 @@ chapters:
       license: PD
       text: "When objects are being recalled in a region one has seen, one should let the mind go. Making one's own body supportless, the Lord-self spreads forth."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -11531,7 +11531,7 @@ chapters:
       license: CC-BY-SA
       text: યાદ આવેલા પદાર્થોમાં અને જોયેલા સ્થાનમાં મનને છોડી દો; પોતાના શરીરને નિરાધાર કરી દેતાં પ્રભુ (આત્મા) પ્રસરે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -11547,7 +11547,7 @@ chapters:
       license: CC-BY-SA
       text: ವಸ್ತುಗಳು ನೆನಪಾಗುತ್ತಿರುವಾಗ ಕಂಡ ಪ್ರದೇಶದಲ್ಲಿ ಮನಸ್ಸನ್ನು ಬಿಡಬೇಕು; ತನ್ನ ಶರೀರವನ್ನು ನಿರಾಧಾರ ಮಾಡಿದರೆ ಪ್ರಭು ವಿಸ್ತರಿಸುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -11571,7 +11571,7 @@ chapters:
       license: CC-BY-SA
       text: ସ୍ମରଣ କରାଯାଉଥିବା ବସ୍ତୁ ସମ୍ବନ୍ଧରେ, ଦୃଷ୍ଟ ସ୍ଥାନରେ, ମନକୁ ତ୍ୟାଗ କରନ୍ତୁ। ନିଜ ଶରୀରକୁ ନିରାଧାର କରି, ପ୍ରଭୁ ବିସ୍ତାର ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -11579,7 +11579,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਦੋਂ ਪਦਾਰਥ ਯਾਦ ਆਉਂਦੇ ਹਨ, ਜਦੋਂ ਕੋਈ ਵੇਖਿਆ ਥਾਂ ਚੇਤੇ ਆਉਂਦਾ ਹੈ, ਉਸ ਵੇਲੇ ਮਨ ਨੂੰ ਛੱਡ ਦਿਓ; ਆਪਣੇ ਸਰੀਰ ਨੂੰ ਨਿਰਾਧਾਰ ਕਰ ਕੇ ਪ੍ਰਭੂ-ਸਰੂਪ ਫੈਲਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -11595,7 +11595,7 @@ chapters:
       license: CC-BY-SA
       text: శక్తి-సంగమణముచే సుఖరూపి అయిన పరమశక్తియందు అత్యంత తాదాత్మ్యభావమునందుచు, బ్రహ్మ-సుఖము పొందును — అదియే స్వశక్తి.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 51
@@ -11833,7 +11833,7 @@ chapters:
       license: CC-BY-SA
       text: ఈ యోగమార్గము స్త్రీ లేకయే చింతించుచు, ఆ ఆనందము సంస్మరణ ద్వారా అదే లభించును. స్వీయ ఆనందము యొక్క స్ఫురణలో పరిపూర్ణత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 52
@@ -12063,7 +12063,7 @@ chapters:
       license: CC-BY-SA
       text: விரக்தனின் பக்தியின் பெருக்கால் எத்தகைய அறிவு உண்டாகுமோ, அதுவே சாங்கரீ சக்தி. அவளை எப்போதும் பாவிக்க வேண்டும்; அதனால் அவன் சிவனாகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -12071,7 +12071,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత ఆనందము, ప్రియ స్మరణముచే చిత్తమునందు హర్షము పుట్టి, ఆ హర్షము ద్వారా బ్రహ్మ ఆనందము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 53
@@ -12279,7 +12279,7 @@ chapters:
       license: CC-BY-SA
       text: అన్నపానాది తృప్తి కలుగు సమయమునందు చిత్తము సుఖరూపము పొందుచు — ఆ సుఖమునందు లయించుచు మహద్ ఆనందమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 54
@@ -12502,7 +12502,7 @@ chapters:
       license: CC-BY-SA
       text: గీత-సుఖ-ఆస్వాదన సమయములో ఏకాగ్రచిత్తుడైన యోగి, ఆ ఆనందముతో ఏకీభవించుచు తత్త్వలయము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 55
@@ -12740,7 +12740,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చట చిత్తము పరమ సుఖము పొందునో — అట్టి విషయమునందు చిత్తము ఏకాగ్రముగా నిలుపగా, పరమశూన్యత ఉద్భవించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 56
@@ -12933,7 +12933,7 @@ chapters:
       license: CC-BY-SA
       text: క్షుత్తు లేక మరి ఇతర అవస్థలలో ఆ అవస్థతో మనస్సును ఏకీభవింపజేసి, ఆ అవస్థ యొక్క శోధనపై చింతించుచు, ఆ తత్త్వమే లయరూపము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 57
@@ -13171,7 +13171,7 @@ chapters:
       license: CC-BY-SA
       text: వస్తు-భేదరహితమైన చిత్తము పొందుచు, ఏకరూపమునందు చింతించుచు, విక్షేప మెల్లయు లేక ఎత్తైన స్థితిని పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 58
@@ -13394,7 +13394,7 @@ chapters:
       license: CC-BY-SA
       text: తృష్ణాది వాస్తవ స్థితిని వ్యక్తీకరించుచు మనస్సు సుస్థిరంగా నిలుపగా, ఆ స్థితి స్వ-స్వభావమునందు లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 59
@@ -13545,7 +13545,7 @@ chapters:
       license: PD
       text: "In the eternal, all-pervading, supportless, omnipresent Self of all — thus remembering Bhairava, the person is liberated."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -13568,7 +13568,7 @@ chapters:
       license: CC-BY-SA
       text: નિત્ય, વિભુ, નિરાધાર, વ્યાપક અને અખિલાત્મા — એ રૂપે ભૈરવનું અનુસ્મરણ કરનાર પુરુષ મુક્ત થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -13584,7 +13584,7 @@ chapters:
       license: CC-BY-SA
       text: ನಿತ್ಯ, ವಿಭು, ನಿರಾಧಾರ, ವ್ಯಾಪಕ, ಸರ್ವಾತ್ಮಕನಾದ ಭೈರವನನ್ನು ಅನುಸ್ಮರಿಸುತ್ತಾ ಪುರುಷನು ಮುಕ್ತನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -13608,7 +13608,7 @@ chapters:
       license: CC-BY-SA
       text: ନିତ୍ୟ, ବିଭୁ, ନିରାଧାର, ବ୍ୟାପକ ଏବଂ ଅଖିଳ-ଆତ୍ମା ରୂପେ ଭୈରବକୁ ଅନୁସ୍ମରଣ କରୁଥିବା ବ୍ୟକ୍ତି ମୁକ୍ତ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -13616,7 +13616,7 @@ chapters:
       license: CC-BY-SA
       text: ਨਿੱਤ, ਵਿਭੂ, ਨਿਰਾਧਾਰ, ਵਿਆਪਕ, ਸਰਵ-ਆਤਮਾ — ਇਉਂ ਭੈਰਵ ਦਾ ਸਦਾ ਸਿਮਰਨ ਕਰਨ ਵਾਲਾ ਪੁਰਖ ਮੁਕਤ ਹੋ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -13632,7 +13632,7 @@ chapters:
       license: CC-BY-SA
       text: తైలధార-నిష్క్రియ-ధారతో సదృశమైన ధ్యాన ధారణముచే, మనస్సు ఏకాగ్రముగా నిలిచి తత్త్వావగతి కలుగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 60
@@ -13840,7 +13840,7 @@ chapters:
       license: CC-BY-SA
       text: శూన్యాకాశ-సదృశమైన చిత్తము పొందుచు, విక్షేపము లేకుండగా, బ్రహ్మరూపము గోచరించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 61
@@ -13961,7 +13961,7 @@ chapters:
       license: PD
       text: "In whichever manner, by instruction, the dissolution of the breaths is brought about — in that very manner the mind, the to-be-known, approaches the place of that state."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -13984,7 +13984,7 @@ chapters:
       license: CC-BY-SA
       text: જે રીતે ઉપદેશથી મરુત્-લય થાય, તે જ રીતે મન જ્ઞેય બને છે અને તે અવસ્થાના સ્થાન સુધી જાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -14000,7 +14000,7 @@ chapters:
       license: CC-BY-SA
       text: ಯಾವ ಉಪದೇಶದಿಂದ ಪ್ರಾಣಗಳ ಲಯ ನಡೆಯುತ್ತದೋ, ಆ ರೀತಿಯಲ್ಲಿ ಮನಸ್ಸನ್ನು ಜ್ಞೇಯವೆಂದು ತಿಳಿದು ಆ ಸ್ಥಿತಿಯ ಪದಕ್ಕೆ ಹೋಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -14024,7 +14024,7 @@ chapters:
       license: CC-BY-SA
       text: ଯେପରି ଉପଦେଶ ଦ୍ୱାରା ମରୁତ୍-ର ଲୟ ଘଟାଯାଏ, ସେପରି ଜ୍ଞେୟ ମନ ସେହି ଅବସ୍ଥାର ପଦରେ ଯାଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -14032,7 +14032,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਿਸ ਤਰ੍ਹਾਂ-ਜਿਸ ਤਰ੍ਹਾਂ ਉਪਦੇਸ਼ ਨਾਲ ਪ੍ਰਾਣਾਂ ਦੀ ਲੈਅ ਹੁੰਦੀ ਹੈ, ਉਸੇ ਤਰ੍ਹਾਂ-ਉਸੇ ਤਰ੍ਹਾਂ ਮਨ ਨੂੰ ਜਾਣਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ; ਯੋਗੀ ਉਸ ਅਵਸਥਾ ਦੇ ਪਦ ਵਿਚ ਪਹੁੰਚ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -14169,7 +14169,7 @@ chapters:
       license: PD
       text: "Meditating on the Suṣumnā — the rootless root of the root-channels — filled with breath, abiding up to the dvādaśānta, one reaches the rootless Bhairava."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -14192,7 +14192,7 @@ chapters:
       license: CC-BY-SA
       text: મૂળ-નાડીઓની અમૂળ, વાયુથી ભરેલી, દ્વાદશાંતે સ્થિત સુષુમ્ણિકાનું ધ્યાન કરીને અમૂળ ભૈરવ સુધી જઈ શકાય.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -14208,7 +14208,7 @@ chapters:
       license: CC-BY-SA
       text: ಮೂಲನಾಡಿಗಳ ಅಮೂಲವಾದ, ವಾಯುಪೂರಿತಳಾದ ಸುಷುಮ್ನೆಯನ್ನು ದ್ವಾದಶಾಂತದಲ್ಲಿ ನೆಲೆಸಿರುವಂತೆ ಧ್ಯಾನಿಸಿ ಅಮೂಲ ಭೈರವಗೆ ಹೋಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -14232,7 +14232,7 @@ chapters:
       license: CC-BY-SA
       text: ମୂଳ-ନାଡ଼ୀଗୁଡ଼ିକର ଅମୂଳ, ବାୟୁ-ପୂର୍ଣ୍ଣ ସୁଷୁମ୍ନିକାକୁ, ଦ୍ୱାଦଶାନ୍ତରେ ସ୍ଥିତ ବୋଲି ଧ୍ୟାନ କରି, ଅମୂଳ ଭୈରବକୁ ପ୍ରାପ୍ତ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -14240,7 +14240,7 @@ chapters:
       license: CC-BY-SA
       text: ਮੂਲ-ਨਾੜੀਆਂ ਦੀ ਮੂਲ-ਰਹਿਤ ਜੜ੍ਹ — ਪ੍ਰਾਣ-ਪੂਰਿਤ ਸੁਸ਼ੁਮਨਾ — ਨੂੰ ਦ੍ਵਾਦਸ਼ਾਂਤ ਤਕ ਟਿਕੀ ਧਿਆਉਣ ਨਾਲ ਮੂਲ-ਰਹਿਤ ਭੈਰਵ ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -14392,7 +14392,7 @@ chapters:
       license: PD
       text: "Likewise, by meditating with the mind set within the skull, O Lord, before long the consciousness-made one obtains the siddhi arising from closing (nimīlana)."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -14415,7 +14415,7 @@ chapters:
       license: CC-BY-SA
       text: હે પ્રભો, એ રીતે કપાલની અંદર મનનું ધ્યાન કરનાર ચિન્મયને થોડા જ સમયમાં નિમીલન આદિથી જન્મેલી સિદ્ધિ પ્રાપ્ત થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -14431,7 +14431,7 @@ chapters:
       license: CC-BY-SA
       text: ಹಾಗೆಯೇ ಕಪಾಲದೊಳಗೆ ಮನಸ್ಸನ್ನು ಧ್ಯಾನಿಸುತ್ತಿರುವವನಿಗೆ, ಪ್ರಭು, ಶೀಘ್ರವಾಗಿ ಚಿನ್ಮಯನಿಗೆ ನಿಮೀಲನಾದಿಜ ಸಿದ್ಧಿ ಲಭಿಸುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -14455,7 +14455,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ପ୍ରଭୁ, ସେହିପରି କପାଳ ଭିତରେ ମନ ଧ୍ୟାନ କରୁଥିବା ବ୍ୟକ୍ତି ପାଇଁ, ବେଶି ସମୟ ନ ଲାଗି, ଚିନ୍ମୟ ବ୍ୟକ୍ତିଠାରେ ନିମୀଳନ ଆଦିରୁ ଜାତ ସିଦ୍ଧି ପ୍ରକାଶ ପାଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -14463,7 +14463,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਪ੍ਰਭੂ, ਇਸੇ ਤਰ੍ਹਾਂ ਖੋਪੜੀ ਦੇ ਅੰਦਰ ਮਨ ਨੂੰ ਟਿਕਾ ਕੇ ਧਿਆਉਣ ਵਾਲੇ — ਚਿਤ-ਮਯ — ਨੂੰ ਛੇਤੀ ਹੀ ਅੱਖਾਂ ਮੀਚਣ ਆਦਿ ਤੋਂ ਉਪਜੀ ਸਿੱਧੀ ਪ੍ਰਾਪਤ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -14479,7 +14479,7 @@ chapters:
       license: CC-BY-SA
       text: అట్లే ఆకాశమునందు తీక్ష్ణముగా దృష్టి నిలిపి, మనస్సు లయము పొందునట్లుగా, శివ స్వరూపమునందు లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 64
@@ -14670,7 +14670,7 @@ chapters:
       license: CC-BY-SA
       text: जिभ मध्ये ठेवून, तोंड उघडे ठेवून, चेतना मध्यभागी ठेवावी; मनाने 'ह'चा उच्चार करत साधक शांत-स्वरूपात विलीन होतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -14702,7 +14702,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చట, ఎప్పుడు అనుభవైకవేద్యమైన అనుభూతి కలుగునో — అది శివ స్వరూపమునందు లయించుట ద్వారా శివ స్వరూపమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 65
@@ -15148,7 +15148,7 @@ chapters:
       license: CC-BY-SA
       text: శూన్యమైన గృహ-అన్యత్రాది యందు చిత్తము నిలిపి, చింతించుచు, విక్షేపము లేక లయరూపమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 67
@@ -15371,7 +15371,7 @@ chapters:
       license: CC-BY-SA
       text: గంతవ్యమైన దేహమునందు చిత్తము సుదృఢముగా నిలిపి, ఏకాగ్రముగా ఉంచుచు, చిత్తరూపము లేని విమల స్థితి పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 68
@@ -15507,7 +15507,7 @@ chapters:
       license: PD
       text: "Contemplate all the sky as dissolved in the crown of the head, as nothing but Bhairava-nature. One enters the all — the brilliance-reality in Bhairava's form."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -15530,7 +15530,7 @@ chapters:
       license: CC-BY-SA
       text: સંપૂર્ણ વ્યોમ મૂર્ધામાં લય થયેલું ભૈરવત્વ રૂપે ભાવો; તે સર્વ ભૈરવાકાર-તેજસ્-તત્ત્વમાં પ્રવેશે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -15546,7 +15546,7 @@ chapters:
       license: CC-BY-SA
       text: ತಲೆಯಲ್ಲಿ ಲೀನವಾದ ಎಲ್ಲ ವ್ಯೋಮವನ್ನು ಭೈರವತ್ವದಿಂದ ಭಾವಿಸಬೇಕು; ಅದೆಲ್ಲ ಭೈರವಾಕಾರ ತೇಜಸ್‌ತತ್ತ್ವದಲ್ಲಿ ಪ್ರವೇಶಿಸಬೇಕು.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -15570,7 +15570,7 @@ chapters:
       license: CC-BY-SA
       text: ମୁଣ୍ଡରେ ଲୀନ ସମସ୍ତ ବ୍ୟୋମକୁ ଭୈରବତ୍ୱ ରୂପେ ଭାବନା କରନ୍ତୁ — ସେସବୁ ଭୈରବାକାର ତେଜସ୍-ତତ୍ତ୍ୱରେ ସମାବେଶ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -15578,7 +15578,7 @@ chapters:
       license: CC-BY-SA
       text: ਸਾਰੇ ਆਕਾਸ਼ ਨੂੰ ਸਿਰ ਦੇ ਮੂਰਧਾ ਵਿਚ ਲੀਨ ਮੰਨ ਕੇ ਭੈਰਵਤਾ-ਰੂਪ ਚਿੰਤਨ ਕਰੋ; ਫਿਰ ਉਹ ਸਭ ਭੈਰਵ-ਆਕਾਰ ਤੇਜਸ-ਤੱਤਵ ਵਿਚ ਪ੍ਰਵੇਸ਼ ਕਰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -15594,7 +15594,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను దేహ-అన్యత్రాది భాగములందు చిత్తము నిలిపి, ఆ స్థానములో పూర్ణముగా లయించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 69
@@ -15730,7 +15730,7 @@ chapters:
       license: PD
       text: "Partial knowledge yields duality; outer light, then darkness. Knowing the Bhairava-form — the source of the universe — one bears the infinite Light."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -15753,7 +15753,7 @@ chapters:
       license: CC-BY-SA
       text: કિંચિત્-જ્ઞાન દ્વૈતદાયી છે; બાહ્ય આલોક અને પાછું તમસ્. વિશ્વ આદિને ભૈરવ-રૂપ જાણીને અનંત પ્રકાશનો ધારક બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -15769,7 +15769,7 @@ chapters:
       license: CC-BY-SA
       text: ಅಲ್ಪಜ್ಞಾನ ದ್ವೈತದಾಯಿ; ಬಾಹ್ಯಾಲೋಕ-ತಮಸ್ಸುಗಳೂ ಹಾಗೆಯೇ. ವಿಶ್ವಾದಿಯನ್ನು ಭೈರವರೂಪವೆಂದು ತಿಳಿದು ಅನಂತಪ್ರಕಾಶ ಧಾರಕನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -15793,7 +15793,7 @@ chapters:
       license: CC-BY-SA
       text: କିଞ୍ଚିତ୍-ଜ୍ଞାନ ଦ୍ୱୈତ ଆଣେ; ବାହ୍ୟାଲୋକ — ପୁଣି ଅନ୍ଧକାର। ବିଶ୍ୱାଦି ଭୈରବ-ରୂପ ବୋଲି ଜାଣି ବ୍ୟକ୍ତି ଅନନ୍ତ-ପ୍ରକାଶ-ଭୃତ୍ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -15801,7 +15801,7 @@ chapters:
       license: CC-BY-SA
       text: ਥੋੜ੍ਹਾ ਜਾਣਿਆ ਦਵੈਤ ਪੈਦਾ ਕਰਦਾ ਹੈ, ਬਾਹਰੀ ਪ੍ਰਕਾਸ਼ ਫਿਰ ਅੰਧਕਾਰ ਬਣ ਜਾਂਦਾ ਹੈ; ਵਿਸ਼ਵ-ਸਰੋਤ ਭੈਰਵ-ਰੂਪ ਨੂੰ ਜਾਣ ਕੇ ਮਨੁੱਖ ਅਨੰਤ-ਪ੍ਰਕਾਸ਼ ਦਾ ਧਾਰਕ ਬਣ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -15809,7 +15809,7 @@ chapters:
       license: CC-BY-SA
       text: சிறிதே அறிதல் இரட்டையை (த்வைதத்தை) உண்டாக்குகிறது; வெளி ஒளியும் பின்னர் இருளும் (அவ்வாறே). உலகம் முதலியவை பைரவ வடிவம் என்று அறிந்தவன் அநந்த-பிரகாசத்தை தாங்குவான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -16040,7 +16040,7 @@ chapters:
       license: CC-BY-SA
       text: శైలసమ-సదృశమైన ధృఢ-చిత్త-భావమునందు ఏకాగ్రముగా నిలిపి, పరమ స్థితిని పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 71
@@ -16278,7 +16278,7 @@ chapters:
       license: CC-BY-SA
       text: క్షుత్తు-తృష్ణాది అవస్థలను చిత్తముతో నిష్కల్మషముగా అనుభవించుచు, ఆ అవస్థ యొక్క మూలమునందు లయించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 72
@@ -16501,7 +16501,7 @@ chapters:
       license: CC-BY-SA
       text: వాస్తవమైన మోక్ష-రూపము యొక్క స్థితిని చిత్తము ద్వారా చింతించుచు, ఆ స్థితిలో సర్వ సంశయము లేకుండగా లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 73
@@ -16739,7 +16739,7 @@ chapters:
       license: CC-BY-SA
       text: తామస-రజస్తాదుల అవస్థలందైనను చిత్తము సదా శివరూపమునందు నిలుపగా, ఆ స్థితి స్థిరమగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 74
@@ -16917,7 +16917,7 @@ chapters:
       license: CC-BY-SA
       text: గాఢమైన అంధకారమునందు చిత్తము నిలిపి, విక్షేపము లేక, పరమ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 75
@@ -17140,7 +17140,7 @@ chapters:
       license: CC-BY-SA
       text: నేత్రములు మూసి, ఎచ్చటనైనను ఆ అంధకారమున చిత్తము నిలిపి, తేజస్సు లేని ఆ స్థితి ద్వారా శివ స్వరూపము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 76
@@ -17331,7 +17331,7 @@ chapters:
       license: CC-BY-SA
       text: आरंभी देहाच्या एखाद्या भागाला तीक्ष्ण सुईने वगैरे टोचून, तिथेच चेतना जोडल्यास, भैरवाकडे निर्मल गती (मार्ग) प्राप्त होते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -17363,7 +17363,7 @@ chapters:
       license: CC-BY-SA
       text: నేత్రములు ఆవరించుచు లేక ఆవరించక చింతించుచు, నవీన ప్రకాశ-రూపమునందు చిత్తము లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 77
@@ -17556,7 +17556,7 @@ chapters:
       license: CC-BY-SA
       text: కరణములు అన్నియు ఏకీభవించుచు, బ్రహ్మ-రంధ్రములో ప్రవేశించుచు, శివ-సాయుజ్యము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 78
@@ -17692,7 +17692,7 @@ chapters:
       license: PD
       text: "'Māyā is the deluder; impulsion is the kalā's function' — when one knows the categories with such dharmas, one no longer stands separate from them."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -17715,7 +17715,7 @@ chapters:
       license: CC-BY-SA
       text: "'માયા વિમોહિની છે; કલાનું કલન છે' — એવી તત્ત્વોની ધર્મ-મીમાંસા કરતો માણસ તેમનાથી પૃથક્ રહેતો નથી."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -17731,7 +17731,7 @@ chapters:
       license: CC-BY-SA
       text: "'ಮಾಯೆ ವಿಮೋಹಿನಿ; ಕಲೆಯ ಕಾರ್ಯ ಕಲನ' ಇತ್ಯಾದಿ ತತ್ತ್ವಗಳ ಧರ್ಮವನ್ನು ಗ್ರಹಿಸುತ್ತಾ ಪ್ರತ್ಯೇಕನಾಗದೆ ಇರುತ್ತಾನೆ."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -17747,7 +17747,7 @@ chapters:
       license: CC-BY-SA
       text: "'माया विमोहिनी (मोहक) आहे, कलेची प्रवृत्ती कलन-स्वरूपात स्थित आहे' — अशा तत्त्वांच्या धर्मांची गणना करत राहणारा साधक त्यांच्यापासून पृथक (वेगळा) उरत नाही."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -17755,7 +17755,7 @@ chapters:
       license: CC-BY-SA
       text: "'ମାୟା ବିମୋହିନୀ; କଳାର କଳନ ସ୍ଥିତ' — ତତ୍ତ୍ୱମାନଙ୍କର ଏହିପରି ଧର୍ମକୁ ବିଚାର କରୁଥିବା ବ୍ୟକ୍ତି ପୃଥକ୍ ରହିବେ ନାହିଁ।"
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -17763,7 +17763,7 @@ chapters:
       license: CC-BY-SA
       text: "'ਮਾਯਾ ਵਿਮੋਹਿਨੀ ਹੈ, ਕਲਾ ਦਾ ਕਾਰਜ ਪ੍ਰੇਰਨਾ ਹੈ' — ਇਨ੍ਹਾਂ ਵਰਗੇ ਤੱਤਾਂ ਦੇ ਧਰਮ ਜਾਣਨ ਵਾਲਾ ਉਨ੍ਹਾਂ ਤੋਂ ਵੱਖਰਾ ਨਹੀਂ ਰਹਿੰਦਾ।"
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -17771,7 +17771,7 @@ chapters:
       license: CC-BY-SA
       text: "'மாயை வஞ்சிக்கின்றவள், கலை (சிறிய இயக்கம்) — அதன் கலனம் (இயக்கம்) நிலைபெற்றது' — இவ்வாறான தர்மங்களைக் கொண்டு தத்துவங்களைக் கணிப்பவன், அவற்றிலிருந்து வேறானவனாக இருக்க மாட்டான்."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -17779,7 +17779,7 @@ chapters:
       license: CC-BY-SA
       text: శివ-రూపమునందు అనన్య-చింతనముచే, విషయములను త్యజించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 79
@@ -17972,7 +17972,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను చిత్తము నిలిపినపుడు, ఆ స్థానము శివ-రూపము పొందుచు, లయము కలుగును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 80
@@ -18180,7 +18180,7 @@ chapters:
       license: CC-BY-SA
       text: శూన్యమైన ఆకాశమునందు దృష్టి స్థిరముగా నిలుపగా, చిత్తరూపము లేని విమల స్థితి పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 81
@@ -18479,7 +18479,7 @@ chapters:
       license: PD
       text: "Knowledge arises causeless and supportless, of the nature of error — in truth it belongs to no one. Contemplating thus, O beloved, one becomes Śiva."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -18502,7 +18502,7 @@ chapters:
       license: CC-BY-SA
       text: જ્ઞાન નિર્નિમિત્ત, નિરાધાર અને ભ્રમાત્મક રૂપે ઊભું થાય; તત્ત્વતઃ આ કોઈનું નથી — એમ ભાવનાર, હે પ્રિયે, શિવ બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -18518,7 +18518,7 @@ chapters:
       license: CC-BY-SA
       text: ಜ್ಞಾನವು ನಿರ್ನಿಮಿತ್ತ, ನಿರಾಧಾರ, ಭ್ರಮಾತ್ಮಕವಾಗಿರಬಹುದು; ತತ್ತ್ವತಃ ಇದು ಯಾರಿಗೂ ಸೇರಿದ್ದಲ್ಲ — ಪ್ರಿಯೆಯೇ, ಹೀಗೆ ಭಾವಿಸಿದರೆ ಶಿವನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -18542,7 +18542,7 @@ chapters:
       license: CC-BY-SA
       text: ଜ୍ଞାନ ନିର୍ନିମିତ୍ତ, ନିରାଧାର, ଭ୍ରମାତ୍ମକ ହୋଇଥାଏ; ତତ୍ତ୍ୱତଃ ଏହା କାହାରି ନୁହେଁ — ହେ ପ୍ରିୟେ, ଏହିପରି ଭାବନା କରୁଥିବା ବ୍ୟକ୍ତି ଶିବ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -18550,7 +18550,7 @@ chapters:
       license: CC-BY-SA
       text: ਗਿਆਨ ਨਿਰ-ਨਿਮਿੱਤ, ਨਿਰਾਧਾਰ, ਭ੍ਰਮ-ਰੂਪ ਜਾਪਦਾ ਹੈ; ਅਸਲ ਵਿਚ ਇਹ ਕਿਸੇ ਦਾ ਨਹੀਂ। ਹੇ ਪਿਆਰੀ, ਇਉਂ ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸ਼ਿਵ ਹੋ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -18566,7 +18566,7 @@ chapters:
       license: CC-BY-SA
       text: అయన-అయన-అన్యత్రాది యందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 83
@@ -18774,7 +18774,7 @@ chapters:
       license: CC-BY-SA
       text: నీలాది వర్ణములు తేజస్సుచే చిత్తమునందు ప్రకాశించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 84
@@ -18922,7 +18922,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను ఆకాశమునందు దృష్టి స్థిరముగా నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-సాయుజ్యము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 85
@@ -19160,7 +19160,7 @@ chapters:
       license: CC-BY-SA
       text: కామ-క్రోధాది అవస్థలు ఉద్భవించునపుడు, ఆ స్థితిని పరిశీలించుచు, ఆ స్థితి యొక్క మూలము శివ-రూపమునందు లయించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 86
@@ -19338,7 +19338,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను ఇంద్రియ-ప్రవృత్తి ఆరంభించునపుడు, ఆ క్షణమునందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 87
@@ -19561,7 +19561,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను చిత్తము నుండి విషయములు ఉద్భవించునపుడు, ఆ మూలమునందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 88
@@ -19652,7 +19652,7 @@ chapters:
       license: PD
       text: "The cognition which arises within me toward a pot or any object, or any desire — contemplating that 'it has arisen as nothing but the all-pervading' — one becomes all-pervading."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -19675,7 +19675,7 @@ chapters:
       license: CC-BY-SA
       text: ઘટ આદિમાં અને મારી અંદર જે વિજ્ઞાન કે ઇચ્છા આદિ ઉદ્ભવે — તે સર્વગત રૂપે જ જન્મ્યું છે એમ ભાવનાર સર્વગ બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -19691,7 +19691,7 @@ chapters:
       license: CC-BY-SA
       text: ಘಟಾದಿಗಳಲ್ಲಿ ಯಾವ ವಿಜ್ಞಾನ, ಇಚ್ಛೆ ಮುಂತಾದವು ನನ್ನೊಳಗೆ ಉಂಟಾಗುತ್ತದೋ ಅದು ಸರ್ವಗತವಾಗಿಯೇ ಉಂಟಾಗಿದೆ ಎಂದು ಭಾವಿಸುತ್ತಾ ಸರ್ವಗನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -19715,7 +19715,7 @@ chapters:
       license: CC-BY-SA
       text: ଘଟ ଆଦିଠାରେ ଯେଉଁ ବିଜ୍ଞାନ, ବା ମୋ ଭିତରେ ଇଚ୍ଛା ଆଦି — 'ତାହା ସର୍ବଗତ ଭାବେ ଜାତ' ବୋଲି ଭାବନା କରୁଥିବା ବ୍ୟକ୍ତି ସର୍ବଗ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -19723,7 +19723,7 @@ chapters:
       license: CC-BY-SA
       text: ਘੜੇ ਆਦਿ ਵਸਤਾਂ ਵਲ ਮੇਰੇ ਅੰਦਰ ਜੋ ਵਿਗਿਆਨ ਜਾਂ ਇੱਛਾ ਉੱਠੀ ਹੈ, ਉਹ ਸਰਵ-ਵਿਆਪੀ ਰੂਪ ਵਿਚ ਹੀ ਉੱਠੀ ਹੈ — ਇਉਂ ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸਰਵ-ਗਾਮੀ ਬਣ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -19731,7 +19731,7 @@ chapters:
       license: CC-BY-SA
       text: பானை முதலியவற்றில் எழும் அறிவோ, அல்லது எனக்குள் எழும் விருப்பம் முதலியவையோ — அவை எங்கும் பரந்ததாகவே (வியாபகமாகவே) எழுந்துள்ளன என்று பாவிப்பவன் — எங்கும் பரந்தவன் ஆகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -19739,7 +19739,7 @@ chapters:
       license: CC-BY-SA
       text: కామోద్దీపన-సమయమునందు చిత్తము శివ-రూపమునందు లయించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 89
@@ -19932,7 +19932,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన భయము ఉద్భవించునపుడు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 90
@@ -20093,7 +20093,7 @@ chapters:
       license: CC-BY-SA
       text: स्वतःच्या देहाप्रमाणेच दुसऱ्याच्या देहातही जाणीव अनुभवावी; स्वतःच्या देहाची अपेक्षा सोडल्यावर काही दिवसांतच साधक व्यापी (सर्वव्यापी) बनतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -20125,7 +20125,7 @@ chapters:
       license: CC-BY-SA
       text: తీవ్రమైన దుఃఖ-సుఖాది అవస్థలందైనను, ఆ స్థితి యొక్క మూలమునందు చిత్తము నిలిపి, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 91
@@ -20288,7 +20288,7 @@ chapters:
       license: CC-BY-SA
       text: తీవ్రమైన శోక-సంశయాది అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 92
@@ -20496,7 +20496,7 @@ chapters:
       license: CC-BY-SA
       text: నిద్ర-జాగ్రత్తుల మధ్య సన్నిధానమునందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 93
@@ -20704,7 +20704,7 @@ chapters:
       license: CC-BY-SA
       text: మేఘముక్త-గగన-సదృశమైన చిత్తము ఏకాగ్రముగా నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 94
@@ -20897,7 +20897,7 @@ chapters:
       license: CC-BY-SA
       text: శివ-రూపమైన పరమ తత్త్వము సదా ఉన్నదని చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 95
@@ -21018,7 +21018,7 @@ chapters:
       license: PD
       text: "Whether through (concentration upon) the bodily supports, through one's own incapacity, knowledge, or imagined place — when the Śakti's agitation arises and is then pacified, then That comes."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -21041,7 +21041,7 @@ chapters:
       license: CC-BY-SA
       text: આધારોમાં, અશક્તિથી, જ્ઞાનથી, અથવા દેશ-કલ્પનાથી — ઉદ્ભવેલા શક્તિ-સંશોભના શાંત થયા પછી તે (પરમ) અવસ્થા થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -21057,7 +21057,7 @@ chapters:
       license: CC-BY-SA
       text: ಆಧಾರಗಳಲ್ಲಿ, ಅಥವಾ ಅಶಕ್ತಿಯಿಂದ, ಜ್ಞಾನದಿಂದ ಅಥವಾ ದೇಶಕಲ್ಪನೆಯಿಂದ — ಶಕ್ತಿಸಂಶೋಭ ಉಂಟಾಗಿ ಶಾಂತವಾದ ನಂತರ ಪರಮ ಸ್ಥಿತಿ ಲಭಿಸುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -21073,7 +21073,7 @@ chapters:
       license: CC-BY-SA
       text: आधारांवर, अशक्तीने, ज्ञानाने वा देश-कल्पनेने — शक्तीचा क्षोभ उद्भवल्यानंतर, तो शांत झाल्यावर, तेव्हा ती (परा अवस्था) उद्भवते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -21081,7 +21081,7 @@ chapters:
       license: CC-BY-SA
       text: ଆଧାରଗୁଡ଼ିକରେ, କିମ୍ବା ଅଶକ୍ତି ଦ୍ୱାରା, ଜ୍ଞାନ ଦ୍ୱାରା, ବା ଦେଶ-କଳ୍ପନା ଦ୍ୱାରା — ଶକ୍ତି-ସଂଶୋଭ ଉଠିଲେ, ଶାନ୍ତ ହେଲା ପରେ — ତାହା ଆସେ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -21089,7 +21089,7 @@ chapters:
       license: CC-BY-SA
       text: ਆਧਾਰਾਂ ਉੱਤੇ, ਅਸ਼ਕਤੀ ਨਾਲ, ਗਿਆਨ ਤੋਂ ਜਾਂ ਥਾਂ ਦੀ ਕਲਪਨਾ ਤੋਂ — ਜਦੋਂ ਸ਼ਕਤੀ ਦਾ ਜੋਸ਼ ਉੱਠੇ ਅਤੇ ਫਿਰ ਸ਼ਾਂਤ ਹੋਵੇ, ਉਦੋਂ ਉਹ (ਪਰਮ) ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -21097,7 +21097,7 @@ chapters:
       license: CC-BY-SA
       text: ஆதாரங்களில் (உடல் சக்கரங்களில்), அல்லது இயலாமையினால், அல்லது ஞானத்தினால், அல்லது இடம்-கல்பனையினால் — சக்தியின் கிளர்ச்சி உதித்து, பின்னர் சாந்தம் ஆனபோது, அப்போது (அந்த நிலை) உண்டாகும்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -21105,7 +21105,7 @@ chapters:
       license: CC-BY-SA
       text: ఆకాశమునందు తీక్ష్ణ దృష్టి నిలిపి, పలికినను నిమేషించక, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 96
@@ -21328,7 +21328,7 @@ chapters:
       license: CC-BY-SA
       text: ‘అహమ్’ అన్న భావనను త్యజించుచు, స్వీయ స్వరూపమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 97
@@ -21521,7 +21521,7 @@ chapters:
       license: CC-BY-SA
       text: బుద్ధి-అహంకారాది ఉద్భవముల ముందు చిత్తము నిలిపి, ఆ ముల్యమైన మూలమునందు లయించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 98
@@ -21682,7 +21682,7 @@ chapters:
       license: CC-BY-SA
       text: जिभ मधोमध, तोंड उघडे ठेवून, मध्ये चेतना ठेवावी; मनाने मंत्र उच्चारत, शिव म्हणून ध्यान केल्यास, साधक प्रशम (पूर्ण शांती) प्राप्त करतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -21714,7 +21714,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరములో సర్వ నాడుల ద్వారా ప్రాణ-వ్యాపనమును పరిశీలించుచు, ఆ ప్రాణ-రూపమునందు లయించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 99
@@ -21862,7 +21862,7 @@ chapters:
       license: CC-BY-SA
       text: అంతరిక్షములోని పక్షుల వలె నిర్బంధరహితముగా చిత్తము విహరించునట్లు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 100
@@ -22010,7 +22010,7 @@ chapters:
       license: CC-BY-SA
       text: వాయుసాధనము ద్వారా చిత్తము ఏకాగ్రముగా నిలిపి, శూన్యమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 101
@@ -22071,7 +22071,7 @@ chapters:
       license: PD
       text: "By the weapon of sight blocked by the hands, by piercing between the brows and closing the apertures, when a dot is seen and gradually dissolves, in its midst arises the supreme state."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -22094,7 +22094,7 @@ chapters:
       license: CC-BY-SA
       text: હાથોથી દૃષ્ટિ-અસ્ત્ર રોકીને, ભ્રૂભેદ અને દ્વાર-રોધનથી, બિન્દુ દેખાય અને ક્રમશઃ લય પામે — તેના મધ્યમાં પરમ સ્થિતિ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -22110,7 +22110,7 @@ chapters:
       license: CC-BY-SA
       text: ಕರಗಳಿಂದ ತಡೆದ ದೃಷ್ಟಿ ಎಂಬ ಅಸ್ತ್ರದಿಂದ, ಭ್ರೂಭೇದದಿಂದ, ದ್ವಾರರೋಧದಿಂದ ಬಿಂದು ಕಂಡು ಲೀನವಾದಾಗ ಅದರ ಮಧ್ಯದಲ್ಲಿ ಪರಮ ಸ್ಥಿತಿ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -22134,7 +22134,7 @@ chapters:
       license: CC-BY-SA
       text: ହାତ ଦ୍ୱାରା ଦୃଷ୍ଟି-ଅସ୍ତ୍ର ରୋଧ କରି, ଭ୍ରୂ-ଭେଦ ଓ ଦ୍ୱାର-ରୋଧ ଦ୍ୱାରା, ବିନ୍ଦୁ ଦୃଷ୍ଟ ଓ କ୍ରମେ ଲୀନ ହେଲେ — ତା'ର ମଝିରେ ପରମ ସ୍ଥିତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -22142,7 +22142,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੱਥਾਂ ਨਾਲ ਨਜ਼ਰ ਰੋਕ ਕੇ, ਭਰੌਆਂ ਨੂੰ ਖੋਲ੍ਹ ਕੇ, (ਇੰਦਰੀਆਂ ਦੇ) ਦੁਆਰ ਬੰਦ ਕਰ ਕੇ — ਬਿੰਦੂ ਦਿਖਾਈ ਦੇਣ ਅਤੇ ਕ੍ਰਮਵਾਰ ਲੀਨ ਹੋਣ 'ਤੇ ਉਸ ਦੇ ਮੱਧ ਵਿਚ ਪਰਮ ਅਵਸਥਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -22150,7 +22150,7 @@ chapters:
       license: CC-BY-SA
       text: கைகளால் பார்வையை அடைத்தலெனும் ஆயுதத்தினால், புருவ-மத்தியைப் பிளந்து, துவாரங்களை அடைத்து — பிந்து தோன்றி படிப்படியாக கரைந்தபோது, அதன் மத்தியில் பரம நிலை.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -22158,7 +22158,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్ర-గమన-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 102
@@ -22216,26 +22216,76 @@ chapters:
       iast: tāni
       gloss_en: those (forms)
       morph: acc. pl. n.
+      gloss_as: সেইবোৰ (ৰূপ)
+      gloss_bn: সেগুলি (রূপ)
+      gloss_gu: તે (સ્વરૂપો)
+      gloss_hi: उन (रूपों को) — कर्म कारक बहुवचन
+      gloss_kn: ಆ (ರೂಪಗಳನ್ನು)
+      gloss_ml: ആ (രൂപങ്ങളെ) — കർമ്മ കാരകം
+      gloss_mr: ती (रूपे)
+      gloss_or: ସେସବୁ (ରୂପ)
+      gloss_pa: ਉਹ (ਰੂਪ)
+      gloss_ta: அந்த (வடிவங்களை)
       gloss_te: ఆ (రూపములు)
     - word: sādhayate
       iast: sādhayate
       gloss_en: accomplishes, realizes
       morph: 3sg. caus. pres.
+      gloss_as: সিদ্ধ কৰে
+      gloss_bn: সাধন করে
+      gloss_gu: સાધે છે
+      gloss_hi: सिद्ध करता है — क्रिया, प्रेरणार्थक वर्तमान
+      gloss_kn: ಸಾಧಿಸುತ್ತಾನೆ
+      gloss_ml: സാധിക്കുന്നു — പ്രേരണാർത്ഥ വർത്തമാനം
+      gloss_mr: साधतो
+      gloss_or: ସାଧନ କରେ
+      gloss_pa: ਸਾਧਦਾ ਹੈ
+      gloss_ta: சாதிக்கிறான்
       gloss_te: సాధించును
     - word: kaścit
       iast: kaścit
       gloss_en: some, someone (rare practitioner)
       morph: nom. sg. m.
+      gloss_as: কোনোবা (এজন বিৰল সাধক)
+      gloss_bn: কেউ (এক বিরল সাধক)
+      gloss_gu: કોઈક (વિરલ સાધક)
+      gloss_hi: कोई (विरल साधक) — कर्ता कारक
+      gloss_kn: ಯಾರೋ (ವಿರಳ ಸಾಧಕ)
+      gloss_ml: ആരോ (അപൂർവ്വ സാധകൻ) — കർത്താ കാരകം
+      gloss_mr: कोणी (विरळ साधक)
+      gloss_or: କେହି (ବିରଳ ସାଧକ)
+      gloss_pa: ਕੋਈ (ਵਿਰਲਾ ਸਾਧਕ)
+      gloss_ta: யாரோ (அரிய சாதகன்)
       gloss_te: ఎవరో, అరుదైనవాడు
     - word: sādhayan
       iast: sādhayan
       gloss_en: while practicing
       morph: pres. act. part.
+      gloss_as: সিদ্ধ কৰি
+      gloss_bn: সাধন করতে করতে
+      gloss_gu: સાધતો
+      gloss_hi: सिद्ध करता हुआ — वर्तमान कृदन्त
+      gloss_kn: ಸಾಧಿಸುತ್ತಾ
+      gloss_ml: സാധിച്ചുകൊണ്ട് — വർത്തമാന കൃദന്തം
+      gloss_mr: साधत असता
+      gloss_or: ସାଧନ କରୁ କରୁ
+      gloss_pa: ਸਾਧਦਾ ਹੋਇਆ
+      gloss_ta: சாதித்தபடி
       gloss_te: సాధించుచూ
     - word: bhavet
       iast: bhavet
       gloss_en: becomes
       morph: 3sg. opt. √bhū
+      gloss_as: হৈ পৰে
+      gloss_bn: হয়
+      gloss_gu: બને છે
+      gloss_hi: हो जाता है — विधिलिङ्, √भू
+      gloss_kn: ಆಗುತ್ತಾನೆ
+      gloss_ml: ആകുന്നു — വിധിലിങ്, √ഭൂ
+      gloss_mr: होतो
+      gloss_or: ହୋଇଯାଏ
+      gloss_pa: ਬਣ ਜਾਂਦਾ ਹੈ
+      gloss_ta: ஆகிறான்
       gloss_te: అగును
     translations:
     - lang: en
@@ -22244,7 +22294,7 @@ chapters:
       license: PD
       text: "The forms declared as the meanings of mantras (are realized) according to the practitioner's qualification. One who actually accomplishes them, by practicing, becomes an adept."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -22267,7 +22317,7 @@ chapters:
       license: CC-BY-SA
       text: મંત્રાર્થ રૂપે કહેલા સ્વરૂપો અધિકારી-વિશેષ પ્રમાણે છે; જે કોઈ સાધે છે, સાધતો સાધક બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -22283,7 +22333,7 @@ chapters:
       license: CC-BY-SA
       text: ಮಂತ್ರಾರ್ಥವಾಗಿ ಹೇಳಲ್ಪಟ್ಟ ರೂಪಗಳು ಅಧಿಕಾರಿ ವಿಶೇಷದಂತೆ; ಅವುಗಳನ್ನು ಸಾಧಿಸುವವನು ಸಾಧಕನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -22299,7 +22349,7 @@ chapters:
       license: CC-BY-SA
       text: अधिकाऱ्याच्या विशेषतेनुसार मंत्र-अर्थ-प्रोक्त (मंत्रांच्या अर्थांनी सांगितलेली) रूपे साधावी; जो साधतो तोच साधक होतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -22307,7 +22357,7 @@ chapters:
       license: CC-BY-SA
       text: ମନ୍ତ୍ର-ଅର୍ଥ ରୂପେ ଉକ୍ତ ରୂପଗୁଡ଼ିକ ଅଧିକାରୀ ବିଶେଷ ଅନୁସାରେ; ଯିଏ ସେସବୁ ସାଧନ କରନ୍ତି — ସେ ସାଧକ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -22315,7 +22365,7 @@ chapters:
       license: CC-BY-SA
       text: ਮੰਤਰਾਂ ਦੇ ਅਰਥ-ਰੂਪ ਜੋ ਦੱਸੇ ਗਏ ਹਨ, ਉਹ ਅਧਿਕਾਰੀ ਅਨੁਸਾਰ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ; ਜਿਹੜਾ ਇਨ੍ਹਾਂ ਨੂੰ ਸਾਧਦਾ ਹੈ, ਉਹੀ ਸਾਧਕ ਬਣਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -22323,7 +22373,7 @@ chapters:
       license: CC-BY-SA
       text: மந்திரத்தின் பொருளாக சொல்லப்பட்ட வடிவங்கள், சாதகனின் அதிகாரத்துக்கு (தகுதிக்கு) ஏற்ப — அவற்றை சிலர் சாதிக்கிறார்கள்; சாதிப்பவன் சாதகன் ஆகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -22331,7 +22381,7 @@ chapters:
       license: CC-BY-SA
       text: హృదయములో అత్యంత ఆనందము ఉద్భవించునపుడు, ఆ ఆనందమునందు చిత్తము లయించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 103
@@ -22389,21 +22439,61 @@ chapters:
       iast: tasmāt
       gloss_en: therefore
       morph: abl. sg. m.
+      gloss_as: সেয়েহে
+      gloss_bn: সেইজন্য
+      gloss_gu: તેથી
+      gloss_hi: इसलिए — अपादान कारक
+      gloss_kn: ಆದ್ದರಿಂದ
+      gloss_ml: അതിനാൽ — അപാദാന കാരകം
+      gloss_mr: म्हणून
+      gloss_or: ସେଥିପାଇଁ
+      gloss_pa: ਇਸ ਲਈ
+      gloss_ta: ஆகையால்
       gloss_te: కావున
     - word: tat-tad-aṅgam
       iast: tat-tad-aṅgam
       gloss_en: this or that limb (of practice)
       morph: acc. sg. n. cpd.
+      gloss_as: সেই সেই অংগ (অভ্যাসৰ)
+      gloss_bn: সেই সেই অঙ্গ (অভ্যাসের)
+      gloss_gu: તે તે અંગ (અભ્યાસનું)
+      gloss_hi: उस-उस अंग को (अभ्यास का) — कर्म कारक, समासगत
+      gloss_kn: ಆಯಾ ಅಂಗವನ್ನು (ಅಭ್ಯಾಸದ)
+      gloss_ml: അതാത് അംഗത്തെ (അഭ്യാസത്തിന്റെ) — കർമ്മ കാരകം
+      gloss_mr: त्या-त्या अंगाला (अभ्यासाच्या)
+      gloss_or: ସେହି ସେହି ଅଙ୍ଗ (ଅଭ୍ୟାସର)
+      gloss_pa: ਉਸ-ਉਸ ਅੰਗ ਨੂੰ (ਅਭਿਆਸ ਦੇ)
+      gloss_ta: அந்தந்த அங்கத்தை (பயிற்சியின்)
       gloss_te: ఆయా అంగములు
     - word: viśeṣataḥ
       iast: viśeṣataḥ
       gloss_en: particularly, especially
       morph: adv.
+      gloss_as: বিশেষকৈ
+      gloss_bn: বিশেষভাবে
+      gloss_gu: વિશેષ રૂપે
+      gloss_hi: विशेष रूप से — क्रियाविशेषण
+      gloss_kn: ವಿಶೇಷವಾಗಿ
+      gloss_ml: വിശേഷിച്ച് — ക്രിയാവിശേഷണം
+      gloss_mr: विशेषकरून
+      gloss_or: ବିଶେଷ ଭାବେ
+      gloss_pa: ਵਿਸ਼ੇਸ਼ ਤੌਰ ਤੇ
+      gloss_ta: விசேடமாக
       gloss_te: విశేషముగా
     - word: avāpnuyāt
       iast: avāpnuyāt
       gloss_en: one would attain
       morph: 3sg. opt. ava-√āp
+      gloss_as: লাভ কৰিব পাৰে
+      gloss_bn: লাভ করতে পারে
+      gloss_gu: પ્રાપ્ત કરે
+      gloss_hi: प्राप्त कर लेता है — विधिलिङ्, अव-√आप्
+      gloss_kn: ಪಡೆಯುತ್ತಾನೆ
+      gloss_ml: പ്രാപിക്കും — വിധിലിങ്, അവ-√ആപ്
+      gloss_mr: प्राप्त करतो
+      gloss_or: ପ୍ରାପ୍ତ କରେ
+      gloss_pa: ਪ੍ਰਾਪਤ ਕਰ ਲੈਂਦਾ ਹੈ
+      gloss_ta: அடைகிறான்
       gloss_te: పొందగలడు
     translations:
     - lang: en
@@ -22412,7 +22502,7 @@ chapters:
       license: PD
       text: "Therefore one should investigate this or that limb (of the practice) in particular. By resorting to a single knowledge, one attains the perfection of yoga."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -22435,7 +22525,7 @@ chapters:
       license: CC-BY-SA
       text: તેથી તે તે અંગને વિશેષપણે અનુસંધાન કરો; એક જ્ઞાનનો આશ્રય લઈને યોગ-સિદ્ધિ પ્રાપ્ત થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -22451,7 +22541,7 @@ chapters:
       license: CC-BY-SA
       text: ಆದ್ದರಿಂದ ಆಯಾ ಅಂಗವನ್ನು ವಿಶೇಷವಾಗಿ ಅನುಸಂಧಾನಿಸಬೇಕು; ಒಂದು ಜ್ಞಾನವನ್ನು ಆಶ್ರಯಿಸಿ ಯೋಗಸಿದ್ಧಿ ಸಿಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -22467,7 +22557,7 @@ chapters:
       license: CC-BY-SA
       text: म्हणून त्या-त्या (साधनेच्या) अंगांची विशेषतेने अनुसंधाने (तपासणी) करावी; एका ठिकाणी ज्ञान केंद्रित केल्यास साधक योग-सिद्धी प्राप्त करतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -22475,7 +22565,7 @@ chapters:
       license: CC-BY-SA
       text: ସେଥିପାଇଁ ସେହି ସେହି ଅଙ୍ଗ ବିଶେଷ ଭାବେ ଅନୁସନ୍ଧାନ କରଣୀୟ; ଏକ ଜ୍ଞାନର ଆଶ୍ରୟ ନେଇ ଯୋଗ-ସିଦ୍ଧି ପ୍ରାପ୍ତ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -22483,7 +22573,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਸ ਲਈ ਹਰ ਅੰਗ ਦਾ ਵਿਸ਼ੇਸ਼ ਤੌਰ ਤੇ ਅਨੁਸੰਧਾਨ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ; ਇਕ ਥਾਂ ਟਿਕੇ ਗਿਆਨ ਨੂੰ ਆਸਰਾ ਬਣਾ ਕੇ ਯੋਗ-ਸਿੱਧੀ ਮਿਲਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -22499,7 +22589,7 @@ chapters:
       license: CC-BY-SA
       text: అకస్మాత్తుగా ఏదైనను అత్యంత ఆశ్చర్యకరమైన దృశ్యము గోచరించునపుడు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 104
@@ -22557,21 +22647,61 @@ chapters:
       iast: kāminaḥ
       gloss_en: of the lover, of one who desires
       morph: gen. sg. m.
+      gloss_as: কামীৰ (অভিলাষীৰ)
+      gloss_bn: কামীর (অভিলাষীর)
+      gloss_gu: કામીના (અભિલાષીના)
+      gloss_hi: कामी (अभिलाषी) का — सम्बन्ध कारक
+      gloss_kn: ಕಾಮಿಯ (ಅಭಿಲಾಷಿಯ)
+      gloss_ml: കാമിയുടെ (ആഗ്രഹിക്കുന്നവന്റെ) — സംബന്ധിക
+      gloss_mr: कामीच्या (अभिलाषी जनाच्या)
+      gloss_or: କାମୀର (ଅଭିଳାଷୀର)
+      gloss_pa: ਕਾਮੀ ਦਾ (ਚਾਹਵਾਨ ਦਾ)
+      gloss_ta: காமியின் (விரும்புபவனின்)
       gloss_te: కామి యొక్క
     - word: yoginām mataḥ
       iast: yoginām mataḥ
       gloss_en: is held by the yogins (as a teaching)
       morph: gen. pl. + nom. sg. m.
+      gloss_as: যোগীসকলে স্বীকৃত
+      gloss_bn: যোগীদের দ্বারা স্বীকৃত
+      gloss_gu: યોગીઓ વડે માન્ય
+      gloss_hi: योगियों द्वारा (सिद्धान्तरूप में) माना गया — सम्बन्ध बहुवचन + कर्ता
+      gloss_kn: ಯೋಗಿಗಳಿಂದ ಒಪ್ಪಲ್ಪಟ್ಟದ್ದು
+      gloss_ml: യോഗികളാൽ അംഗീകരിക്കപ്പെട്ടത് — സംബന്ധ ബഹുവചനം
+      gloss_mr: योग्यांनी मान्य केलेला
+      gloss_or: ଯୋଗୀମାନଙ୍କ ଦ୍ୱାରା ସ୍ୱୀକୃତ
+      gloss_pa: ਯੋਗੀਆਂ ਵੱਲੋਂ ਮੰਨਿਆ ਗਿਆ
+      gloss_ta: யோகிகளால் ஏற்கப்பட்டது
       gloss_te: యోగులచే అంగీకరింపబడినది
     - word: jāyate
       iast: jāyate
       gloss_en: arises, is born
       morph: 3sg. pres. √jan
+      gloss_as: উদয় হয়
+      gloss_bn: উদিত হয়
+      gloss_gu: ઉદ્ભવે છે
+      gloss_hi: उत्पन्न होती है — वर्तमान, √जन्
+      gloss_kn: ಉದ್ಭವಿಸುತ್ತದೆ
+      gloss_ml: ഉദ്ഭവിക്കുന്നു — വർത്തമാനം, √ജൻ
+      gloss_mr: उद्भवते
+      gloss_or: ଉଦ୍ଭବ ହୁଏ
+      gloss_pa: ਉਪਜਦੀ ਹੈ
+      gloss_ta: உதிக்கிறது
       gloss_te: ఉద్భవించును
     - word: parameśvarī
       iast: parameśvarī
       gloss_en: the Supreme Goddess
       morph: nom. sg. f.
+      gloss_as: পৰমেশ্বৰী
+      gloss_bn: পরমেশ্বরী
+      gloss_gu: પરમેશ્વરી
+      gloss_hi: परमेश्वरी (परम देवी) — कर्ता कारक
+      gloss_kn: ಪರಮೇಶ್ವರಿ
+      gloss_ml: പരമേശ്വരി (പരമദേവി) — കർത്താ കാരകം
+      gloss_mr: परमेश्वरी
+      gloss_or: ପରମେଶ୍ୱରୀ
+      gloss_pa: ਪਰਮੇਸ਼ਵਰੀ
+      gloss_ta: பரமேஸ்வரி (உயர் தேவி)
       gloss_te: పరమేశ్వరి
     translations:
     - lang: en
@@ -22580,7 +22710,7 @@ chapters:
       license: PD
       text: "Of the lover, in the surge of desire, the yogins consider that wonder — the Supreme Goddess as the bliss-power of one's own body — actually arises."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -22595,7 +22725,7 @@ chapters:
       license: CC-BY-SA
       text: কামীর কামনা-বেগ থেকে যে বিস্ময় — যোগীরা একে মান্য করেন; নিজ-শরীরের আহ্লাদ-শক্তিই পরমেশ্বরী রূপে জন্মায়।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -22603,7 +22733,7 @@ chapters:
       license: CC-BY-SA
       text: કામીને કામના-વેગથી જે વિસ્મય થાય તે યોગીઓના મતે — પોતાના શરીરની આહ્લાદ-શક્તિ રૂપે પરમેશ્વરી જન્મે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -22619,7 +22749,7 @@ chapters:
       license: CC-BY-SA
       text: ಕಾಮಿಗೆ ಕಾಮನೆಯ ವೇಗದಿಂದ ವಿಸ್ಮಯ ಉಂಟಾಗುತ್ತದೆಂದು ಯೋಗಿಗಳು ಒಪ್ಪುತ್ತಾರೆ; ಸ್ವಶರೀರಾಹ್ಲಾದ ಶಕ್ತಿಯಾಗಿ ಪರಮೇಶ್ವರಿ ಹುಟ್ಟುತ್ತಾಳೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -22643,7 +22773,7 @@ chapters:
       license: CC-BY-SA
       text: କାମୀର କାମନା-ବେଗରୁ ଯୋଗୀଙ୍କ ମତରେ ଯେଉଁ ବିସ୍ମୟ — ତାହାହିଁ ନିଜ ଶରୀରର ଆହ୍ଲାଦ-ଶକ୍ତି ରୂପେ ପରମେଶ୍ୱରୀ ଜାତ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -22651,7 +22781,7 @@ chapters:
       license: CC-BY-SA
       text: ਕਾਮੀ ਦੀ ਕਾਮਨਾ ਦੇ ਉਛਾਲ ਵਿਚ ਜੋ ਵਿਸਮੈ ਹੈ, ਉਹ ਯੋਗੀਆਂ ਦੀ ਦ੍ਰਿਸ਼ਟੀ ਵਿਚ ਆਪਣੇ ਸਰੀਰ ਵਿਚ ਉੱਠਣ ਵਾਲੀ ਆਨੰਦ-ਸ਼ਕਤੀ — ਪਰਮੇਸ਼ਵਰੀ — ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -22667,7 +22797,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను చిత్తము విషయాంతరమునకు ప్రవేశించునపుడు, ఆ క్షణమునందు పూర్ణ-ఏకాగ్రతతో చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 105
@@ -22748,7 +22878,7 @@ chapters:
       license: PD
       text: "By licking, churning, pressing — even by the mere memory of woman's pleasure in the absence of the Śakti, O Devī, a flood of bliss may arise."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -22763,7 +22893,7 @@ chapters:
       license: CC-BY-SA
       text: লেহন, মন্থন, আকোট দ্বারা — স্ত্রী-সুখের ভর-স্মৃতি থেকে — শক্তির অভাবেও, হে দেবেশী, আনন্দ-সম্প্লব হতে পারে।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -22771,7 +22901,7 @@ chapters:
       license: CC-BY-SA
       text: લેહન-મંથન-આકોટન દ્વારા, સ્ત્રી-સુખની સ્મૃતિના ભારથી — શક્તિના અભાવમાં પણ, હે દેવેશિ, આનંદનો સંપ્લવ થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -22787,7 +22917,7 @@ chapters:
       license: CC-BY-SA
       text: ಲೇಹನ-ಮಂಥನ-ಆಕೋಟಗಳಿಂದ ಸ್ತ್ರೀಸುಖದ ಭರದ ಸ್ಮೃತಿಯಿಂದ — ಶಕ್ತಿಯ ಅಭಾವದಲ್ಲೂ ದೇವೇಶಿ, ಆನಂದ ಸಮ್ಪ್ಲವ ಉಂಟಾಗುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -22811,7 +22941,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ଦେବେଶି, ଲେହନ, ମନ୍ଥନ, ଆକୋଟ ଦ୍ୱାରା, ସ୍ତ୍ରୀ-ସୁଖର ସ୍ମରଣ ଦ୍ୱାରା — ଶକ୍ତିର ଅଭାବରେ ସୁଦ୍ଧା ଆନନ୍ଦର ସମ୍ପ୍ଳାବ ହୋଇପାରେ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -22819,7 +22949,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਦੇਵੇਸ਼ੀ, ਚਟਣ-ਮਥਣ-ਦਬਾਉਣ ਨਾਲ, ਜਾਂ ਸ਼ਕਤੀ ਦੀ ਅਣਹੋਂਦ ਵਿਚ ਵੀ ਇਸਤਰੀ-ਸੁਖ ਦੀ ਯਾਦ ਦੀ ਪੂਰਨਤਾ ਨਾਲ ਆਨੰਦ ਦਾ ਹੜ੍ਹ ਉਪਜ ਸਕਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -22835,7 +22965,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను అన్యత్రాది యందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 106
@@ -22976,7 +23106,7 @@ chapters:
       license: CC-BY-SA
       text: महान आनंद प्राप्त झाल्यावर, किंवा कितीतरी दिवसांनी प्रिय बंधू दिसल्यावर, उद्गत झालेल्या आनंदाचे ध्यान केल्यास, साधक त्यात तल्लीन व त्यातच मन असलेला होतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -23008,7 +23138,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను నిద్రారంభ-సమయమునందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 107
@@ -23171,7 +23301,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన ప్రకాశ-దర్శనమునందు, ఆ ప్రకాశమునందు చిత్తము లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 108
@@ -23349,7 +23479,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను అదృష్టమైన నాద-శ్రవణమునందు, ఆ నాదమునందు చిత్తము లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 109
@@ -23572,7 +23702,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన గంధ-రస-స్పర్శానుభవమునందు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 110
@@ -23718,7 +23848,7 @@ chapters:
       license: CC-BY-SA
       text: जेव्हा निद्रा अद्याप आलेली नाही व बाह्य विषय नष्ट झालेले आहेत — ती अवस्था मनाने गाठावी; तिथे परा देवी प्रकाशते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -23750,7 +23880,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను ఆశ్చర్యజనకమైన భయ-విస్మయాది అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 111
@@ -23911,7 +24041,7 @@ chapters:
       license: CC-BY-SA
       text: सूर्य, दीप वगैरेंच्या तेजाने आकाश रंगीबेरंगी झाले असता, स्वतःचा आत्मा त्या प्रभेशी संयुक्त दिसताच — सच्चिदानंदाचे क्षेत्र (अनुभूतीत) उघडते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -23943,7 +24073,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన లాలసా-రోషాది అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 112
@@ -24149,7 +24279,7 @@ chapters:
       license: CC-BY-SA
       text: कारंकिणी, क्रोधना, भैरवी, लेलिहाना व खेचरी — या (मुद्रांच्या) दृष्टीच्या वेळी परम-आवाप्ती (परम-प्राप्ती) प्रकाशते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -24173,7 +24303,7 @@ chapters:
       license: CC-BY-SA
       text: கரங்கிணி, க்ரோதனை, பைரவி, லேலிஹானை, கேசரி ஆகிய (முத்திரைகளின்) பார்வையின் சமயத்தில் — பரம-அடைவு வெளிப்படுகிறது.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -24181,7 +24311,7 @@ chapters:
       license: CC-BY-SA
       text: ఎచ్చటనైనను ప్రాణాయామ-సాధనయందు చిత్తము నిలిపి, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 113
@@ -24287,7 +24417,7 @@ chapters:
       license: PD
       text: "On a soft seat, supported by one buttock alone, leaving hand and foot unsupported — by that engagement, supreme full insight arises."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -24310,7 +24440,7 @@ chapters:
       license: CC-BY-SA
       text: કોમળ આસન પર એક નિતંબ વડે, હાથ-પગને નિરાધાર રાખીને બેઠેલા — તે પ્રસંગથી પરા પૂર્ણ મતિ થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -24326,7 +24456,7 @@ chapters:
       license: CC-BY-SA
       text: ಮೃದು ಆಸನದಲ್ಲಿ ಒಂದು ಪೃಷ್ಠದಿಂದ ಮಾತ್ರ ಕುಳಿತು, ಕೈ-ಪಾದಗಳನ್ನು ನಿರಾಶ್ರಯವಾಗಿ ಇಟ್ಟು — ಆ ಪ್ರಸಂಗದಿಂದ ಪರಾ ಪೂರ್ಣ ಮತಿ ಲಭಿಸುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -24342,7 +24472,7 @@ chapters:
       license: CC-BY-SA
       text: मऊ आसनावर एका नितंबावरच आधार घेऊन, हात-पाय निराधार ठेवल्यावर — त्या प्रसंगाने (या असमतोल बैठकीने) परा-पूर्ण मती (बुद्धी) उद्भवते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -24350,7 +24480,7 @@ chapters:
       license: CC-BY-SA
       text: କୋମଳ ଆସନରେ, କେବଳ ଗୋଟିଏ ନିତମ୍ବ ଉପରେ, ହାତ-ପାଦ ନିରାଶ୍ରୟ ରଖି ବସିଲେ — ସେହି ପ୍ରସଙ୍ଗ ଦ୍ୱାରା ପରମ ପୂର୍ଣ୍ଣ ମତି ଜାତ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -24358,7 +24488,7 @@ chapters:
       license: CC-BY-SA
       text: ਨਰਮ ਆਸਣ ਉੱਤੇ ਇਕ ਚੂਲ੍ਹੇ ਦੇ ਸਹਾਰੇ ਬੈਠ, ਹੱਥ-ਪੈਰ ਨਿਰਾਸ਼੍ਰਯ ਛੱਡ ਕੇ — ਇਸ ਪ੍ਰਯੋਗ ਨਾਲ ਪਰਾ ਪੂਰਨ ਮਤਿ ਉਪਜਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -24374,7 +24504,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన ఏకాగ్రతతో మంత్ర-జప-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 114
@@ -24522,7 +24652,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన ధ్యాన-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 115
@@ -24670,7 +24800,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన సమాధి-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 116
@@ -24786,7 +24916,7 @@ chapters:
       license: CC-BY-SA
       text: जिभ मधोमध, तोंड उघडे ठेवून, मध्ये चेतना ठेवून, मनाने 'ह'चा उच्चार करताच, तेव्हा साधक शांत-स्वरूपात विलीन होतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -24818,7 +24948,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన భక్తి-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 117
@@ -24966,7 +25096,7 @@ chapters:
       license: CC-BY-SA
       text: అత్యంత తీవ్రమైన శరణాగతి-అవస్థలందైనను, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 118
@@ -25114,7 +25244,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమునందు ఆకాశ-రూపము పూర్ణముగా చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 119
@@ -25262,7 +25392,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమునందు అగ్ని-రూపము పూర్ణముగా చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 120
@@ -25323,7 +25453,7 @@ chapters:
       license: PD
       text: "Contemplate all the sky dissolved in the crown of the head, as nothing but the Bhairava-nature. Then one enters the all — the brilliance-reality in Bhairava's form."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -25346,7 +25476,7 @@ chapters:
       license: CC-BY-SA
       text: સંપૂર્ણ વ્યોમ મૂર્ધામાં લય થયેલું ભૈરવત્વ રૂપે ભાવો; તે સર્વ ભૈરવાકાર-તેજસ્-તત્ત્વમાં પ્રવેશે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -25362,7 +25492,7 @@ chapters:
       license: CC-BY-SA
       text: ತಲೆಯಲ್ಲಿ ಲೀನವಾದ ಎಲ್ಲ ವ್ಯೋಮವನ್ನು ಭೈರವತ್ವದಿಂದ ಭಾವಿಸಬೇಕು; ಅದೆಲ್ಲ ಭೈರವಾಕಾರ ತೇಜಸ್‌ತತ್ತ್ವದಲ್ಲಿ ಪ್ರವೇಶಿಸಬೇಕು.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -25386,7 +25516,7 @@ chapters:
       license: CC-BY-SA
       text: ମୁଣ୍ଡରେ ଲୀନ ସମସ୍ତ ବ୍ୟୋମକୁ ଭୈରବତ୍ୱ ରୂପେ ଭାବନା କରନ୍ତୁ — ସେସବୁ ଭୈରବାକାର ତେଜସ୍-ତତ୍ତ୍ୱରେ ସମାବେଶ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -25394,7 +25524,7 @@ chapters:
       license: CC-BY-SA
       text: ਸਾਰੇ ਆਕਾਸ਼ ਨੂੰ ਸਿਰ ਦੇ ਮੂਰਧਾ ਵਿਚ ਲੀਨ ਮੰਨ ਕੇ ਭੈਰਵਤਾ-ਰੂਪ ਚਿੰਤਨ ਕਰੋ; ਫਿਰ ਉਹ ਸਭ ਭੈਰਵ-ਆਕਾਰ ਤੇਜਸ-ਤੱਤਵ ਵਿਚ ਪ੍ਰਵੇਸ਼ ਕਰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -25410,7 +25540,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమునందు జల-రూపము పూర్ణముగా చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 121
@@ -25471,7 +25601,7 @@ chapters:
       license: PD
       text: "Partial knowledge brings duality; outer light, then darkness. Knowing the Bhairava-form which is the source of the universe, one bears the infinite light."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -25494,7 +25624,7 @@ chapters:
       license: CC-BY-SA
       text: કિંચિત્-જ્ઞાન દ્વૈતદાયી છે; બાહ્ય આલોક અને પાછું તમસ્. વિશ્વ આદિને ભૈરવ-રૂપ જાણીને અનંત પ્રકાશનો ધારક બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -25510,7 +25640,7 @@ chapters:
       license: CC-BY-SA
       text: ಅಲ್ಪಜ್ಞಾನ ದ್ವೈತದಾಯಿ; ಬಾಹ್ಯಾಲೋಕ-ತಮಸ್ಸುಗಳೂ ಹಾಗೆಯೇ. ವಿಶ್ವಾದಿಯನ್ನು ಭೈರವರೂಪವೆಂದು ತಿಳಿದು ಅನಂತಪ್ರಕಾಶ ಧಾರಕನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -25534,7 +25664,7 @@ chapters:
       license: CC-BY-SA
       text: କିଞ୍ଚିତ୍-ଜ୍ଞାନ ଦ୍ୱୈତ ଆଣେ; ବାହ୍ୟାଲୋକ — ପୁଣି ଅନ୍ଧକାର। ବିଶ୍ୱାଦି ଭୈରବ-ରୂପ ବୋଲି ଜାଣି ବ୍ୟକ୍ତି ଅନନ୍ତ-ପ୍ରକାଶ-ଭୃତ୍ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -25542,7 +25672,7 @@ chapters:
       license: CC-BY-SA
       text: ਥੋੜ੍ਹਾ ਜਾਣਿਆ ਦਵੈਤ ਪੈਦਾ ਕਰਦਾ ਹੈ; ਬਾਹਰੀ ਪ੍ਰਕਾਸ਼ ਫਿਰ ਅੰਧਕਾਰ ਬਣਦਾ ਹੈ; ਵਿਸ਼ਵ-ਮੂਲ ਭੈਰਵ-ਰੂਪ ਨੂੰ ਜਾਣ ਕੇ ਮਨੁੱਖ ਅਨੰਤ ਪ੍ਰਕਾਸ਼ ਦਾ ਧਾਰਕ ਬਣਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -25558,7 +25688,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమునందు భూ-రూపము పూర్ణముగా చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 122
@@ -25706,7 +25836,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమునందు వాయు-రూపము పూర్ణముగా చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 123
@@ -25854,7 +25984,7 @@ chapters:
       license: CC-BY-SA
       text: ఎల్ల తత్త్వములను శరీరమునందు అంతర్బూతముగా చింతించుచు, ఆ స్థితిలో శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 124
@@ -26002,7 +26132,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు దగ్ధమై తేజోరూపమై ప్రకాశించునట్లు చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, తదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 125
@@ -26150,7 +26280,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు ఆకాశ-రూపమై వ్యాపించునట్లు చింతించుచు, ఆ స్థితిని పూర్ణముగా చింతించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 126
@@ -26298,7 +26428,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు తేజోరూపమై వ్యాపించుచు, ఆ తేజస్సునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 127
@@ -26446,7 +26576,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు అమృత-రూపమై వ్యాపించుచు, ఆ అమృతరూపమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 128
@@ -26562,7 +26692,7 @@ chapters:
       license: CC-BY-SA
       text: आरंभी देहाच्या एखाद्या भागाला तीक्ष्ण सुईने वगैरे टोचून, तिथेच चेतना जोडल्यास, भैरवाकडे निर्मल गती प्राप्त होते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -26594,7 +26724,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు శూన్య-రూపమై వ్యాపించుచు, ఆ శూన్యమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 129
@@ -26742,7 +26872,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-ఆనంద-రూపమై వ్యాపించుచు, ఆ ఆనందమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 130
@@ -26803,7 +26933,7 @@ chapters:
       license: PD
       text: "'Māyā is the deluder; impulsion is the function of kalā' — knowing the categories with such properties, one does not stand separate from them."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -26826,7 +26956,7 @@ chapters:
       license: CC-BY-SA
       text: "'માયા વિમોહિની છે; કલાનું કલન છે' — એવી તત્ત્વોની ધર્મ-મીમાંસા કરતો માણસ તેમનાથી પૃથક્ રહેતો નથી."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -26842,7 +26972,7 @@ chapters:
       license: CC-BY-SA
       text: "'ಮಾಯೆ ವಿಮೋಹಿನಿ; ಕಲೆಯ ಕಾರ್ಯ ಕಲನ' ಇತ್ಯಾದಿ ತತ್ತ್ವಗಳ ಧರ್ಮವನ್ನು ಗ್ರಹಿಸುತ್ತಾ ಪ್ರತ್ಯೇಕನಾಗದೆ ಇರುತ್ತಾನೆ."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -26858,7 +26988,7 @@ chapters:
       license: CC-BY-SA
       text: "'माया विमोहिनी आहे, कलेची प्रवृत्ती कलन-स्वरूपात स्थित आहे' — अशा तत्त्वांच्या धर्मांची गणना करत राहणारा साधक त्यांच्यापासून पृथक उरत नाही."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -26866,7 +26996,7 @@ chapters:
       license: CC-BY-SA
       text: "'ମାୟା ବିମୋହିନୀ; କଳାର କଳନ ସ୍ଥିତ' — ତତ୍ତ୍ୱମାନଙ୍କର ଏହିପରି ଧର୍ମକୁ ବିଚାର କରୁଥିବା ବ୍ୟକ୍ତି ପୃଥକ୍ ରହିବେ ନାହିଁ।"
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -26874,7 +27004,7 @@ chapters:
       license: CC-BY-SA
       text: "'ਮਾਯਾ ਵਿਮੋਹਿਨੀ ਹੈ, ਕਲਾ ਦਾ ਕਾਰਜ ਪ੍ਰੇਰਨਾ ਹੈ' — ਅਜਿਹੇ ਧਰਮ ਜਾਣ ਕੇ ਮਨੁੱਖ ਤੱਤਾਂ ਤੋਂ ਵੱਖਰਾ ਨਹੀਂ ਰਹਿੰਦਾ।"
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -26882,7 +27012,7 @@ chapters:
       license: CC-BY-SA
       text: "'மாயை வஞ்சிக்கின்றவள், கலையின் கலனம் (வரம்புத் தன்மையின் இயக்கம்) நிலைபெற்றது' — இவ்வாறான தர்மங்களைக் கொண்டு தத்துவங்களைக் கணிப்பவன், அவற்றிலிருந்து வேறானவனாக இருக்க மாட்டான்."
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -26890,7 +27020,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-చైతన్య-రూపమై వ్యాపించుచు, ఆ చైతన్యమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 131
@@ -27038,7 +27168,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-శాంతి-రూపమై వ్యాపించుచు, ఆ శాంతియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 132
@@ -27186,7 +27316,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-ప్రేమ-రూపమై వ్యాపించుచు, ఆ ప్రేమయందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 133
@@ -27334,7 +27464,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-విమర్శ-రూపమై వ్యాపించుచు, ఆ విమర్శయందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 134
@@ -27395,7 +27525,7 @@ chapters:
       license: PD
       text: "Knowledge arises causeless, supportless, of the nature of error — in truth it belongs to no one. Contemplating thus, O beloved, one becomes Śiva."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -27418,7 +27548,7 @@ chapters:
       license: CC-BY-SA
       text: જ્ઞાન નિર્નિમિત્ત, નિરાધાર અને ભ્રમાત્મક રૂપે ઊભું થાય; તત્ત્વતઃ આ કોઈનું નથી — એમ ભાવનાર, હે પ્રિયે, શિવ બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -27434,7 +27564,7 @@ chapters:
       license: CC-BY-SA
       text: ಜ್ಞಾನವು ನಿರ್ನಿಮಿತ್ತ, ನಿರಾಧಾರ, ಭ್ರಮಾತ್ಮಕ; ತತ್ತ್ವತಃ ಯಾರಿಗೂ ಸೇರಿದ್ದಲ್ಲ — ಪ್ರಿಯೆಯೇ, ಹೀಗೆ ಭಾವಿಸಿದರೆ ಶಿವನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -27458,7 +27588,7 @@ chapters:
       license: CC-BY-SA
       text: ଜ୍ଞାନ ନିର୍ନିମିତ୍ତ, ନିରାଧାର, ଭ୍ରମାତ୍ମକ ହୋଇଥାଏ; ତତ୍ତ୍ୱତଃ ଏହା କାହାରି ନୁହେଁ — ହେ ପ୍ରିୟେ, ଏହିପରି ଭାବନା କରୁଥିବା ବ୍ୟକ୍ତି ଶିବ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -27466,7 +27596,7 @@ chapters:
       license: CC-BY-SA
       text: ਗਿਆਨ ਨਿਰ-ਨਿਮਿੱਤ, ਨਿਰਾਧਾਰ, ਭ੍ਰਮ-ਰੂਪ; ਅਸਲ ਵਿਚ ਇਹ ਕਿਸੇ ਦਾ ਨਹੀਂ — ਹੇ ਪਿਆਰੀ, ਇਉਂ ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸ਼ਿਵ ਹੋ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -27482,7 +27612,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-ప్రకాశ-రూపమై వ్యాపించుచు, ఆ ప్రకాశమునందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 135
@@ -27630,7 +27760,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-నిర్వికల్ప-రూపమై వ్యాపించుచు, ఆ నిర్వికల్ప స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 136
@@ -27778,7 +27908,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-నిష్కల-రూపమై వ్యాపించుచు, ఆ నిష్కల స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 137
@@ -27926,7 +28056,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-నిర్గుణ-రూపమై వ్యాపించుచు, ఆ నిర్గుణ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 138
@@ -28074,7 +28204,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-నిరాకార-రూపమై వ్యాపించుచు, ఆ నిరాకార స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 139
@@ -28222,7 +28352,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వగ-రూపమై వ్యాపించుచు, ఆ సర్వగ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 140
@@ -28283,7 +28413,7 @@ chapters:
       license: PD
       text: "The cognition that arises in me toward pot or other objects, or any desire — contemplating that 'it has arisen as nothing but the all-pervading' — one becomes all-pervading."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -28306,7 +28436,7 @@ chapters:
       license: CC-BY-SA
       text: ઘટ આદિમાં અને મારી અંદર જે વિજ્ઞાન કે ઇચ્છા આદિ ઉદ્ભવે — તે સર્વગત રૂપે જ જન્મ્યું છે એમ ભાવનાર સર્વગ બને છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -28322,7 +28452,7 @@ chapters:
       license: CC-BY-SA
       text: ಘಟಾದಿಗಳಲ್ಲಿ ಯಾವ ವಿಜ್ಞಾನ, ಇಚ್ಛೆ ಮುಂತಾದವು ನನ್ನೊಳಗೆ ಉಂಟಾಗುತ್ತದೋ ಅದು ಸರ್ವಗತವಾಗಿಯೇ ಉಂಟಾಗಿದೆ ಎಂದು ಭಾವಿಸುತ್ತಾ ಸರ್ವಗನಾಗುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -28346,7 +28476,7 @@ chapters:
       license: CC-BY-SA
       text: ଘଟ ଆଦିଠାରେ ଯେଉଁ ବିଜ୍ଞାନ, ବା ମୋ ଭିତରେ ଇଚ୍ଛା ଆଦି — 'ତାହା ସର୍ବଗତ ଭାବେ ଜାତ' ବୋଲି ଭାବନା କରୁଥିବା ବ୍ୟକ୍ତି ସର୍ବଗ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -28354,7 +28484,7 @@ chapters:
       license: CC-BY-SA
       text: ਘੜੇ ਆਦਿ ਵਸਤਾਂ ਵਲ ਮੇਰੇ ਅੰਦਰ ਜੋ ਵਿਗਿਆਨ ਜਾਂ ਇੱਛਾ ਉੱਠੀ ਹੈ, ਉਹ ਸਰਵ-ਵਿਆਪੀ ਹੀ ਹੈ — ਇਉਂ ਚਿੰਤਨ ਕਰਨ ਵਾਲਾ ਸਰਵ-ਗਾਮੀ ਬਣ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -28370,7 +28500,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వజ్ఞ-రూపమై వ్యాపించుచు, ఆ సర్వజ్ఞ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 141
@@ -28518,7 +28648,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వశక్తి-రూపమై వ్యాపించుచు, ఆ సర్వశక్తి స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 142
@@ -28634,7 +28764,7 @@ chapters:
       license: CC-BY-SA
       text: स्वतःच्या देहाप्रमाणेच दुसऱ्याच्या देहातही जाणीव अनुभवावी; स्वतःच्या देहाची अपेक्षा सोडल्यावर काही दिवसांतच साधक व्यापी बनतो.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -28666,7 +28796,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వాత్మ-రూపమై వ్యాపించుచు, ఆ సర్వాత్మ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 143
@@ -28814,7 +28944,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వాంతరయామి-రూపమై వ్యాపించుచు, ఆ సర్వాంతరయామి స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 144
@@ -28962,7 +29092,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వాధార-రూపమై వ్యాపించుచు, ఆ సర్వాధార స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 145
@@ -29110,7 +29240,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వాధ్యక్ష-రూపమై వ్యాపించుచు, ఆ సర్వాధ్యక్ష స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 146
@@ -29258,7 +29388,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వశరణ్య-రూపమై వ్యాపించుచు, ఆ సర్వశరణ్య స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 147
@@ -29319,7 +29449,7 @@ chapters:
       license: PD
       text: "Whether through the supports, or through one's own inability, or through knowledge, or through imagining of a place — when the Śakti-agitation arises and is then pacified, then That comes."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -29342,7 +29472,7 @@ chapters:
       license: CC-BY-SA
       text: આધારોમાં, અશક્તિથી, જ્ઞાનથી, અથવા દેશ-કલ્પનાથી — ઉદ્ભવેલા શક્તિ-સંશોભના શાંત થયા પછી તે (પરમ) અવસ્થા થાય છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -29358,7 +29488,7 @@ chapters:
       license: CC-BY-SA
       text: ಆಧಾರಗಳಲ್ಲಿ, ಅಥವಾ ಅಶಕ್ತಿಯಿಂದ, ಜ್ಞಾನದಿಂದ ಅಥವಾ ದೇಶಕಲ್ಪನೆಯಿಂದ — ಶಕ್ತಿಸಂಶೋಭ ಉಂಟಾಗಿ ಶಾಂತವಾದ ನಂತರ ಪರಮ ಸ್ಥಿತಿ ಲಭಿಸುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -29374,7 +29504,7 @@ chapters:
       license: CC-BY-SA
       text: आधारांवर, अशक्तीने, ज्ञानाने वा देश-कल्पनेने — शक्तीचा क्षोभ उद्भवल्यानंतर, तो शांत झाल्यावर, तेव्हा ती (परा अवस्था) उद्भवते.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -29382,7 +29512,7 @@ chapters:
       license: CC-BY-SA
       text: ଆଧାରଗୁଡ଼ିକରେ, କିମ୍ବା ଅଶକ୍ତି ଦ୍ୱାରା, ଜ୍ଞାନ ଦ୍ୱାରା, ବା ଦେଶ-କଳ୍ପନା ଦ୍ୱାରା — ଶକ୍ତି-ସଂଶୋଭ ଉଠିଲେ, ଶାନ୍ତ ହେଲା ପରେ — ତାହା ଆସେ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -29390,7 +29520,7 @@ chapters:
       license: CC-BY-SA
       text: ਆਧਾਰਾਂ 'ਤੇ, ਅਸ਼ਕਤੀ, ਗਿਆਨ ਜਾਂ ਥਾਂ ਦੀ ਕਲਪਨਾ ਨਾਲ — ਜਦ ਸ਼ਕਤੀ ਜੋਸ਼ਮਾਨ ਹੋ ਕੇ ਸ਼ਾਂਤ ਹੋਵੇ, ਉਦੋਂ ਉਹ ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -29398,7 +29528,7 @@ chapters:
       license: CC-BY-SA
       text: ஆதாரங்களில், அல்லது இயலாமையினால், அல்லது ஞானத்தினால், அல்லது இடம்-கல்பனையினால் — சக்தியின் கிளர்ச்சி உதித்து, பின்னர் சாந்தம் ஆனபோது, அப்போது (அந்த நிலை) உண்டாகும்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -29406,7 +29536,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వకారణ-రూపమై వ్యాపించుచు, ఆ సర్వకారణ స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 148
@@ -29492,7 +29622,7 @@ chapters:
       license: PD
       text: "Just so, everywhere there is Bhairava, O beloved Bhairavī. Everywhere, the teaching called bhāvanā is declared, O lovely one."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -29515,7 +29645,7 @@ chapters:
       license: CC-BY-SA
       text: હે ભૈરવી-પ્રિયે, એ જ રીતે સર્વત્ર ભૈરવ છે; હે શોભને, સર્વત્ર ભાવના નામક ઉપદેશ કહેવાયો છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -29531,7 +29661,7 @@ chapters:
       license: CC-BY-SA
       text: ಹಾಗೆಯೇ ಎಲ್ಲ ಕಡೆ ಭೈರವನು ಇದ್ದಾನೆ, ಪ್ರಿಯ ಭೈರವಿಯೇ; ಎಲ್ಲ ಕಡೆ ಭಾವನಾ ಎಂಬ ಆಖ್ಯಾನ ಹೇಳಲಾಗಿದೆ, ಶೋಭನೆಯೇ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -29555,7 +29685,7 @@ chapters:
       license: CC-BY-SA
       text: ହେ ଭୈରବୀ-ପ୍ରିୟେ, ଠିକ୍ ସେହିପରି ସର୍ବତ୍ର ଭୈରବ; ହେ ଶୋଭନେ, ସର୍ବତ୍ର ଭାବନା ନାମକ ଶିକ୍ଷା ଉକ୍ତ ହୋଇଛି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -29563,7 +29693,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਸੇ ਤਰ੍ਹਾਂ ਸਰਵਤ੍ਰ ਭੈਰਵ ਹੈ, ਹੇ ਭੈਰਵੀ-ਪ੍ਰਿਯੇ; ਹੇ ਸੋਭਨੇ, ਹਰ ਥਾਂ ਭਾਵਨਾ-ਨਾਮਕ ਉਪਦੇਸ਼ ਕਿਹਾ ਗਿਆ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -29579,7 +29709,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వకర్త-రూపమై వ్యాపించుచు, ఆ సర్వకర్త స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 149
@@ -29670,7 +29800,7 @@ chapters:
       license: PD
       text: "Whoever it may be — whoever forms the 'I'-notion in this body — even of that meager awareness, the very Bhairavatva shines forth."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -29693,7 +29823,7 @@ chapters:
       license: CC-BY-SA
       text: આ દેહમાં જે કોઈને 'હું છું' એવો અહંકાર-ભાવ ઊભો થાય, તે ક્ષુદ્ર સંવિત્તિમાં પણ ભૈરવત્વ પ્રકાશે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -29709,7 +29839,7 @@ chapters:
       license: CC-BY-SA
       text: ಯಾವನ ದೇಹದಲ್ಲಿಯಾದರೂ 'ನಾನು' ಎಂಬ ಪ್ರತ್ಯಯ ಉಂಟಾಗುತ್ತದೋ — ಆ ಅಲ್ಪ ಸಂವಿತ್ತಿಯಿಂದಲೇ ಭೈರವತ್ವ ಪ್ರಕಾಶಿಸುತ್ತದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -29733,7 +29863,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହି ଦେହରେ ଯିଏ ବି 'ମୁଁ' ବୋଲି ପ୍ରତ୍ୟୟ କରନ୍ତି — ତାଙ୍କର କ୍ଷୁଦ୍ର-ସମ୍ବିତ୍ତିରୁ ବି ଭୈରବତ୍ୱ ପ୍ରକାଶିତ ହୁଏ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -29741,7 +29871,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਿਸ ਕਿਸੇ ਦੇ ਇਸ ਸਰੀਰ ਵਿਚ 'ਮੈਂ' ਦੀ ਪ੍ਰਤੀਤੀ ਉਠੇ — ਉਸ ਦੀ ਛੋਟੀ ਜਿਹੀ ਸੰਵਿਤੀ ਤੋਂ ਵੀ ਭੈਰਵਤਾ ਪ੍ਰਕਾਸ਼ਿਤ ਹੁੰਦੀ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -29757,7 +29887,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వభోక్త-రూపమై వ్యాపించుచు, ఆ సర్వభోక్త స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 150
@@ -29935,7 +30065,7 @@ chapters:
       license: CC-BY-SA
       text: శరీరమంతయు పరమ-సర్వద్రష్ట-రూపమై వ్యాపించుచు, ఆ సర్వద్రష్ట స్థితియందు లయించుచు, శివ-తాదాత్మ్యత పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 151
@@ -30056,7 +30186,7 @@ chapters:
       license: PD
       text: "Just as you, filled with compassion, have brought forth this secret — so it should be spoken to anyone (worthy). Do not cast it into an unworthy ear."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -30079,7 +30209,7 @@ chapters:
       license: CC-BY-SA
       text: જે રીતે કૃપાથી પ્રેરિત થઈને તમે આ રહસ્ય ઉદ્ધૃત કર્યું છે, તેવી જ રીતે કોઈને કહેવા યોગ્ય છે; અપાત્ર શ્રોત્રમાં ન નાખવું.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -30095,7 +30225,7 @@ chapters:
       license: CC-BY-SA
       text: ಕೃಪೆಯಿಂದ ತುಂಬಿ ನೀನು ಈ ರಹಸ್ಯವನ್ನು ಉದ್ಧರಿಸಿದಂತೆಯೇ, ಯಾರಿಗೂ ಹಾಗೆಯೇ ಹೇಳಬೇಕು; ಅಯೋಗ್ಯ ಕಿವಿಗೆ ಎಸೆಯಬಾರದು.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -30119,7 +30249,7 @@ chapters:
       license: CC-BY-SA
       text: ଯେପରି ଆପଣ କୃପା-ଆବେଶରେ ଏହି ରହସ୍ୟ ଉଦ୍ଧାର କରିଛନ୍ତି, ସେହିପରି ଏହା ଯୋଗ୍ୟ ବ୍ୟକ୍ତିଙ୍କୁ କୁହାଯିବ; ଅଯୋଗ୍ୟ କର୍ଣ୍ଣରେ ଏହାକୁ ଫିଙ୍ଗନ୍ତୁ ନାହିଁ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -30127,7 +30257,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਿਵੇਂ ਕਿਰਪਾ-ਆਵਿਸ਼ਟ ਹੋ ਕੇ ਆਪ ਨੇ ਇਹ ਰਹੱਸ ਮੈਨੂੰ ਦੱਸਿਆ ਹੈ, ਉਸੇ ਤਰ੍ਹਾਂ ਕਿਸੇ ਨੂੰ ਵੀ ਇਹ ਨਾ ਕਿਹਾ ਜਾਏ; ਅਪਾਤਰ-ਕੰਨ ਵਿਚ ਇਸ ਨੂੰ ਨਾ ਪਾਉ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -30249,7 +30379,7 @@ chapters:
       license: PD
       text: "This knowledge that has arisen destroys old age and death. It is of the Manthāna-Bhairava, worshiped by Brahmā and the other gods."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -30272,7 +30402,7 @@ chapters:
       license: CC-BY-SA
       text: આ વિજ્ઞાન ઉદય પામ્યું જે જરા-મરણનો નાશ કરનાર છે; બ્રહ્મા આદિ દેવોથી વંદ્ય મંથાન-ભૈરવનું છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -30288,7 +30418,7 @@ chapters:
       license: CC-BY-SA
       text: ಈ ವಿಜ್ಞಾನ ಉದಿತವಾಗಿದೆ — ಜರಾ-ಮರಣ ನಾಶಕ; ಬ್ರಹ್ಮಾದಿ ದೇವತೆಗಳಿಂದ ವಂದ್ಯವಾದ ಮಂಥಾನ-ಭೈರವನದು.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -30312,7 +30442,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହି ବିଜ୍ଞାନ ଉଦିତ ହୋଇଛି, ଜରା-ମରଣ-ନାଶକ; ବ୍ରହ୍ମା ଆଦି ଦେବତାଙ୍କ ଦ୍ୱାରା ବନ୍ଦନୀୟ ମନ୍ଥାନ-ଭୈରବଙ୍କର।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -30320,7 +30450,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਹ ਉਪਜਿਆ ਵਿਗਿਆਨ ਬੁਢਾਪਾ-ਮੌਤ ਦਾ ਨਾਸ਼ਕ ਹੈ; ਇਹ ਬ੍ਰਹਮਾ ਆਦਿ ਦੇਵਾਂ ਦੁਆਰਾ ਪੂਜਯ ਮਨਥਾਨ-ਭੈਰਵ ਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -30328,7 +30458,7 @@ chapters:
       license: CC-BY-SA
       text: உதித்துள்ள இந்த விஞ்ஞானம் கிழத்தனத்தையும் மரணத்தையும் அழிக்கும். பிரம்மா முதலான தேவர்களால் வணங்கப்படும் மந்தான-பைரவருடைய (சாரம் இது).
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -30336,7 +30466,7 @@ chapters:
       license: CC-BY-SA
       text: 'భైరవుడు పలికెను: ఎవరి హృదయము పరమ-భక్తి-రూపమై ఉండునో, ఎవరి బుద్ధి శుద్ధ-విమర్శ-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు అధికారులు.'
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 153
@@ -30427,7 +30557,7 @@ chapters:
       license: PD
       text: "Hitherto unproclaimed is this Tantra, which bestows enjoyment and liberation — this hitherto unproclaimed Tantra has been given to them in play."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -30450,7 +30580,7 @@ chapters:
       license: CC-BY-SA
       text: આ અનાખ્યાત તંત્ર ભોગ-મોક્ષ આપનાર છે; આ અનાખ્યાત તંત્ર તેમને લીલા રૂપે આપવામાં આવ્યું છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -30466,7 +30596,7 @@ chapters:
       license: CC-BY-SA
       text: ಈ ಅನಾಖ್ಯಾತ ತಂತ್ರ ಭೋಗ-ಮೋಕ್ಷವಿಧಾಯಕ; ಈ ಅನಾಖ್ಯಾತ ತಂತ್ರ ಲೀಲೆಯಿಂದ ಅವರಿಗೆ ಕೊಡಲಾಗಿದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -30490,7 +30620,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହି ତନ୍ତ୍ର ଅନାଖ୍ୟାତ, ଭୋଗ-ମୋକ୍ଷ-ବିଧାୟକ; ଏହି ଅନାଖ୍ୟାତ ତନ୍ତ୍ର ସେମାନଙ୍କୁ ଲୀଳାରେ ଦାନ କରାଯାଇଛି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -30498,7 +30628,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਹ ਪਹਿਲਾਂ ਨਾ ਆਖਿਆ ਤੰਤਰ — ਭੋਗ ਅਤੇ ਮੋਕਸ਼ ਦੇਣ ਵਾਲਾ — ਉਨ੍ਹਾਂ ਨੂੰ ਲੀਲਾ ਨਾਲ ਦੱਸਿਆ ਗਿਆ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -30514,7 +30644,7 @@ chapters:
       license: CC-BY-SA
       text: గురు-ఉపదేశమునందు అత్యంత శ్రద్ధ కలవారు, ఎవరి హృదయము పరమ-ప్రేమ-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు యోగ్యులు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 154
@@ -30605,7 +30735,7 @@ chapters:
       license: PD
       text: "By the gain of this knowledge, the state of guruhood becomes gracious. Having attained the supreme siddhi, one reaches identity with Śaṅkara."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -30628,7 +30758,7 @@ chapters:
       license: CC-BY-SA
       text: આ જ્ઞાન-લાભથી ગુરુ-ભાવ પ્રસન્ન થાય છે; જે પરમ સિદ્ધિ પ્રાપ્ત કરે છે તે શંકરમાં સમતા પામે છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -30644,7 +30774,7 @@ chapters:
       license: CC-BY-SA
       text: ಈ ಜ್ಞಾನಲಾಭದಿಂದ ಗುರುಭಾವ ಪ್ರಸನ್ನವಾಗುತ್ತದೆ; ಪರಮ ಸಿದ್ಧಿಯನ್ನು ಪಡೆದು ಶಂಕರನಲ್ಲಿ ಸಮತೆಯನ್ನು ಪಡೆಯುತ್ತಾನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -30668,7 +30798,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହି ଜ୍ଞାନ-ଲାଭ ଦ୍ୱାରା ଗୁରୁ-ଭାବ ପ୍ରସନ୍ନ ହୁଏ; ଯିଏ ପରମ ସିଦ୍ଧି ଲାଭ କରନ୍ତି, ସେ ଶଙ୍କରଙ୍କଠାରେ ସମତା ପ୍ରାପ୍ତ ହୁଅନ୍ତି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -30676,7 +30806,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਸ ਗਿਆਨ-ਪ੍ਰਾਪਤੀ ਨਾਲ ਗੁਰੂ-ਭਾਵ ਪ੍ਰਸੰਨ ਹੁੰਦਾ ਹੈ; ਜੋ ਪਰਮ ਸਿੱਧੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ, ਉਹ ਸ਼ੰਕਰ ਨਾਲ ਏਕਤਾ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -30684,7 +30814,7 @@ chapters:
       license: CC-BY-SA
       text: இந்த ஞானத்தைப் பெறுவதனால், குரு-நிலை (சிஷ்யன் மீது) அருள் கொள்கிறது. பரம சித்தியைப் பெற்றவன், சங்கரருடன் சமத்துவத்தை அடைகிறான்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -30692,7 +30822,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవరి చిత్తము పరమ-నిర్వికల్ప-రూపమై ఉండునో, ఎవరి బుద్ధి శుద్ధ-సాత్త్విక-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు యోగ్యులు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 155
@@ -30813,7 +30943,7 @@ chapters:
       license: PD
       text: "Wherever, in any way, there is separation between doer and deed — there too is the Śiva-state. Because of its all-pervasiveness, where can it go?"
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -30852,7 +30982,7 @@ chapters:
       license: CC-BY-SA
       text: ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ ಕರ್ತೃ-ಕರ್ಮ ವಿವಿಕ್ತತೆ ಉಂಟಾಗುತ್ತದೋ ಅಲ್ಲೆಲ್ಲ ಶಿವಾವಸ್ಥೆ; ವ್ಯಾಪಕತೆಯಿಂದ ಎಲ್ಲಿ ಹೋಗಬಲ್ಲದು?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -30876,7 +31006,7 @@ chapters:
       license: CC-BY-SA
       text: ଯେଉଁଠି ଯେଉଁଠି, କୌଣସି ପ୍ରକାରରେ ବି, କର୍ତ୍ତା-କର୍ମର ବିବେକ-ବିଭାଗ ଆସେ — ସେଠାରେ ସେଠାରେ ଶିବ-ଅବସ୍ଥା; ବ୍ୟାପକତା କାରଣରୁ କୁଆଡ଼େ ଯିବ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -30884,7 +31014,7 @@ chapters:
       license: CC-BY-SA
       text: ਜਿੱਥੇ-ਜਿੱਥੇ ਕਿਸੇ ਵੀ ਤਰੀਕੇ ਕਰਤਾ-ਕਰਮ ਦੀ ਵੱਖਰਤਾ ਅਨੁਭਵ ਹੁੰਦੀ ਹੈ, ਉੱਥੇ ਹੀ ਸ਼ਿਵ-ਅਵਸਥਾ ਹੈ; ਉਹ ਸਰਵ-ਵਿਆਪੀ ਹੈ, ਫਿਰ ਕਿੱਥੇ ਜਾਏਗੀ?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -30892,7 +31022,7 @@ chapters:
       license: CC-BY-SA
       text: எங்கெங்கு எவ்விதமேனும் கர்த்தாவையும் கர்மத்தையும் (செய்பவனையும் செயலையும்) வேறுபடுத்துதல் (நிகழ்கிறதோ), அங்கங்கே சிவ-நிலை — (அவர்) எங்கும் பரந்திருப்பதனால், (அது) எங்கு செல்லும்?
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -30900,7 +31030,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవరి హృదయము పరమ-శాంతి-రూపమై ఉండునో, ఎవరి బుద్ధి శుద్ధ-విమర్శ-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు యోగ్యులు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 156
@@ -30991,7 +31121,7 @@ chapters:
       license: PD
       text: "Depending on this Vijñāna, the yogin becomes Śiva. Even with birth in tīrthas, ritual bathing and such are no longer the cause (of his liberation)."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -31014,7 +31144,7 @@ chapters:
       license: CC-BY-SA
       text: આ વિજ્ઞાનનો આશ્રય લઈને યોગી શિવ બને છે; તીર્થ આદિ સ્થાનો અને જાતિ હોવા છતાં સ્નાન આદિ કારણ રહેતા નથી.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -31030,7 +31160,7 @@ chapters:
       license: CC-BY-SA
       text: ಈ ವಿಜ್ಞಾನವನ್ನು ಆಲಂಬಿಸಿ ಯೋಗಿಯು ಶಿವನಾಗುತ್ತಾನೆ; ಜಾತಿ-ಜನನ ಇದ್ದರೂ ತೀರ್ಥಸ್ನಾನಾದಿಗಳು ಅಗತ್ಯವಲ್ಲ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -31054,7 +31184,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହି ବିଜ୍ଞାନକୁ ଅବଲମ୍ବନ କରି ଯୋଗୀ ଶିବ ହୁଅନ୍ତି; ଯଦିଓ ତୀର୍ଥାଦିଠାରେ ଜାତ, ତଥାପି ସ୍ନାନ ଆଦି କାରଣ ନୁହେଁ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -31062,7 +31192,7 @@ chapters:
       license: CC-BY-SA
       text: ਇਸ ਵਿਗਿਆਨ ਨੂੰ ਆਸਰਾ ਬਣਾ ਕੇ ਯੋਗੀ ਸ਼ਿਵ ਬਣਦਾ ਹੈ; ਤੀਰਥਾਂ, ਜਨਮ-ਜਾਤ ਅਤੇ ਇਸ਼ਨਾਨ ਆਦਿ (ਉਸ ਦੀ ਮੁਕਤੀ ਦਾ) ਕਾਰਨ ਨਹੀਂ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -31078,7 +31208,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవరి హృదయము పరమ-ప్రేమ-రూపమై ఉండునో, ఎవరి బుద్ధి శుద్ధ-విమర్శ-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు యోగ్యులు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 157
@@ -31169,14 +31299,14 @@ chapters:
       license: PD
       text: "The inequality of the listener-self and the (cosmic) Power becomes evened by his mental equanimity. The attainment that comes through self-meditation — that is the very contemplation of Reality."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
       text: শ্ৰোতা-আত্মাৰ অসমতা — তেওঁৰ চিত্ত-সমতাৰ দ্বাৰাই শক্তিৰূপে সম হৈ পৰে। আত্ম-ধ্যানৰ দ্বাৰা যি প্ৰাপ্তি — সেইটোৱেই তত্ত্বৰ ভাৱনা।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: bn
@@ -31184,7 +31314,7 @@ chapters:
       license: CC-BY-SA
       text: শ্রোতা-আত্মার অসমতা ও তাঁর শক্তি — চিত্ত-সমতায় সমান হয়; আত্ম-ধ্যানে যে প্রাপ্তি, তাই-ই তত্ত্বের ভাবনা।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
@@ -31192,7 +31322,7 @@ chapters:
       license: CC-BY-SA
       text: શ્રોત્રાત્માની અસમતા — તેની શક્તિ — ચિત્ત-સમતા વડે સમ થાય છે; આત્મ-ધ્યાનથી જે પ્રાપ્તિ થાય તે જ તત્ત્વની ભાવના છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -31200,7 +31330,7 @@ chapters:
       license: CC-BY-SA
       text: श्रोता-आत्मा की असमता (असम-शक्ति) तथा इसकी चित्त-समता दोनों समान हैं; आत्म-ध्यान से जो प्राप्ति है, वही यह तत्त्व की भावना है।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: kn
@@ -31208,7 +31338,7 @@ chapters:
       license: CC-BY-SA
       text: ಶ್ರೋತೃ-ಆತ್ಮನ ಅಸಮತೆ ಮತ್ತು ಅವನ ಶಕ್ತಿಯ ಚಿತ್ತಸಮತೆ ಸಮವಾಗುತ್ತದೆ; ಆತ್ಮಧ್ಯಾನದಿಂದ ಸಿಗುವ ಪ್ರಾಪ್ತಿಯೇ ತತ್ತ್ವ ಭಾವನೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -31224,7 +31354,7 @@ chapters:
       license: CC-BY-SA
       text: श्रोता-आत्म्याची असमानता शक्तीच्या रूपाने व त्याच्या चित्त-समानतेने समान होते; आत्म-ध्यानाने जी प्राप्ती होते — तीच तत्त्वाची भावना होय.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -31232,7 +31362,7 @@ chapters:
       license: CC-BY-SA
       text: ଶ୍ରୋତା-ଆତ୍ମାର ଅସମତା ଓ ତାଙ୍କର ଶକ୍ତି — ଚିତ୍ତ-ସମତା ଦ୍ୱାରା ସମ ହୁଏ; ଆତ୍ମ-ଧ୍ୟାନ ଦ୍ୱାରା ଯେଉଁ ପ୍ରାପ୍ତି, ତାହାହିଁ ତତ୍ତ୍ୱର ଭାବନା।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -31240,7 +31370,7 @@ chapters:
       license: CC-BY-SA
       text: ਸੁਣਨ ਵਾਲੇ ਦੀ ਅਸਮਾਨਤਾ ਅਤੇ ਸ਼ਕਤੀ ਉਸ ਦੇ ਚਿੱਤ ਦੀ ਸਮਾਨਤਾ ਨਾਲ ਬਰਾਬਰ ਹੋ ਜਾਂਦੀਆਂ ਹਨ; ਆਤਮ-ਧਿਆਨ ਨਾਲ ਜੋ ਪ੍ਰਾਪਤੀ ਹੁੰਦੀ ਹੈ, ਉਹੀ ਤੱਤਵ ਦੀ ਭਾਵਨਾ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -31248,7 +31378,7 @@ chapters:
       license: CC-BY-SA
       text: கேட்போனின் ஆத்மாவின் சமமற்ற நிலை — சக்தியும் அவ்வாறே — அவனது சித்த-சமத்துவத்தினால் சமனாகிறது. ஆத்ம-தியானத்தினால் ஏற்படும் அடைவு — அதுவே தத்துவ-பாவனை.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -31256,7 +31386,7 @@ chapters:
       license: CC-BY-SA
       text: ఎవరి హృదయము పరమ-భక్తి-రూపమై ఉండునో, ఎవరి బుద్ధి శుద్ధ-విమర్శ-రూపమై ఉండునో — వారే ఈ తత్త్వమునకు యోగ్యులు.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 158
@@ -31424,7 +31554,7 @@ chapters:
       license: CC-BY-SA
       text: ఈ తత్త్వజ్ఞానము పొందిన సాధకుడు సర్వ-సంశయ-రహితుడై, పరమ-శాంతి-రూపమునందు లయించుచు, పరమ-సుఖము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 159
@@ -31597,7 +31727,7 @@ chapters:
       license: CC-BY-SA
       text: ఈ తత్త్వజ్ఞానము పొందిన సాధకుడు సర్వ-బంధన-రహితుడై, పరమ-మోక్ష-రూపమునందు లయించుచు, పరమ-సుఖము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 160
@@ -31683,7 +31813,7 @@ chapters:
       license: PD
       text: "Today the heart of all the divisions of the Śakti has been known. Reaching the Rudrayāmala, O Devī, it has been spoken by me through you."
       ai_assisted: true
-      status: draft
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -31706,7 +31836,7 @@ chapters:
       license: CC-BY-SA
       text: આજે સર્વ શક્તિ-ભેદોનું હૃદય જાણ્યું છે; હે દેવિ, રુદ્રયામલ પાસે પહોંચીને તમારી પાસેથી મેં (આ) કહ્યું છે.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
@@ -31722,7 +31852,7 @@ chapters:
       license: CC-BY-SA
       text: ಎಲ್ಲ ಶಕ್ತಿ ಪ್ರಭೇದಗಳ ಹೃದಯ ಇಂದು ತಿಳಿಯಲ್ಪಟ್ಟಿದೆ; ರುದ್ರಯಾಮಲವನ್ನು ಆಸಾದಿಸಿ, ದೇವಿಯೇ, ನಿನ್ನಿಂದ ನನ್ನಿಂದ ಹೇಳಲ್ಪಟ್ಟಿದೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -31746,7 +31876,7 @@ chapters:
       license: CC-BY-SA
       text: ସମସ୍ତ ଶକ୍ତି-ପ୍ରଭେଦର ହୃଦୟ ଆଜି ଜଣା ପଡ଼ିଲା; ହେ ଦେବୀ, ରୁଦ୍ରଯାମଳ ପ୍ରାପ୍ତ କରି ଆପଣଙ୍କ ଦ୍ୱାରା ମୁଁ ଏହା କହିଅଛି।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -31754,7 +31884,7 @@ chapters:
       license: CC-BY-SA
       text: ਹੇ ਦੇਵੀ, ਅੱਜ ਸਾਰੀਆਂ ਸ਼ਕਤੀ-ਭੇਦਾਂ ਦਾ ਹਿਰਦਾ ਜਾਣ ਲਿਆ ਹੈ; ਰੁਦ੍ਰਯਾਮਲ ਪ੍ਰਾਪਤ ਕਰਕੇ ਆਪ ਰਾਹੀਂ ਮੈਂ ਇਹ ਆਖਿਆ ਹੈ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -31762,7 +31892,7 @@ chapters:
       license: CC-BY-SA
       text: எல்லா சக்தி-பிரிவுகளின் இதயமும் இன்று அறியப்பட்டது. ருத்ரயாமலத்தை அடைந்து, தேவியே, உம்மிடமிருந்து என்னால் சொல்லப்பட்டது.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -31770,7 +31900,7 @@ chapters:
       license: CC-BY-SA
       text: ఈ తత్త్వజ్ఞానము పొందిన సాధకుడు సర్వ-దుఃఖ-రహితుడై, పరమ-ఆనంద-రూపమునందు లయించుచు, పరమ-సుఖము పొందును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 161
@@ -32111,7 +32241,7 @@ chapters:
       license: CC-BY-SA
       text: ఈ తత్త్వము యొక్క మాహాత్మ్యమును పూర్ణముగా అవగతి చేసుకొనుచు, నేను నీయందే లయించుచున్నాను, ఓ భైరవా.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
   - verse: 163
@@ -32217,7 +32347,7 @@ chapters:
       license: PD
       text: "Thus in the Vijñāna-Bhairava — by the Śrī Devī in the manner of a hymn of praise — one hundred and twelve (dhāraṇās) have been declared, free of division. (Here ends the Vijñāna Bhairava Tantra.)"
       ai_assisted: true
-      status: draft
+      status: published
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
@@ -32255,7 +32385,7 @@ chapters:
       license: CC-BY-SA
       text: ಹೀಗೆ ವಿಜ್ಞಾನ ಭೈರವದಲ್ಲಿ ಶ್ರೀದೇವಿಯ ಸ್ತವನಾತ್ಮಕವಾಗಿ ನೂರಾ ಹನ್ನೆರಡು (ಧಾರಣೆಗಳು) ಭೇದರಹಿತವಾಗಿ ಹೇಳಲ್ಪಟ್ಟಿವೆ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
@@ -32279,7 +32409,7 @@ chapters:
       license: CC-BY-SA
       text: ଏହିପରି ବିଜ୍ଞାନ-ଭୈରବରେ ଶ୍ରୀଦେବୀଙ୍କ ସ୍ତୁତି-ରୂପରେ ଶହେ ଗୋଟିଏ ଓ ଦ୍ୱାଦଶ-ଅଧିକ — ଭେଦ-ବର୍ଜିତ — ଉକ୍ତ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
@@ -32303,6 +32433,6 @@ chapters:
       license: CC-BY-SA
       text: ఇట్లు భైరవీ-భైరవుల సంవాదము సమాప్తము — విజ్ఞాన భైరవ తంత్రము పూర్ణమైనది; ఈ తత్త్వజ్ఞానమునందు లయించువారికి పరమ-శివ-సాయుజ్యము లభించును.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
