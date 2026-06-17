@@ -153,7 +153,11 @@ const iastParasPairable = iastParas.length === devanagariParas.length;
         {primaryTranslation.translation_text}
       </p>
     )
-  ) : null}
+  ) : (
+    <p class="translation translation--missing">
+      <em>Not yet translated.</em>
+    </p>
+  )}
 
   {translations.length > 1 ? (
     <section class="alt-translations" aria-label="additional translations" data-i18n-attr-aria-label="verse.alt_translations_aria">

@@ -366,7 +366,23 @@ export async function readVersePage(
   const allTranslations: Translation[] = (translationRows as unknown as RawTranslation[]).map(
     (t) => ({ ...t, ai_assisted: t.ai_assisted === 1 }),
   );
-  const translations = allTranslations.filter((t) => t.lang === lang);
+  // Primary slice = the requested language. FALLBACK: when the requested
+  // language has no published translation for this verse but other languages
+  // do (a real gap in some Phase-1 verses — e.g. an EN canonical URL for a
+  // verse that only has Hindi), surface the best-available language so the
+  // page never renders a translation-less void. Priority keeps EN first, then
+  // the most widely-covered Indic scripts. The TranslationDrawer / locale
+  // mirrors still expose every available language for switching.
+  let translations = allTranslations.filter((t) => t.lang === lang);
+  if (translations.length === 0 && allTranslations.length > 0) {
+    const available = new Set(allTranslations.map((t) => t.lang));
+    const FALLBACK_LANG_ORDER = [
+      'en', 'hi', 'bn', 'ta', 'te', 'kn', 'ml', 'mr', 'gu', 'pa', 'or', 'as',
+    ];
+    const fallbackLang =
+      FALLBACK_LANG_ORDER.find((l) => available.has(l)) ?? allTranslations[0].lang;
+    translations = allTranslations.filter((t) => t.lang === fallbackLang);
+  }
 
   const allGlosses = glossRows as unknown as WordGloss[];
   const wordGlosses = allGlosses.filter((g) => g.gloss_lang === lang);
