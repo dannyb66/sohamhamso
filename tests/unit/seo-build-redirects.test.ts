@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { enumerateRedirectPairs } from '../../src/lib/aliases';
-import type { TextSummary } from '../../src/lib/db';
 import {
   NON_ENGLISH_LOCALES,
   buildRedirectRules,
   buildRedirectsPayload,
 } from '../../scripts/seo-build-redirects';
+import { enumerateRedirectPairs } from '../../src/lib/aliases';
+import type { TextSummary } from '../../src/lib/db';
 
 const stubTexts: TextSummary[] = [
   {
@@ -16,6 +16,8 @@ const stubTexts: TextSummary[] = [
     title_iast: 'Karpūrādi-stotra',
     tradition: 'shakta',
     school: null,
+    author: null,
+    license: 'PD',
     verse_count: 22,
   },
   {
@@ -26,6 +28,8 @@ const stubTexts: TextSummary[] = [
     title_iast: 'Pratyabhijñā-hr̥dayam',
     tradition: 'trika',
     school: null,
+    author: 'Kṣemarāja',
+    license: 'PD',
     verse_count: 20,
   },
 ];

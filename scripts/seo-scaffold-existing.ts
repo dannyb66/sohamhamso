@@ -12,7 +12,7 @@
  *   bun scripts/seo-scaffold-existing.ts --text=siva-sutras    # one text only
  */
 
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const CORPUS_DIR = 'data/corpus';

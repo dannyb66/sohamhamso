@@ -40,3 +40,46 @@ License: CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0). Source text & tr
   },
 }
 `;
+
+exports[`buildUploadMetadata — snapshot is deterministic for a fixed input 1`] = `
+{
+  "snippet": {
+    "defaultAudioLanguage": "en",
+    "defaultLanguage": "en",
+    "description": 
+"Consciousness is the Self.
+
+Śiva Sūtra 1.1 — a verse from the Śiva Sūtra, a foundational text of Kashmir Śaivism (Trika / Pratyabhijñā). Ancient Sanskrit wisdom on consciousness (cit), Śiva, and the Self (ātman).
+
+📖 Read, listen & study every verse in 11 languages → https://sohamhamso.org/texts/siva-sutras/1/1?utm_source=youtube&utm_medium=short&utm_campaign=verse
+🔔 Subscribe for a new verse each day.
+
+#Shorts #KashmirShaivism #Shaivism #Trika #Sanskrit #Spirituality #Meditation #Advaita #Nonduality #SivaSutra
+
+License: CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0). Source text & translation via Muktabodha Indological Research Institute and sohamhamso.org. Translation AI-assisted, human-reviewed."
+,
+    "tags": [
+      "Kashmir Shaivism",
+      "Trika",
+      "Pratyabhijna",
+      "Shaivism",
+      "Sanskrit",
+      "Spanda",
+      "Shiva Sutras",
+      "Advaita",
+      "nonduality",
+      "meditation",
+      "spirituality",
+      "Indian philosophy",
+      "Hindu philosophy",
+      "Śiva Sūtra",
+    ],
+    "title": "Śiva Sūtra 1.1 — Consciousness is the Self.",
+  },
+  "status": {
+    "license": "creativeCommon",
+    "privacyStatus": "unlisted",
+    "selfDeclaredMadeForKids": false,
+  },
+}
+`;

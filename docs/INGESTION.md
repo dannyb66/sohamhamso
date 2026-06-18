@@ -4,7 +4,7 @@
 > Maintained by the Phase 1 ingestion lessons; update on each new text.
 
 Companion docs:
-- Plan: `/Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl.md`
+- Plan: `/Users/deepakbasavaraju/.claude/plans/check-online-websites-aim-sparkling-pearl.md`
 - Status contract: `STATUS-CONTRACT.md` (per-translation badge + status semantics)
 - Per-source attribution: `ATTRIBUTION.md`
 - Dataset publisher contract: `pipeline/dataset/README.md`
@@ -37,6 +37,16 @@ Companion docs:
 
 - **Which Phase (1-4)?** Plan §"Corpus & Build Phases" maps each text to a phase. Phase 1 (MVP) shipped: Śiva Sūtras, Spanda Kārikās, Pratyabhijñā Hṛdayam, Vijñāna Bhairava Tantra, Karpūrādi Stotra. Phase 2 next-up: Paratrīśikā, Iśvarapratyabhijñā Kārikā, Śivadṛṣṭi, Tantrasāra, Gītārtha Saṃgraha, Mahānirvāṇa Tantra.
 - **Demand signal:** any scholar/practitioner request? Codex-flagged demand thesis is still unproven — measure 60-day post-launch traction (subscribe rate, return visits, citations) before committing budget to Phase 2-4.
+  - **Demand-gate note (2026-06-10):** launch anchor pinned **2026-06-08** (GSC + Bing verified — same anchor as `.github/workflows/seo-phase8.yml`). The 60-day gate was **overridden 2026-06-10** at the `/autoplan` review to start Phase 2 foundations early. Demand evidence is now collected continuously: `scripts/demand-dashboard.ts` (weekly cron, `.github/workflows/demand-dashboard.yml`) + the `search_misses` instrument (`src/lib/search-miss.ts`). **Waves 3–6 checkpoint: ~2026-07-10** against pre-registered thresholds — operator MUST fill the threshold column BEFORE the checkpoint date, not after seeing the actuals:
+
+    | Metric (trailing window, per dashboard) | Pre-registered threshold | Actual @ checkpoint |
+    |---|---|---|
+    | Subscriber total | TBD | TBD |
+    | Subscriber growth (7d) | TBD | TBD |
+    | GSC impressions / clicks (7d) | TBD | TBD |
+    | CF Web Analytics pageviews / visits (7d) | TBD | TBD |
+    | Search misses matching Phase 2 texts (28d) | TBD | TBD |
+    | Phase 2 slug 404/alias hits (7d) | TBD | TBD |
 - **Auto-commentary check:** does the text have a commentary (e.g. Kṣemarāja's Vimarśinī on the Śiva Sūtras) that ships as a sibling text? Per locked decision: commentaries are first-class texts with a `parent_text_id` link, NOT a nested layer under the parent verse. Reserve a sibling slug at discovery time so future commentary ingestion does not collide.
 - **Non-verse-shaped texts** (mostly-prose, fragmentary, variant-witness): expect to force-fit into `chapter/verse_num` for V1 and document the compromise in the YAML `description`. V1.x will add `section_type` + `prose_block_ref`.
 
@@ -56,7 +66,7 @@ Record the exact source location, revision, and accessed-on date in the YAML (`s
 
 - Cite source per-file in `data/corpus/{slug}.yaml` under the `source`, `source_url`, `source_revision`, `license`, and `attribution_html` keys (see schema below).
 - Append per-source attribution to `ATTRIBUTION.md`. The existing per-source block (GRETIL / MIRI / sanskritdocuments / Wikisource / Cologne / Vidyut / DCS / Skrutable / Sanscript / Aksharamukha) is the canonical template.
-- If the text is Muktabodha-derived: add it to the MIRI permission queue and flag the YAML with a `pending_miri: true` field (custom; the ingest will ignore unknown fields and downstream tooling/scripts gate Zenodo publish on this) — until the MIRI letter is in, the published dataset bundle MUST omit this text. The deployment plan and `ATTRIBUTION.md` both call this out: the entire MIRI track is "**pending**". [TODO: wire a Zenodo-deposit gate on `pending_miri` — today the publisher in `pipeline/dataset/publish.ts` does not read this field.]
+- If the text is Muktabodha-derived: add it to the MIRI permission queue and flag the YAML with a `pending_miri: true` field (a first-class optional field in the corpus schema; note the schema is `.strict()`, so any field NOT in the schema aborts ingest — downstream tooling/scripts gate Zenodo publish on this) — until the MIRI letter is in, the published dataset bundle MUST omit this text. The deployment plan and `ATTRIBUTION.md` both call this out: the entire MIRI track is "**pending**". The gate is implemented: `pipeline/dataset/publish.ts` reads `pending_miri` from the corpus YAMLs and excludes held texts from every CSV/JSON/TEI shard and the stats (the Zenodo deposit consumes that output, so it inherits the hold).
 
 ### Step 4 — Normalize encoding
 
@@ -154,6 +164,8 @@ The field name is **`gloss_text`** — exactly that, no lang-suffix, no extra en
 
 ### Step 11 — Ingest + verify
 
+- **Verse routes are SSR (A6 phase 2) — Turso seeding is load-bearing for the READER:** the two verse routes (`/[tradition]/[text]/[chapter]/[verse]` and the `/[lang]/...` twin) are `prerender = false` and read the **prod Turso corpus DB** at request time (one batched libsql round-trip per page — `src/lib/verse-read.ts`). Until A6 phase 2, Turso only powered `/api/search` and OG images; now an unseeded or stale Turso means verse pages render the styled 503/404, not just degraded search. Operational consequence: **after ingesting a new text locally, the per-text Turso seeder (`scripts/turso-seed-corpus.ts`) + its backup gate are a REQUIRED deploy step**, sequenced before (or atomically with) the Pages deploy that links to the new verses. `astro dev` and `astro build` still read the local SQLite file via `bun:sqlite`; only the deployed worker hits Turso (`TURSO_CORPUS_URL` + `TURSO_CORPUS_AUTH_TOKEN` CF Pages secrets).
+- **Deploy model (plan item A6):** `db/sohamhamso.db` is **not committed** — it is a build cache, not a source of truth. The sources are `data/corpus/*.yaml` + `db/schema.sql` (+ `db/migrations/` for already-provisioned DBs). Every build path is self-sufficient: `bun run build` / `bun run seo:build` start with `bun run db:ensure`, which runs `db:init` + `ingest` when the file is absent (CI and Cloudflare Pages clone a tree without the binary and rebuild it the same way). To force a clean rebuild locally: `rm db/sohamhamso.db && bun run db:build`. Scripts that read the local DB (e.g. `scripts/turso-seed-corpus.ts`) require `bun run db:build` first and die with that message if it is missing.
 - **Initial DB setup (one-time):** `bun pipeline/ingest/init-db.ts` — applies `db/schema.sql` to `db/sohamhamso.db`.
 - **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every corpus text YAML in `data/corpus/` (excluding underscore templates and `*.faq.yaml`), validates optional `seo` / `faq_file` blocks, then runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. Run options: `--db custom.db` and `--dir data/corpus`. Prints per-text and total row counts on success.
 - **Schema (key tables — see `db/schema.sql` for canonical):**
@@ -172,7 +184,7 @@ The field name is **`gloss_text`** — exactly that, no lang-suffix, no extra en
 - **Tag a release:** `vYYYY.MM.DD` (e.g. `v2026.07.15`). Per `pipeline/dataset/publish.ts`, only this date-tag form passes the version regex. The publisher emits the bundle at `dataset/build/sohamhamso-dataset-{version}/` with CSV + JSON shards + minimal TEI per text, `checksums.sha256` written last, and `CHANGELOG.md` diffed against the previous build in `--out`.
 - **What ships in the bundle:** `texts`, `verses`, `word_glosses`, `parallels` rows ship as-is. `translations` rows ship ONLY where `status IN ('reviewed','published')` — `draft` rows are reviewer-internal per `STATUS-CONTRACT.md`. `verse_embeddings`, `subscribers`, `api_quota`, `dataset_releases` NEVER ship.
 - **Zenodo deposit:** `bun pipeline/dataset/zenodo-deposit.ts --dir dataset/build/sohamhamso-dataset-{version}/` (defaults to dry-run; pass `--execute` to publish). `--sandbox` hits `sandbox.zenodo.org`. Each run writes a `zenodo-deposit.json` provenance record into the bundle dir.
-- **Muktabodha gating:** if ANY published text in the bundle is Muktabodha-derived AND the MIRI permission letter has not landed, **hold the Zenodo deposit**. The fallback per the deployment plan is to ship a v1.0 dataset with GRETIL + Wikisource + sanskritdocuments only and add Muktabodha-derived texts in a follow-up release once permission lands. [TODO: implement an explicit `pending_miri: true` gate in `publish.ts` — today this is enforced manually.]
+- **Muktabodha gating:** if ANY published text in the bundle is Muktabodha-derived AND the MIRI permission letter has not landed, **hold the Zenodo deposit**. The fallback per the deployment plan is to ship a v1.0 dataset with GRETIL + Wikisource + sanskritdocuments only and add Muktabodha-derived texts in a follow-up release once permission lands. The `pending_miri: true` gate in `publish.ts` enforces this automatically (a loud "MIRI PERMISSION HOLD" banner lists held texts; `held_texts` appears in the summary JSON).
 - **Ambuda upstream PR (workstream 11):** one PR per text against `ambuda-org/ambuda`. Format conversion (SLP1 → Ambuda's TEI subset) is our responsibility. Title: `add {text-slug} from sohamhamso`. Body: metadata + source attribution + conversion notes. Cadence: per text, not per release. Skip Ambuda PR for any text where Ambuda's contributor policy excludes AI-assisted material — our dataset still publishes.
 
 ---

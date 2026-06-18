@@ -21,7 +21,7 @@ name: YouTube upload (Cron B)
 on:
   schedule:
     # Every 4h, 30min offset from Cron A so renders settle before upload.
-    - cron: '30 */4 * * *'
+    - cron: '47 */4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,7 +38,9 @@ concurrency:
 jobs:
   upload:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 90 min: chapter videos run to ~1 GB (8 Mbps CBR) — a slow multipart
+    # stream to YouTube can take well over the old 30-min budget.
+    timeout-minutes: 90
     env:
       # ── YouTube OAuth (single chokepoint reads these). ───────────────
       YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
@@ -63,6 +65,12 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      # db/sohamhamso.db is no longer committed (plan item A6) — rebuild it
+      # from data/corpus/*.yaml; the uploader resolves verse titles and
+      # translations from the corpus DB.
+      - name: Build corpus DB from YAML
+        run: bun run db:ensure
 
       # Pull the state DB from R2 so the uploader reads/writes shared state
       # (ephemeral runners start with no DB).

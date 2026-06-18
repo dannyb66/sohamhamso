@@ -23,10 +23,7 @@ afterEach(() => {
 // Helper: make a minimal Response with specific headers
 // ---------------------------------------------------------------------------
 
-function makeResponse(
-  headers: Record<string, string>,
-  status = 200,
-): Response {
+function makeResponse(headers: Record<string, string>, status = 200): Response {
   return new Response('', { status, headers });
 }
 
@@ -69,9 +66,7 @@ describe('buildOgUrl', () => {
 
 describe('probeOg', () => {
   it('returns fallback=false when X-OG-Renderer is resvg-wasm and no X-OG-Fallback header', async () => {
-    vi.mocked(global.fetch).mockResolvedValue(
-      makeResponse({ 'X-OG-Renderer': 'resvg-wasm' }),
-    );
+    vi.mocked(global.fetch).mockResolvedValue(makeResponse({ 'X-OG-Renderer': 'resvg-wasm' }));
 
     const result = await probeOg('https://sohamhamso.org/og/trika/siva-sutras/1/1', 'en');
 
@@ -211,10 +206,7 @@ describe('summarizeOgResults', () => {
 
   describe('per-locale breakdown', () => {
     it('groups results by lang in byLocale', () => {
-      const results = [
-        ...makeResults(10, 0, 'en'),
-        ...makeResults(10, 2, 'hi'),
-      ];
+      const results = [...makeResults(10, 0, 'en'), ...makeResults(10, 2, 'hi')];
       const summary = summarizeOgResults(results, 2);
 
       expect(summary.byLocale.get('en')).toEqual({ total: 10, fallback: 0 });
@@ -222,10 +214,7 @@ describe('summarizeOgResults', () => {
     });
 
     it('overall rate uses all results regardless of locale', () => {
-      const results = [
-        ...makeResults(60, 0, 'en'),
-        ...makeResults(60, 3, 'hi'),
-      ];
+      const results = [...makeResults(60, 0, 'en'), ...makeResults(60, 3, 'hi')];
       const summary = summarizeOgResults(results, 2);
 
       // 3/120 = 2.5%

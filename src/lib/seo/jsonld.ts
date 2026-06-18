@@ -160,9 +160,11 @@ export function buildQuotationJsonLd(input: {
       name: text.title_en,
       '@id': `${SITE_URL}/${text.tradition}/${text.slug}`,
     },
-    ...(input.speaker ? {
-      spokenByCharacter: { '@type': 'Person' as const, name: input.speaker }
-    } : {}),
+    ...(input.speaker
+      ? {
+          spokenByCharacter: { '@type': 'Person' as const, name: input.speaker },
+        }
+      : {}),
   };
 }
 

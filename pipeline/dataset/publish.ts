@@ -29,6 +29,12 @@
  *
  * Versioning: vYYYY.MM.DD (per V1 DX Spec). Pre-1.0 increments per text addition.
  *
+ * MIRI gate: texts whose corpus YAML (data/corpus/*.yaml) carries
+ * `text.pending_miri: true` are EXCLUDED from the bundle (texts, verses,
+ * translations, glosses, parallels, JSON + TEI shards) until written
+ * Muktabodha redistribution permission lands. See ATTRIBUTION.md and
+ * docs/MIRI-PERMISSION-REQUEST.md.
+ *
  * No external CSV/XML deps — tiny built-in writers below.
  */
 
@@ -45,6 +51,7 @@ import {
 } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { load as yamlLoad } from 'js-yaml';
 
 // ---------------------------------------------------------------
 // CLI
@@ -54,6 +61,7 @@ interface Args {
   version: string;
   out: string;
   db: string;
+  corpus: string;
   repoRoot: string;
 }
 
@@ -72,6 +80,7 @@ function parseArgs(): Args {
     version: get('--version') ?? defaultVersion(),
     out: get('--out') ?? resolve(repoRoot, 'dataset', 'build'),
     db: get('--db') ?? resolve(repoRoot, 'db', 'sohamhamso.db'),
+    corpus: get('--corpus') ?? resolve(repoRoot, 'data', 'corpus'),
     repoRoot,
   };
 }
@@ -87,6 +96,75 @@ function defaultVersion(): string {
 function assertVersion(v: string): void {
   if (!/^v\d{4}\.\d{2}\.\d{2}$/.test(v)) {
     throw new Error(`--version must match vYYYY.MM.DD, got: ${v}. (Per V1 DX Spec § 1.)`);
+  }
+}
+
+// ---------------------------------------------------------------
+// MIRI permission gate — pending_miri texts are held out of the bundle
+// ---------------------------------------------------------------
+
+/**
+ * Scans the corpus YAML directory for texts flagged `pending_miri: true`
+ * (Muktabodha-derived texts awaiting written MIRI redistribution
+ * permission — see ATTRIBUTION.md). Returns their slugs. There is no DB
+ * column for this flag; the corpus YAML is the source of truth.
+ *
+ * Exported for unit tests (publish.ts otherwise runs as a CLI).
+ */
+export function readPendingMiriSlugs(corpusDir: string): Set<string> {
+  const held = new Set<string>();
+  if (!existsSync(corpusDir)) return held;
+  for (const entry of readdirSync(corpusDir)) {
+    // Skip templates (_template.yaml), FAQ sidecars, and non-YAML files.
+    if (entry.startsWith('_') || /\.faq\.ya?ml$/.test(entry) || !/\.ya?ml$/.test(entry)) continue;
+    const doc = yamlLoad(readFileSync(join(corpusDir, entry), 'utf8')) as {
+      text?: { id?: string; slug?: string; pending_miri?: boolean };
+    } | null;
+    if (doc?.text?.pending_miri === true) {
+      const slug = doc.text.slug ?? doc.text.id;
+      if (slug) held.add(slug);
+    }
+  }
+  return held;
+}
+
+/** SQL-quote a set of ids/slugs into an IN(...) list. Slugs match
+ *  /^[a-z0-9-]+$/ per corpus schema, but escape quotes anyway. */
+function sqlIdList(ids: Iterable<string>): string {
+  return [...ids].map((id) => `'${id.replace(/'/g, "''")}'`).join(', ');
+}
+
+/** Maps held corpus slugs to texts.id values present in THIS db (slug and
+ *  id are usually identical, but the DB id is what verses FK against). */
+function resolveHeldTextIds(db: Database, heldSlugs: Set<string>): Set<string> {
+  if (heldSlugs.size === 0) return new Set();
+  const list = sqlIdList(heldSlugs);
+  const rows = db
+    .query(`SELECT id FROM texts WHERE slug IN (${list}) OR id IN (${list})`)
+    .all() as Array<{ id: string }>;
+  return new Set(rows.map((r) => r.id));
+}
+
+/**
+ * Per-table WHERE fragment excluding everything belonging to held texts.
+ * Returns '' when nothing is held (or the table needs no gate).
+ */
+export function holdWhere(table: string, heldTextIds: Set<string>): string {
+  if (heldTextIds.size === 0) return '';
+  const list = sqlIdList(heldTextIds);
+  const verseSub = `SELECT id FROM verses WHERE text_id IN (${list})`;
+  switch (table) {
+    case 'texts':
+      return `id NOT IN (${list})`;
+    case 'verses':
+      return `text_id NOT IN (${list})`;
+    case 'translations':
+    case 'word_glosses':
+      return `verse_id NOT IN (${verseSub})`;
+    case 'parallels':
+      return `source_verse_id NOT IN (${verseSub}) AND target_verse_id NOT IN (${verseSub})`;
+    default:
+      return '';
   }
 }
 
@@ -119,7 +197,7 @@ function writeCsv(
     count++;
   }
   // Trailing newline keeps `wc -l` honest and matches POSIX text-file convention.
-  const body = out.join('\n') + '\n';
+  const body = `${out.join('\n')}\n`;
   writeFileSync(path, body, 'utf8');
   return { rows: count, bytes: Buffer.byteLength(body, 'utf8') };
 }
@@ -225,10 +303,20 @@ const PARALLELS_COLS = [
 // Row generators (streaming via bun:sqlite iterate())
 // ---------------------------------------------------------------
 
-function* rowsFor(db: Database, table: string, cols: string[]): Iterable<unknown[]> {
+function* rowsFor(
+  db: Database,
+  table: string,
+  cols: string[],
+  heldTextIds: Set<string>,
+): Iterable<unknown[]> {
   // `draft` translations are reviewer-internal per STATUS-CONTRACT.md — never
-  // shipped to the public dataset. All other tables ship as-is.
-  const where = table === 'translations' ? " WHERE status IN ('reviewed','published')" : '';
+  // shipped to the public dataset. pending_miri texts (and all their child
+  // rows) are held out per the MIRI gate above. Everything else ships as-is.
+  const clauses: string[] = [];
+  if (table === 'translations') clauses.push("status IN ('reviewed','published')");
+  const hold = holdWhere(table, heldTextIds);
+  if (hold) clauses.push(hold);
+  const where = clauses.length > 0 ? ` WHERE ${clauses.join(' AND ')}` : '';
   const q = db.query(`SELECT ${cols.join(', ')} FROM ${table}${where}`);
   // bun:sqlite Query has .iterate() in recent versions; fall back to .all().
   // We use .all() for portability — datasets stay small (~thousands of rows).
@@ -248,12 +336,16 @@ interface TextRow {
   [k: string]: unknown;
 }
 
-function emitJsonShards(db: Database, dir: string): { files: number; bytes: number } {
+function emitJsonShards(
+  db: Database,
+  dir: string,
+  heldTextIds: Set<string>,
+): { files: number; bytes: number } {
   mkdirSync(dir, { recursive: true });
 
-  const texts = db
-    .query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`)
-    .all() as TextRow[];
+  const texts = (
+    db.query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`).all() as TextRow[]
+  ).filter((t) => !heldTextIds.has(t.id));
 
   let files = 0;
   let bytes = 0;
@@ -270,7 +362,7 @@ function emitJsonShards(db: Database, dir: string): { files: number; bytes: numb
     for (const v of verses) {
       const ch = Number(v.chapter);
       if (!byChapter.has(ch)) byChapter.set(ch, []);
-      byChapter.get(ch)!.push(v);
+      byChapter.get(ch)?.push(v);
     }
 
     const chapters = [...byChapter.entries()]
@@ -297,10 +389,10 @@ function emitJsonShards(db: Database, dir: string): { files: number; bytes: numb
                ORDER BY lang, translator`,
             )
             .all(verseId)
-            .map((t: any) => ({
-              ...t,
-              ai_assisted: t.ai_assisted === 1 || t.ai_assisted === true,
-            }));
+            .map((row) => {
+              const t = row as Record<string, unknown> & { ai_assisted: number | boolean };
+              return { ...t, ai_assisted: t.ai_assisted === 1 || t.ai_assisted === true };
+            });
 
           const parallels = db
             .query(
@@ -326,7 +418,7 @@ function emitJsonShards(db: Database, dir: string): { files: number; bytes: numb
 
     const shard = { text, chapters };
     const path = join(dir, `${text.slug}.json`);
-    const body = JSON.stringify(shard, null, 2) + '\n';
+    const body = `${JSON.stringify(shard, null, 2)}\n`;
     writeFileSync(path, body, 'utf8');
     files++;
     bytes += Buffer.byteLength(body, 'utf8');
@@ -339,12 +431,18 @@ function emitJsonShards(db: Database, dir: string): { files: number; bytes: numb
 // TEI-XML shards — minimal valid TEI per text
 // ---------------------------------------------------------------
 
-function emitTeiShards(db: Database, dir: string): { files: number; bytes: number } {
+function emitTeiShards(
+  db: Database,
+  dir: string,
+  heldTextIds: Set<string>,
+): { files: number; bytes: number } {
   mkdirSync(dir, { recursive: true });
 
-  const texts = db.query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`).all() as Array<
-    Record<string, unknown>
-  >;
+  const texts = (
+    db.query(`SELECT ${TEXTS_COLS.join(', ')} FROM texts ORDER BY slug`).all() as Array<
+      Record<string, unknown>
+    >
+  ).filter((t) => !heldTextIds.has(t.id as string));
 
   let files = 0;
   let bytes = 0;
@@ -361,7 +459,7 @@ function emitTeiShards(db: Database, dir: string): { files: number; bytes: numbe
     for (const v of verses) {
       const ch = Number(v.chapter);
       if (!byChapter.has(ch)) byChapter.set(ch, []);
-      byChapter.get(ch)!.push(v);
+      byChapter.get(ch)?.push(v);
     }
 
     const lines: string[] = [];
@@ -578,26 +676,48 @@ interface BuildStats {
   newTexts: string[];
 }
 
-function collectStats(db: Database, prevTexts: Set<string>): BuildStats {
-  const texts = db.query('SELECT slug FROM texts ORDER BY slug').all() as Array<{
+function collectStats(db: Database, prevTexts: Set<string>, heldTextIds: Set<string>): BuildStats {
+  // All counts mirror what actually ships: pending_miri texts (and their
+  // child rows) are excluded via the same WHERE fragments as the CSVs.
+  const and = (table: string): string => {
+    const hold = holdWhere(table, heldTextIds);
+    return hold ? ` AND ${hold}` : '';
+  };
+  const where = (table: string): string => {
+    const hold = holdWhere(table, heldTextIds);
+    return hold ? ` WHERE ${hold}` : '';
+  };
+
+  const texts = db.query(`SELECT slug FROM texts${where('texts')} ORDER BY slug`).all() as Array<{
     slug: string;
   }>;
   const langsRows = db
-    .query('SELECT DISTINCT lang FROM translations ORDER BY lang')
+    .query(
+      `SELECT DISTINCT lang FROM translations WHERE status IN ('reviewed','published')${and('translations')} ORDER BY lang`,
+    )
     .all() as Array<{ lang: string }>;
 
   const newTexts = texts.filter((t) => !prevTexts.has(t.slug)).map((t) => t.slug);
 
   return {
     texts: texts.length,
-    verses: (db.query('SELECT COUNT(*) AS n FROM verses').get() as { n: number }).n,
+    verses: (db.query(`SELECT COUNT(*) AS n FROM verses${where('verses')}`).get() as { n: number })
+      .n,
     translations: (
       db
-        .query("SELECT COUNT(*) AS n FROM translations WHERE status IN ('reviewed','published')")
+        .query(
+          `SELECT COUNT(*) AS n FROM translations WHERE status IN ('reviewed','published')${and('translations')}`,
+        )
         .get() as { n: number }
     ).n,
-    glosses: (db.query('SELECT COUNT(*) AS n FROM word_glosses').get() as { n: number }).n,
-    parallels: (db.query('SELECT COUNT(*) AS n FROM parallels').get() as { n: number }).n,
+    glosses: (
+      db.query(`SELECT COUNT(*) AS n FROM word_glosses${where('word_glosses')}`).get() as {
+        n: number;
+      }
+    ).n,
+    parallels: (
+      db.query(`SELECT COUNT(*) AS n FROM parallels${where('parallels')}`).get() as { n: number }
+    ).n,
     langs: langsRows.map((r) => r.lang),
     newTexts,
   };
@@ -639,16 +759,17 @@ function buildChangelog(
   existingChangelog: string | null,
 ): string {
   const today = new Date().toISOString().slice(0, 10);
-  const header = `# Changelog\n\nAll notable changes to the sohamhamso dataset.\nVersion scheme: \`vYYYY.MM.DD\`.\n\n`;
+  const header =
+    '# Changelog\n\nAll notable changes to the sohamhamso dataset.\nVersion scheme: `vYYYY.MM.DD`.\n\n';
 
   const newTextsLine =
     stats.newTexts.length > 0
       ? `- New texts: ${stats.newTexts.join(', ')}\n`
-      : `- No new texts (re-publish or non-text additions).\n`;
+      : '- No new texts (re-publish or non-text additions).\n';
 
   const prevNote = prevBuild
     ? `- Diffed against previous build: \`${prevBuild.split('/').pop()}\`.\n`
-    : `- First published build.\n`;
+    : '- First published build.\n';
 
   const entry = `## ${version} — ${today}
 
@@ -663,9 +784,9 @@ ${newTextsLine}
 
   // If an existing CHANGELOG.md is found in the repo root (unlikely for
   // dataset bundle, but harmless), prepend the new entry under the header.
-  if (existingChangelog && existingChangelog.startsWith('# Changelog')) {
+  if (existingChangelog?.startsWith('# Changelog')) {
     const rest = existingChangelog.replace(/^# Changelog[\s\S]*?\n\n/, '');
-    return header + entry + '\n' + rest;
+    return `${header + entry}\n${rest}`;
   }
   return header + entry;
 }
@@ -699,7 +820,7 @@ function writeChecksums(dir: string): { files: number; bytes: number } {
     const rel = relative(dir, f);
     lines.push(`${hash}  ${rel}`);
   }
-  const body = lines.join('\n') + '\n';
+  const body = `${lines.join('\n')}\n`;
   const out = join(dir, 'checksums.sha256');
   writeFileSync(out, body, 'utf8');
   return { files: files.length, bytes: Buffer.byteLength(body, 'utf8') };
@@ -740,32 +861,56 @@ function main(): void {
 
   const db = new Database(args.db, { readonly: true });
 
+  // --- MIRI gate: hold pending_miri texts out of the whole bundle ---
+  const heldSlugs = readPendingMiriSlugs(args.corpus);
+  const heldTextIds = resolveHeldTextIds(db, heldSlugs);
+  if (heldTextIds.size > 0) {
+    const held = [...heldTextIds].sort().join(', ');
+    console.warn('');
+    console.warn('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    console.warn('  MIRI PERMISSION HOLD — texts EXCLUDED from this bundle:');
+    console.warn(`    ${held}`);
+    console.warn('  These texts carry pending_miri: true in data/corpus/*.yaml.');
+    console.warn('  They ship in a follow-up release once written Muktabodha');
+    console.warn('  permission lands (see docs/MIRI-PERMISSION-REQUEST.md).');
+    console.warn('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    console.warn('');
+  }
+
   // --- CSVs (exact schema order) ---
   const csvStats = {
-    texts: writeCsv(join(buildDir, 'texts.csv'), TEXTS_COLS, rowsFor(db, 'texts', TEXTS_COLS)),
-    verses: writeCsv(join(buildDir, 'verses.csv'), VERSES_COLS, rowsFor(db, 'verses', VERSES_COLS)),
+    texts: writeCsv(
+      join(buildDir, 'texts.csv'),
+      TEXTS_COLS,
+      rowsFor(db, 'texts', TEXTS_COLS, heldTextIds),
+    ),
+    verses: writeCsv(
+      join(buildDir, 'verses.csv'),
+      VERSES_COLS,
+      rowsFor(db, 'verses', VERSES_COLS, heldTextIds),
+    ),
     translations: writeCsv(
       join(buildDir, 'translations.csv'),
       TRANSLATIONS_COLS,
-      rowsFor(db, 'translations', TRANSLATIONS_COLS),
+      rowsFor(db, 'translations', TRANSLATIONS_COLS, heldTextIds),
     ),
     word_glosses: writeCsv(
       join(buildDir, 'word_glosses.csv'),
       WORD_GLOSSES_COLS,
-      rowsFor(db, 'word_glosses', WORD_GLOSSES_COLS),
+      rowsFor(db, 'word_glosses', WORD_GLOSSES_COLS, heldTextIds),
     ),
     parallels: writeCsv(
       join(buildDir, 'parallels.csv'),
       PARALLELS_COLS,
-      rowsFor(db, 'parallels', PARALLELS_COLS),
+      rowsFor(db, 'parallels', PARALLELS_COLS, heldTextIds),
     ),
   };
 
   // --- JSON shards ---
-  const jsonStats = emitJsonShards(db, join(buildDir, 'json'));
+  const jsonStats = emitJsonShards(db, join(buildDir, 'json'), heldTextIds);
 
   // --- TEI shards ---
-  const teiStats = emitTeiShards(db, join(buildDir, 'tei'));
+  const teiStats = emitTeiShards(db, join(buildDir, 'tei'), heldTextIds);
 
   // --- README / LICENSE / ATTRIBUTION ---
   // README is bundle-specific (not a copy of the repo README): it includes the
@@ -785,7 +930,7 @@ function main(): void {
   // --- CHANGELOG (diffed against previous build in args.out) ---
   const prevBuild = findPreviousBuild(args.out, args.version);
   const prevTexts = readPrevTexts(prevBuild);
-  const stats = collectStats(db, prevTexts);
+  const stats = collectStats(db, prevTexts, heldTextIds);
   const existingChangelog = existsSync(join(args.repoRoot, 'CHANGELOG.md'))
     ? readFileSync(join(args.repoRoot, 'CHANGELOG.md'), 'utf8')
     : null;
@@ -816,6 +961,7 @@ function main(): void {
     json_shards: jsonStats.files,
     tei_shards: teiStats.files,
     new_texts: stats.newTexts,
+    held_texts: [...heldTextIds].sort(),
     langs: stats.langs,
   };
 
@@ -826,4 +972,8 @@ function main(): void {
   );
 }
 
-main();
+// Guarded so unit tests can import readPendingMiriSlugs/holdWhere without
+// triggering a full build (same pattern as pipeline/ingest/ingest.ts).
+if (import.meta.main) {
+  main();
+}

@@ -1,188 +1,277 @@
 ---
 import AIAssistedBadge from '../../../../../components/AIAssistedBadge.astro';
+import Footer from '../../../../../components/Footer.astro';
+import Masthead from '../../../../../components/Masthead.astro';
 import ParallelChip from '../../../../../components/ParallelChip.astro';
 import ScriptSwitcher from '../../../../../components/ScriptSwitcher.solid';
-import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
-import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
 import TranslationDrawer from '../../../../../components/TranslationDrawer.solid';
 import VerseAnatomy from '../../../../../components/VerseAnatomy.astro';
 import WordSheet from '../../../../../components/WordSheet.solid';
+import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
+import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
+/**
+ * Localized verse-page route: /{lang}/{tradition}/{text-slug}/{chapter}/{verse}
+ *
+ * SERVER-RENDERED (A6 phase 2) — twin of
+ * `src/pages/[tradition]/[text]/[chapter]/[verse].astro`; see that file's
+ * header comment for the full runtime/data-routing and caching notes.
+ * Same contract: ONE batched corpus read per request via
+ * `readVersePage()` (bun:sqlite in dev, libsql→Turso in the worker).
+ *
+ * NEVER import value bindings from src/lib/db.ts here — this module ships
+ * into the worker bundle where bun:sqlite doesn't exist.
+ */
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
-import { KNOWN_TRADITIONS, resolveAlias } from '../../../../../lib/aliases';
-import { getDb, getVerseAllLanguages, getVerseTranslations } from '../../../../../lib/db';
+import { computeIsShortVerse, isProseSection } from '../../../../../lib/prose';
 import type { LangCode } from '../../../../../lib/reading-modes';
+import { safeJsonForScript } from '../../../../../lib/safe-json';
 import {
   NON_ENGLISH_LANGS,
+  buildChromeSeo,
   buildDefinedTermJsonLd,
   buildVerseSeo,
   filterIndexableTextLangs,
-  getCanonicalVerseRoutes,
-  getLemmaSummaryByIast,
-  getVerseAvailability,
-  getVersePageCached,
   inLanguageTag,
   liveLocaleSet,
   localePathFor,
 } from '../../../../../lib/seo';
+import { readVersePage, resolveVerseAlias } from '../../../../../lib/verse-read';
 
-export async function getStaticPaths() {
-  const paths: Array<{
-    params: { chapter: string; lang: string; text: string; tradition: string; verse: string };
-  }> = [];
-
-  for (const lang of NON_ENGLISH_LANGS) {
-    if (KNOWN_TRADITIONS.includes(lang as (typeof KNOWN_TRADITIONS)[number]) || lang === 'en') {
-      throw new Error(`Locale route collision: ${lang}`);
-    }
-    for (const route of getCanonicalVerseRoutes()) {
-      paths.push({
-        params: {
-          lang,
-          tradition: route.tradition,
-          text: route.text,
-          chapter: String(route.chapter),
-          verse: String(route.verse),
-        },
-      });
-    }
-  }
-
-  return paths;
-}
+export const prerender = false;
 
 const { lang, tradition, text, chapter, verse } = Astro.params;
-const chapterNum = Number(chapter);
-const verseNum = Number(verse);
 
-if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number])) {
-  throw new Error(`Invalid locale route: ${lang ?? '<missing>'}`);
+// Locale validation: this route only serves the 11 non-English locales
+// ('en' lives at the root route). Anything else is a genuine 404.
+const langValid =
+  !!lang && NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number]);
+const currentLang = (langValid ? lang : 'en') as LangCode;
+
+// Param validation: chapter/verse must be positive integers.
+const POSITIVE_INT_RE = /^\d+$/;
+const paramsValid =
+  langValid &&
+  POSITIVE_INT_RE.test(chapter ?? '') &&
+  POSITIVE_INT_RE.test(verse ?? '') &&
+  !!text &&
+  !!tradition;
+const chapterNum = paramsValid ? Number(chapter) : Number.NaN;
+const verseNum = paramsValid ? Number(verse) : Number.NaN;
+
+// 'unavailable' = corpus DB unreachable/misconfigured (styled 503);
+// 'not-found'   = the verse ref genuinely doesn't exist (styled 404).
+let state: 'ok' | 'not-found' | 'unavailable' = 'not-found';
+let read: Awaited<ReturnType<typeof readVersePage>> | null = null;
+
+if (paramsValid) {
+  try {
+    read = await readVersePage(text!, chapterNum, verseNum, currentLang);
+  } catch (e) {
+    console.error('[verse-ssr] corpus read failed:', e);
+    state = 'unavailable';
+  }
 }
 
-const aliasCheck = resolveAlias(tradition!, text!);
-if (aliasCheck && !aliasCheck.canonical) {
-  return Astro.redirect(
-    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}/${verseNum}`,
-    301,
+if (read) {
+  // Alias/tradition resolution BEFORE rendering — 301 preserves the
+  // locale prefix, mirroring the public/_redirects wildcards.
+  const alias = resolveVerseAlias(tradition!, text!, read.texts);
+  if (alias && !alias.canonical) {
+    return Astro.redirect(
+      `/${lang}/${alias.canonicalTradition}/${alias.canonicalSlug}/${chapterNum}/${verseNum}`,
+      301,
+    );
+  }
+  if (alias?.canonical && read.bundle) {
+    state = 'ok';
+  }
+}
+
+const data = state === 'ok' ? read!.bundle! : null;
+
+// Cache strategy: see the root verse route's comment — long shared-cache
+// TTL + SWR for OK responses (corpus changes only on deploy; deploys are
+// the cache-invalidation boundary; CF does not auto-cache Function
+// responses without an explicit caching layer).
+if (state === 'ok') {
+  Astro.response.headers.set(
+    'Cache-Control',
+    'public, max-age=300, s-maxage=86400, stale-while-revalidate=604800',
   );
+} else if (state === 'not-found') {
+  Astro.response.status = 404;
+  Astro.response.headers.set('Cache-Control', 'public, max-age=300');
+} else {
+  Astro.response.status = 503;
+  Astro.response.headers.set('Cache-Control', 'no-store');
+  Astro.response.headers.set('Retry-After', '30');
 }
 
-const currentLang = lang as LangCode;
-const data = getVersePageCached(text!, chapterNum, verseNum, currentLang);
-if (!data) {
-  throw new Error(`Verse not found: ${lang}/${tradition}/${text}/${chapterNum}/${verseNum}`);
-}
-
-const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } = data;
-const lemmaIasts = Array.from(
-  new Set(wordGlosses.map((g) => g.lemma_iast).filter((s): s is string => !!s)),
-);
-const occurrenceCounts = new Map<string, number>();
-if (lemmaIasts.length > 0) {
-  const db = getDb();
-  const placeholders = lemmaIasts.map(() => '?').join(',');
-  const rows = db
-    .query<{ lemma_iast: string; n: number }, (string | number)[]>(`
-      SELECT g.lemma_iast AS lemma_iast, COUNT(DISTINCT g.verse_id) AS n
-      FROM word_glosses g
-      JOIN verses v ON v.id = g.verse_id
-      WHERE v.text_id = ?
-        AND g.verse_id != ?
-        AND g.lemma_iast IN (${placeholders})
-      GROUP BY g.lemma_iast
-    `)
-    .all(textRow.id, verseRow.id, ...lemmaIasts);
-  for (const row of rows) occurrenceCounts.set(row.lemma_iast, row.n);
-}
-
-const glossesPayload = {
-  [String(verseRow.id)]: wordGlosses.map((g) => ({
-    lemma_href:
-      g.lemma_iast && (() => {
-        const summary = getLemmaSummaryByIast(g.lemma_iast);
-        return summary && summary.occurrenceCount >= 3
-          ? localePathFor(`/lemma/${summary.slug}`, currentLang)
-          : null;
-      })(),
-    word_idx: g.word_idx,
-    word_sa: g.word_sa,
-    lemma_sa: g.lemma_sa,
-    lemma_iast: g.lemma_iast,
-    gloss_text: g.gloss_text,
-    morph: g.morph,
-    occurrence_count: g.lemma_iast ? (occurrenceCounts.get(g.lemma_iast) ?? 0) : 0,
-    text_slug: textRow.slug,
-  })),
+// ── Verse view (only when state === 'ok') ──────────────────────────────────
+type VerseView = {
+  textRow: NonNullable<typeof data>['text'];
+  verseRow: NonNullable<typeof data>['verse'];
+  translations: NonNullable<typeof data>['translations'];
+  wordGlosses: NonNullable<typeof data>['wordGlosses'];
+  parallels: NonNullable<typeof data>['parallels'];
+  prev: NonNullable<typeof data>['prev'];
+  next: NonNullable<typeof data>['next'];
+  glossesPayload: Record<string, unknown>;
+  translationsPayload: unknown[];
+  basePath: string;
+  availableLangs: LangCode[];
+  pageSeo: ReturnType<typeof buildVerseSeo>;
+  pageJsonLd: ReturnType<typeof buildVerseSeo>['jsonLd'];
+  isShortVerse: boolean;
+  isProse: boolean;
+  chapterVerseCount: number | null;
+  breadcrumbItems: Array<{ name: string; href?: string }>;
 };
 
-const allTranslations = getVerseTranslations(verseRow.id);
-const translationsPayload = allTranslations.map((t) => ({
-  lang: t.lang,
-  translator: t.translator,
-  translation_text: t.translation_text,
-  judge_score: t.judge_score,
-  ai_assisted: t.ai_assisted,
-  status: t.status,
-  model: t.model,
-}));
+let view: VerseView | null = null;
 
-const allLang = getVerseAllLanguages(text!, chapterNum, verseNum);
-const basePath = `/${tradition}/${text}/${chapterNum}/${verseNum}`;
-const liveLangs = liveLocaleSet();
-const availableLangs = filterIndexableTextLangs(
-  textRow.slug,
-  getVerseAvailability(text!, chapterNum, verseNum).filter((item) => liveLangs.has(item)),
-);
-const pageSeo = buildVerseSeo({
-  availableLangs,
-  basePath,
-  indexable: liveLangs.has(currentLang),
-  lang: currentLang,
-  text: textRow,
-  translation: translations[0]?.translation_text ?? null,
-  verse: verseRow,
-});
-const lowFrequencyTermJsonLd = Array.from(
-  wordGlosses.reduce((terms, gloss) => {
-    if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
-    const summary = getLemmaSummaryByIast(gloss.lemma_iast);
-    if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
-    terms.set(
-      gloss.lemma_iast,
-      buildDefinedTermJsonLd({
-        alternateName: gloss.lemma_sa,
-        description: gloss.gloss_text,
-        inLanguage: inLanguageTag(currentLang),
-        name: gloss.lemma_iast,
-        termCode: gloss.lemma_iast,
-        url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
-      }),
-    );
-    return terms;
-  }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>()).values(),
-);
-const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
-const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
-const isShortVerse = primaryTranslationLength < 200 || wordGlosses.length === 0;
+if (data) {
+  const { text: textRow, verse: verseRow, translations, wordGlosses, parallels, prev, next } = data;
 
-const breadcrumbItems = [
-  { name: 'Home', href: localePathFor('/', currentLang) },
-  { name: tradition!, href: localePathFor(`/${tradition}`, currentLang) },
-  { name: textRow.title_en, href: localePathFor(`/${tradition}/${textRow.slug}`, currentLang) },
-  { name: `${verseRow.chapter}.${verseRow.verse_num}` },
-];
+  const glossesPayload = {
+    [String(verseRow.id)]: wordGlosses.map((g) => {
+      const summary = g.lemma_iast ? data.lemmaSummaries.get(g.lemma_iast) : undefined;
+      return {
+        lemma_href:
+          summary && summary.occurrenceCount >= 3
+            ? localePathFor(`/lemma/${summary.slug}`, currentLang)
+            : null,
+        word_idx: g.word_idx,
+        word_sa: g.word_sa,
+        lemma_sa: g.lemma_sa,
+        lemma_iast: g.lemma_iast,
+        gloss_text: g.gloss_text,
+        morph: g.morph,
+        occurrence_count: g.lemma_iast ? (data.occurrenceCounts.get(g.lemma_iast) ?? 0) : 0,
+        text_slug: textRow.slug,
+      };
+    }),
+  };
+
+  const translationsPayload = data.allTranslations.map((t) => ({
+    lang: t.lang,
+    translator: t.translator,
+    translation_text: t.translation_text,
+    judge_score: t.judge_score,
+    ai_assisted: t.ai_assisted,
+    status: t.status,
+    model: t.model,
+  }));
+
+  const basePath = `/${tradition}/${text}/${chapterNum}/${verseNum}`;
+  const liveLangs = liveLocaleSet();
+  const availableLangs = filterIndexableTextLangs(
+    textRow.slug,
+    (data.availability as LangCode[]).filter((item) => liveLangs.has(item)),
+  );
+  const pageSeo = buildVerseSeo({
+    availableLangs,
+    basePath,
+    indexable: liveLangs.has(currentLang),
+    lang: currentLang,
+    text: textRow,
+    translation: translations[0]?.translation_text ?? null,
+    verse: verseRow,
+  });
+  const lowFrequencyTermJsonLd = Array.from(
+    wordGlosses
+      .reduce((terms, gloss) => {
+        if (!gloss.lemma_iast || terms.has(gloss.lemma_iast)) return terms;
+        const summary = data.lemmaSummaries.get(gloss.lemma_iast);
+        if (!summary || summary.occurrenceCount >= 3 || !gloss.gloss_text) return terms;
+        terms.set(
+          gloss.lemma_iast,
+          buildDefinedTermJsonLd({
+            alternateName: gloss.lemma_sa,
+            description: gloss.gloss_text,
+            inLanguage: inLanguageTag(currentLang),
+            name: gloss.lemma_iast,
+            termCode: gloss.lemma_iast,
+            url: `${pageSeo.canonical}#word-${gloss.word_idx}`,
+          }),
+        );
+        return terms;
+      }, new Map<string, ReturnType<typeof buildDefinedTermJsonLd>>())
+      .values(),
+  );
+  const pageJsonLd = [...pageSeo.jsonLd, ...lowFrequencyTermJsonLd];
+  const primaryTranslationLength = translations[0]?.translation_text?.length ?? 0;
+  // computeIsShortVerse (src/lib/prose.ts) carries the short-verse heuristic
+  // AND the prose guard: prose blocks ship no word glosses in V1, so the
+  // `wordGlosses.length === 0` arm must never fire for section_type='prose'.
+  const isShortVerse = computeIsShortVerse({
+    sectionType: verseRow.section_type,
+    translationLength: primaryTranslationLength,
+    glossCount: wordGlosses.length,
+  });
+  // Wayfinding labels switch verse->passage for prose blocks; the numeric
+  // chrome locator ({chapter}.{verse}) is unchanged either way.
+  const isProse = isProseSection(verseRow.section_type);
+
+  const breadcrumbItems = [
+    { name: 'Home', href: localePathFor('/', currentLang) },
+    { name: tradition!, href: localePathFor(`/${tradition}`, currentLang) },
+    { name: textRow.title_en, href: localePathFor(`/${tradition}/${textRow.slug}`, currentLang) },
+    { name: `${verseRow.chapter}.${verseRow.verse_num}` },
+  ];
+
+  view = {
+    textRow,
+    verseRow,
+    translations,
+    wordGlosses,
+    parallels,
+    prev,
+    next,
+    glossesPayload,
+    translationsPayload,
+    basePath,
+    availableLangs,
+    pageSeo,
+    pageJsonLd,
+    isShortVerse,
+    isProse,
+    // Verse-position indicator: denominator comes from the same batched
+    // read as prev/next, so it always matches navigation.
+    chapterVerseCount: data.chapterVerseCount,
+    breadcrumbItems,
+  };
+}
+
+// ── Error view (styled 404/503 reusing the 404.astro posture) ──────────────
+const errorSeo =
+  state === 'ok'
+    ? null
+    : buildChromeSeo({
+        basePath: Astro.url.pathname,
+        description:
+          state === 'not-found'
+            ? "This verse isn't in the corpus. Yet. Try searching, browsing the texts, or telling us what's missing."
+            : 'The reader is briefly unavailable. The verse is still in the corpus — try again in a moment.',
+        lang: 'en',
+        noindex: true,
+        title:
+          state === 'not-found' ? 'Not Found — sohamhamso' : 'Temporarily unavailable — sohamhamso',
+      });
 ---
 
-<BaseLayout
-  canonical={pageSeo.canonical}
-  description={pageSeo.description}
-  hreflang={pageSeo.hreflang}
-  jsonLd={pageJsonLd}
-  lang={currentLang}
-  localeBasePath={basePath}
-  noindex={pageSeo.noindex}
-  ogImageUrl={pageSeo.ogImageUrl}
-  title={pageSeo.title}
->
+{view ? (
+  <BaseLayout
+    canonical={view.pageSeo.canonical}
+    description={view.pageSeo.description}
+    hreflang={view.pageSeo.hreflang}
+    jsonLd={view.pageJsonLd}
+    lang={currentLang}
+    localeBasePath={view.basePath}
+    noindex={view.pageSeo.noindex}
+    ogImageUrl={view.pageSeo.ogImageUrl}
+    title={view.pageSeo.title}
+  >
   <header class="chrome">
     <a
       href={`/${lang}/${tradition}/${text}`}
@@ -193,8 +282,8 @@ const breadcrumbItems = [
       ←
     </a>
     <div class="chrome__title">
-      <span class="chrome__text">{textRow.title_en}</span>
-      <span class="chrome__verse">· {chapterNum}.{verseNum}</span>
+      <span class="chrome__text">{view.textRow.title_en}</span>
+      <span class="chrome__verse">· {chapterNum}.{verseNum}{view.chapterVerseCount ? <span class="chrome__count"> / {view.chapterVerseCount}</span> : null}</span>
     </div>
     <div class="chrome__tools">
       <ScriptSwitcher client:idle />
@@ -212,17 +301,17 @@ const breadcrumbItems = [
   </header>
 
   <main id="main" class="reader">
-    <Breadcrumbs items={breadcrumbItems} lang={currentLang} />
-    <h1 class="visually-hidden">{textRow.title_en} {chapterNum}.{verseNum}</h1>
+    <Breadcrumbs items={view.breadcrumbItems} lang={currentLang} />
+    <h1 class="visually-hidden">{view.textRow.title_en} {chapterNum}.{verseNum}</h1>
 
-    <VerseAnatomy verse={verseRow} wordGlosses={wordGlosses} translations={translations}>
+    <VerseAnatomy verse={view.verseRow} wordGlosses={view.wordGlosses} translations={view.translations}>
       <Fragment slot="chips">
-        <ParallelChip parallels={parallels} />
+        <ParallelChip parallels={view.parallels} />
       </Fragment>
 
       <Fragment slot="footer">
-        <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
-        {translations.map((t) => (
+        <LangSwitcher availableLangs={view.availableLangs} basePath={view.basePath} currentLang={currentLang} />
+        {view.translations.map((t) => (
           <AIAssistedBadge
             aiAssisted={t.ai_assisted}
             status={t.status}
@@ -234,46 +323,58 @@ const breadcrumbItems = [
             generatedAt={t.reviewed_at}
           />
         ))}
-        {textRow.manuscript_url ? (
+        {view.textRow.manuscript_url ? (
           <a
-            href={textRow.manuscript_url}
+            href={view.textRow.manuscript_url}
             target="_blank"
             rel="noopener noreferrer"
             class="manuscript-link"
           >
-            📜 <span data-i18n="verse.manuscript_prefix">View manuscript at</span> {textRow.source ?? "source"}
-            {verseRow.manuscript_folio_ref ? (
-              <span> · <span data-i18n="verse.manuscript_folio_prefix">folio</span> {verseRow.manuscript_folio_ref}</span>
+            📜 <span data-i18n="verse.manuscript_prefix">View manuscript at</span> {view.textRow.source ?? "source"}
+            {view.verseRow.manuscript_folio_ref ? (
+              <span> · <span data-i18n="verse.manuscript_folio_prefix">folio</span> {view.verseRow.manuscript_folio_ref}</span>
             ) : null}
           </a>
         ) : null}
       </Fragment>
     </VerseAnatomy>
 
-    <nav class="verse-nav" aria-label="Verse navigation" data-i18n-attr-aria-label="verse_page.nav_aria">
-      {prev ? (
-        <a href={`/${lang}/${tradition}/${text}/${prev.chapter}/${prev.verse_num}`} class="verse-nav__prev">
-          ← {prev.chapter}.{prev.verse_num}
+    <nav
+      class="verse-nav"
+      aria-label={view.isProse ? 'Passage navigation' : 'Verse navigation'}
+      data-i18n-attr-aria-label={view.isProse ? 'verse_page.nav_aria_passage' : 'verse_page.nav_aria'}
+    >
+      {view.prev ? (
+        <a
+          href={`/${lang}/${tradition}/${text}/${view.prev.chapter}/${view.prev.verse_num}`}
+          class="verse-nav__prev"
+          aria-label={`${view.isProse ? 'Previous passage' : 'Previous verse'} ${view.prev.chapter}.${view.prev.verse_num}`}
+        >
+          ← {view.prev.chapter}.{view.prev.verse_num}
         </a>
       ) : (
         <span class="verse-nav__spacer" />
       )}
-      {next ? (
-        <a href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`} class="verse-nav__next">
-          {next.chapter}.{next.verse_num} →
+      {view.next ? (
+        <a
+          href={`/${lang}/${tradition}/${text}/${view.next.chapter}/${view.next.verse_num}`}
+          class="verse-nav__next"
+          aria-label={`${view.isProse ? 'Next passage' : 'Next verse'} ${view.next.chapter}.${view.next.verse_num}`}
+        >
+          {view.next.chapter}.{view.next.verse_num} →
         </a>
       ) : (
         <span class="verse-nav__spacer" />
       )}
     </nav>
 
-    {isShortVerse ? (
+    {view.isShortVerse ? (
       <aside class="verse-continue" aria-label="Continue reading">
         <a class="verse-continue__link" href={`/${lang}/${tradition}/${text}`}>
           <span data-i18n="verse.continue.about_text">About this text</span> →
         </a>
-        {next ? (
-          <a class="verse-continue__link" href={`/${lang}/${tradition}/${text}/${next.chapter}/${next.verse_num}`}>
+        {view.next ? (
+          <a class="verse-continue__link" href={`/${lang}/${tradition}/${text}/${view.next.chapter}/${view.next.verse_num}`}>
             <span data-i18n="verse.continue.next_verse">Next verse</span> →
           </a>
         ) : null}
@@ -284,9 +385,50 @@ const breadcrumbItems = [
   <WordSheet client:idle />
   <TranslationDrawer client:idle />
 
-  <script is:inline set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`} />
-  <script is:inline set:html={`window.__translations = ${JSON.stringify(translationsPayload)};`} />
-</BaseLayout>
+  <script is:inline set:html={`window.__wordGlosses = ${safeJsonForScript(view.glossesPayload)};`} />
+  <script is:inline set:html={`window.__translations = ${safeJsonForScript(view.translationsPayload)};`} />
+  </BaseLayout>
+) : (
+  <BaseLayout
+    canonical={errorSeo!.canonical}
+    description={errorSeo!.description}
+    hreflang={errorSeo!.hreflang}
+    jsonLd={errorSeo!.jsonLd}
+    lang="en"
+    noindex={errorSeo!.noindex}
+    title={errorSeo!.title}
+  >
+    <Masthead currentLang="EN" />
+
+    {/* Mirrors src/pages/404.astro — same posture, verse-route copy. */}
+    <main id="main" class="not-found">
+      <p class="not-found__eyebrow">{state === 'not-found' ? '404' : '503'}</p>
+      {state === 'not-found' ? (
+        <>
+          <h1 class="not-found__title">This verse isn&apos;t in the corpus. Yet.</h1>
+          <p class="not-found__lede">
+            Try searching, browsing the texts, or telling us what&apos;s missing.
+          </p>
+        </>
+      ) : (
+        <>
+          <h1 class="not-found__title">The reader is briefly unavailable.</h1>
+          <p class="not-found__lede">
+            The verse is still in the corpus — our database didn&apos;t answer in time.
+            Try again in a moment.
+          </p>
+        </>
+      )}
+      <nav class="not-found__actions" aria-label="Next steps">
+        <a href="/search">Search the corpus</a>
+        <a href="/texts">Browse all texts</a>
+        <a href="/about/methodology">Read the methodology</a>
+      </nav>
+    </main>
+
+    <Footer />
+  </BaseLayout>
+)}
 
 <style>
   .chrome {
@@ -319,8 +461,8 @@ const breadcrumbItems = [
   .chrome__title {
     flex: 1;
     min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: flex;
+    align-items: baseline;
     white-space: nowrap;
     font-family: var(--font-chrome);
     font-size: var(--text-sm);
@@ -328,10 +470,23 @@ const breadcrumbItems = [
   }
   .chrome__text {
     font-weight: 500;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+  /*
+   * The locator never shrinks: on tight mobile widths the text title
+   * ellipsizes while "5.22 / 142" stays fully visible (wayfinding).
+   */
   .chrome__verse {
     color: var(--color-ink-muted);
     margin-left: 4px;
+    flex-shrink: 0;
+  }
+  /* Chapter-length denominator — typographically quieter than the locator. */
+  .chrome__count {
+    font-size: var(--text-xs);
+    color: var(--color-ink-muted);
   }
   .chrome__tools {
     display: flex;
@@ -399,5 +554,44 @@ const breadcrumbItems = [
   .verse-continue__link:hover,
   .verse-continue__link:focus-visible {
     color: var(--color-ink);
+  }
+
+  /* Error posture — mirrors src/pages/404.astro styles. */
+  .not-found {
+    max-width: 60ch;
+    margin: 0 auto;
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-12);
+  }
+  .not-found__eyebrow {
+    margin: 0 0 var(--spacing-3);
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+  .not-found__title {
+    margin: 0 0 var(--spacing-4);
+    font-family: var(--font-iast);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--color-ink);
+  }
+  .not-found__lede {
+    margin: 0 0 var(--spacing-6);
+    font-family: var(--font-iast);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+  }
+  .not-found__actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    font-family: var(--font-chrome);
+  }
+  .not-found__actions a {
+    color: var(--color-ink);
+    text-decoration: none;
   }
 </style>

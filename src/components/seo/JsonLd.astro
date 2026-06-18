@@ -1,4 +1,6 @@
 ---
+import { safeJsonForScript } from '../../lib/safe-json';
+
 interface Props {
   nodes?: Array<Record<string, unknown>>;
 }
@@ -7,5 +9,5 @@ const { nodes = [] } = Astro.props;
 ---
 
 {nodes.map((node) => (
-  <script type="application/ld+json" set:html={JSON.stringify(node)} />
+  <script type="application/ld+json" set:html={safeJsonForScript(node)} />
 ))}

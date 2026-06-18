@@ -1,5 +1,5 @@
+import { SITE_URL, liveLocaleSet, localePathFor } from '../lib/seo';
 import { getLemmaRoutes } from '../lib/seo/corpus-bundle';
-import { liveLocaleSet, localePathFor, SITE_URL } from '../lib/seo';
 import { xmlEscape } from '../lib/seo/xml-escape';
 
 export function GET() {

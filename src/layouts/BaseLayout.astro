@@ -8,7 +8,7 @@ import HeadSeo from '../components/seo/HeadSeo.astro';
 import { CORE_PRELOADED_FONT_ASSETS } from '../lib/font-assets';
 import type { LangCode } from '../lib/reading-modes';
 import type { HreflangEntry } from '../lib/seo';
-import { buildWebPageJsonLd, type JsonLdNode } from '../lib/seo/jsonld';
+import { type JsonLdNode, buildWebPageJsonLd } from '../lib/seo/jsonld';
 
 interface Props {
   canonical?: string;
@@ -19,6 +19,10 @@ interface Props {
   keywords?: string[];
   lang?: string;
   localeBasePath?: string;
+  // When set, client-side locale switches append a trailing slash to the
+  // non-English target (chapter-index pages — see chapterIndexPath: the bare
+  // localized URL 404s on CF Pages, only the trailing-slash form serves).
+  localeTrailingSlash?: boolean;
   noindex?: boolean;
   ogImageUrl?: string;
 }
@@ -31,12 +35,12 @@ const {
   keywords = [],
   lang = 'en',
   localeBasePath,
+  localeTrailingSlash = false,
   noindex = false,
   ogImageUrl,
 } = Astro.props;
 const siteUrl = Astro.site ?? Astro.url;
-const requestPath =
-  Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
+const requestPath = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
 const resolvedCanonical = canonical ?? new URL(requestPath, siteUrl).toString();
 const resolvedOgImageUrl = ogImageUrl ?? new URL('/og-default.png', siteUrl).toString();
 const currentLangCode = lang as LangCode;
@@ -54,7 +58,7 @@ const resolvedJsonLd =
 const preloadedFonts = CORE_PRELOADED_FONT_ASSETS;
 ---
 <!doctype html>
-<html lang={lang} data-locale-base-path={localeBasePath}>
+<html lang={lang} data-locale-base-path={localeBasePath} data-locale-trailing-slash={localeTrailingSlash ? 'true' : undefined}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -107,7 +111,11 @@ const preloadedFonts = CORE_PRELOADED_FONT_ASSETS;
         const lang = detail?.lang;
         const basePath = document.documentElement.dataset.localeBasePath;
         if (!lang || !basePath) return;
-        const next = lang === 'en' ? basePath : `/${lang}${basePath === '/' ? '' : basePath}`;
+        const trailingSlash = document.documentElement.dataset.localeTrailingSlash === 'true';
+        const next =
+          lang === 'en'
+            ? basePath
+            : `/${lang}${basePath === '/' ? '' : basePath}${trailingSlash ? '/' : ''}`;
         if (next !== window.location.pathname) {
           window.location.assign(next);
         }
@@ -135,7 +143,7 @@ const preloadedFonts = CORE_PRELOADED_FONT_ASSETS;
   <SearchBox client:idle />
   <I18nSwap client:idle />
   <ReaderLangSwap client:idle />
-  <AcceptLanguageBanner currentLang={currentLangCode} localeBasePath={localeBasePath} />
+  <AcceptLanguageBanner currentLang={currentLangCode} localeBasePath={localeBasePath} localeTrailingSlash={localeTrailingSlash} />
 </body>
 </html>
 

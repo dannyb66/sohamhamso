@@ -43,6 +43,7 @@ text:
   source_url: "https://muktabodha.org"
   source_revision: pending
   license: PD
+  pending_miri: true
   parent_text_id:
   manuscript_url:
   description: |
@@ -1053,12 +1054,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ml
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: അതിൽനിന്നു (ചിത്തത്തിൽനിന്നു) രൂപപ്പെട്ടവനാണ് മായാപ്രമാതാവ് (മായയാൽ ബന്ധിതനായ അനുഭവിക്കുന്നവൻ).
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: mr
       translator: sohamhamso (claude-opus-4-7)
@@ -1232,8 +1233,8 @@ chapters:
       source: "synthesized from PD-era English renderings"
       license: PD
       text: "He, though one, has two forms, three modes, four selves, and the nature of seven pentads."
-      ai_assisted: true
-      status: draft
+      ai_assisted: false
+      status: published
 
     - lang: as
       translator: sohamhamso (claude-opus-4-7)
@@ -1252,12 +1253,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
-      text: તે એક હોવા છતાં દ્વિરૂપ, ત્રિમય, ચતુરાત્મા અને સપ્ત-પંચક સ્વભાવવાળો છે.
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
+      text: તે એક હોવા છતાં દ્વિરૂપ (શિવ-શક્તિ), ત્રિમય, ચતુરાત્મા અને સપ્ત-પંચક સ્વભાવવાળો છે.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
       translator: sohamhamso (claude-opus-4-7)
@@ -1284,12 +1285,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: तो एक असूनही दोन रूपांचा (शिव–शक्ती), तीन प्रकारांचा, चार आत्म्यांचा आणि सात पंचकांच्या स्वभावाचा असतो.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: or
       translator: sohamhamso (claude-opus-4-7)
@@ -1308,12 +1309,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: அவன் ஒருவனாக இருந்தாலும், இரு வடிவங்களையும் (சிவ-சக்தி), மூன்று கூறுகளையும், நான்கு ஆத்மாக்களையும், ஏழு பஞ்சகங்களின் இயல்பையும் கொண்டுள்ளான்.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: te
       translator: sohamhamso (claude-opus-4-7)
@@ -1586,12 +1587,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: चित्-स्वरूप होते हुए भी अपनी शक्तियों के संकोच के कारण मलों से आवृत होकर वह संसारी (संसार में भटकने वाला जीव) बन जाता है।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
       translator: sohamhamso (claude-opus-4-7)
@@ -1626,12 +1627,12 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: pa
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ਚਿਤ-ਸਰੂਪ ਹੁੰਦਿਆਂ ਹੋਇਆਂ ਵੀ ਆਪਣੀਆਂ ਸ਼ਕਤੀਆਂ ਦੇ ਸੰਕੋਚ ਕਾਰਨ ਮਲਾਂ ਨਾਲ ਢੱਕਿਆ ਹੋਇਆ ਉਹ ਸੰਸਾਰੀ (ਸੰਸਾਰ ਵਿੱਚ ਭਟਕਣ ਵਾਲਾ ਜੀਵ) ਬਣ ਜਾਂਦਾ ਹੈ।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ta
       translator: sohamhamso (claude-opus-4-7)
@@ -3190,16 +3191,16 @@ chapters:
       source: "synthesized from PD-era English renderings"
       license: PD
       text: "Here the means are: dissolution of mental constructs, contraction and expansion of the powers, cutting of the prāṇa-currents, contemplation of the beginning and end points, and so on."
-      ai_assisted: true
-      status: draft
+      ai_assisted: false
+      status: published
 
     - lang: as
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ইয়াত উপায়সমূহ হ’ল — বিকল্পক্ষয়, শক্তিৰ সঙ্কোচ-বিকাশ, প্ৰাণ-অপানৰ বাহ-চ্ছেদ আদি, আদ্য-অন্ত কোটিৰ নিভালন আদি।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: bn
       translator: sohamhamso (claude-opus-4-7)
@@ -3210,35 +3211,35 @@ chapters:
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: gu
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: અહીં ઉપાયો છે — વિકલ્પ-ક્ષય, શક્તિ-સંકોચ અને વિકાસ, વાહ-ચ્છેદ (પ્રાણ-પ્રવાહનો છેદ), આદિ-અંત-કોટિનું નિભાલન (પ્રારંભ-અંતના બિંદુઓનું ધ્યાનપૂર્વક અવલોકન), ઇત્યાદિ.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: hi
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: यहाँ (इस मार्ग में) विकल्प-क्षय, शक्ति का संकोच-विकास, (प्राण-अपान के) वाह का छेद, आदि-अन्त कोटियों का निभालन (सावधान अवलोकन) इत्यादि उपाय हैं।
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: kn
-      translator: sohamhamso (claude-opus-4-7)
-      license: CC-BY-SA
+      translator: sohamhamso (claude-opus-4-8)
+      license: CC-BY-NC
       text: ಇಲ್ಲಿ (ಈ ಸಿದ್ಧಾಂತದಲ್ಲಿ) ಉಪಾಯಗಳೆಂದರೆ — ವಿಕಲ್ಪಕ್ಷಯ (ವಿಚಾರಗಳ ಲಯ), ಶಕ್ತಿಯ ಸಂಕೋಚ ಮತ್ತು ವಿಕಾಸ, ವಾಹಚ್ಛೇದ (ಪ್ರಾಣಾಪಾನ ಪ್ರವಾಹಗಳ ಛೇದನ), ಆದಿ-ಅಂತ ಕೋಟಿಗಳ ನಿಭಾಲನ (ಆರಂಭ ಮತ್ತು ಅಂತ್ಯ ಬಿಂದುಗಳ ಚಿಂತನೆ) ಮೊದಲಾದವು.
       ai_assisted: true
-      status: draft
-      model: claude-opus-4-7
+      status: published
+      model: claude-opus-4-8
       prompt_version: v1-sanskrit-grounded
     - lang: ml
       translator: sohamhamso (claude-opus-4-7)
       license: CC-BY-SA
       text: വികൽപക്ഷയം, ശക്തിയുടെ സങ്കോചവികാസം, വാഹച്ഛേദം (പ്രാണ-അപാന പ്രവാഹം മുറിക്കൽ), ആദ്യന്തകോടി-നിഭാലനം (ആരംഭാന്ത്യബിന്ദുക്കളിലെ ധ്യാനം) മുതലായവയാണ് ഇവിടെ (ഈ ഉപദേശത്തിൽ) ഉപായങ്ങൾ.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: mr
@@ -3246,7 +3247,7 @@ chapters:
       license: CC-BY-SA
       text: येथे (या मार्गात) उपाय असे आहेत — विकल्पांचा क्षय, शक्तींचा संकोच व विकास, (प्राण-अपानाच्या) प्रवाहाचा छेद, आदी-अंत-बिंदूंचे निभालन (एकाग्र निरीक्षण) इत्यादी.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: or
@@ -3262,7 +3263,7 @@ chapters:
       license: CC-BY-SA
       text: ਇੱਥੇ (ਇਸ ਮਾਰਗ ਵਿੱਚ) ਵਿਕਲਪ-ਕਸ਼ਯ (ਵਿਚਾਰਾਂ ਦਾ ਨਾਸ਼), ਸ਼ਕਤੀ ਦਾ ਸੰਕੋਚ-ਵਿਕਾਸ, (ਪ੍ਰਾਣ-ਅਪਾਨ ਦੇ) ਵਾਹ ਦਾ ਛੇਦ, ਆਦਿ-ਅੰਤ ਕੋਟੀਆਂ ਦਾ ਨਿਭਾਲਨ (ਸਾਵਧਾਨ ਅਵਲੋਕਨ) ਆਦਿ ਉਪਾਅ ਹਨ।
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: ta
@@ -3270,7 +3271,7 @@ chapters:
       license: CC-BY-SA
       text: விகல்பங்களின் க்ஷயம், சக்தியின் சங்கோச-விகாசம், ப்ராண-வாஹத்தை அறுத்தல், ஆதி-அந்த கோடிகளை உற்று நோக்குதல் — இவை போன்றவை இங்கே (இந்த உபதேசத்தில்) உபாயங்களாகும்.
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te
@@ -3670,7 +3671,7 @@ chapters:
       license: CC-BY-SA
       text: அப்போது, ப்ரகாசம்-ஆனந்தம் சாரமாகவும், மஹாமந்த்ர வீரியத்தை இயல்பாகவும் கொண்ட பூரண அஹந்தாவில் (முழு 'நான்'-உணர்வில்) நுழைவதனால், எப்போதும் எல்லா ஸ்ருஷ்டி-ஸம்ஹாரத்தையும் செய்யும் தனது சொந்த ஸம்வித்-தேவதைகளின் சக்கரத்திற்கு ஈஸ்வரத்துவம் என்னும் பேறு கிட்டுகிறது. இவ்வாறு, சிவம் (மங்களம் உண்டாகட்டும்).
       ai_assisted: true
-      status: draft
+      status: published
       model: claude-opus-4-7
       prompt_version: v1-sanskrit-grounded
     - lang: te

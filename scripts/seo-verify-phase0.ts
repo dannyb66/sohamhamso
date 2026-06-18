@@ -9,11 +9,7 @@ import {
 } from '../functions/og/_shared';
 import { getLemmaRoutes, getLemmaSummaryBySlug } from '../src/lib/seo/corpus-bundle';
 import { parseLemmaOgUrl, parseVerseOgUrl } from '../src/lib/seo/og-payload';
-import {
-  collectHtmlFiles,
-  inspectHtmlFile,
-  resolveSiteOrigin,
-} from './seo-validate';
+import { collectHtmlFiles, inspectHtmlFile, resolveSiteOrigin } from './seo-validate';
 
 interface PngDimensions {
   height: number;
@@ -164,7 +160,11 @@ async function runHandlerCheck(
           if (options.forceFallback && requestUrl.pathname === '/og-runtime/resvg-index_bg.wasm') {
             return new Response('Not found', { status: 404 });
           }
-          const assetPath = resolve(process.cwd(), 'public', requestUrl.pathname.replace(/^\//, ''));
+          const assetPath = resolve(
+            process.cwd(),
+            'public',
+            requestUrl.pathname.replace(/^\//, ''),
+          );
           if (!existsSync(assetPath)) return new Response('Not found', { status: 404 });
           return assetResponseForPath(assetPath);
         },
@@ -183,7 +183,10 @@ async function runHandlerCheck(
   };
 }
 
-async function inspectOgCoverage(distDir: string, siteOrigin: string): Promise<{
+async function inspectOgCoverage(
+  distDir: string,
+  siteOrigin: string,
+): Promise<{
   htmlFiles: number | null;
   ogTaggedPages: number | null;
   totalFiles: number | null;
@@ -261,7 +264,9 @@ function summarize(report: Phase0Report): string {
     `- Cache key strips noisy query params: ${report.localChecks.ogHandlers.noisyQueryNormalized ? 'yes' : 'no'}`,
   ];
   for (const item of report.manualChecks) {
-    lines.push(`- Manual check ${item.name}: ${item.status}${item.blocker ? ` (${item.blocker})` : ''}`);
+    lines.push(
+      `- Manual check ${item.name}: ${item.status}${item.blocker ? ` (${item.blocker})` : ''}`,
+    );
   }
   return lines.join('\n');
 }
@@ -308,9 +313,13 @@ async function main(): Promise<void> {
       ogHandlers: {
         invalidLangRejected,
         lemmaSampleSlug: sampleLemma.slug,
-        lemmaFallback: await runHandlerCheck(handleLemmaOgRequest, lemmaFallbackUrl, { forceFallback: true }),
+        lemmaFallback: await runHandlerCheck(handleLemmaOgRequest, lemmaFallbackUrl, {
+          forceFallback: true,
+        }),
         noisyQueryNormalized,
-        verseFallback: await runHandlerCheck(handleVerseOgRequest, verseFallbackUrl, { forceFallback: true }),
+        verseFallback: await runHandlerCheck(handleVerseOgRequest, verseFallbackUrl, {
+          forceFallback: true,
+        }),
         lemmaSuccess: await runHandlerCheck(handleLemmaOgRequest, lemmaSuccessUrl),
         verseSuccess: await runHandlerCheck(handleVerseOgRequest, verseSuccessUrl),
       },
@@ -326,9 +335,15 @@ async function main(): Promise<void> {
   }
 
   const failures: string[] = [];
-  if (report.localChecks.lemmaSlugAudit.duplicates.length > 0) failures.push('lemma slug duplicates');
-  if (report.localChecks.lemmaSlugAudit.missingSummaries.length > 0) failures.push('lemma summaries missing');
-  if (!report.files.ogDefaultPng || report.files.ogDefaultPng.width !== 1200 || report.files.ogDefaultPng.height !== 630) {
+  if (report.localChecks.lemmaSlugAudit.duplicates.length > 0)
+    failures.push('lemma slug duplicates');
+  if (report.localChecks.lemmaSlugAudit.missingSummaries.length > 0)
+    failures.push('lemma summaries missing');
+  if (
+    !report.files.ogDefaultPng ||
+    report.files.ogDefaultPng.width !== 1200 ||
+    report.files.ogDefaultPng.height !== 630
+  ) {
     failures.push('og-default.png must exist at 1200x630');
   }
   if (
@@ -369,8 +384,10 @@ async function main(): Promise<void> {
   ) {
     failures.push('lemma OG fallback path must resolve to the PNG asset response');
   }
-  if (!report.localChecks.ogHandlers.invalidLangRejected) failures.push('invalid lang must be rejected');
-  if (!report.localChecks.ogHandlers.noisyQueryNormalized) failures.push('cache key must strip noisy query params');
+  if (!report.localChecks.ogHandlers.invalidLangRejected)
+    failures.push('invalid lang must be rejected');
+  if (!report.localChecks.ogHandlers.noisyQueryNormalized)
+    failures.push('cache key must strip noisy query params');
   if (failures.length > 0) {
     console.error(`Phase 0 verification failed: ${failures.join('; ')}`);
     process.exit(1);

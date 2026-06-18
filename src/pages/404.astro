@@ -2,11 +2,22 @@
 import Footer from '../components/Footer.astro';
 import Masthead from '../components/Masthead.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { safeJsonForScript } from '../lib/safe-json';
 import { buildChromeSeo } from '../lib/seo';
+import { UPCOMING_TEXTS } from '../lib/upcoming-texts';
+
+// D7 remainder: when the 404'd path names a Phase 2 staged text, show a
+// quiet "{Title} is in preparation — get notified" line. This page is
+// prerendered static, so the path match runs client-side: the tiny inline
+// script below mirrors `matchUpcomingPath` (src/lib/upcoming-texts.ts) over
+// `location.pathname` and unhides the line on a hit. Dependency-free by
+// design — same inline-script posture as AcceptLanguageBanner.astro.
+const upcomingPayload = UPCOMING_TEXTS.map((t) => ({ title: t.title, variants: t.variants }));
 
 const pageSeo = buildChromeSeo({
   basePath: '/404',
-  description: "This verse isn't in the corpus. Yet. Try searching, browsing the texts, or telling us what's missing.",
+  description:
+    "This verse isn't in the corpus. Yet. Try searching, browsing the texts, or telling us what's missing.",
   lang: 'en',
   noindex: true,
   title: 'Not Found — sohamhamso',
@@ -30,6 +41,12 @@ const pageSeo = buildChromeSeo({
     <p class="not-found__lede">
       Try searching, browsing the 5 texts, or telling us what&apos;s missing.
     </p>
+    <p class="not-found__upcoming" data-upcoming hidden>
+      <em data-upcoming-title></em>{" "}
+      <span data-i18n="upcoming.in_preparation">is in preparation</span>
+      {" — "}
+      <a href="/daily" data-i18n="upcoming.get_notified">get notified</a>
+    </p>
     <nav class="not-found__actions" aria-label="Next steps">
       <a href="/search">Search the corpus</a>
       <a href="/texts">Browse all texts</a>
@@ -38,6 +55,27 @@ const pageSeo = buildChromeSeo({
   </main>
 
   <Footer />
+
+  {/* Client-side mirror of matchUpcomingPath() — see frontmatter note. */}
+  <script
+    is:inline
+    set:html={`(() => {
+  const TEXTS = ${safeJsonForScript(upcomingPayload)};
+  const line = document.querySelector('[data-upcoming]');
+  const title = document.querySelector('[data-upcoming-title]');
+  if (!line || !title) return;
+  const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+  const head = norm(location.pathname).split('/').filter(Boolean).slice(0, 3).join('/');
+  if (!head) return;
+  for (const t of TEXTS) {
+    if (t.variants.some((v) => head.includes(v))) {
+      title.textContent = t.title;
+      line.hidden = false;
+      return;
+    }
+  }
+})();`}
+  />
 </BaseLayout>
 
 <style>
@@ -67,6 +105,16 @@ const pageSeo = buildChromeSeo({
     font-size: var(--text-md);
     line-height: 1.6;
     color: var(--color-ink-muted);
+  }
+  .not-found__upcoming {
+    margin: 0 0 var(--spacing-6);
+    font-family: var(--font-iast);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+  }
+  .not-found__upcoming a {
+    color: var(--color-ink);
   }
   .not-found__actions {
     display: flex;

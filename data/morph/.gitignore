@@ -1,0 +1,4 @@
+# Vidyut morphology outputs are generated artifacts (pipeline/morph/runner.py
+# and pipeline/morph/audit.ts) and are not committed yet — regenerate locally.
+*.json
+!.gitignore

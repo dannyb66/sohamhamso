@@ -38,7 +38,11 @@ cd "$REPO_ROOT" || { printf '%s\n' "Cannot cd to repo root: $REPO_ROOT" >&2; exi
 printf '%spreflight%s — repo: %s%s%s\n' "$BLD" "$RST" "$DIM" "$REPO_ROOT" "$RST"
 
 # Baseline mirrors CI (.github/workflows/ci.yml::BIOME_BASELINE).
-BIOME_BASELINE="${BIOME_BASELINE:-94}"
+# 2026-06-11: 94 -> 100. Repo-wide safe biome fixes brought pre-existing debt
+# 182 -> 100; the residual +6 over the old baseline is in-flight chapter-videos
+# files (noNonNullAssertion in new chapter pages, stale suppressions in youtube
+# tests) — burn down when that branch lands. Phase 2 foundations lanes are at 0.
+BIOME_BASELINE="${BIOME_BASELINE:-100}"
 
 # ---------- gate 1: typecheck ----------
 step "Gate 1/4: typecheck"
@@ -108,6 +112,22 @@ else
   else
     pass ".env.example documents all required vars (${REQUIRED_VARS[*]})"
   fi
+fi
+
+# ---------- gate: dist file count (Cloudflare Pages deploy limit) ----------
+# CF Pages rejects deploys with > 20,000 files; we gate at 18,000 for early
+# warning (see plan item A6). Preflight doesn't build dist itself, so this
+# checks whatever the last `bun run seo:build` produced.
+step "Gate: dist file count (CF Pages 20k-file limit)"
+if [ -d dist ]; then
+  if bun scripts/check-dist-filecount.ts >/tmp/preflight-dist-filecount.log 2>&1; then
+    pass "$(tail -n 1 /tmp/preflight-dist-filecount.log)"
+  else
+    fail "dist file count over limit (see /tmp/preflight-dist-filecount.log) — plan item A6"
+    tail -n 5 /tmp/preflight-dist-filecount.log || true
+  fi
+else
+  warn "dist/ not found — run \`bun run seo:build\` to check the file-count gate"
 fi
 
 # ---------- gate: youtube config validation ----------

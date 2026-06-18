@@ -13,6 +13,7 @@ import WordSheet from '../components/WordSheet.solid';
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { Translation, Verse, WordGloss } from '../lib/db';
+import { safeJsonForScript } from '../lib/safe-json';
 import { buildChromeSeo } from '../lib/seo';
 
 // ─── Hardcoded sample data ──────────────────────────────────────────────────
@@ -258,7 +259,7 @@ const glossesPayload = {
 
   <script
     is:inline
-    set:html={`window.__wordGlosses = ${JSON.stringify(glossesPayload)};`}
+    set:html={`window.__wordGlosses = ${safeJsonForScript(glossesPayload)};`}
   />
 </BaseLayout>
 

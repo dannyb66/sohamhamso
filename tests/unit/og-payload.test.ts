@@ -38,7 +38,9 @@ describe('og-payload route parsing', () => {
   });
 
   it('omits the default lang from lemma cache keys', () => {
-    const parsed = parseLemmaOgUrl(new URL('https://sohamhamso.org/og/lemma/spanda?lang=en&noise=1'));
+    const parsed = parseLemmaOgUrl(
+      new URL('https://sohamhamso.org/og/lemma/spanda?lang=en&noise=1'),
+    );
 
     expect(parsed.ok).toBe(true);
     if (!parsed.ok) return;
@@ -54,7 +56,9 @@ describe('og-payload data loading', () => {
   });
 
   it('falls back to English verse translation when the requested locale is missing', async () => {
-    const route = parseVerseOgUrl(new URL('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=hi'));
+    const route = parseVerseOgUrl(
+      new URL('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=hi'),
+    );
     if (!route.ok) throw new Error('Expected a valid verse OG route.');
 
     const db = makeCorpusDb({

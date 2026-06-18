@@ -1,9 +1,11 @@
-import { READING_MODES, type LangCode } from '../reading-modes';
+import { type LangCode, READING_MODES } from '../reading-modes';
 
 export const SITE_URL = 'https://sohamhamso.org';
 export const DEFAULT_LANG: LangCode = 'en';
 export const ALL_LANGS = READING_MODES.map((mode) => mode.langCode);
-export const NON_ENGLISH_LANGS = ALL_LANGS.filter((lang): lang is Exclude<LangCode, 'en'> => lang !== 'en');
+export const NON_ENGLISH_LANGS = ALL_LANGS.filter(
+  (lang): lang is Exclude<LangCode, 'en'> => lang !== 'en',
+);
 
 function normalizePath(pathname: string): string {
   if (!pathname || pathname === '/') return '/';
@@ -45,6 +47,30 @@ export function absoluteLocaleUrl(basePath: string, lang: string): string {
 }
 
 /**
+ * Path to a chapter-index page (`/{tradition}/{text}/{chapter}`).
+ *
+ * Localized chapter-index static pages 404 at their bare (no-trailing-slash)
+ * URL on Cloudflare Pages: once the localized VERSE route became SSR (A6),
+ * the adapter's `_routes.json` can no longer wholesale-exclude `/{lang}/*`
+ * (that would also exclude the SSR verse pages), and CF route patterns can't
+ * separate the 4-segment localized chapter-index path from the 5-segment
+ * verse path by prefix — so the bare localized chapter-index URL leaks to the
+ * verse worker, which 404s it. CF serves the static asset only when a trailing
+ * slash is present. English (the canonical 3-segment path) is not
+ * worker-shadowed and stays slash-free. Use this for EVERY localized
+ * chapter-index URL (nav links, canonical, hreflang, sitemap) so links,
+ * self-canonical, and crawl targets all resolve to 200.
+ */
+export function chapterIndexPath(basePath: string, lang: string): string {
+  const localized = localePathFor(basePath, lang);
+  return isLangCode(lang) && lang !== DEFAULT_LANG ? `${localized}/` : localized;
+}
+
+export function absoluteChapterIndexUrl(basePath: string, lang: string): string {
+  return new URL(chapterIndexPath(basePath, lang), SITE_URL).toString();
+}
+
+/**
  * Map an internal LangCode to a BCP-47 tag suitable for JSON-LD
  * `inLanguage` on locale-specific page nodes (WebPage, Article, FAQPage,
  * DefinedTerm). Sanskrit `sa` (used on Book and Quotation source nodes)
@@ -77,13 +103,14 @@ export function localeUrlsLive(): boolean {
 }
 
 export function liveLocaleSet(): Set<LangCode> {
-  const configured = process.env.LOCALE_URLS_LIVE_LANGS
-    ?.split(',')
+  const configured = process.env.LOCALE_URLS_LIVE_LANGS?.split(',')
     .map((part) => part.trim())
     .filter(isLangCode);
   const live = new Set<LangCode>([DEFAULT_LANG]);
   if (configured && configured.length > 0) {
-    return new Set<LangCode>(configured.includes(DEFAULT_LANG) ? configured : [DEFAULT_LANG, ...configured]);
+    return new Set<LangCode>(
+      configured.includes(DEFAULT_LANG) ? configured : [DEFAULT_LANG, ...configured],
+    );
   }
   if (!localeUrlsLive()) return live;
   for (const lang of NON_ENGLISH_LANGS) live.add(lang);

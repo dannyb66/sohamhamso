@@ -11,10 +11,10 @@
  * Run: bun scripts/seo-dist-noindex-sweep.ts
  */
 
-import { relative, resolve } from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { collectHtmlFiles, inferRoutePath } from './seo-validate';
+import { relative, resolve } from 'node:path';
 import { ALL_LANGS, isLangCode, liveLocaleSet } from '../src/lib/seo/i18n-routes';
+import { collectHtmlFiles, inferRoutePath } from './seo-validate';
 
 const DIST_DIR = resolve('dist');
 
@@ -83,10 +83,7 @@ export function classifyUrl(rel: string): UrlKind {
  * Paths that are intentionally noindex and should be skipped by this sweep.
  * These are system/utility pages, not content pages.
  */
-export const ALLOWED_NOINDEX_ROUTES = new Set([
-  '/404',
-  '/sample',
-]);
+export const ALLOWED_NOINDEX_ROUTES = new Set(['/404', '/sample']);
 
 /** Returns true if the HTML string contains a redirect meta-refresh tag. */
 export function isRedirectPage(html: string): boolean {
@@ -101,8 +98,19 @@ export function hasNoindex(html: string): boolean {
     const name = (nameMatch?.[1] ?? nameMatch?.[2] ?? nameMatch?.[3] ?? '').toLowerCase();
     if (name !== 'robots') continue;
     const contentMatch = tag.match(/\bcontent=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
-    const content = (contentMatch?.[1] ?? contentMatch?.[2] ?? contentMatch?.[3] ?? '').toLowerCase();
-    if (content.split(',').map((p) => p.trim()).includes('noindex')) return true;
+    const content = (
+      contentMatch?.[1] ??
+      contentMatch?.[2] ??
+      contentMatch?.[3] ??
+      ''
+    ).toLowerCase();
+    if (
+      content
+        .split(',')
+        .map((p) => p.trim())
+        .includes('noindex')
+    )
+      return true;
   }
   return false;
 }

@@ -55,11 +55,23 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      # The corpus DB is not committed (plan item A6): build it from
+      # data/corpus/*.yaml before anything that reads it (unit tests, astro
+      # build, e2e dev server). `seo:build` would also trigger this via
+      # `db:ensure`, but an explicit step gives clearer logs + timing.
+      - name: Build corpus DB from YAML
+        run: bun run db:ensure
+
       - name: Typecheck
         run: bun typecheck
 
       - name: SEO build
         run: bun run seo:build
+
+      # Early warning under Cloudflare Pages' 20,000-file deploy limit.
+      # Fails above 18,000 files — see plan item A6 (SSR/CI-built DB migration).
+      - name: Dist file-count guard
+        run: bun scripts/check-dist-filecount.ts
 
       - name: SEO preflight invariants
         run: bun run seo:preflight
@@ -138,6 +150,42 @@ jobs:
             exit 1
           fi
           echo "Biome within baseline."
+
+  # Corpus ingest gate: db/sohamhamso.db is no longer committed (plan item
+  # A6 — the binary is a build cache reconstructed from data/corpus/*.yaml),
+  # so there is nothing to diff against. This job proves the YAML corpus
+  # ingests cleanly from scratch (schema apply + validator + reconciler all
+  # green); any ingest/validation error fails CI. Separate job so it never
+  # eats the main job's timeout budget.
+  corpus-verify:
+    name: Corpus ingest from YAML
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache Bun install
+        uses: actions/cache@v4
+        with:
+          path: ~/.bun/install/cache
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Ingest corpus into a fresh DB
+        run: |
+          bun pipeline/ingest/init-db.ts --db /tmp/corpus-verify.db
+          bun pipeline/ingest/ingest.ts --db /tmp/corpus-verify.db
 
   youtube-rigor:
     name: YouTube pipeline rigor

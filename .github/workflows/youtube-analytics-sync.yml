@@ -1,45 +1,57 @@
 # ──────────────────────────────────────────────────────────────────────────────
-# Cron E — daily YouTube analytics sync.  *** SCHEDULE INTENTIONALLY DISABLED ***
+# Cron E — daily YouTube analytics sync.
 #
-# This is a TODO placeholder. The real syncer (`scripts/youtube-analytics-sync.ts`)
-# does not exist yet, and the YouTube Analytics API needs the
-# `yt-analytics.readonly` OAuth scope, which we have not re-authed for. The
-# placeholder runs `youtube-status.ts`, which reads the committed
-# `db/sohamhamso.db` — that DB no longer has the youtube tables (they live only in
-# the R2-synced `db/youtube-state.db`), so the placeholder errors with
-# "no such table: videos" and fails daily, opening a noisy failure issue.
+# Daily at 05:00 UTC (well clear of the upload cadence): pulls per-video
+# metrics from the YouTube Analytics API v2 via `scripts/youtube-analytics-sync.ts`
+# (views, averageViewDuration, averageViewPercentage, subscribersGained over a
+# trailing 30-day window) and upserts the `video_analytics` table in the
+# R2-synced state DB (db/youtube-state.db). Analytics uses a separate quota
+# bucket from uploads, so this never competes with Cron B.
 #
-# The `schedule:` trigger below is therefore commented out so this dormant
-# placeholder stops firing+failing every day. `workflow_dispatch:` is kept so it
-# can still be run manually. Re-enable the schedule once BOTH the real analytics
-# syncer and the `yt-analytics.readonly` re-auth are implemented. Until then, the
-# daily digest cron already reports YouTube status.
+# METRIC HONESTY: CTR and 3s-retention are YouTube-Studio-only, and UTM link
+# clicks are a site-side metric — those columns stay NULL. The script logs the
+# honesty contract every run so the kill-switch readout is never misled.
 #
-# Daily at 05:00 UTC (WHEN ENABLED): pulls per-video view/retention/CTR metrics
-# from the YouTube Analytics API and writes the `video_analytics` table. This
-# feeds the Phase-2 kill-switch thresholds (CTR-to-canonical, 3s retention,
-# completion, UTM link-clicks). Analytics queries use a separate quota bucket
-# from uploads, so this never competes with Cron B.
+# Requires the `yt-analytics.readonly` OAuth scope on YT_REFRESH_TOKEN. A token
+# minted before the scope union fails 403 with a named fix (re-run
+# `bun scripts/youtube-oauth-setup.ts`, update the YT_REFRESH_TOKEN secret).
 #
 # Required GitHub secrets:
 #   YOUTUBE_OAUTH_CLIENT_ID, YOUTUBE_OAUTH_CLIENT_SECRET, YT_REFRESH_TOKEN
 #                              — OAuth for the @sohamhamso channel
+#   R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_ENDPOINT_URL
+#                              — S3-compatible R2 access (state-DB pull/push)
 #
 # Manual trigger: Actions tab → "YouTube analytics sync (Cron E)" → Run workflow.
 # ──────────────────────────────────────────────────────────────────────────────
 name: YouTube analytics sync (Cron E)
 
 on:
-  # SCHEDULE DISABLED — see top-of-file note. Re-enable once the real analytics
-  # syncer + `yt-analytics.readonly` re-auth land. Manual runs still work below.
-  # schedule:
-  #   # Daily at 05:00 UTC — well clear of the upload cadence.
-  #   - cron: '0 5 * * *'
+  schedule:
+    # Daily at 05:00 UTC — well clear of the upload cadence.
+    - cron: '0 5 * * *'
   workflow_dispatch:
+    inputs:
+      days:
+        description: 'Trailing metrics window in days'
+        required: false
+        default: '30'
+      dry_run:
+        description: 'Plan only — no API call, no DB writes'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
   issues: write   # used by the failure-notification step
+
+# Serialize all YouTube pipeline crons: the single R2 state DB must never be
+# written by two runs at once. cancel-in-progress: false lets in-flight runs
+# finish so partial progress is pushed back rather than discarded.
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
 
 jobs:
   analytics-sync:
@@ -50,6 +62,16 @@ jobs:
       YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
       YOUTUBE_OAUTH_CLIENT_SECRET: ${{ secrets.YOUTUBE_OAUTH_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      # ── R2 / S3-compatible storage for the state DB. ─────────────────
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+      # ── R2-synced state DB (pulled before / pushed after the run). ────
+      YOUTUBE_DB_PATH: db/youtube-state.db
+      # ── Dispatch inputs surfaced as env for the syncer. ──────────────
+      YT_DAYS: ${{ github.event.inputs.days }}
+      YT_DRY_RUN: ${{ github.event.inputs.dry_run }}
 
     steps:
       - name: Checkout
@@ -63,13 +85,24 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      # TODO: replace the placeholder command below with the dedicated analytics
-      # syncer (e.g. `bun scripts/youtube-analytics-sync.ts`) once that script
-      # exists — it should call the YouTube Analytics API and write the
-      # `video_analytics` table. youtube-status.ts --json is a no-op stand-in
-      # that keeps the workflow green until then.
-      - name: analytics sync
-        run: bun scripts/youtube-status.ts --json
+      # Pull the state DB from R2 so the syncer reads/writes shared state
+      # (ephemeral runners start with no DB).
+      - name: Pull state DB
+        run: bash scripts/youtube-state-db.sh pull
+
+      - name: Analytics sync
+        run: |
+          flags=""
+          if [[ -n "${YT_DAYS:-}" ]]; then flags="$flags --days=${YT_DAYS}"; fi
+          if [[ "${YT_DRY_RUN:-}" == "true" ]]; then flags="$flags --dry-run"; fi
+          echo "youtube-analytics-sync.ts $flags"
+          bun scripts/youtube-analytics-sync.ts $flags
+
+      # Push the mutated state DB back to R2 even on failure so partial
+      # progress (rows already upserted) persists.
+      - name: Push state DB
+        if: always()
+        run: bash scripts/youtube-state-db.sh push
 
       # Surface failures as a GitHub Issue (precedent: turso-backup.yml).
       - name: Open issue on failure
@@ -84,7 +117,7 @@ jobs:
               `- Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
               `- Commit: ${context.sha}`,
               ``,
-              `Investigate: check the run logs and confirm the \`YOUTUBE_OAUTH_*\` / \`YT_REFRESH_TOKEN\` secrets are valid. Analytics uses a separate quota bucket from uploads, so a failure here does not block Cron B.`,
+              `Investigate: check the run logs. If the log shows the 403 insufficient-scope message, the \`YT_REFRESH_TOKEN\` lacks \`yt-analytics.readonly\` — re-run \`bun scripts/youtube-oauth-setup.ts\` (scope union) and update the secret. Otherwise confirm the \`YOUTUBE_OAUTH_*\` / \`YT_REFRESH_TOKEN\` and \`R2_*\`/\`AWS_*\` secrets are valid. Analytics uses a separate quota bucket from uploads, so a failure here never blocks Cron B.`,
             ].join('\n');
             await github.rest.issues.create({
               owner: context.repo.owner,

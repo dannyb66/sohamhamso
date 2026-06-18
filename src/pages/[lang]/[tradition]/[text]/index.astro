@@ -3,15 +3,16 @@ import KaulaContentAdvisory from '../../../../components/KaulaContentAdvisory.as
 import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { KNOWN_TRADITIONS, resolveAlias } from '../../../../lib/aliases';
-import { getText, listChapters } from '../../../../lib/db';
+import { getDb, getText, listChapters } from '../../../../lib/db';
 import type { LangCode } from '../../../../lib/reading-modes';
-import { getTexts } from '../../../../lib/seo/corpus-bundle';
 import {
   NON_ENGLISH_LANGS,
   buildTextSeo,
+  chapterIndexPath,
   filterIndexableTextLangs,
   liveLocaleSet,
 } from '../../../../lib/seo';
+import { getTexts } from '../../../../lib/seo/corpus-bundle';
 
 export async function getStaticPaths() {
   const paths: Array<{ params: { lang: string; tradition: string; text: string } }> = [];
@@ -34,14 +35,30 @@ if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[numb
 }
 const aliasCheck = resolveAlias(tradition!, text!);
 if (aliasCheck && !aliasCheck.canonical) {
-  return Astro.redirect(`/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`, 301);
+  return Astro.redirect(
+    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}`,
+    301,
+  );
 }
 
 const currentLang = lang as LangCode;
-const textRow = getText(text!);
+if (!text) throw new Error('Missing text route param');
+const textRow = getText(text);
 if (!textRow) throw new Error(`Text not found: ${text}`);
-const chapters = listChapters(text!);
+const chapters = listChapters(text);
 const totalVerses = chapters.reduce((sum, chapter) => sum + chapter.verse_count, 0);
+// Prose texts (plan A4): when the text carries section_type='prose' blocks,
+// the chapter-table column header reads "Passages" instead of "Verses".
+const proseBlockCount =
+  getDb()
+    .query<{ n: number }, [string]>(`
+      SELECT COUNT(*) AS n
+      FROM verses v
+      JOIN texts t ON t.id = v.text_id
+      WHERE t.slug = ? AND v.section_type = 'prose'
+    `)
+    .get(text)?.n ?? 0;
+const isProseText = proseBlockCount > 0;
 const liveLangs = liveLocaleSet();
 const availableLangs = filterIndexableTextLangs(
   textRow.slug,
@@ -111,25 +128,34 @@ const pageSeo = buildTextSeo({
       <div class="chapter-table">
         <div class="chapter-row chapter-row--head" role="presentation">
           <span class="chapter-row__col-num" data-i18n="text_overview.table.chapter">Chapter</span>
-          <span class="chapter-row__col-count" data-i18n="text_overview.table.verses">Verses</span>
+          <span class="chapter-row__col-count" data-i18n={isProseText ? "text_overview.table.passages" : "text_overview.table.verses"}>{isProseText ? "Passages" : "Verses"}</span>
           <span class="chapter-row__col-cta" data-i18n="text_overview.table.read">Read</span>
         </div>
         <ul class="chapter-list">
-          {chapters.map((chapter) => (
+          {chapters.map((chapter) => {
+            // Wayfinding title ("5 — Creation of the world"); IAST fallback
+            // for chapters whose YAML carries no English title.
+            const chapterTitle = chapter.title_en ?? chapter.title_iast;
+            return (
             <li>
               <a
-                href={`/${lang}/${tradition}/${text}/${chapter.chapter}/1`}
+                href={chapterIndexPath(`/${tradition}/${text}/${chapter.chapter}`, lang)}
                 class="chapter-row chapter-row__link"
-                aria-label={`Read chapter ${chapter.chapter} — ${chapter.verse_count} verses`}
+                aria-label={`Read chapter ${chapter.chapter}${chapterTitle ? ` — ${chapterTitle}` : ""} — ${chapter.verse_count} verses`}
               >
-                <span class="chapter-row__col-num">{chapter.chapter}</span>
+                <span class="chapter-row__col-num">
+                  {chapter.chapter}{chapterTitle ? (
+                    <span class="chapter-row__title"> — {chapterTitle}</span>
+                  ) : null}
+                </span>
                 <span class="chapter-row__col-count">{chapter.verse_count}</span>
                 <span class="chapter-row__col-cta">
                   <span data-i18n="text_overview.read_chapter_prefix">Read chapter</span> {chapter.chapter} →
                 </span>
               </a>
             </li>
-          ))}
+            );
+          })}
         </ul>
       </div>
 
@@ -237,7 +263,9 @@ const pageSeo = buildTextSeo({
   }
   .chapter-row {
     display: grid;
-    grid-template-columns: 72px 72px 1fr;
+    /* First column flexes so optional chapter titles ("5 — Creation of the
+       world") fit; fixed/fr tracks keep columns aligned across rows. */
+    grid-template-columns: minmax(72px, 1fr) 72px 1fr;
     gap: var(--spacing-3);
     align-items: center;
     padding: var(--spacing-3) 0;
@@ -252,6 +280,10 @@ const pageSeo = buildTextSeo({
   .chapter-row__link {
     color: inherit;
     text-decoration: none;
+  }
+  .chapter-row__title {
+    color: var(--color-ink-muted);
+    font-variant-numeric: normal;
   }
   .chapter-row__col-cta {
     justify-self: end;

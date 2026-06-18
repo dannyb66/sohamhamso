@@ -1,4 +1,4 @@
-import { getChromeSitemapPaths, SITE_URL } from '../lib/seo';
+import { SITE_URL, getChromeSitemapPaths } from '../lib/seo';
 import { xmlEscape } from '../lib/seo/xml-escape';
 
 export function GET() {

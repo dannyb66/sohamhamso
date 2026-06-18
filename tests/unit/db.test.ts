@@ -150,13 +150,13 @@ describe('getVerse()', () => {
       devanagari: 'चैतन्यमात्मा ॥१॥',
       iast: 'caitanyam ātmā',
     });
-    // Default lang='en' — V1 surfaces 'published', 'reviewed', AND 'draft'.
-    // Drafts render with the amber "AI · not verified" badge per the V1
-    // AI-only posture; per-verse uncertainty is communicated through the
-    // badge variant rather than by hiding the content.
-    expect(page!.translations).toHaveLength(3);
+    // Default lang='en' — drafts are EXCLUDED from public reads (Phase 2
+    // A7 resolution, matching the methodology page's promise that score<7
+    // stays draft and never surfaces). The fixture's draft row must not
+    // appear here.
+    expect(page!.translations).toHaveLength(2);
     expect(page!.translations.every((t) => t.lang === 'en')).toBe(true);
-    expect(page!.translations.some((t) => t.status === 'draft')).toBe(true);
+    expect(page!.translations.every((t) => t.status !== 'draft')).toBe(true);
     expect(page!.wordGlosses).toHaveLength(2);
   });
 
@@ -177,7 +177,7 @@ describe('getVerse()', () => {
 
   it('normalises SQLite ai_assisted 0/1 to a real JS boolean', () => {
     const page = getVerse('siva-sutras', 1, 1);
-    expect(page!.translations).toHaveLength(3);
+    expect(page!.translations).toHaveLength(2);
     for (const t of page!.translations) {
       // typeof check is the load-bearing assertion — `1 === true` is false
       // in JS, but a buggy mapper would still pass a deep-equal check.

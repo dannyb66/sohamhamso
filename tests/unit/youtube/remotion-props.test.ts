@@ -11,12 +11,12 @@
  */
 import { describe, expect, it } from 'vitest';
 import {
-  buildShortProps,
-  computeTiming,
   LEAD_IN_S,
   MAX_TOTAL_S,
   MIN_TOTAL_S,
   TAIL_S,
+  buildShortProps,
+  computeTiming,
 } from '../../../pipeline/youtube/remotion-props';
 
 const PRESET = {

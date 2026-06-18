@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { buildRobotsTxt, GET } from '../../../src/pages/robots.txt.ts';
+import { GET, buildRobotsTxt } from '../../../src/pages/robots.txt.ts';
 
 const originalLocaleUrlsLive = process.env.LOCALE_URLS_LIVE;
 const originalLocaleUrlsLiveLangs = process.env.LOCALE_URLS_LIVE_LANGS;

@@ -12,10 +12,7 @@ export function slugifyLemmaBase(lemmaIast: string): string {
   return cleaned.length > 0 ? cleaned : 'lemma';
 }
 
-export function assignLemmaSlug(
-  lemmaIast: string,
-  existingSlugs: ReadonlySet<string>,
-): string {
+export function assignLemmaSlug(lemmaIast: string, existingSlugs: ReadonlySet<string>): string {
   const base = slugifyLemmaBase(lemmaIast);
   if (!existingSlugs.has(base)) return base;
   let i = 2;

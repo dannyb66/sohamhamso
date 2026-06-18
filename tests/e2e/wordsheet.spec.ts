@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { type Page, expect, test } from '@playwright/test';
 
 /**
  * WordSheet.solid.tsx — tap-a-word bottom sheet.
@@ -13,6 +13,19 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
   const VERSE_URL = '/trika/siva-sutras/1/1';
   const WORD_DIALOG = 'dialog[aria-label="Word details"]';
 
+  // client:idle hydration can land AFTER 'load' on a cold dev-server compile;
+  // a click before the document-level delegation listener attaches is
+  // silently swallowed. Retry click->visible until the island is live.
+  async function openSheet(page: Page) {
+    const word = page.locator('.sa-word').first();
+    const sheet = page.locator(WORD_DIALOG).first();
+    await expect(async () => {
+      await word.click();
+      await expect(sheet).toBeVisible({ timeout: 400 });
+    }).toPass({ timeout: 10_000 });
+    return sheet;
+  }
+
   test('tapping a .sa-word opens the bottom sheet with lemma + gloss', async ({ page }) => {
     await page.goto(VERSE_URL);
     await page.waitForLoadState('load');
@@ -24,10 +37,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
       });
       return;
     }
-    await word.click();
-
-    const sheet = page.locator(WORD_DIALOG).first();
-    await expect(sheet).toBeVisible({ timeout: 2000 });
+    const sheet = await openSheet(page);
 
     // Header contains the lemma (`.word-sheet__lemma`).
     const lemma = sheet.locator('.word-sheet__lemma');
@@ -48,9 +58,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
       return;
     }
-    await word.click();
-    const sheet = page.locator(WORD_DIALOG).first();
-    await expect(sheet).toBeVisible({ timeout: 2000 });
+    const sheet = await openSheet(page);
     // The handle is `display:none` on ≥768px (desktop modal). It's only
     // rendered as a visual cue on mobile bottom-sheet. We still assert
     // it's *attached* — it is hidden via CSS, not absent from the DOM.
@@ -66,9 +74,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
       return;
     }
-    await word.click();
-    const sheet = page.locator(WORD_DIALOG).first();
-    await expect(sheet).toBeVisible({ timeout: 2000 });
+    const sheet = await openSheet(page);
     await sheet.locator('button[aria-label="Close"]').click();
     await expect(sheet).toBeHidden({ timeout: 2000 });
   });
@@ -81,9 +87,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
       return;
     }
-    await word.click();
-    const sheet = page.locator(WORD_DIALOG).first();
-    await expect(sheet).toBeVisible({ timeout: 2000 });
+    const sheet = await openSheet(page);
     await page.keyboard.press('Escape');
     await expect(sheet).toBeHidden({ timeout: 2000 });
   });
@@ -96,9 +100,7 @@ test.describe('word sheet (tap a Sanskrit word)', () => {
       test.info().annotations.push({ type: 'skip', description: 'no .sa-word' });
       return;
     }
-    await word.click();
-    const sheet = page.locator(WORD_DIALOG).first();
-    await expect(sheet).toBeVisible({ timeout: 2000 });
+    const sheet = await openSheet(page);
     // Scrim is `.word-sheet__scrim` mounted as a sibling to the dialog.
     await page.locator('.word-sheet__scrim').click({ position: { x: 5, y: 5 } });
     await expect(sheet).toBeHidden({ timeout: 2000 });

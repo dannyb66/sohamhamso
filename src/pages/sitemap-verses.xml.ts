@@ -1,9 +1,9 @@
 import {
+  SITE_URL,
   filterIndexableTextLangs,
   getCanonicalVerseRoutes,
   liveLocaleSet,
   localePathFor,
-  SITE_URL,
 } from '../lib/seo';
 import { xmlEscape } from '../lib/seo/xml-escape';
 

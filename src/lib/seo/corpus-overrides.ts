@@ -4,10 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { load as yamlLoad } from 'js-yaml';
 import type { LangCode } from '../reading-modes';
 import {
-  parseCorpusDocument,
-  parseCorpusFaqDocument,
   type CorpusFaqDocument,
   type CorpusFaqEntry,
+  parseCorpusDocument,
+  parseCorpusFaqDocument,
 } from './corpus-schema';
 
 export interface ResolvedFaqEntry {
@@ -29,19 +29,36 @@ export interface TextSeoOverrides {
   noindex: boolean;
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// `import.meta.url` is `undefined` in the Cloudflare worker runtime, so
+// calling `fileURLToPath(import.meta.url)` at module scope throws and takes
+// down EVERY SSR page that imports this module (via the seo barrel) — the
+// edge has no filesystem anyway. Compute the module dir LAZILY and guard it
+// so the module loads cleanly at the edge; `corpusDir()` returns null when
+// no corpus dir is resolvable (the worker), and `ensureLoaded()` then leaves
+// overrides empty — SSR pages render fine without the optional SEO overrides.
+function moduleDir(): string | null {
+  try {
+    return dirname(fileURLToPath(import.meta.url));
+  } catch {
+    return null;
+  }
+}
 
 let corpusDirOverride: string | null = null;
 let loaded = false;
 const overridesBySlug = new Map<string, LoadedCorpusSeoConfig>();
 
-function corpusDir(): string {
+function corpusDir(): string | null {
   if (corpusDirOverride) return corpusDirOverride;
-  if (process.env.SOHAMHAMSO_CORPUS_DIR) return process.env.SOHAMHAMSO_CORPUS_DIR;
-  const cwdPath = resolve(process.cwd(), 'data', 'corpus');
-  if (existsSync(cwdPath)) return cwdPath;
-  return resolve(__dirname, '..', '..', '..', 'data', 'corpus');
+  try {
+    if (process.env.SOHAMHAMSO_CORPUS_DIR) return process.env.SOHAMHAMSO_CORPUS_DIR;
+    const cwdPath = resolve(process.cwd(), 'data', 'corpus');
+    if (existsSync(cwdPath)) return cwdPath;
+  } catch {
+    // No filesystem / process (edge runtime) — fall through to module-relative.
+  }
+  const here = moduleDir();
+  return here ? resolve(here, '..', '..', '..', 'data', 'corpus') : null;
 }
 
 function isCorpusSourceFile(name: string): boolean {
@@ -80,7 +97,7 @@ function ensureLoaded(): void {
   overridesBySlug.clear();
 
   const dir = corpusDir();
-  if (!existsSync(dir)) return;
+  if (!dir || !existsSync(dir)) return;
 
   for (const name of readdirSync(dir).sort()) {
     if (!isCorpusSourceFile(name)) continue;
@@ -89,9 +106,7 @@ function ensureLoaded(): void {
     if (overridesBySlug.has(document.text.slug)) {
       throw new Error(`Duplicate corpus slug for SEO overrides: ${document.text.slug}`);
     }
-    const faqEntries = document.faq_file
-      ? loadFaqDocument(filePath, document.faq_file).faqs
-      : [];
+    const faqEntries = document.faq_file ? loadFaqDocument(filePath, document.faq_file).faqs : [];
     const seo = document.seo ?? {
       descriptions: {},
       keywords: {},

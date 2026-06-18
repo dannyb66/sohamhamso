@@ -1,0 +1,7851 @@
+{
+  "text_slug": "isvarapratyabhijna-karika",
+  "lang": "te",
+  "translator": "sohamhamso (session-opus)",
+  "license": "CC-BY-SA",
+  "model": "opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏదో విధముగా, ఏదో మేరకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పొంది, చేరి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మహేశ్వరుని (గొప్ప ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దాస్యమును, సేవక స్థితిని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జనుల (సామాన్యుల), మానవుల యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కూడ, అట్లే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉపకారమును, మేలును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కోరుచు, ఇచ్ఛించుచు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సమస్త సంపదల ప్రాప్తికి హేతువును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆ (ప్రభువు) యొక్క ప్రత్యభిజ్ఞను (గుర్తింపును)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ప్రతిపాదించుచున్నాను, స్థాపించుచున్నాను"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కర్త (క్రియ చేయువాని) విషయమున"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "జ్ఞాత (తెలియువాని) విషయమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తన స్వంత ఆత్మ విషయమున"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆదిసిద్ధుడైన (ఆదినుండి సిద్ధమైన)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మహేశ్వరుని విషయమున"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అజడాత్ముడు (చేతనుడైనవాడు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నిషేధమును, తిరస్కారమును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సిద్ధిని, నిరూపణను"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "చేయగలడు, నిర్వహించగలడు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఎవడు?"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాని, అయితే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మోహవశమున, భ్రాంతి బలముచేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఈ (ప్రభువు) యందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దృష్టుడైనను (చూడబడినను)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అయినను, ఇంకను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనుపలక్షితుడై (గుర్తింపబడకయే)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(అతని) శక్తుల ఆవిష్కరణముచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రత్యభిజ్ఞ (గుర్తింపు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "చూపబడుచున్నది, ఎత్తి చూపబడుచున్నది"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏలయన, వివరించుటకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "జడభూతముల (అచేతన వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రతిష్ఠ, స్థిత ఉనికి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జీవిని ఆశ్రయించునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జ్ఞానము, అవగాహన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రాణుల, జీవుల యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "జీవించువారి యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "జీవనము, ప్రాణశక్తి"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "భావింపబడును, పరిగణింపబడును"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వీటిలో, ఆ రెండింటిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "జ్ఞానము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్వతఃసిద్ధము (తనకు తానే సిద్ధమైనది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాయమును ఆశ్రయించునది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉండుట వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఇతరులచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కూడ, అయినను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఉపలక్షింపబడగలదు, గమనింపబడగలదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దానిచేత (క్రియచేత)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఇతరుని జ్ఞానము"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఊహింపబడును, అనుమింపబడును"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "నిశ్చయముగా (ఆక్షేపమును ఆరంభించుచు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్వలక్షణముగా ఆభాసించునది (బరి విశేషముగా)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జ్ఞానము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఒక (విధము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియొక (విధము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరల, మరోవైపు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సాభిలాపము (శబ్దసహితము), నిర్ణయాత్మకము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వికల్పమని పిలువబడునది"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "బహువిధము, అనేక రకములు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అది (జ్ఞానము)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ద్వయము (గ్రాహ్య-గ్రాహకము)"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "నిత్యుని యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏదో ఒక (ఏక)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ద్రష్ట (చూచు విషయి) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆ (ద్రష్ట) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇచట, ఈ (జ్ఞానమునందు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(దాని) అనావభాసము (ఆభాసించకపోవుట) వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'నేను' అను ప్రతీతి (అహం-జ్ఞానము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పైగా, నిజముగా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "శరీరాదులపై ఆధారపడి నిర్ణయించునది"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇపుడు, (ఆక్షేపించినచో)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అనుభవము నశించినపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్మృతి, జ్ఞప్తి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దానికి (అనుభవమునకు) అనురూపమైనది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎట్లు?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కలుగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నిత్యుడు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అయి ఉండును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆత్మ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఒకవేళ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అనుభావకుడు (అనుభవించువాడు)"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ఆత్మ) ఉన్నదని, అంగీకరించినను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆత్మ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దృక్ (అనుభవ జ్ఞానము) నశించుట వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దాని (జ్ఞానము) ద్వారా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృష్టవస్తువుల (చూడబడిన వాటి) విషయమున"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్మృతి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "దేనిచేత? ఎట్లు?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పైగా, అపుడు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఏ లోనైతే (ఏ విషయియందు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అనుభవము (జరిగెను)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఆ లోనికే (ఆ స్థానమునకే) చెందినది"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "అది (స్మృతి)"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏలయన, ఎందుకన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిజముగా, ఇందున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పూర్వానుభవ సంస్కారము నుండి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్మృతి యొక్క ఉత్పత్తి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఒకవేళ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇట్లు, అట్లయితే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లోపలి అంతర్గడువు (అనవసర పిలక) చేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఏమి?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రయోజనము, పని"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఉండును (ఉండగలదా?)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "స్థిరమైన (నిత్యమైన) దానిచేత"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఆత్మచేత"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భిన్నములైన (క్షణిక) వాటిలో"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ధర్మములలో (మానసిక సంఘటనలలో)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వాటి స్వరూపము అభిన్నమగుట వలన"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సంస్కారము నుండి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "స్మృతి సిద్ధించునపుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉండును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "స్మర్త (స్మరించువాడు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ద్రష్ట వలెనే (కేవలము ఊహించబడినవాడు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కల్పితుడు, ఊహించబడినవాడు"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "జ్ఞానము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు, పైగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చిత్‌స్వరూపము (చైతన్యమే స్వభావముగా కలది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఒకవేళ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అది (జ్ఞానము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనిత్యము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎట్లు, ఎందుకు (అనిత్యము)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆత్మ వలె"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాని ఒకవేళ (మరోవైపు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "జడము"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "దాని (ఈ జ్ఞానము) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఎట్లు?"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "అర్థప్రకాశత (విషయములను వెలిగించుట)"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇపుడు (ఇంకను)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థము (విషయము) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎట్లు, ఏ విధముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "రూపమును, ఆకారమును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ధరించును, స్వీకరించును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "బుద్ధి, జ్ఞానము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అట్లే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆత్మ యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "చైతన్యమును (చైతన్య రూపమును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అజడయై (చేతనయై)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అది (బుద్ధి)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "జాడ్యమున్నచో (అచేతనత్వమున్నచో)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "కాదు, ఉండదు"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "అర్థప్రకాశత (విషయములను వెలిగించుట)"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అర్థము (వస్తువు) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాయాది (శరీరము మొదలగు) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆయా దేశాదులందు పుట్టుట"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఇతరము (ఆ పుట్టుక కాక)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(మరేదియు) దృష్టము కాదు కావున"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాదు, మరియు కాదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది (క్రియ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఏకము (ఒకే ఏకీభూత వస్తువు)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "క్రమికము, వరుసగా జరుగునది"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ఒకే (వస్తువు) కొరకు"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ఉచితము, తగినది"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆయా (స్థితి) యందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(ఏదైనా) ఉన్నపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆయా (వస్తువు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అగుచున్నది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అని (ఉల్లేఖనము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మాత్రమే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దృశ్యమగును, కనబడును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఇతరమేదియు (కనబడదు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మరియొక (సంబంధము) లేదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఉన్నది"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "సంబంధము"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "కార్యకారణ భావము కంటె"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ద్విష్ఠమైనది (కారణ-కార్యములందుండునది) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అనేకరూపము కావున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సిద్ధమైనది యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇతరమును అపేక్షించదు కావున"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పారతంత్ర్యాదులు యోగ్యము కావు కావున"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కర్త"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కల్పితుడు, ఊహించబడినవాడు"
+      }
+    ],
+    "3.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "నిజమే, అంగీకరించితిమి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని, అయితే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్మృతిజ్ఞానము (స్మృతి అను జ్ఞానము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "పూర్వానుభవ సంస్కారము నుండి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జనించినను, పుట్టినను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆత్మనిష్ఠమైనను (విషయియందు ఉండునది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అది (స్మృతిజ్ఞానము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆద్యానుభవమును తెలియజేయునది"
+      }
+    ],
+    "3.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దృక్ (జ్ఞానము, చూచుట)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్వాభాసమే (స్వయంప్రకాశమే)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అన్యునిచేత కాదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తెలియదగినది, వేద్యము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "రూపదృక్ (రూపదర్శనము) వలెనే (అన్యునిచే తెలియదు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృక్ (జ్ఞానము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "రసము విషయమున (రసపు స్మృతియందు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సంస్కారజత్వము (సంస్కారము నుండి పుట్టుట)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాని, కేవలము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దానితో సాదృశ్యము (మూలముతో పోలిక)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "దాని గతి (మూలానుభవపు గ్రహణము)"
+      }
+    ],
+    "3.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఒకవేళ (అన్నచో)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అది (మూలానుభవము) విషయము కాకపోయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్మృతి యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దాని (వస్తువు) అవసాయము (నిర్ణయము) వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దృష్టవస్తువు ఆలంబనమగుట"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భ్రాంతిచేత, దోషముచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఈ (పక్షము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అసమంజసము, అసంగతము"
+      }
+    ],
+    "3.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్మృతిత్వము (స్మృతి అను స్వభావమే)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఎట్లు (నిలుచును)?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మొదట, ముందుగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(అట్టి) భ్రాంతి విషయమున"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అర్థస్థితి (వస్తునిర్ణయము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎట్లు?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పూర్వానుభవ సంస్కారాపేక్ష (పూర్వ సంస్కారపు అపేక్ష)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఎందుకు (అంగీకరింపబడును)?"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అంగీకరింపబడును, ఇష్టము"
+      }
+    ],
+    "3.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(అవసాయము) భ్రాంతియైనచో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అవసాయము (నిర్ణయము) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జడము నుండి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విషయస్థితి (వస్తునిరూపణ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దాని నుండి, కావున"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అజాడ్యమున్నచో (చైతన్యమున్నచో)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "నిజోల్లేఖనిష్ఠమగుట వలన (తన ప్రతిరూపమునందే నిలుచుట వలన)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(బాహ్య) అర్థస్థితి"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "దాని నుండి"
+      }
+    ],
+    "3.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు, ఈ పక్షమున"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పరస్పరభిన్నమైన (జ్ఞానముల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఒండొరులను తెలియని (జ్ఞానముల) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జ్ఞానముల యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అనుసంధానము (సమన్వయము) నుండి పుట్టునది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నశించిపోవును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "జనస్థితి (లోకవ్యవహారము), సామాన్య ఆచారము"
+      }
+    ],
+    "3.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాదు (అట్లు అగును)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఒకవేళ (లేకపోయినచో)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనంత విశ్వమును తనలో అంతర్‌గతము చేసుకొనినవాడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మహేశ్వరుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉండకపోయినచో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏకుడు, ఒక్కడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "చిద్‌వపువు (చైతన్యమే శరీరముగా కలవాడు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "జ్ఞాన-స్మృతి-అపోహన శక్తులు కలవాడు"
+      }
+    ],
+    "4.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అతడు (ప్రభువు, జ్ఞాత విషయి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిజముగా, ఏలయన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పూర్వము అనుభూతమైన అర్థమును గ్రహించినవాడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తరువాత, ఇపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉండి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విమర్శించుచు (పరామర్శించుచు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "'అతడే (ఇతడు)' అని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "స్వైరుడై (స్వేచ్ఛాయుతుడై)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "స్మరించును"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "చెప్పబడును, వ్యవహరింపబడును"
+      }
+    ],
+    "4.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భాసింపజేయును, వెలిగించును"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తన (ప్రస్తుత) కాలమునందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆవశ్యకముగా, తాత్పర్యమున"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పూర్వము ఆభాసించినదానిని"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆమర్శించుచు (పరామర్శించుచు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్వలక్షణమును (బరి విశేషమును)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "'ఘటము' అను ఆభాస మాత్రముగా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అఖిల (సమగ్ర) స్వరూపముగా"
+      }
+    ],
+    "4.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "యుక్తము, సాధ్యము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్మృతి (స్మర్త) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భిన్నుడైనచో (పూర్వానుభవము నుండి వేరైనచో)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "స్మర్యమాణము (స్మరింపబడునది) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భాసనము (ప్రకాశించుట)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఏకత్వము, ఒకటిగా ఉండుట"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భిన్నకాలముల (వేరువేరు కాలముల జ్ఞానముల) యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "సంవిత్తుల (అవగాహనల) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "వేదిత (జ్ఞాత)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఇతడే అతడు (ప్రభువు)"
+      }
+    ],
+    "4.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎంత మాత్రమును కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏలయన, నిజముగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(మూల) అనుభవము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భాసించును, ప్రకాశించును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్మృతియందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పూర్వ (అనుభవము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అర్థము వలె"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వేరుగా, పృథక్‌గా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మునుపు, ముందు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "నేను అనుభవించితిని"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "నేను"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఆత్మారోహణ రూపమున భాసించుట వలన (ఆత్మయందు ఆరోహించునట్లు)"
+      }
+    ],
+    "4.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "యోగులకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భాసించును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దృక్కులు (జ్ఞానములు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరొక దర్శనమునందు (వేరొక జ్ఞానమునందు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తమ స్వసంవిత్తిచేతనే ఏకమానములైనవి (స్వయం-అవగాహనచే మాత్రమే తెలియదగినవి)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అవి (జ్ఞానములు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భాసించును, ప్రకాశించును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "మేయపదమునందు (జ్ఞేయస్థానమునందు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "లేదా (ఒకవేళ అట్లయినను)"
+      }
+    ],
+    "4.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్మరింపబడును"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది, అనగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దృక్ (జ్ఞానము, 'చూచుట')"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉండెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నాకు, నాది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అది ఇట్టిది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అయినను, ఇట్లు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భేదముతో (వేరుగా)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "వ్యాకరణము (విస్తరణ, విడదీయుట)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "మాత్రమే"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఈ (స్మృతి) యొక్క"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "నాచేత"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "దృష్టము (చూడబడినది)"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "(అను రూపము కల) స్మృతి యొక్క"
+      }
+    ],
+    "4.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏ (అవసా, నిర్ణయజ్ఞానము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'నేను దీనిని చూచుచున్నాను'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'ఇది ఘటము'"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అను రూపమున"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అవసా (నిర్ణయజ్ఞానము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భావింపబడును, తలంపబడును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సమవేతముగా (విషయియందు అంతర్‌గతముగా)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది (అవసా)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అవసాత (నిర్ణయించు కర్త) యందు"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "దర్శనము (ఒక జ్ఞాన రూపము)"
+      }
+    ],
+    "4.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కావున, ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ఇది నాచేత దృశ్యమగును'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'దృష్టుడైన ఇతడే అతడు'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆమర్శించును (పరామర్శించును)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కూడ, అయినను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "గ్రాహ్యత-గ్రాహకతలుగా భిన్నమైన రెండు (అర్థములు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "రెండు అర్థములు (కారకములు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భాసించును (రెండును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(ఏక) ప్రమాతయందు"
+      }
+    ],
+    "5.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వర్తమానముగా ఆభాసించు (వాటి) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భావముల (వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆవిర్భావము, ప్రకటనము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లోపల అంతఃస్థితమైన వాటి యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మాత్రమే, ఒక్కటే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సాధ్యమగును, కుదురును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "బయట, బహిర్‌గతముగా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(తమ స్వంత) రూపముతో"
+      }
+    ],
+    "5.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మునుపు వలె (ఇంకను లోపలి స్థితిలో వలె)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థము (వస్తువు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అప్రకాశము (ప్రకాశించనిది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అయి ఉండును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రకాశాత్మత (వెలుగు స్వభావము) చేత"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేకుండ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మరియు కాదు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రకాశము (చైతన్యపు వెలుగు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భిన్నము (వేరుగా)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అయి ఉండును"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అర్థము యొక్క ఆత్మ (స్వరూపము) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "(అదే) ప్రకాశత (కావున)"
+      }
+    ],
+    "5.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రకాశము భిన్నమైనచో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రకాశమునందు (అట్లున్నచో)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అభిన్నమైనను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సంకరము (కలయిక-దోషము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విషయము యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రకాశాత్మ (వెలుగే స్వరూపముగా కలది)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రకాశ్యము (ప్రకటింపదగినది)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అర్థము (వస్తువు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అప్రకాశము (ప్రకాశించనిది)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "సిద్ధించును (అప్రకాశమైనది సిద్ధించదు)"
+      }
+    ],
+    "5.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆయా ఆకస్మిక ఆభాస (హఠాత్తుగా కలుగు వివిధ ఆభాసము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్యమును (బాహ్యవస్తువును)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఒకవేళ (అన్నచో)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అనుమింపజేయునని"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాదు (అట్లు కాదు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏలయన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అభిన్నమైన (విభజింపబడని) దాని యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "బోధము (చైతన్యము) యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "విచిత్ర (వివిధ) ఆభాసలకు హేతుత్వము (స్వయముగా ఉండదు)"
+      }
+    ],
+    "5.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వాసనా-ప్రబోధము (సంస్కారముల జాగృతి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఇచట, ఈ సందర్భమున"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "విచిత్రమైన (వివిధమైన)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "హేతుత్వమును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పొందగలదు (పొందదు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దాని యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఆ ప్రబోధము (సంస్కారముల జాగృతి) యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "వైచిత్ర్యమునందు (వైవిధ్యమునందు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఏమి?"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "నిబంధనము, ఆధారము"
+      }
+    ],
+    "5.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇది ఉండవచ్చును (అనగా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆభాసలందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ ఆభాసలందే"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(వ్యవహారము) నెరవేరునపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉన్నపుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వ్యవహారమునందు (లోకవ్యాపారమునందు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏమి (ప్రయోజనము)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరొకదానిచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "బాహ్య (వస్తువు) చేత"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అనుపపత్తికమైన (స్థాపింపరాని) దానిచేత"
+      }
+    ],
+    "5.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "చిదాత్ముడే (చైతన్యమే స్వరూపమైనవాడే)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిజముగా, ఏలయన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దేవుడు (దివ్య ఆత్మ)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లోపల ఉన్నదానిని (అంతఃస్థితమైనదానిని)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇచ్ఛావశమున (సంకల్ప బలముచేత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "బయట, బహిర్‌గతముగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "యోగి వలె"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఉపాదానము (మూలద్రవ్యము) లేకుండ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అర్థజాతమును (వస్తుసమూహమును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ప్రకాశించును, వెలుగులోనికి తెచ్చును"
+      }
+    ],
+    "5.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అనుమానము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మునుపు ఆభాసించని దాని విషయమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎంత మాత్రమును (కాదు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అంగీకరింపబడదు, ఇష్టము కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇంద్రియము (అనుమింపబడు శక్తి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మునుపు ఆభాసించినదే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "బీజాది (విత్తు మొదలగు) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆభాసము నుండి"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "హేతువస్తువు (అంకురాది కారణ వస్తువు) యొక్క"
+      }
+    ],
+    "5.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆభాసము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరల, పైగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(పూర్వ) ఆభాసము నుండి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాహ్య (వస్తువు) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కలిగెను, ఏర్పడెను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏదో విధముగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(బాహ్య) అర్థము యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఎంత మాత్రమును కాదు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "దానిచేత (ఆభాసముచేత)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దాని (వస్తువు) యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "సిద్ధి, నిరూపణ"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "(అనుమానము నుండియు) కాదు"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "అనుమానము నుండి"
+      }
+    ],
+    "5.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వామి (ప్రభువు) కొరకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆత్మసంస్థమైన (తనయందున్న)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావజాతము (వస్తుసమూహము) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భాసనము (ప్రకటనము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిశ్చయముగా కలదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాదు, లేకుండ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అది (ఆ భాసనము) లేకుండ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కావున, దాని నుండి"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఇచ్ఛామర్శము ('నేను కోరుచున్నాను' అను పరామర్శ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ప్రవర్తించును, ప్రారంభమగును"
+      }
+    ],
+    "5.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వభావముగా (సహజ స్వరూపముగా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అవభాసము (ప్రకాశించుట) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విమర్శను (పరామర్శను)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఎరుగుదురు, తెలియుదురు (వివేకులు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లేనిచో, అన్యథా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రకాశము (కేవల వెలుగు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అర్థముచే ఉపరక్తమైనను (వస్తువుచే రంగరించబడినను)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్ఫటికాది జడవస్తువు వంటిదే"
+      }
+    ],
+    "5.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆత్మ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చైతన్యమని (పిలువబడును)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిత్‌క్రియ (చేతనా-క్రియ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చితికర్తృత (అవగాహించు కర్తృత్వము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తాత్పర్యమున (సారాంశమున)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(అని) చెప్పబడెను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "దానిచేత, అందుచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "జడము నుండి"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అతడు (ఆత్మ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "విలక్షణుడు (పూర్తిగా భిన్నుడు)"
+      }
+    ],
+    "5.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "చితి (క్రియాశీల చైతన్యము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రత్యవమర్శాత్మ (స్వయం-పరామర్శ స్వరూపము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పరావాక్కు (పరమ వాణి, ఆది వాక్కు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్వరసోదిత (తన స్వంత రసమునుండి స్వయముగా ఉదయించినది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్వాతంత్ర్యము, పరమ స్వేచ్ఛ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ముఖ్యమైన, ప్రధానమైన"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఐశ్వర్యము, సార్వభౌమత్వము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "పరమాత్మ యొక్క"
+      }
+    ],
+    "5.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అది (చితి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్ఫురత్త (స్పందించు ప్రకాశము, ఉనికి-మెఱుపు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మహాసత్త (పరమ సత్తా, పరమ ఉనికి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దేశకాలములచే నిర్ణయింపబడనిది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ (చితి) యే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సారముగా (అంతరంగ సారముగా)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రోక్తము (చెప్పబడినది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "హృదయము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పరమేష్ఠి (పరమ దేవుడు) యొక్క"
+      }
+    ],
+    "5.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "తనను, ఆత్మను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఇతడు (ప్రభువు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జ్ఞేయముగా చేసుకొనవచ్చును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పృథక్‌స్థితి (వేరుగా ఉన్న)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "జ్ఞేయము (గా కాదు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆ (స్వ)ఔన్ముఖ్యము (అభిముఖత) వలన"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఖండింపబడును, చెడిపోవును (చెడదు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అతని"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "స్వతంత్రత, స్వాతంత్ర్యము"
+      }
+    ],
+    "5.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వాతంత్ర్యము నుండి విముక్తులైనట్లు (కనబడు) ఆత్మలను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "(తన) స్వాతంత్ర్యముచేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అద్వయాత్ముడైన (నాన్‌-ద్వైత స్వరూపుని) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రభువు (స్వామి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ఈశ' మొదలగు సంకల్పములచేత (పరిమిత విషయులుగా)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్మించి, సృష్టించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వ్యవహారమునకు ప్రవర్తింపజేయును"
+      }
+    ],
+    "5.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(స్వాతంత్ర్యమునకు హాని) లేదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'అహం' (నేను) మొదలగు పరామర్శముల భేదము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అతని"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తననుండి తొలగని ఆత్మ కలవాని యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'అహం'-మృశ్యత (నేను అని పరామర్శింపబడుట) గానే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అతని"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సృష్టి (ప్రసరించిన ప్రపంచము) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "తిఙ్ (క్రియాపద) ప్రత్యయముచే వాచ్యమైన కర్మ వలె"
+      }
+    ],
+    "5.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మాయాశక్తిచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విభువు (సర్వవ్యాపి ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ (పరామర్శమే)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భిన్నసంవేద్య గోచరమైనది (విభిన్న జ్ఞేయములను విషయముగా కలది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చెప్పబడును, పిలువబడును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "జ్ఞానము, సంకల్పము, అధ్యవసాయము మొదలగు పేర్లతో"
+      }
+    ],
+    "5.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సాక్షాత్కార (ప్రత్యక్ష దర్శన) క్షణమునందైనను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉన్నది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "విమర్శ (పరామర్శ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎట్లు (లేనిచో)?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అన్యథా, లేనిచో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ధావనాది (పరుగు మొదలగు ప్రయోజనాత్మక చర్యలు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సాధ్యమగును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రతిసంధానము (సమన్వయము) లేనిది"
+      }
+    ],
+    "5.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ఇది ఘటము'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అను రూపమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అధ్యవసా (నిర్ణయజ్ఞానము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నామరూపములను అతిక్రమించునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పరేశశక్తి (పరమేశ్వరుని శక్తి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆత్మ వలెనే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భాసించును, ప్రకాశించును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇదంత (ఈ-త్వము, వస్తుత్వము) గా"
+      }
+    ],
+    "5.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మాత్రమే, కేవలము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భిన్నసంవేద్య-దేశకాలముల అనురోధముచేత (విభిన్న జ్ఞేయ-స్థల-కాలముల అనుసరణచేత)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జ్ఞానము, స్మృతి, అవసాయము మొదలగునవి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సక్రమముగా (క్రమబద్ధముగా)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రతిభాసించును, ప్రకటమగును"
+      }
+    ],
+    "6.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'అహం' (నేను) అను ప్రత్యవమర్శము (స్వయం-పరామర్శ)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రకాశాత్మ (వెలుగే స్వరూపముగా కలది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వాగ్వపువు (వాక్కు రూపము కలది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అది (అహం-విమర్శ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వికల్పము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది (వికల్పము)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఏలయన"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "చెప్పబడెను"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ద్వయమును ఆక్షేపించునది (సూచించునది)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "వినిశ్చయము (నిర్ణయము)"
+      }
+    ],
+    "6.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "రెండు భిన్న (వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆభాసము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏలయన, నిజముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉండవలెను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఘట-అఘటముల (కుండ, కుండ-కానిది) యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ రెండింటి యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రకాశము (చైతన్యము) యొక్క వలె"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అన్యమైన (నిరాకరింపబడిన వస్తువు) యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భిన్నమైన"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "భాసనము (ప్రకటనము)"
+      }
+    ],
+    "6.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "తత్-అతత్ (అది-అదికానిది) యొక్క ప్రతిభను భరించు దానిచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మాత్ర (చైతన్యము) చేతనే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అతత్తు (అదికానిది) యొక్క వ్యపోహనము (నిరాకరణ) వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తన్నిశ్చయన (ఆ నిర్ణయము) అనబడునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వికల్పము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'ఘటము' (కుండ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఈ"
+      }
+    ],
+    "6.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "చిత్తత్త్వమును (చైతన్య తత్త్వమును)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మాయచేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విడిచి (నిజస్వరూపమును వదలి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భిన్నుడుగా మాత్రమే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాసించును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఎవడు (పరిమిత విషయి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "దేహమునందు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "బుద్ధియందు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ప్రాణమునందు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కల్పితమైన (ఆత్మగా ఊహించబడిన)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఆకాశమునందు వలె"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "లేక"
+      }
+    ],
+    "6.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రమాతృత్వముతో (పరిమిత జ్ఞాతగా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'నేను'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "విమర్శ (పరామర్శ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అన్యమును వ్యపోహించుట (నిరాకరించుట) వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వికల్పమే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అది (ఆ విమర్శ)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పరప్రతియోగి (అన్యమును ప్రతిపక్షముగా కలది)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఆభాసజము (ఆభాసము నుండి పుట్టినది)"
+      }
+    ],
+    "6.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాదాచిత్క (అప్పుడప్పుడు కలుగు) ఆభాసమునందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పూర్వాభాసాదులతో యోజన (కలయిక)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సంస్కారము నుండి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కల్పన (ఊహాత్మక నిర్మాణము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రోక్తము (చెప్పబడినది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అదియు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భిన్నావభాసి (భిన్నవస్తువులు ఆభాసించు చైతన్యము) నందు"
+      }
+    ],
+    "6.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కావున, ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ విధముగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వ్యవహారమునందు కూడ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రభువు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దేహాదులను (శరీరము మొదలగు వాటిని)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆవేశించి, ప్రవేశించి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(లోపల) భాసించుచున్నదానిని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "లోపల, అంతరమున"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అర్థౌఘమును (వస్తుప్రవాహమును)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఇచ్ఛచేత"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "భాసింపజేయును, ప్రకటించును"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "బయట, బహిర్‌గతముగా"
+      }
+    ],
+    "6.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్మృతియందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వికల్పమునందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అపోహనపరాయణమైన (నిరాకరణకు అంకితమైన)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "జ్ఞానమునందు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అంతరాభాస (అంతరంగ ఆభాస)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్థితమై ఉండును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "నిశ్చితము (నిర్ధారితము)"
+      }
+    ],
+    "6.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాని, అయితే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నైసర్గికము (సహజము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ప్రత్యక్ష) జ్ఞానమునందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాహ్యాభాసనాత్మకము (బయట భాసించు స్వభావము కలది) యందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పూర్వానుభవ రూపము కలది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కాని, మాత్రము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్థితమై ఉండును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అది (అంతరాభాస)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్మరణాదులందు"
+      }
+    ],
+    "6.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అది (అంతరాభాస)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నైసర్గికమే (సహజమే)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉన్నది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వికల్పమునందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్వైరచారియైన (స్వేచ్ఛగా సంచరించు) దానియందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అభిమతమైనట్లు (కోరినట్లు) సంస్థానములు ఆభాసించుట వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "బుద్ధిగోచరమైన (బుద్ధిని విషయముగా కల) దానియందు"
+      }
+    ],
+    "6.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అభీష్టమైనట్లు (కోరినట్లు) సముల్లేఖల ఆభాసనము వలన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జ్ఞానము, క్రియ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్ఫుటములే (స్పష్టములే)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సిద్ధములే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రతి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "జీవికి (జీవించు వానికి)"
+      }
+    ],
+    "7.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మరియు ఈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రతిభ (భాసించు జ్ఞానము, మెఱయు అవగాహన)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆయా పదార్థముల క్రమముచే రూషితమైనది (రంగరించబడినది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అక్రమ, అనంత చిద్‌రూపుడు (క్రమరహిత, అనంత చైతన్య స్వరూపుడు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రమాత (జ్ఞాత విషయి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అతడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మహేశ్వరుడు"
+      }
+    ],
+    "7.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆయా విభిన్న సంవిత్తుల ముఖముల ద్వారా (వేరువేరు అవగాహనల అపేక్షల ద్వారా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏకప్రమాతయందు (ఒకే జ్ఞాతయందు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రతిష్ఠించునపుడు (నిలుచునపుడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావములు (వస్తువులు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ జ్ఞాతృత (జ్ఞాతగా ఉండుట)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉపపన్నమగును, సాధ్యమగును"
+      }
+    ],
+    "7.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దేశ-కాల-క్రమమునకు లోనైన (వాటి) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థముల (వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తమలో తాము సమాప్తమగు (స్వయంపరిమితమగు) వాటి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకకాల ఆభాసముచేత సాధ్యమైనది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ (సమన్వయము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అన్యథా, లేనిచో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏది?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సమన్వయము, సంబద్ధ క్రమము"
+      }
+    ],
+    "7.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రత్యక్ష-అనుపలంభముల (గ్రహణ-అగ్రహణముల) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆయా భిన్నాంశములపై పడు వాటి యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కార్యకారణతా-సిద్ధి-హేతుత (కార్యకారణ సంబంధమును స్థాపించు సామర్థ్యము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకప్రమాత నుండి పుట్టును"
+      }
+    ],
+    "7.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్మృతియందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏదే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్వసంవిత్తి (స్వయం-అవగాహన)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రమాణము (మాన్య జ్ఞాన సాధనము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తన స్వంత ఉత్పత్తి విషయమున"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పూర్వానుభవ సద్భావము (ఉనికి) విషయమున"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సాధనము, నిరూపణ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అదే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "వేరొకటి కాదు"
+      }
+    ],
+    "7.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "బాధ్య-బాధక భావము (బాధించు-బాధింపబడు సంబంధము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తమయందు తాము నిష్ఠమై పరస్పరావిరోధులైన (జ్ఞానముల) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జ్ఞానముల యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉదయించగలదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏకప్రమాతయందు పరినిష్ఠితమగుట (సంపూర్ణముగా స్థాపితమగుట) వలన"
+      }
+    ],
+    "7.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వివిక్త భూతల జ్ఞానము (ఖాళీ నేల జ్ఞానము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఘటాభావ మతి (కుండ-లేమి జ్ఞానమే)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎట్లు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అట్లు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఒకవేళ (అన్నచో)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "శుక్తికా జ్ఞానము (ముత్యపుచిప్ప జ్ఞానము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "రజతజ్ఞానము యొక్క అప్రమాత్వమును (వెండి-జ్ఞానపు అమాన్యతను) తెలియజేయునది"
+      }
+    ],
+    "7.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అట్లు కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శుద్ధస్థల జ్ఞానము (ఖాళీ నేల జ్ఞానము) నుండి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సిద్ధించును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దాని (నేల) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అఘటాత్మతగా (కుండ-కాని స్వభావముగా)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉపలబ్ధికి యోగ్యమైన దాని యొక్క (గ్రహణార్హమైన వస్తువు యొక్క)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇచట"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అభావము (లేమి)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఘటాత్మక (కుండ-స్వభావ) వస్తువు యొక్క"
+      }
+    ],
+    "7.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వివిక్తము (వేరుగా, ఇతరమునుండి విడివడి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భూతలము (ఖాళీ నేల)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శాశ్వతముగా, నిత్యము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావముల యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తమయందు తాము నిష్ఠమగుట వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎట్లు?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఎన్నడూ, ఎప్పుడైనను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "దాని (నేల) జ్ఞానము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భిన్నమైన (వస్తువు) యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అభావమునకు సాధనము (లేమికి నిరూపణ)"
+      }
+    ],
+    "7.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాని, పైగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆలోకచయము (వెలుగు సమూహము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "గ్రుడ్డివానికి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్పర్శ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉష్ణాది (వేడి మొదలగునది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మృదు (మెత్తని)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అచట (నేలపై)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఉన్నది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "సాధించును"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "దాని యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "దాని జ్ఞానమే"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "అఘటాత్మతను (కుండ-కాని స్వభావమును)"
+      }
+    ],
+    "7.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "పిశాచము (భూతము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉండగలదు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనాలోకుడు (వెలుగుచే గ్రహింపబడనివాడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వెలుగు మధ్యలోనే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఎట్లు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అదృశ్యమైనది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భూతలము యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "లోపల"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "నిషేధింపదగినది (నిరాకరింపదగినది)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అది (పిశాచము)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఏ విధముగను, మొత్తముగా"
+      }
+    ],
+    "7.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అట్లే, ఇదే విధముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "రజతవిద్-అభావ రూపమైనది (వెండి-జ్ఞానపు లేమి రూపమైనది)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శుక్తిమతి (ముత్యపుచిప్ప జ్ఞానము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అయి ఉండును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆద్యరజతజ్ఞప్తి (మొదటి వెండి జ్ఞానము) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అయి ఉండును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అప్రామాణ్యమును తెలియజేయునది (అమాన్యతను చూపునది)"
+      }
+    ],
+    "7.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ధర్మి (ఆశ్రయవస్తువు) సిద్ధించనందున"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ, పైగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కలుగును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాధ (అపవాదము, వ్యతిరేకము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎంత మాత్రమును కాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనుమానము నుండి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్వసంవేదనముచే సిద్ధమైనది (స్వయం-అవగాహనచే నిరూపితమైనది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కాని, మాత్రమే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "యుక్తము, తగినది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది (బాధ)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఏకప్రమాత నుండి పుట్టినది"
+      }
+    ],
+    "7.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు, ఈ విధముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అత్యంత భిన్నమైన అర్థముల ఆభాసలతో ఖచితమైన (పొదగబడిన)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విభువునందు (సర్వవ్యాపి ప్రభువునందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సమలము (మలినము, దోషముతో కూడినది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విమలము (నిర్మలము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేదా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వ్యవహారము (లోకవ్యాపారము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అనుభవింపబడును"
+      }
+    ],
+    "8.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "తాత్కాలిక అక్ష-సామక్ష్యమును అపేక్షించునవి (ఆ క్షణపు ఇంద్రియ సాన్నిధ్యమును ఆశ్రయించునవి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మాత్రమే, కేవలము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కొన్నిచోట్ల"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆభాసలు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అన్యథా (వేరుగా)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇతరచోట్ల"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "గ్రుడ్డివారియందు, గాఢాంధకారాదులందు"
+      }
+    ],
+    "8.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "విశేషము, భేదము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థావభాసము (వస్తు-ఆభాసము) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సత్తయందు (ఉనికియందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఎచటను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వికల్పములందు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉండును (ఉండదు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భావి-వర్తమాన-భూత అర్థములపై సంచరించు వాటియందు"
+      }
+    ],
+    "8.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సుఖాది (అనుభవముల) యందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సౌఖ్యాది హేతువులందు (సుఖమునకు కారణములైన వాటియందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరియు కూడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(వాస్తవ) వస్తువులందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆభాసము యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సద్భావమున (ఉనికిలో ఉన్నను)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అతీతత్వము (గతించుట) వలన"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అట్లు, ఆ (గత) రూపమున"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "స్థితి, వాటి ఉనికి"
+      }
+    ],
+    "8.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "గాఢముగా, స్పష్టముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉల్లిఖింపబడునపుడు (ప్రతిబింబింపబడునపుడు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కాని, నిజముగా"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వికల్పముచేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సుఖాది (అనుభవమునందు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తథాస్థితి (అట్టి స్థితి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అట్లే (ఆ స్పష్ట రూపమున)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఉండును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్ఫుటముగా, స్పష్టముగా"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దాని యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఉపలక్షింపబడుట (గమనింపబడుట) వలన"
+      }
+    ],
+    "8.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భావాభావ ఆభాసల (ఉనికి-లేమి భాసనముల) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్యత (బయటితనము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉపాధి (ఆగంతుక విశేషణము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇష్టము, అంగీకృతము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆత్మ (వాటి స్వభావము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సత్త (వాటి ఉనికి)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "వాటి (ఆభాసల) యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అంతరములైన (లోపలి) వాటి యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "సత్‌గా (ఉనికి కలవిగా) ఉన్న వాటి యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "సర్వదా, ఎల్లప్పుడు"
+      }
+    ],
+    "8.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అంతరత్వము (లోపలి స్వభావము) వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రమాత ఏకత్వమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వీటి (ఆభాసల) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భేదమునకు బద్ధమైనది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అర్థక్రియ (కార్యసామర్థ్యము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "బాహ్యత్వమునందు (బయటితనమునందు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది (అర్థక్రియ)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భిన్నాభాస భేదము నుండి (వేరువేరు భాసనముల భేదము నుండి కలుగును)"
+      }
+    ],
+    "8.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "చిన్మయత్వము (చైతన్యమయత్వము) వలన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆభాసల యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లోపలే (అంతరమునందే)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్థితి (వాటి ఉనికి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సర్వదా, ఎల్లప్పుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మాయచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భాసించు వాటి యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ఊహించబడిన) బాహ్యత్వము వలన"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "బయట"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఆ (స్థితి అనబడును)"
+      }
+    ],
+    "8.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వికల్పమునందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ ఏ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉల్లేఖ (ప్రతిరూపము, ప్రతిబింబము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అది కూడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "బాహ్యము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పృథక్‌ప్రథ (వేరుగా ప్రకాశించునది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రమాతతో ఏకాత్మ్యము (జ్ఞాతతో ఏకత్వము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆంతర్యము (లోపలితనము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "దాని నుండి, కావున"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భేదము"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఏలయన, నిజముగా"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "బాహ్యత (బయటితనమే)"
+      }
+    ],
+    "8.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఉల్లేఖము (ప్రతిరూపము) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సుఖాది (అనుభవముల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రకాశము (బాహ్య భాసనము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "బయట, బహిర్‌గతముగా"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(వాటి స్వంత) రూపముతో"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ప్రభువు) ఇచ్ఛచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భర్త (ప్రభువు, పోషకుడు) యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అధ్యక్షరూపము (ప్రత్యక్ష స్వభావము) కలది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అక్షాది (ఇంద్రియ మొదలగు) జనిత ఆభాసల వలె"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఎట్లో"
+      }
+    ],
+    "8.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆ (ప్రమాత) ఏకత్వము లేకుండ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లేకుండ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉండదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సంవిత్తుల (అవగాహనల) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "లోకపద్ధతి (లోకవ్యవహారపు క్రమము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రకాశ ఏకత్వము వలన (వెలుగు ఏకత్వము వలన)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆ, కావున"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఏకత్వము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రమాత ఏకుడు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అతడే (ప్రభువు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "స్థిరపడెను, నిరూపితమాయెను"
+      }
+    ],
+    "8.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అతడే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విమృశత్త్వము (పరామర్శ-స్వభావము) చేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నియతమైన (అనివార్యమైన, అంతర్‌గత)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మహేశ్వరుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విమర్శయే (పరామర్శయే)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దేవుని యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శుద్ధ (పవిత్ర)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "జ్ఞాన-క్రియలు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఏలయన, కావున"
+      }
+    ],
+    "9.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ప్రతిపక్షిచే) చెప్పబడెను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఏకునిది (ఒకే కర్తది) కాదు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "క్రమబద్ధమగుట వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏకము ('అది ఒకటి కాదు')"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మొదలగునది"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఖండింపబడెను, ప్రతిక్షిప్తమాయెను"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఏకుని (ఏకప్రమాత) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "సమర్థింపబడుట (స్థాపింపబడుట) వలన"
+      }
+    ],
+    "9.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "క్రమబద్ధత్వము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లౌకిక (సాంసారిక) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రియ యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాలశక్తి వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కలుగును, సాధ్యమగును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాని కాదు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శాశ్వత (నిత్య క్రియ) యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రభువుకు చెందిన (క్రియ) యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అది (వేరుగా) ఉండును"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ప్రభువుకు వలె"
+      }
+    ],
+    "9.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాలము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సూర్యాదుల సంచారము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆయా పుష్పాదుల జన్మము (పుట్టుక)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శీత-ఉష్ణములు (చలి-వేడిమి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేదా మరల"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆ (లక్షణముల)చేత గుర్తింపబడునది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్రమమే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది (కాలము)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "తత్త్వతః (నిజముగా, సారాంశమున)"
+      }
+    ],
+    "9.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "క్రమము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భేదాశ్రయము (భేదమును ఆశ్రయించునది)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భేదము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాస సదసత్త్వము (ఆభాసపు ఉనికి-లేమి) నుండి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆభాస సదసత్త్వములు (ఉనికి-లేమి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాని, మాత్రము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ప్రభువు యొక్క) చిత్రాభాసకృతము (వివిధ భాసనముచే చేయబడినవి)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రభువు యొక్క"
+      }
+    ],
+    "9.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మూర్తి-వైచిత్ర్యము (ఆకారముల వైవిధ్యము) నుండి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "దేశక్రమమును (స్థల క్రమమును)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆభాసించును, ప్రకటించును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అతడు (ప్రభువు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "క్రియా-వైచిత్ర్య-నిర్భాసము (క్రియల వైవిధ్య-భాసనము) నుండి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కాలక్రమమును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఈశ్వరుడు"
+      }
+    ],
+    "9.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వత్ర, ఎచటను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆభాసభేదము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కావచ్చును, అగును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాలక్రమమునకు ఆకరము (మూలము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విచ్ఛిన్నభాసుడైన (అంతరాయముతో భాసించు) వాని యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శూన్యాది (శూన్యము మొదలగు) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(పరిమిత) ప్రమాత యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భాసించు వాని యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఏకకాలమునందు కాక (ఒకేసారి కాక)"
+      }
+    ],
+    "9.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దేశక్రమము (స్థల క్రమము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భావములందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భాసించును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రమాతకు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మితాత్ముడైన (పరిమిత స్వభావుని) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తన ఆత్మ వలెనే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "తన ఆత్మచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పూర్ణములు (సంపూర్ణములు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భావములు (వస్తువులు)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "భాసించును"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అమితునికి (అపరిమితునికి)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "కాని, మాత్రము"
+      }
+    ],
+    "9.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాని, అయితే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నిర్మాణశక్తి (సృష్టి శక్తి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అది కూడ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విదుడైన (ఎరిగిన) వాని యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈశితుడైన (సార్వభౌమ ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అట్లుగా (ఆ విధముగా)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "విజ్ఞాత్రు-విజ్ఞేయ భేదము (జ్ఞాత-జ్ఞేయ భేదము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఎట్లయితే (అట్టి విధముగా)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆభాసింపజేయబడును (స్వయముగా ఆభాసించునట్లు)"
+      }
+    ],
+    "10.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "క్రియ, సంబంధము, సామాన్యము, ద్రవ్యము, దిక్కు, కాలము అను బుద్ధులు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సత్యములు (వాస్తవములు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్థైర్యము, ఉపయోగము అను వాటిచేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏక-అనేకములను ఆశ్రయించునవి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భావింపబడును, పరిగణింపబడును"
+      }
+    ],
+    "10.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వీటిలో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏకమైన"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆంతర (లోపలి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తత్త్వము (వాస్తవము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అదే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇంద్రియవేద్యతను (ఇంద్రియములచే తెలియదగుటను)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పొంది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అనేకతను (బహుత్వమును)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పొందును, చేరును"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దేశకాల స్వభావము వలన"
+      }
+    ],
+    "10.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆ ద్వయమును (ఏక-అనేకమును) ఆలంబనముగా కలవి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఈ (కల్పనలను)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మనస్సు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అను-వ్యవసాయి (అనుసరించి నిర్ణయించునది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అయి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చేయును, ఉత్పన్నము చేయును"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రమాత యొక్క వ్యాపారమయములైన (వ్యాపార-రూపమైన)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కర్మాది (కారక) కల్పనలను"
+      }
+    ],
+    "10.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "తమయందు తాము నిష్ఠమైన"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వివిక్తముగా (వేరుగా) ఆభాసించునవి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భావములు (వస్తువులు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకప్రమాతయందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పరస్పరాన్వయ రూపమగు ఏకత్వముతో కూడినవి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సంబంధధీపదము (సంబంధ-జ్ఞానమునకు ఆధారము)"
+      }
+    ],
+    "10.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "జాతి-ద్రవ్య ఆభాసల యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్యమైనను (కనబడు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకరూపతను (ఒకే రూపమును)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వ్యక్తి-ఏకదేశ భేదమును (వ్యక్తులు-భాగముల భేదమును)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు కూడ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆలంబనముగా తీసుకొనును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వికల్పనలు (కల్పనలు)"
+      }
+    ],
+    "10.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "క్రియావిమర్శను విషయముగా కలది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కారకముల (క్రియలో పాల్గొనువాని) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సమన్వయము (సంబద్ధ క్రమము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అవధి-అవధిమత్తుల (హద్దు-హద్దుకలవాని) భావముల అన్వయమును ఆలంబనముగా కలది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దిగాది-ధీ (దిక్కు మొదలగు జ్ఞానము)"
+      }
+    ],
+    "10.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లే, ఈ విధముననే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థసిద్ధి (ప్రయోజన సాధన)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కలుగును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రమాతకు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అర్థక్రియను కోరు వానికి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భేద-అభేదము కల దానిచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అర్థముచేత (వస్తువుచేత)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాదు, లేదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భ్రాంతి, భ్రమ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అట్టి (ప్రతిపక్షి చెప్పిన విధమైన)"
+      }
+    ],
+    "11.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ఇది ఇట్టిది'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అను రూపమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏది వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నిశ్చయముగా స్థిరపడునో"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వస్తువు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అది ప్రమాణము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అది కూడ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "స్వాభాసము (స్వయంప్రకాశము)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అభినవోదయము (క్రొత్తగా ఉదయించినది)"
+      }
+    ],
+    "11.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అది (ఆభాసము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అంతర్‌గతమై (లోపల)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తథావిమర్శాత్మ ('ఇది ఇట్టిది' అను పరామర్శ స్వరూపము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దేశకాలాదులచే అభిన్నమైన (వస్తువు) యందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఏక-అభిధాన (ఒకే పేరు కల) విషయమైన దానియందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మితి (ప్రమాణ-జ్ఞానము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వస్తువు విషయమున"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అబాధితమైన (అపవదింపబడని)"
+      }
+    ],
+    "11.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "రుచిని బట్టి (ఇష్టమును బట్టి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అవసరమును బట్టి (అర్థిత్వమును బట్టి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వ్యుత్పత్తిని బట్టి (నేర్పును బట్టి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భిన్నమగును, భేదింపబడును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాసము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(ఒకే) అర్థమునందు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఒకే (అదే)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అనుసంధానముచే సాధితమైన దానియందు"
+      }
+    ],
+    "11.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దీర్ఘ, వృత్త (గుండ్రని), ఊర్ధ్వ (నిటారు), పురుష, ధూమ, చందనత్వము మొదలగు వాటిచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆభాసలను అనుసరించి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భేదింపబడును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "(అయినను) దేశకాలములచే అవిభిన్నములు"
+      }
+    ],
+    "11.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అట్లే, ఇదే విధముగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సత్, ఘట, ద్రవ్య, కాంచన (బంగారు), ఉజ్జ్వలత మొదలగునవి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆభాసభేదములు (వేరువేరు భాసనములు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భిన్నార్థకారులు (వేరువేరు అర్థములను కలిగించునవి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అవి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పదము (శబ్దమునకు ఆధారము, వాచ్యము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ధ్వని (శబ్దము) యొక్క"
+      }
+    ],
+    "11.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆభాసభేదము నుండి (వేరువేరు భాసనముల భేదము నుండి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వస్తువుల యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నియతార్థక్రియ (నిర్దిష్ట కార్యసామర్థ్యము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మరల, తిరిగి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సామానాధికరణ్యముచే (ఒకే అధిష్ఠానమున ఉండుటచే)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రతిభాసము నుండి (ప్రకటనము నుండి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అభిన్నములైన (అభేదముగా కనబడు ఆభాసల) యొక్క"
+      }
+    ],
+    "11.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వేరువేరు దీపముల ప్రకాశముల యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "స్రోతస్సుల (నదీ ప్రవాహముల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సాగరమునందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఎట్లు (కలసినట్లు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అవిరుద్ధ (పరస్పర అనుకూల) ఆభాసల యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏకకార్యమును (ఒకే ఫలమును) చేయునది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అట్లు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఏకత్వ-ధీ (ఏకత్వ-జ్ఞానము)"
+      }
+    ],
+    "11.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అట్టి, అచట"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అవిశిష్టమైన (అభేదమైన) దానియందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వహ్న్యాది (అగ్ని మొదలగు) దానియందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కార్యకారణత, ఉష్ణత (వేడిమి మొదలగునవి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆయా శబ్దార్థత మొదలగునది స్వరూపముగా కలది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రమాణము వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏకముగా (ఒకటిగా)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భావింపబడును"
+      }
+    ],
+    "11.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అది (అర్థక్రియ, ప్రవృత్తి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "దేశాది యొక్క వేరొక అధ్యక్షము (ప్రత్యక్షము) చేత భిన్నమైన దానియందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "స్వలక్షణము (బరి విశేషము) విషయమున"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తాత్కాలికి (ఆ క్షణమునకు చెందినది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రవృత్తి (క్రియాశీలత, నిమగ్నత)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉండును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అర్థిగానికి (గమ్యమును కోరువానికి)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అనుమానము నుండి"
+      }
+    ],
+    "11.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దూర-అంతికత (దూరము-దగ్గర) చేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అర్థముల (వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పరోక్ష-అధ్యక్షత (పరోక్ష-ప్రత్యక్ష) చేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాహ్య-ఆంతరత చేత (బయట-లోపల చేత)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దోషములచేత (పరిశీలకుని లోపములచేత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వ్యంజకుని (ప్రకటించు హేతువు) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అన్యథా, వేరు విధమున"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "లేదా కూడ"
+      }
+    ],
+    "11.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భిన్నావభాస ఛాయలు (వేరువేరు భాసనముల జాడలు) కల వాటి యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ముఖ్యావభాసము నుండి (ప్రధాన భాసనము నుండి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకప్రత్యవమర్శ అనబడు దాని నుండి (ఏక-పరామర్శ)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఏకత్వము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనివారితము (నిరోధింపరానిది, నిరాకరింపరానిది)"
+      }
+    ],
+    "11.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అర్థక్రియ (కార్యసామర్థ్యము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సహజము (వస్తువులకు అంతర్‌గతము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అర్థముల (వస్తువుల) యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈశ్వరేచ్ఛచేత (ప్రభువు ఇచ్ఛచేత)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "నియతము (నిర్దేశితము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అది (అర్థక్రియ)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "దానిచేత (అతని ఇచ్ఛచేత)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "దాని (అర్థక్రియ) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "కాదు"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "అక్రియ నుండి (అతని క్రియాలేమి నుండి)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "భేదము, అన్యత్వము"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "కలుగును (కలుగదు)"
+      }
+    ],
+    "11.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'(ఇది) వెండి' అను ఏకవిమర్శ (ఒకే పరామర్శ) ఉన్నను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శుక్తియందు (ముత్యపుచిప్పయందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "రజతస్థితి (వెండి ఉనికి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉపాధి-దేశ అసంవాదము (విశేషణ-స్థల అసమ్మతి) వలన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ద్విచంద్రమునందు (రెండు చంద్రుల భ్రమయందు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఆకాశము (అన్యథా ఫలమునిచ్చును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అన్యథా (వేరుగా)"
+      }
+    ],
+    "11.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "గుణములచేత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శబ్దాది (ధ్వని మొదలగు) చేత"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భేదము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జాత్యాదుల (సామాన్యము మొదలగు) చేత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అభిన్నత (అభేదము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావముల యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఒకే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రమాతయందు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఉపపన్నమగును, సాధ్యమగును"
+      }
+    ],
+    "11.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "విశ్వ వైచిత్ర్యమను చిత్రము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సమభిత్తితల (సమతలమైన గోడ-తెర) వంటి దానియందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "విరుద్ధము-అభావముల స్పర్శ లేని దానియందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "పరమార్థసత్తయైన (నిజముగా ఉనికి కల) దానియందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈశ్వరునియందు"
+      }
+    ],
+    "11.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రమాత విషయమున"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "పురాణుడైన (ఆదిమ) వాని విషయమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సర్వదా, ఎల్లప్పుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భాతవిగ్రహుడైన (భాసించు రూపము కలవాని) విషయమున"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏది?"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రమాణము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నవాభాసము (క్రొత్త భాసనము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సర్వప్రమితి భాగి (అన్ని జ్ఞానములలో పాలుపంచుకొనువాని) విషయమున"
+      }
+    ],
+    "11.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మునుపు ఎన్నడూ ప్రవర్తింపజేయబడనిది"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇచట, ఈ సందర్భమున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మాత్రమే, కేవలము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మూఢతావశమున (మోహ బలముచేత)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "శక్తిప్రకాశముచేత (శక్తుల ఆవిష్కరణముచేత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'ఈశుడు' (ప్రభువు) మొదలగు వ్యవహారము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రవర్తింపజేయబడుచున్నది"
+      }
+    ],
+    "12.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇతడు (ప్రభువు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనంతశక్తి కలవాడగుట వలన"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాసించును, ప్రకటించును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈ (భావములను)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భావములను (వస్తువులను)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఇచ్ఛావశమున (సంకల్ప బలముచేత)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(అతని) క్రియ"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "నిర్మాతృత (సృష్టికర్తృత్వము)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అతని"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఆ"
+      }
+    ],
+    "12.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "జడము యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కాదు, లేదు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఆ శక్తి"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సత్తా (ఉనికినిచ్చుట)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏది, అనగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అసత్తు యొక్క (లేనిదానిని)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సత్‌గా (ఉన్నదిగా చేయుట)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కర్తృ-కర్మత్వ తత్త్వమే స్వరూపముగా కలది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కార్యకారణత"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కావున, అందుచేత"
+      }
+    ],
+    "12.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏది అసత్తో (లేనిదో)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అసత్తుతో కూడినది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అసత్తు యొక్క (లేనిదాని)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సత్‌స్వరూపత (ఉనికి స్వభావమగుట)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సత్తునకు (ఉన్నదానికి)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మరల లేదు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "సత్తాలాభముచేత (ఉనికిని పొందుటచేత)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ప్రయోజనము, పని"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అయినను (కొందరు)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "చెప్పుదురు, అందురు"
+      }
+    ],
+    "12.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కార్యకారణత"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "లోకమునందు (సామాన్య వ్యవహారమునందు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అది (కార్యకారణత)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అంతర్‌వివర్తి (లోపల పరివర్తనమొందునది) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉభయేంద్రియవేద్యత్వము (రెండు విధముల ఇంద్రియములచే తెలియదగుట)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "దాని యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏదో ఒక (తత్త్వము) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(ప్రభువు) శక్తి వలన"
+      }
+    ],
+    "12.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏక (ఒకే)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సక్రమమైన అంతర-బహిఃస్థితి (క్రమబద్ధ లోపల-బయట ఉనికి) కలది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏకునిదే (ఒక్కనిదే)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉభయాకారసహిష్ణుడైన (రెండు రూపములను భరించగల) వాని యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నిరూపింపబడెను, స్థాపింపబడెను"
+      }
+    ],
+    "12.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "బాహ్యము (బయటిది)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆ (ప్రమాత) యొక్కయే"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ కార్యము (అతని కార్యము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏది లోనో (అంతర్‌గతమో)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దేనిని అపేక్షించి (సాపేక్షముగా)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ప్రమాతను అపేక్షించి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "చెప్పబడెను"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ద్వయీ (రెండు విధముల)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "బాహ్య-ఆంతర స్థితి"
+      }
+    ],
+    "12.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రమాతయే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కారణము"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అతడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(కారణ-కార్య) ఆభాసద్వయ స్థితియందు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కార్యము యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఏకుడై స్థిరముగా ఉండును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఒక్కడు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఏకుని (ఒక్కని) యొక్క"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "క్రియ చెప్పబడెను"
+      }
+    ],
+    "12.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అంకురమునందు (మొలకయందు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇష్టము (అంగీకృతము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నిమిత్తము (హేతువు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరమేశ్వరుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అన్యము యొక్క (ఇతరదాని)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "బీజాది (విత్తు మొదలగు) యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "హేతుత (కారణత్వము)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఉపపన్నము కాదు (తగదు)"
+      }
+    ],
+    "12.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏలయన, వివరించుటకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కుంభకారుడు (కుమ్మరి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఆ (కుమ్మరి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఐశ్వర్యముచేతనే (ప్రభువు శక్తిచేతనే)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(దాని) వ్యవస్థచేత (క్రమబద్ధతచేత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆయా మృత్తికాది (మట్టి మొదలగు) సంస్కారముల క్రమముచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "జనింపజేయును (పుట్టించును)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఘటమును (కుండను)"
+      }
+    ],
+    "12.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "యోగులకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మృత్తికా-బీజము (మట్టి-విత్తు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏ మాత్రమును లేకుండనే"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇచ్ఛావశమున (సంకల్ప బలముచేత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అది (ఘటాది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఘటాది (కుండ మొదలగునది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "జనించును (పుట్టును)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఆయా స్థిరమైన స్వార్థక్రియను చేయునది (కార్యమును చేయునది)"
+      }
+    ],
+    "12.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "యోగి నిర్మాణము ఉన్నపుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వేరొక ప్రమాణముచే నిశ్చితమైనపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కార్యము"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "హేతువు (కారణము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్వభావము (అంతర్‌గత తత్త్వము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఉత్పత్తిమూలజము (ఉత్పత్తి మూలమైన ఇచ్ఛ నుండి పుట్టినది)"
+      }
+    ],
+    "12.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మరల, పైగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆయా ఏక ప్రమాతయందు వహ్న్యాది (అగ్ని మొదలగు) ఆభాసము నుండి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కలుగును"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "పరోక్షుని నుండి (కంటికి కనబడని వాని నుండి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అధిపతి (ప్రభువు) నుండి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ధూమాది (పొగ మొదలగు) ఆభాసము"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "నూతనము (క్రొత్తది)"
+      }
+    ],
+    "12.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కార్యము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అవ్యభిచారి (విడువని కారణము) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "లింగము (అనుమాన చిహ్నము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అన్యప్రమాతయందున్న (వేరొక జ్ఞాతయందున్న)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆ (కార్య) ఆభాస"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ (కారణ) ఆభాస నుండి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మాత్రమే"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అధిపతి (ప్రభువు) నుండి"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "భిన్నము (మాత్రమే వేరైనది)"
+      }
+    ],
+    "12.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'ఇది ఉన్నచో'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'ఇది ఉన్నది'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అను రూపమున"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కార్యకారణత"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అది కూడ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అపేక్షావిహీనమైన (పరస్పర-సంబంధ రహితమైన) వాటి యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "జడముల యొక్క"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఉపపన్నము కాదు (తగదు)"
+      }
+    ],
+    "12.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏలయన, నిజముగా కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తమయందు తాము నిష్ఠమైన వాటి యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అనుసంధానము లేని వాటి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సదసత్తాపదమునందైనను (ఉనికి-లేమి విషయమునందైనను)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సప్తమ్యర్థము ('ఇది ఉన్నపుడు' అను సప్తమీ విభక్తి అర్థము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కల్పింపబడును (కల్పింపరాదు)"
+      }
+    ],
+    "12.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ కారణముననే"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విభక్త్యర్థము (విభక్తుల అర్థము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏకప్రమాతను సమాశ్రయించునది (ఒకే జ్ఞాతపై ఆధారపడునది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రియా-కారక భావమను పేరుగలది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "యుక్తము (తగినది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావసమన్వయము (వస్తువుల సంబద్ధ క్రమము)"
+      }
+    ],
+    "12.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "పరస్పర స్వభావములైనచో (ఒండొరుల స్వభావమైనచో)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కార్యకారణముల యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఏకత్వమే (ఒకటిగా ఉండుటయే)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భేదమున్నచో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఏలయన"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎన్నడూ లేదు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అన్యోన్య స్వరూపత (ఒండొరుల స్వభావమగుట)"
+      }
+    ],
+    "12.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏకాత్ముని (ఏక స్వభావుని) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "విభేదము (విభజన)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కాలక్రమమును అనుసరించునది"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అట్లు, అట్లుగా"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉండును"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కర్తృతయే (కర్తృత్వమే)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆ విధముగా"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "పరిణమింపకయే (నిజముగా మారకయే)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "దాని (క్రియ) ద్వారా"
+      }
+    ],
+    "12.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మరియు కాదు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "యుక్తము (తగినది, సాధ్యము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "జడము యొక్క (జడమునకు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఇట్లు, ఈ విధముగా"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భేద-అభేద విరోధము వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆభాసభేదము నుండి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఒకే (దానియందు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "చిదాత్ముని (చైతన్యమే స్వరూపమైన వాని) యందు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "యుజ్యమగును (సాధ్యమగును, తగును)"
+      }
+    ],
+    "12.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "వాస్తవమైనను (నిజమైనను)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చితి ఏకత్వమునందు (చైతన్య ఏకత్వమునందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉండదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాసలుగా భిన్నమైన రెండింటి యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చికీర్షా లక్షణమైన ఏకత్వ పరామర్శ (చేయగోరుట గుర్తుగా కల ఏకత్వ విమర్శ)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "లేకుండ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్రియ"
+      }
+    ],
+    "12.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అట్లు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఘట-పటాది ఆభాస జగదాత్మముగా (కుండ-వస్త్రాది ఆభాస-విశ్వరూపముగా)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉండగోరు (ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(అతని) ఇచ్ఛయే"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "హేతుత (కారణత్వము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కర్తృత (కర్తృత్వము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "క్రియ"
+      }
+    ],
+    "13.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అంతర-బహిర్‌వృత్తి కలది (లోపల-బయట వ్యాపరించునది)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కాలక్రమమును అనుసరించునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రమాతకే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పరస్పరావియుక్తములు (విడదీయరానివి)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "జ్ఞాన-కర్మలు (జ్ఞానము-క్రియ)"
+      }
+    ],
+    "13.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కాని, పైగా"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆంతర దశ యొక్క ఉద్రేకము (లోపలి ప్రాబల్యము) నుండి"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సాదాఖ్యము (సదాశివ తత్త్వము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తత్త్వము (వాస్తవ స్థాయి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మొదట, ఆదినుండి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "బహిర్‌భావ-పరత్వము (బయటి ఉనికి వైపు మొగ్గుట) నందు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "తరువాత"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పారమేశ్వరము (ఈశ్వర తత్త్వము)"
+      }
+    ],
+    "13.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈశ్వరుడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బాహ్యము (బయటివైపు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉన్మేషము (వెలికి విప్పారుట)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "నిమేషము (లోనికి ముడుచుకొనుట)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆంతరము (లోనివైపు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సదాశివుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సామానాధికరణ్యము (ఏక-అధిష్ఠానత)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "సద్విద్యయందు 'అహం'-'ఇదం' (నేను-ఇది) ధీల యొక్క"
+      }
+    ],
+    "13.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇదంభావముతో (ఇది-త్వముతో) ఉపపన్నమైన (కూడిన) వాటి యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "వేద్యభూమిని (జ్ఞేయ-స్థాయిని)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "చేరిన వాటి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావముల యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "బోధసారత్వము (వాటి సారము చైతన్యమగుట) వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "యథావస్తు అవలోకనము (ఉన్నదున్నట్లు చూచుట) వలన"
+      }
+    ],
+    "13.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇచట (ఈ స్థాయియందు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అపరత్వము (హీనస్థితి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భావముల యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అనాత్మత్వేన (అనాత్మగా, స్వ-కాని విధముగా)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆభాసించుట వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరత (ఉన్నతస్థితి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(వాటి) అహంతచే (నేను-భావముచే)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆచ్ఛాదనము (కప్పుట, వ్యాప్తి) వలన"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పరాపర దశ (ఉన్నత-హీన మిశ్రమ స్థితి)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "నిజముగా"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అది (సద్విద్య)"
+      }
+    ],
+    "13.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భేదధీ (భేద-జ్ఞానము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "యే, నిజముగా"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భావములందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కర్త యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "బోధాత్ముని (చైతన్య స్వరూపుని) యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మాయాశక్తియే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "విద్య (అని కూడ పిలువబడును)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "వేరొకరు (అందురు)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "విద్యేశ్వరుల వలె (జ్ఞానపు ప్రభువుల వలె)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ఎట్లో"
+      }
+    ],
+    "13.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆ (ఆత్మ) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఐశ్వర్యస్వభావుని (సార్వభౌమ స్వభావుని) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పశుభావమునందు (బంధనస్థితిలో)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రకాశించునది (వెల్లడించునది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విద్యాశక్తి (జ్ఞానపు శక్తి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "తిరోధానము చేయునది (కప్పునది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మాయ అను పేరు కలది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరోవైపు, అయితే"
+      }
+    ],
+    "13.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భేదము"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏకరసమైన (ఏకరూపమైన)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భాసించునపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అహంతతో (నేను-భావముతో)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అనాత్మయందు (స్వ-కాని దానియందు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఈక్షింపబడునపుడు (చూడబడునపుడు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "శూన్యమునందు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "బుద్ధియందు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "శరీరమునందు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "మాయాశక్తి"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "విజృంభించును (విస్తరించును, వ్యాపించును)"
+      }
+    ],
+    "13.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఎవడు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రమాత (జ్ఞాత)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శూన్యాది (శూన్యము మొదలగునది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రమేయము (జ్ఞేయము) ఉన్నపుడు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వ్యతిరిక్తమైన (వేరుగా నిలిచిన)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మాత (జ్ఞాత)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అతడు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మేయుడు (జ్ఞేయుడు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "(తానే) అయి"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కాలాది కంచుక-పంచకముచే వేష్టింపబడును (చుట్టుముట్టబడును)"
+      }
+    ],
+    "13.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇరువది మూడు విధములు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మేయము (జ్ఞేయము)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కార్య-కరణాత్మకము (కార్యములు-కరణముల రూపమైనది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "దాని యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అవిభాగరూపము (అభేదరూపము) కలది"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏకమైనది"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ప్రధానము (ప్రకృతి)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మూలకారణము"
+      }
+    ],
+    "13.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "పదమూడు విధములు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఇచట, వీటిలో"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాహ్య-అంతఃకరణముల ఆవలి (వెలుపలి-లోపలి కరణముల శ్రేణి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కార్యవర్గము (కార్యముల సమూహము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పదివిధములు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "స్థూల-సూక్ష్మత్వ భేదముచేత"
+      }
+    ],
+    "14.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అచట, ఆ సందర్భమున"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మాతృతామాత్ర స్థితియందు (శుద్ధ జ్ఞాతృత్వ స్థితియందు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "రుద్రుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అధిదైవతము (అధిష్ఠాన దేవత)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భిన్నప్రమేయ ప్రసారమునందు (విభిన్న జ్ఞేయముల విస్తృతియందు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "బ్రహ్మ-విష్ణువులు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వ్యవస్థితులు (అధిష్ఠాతలుగా నిలిచిరి)"
+      }
+    ],
+    "14.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రమాత (జ్ఞాత)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మాయాంధుడు (మాయచే గ్రుడ్డియైనవాడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సంసారి (సంసారములో సంచరించువాడు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కర్మబంధనుడు (కర్మచే బంధింపబడినవాడు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విద్యచే (నిజ జ్ఞానముచే) ఐశ్వర్యము అభిజ్ఞాపితమైనవాడు (తెలియజేయబడినవాడు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "చిద్‌ఘనుడు (చైతన్యపు దట్టమైన పిండము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ముక్తుడు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "చెప్పబడును"
+      }
+    ],
+    "14.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వాంగరూపములుగా (తన అవయవములుగా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భావములు (వస్తువులు) ఉన్నపుడు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రమాత (జ్ఞాత)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కథింపబడును (పిలువబడును)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "పతి (ప్రభువు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మాయచేత"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "భిన్నములైనపుడు (వేరుగా కనబడునపుడు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్లేశ-కర్మాదులచే కలుషితుడై"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పశువు (బద్ధజీవి)"
+      }
+    ],
+    "14.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వాతంత్ర్యహాని (స్వేచ్ఛ యొక్క నష్టము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బోధము (చైతన్యము) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "స్వాతంత్ర్యము యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అబోధత (చైతన్యలోపము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ద్విధ (రెండు విధముల)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆణవము (అణు-వ్యక్తి ఆత్మకు చెందినది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మలము"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "స్వస్వరూపమును కోల్పోవుట (నిజస్వరూప నష్టము) వలన"
+      }
+    ],
+    "14.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భిన్నవేద్యప్రథ (విభిన్న జ్ఞేయములుగా విప్పారుట)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇచటనే (ఈ సందర్భమున)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మాయాఖ్యము (మాయీయమనబడు మలము)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జన్మ-భోగములనిచ్చునది"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కర్తయందు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అబోధుడైన (చైతన్యరహితుడైన)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కార్మము (కార్మమలము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మాయాశక్తి వలననే"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆ త్రయము (మూడు మలములు)"
+      }
+    ],
+    "14.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "శుద్ధ బోధాత్మకత్వము (పవిత్ర చైతన్య స్వభావము) అయినను"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఎవరి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "లేదు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఉత్తమ కర్తృత (పరమ కర్తృత్వము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిర్మింపబడిరి (సృష్టింపబడిరి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "తన ఆత్మ నుండి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భిన్నులుగా (వేరుగా)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భర్తచే (ప్రభువుచే)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "వారు"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కర్తృత యొక్క అత్యయము (కర్తృత్వ లోపము) వలన"
+      }
+    ],
+    "14.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "బోధ అను ఏకలక్షణమునందు ఏకత్వమున్నను (చైతన్యమను ఒకే లక్షణమున ఏకత్వమున్నను)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వారి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అన్యోన్యభిన్నత (పరస్పర భేదము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అట్లు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఈశ్వరేచ్ఛాభేదముచేత (ప్రభువు ఇచ్ఛాభేదముచేత)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వారు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "విజ్ఞానకేవలులు (శుద్ధ జ్ఞానమున ఏకాంతులు)"
+      }
+    ],
+    "14.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "శూన్యాది అబోధరూపులు (శూన్యము మొదలగు అచైతన్యరూపులు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(ఇంకను) కర్తలు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రలయాకలులు (ప్రళయమున ఏకాంతులు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వారి యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కార్మమలము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఉండును"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మాయీయమలము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "వికల్పితముగా (అవ్యక్త-అవశేష రూపమున) ఉండును"
+      }
+    ],
+    "14.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "బోధుల (చైతన్యవంతుల) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కర్తృత్వము కల వారి యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "కార్మమల క్షయమైనపుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భిన్నవేద్యమును (విభిన్న జ్ఞేయములను) అనుభవించు వారి యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మాయామలము (మాత్రమే మిగులును)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విద్యేశ్వరులు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "వారు"
+      }
+    ],
+    "14.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "దేవాదుల (దేవతలు మొదలగు వారి) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సర్వుల యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భవుల (సంసార జీవుల) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "త్రివిధము (మూడు రకములు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మలము"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వీటిలో కూడ"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "కార్మము ఒక్కటే"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఏకమైన (ఒకే)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ముఖ్యమైన (ప్రధానమైన)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "సంసారకారణము (సంసారమునకు కారణము)"
+      }
+    ],
+    "14.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "కలచే ఉద్బలితమైన (కలా-శక్తిచే పుష్టినొందిన)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఇది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "చిత్తత్త్వము (చైతన్య తత్త్వము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కర్తృతామయము (కర్తృత్వ స్వరూపము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అచిద్‌రూపమైన (అచైతన్యరూపమైన) దాని యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శూన్యాది (శూన్యము మొదలగు) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మితముగా (పరిమితముగా)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "గుణముగా (అధీన ధర్మముగా)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "స్థితమై ఉండును"
+      }
+    ],
+    "14.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ముఖ్యత్వము (ప్రాధాన్యపు పునఃప్రాప్తి)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కర్తృత యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బోధము (చైతన్యము) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "చిదాత్ముని (చైతన్య స్వరూపుని) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "శూన్యాదియందు (శూన్యము మొదలగు దానియందు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "దాని గుణముగా ఉన్న దానియందు (అధీన ధర్మముగా)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "(ఆ) జ్ఞానము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఆ (చైతన్యమునందు) సమావేశమును (నిమగ్నతను) లక్షణముగా కలది"
+      }
+    ],
+    "14.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "శూన్యమునందు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "బుద్ధ్యాది అభావాత్మకమైన (బుద్ధి మొదలగు వాటి లేమి స్వరూపమైన) దానియందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అహంతా-కర్తృతా పదమైన (నేను-త్వము, కర్తృత్వ స్థానమైన) దానియందు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అస్ఫుట అరూప సంస్కారమాత్రము కల (అస్పష్ట, నిరాకార సంస్కారములు మాత్రమే కల) దానియందు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జ్ఞేయశూన్యత (జ్ఞేయవస్తు-లేమి)"
+      }
+    ],
+    "14.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సాక్షవంతుల (ఇంద్రియయుతుల) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆంతర వృత్తి (లోపలి చర్య)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రాణాదులను ప్రేరించునది"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపబడును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "జీవనమను పేరున (ప్రాణశక్తి అనబడును)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "లేక"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ప్రాణమునందు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అహంత (నేను-భావము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "పుర్యష్టకాత్మిక (సూక్ష్మశరీరరూపమైనది)"
+      }
+    ],
+    "14.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆ మాత్రము (బరి ఉనికి అంత మాత్రము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "మాత్ర స్థితియందు (బరి జ్ఞాతగా నిలుచుట)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రోక్తము (చెప్పబడినది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సుషుప్తి (గాఢనిద్ర)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రలయోపమము (కల్పప్రళయము వంటిది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సవేద్యము (జ్ఞేయసహితము)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అపవేద్యము (జ్ఞేయరహితము)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మాయామలముతో కూడినదైనను కూడనిదైనను"
+      }
+    ],
+    "14.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మనోమాత్రపథమునందైనను (కేవల మనస్సు మార్గమునందైనను)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అక్షవిషయత్వేన (ఇంద్రియ విషయములవలె)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "విభ్రమముచేత (భ్రాంతిచేత)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్పష్టావభాసలు కల (స్పష్ట భాసనములు కల)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "భావముల యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సృష్టి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "స్వప్నపదము (కలల స్థితి)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "భావింపబడును"
+      }
+    ],
+    "14.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వాక్షగోచరత్వేన (అన్ని ఇంద్రియములకు గోచరమగుట వలన)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఏది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "బాహ్యతచే (బయటితనముచే)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "స్థిరమైన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సృష్టి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సాధారణి (ఉమ్మడి)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సర్వ ప్రమాతలకు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "జాగరము (మెలకువ)"
+      }
+    ],
+    "14.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "హేయము (విడువదగినది)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "త్రయీ (ఈ మూడు అవస్థల కూటమి)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రాణాదుల (ప్రాణము మొదలగు వాటి) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రాధాన్యము వలన"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కర్తృత గుణముగా (అధీనముగా) ఉన్నపుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వాటి హాని-ఉపచయ ప్రాయమైన (క్షయము-వృద్ధి రూపమైన) సుఖ-దుఃఖాదుల యోగము వలన"
+      }
+    ],
+    "14.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ప్రాణాపానమయము (ప్రాణ-అపాన వాయువులతో కూడినది)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రాణము (వాయువు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "వరుసగా (ఒక్కొక్కటిగా)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సుప్త-జాగ్రత్తులలో (నిద్ర-మెలకువలో)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆ ఇరువింటి ఛేదాత్మ (వాటి సంధి స్వరూపమైనది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సమానమను పేరున"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "సుషుప్తియందు (గాఢనిద్రయందు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "విషువత్తులందు (విషువత్‌దినముల) వలె"
+      }
+    ],
+    "14.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మధ్యమార్గమున ఊర్ధ్వగామి (మధ్యనాడిలో పైకి వెళ్ళునది)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఉదానమను పేరున"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "తుర్యగుడు (నాలుగవ అవస్థయందుండునది)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "హుతభుఙ్‌మయము (అగ్నిరూపము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విజ్ఞానాకల-మంత్రేశుడు దాని అధిపతి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "వ్యానము (వ్యాపక వాయువు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విశ్వాత్మకము (విశ్వమే ఆత్మగా కలది)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "పరము (తురీయాతీత స్థితికి సంబంధించినది)"
+      }
+    ],
+    "15.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వాత్మయే (నిజ ఆత్మయే)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సర్వ జంతువుల (ప్రాణుల) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఏకుడు (ఒక్కడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "మహేశ్వరుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "విశ్వరూపుడు (విశ్వమే రూపముగా కలవాడు)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'అహం ఇదం' (నేను ఇది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అని"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "అఖండామర్శముచే బృంహితుడు (అవిచ్ఛిన్న పరామర్శముచే పుష్టినొందినవాడు)"
+      }
+    ],
+    "15.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అచట, అందులో"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "తాను సృష్టించిన ఇదంభాగమునందు (ఇది-అంశమునందు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "బుద్ధ్యాది గ్రాహకాత్మనా (బుద్ధి మొదలగు గ్రాహక రూపముగా)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అహంకార పరామర్శ పదమునకు (నేను-కల్పన స్థాయికి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "నీతము (తేబడినది, కొనిపోబడినది)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఇతనిచే (ప్రభువుచే)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఆ (భాగము)"
+      }
+    ],
+    "15.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వస్వరూపాపరిజ్ఞానమయము (తన నిజస్వరూపపు అగుర్తింపుతో కూడినవాడు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అనేకుడు (బహువిధుడు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పుమాన్ (జీవుడు, పురుషుడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "భావింపబడును"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అతనికి, అందులో"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "సృష్టియందు (క్రియాశీలతయందు)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "క్రియ-ఆనందములు"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "భోగము (అనుభవము)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "దుఃఖ-సుఖాత్మకము (బాధ-సుఖ స్వరూపము)"
+      }
+    ],
+    "15.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వాంగరూపములుగా (తన అవయవములుగా)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "భావములందు"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పతి (ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "జ్ఞానము"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఏవి"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ఆ రెండు, మాయ తృతీయమగునపుడు (మాయచే కప్పబడినపుడు)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఆ రెండే"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "పశువు (బద్ధజీవి) యొక్క"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(అవి) సత్త్వ-రజస్-తమములు (అగును)"
+      }
+    ],
+    "15.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "భేదములో నిలిచిన (దృష్టి) నుండి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "శాక్తిమంతుని (శక్తిమంతుడైన ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "శక్తిత్వము (శక్తిగా ఉండుట)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "అపదిష్టము కాదు (ఆపాదింపబడదు)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "వీటి యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "గుణముల (సత్త్వ-రజస్-తమముల) యొక్క"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "కరణ-కార్యత్వముగా పరిణమించు (పరివర్తనమొందు) వాటి యొక్క"
+      }
+    ],
+    "15.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సత్తానందము (ఉనికి-ఆనందము)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "క్రియ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "పతి (ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "దాని అభావము (ఆనందలేమి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "అది (ఆ క్రియయే)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "పశువు (బద్ధజీవి) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ద్వయాత్మ (సుఖ-దుఃఖ స్వభావమై)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అది"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "రజస్"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "దుఃఖము (బాధ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "శ్లేషి (కలిపికట్టునది, అంటుకొనునది)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "సత్త్వ-తమోమయము (సత్త్వ-తమములతో కూడినది)"
+      }
+    ],
+    "15.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఏవి"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ, అయినను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అసామయిక ఇదంతా-పరామర్శ నుండి పుట్టినవి (అసాంప్రదాయిక 'ఇది'-విమర్శ నుండి)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రభువు యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అవి"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "విమిశ్రములు (కలసినవి)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విభిన్నములు (వేరువేరు)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "అట్లే, మరియు"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "చిత్రముగా ఆభాసించునవి (వైవిధ్యముగా భాసించునవి)"
+      }
+    ],
+    "15.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అవి (ఆ వస్తువులు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "భిన్నావభాసార్థములు (వేరువేరు భాసనపు వస్తువులు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ప్రకల్ప్యములు (కల్పింపదగినవి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ప్రత్యగాత్మచే (అంతరంగ వ్యక్తి-ఆత్మచే)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఆయా విభిన్న సంజ్ఞలచేత (వేరువేరు పేర్లచేత)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "స్మృతి-ఉత్ప్రేక్షాది (స్మృతి-ఊహ మొదలగు) గోచరమున"
+      }
+    ],
+    "15.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "అతని (వ్యక్తి) యొక్క"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అసాధారణ (ప్రైవేటు, ఉమ్మడి కాని)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "సృష్టి"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఈశసృష్టిని ఉపజీవించునది (ప్రభువు సృష్టిని ఆశ్రయించునది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ (అసాధారణ సృష్టి) కూడ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అజ్ఞతచే (ఆ వ్యక్తి అజ్ఞానముచే)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సత్యమే (వాస్తవమే)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఈశశక్తిచేత (ప్రభువు శక్తిచేత)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ప్రభువే ఆత్మగా కల వాని యొక్క"
+      }
+    ],
+    "15.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "స్వవిశ్రాంతిని ఉపరోధించుటకు (ఆత్మయందు విశ్రాంతిని అడ్డగించుటకు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అచలమైన (నిలువని, స్థిరపడని)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ప్రాణరూపమైన (ప్రాణ-వాయు రూపమైన)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వికల్ప-క్రియచేత (కల్పనా చర్యచేత)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఆయా వర్ణ (అక్షర) వైచిత్ర్యరూపమైన"
+      }
+    ],
+    "15.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సాధారణము (ఉమ్మడిది, పంచుకొనబడునది)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అన్యథా (వేరు విధమున)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "మరియు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఈశుని (ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "సర్గము (సృష్టి)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "స్పష్టావభాసనము వలన (స్పష్ట భాసనము వలన)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "వికల్పహాని యొక్క ఏకాగ్రత ద్వారా (కల్పనల త్యాగపు ఏకాగ్రతచే)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "క్రమముగా (వరుసగా)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ఈశ్వరతాపదము (ప్రభుత్వ స్థితి)"
+      }
+    ],
+    "15.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వము (ఇదంతయు)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "నాది"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "వైభవము (మహిమ, విస్తృత శక్తి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అని ఇట్లు"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరిజ్ఞానము కల వాని యొక్క (సంపూర్ణ గుర్తింపు కల)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "విశ్వాత్ముని (విశ్వమే ఆత్మగా కల వాని) యొక్క"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "వికల్పముల (కల్పనల) యొక్క"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ప్రసారమునందైనను (వ్యాప్తి, ప్రవాహమునందైనను)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "మహేశత (మహేశ్వర స్థితి)"
+      }
+    ],
+    "15.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "మేయమును (జ్ఞేయమును)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "సాధారణమును (ఉమ్మడి దానిని)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ముక్తుడు"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "తన ఆత్మతో అభేదముగా (అభిన్నముగా)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "భావించును, తలంచును"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "మహేశ్వరుడు"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఎట్లో (వలెనే)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "బద్ధుడు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "మరోవైపు, మాత్రము"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "అత్యంత భిన్నముగా (పూర్తిగా వేరుగా)"
+      }
+    ],
+    "15.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "సర్వథా (పూర్తిగా, అన్ని విధముల)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కాని"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "అంతరాలీనమైన అనంత తత్త్వౌఘముచే నిర్భరుడు (లోపల లయించిన తత్త్వప్రవాహముచే నిండినవాడు)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "శివుడు"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "చిదానంద ఘనుడు (చైతన్య-ఆనందముల దట్టమైన పిండము)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "పరమాక్షర విగ్రహుడు (పరమ అక్షరమే శరీరముగా కలవాడు)"
+      }
+    ],
+    "15.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ఆత్మను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఈ (ప్రభువు) యొక్క"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సమ్యక్ జ్ఞాన-క్రియలను (యథార్థ జ్ఞానము-క్రియను)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "అట్లే"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఎరిగి, తెలిసి"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "యథేప్సితముగా (కోరినట్లు) వస్తువులను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "చూచుచు"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "నిజముగా జ్ఞానించును (ఎరుగును)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "మరియు నిజముగా చేయును"
+      }
+    ],
+    "15.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ప్రకటింపబడెను, వెల్లడింపబడెను"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "నాచేత"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "సుఘటము (చక్కగా కూర్చబడినది, సంగతమైనది)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ మార్గము"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నవీనము (క్రొత్తది)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "మహాగురువులచేత"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(మునుపే) చెప్పబడినది"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "శివదృష్టి శాస్త్రమునందు (సోమానందుని గ్రంథమున)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ఎట్లో, ఎట్లయితే"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ఇచట, ఈ (మార్గమున)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ఉంచుచు (అడుగు పెట్టుచు)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "అడుగు, పాదము"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "భువనకర్తృతను (లోకసృష్టికర్తృత్వమును)"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ఆత్మ యొక్క"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "విభావించి (సాక్షాత్కరించి, ధ్యానించి)"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "శివతామయమైన (శివత్వరూపమైన)"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "నిరంతరము, ఎల్లప్పుడు"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "ప్రవేశించుచు (నిమగ్నమగుచు)"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "సిద్ధించును (పరిపూర్ణతను పొందును)"
+      }
+    ],
+    "15.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ఆయా (ఉపాయములచేత)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "కూడ"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉపయాచితములచేత (ప్రార్థనలచేత, బ్రతిమాలికలచేత)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఉపనతుడై (దగ్గరకు తేబడి)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "తన్వి (సన్నని ప్రియురాలి) యొక్క"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "నిలిచినను"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "సమీపమున, దగ్గరగా"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "కాంతుడు (ప్రియుడు)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "లోకసమానుడు (సామాన్యునివలె)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ఇట్లు"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "అపరిజ్ఞాతుడై (గుర్తింపబడకుండ)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "రంజింపలేడు (సంతోషపెట్టలేడు)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ఎట్లో"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "లోకమునకు"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "ఈ (ప్రభువు)"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "అట్లే"
+      },
+      {
+        "word_idx": 17,
+        "gloss_text": "అనవేక్షితగుణుడై (గుణములు గమనింపబడనివాడై)"
+      },
+      {
+        "word_idx": 18,
+        "gloss_text": "(తన) స్వాత్మయే అయినను"
+      },
+      {
+        "word_idx": 19,
+        "gloss_text": "అయినను"
+      },
+      {
+        "word_idx": 20,
+        "gloss_text": "విశ్వేశ్వరుడు (సర్వప్రభువు)"
+      },
+      {
+        "word_idx": 21,
+        "gloss_text": "చాలడు (సరిపోడు, సమర్థుడు కాడు)"
+      },
+      {
+        "word_idx": 22,
+        "gloss_text": "నిజవైభవమునకు (స్వీయ మహిమను ప్రకటించుటకు)"
+      },
+      {
+        "word_idx": 23,
+        "gloss_text": "కావున, అందుచేత"
+      },
+      {
+        "word_idx": 24,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 25,
+        "gloss_text": "ఆయన ప్రత్యభిజ్ఞ ఉదితమైనది (అతని గుర్తింపు ప్రకటింపబడెను)"
+      }
+    ],
+    "15.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "జనుల (మానవుల) యొక్క, కొరకు"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "అయత్నసిద్ధ్యర్థము (ప్రయత్నము లేకుండ సిద్ధి కొరకు)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ఉదయాకరుని పుత్రునిచే"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ఈశ్వరప్రత్యభిజ్ఞ (ఈ గ్రంథము)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ఈ"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ఉత్పలునిచే (ఉత్పలదేవునిచే)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ఉపపాదితమైనది (ప్రతిపాదింపబడెను, స్థాపింపబడెను)"
+      }
+    ]
+  }
+}

@@ -160,13 +160,19 @@ async function main(): Promise<void> {
       });
       // still frame mid-video for a quick font check
       const frame = join(outDir, `${base}.png`);
-      const fp = Bun.spawn(
-        [ffmpeg, '-y', '-ss', '5', '-i', out, '-frames:v', '1', frame],
-        { stdout: 'ignore', stderr: 'ignore' },
-      );
+      const fp = Bun.spawn([ffmpeg, '-y', '-ss', '5', '-i', out, '-frames:v', '1', frame], {
+        stdout: 'ignore',
+        stderr: 'ignore',
+      });
       await fp.exited;
-      log(STAGE, 'rendered', { file: `${base}.mp4`, font: translationFontForLang(lang), tts: ttsNote });
-      results.push(`${lang} ${ref}: tts=${ttsNote === 'ok' ? `${durationS.toFixed(1)}s` : ttsNote}`);
+      log(STAGE, 'rendered', {
+        file: `${base}.mp4`,
+        font: translationFontForLang(lang),
+        tts: ttsNote,
+      });
+      results.push(
+        `${lang} ${ref}: tts=${ttsNote === 'ok' ? `${durationS.toFixed(1)}s` : ttsNote}`,
+      );
     }
   }
   log(STAGE, 'done', { dir: outDir, n: results.length });

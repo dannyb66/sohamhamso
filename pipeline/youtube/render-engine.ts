@@ -22,13 +22,13 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { getDb } from '../../src/lib/db';
 import { type VideoRow, markSuperseded, updateVideoStatus } from '../../src/lib/videos-db';
+import { translationFontForLang } from '../../youtube/composition/types';
 import { type YoutubeConfig, getStylePreset, loadYoutubeConfig } from './config';
 import { translationMd5 } from './determinism';
 import { buildR2Key } from './filename';
 import { log, scrubError } from './log';
 import { cannedSilentWav } from './mocks/canned';
 import { type QaResult, qaChecks } from './qa';
-import { translationFontForLang } from '../../youtube/composition/types';
 import { buildShortProps } from './remotion-props';
 import { getGoogleTtsCreds, getR2Creds } from './secrets';
 import { buildTtsRequest } from './tts-request';
@@ -59,13 +59,13 @@ export interface RenderResult {
   error?: string;
 }
 
-/** sha256 hex of a file. */
-function sha256File(path: string): string {
+/** sha256 hex of a file. (Exported for chapter-render-engine reuse.) */
+export function sha256File(path: string): string {
   return createHash('sha256').update(readFileSync(path)).digest('hex');
 }
 
-/** md5 hex of a file (R2 ETag for single-part puts). */
-function md5File(path: string): string {
+/** md5 hex of a file (R2 ETag for single-part puts). (Exported for reuse.) */
+export function md5File(path: string): string {
   return createHash('md5').update(readFileSync(path)).digest('hex');
 }
 
@@ -123,9 +123,9 @@ function resolveContent(
 /**
  * Synthesize narration audio. MOCK_ALL → a canned silent WAV. Real path
  * dynamically imports @google-cloud/text-to-speech (guarded so the module
- * imports without the dep).
+ * imports without the dep). (Exported for chapter-render-engine reuse.)
  */
-async function synthesize(
+export async function synthesize(
   text: string,
   voiceId: string,
   langCode: string,
@@ -233,12 +233,34 @@ export async function reencodeHighBitrate(src: string, dst: string): Promise<voi
   // 1080p source unambiguously HD (YouTube's 1080p30 SDR recommendation).
   const proc = Bun.spawn(
     [
-      ffmpeg, '-y', '-i', src,
-      '-c:v', 'libx264', '-preset', 'medium', '-profile:v', 'high', '-pix_fmt', 'yuv420p',
-      '-b:v', '8M', '-minrate', '8M', '-maxrate', '8M', '-bufsize', '8M',
-      '-x264-params', 'nal-hrd=cbr',
-      '-c:a', 'aac', '-b:a', '192k',
-      '-movflags', '+faststart',
+      ffmpeg,
+      '-y',
+      '-i',
+      src,
+      '-c:v',
+      'libx264',
+      '-preset',
+      'medium',
+      '-profile:v',
+      'high',
+      '-pix_fmt',
+      'yuv420p',
+      '-b:v',
+      '8M',
+      '-minrate',
+      '8M',
+      '-maxrate',
+      '8M',
+      '-bufsize',
+      '8M',
+      '-x264-params',
+      'nal-hrd=cbr',
+      '-c:a',
+      'aac',
+      '-b:a',
+      '192k',
+      '-movflags',
+      '+faststart',
       dst,
     ],
     { stdout: 'ignore', stderr: 'pipe' },
@@ -352,9 +374,9 @@ export async function probeAudioDurationS(audioPath: string): Promise<number> {
 /**
  * Upload a local file to R2 at `key` via `aws s3 cp` (S3-compatible, matching
  * scripts/turso-backup.sh). MOCK_ALL → copy into the work dir instead.
- * Returns the bytes written.
+ * Returns the bytes written. (Exported for chapter-render-engine reuse.)
  */
-async function uploadR2(localPath: string, key: string, workDir: string): Promise<number> {
+export async function uploadR2(localPath: string, key: string, workDir: string): Promise<number> {
   const bytes = readFileSync(localPath).length;
   if (isMockAll()) {
     const dest = join(workDir, 'r2', key.replace(/\//g, '__'));

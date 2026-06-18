@@ -10,6 +10,19 @@
 
 
 -- ============================================================
+-- MIGRATION LEDGER (all DBs)
+-- Tracked by pipeline/ingest/migrations.ts. schema.sql stays the
+-- canonical fresh-create; on a fresh DB the runner guard-stamps
+-- migrations whose changes are already present here.
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS schema_migrations (
+  id TEXT PRIMARY KEY,
+  applied_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+
+-- ============================================================
 -- CORPUS DB (production: turso/sohamhamso-corpus)
 -- ============================================================
 
@@ -46,11 +59,33 @@ CREATE TABLE IF NOT EXISTS verses (
   iast TEXT,
   meter TEXT,
   manuscript_folio_ref TEXT,
+  -- Prose sections (migration 001): prose blocks reuse this table with
+  -- section_type='prose' and the same verse numbering (verse_num >= 1;
+  -- verse_num=0 stays reserved for chapter-format video rows in `videos`).
+  section_type TEXT NOT NULL DEFAULT 'verse' CHECK (section_type IN ('verse','prose')),
+  prose_block_ref TEXT,
   created_at TEXT DEFAULT (datetime('now')),
   UNIQUE (text_id, chapter, verse_num)
 );
 CREATE INDEX IF NOT EXISTS idx_verses_text ON verses(text_id);
 CREATE INDEX IF NOT EXISTS idx_verses_chapter ON verses(text_id, chapter);
+
+-- Chapter titles (migration 002): chapters stay derived from `verses`
+-- (listChapters GROUP BY) — this table only carries optional wayfinding
+-- titles from the corpus YAML. Content-conditional: ingest writes a row
+-- only when the YAML chapter declares at least one title, and reconciles
+-- rows away when the titles (or the chapter) disappear.
+CREATE TABLE IF NOT EXISTS chapters (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  text_id TEXT NOT NULL REFERENCES texts(id),
+  chapter INTEGER NOT NULL,
+  title_sa TEXT,
+  title_iast TEXT,
+  title_en TEXT,
+  created_at TEXT DEFAULT (datetime('now')),
+  updated_at TEXT DEFAULT (datetime('now')),
+  UNIQUE (text_id, chapter)
+);
 
 CREATE TABLE IF NOT EXISTS translations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -190,6 +225,10 @@ CREATE TABLE IF NOT EXISTS videos (
   verse_num INTEGER NOT NULL,
   lang TEXT NOT NULL,
   short_index INTEGER NOT NULL DEFAULT 0,
+  -- Distribution format: 'short' (9:16 one-verse) | 'chapter' (16:9 full
+  -- chapter; chapter rows use verse_num=0 — corpus verses start at 1, so the
+  -- UNIQUE determinism key below needs no change).
+  format TEXT NOT NULL DEFAULT 'short' CHECK(format IN ('short','chapter')),
   channel_handle TEXT NOT NULL DEFAULT '@sohamhamso',
   kula TEXT NOT NULL,
   style_preset TEXT NOT NULL,
@@ -249,6 +288,9 @@ CREATE TABLE IF NOT EXISTS video_analytics (
   completion_rate REAL,
   link_clicks_utm INTEGER DEFAULT 0,
   subscribers_gained INTEGER DEFAULT 0,
+  -- Audio-track language dimension for the multi-language-audio test
+  -- (NULL = the video's default track).
+  audio_lang TEXT,
   UNIQUE (video_id, synced_at)
 );
 
@@ -287,5 +329,6 @@ CREATE TABLE IF NOT EXISTS video_events (
 );
 
 CREATE INDEX IF NOT EXISTS idx_videos_status ON videos(status);
+CREATE INDEX IF NOT EXISTS idx_videos_format_status ON videos(format, status);
 CREATE INDEX IF NOT EXISTS idx_videos_verse_lookup ON videos(text_id, chapter, verse_num, lang);
 CREATE INDEX IF NOT EXISTS idx_video_analytics_video ON video_analytics(video_id, synced_at DESC);

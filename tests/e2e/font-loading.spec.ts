@@ -1,8 +1,5 @@
-import { expect, test, type Page } from '@playwright/test';
-import {
-  CORE_PRELOADED_FONT_ASSETS,
-  FONT_FAMILY_ASSETS,
-} from '../../src/lib/font-assets';
+import { type Page, expect, test } from '@playwright/test';
+import { CORE_PRELOADED_FONT_ASSETS, FONT_FAMILY_ASSETS } from '../../src/lib/font-assets';
 
 /**
  * Font-loading audit — guards the design contract that every script the
@@ -46,8 +43,7 @@ test.describe('font loading', () => {
     const fontFaces = await collectFontFaces(page);
     for (const { asset, family } of FONT_FAMILY_ASSETS) {
       const face = fontFaces.find(
-        (fontFace: FontFaceRecord) =>
-          fontFace.family === family && fontFace.src.includes(asset),
+        (fontFace: FontFaceRecord) => fontFace.family === family && fontFace.src.includes(asset),
       );
       expect(
         face,
@@ -83,8 +79,7 @@ test.describe('font loading', () => {
     const fontFaces = await collectFontFaces(page);
     for (const { asset, family } of FONT_FAMILY_ASSETS) {
       const face = fontFaces.find(
-        (fontFace: FontFaceRecord) =>
-          fontFace.family === family && fontFace.src.includes(asset),
+        (fontFace: FontFaceRecord) => fontFace.family === family && fontFace.src.includes(asset),
       );
       expect(face, `reader page missing ${family}`).toBeTruthy();
       expect(face?.src, `reader page should self-host ${family}`).toContain(asset);

@@ -22,10 +22,7 @@ afterEach(() => {
 // Helper: build a FreshnessResult directly (no fetch)
 // ---------------------------------------------------------------------------
 
-function makeResult(
-  name: string,
-  cfCacheStatus: string | null,
-): FreshnessResult {
+function makeResult(name: string, cfCacheStatus: string | null): FreshnessResult {
   const skip = cfCacheStatus === null;
   const fresh = skip ? null : cfCacheStatus !== 'HIT';
   return {
@@ -96,10 +93,7 @@ describe('evaluateFreshness', () => {
   });
 
   it('skips (no failure) when cf-cache-status header is absent — sets cfHeaderAbsent=true', () => {
-    const results = [
-      makeResult('robots.txt', null),
-      makeResult('sitemap-index.xml', null),
-    ];
+    const results = [makeResult('robots.txt', null), makeResult('sitemap-index.xml', null)];
     const summary = evaluateFreshness(results);
 
     expect(summary.allFresh).toBe(true);
@@ -109,7 +103,7 @@ describe('evaluateFreshness', () => {
 
   it('skips absent-header URLs but fails on HIT URLs in the same run', () => {
     const results = [
-      makeResult('robots.txt', null),        // skip
+      makeResult('robots.txt', null), // skip
       makeResult('sitemap-index.xml', 'HIT'), // fail
       makeResult('sitemap-verses.xml', 'MISS'), // pass
     ];
@@ -162,7 +156,11 @@ describe('checkFreshness', () => {
 
   it('returns fresh=true and skip=false for cf-cache-status: MISS', async () => {
     mockFetch('MISS');
-    const result = await checkFreshness(ORIGIN, { name: 'robots.txt', path: '/robots.txt', key: true });
+    const result = await checkFreshness(ORIGIN, {
+      name: 'robots.txt',
+      path: '/robots.txt',
+      key: true,
+    });
 
     expect(result.fresh).toBe(true);
     expect(result.skip).toBe(false);
@@ -171,7 +169,11 @@ describe('checkFreshness', () => {
 
   it('returns fresh=true and skip=false for cf-cache-status: DYNAMIC', async () => {
     mockFetch('DYNAMIC');
-    const result = await checkFreshness(ORIGIN, { name: 'robots.txt', path: '/robots.txt', key: true });
+    const result = await checkFreshness(ORIGIN, {
+      name: 'robots.txt',
+      path: '/robots.txt',
+      key: true,
+    });
 
     expect(result.fresh).toBe(true);
     expect(result.skip).toBe(false);
@@ -179,7 +181,11 @@ describe('checkFreshness', () => {
 
   it('returns fresh=false and skip=false for cf-cache-status: HIT', async () => {
     mockFetch('HIT');
-    const result = await checkFreshness(ORIGIN, { name: 'sitemap-index.xml', path: '/sitemap-index.xml', key: true });
+    const result = await checkFreshness(ORIGIN, {
+      name: 'sitemap-index.xml',
+      path: '/sitemap-index.xml',
+      key: true,
+    });
 
     expect(result.fresh).toBe(false);
     expect(result.skip).toBe(false);
@@ -188,7 +194,11 @@ describe('checkFreshness', () => {
 
   it('returns fresh=null and skip=true when cf-cache-status header is absent', async () => {
     mockFetch(null);
-    const result = await checkFreshness(ORIGIN, { name: 'robots.txt', path: '/robots.txt', key: true });
+    const result = await checkFreshness(ORIGIN, {
+      name: 'robots.txt',
+      path: '/robots.txt',
+      key: true,
+    });
 
     expect(result.fresh).toBeNull();
     expect(result.skip).toBe(true);
@@ -197,7 +207,11 @@ describe('checkFreshness', () => {
 
   it('returns fresh=true for cf-cache-status: EXPIRED', async () => {
     mockFetch('EXPIRED');
-    const result = await checkFreshness(ORIGIN, { name: 'robots.txt', path: '/robots.txt', key: true });
+    const result = await checkFreshness(ORIGIN, {
+      name: 'robots.txt',
+      path: '/robots.txt',
+      key: true,
+    });
 
     expect(result.fresh).toBe(true);
     expect(result.skip).toBe(false);
@@ -261,7 +275,14 @@ describe('buildTargets', () => {
   it('all static targets have key=true', () => {
     const targets = buildTargets();
     const staticTargets = targets.filter((t) =>
-      ['robots.txt', 'sitemap-index.xml', 'sitemap-verses.xml', 'sitemap-texts.xml', 'sitemap-lemmas.xml', 'sitemap-chrome.xml'].includes(t.name),
+      [
+        'robots.txt',
+        'sitemap-index.xml',
+        'sitemap-verses.xml',
+        'sitemap-texts.xml',
+        'sitemap-lemmas.xml',
+        'sitemap-chrome.xml',
+      ].includes(t.name),
     );
 
     for (const t of staticTargets) {

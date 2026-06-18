@@ -39,12 +39,12 @@ describe('seo-scaffold-existing', () => {
     });
 
     it('emits all 12 description locale lines', () => {
-      const matches = scaffold.match(/^#     [a-z]{2}: ""/gm) ?? [];
+      const matches = scaffold.match(/^# {5}[a-z]{2}: ""/gm) ?? [];
       expect(matches).toHaveLength(12);
     });
 
     it('emits all 12 keyword locale lines', () => {
-      const matches = scaffold.match(/^#     [a-z]{2}: \[\]/gm) ?? [];
+      const matches = scaffold.match(/^# {5}[a-z]{2}: \[\]/gm) ?? [];
       expect(matches).toHaveLength(12);
     });
 

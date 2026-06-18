@@ -66,10 +66,26 @@ describe('validateBuild()', () => {
     tempDirs.push(distDir);
 
     await seedSupportFiles(distDir);
-    await writeTempFile(distDir, 'trika/siva-sutras/1/1/index.html', fixture('valid-en-verse.html'));
-    await writeTempFile(distDir, 'hi/trika/siva-sutras/1/1/index.html', fixture('valid-hi-verse.html'));
-    await writeTempFile(distDir, 'ta/trika/siva-sutras/1/1/index.html', fixture('noindex-ta-verse.html'));
-    await writeTempFile(distDir, 'trika/shiva-sutras/1/1/index.html', fixture('redirect-page.html'));
+    await writeTempFile(
+      distDir,
+      'trika/siva-sutras/1/1/index.html',
+      fixture('valid-en-verse.html'),
+    );
+    await writeTempFile(
+      distDir,
+      'hi/trika/siva-sutras/1/1/index.html',
+      fixture('valid-hi-verse.html'),
+    );
+    await writeTempFile(
+      distDir,
+      'ta/trika/siva-sutras/1/1/index.html',
+      fixture('noindex-ta-verse.html'),
+    );
+    await writeTempFile(
+      distDir,
+      'trika/shiva-sutras/1/1/index.html',
+      fixture('redirect-page.html'),
+    );
 
     const summary = await validateBuild({ distDir, siteOrigin: SITE_ORIGIN });
 
@@ -89,13 +105,7 @@ describe('validateBuild()', () => {
 
     expect(summary.ok).toBe(false);
     expect(summary.grouped.map((group) => group.rule)).toEqual(
-      expect.arrayContaining([
-        'canonical',
-        'hreflang',
-        'og-image',
-        'jsonld',
-        'internal-links',
-      ]),
+      expect.arrayContaining(['canonical', 'hreflang', 'og-image', 'jsonld', 'internal-links']),
     );
   });
 
@@ -121,7 +131,11 @@ describe('validateBuild()', () => {
     await seedSupportFiles(distDir);
     await writeTempFile(distDir, 'trika/siva-sutras/1/1/index.html', enWithTamil);
     await writeTempFile(distDir, 'hi/trika/siva-sutras/1/1/index.html', hiWithTamil);
-    await writeTempFile(distDir, 'ta/trika/siva-sutras/1/1/index.html', fixture('noindex-ta-verse.html'));
+    await writeTempFile(
+      distDir,
+      'ta/trika/siva-sutras/1/1/index.html',
+      fixture('noindex-ta-verse.html'),
+    );
 
     const summary = await validateBuild({ distDir, siteOrigin: SITE_ORIGIN });
 
@@ -136,7 +150,11 @@ describe('inspectHtmlFile()', () => {
   it('treats redirect stubs as redirect documents instead of normal pages', async () => {
     const distDir = makeTempDist();
     tempDirs.push(distDir);
-    await writeTempFile(distDir, 'trika/shiva-sutras/1/1/index.html', fixture('redirect-page.html'));
+    await writeTempFile(
+      distDir,
+      'trika/shiva-sutras/1/1/index.html',
+      fixture('redirect-page.html'),
+    );
 
     const report = await inspectHtmlFile(resolve(distDir, 'trika/shiva-sutras/1/1/index.html'), {
       distDir,

@@ -17,9 +17,9 @@
  * Run: bun scripts/seo-hreflang-closure.ts
  */
 
-import { resolve } from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { collectHtmlFiles, inferRoutePath, toPageUrl, resolveSiteOrigin } from './seo-validate';
+import { resolve } from 'node:path';
+import { collectHtmlFiles, inferRoutePath, resolveSiteOrigin, toPageUrl } from './seo-validate';
 
 const DIST_DIR = resolve('dist');
 
@@ -36,10 +36,7 @@ export interface Violation {
   source: string;
   lang: string;
   target: string;
-  issue:
-    | 'orphan-hreflang'
-    | 'asymmetric-hreflang'
-    | 'missing-x-default';
+  issue: 'orphan-hreflang' | 'asymmetric-hreflang' | 'missing-x-default';
 }
 
 // ---------------------------------------------------------------------------
@@ -60,7 +57,12 @@ export function parseHreflangTags(html: string): HreflangEntry[] {
     if (!rel.includes('alternate')) continue;
 
     const hreflangMatch = tag.match(/\bhreflang=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
-    const hrefLang = (hreflangMatch?.[1] ?? hreflangMatch?.[2] ?? hreflangMatch?.[3] ?? '').toLowerCase();
+    const hrefLang = (
+      hreflangMatch?.[1] ??
+      hreflangMatch?.[2] ??
+      hreflangMatch?.[3] ??
+      ''
+    ).toLowerCase();
     if (!hrefLang) continue;
 
     const hrefMatch = tag.match(/\bhref=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
@@ -124,7 +126,12 @@ export function checkHreflangGraph(graph: Map<string, PageNode>): Violation[] {
 
       const targetPointsBack = targetNode.hreflangByHref.has(sourceUrl);
       if (!targetPointsBack) {
-        violations.push({ source: sourceUrl, lang, target: targetUrl, issue: 'asymmetric-hreflang' });
+        violations.push({
+          source: sourceUrl,
+          lang,
+          target: targetUrl,
+          issue: 'asymmetric-hreflang',
+        });
       }
     }
 
@@ -133,7 +140,12 @@ export function checkHreflangGraph(graph: Map<string, PageNode>): Violation[] {
         (href) => node.hreflangByHref.get(href) !== 'x-default',
       );
       if (nonDefaultEntries.length > 0) {
-        violations.push({ source: sourceUrl, lang: 'x-default', target: '', issue: 'missing-x-default' });
+        violations.push({
+          source: sourceUrl,
+          lang: 'x-default',
+          target: '',
+          issue: 'missing-x-default',
+        });
       }
     }
   }

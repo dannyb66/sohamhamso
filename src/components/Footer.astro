@@ -27,7 +27,8 @@ const links = [
   { href: '/about/privacy', label: 'Privacy', i18nKey: 'footer.link.privacy' },
   { href: '/about/colophon', label: 'Colophon', i18nKey: 'footer.link.colophon' },
 ];
-const localizedHref = (href: string) => (href.startsWith('/') ? localePathFor(href, currentLang) : href);
+const localizedHref = (href: string) =>
+  href.startsWith('/') ? localePathFor(href, currentLang) : href;
 ---
 
 <footer class="footer" role="contentinfo">

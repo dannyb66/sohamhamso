@@ -20,6 +20,7 @@
  * synonyms section, so ReaderLangSwap's gloss loop becomes a no-op.
  */
 import { getVerseAllLanguages } from '../lib/db';
+import { safeJsonForScript } from '../lib/safe-json';
 
 interface Props {
   // Allow override for empty-corpus / preview contexts later.
@@ -67,7 +68,7 @@ const readerDataPayload = {
   <a href={href} class="hero-read"><span data-i18n="hero.read">Read</span> <span aria-hidden="true">→</span></a>
 </section>
 
-<script is:inline set:html={`window.__readerData = ${JSON.stringify(readerDataPayload)};`} />
+<script is:inline set:html={`window.__readerData = ${safeJsonForScript(readerDataPayload)};`} />
 
 <style>
   .hero {

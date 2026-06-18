@@ -17,8 +17,6 @@
 
 import { execSync } from 'node:child_process';
 
-export {};
-
 interface ParsedArgs {
   commit: string | null;
   project: string;
@@ -71,10 +69,10 @@ interface WranglerDeployment {
 function getLatestDeployment(project: string): WranglerDeployment | null {
   let stdout: string;
   try {
-    stdout = execSync(
-      `wrangler pages deployment list --project-name ${project} --json`,
-      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] },
-    );
+    stdout = execSync(`wrangler pages deployment list --project-name ${project} --json`, {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
   } catch (err: unknown) {
     // wrangler exits non-zero if auth fails; still capture stdout
     stdout = (err as { stdout?: string }).stdout ?? '';
@@ -125,7 +123,9 @@ async function main(): Promise<void> {
     const deployUrl = deployment.url ?? deployment.aliases?.[0] ?? '(no URL)';
     const shortId = deployment.short_id ?? deployment.id ?? '?';
 
-    console.log(`[${new Date().toISOString()}] id=${shortId} status=${status} commit=${commitHash ?? '?'}`);
+    console.log(
+      `[${new Date().toISOString()}] id=${shortId} status=${status} commit=${commitHash ?? '?'}`,
+    );
 
     if (status === 'failure') {
       console.error(`\nDeployment FAILED: ${deployUrl}`);

@@ -13,8 +13,9 @@ import Masthead from '../components/Masthead.astro';
  * adapter lands the page just works.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { buildChromeSeo } from '../lib/seo';
 import type { VerseHit } from '../lib/search';
+import { buildChromeSeo } from '../lib/seo';
+import { matchUpcoming } from '../lib/upcoming-texts';
 
 export const prerender = false;
 
@@ -45,6 +46,12 @@ if (q) {
   }
   took_ms = Math.round(performance.now() - t0);
 }
+
+// D7 remainder: when a zero-result query names a Phase 2 staged text, add a
+// quiet "{Title} is in preparation — get notified" line to the empty state.
+// (The demand-logging half lives in src/lib/search-miss.ts via /api/search.)
+const upcoming =
+  q && !stub && !searchError && results.length === 0 ? matchUpcoming(q) : null;
 
 const verseHref = (h: VerseHit) => `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
 const verseLabel = (h: VerseHit) => `${h.text_title} ${h.chapter}.${h.verse_num}`;
@@ -124,6 +131,14 @@ const pageSeo = buildChromeSeo({
           of <code>krishna</code> — or
           <a href="/texts"> browse all texts →</a>
         </p>
+        {upcoming ? (
+          <p class="search-page__upcoming">
+            <em>{upcoming.title}</em>{" "}
+            <span data-i18n="upcoming.in_preparation">is in preparation</span>
+            {" — "}
+            <a href="/daily" data-i18n="upcoming.get_notified">get notified</a>
+          </p>
+        ) : null}
       </section>
     ) : (
       <ol class="search-page__list">
@@ -234,6 +249,14 @@ const pageSeo = buildChromeSeo({
     line-height: 1.6;
   }
   .search-page__err { border-color: var(--color-error); }
+  .search-page__upcoming {
+    margin: var(--spacing-3) 0 0;
+    font-size: var(--text-sm);
+    color: var(--color-ink-muted);
+  }
+  .search-page__upcoming a {
+    color: var(--color-accent);
+  }
   .search-page__list {
     list-style: none;
     margin: 0;

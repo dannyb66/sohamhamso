@@ -118,6 +118,25 @@ defaults:
   fps: 30
   duration_s: 18
 
+# Chapter-format videos (16:9 full-chapter, verse_num=0 rows). English-only
+# v1 — expanding langs is config + backfill, not code. Pacing knobs here so
+# the M1 sample gate iterates by config-edit + re-run (never code-edit).
+# min_translation_status is the PER-FORMAT floor (draft, per plan D1 — no
+# corpus mutation); uploads_enabled stays false until the 30-day shorts
+# measurement window closes (enforced upload hold, not policy).
+chapters:
+  langs: [en]
+  fps: 30
+  title_card_s: 5
+  outro_s: 9
+  min_translation_status: draft
+  uploads_enabled: false
+  min_seg_s: 10
+  seg_lead_in_s: 1.2
+  seg_tail_s: 1.0
+  group_max_verses: 1
+  encode: cbr8   # cbr8 | crf18
+
 # Rejected at the youtube-validate-config gate. Saffron is additionally
 # enforced in code as ±15% RGB-distance around #FF9933 (see
 # pipeline/youtube/config.ts::isForbiddenColor / SAFFRON_HEX).

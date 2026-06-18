@@ -1,0 +1,7851 @@
+{
+  "text_slug": "isvarapratyabhijna-karika",
+  "lang": "ta",
+  "translator": "sohamhamso (session-opus)",
+  "license": "CC-BY-SA",
+  "model": "opus-4-8",
+  "ai_assisted": true,
+  "status": "published",
+  "verses": {
+    "1.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "எவ்வாறேனும், ஓரளவு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அடைந்து, சேர்ந்து"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "மகேஸ்வரனின் (பேரிறைவனின்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தாஸ்யம், அடிமைத்தொண்டு"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "மக்களின், மானுடரின்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "கூட, மேலும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "நன்மை, உதவி"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "விரும்பி"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அனைத்துச் செல்வங்களையும் அடைவதற்குக் காரணமான"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அந்த (இறைவனின்) ப்ரத்யபிஜ்ஞையை (மீள்அறிவை)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நிறுவுகிறேன், நிலைநாட்டுகிறேன்"
+      }
+    ],
+    "1.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "செய்பவனிடத்தில் (கர்த்தாவைப் பொறுத்து)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அறிபவனிடத்தில் (ஜ்ஞாதாவைப் பொறுத்து)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தனது சொந்த ஆத்மாவிடத்தில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஆதியிலேயே நிலைபெற்றவனிடத்தில்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "மகேஸ்வரனிடத்தில்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஜடமற்ற இயல்புடையவன் (சைதன்யமுடையவன்)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "மறுப்பை, நிராகரிப்பை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "நிறுவலை, உறுதிசெய்தலை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "செய்ய இயலும், ஆற்றக்கூடும்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "யார்?"
+      }
+    ],
+    "1.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆனால், ஆயினும்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மோகத்தின் வசத்தால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இவனில் (இறைவனில்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "காணப்பட்டிருப்பினும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கூட, ஆயினும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அறியப்படாமல், கவனிக்கப்படாமல்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "சக்திகளை வெளிப்படுத்துவதன் மூலம்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இந்த"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ப்ரத்யபிஜ்ஞை (மீள்அறிவு)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "காட்டப்படுகிறது, சுட்டப்படுகிறது"
+      }
+    ],
+    "1.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஏனெனில் (விளக்கமாக)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஜடப்பொருள்களின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நிலைபேறு, நிலைபெற்ற இருப்பு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "உயிருள்ளவற்றை ஆதாரமாகக் கொண்டது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அறிவு, ஞானம்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "செயல், க்ரியை"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "உயிர்களின், படைப்புகளின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உயிர்வாழ்வோரின்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "உயிர், வாழ்வுத்துடிப்பு"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஏற்கப்படுகிறது, கருதப்படுகிறது"
+      }
+    ],
+    "1.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அவ்விரண்டில்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அறிவு"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தானாகவே நிலைபெற்றது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "செயல்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "உடலில் தங்கியிருப்பது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இருப்பதால் (என்பதால்)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "பிறரால்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட, மேலும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உணரப்படக்கூடும்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அதன் வழியாக (செயலால்)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "பிறரின் அறிவு"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ஊகிக்கப்படுகிறது"
+      }
+    ],
+    "2.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(மறுப்பு) திண்ணமாக, இதோ"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஸ்வலக்ஷணமாகத் தோன்றும் (தனிப்பொருளாகத் தோன்றும்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அறிவு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஒன்று (ஒருவகை)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "மற்றொன்று (மறுவகை)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "மறுபுறம், மீண்டும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "சொல்லுடன் கூடிய (நிச்சயமான)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "விகல்பம் என்னும் பெயருடைய"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பல்வகை, பல்வேறு"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கூட, மேலும்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அது (அறிவு)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "இருமை (கிராஹ்ய-கிராஹகம்)"
+      }
+    ],
+    "2.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "நிலையான ஒருவனின்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஏதோ ஒரு (ஒரே)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "திரஷ்டாவின் (காண்போனின்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அதன் (காண்போனின்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இங்கே (அறிவில்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "தோன்றாமையால்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'நான்' என்னும் உணர்வு"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "மேலும், திண்ணமாக"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இந்த"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "உடல் முதலியவற்றை (நான் என) உறுதிசெய்வது"
+      }
+    ],
+    "2.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(மறுப்பு) இனி, இப்போது"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அனுபவம் அழிந்தபின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நினைவு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அதற்கேற்ப ஒத்த"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "எவ்வாறு?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "உண்டாகும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "நிலையான"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ஆத்மா"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "என்றால்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அனுபவிப்பவன்"
+      }
+    ],
+    "2.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(ஆத்மா) இருந்தாலும்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஆத்மா"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "திருஷ்டி (அறிவு) அழிந்ததால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அதன் வழியாக (அறிவின் மூலம்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "காணப்பட்ட பொருள்களைப் பற்றி"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "நினைவு"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "எதனால்? எவ்வாறு?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "மேலும், பிறகு"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "எந்த (சுபாவத்தில்) தானே"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அனுபவம் (நிகழ்ந்ததோ)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அதே இடத்திற்கு உரியது"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "அது (நினைவு)"
+      }
+    ],
+    "2.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஏனெனில், எதனால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "என்னெனில், திண்ணமாக"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "முந்தைய அனுபவத்தின் ஸம்ஸ்காரத்திலிருந்து"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நினைவின் தோற்றம்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "என்றால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அவ்வாறு, இவ்வாறு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "உள்ளிருக்கும் கழலையால் (மிகைப்பகுதியால்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "என்ன?"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பயன், பொருள்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நிலைத்திருக்கும்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ஆத்மாவால்"
+      }
+    ],
+    "2.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆதலின், எனவே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வேறுபட்ட (க்ஷணிக)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தர்மங்களிடையே (மனநிகழ்வுகளிடையே)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அவற்றின் ஸ்வரூப ஒற்றுமையால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஸம்ஸ்காரத்திலிருந்து"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "நினைவு நிறுவப்படும்போது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "நினைப்பவன்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "காண்போன் போல"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "கல்பிக்கப்பட்டது, கற்பிதம்"
+      }
+    ],
+    "2.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அறிவு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மேலும், மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "சித்தை ஸ்வரூபமாகக் கொண்டது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "என்றால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அது (அறிவு)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அநித்யம்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "எவ்வாறு, ஏன் (அநித்யம்)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆத்மாவைப் போல"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "மறுபுறம் என்றால்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ஜடம்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "இதன் (இந்த அறிவின்)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "எவ்வாறு?"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "பொருளை வெளிப்படுத்தும் தன்மை"
+      }
+    ],
+    "2.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இனி, மேலும்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பொருளின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "எவ்வாறு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வடிவத்தை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஏற்கிறது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "புத்தி"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அவ்வாறே"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆத்மாவின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "சைதன்யத்தை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அஜடமாக இருந்து"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அது (புத்தி)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "இவ்வாறு"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ஜடத்தன்மை இருந்தால்"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "பொருளை வெளிப்படுத்தும் தன்மை"
+      }
+    ],
+    "2.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "செயல்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "பொருளின்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "உடல் முதலிய"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அந்தந்த இடம் முதலியவற்றில் பிறப்பதே"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வேறு (அந்தப் பிறப்பைத் தவிர)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "காணப்படாததால்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இல்லை, அன்று"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அது (செயல்)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ஒன்று (ஒற்றை)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "வரிசையான, க்ரமமுடைய"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "ஒரே (பொருளுக்கு)"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "பொருந்தும், தகுந்த"
+      }
+    ],
+    "2.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அந்தந்த (நிலையில்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இருக்கையில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அந்தந்த(து)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "உண்டாகிறது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "என்று (மேற்கோள்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "மட்டுமே"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "காணப்படுகிறது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "வேறெதுவும் இல்லை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வேறொன்று இல்லை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "உள்ளது"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "தொடர்பு, ஸம்பந்தம்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "காரிய-காரண பாவத்தைத் தவிர"
+      }
+    ],
+    "2.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இரண்டிலும் (காரண-காரியத்தில்) நிற்பதன்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பல வடிவமுடைமையால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நிறுவப்பட்டதன்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பிறிதொன்றை எதிர்நோக்காமையால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "பாரதந்த்ரியம் முதலியன பொருந்தாமையால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஆதலின், அதனால்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "செய்பவன், கர்த்தா"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "கல்பிக்கப்பட்டது, கற்பிதம்"
+      }
+    ],
+    "3.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "மெய்தான், ஒப்புக்கொள்கிறேன்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஆனால், ஆயினும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நினைவாகிய அறிவு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "முந்தைய அனுபவத்தின் ஸம்ஸ்காரத்திலிருந்து"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "உண்டாகி"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இருப்பினும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஆத்மாவில் நிலைபெற்றது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அது (நினைவறிவு)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ஆதி அனுபவத்தை அறிவிப்பது"
+      }
+    ],
+    "3.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அறிவு (த்ருக்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தானாகவே ஒளிர்வது மட்டுமே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "பிறிதொன்றால் அன்று"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அறியத்தக்கது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வடிவைக் காணும் காட்சியால் (அறியப்படாதது) போல"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஒரு அறிவு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "சுவையின் (நினைவில்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஸம்ஸ்காரத்திலிருந்து பிறந்தமை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஆனால், மட்டும்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அதனுடன் (மூலத்துடன்) ஒப்புமை"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அதை அறிதல்"
+      }
+    ],
+    "3.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இனி, என்றால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அதை விஷயமாகக் கொள்ளாதிருப்பினும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நினைவின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அதை உறுதிசெய்வதால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "காணப்பட்ட பொருளை ஆதாரமாகக் கொள்ளுதல்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ப்ராந்தியால் (மயக்கத்தால்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இந்த நிலைப்பாடே"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பொருந்தாதது, ஏற்புடையதன்று"
+      }
+    ],
+    "3.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "நினைவாகுந்தன்மையே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "எவ்வாறு (பொருந்தும்)?"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "முதலில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ப்ராந்தியில் (மயக்கத்தில்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "பொருளின் நிலைப்பு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "எவ்வாறு?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "முந்தைய அனுபவத்தின் ஸம்ஸ்காரத்தை எதிர்நோக்குதல்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "எதற்காக?"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ஏற்கப்படுகிறது, கூறப்படுகிறது"
+      }
+    ],
+    "3.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "உறுதிசெய்தல் ப்ராந்தியாயின்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உறுதிசெய்தலின்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஜடப்பொருளிலிருந்து"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விஷயத்தின் நிலைப்பு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அதிலிருந்து, ஆதலின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அஜடத்தன்மை இருந்தால்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "தனது சொந்த உள்லேகத்தில் நிலைப்பதால்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "(வெளி)பொருளின் நிலைப்பு"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அதிலிருந்து"
+      }
+    ],
+    "3.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இவ்வாறு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஒன்றுக்கொன்று வேறுபட்டவற்றின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஒன்றையொன்று அறியாதவற்றின்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அறிவுகளின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அனுஸந்தானத்திலிருந்து உண்டாகும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அழிந்துவிடும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "உலக நடைமுறை, மக்கள் வாழ்வு"
+      }
+    ],
+    "3.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இல்லை (அவ்வாறு)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இல்லையேல்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அளவற்ற பிரபஞ்சத்தைத் தனக்குள் உள்ளடக்கிய வடிவுடையவன்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "மகேஸ்வரன்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இருப்பான்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஒருவன் (ஒரே)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "சித்தை உடலாகக் கொண்டவன்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அறிவு-நினைவு-அபோஹன (வேறுபடுத்தும்) சக்திகள் உடையவன்"
+      }
+    ],
+    "4.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அவன் (இறைவன், ப்ரமாதா)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "திண்ணமாக, ஏனெனில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "முன்பு அனுபவித்த பொருளை உணர்ந்தவன்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பின்னர், பிறகு"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இருந்து"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "விமர்சித்து (vimarśa)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அவனே (அதே ஒருவன்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "சுதந்திரன், தன்னிச்சையாளன்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நினைக்கிறான்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "கூறப்படுகிறான்"
+      }
+    ],
+    "4.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தோற்றுவிப்பான், ஒளிரச்செய்வான்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தனது (தற்போதைய) காலத்தில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நிச்சயமாக, பொருளால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "முன்பு தோற்றுவிக்கப்பட்டதை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விமர்சித்து"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஸ்வலக்ஷணத்தை (தனிப்பொருளை)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "'கடம்' என்னும் தோற்றமாத்திரத்தால்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "முழுமையான வடிவில்"
+      }
+    ],
+    "4.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "பொருந்தும், இயலும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நினைவின் (நினைப்போனின்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வேறுபட்டால் (முந்தைய அனுபவத்திலிருந்து)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "நினைக்கப்படுவதன்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "தோற்றம்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆதலின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஒற்றுமை, ஐக்யம்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "வெவ்வேறு காலங்களின்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஸம்விதுகளின் (உணர்வுகளின்)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அறிபவன்"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "இந்த ஒருவனே (அவன்)"
+      }
+    ],
+    "4.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இல்லவே இல்லை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஏனெனில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அனுபவம் (ஆதி அனுபவம்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தோன்றுகிறது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "நினைவில்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "முந்தையது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "பொருளைப் போல"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "தனியாக, வேறுபட்டதாக"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "முன்பு"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அனுபவித்தேன்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நான்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "ஆத்மாவில் (அஹந்தாவில்) ஏறித் தோன்றுவதால்"
+      }
+    ],
+    "4.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "யோகிகளுக்குக்கூட"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தோன்றுகின்றன"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அறிவுகள் (த்ருக்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "வேறொரு அறிவில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "தம் சொந்த ஸம்விதால் மட்டுமே அளக்கப்படுபவை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அவை (அறிவுகள்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஒளிர்கின்றன, தோன்றுகின்றன"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "மேயப்பதத்தில் (அறியப்படும் இடத்தில்)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அல்லது (ஏதேனுமாயின் அவ்வாறே)"
+      }
+    ],
+    "4.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "நினைக்கப்படுகிறது"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "எது, ஆம்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அறிவு (த்ருக்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இருந்தது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "எனக்கு"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அது இவ்வாறு (இருந்தது)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட, இருப்பினும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வேறுபாடாக (தனியாக)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அது"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "விளக்கம், விரிவுபடுத்தல்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "மட்டுமே"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "இதன் (நினைவின்)"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "என்னால்"
+      },
+      {
+        "word_idx": 14,
+        "gloss_text": "காணப்பட்டது"
+      },
+      {
+        "word_idx": 15,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 16,
+        "gloss_text": "நினைவின் (வடிவில்)"
+      }
+    ],
+    "4.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "எது (உறுதியான அறிவு)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'இதை நான் காண்கிறேன்'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'இது கடம்'"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "என்று (வடிவில்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அவசா (உறுதியான அறிவு)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "நினைக்கப்படுகிறது, கருதப்படுகிறது"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பொருந்தியதாக (கர்த்தாவில்)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அது (உறுதியறிவு)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "உறுதிசெய்யும் கர்த்தாவில்"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "காட்சி, அறிவு"
+      }
+    ],
+    "4.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆதலின், இவ்வாறு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'இது என்னால் காணப்படுகிறது'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'காணப்பட்ட இவன் அவனே'"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "விமர்சிக்கிறான்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "கிராஹ்ய-கிராஹக தன்மையால் வேறுபட்ட இரண்டு"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இரு பொருள்கள் (அறியப்படுபொருள்-அறிபவன்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "தோன்றுகின்றன"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ப்ரமாதாவில் (ஒரே அறிபவனில்)"
+      }
+    ],
+    "5.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தற்போது தோற்றமுடைய பொருள்களின்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பொருள்களின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தோற்றம், வெளிப்பாடு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "உள்ளே நிலைபெற்றவற்றுக்கே"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "மட்டுமே"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "பொருந்தும், கூடும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வெளியில்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "(தம்) வடிவில்"
+      }
+    ],
+    "5.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "முன்போல (உள்ளேயே இருந்தது போல)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பொருள்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "வெளிப்படாதது, ஒளிராதது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ப்ரகாச (ஒளி) தன்மையால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இன்றி"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "மேலும் இல்லை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ப்ரகாசம் (சித்தின் ஒளி)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வேறுபட்டது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "பொருளின் சொந்த (ஆத்மா)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அதன் ப்ரகாசத்தன்மை"
+      }
+    ],
+    "5.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "வேறுபட்டால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ப்ரகாசம் (இருக்கையில்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வேறுபடாவிட்டால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஸங்கரம் (கலப்பு)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விஷயத்தின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஆதலின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ப்ரகாசத்தை ஆத்மாவாகக் கொண்டது"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வெளிப்படுத்தப்படத்தக்கது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "பொருள்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "ப்ரகாசமற்றது"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 13,
+        "gloss_text": "நிறுவப்படுகிறது"
+      }
+    ],
+    "5.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அந்தந்த திடீர்த்தோற்றம்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வெளிப்பொருளை"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "என்றால்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஊகிக்கச் செய்யும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இல்லை (அவ்வாறன்று)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஏனெனில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வேறுபடாததின் (அபின்னத்தின்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "போதத்தின் (உணர்வின்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பல்வேறுபட்ட தோற்றங்களின் காரணமாகுந்தன்மை"
+      }
+    ],
+    "5.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வாஸனைகளின் விழிப்பு"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இங்கே"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பல்வேறுபட்டது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "காரணத்தன்மையை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அடையக்கூடும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அதன்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அந்த வாஸனா-விழிப்பின்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "பல்வேறுத்தன்மையில்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "என்ன?"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அடிப்படை, காரணம்"
+      }
+    ],
+    "5.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இவ்வளவு ஆகலாம்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தோற்றங்களில் (ஆபாஸங்களில்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அவற்றிலேயே"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நிறைவேறும்போது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இருக்கையில்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "வ்யவஹாரத்தில் (நடைமுறையில்)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "என்ன (பயன்)?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "பிறிதொன்றால்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வெளிப்பொருளால்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "நிறுவ இயலாததால்"
+      }
+    ],
+    "5.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சித்தை ஆத்மாவாகக் கொண்டவன்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஏனெனில், திண்ணமாக"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தேவன் (தெய்வ ஆத்மா)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "உள்ளே நிலைபெற்றதை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தனது இச்சையின் வசத்தால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "வெளியில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "யோகியைப் போல"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "உபாதான காரணமின்றி"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பொருட்குவியலை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "தோற்றுவிக்கிறான்"
+      }
+    ],
+    "5.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அனுமானம்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "முன்பு தோன்றாததைப் பற்றி"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இல்லவே இல்லை"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஏற்கப்பட்டது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இந்திரியம் (ஊகிக்கப்படும் சக்தி)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஏற்கனவே தோன்றியதே"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "விதை முதலியதிலிருந்து"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "தோற்றத்திலிருந்து"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "காரணப்பொருளின் (முளை முதலியதன்)"
+      }
+    ],
+    "5.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தோற்றம் (ஆபாஸம்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மீண்டும், மேலும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "(முந்தைய) தோற்றத்திலிருந்து"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வெளிப்பொருளின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "உண்டாயிற்று"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "எவ்வாறேனும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "(வெளி)பொருளின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இல்லவே இல்லை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அதனால் (தோற்றத்தால்)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அதன் (பொருளின்)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நிறுவல், ஸித்தி"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அன்றி, இல்லை"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "அனுமானத்தாலும்"
+      }
+    ],
+    "5.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஸ்வாமிக்கு (இறைவனுக்கு)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தனக்குள் நிலைபெற்ற"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பொருட்குவியலின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தோற்றம்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "உண்டே"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அது இன்றி"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அதிலிருந்து, ஆதலின்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இச்சா-ஆமர்சம் ('நான் விரும்புகிறேன்' விமர்சம்)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நிகழ்கிறது, இயங்குகிறது"
+      }
+    ],
+    "5.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இயல்பாக"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தோற்றத்தின் (ஆபாஸத்தின்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "விமர்சத்தை (vimarśa)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அறிவர் (அறிஞர்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இல்லையேல்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ப்ரகாசம் (வெறும் ஒளி)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "பொருளால் பூசப்பட்டிருப்பினும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஸ்படிகம் முதலிய ஜடத்துக்கு ஒப்பாகும்"
+      }
+    ],
+    "5.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆத்மா"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இக்காரணத்தாலேயே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "சைதன்யம் (என்று)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "சித்-க்ரியை (அறிவுச்செயல்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "சிதி-கர்த்ருத்தை (அறிதலின் கர்த்ருத்தன்மை)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "தாற்பரியத்தில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "கூறப்படுகிறது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அதனால், ஆதலின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஜடத்திலிருந்து"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அவன் (ஆத்மா)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "திண்ணமாக"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "முற்றிலும் வேறுபட்டவன்"
+      }
+    ],
+    "5.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சிதி (இயங்கும் உணர்வு)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ப்ரத்யவமர்சத்தை இயல்பாகக் கொண்டது"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "பரா வாக் (பரம வாக்கு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தன் சாரத்தால் தானே எழுந்தது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஸ்வாதந்த்ரியம், முழுச்சுதந்திரம்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "முதன்மை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அது"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஐஸ்வர்யம், இறைமை"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "பரமாத்மாவின்"
+      }
+    ],
+    "5.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அது (சிதி)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஸ்புரத்தா (துடிக்கும் ஒளிர்வு)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "மஹாஸத்தா (பேரிருப்பு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தேச-காலத்தால் வேறுபடாதது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இந்த (சிதியே)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "சாரமாக"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "கூறப்படுகிறது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஹ்ருதயம் (இதயம்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பரமேஷ்டியின் (உயர்ந்த இறைவனின்)"
+      }
+    ],
+    "5.15": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தன்னை, ஆத்மாவை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இக்காரணத்தாலேயே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இவன் (இறைவன்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அறியப்படுபொருளாக்கக்கூடும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தனியாக நிற்கும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அறியப்படுபொருள் (ஜ்ஞேயம்)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஆனால் அன்று"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அதை நோக்குதலால் (அறியப்படுபொருளாக்கும் நோக்கால்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "குலையும், பிளக்கப்படும்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இவனது"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஸ்வதந்த்ரதை, சுதந்திரம்"
+      }
+    ],
+    "5.16": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஸ்வாதந்த்ரியத்தை இழந்த (போன்ற) ஆத்மாக்களை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஸ்வாதந்த்ரியத்தால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அத்வயமான இயல்புடையவனின்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ப்ரபு (இறைவன்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'ஈஸ' முதலிய ஸங்கல்பங்களால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "உருவாக்கி"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வ்யவஹாரத்தில் ஈடுபடுத்துகிறான்"
+      }
+    ],
+    "5.17": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இல்லை (இழப்பு இல்லை)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'நான்' முதலிய பராமர்ச வேறுபாட்டால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இவனது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தன்னிலிருந்து விலகாத இயல்புடையவனின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "'நான்' என்று விமர்சிக்கப்படுவதாகவே"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இவனது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஸ்ருஷ்டியின் (படைப்பின்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "திங்-வாச்ய கர்மம் போல (வினைவிகுதிக் கர்மம் போல)"
+      }
+    ],
+    "5.18": [
+      {
+        "word_idx": 0,
+        "gloss_text": "மாயா-சக்தியால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வ்யாபகனின் (இறைவனின்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அந்த விமர்சமே"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வேறுபட்ட அறியப்படுபொருள்களைத் தளமாகக் கொண்டது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கூறப்படுகிறது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "'அறிவு', 'ஸங்கல்பம்', 'அத்யவஸாயம்' முதலிய பெயர்களால்"
+      }
+    ],
+    "5.19": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சாக்ஷாத்காரத்தின் (நேரடிக் காட்சியின்) க்ஷணத்திலும்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உள்ளது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "விமர்சம்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "எவ்வாறு (இல்லையேல்)?"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இல்லையேல்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஓடுதல் முதலிய (செயல்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "பொருந்தும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அனுஸந்தானமற்ற (இணைப்புணர்வற்ற)"
+      }
+    ],
+    "5.20": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'இது கடம்'"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "என்று (வடிவில்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அத்யவஸா (உறுதியான அறிவு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நாம-ரூபங்களைக் கடந்தது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "பரமேஸ்வரனின் சக்தி"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஆத்மாவாகவே"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "தோன்றுகிறது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆனால் அன்று"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "'இதம்தா' ஆக (இது-என்னும் பொருளியல்பாக)"
+      }
+    ],
+    "5.21": [
+      {
+        "word_idx": 0,
+        "gloss_text": "மட்டுமே, வெறுமனே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வேறுபட்ட விஷயங்கள், தேசம், காலங்களுக்கேற்ப"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அறிவு, நினைவு, உறுதி முதலியன"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வரிசையுடன் (க்ரமமாக)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தோன்றுகின்றன, தம்மைக் காட்டுகின்றன"
+      }
+    ],
+    "6.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'நான்' என்னும் ப்ரத்யவமர்சம்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "எது"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ப்ரகாசத்தை ஆத்மாவாகக் கொண்டது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இருப்பினும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வாக்கின் வடிவுடையது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அது ('நான்'-உணர்வு)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "விகல்பம்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அது (விகல்பம்)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ஏனெனில், திண்ணமாக"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கூறப்படுகிறது"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "இருமையை உள்ளடக்கியது"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "நிச்சயம்"
+      }
+    ],
+    "6.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இரு வேறுபட்டவற்றின்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தோற்றம்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஏனெனில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இருக்கவேண்டும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கடம்-கடமன்று என்னும் இரண்டின்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இரண்டின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ப்ரகாசத்தைப் போல"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வேறொன்றின் (விலக்கப்பட்டதின்)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "வேறுபட்டதின்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஆனால்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "தோற்றம்"
+      }
+    ],
+    "6.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "'அது'-'அதன்று' அறிவைக் கொண்ட"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "சித்தினாலேயே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "'அதன்று' என்பதை விலக்குவதால்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "'அதன் நிச்சயம்' என்று கூறப்படும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "திண்ணமாக"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விகல்பம்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "'கடம்'"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இது"
+      }
+    ],
+    "6.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சித்தத்துவத்தை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மாயையால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "விட்டுவிட்டு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வேறுபட்டவனாகவே"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தோன்றுகிறான்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "எவன்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "உடலில்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "புத்தியில்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "ப்ராணனில்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கல்பிக்கப்பட்ட (தான் என)"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "வெறுவெளியில் என்பது போல"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "அல்லது"
+      }
+    ],
+    "6.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "(அளவுபட்ட) ப்ரமாத்ருத்தன்மையால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "'நான்'"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "விமர்சம்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "பிறிதொன்றை விலக்குவதால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விகல்பமேயாகும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அது (அந்த உணர்வு)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அந்தப் பிறிதைப் பிரதியோகியாகக் கொண்டது"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "தோற்றத்திலிருந்து பிறந்தது"
+      }
+    ],
+    "6.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இடைக்கிடைத் தோற்றத்தைப் பற்றி"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "எது"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "முந்தைய தோற்றம் முதலியவற்றுடன் இணைப்பது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஸம்ஸ்காரத்திலிருந்து"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கல்பனை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "கூறப்படுகிறது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அதுவும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "வேறுபட்டவை தோன்றும் (உணர்வில்)"
+      }
+    ],
+    "6.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆதலின், எனவே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இவ்வாறு"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "வ்யவஹாரத்தில் (நடைமுறையில்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ப்ரபு (இறைவன்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "உடல் முதலியதில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "புகுந்து"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஏற்கனவே ஒளிர்வதை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உள்ளே"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "பொருட்பெருக்கை"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "தனது இச்சையால்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "தோற்றுவிக்கிறான்"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "வெளியில்"
+      }
+    ],
+    "6.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இவ்வாறு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "நினைவில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "விகல்பத்தில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "விலக்குதலில் ஈடுபட்ட"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அறிவில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அல்லது மீண்டும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "உள்ளார்ந்த தோற்றம்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உள்ளதே"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "உறுதிசெய்யப்பட்டது"
+      }
+    ],
+    "6.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ஆயினும், ஆனால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இயற்கையானது (தோற்றம்)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அறிவில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "வெளித்தோற்றத்தை இயல்பாகக் கொண்டது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "முந்தைய அனுபவ வடிவுடையது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஆனால், மறுபுறம்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "நிலைபெற்றது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அது (உள்தோற்றம்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "நினைவு முதலியவற்றில்"
+      }
+    ],
+    "6.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அது (உள்தோற்றம்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இயற்கையானதே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உள்ளது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "விகல்பத்தில்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "சுதந்திரமாக இயங்கும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விரும்பியவாறு உருவங்கள் தோன்றுவதால்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "புத்தியைத் தளமாகக் கொண்ட"
+      }
+    ],
+    "6.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இக்காரணத்தாலேயே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "விரும்பியவாறு குறிப்புகள் தோன்றுவதால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அறிவும் செயலும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தெளிவானவையே"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "நிறுவப்பட்டவை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஒவ்வொருவருக்கும்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "உயிர்வாழ்வோனுக்கு"
+      }
+    ],
+    "7.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இந்த ப்ரதிபை (ஒளிரும் அறிவு)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ப்ரதிபை"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "அந்தந்தப் பொருளின் வரிசையால் பூசப்பட்டது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "க்ரமமற்ற, அளவற்ற சித்-வடிவுடையவன்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ப்ரமாதா (அறிபவன்)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அவன்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "மகேஸ்வரன்"
+      }
+    ],
+    "7.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அந்தந்த வேறுபட்ட ஸம்விதுகளின் வாயில்கள் வழியாக"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஒரே ப்ரமாதாவில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நிலைபெறும்போது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பொருள்கள்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இந்த ஜ்ஞாத்ருத்தன்மை (அறிபவன்-நிலை)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "பொருந்துகிறது, நிறுவப்படுகிறது"
+      }
+    ],
+    "7.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தேச-கால வரிசையில் உள்ள"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பொருள்களின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தத்தம்மில் முடிவுறும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஒரே சமயத் தோற்றத்தால் சாதிக்கத்தக்கது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "இது (இணைப்பு)"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "இல்லையேல்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "என்ன?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஸமன்வயம் (இணைப்பு)"
+      }
+    ],
+    "7.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "ப்ரத்யக்ஷங்கள் (காட்சிகள்) - அநுபலம்பங்களின் (காணாமைகளின்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "அந்தந்த வேறுபட்ட அம்சங்களில் விழுபவற்றின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "காரிய-காரண உறவை நிறுவும் காரணத்தன்மை"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஒரே ப்ரமாதாவிலிருந்து உண்டாவது"
+      }
+    ],
+    "7.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "நினைவில்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "எதுவே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஸ்வஸம்வித் (சுயவுணர்வு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ப்ரமாணம் (சரியறிவுச்சாதனம்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தனது உண்டாதலைப் பொறுத்து"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "முந்தைய அனுபவத்தின் இருப்பைப் பொறுத்து"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "சாதனம், நிறுவுங்கருவி"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அதுவே"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வேறொன்றன்று"
+      }
+    ],
+    "7.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "பாத்ய-பாதக பாவமும் (மறுக்கப்படும்-மறுக்கும் உறவும்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "தத்தம்மில் நிலைபெற்று முரண்படாதவற்றின்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அறிவுகளின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "உண்டாகக்கூடும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஒரே ப்ரமாதாவில் முற்றிலும் நிலைபெறுவதால்"
+      }
+    ],
+    "7.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "வெறுந்தரையின் அறிவு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கடத்தின் அபாவ-அறிவு (இல்லாமை அறிவு)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "எவ்வாறு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அவ்வாறே"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "என்றால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "சிப்பியின் அறிவு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வெள்ளி-அறிவின் அப்ரமாண்யத்தை (செல்லாமையை) அறிவிப்பது"
+      }
+    ],
+    "7.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அவ்வாறன்று"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "சுத்தத் தரையின் அறிவிலிருந்து"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "நிறுவப்படும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அதன் (தரையின்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "கடமற்ற தன்மையாக"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஆனால் அன்று"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "காட்சிக்குத் தகுந்ததின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "இங்கே"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அபாவம் (இல்லாமை)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "கடவடிவப் பொருளின்"
+      }
+    ],
+    "7.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "வேறுபட்டது, தனிப்பட்டது"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தரை"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "எப்போதும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பொருள்களின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தத்தம் ஆத்மாவில் நிலைபெறுவதால்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஆதலின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "எவ்வாறு?"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஒருபோதும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அதன் (தரையின்) அறிவு"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "வேறுபட்டதின்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அபாவ-சாதனம் (இல்லாமைக்குச் சான்று)"
+      }
+    ],
+    "7.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "மாறாக"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ஒளிக்குவியல்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "குருடனுக்கு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தீண்டல்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "வெப்பம் முதலிய"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "மென்மையான"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அங்கே (தரையில்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உள்ளது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "நிறுவும்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அதன்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "தனது சொந்த அறிவு"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "கடமற்ற தன்மையை"
+      }
+    ],
+    "7.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "பிசாசு (மாயப் பேய்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இருக்கக்கூடும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஒளியால் (காணப்படாதது), அஒளி"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஒளியின் நடுவில்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "எவ்வாறு"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "காணப்படாதது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "தரையின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "உள்ளே"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "மறுக்கத்தக்கது"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "அது (பிசாசு)"
+      },
+      {
+        "word_idx": 12,
+        "gloss_text": "எவ்வகையிலும்"
+      }
+    ],
+    "7.12": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இவ்வாறே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வெள்ளி-அறிவின் அபாவ வடிவுடையது"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "சிப்பியின் அறிவு"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஆனால் அன்று"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "முதலில் தோன்றிய வெள்ளி-அறிவின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அப்ரமாண்யத்தை அறிவிப்பது"
+      }
+    ],
+    "7.13": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தர்மி (ஆதாரப்பொருள்) நிறுவப்படாததால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "கூட, மேலும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உண்டாகக்கூடும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "பாதை (மறுப்பு)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "ஒருபோதும் இல்லை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அனுமானத்தால்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஸ்வஸம்வேதனத்தால் நிறுவப்பட்டது"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆனால், மாறாக"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "பொருந்தும், தக்கது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அது (பாதை)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஒரே ப்ரமாதாவிலிருந்து உண்டானது"
+      }
+    ],
+    "7.14": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இவ்வாறு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மிகவும் வேறுபட்ட பொருள்களின் தோற்றங்களால் பதிக்கப்பட்ட"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "வ்யாபக (இறைவ)னில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "மலினமான"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "தூயதான"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அல்லது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "வ்யவஹாரம் (உலக நடைமுறை)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அனுபவிக்கப்படுகிறது"
+      }
+    ],
+    "8.1": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இந்திரியத்தின் தற்காலிக சந்நிதியை (அண்மையை) எதிர்நோக்குபவை"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மட்டுமே"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "சில இடங்களில்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தோற்றங்கள் (ஆபாஸங்கள்)"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வேறாக"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "வேறு இடங்களில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ஆனால்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "குருடர், காரிருள் முதலியவற்றில்"
+      }
+    ],
+    "8.2": [
+      {
+        "word_idx": 0,
+        "gloss_text": "வேறுபாடு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "பொருளின் தோற்றத்தின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இருப்பில் (ஸத்தாவில்)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஆனால் இல்லை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "எந்தச் சமயத்திலும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "விகல்பங்களிடையே"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இருக்கும்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "வருங்கால-நிகழ்கால-இறந்தகாலப் பொருள்களைச் செல்லும்"
+      }
+    ],
+    "8.3": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சுகம் முதலியவற்றில்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "சுகத்துக்குக் காரணமானவற்றிலும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "மேலும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "(மெய்)பொருள்களிலும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "தோற்றத்தின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இருப்பு (இருப்பினும்)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "கடந்தவையாதலால்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அவ்வாறே (கடந்த நிலையாகவே)"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "நிலை"
+      }
+    ],
+    "8.4": [
+      {
+        "word_idx": 0,
+        "gloss_text": "தெளிவாக, செறிவாக"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "உள்லேகிக்கப்படும்போது (வரையப்படும்போது)"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "ஆனால், திண்ணமாக"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "விகல்பத்தால்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "சுகம் முதலியது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அவ்வாறான நிலை"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அவ்வாறே (தெளிவாக)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "உண்டாகும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "தெளிவாக"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அதன்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "உணரப்படுவதால் (சுட்டப்படுவதால்)"
+      }
+    ],
+    "8.5": [
+      {
+        "word_idx": 0,
+        "gloss_text": "இருப்பு-இன்மைத் தோற்றங்களுக்கு"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "வெளித்தன்மை"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உபாதி (மேற்படிந்த கட்டுப்பாடு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஏற்கப்படுகிறது"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "அல்ல"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ஆத்மா (இயல்பு)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இருப்பு (ஸத்தா)"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஆதலின்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அவற்றின்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "உள்ளார்ந்தவையான"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "இருப்பவையான"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "எப்போதும்"
+      }
+    ],
+    "8.6": [
+      {
+        "word_idx": 0,
+        "gloss_text": "உள்ளார்ந்தமையால்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "ப்ரமாதாவின் ஒற்றுமையில்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "இல்லை"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "இவற்றின்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வேறுபாட்டுடன் தொடர்புடையது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "அர்த்தக்ரியை (செயல்திறன்)"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "வெளித்தன்மையில்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அது (செயல்திறன்)"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "வேறுபட்ட தோற்றங்களின் வேறுபாட்டால் (உண்டாகிறது)"
+      }
+    ],
+    "8.7": [
+      {
+        "word_idx": 0,
+        "gloss_text": "சின்மயத்தன்மையில் (சித் வடிவாதலால்)"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "தோற்றங்களின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உள்ளேயே"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "நிலை"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "எப்போதும்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "மாயையால்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "தோன்றுபவற்றின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "வெளித்தன்மையால்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "வெளியில்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "கூட"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "அந்த (நிலை)"
+      }
+    ],
+    "8.8": [
+      {
+        "word_idx": 0,
+        "gloss_text": "விகல்பத்தில்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இந்த எது"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உள்லேகம் (குறிப்பு)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "அதுவும்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வெளிப்பட்டது"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "தனியாகத் தோன்றுவது"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "ப்ரமாதாவுடன் ஒன்றியிருத்தல்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "உள்ளார்ந்த தன்மை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அதிலிருந்து"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "வேறுபாடு"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "ஏனெனில்"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "வெளித்தன்மை"
+      }
+    ],
+    "8.9": [
+      {
+        "word_idx": 0,
+        "gloss_text": "உள்லேகத்தின்"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "சுகம் முதலியவற்றின்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "மற்றும்"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "தோற்றம்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "வெளியில்"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "(தம்) வடிவில்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "இச்சையால்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "இறைவனின் (காப்பாளனின்)"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "அத்யக்ஷ (காட்சி) வடிவுடையது"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "இந்திரியங்கள் முதலியவற்றினின்று உண்டாகுபவை போல"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "போல"
+      }
+    ],
+    "8.10": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அந்த (ப்ரமாதாவின்) ஒற்றுமையின்றி"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "இன்றி"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "உண்டாகாது"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "ஸம்விதுகளிடையே"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "உலகின் நடைமுறை"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "ப்ரகாசத்தின் ஒற்றுமையால்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "அந்த, ஆதலின்"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "ஒருமை"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ப்ரமாதா ஒருவன்"
+      },
+      {
+        "word_idx": 9,
+        "gloss_text": "அவன்"
+      },
+      {
+        "word_idx": 10,
+        "gloss_text": "என்று"
+      },
+      {
+        "word_idx": 11,
+        "gloss_text": "நிலைபெற்றது"
+      }
+    ],
+    "8.11": [
+      {
+        "word_idx": 0,
+        "gloss_text": "அவனே"
+      },
+      {
+        "word_idx": 1,
+        "gloss_text": "விமர்சத்தன்மையால்"
+      },
+      {
+        "word_idx": 2,
+        "gloss_text": "மாறாத (இயல்பான)"
+      },
+      {
+        "word_idx": 3,
+        "gloss_text": "மகேஸ்வரன்"
+      },
+      {
+        "word_idx": 4,
+        "gloss_text": "விமர்சமே"
+      },
+      {
+        "word_idx": 5,
+        "gloss_text": "தேவனின்"
+      },
+      {
+        "word_idx": 6,
+        "gloss_text": "தூயவை"
+      },
+      {
+        "word_idx": 7,
+        "gloss_text": "அறிவும் செயலும்"
+      },
+      {
+        "word_idx": 8,
+        "gloss_text": "ஏனெனில்"
+      }
+    ],
+    "9.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இக்காரணத்தாலேயே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "எது கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூறப்பட்டது (எதிராளியால்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒருவனுக்கு உரியதன்று"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வரிசையாக"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "'(அது) ஒன்றன்று'"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "முதலியன"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மறுக்கப்படுகிறது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஒருவனுக்கு (ப்ரமாதாவுக்கு)"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "நிறுவப்பட்டதால்"
+        }
+      ],
+    "9.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வரிசைத்தன்மை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உலகியல் (செயலின்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "செயலின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கால-சக்தியால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பொருந்தும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆனால் அன்று"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "நித்திய (செயலின்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இறைவனுக்குரிய (செயலின்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "இருக்கும் (வேறாக)"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "இறைவனைப் போல"
+        }
+      ],
+    "9.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "காலம்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "சூரியன் முதலியவற்றின் நகர்வு"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அந்தந்த மலர் முதலியவற்றின் தோற்றம்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அல்லது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "குளிர்-வெப்பம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அல்லது மீண்டும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அந்த அடையாளங்களால் சுட்டப்படுவது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "வரிசையேயன்றி வேறன்று"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அது (காலம்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "உண்மையில்"
+        }
+      ],
+    "9.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வரிசை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வேறுபாட்டை ஆதாரமாகக் கொண்டது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வேறுபாடு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மேலும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோற்றத்தின் இருப்பு-இன்மையிலிருந்து"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "தோற்றத்தின் இருப்பு-இன்மை"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "(இறைவனின்) சித்திரத் தோற்றத்தால் செய்யப்பட்டது"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இறைவனின்"
+        }
+      ],
+    "9.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வடிவங்களின் பல்வேறுத்தன்மையிலிருந்து"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தேச-வரிசையை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "தோற்றுவிக்கிறான்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அவன் (இறைவன்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "செயல்களின் பல்வேறுத்தன்மையின் தோற்றத்திலிருந்து"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கால-வரிசையை"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஈஸ்வரன்"
+        }
+      ],
+    "9.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எங்கும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தோற்ற-வேறுபாடு"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஆகக்கூடும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கால-வரிசையின் ஊற்று"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இடையறுந்து ஒளிரும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "சூன்யம் முதலிய"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ப்ரமாதாவின்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஒளிர்பவனின்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ஒரே சமயத்தில் அன்று"
+        }
+      ],
+    "9.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தேச-வரிசை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பொருள்களிடையே"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தோன்றுகிறது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ப்ரமாதாவுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அளவுபட்ட இயல்புடையவனின்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "தனது சொந்த ஆத்மாவாகவே"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "தனது சொந்த ஆத்மாவால்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "பூரணமான"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "பொருள்கள்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "தோன்றுகின்றன"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "அளவற்றவனுக்கோ"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "ஆனால், மறுபுறம்"
+        }
+      ],
+    "9.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஆயினும், ஆனால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "நிர்மாண-சக்தி (படைப்புச் சக்தி)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அதுவும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அறிபவனாகிய (இறைவனின்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஈசிதாவின் (ஆட்சியாளனின்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அவ்வாறு (அந்த வகையில்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அறிபவன்-அறியப்படுபொருள் வேறுபாடு"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "எவ்வாறு (என்னும்படி)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "தோற்றுவிக்கப்படுகிறது"
+        }
+      ],
+    "10.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "செயல், ஸம்பந்தம், ஸாமான்யம், த்ரவ்யம், திக், காலம் என்பவற்றின் அறிவுகள்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மெய்யானவை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "நிலைப்பு மற்றும் பயன்பாட்டால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒன்றையும் பலவற்றையும் ஆதாரமாகக் கொண்டவை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஏற்கப்படுகின்றன"
+        }
+      ],
+    "10.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவற்றுள்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஒன்று"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உள்ளார்ந்த"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தத்துவம்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அதுவே"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இந்திரியங்களால் அறியத்தக்க தன்மையை"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அடைந்து"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "பன்மையை"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அடைகிறது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "தேச-காலத்தின் இயல்பால்"
+        }
+      ],
+    "10.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவ்விரண்டையும் (ஒன்று-பல) ஆதாரமாகக் கொண்ட"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "இவற்றை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மனம்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "பின்-அறிவை (அநுவ்யவஸாயத்தை) நடத்தும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இருந்து"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உருவாக்குகிறது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ப்ரமாதாவின் செயல்மயமான"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கர்மம் முதலிய கல்பனைகளை"
+        }
+      ],
+    "10.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தத்தம் ஆத்மாவில் நிலைபெற்றவை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வேறுபட்டவையாகத் தோன்றுபவை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பொருள்கள்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒரே ப்ரமாதாவில்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒன்றுக்கொன்று இணைந்த ஒற்றுமையுடன் கூடியவை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஸம்பந்த-அறிவின் இடம்"
+        }
+      ],
+    "10.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஜாதி-த்ரவ்யத் தோற்றங்களின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வெளியிலும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒரே வடிவத்தன்மையை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தனிநிகழ்வுகள்-பகுதிகளின் வேறுபாட்டை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மேலும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆதாரமாகக் கொள்கின்றன"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "விகல்பனைகள்"
+        }
+      ],
+    "10.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "செயல்-விமர்சத்தை விஷயமாகக் கொண்டது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "காரகங்களின் (செயல்-கூறுகளின்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஸமன்வயம் (இணைப்பு)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "எல்லை-எல்லையுடையதன் இணைப்பை ஆதாரமாகக் கொண்டது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "திக் முதலியவற்றின் அறிவு"
+        }
+      ],
+    "10.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அர்த்த-ஸித்தி (குறிக்கோள் நிறைவேற்றம்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உண்டாகும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ப்ரமாதாவுக்கு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அர்த்தக்ரியையை விரும்புவோனுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பேத-அபேதம் கொண்டதால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பொருளால்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ப்ராந்தி (மயக்கம், பிழை)"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "அத்தகைய (எதிராளி கூறிய)"
+        }
+      ],
+    "11.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "'இது இத்தகையது'"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "என்று இவ்வாறு"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "எதன் வசத்தால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "உறுதியாக நிலைபெறுகிறது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வஸ்து (மெய்ப்பொருள்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ப்ரமாணம் (சரியறிவுச்சாதனம்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அதுவும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "சுயஒளித் தோற்றம்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "புதிதாக எழுந்தது"
+        }
+      ],
+    "11.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அது (தோற்றம்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உள்ளே"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "'இது இத்தகையது' என்னும் விமர்சத்தை இயல்பாகக் கொண்டது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தேச-காலம் முதலியவற்றால் வேறுபடாததில்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒரே சொல்லுக்கு விஷயமானதில்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ப்ரமிதி (சரியான அளவறிவு)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வஸ்துவைப் பற்றி"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "பாதிக்கப்படாதது (மறுக்கப்படாதது)"
+        }
+      ],
+    "11.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ருசிக்கேற்ப"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தேவைக்கேற்ப"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கல்விக்கேற்ப"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வேறுபடுகிறது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோற்றம் (ஆபாஸம்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பொருளில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஒன்றிலேயே (ஒரே)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அநுஸந்தானத்தால் நிறுவப்பட்டதில்"
+        }
+      ],
+    "11.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "நீளம், வட்டம், செங்குத்து, புருஷன், புகை, சந்தனத்தன்மை முதலியவற்றால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தோற்றங்களுக்கேற்ப"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வேறுபடுத்தப்படுகின்றன"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தேச-காலத்தால் வேறுபடாதவை"
+        }
+      ],
+    "11.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவ்வாறே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உள்ளது, கடம், த்ரவ்யம், பொன், ஒளிர்வுத்தன்மை முதலியவை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "தோற்ற-வேறுபாடுகள் (ஆபாஸ-பேதங்கள்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வேறுபட்ட பொருள்களைச் செய்பவை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இடம், ஆதாரம்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "சொல்லின் (த்வனியின்)"
+        }
+      ],
+    "11.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தோற்ற-வேறுபாட்டால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "நியதமான அர்த்தக்ரியை (செயல்திறன்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மீண்டும், மறுபடியும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஸாமானாதிகரண்யத்தால் (ஒரே ஆதாரத்தன்மையால்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "தோற்றத்திலிருந்து"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வேறுபடாதவற்றின்"
+        }
+      ],
+    "11.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தனித்தனி தீபங்களின் ஒளிகளின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஓடைகளின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கடலில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "எவ்வாறு (போல)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒன்றோடொன்று முரண்படாத தோற்றங்களின்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஒரே காரியத்தைச் செய்வது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அவ்வாறே"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஐக்ய-அறிவு (ஒற்றுமை-உணர்வு)"
+        }
+      ],
+    "11.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அங்கே, அவ்விடத்தில்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வேறுபடாததில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "நெருப்பு முதலியதில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "காரிய-காரணத்தன்மை, வெப்பம் (முதலிய பண்புகள்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அந்தந்தச் சொல்லின் அர்த்தமாகுந்தன்மை முதலியதை ஆத்மாவாகக் கொண்டது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ப்ரமாணத்திலிருந்து"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஒன்றாக"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கருதப்படுகிறது"
+        }
+      ],
+    "11.9": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அது (செயல்திறன்/செயல்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "தேசம் முதலியவற்றின் வேறொரு காட்சியால் பிரிக்கப்பட்டதில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஸ்வலக்ஷணத்தைப் பொறுத்து"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அந்தக் க்ஷணத்திற்குரியது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ப்ரவ்ருத்தி (செயல், ஈடுபாடு)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இருக்கும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "குறிக்கோளுடையவனுக்கு"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அனுமானத்தாலும்"
+        }
+      ],
+    "11.10": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தூரம்-அண்மையால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மறைவு-காட்சித்தன்மையால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வெளி-உள் தன்மையால்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "குறைபாடுகளால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வெளிப்படுத்தும் காரணத்தின் (வ்யஞ்சகத்தின்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வேறுவகையாக"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அல்லது கூட"
+        }
+      ],
+    "11.11": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வேறுபட்ட தோற்றங்களின் சாயலைக் கொண்டவற்றிற்கும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "முதன்மைத் தோற்றத்திலிருந்து"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒரே ப்ரத்யவமர்சம் என்று கூறப்படுவதிலிருந்து"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒற்றுமை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "தடுக்கப்படாதது"
+        }
+      ],
+    "11.12": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அர்த்தக்ரியை (செயல்திறன்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இயல்பானது (சஹஜம்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "பொருள்களுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஈஸ்வரனின் இச்சையால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "நியதிக்கப்பட்டது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அது (செயல்திறன்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "திண்ணமாக"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அதனால் (அவனால்)"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "அதன் (செயல்திறனின்)"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "செயலின்மையால் (இறைவனின் இயங்காமையால்)"
+        },
+        {
+          "word_idx": 13,
+          "gloss_text": "வேறுபாடு"
+        },
+        {
+          "word_idx": 14,
+          "gloss_text": "உண்டாகும்"
+        }
+      ],
+    "11.13": [
+        {
+          "word_idx": 0,
+          "gloss_text": "'வெள்ளி' என்னும் ஒரே விமர்சத்திலும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "சிப்பியில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வெள்ளியின் (உண்மை) நிலைப்பு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உபாதி-தேசம் பொருந்தாமையால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இரட்டை-நிலவில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஆகாயம் (இடம்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "வேறாக"
+        }
+      ],
+    "11.14": [
+        {
+          "word_idx": 0,
+          "gloss_text": "குணங்களால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "சொல் முதலியவற்றால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வேறுபாடு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஜாதி முதலியவற்றால்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வேறுபடாமை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஒரே (இடத்தில்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ப்ரமாதாவில்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "பொருந்துகிறது"
+        }
+      ],
+    "11.15": [
+        {
+          "word_idx": 0,
+          "gloss_text": "பிரபஞ்சத்தின் பல்வேறுத்தன்மை என்னும் சித்திரத்தின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "சமமான சுவருக்கு ஒப்பானதில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "முரண்பாடு-இன்மை எதனாலும் தீண்டப்படாததில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "பரமார்த்தத்தில் உள்ளதில் (மெய்யாக உள்ளதில்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இறைவனில்"
+        }
+      ],
+    "11.16": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ப்ரமாதாவைப் பொறுத்து"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தொன்மையானதில் (புராணமானதில்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "எப்போதும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோன்றும் வடிவுடையதில்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "என்ன?"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ப்ரமாணம்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "புதிய தோற்றம்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "எல்லா ப்ரமிதிகளிலும் பங்குகொள்வதில்"
+        }
+      ],
+    "11.17": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இதுவரை நிகழாதது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "இங்கே"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வெறுமனே, மட்டுமே"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மூடத்தன்மையின் வசத்தால்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "சக்திகளை வெளிப்படுத்துவதன் மூலம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "'ஈஸ்' முதலிய வ்யவஹாரம் (நடைமுறை அறிதல்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "நிகழ்த்தப்படுகிறது"
+        }
+      ],
+    "12.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவன் (இறைவன்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அளவற்ற சக்திகள் உடைமையால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோற்றுவிக்கிறான்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அந்த (பொருள்களை)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பொருள்களை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "இச்சையின் வசத்தால்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "நிர்மாண-சக்தி (படைப்புத்தன்மை)"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "இவனது"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "அது"
+        }
+      ],
+    "12.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஜடப்பொருளுக்கு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அந்தச் சக்தி"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஸத்தா (இருப்பளித்தல்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "என்னும், எது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இல்லாததின்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "உள்ளதாக (மாற்றுதல்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "கர்த்ரு-கர்ம தன்மையையே ஆத்மாவாகக் கொண்ட"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "காரிய-காரணத்தன்மை"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஆதலின்"
+        }
+      ],
+    "12.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எது இல்லாதது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இல்லாமையுடன் இணைந்தது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இல்லாததற்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உள்ளதின் ஸ்வரூபம் (வந்துசேருதல்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "உள்ளதற்கு"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மீண்டும் இல்லை"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ஸத்தாவைப் பெறுவதால்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "பயன், பொருள்"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "ஆயினும்"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "கூறப்படுகிறது (சிலரால்)"
+        }
+      ],
+    "12.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "காரிய-காரணத்தன்மை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உலகியலில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அது (காரிய-காரணத்தன்மை)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "உள்ளார்ந்து உருமாறுவதின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இரு இந்திரியங்களாலும் அறியத்தக்க தன்மை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அதன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஏதோ ஒன்றின் (ஒரு தத்துவத்தின்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "(இறைவனின்) சக்தியால்"
+        }
+      ],
+    "12.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஒன்று"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இந்த (செயலே)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வரிசையுடன் உள்-வெளி நிலைப்புடையது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஒருவனுக்கே"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இரு வடிவங்களையும் தாங்கவல்லவனின்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "நிறுவப்பட்டது"
+        }
+      ],
+    "12.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வெளி"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அந்த (ப்ரமாதாவின்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அந்த (ப்ரமாதாவின்) காரியம்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "எது உள்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "எதைப் பொறுத்து"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ப்ரமாதாவைப் பொறுத்து"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கூறப்படுகிறது"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இருவகை"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "வெளி-உள் நிலைப்பு"
+        }
+      ],
+    "12.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ப்ரமாதாவே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "காரணம்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அவன்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இரு தோற்றங்களின் (காரண-காரியத்தின்) நிலைப்பில்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "காரியத்தின்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஒருவனாகவே நிலைபெறுகிறான்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஒருவன்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஒருவனுக்கே"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "செயல் கூறப்பட்டது"
+        }
+      ],
+    "12.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இக்காரணத்தாலேயே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "முளையில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஏற்கப்படுகிறான்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "நிமித்த(காரண)ம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பரமேஸ்வரன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "வேறெதற்கும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "விதை முதலியதின்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "காரணத்தன்மை"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "பொருந்தாது"
+        }
+      ],
+    "12.9": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஏனெனில் (விளக்கமாக)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "குயவன்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அந்த (குயவன்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "(இறைவனின்) ஐஸ்வர்யத்தாலேயே"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஒழுங்கினால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அந்தந்த மண் முதலியவற்றைப் பக்குவப்படுத்தும் வரிசையால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "உருவாக்குகிறான்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கடத்தை"
+        }
+      ],
+    "12.10": [
+        {
+          "word_idx": 0,
+          "gloss_text": "யோகிகளுக்கு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மண்-விதை"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இன்றியே"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இச்சையின் வசத்தால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "கடம் முதலியன"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "உண்டாகின்றன"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அந்தந்த உறுதியான, பயன்தரும் செயலைச் செய்வது"
+        }
+      ],
+    "12.11": [
+        {
+          "word_idx": 0,
+          "gloss_text": "யோகியின் நிர்மாணம் இருக்கையில்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வேறொரு ப்ரமாணத்தால் உறுதிசெய்யப்பட்டதில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "காரியம்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "காரணம்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஸ்வபாவம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அல்லது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இக்காரணத்தாலேயே"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "உற்பத்தியின் மூலத்திலிருந்து உண்டாவது"
+        }
+      ],
+    "12.12": [
+        {
+          "word_idx": 0,
+          "gloss_text": "மேலும், மீண்டும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அந்தந்த ஒரே ப்ரமாதாவில் உள்ள நெருப்பு முதலியதின் தோற்றத்திலிருந்து"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உண்டாகும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மறைந்ததிலிருந்து"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அதிபதியான (இறைவ)னிடமிருந்து"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "புகை முதலிய தோற்றம்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "புதிய"
+        }
+      ],
+    "12.13": [
+        {
+          "word_idx": 0,
+          "gloss_text": "காரியம்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மாறாததின் (காரணத்தின்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "லிங்கம் (அடையாளம்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வேறொரு ப்ரமாதாவில் உள்ளதிலிருந்து"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அந்த (காரியத்)தோற்றம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அந்த (காரண)த்தோற்றத்திலிருந்தே"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "மட்டுமே"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அதிபதியான இறைவனிலிருந்து"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "வேறுபட்டது"
+        }
+      ],
+    "12.14": [
+        {
+          "word_idx": 0,
+          "gloss_text": "'இது இருக்கையில்'"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "'இது உள்ளது'"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "என்று (வடிவில்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "காரிய-காரணத்தன்மை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "எது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அதுவும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "எதிர்நோக்குதலற்றவற்றின்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஜடப்பொருள்களுக்கு"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "பொருந்தாது"
+        }
+      ],
+    "12.15": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஏனெனில் இல்லை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "தத்தம் ஆத்மாவிலேயே நிலைபெற்றவற்றின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அனுஸந்தானமற்றவற்றின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இருப்பு-இன்மையின் விஷயத்திலும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஸப்தமீ-அர்த்தம் (ஏழாம் வேற்றுமைப் பொருள்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கல்பிக்கப்படுகிறது"
+        }
+      ],
+    "12.16": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இக்காரணத்தாலேயே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "விபக்தி-அர்த்தம் (வேற்றுமை விகுதிப் பொருள்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஒரே ப்ரமாதாவை ஆதாரமாகக் கொண்டது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "செயல்-காரக பாவம் என்று கூறப்படுவது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "பொருந்துகிறது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பொருள்களின் ஸமன்வயம் (இணைப்பு)"
+        }
+      ],
+    "12.17": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஒன்று மற்றொன்றின் ஸ்வபாவமாயின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "காரியம்-காரணத்தின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒற்றுமையே"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வேறுபாடு இருந்தால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஏனெனில்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஒன்று மற்றொன்றின் ஸ்வரூபமாகுந்தன்மை"
+        }
+      ],
+    "12.18": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஒரே ஆத்மாவின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வேறுபாடு"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கால-வரிசையைப் பின்தொடர்வது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அவ்வாறு"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இருக்கும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கர்த்ருத்தன்மையே"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அவ்வாறு"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "உருமாறாமல்"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "அதன் (செயலின்) வழியாக"
+        }
+      ],
+    "12.19": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொருந்தும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஜடப்பொருளுக்கு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வேறுபாடு-வேறுபடாமை முரண்பாட்டால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "தோற்ற-வேறுபாட்டால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஒரே (இடத்தில்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "சித்தை ஆத்மாவாகக் கொண்டதில்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "பொருந்தும்"
+        }
+      ],
+    "12.20": [
+        {
+          "word_idx": 0,
+          "gloss_text": "உண்மையான"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "சித்தின் ஒற்றுமையில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "உண்டாகாது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோற்றத்தால் வேறுபட்ட இரண்டின்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "செய்யவிரும்புதலை அடையாளமாகக் கொண்ட ஒற்றுமை-விமர்சத்தை"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "இன்றி"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "செயல்"
+        }
+      ],
+    "12.21": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அவ்வாறு"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கடம், படம் முதலிய தோற்றங்களைக் கொண்ட உலகாக"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "(அவ்வாறு) நிலைபெற விரும்புவோனின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இச்சையே"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "காரணத்தன்மை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கர்த்ருத்தன்மை"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "செயல்"
+        }
+      ],
+    "13.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உள்-வெளி இயங்குவது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "கால-வரிசையைப் பின்தொடர்வது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ப்ரமாதாவுக்கே"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அந்த"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஒன்றையொன்று பிரியாதவை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அறிவும் செயலும்"
+        }
+      ],
+    "13.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஆனால், மேலும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உள்ளார்ந்த நிலையின் மிகுதியால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஸாதாக்கியம் (ஸதாசிவ) என்னும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தத்துவம்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "முதலில்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வெளித்தன்மையை நோக்கும்போது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "பின்னர்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "பாரமேஸ்வர (ஈஸ்வர) தத்துவம்"
+        }
+      ],
+    "13.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஈஸ்வரன்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வெளி"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உன்மேஷம் (விரிதல்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "நிமேஷம் (குவிதல்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "உள்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஸதாசிவன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஸாமானாதிகரண்யம் (சமமான ஆதாரத்தன்மை)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஸத்வித்யாவில் உள்ள 'நான்'-'இது' அறிவுகளின்"
+        }
+      ],
+    "13.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "'இது'-தன்மை பெற்றவற்றின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அறியப்படும் (வேத்ய) நிலையை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அடைந்தவற்றின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "சாரம் போதமாதலால் (சித்தாதலால்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உள்ளவாறு நோக்குவதால்"
+        }
+      ],
+    "13.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இங்கே (இந்நிலையில்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அபரத்வம் (கீழ்நிலை)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அநாத்மாவாக (தான் அல்லாததாக)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தோன்றுவதால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பரத்வம் (மேல்நிலை)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அஹந்தையால் (நான்-தன்மையால்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மூடப்படுவதால்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "பர-அபர தசை (மேல்-கீழ் நிலை)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "திண்ணமாக"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "அது (ஸத்வித்யை)"
+        }
+      ],
+    "13.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "பேத-புத்தி (வேறுபாட்டறிவு)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஏ, அதுவே"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பொருள்களிடையே"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "கர்த்தாவின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "போதத்தை (சித்தை) ஆத்மாவாகக் கொண்டவனின்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "எது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மாயா-சக்தியே"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "வித்யா (என்றும்)"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "என்று"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "மற்றவர் (கூறுவர்)"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "வித்யேஸ்வரர்கள்"
+        },
+        {
+          "word_idx": 13,
+          "gloss_text": "போல"
+        }
+      ],
+    "13.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அதன்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஐஸ்வர்ய ஸ்வபாவத்தின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பந்த நிலையில் (பசு நிலையில்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வெளிப்படுத்துவது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வித்யா-சக்தி"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மறைப்பைச் செய்வது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "மாயா என்று பெயரிடப்பட்டது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மறுபுறம்"
+        }
+      ],
+    "13.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வேறுபாடு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஒரே ரஸமாக (சுவையாக)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தோன்றும்போது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அஹந்தையுடன் (நான்-தன்மையுடன்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அநாத்மாவில் (தான் அல்லாததில்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "நோக்கப்படுவதில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "சூன்யத்தில்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "புத்தியில்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "உடலில்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "அல்லது"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "மாயா-சக்தி"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "விரிந்து வெளிப்படுகிறது"
+        }
+      ],
+    "13.9": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எவன்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ப்ரமாதா"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "சூன்யம் முதலிய"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ப்ரமேயம் (அறியப்படுபொருள்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வேறுபட்டதாக நிற்கும்போது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ப்ரமாதாவாக"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அவன்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மேயன் (அறியப்படுபவன்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "இருந்தும்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "காலம் முதலிய பஞ்சகத்தால் (கஞ்சுகங்களால்) சூழப்பட்டவன்"
+        }
+      ],
+    "13.10": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இருபத்து மூன்று வகையானது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மேயம் (அறியப்படுபொருள்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "எது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "காரிய-கரண வடிவானது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அதன்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வேறுபடாத வடிவுடையது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஒன்று"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ப்ரதானம் (மூலப்பகுதி)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மூலக்காரணம்"
+        }
+      ],
+    "13.11": [
+        {
+          "word_idx": 0,
+          "gloss_text": "பதின்மூன்று வகையானது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இங்கே, இவற்றுள்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வெளி-உள் கரணங்களின் (கருவிகளின்) தொடர்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "காரியக்கூட்டம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பத்து வகையானது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஸ்தூல-ஸூக்ஷ்ம வேறுபாட்டால்"
+        }
+      ],
+    "14.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அங்கே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "இது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வெறும் ப்ரமாத்ருத்தன்மையில் நிலைபெறும்போது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ருத்ரன்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அதிதேவதை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வேறுபட்ட ப்ரமேயங்களின் பரப்பில்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ப்ரஹ்மா-விஷ்ணு"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "நிலைபெற்றுள்ளனர்"
+        }
+      ],
+    "14.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ப்ரமாதா"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மாயையால் குருடான"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஸம்ஸாரியான"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கர்மத்தால் கட்டுண்ட"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வித்யையால் ஐஸ்வர்யம் அறிவிக்கப்பட்டவன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "சித்-கனமானவன் (சித்திரண்டானவன்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "முக்தன் (விடுதலையடைந்தவன்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "கூறப்படுகிறான்"
+        }
+      ],
+    "14.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தனது சொந்த உறுப்புகளாகத் தோன்றும்போது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொருள்கள் (அவ்வாறு இருக்கையில்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ப்ரமாதா"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "கூறப்படுகிறான்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "பதி (இறைவன்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மாயையால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வேறுபடும்போது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "க்லேசம், கர்மம் முதலியவற்றால் மாசுபட்டவன்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "பசு (பந்தப்பட்ட உயிர்)"
+        }
+      ],
+    "14.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஸ்வாதந்த்ரிய இழப்பு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "போதத்தின் (சித்தின்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஸ்வாதந்த்ரியத்தின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மேலும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "போதமின்மை (அறிவின்மை)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "இருவகை"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஆணவம் (அணுவுக்குரிய)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மலம் (மாசு)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "தனது சொந்த ஸ்வரூபத்தை இழப்பதால்"
+        }
+      ],
+    "14.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "வேறுபட்ட வேத்யங்களாக விரிதல்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "இங்கேயே"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மாயீய (மலம்) என்று கூறப்படுவது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "பிறப்பையும் போகத்தையும் தருவது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கர்த்தாவில்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "போதமற்றவனில்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "காரம (மலம்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மாயா-சக்தியாலேயே"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அந்த மூன்று"
+        }
+      ],
+    "14.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தூய போதத்தை இயல்பாகக் கொண்டிருப்பினும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "எவர்களுக்கு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இல்லை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "உத்தம கர்த்ருத்தன்மை (உயர்ந்த செயலாற்றல்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உருவாக்கப்பட்டவர்கள்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "தனது சொந்த ஆத்மாவிலிருந்து"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "வேறானவர்களாக"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "இறைவனால் (காப்பாளனால்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அவர்கள்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "கர்த்ருத்தன்மை நீங்கியதால்"
+        }
+      ],
+    "14.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "போதம் (சித்) என்னும் ஒரே லக்ஷணத்தில் ஒற்றுமை இருப்பினும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அவர்களுக்கு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஒன்றுக்கொன்று வேறுபாடு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவ்வாறு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஈஸ்வரனின் இச்சா-வேறுபாட்டால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அவர்கள்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "விஜ்ஞானகேவலர் (தூய அறிவில் தனித்தவர்)"
+        }
+      ],
+    "14.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "சூன்யம் முதலிய போதமற்ற வடிவுடையவர்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "(இன்னும்) கர்த்தாக்கள்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ப்ரளயாகலர் (ப்ரளயத்தில் தனித்தவர்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவர்களுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "காரம-மலம்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "உள்ளது"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மாயீய (மலம்)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "விகல்பித (எஞ்சிய) வடிவில்"
+        }
+      ],
+    "14.9": [
+        {
+          "word_idx": 0,
+          "gloss_text": "போதவான்களுக்கு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கர்த்ருத்தன்மையுடையவர்களுக்கு"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "காரம-மலம் அழிந்த நிலையில்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "வேறுபட்ட வேத்யங்களைப் பற்றியிருப்பவர்களுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மாயா-மலம் (மட்டும் எஞ்சுகிறது)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வித்யேஸ்வரர்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அவர்கள்"
+        }
+      ],
+    "14.10": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தேவர்கள் முதலியவர்களின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "எல்லாரின்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஸம்ஸாரிகளின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "மூவகையானது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மலம்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அவற்றுள்ளும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "காரம ஒன்றே"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஒன்று (ஒற்றை)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "முதன்மை"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஸம்ஸாரத்துக்குக் காரணம்"
+        }
+      ],
+    "14.11": [
+        {
+          "word_idx": 0,
+          "gloss_text": "கலையால் உரம்பெற்றது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "இது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "சித்தத்துவம்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கர்த்ருத்தன்மைமயமானது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "போதமற்ற வடிவுடையதின்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "சூன்யம் முதலியதின்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அளவுபட்டது"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "குணமாக (கீழ்மைப் பண்பாக)"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "நிலைபெற்றுள்ளது"
+        }
+      ],
+    "14.12": [
+        {
+          "word_idx": 0,
+          "gloss_text": "முதன்மை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கர்த்ருத்தன்மையின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "போதத்தின் (சித்தின்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "சித்தை ஆத்மாவாகக் கொண்டதின்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "சூன்யம் முதலியதில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அதன் குணமாகியதில்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அறிவு"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அதில் (சித்தில்) ஸமாவேசத்தை (மூழ்குதலை) அடையாளமாகக் கொண்டது"
+        }
+      ],
+    "14.13": [
+        {
+          "word_idx": 0,
+          "gloss_text": "சூன்யத்தில்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "புத்தி முதலியவற்றின் அபாவத்தை இயல்பாகக் கொண்டதில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அஹந்தா-கர்த்ருத்தன்மையின் இடமாகியதில்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தெளிவற்ற உருவற்ற ஸம்ஸ்காரங்களை மட்டும் கொண்டதில்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அறியப்படுபொருளின் சூன்யத்தன்மை"
+        }
+      ],
+    "14.14": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இந்திரியங்களுடையவர்களின் (ப்ரமாதாக்களின்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உள்ளார்ந்த வ்ருத்தி (செயல்பாடு)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ப்ராணன் முதலியவற்றைத் தூண்டுவது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "கருதப்படுகிறது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "'ஜீவனம்' (உயிர்) என்று"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அல்லது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ப்ராணனில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அஹந்தா (நான்-தன்மை)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "புர்யஷ்டகத்தை (சூக்ஷ்ம உடலை) இயல்பாகக் கொண்டது"
+        }
+      ],
+    "14.15": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவ்வளவு மாத்திரத்தில்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வெறும் (ப்ரமாதா) நிலைப்பில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "கூறப்பட்டது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஸுஷுப்தி (கனவற்ற உறக்கம்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ப்ரளயத்துக்கு ஒப்பானது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "விஷயத்துடன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "விஷயமின்றி"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மாயா-மலத்துடனோ இன்றியோ"
+        }
+      ],
+    "14.16": [
+        {
+          "word_idx": 0,
+          "gloss_text": "மனம் மட்டுமே செயல்படும் வழியிலும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இந்திரிய விஷயங்களென"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ப்ரமிப்பதால் (மயங்குவதால்)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "தெளிவான தோற்றமுடைய"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பொருள்களின்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஸ்ருஷ்டி (படைப்பு)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கனவு நிலை"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "கருதப்படுகிறது"
+        }
+      ],
+    "14.17": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எல்லா இந்திரியங்களுக்கும் விஷயமாகுவதால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "எது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "வெளித்தன்மையால்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "நிலைத்தது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஸ்ருஷ்டி"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பொதுவானது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "எல்லா ப்ரமாதாக்களுக்கும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "விழிப்பு நிலை"
+        }
+      ],
+    "14.18": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தவிர்க்கத்தக்கது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மூவகை (நிலை)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ப்ராணன் முதலியவற்றின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "முதன்மையால்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கர்த்ருத்தன்மை கீழ்மைப்பட்ட நிலையில்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அதன் குறைதல்-பெருகுதலில் பெரும்பாலும் அடங்கிய சுக-துக்கம் முதலியவற்றுடன் தொடர்புபடுவதால்"
+        }
+      ],
+    "14.19": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ப்ராண-அபானமயமானது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ப்ராணன்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "முறையே"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "உறக்கம்-விழிப்பில்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவ்விரண்டின் சந்தியை (இடைவெளியை) இயல்பாகக் கொண்டது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஸமானன் என்னும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "ஸுஷுப்தியில்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "விஷுவத்துக்களில் (சம இரவு-பகலில்) போல"
+        }
+      ],
+    "14.20": [
+        {
+          "word_idx": 0,
+          "gloss_text": "நடு-மேல்நோக்கிச் செல்வது"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "உதானன் என்னும்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "துரிய நிலையில் வசிப்பது"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அக்னிமயமானது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "விஜ்ஞானாகலன்-மந்த்ரேஸன் (அதன் தலைவர்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "வ்யானன் (பரவிய ப்ராணன்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "விஸ்வத்தை ஆத்மாவாகக் கொண்டது"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "பரன் (துரியாதீத நிலை)"
+        }
+      ],
+    "15.1": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஆத்மாவே"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "எல்லா உயிர்களின்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஒருவனே (ஒரே)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "மகேஸ்வரன்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "விஸ்வரூபன் (உலகை வடிவாகக் கொண்டவன்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "'நான் இது'"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "என்று"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "வேறுபடாத ஆமர்சத்தால் (விமர்சத்தால்) நிறைந்தவன்"
+        }
+      ],
+    "15.2": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அங்கே, அதில்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அவன் படைத்த 'இது'-பகுதியில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "புத்தி முதலிய கிராஹக ஆத்மாவாக (அறிபவன் வடிவில்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அஹங்காரப் பராமர்சத்தின் (நான்-செய்தலின்) நிலைக்கு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கொண்டுவரப்படுகிறது"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அவனால் (இறைவனால்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அந்த (பகுதி)"
+        }
+      ],
+    "15.3": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தனது சொந்த ஸ்வரூபத்தை அறியாமையை இயல்பாகக் கொண்டவன்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பலவான்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "புருஷன் (தனிஉயிர்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஏற்கப்படுகிறான்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அங்கே, அவனுக்கு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "ஸ்ருஷ்டியில் (செயலில்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "க்ரியையும் ஆனந்தமும்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "போகம் (அனுபவம்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "துக்க-சுகமயமானது"
+        }
+      ],
+    "15.4": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தனது சொந்த உறுப்புகளாகத் தோன்றும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொருள்களிடையே"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பதியின் (இறைவனின்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அறிவு"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "எவை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மாயை மூன்றாவதாகச் சேரும்போது (இரண்டும்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அவ்விரண்டுமே"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "பசுவின் (பந்தப்பட்ட உயிரின்)"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஸத்வம்-ரஜஸ்-தமஸ் (ஆகின்றன)"
+        }
+      ],
+    "15.5": [
+        {
+          "word_idx": 0,
+          "gloss_text": "பேத நிலையிலிருந்து (வேறுபாட்டில் நிற்பதிலிருந்து)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "சக்திமானின் (இறைவனின்)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "சக்தித்தன்மை"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "சரியாகச் சுட்டப்படுவதில்லை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இவற்றின்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "குணங்களின் (ஸத்வ-ரஜஸ்-தமஸ்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "கருவி-காரியங்களாக உருமாறுபவற்றின்"
+        }
+      ],
+    "15.6": [
+        {
+          "word_idx": 0,
+          "gloss_text": "ஸத்-ஆனந்தம் (இருப்பின் இன்பம்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "செயல்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "பதியின் (இறைவனின்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அதன் இன்மை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அது (அதே செயல்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "பசுவின் (பந்தப்பட்ட உயிரின்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "இருமை வடிவானது (சுக-துக்கம்)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அது"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "ரஜஸ்"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "துக்கமாய்"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "ஒட்டுந்தன்மையுடையது (இரண்டையும் இணைப்பது)"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "ஸத்வ-தமஸ்மயமானது"
+        }
+      ],
+    "15.7": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எவை"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "அஸாமயிக (மரபற்ற) இதந்தா-பராமர்சத்திலிருந்து பிறந்தவை"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "இறைவனின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவை"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கலந்தவை (விமிஸ்ரம்)"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "வேறுபட்டவை"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "அவ்வாறு"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "சித்திரமாக (பல்வேறாக) தோன்றுபவை"
+        }
+      ],
+    "15.8": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவை (அந்தப் பொருள்கள்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வேறுபட்ட தோற்றமுடைய பொருள்கள்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "கல்பிக்கத்தக்கவை"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ப்ரத்யக்-ஆத்மாவால் (உள்ளார்ந்த தனிஉயிரால்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அந்தந்த வேறுபட்ட பெயர்களால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "நினைவு-கற்பனை முதலியவற்றின் களத்தில்"
+        }
+      ],
+    "15.9": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அவனது (தனிஉயிரின்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அஸாதாரண (தனிப்பட்ட)"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ஸ்ருஷ்டி"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஈஸனின் ஸ்ருஷ்டியை அண்டி வாழ்வது"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இந்த (தனிப்படைப்பு)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "அறியாமையால்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "மெய்யானதே"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஈஸனின் சக்தியால்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "அவன் எவனின் ஆத்மாவோ அந்த (ஈஸனின்)"
+        }
+      ],
+    "15.10": [
+        {
+          "word_idx": 0,
+          "gloss_text": "தன்னில் (ஆத்மாவில்) தங்குதலைத் தடுக்க முனைவதால்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "அமைதியற்ற"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "ப்ராண வடிவான"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "விகல்ப-க்ரியையால்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அந்தந்த எழுத்துகளின் பல்வேறுத்தன்மை வடிவான"
+        }
+      ],
+    "15.11": [
+        {
+          "word_idx": 0,
+          "gloss_text": "பொதுவானது (ஸாதாரணம்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "மறுவகையில்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "மற்றும்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஈஸனின்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "ஸர்க்கம் (படைப்பு)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "தெளிவான தோற்றத்தால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "விகல்பங்களைத் துறக்கும் ஏகாக்ரியத்தால் (ஒருமுகப்பாட்டால்)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "படிப்படியாக"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "ஈஸ்வரத்துவ நிலை"
+        }
+      ],
+    "15.12": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அனைத்தும் (இந்த)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "என்னுடையது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "விபவம் (பெருஞ்செழுமை)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "என்று இவ்வாறு"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "முற்றிலும் அறிபவனுக்கு"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "விஸ்வத்தை ஆத்மாவாகக் கொண்டவனுக்கு"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "விகல்பங்களின்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "பெருக்கில்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "மகேஸத்துவம் (பெருமை)"
+        }
+      ],
+    "15.13": [
+        {
+          "word_idx": 0,
+          "gloss_text": "மேயத்தை (அறியப்படுபொருளை)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "பொதுவானதை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "முக்தன் (விடுதலையடைந்தவன்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "தனது சொந்த ஆத்மாவிலிருந்து வேறுபடாததாக"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "கருதுகிறான்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "மகேஸ்வரன்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "போல"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "பந்தப்பட்டவன்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "மறுபுறம்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "முற்றிலும் வேறுபட்டதாக"
+        }
+      ],
+    "15.14": [
+        {
+          "word_idx": 0,
+          "gloss_text": "எல்லாவகையிலும்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆனால்"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "தனக்குள் கரைந்த அளவற்ற தத்துவக் குவியலால் நிறைந்தவன்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "சிவன்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "சித்-ஆனந்தக் கனமானவன் (செறிவானவன்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "பரம அக்ஷரத்தை (அழியாப் பொருளை) உடலாகக் கொண்டவன்"
+        }
+      ],
+    "15.15": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "ஆத்மாவை"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "இதன் (இறைவனின்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "சரியான அறிவையும் செயலையும்"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "அவ்வாறே"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "அறிந்து"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "விரும்பிய (பொருள்களை)"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கண்டு"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "உண்மையாக அறிகிறான்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "மற்றும் உண்மையாகச் செய்கிறான்"
+        }
+      ],
+    "15.16": [
+        {
+          "word_idx": 0,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "வெளிப்படுத்தப்பட்டது"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "என்னால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "நன்கமைந்த, நிலையான"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இந்த மார்க்கம்"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "புதியது"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "மகாகுருக்களால்"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "கூறப்பட்டது (ஏற்கனவே)"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "சிவத்ருஷ்டி சாஸ்திரத்தில்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "போலவே"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "இங்கே"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "வைத்து"
+        },
+        {
+          "word_idx": 13,
+          "gloss_text": "அடி, அடியெடுப்பு"
+        },
+        {
+          "word_idx": 14,
+          "gloss_text": "ஆத்மாவின் புவன-கர்த்ருத்தன்மையை (உலகைப் படைக்கும் தன்மையை)"
+        },
+        {
+          "word_idx": 15,
+          "gloss_text": "ஆத்மாவின்"
+        },
+        {
+          "word_idx": 16,
+          "gloss_text": "சிவத்துவமயமாக உணர்ந்து"
+        },
+        {
+          "word_idx": 17,
+          "gloss_text": "சிவத்துவமயமானதாக"
+        },
+        {
+          "word_idx": 18,
+          "gloss_text": "இடையறாது"
+        },
+        {
+          "word_idx": 19,
+          "gloss_text": "புகுந்து"
+        },
+        {
+          "word_idx": 20,
+          "gloss_text": "ஸித்தியடைகிறான்"
+        }
+      ],
+    "15.17": [
+        {
+          "word_idx": 0,
+          "gloss_text": "அந்தந்த (வழிகளால்)"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "வேண்டுதல்களால் (வேண்டிக்கொள்தல்களால்)"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "அண்மிய"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "மெல்லியளின் (காதலியின்)"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "நின்றிருப்பினும்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 7,
+          "gloss_text": "அருகில்"
+        },
+        {
+          "word_idx": 8,
+          "gloss_text": "காதலன்"
+        },
+        {
+          "word_idx": 9,
+          "gloss_text": "சாதாரண மனிதனைப் போல"
+        },
+        {
+          "word_idx": 10,
+          "gloss_text": "இவ்வாறு"
+        },
+        {
+          "word_idx": 11,
+          "gloss_text": "அறியப்படாதவன்"
+        },
+        {
+          "word_idx": 12,
+          "gloss_text": "களிப்பூட்ட இயலாது"
+        },
+        {
+          "word_idx": 13,
+          "gloss_text": "போல"
+        },
+        {
+          "word_idx": 14,
+          "gloss_text": "உலகுக்கு"
+        },
+        {
+          "word_idx": 15,
+          "gloss_text": "இந்த (இறைவன்)"
+        },
+        {
+          "word_idx": 16,
+          "gloss_text": "அவ்வாறே"
+        },
+        {
+          "word_idx": 17,
+          "gloss_text": "குணங்கள் கவனிக்கப்படாதவன்"
+        },
+        {
+          "word_idx": 18,
+          "gloss_text": "தனது சொந்த ஆத்மாவாயினும்"
+        },
+        {
+          "word_idx": 19,
+          "gloss_text": "கூட"
+        },
+        {
+          "word_idx": 20,
+          "gloss_text": "விஸ்வேஸ்வரன் (உலகின் இறைவன்)"
+        },
+        {
+          "word_idx": 21,
+          "gloss_text": "போதாதவனே (போதுமானவனல்லன்)"
+        },
+        {
+          "word_idx": 22,
+          "gloss_text": "தனது சொந்த வைபவத்திற்கு (மகிமைக்கு)"
+        },
+        {
+          "word_idx": 23,
+          "gloss_text": "ஆதலின்"
+        },
+        {
+          "word_idx": 24,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 25,
+          "gloss_text": "அவனது ப்ரத்யபிஜ்ஞை (மீள்அறிவு) எடுத்துரைக்கப்பட்டது"
+        }
+      ],
+    "15.18": [
+        {
+          "word_idx": 0,
+          "gloss_text": "மக்களின்"
+        },
+        {
+          "word_idx": 1,
+          "gloss_text": "முயற்சியின்றி (குறிக்கோளை) அடைவதற்காக"
+        },
+        {
+          "word_idx": 2,
+          "gloss_text": "உதயாகரரின் மகனால்"
+        },
+        {
+          "word_idx": 3,
+          "gloss_text": "ஈஸ்வர-ப்ரத்யபிஜ்ஞை (இறைவனின் மீள்அறிவு)"
+        },
+        {
+          "word_idx": 4,
+          "gloss_text": "இந்த"
+        },
+        {
+          "word_idx": 5,
+          "gloss_text": "உத்பலரால்"
+        },
+        {
+          "word_idx": 6,
+          "gloss_text": "எடுத்துரைக்கப்பட்டது"
+        }
+      ]
+  }
+}

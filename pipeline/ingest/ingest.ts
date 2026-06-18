@@ -3,7 +3,12 @@
  * sohamhamso — YAML corpus ingestion
  *
  * Reads `data/corpus/*.yaml` and upserts rows into the local SQLite DB
- * at `db/sohamhamso.db`. Idempotent: re-running does not duplicate.
+ * at `db/sohamhamso.db`. Idempotent: re-running does not duplicate, and
+ * unchanged content is a true no-op (updated_at is only touched when row
+ * content actually changes). Reconciling: verses/translations/word_glosses
+ * present in the DB but absent from the incoming YAML are deleted, so
+ * removed or renumbered verses do not stay public forever (routes generate
+ * from the DB, not from YAML).
  *
  * Run:
  *   bun pipeline/ingest/ingest.ts
@@ -19,6 +24,9 @@
  *   ...
  *   chapters:
  *     - chapter: 1
+ *       title_sa: सृष्टिप्रकरणम्        # optional chapter titles -> `chapters`
+ *       title_iast: sṛṣṭi-prakaraṇam   # optional
+ *       title_en: Creation of the world  # optional
  *       verses:
  *         - verse_num: 1
  *           devanagari: "..."
@@ -27,6 +35,8 @@
  *           meter: anushtubh
  *           book: 1                       # optional
  *           manuscript_folio_ref: "..."  # optional
+ *           section_type: prose          # optional ('verse' default | 'prose')
+ *           prose_block_ref: "uddyota-1.1"  # optional, prose blocks only
  *           word_glosses:
  *             - word_idx: 0
  *               word_sa: "यस्य"
@@ -52,7 +62,7 @@
  */
 
 import { Database } from 'bun:sqlite';
-import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, rmSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Sanscript from '@indic-transliteration/sanscript';
@@ -143,12 +153,19 @@ export interface VerseYaml {
   iast?: string | null;
   meter?: string | null;
   manuscript_folio_ref?: string | null;
+  /** Prose blocks share verse numbering (verse_num >= 1; 0 is reserved). */
+  section_type?: 'verse' | 'prose' | null;
+  prose_block_ref?: string | null;
   word_glosses?: WordGlossYaml[];
   translations?: TranslationYaml[];
 }
 
 export interface ChapterYaml {
   chapter: number;
+  /** Optional wayfinding titles — persisted to `chapters` when present. */
+  title_sa?: string | null;
+  title_iast?: string | null;
+  title_en?: string | null;
   verses: VerseYaml[];
 }
 
@@ -170,11 +187,19 @@ export interface TextYaml {
   parent_text_id?: string | null;
   manuscript_url?: string | null;
   description?: string | null;
+  /** Editorial flag only — no DB column; carried through for tooling. */
+  pending_miri?: boolean | null;
+  /** When declared, ingest aborts if the actual verse count differs. */
+  expected_verse_count?: number | null;
   chapters: ChapterYaml[];
 }
 
 function isCorpusSourceFile(name: string): boolean {
-  return (name.endsWith('.yaml') || name.endsWith('.yml')) && !/\.faq\.ya?ml$/i.test(name) && !name.startsWith('_');
+  return (
+    (name.endsWith('.yaml') || name.endsWith('.yml')) &&
+    !/\.faq\.ya?ml$/i.test(name) &&
+    !name.startsWith('_')
+  );
 }
 
 export interface FileStats {
@@ -196,6 +221,14 @@ export interface RunSummary {
 // ---------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------
+
+/**
+ * Canonical translator label for rows whose YAML omits `translator`.
+ * NULLs are pairwise distinct under SQLite UNIQUE constraints, so a NULL
+ * translator in the `(verse_id, lang, translator)` key would make every
+ * re-ingest insert a fresh duplicate row instead of hitting the upsert.
+ */
+export const DEFAULT_TRANSLATOR = 'unattributed';
 
 function boolToInt(v: boolean | number | null | undefined): number {
   if (v === true || v === 1) return 1;
@@ -343,6 +376,9 @@ export function parseTextYaml(filePath: string): TextYaml {
 // ---------------------------------------------------------------
 
 export function prepareStatements(db: Database) {
+  // The DO UPDATE clauses on texts/translations carry a WHERE guard
+  // (NULL-safe `IS NOT` per column) so re-ingesting unchanged content is a
+  // genuine no-op: updated_at is preserved and the DB stays diff-stable.
   const upsertText = db.prepare(`
     INSERT INTO texts (
       id, slug, title_sa, title_en, title_iast, author, tradition, school,
@@ -371,13 +407,32 @@ export function prepareStatements(db: Database) {
       manuscript_url = excluded.manuscript_url,
       description = excluded.description,
       updated_at = datetime('now')
+    WHERE
+      texts.slug IS NOT excluded.slug
+      OR texts.title_sa IS NOT excluded.title_sa
+      OR texts.title_en IS NOT excluded.title_en
+      OR texts.title_iast IS NOT excluded.title_iast
+      OR texts.author IS NOT excluded.author
+      OR texts.tradition IS NOT excluded.tradition
+      OR texts.school IS NOT excluded.school
+      OR texts.era IS NOT excluded.era
+      OR texts.source IS NOT excluded.source
+      OR texts.source_url IS NOT excluded.source_url
+      OR texts.source_revision IS NOT excluded.source_revision
+      OR texts.license IS NOT excluded.license
+      OR texts.attribution_html IS NOT excluded.attribution_html
+      OR texts.parent_text_id IS NOT excluded.parent_text_id
+      OR texts.manuscript_url IS NOT excluded.manuscript_url
+      OR texts.description IS NOT excluded.description
   `);
 
   const upsertVerse = db.prepare(`
     INSERT INTO verses (
-      text_id, book, chapter, verse_num, devanagari, slp1, iast, meter, manuscript_folio_ref
+      text_id, book, chapter, verse_num, devanagari, slp1, iast, meter,
+      manuscript_folio_ref, section_type, prose_block_ref
     ) VALUES (
-      $text_id, $book, $chapter, $verse_num, $devanagari, $slp1, $iast, $meter, $manuscript_folio_ref
+      $text_id, $book, $chapter, $verse_num, $devanagari, $slp1, $iast, $meter,
+      $manuscript_folio_ref, $section_type, $prose_block_ref
     )
     ON CONFLICT(text_id, chapter, verse_num) DO UPDATE SET
       book = excluded.book,
@@ -385,12 +440,31 @@ export function prepareStatements(db: Database) {
       slp1 = excluded.slp1,
       iast = excluded.iast,
       meter = excluded.meter,
-      manuscript_folio_ref = excluded.manuscript_folio_ref
+      manuscript_folio_ref = excluded.manuscript_folio_ref,
+      section_type = excluded.section_type,
+      prose_block_ref = excluded.prose_block_ref
     RETURNING id
   `);
 
   const selectVerseId = db.prepare(`
     SELECT id FROM verses WHERE text_id = $text_id AND chapter = $chapter AND verse_num = $verse_num
+  `);
+
+  // Chapter titles are content-conditional: rows exist only for chapters
+  // whose YAML declares at least one of title_sa/title_iast/title_en. The
+  // WHERE guard keeps unchanged re-ingests a true no-op (updated_at stays).
+  const upsertChapterTitle = db.prepare(`
+    INSERT INTO chapters (text_id, chapter, title_sa, title_iast, title_en, updated_at)
+    VALUES ($text_id, $chapter, $title_sa, $title_iast, $title_en, datetime('now'))
+    ON CONFLICT(text_id, chapter) DO UPDATE SET
+      title_sa = excluded.title_sa,
+      title_iast = excluded.title_iast,
+      title_en = excluded.title_en,
+      updated_at = datetime('now')
+    WHERE
+      chapters.title_sa IS NOT excluded.title_sa
+      OR chapters.title_iast IS NOT excluded.title_iast
+      OR chapters.title_en IS NOT excluded.title_en
   `);
 
   const upsertGloss = db.prepare(`
@@ -430,9 +504,73 @@ export function prepareStatements(db: Database) {
       reviewer = excluded.reviewer,
       reviewed_at = excluded.reviewed_at,
       updated_at = datetime('now')
+    WHERE
+      translations.translation_text IS NOT excluded.translation_text
+      OR translations.source IS NOT excluded.source
+      OR translations.license IS NOT excluded.license
+      OR translations.status IS NOT excluded.status
+      OR translations.ai_assisted IS NOT excluded.ai_assisted
+      OR translations.model IS NOT excluded.model
+      OR translations.model_version IS NOT excluded.model_version
+      OR translations.prompt_version IS NOT excluded.prompt_version
+      OR translations.judge_score IS NOT excluded.judge_score
+      OR translations.reviewer IS NOT excluded.reviewer
+      OR translations.reviewed_at IS NOT excluded.reviewed_at
   `);
 
-  return { upsertText, upsertVerse, selectVerseId, upsertGloss, upsertTranslation };
+  // Reconciliation: rows present in the DB but absent from the incoming
+  // YAML are deleted inside the same per-text transaction. Delete order
+  // respects the FK graph: word_glosses/translations/parallels reference
+  // verses(id), so children go first. NOTE: videos.translation_row_id also
+  // references translations(id) (including chapter-format rows, which live
+  // in `videos` with verse_num=0 — never in `verses`); deleting a
+  // translation a video still pins will FK-fail and roll the file back,
+  // which is intentional: video provenance must not be silently orphaned.
+  const selectVerseIdsForText = db.prepare(`
+    SELECT id FROM verses WHERE text_id = $text_id
+  `);
+  const selectGlossKeysForVerse = db.prepare(`
+    SELECT id, word_idx, gloss_lang FROM word_glosses WHERE verse_id = $verse_id
+  `);
+  const selectTranslationKeysForVerse = db.prepare(`
+    SELECT id, lang, translator FROM translations WHERE verse_id = $verse_id
+  `);
+  const deleteGlossById = db.prepare('DELETE FROM word_glosses WHERE id = $id');
+  const deleteTranslationById = db.prepare('DELETE FROM translations WHERE id = $id');
+  const deleteGlossesByVerse = db.prepare('DELETE FROM word_glosses WHERE verse_id = $verse_id');
+  const deleteTranslationsByVerse = db.prepare(
+    'DELETE FROM translations WHERE verse_id = $verse_id',
+  );
+  const deleteParallelsByVerse = db.prepare(`
+    DELETE FROM parallels WHERE source_verse_id = $verse_id OR target_verse_id = $verse_id
+  `);
+  const deleteVerseById = db.prepare('DELETE FROM verses WHERE id = $id');
+  const selectChapterTitleNumsForText = db.prepare(`
+    SELECT chapter FROM chapters WHERE text_id = $text_id
+  `);
+  const deleteChapterTitle = db.prepare(`
+    DELETE FROM chapters WHERE text_id = $text_id AND chapter = $chapter
+  `);
+
+  return {
+    upsertText,
+    upsertVerse,
+    selectVerseId,
+    upsertChapterTitle,
+    upsertGloss,
+    upsertTranslation,
+    selectVerseIdsForText,
+    selectGlossKeysForVerse,
+    selectTranslationKeysForVerse,
+    deleteGlossById,
+    deleteTranslationById,
+    deleteGlossesByVerse,
+    deleteTranslationsByVerse,
+    deleteParallelsByVerse,
+    deleteVerseById,
+    selectChapterTitleNumsForText,
+    deleteChapterTitle,
+  };
 }
 
 // ---------------------------------------------------------------
@@ -448,6 +586,14 @@ export function ingestText(
   let verseCount = 0;
   let glossCount = 0;
   let translationCount = 0;
+
+  // Reconciliation bookkeeping: every verse/gloss/translation seen in the
+  // YAML is recorded here; anything else under this text is deleted at the
+  // end of the transaction.
+  const keptVerseIds = new Set<number>();
+  const keptGlossKeys = new Map<number, Set<string>>(); // verse_id -> "word_idx\x1Fgloss_lang"
+  const keptTranslationKeys = new Map<number, Set<string>>(); // verse_id -> "lang\x1Ftranslator"
+  const keptChapterTitleNums = new Set<number>(); // chapters with a titles row in this YAML
 
   const runTx = db.transaction(() => {
     stmts.upsertText.run({
@@ -476,6 +622,19 @@ export function ingestText(
       }
       if (!Array.isArray(chapter.verses)) continue;
 
+      // Content-conditional chapter-titles row: only when the YAML declares
+      // at least one title. Untitled chapters keep no row (reconciled below).
+      if (chapter.title_sa || chapter.title_iast || chapter.title_en) {
+        stmts.upsertChapterTitle.run({
+          $text_id: doc.id,
+          $chapter: chapter.chapter,
+          $title_sa: nz(chapter.title_sa),
+          $title_iast: nz(chapter.title_iast),
+          $title_en: nz(chapter.title_en),
+        });
+        keptChapterTitleNums.add(chapter.chapter);
+      }
+
       for (const verse of chapter.verses) {
         if (typeof verse.verse_num !== 'number') {
           throw new Error(`${file}: chapter ${chapter.chapter} verse missing 'verse_num'`);
@@ -497,6 +656,8 @@ export function ingestText(
           $iast: nz(verse.iast),
           $meter: nz(verse.meter),
           $manuscript_folio_ref: nz(verse.manuscript_folio_ref),
+          $section_type: verse.section_type ?? 'verse',
+          $prose_block_ref: nz(verse.prose_block_ref),
         }) as { id: number } | undefined;
 
         // ON CONFLICT DO UPDATE ... RETURNING is supported in modern SQLite.
@@ -517,6 +678,11 @@ export function ingestText(
           verseId = r.id;
         }
         verseCount++;
+        keptVerseIds.add(verseId);
+        const glossKeys = new Set<string>();
+        keptGlossKeys.set(verseId, glossKeys);
+        const translationKeys = new Set<string>();
+        keptTranslationKeys.set(verseId, translationKeys);
 
         if (Array.isArray(verse.word_glosses)) {
           for (const g of verse.word_glosses) {
@@ -530,16 +696,21 @@ export function ingestText(
               $gloss_text: g.gloss_text,
               $morph: nz(g.morph),
             });
+            glossKeys.add(`${g.word_idx}\x1F${g.gloss_lang}`);
             glossCount++;
           }
         }
 
         if (Array.isArray(verse.translations)) {
           for (const t of verse.translations) {
+            // Canonical non-null translator: NULLs are distinct under the
+            // (verse_id, lang, translator) UNIQUE key, so leaving NULL here
+            // would guarantee duplicate rows on every re-ingest.
+            const translator = t.translator?.trim() ? t.translator : DEFAULT_TRANSLATOR;
             stmts.upsertTranslation.run({
               $verse_id: verseId,
               $lang: t.lang,
-              $translator: nz(t.translator),
+              $translator: translator,
               $translation_text: t.translation_text,
               $source: nz(t.source),
               $license: t.license,
@@ -552,9 +723,68 @@ export function ingestText(
               $reviewer: nz(t.reviewer),
               $reviewed_at: nz(t.reviewed_at),
             });
+            translationKeys.add(`${t.lang}\x1F${translator}`);
             translationCount++;
           }
         }
+      }
+    }
+
+    // Declared-count validator: abort (and roll back) when the YAML's
+    // expected_verse_count disagrees with what was actually ingested.
+    if (typeof doc.expected_verse_count === 'number' && verseCount !== doc.expected_verse_count) {
+      throw new Error(
+        `${file}: ${doc.id} declares expected_verse_count=${doc.expected_verse_count} but ingested ${verseCount} verses`,
+      );
+    }
+
+    // Reconciliation pass: delete DB rows for this text that the incoming
+    // YAML no longer contains (removed/renumbered verses, dropped glosses
+    // or translations). Children first per the FK graph.
+    const existingVerses = stmts.selectVerseIdsForText.all({ $text_id: doc.id }) as Array<{
+      id: number;
+    }>;
+    for (const { id } of existingVerses) {
+      if (!keptVerseIds.has(id)) {
+        stmts.deleteGlossesByVerse.run({ $verse_id: id });
+        stmts.deleteTranslationsByVerse.run({ $verse_id: id });
+        stmts.deleteParallelsByVerse.run({ $verse_id: id });
+        stmts.deleteVerseById.run({ $id: id });
+        continue;
+      }
+      const glossKeys = keptGlossKeys.get(id) ?? new Set<string>();
+      const existingGlosses = stmts.selectGlossKeysForVerse.all({ $verse_id: id }) as Array<{
+        id: number;
+        word_idx: number;
+        gloss_lang: string;
+      }>;
+      for (const g of existingGlosses) {
+        if (!glossKeys.has(`${g.word_idx}\x1F${g.gloss_lang}`)) {
+          stmts.deleteGlossById.run({ $id: g.id });
+        }
+      }
+      const translationKeys = keptTranslationKeys.get(id) ?? new Set<string>();
+      const existingTranslations = stmts.selectTranslationKeysForVerse.all({
+        $verse_id: id,
+      }) as Array<{ id: number; lang: string; translator: string | null }>;
+      for (const t of existingTranslations) {
+        // Ingest never writes NULL translators (DEFAULT_TRANSLATOR), so any
+        // surviving NULL row is a legacy duplicate — always stale. Everything
+        // else reconciles against the kept (lang, translator) keys.
+        if (t.translator === null || !translationKeys.has(`${t.lang}\x1F${t.translator}`)) {
+          stmts.deleteTranslationById.run({ $id: t.id });
+        }
+      }
+    }
+
+    // Chapter-titles reconciliation: a row whose chapter dropped its titles
+    // (or vanished entirely) from the YAML is deleted.
+    const existingChapterTitles = stmts.selectChapterTitleNumsForText.all({
+      $text_id: doc.id,
+    }) as Array<{ chapter: number }>;
+    for (const { chapter } of existingChapterTitles) {
+      if (!keptChapterTitleNums.has(chapter)) {
+        stmts.deleteChapterTitle.run({ $text_id: doc.id, $chapter: chapter });
       }
     }
   });
@@ -594,6 +824,67 @@ export function openDb(dbPath: string): Database {
   return db;
 }
 
+/**
+ * WAL hygiene at finalize: fold the -wal sidecar back into the main file,
+ * drop back to rollback journaling and compact, so the DB on disk is a
+ * single self-contained artifact (no -wal/-shm files left behind for
+ * downstream tooling or accidental commits).
+ */
+export function finalizeDb(db: Database): void {
+  const file = (
+    db.query("SELECT file FROM pragma_database_list WHERE name = 'main'").get() as
+      | { file: string }
+      | undefined
+  )?.file;
+  db.exec('PRAGMA wal_checkpoint(TRUNCATE);');
+  db.exec('PRAGMA journal_mode = DELETE;');
+  db.exec('VACUUM;');
+  db.close();
+  // SQLite removes the -wal on the journal-mode downgrade but can leave a
+  // stale -shm behind on some platforms; sweep both defensively. In-memory
+  // DBs report an empty `file` and are skipped.
+  if (file) {
+    for (const suffix of ['-wal', '-shm']) {
+      const sidecar = `${file}${suffix}`;
+      if (existsSync(sidecar)) rmSync(sidecar);
+    }
+  }
+}
+
+/**
+ * Order parsed texts so parents land before children. `texts.parent_text_id`
+ * is a self-FK, so a commentary whose YAML filename sorts before its parent
+ * would otherwise FK-fail on a fresh DB. Parents that are not part of the
+ * batch (already in the DB) are treated as satisfied; the FK still verifies
+ * them at insert time. Stable: alphabetical file order is preserved within
+ * each dependency layer.
+ */
+export function topoSortTexts<T extends { doc: TextYaml }>(entries: T[]): T[] {
+  const batchIds = new Set(entries.map((e) => e.doc.id));
+  const emitted = new Set<string>();
+  const pending = [...entries];
+  const out: T[] = [];
+  while (pending.length > 0) {
+    let progressed = false;
+    for (let i = 0; i < pending.length; ) {
+      const parent = pending[i].doc.parent_text_id;
+      if (!parent || !batchIds.has(parent) || emitted.has(parent)) {
+        const [entry] = pending.splice(i, 1);
+        out.push(entry);
+        emitted.add(entry.doc.id);
+        progressed = true;
+      } else {
+        i++;
+      }
+    }
+    if (!progressed) {
+      const stuck = pending.map((e) => e.doc.id).join(', ');
+      throw new Error(`parent_text_id cycle detected among texts: ${stuck}`);
+    }
+  }
+  return out;
+}
+
 export function run(opts: IngestOptions = {}): RunSummary {
   const dbPath = opts.dbPath ?? DEFAULT_DB_PATH;
   const corpusDir = opts.corpusDir ?? DEFAULT_CORPUS_DIR;
@@ -608,19 +899,30 @@ export function run(opts: IngestOptions = {}): RunSummary {
   const files = listYamlFiles(corpusDir);
   if (files.length === 0) {
     console.log(`No YAML files found in ${corpusDir}.`);
-    db.close();
+    finalizeDb(db);
     return { files: [], total_verses: 0, total_texts: 0, total_glosses: 0, total_translations: 0 };
+  }
+
+  // Parse everything first, then topo-sort by parent_text_id so commentary
+  // texts ingest after the text they annotate regardless of filename order.
+  const parsed: Array<{ file: string; doc: TextYaml }> = [];
+  for (const file of files) {
+    try {
+      parsed.push({ file, doc: parseTextYaml(file) });
+    } catch (err) {
+      console.error(`FAILED ${file}:`, err instanceof Error ? err.message : err);
+      throw err;
+    }
   }
 
   const stats: FileStats[] = [];
 
-  for (const file of files) {
+  for (const { file, doc } of topoSortTexts(parsed)) {
     try {
-      const doc = parseTextYaml(file);
       const s = ingestText(db, stmts, doc, file);
       stats.push(s);
       console.log(
-        `Ingested ${s.verses} verses, ${s.glosses} glosses, ${s.translations} translations  (${doc.id} <- ${file.replace(PROJECT_ROOT + '/', '')})`,
+        `Ingested ${s.verses} verses, ${s.glosses} glosses, ${s.translations} translations  (${doc.id} <- ${file.replace(`${PROJECT_ROOT}/`, '')})`,
       );
     } catch (err) {
       console.error(`FAILED ${file}:`, err instanceof Error ? err.message : err);
@@ -628,7 +930,7 @@ export function run(opts: IngestOptions = {}): RunSummary {
     }
   }
 
-  db.close();
+  finalizeDb(db);
 
   const totalVerses = stats.reduce((a, s) => a + s.verses, 0);
   const totalGlosses = stats.reduce((a, s) => a + s.glosses, 0);

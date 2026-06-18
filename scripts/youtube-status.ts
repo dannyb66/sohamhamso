@@ -5,13 +5,20 @@ import { log, logError } from '../pipeline/youtube/log';
 /**
  * scripts/youtube-status.ts
  *
- * SQL-only ops dashboard: per-status row counts (countByStatus) + today's
- * quota for the configured channel. No secrets, no network — opens the
- * videos DB read-only.
+ * SQL-only ops dashboard: per-status row counts (countByStatus), per-format
+ * breakdown (countByStatusFormat — shorts vs chapter rows), + today's quota
+ * for the configured channel. No secrets, no network — opens the videos DB
+ * read-only. JSON shape stays backward compatible: `counts`/`quota`
+ * unchanged, `byFormat` is additive.
  *
  * Conforms to CLI-CONVENTIONS: --help/--json.
  */
-import { countByStatus, getQuotaToday, getVideosDb } from '../src/lib/videos-db';
+import {
+  countByStatus,
+  countByStatusFormat,
+  getQuotaToday,
+  getVideosDb,
+} from '../src/lib/videos-db';
 
 const STAGE = 'status';
 
@@ -50,6 +57,12 @@ function main(): void {
 
   const db = getVideosDb(undefined, true); // read-only
   const counts = countByStatus(db);
+  // Per-format breakdown (shorts vs chapters) — nested {format: {status: n}}.
+  const byFormat: Record<string, Record<string, number>> = {};
+  for (const r of countByStatusFormat(db)) {
+    if (!byFormat[r.format]) byFormat[r.format] = {};
+    byFormat[r.format][r.status] = r.n;
+  }
   const quotaRow = getQuotaToday(db, channel, today);
   const quota = {
     channel,
@@ -59,12 +72,15 @@ function main(): void {
     exhausted: Boolean(quotaRow?.exhausted),
   };
 
-  const dashboard = { counts, quota };
+  const dashboard = { counts, quota, byFormat };
 
   if (args.json) {
     console.log(JSON.stringify(dashboard, null, 2));
   } else {
     log(STAGE, 'counts', counts as unknown as Record<string, unknown>);
+    for (const [format, statusCounts] of Object.entries(byFormat)) {
+      log(STAGE, `counts[${format}]`, statusCounts as unknown as Record<string, unknown>);
+    }
     log(STAGE, 'quota', {
       channel,
       date: today,

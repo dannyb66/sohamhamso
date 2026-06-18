@@ -37,9 +37,11 @@ const VERSE_SAMPLES: Array<{ chapter: number; verse: number; basePath: string }>
 
 const TEXT_SAMPLES: Array<{ basePath: string }> = [{ basePath: '/trika/siva-sutras' }];
 
-const NOINDEX_RE = /<meta\s[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex[^"']*["']/i;
+const NOINDEX_RE =
+  /<meta\s[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex[^"']*["']/i;
 // Also match reversed attribute order: content=... name=robots
-const NOINDEX_RE2 = /<meta\s[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i;
+const NOINDEX_RE2 =
+  /<meta\s[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i;
 
 function hasNoindex(html: string): boolean {
   return NOINDEX_RE.test(html) || NOINDEX_RE2.test(html);
@@ -58,7 +60,12 @@ interface SweepResult {
   violation: boolean; // noindex on a live locale
 }
 
-async function sweepUrl(origin: string, lang: string, basePath: string, type: UrlType): Promise<SweepResult> {
+async function sweepUrl(
+  origin: string,
+  lang: string,
+  basePath: string,
+  type: UrlType,
+): Promise<SweepResult> {
   const localePath = localePathFor(basePath, lang);
   const url = new URL(localePath, origin).toString();
 
@@ -137,7 +144,9 @@ async function main(): Promise<void> {
   const results: SweepResult[] = [];
   for (let i = 0; i < probes.length; i += CONCURRENCY) {
     const batch = probes.slice(i, i + CONCURRENCY);
-    const batchResults = await Promise.all(batch.map((p) => sweepUrl(origin, p.lang, p.basePath, p.type)));
+    const batchResults = await Promise.all(
+      batch.map((p) => sweepUrl(origin, p.lang, p.basePath, p.type)),
+    );
     results.push(...batchResults);
   }
 

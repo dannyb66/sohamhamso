@@ -10,7 +10,7 @@ import { expect, test } from '@playwright/test';
 const OVERVIEW = '/trika/spanda-karikas';
 
 test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
-  test('every row is wrapped in a single anchor pointing to chapter/1', async ({ page }) => {
+  test('every row is wrapped in a single anchor pointing to the chapter page', async ({ page }) => {
     await page.goto(OVERVIEW);
     await page.waitForLoadState('networkidle');
 
@@ -18,10 +18,11 @@ test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
     const count = await rows.count();
     expect(count).toBeGreaterThan(0);
 
-    // Each row's href ends in /1 (chapter-1 entrypoint).
+    // Each row links to its chapter landing page (M-SITE chapter pages
+    // replaced the old chapter/1 deep link as the row target).
     for (let i = 0; i < count; i++) {
       const href = await rows.nth(i).getAttribute('href');
-      expect(href).toMatch(/\/trika\/spanda-karikas\/\d+\/1$/);
+      expect(href).toMatch(/\/trika\/spanda-karikas\/\d+$/);
     }
   });
 
@@ -37,8 +38,8 @@ test.describe('audit 2026-06-01 #11 — chapter row is fully clickable', () => {
     await expect(numCol).toBeVisible();
     await numCol.click();
 
-    await page.waitForURL(/\/trika\/spanda-karikas\/\d+\/1$/, { timeout: 5_000 });
-    expect(page.url()).toMatch(/\/trika\/spanda-karikas\/\d+\/1$/);
+    await page.waitForURL(/\/trika\/spanda-karikas\/\d+$/, { timeout: 5_000 });
+    expect(page.url()).toMatch(/\/trika\/spanda-karikas\/\d+$/);
   });
 
   test('row has min-height ≥ 44px (WCAG 2.5.5 tap target)', async ({ page }) => {

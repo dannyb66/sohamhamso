@@ -228,6 +228,12 @@ async function main(): Promise<void> {
   const body = buildBody(creds);
   const url = `https://api.cloudflare.com/client/v4/zones/${creds.cfZoneId}/logpush/jobs`;
 
+  // Derive the capture window from "now" so the operator message stays honest
+  // when this script runs late (the original hardcoded 2026-06-08 → 2026-06-11
+  // strings were misleading by 2026-06-11+).
+  const startIso = new Date().toISOString().slice(0, 10);
+  const endIso = new Date(Date.now() + 72 * 3600 * 1000).toISOString().slice(0, 10);
+
   if (dryRun) {
     console.log('[seo-cf-logpush-setup] DRY RUN — no request will be sent.');
     console.log(`  POST ${url}`);
@@ -237,7 +243,7 @@ async function main(): Promise<void> {
     console.log('  Body:');
     console.log(JSON.stringify(redactBody(body), null, 2));
     console.log('');
-    console.log('  72h window target: 2026-06-08 evening → 2026-06-11 evening.');
+    console.log(`  72h window target: ${startIso} → ${endIso} (UTC).`);
     console.log('  Disable at T+72h with: bun run seo:cf-logpush:disable');
     return;
   }
@@ -252,7 +258,7 @@ async function main(): Promise<void> {
   await writeJobId(job.id);
   console.log(`[seo-cf-logpush-setup] OK — job id ${job.id} created and enabled.`);
   console.log(`  saved job id → ${JOB_ID_FILE}`);
-  console.log('  72h window: 2026-06-08 evening → 2026-06-11 evening');
+  console.log(`  72h window: ${startIso} → ${endIso} (UTC)`);
   console.log('  Verify via dashboard: Logs → Logpush on the sohamhamso.org zone.');
   console.log('  Disable at T+72h with: bun run seo:cf-logpush:disable');
 }

@@ -11,13 +11,46 @@
  * Local dev / static build: single SQLite file at `db/sohamhamso.db`.
  */
 
-// `bun:sqlite` ships with Bun. The import is resolved by Bun's runtime;
-// TypeScript may not have built-in types — declare-module fallback below.
-// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-import { Database } from 'bun:sqlite';
+// `bun:sqlite` ships with Bun. The TYPE import below is erased at compile
+// time; the runtime constructor is loaded lazily (guarded top-level await)
+// so this module is safe to EVALUATE in non-bun runtimes (workerd).
+import type { Database } from 'bun:sqlite';
 import { existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Runtime detection + lazy driver load (A6 phase 2 — reader abstraction)
+//
+// This module is ONE OF TWO reader impls:
+//   1. THIS file — synchronous `bun:sqlite` against `db/sohamhamso.db`.
+//      Used at build time (`astro build` / getStaticPaths), in `astro dev`,
+//      and in tests. The ONLY runtime where it works is bun.
+//   2. `src/lib/corpus-db.ts` (+ `src/lib/verse-read.ts`) — async libsql
+//      over HTTPS against the Turso corpus DB. Used by request-time code
+//      in the deployed Cloudflare worker (SSR verse routes, /api/search,
+//      OG functions).
+//
+// Environment detection is EXPLICIT: `process.versions.bun` is the
+// canonical bun-only marker (same sniff as corpus-db.ts/subscriber-db.ts).
+// Historically the top-level `import { Database } from 'bun:sqlite'` made
+// any static import chain into this file fatal in workerd ("No such module
+// bun:sqlite" at chunk-evaluation time — see the launch-blocker notes in
+// corpus-db.ts). The guarded dynamic import below keeps workerd from ever
+// touching `bun:sqlite` while preserving the synchronous API for bun.
+// ─────────────────────────────────────────────────────────────────────────────
+
+function isBunRuntime(): boolean {
+  return typeof process !== 'undefined' && typeof process.versions?.bun === 'string';
+}
+
+type DatabaseCtor = typeof import('bun:sqlite').Database;
+
+let _DatabaseCtor: DatabaseCtor | null = null;
+if (isBunRuntime()) {
+  // Top-level await: resolved once at module init, so `getDb()` stays sync.
+  ({ Database: _DatabaseCtor } = await import('bun:sqlite'));
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -49,8 +82,10 @@ export interface TextSummary {
   title_sa: string;
   title_en: string;
   title_iast: string | null;
+  author: string | null;
   tradition: string;
   school: string | null;
+  license: string;
   verse_count: number;
 }
 
@@ -65,6 +100,15 @@ export interface Verse {
   iast: string | null;
   meter: string | null;
   manuscript_folio_ref: string | null;
+  /**
+   * Row-type-only addition (plan A4 render side): the columns already flow
+   * through `getVerse`'s `SELECT v.*` — this just types them. 'verse'
+   * renders the danda-split anatomy; 'prose' renders flowing paragraphs.
+   * Optional so pre-existing fixtures stay valid; consumers treat a
+   * missing value as 'verse' (src/lib/prose.ts isProseSection).
+   */
+  section_type?: 'verse' | 'prose';
+  prose_block_ref?: string | null;
 }
 
 export interface VerseSummary {
@@ -164,13 +208,21 @@ function dbPath(): string {
  * for seeding fixtures.
  */
 export function getDb(path?: string, readonly = true): Database {
+  if (!_DatabaseCtor) {
+    throw new Error(
+      'db.ts: bun:sqlite is unavailable in this runtime. The synchronous ' +
+        'SQLite reader only works in bun (build/dev/tests). Request-time ' +
+        'code in the deployed worker must read through corpus-db.ts ' +
+        '(libsql → Turso) instead — see src/lib/verse-read.ts.',
+    );
+  }
   if (path !== undefined) {
-    const db = new Database(path, { readonly });
+    const db = new _DatabaseCtor(path, { readonly });
     if (readonly) db.exec('PRAGMA query_only = ON;');
     return db;
   }
   if (_db) return _db;
-  _db = new Database(dbPath(), { readonly: true });
+  _db = new _DatabaseCtor(dbPath(), { readonly: true });
   // Slightly faster reads; safe for read-only conn.
   _db.exec('PRAGMA query_only = ON;');
   return _db;
@@ -199,10 +251,17 @@ export function __setDbForTests(db: Database | null): void {
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * List all texts with their verse counts. Used by:
+ * List all top-level texts with their verse counts. Used by:
  * - Homepage "All texts (N)" list
  * - Text index pages
  * - `getStaticPaths` enumeration
+ *
+ * Rows with a non-null `parent_text_id` (future commentary siblings) are
+ * excluded — commentaries surface alongside their root text, never as
+ * standalone index entries.
+ *
+ * Ordering matches the /texts IA: tradition-grouped (trika first, then
+ * shakta, anything else last), alphabetical by `title_en` within a group.
  */
 export function listTexts(): TextSummary[] {
   const db = getDb();
@@ -213,11 +272,16 @@ export function listTexts(): TextSummary[] {
       t.title_sa,
       t.title_en,
       t.title_iast,
+      t.author,
       t.tradition,
       t.school,
+      t.license,
       COALESCE((SELECT COUNT(*) FROM verses v WHERE v.text_id = t.id), 0) AS verse_count
     FROM texts t
-    ORDER BY t.title_en ASC
+    WHERE t.parent_text_id IS NULL
+    ORDER BY
+      CASE t.tradition WHEN 'trika' THEN 0 WHEN 'shakta' THEN 1 ELSE 2 END,
+      t.title_en ASC
   `);
   return stmt.all();
 }
@@ -246,15 +310,34 @@ export function listAllVerses(textSlug: string): Array<{ chapter: number; verse_
   return stmt.all(textSlug);
 }
 
+export interface ChapterSummary {
+  chapter: number;
+  verse_count: number;
+  /** Optional wayfinding titles from `chapters` (migration 002); NULL when untitled. */
+  title_sa: string | null;
+  title_iast: string | null;
+  title_en: string | null;
+}
+
 /**
  * List all chapters in a text along with their verse counts.
+ *
+ * Chapters stay derived from `verses` (the GROUP BY); the LEFT JOIN onto
+ * `chapters` only decorates each row with its optional editorial titles
+ * (title_sa / title_iast / title_en — NULL when the YAML declares none).
  */
-export function listChapters(textSlug: string): Array<{ chapter: number; verse_count: number }> {
+export function listChapters(textSlug: string): ChapterSummary[] {
   const db = getDb();
-  const stmt = db.query<{ chapter: number; verse_count: number }, [string]>(`
-    SELECT v.chapter, COUNT(*) AS verse_count
+  const stmt = db.query<ChapterSummary, [string]>(`
+    SELECT
+      v.chapter,
+      COUNT(*) AS verse_count,
+      c.title_sa,
+      c.title_iast,
+      c.title_en
     FROM verses v
     JOIN texts t ON t.id = v.text_id
+    LEFT JOIN chapters c ON c.text_id = t.id AND c.chapter = v.chapter
     WHERE t.slug = ?
     GROUP BY v.chapter
     ORDER BY v.chapter ASC
@@ -276,6 +359,133 @@ export function listChapterVerses(textSlug: string, chapter: number): VerseSumma
     ORDER BY v.verse_num ASC
   `);
   return stmt.all(textSlug, chapter);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Chapter summary (chapter index pages)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface ChapterVerseSummary {
+  verse_num: number;
+  devanagari: string;
+  iast: string | null;
+  /** First ~8 words of the IAST line (verse-row incipit). */
+  iast_incipit: string | null;
+  /** Full text of the picked translation row (used by 1-verse chapters). */
+  translation_text: string | null;
+  /** First clause of the translation, ~90 chars cut at a word boundary. */
+  translation_first_clause: string | null;
+  /** Language of the picked translation (requested lang, or 'en' fallback). */
+  translation_lang: string | null;
+}
+
+/** First `maxWords` words of an IAST line, whitespace-collapsed. */
+function iastIncipit(iast: string | null, maxWords = 8): string | null {
+  if (!iast) return null;
+  const words = iast.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+  if (words.length === 0) return null;
+  const head = words.slice(0, maxWords).join(' ');
+  return words.length > maxWords ? `${head} …` : head;
+}
+
+/**
+ * First clause of a translation, capped at ~`maxChars` characters and cut
+ * at a word boundary. "Clause" = text up to the first sentence-ending or
+ * strong-clause punctuation (. ; ! ?) — em-dashes/colons are NOT
+ * boundaries (they commonly open parentheticals mid-clause); longer
+ * clauses are ellipsized.
+ */
+function translationFirstClause(text: string | null, maxChars = 90): string | null {
+  if (!text) return null;
+  const collapsed = text.replace(/\s+/g, ' ').trim();
+  if (!collapsed) return null;
+  const match = collapsed.match(/^[^.;!?]+[.;!?]?/);
+  const clause = (match ? match[0] : collapsed).trim();
+  if (clause.length <= maxChars) return clause;
+  const cut = clause.slice(0, maxChars);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${cut.slice(0, lastSpace > 40 ? lastSpace : maxChars).trimEnd()}…`;
+}
+
+/**
+ * Lightweight per-verse summary for the chapter index pages
+ * (`/{tradition}/{text}/{chapter}/`): verse number, IAST incipit and a
+ * one-clause translation snippet. Deliberately CHEAP — one query over
+ * `verses` with two correlated `translations` sub-selects; never pulls
+ * glosses/parallels/reader bundles (do NOT swap in `getVerse` here).
+ *
+ * Translation row selection uses explicit status priority
+ * (reviewed → published, then human-first, then oldest) rather than
+ * the alphabetical `ORDER BY status` quirk. Drafts are EXCLUDED from
+ * public reads (methodology promise: score<7 stays draft and is never
+ * shown publicly). For non-EN `lang` the
+ * snippet falls back to English per verse when the requested language
+ * has no row; `translation_lang` reports which language was used.
+ */
+export function listChapterSummary(
+  textSlug: string,
+  chapter: number,
+  lang = 'en',
+): ChapterVerseSummary[] {
+  const db = getDb();
+  type Row = {
+    verse_num: number;
+    devanagari: string;
+    iast: string | null;
+    requested_translation: string | null;
+    english_translation: string | null;
+  };
+  const rows = db
+    .query<Row, [string, string, number]>(`
+      SELECT
+        v.verse_num,
+        v.devanagari,
+        v.iast,
+        (
+          SELECT tr.translation_text
+          FROM translations tr
+          WHERE tr.verse_id = v.id
+            AND tr.lang = ?
+            AND tr.status IN ('published', 'reviewed')
+          ORDER BY
+            CASE tr.status WHEN 'reviewed' THEN 0 ELSE 1 END,
+            tr.ai_assisted ASC,
+            tr.created_at ASC
+          LIMIT 1
+        ) AS requested_translation,
+        (
+          SELECT tr.translation_text
+          FROM translations tr
+          WHERE tr.verse_id = v.id
+            AND tr.lang = 'en'
+            AND tr.status IN ('published', 'reviewed')
+          ORDER BY
+            CASE tr.status WHEN 'reviewed' THEN 0 ELSE 1 END,
+            tr.ai_assisted ASC,
+            tr.created_at ASC
+          LIMIT 1
+        ) AS english_translation
+      FROM verses v
+      JOIN texts t ON t.id = v.text_id
+      WHERE t.slug = ? AND v.chapter = ?
+      ORDER BY v.verse_num ASC
+    `)
+    .all(lang, textSlug, chapter);
+
+  return rows.map((row: Row) => {
+    const translation = row.requested_translation ?? row.english_translation;
+    const translationLang =
+      row.requested_translation !== null ? lang : row.english_translation !== null ? 'en' : null;
+    return {
+      verse_num: row.verse_num,
+      devanagari: row.devanagari,
+      iast: row.iast,
+      iast_incipit: iastIncipit(row.iast),
+      translation_text: translation,
+      translation_first_clause: translationFirstClause(translation),
+      translation_lang: translationLang,
+    };
+  });
 }
 
 /**
@@ -307,18 +517,19 @@ export function getVerse(
     .get(text.id, chapter, verseNum);
   if (!verse) return null;
 
-  // Translations for the requested language. V1 ships AI-only with the
-  // amber "not verified" badge for draft AND published; agents flag
-  // per-verse uncertainty inline with [draft] prefix and the merge
-  // pipeline promotes those to status='draft'. Both render with the
-  // amber badge. ai_assisted comes back as 0/1 int; normalized below.
+  // Translations for the requested language. Drafts (review score <7) are
+  // EXCLUDED from public reads per the methodology promise — a verse whose
+  // only translations are drafts renders Devanagari+IAST with no translation
+  // paragraph. Reviewed (human-verified) ranks above published, then
+  // human-first, then oldest. ai_assisted comes back as 0/1 int;
+  // normalized below.
   type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
   const rawTranslations = db
     .query<TransRow, [number, string]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND lang = ? AND status IN ('published', 'reviewed')
+      ORDER BY CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verse.id, lang);
   const translations: Translation[] = rawTranslations.map((t: TransRow) => ({
@@ -495,8 +706,9 @@ export function getVerseAllLanguages(
     });
   }
 
-  // Mirror getVerse() ordering: ai_assisted ASC, created_at ASC — the
-  // first row per lang is the "primary" one VerseAnatomy renders.
+  // Mirror getVerse() ordering: reviewed first, then ai_assisted ASC,
+  // created_at ASC — the first row per lang is the "primary" one
+  // VerseAnatomy renders. Drafts are excluded from public reads.
   const trRows = db
     .query<
       { lang: string; translation_text: string; translator: string | null; ai_assisted: number },
@@ -504,8 +716,8 @@ export function getVerseAllLanguages(
     >(`
       SELECT lang, translation_text, translator, ai_assisted, status
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verse.id);
 
@@ -546,7 +758,7 @@ export function getAvailableLanguages(): Set<string> {
     .query<{ lang: string }, []>(`
       SELECT DISTINCT lang
       FROM translations
-      WHERE status IN ('published', 'reviewed', 'draft')
+      WHERE status IN ('published', 'reviewed')
     `)
     .all();
   return new Set(rows.map((r: { lang: string }) => r.lang.toLowerCase()));
@@ -556,9 +768,9 @@ export function getAvailableLanguages(): Set<string> {
  * Return ALL translations for a verse across every language. Powers the
  * TranslationDrawer's multi-select chip availability + stacked preview.
  *
- * Same status filter as getVerse — drafts surface alongside published/reviewed
- * in V1's AI-only posture (per-verse [draft] uncertainty is communicated
- * through the amber AIAssistedBadge variant). ai_assisted is normalized to bool.
+ * Same status filter as getVerse — drafts are excluded from public reads,
+ * so a language whose only rows are drafts shows the drawer's existing
+ * "Not yet translated" state. ai_assisted is normalized to bool.
  */
 export function getVerseTranslations(verseId: number): Translation[] {
   type TransRow = Omit<Translation, 'ai_assisted'> & { ai_assisted: number };
@@ -567,8 +779,8 @@ export function getVerseTranslations(verseId: number): Translation[] {
     .query<TransRow, [number]>(`
       SELECT *
       FROM translations
-      WHERE verse_id = ? AND status IN ('published', 'reviewed', 'draft')
-      ORDER BY lang ASC, ai_assisted ASC, status ASC, created_at ASC
+      WHERE verse_id = ? AND status IN ('published', 'reviewed')
+      ORDER BY lang ASC, CASE status WHEN 'reviewed' THEN 0 ELSE 1 END, ai_assisted ASC, created_at ASC
     `)
     .all(verseId);
   return rows.map((t: TransRow) => ({ ...t, ai_assisted: t.ai_assisted === 1 }));

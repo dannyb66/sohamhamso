@@ -1,9 +1,9 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import {
   ENGLISH_ONLY_NOINDEX_CHROME_BASE_PATHS,
+  LOCALIZED_CHROME_BASE_PATHS,
   getChromeAvailableLangs,
   getChromeSitemapPaths,
-  LOCALIZED_CHROME_BASE_PATHS,
 } from '../../../src/lib/seo';
 
 const originalLocaleUrlsLive = process.env.LOCALE_URLS_LIVE;

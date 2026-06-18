@@ -1,7 +1,8 @@
 #!/usr/bin/env bun
 import { existsSync } from 'node:fs';
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, extname, relative, resolve } from 'node:path';
+import { CANONICAL_TRADITIONS } from '../src/lib/aliases';
 import { ALL_LANGS } from '../src/lib/seo/i18n-routes';
 
 export const DEFAULT_TITLE_RANGE = { min: 1, max: 80 } as const;
@@ -9,7 +10,9 @@ export const DEFAULT_DESCRIPTION_RANGE = { min: 1, max: 220 } as const;
 const DEFAULT_SAMPLE_LIMIT = 5;
 const DYNAMIC_OG_PREFIXES = ['/og/'] as const;
 const RUNTIME_ROUTE_PREFIXES = ['/search'] as const;
-const KNOWN_TRADITIONS = new Set(['trika', 'shakta']);
+// Canonical (live-URL) traditions only — sourced from src/lib/aliases.ts so
+// the route-shape checks can't drift from the alias/redirect surface.
+const KNOWN_TRADITIONS = new Set<string>(CANONICAL_TRADITIONS);
 
 export type ValidationRule =
   | 'title-length'
@@ -197,8 +200,10 @@ function decodeHtmlEntities(input: string): string {
     .replaceAll('&#39;', "'")
     .replaceAll('&lt;', '<')
     .replaceAll('&gt;', '>')
-    .replace(/&#x([0-9a-f]+);/gi, (_, hex: string) => String.fromCodePoint(parseInt(hex, 16)))
-    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(parseInt(dec, 10)));
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex: string) =>
+      String.fromCodePoint(Number.parseInt(hex, 16)),
+    )
+    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(Number.parseInt(dec, 10)));
 }
 
 function collapseWhitespace(input: string | null | undefined): string | null {
@@ -208,8 +213,7 @@ function collapseWhitespace(input: string | null | undefined): string | null {
 
 function parseAttributes(tagSource: string): Record<string, string> {
   const attrs: Record<string, string> = {};
-  const attrRe =
-    /([^\s=/>"'`]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s=/>"'`]+)))?/g;
+  const attrRe = /([^\s=/>"'`]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s=/>"'`]+)))?/g;
   let match: RegExpExecArray | null;
   while ((match = attrRe.exec(tagSource))) {
     const [, key, dq, sq, bare] = match;
@@ -336,11 +340,7 @@ function toAbsoluteUrl(
   }
 }
 
-function pathFromInternalHref(
-  href: string,
-  pageUrl: string,
-  siteOrigin: string,
-): string | null {
+function pathFromInternalHref(href: string, pageUrl: string, siteOrigin: string): string | null {
   if (
     href.startsWith('#') ||
     href.startsWith('mailto:') ||
@@ -371,7 +371,11 @@ function distCandidatePaths(distDir: string, pathname: string): string[] {
     return [resolve(distDir, rel)];
   }
 
-  return [resolve(distDir, rel, 'index.html'), resolve(distDir, `${rel}.html`), resolve(distDir, rel)];
+  return [
+    resolve(distDir, rel, 'index.html'),
+    resolve(distDir, `${rel}.html`),
+    resolve(distDir, rel),
+  ];
 }
 
 function normalizePathname(pathname: string): string {
@@ -384,20 +388,29 @@ function fileExistsAny(candidates: string[]): boolean {
 }
 
 function isNoindex(robots: string | null): boolean {
-  return robots?.split(',').map((part) => part.trim()).includes('noindex') ?? false;
+  return (
+    robots
+      ?.split(',')
+      .map((part) => part.trim())
+      .includes('noindex') ?? false
+  );
 }
 
 function requiresHreflang(routePath: string): boolean {
   const parts = normalizePathname(routePath).split('/').filter(Boolean);
   if (parts.length === 0) return true;
   if (parts.length === 1) {
-    return ALL_LANGS.includes(parts[0] as (typeof ALL_LANGS)[number]) || KNOWN_TRADITIONS.has(parts[0]);
+    return (
+      ALL_LANGS.includes(parts[0] as (typeof ALL_LANGS)[number]) || KNOWN_TRADITIONS.has(parts[0])
+    );
   }
   if (parts.length === 2) {
     return KNOWN_TRADITIONS.has(parts[0]);
   }
   if (parts.length === 3) {
-    return ALL_LANGS.includes(parts[0] as (typeof ALL_LANGS)[number]) && KNOWN_TRADITIONS.has(parts[1]);
+    return (
+      ALL_LANGS.includes(parts[0] as (typeof ALL_LANGS)[number]) && KNOWN_TRADITIONS.has(parts[1])
+    );
   }
   if (parts.length === 4) {
     return KNOWN_TRADITIONS.has(parts[0]) && /^\d+$/.test(parts[2]) && /^\d+$/.test(parts[3]);
@@ -414,7 +427,9 @@ function requiresHreflang(routePath: string): boolean {
 }
 
 function isRuntimeRoute(pathname: string): boolean {
-  return RUNTIME_ROUTE_PREFIXES.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
+  return RUNTIME_ROUTE_PREFIXES.some(
+    (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`),
+  );
 }
 
 function matchesRedirectSource(pathname: string, patterns: string[]): boolean {
@@ -462,15 +477,18 @@ function applySafeFixes(html: string): { html: string; fixedCount: number } {
     return full.replace(titleRaw, escapeHtml(truncateForTitle(clean)));
   });
 
-  next = next.replace(/<meta\b([^>]*name=(?:"description"|'description'|description)[^>]*)>/i, (full) => {
-    const attrs = parseAttributes(full);
-    const description = collapseWhitespace(attrs.content);
-    if (!description) return full;
-    const punctuated = ensureTerminalPunctuation(description);
-    if (punctuated === description) return full;
-    fixedCount += 1;
-    return full.replace(attrs.content, escapeHtml(punctuated));
-  });
+  next = next.replace(
+    /<meta\b([^>]*name=(?:"description"|'description'|description)[^>]*)>/i,
+    (full) => {
+      const attrs = parseAttributes(full);
+      const description = collapseWhitespace(attrs.content);
+      if (!description) return full;
+      const punctuated = ensureTerminalPunctuation(description);
+      if (punctuated === description) return full;
+      fixedCount += 1;
+      return full.replace(attrs.content, escapeHtml(punctuated));
+    },
+  );
 
   return { html: next, fixedCount };
 }
@@ -601,7 +619,7 @@ export async function inspectHtmlFile(
       if (!requiresHreflang(routePath)) {
         // Single-locale chrome pages are allowed to omit hreflang.
       } else {
-      pushIssue(issues, 'hreflang', filePath, 'Missing hreflang cluster.');
+        pushIssue(issues, 'hreflang', filePath, 'Missing hreflang cluster.');
       }
     } else {
       if (!meta.hreflangEntries.some((entry) => entry.hrefLang === 'x-default')) {
@@ -702,12 +720,7 @@ function validateCrossDocumentRules(
     if (file.isRedirect || file.hreflangEntries.length === 0) continue;
 
     if (isNoindex(file.robots) && file.hreflangEntries.length > 0) {
-      pushIssue(
-        issues,
-        'hreflang',
-        file.filePath,
-        'Noindex page must not emit hreflang entries.',
-      );
+      pushIssue(issues, 'hreflang', file.filePath, 'Noindex page must not emit hreflang entries.');
     }
 
     for (const entry of file.hreflangEntries) {
@@ -788,7 +801,8 @@ function chunk<T>(items: T[], size: number): T[][] {
 export async function validateBuild(options: ValidateBuildOptions): Promise<ValidationSummary> {
   const distDir = resolve(options.distDir);
   const files = await collectHtmlFiles(distDir);
-  const redirectSourcePatterns = options.redirectSourcePatterns ?? (await loadRedirectSourcePatterns(distDir));
+  const redirectSourcePatterns =
+    options.redirectSourcePatterns ?? (await loadRedirectSourcePatterns(distDir));
   const fileReports: ValidationFileReport[] = [];
 
   for (const group of chunk(files, 100)) {
@@ -852,7 +866,9 @@ function formatHumanSummary(summary: ValidationSummary): string {
 
 export async function runSeoValidateCli(argv = process.argv.slice(2)): Promise<number> {
   const parsed = parseCliArgs(argv);
-  const distDir = String(parsed.flags.dist ?? parsed.flags['dist-dir'] ?? parsed.positionals[0] ?? 'dist');
+  const distDir = String(
+    parsed.flags.dist ?? parsed.flags['dist-dir'] ?? parsed.positionals[0] ?? 'dist',
+  );
   const siteOrigin = await resolveSiteOrigin(
     typeof parsed.flags.site === 'string' ? parsed.flags.site : undefined,
   );

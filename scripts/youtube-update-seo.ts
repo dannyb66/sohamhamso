@@ -1,4 +1,7 @@
 #!/usr/bin/env bun
+import { log, scrubError } from '../pipeline/youtube/log';
+import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
+import { buildUploadMetadata } from '../pipeline/youtube/upload-metadata';
 /**
  * youtube-update-seo.ts — re-apply the SEO-optimized metadata to videos that
  * are already on YouTube (one-time backfill after improving the metadata
@@ -15,10 +18,7 @@
  *   MOCK_ALL=true → DB-only, no YouTube call.
  */
 import { getDb } from '../src/lib/db';
-import { log, scrubError } from '../pipeline/youtube/log';
-import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
-import { buildUploadMetadata } from '../pipeline/youtube/upload-metadata';
-import { addQuotaUnits, getVideosDb, listByStatus, type VideoRow } from '../src/lib/videos-db';
+import { type VideoRow, addQuotaUnits, getVideosDb, listByStatus } from '../src/lib/videos-db';
 
 const STAGE = 'update-seo';
 const CANONICAL_BASE = 'https://sohamhamso.org';
@@ -38,9 +38,10 @@ function resolveMeta(video: VideoRow): {
 } {
   const corpus = getDb();
   const text = corpus
-    .query<{ title_iast: string | null; title_en: string; slug: string }, [string]>(
-      'SELECT title_iast, title_en, slug FROM texts WHERE id = ? LIMIT 1',
-    )
+    .query<
+      { title_iast: string | null; title_en: string; slug: string; tradition: string },
+      [string]
+    >('SELECT title_iast, title_en, slug, tradition FROM texts WHERE id = ? LIMIT 1')
     .get(video.text_id);
   const tr = corpus
     .query<{ translation_text: string }, [number]>(
@@ -56,7 +57,9 @@ function resolveMeta(video: VideoRow): {
   return {
     textTitle: text?.title_iast || text?.title_en || video.text_id,
     translation: tr?.translation_text ?? '',
-    canonicalUrl: `${CANONICAL_BASE}/${slug}/${video.chapter}/${video.verse_num}`,
+    // Site routes are /{tradition}/{text}/{chapter}/{verse} — the tradition
+    // segment is required or the link 404s (same fix as youtube-upload.ts).
+    canonicalUrl: `${CANONICAL_BASE}/${text?.tradition ?? 'trika'}/${slug}/${video.chapter}/${video.verse_num}`,
     iast: verse?.iast ?? '',
     devanagari: verse?.devanagari ?? '',
   };
@@ -125,7 +128,11 @@ async function main(): Promise<void> {
       }
       addQuotaUnits(db, v.channel_handle, today, UNITS_PER_UPDATE, 0);
       updated++;
-      log(STAGE, 'updated', { yt: v.youtube_video_id, lang: v.lang, ref: `${v.chapter}.${v.verse_num}` });
+      log(STAGE, 'updated', {
+        yt: v.youtube_video_id,
+        lang: v.lang,
+        ref: `${v.chapter}.${v.verse_num}`,
+      });
     } catch (e) {
       log(STAGE, 'update FAILED', { yt: v.youtube_video_id, error: scrubError(e).slice(0, 160) });
     }
