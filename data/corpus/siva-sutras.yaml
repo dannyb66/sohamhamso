@@ -39,9 +39,9 @@ text:
   tradition: trika
   school: kashmir-shaivism
   era: "9th century CE"
-  source: "GRETIL (Göttingen Register of Electronic Texts in Indian Languages)"
-  source_url: "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/saiva/sivasutu.htm"
-  source_revision: "GRETIL revision pending"
+  source: "GRETIL (Göttingen Register of Electronic Texts in Indian Languages) — Śivasūtra with vārttika, e-text entered by Oliver Hellwig (ed. Madhusudan Kaul Shastri, Srinagar 1925)"
+  source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivasUtra-with-vArttika.txt"
+  source_revision: "GRETIL corpustei plaintext (sa_zivasUtra-with-vArttika); accessed 2026-06-18 (replaces the retired sivasutu.htm path, which no longer resolves and has no Wayback archive). Sūtra division note: that edition counts 75 sūtras (vārttika division); our text follows the 77-sūtra Kṣemarāja Vimarśinī division — same mūla, different sūtra split."
   license: CC-BY 4.0
   parent_text_id:
   manuscript_url:

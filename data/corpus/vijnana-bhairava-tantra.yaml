@@ -39,9 +39,9 @@ text:
   tradition: trika
   school: kashmir-shaivism
   era: "8th-9th century CE"
-  source: "Muktabodha Indological Research Institute (permission pending) + sanskritdocuments.org"
-  source_url: "https://sanskritdocuments.org/doc_tantra/vijnAna_bhairava.html"
-  source_revision: pending
+  source: "Muktabodha Indological Research Institute (permission pending); public e-text verification via GRETIL (Göttingen)"
+  source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnabhairava.txt"
+  source_revision: "Primary source: Muktabodha (MIRI permission pending). The former sanskritdocuments.org cross-reference (doc_tantra/vijnAna_bhairava.html) is offline with no Wayback archive; GRETIL provided as the current public e-text — accessed 2026-06-18. That edition numbers 162 verses; our 163 follows the standard KSTS / Jaideva Singh split of the closing colophon."
   license: NC
   pending_miri: true
   parent_text_id:

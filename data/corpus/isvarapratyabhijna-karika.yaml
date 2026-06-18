@@ -60,7 +60,7 @@ text:
   era: "c. 925-975 CE"
   source: "GRETIL (Göttingen Register of Electronic Texts in Indian Languages); e-text input by Somadeva Vasudeva, based on the Madhusudan Kaul Shastri ed., Srinagar 1921 (KSTS 34), revised per the Raffaele Torella ed., Roma 1994 (Serie Orientale Roma 71)"
   source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt"
-  source_revision: "TEI version 2020-07-31 (mass conversion of legacy utipk_au.htm; data entry Somadeva Vasudeva); accessed 2026-06-12"
+  source_revision: "TEI version 2020-07-31 (mass conversion of legacy utipk_au.htm; data entry Somadeva Vasudeva); accessed 2026-06-12. Numbering note: this with-vṛtti e-text's running kārikā markers enumerate 176 (Jñānādhikāra numbered to 77); our 190 follows the canonical mūla numbering of the Torella ed. / KSTS 34 (88/53/31/18) — a known recension/numbering difference, not a content gap."
   license: CC-BY-NC-SA 4.0
   expected_verse_count: 190
   parent_text_id:
