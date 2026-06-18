@@ -35,7 +35,6 @@
 import { SLUG_ALIASES } from './aliases';
 import { type CorpusBatchStatement, type CorpusDb, getCorpusDb } from './corpus-db';
 import type { Parallel, Text, Translation, Verse, WordGloss } from './db';
-import { assignLemmaSlug } from './seo/slug';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -123,56 +122,51 @@ export async function corpusBatch(
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Lemma index (memoized — one corpus-wide query per worker isolate)
+// Lemma summaries (scoped read of the materialized lemma_index table)
 // ─────────────────────────────────────────────────────────────────────────────
 
-let _lemmaIndexPromise: Promise<Map<string, LemmaRef>> | null = null;
+/**
+ * Resolve {slug, occurrenceCount} for just the lemmas a verse uses, by PK
+ * against the build-time `lemma_index` table.
+ *
+ * WHY NOT A CORPUS-WIDE SCAN: the previous implementation full-scanned
+ * `word_glosses` (GROUP BY lemma_iast) once per worker isolate to build the
+ * whole map. Against Turso (billed per row read) that cost ~180k rows on
+ * every cold isolate and exhausted the read quota. `lemma_index` is
+ * materialized at build time (pipeline/ingest/lemma-index.ts) with the same
+ * slug/ordering contract as the static `/lemma/` pages, so a per-page
+ * `WHERE lemma_iast IN (...)` reads only the verse's handful of lemmas.
+ */
+async function readLemmaSummaries(
+  db: CorpusDb,
+  lemmas: ReadonlyArray<string>,
+): Promise<Map<string, LemmaRef>> {
+  const summaries = new Map<string, LemmaRef>();
+  if (lemmas.length === 0) return summaries;
+  const placeholders = lemmas.map(() => '?').join(', ');
+  const rows = await db.all<{
+    lemma_iast: string;
+    slug: string;
+    occurrence_count: number;
+  }>(
+    `SELECT lemma_iast, slug, occurrence_count
+     FROM lemma_index
+     WHERE lemma_iast IN (${placeholders})`,
+    lemmas as ReadonlyArray<string>,
+  );
+  for (const row of rows) {
+    summaries.set(row.lemma_iast, { slug: row.slug, occurrenceCount: row.occurrence_count });
+  }
+  return summaries;
+}
 
 /**
- * Corpus-wide lemma_iast → {slug, occurrenceCount} map. Slug assignment
- * MUST mirror `corpus-bundle.ts:ensureLemmaIndex()` exactly (same seed
- * query, same `MIN(verse_id)` ordering, same `assignLemmaSlug` collision
- * walk) so SSR verse pages link to the same `/lemma/{slug}` URLs the
- * static lemma pages were built under.
+ * Test hook — retained for API compatibility. The lemma index is no longer
+ * memoized at module scope (it's a per-page scoped read of `lemma_index`),
+ * so there is nothing to reset; kept as a no-op so existing tests/callers
+ * don't break.
  */
-async function getLemmaIndexByIast(db: CorpusDb): Promise<Map<string, LemmaRef>> {
-  if (_lemmaIndexPromise === null) {
-    _lemmaIndexPromise = (async () => {
-      const rows = await db.all<{
-        lemma_iast: string;
-        occurrence_count: number;
-      }>(`
-        SELECT
-          g.lemma_iast,
-          COUNT(DISTINCT g.verse_id) AS occurrence_count
-        FROM word_glosses g
-        WHERE g.lemma_iast IS NOT NULL
-          AND TRIM(g.lemma_iast) != ''
-        GROUP BY g.lemma_iast
-        ORDER BY MIN(g.verse_id) ASC, g.lemma_iast ASC
-      `);
-      const index = new Map<string, LemmaRef>();
-      const seen = new Set<string>();
-      for (const row of rows) {
-        const slug = assignLemmaSlug(row.lemma_iast, seen);
-        seen.add(slug);
-        index.set(row.lemma_iast, { slug, occurrenceCount: row.occurrence_count });
-      }
-      return index;
-    })();
-    // Don't memoize a rejection — a transient Turso failure must not
-    // poison every later request on this isolate.
-    _lemmaIndexPromise.catch(() => {
-      _lemmaIndexPromise = null;
-    });
-  }
-  return _lemmaIndexPromise;
-}
-
-/** Test hook — clears the memoized lemma index. */
-export function __resetVerseReadCachesForTests(): void {
-  _lemmaIndexPromise = null;
-}
+export function __resetVerseReadCachesForTests(): void {}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Alias resolution (params-only; mirrors src/lib/aliases.ts:resolveAlias)
@@ -424,16 +418,12 @@ export async function readVersePage(
     occurrenceCounts.set(row.lemma_iast, row.n);
   }
 
-  // Lemma summaries for just this verse's lemmas (memoized corpus index).
-  const lemmaSummaries = new Map<string, LemmaRef>();
-  const verseLemmas = new Set(allGlosses.map((g) => g.lemma_iast).filter((s): s is string => !!s));
-  if (verseLemmas.size > 0) {
-    const index = await getLemmaIndexByIast(db);
-    for (const lemma of verseLemmas) {
-      const entry = index.get(lemma);
-      if (entry) lemmaSummaries.set(lemma, entry);
-    }
-  }
+  // Lemma summaries for just this verse's lemmas — a scoped PK read of the
+  // materialized lemma_index table (NOT a corpus-wide word_glosses scan).
+  const verseLemmas = [
+    ...new Set(allGlosses.map((g) => g.lemma_iast).filter((s): s is string => !!s)),
+  ];
+  const lemmaSummaries = await readLemmaSummaries(db, verseLemmas);
 
   const prevRow = (prevRows[0] as unknown as { chapter: number; verse_num: number }) ?? null;
   const nextRow = (nextRows[0] as unknown as { chapter: number; verse_num: number }) ?? null;

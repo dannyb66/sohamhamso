@@ -125,6 +125,21 @@ CREATE TABLE IF NOT EXISTS word_glosses (
 );
 CREATE INDEX IF NOT EXISTS idx_glosses_verse ON word_glosses(verse_id);
 
+-- Materialized corpus-wide lemma index. Derived from word_glosses at build
+-- time (pipeline/ingest/lemma-index.ts:buildLemmaIndex), seeded to Turso.
+-- WHY: the SSR verse route needs each verse's lemma → {slug, occurrence
+-- count}. Deriving that by scanning word_glosses per request cost ~180k
+-- Turso row-reads on every cold worker isolate (read-quota exhaustion).
+-- This table lets the edge read just the verse's handful of lemmas by PK.
+-- `slug` MUST equal seo/slug.ts:assignLemmaSlug applied in MIN(verse_id),
+-- lemma_iast order so it matches the static /lemma/ pages. occurrence_count
+-- = COUNT(DISTINCT verse_id) corpus-wide for the lemma.
+CREATE TABLE IF NOT EXISTS lemma_index (
+  lemma_iast TEXT PRIMARY KEY,
+  slug TEXT NOT NULL,
+  occurrence_count INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS parallels (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   source_verse_id INTEGER NOT NULL REFERENCES verses(id),

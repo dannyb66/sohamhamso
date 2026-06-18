@@ -68,6 +68,7 @@ import { fileURLToPath } from 'node:url';
 import Sanscript from '@indic-transliteration/sanscript';
 import { load as yamlLoad } from 'js-yaml';
 import { parseCorpusDocument, parseCorpusFaqDocument } from '../../src/lib/seo/corpus-schema';
+import { buildLemmaIndex } from './lemma-index';
 
 // ---------------------------------------------------------------
 // Script normalisation
@@ -929,6 +930,13 @@ export function run(opts: IngestOptions = {}): RunSummary {
       throw err;
     }
   }
+
+  // Materialize the corpus-wide lemma index (slug + occurrence count) so the
+  // SSR verse route reads it by PK instead of full-scanning word_glosses per
+  // worker isolate. Must run after all texts are ingested (it's corpus-wide)
+  // and before finalizeDb closes the DB.
+  const lemmaCount = buildLemmaIndex(db);
+  console.log(`Built lemma_index: ${lemmaCount} lemmas`);
 
   finalizeDb(db);
 
