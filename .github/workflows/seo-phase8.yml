@@ -36,6 +36,13 @@ on:
 permissions:
   contents: read
 
+# Prevent a manual `workflow_dispatch` run from racing with the scheduled
+# fire (or vice versa). Don't cancel in-progress — a tier check that's
+# already mid-run should be allowed to finish and emit its log.
+concurrency:
+  group: seo-phase8
+  cancel-in-progress: false
+
 env:
   LAUNCH_DATE: '2026-06-08'
   # Match the production CF Pages config so the OG sampler hits real locales.
@@ -49,7 +56,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -57,7 +64,7 @@ jobs:
           bun-version: latest
 
       - name: Setup Node (for lighthouse @ T+30d)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20'
 
@@ -75,8 +82,10 @@ jobs:
           now_epoch=$(date -u +%s)
           delta_days=$(( (now_epoch - launch_epoch) / 86400 ))
           echo "delta_days=$delta_days" >> "$GITHUB_OUTPUT"
-          # Tier window picker. Each tier has a 24h grace period in case the
-          # scheduled run is delayed.
+          # Tier window picker. Each tier has a 3-day grace window in case the
+          # scheduled run is delayed or the launch date drifted by a few hours.
+          # Widened from [N, N+1] to [N, N+3] after 2026-06-11 — the T+24h auto
+          # window closed before the workflow was ready to fire in API mode.
           tier="none"
           # Whitelist allowed values to defang any injected payload that might
           # sneak past the workflow_dispatch choice constraint.
@@ -85,21 +94,21 @@ jobs:
               tier="$INPUT_TIER"
               ;;
             ""|auto)
-              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 2 ]; then
+              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 4 ]; then
                 tier="tplus24h"
-              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 8 ]; then
+              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 10 ]; then
                 tier="tplus7d"
-              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 31 ]; then
+              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 33 ]; then
                 tier="tplus30d"
               fi
               ;;
             *)
               # Unknown input → fall back to auto pick.
-              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 2 ]; then
+              if [ "$delta_days" -ge 1 ] && [ "$delta_days" -le 4 ]; then
                 tier="tplus24h"
-              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 8 ]; then
+              elif [ "$delta_days" -ge 7 ] && [ "$delta_days" -le 10 ]; then
                 tier="tplus7d"
-              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 31 ]; then
+              elif [ "$delta_days" -ge 30 ] && [ "$delta_days" -le 33 ]; then
                 tier="tplus30d"
               fi
               ;;
@@ -107,26 +116,66 @@ jobs:
           echo "tier=$tier" >> "$GITHUB_OUTPUT"
           echo "Days since launch: $delta_days -> tier=$tier"
 
+      # Mint a short-lived GSC access token from the long-lived refresh token.
+      # Writes GSC_ACCESS_TOKEN to $GITHUB_ENV so the tier steps inherit it.
+      # No-ops if OAuth secrets aren't set — tier scripts fall back to manual
+      # checklist mode in that case.
+      #
+      # Public-repo log safety:
+      #   - response body goes to a file, never stdout (no `-i`, no echo)
+      #   - `::add-mask::` runs BEFORE any env write
+      #   - the temp file is removed on the happy path
+      - name: Mint GSC access token (OAuth refresh flow)
+        # NOTE: a step's own `env:` block is NOT visible to its own `if:` —
+        # only workflow/job-level env or env exported by a previous step via
+        # $GITHUB_ENV is. The `secrets` context IS available in step `if:`
+        # and is the documented pattern for "skip if optional secret unset".
+        # GHA does not log the secret value when used in a boolean expression.
+        if: steps.window.outputs.tier != 'none' && secrets.GSC_REFRESH_TOKEN != ''
+        env:
+          GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
+          GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        run: |
+          set -euo pipefail
+          HTTP_CODE=$(curl -sS -o /tmp/gsc_token.json -w "%{http_code}" \
+            -d "client_id=$GSC_OAUTH_CLIENT_ID" \
+            -d "client_secret=$GSC_OAUTH_CLIENT_SECRET" \
+            -d "refresh_token=$GSC_REFRESH_TOKEN" \
+            -d "grant_type=refresh_token" \
+            https://oauth2.googleapis.com/token)
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "OAuth refresh failed: HTTP $HTTP_CODE" >&2
+            rm -f /tmp/gsc_token.json
+            exit 1
+          fi
+          ACCESS_TOKEN=$(jq -r .access_token /tmp/gsc_token.json)
+          if [ -z "$ACCESS_TOKEN" ] || [ "$ACCESS_TOKEN" = "null" ]; then
+            echo "No access_token in OAuth response" >&2
+            rm -f /tmp/gsc_token.json
+            exit 1
+          fi
+          echo "::add-mask::$ACCESS_TOKEN"
+          echo "GSC_ACCESS_TOKEN=$ACCESS_TOKEN" >> "$GITHUB_ENV"
+          rm -f /tmp/gsc_token.json
+
       - name: T+24h checks
         if: steps.window.outputs.tier == 'tplus24h'
         env:
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
         run: bun scripts/seo-phase8-tplus24h.ts
 
       - name: T+7d checks
         if: steps.window.outputs.tier == 'tplus7d'
         env:
-          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
         run: bun scripts/seo-phase8-tplus7d.ts
 
       - name: T+30d checks
         if: steps.window.outputs.tier == 'tplus30d'
         env:
-          GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
           CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
         run: bun scripts/seo-phase8-tplus30d.ts
@@ -137,4 +186,4 @@ jobs:
           DELTA_DAYS: ${{ steps.window.outputs.delta_days }}
         run: |
           echo "No measurement scheduled for delta=$DELTA_DAYS days."
-          echo "Tiers fire at T+1, T+7, T+30 (with a 1-day grace window)."
+          echo "Tiers fire at T+1, T+7, T+30 (with a 3-day grace window)."

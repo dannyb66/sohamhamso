@@ -113,6 +113,89 @@ describe('OG function rendering', () => {
   });
 });
 
+describe('OG function precache (static JSON, no DB)', () => {
+  // Production path: when `public/og-cache/<route>.json` exists (written by
+  // `scripts/seo-build-og-cache.ts`), the OG handler reads it via
+  // ASSETS.fetch and skips the libsql HTTP round-trip entirely. This block
+  // verifies (a) the cache-hit path renders a valid PNG, and (b) the DB
+  // backend is NOT consulted when the cache is warm.
+  let dbCalls: { sql: string; params: ReadonlyArray<string | number | null> }[] = [];
+  const recordingDb: CorpusDb = {
+    async all<T>(sql: string, params: ReadonlyArray<string | number | null> = []): Promise<T[]> {
+      dbCalls.push({ sql, params });
+      return [] as T[];
+    },
+    async get<T>(
+      sql: string,
+      params: ReadonlyArray<string | number | null> = [],
+    ): Promise<T | undefined> {
+      dbCalls.push({ sql, params });
+      return undefined;
+    },
+  };
+
+  beforeEach(() => {
+    dbCalls = [];
+    __setCorpusDbForTests(recordingDb);
+    __resetLemmaIndexForTests();
+  });
+
+  afterAll(() => {
+    __setCorpusDbForTests(null);
+  });
+
+  it('serves a PNG from the precache without touching the DB', async () => {
+    const cachedJson = {
+      tradition: 'trika',
+      textSlug: 'siva-sutras',
+      titleEn: 'Śiva Sūtras',
+      titleSa: 'शिवसूत्राणि',
+      chapter: 1,
+      verseNum: 1,
+      devanagari: 'चैतन्यमात्मा',
+      iast: 'caitanyam ātmā',
+      translationsByLang: {
+        en: { translationText: 'Consciousness is the Self.', translator: 'Editor' },
+        ta: { translationText: 'சித்தமே ஆத்மா', translator: 'Editor' },
+      },
+    };
+
+    const response = await handleVerseOgRequest(
+      makeContext('https://sohamhamso.org/og/trika/siva-sutras/1/1?lang=ta', {
+        ogCacheOverrides: {
+          '/og-cache/trika/siva-sutras/1/1.json': cachedJson,
+        },
+      }),
+    );
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get('Content-Type')).toBe('image/png');
+    expect(response.headers.get('X-OG-Renderer')).toBe('resvg-wasm');
+    expect(response.headers.get('X-OG-Fallback')).toBeNull();
+    // Load-bearing: the DB backend received ZERO queries because the
+    // precache hit short-circuited the loader.
+    expect(dbCalls).toHaveLength(0);
+  });
+
+  it('falls through to the DB when the precache returns 404', async () => {
+    // Same recordingDb stubs out the DB (returns nothing), so the request
+    // ends in a fallback asset response. The point of this test is that
+    // a missing cache file does NOT short-circuit — the handler still
+    // tries the DB path, which is the structural compatibility we promise
+    // for verses added between builds.
+    const response = await handleVerseOgRequest(
+      makeContext('https://sohamhamso.org/og/trika/siva-sutras/99/99?lang=ta'),
+    );
+
+    // Empty DB → no row → 404 short-cache response.
+    expect(response.status).toBe(404);
+    // Two queries observed: one is the verse SELECT itself. We don't
+    // pin the exact count (sub-selects collapse into one execute call
+    // for the libsql backend), but the DB path WAS exercised.
+    expect(dbCalls.length).toBeGreaterThan(0);
+  });
+});
+
 describe('OG function abort-on-timeout (libsql HTTP)', () => {
   const originalUrl = process.env.TURSO_CORPUS_URL;
   const originalToken = process.env.TURSO_CORPUS_AUTH_TOKEN;
@@ -265,7 +348,10 @@ describe('OG function cold-start budget (regression: 100% fallback bug)', () => 
   });
 });
 
-function makeContext(url: string): import('../../functions/og/_shared').OgFunctionContext {
+function makeContext(
+  url: string,
+  options: { ogCacheOverrides?: Record<string, unknown> } = {},
+): import('../../functions/og/_shared').OgFunctionContext {
   return {
     request: new Request(url),
     env: {
@@ -273,6 +359,21 @@ function makeContext(url: string): import('../../functions/og/_shared').OgFuncti
         fetch: async (input) => {
           const requestUrl =
             input instanceof URL ? input : new URL(typeof input === 'string' ? input : input.url);
+          // OG verse-text precache lookups: by default these tests want to
+          // exercise the DB path (existing assertions assume the injected
+          // fake DB is consulted). Returning 404 here makes the OG handler
+          // fall through to the DB. A test that wants to verify the cache-
+          // hit path can pass `ogCacheOverrides` keyed by pathname.
+          if (requestUrl.pathname.startsWith('/og-cache/')) {
+            const override = options.ogCacheOverrides?.[requestUrl.pathname];
+            if (override !== undefined) {
+              return new Response(JSON.stringify(override), {
+                status: 200,
+                headers: { 'Content-Type': 'application/json; charset=utf-8' },
+              });
+            }
+            return new Response('Not found', { status: 404 });
+          }
           const assetPath = resolve(ROOT, 'public', requestUrl.pathname.replace(/^\//, ''));
           if (!existsSync(assetPath)) return new Response('Not found', { status: 404 });
           return new Response(readFileSync(assetPath), {

@@ -202,6 +202,121 @@ export function parseLemmaOgUrl(url: URL): LemmaOgRouteParseResult {
   };
 }
 
+/**
+ * Build a `VerseOgPayload` from the static OG cache JSON produced by
+ * `scripts/seo-build-og-cache.ts`. Applies the SAME requested→english
+ * fallback logic as `fetchVerseOgPayload` so the cache-hit and DB paths
+ * produce identical PNGs.
+ *
+ * Returns `null` on any shape mismatch — the caller (`tryLoadFromOgCache`
+ * in `functions/og/_shared.ts`) falls through to the DB path.
+ */
+export function buildVerseOgPayloadFromCache(
+  raw: unknown,
+  route: VerseOgRoute,
+): VerseOgPayload | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const r = raw as {
+    tradition?: unknown;
+    textSlug?: unknown;
+    titleEn?: unknown;
+    titleSa?: unknown;
+    chapter?: unknown;
+    verseNum?: unknown;
+    devanagari?: unknown;
+    iast?: unknown;
+    translationsByLang?: unknown;
+  };
+  if (
+    typeof r.tradition !== 'string' ||
+    typeof r.textSlug !== 'string' ||
+    typeof r.titleEn !== 'string' ||
+    typeof r.titleSa !== 'string' ||
+    typeof r.chapter !== 'number' ||
+    typeof r.verseNum !== 'number' ||
+    typeof r.devanagari !== 'string' ||
+    typeof r.translationsByLang !== 'object' ||
+    r.translationsByLang === null
+  ) {
+    return null;
+  }
+  // Cross-check that the cached row matches the requested route — guards
+  // against a stale build serving the wrong verse if cache paths ever drift.
+  if (
+    r.tradition !== route.tradition ||
+    r.textSlug !== route.textSlug ||
+    r.chapter !== route.chapter ||
+    r.verseNum !== route.verse
+  ) {
+    return null;
+  }
+
+  const iast = typeof r.iast === 'string' ? r.iast : null;
+  const trMap = r.translationsByLang as Record<string, unknown>;
+  const requestedRaw = trMap[route.lang];
+  const englishRaw = trMap[OG_DEFAULT_LANG];
+  const requestedTranslation = pickTranslation(requestedRaw);
+  const englishTranslation = pickTranslation(englishRaw);
+
+  const requested = requestedTranslation?.text?.trim() || null;
+  const english = englishTranslation?.text?.trim() || null;
+  const translation = requested ?? english;
+  const translationLang: LangCode | null =
+    requested !== null ? route.lang : english !== null ? OG_DEFAULT_LANG : null;
+  const translator =
+    requested !== null
+      ? (requestedTranslation?.translator ?? null)
+      : (englishTranslation?.translator ?? null);
+
+  if (route.lang === OG_DEFAULT_LANG) {
+    return {
+      kind: 'verse',
+      route,
+      textTitleEn: r.titleEn,
+      textTitleSa: r.titleSa,
+      tradition: r.tradition,
+      citation: `${r.chapter}.${r.verseNum}`,
+      devanagari: r.devanagari,
+      iast,
+      translation,
+      translationLang,
+      translator,
+      secondaryText: iast?.trim() || translation || r.devanagari,
+      secondaryTextKind: iast?.trim() ? 'iast' : 'translation',
+      secondaryTextLang: iast?.trim() ? OG_DEFAULT_LANG : (translationLang ?? OG_DEFAULT_LANG),
+      fallbackUsed: !iast?.trim() && translation !== null,
+    };
+  }
+
+  return {
+    kind: 'verse',
+    route,
+    textTitleEn: r.titleEn,
+    textTitleSa: r.titleSa,
+    tradition: r.tradition,
+    citation: `${r.chapter}.${r.verseNum}`,
+    devanagari: r.devanagari,
+    iast,
+    translation,
+    translationLang,
+    translator,
+    secondaryText: translation || iast?.trim() || r.devanagari,
+    secondaryTextKind: translation ? 'translation' : 'iast',
+    secondaryTextLang: translationLang ?? OG_DEFAULT_LANG,
+    fallbackUsed: translationLang !== route.lang,
+  };
+}
+
+function pickTranslation(raw: unknown): { text: string; translator: string | null } | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const r = raw as { translationText?: unknown; translator?: unknown };
+  if (typeof r.translationText !== 'string') return null;
+  return {
+    text: r.translationText,
+    translator: typeof r.translator === 'string' ? r.translator : null,
+  };
+}
+
 export async function fetchVerseOgPayload(
   db: CorpusDb,
   route: VerseOgRoute,
