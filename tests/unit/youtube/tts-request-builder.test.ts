@@ -29,4 +29,18 @@ describe('buildTtsRequest', () => {
   it('does not embed SSML markup for plain English text', () => {
     expect(JSON.stringify(req)).not.toContain('<speak>');
   });
+
+  it('omits speakingRate when not given (Google default = 1.0)', () => {
+    expect(req.audioConfig.speakingRate).toBeUndefined();
+  });
+
+  it('omits speakingRate when explicitly 1.0', () => {
+    const r = buildTtsRequest('x', 'en-US-Studio-O', 'en-US', 1);
+    expect(r.audioConfig.speakingRate).toBeUndefined();
+  });
+
+  it('sets speakingRate when slowed (shorts use 0.75)', () => {
+    const r = buildTtsRequest('x', 'en-US-Studio-O', 'en-US', 0.75);
+    expect(r.audioConfig.speakingRate).toBe(0.75);
+  });
 });

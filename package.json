@@ -52,6 +52,7 @@
     "youtube:upload": "bun scripts/youtube-upload.ts",
     "youtube:status": "bun scripts/youtube-status.ts",
     "youtube:revisit": "bun scripts/youtube-revisit.ts",
+    "youtube:reset-shorts-speed": "bun scripts/youtube-reset-shorts-speed.ts",
     "youtube:lease-sweep": "bun scripts/youtube-lease-sweep.ts",
     "youtube:supersede-sweep": "bun scripts/youtube-supersede-sweep.ts",
     "youtube:oauth-setup": "bun scripts/youtube-oauth-setup.ts",

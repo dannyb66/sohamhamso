@@ -71,6 +71,12 @@ export const DefaultsSchema = z
     visibility: z.enum(['unlisted', 'public', 'private']),
     fps: z.number().int().positive(),
     duration_s: z.number().positive(),
+    /**
+     * Shorts narration speed (Google TTS speakingRate, 0.25–4.0; 1.0 = normal).
+     * 0.75 = slower/clearer audio. Shorts-only — chapters stay at 1.0.
+     * Optional; omitted/undefined → buildTtsRequest emits no field → 1.0.
+     */
+    speaking_rate: z.number().min(0.25).max(4).optional(),
   })
   .strict();
 
