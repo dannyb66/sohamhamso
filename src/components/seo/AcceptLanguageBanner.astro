@@ -5,9 +5,10 @@ import { liveLocaleSet } from '../../lib/seo';
 interface Props {
   currentLang: LangCode;
   localeBasePath?: string;
+  localeTrailingSlash?: boolean;
 }
 
-const { currentLang, localeBasePath } = Astro.props;
+const { currentLang, localeBasePath, localeTrailingSlash = false } = Astro.props;
 const liveLocales = Array.from(liveLocaleSet());
 const localeLabels = Object.fromEntries(
   READING_MODES.filter((mode) => liveLocales.includes(mode.langCode)).map((mode) => [
@@ -40,6 +41,7 @@ const localeLabels = Object.fromEntries(
   const localeLabels = ${JSON.stringify(localeLabels)};
   const currentLang = ${JSON.stringify(currentLang)};
   const basePath = ${JSON.stringify(localeBasePath)};
+  const trailingSlash = ${JSON.stringify(localeTrailingSlash)};
   const banner = document.querySelector('[data-lang-banner]');
   const copy = document.querySelector('[data-lang-banner-copy]');
   const accept = document.querySelector('[data-lang-banner-accept]');
@@ -63,7 +65,8 @@ const localeLabels = Object.fromEntries(
   const localePathFor = (path, lang) => {
     const normalized = !path || path === '/' ? '/' : path.startsWith('/') ? path.replace(/\\/+$/, '') || '/' : '/' + path.replace(/\\/+$/, '');
     if (!lang || lang === 'en') return normalized;
-    return normalized === '/' ? '/' + lang : '/' + lang + normalized;
+    if (normalized === '/') return '/' + lang;
+    return '/' + lang + normalized + (trailingSlash ? '/' : '');
   };
 
   const detectPreferredLocale = () => {

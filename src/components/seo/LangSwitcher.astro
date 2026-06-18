@@ -1,14 +1,18 @@
 ---
 import type { LangCode } from '../../lib/reading-modes';
-import { localePathFor } from '../../lib/seo/i18n-routes';
+import { chapterIndexPath, localePathFor } from '../../lib/seo/i18n-routes';
 
 interface Props {
   availableLangs: LangCode[];
   basePath: string;
   currentLang: LangCode;
+  // Chapter-index pages need the trailing-slash localized form (see
+  // chapterIndexPath) — the bare URL 404s on CF Pages.
+  chapterIndex?: boolean;
 }
 
-const { availableLangs, basePath, currentLang } = Astro.props;
+const { availableLangs, basePath, currentLang, chapterIndex = false } = Astro.props;
+const hrefFor = chapterIndex ? chapterIndexPath : localePathFor;
 const labels: Record<LangCode, string> = {
   en: 'EN',
   hi: 'हिं',
@@ -28,7 +32,7 @@ const labels: Record<LangCode, string> = {
 <nav class="lang-strip" aria-label="Also available in">
   {availableLangs.map((lang) => (
     <a
-      href={localePathFor(basePath, lang)}
+      href={hrefFor(basePath, lang)}
       class:list={['lang-strip__chip', currentLang === lang && 'is-current']}
       aria-current={currentLang === lang ? 'page' : undefined}
     >

@@ -1,5 +1,5 @@
 import { listChapters } from '../lib/db';
-import { SITE_URL, filterIndexableTextLangs, liveLocaleSet, localePathFor } from '../lib/seo';
+import { SITE_URL, chapterIndexPath, filterIndexableTextLangs, liveLocaleSet } from '../lib/seo';
 import { getTexts } from '../lib/seo/corpus-bundle';
 import { xmlEscape } from '../lib/seo/xml-escape';
 
@@ -10,7 +10,7 @@ export function GET() {
     listChapters(text.slug).flatMap((chapter) =>
       filterIndexableTextLangs(text.slug, liveLangs).map(
         (lang) =>
-          `${SITE_URL}${xmlEscape(localePathFor(`/${text.tradition}/${text.slug}/${chapter.chapter}`, lang))}`,
+          `${SITE_URL}${xmlEscape(chapterIndexPath(`/${text.tradition}/${text.slug}/${chapter.chapter}`, lang))}`,
       ),
     ),
   );

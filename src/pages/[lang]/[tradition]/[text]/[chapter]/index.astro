@@ -16,10 +16,12 @@ import { getText, listChapterSummary, listChapters } from '../../../../../lib/db
 import { type LangCode, getReadingModeByLang } from '../../../../../lib/reading-modes';
 import {
   NON_ENGLISH_LANGS,
+  absoluteChapterIndexUrl,
   absoluteLocaleUrl,
   buildBreadcrumbList,
-  buildHreflangEntries,
+  buildChapterIndexHreflangEntries,
   buildWebPageJsonLd,
+  chapterIndexPath,
   combineJsonLd,
   filterIndexableTextLangs,
   getTextSeoOverrides,
@@ -65,7 +67,10 @@ if (!lang || !NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[numb
 const aliasCheck = resolveAlias(tradition!, text!);
 if (aliasCheck && !aliasCheck.canonical) {
   return Astro.redirect(
-    `/${lang}/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}`,
+    chapterIndexPath(
+      `/${aliasCheck.canonicalTradition}/${aliasCheck.canonicalSlug}/${chapterNum}`,
+      lang,
+    ),
     301,
   );
 }
@@ -96,10 +101,10 @@ const langName = getReadingModeByLang(currentLang)?.englishName ?? 'English';
 const verseRangeLabel = verseCount === 1 ? 'verse 1' : `verses 1–${verseCount}`;
 const pageTitle = `${currentLang.toUpperCase()} · ${textRow.title_en} — Chapter ${chapterNum} — sohamhamso`;
 const pageDescription = `${textRow.title_en} chapter ${chapterNum}: ${verseRangeLabel} with Devanāgarī, IAST and ${langName} translation.`;
-const canonical = absoluteLocaleUrl(basePath, currentLang);
+const canonical = absoluteChapterIndexUrl(basePath, currentLang);
 const noindex =
   !liveLangs.has(currentLang) || getTextSeoOverrides(textRow.slug, currentLang).noindex;
-const hreflang = noindex ? [] : buildHreflangEntries(basePath, availableLangs);
+const hreflang = noindex ? [] : buildChapterIndexHreflangEntries(basePath, availableLangs);
 const pageJsonLd = combineJsonLd(
   buildWebPageJsonLd({
     title: pageTitle,
@@ -133,6 +138,7 @@ const breadcrumbItems = [
   jsonLd={pageJsonLd}
   lang={currentLang}
   localeBasePath={basePath}
+  localeTrailingSlash={true}
   noindex={noindex}
   title={pageTitle}
 >
@@ -230,7 +236,7 @@ const breadcrumbItems = [
 
       <nav class="chapter-nav" aria-label="Chapter navigation" data-i18n-attr-aria-label="chapter_page.nav_aria">
         {prevChapter ? (
-          <a href={`/${lang}/${tradition}/${text}/${prevChapter.chapter}`} class="chapter-nav__prev">
+          <a href={chapterIndexPath(`/${tradition}/${text}/${prevChapter.chapter}`, lang)} class="chapter-nav__prev">
             ← <span data-i18n="text_overview.table.chapter">Chapter</span> {prevChapter.chapter}
           </a>
         ) : (
@@ -238,7 +244,7 @@ const breadcrumbItems = [
         )}
         <a href={`/${lang}/${tradition}/${text}`} class="chapter-nav__up">↑ {textRow.title_en}</a>
         {nextChapter ? (
-          <a href={`/${lang}/${tradition}/${text}/${nextChapter.chapter}`} class="chapter-nav__next">
+          <a href={chapterIndexPath(`/${tradition}/${text}/${nextChapter.chapter}`, lang)} class="chapter-nav__next">
             <span data-i18n="text_overview.table.chapter">Chapter</span> {nextChapter.chapter} →
           </a>
         ) : (
@@ -246,7 +252,7 @@ const breadcrumbItems = [
         )}
       </nav>
 
-      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} chapterIndex={true} currentLang={currentLang} />
     </article>
 
     <SubscribeBand />
