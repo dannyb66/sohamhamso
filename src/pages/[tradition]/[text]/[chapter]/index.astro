@@ -19,7 +19,7 @@ import { type LangCode, getReadingModeByLang } from '../../../../lib/reading-mod
 import {
   absoluteLocaleUrl,
   buildBreadcrumbList,
-  buildHreflangEntries,
+  buildChapterIndexHreflangEntries,
   buildWebPageJsonLd,
   combineJsonLd,
   filterIndexableTextLangs,
@@ -99,7 +99,7 @@ const pageTitle = `${textRow.title_en} — Chapter ${chapterNum} — sohamhamso`
 const pageDescription = `${textRow.title_en} chapter ${chapterNum}: ${verseRangeLabel} with Devanāgarī, IAST and ${langName} translation.`;
 const canonical = absoluteLocaleUrl(basePath, currentLang);
 const noindex = getTextSeoOverrides(textRow.slug, currentLang).noindex;
-const hreflang = noindex ? [] : buildHreflangEntries(basePath, availableLangs);
+const hreflang = noindex ? [] : buildChapterIndexHreflangEntries(basePath, availableLangs);
 const pageJsonLd = combineJsonLd(
   buildWebPageJsonLd({
     title: pageTitle,
@@ -133,6 +133,7 @@ const breadcrumbItems = [
   jsonLd={pageJsonLd}
   lang={currentLang}
   localeBasePath={basePath}
+  localeTrailingSlash={true}
   noindex={noindex}
   title={pageTitle}
 >
@@ -252,7 +253,7 @@ const breadcrumbItems = [
         )}
       </nav>
 
-      <LangSwitcher availableLangs={availableLangs} basePath={basePath} currentLang={currentLang} />
+      <LangSwitcher availableLangs={availableLangs} basePath={basePath} chapterIndex={true} currentLang={currentLang} />
     </article>
 
     <SubscribeBand />

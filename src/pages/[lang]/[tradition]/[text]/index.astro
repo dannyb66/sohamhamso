@@ -8,6 +8,7 @@ import type { LangCode } from '../../../../lib/reading-modes';
 import {
   NON_ENGLISH_LANGS,
   buildTextSeo,
+  chapterIndexPath,
   filterIndexableTextLangs,
   liveLocaleSet,
 } from '../../../../lib/seo';
@@ -138,7 +139,7 @@ const pageSeo = buildTextSeo({
             return (
             <li>
               <a
-                href={`/${lang}/${tradition}/${text}/${chapter.chapter}`}
+                href={chapterIndexPath(`/${tradition}/${text}/${chapter.chapter}`, lang)}
                 class="chapter-row chapter-row__link"
                 aria-label={`Read chapter ${chapter.chapter}${chapterTitle ? ` — ${chapterTitle}` : ""} — ${chapter.verse_count} verses`}
               >
