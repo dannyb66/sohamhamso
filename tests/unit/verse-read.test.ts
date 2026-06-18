@@ -22,6 +22,7 @@ import { Database } from 'bun:sqlite';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { buildLemmaIndex } from '../../pipeline/ingest/lemma-index';
 import { type CorpusDb, __setCorpusDbForTests } from '../../src/lib/corpus-db';
 import { __setDbForTests, getVerse } from '../../src/lib/db';
 import {
@@ -124,6 +125,10 @@ beforeAll(() => {
     VALUES (${v11}, ${v12}, 'echo', 0.9, 'test');
   `);
 
+  // Materialize lemma_index exactly as the build pipeline does, so the SSR
+  // read resolves lemma summaries from the table (not a word_glosses scan).
+  buildLemmaIndex(db);
+
   __setDbForTests(db);
 });
 
@@ -187,6 +192,23 @@ describe('readVersePage — batched SSR read', () => {
     expect(caitanya?.occurrenceCount).toBe(3);
     expect(caitanya?.slug).toBe('caitanya');
     expect(bundle?.lemmaSummaries.get('ātman')?.occurrenceCount).toBe(1);
+  });
+
+  it('reads lemma summaries from lemma_index, not by scanning word_glosses', async () => {
+    // Sentinel: overwrite the materialized row with values a glosses-scan
+    // could never produce. If the read still returns these, it came from
+    // lemma_index (the whole point of the read-quota fix).
+    db.exec(
+      "UPDATE lemma_index SET slug = 'caitanya-sentinel', occurrence_count = 99 WHERE lemma_iast = 'caitanya'",
+    );
+    __setCorpusDbForTests(makeFakeCorpusDb(db, true));
+    __resetVerseReadCachesForTests();
+    const { bundle } = await readVersePage('siva-sutras', 1, 1, 'en');
+    const caitanya = bundle?.lemmaSummaries.get('caitanya');
+    expect(caitanya?.slug).toBe('caitanya-sentinel');
+    expect(caitanya?.occurrenceCount).toBe(99);
+    // Restore so later specs (any order) see the real materialized value.
+    buildLemmaIndex(db);
   });
 
   it('returns texts + null bundle for a missing verse ref', async () => {
