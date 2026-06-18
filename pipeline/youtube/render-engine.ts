@@ -130,8 +130,9 @@ export async function synthesize(
   voiceId: string,
   langCode: string,
   outPath: string,
+  speakingRate?: number,
 ): Promise<void> {
-  const req = buildTtsRequest(text, voiceId, langCode);
+  const req = buildTtsRequest(text, voiceId, langCode, speakingRate);
   if (isMockAll()) {
     writeFileSync(outPath, cannedSilentWav(2));
     return;
@@ -435,7 +436,15 @@ export async function renderOne(
     const content = resolveContent(video, cfg);
 
     const audioPath = join(workDir, `${video.id}.wav`);
-    await synthesize(content.translation, video.tts_voice_id, content.langCode, audioPath);
+    // Shorts narration speed (defaults.speaking_rate, 0.75) for clearer audio;
+    // chapters synthesize without this arg and stay at 1.0.
+    await synthesize(
+      content.translation,
+      video.tts_voice_id,
+      content.langCode,
+      audioPath,
+      cfg.defaults.speaking_rate,
+    );
 
     // Video length is derived from the narration: probe its duration so the
     // composition runs leadIn + narration + tail (MOCK_ALL's canned wav = 2s).

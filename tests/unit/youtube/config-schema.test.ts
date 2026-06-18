@@ -65,4 +65,8 @@ describe('loadYoutubeConfig', () => {
   it('getStylePreset throws on an unknown preset', () => {
     expect(() => getStylePreset(cfg, 'no-such-preset')).toThrow(/Unknown style_preset/);
   });
+
+  it('reads defaults.speaking_rate (shorts narration speed) = 0.75', () => {
+    expect(cfg.defaults.speaking_rate).toBe(0.75);
+  });
 });
