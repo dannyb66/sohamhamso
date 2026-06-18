@@ -17,3 +17,14 @@
 
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
+
+# OG verse text precache (built by `scripts/seo-build-og-cache.ts`). One
+# JSON per verse, ~1-3KB each, ~334 files total. The OG handler in
+# `functions/og/_shared.ts` reads these via ASSETS.fetch on the hot path
+# instead of running a libsql HTTP query against Turso — eliminating the
+# tail-latency DB-timeout failure mode Phase 8 T+24h flagged.
+# Files are rebuilt on every deploy from `db/sohamhamso.db`; content-
+# stable per build so immutable + 1y max-age is safe.
+/og-cache/*
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/json; charset=utf-8
