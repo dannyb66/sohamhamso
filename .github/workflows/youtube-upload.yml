@@ -19,9 +19,16 @@
 name: YouTube upload (Cron B)
 
 on:
-  schedule:
-    # Every 4h, 30min offset from Cron A so renders settle before upload.
-    - cron: '47 */4 * * *'
+  # HOLD (2026-06-20): scheduled shorts upload is paused while we migrate to
+  # per-language YouTube channels (12 langs, one channel each). Auto-upload to
+  # the single @sohamhamso channel is wrong now — restore the schedule below
+  # once per-channel auth + lang→channel routing land. Render (Cron A) keeps
+  # running so the 0.75-speed catalogue stays ready to publish. Manual dispatch
+  # stays enabled for migration testing.
+  #
+  # schedule:
+  #   # Every 4h, 30min offset from Cron A so renders settle before upload.
+  #   - cron: '47 */4 * * *'
   workflow_dispatch:
 
 permissions:
