@@ -85,6 +85,19 @@ function validate(configPath?: string): Summary {
     }
   }
 
+  // 5. When per-language channels are configured, every rendered lang must map
+  //    to a channel — else uploads silently fall back to the default channel.
+  //    (Skipped entirely in single-channel mode where `channels:` is absent.)
+  if (cfg.channels) {
+    for (const lang of cfg.chapters.langs) {
+      if (!cfg.channels[lang]) {
+        violations.push(
+          `chapters.langs entry "${lang}" has no channels entry — add channels.${lang} (per-language upload channel) to data/youtube-config.yaml`,
+        );
+      }
+    }
+  }
+
   return {
     ok: violations.length === 0,
     presetCount: Object.keys(cfg.style_presets).length,

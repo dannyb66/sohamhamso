@@ -25,18 +25,18 @@
  * socket dropped) is a duplicate UNLISTED video — operator dedupes in Studio;
  * the DB records only the retry's id.
  *
- * Conforms to CLI-CONVENTIONS: --help/--json/--dry-run/--limit.
+ * Conforms to CLI-CONVENTIONS: --help/--json/--dry-run/--limit/--text-slug/--lang.
  */
 import { createHash, randomUUID } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { UsageError, parseCommonArgs, utcDate } from '../pipeline/youtube/cli';
-import { loadYoutubeConfig } from '../pipeline/youtube/config';
 import {
   EXPIRED_TOKEN_FIX_MESSAGE,
   isExpiredRefreshTokenError,
 } from '../pipeline/youtube/analytics-map';
+import { UsageError, parseCommonArgs, utcDate } from '../pipeline/youtube/cli';
+import { loadYoutubeConfig } from '../pipeline/youtube/config';
 import { chapterMetaKey } from '../pipeline/youtube/filename';
 import { log, logError, scrubError } from '../pipeline/youtube/log';
 import { getR2Creds, getYoutubeOAuth } from '../pipeline/youtube/secrets';
@@ -47,11 +47,11 @@ import {
 } from '../pipeline/youtube/upload-metadata';
 import { getDb } from '../src/lib/db';
 import {
+  type QuotaRow,
   type VideoRow,
   addQuotaUnits,
   getQuotaToday,
   getVideosDb,
-  listByStatus,
   recordPipelineRun,
   updateVideoStatus,
 } from '../src/lib/videos-db';
@@ -73,12 +73,16 @@ const USAGE = `youtube-upload — Cron B uploader (R2 → YouTube, unlisted)
 
 Usage:
   bun scripts/youtube-upload.ts [--limit=N] [--dry-run] [--json]
+                                [--text-slug=SLUG] [--text=SLUG] [--lang=CODE]
 
 Flags:
   --help        Show this help and exit 0
   --json        Machine-readable summary on stdout
   --dry-run     Plan only — pull rows, upload nothing
   --limit=N     Max uploads this run (default ${DEFAULT_LIMIT})
+  --text-slug=SLUG
+  --text=SLUG   Restrict to one text id/slug
+  --lang=CODE   Restrict to one lang
 
 Env:
   MOCK_ALL=true Fake video ids, local file instead of R2 download
@@ -91,9 +95,36 @@ function isMockAll(): boolean {
   return process.env.MOCK_ALL === 'true';
 }
 
+export interface UploadQueueFilter {
+  textSlug?: string;
+  lang?: string;
+}
+
 /** Pull oldest approved candidate rows awaiting upload (pre-hold, pre-limit). */
-function pickApprovedCandidates(db: ReturnType<typeof getVideosDb>, limit: number): VideoRow[] {
-  return listByStatus(db, 'approved', limit * 4).filter((r) => !r.youtube_video_id);
+export function pickApprovedCandidates(
+  db: ReturnType<typeof getVideosDb>,
+  limit: number,
+  filter: UploadQueueFilter = {},
+): VideoRow[] {
+  const clauses = ['v.status = ?', 'v.youtube_video_id IS NULL'];
+  const params: (string | number)[] = ['approved'];
+  if (filter.textSlug) {
+    clauses.push('(v.text_id = ? OR t.slug = ?)');
+    params.push(filter.textSlug, filter.textSlug);
+  }
+  if (filter.lang) {
+    clauses.push('v.lang = ?');
+    params.push(filter.lang);
+  }
+  params.push(limit * 4);
+  return db
+    .query<VideoRow, (string | number)[]>(
+      `SELECT v.* FROM videos v
+       LEFT JOIN texts t ON t.id = v.text_id
+       WHERE ${clauses.join(' AND ')}
+       ORDER BY v.priority DESC, v.id ASC LIMIT ?`,
+    )
+    .all(...params);
 }
 
 /** Row format ('short' | 'chapter'). Null-tolerant for pre-migration rows. */
@@ -181,6 +212,7 @@ function resolveMeta(video: VideoRow): {
 /** Resolve corpus context for a CHAPTER row (verse_num = 0 → use the chapter's first verse). */
 function resolveChapterMeta(video: VideoRow): {
   textTitle: string;
+  textTitleDevanagari: string;
   tradition: string;
   textSlug: string;
   summary: string;
@@ -190,9 +222,15 @@ function resolveChapterMeta(video: VideoRow): {
   const corpus = getDb();
   const text = corpus
     .query<
-      { title_iast: string | null; title_en: string; slug: string; tradition: string },
+      {
+        title_iast: string | null;
+        title_en: string;
+        title_sa: string | null;
+        slug: string;
+        tradition: string;
+      },
       [string]
-    >('SELECT title_iast, title_en, slug, tradition FROM texts WHERE id = ? LIMIT 1')
+    >('SELECT title_iast, title_en, title_sa, slug, tradition FROM texts WHERE id = ? LIMIT 1')
     .get(video.text_id);
   // translation_row_id on chapter rows anchors the chapter's FIRST verse
   // (documented provenance anchor) — its translation front-loads the description.
@@ -208,6 +246,7 @@ function resolveChapterMeta(video: VideoRow): {
     .get(video.text_id, video.chapter);
   return {
     textTitle: text?.title_iast || text?.title_en || video.text_id,
+    textTitleDevanagari: text?.title_sa || text?.title_iast || text?.title_en || video.text_id,
     tradition: text?.tradition ?? 'trika',
     textSlug: text?.slug ?? video.text_id,
     summary: tr?.translation_text ?? '',
@@ -346,12 +385,15 @@ const NETWORK_ERROR_RE =
 async function youtubeInsert(
   meta: UploadMetadata,
   filePath: string,
+  lang: string,
   retryOnNetworkError = false,
 ): Promise<string> {
   if (isMockAll()) {
     return `mock-${createHash('md5').update(meta.snippet.title).digest('hex').slice(0, 11)}`;
   }
-  const oauth = getYoutubeOAuth();
+  // Per-language channel: build the OAuth client from THIS channel's refresh
+  // token (YT_REFRESH_TOKEN_<LANG>, legacy fallback inside getYoutubeOAuth).
+  const oauth = getYoutubeOAuth(lang);
   const mod = await import('googleapis' as string).catch((e) => {
     throw new Error(`googleapis not installed: ${scrubError(e)}`);
   });
@@ -404,40 +446,53 @@ async function main(): Promise<void> {
   }
 
   const cfg = loadYoutubeConfig();
-  const channel = cfg.defaults.channel_handle;
   const today = utcDate();
   const db = getVideosDb();
   const runId = randomUUID();
 
-  // 1a. API-quota pre-check (units).
-  const quota = getQuotaToday(db, channel, today);
-  if (quota && quota.units_spent > QUOTA_CEILING) {
-    log(STAGE, 'quota ceiling reached — skipping', { units: quota.units_spent });
-    if (args.json) console.log(JSON.stringify({ skipped: 'quota', units: quota.units_spent }));
-    return; // exit 0
+  // Per-channel quota cache: each channel's `youtube_quota` row is read once per
+  // run, then mutated in-memory as we upload so the per-row gate below reflects
+  // this run's spend without re-querying. Keyed on the row's channel_handle so
+  // each per-language channel is checked + capped INDEPENDENTLY — a saturated
+  // `hi` channel must not block `ta`.
+  const quotaCache = new Map<string, QuotaRow | null>();
+  function quotaFor(channel: string): QuotaRow | null {
+    if (!quotaCache.has(channel)) {
+      quotaCache.set(channel, getQuotaToday(db, channel, today));
+    }
+    return quotaCache.get(channel) ?? null;
   }
-
-  // 1b. Account-level daily upload-count cap — the real bottleneck. Skip the
-  // whole run once we've hit the cap (or a prior fire flagged `exhausted` after
-  // a 403 uploadLimitExceeded), so we don't hammer dead inserts at the wall.
-  const uploadsToday = quota?.uploads_count ?? 0;
-  if ((quota?.exhausted ?? 0) === 1 || uploadsToday >= MAX_UPLOADS_PER_DAY) {
-    log(STAGE, 'daily upload cap reached — skipping', {
-      uploads: uploadsToday,
-      cap: MAX_UPLOADS_PER_DAY,
-      exhausted: quota?.exhausted ?? 0,
-    });
-    if (args.json) console.log(JSON.stringify({ skipped: 'uploadCap', uploads: uploadsToday }));
-    return; // exit 0
+  // Reflect a successful upload in the cache so subsequent rows on the same
+  // channel see the incremented spend without another DB read.
+  function bumpQuotaCache(channel: string, units: number, uploads: number): void {
+    const cur = quotaFor(channel);
+    if (cur) {
+      cur.units_spent += units;
+      cur.uploads_count += uploads;
+    } else {
+      quotaCache.set(channel, {
+        id: 0,
+        channel_handle: channel,
+        utc_date: today,
+        units_spent: units,
+        uploads_count: uploads,
+        exhausted: 0,
+      });
+    }
   }
+  // Channels skipped this run (quota ceiling / daily cap / exhausted flag) —
+  // logged once each so the run summary explains why their rows were left.
+  const skippedChannels = new Set<string>();
 
-  // Clamp this run to the remaining daily budget so a big --limit can't blow
-  // past the account cap in a single fire.
-  const limit = Math.min(args.limit ?? DEFAULT_LIMIT, MAX_UPLOADS_PER_DAY - uploadsToday);
+  const limit = args.limit ?? DEFAULT_LIMIT;
 
   // 2. Pick approved rows; HOLD chapter rows until the operator flips
   //    chapters.uploads_enabled after the shorts measurement window closes.
-  const candidates = pickApprovedCandidates(db, limit);
+  const queueFilter: UploadQueueFilter = {
+    ...(args.textSlug ? { textSlug: args.textSlug } : {}),
+    ...(args.lang ? { lang: args.lang } : {}),
+  };
+  const candidates = pickApprovedCandidates(db, limit, queueFilter);
   let heldChapters = 0;
   let eligible = candidates;
   if (!chapterUploadsEnabled(cfg)) {
@@ -453,7 +508,11 @@ async function main(): Promise<void> {
     eligible = candidates.filter((r) => rowFormat(r) !== 'chapter');
   }
   const queue = eligible.slice(0, limit);
-  log(STAGE, `picked ${queue.length} approved rows`, { held: heldChapters });
+  log(STAGE, `picked ${queue.length} approved rows`, {
+    held: heldChapters,
+    text: args.textSlug ?? 'all',
+    lang: args.lang ?? 'all',
+  });
 
   const results: Array<{ id: number; status: string; youtubeId?: string; error?: string }> = [];
 
@@ -462,6 +521,39 @@ async function main(): Promise<void> {
       results.push({ id: video.id, status: 'would-upload' });
       continue;
     }
+
+    // PER-ROW channel gate (keyed on video.channel_handle). Each channel has
+    // its own quota/cap; an exhausted/over-budget channel is SKIPPED while
+    // OTHER channels continue (a saturated `hi` must not block `ta`). Rows stay
+    // `approved` for a later fire — no status change here.
+    const channel = video.channel_handle;
+    const q = quotaFor(channel);
+    if (q && q.units_spent > QUOTA_CEILING) {
+      if (!skippedChannels.has(channel)) {
+        skippedChannels.add(channel);
+        log(STAGE, 'quota ceiling reached — skipping channel', {
+          channel,
+          units: q.units_spent,
+        });
+      }
+      results.push({ id: video.id, status: 'skipped-quota' });
+      continue;
+    }
+    const uploadsToday = q?.uploads_count ?? 0;
+    if ((q?.exhausted ?? 0) === 1 || uploadsToday >= MAX_UPLOADS_PER_DAY) {
+      if (!skippedChannels.has(channel)) {
+        skippedChannels.add(channel);
+        log(STAGE, 'daily upload cap reached — skipping channel', {
+          channel,
+          uploads: uploadsToday,
+          cap: MAX_UPLOADS_PER_DAY,
+          exhausted: q?.exhausted ?? 0,
+        });
+      }
+      results.push({ id: video.id, status: 'skipped-uploadCap' });
+      continue;
+    }
+
     const started = Date.now();
     updateVideoStatus(db, video.id, 'uploading', {
       uploading_lease_at: new Date().toISOString(),
@@ -489,6 +581,7 @@ async function main(): Promise<void> {
         const lastStart = Math.max(...sidecar.segments.map((s) => s.startS));
         meta = buildChapterUploadMetadata({
           textTitle: cm.textTitle,
+          textTitleDevanagari: cm.textTitleDevanagari,
           chapter: video.chapter,
           verseCount: sidecar.verseCount ?? sidecar.segments.length,
           lang: video.lang,
@@ -503,6 +596,7 @@ async function main(): Promise<void> {
           // before the end (the outro card length per the design spec).
           outroStartS:
             sidecar.outroStartS ?? Math.max(lastStart + 10, Math.floor(sidecar.durationS) - 9),
+          groupMaxVerses: cfg.chapters.group_max_verses,
         });
       } else {
         const m = resolveMeta(video);
@@ -518,7 +612,7 @@ async function main(): Promise<void> {
         });
       }
 
-      const youtubeId = await youtubeInsert(meta, localPath, format === 'chapter');
+      const youtubeId = await youtubeInsert(meta, localPath, video.lang, format === 'chapter');
       const url = `https://www.youtube.com/watch?v=${youtubeId}`;
 
       updateVideoStatus(db, video.id, 'uploaded', {
@@ -528,6 +622,7 @@ async function main(): Promise<void> {
         uploaded_at: new Date().toISOString(),
       });
       addQuotaUnits(db, channel, today, UNITS_PER_UPLOAD, 1);
+      bumpQuotaCache(channel, UNITS_PER_UPLOAD, 1);
       recordPipelineRun(db, {
         run_id: runId,
         video_id: video.id,
@@ -547,7 +642,13 @@ async function main(): Promise<void> {
       // issue fires with the fix text. NO retry_count bump.
       if (isExpiredRefreshTokenError(e)) {
         updateVideoStatus(db, video.id, 'approved', {});
-        log(STAGE, `token expired — ${EXPIRED_TOKEN_FIX_MESSAGE}`, { video: video.id });
+        // Name the channel/lang so the operator knows WHICH token to rotate
+        // (each per-language channel has its own YT_REFRESH_TOKEN_<LANG>).
+        log(STAGE, `token expired — ${EXPIRED_TOKEN_FIX_MESSAGE}`, {
+          video: video.id,
+          lang: video.lang,
+          channel,
+        });
         if (args.json) console.log(JSON.stringify({ failed: 'expiredRefreshToken', results }));
         process.exit(1);
       }
@@ -588,27 +689,41 @@ async function main(): Promise<void> {
         db.query(
           'UPDATE youtube_quota SET exhausted = 1 WHERE channel_handle = ? AND utc_date = ?',
         ).run(channel, today);
+        // Mark exhausted in the cache too so further rows on THIS channel are
+        // skipped by the per-row gate — but keep processing OTHER channels.
+        const cq = quotaFor(channel);
+        if (cq) cq.exhausted = 1;
+        skippedChannels.add(channel);
         updateVideoStatus(db, video.id, 'approved', {});
-        log(STAGE, 'uploadLimitExceeded (daily account cap) — marked exhausted, exiting 0', {
+        log(STAGE, 'uploadLimitExceeded (daily account cap) — channel marked exhausted, skipping', {
           video: video.id,
+          channel,
         });
-        if (args.json) console.log(JSON.stringify({ skipped: 'uploadLimitExceeded', results }));
-        return; // exit 0
+        results.push({ id: video.id, status: 'skipped-uploadLimitExceeded' });
+        continue;
       }
 
       // 403 quotaExceeded is expected — set exhausted + exit 0.
       if (isQuotaExceeded(e)) {
         addQuotaUnits(db, channel, today, 0, 0);
-        const q = getQuotaToday(db, channel, today);
+        const qNow = getQuotaToday(db, channel, today);
         // Flag exhaustion idempotently via a direct flag update.
         db.query(
           'UPDATE youtube_quota SET exhausted = 1 WHERE channel_handle = ? AND utc_date = ?',
         ).run(channel, today);
+        // Mirror into the cache + skip set so further rows on THIS channel are
+        // gated out — but keep processing OTHER channels.
+        const cq = quotaFor(channel);
+        if (cq) cq.exhausted = 1;
+        skippedChannels.add(channel);
         // Reset this row back to approved so the next fire retries.
         updateVideoStatus(db, video.id, 'approved', {});
-        log(STAGE, 'quotaExceeded — marked exhausted, exiting 0', { units: q?.units_spent ?? 0 });
-        if (args.json) console.log(JSON.stringify({ skipped: 'quotaExceeded', results }));
-        return; // exit 0
+        log(STAGE, 'quotaExceeded — channel marked exhausted, skipping', {
+          channel,
+          units: qNow?.units_spent ?? 0,
+        });
+        results.push({ id: video.id, status: 'skipped-quotaExceeded' });
+        continue;
       }
 
       const msg = scrubError(e);
@@ -638,13 +753,23 @@ async function main(): Promise<void> {
     heldChapters,
     uploaded,
     dryRun: args.dryRun,
+    filter: queueFilter,
     results,
   };
   if (args.json) console.log(JSON.stringify(summary, null, 2));
-  else log(STAGE, 'upload batch complete', { picked: queue.length, uploaded, held: heldChapters });
+  else
+    log(STAGE, 'upload batch complete', {
+      picked: queue.length,
+      uploaded,
+      held: heldChapters,
+      text: args.textSlug ?? 'all',
+      lang: args.lang ?? 'all',
+    });
 }
 
-main().catch((e) => {
-  logError(STAGE, e);
-  process.exit(1);
-});
+if (import.meta.main) {
+  main().catch((e) => {
+    logError(STAGE, e);
+    process.exit(1);
+  });
+}

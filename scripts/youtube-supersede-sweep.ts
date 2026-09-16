@@ -41,9 +41,11 @@ function isMockAll(): boolean {
   return process.env.MOCK_ALL === 'true';
 }
 
-async function setPrivate(youtubeId: string): Promise<void> {
+async function setPrivate(youtubeId: string, lang: string): Promise<void> {
   if (isMockAll()) return;
-  const oauth = getYoutubeOAuth();
+  // Per-channel: the superseded video lives on `lang`'s channel — auth with
+  // that channel's refresh token (getYoutubeOAuth(lang)).
+  const oauth = getYoutubeOAuth(lang);
   const mod = await import('googleapis' as string).catch((e) => {
     throw new Error(`googleapis not installed: ${scrubError(e)}`);
   });
@@ -97,7 +99,7 @@ async function main(): Promise<void> {
     ids.push(row.id);
     if (args.dryRun) continue;
     try {
-      await setPrivate(row.youtube_video_id as string);
+      await setPrivate(row.youtube_video_id as string, row.lang);
       db.query(
         `UPDATE videos
             SET superseded_action = 'auto-private',

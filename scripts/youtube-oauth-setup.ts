@@ -49,19 +49,35 @@ const SCOPE = REQUIRED_SCOPES.join(' ');
 const REDIRECT = 'urn:ietf:wg:oauth:2.0:oob'; // out-of-band, paste code back
 const SECRET_PATH = '.secrets/yt-refresh.txt';
 
+/**
+ * Per-channel rollout: WITH --lang=<code> the minted token is for that
+ * language's channel, written to `.secrets/yt-refresh-<lang>.txt` and rotated
+ * into `YT_REFRESH_TOKEN_<LANG>`. WITHOUT --lang it's the legacy single-token
+ * path (.secrets/yt-refresh.txt → YT_REFRESH_TOKEN), behaving exactly as before.
+ */
+function secretPathFor(lang?: string): string {
+  return lang ? `.secrets/yt-refresh-${lang}.txt` : SECRET_PATH;
+}
+function secretEnvFor(lang?: string): string {
+  return lang ? `YT_REFRESH_TOKEN_${lang.toUpperCase()}` : 'YT_REFRESH_TOKEN';
+}
+
 const USAGE = `youtube-oauth-setup — single-channel OAuth bootstrap (3-scope union: upload + yt-analytics.readonly + force-ssl)
 
 Usage:
   Step 1 (print consent URL):
-    bun scripts/youtube-oauth-setup.ts
+    bun scripts/youtube-oauth-setup.ts [--lang=CODE]
   Step 2 (exchange the pasted code):
-    bun scripts/youtube-oauth-setup.ts --code=PASTED_CODE
+    bun scripts/youtube-oauth-setup.ts --code=PASTED_CODE [--lang=CODE]
 
 Flags:
   --help        Show this help and exit 0
   --json        Machine-readable output
   --dry-run     Print the consent URL only; never exchange or write
   --code=CODE   Authorization code from the consent screen (step 2)
+  --lang=CODE   Mint for this language's channel: writes
+                .secrets/yt-refresh-<lang>.txt and rotates YT_REFRESH_TOKEN_<LANG>.
+                Omit for the legacy single-channel token (YT_REFRESH_TOKEN).
   --refresh     Document the quarterly rotation flow (same steps; re-running
                 this script is idempotent — prompt=consent always mints a
                 fresh refresh token)
@@ -157,6 +173,35 @@ function missingScopes(granted: string[]): string[] {
   return REQUIRED_SCOPES.filter((s) => !have.has(s));
 }
 
+/**
+ * After minting, confirm WHICH channel the fresh token bound to — the operator
+ * must verify it's the intended brand-account channel before rotating the
+ * secret (a token minted under the wrong Google account silently targets the
+ * wrong channel). Calls youtube.channels.list({mine:true}) with the just-minted
+ * refresh token and returns the channel title/handle. Best-effort: any failure
+ * (googleapis missing, network) returns null — never throws, never the token.
+ */
+async function fetchOwnChannel(
+  clientId: string,
+  clientSecret: string,
+  refreshToken: string,
+): Promise<{ title?: string; handle?: string } | null> {
+  try {
+    const mod = await import('googleapis' as string);
+    // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis import shape
+    const { google } = mod as any;
+    const oauth2 = new google.auth.OAuth2(clientId, clientSecret);
+    oauth2.setCredentials({ refresh_token: refreshToken });
+    const youtube = google.youtube({ version: 'v3', auth: oauth2 });
+    const res = await youtube.channels.list({ part: ['snippet'], mine: true });
+    const snippet = res?.data?.items?.[0]?.snippet;
+    if (!snippet) return null;
+    return { title: snippet.title, handle: snippet.customUrl };
+  } catch {
+    return null; // best-effort confirmation; scope warning above is the hard gate
+  }
+}
+
 async function main(): Promise<void> {
   let args: ReturnType<typeof parseCommonArgs>;
   try {
@@ -186,14 +231,26 @@ async function main(): Promise<void> {
   }
 
   const code = args.extra.code;
+  // --lang selects the per-channel token path; absent = legacy single token.
+  const lang = args.lang;
+  const secretPath = secretPathFor(lang);
+  const secretEnv = secretEnvFor(lang);
 
   // Step 1 — no code yet: print the consent URL.
   if (!code) {
     const url = buildConsentUrl(oauth.clientId);
     if (args.json) {
-      console.log(JSON.stringify({ step: 'consent', scope: SCOPE, url }));
+      console.log(JSON.stringify({ step: 'consent', scope: SCOPE, url, lang: lang ?? null }));
     } else {
-      log(STAGE, 'open this consent URL, authorize, then re-run with --code=PASTED_CODE');
+      log(STAGE, 'open this consent URL, authorize, then re-run with --code=PASTED_CODE', {
+        channel: lang ? `${lang} (→ ${secretEnv})` : `legacy single (→ ${secretEnv})`,
+      });
+      if (lang) {
+        log(
+          STAGE,
+          `authorize with the GOOGLE ACCOUNT that owns the '${lang}' brand-account channel`,
+        );
+      }
       console.log(url);
       console.log('\nScopes (locked union):');
       for (const s of REQUIRED_SCOPES) console.log(`  ${s}`);
@@ -212,13 +269,13 @@ async function main(): Promise<void> {
     oauth.clientSecret,
     code,
   );
-  const outPath = resolve(process.cwd(), SECRET_PATH);
+  const outPath = resolve(process.cwd(), secretPath);
   mkdirSync(resolve(process.cwd(), '.secrets'), { recursive: true });
   writeFileSync(outPath, `${refreshToken}\n`, { mode: 0o600 });
 
   // NEVER print the token. Only the path + the gh command. Scope names are
   // not secrets — print exactly what was GRANTED and warn if short.
-  log(STAGE, 'refresh token written (not printed)', { path: SECRET_PATH });
+  log(STAGE, 'refresh token written (not printed)', { path: secretPath, channel: lang ?? 'legacy' });
   const missing = missingScopes(grantedScopes);
   if (grantedScopes.length === 0) {
     console.error(
@@ -249,16 +306,37 @@ async function main(): Promise<void> {
     );
     console.error(`[youtube:${STAGE}] ${'!'.repeat(70)}`);
   }
-  console.log(`\nNext: gh secret set YT_REFRESH_TOKEN < ${SECRET_PATH}`);
+
+  // Confirm the token bound to the intended channel BEFORE the operator rotates
+  // the secret — a token minted under the wrong Google account silently targets
+  // the wrong channel. Best-effort (never prints the token; null on failure).
+  const channel = await fetchOwnChannel(oauth.clientId, oauth.clientSecret, refreshToken);
+  if (channel) {
+    console.log('\nBound channel (verify this is the intended channel):');
+    console.log(`  title:  ${channel.title ?? '(unknown)'}`);
+    console.log(`  handle: ${channel.handle ?? '(none)'}`);
+    if (lang) {
+      console.log(`  target: ${lang} channel → ${secretEnv}`);
+    }
+  } else {
+    console.error(
+      `[youtube:${STAGE}] could not confirm the bound channel (channels.list failed or googleapis missing) — verify manually in YouTube Studio before rotating ${secretEnv}`,
+    );
+  }
+
+  console.log(`\nNext: gh secret set ${secretEnv} < ${secretPath}`);
   console.log('Then revoke any prior token at https://console.cloud.google.com/apis/credentials');
   if (args.json) {
     console.log(
       JSON.stringify({
         step: 'exchanged',
-        wrote: SECRET_PATH,
+        lang: lang ?? null,
+        secret: secretEnv,
+        wrote: secretPath,
         grantedScopes,
         missingScopes: missing,
-        ghCommand: `gh secret set YT_REFRESH_TOKEN < ${SECRET_PATH}`,
+        channel,
+        ghCommand: `gh secret set ${secretEnv} < ${secretPath}`,
       }),
     );
   }

@@ -24,7 +24,7 @@ import { resolveChapterVerses } from '../pipeline/youtube/chapter-render-engine'
  * --lang, plus --chapter=N.
  */
 import { UsageError, parseCommonArgs } from '../pipeline/youtube/cli';
-import { getChaptersConfig, loadYoutubeConfig } from '../pipeline/youtube/config';
+import { getChannelHandle, getChaptersConfig, loadYoutubeConfig } from '../pipeline/youtube/config';
 import { chapterContentMd5 } from '../pipeline/youtube/determinism';
 import { isYoutubeEligible } from '../pipeline/youtube/eligibility';
 import { log, logError } from '../pipeline/youtube/log';
@@ -223,6 +223,7 @@ function main(): void {
           chapter,
           verse_num: 0, // chapter rows use 0 (corpus verses start at 1)
           lang,
+          channel_handle: getChannelHandle(cfg, lang),
           short_index: 0,
           format: 'chapter',
           kula: tcfg.kula,

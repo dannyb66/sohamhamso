@@ -14,8 +14,12 @@ import { buildUploadMetadata } from '../pipeline/youtube/upload-metadata';
  * reading the current value (videos.list needs a read scope this token lacks).
  *
  * USAGE:
- *   YOUTUBE_DB_PATH=<state.db> bun scripts/youtube-update-seo.ts [--limit=N] [--dry-run]
+ *   YOUTUBE_DB_PATH=<state.db> bun scripts/youtube-update-seo.ts [--limit=N] [--lang=CODE] [--dry-run]
  *   MOCK_ALL=true → DB-only, no YouTube call.
+ *
+ * PER-CHANNEL: each video's snippet update must use ITS channel's refresh
+ * token. The batch can span langs, so we lazily build + cache one OAuth client
+ * per lang (getYoutubeOAuth(v.lang)). --lang restricts the batch to one channel.
  */
 import { getDb } from '../src/lib/db';
 import { type VideoRow, addQuotaUnits, getVideosDb, listByStatus } from '../src/lib/videos-db';
@@ -65,31 +69,53 @@ function resolveMeta(video: VideoRow): {
   };
 }
 
+/**
+ * Lazy per-lang YouTube v3 client cache. Each video updates on its own
+ * channel, so the client is keyed on lang (getYoutubeOAuth(lang)). googleapis
+ * is imported once and reused across langs.
+ */
+function makeClientCache() {
+  // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis shape
+  const cache = new Map<string, any>();
+  // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis import shape
+  let googleMod: any = null;
+  // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis client shape
+  return async (lang: string): Promise<any> => {
+    const hit = cache.get(lang);
+    if (hit) return hit;
+    if (!googleMod) {
+      const mod = await import('googleapis' as string).catch((e) => {
+        throw new Error(`googleapis not installed: ${scrubError(e)}`);
+      });
+      // biome-ignore lint/suspicious/noExplicitAny: dynamic import shape
+      googleMod = (mod as any).google;
+    }
+    const oauth = getYoutubeOAuth(lang);
+    const oauth2 = new googleMod.auth.OAuth2(oauth.clientId, oauth.clientSecret);
+    oauth2.setCredentials({ refresh_token: oauth.refreshToken });
+    const client = googleMod.youtube({ version: 'v3', auth: oauth2 });
+    cache.set(lang, client);
+    return client;
+  };
+}
+
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
   const limitArg = args.find((a) => a.startsWith('--limit='));
   const limit = limitArg ? Number(limitArg.split('=')[1]) : 1000;
+  const langArg = args.find((a) => a.startsWith('--lang='));
+  const lang = langArg ? langArg.split('=')[1] : undefined;
 
   const db = getVideosDb();
-  const uploaded = listByStatus(db, 'uploaded', limit).filter((r) => r.youtube_video_id);
-  log(STAGE, 'uploaded videos to update', { n: uploaded.length, dryRun });
+  const uploaded = listByStatus(db, 'uploaded', limit, lang ? { lang } : {}).filter(
+    (r) => r.youtube_video_id,
+  );
+  log(STAGE, 'uploaded videos to update', { n: uploaded.length, dryRun, lang: lang ?? '(all)' });
   if (uploaded.length === 0) return;
 
-  // OAuth client (shared across the batch).
-  // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis shape
-  let youtube: any = null;
-  if (!isMockAll()) {
-    const oauth = getYoutubeOAuth();
-    const mod = await import('googleapis' as string).catch((e) => {
-      throw new Error(`googleapis not installed: ${scrubError(e)}`);
-    });
-    // biome-ignore lint/suspicious/noExplicitAny: dynamic import shape
-    const { google } = mod as any;
-    const oauth2 = new google.auth.OAuth2(oauth.clientId, oauth.clientSecret);
-    oauth2.setCredentials({ refresh_token: oauth.refreshToken });
-    youtube = google.youtube({ version: 'v3', auth: oauth2 });
-  }
+  // Lazy per-lang OAuth client cache (built on first use; skipped under MOCK_ALL).
+  const getClient = makeClientCache();
 
   const today = new Date().toISOString().slice(0, 10);
   let updated = 0;
@@ -111,6 +137,7 @@ async function main(): Promise<void> {
     }
     try {
       if (!isMockAll()) {
+        const youtube = await getClient(v.lang);
         await youtube.videos.update({
           part: ['snippet'],
           requestBody: {

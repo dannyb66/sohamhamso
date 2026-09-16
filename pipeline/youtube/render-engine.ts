@@ -30,8 +30,8 @@ import { log, scrubError } from './log';
 import { cannedSilentWav } from './mocks/canned';
 import { type QaResult, qaChecks } from './qa';
 import { buildShortProps } from './remotion-props';
-import { getGoogleTtsCreds, getR2Creds } from './secrets';
-import { buildTtsRequest } from './tts-request';
+import { getAzureTtsCreds, getGoogleTtsCreds, getR2Creds } from './secrets';
+import { buildAzureTtsRequest, buildTtsRequest } from './tts-request';
 
 const STAGE = 'render';
 
@@ -120,10 +120,29 @@ function resolveContent(
   };
 }
 
+/** TTS provider for a voice. Defaults to google when unresolved. */
+export type TtsProvider = 'google' | 'azure';
+
 /**
- * Synthesize narration audio. MOCK_ALL → a canned silent WAV. Real path
- * dynamically imports @google-cloud/text-to-speech (guarded so the module
- * imports without the dep). (Exported for chapter-render-engine reuse.)
+ * Resolve which provider owns `voiceId` from the config `voices:` map. The
+ * synthesize signature carries only the voice short-name, so we match on
+ * `voice_id`, then fall back to the or/as Azure locale prefix.
+ */
+export function resolveTtsProvider(voiceId: string, cfg?: YoutubeConfig): TtsProvider {
+  const voices = cfg?.voices;
+  if (voices) {
+    for (const v of Object.values(voices)) {
+      if (v.voice_id === voiceId) return v.provider === 'azure' ? 'azure' : 'google';
+    }
+  }
+  if (/^(or|as)-IN-/.test(voiceId)) return 'azure';
+  return 'google';
+}
+
+/**
+ * Synthesize narration audio. MOCK_ALL → a canned silent WAV. Real path routes
+ * by configured provider: Google Cloud TTS for most languages, Azure Speech
+ * REST for Odia/Assamese.
  */
 export async function synthesize(
   text: string,
@@ -132,11 +151,23 @@ export async function synthesize(
   outPath: string,
   speakingRate?: number,
 ): Promise<void> {
-  const req = buildTtsRequest(text, voiceId, langCode, speakingRate);
   if (isMockAll()) {
     writeFileSync(outPath, cannedSilentWav(2));
     return;
   }
+
+  let cfg: YoutubeConfig | undefined;
+  try {
+    cfg = loadYoutubeConfig();
+  } catch {
+    cfg = undefined;
+  }
+  if (resolveTtsProvider(voiceId, cfg) === 'azure') {
+    await synthesizeAzure(text, voiceId, langCode, outPath, speakingRate);
+    return;
+  }
+
+  const req = buildTtsRequest(text, voiceId, langCode, speakingRate);
   // Resolve creds via the chokepoint (hard-fails in prod when absent).
   const creds = getGoogleTtsCreds();
   const mod = await import('@google-cloud/text-to-speech' as string).catch((e) => {
@@ -155,6 +186,43 @@ export async function synthesize(
   const [resp] = await client.synthesizeSpeech(req);
   if (!resp?.audioContent) throw new Error('TTS returned no audioContent');
   writeFileSync(outPath, Buffer.from(resp.audioContent as Uint8Array));
+}
+
+/**
+ * Azure Speech REST synthesis (or-IN / as-IN). POSTs the SSML built by
+ * `buildAzureTtsRequest` to the region endpoint with the subscription key
+ * injected from the secrets chokepoint, and writes the mp3 bytes to `outPath`.
+ * No external dep — Azure Speech is a plain REST call (fetch). Secrets are
+ * scrubbed from any error.
+ */
+async function synthesizeAzure(
+  text: string,
+  voiceId: string,
+  langCode: string,
+  outPath: string,
+  speakingRate?: number,
+): Promise<void> {
+  // Resolve creds via the chokepoint (hard-fails in prod when absent).
+  const creds = getAzureTtsCreds();
+  const req = buildAzureTtsRequest(text, voiceId, langCode, speakingRate, creds.region);
+  let resp: Response;
+  try {
+    resp = await fetch(req.url, {
+      method: 'POST',
+      headers: { ...req.headers, 'Ocp-Apim-Subscription-Key': creds.key },
+      body: req.ssml,
+    });
+  } catch (e) {
+    throw new Error(`Azure TTS request failed: ${scrubError(e)}`);
+  }
+  if (!resp.ok) {
+    const body = await resp.text().catch(() => '');
+    // scrubError strips the key if it ever echoes back in an error body.
+    throw new Error(`Azure TTS HTTP ${resp.status}: ${scrubError(body || resp.statusText)}`);
+  }
+  const buf = Buffer.from(await resp.arrayBuffer());
+  if (buf.length === 0) throw new Error('Azure TTS returned empty audio body');
+  writeFileSync(outPath, buf);
 }
 
 /**

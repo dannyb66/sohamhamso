@@ -62,6 +62,19 @@ jobs:
       YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
       YOUTUBE_OAUTH_CLIENT_SECRET: ${{ secrets.YOUTUBE_OAUTH_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      # Per-language channel tokens (analytics queries each channel's own token).
+      YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
+      YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
+      YT_REFRESH_TOKEN_TA: ${{ secrets.YT_REFRESH_TOKEN_TA }}
+      YT_REFRESH_TOKEN_TE: ${{ secrets.YT_REFRESH_TOKEN_TE }}
+      YT_REFRESH_TOKEN_KN: ${{ secrets.YT_REFRESH_TOKEN_KN }}
+      YT_REFRESH_TOKEN_ML: ${{ secrets.YT_REFRESH_TOKEN_ML }}
+      YT_REFRESH_TOKEN_BN: ${{ secrets.YT_REFRESH_TOKEN_BN }}
+      YT_REFRESH_TOKEN_MR: ${{ secrets.YT_REFRESH_TOKEN_MR }}
+      YT_REFRESH_TOKEN_GU: ${{ secrets.YT_REFRESH_TOKEN_GU }}
+      YT_REFRESH_TOKEN_PA: ${{ secrets.YT_REFRESH_TOKEN_PA }}
+      YT_REFRESH_TOKEN_OR: ${{ secrets.YT_REFRESH_TOKEN_OR }}
+      YT_REFRESH_TOKEN_AS: ${{ secrets.YT_REFRESH_TOKEN_AS }}
       # ── R2 / S3-compatible storage for the state DB. ─────────────────
       R2_BUCKET: ${{ secrets.R2_BUCKET }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

@@ -66,19 +66,64 @@ export function getGoogleTtsCreds(): GoogleTtsCreds {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Azure Speech (REST) — or-IN / as-IN narration
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type AzureTtsCreds = {
+  /** Subscription key (AZURE_SPEECH_KEY) for Ocp-Apim-Subscription-Key. */
+  key: string;
+  /** Resource region short-name, e.g. "eastus" (AZURE_SPEECH_REGION). */
+  region: string;
+};
+
+/**
+ * Resolve Azure Speech credentials. Mirrors `getGoogleTtsCreds`: hard-fails in
+ * prod/CI when an azure-provider voice needs them but they're absent; MOCK_ALL
+ * bypasses (returns empties — the canned-WAV path never calls Azure).
+ *
+ * Region defaults to "eastus" only as a last resort; prod MUST set
+ * AZURE_SPEECH_REGION to match the resource (a wrong region 401s/404s).
+ */
+export function getAzureTtsCreds(): AzureTtsCreds {
+  const key = process.env.AZURE_SPEECH_KEY ?? '';
+  const region = process.env.AZURE_SPEECH_REGION ?? '';
+  // Both the key AND an explicit region are required (region is part of the
+  // endpoint host; the eastus fallback is dev-only convenience).
+  const present = Boolean(key && region);
+  if (guard('Azure Speech', present)) return { key: '', region: '' };
+  return { key, region: region || 'eastus' };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // YouTube OAuth (scope youtube.upload only, per E5)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function getYoutubeOAuth(): {
+/**
+ * Resolve a channel's refresh token. With per-language channels each channel
+ * has its own token in `YT_REFRESH_TOKEN_<LANG>` (uppercase); falls back to the
+ * legacy single `YT_REFRESH_TOKEN` (so a partial rollout / single-channel setup
+ * keeps working). The OAuth client id/secret are shared across all channels
+ * (one OAuth app, consented separately per brand-account channel).
+ */
+function resolveRefreshToken(lang?: string): string {
+  if (lang) {
+    const perLang = process.env[`YT_REFRESH_TOKEN_${lang.toUpperCase()}`];
+    if (perLang) return perLang;
+  }
+  return process.env.YT_REFRESH_TOKEN ?? '';
+}
+
+export function getYoutubeOAuth(lang?: string): {
   clientId: string;
   clientSecret: string;
   refreshToken: string;
 } {
   const clientId = process.env.YOUTUBE_OAUTH_CLIENT_ID ?? '';
   const clientSecret = process.env.YOUTUBE_OAUTH_CLIENT_SECRET ?? '';
-  const refreshToken = process.env.YT_REFRESH_TOKEN ?? '';
+  const refreshToken = resolveRefreshToken(lang);
   const present = Boolean(clientId && clientSecret && refreshToken);
-  if (guard('YouTube OAuth', present)) {
+  // The failure label names the channel so the operator knows which token to mint/rotate.
+  if (guard(`YouTube OAuth${lang ? ` (${lang} channel)` : ''}`, present)) {
     return { clientId: '', clientSecret: '', refreshToken: '' };
   }
   return { clientId, clientSecret, refreshToken };

@@ -6,8 +6,13 @@
  * UTM-tagged canonical backlink (the whole point of the pipeline — drive
  * link-clicks to sohamhamso.org). Title is truncated to keep titles short.
  *
- * Pure — no imports. Unit-tested + snapshot-tested separately.
+ * Pure (aside from per-language chrome) — unit-tested + snapshot-tested separately.
  */
+import {
+  hasLocalizedChapterMeta,
+  localizedChapterKeywordSentence,
+  localizedChapterTitle,
+} from './chapter-i18n';
 
 export interface UploadMetadataArgs {
   textTitle: string;
@@ -163,6 +168,12 @@ export interface ChapterTimestampSegment {
 
 export interface ChapterUploadMetadataArgs {
   textTitle: string;
+  /**
+   * Native-script text title (Devanāgarī `title_sa`), used as the in-language
+   * keyword in localized (non-en) titles/descriptions. Falls back to `textTitle`
+   * (IAST/Latin) when absent. Ignored for `lang==='en'`.
+   */
+  textTitleDevanagari?: string;
   chapter: number;
   /** Verses in the chapter — drives singular/plural title grammar. */
   verseCount: number;
@@ -180,8 +191,64 @@ export interface ChapterUploadMetadataArgs {
   segments: ChapterTimestampSegment[];
   /** Start of the outro card in seconds — the final timestamp line. */
   outroStartS: number;
+  /**
+   * Max verses folded into one YouTube chapter marker (`chapters.group_max_verses`,
+   * default 1). Short sutras are grouped so every marker spans ≥10s — YouTube
+   * ignores ALL chapters otherwise. Long verses still stand alone.
+   */
+  groupMaxVerses?: number;
   tags?: string[];
   license?: string;
+}
+
+/** YouTube requires every chapter to be ≥10s long, the first at 0:00. */
+const MIN_MARKER_GAP_S = 10;
+
+/**
+ * Group ordered per-verse segments into YouTube chapter-marker lines, each
+ * ≥10s after the previous marker (else YouTube drops every chapter). Walks
+ * verses greedily: a marker opens at a verse, then absorbs following verses
+ * until the span reaches MIN_MARKER_GAP_S OR `groupMaxVerses` is hit. Verses
+ * that can't reach 10s even at the cap fold into the running marker so no
+ * timestamp ever lands <10s apart. Label: "Verse N" or "Verses N–M".
+ */
+export function buildChapterMarkerLines(
+  ordered: ChapterTimestampSegment[],
+  groupMaxVerses: number,
+): Array<{ startS: number; firstVerse: number; lastVerse: number }> {
+  const cap = Math.max(1, Math.floor(groupMaxVerses));
+  const markers: Array<{ startS: number; firstVerse: number; lastVerse: number }> = [];
+  // The 0:00 title is always the first chapter; seed with it so the first verse
+  // marker lands ≥10s in (leading short verses fold under the opening chapter).
+  let lastMarkerS = 0;
+  let i = 0;
+  while (i < ordered.length) {
+    const start = ordered[i];
+    let k = i;
+    // Grow until the NEXT verse would sit ≥10s past this marker, or cap hit.
+    while (
+      k + 1 < ordered.length &&
+      k - i + 1 < cap &&
+      ordered[k + 1].startS - start.startS < MIN_MARKER_GAP_S
+    ) {
+      k++;
+    }
+    if (start.startS - lastMarkerS < MIN_MARKER_GAP_S) {
+      // Too close to the previous marker: fold these verses into it (or, for
+      // the opening, under the 0:00 title) rather than emit a <10s timestamp.
+      const prev = markers[markers.length - 1];
+      if (prev) prev.lastVerse = ordered[k].verseNum;
+    } else {
+      markers.push({
+        startS: start.startS,
+        firstVerse: start.verseNum,
+        lastVerse: ordered[k].verseNum,
+      });
+      lastMarkerS = start.startS;
+    }
+    i = k + 1;
+  }
+  return markers;
 }
 
 /** `M:SS` under an hour, `H:MM:SS` above (YouTube chapter-timestamp format). */
@@ -220,17 +287,46 @@ export function buildChapterUploadMetadata(a: ChapterUploadMetadataArgs): Upload
   const canonicalUrl = `https://sohamhamso.org/${a.tradition}/${a.textSlug}/${a.chapter}`;
   const utmUrl = `${canonicalUrl}?utm_source=youtube&utm_medium=chapter&utm_campaign=chapter`;
 
-  // Title: "{textTitle} — Chapter {N} | All {count} Verses", singular-safe
-  // (spanda-karikas ch4 has exactly 1 verse → "… | Verse 1"). ≤100 chars.
-  const verseLabel = a.verseCount === 1 ? 'Verse 1' : `All ${a.verseCount} Verses`;
-  const titleSuffix = ` — Chapter ${a.chapter} | ${verseLabel}`;
-  const title = `${truncate(a.textTitle, Math.max(8, TITLE_MAX - titleSuffix.length))}${titleSuffix}`;
+  // Per-language SEO localization — each non-en channel must rank in its own
+  // language's search. EN keeps the legacy byte-identical path below.
+  const localized = hasLocalizedChapterMeta(a.lang);
+  // Native text title (Devanāgarī `title_sa` if supplied, else the IAST/Latin
+  // title) — the strongest in-language keyword for the localized title/tag.
+  const nativeTitle = a.textTitleDevanagari?.trim() ? a.textTitleDevanagari.trim() : a.textTitle;
 
-  // Timestamp block: 0:00 title line, then one line per verse, outro last.
+  // Title: localized → in-language keyword in the first ~40 chars, e.g. hi →
+  // "शिवसूत्र अध्याय 1 — सभी 22 श्लोक". EN → "{textTitle} — Chapter {N} | All
+  // {count} Verses", singular-safe (spanda ch4 → "… | Verse 1"), ≤100 chars.
+  let title: string;
+  if (localized) {
+    title = truncate(localizedChapterTitle(a.lang, nativeTitle, a.chapter, a.verseCount), TITLE_MAX);
+  } else {
+    const verseLabel = a.verseCount === 1 ? 'Verse 1' : `All ${a.verseCount} Verses`;
+    const titleSuffix = ` — Chapter ${a.chapter} | ${verseLabel}`;
+    title = `${truncate(a.textTitle, Math.max(8, TITLE_MAX - titleSuffix.length))}${titleSuffix}`;
+  }
+
+  // Timestamp block: 0:00 title line, grouped verse markers (≥10s apart),
+  // outro last. Verses are folded ≤groupMaxVerses per marker so YouTube
+  // accepts the chapter list (every chapter must be ≥10s).
   const ordered = [...a.segments].sort((x, y) => x.startS - y.startS);
+  const markers = buildChapterMarkerLines(ordered, a.groupMaxVerses ?? 1);
+  // Verses that fold under the 0:00 opening chapter (they start <10s in) are
+  // named on the title line so the chapter list accounts for every verse.
+  const firstMarked = markers[0]?.firstVerse;
+  const openingCover =
+    firstMarked && ordered.length > 0 && firstMarked > ordered[0].verseNum
+      ? ` · Verses ${ordered[0].verseNum}–${firstMarked - 1}`
+      : '';
   const timestampLines = [
-    `0:00 ${a.textTitle} — Chapter ${a.chapter}`,
-    ...ordered.map((s) => `${formatTimestamp(s.startS)} Verse ${s.verseNum}`),
+    `0:00 ${a.textTitle} — Chapter ${a.chapter}${openingCover}`,
+    ...markers.map((m) => {
+      const label =
+        m.firstVerse === m.lastVerse
+          ? `Verse ${m.firstVerse}`
+          : `Verses ${m.firstVerse}–${m.lastVerse}`;
+      return `${formatTimestamp(m.startS)} ${label}`;
+    }),
     `${formatTimestamp(a.outroStartS)} Read the full chapter — sohamhamso.org`,
   ].join('\n');
 
@@ -255,10 +351,16 @@ export function buildChapterUploadMetadata(a: ChapterUploadMetadataArgs): Upload
 
   const verseCountPhrase = a.verseCount === 1 ? 'its single verse' : `all ${a.verseCount} verses`;
 
+  // Keyword context line: localized → leads with the in-language keyword,
+  // reusing the site SEO template's native clause. EN → unchanged legacy line.
+  const keywordLine = localized
+    ? localizedChapterKeywordSentence(a.lang, nativeTitle, a.chapter, a.verseCount, a.tradition)
+    : `${a.textTitle} — Chapter ${a.chapter}: ${verseCountPhrase} with Devanāgarī, IAST and English translation, from a foundational text of Kashmir Śaivism (Trika / Pratyabhijñā). Ancient Sanskrit wisdom on consciousness (cit), Śiva, and the Self (ātman).`;
+
   const description = [
     a.summary.trim(),
     sanskrit,
-    `${a.textTitle} — Chapter ${a.chapter}: ${verseCountPhrase} with Devanāgarī, IAST and English translation, from a foundational text of Kashmir Śaivism (Trika / Pratyabhijñā). Ancient Sanskrit wisdom on consciousness (cit), Śiva, and the Self (ātman).`,
+    keywordLine,
     `📖 Read this chapter verse by verse, with glosses, in 11 languages → ${utmUrl}\n🔔 Subscribe for a new verse each day.`,
     timestampLines,
     hashtags.join(' '),
@@ -267,7 +369,14 @@ export function buildChapterUploadMetadata(a: ChapterUploadMetadataArgs): Upload
     .filter(Boolean)
     .join('\n\n');
 
+  // First tag = the exact in-language target keyword (the dominant SEO lever for
+  // the per-language channel), then the broad English topic tags (still help).
+  // EN: unchanged — no leading localized tag.
+  const localizedKeywordTag = localized
+    ? localizedChapterTitle(a.lang, nativeTitle, a.chapter, a.verseCount)
+    : null;
   const tags = [
+    ...(localizedKeywordTag ? [localizedKeywordTag] : []),
     'Kashmir Shaivism',
     'Trika',
     'Pratyabhijna',

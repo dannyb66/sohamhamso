@@ -1,6 +1,5 @@
 #!/usr/bin/env bun
 import { UsageError, parseCommonArgs, utcDate } from '../pipeline/youtube/cli';
-import { loadYoutubeConfig } from '../pipeline/youtube/config';
 import { log, logError, scrubError } from '../pipeline/youtube/log';
 import { getYoutubeOAuth } from '../pipeline/youtube/secrets';
 /**
@@ -58,9 +57,12 @@ async function youtubeUpdate(
   videoId: string,
   visibility: Visibility,
   title: string | undefined,
+  lang: string,
 ): Promise<void> {
   if (isMockAll()) return;
-  const oauth = getYoutubeOAuth();
+  // Per-channel: this video lives on `lang`'s channel, so the update must use
+  // that channel's refresh token (getYoutubeOAuth(lang)).
+  const oauth = getYoutubeOAuth(lang);
   const mod = await import('googleapis' as string).catch((e) => {
     throw new Error(`googleapis not installed: ${scrubError(e)}`);
   });
@@ -179,7 +181,6 @@ async function main(): Promise<void> {
     process.exit(2);
   }
 
-  const cfg = loadYoutubeConfig();
   const db = getVideosDb();
   const row = db.query<VideoRow, [number]>('SELECT * FROM videos WHERE id = ? LIMIT 1').get(dbId);
   if (!row) {
@@ -203,7 +204,7 @@ async function main(): Promise<void> {
   }
 
   try {
-    await youtubeUpdate(row.youtube_video_id, visibility, title);
+    await youtubeUpdate(row.youtube_video_id, visibility, title, row.lang);
   } catch (e) {
     // videos.update needs youtube.force-ssl — youtube.upload alone gets a 403.
     if (isInsufficientScope(e)) {
@@ -215,7 +216,8 @@ async function main(): Promise<void> {
     throw e;
   }
   updateVideoStatus(db, dbId, row.status, { visibility });
-  addQuotaUnits(db, cfg.defaults.channel_handle, utcDate(), UNITS_PER_UPDATE, 0);
+  // Quota is bucketed per channel — charge the row's own channel, not the default.
+  addQuotaUnits(db, row.channel_handle, utcDate(), UNITS_PER_UPDATE, 0);
 
   log(STAGE, 'revisited', { video: dbId, youtube: row.youtube_video_id, visibility });
   if (args.json) {

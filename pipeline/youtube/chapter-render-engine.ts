@@ -37,6 +37,7 @@ import { getDb } from '../../src/lib/db';
 import { type VideoRow, markSuperseded, updateVideoStatus } from '../../src/lib/videos-db';
 import type { ChapterProps } from '../../youtube/composition/types';
 import { translationFontForLang } from '../../youtube/composition/types';
+import { localizedTitleNarration } from './chapter-i18n';
 import { buildChapterProps } from './chapter-props';
 import {
   type ChaptersConfig,
@@ -199,14 +200,19 @@ export function resolveChapterVerses(
   return { manifest, verses, missing };
 }
 
-/** Title-card narration line ("The Śiva Sūtras of Vasugupta. Chapter 1."). */
+/**
+ * Title-card narration line. English: "The Śiva Sūtras of Vasugupta. Chapter 1."
+ * Localized per lang via chapter-i18n (Devanāgarī langs speak the title;
+ * other Indic langs announce the chapter only — see localizedTitleNarration).
+ */
 export function buildTitleNarration(
-  textTitle: string,
+  lang: string,
+  titleIast: string,
+  titleDevanagari: string,
   author: string | null | undefined,
   chapter: number,
 ): string {
-  const of = author && author.trim() !== '' ? ` of ${author.trim()}` : '';
-  return `The ${textTitle}${of}. Chapter ${chapter}.`;
+  return localizedTitleNarration(lang, titleIast, titleDevanagari, author, chapter);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -247,11 +253,12 @@ async function synthesizeWithRetry(
   langCode: string,
   outPath: string,
   label: string,
+  speakingRate?: number,
 ): Promise<void> {
   let lastErr: unknown;
   for (let attempt = 0; attempt <= TTS_RETRIES; attempt++) {
     try {
-      await synthesize(text, voiceId, langCode, outPath);
+      await synthesize(text, voiceId, langCode, outPath, speakingRate);
       return;
     } catch (e) {
       lastErr = e;
@@ -386,7 +393,10 @@ async function renderChapterMp4(
     outputLocation: rawPath,
     inputProps: props,
     chromiumOptions: { ignoreCertificateErrors: false },
-    timeoutInMilliseconds: 120_000, // headroom: fonts + many data-URL <Audio>
+    // Headroom for woff2 font-load delayRender + many data-URL <Audio>: a
+    // long chapter (e.g. siva-sutras ch3, 45 verses) ships a large inputProps
+    // payload that starves the renderer; 120s timed out on the font load.
+    timeoutInMilliseconds: 300_000,
     jpegQuality: 100,
   });
   if (encode === 'crf18') await reencodeCrf18(rawPath, outPath);
@@ -483,7 +493,13 @@ export async function renderChapterOne(
 
     // 3. Per-verse TTS + title-card narration (retry 2×; names the verse).
     const langCode = ttsLangCode(video.lang);
-    const titleText = buildTitleNarration(textTitle, text.author, video.chapter);
+    const titleText = buildTitleNarration(
+      video.lang,
+      textTitle,
+      text.title_sa,
+      text.author,
+      video.chapter,
+    );
     const titlePath = join(workDir, `${video.id}.title.mp3`);
     await synthesizeWithRetry(
       titleText,
@@ -491,6 +507,7 @@ export async function renderChapterOne(
       langCode,
       titlePath,
       `${video.text_id} ch${video.chapter} title card`,
+      chapters.speaking_rate,
     );
 
     const versePaths: string[] = [];
@@ -503,6 +520,7 @@ export async function renderChapterOne(
         langCode,
         p,
         `${video.text_id} ${video.chapter}.${v.verse_num} (${video.lang})`,
+        chapters.speaking_rate,
       );
       versePaths.push(p);
       log(STAGE, 'tts ok', {

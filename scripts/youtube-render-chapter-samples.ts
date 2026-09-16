@@ -33,9 +33,10 @@
  * Each MP4 gets a sidecar `<name>.timing.json`:
  *   { segments: [{ verseNum, startS, durationS }], totalS }
  */
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { localizedTitleNarration } from '../pipeline/youtube/chapter-i18n';
 import { buildChapterProps } from '../pipeline/youtube/chapter-props';
 import { UsageError, parseCommonArgs } from '../pipeline/youtube/cli';
 import { getChaptersConfig, getStylePreset, loadYoutubeConfig } from '../pipeline/youtube/config';
@@ -161,6 +162,7 @@ async function synth(
   text: string,
   voice: string,
   langCode: string,
+  speakingRate?: number,
 ): Promise<{ dataUrl: string; durationS: number }> {
   if (isMockAll()) {
     const wav = cannedSilentWav(2);
@@ -172,10 +174,12 @@ async function synth(
   const Client = m.TextToSpeechClient ?? m.default?.TextToSpeechClient;
   const credsJson = process.env.GOOGLE_TTS_CREDENTIALS_JSON;
   const client = credsJson ? new Client({ credentials: JSON.parse(credsJson) }) : new Client();
+  const audioConfig: { audioEncoding: 'MP3'; speakingRate?: number } = { audioEncoding: 'MP3' };
+  if (speakingRate != null && speakingRate !== 1) audioConfig.speakingRate = speakingRate;
   const [resp] = await client.synthesizeSpeech({
     input: { text },
     voice: { languageCode: langCode, name: voice },
-    audioConfig: { audioEncoding: 'MP3' },
+    audioConfig,
   });
   const buf = Buffer.from(resp.audioContent as Uint8Array);
   const mp3 = join(tmpdir(), `chapter-sample-${Date.now()}.mp3`);
@@ -183,6 +187,34 @@ async function synth(
   const { probeAudioDurationS } = await import('../pipeline/youtube/render-engine');
   const durationS = await probeAudioDurationS(mp3);
   return { dataUrl: `data:audio/mpeg;base64,${buf.toString('base64')}`, durationS };
+}
+
+// Load pre-generated narration from CHAPTER_AUDIO_DIR (external TTS, e.g.
+// AI4Bharat) instead of calling Google. Looks for <dir>/<key>.{wav,mp3,m4a}
+// where key is 'title' or `v${verse_num}`. Lets us A/B any engine's audio in
+// the real composition without wiring it into the pipeline.
+async function loadExternalAudio(
+  dir: string,
+  key: string,
+): Promise<{ dataUrl: string; durationS: number }> {
+  let file = '';
+  for (const ext of ['wav', 'mp3', 'm4a']) {
+    const p = join(dir, `${key}.${ext}`);
+    if (existsSync(p)) {
+      file = p;
+      break;
+    }
+  }
+  if (!file) throw new Error(`CHAPTER_AUDIO_DIR: no ${key}.{wav,mp3,m4a} in ${dir}`);
+  const buf = readFileSync(file);
+  const mime = file.endsWith('.mp3')
+    ? 'audio/mpeg'
+    : file.endsWith('.m4a')
+      ? 'audio/mp4'
+      : 'audio/wav';
+  const { probeAudioDurationS } = await import('../pipeline/youtube/render-engine');
+  const durationS = await probeAudioDurationS(file);
+  return { dataUrl: `data:${mime};base64,${buf.toString('base64')}`, durationS };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -230,6 +262,7 @@ async function main(): Promise<void> {
     segLeadInS: chapters.seg_lead_in_s,
     segTailS: chapters.seg_tail_s,
   };
+  const speakingRate = chapters.speaking_rate;
 
   // Job list: explicit --text-slug, else the plan's two-sample default set
   // (spanda ch2 full + siva-sutras ch1 first 8 = dead-air stress test).
@@ -294,18 +327,33 @@ async function main(): Promise<void> {
   log(STAGE, 'bundling once');
   const serveUrl = await bundle({ entryPoint: entry });
 
+  // Optional: use pre-generated audio (external TTS) instead of Google.
+  const audioDir = process.env.CHAPTER_AUDIO_DIR;
+  if (audioDir) log(STAGE, 'using external audio', { dir: audioDir });
+
   const results: RenderedSample[] = [];
   for (const { job, text, verses } of resolved) {
     const preset = getStylePreset(cfg, cfg.texts[job.slug].style_preset);
     const textTitle = text.title_iast || text.title_en;
 
-    // Narrated title card: "The Spanda Kārikās of …. Chapter 2."
-    const titleText = `${text.title_en}${text.author ? `, of ${text.author}` : ''}. Chapter ${job.chapter}.`;
-    const title = await synth(titleText, voice, langCode);
+    // Narrated title card — localized per lang (en: full phrasing; Devanāgarī
+    // langs speak the title; other Indic announce the chapter only).
+    const titleText = localizedTitleNarration(
+      lang,
+      textTitle,
+      text.title_sa,
+      text.author,
+      job.chapter,
+    );
+    const title = audioDir
+      ? await loadExternalAudio(audioDir, 'title')
+      : await synth(titleText, voice, langCode, speakingRate);
 
     const verseContents = [];
     for (const v of verses) {
-      const narration = await synth(v.translation_text, voice, langCode);
+      const narration = audioDir
+        ? await loadExternalAudio(audioDir, `v${v.verse_num}`)
+        : await synth(v.translation_text, voice, langCode, speakingRate);
       verseContents.push({
         verseNum: v.verse_num,
         devanagari: v.devanagari,
@@ -344,7 +392,7 @@ async function main(): Promise<void> {
       codec: 'h264',
       outputLocation: rawOut,
       inputProps: props,
-      timeoutInMilliseconds: 120000, // headroom for woff2 font loading
+      timeoutInMilliseconds: 300000, // headroom: woff2 font load + heavy 45-verse data-URL props
       jpegQuality: 100,
     });
     await reencodeHighBitrate(rawOut, out);

@@ -13,6 +13,7 @@
  */
 import { describe, expect, it } from 'vitest';
 import {
+  buildChapterMarkerLines,
   buildChapterUploadMetadata,
   buildUploadMetadata,
 } from '../../../pipeline/youtube/upload-metadata';
@@ -63,6 +64,16 @@ function parseStartS(line: string): number {
   const stamp = line.split(' ')[0];
   const parts = stamp.split(':').map(Number);
   return parts.reduce((acc, p) => acc * 60 + p, 0);
+}
+
+function snapshotableMeta(meta: ReturnType<typeof buildChapterUploadMetadata>) {
+  return {
+    ...meta,
+    snippet: {
+      ...meta.snippet,
+      description: meta.snippet.description.split('\n'),
+    },
+  };
 }
 
 describe('buildChapterUploadMetadata — multi-verse chapter', () => {
@@ -138,7 +149,7 @@ describe('buildChapterUploadMetadata — multi-verse chapter', () => {
   });
 
   it('is deterministic for a fixed input (snapshot)', () => {
-    expect(meta).toMatchSnapshot();
+    expect(snapshotableMeta(meta)).toMatchSnapshot();
   });
 });
 
@@ -157,6 +168,79 @@ describe('buildChapterUploadMetadata — 1-verse chapter (spanda ch4)', () => {
     expect(lines[0]).toMatch(/^0:00 /);
     expect(lines[1]).toBe('0:12 Verse 1');
     expect(lines[2]).toMatch(/^0:30 /);
+  });
+});
+
+/** Any Devanāgarī codepoint (U+0900–U+097F) — the hi/mr script. */
+const DEVANAGARI = /[ऀ-ॿ]/;
+
+describe('buildChapterUploadMetadata — per-language SEO localization (hi)', () => {
+  /** Same fixture as MULTI_VERSE but Hindi channel + native Devanāgarī title. */
+  const HI_ARGS = {
+    ...MULTI_VERSE_ARGS,
+    lang: 'hi',
+    textTitleDevanagari: 'स्पन्दकारिका',
+  };
+  const meta = buildChapterUploadMetadata(HI_ARGS);
+
+  it('title is in-language Devanāgarī with the chapter/verse chrome words', () => {
+    expect(meta.snippet.title).toMatch(DEVANAGARI);
+    // "स्पन्दकारिका अध्याय 2 — सभी 7 श्लोक": native title + अध्याय + सभी + श्लोक.
+    expect(meta.snippet.title).toContain('अध्याय 2');
+    expect(meta.snippet.title).toContain('श्लोक');
+    expect(meta.snippet.title.length).toBeLessThanOrEqual(100);
+    // Primary keyword (the native title) sits in the first ~40 chars.
+    expect(meta.snippet.title.indexOf('स्पन्दकारिका')).toBeLessThan(40);
+  });
+
+  it('first tag is the exact in-language target keyword (Devanāgarī)', () => {
+    expect(meta.snippet.tags[0]).toMatch(DEVANAGARI);
+    expect(meta.snippet.tags[0]).toBe(meta.snippet.title);
+    // Broad English topic tags still follow.
+    expect(meta.snippet.tags).toContain('Kashmir Shaivism');
+  });
+
+  it('description first sentence carries the in-language keyword + native SEO clause', () => {
+    // Summary is first; the keyword sentence is the searchable body line.
+    expect(meta.snippet.description).toMatch(DEVANAGARI);
+    expect(meta.snippet.description).toContain('अध्याय 2');
+    // Native clause reused verbatim from the site's hi SEO template.
+    expect(meta.snippet.description).toContain('शब्द-दर-शब्द हिन्दी अनुवाद');
+  });
+
+  it('still carries the timestamp block, UTM canonical URL, and attribution', () => {
+    expect(meta.snippet.description).toContain('0:00 ');
+    expect(meta.snippet.description).toContain('0:12 Verse 1');
+    expect(meta.snippet.description).toContain(
+      'https://sohamhamso.org/trika/spanda-karikas/2?utm_source=youtube&utm_medium=chapter&utm_campaign=chapter',
+    );
+    expect(meta.snippet.description).toContain('CC-BY-SA 4.0');
+    expect(meta.snippet.description).toContain('Muktabodha');
+  });
+
+  it('stamps hi on defaultLanguage + defaultAudioLanguage', () => {
+    expect(meta.snippet.defaultLanguage).toBe('hi');
+    expect(meta.snippet.defaultAudioLanguage).toBe('hi');
+  });
+
+  it('falls back to the IAST title when no Devanāgarī title is supplied (still localized chrome)', () => {
+    const noDeva = buildChapterUploadMetadata({ ...MULTI_VERSE_ARGS, lang: 'hi' });
+    expect(noDeva.snippet.title).toContain('Spandakārikā');
+    expect(noDeva.snippet.title).toContain('अध्याय 2'); // chrome words still localized
+  });
+});
+
+describe('buildChapterUploadMetadata — English output is unchanged (byte-identical)', () => {
+  it('en title/tags/description match the legacy English shape exactly', () => {
+    const meta = buildChapterUploadMetadata(MULTI_VERSE_ARGS);
+    expect(meta.snippet.title).toBe('Spandakārikā — Chapter 2 | All 7 Verses');
+    expect(meta.snippet.tags[0]).toBe('Kashmir Shaivism'); // NO leading localized tag
+    expect(meta.snippet.tags).not.toContainEqual(expect.stringMatching(DEVANAGARI));
+    expect(meta.snippet.description).toContain(
+      'Spandakārikā — Chapter 2: all 7 verses with Devanāgarī, IAST and English translation,',
+    );
+    // The full English snapshot below is the authoritative byte-identity guard.
+    expect(snapshotableMeta(meta)).toMatchSnapshot();
   });
 });
 
@@ -192,5 +276,53 @@ describe('buildUploadMetadata — shared <> sanitization (latent shorts fix)', (
     expect(meta.snippet.title).not.toMatch(/[<>]/);
     expect(meta.snippet.description).not.toMatch(/[<>]/);
     expect(meta.snippet.description).toContain('Consciousness is the Self.');
+  });
+});
+
+/**
+ * buildChapterMarkerLines — short sutras grouped into ≥10s YouTube chapter
+ * markers (`group_max_verses`). Every emitted marker MUST be ≥10s after the
+ * previous one (incl. the implicit 0:00 title), or YouTube drops the whole
+ * chapter list.
+ */
+describe('buildChapterMarkerLines (verse grouping)', () => {
+  /** All gaps ≥10s past the marker start → no marker exceeds ≥10s spacing. */
+  const gapsOk = (markers: Array<{ startS: number }>): boolean => {
+    const ts = [0, ...markers.map((m) => m.startS)];
+    return ts.slice(1).every((t, i) => t - ts[i] >= 10);
+  };
+
+  it('groups short (<10s) verses up to the cap and keeps every marker ≥10s apart', () => {
+    // siva-sutras-style: ~4–6s segments starting at 5s after the title card.
+    const segs = [5, 9, 13, 19, 27, 32, 38, 44, 50, 56].map((startS, i) => ({
+      verseNum: i + 1,
+      startS,
+    }));
+    const markers = buildChapterMarkerLines(segs, 3);
+    expect(gapsOk(markers)).toBe(true);
+    // Leading verses that start <10s in fold under the 0:00 title (no marker).
+    expect(markers[0].firstVerse).toBeGreaterThan(1);
+    // No group exceeds the cap of 3 verses.
+    for (const m of markers) expect(m.lastVerse - m.firstVerse + 1).toBeLessThanOrEqual(3);
+  });
+
+  it('leaves long (≥10s) verses as single-verse markers', () => {
+    const segs = [12, 34, 58, 81].map((startS, i) => ({ verseNum: i + 1, startS }));
+    const markers = buildChapterMarkerLines(segs, 3);
+    expect(gapsOk(markers)).toBe(true);
+    expect(markers.every((m) => m.firstVerse === m.lastVerse)).toBe(true);
+    expect(markers.map((m) => m.firstVerse)).toEqual([1, 2, 3, 4]);
+  });
+
+  it('honors a cap of 2 (never folds 3 verses into one marker)', () => {
+    const segs = [5, 8, 11, 14, 22, 30].map((startS, i) => ({ verseNum: i + 1, startS }));
+    const markers = buildChapterMarkerLines(segs, 2);
+    for (const m of markers) expect(m.lastVerse - m.firstVerse + 1).toBeLessThanOrEqual(2);
+    expect(gapsOk(markers)).toBe(true);
+  });
+
+  it('1-verse chapter starting <10s in yields no verse marker (folds under title)', () => {
+    const markers = buildChapterMarkerLines([{ verseNum: 1, startS: 5 }], 3);
+    expect(markers).toEqual([]);
   });
 });

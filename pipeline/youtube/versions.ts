@@ -19,9 +19,11 @@
 // font sizing, reserved footer band, Devanāgarī compound wrapping.
 export const TEMPLATE_VERSION = 'v2';
 
-// c1: chapter-format (16:9 full-chapter) composition. Independent version
-// track so chapter/short template bumps never cross-supersede — bumping
-// one MUST NOT touch the other.
-export const CHAPTER_TEMPLATE_VERSION = 'c1';
+// c2: chapter-format (16:9 full-chapter) composition, no-fade hard-cut
+// chapter format (hard-cut verses: no staggered fade-in, no crossfade
+// overlap, no tail fade — the confirmed launch style; materially changed
+// composition source vs c1). Independent version track so chapter/short
+// template bumps never cross-supersede — bumping one MUST NOT touch the other.
+export const CHAPTER_TEMPLATE_VERSION = 'c2';
 export const REMOTION_VERSION = '4.0.474';
 export const FFMPEG_VERSION = 'ffmpeg-static';

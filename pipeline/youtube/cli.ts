@@ -53,6 +53,8 @@ export function parseCommonArgs(argv: string[], allowed: string[] = []): CommonA
       out.limit = n;
     } else if (arg.startsWith('--text-slug=')) {
       out.textSlug = arg.slice('--text-slug='.length);
+    } else if (arg.startsWith('--text=')) {
+      out.textSlug = arg.slice('--text='.length);
     } else if (arg.startsWith('--lang=')) {
       out.lang = arg.slice('--lang='.length);
     } else if (arg.startsWith('--')) {

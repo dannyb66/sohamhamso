@@ -36,15 +36,17 @@ const DEFAULT_FPS = 30;
 // ─────────────────────────────────────────────────────────────────────────────
 export const CHAPTER_TITLE_CARD_S = 5;
 export const CHAPTER_OUTRO_S = 9;
-export const CHAPTER_MIN_SEG_S = 10;
-export const CHAPTER_SEG_LEAD_IN_S = 1.2;
-export const CHAPTER_SEG_TAIL_S = 1.0;
+export const CHAPTER_MIN_SEG_S = 4;
+export const CHAPTER_SEG_LEAD_IN_S = 0.8;
+export const CHAPTER_SEG_TAIL_S = 0.6;
 /** Hold after the title narration ends before the first verse. */
 export const TITLE_NARRATION_PAD_S = 1.0;
 /**
  * Share of a floored segment's padding placed BEFORE the narration
  * (stretch-choreography: the entrance stagger expands to fill it); the
- * remaining 40% extends the tail into a slow 2.5–3s fade.
+ * remaining 40% extends the tail fade. Floor padding is now small (4s
+ * floor − ~1.4s lead+tail leaves ≲2.6s to split), so the tail extension
+ * is a short breath rather than a multi-second hold.
  */
 export const FLOOR_PAD_LEAD_SHARE = 0.6;
 

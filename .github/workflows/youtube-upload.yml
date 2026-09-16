@@ -30,6 +30,24 @@ on:
   #   # Every 4h, 30min offset from Cron A so renders settle before upload.
   #   - cron: '47 */4 * * *'
   workflow_dispatch:
+    inputs:
+      text_slug:
+        description: 'Restrict upload to one text id/slug (e.g. siva-sutras)'
+        required: false
+        type: string
+      lang:
+        description: 'Restrict upload to one lang code (e.g. en, hi)'
+        required: false
+        type: string
+      limit:
+        description: 'Max uploads this run (default comes from script)'
+        required: false
+        type: string
+      dry_run:
+        description: 'Plan selected rows without uploading'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -45,6 +63,9 @@ concurrency:
 jobs:
   upload:
     runs-on: ubuntu-latest
+    # Scheduled runs stay dormant until the repository variable is explicitly
+    # enabled after OAuth and quota checks. Manual dispatch remains available.
+    if: github.event_name == 'workflow_dispatch' || vars.YT_UPLOAD_SCHEDULE_ENABLED == 'true'
     # 90 min: chapter videos run to ~1 GB (8 Mbps CBR) — a slow multipart
     # stream to YouTube can take well over the old 30-min budget.
     timeout-minutes: 90
@@ -53,6 +74,19 @@ jobs:
       YOUTUBE_OAUTH_CLIENT_ID: ${{ secrets.YOUTUBE_OAUTH_CLIENT_ID }}
       YOUTUBE_OAUTH_CLIENT_SECRET: ${{ secrets.YOUTUBE_OAUTH_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      # Per-language channel tokens (one channel per lang; code falls back to YT_REFRESH_TOKEN).
+      YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
+      YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
+      YT_REFRESH_TOKEN_TA: ${{ secrets.YT_REFRESH_TOKEN_TA }}
+      YT_REFRESH_TOKEN_TE: ${{ secrets.YT_REFRESH_TOKEN_TE }}
+      YT_REFRESH_TOKEN_KN: ${{ secrets.YT_REFRESH_TOKEN_KN }}
+      YT_REFRESH_TOKEN_ML: ${{ secrets.YT_REFRESH_TOKEN_ML }}
+      YT_REFRESH_TOKEN_BN: ${{ secrets.YT_REFRESH_TOKEN_BN }}
+      YT_REFRESH_TOKEN_MR: ${{ secrets.YT_REFRESH_TOKEN_MR }}
+      YT_REFRESH_TOKEN_GU: ${{ secrets.YT_REFRESH_TOKEN_GU }}
+      YT_REFRESH_TOKEN_PA: ${{ secrets.YT_REFRESH_TOKEN_PA }}
+      YT_REFRESH_TOKEN_OR: ${{ secrets.YT_REFRESH_TOKEN_OR }}
+      YT_REFRESH_TOKEN_AS: ${{ secrets.YT_REFRESH_TOKEN_AS }}
       # ── R2 / S3-compatible storage for rendered artifacts. ───────────
       R2_BUCKET: ${{ secrets.R2_BUCKET }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -60,6 +94,11 @@ jobs:
       AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
       # ── R2-synced state DB (pulled before / pushed after the run). ────
       YOUTUBE_DB_PATH: db/youtube-state.db
+      # ── Manual dispatch scoping; empty on scheduled runs. ────────────
+      YT_UPLOAD_TEXT_SLUG: ${{ github.event.inputs.text_slug }}
+      YT_UPLOAD_LANG: ${{ github.event.inputs.lang }}
+      YT_UPLOAD_LIMIT: ${{ github.event.inputs.limit }}
+      YT_UPLOAD_DRY_RUN: ${{ github.event.inputs.dry_run }}
 
     steps:
       - name: Checkout
@@ -85,7 +124,13 @@ jobs:
         run: bash scripts/youtube-state-db.sh pull
 
       - name: Upload batch
-        run: bun scripts/youtube-upload.ts
+        run: |
+          flags=()
+          if [[ -n "${YT_UPLOAD_TEXT_SLUG:-}" ]]; then flags+=( "--text-slug=${YT_UPLOAD_TEXT_SLUG}" ); fi
+          if [[ -n "${YT_UPLOAD_LANG:-}" ]]; then flags+=( "--lang=${YT_UPLOAD_LANG}" ); fi
+          if [[ -n "${YT_UPLOAD_LIMIT:-}" ]]; then flags+=( "--limit=${YT_UPLOAD_LIMIT}" ); fi
+          if [[ "${YT_UPLOAD_DRY_RUN:-false}" == "true" ]]; then flags+=( "--dry-run" ); fi
+          bun scripts/youtube-upload.ts "${flags[@]}"
 
       # Push the mutated state DB back to R2 even on failure so partial
       # progress (e.g. rows flipped to uploading) persists.
