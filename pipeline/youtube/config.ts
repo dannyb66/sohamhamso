@@ -65,6 +65,18 @@ export const VoiceConfigSchema = z
   })
   .strict();
 
+/**
+ * Per-language channel — each language uploads to its own YouTube channel
+ * (brand account). `channel_handle` is for audit/quota grouping + the operator
+ * picking the right channel; the actual upload destination is the per-channel
+ * OAuth refresh token (YT_REFRESH_TOKEN_<LANG>). Room to grow (playlist id, …).
+ */
+export const ChannelConfigSchema = z
+  .object({
+    channel_handle: z.string().trim().min(1),
+  })
+  .strict();
+
 export const DefaultsSchema = z
   .object({
     channel_handle: z.string().trim().min(1),
@@ -115,6 +127,13 @@ export const ChaptersConfigSchema = z
       .number({ invalid_type_error: 'expected positive number' })
       .int()
       .positive('expected positive number'),
+    // Native narration speed (Google TTS speakingRate; 1.0 = normal). <1 reads
+    // slower/more contemplative. Default 1.0 when omitted.
+    speaking_rate: z
+      .number({ invalid_type_error: 'expected number 0.25–4.0' })
+      .min(0.25, 'expected number 0.25–4.0')
+      .max(4, 'expected number 0.25–4.0')
+      .default(1),
     encode: z.enum(['cbr8', 'crf18']),
   })
   .strict();
@@ -126,6 +145,9 @@ export const YoutubeConfigSchema = z
     voices: z.record(z.string(), VoiceConfigSchema),
     defaults: DefaultsSchema,
     chapters: ChaptersConfigSchema,
+    // lang -> channel. Optional so single-channel setups still parse; the
+    // validate-config invariant enforces coverage for the langs we render.
+    channels: z.record(z.string(), ChannelConfigSchema).optional(),
     forbidden_colors: z.array(HexColor),
     forbidden_iconography: z.array(z.string().trim().min(1)),
   })
@@ -139,6 +161,7 @@ export type StylePreset = z.infer<typeof StylePresetSchema>;
 export type TextConfig = z.infer<typeof TextConfigSchema>;
 export type VoiceConfig = z.infer<typeof VoiceConfigSchema>;
 export type ChaptersConfig = z.infer<typeof ChaptersConfigSchema>;
+export type ChannelConfig = z.infer<typeof ChannelConfigSchema>;
 export type YoutubeConfig = z.infer<typeof YoutubeConfigSchema>;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -187,6 +210,16 @@ export function getTextConfig(cfg: YoutubeConfig, slug: string): TextConfig | un
 /** Typed accessor for the chapter-format block (always present post-M0). */
 export function getChaptersConfig(cfg: YoutubeConfig): ChaptersConfig {
   return cfg.chapters;
+}
+
+/**
+ * Per-language channel handle. Falls back to `defaults.channel_handle` when
+ * `channels:` is absent or the lang is unmapped (single-channel / partial
+ * rollout). The upload destination is the per-channel OAuth token; this handle
+ * is the audit/quota key (see youtube_quota) + operator-facing label.
+ */
+export function getChannelHandle(cfg: YoutubeConfig, lang: string): string {
+  return cfg.channels?.[lang]?.channel_handle ?? cfg.defaults.channel_handle;
 }
 
 /** Resolve a style preset by name. Throws if the preset is missing. */

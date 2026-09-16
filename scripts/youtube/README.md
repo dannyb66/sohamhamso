@@ -97,8 +97,8 @@ scripts/youtube-oauth-setup.ts, then gh secret set YT_REFRESH_TOKEN`).
 **The consent screen is permanently in Testing mode** (publishing to
 production is blocked for this account), so Google hard-expires the refresh
 token **~7 days after mint** (`invalid_grant`). Rotate `YT_REFRESH_TOKEN`
-**every ≤6 days** — last minted **2026-06-12** → next rotation due
-**by 2026-06-18**. The consenting account (the channel owner) must stay in
+**every ≤6 days** — last minted **2026-06-19** → next rotation due
+**by 2026-06-25**. The consenting account (the channel owner) must stay in
 the consent screen's *Test users* list. Both the uploader and analytics-sync
 map the expiry to this playbook by name, so a missed rotation fails loudly,
 not mysteriously. (If the app ever reaches *In production* status, this
@@ -170,6 +170,105 @@ only the YouTube metadata/visibility changes. `videos.update` needs the
 `youtube.force-ssl` scope (see OAuth setup); a scope-short token gets a 403
 with the named re-auth fix. The `--reset-retries` recovery mode is documented
 under Chapter videos → MAX_RETRY recovery below (it works for shorts too).
+
+---
+
+## Azure TTS — Odia (or-IN) + Assamese (as-IN) narration
+
+Most languages narrate via **Google Cloud TTS**. Two langs — **Odia (`or`)** and
+**Assamese (`as`)** — have full corpus translations but **no Google Cloud TTS
+voice**, so they narrate via **Azure Cognitive Services Speech** instead. The
+pipeline picks the provider automatically from `data/youtube-config.yaml`
+(`voices.<lang>.provider: azure`); the rest of the render/QA/upload path is
+identical.
+
+**Verified Azure voice short-names** (source: Microsoft Learn — *Language and
+Voice Support for Azure Speech*, GA Indian voices):
+
+| Lang | Locale | Configured voice (default) | Alternate |
+|------|--------|----------------------------|-----------|
+| Odia | `or-IN` | `or-IN-SubhasiniNeural` (female) | `or-IN-SukantNeural` (male) |
+| Assamese | `as-IN` | `as-IN-YashicaNeural` (female) | `as-IN-PriyomNeural` (male) |
+
+> These are standard neural voices, GA in all regions. To switch to the male
+> voice, edit `voice_id` under `voices.or` / `voices.as` in
+> `data/youtube-config.yaml` and re-run `bun run youtube:validate-config`.
+> Known quirk: the Assamese *Yashica* voice has reported issues with
+> date-like numeral strings — translations are prose, so this should not bite,
+> but spot-check the first renders.
+
+### (a) Create an Azure Speech resource
+
+1. In the [Azure Portal](https://portal.azure.com), **Create a resource →
+   Speech** (Azure AI Speech / Cognitive Services — Speech).
+2. Pick a region — e.g. `eastus`, `centralindia`, or `westeurope`. **Remember
+   the region short-name**; it is part of the REST endpoint host
+   (`https://<region>.tts.speech.microsoft.com/...`). A wrong region 401s/404s.
+3. After deploy, open **Keys and Endpoint** and copy **KEY 1** and the
+   **Location/Region**. The free **F0** tier (0.5M chars/month) is enough for
+   first tests; **S0** (pay-as-you-go) for backfill.
+
+### (b) Set the credentials
+
+Two env vars, resolved through the secrets chokepoint
+(`pipeline/youtube/secrets.ts → getAzureTtsCreds`) — no other file reads them:
+
+```bash
+# Local dev (.env or shell)
+export AZURE_SPEECH_KEY="<KEY 1 from the portal>"
+export AZURE_SPEECH_REGION="eastus"   # MUST match the resource's region
+```
+
+As **GitHub Actions secrets** (for the crons), add repository secrets
+`AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`, and wire them into the relevant
+render workflow env block exactly like `GOOGLE_TTS_CREDENTIALS_JSON`.
+
+> Fail-fast contract: in prod/CI, rendering an azure-provider voice without both
+> vars **hard-throws** (mirrors the Google chokepoint). `MOCK_ALL=true` bypasses
+> entirely (canned silent WAV — no key needed), so the zero-secret Day-0 path
+> and the unit suite still run.
+
+### (c) First live render test (once creds exist)
+
+This codebase ships + unit-tests the Azure path but was **never live-tested**
+(no Azure creds in the build env). The first run with real creds is the live
+gate.
+
+> ⚠️ **Use a path that routes through `synthesize()`.** The provider routing
+> (google vs azure) lives in `pipeline/youtube/render-engine.ts → synthesize`,
+> reused by the chapter render engine (`youtube:render-chapters` /
+> `youtube:backfill-chapters`) and the shorts `renderOne`. The
+> `youtube:render-chapter-samples` *dry-sample* script has its **own** inlined
+> Google-only synth helper and will **not** call Azure — don't use it to
+> validate or/as. (Wiring that sample helper to `synthesize` is a follow-up,
+> out of this change's file scope.)
+
+Steps for the first live or/as render:
+
+```bash
+bun run youtube:validate-config   # confirms or/as voice entries parse
+# Then enqueue + render an Odia (or Assamese) chapter row through the real
+# render engine WITHOUT MOCK_ALL, with the Azure env vars set, e.g.:
+AZURE_SPEECH_KEY=... AZURE_SPEECH_REGION=eastus \
+  bun run youtube:render-chapters   # (operates on queued or/as `videos` rows)
+```
+
+The simplest isolated smoke test is a one-off Node/Bun snippet that calls the
+exported `synthesize(text, 'or-IN-SubhasiniNeural', 'or-IN', '/tmp/or.mp3')`
+with the env vars set (no `MOCK_ALL`), then play `/tmp/or.mp3`. Confirm: audio
+present, correct language, contemplative pace. If you hear silence/garble, check
+the region matches the key and the voice short-name is current in Speech Studio.
+
+### (d) Quota differences vs Google
+
+- **Google** path is gated by the YouTube *upload* quota, not a TTS cap at our
+  volume; the daily-cap discipline above is about `videos.insert`.
+- **Azure** Speech bills by **characters synthesized** (F0 free = 0.5M chars/mo;
+  S0 = per-million pricing). Translations are short, so Phase-2 backfill of
+  or/as is well within F0 for testing — but switch to S0 before a full backfill
+  and watch the character meter in the portal. Azure also rate-limits requests
+  per resource; the chapter path already retries with backoff
+  (`synthesizeWithRetry`), which covers transient 429s.
 
 ---
 
@@ -351,6 +450,10 @@ re-run.
   `backfill`, `dry_run`, `limit`.
 - **Cron B** (`youtube-upload.yml`, every 4h) uploads approved rows →
   unlisted. Chapter rows are **held** until `chapters.uploads_enabled: true`.
+  Scheduled runs are gated by the repository variable
+  `YT_UPLOAD_SCHEDULE_ENABLED=true`; manual dispatch is always available.
+  Use dispatch inputs `text_slug`, `lang`, `limit`, and `dry_run` to scope and
+  preview a batch before enabling the schedule.
 - **Cron D** (`youtube-digest.yml`, daily 12:00 UTC) posts the ops digest Issue
   (labels `youtube`, `ops`) + optional Slack.
 - **Cron E** (`youtube-analytics-sync.yml`, daily 05:00 UTC) writes

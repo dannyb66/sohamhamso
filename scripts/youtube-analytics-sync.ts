@@ -60,13 +60,14 @@ const DEFAULT_DAYS = 30;
 const USAGE = `youtube-analytics-sync — Cron E: YouTube Analytics API → video_analytics
 
 Usage:
-  bun scripts/youtube-analytics-sync.ts [--days=N] [--limit=N] [--dry-run] [--json]
+  bun scripts/youtube-analytics-sync.ts [--days=N] [--limit=N] [--lang=CODE] [--dry-run] [--json]
 
 Flags:
   --help        Show this help and exit 0
   --json        Machine-readable summary on stdout (logs stay on stderr)
   --dry-run     Plan only — list videos/chunks/window, no API call, no DB writes
   --limit=N     Cap the number of uploaded videos synced this run (default: all)
+  --lang=CODE   Only sync this language's channel (default: every channel)
   --days=N      Trailing metrics window in days (default ${DEFAULT_DAYS})
 
 Env:
@@ -93,14 +94,29 @@ interface UploadedVideo {
   lang: string;
 }
 
-/** Uploaded rows with a YouTube id — the analytics population. */
-function pickUploaded(db: ReturnType<typeof getVideosDb>, limit?: number): UploadedVideo[] {
-  const sql = `SELECT id, youtube_video_id, lang FROM videos
-     WHERE status = 'uploaded' AND youtube_video_id IS NOT NULL
-     ORDER BY id ASC${limit !== undefined ? ' LIMIT ?' : ''}`;
-  return limit !== undefined
-    ? db.query<UploadedVideo, [number]>(sql).all(limit)
-    : db.query<UploadedVideo, []>(sql).all();
+/**
+ * Uploaded rows with a YouTube id — the analytics population. Optionally
+ * filtered to one `lang` (per-channel sync via --lang).
+ */
+function pickUploaded(
+  db: ReturnType<typeof getVideosDb>,
+  limit?: number,
+  lang?: string,
+): UploadedVideo[] {
+  const where = ["status = 'uploaded'", 'youtube_video_id IS NOT NULL'];
+  const params: (string | number)[] = [];
+  if (lang !== undefined) {
+    where.push('lang = ?');
+    params.push(lang);
+  }
+  let sql = `SELECT id, youtube_video_id, lang FROM videos
+     WHERE ${where.join(' AND ')}
+     ORDER BY id ASC`;
+  if (limit !== undefined) {
+    sql += ' LIMIT ?';
+    params.push(limit);
+  }
+  return db.query<UploadedVideo, (string | number)[]>(sql).all(...params);
 }
 
 /**
@@ -137,7 +153,8 @@ function upsertAnalytics(db: ReturnType<typeof getVideosDb>, row: VideoAnalytics
 
 /**
  * Query one ≤50-id chunk via googleapis (dynamic import, mirroring
- * youtube-upload.ts). `auth` is built once by the caller.
+ * youtube-upload.ts). `analytics` is built per-channel by the caller; the
+ * `ids: 'channel==MINE'` query resolves to whichever channel that token owns.
  */
 async function queryChunk(
   // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis import shape
@@ -157,10 +174,14 @@ async function queryChunk(
   return (res?.data ?? {}) as AnalyticsReport;
 }
 
-/** Build the youtubeAnalytics v2 client (dynamic import; real path only). */
+/**
+ * Build the youtubeAnalytics v2 client (dynamic import; real path only) for
+ * ONE channel — the client is bound to `getYoutubeOAuth(lang)`'s refresh token,
+ * so its `channel==MINE` queries resolve to that lang's channel.
+ */
 // biome-ignore lint/suspicious/noExplicitAny: dynamic googleapis import shape
-async function buildAnalyticsClient(): Promise<any> {
-  const oauth = getYoutubeOAuth();
+async function buildAnalyticsClient(lang: string): Promise<any> {
+  const oauth = getYoutubeOAuth(lang);
   const mod = await import('googleapis' as string).catch((e) => {
     throw new Error(`googleapis not installed: ${scrubError(e)}`);
   });
@@ -200,7 +221,7 @@ async function main(): Promise<void> {
   log(STAGE, METRIC_HONESTY_LINE);
 
   const db = getVideosDb();
-  const videos = pickUploaded(db, args.limit);
+  const videos = pickUploaded(db, args.limit, args.lang);
   const syncedAt = utcDate();
   const { startDate, endDate } = trailingWindow(days);
 
@@ -215,8 +236,10 @@ async function main(): Promise<void> {
   const ids = videos.map((v) => v.youtube_video_id);
   const idToRowId = new Map(videos.map((v) => [v.youtube_video_id, v.id]));
   const chunks = chunkVideoIds(ids);
+  const langCount = new Set(videos.map((v) => v.lang)).size;
   log(STAGE, 'sync plan', {
     videos: videos.length,
+    langs: langCount,
     chunks: chunks.length,
     window: `${startDate}..${endDate}`,
   });
@@ -232,6 +255,7 @@ async function main(): Promise<void> {
           startDate,
           endDate,
           videos: videos.length,
+          langs: langCount,
           chunks: chunks.length,
         }),
       );
@@ -258,40 +282,60 @@ async function main(): Promise<void> {
     return;
   }
 
-  const analytics = await buildAnalyticsClient();
+  // Per-channel sync: each lang's token owns its own channel, and the
+  // analytics `channel==MINE` query resolves to that token's channel. Group
+  // the uploaded rows by lang and run one client+query-set per lang.
+  // FAIL-SOFT: a bad/expired token for one lang logs + skips that lang and
+  // continues the others; if ANY lang failed we exit 1 at the END (so the
+  // failure-issue still fires) — never mid-loop.
+  const byLang = new Map<string, UploadedVideo[]>();
+  for (const v of videos) {
+    const group = byLang.get(v.lang);
+    if (group) group.push(v);
+    else byLang.set(v.lang, [v]);
+  }
+
   let rowsWritten = 0;
   let zeroActivity = 0;
   const seen = new Set<string>();
+  const failedLangs: string[] = [];
 
-  for (const chunk of chunks) {
-    let report: AnalyticsReport;
+  for (const [lang, group] of byLang) {
+    const langChunks = chunkVideoIds(group.map((v) => v.youtube_video_id));
+    let analytics: Awaited<ReturnType<typeof buildAnalyticsClient>>;
     try {
-      report = await queryChunk(analytics, chunk, startDate, endDate);
+      analytics = await buildAnalyticsClient(lang);
+      for (const chunk of langChunks) {
+        const report = await queryChunk(analytics, chunk, startDate, endDate);
+        for (const m of mapAnalyticsReport(report)) {
+          const rowId = idToRowId.get(m.youtubeVideoId);
+          if (rowId === undefined) continue; // not ours (filtered query — shouldn't happen)
+          upsertAnalytics(db, toVideoAnalyticsUpsert(m, rowId, syncedAt));
+          seen.add(m.youtubeVideoId);
+          rowsWritten++;
+        }
+      }
     } catch (e) {
+      // FAIL-SOFT per lang: log a named cause + skip this channel, keep going.
+      // We do NOT exit here — a bad token for one channel must not blind the
+      // others. The aggregate failure is surfaced via exit 1 at the end.
       if (isInsufficientScopeError(e)) {
-        // Config failure, not transient — named fix, exit 1, NO retries.
-        console.error(`[youtube:${STAGE}] ${SCOPE_FIX_MESSAGE}`);
-        process.exit(1);
+        console.error(`[youtube:${STAGE}] [${lang}] ${SCOPE_FIX_MESSAGE}`);
+      } else if (isExpiredRefreshTokenError(e)) {
+        console.error(`[youtube:${STAGE}] [${lang}] ${EXPIRED_TOKEN_FIX_MESSAGE}`);
+      } else {
+        log(STAGE, 'channel sync failed — skipping', { lang, error: scrubError(e) });
       }
-      if (isExpiredRefreshTokenError(e)) {
-        // Weekly Testing-mode token expiry — named rotation fix, exit 1, NO retries.
-        console.error(`[youtube:${STAGE}] ${EXPIRED_TOKEN_FIX_MESSAGE}`);
-        process.exit(1);
-      }
-      throw e; // → main catch → scrubbed log → exit 1
-    }
-    for (const m of mapAnalyticsReport(report)) {
-      const rowId = idToRowId.get(m.youtubeVideoId);
-      if (rowId === undefined) continue; // not ours (filtered query — shouldn't happen)
-      upsertAnalytics(db, toVideoAnalyticsUpsert(m, rowId, syncedAt));
-      seen.add(m.youtubeVideoId);
-      rowsWritten++;
+      failedLangs.push(lang);
     }
   }
 
   // Videos the API returned nothing for had zero views in the window — a
-  // real measurement (view_count=0); per-view averages stay NULL.
+  // real measurement (view_count=0); per-view averages stay NULL. Skip rows
+  // whose channel failed entirely (no measurement, not a real zero).
+  const failedLangSet = new Set(failedLangs);
   for (const v of videos) {
+    if (failedLangSet.has(v.lang)) continue;
     if (!seen.has(v.youtube_video_id)) {
       upsertAnalytics(db, zeroActivityUpsert(v.id, syncedAt));
       zeroActivity++;
@@ -301,8 +345,10 @@ async function main(): Promise<void> {
 
   log(STAGE, 'sync complete', {
     videos: videos.length,
+    langs: byLang.size,
     rowsWritten,
     zeroActivity,
+    failedLangs,
     window: `${startDate}..${endDate}`,
   });
   if (args.json) {
@@ -313,10 +359,21 @@ async function main(): Promise<void> {
         startDate,
         endDate,
         videos: videos.length,
+        langs: byLang.size,
         rowsWritten,
         zeroActivity,
+        failedLangs,
       }),
     );
+  }
+
+  // Any channel failed → exit 1 so the cron's failure-issue fires, but only
+  // after every healthy channel has been synced.
+  if (failedLangs.length > 0) {
+    console.error(
+      `[youtube:${STAGE}] ${failedLangs.length} channel(s) failed: ${failedLangs.join(', ')}`,
+    );
+    process.exit(1);
   }
 }
 

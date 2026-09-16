@@ -74,6 +74,7 @@ const CFG: YoutubeConfig = {
     seg_lead_in_s: 1.2,
     seg_tail_s: 1.0,
     group_max_verses: 1,
+    speaking_rate: 1,
     encode: 'cbr8',
   },
   forbidden_colors: [],

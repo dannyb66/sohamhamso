@@ -7,7 +7,7 @@
  * EXACTLY equals durationInFrames, even for a 163-verse (VBT-scale)
  * synthetic input where float-seconds summation would drift.
  *
- * Also covers: the 10s min_seg_s floor (stretch-choreography narration
+ * Also covers: the 4s min_seg_s floor (stretch-choreography narration
  * placement), title-card narration extension, buildChapterProps mapping,
  * and the landscape font buckets against the 332-char worst-case corpus
  * translation (CHAPTER_TRANSLATION_MAX_LINES).
@@ -95,8 +95,11 @@ describe('computeChapterTiming — integer-frame invariant', () => {
 
 describe('computeChapterTiming — min_seg_s floor (pacing guard)', () => {
   it('floors a short sutra segment at min_seg_s', () => {
-    const t = computeChapterTiming({ ...DEFAULTS, narrationDurationsS: [1.4] });
-    expect(t.segments[0].durationInFrames).toBe(Math.round(CHAPTER_MIN_SEG_S * FPS)); // 300
+    // natural = 0.8 + 1.4 + 0.6 = 2.8s < 4s floor → segment is clamped up.
+    const n = 1.4;
+    expect(CHAPTER_SEG_LEAD_IN_S + n + CHAPTER_SEG_TAIL_S).toBeLessThan(CHAPTER_MIN_SEG_S);
+    const t = computeChapterTiming({ ...DEFAULTS, narrationDurationsS: [n] });
+    expect(t.segments[0].durationInFrames).toBe(Math.round(CHAPTER_MIN_SEG_S * FPS)); // 120
   });
 
   it('does NOT floor a segment whose natural length exceeds the floor', () => {
@@ -116,9 +119,11 @@ describe('computeChapterTiming — min_seg_s floor (pacing guard)', () => {
     const expected = seg.startFrame + Math.round((CHAPTER_SEG_LEAD_IN_S + extraS * 0.6) * FPS);
     expect(seg.narrationStartFrame).toBe(expected);
     expect(seg.narrationStartFrame).toBeGreaterThan(seg.startFrame + baseLead);
-    // Narration + a slow tail (≥2.5s) still fit inside the floored segment.
+    // Narration + the tail breath (the 40% padding share, here ~0.48s) still
+    // fit inside the floored segment, with the 0.5s crossfade overlap to spare.
+    const tailShareS = extraS * (1 - 0.6);
     const narrationEnd = seg.narrationStartFrame + Math.round(n * FPS);
-    expect(narrationEnd + Math.round(2.5 * FPS)).toBeLessThanOrEqual(
+    expect(narrationEnd + Math.round(tailShareS * FPS)).toBeLessThanOrEqual(
       seg.startFrame + seg.durationInFrames + Math.round(0.5 * FPS),
     );
   });

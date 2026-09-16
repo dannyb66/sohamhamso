@@ -37,6 +37,7 @@ import {
   Sequence,
   useCurrentFrame,
 } from 'remotion';
+import { formatChapterRef, formatVerseProgress } from '../../pipeline/youtube/chapter-i18n';
 import {
   CHAPTER_SEG_LEAD_IN_S,
   FLOOR_PAD_LEAD_SHARE,
@@ -90,6 +91,11 @@ function fadeIn(frame: number, start: number, dur = 18): number {
 
 const clamp01 = (x: number): number => Math.min(1, Math.max(0, x));
 
+// Confirmed chapter style (permanent): hard-cut verses — no staggered
+// fade-in, no crossfade overlap, no tail fade. This is the chosen launch
+// format, not an experiment; the value is fixed at true.
+const NO_FADE = true;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Verse segment
 // ─────────────────────────────────────────────────────────────────────────────
@@ -98,6 +104,7 @@ type VerseSegmentProps = {
   seg: ChapterSegment;
   preset: ChapterProps['preset'];
   translationFont: string;
+  showIast: boolean;
   fps: number;
   /** Frames this <Sequence> started BEFORE seg.startFrame (crossfade lead). */
   overlapBefore: number;
@@ -109,6 +116,7 @@ const VerseSegment: React.FC<VerseSegmentProps> = ({
   seg,
   preset,
   translationFont,
+  showIast,
   fps,
   overlapBefore,
   sequenceFrames,
@@ -123,9 +131,9 @@ const VerseSegment: React.FC<VerseSegmentProps> = ({
   // instead of leaving a static hold (design decision #13).
   const devStart = Math.round(narrRel * 0.18);
   const iastStart = Math.round(narrRel * 0.5);
-  const devOpacity = fadeIn(frame, devStart);
-  const iastOpacity = fadeIn(frame, iastStart);
-  const translationOpacity = fadeIn(frame, narrRel);
+  const devOpacity = NO_FADE ? 1 : fadeIn(frame, devStart);
+  const iastOpacity = NO_FADE ? 1 : fadeIn(frame, iastStart);
+  const translationOpacity = NO_FADE ? 1 : fadeIn(frame, narrRel);
 
   // Tail: floored segments earn a slow 2.5–3s fade; natural segments use the
   // plain 0.5s crossfade. Derive the floor padding from the lead stretch
@@ -137,12 +145,12 @@ const VerseSegment: React.FC<VerseSegmentProps> = ({
     Math.round(3 * fps),
     Math.max(overlapBefore, crossfadeFrames(fps) + extraTail),
   );
-  const fadeOut = interpolate(
-    frame,
-    [sequenceFrames - fadeOutFrames, sequenceFrames],
-    [1, 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
-  );
+  const fadeOut = NO_FADE
+    ? 1
+    : interpolate(frame, [sequenceFrames - fadeOutFrames, sequenceFrames], [1, 0], {
+        extrapolateLeft: 'clamp',
+        extrapolateRight: 'clamp',
+      });
 
   // Sub-perceptual scale drift across the whole segment (1.00 → 1.015).
   const scale = interpolate(frame, [0, sequenceFrames], [1, 1.015], {
@@ -177,13 +185,15 @@ const VerseSegment: React.FC<VerseSegmentProps> = ({
           opacity={devOpacity}
           fontSize={chapterDevFontSize(seg.devanagari.length)}
         />
-        <Transliteration
-          iast={seg.iast}
-          font={preset.headlineFont}
-          color={preset.accent}
-          opacity={iastOpacity}
-          fontSize={chapterIastFontSize(seg.iast.length)}
-        />
+        {showIast ? (
+          <Transliteration
+            iast={seg.iast}
+            font={preset.headlineFont}
+            color={preset.accent}
+            opacity={iastOpacity}
+            fontSize={chapterIastFontSize(seg.iast.length)}
+          />
+        ) : null}
         <Translation
           translation={seg.translation}
           font={translationFont}
@@ -265,11 +275,14 @@ export const ChapterVideo: React.FC<ChapterProps> = ({
   chapter,
   chapterName,
   verseCount,
+  lang,
   preset,
   translationFont,
+  showIast = true,
   segments,
   titleCardFrames,
   titleCardAudioSrc,
+  audioTrackSrc,
   outroFrames,
   outroUrl,
   fps,
@@ -289,10 +302,10 @@ export const ChapterVideo: React.FC<ChapterProps> = ({
     if (frame >= segments[k].startFrame) active = k;
   }
   if (frame >= outroStart) {
-    reference = `Chapter ${chapter}`;
+    reference = formatChapterRef(lang, chapter);
   } else if (active >= 0) {
     reference = `${chapter}.${segments[active].verseNum}`;
-    rightText = `Verse ${active + 1} of ${verseCount}`;
+    rightText = formatVerseProgress(lang, active + 1, verseCount);
   }
   const boundaries: number[] = [
     titleCardFrames,
@@ -324,28 +337,32 @@ export const ChapterVideo: React.FC<ChapterProps> = ({
       />
 
       {/* Title card (fades out across verse 1's crossfade lead). */}
-      <Sequence from={0} durationInFrames={titleCardFrames}>
-        <TitleCard
-          textTitle={textTitle}
-          textTitleDevanagari={textTitleDevanagari}
-          chapter={chapter}
-          chapterName={chapterName}
-          verseCount={verseCount}
-          preset={preset}
-          frames={titleCardFrames}
-          fadeOutFrames={xfade}
-        />
-      </Sequence>
+      {titleCardFrames > 0 ? (
+        <Sequence from={0} durationInFrames={titleCardFrames}>
+          <TitleCard
+            textTitle={textTitle}
+            textTitleDevanagari={textTitleDevanagari}
+            chapter={chapter}
+            chapterName={chapterName}
+            verseCount={verseCount}
+            lang={lang}
+            preset={preset}
+            frames={titleCardFrames}
+            fadeOutFrames={NO_FADE ? 1 : xfade}
+          />
+        </Sequence>
+      ) : null}
       {titleCardAudioSrc ? (
         <Sequence from={0}>
           <Audio src={titleCardAudioSrc} />
         </Sequence>
       ) : null}
+      {audioTrackSrc ? <Audio src={audioTrackSrc} /> : null}
 
       {/* One sequence per verse, started `xfade` early so the incoming verse
           fades in under the outgoing one (background never blanks). */}
       {segments.map((seg) => {
-        const overlapBefore = Math.min(xfade, seg.startFrame);
+        const overlapBefore = NO_FADE ? 0 : Math.min(xfade, seg.startFrame);
         const from = seg.startFrame - overlapBefore;
         const sequenceFrames = overlapBefore + seg.durationInFrames;
         return (
@@ -354,6 +371,7 @@ export const ChapterVideo: React.FC<ChapterProps> = ({
               seg={seg}
               preset={preset}
               translationFont={translationFont}
+              showIast={showIast}
               fps={fps}
               overlapBefore={overlapBefore}
               sequenceFrames={sequenceFrames}
@@ -363,9 +381,11 @@ export const ChapterVideo: React.FC<ChapterProps> = ({
       })}
 
       {/* Outro (starts at the last verse boundary; fades itself in). */}
-      <Sequence from={outroStart} durationInFrames={outroFrames}>
-        <OutroCard outroUrl={outroUrl} preset={preset} />
-      </Sequence>
+      {outroFrames > 0 ? (
+        <Sequence from={outroStart} durationInFrames={outroFrames}>
+          <OutroCard outroUrl={outroUrl} preset={preset} />
+        </Sequence>
+      ) : null}
 
       {/* Persistent chrome — mounted ONCE, on top. */}
       <div style={{ position: 'absolute', inset: 0, opacity: footerOpacity }}>

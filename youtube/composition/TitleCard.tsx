@@ -17,6 +17,7 @@
 import type React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { Devanagari } from './Devanagari';
+import { formatChapterCardLine } from '../../pipeline/youtube/chapter-i18n';
 import { Transliteration } from './Transliteration';
 import type { ShortPreset } from './types';
 
@@ -27,6 +28,8 @@ export type TitleCardProps = {
   chapterName?: string | null;
   verseCount: number;
   preset: ShortPreset;
+  /** Verse lang — drives the localized "Chapter N · M verses" line. */
+  lang: string;
   /** Frames of the title window; the card fades out over the last `fadeOutFrames`. */
   frames: number;
   fadeOutFrames: number;
@@ -47,6 +50,7 @@ export const TitleCard: React.FC<TitleCardProps> = ({
   chapterName,
   verseCount,
   preset,
+  lang,
   frames,
   fadeOutFrames,
 }) => {
@@ -65,7 +69,7 @@ export const TitleCard: React.FC<TitleCardProps> = ({
     extrapolateRight: 'clamp',
   });
 
-  const verseWord = verseCount === 1 ? 'verse' : 'verses';
+  const chapterLine = formatChapterCardLine(lang, chapter, verseCount);
 
   return (
     <AbsoluteFill
@@ -115,9 +119,7 @@ export const TitleCard: React.FC<TitleCardProps> = ({
             {chapterName}
           </div>
         ) : null}
-        <div>
-          Chapter {chapter} · {verseCount} {verseWord}
-        </div>
+        <div>{chapterLine}</div>
       </div>
     </AbsoluteFill>
   );

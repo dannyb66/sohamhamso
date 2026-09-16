@@ -12,12 +12,12 @@
  *
  * Self-contained: builds its own schema.sql DB inline (no _db-helpers).
  */
-// biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
 import { Database } from 'bun:sqlite';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { pickQueue } from '../../../scripts/youtube-render';
+import { pickApprovedCandidates } from '../../../scripts/youtube-upload';
 import {
   type NewVideoRow,
   countByStatusFormat,
@@ -198,5 +198,92 @@ describe('youtube-render pickQueue shorts-only compat guard', () => {
     }
     const statuses = queue.map((r) => r.status).sort();
     expect(statuses).toEqual(['failed', 'pending']);
+  });
+});
+
+describe('youtube-upload pickApprovedCandidates scoped uploads', () => {
+  it('filters approved upload candidates by text and lang before applying the limit', () => {
+    const hiId = insertPending(db, {
+      ...SHORT_NEW,
+      lang: 'hi',
+      translation_md5: 'md5-siva-1-1-hi',
+      tts_voice_id: 'hi-IN-Wavenet-A',
+      status: 'approved',
+    });
+    updateVideoStatus(db, hiId, 'approved', { priority: 100 });
+    const bnId = insertPending(db, {
+      ...SHORT_NEW,
+      lang: 'bn',
+      translation_md5: 'md5-siva-1-1-bn',
+      tts_voice_id: 'bn-IN-Wavenet-A',
+      status: 'approved',
+    });
+    updateVideoStatus(db, bnId, 'approved', { priority: 90 });
+    const enFirstId = insertPending(db, {
+      ...SHORT_NEW,
+      translation_md5: 'md5-siva-1-1-en-a',
+      status: 'approved',
+    });
+    const enSecondId = insertPending(db, {
+      ...SHORT_NEW,
+      verse_num: 2,
+      translation_md5: 'md5-siva-1-2-en',
+      status: 'approved',
+    });
+
+    const rows = pickApprovedCandidates(db, 1, { textSlug: 'siva-sutras', lang: 'en' });
+
+    expect(rows.map((r) => r.id)).toEqual([enFirstId, enSecondId]);
+    expect(rows.every((r) => r.lang === 'en')).toBe(true);
+  });
+
+  it('accepts either text_id or texts.slug for text scoping', () => {
+    db.exec(`
+      INSERT INTO texts (id, slug, title_sa, title_en, tradition, license)
+      VALUES ('siva-sutras-internal', 'siva-sutras-public', 'शिवसूत्राणि', 'Śiva Sūtras', 'trika', 'CC-BY-4.0');
+    `);
+    db.exec(`
+      INSERT INTO verses (id, text_id, chapter, verse_num, devanagari, iast)
+      VALUES (2, 'siva-sutras-internal', 1, 1, 'चैतन्यमात्मा', 'caitanyam ātmā');
+    `);
+    db.exec(`
+      INSERT INTO translations (id, verse_id, lang, translation_text, license, status)
+      VALUES (2, 2, 'en', 'Consciousness is the Self.', 'PD', 'reviewed');
+    `);
+    insertPending(db, { ...SHORT_NEW, status: 'approved' });
+    const scopedId = insertPending(db, {
+      ...SHORT_NEW,
+      text_id: 'siva-sutras-internal',
+      translation_md5: 'md5-public-slug',
+      translation_row_id: 2,
+      status: 'approved',
+    });
+
+    const bySlug = pickApprovedCandidates(db, 10, { textSlug: 'siva-sutras-public' });
+    const byId = pickApprovedCandidates(db, 10, { textSlug: 'siva-sutras-internal' });
+
+    expect(bySlug.map((r) => r.id)).toEqual([scopedId]);
+    expect(byId.map((r) => r.id)).toEqual([scopedId]);
+  });
+
+  it('excludes already-uploaded rows even if their status is still approved', () => {
+    const uploadedApprovedId = insertPending(db, {
+      ...SHORT_NEW,
+      translation_md5: 'md5-uploaded-approved',
+      status: 'approved',
+    });
+    updateVideoStatus(db, uploadedApprovedId, 'approved', {
+      youtube_video_id: 'yt-existing',
+      youtube_url: 'https://www.youtube.com/watch?v=yt-existing',
+    });
+    const waitingId = insertPending(db, {
+      ...SHORT_NEW,
+      translation_md5: 'md5-waiting-approved',
+      status: 'approved',
+    });
+
+    const rows = pickApprovedCandidates(db, 10, { textSlug: 'siva-sutras', lang: 'en' });
+
+    expect(rows.map((r) => r.id)).toEqual([waitingId]);
   });
 });

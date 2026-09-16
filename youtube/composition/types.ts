@@ -93,9 +93,13 @@ export type ChapterProps = {
   verseCount: number;
   preset: ShortPreset;
   translationFont: string;
+  /** Show IAST between Sanskrit and translation; existing chapters default true. */
+  showIast?: boolean;
   segments: ChapterSegment[];
   titleCardFrames: number;
   titleCardAudioSrc: string | null;
+  /** Optional continuous, rights-cleared source track. Mutually exclusive with per-segment audio. */
+  audioTrackSrc?: string | null;
   outroFrames: number;
   outroUrl: string; // short human-readable URL, e.g. "sohamhamso.org/trika/siva-sutras/1"
   fps: number;

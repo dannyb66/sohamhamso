@@ -40,16 +40,17 @@ afterEach(() => {
 describe('chapters block — real config', () => {
   it('parses with the M0 values', () => {
     expect(cfg.chapters).toEqual({
-      langs: ['en'],
+      langs: ['en', 'hi', 'ta', 'te', 'kn', 'ml', 'bn', 'mr', 'gu', 'pa', 'or', 'as'],
       fps: 30,
       title_card_s: 5,
       outro_s: 9,
       min_translation_status: 'draft',
       uploads_enabled: false,
-      min_seg_s: 10,
-      seg_lead_in_s: 1.2,
-      seg_tail_s: 1.0,
-      group_max_verses: 1,
+      min_seg_s: 4,
+      seg_lead_in_s: 0.8,
+      seg_tail_s: 0.6,
+      group_max_verses: 3,
+      speaking_rate: 0.75,
       encode: 'cbr8',
     });
   });

@@ -19,7 +19,7 @@
  */
 import type { Database } from 'bun:sqlite';
 import { UsageError, parseCommonArgs } from '../pipeline/youtube/cli';
-import { loadYoutubeConfig } from '../pipeline/youtube/config';
+import { getChannelHandle, loadYoutubeConfig } from '../pipeline/youtube/config';
 import { translationMd5 } from '../pipeline/youtube/determinism';
 import { isYoutubeEligible, meetsTranslationFloor } from '../pipeline/youtube/eligibility';
 import { log, logError } from '../pipeline/youtube/log';
@@ -194,6 +194,7 @@ function main(): void {
         chapter,
         verse_num,
         lang: targetLang,
+        channel_handle: getChannelHandle(cfg, targetLang),
         kula: tcfg.kula,
         style_preset: tcfg.style_preset,
         translation_md5: translationMd5(tr.text),
