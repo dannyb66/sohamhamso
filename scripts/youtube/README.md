@@ -3,9 +3,17 @@
 Day-to-day operations for the @sohamhamso YouTube pipeline — Shorts (format 1)
 and full-chapter videos (format 2). For the system map (data-flow, state
 machine, secrets inventory) see `pipeline/youtube/ARCHITECTURE.md`; for the
-shared CLI flag spec see `pipeline/youtube/CLI-CONVENTIONS.md`; for the full
-strategy (including the Chapter Videos governance) see
-`docs/YOUTUBE-PIPELINE-PLAN.md`.
+shared CLI flag spec see `pipeline/youtube/CLI-CONVENTIONS.md`; for the implementation reference see
+[AI video and YouTube platform](../../docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md).
+The [pipeline plan](../../docs/YOUTUBE-PIPELINE-PLAN.md) is a historical design
+record, including proposed rollout gates that require fresh measurement.
+
+**Verified baseline:** `origin/main` (`4c94bf2`), 2026-10-12. The upload
+workflow schedule is **paused**; manual dispatch remains enabled. Chapter
+uploads are separately held by `chapters.uploads_enabled: false`. Enabled
+workflow schedules establish configuration, not production success.
+Language-channel routing/Azure TTS are branch-only at
+[8aa582f](https://github.com/dannyb66/sohamhamso/commit/8aa582f2ec2477c9ac4f821d13f61e6f5717931d).
 
 Channel: **@sohamhamso** (https://www.youtube.com/@sohamhamso). Single channel,
 single Google Cloud project. All uploads land as **unlisted** first; the
@@ -15,22 +23,24 @@ operator flips them public after reviewing in YouTube Studio.
 
 ## Quota model
 
-Since **Dec 4, 2025**, `videos.insert` costs ~100 units (down from 1,600). With
-the default **10,000 units/day**, that's roughly **100 uploads/day** — more than
-enough for the 149-video Phase 1 scope (≈18 days of backfill even before any
-quota raise, which is **optional**). Chapter uploads cost the same flat ~100
-units regardless of file size.
+The uploader records **100 units per successful insertion**, stops when
+recorded units exceed 8,000, defaults to **2 videos/run**, and clamps the run
+to `YT_MAX_UPLOADS_PER_DAY` (default **12**). These are implementation values;
+verify the Google project's current quota and channel upload eligibility
+before a live rollout. The historical 149-verse target does not establish
+149 reviewed translations or published videos.
 
-- Cron B pre-checks `youtube_quota` for the current UTC date and **skips** if
-  `units_spent > 8000` (2k headroom).
-- A 403 `quotaExceeded` is handled gracefully: set `exhausted=1`, exit 0. Quota
-  resets at midnight **Pacific**.
-- Analytics (Cron E) uses a **separate quota bucket** from uploads, so the daily
-  sync never competes with Cron B.
+A quota or daily-upload-limit error returns the current row to `approved`,
+marks the day exhausted, and exits without a retry storm. The local quota
+table uses UTC days, which must not be assumed identical to the provider's
+reset window or account's rolling upload limit. Analytics uses its own API
+requests and requires analytics authorization.
 
-Stagger, don't bulk-dump: spreading uploads across Cron B's 4h cadence (~6 per
-cycle) is also the strongest mitigation against the July 2025 YouTube
-mass-AI-content spam policy.
+Uploads are currently **manual-dispatch only**. Chapter rows stay held until
+the config gate changes. Downloaded R2 bytes are SHA-256 checked before
+insertion; no post-upload YouTube checksum verification exists. A chapter
+network error gets one retry with a fresh multipart stream; inspect Studio
+before replaying an ambiguous success to avoid duplicate uploads.
 
 ---
 
@@ -94,18 +104,15 @@ scripts/youtube-oauth-setup.ts, then gh secret set YT_REFRESH_TOKEN`).
 
 ## OAuth rotation playbook — WEEKLY while the app is in Testing mode (E5)
 
-**The consent screen is permanently in Testing mode** (publishing to
-production is blocked for this account), so Google hard-expires the refresh
-token **~7 days after mint** (`invalid_grant`). Rotate `YT_REFRESH_TOKEN`
-**every ≤6 days** — last minted **2026-06-12** → next rotation due
-**by 2026-06-18**. The consenting account (the channel owner) must stay in
-the consent screen's *Test users* list. Both the uploader and analytics-sync
-map the expiry to this playbook by name, so a missed rotation fails loudly,
-not mysteriously. (If the app ever reaches *In production* status, this
-drops back to quarterly.) Running
-`bun scripts/youtube-oauth-setup.ts --refresh` prints this playbook — it does
-**not** mint; minting is always the two-step consent flow above, which is
-idempotent (`prompt=consent` forces a fresh refresh token on every run).
+The source/runbooks recorded a Testing-mode OAuth app and short-lived
+refresh tokens in June 2026. **Verify the current consent-app mode and token
+age in Google Cloud Console**; the old mint/due dates are not current
+credential evidence. If the app remains in Testing mode, follow the
+short-lived-token rotation policy shown by
+`bun scripts/youtube-oauth-setup.ts --refresh` and keep the channel owner
+in the test-user list. This command prints guidance; it does not mint a token.
+Minting uses the two-step consent flow above. If mode/scopes change, update
+this procedure from provider guidance and verified console evidence.
 
 1. **Mint a new token** — steps 2–4 of OAuth setup (consent URL → `--code=…`)
    → `.secrets/yt-refresh.txt`.
@@ -126,8 +133,8 @@ idempotent (`prompt=consent` forces a fresh refresh token on every run).
    the script does not write the DB), and sanity-check with
    `bun scripts/youtube-status.ts --json`.
 
-Anomaly backstop: the Cron D digest alarms if `uploads_per_hour > 20`, catching
-a compromised key within ~4h rather than waiting for the 24h quota boundary.
+The status/digest can surface an `uploads_per_hour > 20` anomaly. Its
+configured daily schedule does not establish a four-hour detection bound.
 
 ---
 
@@ -161,7 +168,7 @@ re-rendering** (a `videos.update`, ~50 quota units):
 bun scripts/youtube-revisit.ts --video-id=42 --visibility=public
 
 # Other metadata-only changes (no re-render) are supported the same way, e.g.:
-bun scripts/youtube-revisit.ts --video-id=42 --title="…"
+bun scripts/youtube-revisit.ts --video-id=42 --visibility=unlisted --title="…"
 ```
 
 `--video-id` is the row id in the `videos` table (not the YouTube id). Use
@@ -213,8 +220,8 @@ sidecars make the gate a side-by-side comparison, not serial re-renders.
 
 ### Staged rollout
 
-1. **Preview the backfill plan** (read-only — the one backfill mode that is
-   safe to run locally):
+1. **Preview the backfill plan** (no lifecycle row processing; use an isolated
+   `YOUTUBE_DB_PATH` copy as described below):
    ```bash
    bun scripts/youtube-backfill-chapters.ts --dry-run --json
    ```
@@ -228,13 +235,14 @@ sidecars make the gate a side-by-side comparison, not serial re-renders.
    bun scripts/youtube-status.ts --json   # → byFormat.chapter status counts
    ```
 
-### NEVER run the backfill locally
+### Serialize production backfill
 
-The R2 state-DB push is **last-writer-wins** (`scripts/youtube-state-db.sh`):
+Do not push locally modified production-state copies. The R2 state-DB push is **last-writer-wins** (`scripts/youtube-state-db.sh`):
 a locally pulled DB pushed back clobbers whatever the crons wrote in between.
 Every state-mutating chapter run goes through `workflow_dispatch` inside the
-`youtube-pipeline` concurrency group. (`--dry-run`, `--json`, and
-`youtube-status.ts` reads are fine locally.)
+`youtube-pipeline` concurrency group. (`--dry-run` and
+`youtube-status.ts` inspection are appropriate locally on an isolated copy.
+**`--json` changes output format only and does not prevent mutations**.)
 
 ### Window-close checklist (the upload hold gate)
 
@@ -249,7 +257,7 @@ gate. When the 30-day shorts measurement window closes:
 2. **Verify the channel** (next section) if not already done.
 3. Flip **`chapters.uploads_enabled: true`** in `data/youtube-config.yaml`.
 4. **Commit + push to main** — CI reads the config from the checkout.
-5. **Cron B uploads unlisted** on its next fire. Timestamps come from the R2
+5. **Manually dispatch Cron B** to upload unlisted while its schedule is paused. Timestamps come from the R2
    `.meta.json` sidecar; a missing sidecar fails the row loudly — a chapter
    video is never uploaded without timestamps.
 6. **Review in YouTube Studio**: player, HD source, and the description's
@@ -263,8 +271,9 @@ gate. When the 30-day shorts measurement window closes:
 
 ### Channel verification (>15 min uploads)
 
-siva-sutras ch3 (45 verses) exceeds 15 minutes — **verify @sohamhamso at
-https://youtube.com/verify before flipping `uploads_enabled`**. If an upload
+siva-sutras ch3 (45 verses) can exceed 15 minutes — **verify @sohamhamso at
+https://youtube.com/verify before enabling long uploads; actual rendered
+duration depends on narration and pacing. Check it before flipping `uploads_enabled`**. If an upload
 hits an unverified channel, the row fails with the named, no-retry error
 `channel not verified for >15min uploads — verify at youtube.com/verify, then
 retry`; it does **not** burn `retry_count` (retrying cannot succeed until the
@@ -273,7 +282,8 @@ channel is verified). After verifying, requeue with `--reset-retries` (below).
 ### Multi-audio-track test (Studio walkthrough)
 
 Goal (one video): does YouTube multi-language audio make per-language uploads
-obsolete? Run it on the **first** uploaded chapter video.
+obsolete? This is a proposed operator experiment, not a completed rollout result.
+Run it on an uploaded chapter with verified source-sidecar provenance.
 
 1. **Generate the aligned track** (no DB/R2 mutation):
    ```bash
@@ -291,7 +301,8 @@ obsolete? Run it on the **first** uploaded chapter video.
 2. **Add the track in YouTube Studio** on that one video (video details →
    audio-track/language surface). Multi-language audio is **Studio-only and
    gated**: the channel needs the Advanced-features tier AND YouTube's
-   gradual multi-audio rollout — there is no API path.
+   gradual multi-audio rollout — this repository has no automated multi-audio upload API path. Verify
+   current Studio eligibility on the actual channel.
 3. **If the option is unavailable**, record in `docs/YOUTUBE-PIPELINE-PLAN.md`
    (Chapter Videos → ops checklist): the date, that the channel lacks the
    feature, and that the 12-lang fan-out decision falls back to weighing
@@ -320,10 +331,10 @@ non-zero**, so the workflow's failure Issue actually fires. The failure log
 names the verse (via `last_error`) and prints both commands:
 
 ```bash
-# Reproduce locally (keeps + prints the workdir: props JSON, narration, raw mp4):
+# Reproduce only against disposable local state (incurs TTS/R2 effects unless MOCK_ALL):
 bun scripts/youtube-render-chapters.ts --video-id=N --keep-workdir
 
-# Recover after fixing the cause (zeroes retry_count + upload_retry_count):
+# State mutation: recover via serialized operations after fixing the cause:
 bun scripts/youtube-revisit.ts --video-id=N --reset-retries
 ```
 
@@ -343,22 +354,21 @@ re-run.
 
 ## Daily operations at a glance
 
-- **Cron A** (`youtube-generate.yml`, every 6h) renders pending **short** rows
+- **Cron A** (`youtube-generate.yml`, `23 */6 * * *` UTC) renders pending **short** rows
   → R2, auto-approves on QA pass.
 - **Cron A2** (`youtube-generate-chapters.yml`, 03:00/15:00 UTC) renders
   pending **chapter** rows (`--limit=2`, 330-min timeout) → R2 mp4 +
   `.meta.json` sidecar. `workflow_dispatch` inputs: `text_slug`, `chapter`,
   `backfill`, `dry_run`, `limit`.
-- **Cron B** (`youtube-upload.yml`, every 4h) uploads approved rows →
-  unlisted. Chapter rows are **held** until `chapters.uploads_enabled: true`.
-- **Cron D** (`youtube-digest.yml`, daily 12:00 UTC) posts the ops digest Issue
+- **Cron B** (`youtube-upload.yml`, manual dispatch only; schedule paused)
+  uploads approved rows → unlisted. Chapter rows are **held** until `chapters.uploads_enabled: true`.
+- **Cron D** (`youtube-digest.yml`, daily 11:13 UTC) posts the ops digest Issue
   (labels `youtube`, `ops`) + optional Slack.
 - **Cron E** (`youtube-analytics-sync.yml`, daily 05:00 UTC) writes
-  `video_analytics` (API-fillable metrics only — see the metric-honesty
-  contract in `pipeline/youtube/ARCHITECTURE.md`).
-- **Lease sweep** (`youtube-lease-sweep.yml`, hourly) unsticks crashed
+  `video_analytics` (API-fillable metrics only — see [analytics contract](../../docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md#analytics-and-operational-visibility)).
+- **Lease sweep** (`youtube-lease-sweep.yml`, hourly at minute 27 UTC) unsticks crashed
   `rendering`/`uploading` rows — TTL **1h for shorts, 4h for chapters**
-  (chapter renders routinely run 30–90 min).
+  (these are configured TTLs, not measured performance guarantees).
 
 Status dashboard any time:
 
@@ -370,3 +380,28 @@ bun scripts/youtube-status.ts --json   # machine — includes byFormat counts
 If a scheduled job fails, it opens a GitHub Issue (labels `youtube` +
 `youtube-<job>-failure`) per the `turso-backup.yml` precedent — investigate from
 the linked run logs.
+
+## Safe onboarding and side-effect boundaries
+
+Use the [isolated-state walkthrough](../../docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md#how-to-inspect-without-external-side-effects)
+for credential-free manifest preview. Always set `YOUTUBE_DB_PATH` before
+local video commands, because the default can share the corpus database.
+`--dry-run` suppresses processing mutations in supported scripts but may
+open a writable DB; `--json` does not suppress effects.
+
+The sample renderer's `MOCK_ALL=true` path produces a **real, silent local
+MP4** through Chromium/Remotion. The production engines' mock path produces
+padded WAV fixtures under MP4 names with assumed probe values, which cannot
+verify media quality.
+
+Commands without `--dry-run` can call paid TTS, upload R2 objects, mutate
+lifecycle state, upload videos, or change live visibility. OAuth/bootstrap
+commands write credentials; `gh secret set` changes Actions secrets.
+Scheduled workflow dispatch can create failure issues and digest messages.
+Examples here are operator procedures, not commands to run for a docs check.
+
+For uploaded failures, inspect `last_error_phase` and recover via
+`--reset-retries` after fixing credentials/quota/verification. For missing
+sidecars, restore or rerender the matching artifact pair before retrying.
+For changed chapter hashes, run explicit backfill rather than resetting the
+old row. Before pushing state to R2, ensure no other writer is active.

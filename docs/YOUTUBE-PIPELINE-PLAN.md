@@ -1,4 +1,8 @@
-# Plan: sohamhamso.org YouTube Shorts Pipeline
+# Historical plan: sohamhamso.org YouTube Shorts Pipeline
+
+> **Historical design/rollout record, labeled 2026-10-12.** Preserve this document for decision history; it is not an executable description of `origin/main` (`4c94bf2`). Use [AI video and YouTube platform](AI-VIDEO-AND-YOUTUBE-PLATFORM.md), [pipeline architecture](../pipeline/youtube/ARCHITECTURE.md), and the [operator handbook](../scripts/youtube/README.md) for verified behavior. The subscriber/view counts, SEO/deployment assertions, pilot completion, and dated credential/rollout observations below are historical claims, not refreshed metrics.
+>
+> Material differences: baseline narration uses configured Google Studio/WaveNet/Standard voices, not an English WaveNet-only contract; the upload cron is paused, chapters remain upload-held, and per-language routing/Azure speech exist on an unmerged branch. Mock production renders are padded byte fixtures rather than real MP4s. Remote R2 ETag and post-upload YouTube checksum verification are not implemented. Chapter sidecars are sequential puts with approval gated on both, not an object-store transaction. Proposed index/thumbnail/subtitle/visual capabilities should be confirmed in source before use. The historical 149-video and 12-language targets do not establish published outputs or review coverage.
 
 ## Context
 

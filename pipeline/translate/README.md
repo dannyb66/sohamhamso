@@ -1,111 +1,47 @@
 # Translation pipeline
 
-Sanskrit-grounded AI translation pipeline for sohamhamso. Generates AI translations of corpus verses with full provenance, scores them against a Sanskrit-fidelity rubric, and writes them into the `translations` table.
+Sanskrit-grounded candidate generation, model judging, bounded Indic fan-out, and shard merging. Read [AI systems and evaluation](../../docs/AI-SYSTEMS-AND-EVALUATION.md) for the authoritative inputs, exact model/display-version distinction, evaluation limits and observed corpus provenance. [STATUS-CONTRACT.md](../../STATUS-CONTRACT.md) defines the intended public status/badge contract; imported statuses do not by themselves prove a judge pass.
 
-The contract for status, badges, and provenance fields is
-[`STATUS-CONTRACT.md`](../../STATUS-CONTRACT.md). The grounding philosophy
-(Sanskrit + Vidyut morphology + Cologne MW + meter — NOT English anchor) is
-non-negotiable per Codex review refinements A + B in the plan.
+## Files and interfaces
 
-## Files
-
-| Path | Purpose |
+| File | Purpose |
 |---|---|
-| `prompts/v1-sanskrit-grounded.md` | Translation prompt template. `{{placeholders}}` substituted by the runner. |
-| `prompts/v1-judge.md` | LLM-as-judge prompt. Scores Sanskrit fidelity 1–10. |
-| `anchors/woodroffe-references.md` | PD English reference index per text. Reference signals only — not anchors. |
-| `runner.ts` | Bun script. Reads verses needing translation, calls Claude, judges, writes results. |
+| [runner.ts](runner.ts) | Reads missing-language units, generates and judges, inserts draft/published translations, emits `RunSummary` with `--json` |
+| [dispatch.ts](dispatch.ts) | Eleven-language fan-out, default concurrency 3, bounded transient retries and JSONL run manifest |
+| [merge_indic.py](merge_indic.py) | Validates whole-text/per-chapter shards and carries their provenance into corpus YAML |
+| [merge_glosses.py](merge_glosses.py) | Merges generated multilingual gloss data into YAML |
+| [v1-sanskrit-grounded.md](prompts/v1-sanskrit-grounded.md) | Sanskrit-first translation prompt |
+| [v1-judge.md](prompts/v1-judge.md) | Sanskrit-fidelity rubric, score ≥7 candidate publication threshold |
+| [Woodroffe reference notes](anchors/woodroffe-references.md) | Bibliographic reference inventory |
 
-## Usage
+## Local dry run
 
-Initialise the DB first (one-time):
-
-```bash
-bun pipeline/ingest/init-db.ts
-```
-
-Install the Anthropic SDK (not yet a project dependency — installed separately to keep the scaffold pre-API):
+Dependencies, including `@anthropic-ai/sdk`, already appear in `package.json`:
 
 ```bash
-bun add @anthropic-ai/sdk
+bun install
+bun run db:build
+bun pipeline/translate/runner.ts --text siva-sutras --lang hi --limit 1 --dry-run --json
 ```
 
-Set the env var:
+No API key is required for a runner dry run; it reads the DB and inserts no translations. Complete baseline coverage means the example reports zero pending units. The main AI documentation includes an isolated fixture example that exercises prompt construction. Use `--db` to select a trial database.
+
+A dispatch dry run also writes a local run manifest, but makes no provider requests:
 
 ```bash
-export ANTHROPIC_API_KEY=sk-ant-...
+bun pipeline/translate/dispatch.ts --text siva-sutras --langs hi,ta --limit 1 --dry-run --runs-dir /tmp/sohamhamso-translate-review
 ```
 
-Run the pipeline against one text + one language:
+## Live execution and recovery
 
-```bash
-bun pipeline/translate/runner.ts --lang en --text siva-sutras
-```
+A run without `--dry-run` uses `ANTHROPIC_API_KEY`, incurs API charges and writes the selected database. The runner skips model calls if it cannot construct a client; inspect `skipped` as well as exit status. Dispatch accepts `--concurrency`, `--max-attempts`, `--backoff-ms`, `--db`, `--langs`, `--limit` and `--runs-dir`. Its retries re-query units lacking any target-language translation, preserving successes; an existing draft is not automatically retried.
 
-Limit the run (smoke test before full corpus fan-out):
+The runner calls the API model `claude-sonnet-4-5-20250929`, stores that in `model_version`, and stores logical label `claude-sonnet-4-6` in `model`. Current corpus shards record Opus labels independently. Keep those distinctions in provenance. Prompt revisions should use new identifiers rather than silently changing the meaning of existing row metadata.
 
-```bash
-bun pipeline/translate/runner.ts --lang en --text siva-sutras --limit 5
-```
+Malformed JSON and per-unit provider failures are recorded; the runner exits 2 for failed units and dispatch exits nonzero for failed chunks. Transient retries use exponential backoff; there is no merged centralized rate-limit gateway. Candidate glosses, judge rationale/concerns and full audit records are not persisted by this runner.
 
-Dry-run (no API calls, no DB writes — prints what would happen):
+The runner reads stored morphology/glosses; it does not ingest the separate Vidyut audit output or write candidate word glosses. Public-domain reference inputs are currently citations/notes, not full verse-level English anchors. The [morphology runbook](../morph/README.md) explains deterministic comparison and its limits.
 
-```bash
-bun pipeline/translate/runner.ts --lang en --text siva-sutras --dry-run
-```
+Translation writes exist only in the DB until accepted content is merged into YAML. Corpus ingestion reconciles against YAML and can remove database-only translations. Review the source diff before rebuilding. `merge_indic.py` requires Python `ruamel.yaml`, validates chapter files/unit keys before writing each text, and downgrades `[draft] ` entries; it does not itself judge translations.
 
-Override the DB path (useful for tests):
-
-```bash
-bun pipeline/translate/runner.ts --lang en --text siva-sutras --db /tmp/test.db
-```
-
-### Indic fan-out
-
-Per plan workstream 4, the same runner serves all 11 target languages. Run one process per language; they are independent:
-
-```bash
-bun pipeline/translate/runner.ts --lang hi --text siva-sutras &
-bun pipeline/translate/runner.ts --lang ta --text siva-sutras &
-bun pipeline/translate/runner.ts --lang te --text siva-sutras &
-# ... etc for bn, mr, gu, pa, kn, ml, or, as
-wait
-```
-
-The Indic fan-out is NOT gated on English review per Codex review refinement D (V1 ships AI-only). Each language grounds independently on the Sanskrit-side inputs.
-
-## Env vars
-
-| Var | Required | Purpose |
-|---|---|---|
-| `ANTHROPIC_API_KEY` | yes for live runs | Claude API key. If missing, the runner warns and skips live calls (dry-run still works). |
-
-## Cost estimate
-
-From the plan (Translation Pipeline §6):
-
-- V1 corpus (Phase 1, ~310 verses) × 11 languages × ~$0.015/verse ≈ **$50**
-- Phase 2 (~2.3k verses) × 11 ≈ **$450**
-- Phase 3 (~10k verses) × 11 ≈ **$2,000**
-
-Numbers include the judge pass (each verse is scored once per generated translation). They do not include re-runs after prompt revisions, so budget 1.5–2x for prompt iteration during V1 ramp.
-
-## Failure modes
-
-- **Rate limits.** The runner inserts a `RATE_LIMIT_SLEEP_MS` sleep (1.5s default) between calls. This is a placeholder. The real solution is the shared rate-limit gateway Worker (plan eng-review refinement 2) that fronts both Anthropic and OpenAI for all pipeline workstreams. Until it lands, expect occasional 429s on parallel runs — back off and retry.
-- **Judge calibration drift.** LLM-as-judge scores can drift over weeks. The contract requires a quarterly human spot-check audit of 50 random `published` translations per language to validate calibration (see `STATUS-CONTRACT.md`). When calibration drifts, freeze `prompt_version` (don't silently update the judge prompt), version-bump (`v2-judge`), and re-score affected translations.
-- **Hallucination.** The judge catches most lexicon-divergent hallucinations (gloss does not appear in Cologne MW + Apte for the lemma). Edge cases survive: when the morphology itself is wrong (Vidyut error), the judge will reward agreement with the wrong morphology. Mitigation: log all candidates with `confidence < 0.5` and judge `score >= 7` for manual review — these are the high-confidence-low-morph-confidence cases most prone to silently propagating Vidyut errors.
-- **Empty morphology.** Verses that have not yet been processed by the morph agent will fall through with `(no morphology data available)` injected into the prompt. The translation runner still works but Sanskrit-grounding degrades to lexicon-only. Run the morph agent first per workstream order.
-- **PD reference coverage.** Most V1 corpus texts have no PD English reference (Śiva Sūtras, Spanda Kārikās, Pratyabhijñā Hṛdayam, most of Vijñāna Bhairava). The `{{pd_english_reference}}` placeholder is set to a clear "no reference available — ground on Sanskrit alone" sentence in those cases. This is correct behavior, not a bug.
-- **Cross-process DB writes.** `bun:sqlite` opens the DB in WAL mode (set by `init-db.ts`). Parallel runners (Indic fan-out) write into the same DB. UNIQUE constraint `(verse_id, lang, translator)` prevents duplicates if two processes accidentally pick the same verse + lang.
-
-## What this pipeline does NOT do
-
-- It does not write `word_glosses` rows. That is the morph agent's responsibility (plan workstream 2 + 4). The runner reads existing glosses; it does not produce them.
-- It does not embed translations. That is the embedding agent's responsibility (workstream 8), runs on `status='reviewed'` rows nightly.
-- It does not promote `draft → reviewed`. Promotion is human review (V1.x), surfaced through a separate review-queue tool (workstream 7).
-- It does not handle judge calibration audits. Audits are a runbook task — see `STATUS-CONTRACT.md` for the schedule.
-
-## Prompt versioning
-
-`prompt_version` is written into each `translations` row. Never edit `v1-sanskrit-grounded.md` or `v1-judge.md` in place after the first published run — version-bump to `v1.1-...`, then backfill if needed. The contract guarantees that `prompt_version` is stable per-row.
+Historical per-verse cost estimates, claims that the judge catches “most” hallucinations, nightly reviewed-only embedding, and scheduled calibration audits are not measured or implemented guarantees. Consult the main AI reference for current limits and [the corpus reference](../../docs/CORPUS-AND-DATA-PLATFORM.md) for ingestion/export behavior.

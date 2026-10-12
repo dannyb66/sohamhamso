@@ -1,12 +1,12 @@
 # Scripture Ingestion Pipeline — sohamhamso
 
 > From discovery to public launch. Use this runbook to add a new text end-to-end.
-> Maintained by the Phase 1 ingestion lessons; update on each new text.
+> Baseline refreshed against `origin/main` at `4c94bf2` on 2026-10-12. Phase 1 counts and case studies below are historical observations, not current totals or verification results. See [corpus/data reference](CORPUS-AND-DATA-PLATFORM.md), [AI evaluation](AI-SYSTEMS-AND-EVALUATION.md), and [operations](OPERATIONS-AND-QUALITY.md) for current contracts.
 
 Companion docs:
-- Plan: `/Users/deepakbasavaraju/.claude/plans/check-online-websites-aim-sparkling-pearl.md`
-- Status contract: `STATUS-CONTRACT.md` (per-translation badge + status semantics)
-- Per-source attribution: `ATTRIBUTION.md`
+- Historical plans named in this runbook describe earlier work; a maintainer-local plan path is not a contributor prerequisite.
+- Status contract: [STATUS-CONTRACT.md](../STATUS-CONTRACT.md) (per-translation badge + status semantics)
+- Per-source attribution: [ATTRIBUTION.md](../ATTRIBUTION.md)
 - Dataset publisher contract: `pipeline/dataset/README.md`
 - Translation pipeline contract: `pipeline/translate/README.md`
 - QA reports referenced throughout: `.gstack/qa-reports/qa-report-localhost-2026-06-01*.md`
@@ -74,7 +74,7 @@ Record the exact source location, revision, and accessed-on date in the YAML (`s
 - **Devanāgarī source check:** `pipeline/ingest/ingest.ts::isDevanagari()` accepts any string with at least one code point in U+0900–U+097F. `toDevanagari()` round-trips IAST through Sanscript when needed. Mixed strings take the no-op path.
 - **Danda handling:** preserve raw dandas (`।`, `॥`) and bracketed verse numbers (e.g. `॥४९॥`) in the YAML source string. The render-time helper `formatDanda()` in `src/components/VerseAnatomy.astro` performs the half-verse line break — do NOT pre-split lines in the YAML. (See commit `5dba55e` — "break Sanskrit verses on the half-verse danda".)
 - **Verse numbering:** `chapter.verse_num` keyed (e.g. `1.47`). Numbers must be integers in the YAML (`chapter: 1`, `verse: 47`); the ingest accepts both `verse` and `verse_num` aliases.
-- **Slug naming:** lowercase kebab-case using simple Latin-equivalents — `pratyabhijna-hrdayam` (not `pratyabhijñā-hṛdayam`). The slug alias table in `src/lib/aliases.ts` handles common romanization variants (`hridayam ↔ hrdayam`, `shiva ↔ siva`, `karpuradi-stotram → karpuradi-stotra`, etc.) via 301 redirects from `getStaticPaths`. Add a new entry to `SLUG_ALIASES` whenever your text has multiple common spellings — sound-equivalence rules of thumb are in the source comments (vocalic ṛ → r/ri, ś → s/sh, long ū → u/uu, sandhi → spelled-out).
+- **Slug naming:** lowercase kebab-case using simple Latin-equivalents — `pratyabhijna-hrdayam` (not `pratyabhijñā-hṛdayam`). The slug alias table in `src/lib/aliases.ts` handles common romanization variants (`hridayam ↔ hrdayam`, `shiva ↔ siva`, `karpuradi-stotram → karpuradi-stotra`, etc.). Index routes can emit redirect pages at build time; SSR verse routes resolve aliases at request time and return 301. Add a new entry to `SLUG_ALIASES` whenever your text has multiple common spellings — sound-equivalence rules of thumb are in the source comments (vocalic ṛ → r/ri, ś → s/sh, long ū → u/uu, sandhi → spelled-out).
 
 ### Step 5 — Author the YAML corpus file
 
@@ -93,25 +93,28 @@ Record the exact source location, revision, and accessed-on date in the YAML (`s
 
 - Spot-check against the printed edition's known count. Phase 1 counts pinned in the plan: Śiva Sūtras = 77 sūtras; Spanda Kārikās = 52 verses; Pratyabhijñā Hṛdayam = 20 sūtras; Vijñāna Bhairava Tantra = 163 dhāraṇās; Karpūrādi Stotra = (short, ~22 verses). Phase 1 ingest total: **334 verses across 5 texts × 12 langs = 4,008 translations + 28,018 word-glosses** (per QA pass-1 report).
 - Spot-check 5 random verses against the upstream source (string compare; account for danda + verse-number bracket normalization).
-- [TODO: add an `expected_verse_count` top-level field to the YAML schema + a validator in the ingest so this check runs automatically.]
+- `expected_verse_count` is implemented: ingest rejects a mismatch with the actual reference count. For prose texts, this is a count of addressed sections rather than metrical verses.
 
 ### Step 7 — Run morphology
 
-- **Scaffold status:** `pipeline/morph/` is an empty directory in this repo. The plan's design says Vidyut-cheda → Cologne C-SALT MW + Apte → emits `lemma_sa`, `lemma_iast`, English gloss, and `morph` field into `word_glosses` (with `gloss_lang='en'`). [TODO: implement `pipeline/morph/runner.ts` per plan workstream 2 — Phase 1 word_glosses were authored by the translator agents directly, not by an automated morph pass.]
-- Until the runner lands, the substitute is: the English gloss + morph string come from the same Sanskrit-grounded prompt the translator agent runs (Step 8), then the Indic fan-out (Step 9) adds per-language `gloss_xx` entries against the same `word_idx` ordering.
+- The deterministic Python [Vidyut runner](../pipeline/morph/runner.py), [comparison](../pipeline/morph/compare.ts), and [audit](../pipeline/morph/audit.ts) exist; installation/data prerequisites and commands are authoritative in [pipeline/morph/README.md](../pipeline/morph/README.md).
+- The runner reads corpus input and writes tool-derived analyses with provenance. Missing Vidyut or linguistic data fails explicitly; it does not invent morphology. Existing corpus `morph` strings include historical LLM-authored data and are not automatically replaced by running the tool.
+- Monier-Williams headword candidates derived from lemmas are candidates, not verified dictionary lookups. Record which analyses were actually incorporated into translation inputs.
 
 ### Step 8 — Generate English translation
 
-- **Prompt template:** `pipeline/translate/prompts/v1-sanskrit-grounded.md` (the canonical template — `prompt_version: v1-sanskrit-grounded`). Model: Claude Sonnet 4.6, temperature 0.2, strict-JSON output.
+- **Prompt template:** `pipeline/translate/prompts/v1-sanskrit-grounded.md` (the canonical template — `prompt_version: v1-sanskrit-grounded`). The runner currently calls pinned `claude-sonnet-4-5-20250929`, while `MODEL_DISPLAY` records `claude-sonnet-4-6`; retain that distinction when reporting provenance. Other corpus rows record different model labels. Inspect runner/prompt fields rather than assuming one model produced all content.
 - **Locked grounding philosophy:** Sanskrit verse + Vidyut morphology + Cologne MW/Apte glosses + meter are the load-bearing inputs. **NEVER anchor on a PD English translation** — PD English (Woodroffe, Bühler, Thibaut) is a *reference signal*, never the source of truth. If the Sanskrit + morph disagree with the PD English, trust the Sanskrit + morph and record the deviation in the `deviations_from_pd_english` field.
 - **Output written to:** `data/translations/{slug}/en.json` (JSON shape: `{ text_slug, lang, translator, license, prompt_version, ai_assisted, status, verses: { "1.1": "...", "1.2": "...", ... } }`) and the corresponding `data/glosses/{slug}/en.json`. The translator agent ALSO inlines the same content into the corpus YAML's per-verse `translations` and `word_glosses` arrays for the canonical ingest path.
-- **Judge pass:** `pipeline/translate/prompts/v1-judge.md` (`prompt_version: v1-judge`, temperature 0.0). Scores Sanskrit fidelity 1–10. Pass threshold = 7 to publish at `ai_assisted=true, status='published'`; 8 marks "high-confidence". Quarterly human spot-check (50 random published translations per language) per `STATUS-CONTRACT.md`.
+- **Judge pass:** `pipeline/translate/prompts/v1-judge.md` (`prompt_version: v1-judge`, temperature 0.0). Scores Sanskrit fidelity 1–10. Pass threshold = 7 to publish at `ai_assisted=true, status='published'`; 8 marks "high-confidence". Quarterly human spot-check (50 random published translations per language) is proposed in `STATUS-CONTRACT.md`; it is not proof that such audits or a durable audit log have occurred.
 
 ### Step 9 — Fan out to 11 Indic languages (the parallel-agent pattern)
 
 The 11 Indic target languages: Assamese (`as`), Bengali (`bn`), Gujarati (`gu`), Hindi (`hi`), Kannada (`kn`), Malayalam (`ml`), Marathi (`mr`), Odia (`or`), Punjabi (`pa`), Tamil (`ta`), Telugu (`te`). Plus English (`en`) = 12 langs total.
 
-**The pattern that works** (from Phase 1 lessons):
+**Historical manual pattern** (from Phase 1 lessons). For the implemented bounded fan-out CLI, use [dispatch.ts](../pipeline/translate/dispatch.ts): `bun pipeline/translate/dispatch.ts --text siva-sutras --dry-run` plans without model calls; removing `--dry-run` requires credentials, calls providers and writes translation state. It defaults to three concurrent languages, retrying transient failures and emitting per-run manifests.
+
+The earlier manual pattern:
 
 - **One agent per language.** 11 agents in parallel, dispatched in background mode.
 - **Each agent gets:** target lang code + native name + expected Unicode block range, the canonical Sanskrit-side inputs (Devanāgarī + IAST + morph + Cologne glosses + meter), the EN translation as one reference signal among many (NOT anchor), the output file paths, and explicit scope guardrails.
@@ -167,24 +170,25 @@ The field name is **`gloss_text`** — exactly that, no lang-suffix, no extra en
 - **Verse routes are SSR (A6 phase 2) — Turso seeding is load-bearing for the READER:** the two verse routes (`/[tradition]/[text]/[chapter]/[verse]` and the `/[lang]/...` twin) are `prerender = false` and read the **prod Turso corpus DB** at request time (one batched libsql round-trip per page — `src/lib/verse-read.ts`). Until A6 phase 2, Turso only powered `/api/search` and OG images; now an unseeded or stale Turso means verse pages render the styled 503/404, not just degraded search. Operational consequence: **after ingesting a new text locally, the per-text Turso seeder (`scripts/turso-seed-corpus.ts`) + its backup gate are a REQUIRED deploy step**, sequenced before (or atomically with) the Pages deploy that links to the new verses. `astro dev` and `astro build` still read the local SQLite file via `bun:sqlite`; only the deployed worker hits Turso (`TURSO_CORPUS_URL` + `TURSO_CORPUS_AUTH_TOKEN` CF Pages secrets).
 - **Deploy model (plan item A6):** `db/sohamhamso.db` is **not committed** — it is a build cache, not a source of truth. The sources are `data/corpus/*.yaml` + `db/schema.sql` (+ `db/migrations/` for already-provisioned DBs). Every build path is self-sufficient: `bun run build` / `bun run seo:build` start with `bun run db:ensure`, which runs `db:init` + `ingest` when the file is absent (CI and Cloudflare Pages clone a tree without the binary and rebuild it the same way). To force a clean rebuild locally: `rm db/sohamhamso.db && bun run db:build`. Scripts that read the local DB (e.g. `scripts/turso-seed-corpus.ts`) require `bun run db:build` first and die with that message if it is missing.
 - **Initial DB setup (one-time):** `bun pipeline/ingest/init-db.ts` — applies `db/schema.sql` to `db/sohamhamso.db`.
-- **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every corpus text YAML in `data/corpus/` (excluding underscore templates and `*.faq.yaml`), validates optional `seo` / `faq_file` blocks, then runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. Run options: `--db custom.db` and `--dir data/corpus`. Prints per-text and total row counts on success.
+- **Pure document validation:** `bun -e 'import {parseTextYaml} from "./pipeline/ingest/ingest.ts"; console.log(parseTextYaml("data/corpus/siva-sutras.yaml").id)'` validates/normalizes one YAML and its FAQ references without writing a database. It does not check relational or expected-count constraints.
+- **Ingest:** `bun pipeline/ingest/ingest.ts` — reads every corpus text YAML in `data/corpus/` (excluding underscore templates and `*.faq.yaml`), validates optional `seo` / `faq_file` blocks, then runs each text in a `db.transaction()` block, idempotent via `ON CONFLICT … DO UPDATE`. The only accepted CLI options are `--db custom.db` and `--dir data/corpus`. There is no `--dry-run` or positional single-file selector; unsupported arguments are silently ignored and still run normal ingestion. Ingest reads corpus YAML, not translation/gloss shards directly; merge shards into YAML first. Prints per-text and total row counts on success.
 - **Schema (key tables — see `db/schema.sql` for canonical):**
   - `texts(id, slug, title_sa, title_en, title_iast, author, tradition, school, era, source, source_url, source_revision, license, attribution_html, parent_text_id, manuscript_url, description, updated_at)`
   - `verses(text_id, book, chapter, verse_num, devanagari, slp1, iast, meter, manuscript_folio_ref)` — unique on `(text_id, chapter, verse_num)`
   - `word_glosses(verse_id, word_idx, word_sa, lemma_sa, lemma_iast, gloss_lang, gloss_text, morph)` — unique on `(verse_id, word_idx, gloss_lang)`
   - `translations(verse_id, lang, translator, translation_text, source, license, status, ai_assisted, model, model_version, prompt_version, judge_score, reviewer, reviewed_at, updated_at)` — unique on `(verse_id, lang, translator)`
-- **Expected row counts after ingest:** 1 row per text in `texts`, N rows in `verses`, N×12 rows in `translations` (1 per lang per verse, V1), N×W×12 rows in `word_glosses` (W = avg words per verse).
-- **Phase 1 totals (sanity reference):** 5 texts × 334 verses × 12 langs = 4,008 translations + 28,018 glosses.
+- **Expected row counts after ingest:** one row per text, one row per addressed verse/prose section, and rows for translations/glosses actually supplied. `N×12` is not a general invariant: languages, review status, prose, and gloss coverage vary. Use the current capability inventory and per-text queries.
+- **Historical Phase 1 totals (not current baseline):** 5 texts × 334 verses × 12 langs = 4,008 translations + 28,018 glosses.
 - **Verify via `src/lib/db.ts`:** `getVerse(slug, ch, v)` returns the single-lang verse anatomy for the reader; `getVerseAllLanguages(slug, ch, v)` returns `{ translations_by_lang, glosses_by_lang }` — used by the cross-lang matrix probe.
-- **Cross-lang matrix probe (canonical health check):** for each `(text_slug, lang)` pair, hit `/{tradition}/{slug}/1/1` (or `/1/47` for Vijñāna), parse `window.__readerData`, assert `translations_by_lang[lang]` non-empty AND `glosses_by_lang[lang].length` matches the verse's `word_glosses` count. Phase 1 = 120 probes (5 texts × 12 langs × 2 assertions). Pass-2 QA confirmed **120/120 pass + 0 `[draft]` leaks across 4,008 cells.** Template in `.gstack/qa-reports/qa-report-localhost-2026-06-01-pass2.md` §"Phase D".
+- **Cross-lang matrix probe (canonical health check):** for each `(text_slug, lang)` pair, hit `/{tradition}/{slug}/1/1` (or `/1/47` for Vijñāna), parse `window.__readerData`, assert `translations_by_lang[lang]` non-empty AND `glosses_by_lang[lang].length` matches the verse's `word_glosses` count. Phase 1 = 120 probes (5 texts × 12 langs × 2 assertions). Pass-2 QA confirmed **120/120 pass + 0 `[draft]` leaks across 4,008 cells** in that dated historical report; rerun a current sample before making a current health claim. Template in `.gstack/qa-reports/qa-report-localhost-2026-06-01-pass2.md` §"Phase D".
 
 ### Step 12 — Launch + dataset publish
 
 - **Homepage curation:** if the new text deserves headline placement (e.g. a Phase 2 launch moment), update `src/components/CuratedEntries.astro` (and the `If you are new` / featured-verse rotation). New texts default to surfacing in `/{tradition}/` index pages and the `All texts (N)` list — no per-text wiring needed.
 - **Tag a release:** `vYYYY.MM.DD` (e.g. `v2026.07.15`). Per `pipeline/dataset/publish.ts`, only this date-tag form passes the version regex. The publisher emits the bundle at `dataset/build/sohamhamso-dataset-{version}/` with CSV + JSON shards + minimal TEI per text, `checksums.sha256` written last, and `CHANGELOG.md` diffed against the previous build in `--out`.
 - **What ships in the bundle:** `texts`, `verses`, `word_glosses`, `parallels` rows ship as-is. `translations` rows ship ONLY where `status IN ('reviewed','published')` — `draft` rows are reviewer-internal per `STATUS-CONTRACT.md`. `verse_embeddings`, `subscribers`, `api_quota`, `dataset_releases` NEVER ship.
-- **Zenodo deposit:** `bun pipeline/dataset/zenodo-deposit.ts --dir dataset/build/sohamhamso-dataset-{version}/` (defaults to dry-run; pass `--execute` to publish). `--sandbox` hits `sandbox.zenodo.org`. Each run writes a `zenodo-deposit.json` provenance record into the bundle dir.
-- **Muktabodha gating:** if ANY published text in the bundle is Muktabodha-derived AND the MIRI permission letter has not landed, **hold the Zenodo deposit**. The fallback per the deployment plan is to ship a v1.0 dataset with GRETIL + Wikisource + sanskritdocuments only and add Muktabodha-derived texts in a follow-up release once permission lands. The `pending_miri: true` gate in `publish.ts` enforces this automatically (a loud "MIRI PERMISSION HOLD" banner lists held texts; `held_texts` appears in the summary JSON).
+- **Zenodo deposit (publication is not established by code):** `bun pipeline/dataset/zenodo-deposit.ts --dir dataset/build/sohamhamso-dataset-{version}/` (defaults to dry-run; pass `--execute` to publish). `--sandbox` hits `sandbox.zenodo.org`. Each run writes a `zenodo-deposit.json` provenance record into the bundle dir.
+- **Muktabodha gating:** if ANY published text in the bundle is Muktabodha-derived AND the MIRI permission letter has not landed, **hold the affected texts from the release**. The publisher excludes held texts; this filter is not a complete source-rights clearance for the remaining bundle. The fallback per the deployment plan is to ship a v1.0 dataset with GRETIL + Wikisource + sanskritdocuments only and add Muktabodha-derived texts in a follow-up release once permission lands. The `pending_miri: true` gate in `publish.ts` enforces this automatically (a loud "MIRI PERMISSION HOLD" banner lists held texts; `held_texts` appears in the summary JSON).
 - **Ambuda upstream PR (workstream 11):** one PR per text against `ambuda-org/ambuda`. Format conversion (SLP1 → Ambuda's TEI subset) is our responsibility. Title: `add {text-slug} from sohamhamso`. Body: metadata + source attribution + conversion notes. Cadence: per text, not per release. Skip Ambuda PR for any text where Ambuda's contributor policy excludes AI-assisted material — our dataset still publishes.
 
 ---
@@ -288,30 +292,25 @@ Conventional Commits, scope after the type. Phase 1 patterns:
 - [ ] License audited; `ATTRIBUTION.md` updated; `pending_miri: true` flagged if applicable
 - [ ] YAML authored at `data/corpus/{slug}.yaml`; expected verse count verified vs printed edition
 - [ ] EN translation generated via `pipeline/translate/runner.ts --lang en --text {slug}` (judge score ≥ 7 to publish)
-- [ ] Morph pass produced English glosses + morph fields (or substituted by the translator agent until `pipeline/morph/` lands)
+- [ ] Morph tooling/provenance audited; distinguish tool-derived output from existing agent-authored gloss/morph fields
 - [ ] 11 Indic langs dispatched in parallel, each landed as atomic per-lang commit (see Template C)
 - [ ] Per-lang audit agent run (Template B) — Unicode block + distinguishing-feature + `[draft]`-leak all green
 - [ ] Slug aliases added to `src/lib/aliases.ts` if the romanization has variants
-- [ ] `bun ingest` ran clean; row counts match expected (1 text / N verses / N×12 translations / N×W×12 glosses)
+- [ ] `bun run ingest` ran clean; per-text addressed-unit counts match the source and translation/gloss counts match actual supplied coverage
 - [ ] No `[draft]` markers: `bun run test tests/unit/no-draft-marker-leak.test.ts` passes
 - [ ] Full gate sweep green: `bun typecheck && bun run test && bun e2e`
 - [ ] Cross-lang matrix probe passes (sample 5 verses × 12 langs via `getVerseAllLanguages`)
 - [ ] Homepage curation updated if the text deserves headline placement
-- [ ] Tag release (`vYYYY.MM.DD`); Zenodo deposit confirmed (or held if Muktabodha + MIRI pending)
+- [ ] Build release (`vYYYY.MM.DD`); review license/hold inventory; inspect Zenodo dry-run before any live publish and record an actual DOI only after confirmation
 - [ ] Ambuda upstream PR opened (skip if AI-only translations + Ambuda policy excludes)
 
 ---
 
-## Future improvements (parking)
+## Historical parking list: status refreshed 2026-10-12
 
-- **Auto-generated `expected_verse_count` validation** at ingest time — read from YAML top-level, assert against post-ingest `COUNT(*) FROM verses WHERE text_id = ?`.
-- **CI-gated lint** that runs `tests/unit/no-draft-marker-leak.test.ts` on every PR (today it lives in the local `bun run test` gate).
-- **`pipeline/sources/` directory** with per-source fetchers (GRETIL, Muktabodha, sanskritdocuments, SARIT, Wikisource) standardizing the "pull + record provenance" pattern. Today this is ad-hoc per text.
-- **`pipeline/translate/dispatch.ts` orchestrator** that fans out the 11 per-lang agents from a single command. Today the fan-out is done manually via parallel agent dispatch (Step 9).
-- **`pipeline/morph/` implementation** (workstream 2). Today the morph + English-gloss output is produced inline by the translator agent rather than by an automated Vidyut + Cologne MW pipeline.
-- **`pending_miri` gate in `pipeline/dataset/publish.ts`** — today this is enforced manually before tagging.
-- **Per-text `editorial_policy.md`** documenting cited edition + emendation policy + variant handling (Codex deferred item G).
-- **Schema-fit for non-verse-shaped texts** — nullable `section_type` + `prose_block_ref` columns (Codex deferred item H).
+Several earlier TODOs now have merged implementations: `expected_verse_count` validation, no-draft-marker regression in the CI unit suite, bounded translation dispatch, deterministic morphology tooling, `pending_miri` export filtering, and prose `section_type`/`prose_block_ref` schema fields. Their existence does not establish that every text uses them or that source permissions are cleared.
+
+Still useful development opportunities include standardized per-source fetchers and per-text editorial policy documents. Inspect the current code before adding a duplicate implementation. D1/static-corpus cutover instructions in the original working directory are uncommitted relative to this baseline and are not this runbook's current deployment contract.
 
 ---
 

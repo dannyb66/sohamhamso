@@ -6,108 +6,239 @@
 
 `so'haṃ haṃsaḥ` — the ajapa-japa breath mantra: *haṃ* on the outbreath, *sa* on the in. Read forward and backward, it mirrors itself, a palindrome that doubles as the Pratyabhijñā motif of *pratibimba* (reflection).
 
-A mobile-first reader for the Tantric / Kashmir Shaivism / Trika / Kaula corpus, with original Sanskrit, transliteration, word-by-word glosses, and translations across eleven Indic languages. No commentary layer glued under the verse; auto-commentaries (e.g., Kṣemarāja's Vimarśinī on the Śiva Sūtras) are ingested as their own texts under the same anatomy. The site is donation-funded and non-profit.
+Sohamhamso connects a mobile-first reader for the Tantric / Kashmir Shaivism / Trika / Kaula corpus with AI-assisted video-generation tooling for the [SOHAM HAMSO channel](https://www.youtube.com/@sohamhamso). The reader presents Sanskrit, transliteration, word-by-word glosses and translations in English plus eleven Indic languages. Both outputs share corpus addresses, translations and provenance; publishing interfaces turn that data into web pages, dataset bundles, narration and compositions.
+
+The project is donation-funded and non-profit. Its editorial design treats auto-commentaries as sibling texts rather than commentary glued under a verse; current source extraction is described per text and should not be mistaken for a complete commentary corpus.
+
+Documentation baseline: **2026-10-12, verified `origin/main` at `4c94bf2`**. The [capability matrix](docs/CAPABILITY-MATRIX.md) distinguishes merged code, branches, uncommitted work and live verification. The [engineering case study](docs/STAFF-PRINCIPAL-POSITIONING.md) explains architectural judgment and its evidence.
+
+## Table of contents
+
+- [Engineering overview](#engineering-overview)
+- [Currently online](#currently-online)
+- [The corpus](#the-corpus)
+- [Run locally](#run-locally)
+- [Architecture](#architecture)
+- [AI systems](#ai-systems)
+- [AI-assisted video generation](#ai-assisted-video-generation)
+- [Engineering decisions](#engineering-decisions)
+- [Dataset](#dataset)
+- [Contributing](#contributing)
+- [License](#license)
+- [Citation](#citation)
+- [Acknowledgements](#acknowledgements)
+- [Documentation navigation](#documentation-navigation)
+- [Links](#links)
+
+## Engineering overview
+
+The central platform contract is a multilingual corpus document with stable text/chapter/unit identity, original Sanskrit, source/license metadata, glosses and translation provenance. Zod validation and transactional ingestion build a reproducible SQLite database. Astro consumes it for build-time pages and uses an asynchronous libSQL adapter for request-time verse/search delivery. Translation, dataset and video tools reuse that data outside the request runtime.
+
+Media generation combines speech synthesis and template-based Remotion/FFmpeg composition, with SQL lifecycle state, event history, leases, QA and publishing tools. This is AI-assisted media automation; no text-to-video model integration is established. [Architecture](docs/ARCHITECTURE.md) maps runtimes and responsibilities; [operations](docs/OPERATIONS-AND-QUALITY.md) explains how to verify and recover them.
 
 ## Currently online
 
-| Surface | Path | Notes |
+Read-only probes on **2026-10-12** returned HTTP 200 and expected page titles for the homepage, English/Hindi Śiva Sūtras 1.1, search, methodology, privacy, sources and dataset pages. These observations establish reachable surfaces, not the deployed commit, database implementation, email delivery or media pipeline origin. See the [verification report](docs/VERIFICATION-2026-10-12.md).
+
+| Surface | Path | Behavior and status |
 |---|---|---|
-| Homepage | `/` | Daily-verse spotlight, corpus index |
-| Reader | `/{tradition}/{text-slug}/{chapter}/{verse}` | Verse anatomy: Devanāgarī, IAST, gloss, translations |
-| Search | `/search` | Lexical now; semantic blended search ships V1.x |
-| Texts index | `/texts` | All Phase-1 texts with verse counts and licenses |
-| Subscribe | `/` (homepage band) and `/api/subscribe` | Daily-verse email opt-in via Resend |
-| Methodology | `/about/methodology` | Editorial + translation policy |
-| Privacy | `/about/privacy` | Subscriber data + region disclosure |
-| Attribution | `/about/attribution` | Per-source license matrix |
+| Homepage | `/`, `/hi` and other locale prefixes | Corpus index and daily spotlight; homepage checked live |
+| Reader | `/{tradition}/{text}/{chapter}/{verse}` | Example: [`/trika/siva-sutras/1/1`](https://sohamhamso.org/trika/siva-sutras/1/1); Sanskrit, IAST, glosses, translation |
+| Localized reader | `/{lang}/{tradition}/{text}/{chapter}/{verse}` | Example: [`/hi/trika/siva-sutras/1/1`](https://sohamhamso.org/hi/trika/siva-sutras/1/1); Hindi locale checked live |
+| Search | `/search`, `/api/search` | Lexical search; optional embedding-assisted path and fallbacks in code, no live vector coverage verified |
+| Texts index | `/texts`, localized equivalents | Counts from ingested corpus; configured route |
+| Subscribe | Homepage band and `/api/subscribe` | Opt-in/token persistence configured; accepted form does not establish confirmation/daily mail delivery |
+| Methodology | `/about/methodology` | Translation/editorial policy; checked live |
+| Privacy | `/about/privacy` | Subscriber policy; checked live; inspect code-specific gaps in security guide |
+| Attribution | `/about/sources` | Current source page; `/about/attribution` was a stale README route |
+| Dataset | `/dataset` | Format/citation landing page checked live; DOI and published deposit remain unverified |
+| PDF library | `/library` | Branch-only implementation; live probe returned 404 |
+
+English is unprefixed. Configured locales are `en hi ta te bn mr gu kn ml pa or as`; scripts and transliteration modes are distinct from translation languages. Verse pages use on-demand SSR. Most informational/index pages are generated during the build. See [delivery reference](docs/WEB-DELIVERY-AND-EDGE.md).
 
 ## The corpus
 
-Phase 1 ships five texts, 334 verses, translated into 12 languages (English + 11 Indic). All Sanskrit is publicly redistributable under the per-source licenses listed in [`ATTRIBUTION.md`](./ATTRIBUTION.md); Muktabodha-derived texts are surfaced under scholarly-use terms pending written redistribution permission from MIRI.
+A fresh ingest at the baseline reconstructed **11 texts, 76 chapters, 3,023 addressed units: 2,275 verse/sūtra units and 748 prose blocks**. It generated 256,453 language-specific gloss rows and 36,276 translation rows: 3,023 per locale. Counts measure stored content, not editorial quality.
 
-| Text | Tradition | Verses | Primary Sanskrit source |
-|---|---|---:|---|
-| Śiva Sūtras (Śivasūtrāṇi) | Trika | 77 | GRETIL |
-| Spanda Kārikās (Spandakārikāḥ) | Trika | 52 | GRETIL |
-| Pratyabhijñāhṛdayam | Trika | 20 | GRETIL |
-| Vijñāna Bhairava Tantra | Trika | 163 | Muktabodha (scholarly use, MIRI permission pending) |
-| Karpūrādi Stotra | Śākta | 22 | sanskritdocuments.org |
+| Text / canonical slug | Units | Primary source recorded in corpus | Publication caveat |
+|---|---:|---|---|
+| Śiva Sūtras / `siva-sutras` | 77 | GRETIL, Oliver Hellwig transcription | Per-file CC BY 4.0 |
+| Spanda Kārikās / `spanda-karikas` | 52 | Muktabodha in YAML | YAML says PD; no automated MIRI hold set, so verify source permission separately |
+| Pratyabhijñāhṛdayam / `pratyabhijna-hrdayam` | 20 | Muktabodha | Automated dataset hold |
+| Vijñāna Bhairava Tantra / `vijnana-bhairava-tantra` | 163 | Muktabodha, GRETIL verification | Automated dataset hold |
+| Karpūrādi Stotra / `karpuradi-stotra` | 22 | sanskritdocuments.org | YAML license label does not settle upstream permission |
+| Gītārthasaṃgraha / `gitartha-samgraha` | 716 | Muktabodha, Gītā mūla extraction | Automated dataset hold; commentary prose excluded |
+| Īśvarapratyabhijñākārikā / `isvarapratyabhijna-karika` | 190 | GRETIL | CC BY-NC-SA 4.0; vṛtti excluded |
+| Mahānirvāṇa Tantra / `mahanirvana-tantra` | 279 | Muktabodha/Wikisource | Automated dataset hold; current selection, not complete text |
+| Parātrīśikā / `paratrisika` | 36 | GRETIL | CC BY-NC-SA 4.0 |
+| Śivadṛṣṭi / `sivadrsti` | 720 | Muktabodha | Automated dataset hold |
+| Tantrasāra / `tantrasara` | 748 prose blocks | GRETIL; existing hold metadata | Automated dataset hold; prose is not metrical verse |
 
-Translation provenance is per-verse. AI-generated translations carry an `AI · not verified` badge with full model / prompt / generation-time metadata on tap; human-reviewed translations carry the reviewer's name. The full state matrix is in [`STATUS-CONTRACT.md`](./STATUS-CONTRACT.md).
+All translation rows declare `published`; none record a human reviewer. 36,019 carry the AI flag, and 2,689 retain a judge score. Publication status therefore cannot substantiate a judge pass for every row or human review. AI provenance remains attached after review. Read [STATUS-CONTRACT.md](STATUS-CONTRACT.md), [AI evaluation](docs/AI-SYSTEMS-AND-EVALUATION.md) and the [data reference](docs/CORPUS-AND-DATA-PLATFORM.md) for exact field behavior and coverage.
+
+Source terms vary, including non-commercial and permission-pending material. Dataset export automatically excludes six flagged texts, but that filter does not establish permission for every remaining text. [ATTRIBUTION.md](ATTRIBUTION.md) preserves source credits; [security and licenses](docs/SECURITY-PROVENANCE-AND-LICENSES.md) explains the responsibilities.
 
 ## Run locally
 
+The verified walkthrough used **Bun 1.3.14**. CI installs latest; the historical contributor minimum is Bun 1.1. No production credentials or generation APIs are needed to read ingested content.
+
 ```sh
-git clone https://github.com/sohamhamso/sohamhamso.git
+git clone https://github.com/dannyb66/sohamhamso.git
 cd sohamhamso
-bun install
-bun dev
+bun install --frozen-lockfile
+bun run db:build
+bun run dev
 ```
 
-Open `http://localhost:4321`. The local reader runs against a sample corpus shipped in `data/corpus/` and a build-time SQLite snapshot in `db/sohamhamso.db`. Turso credentials in `.env.local` are only needed when testing the subscribe write path; see [`.env.example`](./.env.example).
+Open `http://localhost:4321/trika/siva-sutras/1/1`. `db:build` reconstructs the ignored SQLite cache; `dev` does not create it automatically. `db:ensure` checks only whether the file exists, so re-run ingestion after corpus edits. Avoid `--force` on a database containing operator state. Follow the [reader tutorial](docs/tutorials/LOCAL-READER.md) for locale examples and troubleshooting.
+
+Credentials-free checks:
+
+```sh
+bun -e 'import {parseTextYaml} from "./pipeline/ingest/ingest.ts"; console.log(parseTextYaml("data/corpus/siva-sutras.yaml").id)'
+bun run typecheck
+bun run test
+MOCK_ALL=true bun run youtube:validate-config
+bun pipeline/translate/runner.ts --lang en --text siva-sutras --dry-run --limit 1
+```
+
+Use `bun run test` to select Vitest; bare `bun test` selects Bun's native runner. Already translated content yields zero eligible translation rows. [AI docs](docs/AI-SYSTEMS-AND-EVALUATION.md) show an isolated fixture that exercises prompt construction. Browser tests need Playwright Chromium and use `bun run e2e`.
+
+Optional live translation requires `ANTHROPIC_API_KEY`; embeddings use `OPENAI_API_KEY`. Media rendering needs native browser/FFmpeg tooling, while TTS, R2 and YouTube publishing need their service credentials. Live commands incur API costs or external writes and are identified in the [video guide](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md). [`.env.example`](.env.example) covers baseline environment settings; the reader does not require copying it. Turso corpus/PII settings apply to edge requests, not credentials-free local reading. Node/Docker instructions are uncommitted development work and unavailable in this baseline.
 
 ## Architecture
 
-Astro 5 in hybrid mode: every verse page is pre-rendered to static HTML at build time (read from `bun:sqlite` on the build machine) and served as a flat asset, while a single SSR route (`/api/subscribe`) runs as a Cloudflare Pages Function and writes to a Turso libSQL DB over HTTPS. Solid.js powers the small interactive islands (settings sheet, script picker, search box). The deploy target is Cloudflare Pages + Workers; the same build runs locally under Bun against `bun:sqlite`. See [`.gstack/launch/deployment-plan-2026-06-01.md`](./.gstack/launch/deployment-plan-2026-06-01.md) for the locked V1 stack.
+Astro 5 uses `output: 'static'`, a Cloudflare adapter, and explicit `prerender = false` on verse/search/API routes. It does not use the removed `hybrid` config value or pre-render every verse. Solid.js hydrates small islands for settings, script selection, search and translation inspection. Native processing runs under Bun/Python on build/operator hosts.
+
+```text
+Translation/gloss shards → merge into corpus YAML
+                 |
+         validate + ingest -> SQLite
+          /          |           \
+Astro build      AI tooling    dataset export
+    |                |         CSV/JSON/TEI
+Pages static + SSR   TTS/composition/render
+    |                |          |
+Turso CORPUS/PII     QA + SQL state + R2
+                              |
+                         upload/analytics
+```
+
+Local SQLite combines logical tables for convenience. Merged edge code uses separate Turso corpus and PII configurations; corpus is read-mostly because sanitized search misses can be written. Media uses distinct corpus/state DB paths in scheduled workflows. Static-corpus/D1 subscriber storage, a scheduled daily mail Worker, Node standalone adapter and Docker are uncommitted work, not verified production architecture. [Architecture](docs/ARCHITECTURE.md) and [capability matrix](docs/CAPABILITY-MATRIX.md) explain the boundaries.
+
+## AI systems
+
+The translation runner constructs Sanskrit-grounded prompts from verse text, existing database glosses and nearby context, then asks a model to generate and judge the result. Versioned prompts and translation metadata support inspection; bounded fan-out and transient retries coordinate language jobs. The separate deterministic Vidyut morphology runner produces audit artifacts, but its output is not automatically consumed by translation generation.
+
+The checked-in translations include Opus labels, while the current runner's logical Sonnet label and provider API model identifier differ. Most rows have no retained judge score. A judge shares model/grounding failure modes with the generator, and an AI score is not a human review. Embedding/search implementations exist with lexical fallback, process-local caching and an in-memory similarity scan; verified vector coverage, retrieval-quality benchmarks and an autonomous agent/RAG answer pipeline are not established. See [AI systems and evaluation](docs/AI-SYSTEMS-AND-EVALUATION.md).
+
+## AI-assisted video generation
+
+The intended operator flow is:
+
+`Corpus/translations → manifest → TTS or source audio → composition/subtitles → rendering → media QA → storage → upload → analytics`
+
+In the merged implementation, SQL job rows, version hashes, render sidecars and composition props carry the selected content and state. TTS narration uses Google Cloud; Remotion lays out text and audio, and FFmpeg handles media processing. Shorts and full-chapter compositions have different timing and translation floors. QA checks technical constraints, not scholarly correctness. The actual Shorts engine writes the R2 object before its QA step; failed output is not made upload-eligible. The reference documents this ordering and recovery limits.
+
+The baseline chapter configuration is English-only with chapter uploads disabled; the Shorts upload workflow is manual-only because its schedule is held. Language-channel routing and Azure voices are on branch `8aa582f`. Source-audio/ASS and parallel Rudri ASR/OCR/FFmpeg workflows are uncommitted. Background PNG files alone do not establish AI visual-generation provenance, and no repository-integrated text-to-video model is evidenced.
+
+Representative public channel outputs, verified in its listing on 2026-10-12:
+
+- [Tripura Rahasya, Chapter 1, English audio](https://www.youtube.com/watch?v=BpMYhZOb5VE)
+- [Shiva Shadakshara Stotram with English meanings](https://www.youtube.com/watch?v=fuo18Q8Y9gA)
+
+These illustrate channel output style. No committed manifest/state record ties those IDs to a particular pipeline. See [video platform](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md), [CLI handbook](scripts/youtube/README.md) and [prototype evolution](docs/EVOLUTION-FROM-PROTOTYPE.md) for detailed execution, failure handling and status.
+
+## Engineering decisions
+
+Four [decision records](docs/README.md#decision-records) explain evidenced tradeoffs: static indexes versus SSR verses, native/edge and corpus/PII database boundaries, permanent translation provenance, and durable media lifecycle/recovery. These are dated reconstructions grounded in source/history, not claims of a contemporaneous formal ADR process. Each names the remaining limitations and links implementation/tests.
 
 ## Dataset
 
-Every release publishes a dataset bundle to Zenodo under CC-BY-SA 4.0: CSV, JSON shards, and TEI-XML per text, with `checksums.sha256` for integrity. Version tags follow `vYYYY.MM.DD`. DOI: *TBD on first release*.
+Implemented tooling exports five CSV tables (`texts`, `verses`, `translations`, `word_glosses`, `parallels`), one denormalized JSON shard and minimal TEI-XML document per eligible text, attribution/license metadata and `checksums.sha256`. Versions follow `vYYYY.MM.DD`. A verified local export excluded six held texts and produced 5 texts, 377 units and 4,524 translations.
 
-Load it in pandas:
+```sh
+bun pipeline/dataset/publish.ts --version v2026.10.12 --out /tmp/sohamhamso-dataset
+cd /tmp/sohamhamso-dataset/sohamhamso-dataset-v2026.10.12
+shasum -a 256 -c checksums.sha256
+```
+
+This reads the database in read-only mode and creates local bundle files; it neither changes database bookkeeping nor deposits to Zenodo. The [dataset runbook](pipeline/dataset/README.md) covers safe deposit planning and explicit live `--execute`, plus the checksum boundary when a deposit provenance file is added later.
+
+Example schema: `texts.csv` includes `id, slug, title_sa, title_en`; `verses.csv` joins through `text_id` and has `chapter, verse_num, devanagari`; translations join through `verse_id` and include language/status/provenance. Publisher column lists are the export contract, not every database column. The export currently omits prose markers and some newer metadata; see [data reference](docs/CORPUS-AND-DATA-PLATFORM.md).
+
+Load a generated bundle in pandas (optional Python/pandas installation):
 
 ```python
 import pandas as pd
 texts = pd.read_csv("texts.csv")
 verses = pd.read_csv("verses.csv")
 translations = pd.read_csv("translations.csv")
-ss = verses[verses.text_id == texts.loc[texts.slug == "shiva-sutras", "id"].iloc[0]]
-print(ss.head())
+siva_id = texts.loc[texts.slug == "siva-sutras", "id"].iloc[0]
+print(verses[verses.text_id == siva_id].head())
 ```
+
+**Zenodo/DOI status:** first public deposit remains unverified; no GitHub releases or local tags were found during inspection. The `/dataset` page's publication wording is not proof of a release. Do not cite placeholder DOIs. Export permission holds do not settle upstream license conflicts, so publication needs source-by-source clearance.
 
 ## Contributing
 
-Issues, translation corrections, and PRs are welcome. Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a PR — the reviewer rules around AI provenance and copyrighted translation sources are load-bearing.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [documentation index](docs/README.md). Common entry points:
 
-The most common contributor entry point is a translation correction. Use the **Translation issue** template at [`.github/ISSUE_TEMPLATE/translation-issue.md`](./.github/ISSUE_TEMPLATE/translation-issue.md) — paste the verse URL, the current text, and your proposed correction with Sanskrit grounds.
+- **Translation corrections:** use the [Translation issue template](.github/ISSUE_TEMPLATE/translation-issue.md), include the verse URL, language, proposed correction and Sanskrit/lexical grounds. Retain AI provenance when adding reviewer attribution.
+- **Corpus sources:** follow [ingestion](docs/INGESTION.md), preserve source revision, transcription credits, license and permission status; validate before writing rows.
+- **Web/code:** use schema and edge adapters as boundaries, add meaningful regressions for changed behavior, and check localization/accessibility/SEO where relevant.
+- **Media templates:** inspect [video platform](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md), update versioning when output changes, exercise mocks and then validate actual fonts/audio in a local render before live publication.
+- **Operations/docs:** keep commands and capability status aligned with the chosen baseline; link one authoritative reference per topic and record verification limits.
+
+Reviewers must write corrections from Sanskrit and must not paste copyrighted scholarly translations. Consultation citations and source permissions remain part of provenance. Code, data and translation changes need different kinds of review; a passing test cannot authorize content reuse.
 
 ## License
 
-Dual-licensed. **Code** (everything under `src/`, `pipeline/`, `scripts/`, `tests/`, `db/schema.sql`, configuration files) is **MIT**. **Content** (everything under `data/corpus/`, generated `dataset/` outputs, translations, glosses, prose documentation under `docs/`) is **CC-BY-SA 4.0**. The per-directory mapping is enumerated in [`NOTICE`](./NOTICE); the full license texts are in [`LICENSE`](./LICENSE).
+Dual-licensed. **Code** (`src/`, `pipeline/`, `scripts/`, `tests/`, `db/schema.sql`, configuration) is **MIT**. The project's **content** terms (`data/corpus/`, generated dataset outputs, translations, glosses and prose documentation) are **CC BY-SA 4.0**, subject to upstream terms. [NOTICE](NOTICE) maps directories and [LICENSE](LICENSE) contains full texts.
 
-Upstream per-source licenses (per [`ATTRIBUTION.md`](./ATTRIBUTION.md)) may impose additional or alternative terms on specific files; the most-restrictive applicable license governs.
+Specific source files may carry additional or alternative restrictions, including NC and scholarly-use/permission terms. The project license cannot grant rights it does not own; inspect [ATTRIBUTION.md](ATTRIBUTION.md) before redistribution. Audio recordings, performers, images and fonts have separate rights and credits; public availability, an AI-generated label or source-audio attestation is not proof of ownership. See [security/provenance/licenses](docs/SECURITY-PROVENANCE-AND-LICENSES.md).
 
 ## Citation
 
-A Zenodo DOI is minted per tagged release. Cite the version you used:
+Until a real versioned DOI is confirmed, cite the repository and the exact commit used:
 
 ```bibtex
-@misc{sohamhamso_TBD,
-  title        = {sohamhamso: The Tantric canon, read in eleven tongues},
+@misc{sohamhamso_4c94bf2,
+  title        = {sohamhamso: Multilingual Sanskrit reader and AI-assisted media tooling},
   author       = {{sohamhamso contributors}},
   year         = {2026},
-  howpublished = {\url{https://sohamhamso.org}},
-  note         = {Version vYYYY.MM.DD},
-  doi          = {10.5281/zenodo.TBD}
+  howpublished = {\url{https://github.com/dannyb66/sohamhamso}},
+  note         = {Commit 4c94bf26b9e85747a22ed8ea271995a6b3828720; accessed 2026-10-12}
 }
 ```
 
-The DOI placeholder is filled in post-launch (first Zenodo deposit pending MIRI written permission for Muktabodha-derived texts; non-Muktabodha bundle ships first if needed).
+For data reuse, additionally cite the source text/edition, bundle version and checksum manifest. **Pending DOI:** replace this repository citation with actual Zenodo version metadata only after a published deposit resolves. `10.5281/zenodo.TBD` is not a usable citation. The permission request and per-text holds are described in [attribution](ATTRIBUTION.md).
 
 ## Acknowledgements
 
-- **Muktabodha Indological Research Institute (MIRI)** — for the digitized Sanskrit critical editions that underpin much of Phase 1. Redistribution pending written permission; until then, scholarly use only.
-- **GRETIL** (Göttingen Register of Electronic Texts in Indian Languages) — public Sanskrit machine-readable editions, per-file CC-BY.
-- **sanskritdocuments.org** — community-maintained Sanskrit corpus, fallback source for several Phase-1 texts.
-- **Cologne Digital Sanskrit Dictionaries / C-SALT** — Monier-Williams lookups grounding the word-by-word glosses.
-- **Vidyut** (vidyut-prakriya / vidyut-cheda) — Sanskrit morphological analysis used in the translation pipeline.
-- **Ambuda** — open-source Sanskrit reading platform; we coordinate corpus formats and share the open-data ethos.
-- **The Lakshman Joo lineage** — for the living transmission of Kashmir Shaivism, without which the editorial care taken here would be impossible. This project does not speak for any lineage; it tries to make the source texts more findable for everyone the lineage has touched.
+- **Muktabodha Indological Research Institute (MIRI)**: digitized Sanskrit editions recorded in the corpus. Written redistribution permission is recorded as pending; applicable holds are preserved.
+- **GRETIL** (Göttingen Register of Electronic Texts in Indian Languages): machine-readable source editions and transcription credits. Licenses are per-file, including CC BY-NC-SA; availability is not blanket permission.
+- **sanskritdocuments.org**: community source transcription, including Karpūrādi Stotra; retain volunteer credit and applicable permission terms.
+- **Cologne Digital Sanskrit Dictionaries / C-SALT**: lexical resources referenced by the grounding methodology. Runtime prompts use stored glosses; a verified live dictionary lookup is not guaranteed for every generated gloss.
+- **Vidyut** (vidyut-cheda / vidyut-prakriya): deterministic Sanskrit analysis tooling used by the separate morphology workflow.
+- **Ambuda**: open-source Sanskrit reading and analysis ecosystem, including Vidyut. No formal corpus-sharing partnership is established here.
+- **The Lakshman Joo lineage**: the living transmission that informs the project's editorial context. This project does not speak for any lineage.
+- **Astro, Solid, Sanscript, Zod, Bun, libSQL, Remotion and FFmpeg contributors**: implementation dependencies and rendering tools visible in [package.json](package.json) and pipeline source; dependency acknowledgements are not an endorsement or license replacement.
+
+## Documentation navigation
+
+Use [docs/README.md](docs/README.md) for role-based reading paths. The [local tutorial](docs/tutorials/LOCAL-READER.md) is the contributor starting point; [architecture](docs/ARCHITECTURE.md), [data](docs/CORPUS-AND-DATA-PLATFORM.md), [AI](docs/AI-SYSTEMS-AND-EVALUATION.md), [media](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md), [web](docs/WEB-DELIVERY-AND-EDGE.md), [operations](docs/OPERATIONS-AND-QUALITY.md) and [security](docs/SECURITY-PROVENANCE-AND-LICENSES.md) provide implementation depth.
+
+For engineering review, read [evolution](docs/EVOLUTION-FROM-PROTOTYPE.md), [capability status](docs/CAPABILITY-MATRIX.md) and [verification](docs/VERIFICATION-2026-10-12.md). The [career package](docs/STAFF-PRINCIPAL-POSITIONING.md) and [dated keyword matrix](docs/ATS-KEYWORDS-AND-CAREER-USAGE.md) map claims to evidence without inferring organizational leadership from project complexity.
 
 ## Links
 
-- Site: <https://sohamhamso.org>
-- Discussions: <https://github.com/sohamhamso/sohamhamso/discussions>
-- Methodology: [`/about/methodology`](https://sohamhamso.org/about/methodology) on the live site
-- Per-source attribution: [`ATTRIBUTION.md`](./ATTRIBUTION.md)
-- Translation status contract: [`STATUS-CONTRACT.md`](./STATUS-CONTRACT.md)
+- [Live site](https://sohamhamso.org)
+- [Current repository](https://github.com/dannyb66/sohamhamso)
+- [SOHAM HAMSO channel](https://www.youtube.com/@sohamhamso)
+- [Live methodology](https://sohamhamso.org/about/methodology)
+- [Documentation index](docs/README.md)
+- [Engineering case study](docs/STAFF-PRINCIPAL-POSITIONING.md)
+- [Per-source attribution](ATTRIBUTION.md)
+- [Translation status contract](STATUS-CONTRACT.md)
+- [Historical prototype](https://github.com/dannyb66/soham-hamso)

@@ -1,9 +1,10 @@
 # Turso — operational runbook
 
-> Provision, apply schema, back up, restore, rotate. One-page; copy-pasteable.
+> Provision, apply schema, back up, restore, rotate. Baseline: `origin/main` at `4c94bf2`, inspected 2026-10-12. These instructions operate remote databases and secrets; they are not a credentials-free tutorial. Cloud provisioning and deployment must be verified separately.
 >
 > Companion docs:
-> - Deployment plan: `.gstack/launch/deployment-plan-2026-06-01.md` (items #12, #14, Option A step 8)
+> - Current boundaries: [database decision](decisions/002-database-boundaries.md) and [operations](OPERATIONS-AND-QUALITY.md)
+> - Historical deployment plan: `.gstack/launch/deployment-plan-2026-06-01.md` (not an authoritative inventory of deployed resources)
 > - Ingestion runbook: `docs/INGESTION.md`
 > - Edge auth model: `.env.example` (`TURSO_PII_URL`, `TURSO_PII_AUTH_TOKEN`)
 
@@ -23,13 +24,13 @@ Do not cross the streams: the CLI scripts never read the per-DB runtime token; t
 ## 1. First-time provisioning
 
 ```bash
-# Install + sign up (free; CC required, no charge on Hobby).
+# Install and authenticate; check provider account terms before provisioning.
 brew install tursodatabase/tap/turso     # or: curl -sSfL https://get.tur.so/install.sh | bash
 turso auth signup                        # browser flow
 turso auth login                         # if signup left you logged out
 
-# V1 launch: single PII DB (deployment plan recommends single-DB for V1;
-# split corpus/vectors/pii later once subscribers > 1k).
+# Provision the subscriber DB; corpus SSR also needs a seeded CORPUS DB.
+# Names are examples, not evidence these resources exist.
 turso db create sohamhamso-pii
 
 # Read back the URL + per-DB token for Cloudflare Pages secrets.
@@ -40,7 +41,7 @@ turso db tokens create sohamhamso-pii     # → TURSO_PII_AUTH_TOKEN
 turso auth api-tokens mint backup-ci      # → TURSO_API_TOKEN
 ```
 
-Set the Cloudflare Pages secrets:
+Set the Cloudflare Pages PII secrets (changes remote configuration):
 
 ```bash
 wrangler pages secret put TURSO_PII_URL --project sohamhamso
@@ -70,14 +71,15 @@ The script:
 - streams `db/schema.sql` through `turso db shell <db> < schema.sql`,
 - prints a before/after table count + list.
 
-Re-running is safe — `db/schema.sql` uses `CREATE TABLE IF NOT EXISTS` and `CREATE INDEX IF NOT EXISTS` throughout.
+Re-running table/index creation is idempotent, but it does not add changed columns to existing tables. Review [schema migrations](../db/migrations) and [migration runner](../pipeline/ingest/migrations.ts) for an already-provisioned database. The schema file contains corpus, subscriber and media tables; applying it wholesale to a PII database does not enforce a separated schema. `SCHEMA_FILE` can select an operator-reviewed subset.
 
 ### Verify
 
 ```bash
 turso db shell sohamhamso-pii "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'libsql_%' ORDER BY name;"
-# Expect: api_quota, dataset_releases, parallels, subscribers, texts,
-#         translations, verse_embeddings, verses, word_glosses
+# Compare against db/schema.sql for the chosen schema subset;
+# subscribers must exist for the PII path. The full schema also has
+# chapters, lemma_index, media lifecycle, quota and migration tables.
 ```
 
 The edge worker (`src/lib/subscriber-db.ts`) also runs an idempotent `CREATE TABLE IF NOT EXISTS subscribers` on cold-start — but pre-seeding via this script saves one round trip on the first request and surfaces schema errors at deploy time instead of at first user signup.
@@ -141,30 +143,32 @@ wrangler pages secret put TURSO_PII_AUTH_TOKEN --project sohamhamso # paste new 
 
 ## 6. Rotate the per-DB auth token
 
-```bash
-# 1. Mint a new token first (so there's no window of zero valid tokens).
-turso db tokens create sohamhamso-pii
+Treat CORPUS, PII, and account-level CI credentials as separate scopes. Mint a replacement per-database token, update the corresponding Pages secret, redeploy, then verify representative requests. Do not print the token into logs or documentation. Revoke the old credential only after verifying the provider's supported revocation scope.
 
-# 2. Update the Cloudflare Pages secret and redeploy.
-wrangler pages secret put TURSO_PII_AUTH_TOKEN --project sohamhamso
-# Trigger redeploy: empty commit, or Pages dashboard "Retry deployment".
+The previously documented `turso db tokens invalidate <db>` command invalidates **all** database tokens, including a newly minted replacement. It is not a selective old-token revocation step. If an all-token invalidation is needed, plan a coordinated remint/configuration cutover and verify every consumer; it can interrupt service. Check the installed CLI's help for current capabilities before executing it.
 
-# 3. After confirming the new token works in prod, revoke the old one.
-turso db tokens invalidate sohamhamso-pii   # invalidates ALL existing tokens
-turso db tokens create sohamhamso-pii       # mint a fresh one for the edge
-wrangler pages secret put TURSO_PII_AUTH_TOKEN --project sohamhamso
+Account-level `TURSO_API_TOKEN` rotation is independent: replace the GitHub backup credential and verify a backup run before retiring the previous account token. The runtime does not consume it.
+
+## 7. Runtime naming and corpus seeding
+
+| Runtime | Database responsibility | Connection |
+| --- | --- | --- |
+| Local build/development | Corpus and local operational tables in `db/sohamhamso.db` | `bun:sqlite`; optional `SOHAMHAMSO_DB_PATH` |
+| Cloudflare corpus reader/search/OG | CORPUS URL/token pair; seeded corpus/translations/glosses/embeddings | `@libsql/client/web` |
+| Cloudflare subscribe/confirm/unsubscribe | PII URL/token pair; subscribers | `@libsql/client/web` |
+| CI/local media jobs | Local operational SQLite, persisted separately via R2 state snapshots | [state sync script](../scripts/youtube-state-db.sh) |
+
+Both Turso pairs may point at one DB, but that weakens physical separation. The baseline does not prove actual cloud names, topology, least-privilege tokens or subscriber scale. The corpus adapter is read-mostly: [search-miss logging](../src/lib/search-miss.ts) also creates/writes a demand table, so enforced read-only credentials would prevent that instrument.
+
+The default weekly backup covers `sohamhamso-pii`; separately schedule or manually back up a distinct corpus database. Schema creation alone does not seed reader data. The two verse routes SSR against CORPUS at request time, so remote freshness is a reader dependency.
+
+```sh
+# Build local input first; this command writes the local DB.
+bun run db:build
+# Remote mutation: add one text to the configured CORPUS database.
+bun scripts/turso-seed-corpus.ts --text siva-sutras
 ```
 
-Same flow for the account-level `TURSO_API_TOKEN` used by the GH Action — `turso auth api-tokens mint` / `revoke` / update repo secret.
+[Seeder implementation](../scripts/turso-seed-corpus.ts) performs content/checksum comparisons and rejects destructive replacement/deletion without `--backup-confirmed`. Take and verify a fresh backup before using `--replace` or `--delete-only`; that flag is an operator assertion, not an automatic backup. Full-database seed mode requires empty targets. Row-ID conflicts need reconciliation or a verified full restore; do not bypass the check by editing IDs blindly. Seed before deploying index pages that link to new references, and verify a known verse on the remote-backed site.
 
----
-
-## 7. Per-environment naming
-
-| Env | DB | Connection | Notes |
-|---|---|---|---|
-| **Local dev** | `db/sohamhamso.db` (bun:sqlite) | filesystem | Single SQLite file holding all tables; `subscriber-db.ts` routes here when `process.versions.bun` is defined. |
-| **Production V1** | `sohamhamso-pii` (Turso, single DB) | libSQL HTTP (`@libsql/client/web`) at the edge | Deployment plan recommends single-DB at V1 scale (~334 verses, ~hundreds of subscribers). |
-| **Production V2** | `sohamhamso-corpus` + `sohamhamso-vectors` + `sohamhamso-pii` | libSQL HTTP per DB | Split when subscribers > 1k or vector search QPS rises. Turso Hobby allows 500 DBs free — split is free to add later. |
-
-When you split: add a wrapper around `scripts/turso-apply-schema.sh` that loops over the three DB names with section-filtered schema files (`db/schema-corpus.sql`, `db/schema-vectors.sql`, `db/schema-pii.sql`). The single-file schema today is already grouped + commented by target DB to make that split mechanical.
+Uncommitted D1/static-corpus and Node/Docker files were inspected in the original working directory on 2026-10-12. They propose replacing this edge topology, but are absent from `4c94bf2`. This runbook remains the baseline explanation; do not retire Turso, disable backups, or route subscriber writes elsewhere based solely on a local cutover document's production assertions.
