@@ -4,8 +4,8 @@ import { join, resolve } from 'node:path';
  * D7 remainder — upcoming-text notice on search zero-results + 404:
  *
  *   - matcher: normalized-contains query matching across the alias
- *     variants (paratrishika, ishvarapratyabhijna, …) and diacritic
- *     (IAST) input; no false positives against LIVE texts
+ *     variants and diacritic (IAST) input; launched Parātrīśikā and IPK
+ *     must not produce upcoming notices
  *   - path matcher: only the first three segments of a 404'd path count
  *   - self-consistency: variants are pre-normalized; each entry has a
  *     staged corpus file (`data/corpus/_staged-<slug>.yaml`) and stays a
@@ -40,31 +40,28 @@ describe('normalizeUpcoming', () => {
   });
 });
 
+const LAUNCHED_QUERIES = [
+  'paratrisika',
+  'paratrishika',
+  'paratrimshika',
+  'para-trisika',
+  'Parātrīśikā',
+  'paratrishika verse 1',
+  'isvarapratyabhijna-karika',
+  'ishvarapratyabhijna',
+  'ishvara-pratyabhijna karika',
+  'Īśvarapratyabhijñā Kārikā',
+  'pratyabhijna karika 1.1',
+];
+
 describe('matchUpcoming (search query)', () => {
-  it('matches the canonical slug', () => {
-    expect(matchUpcoming('paratrisika')?.slug).toBe('paratrisika');
+  it.each(LAUNCHED_QUERIES)('does not label launched text %s as upcoming', (query) => {
+    expect(matchUpcoming(query)).toBeNull();
   });
 
-  it('matches romanization alias variants', () => {
-    expect(matchUpcoming('paratrishika')?.slug).toBe('paratrisika');
-    expect(matchUpcoming('paratrimshika')?.slug).toBe('paratrisika');
-    expect(matchUpcoming('ishvarapratyabhijna')?.slug).toBe('isvarapratyabhijna-karika');
-    expect(matchUpcoming('ishvara-pratyabhijna karika')?.slug).toBe('isvarapratyabhijna-karika');
-  });
-
-  it('matches IAST titles with diacritics', () => {
-    expect(matchUpcoming('Parātrīśikā')?.slug).toBe('paratrisika');
-    expect(matchUpcoming('Īśvarapratyabhijñā Kārikā')?.slug).toBe('isvarapratyabhijna-karika');
-  });
-
-  it('matches when the text name is embedded in a longer query', () => {
-    expect(matchUpcoming('paratrishika verse 1')?.slug).toBe('paratrisika');
-    expect(matchUpcoming('pratyabhijna karika 1.1')?.slug).toBe('isvarapratyabhijna-karika');
-  });
-
-  it('does not false-positive on live texts or near-misses', () => {
-    expect(matchUpcoming('pratyabhijna hrdayam')).toBeNull(); // LIVE text
-    expect(matchUpcoming('pratyabhijna')).toBeNull(); // too generic
+  it('does not false-positive on other live texts or near-misses', () => {
+    expect(matchUpcoming('pratyabhijna hrdayam')).toBeNull();
+    expect(matchUpcoming('pratyabhijna')).toBeNull();
     expect(matchUpcoming('siva sutras')).toBeNull();
     expect(matchUpcoming('')).toBeNull();
     expect(matchUpcoming('   ')).toBeNull();
@@ -72,23 +69,17 @@ describe('matchUpcoming (search query)', () => {
 });
 
 describe('matchUpcomingPath (404 path)', () => {
-  it('matches tradition-prefixed and bare paths', () => {
-    expect(matchUpcomingPath('/trika/paratrishika/1/1')?.slug).toBe('paratrisika');
-    expect(matchUpcomingPath('/paratrisika')?.slug).toBe('paratrisika');
-    expect(matchUpcomingPath('/trika/isvarapratyabhijna-karika')?.slug).toBe(
-      'isvarapratyabhijna-karika',
-    );
+  it.each([
+    '/trika/paratrishika/1/1',
+    '/paratrisika',
+    '/trika/isvarapratyabhijna-karika',
+    '/hi/trika/paratrisika/1/1',
+    '/ta/trika/isvarapratyabhijna-karika/99/99',
+  ])('does not label a launched text path %s as upcoming', (path) => {
+    expect(matchUpcomingPath(path)).toBeNull();
   });
 
-  it('matches lang-prefixed paths (third segment)', () => {
-    expect(matchUpcomingPath('/hi/trika/paratrisika/1/1')?.slug).toBe('paratrisika');
-  });
-
-  it('ignores variants beyond the first three segments', () => {
-    expect(matchUpcomingPath('/a/b/c/paratrisika')).toBeNull();
-  });
-
-  it('returns null for live-text 404s and the root', () => {
+  it('returns null for other live-text 404s and the root', () => {
     expect(matchUpcomingPath('/trika/siva-sutras/99/99')).toBeNull();
     expect(matchUpcomingPath('/')).toBeNull();
   });
@@ -120,6 +111,17 @@ describe('UPCOMING_TEXTS self-consistency', () => {
     );
     for (const t of UPCOMING_TEXTS) {
       expect(staged).toContain(`_staged-${t.slug}.yaml`);
+    }
+  });
+
+  it('does not include any text already present in the ingestion corpus', () => {
+    const activeSlugs = readdirSync(join(ROOT, 'data', 'corpus'))
+      .filter(
+        (file) => file.endsWith('.yaml') && !file.startsWith('_') && !file.endsWith('.faq.yaml'),
+      )
+      .map((file) => file.slice(0, -'.yaml'.length));
+    for (const text of UPCOMING_TEXTS) {
+      expect(activeSlugs, `${text.slug} is already ingested`).not.toContain(text.slug);
     }
   });
 

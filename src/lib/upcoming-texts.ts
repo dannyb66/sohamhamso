@@ -14,10 +14,11 @@
  *                              `location.pathname`, fed by UPCOMING_TEXTS)
  *
  * Source of truth: the hardcoded const below — exactly the texts that exist
- * as staged corpus files (`data/corpus/_staged-paratrisika.yaml`,
- * `data/corpus/_staged-isvarapratyabhijna-karika.yaml`). When a staged text
- * goes live (the `_staged-` prefix is dropped and the text ingests), REMOVE
- * its entry here; when a new text is staged, add one. Variant spellings
+ * as staged corpus files (`data/corpus/_staged-<slug>.yaml`). Parātrīśikā
+ * and Īśvarapratyabhijñā Kārikā are now ingested, so neither is upcoming.
+ * When a staged text goes live (the `_staged-` prefix is dropped and the
+ * text ingests), REMOVE its entry here; when a new text is staged, add one.
+ * Variant spellings
  * follow the same sound-equivalence rules of thumb as src/lib/aliases.ts
  * (vocalic ṛ → r/ri, ś → s/sh, ṃś → ms/msh, sandhi → spelled-out compound)
  * and stay consistent with PHASE2_TEXTS in scripts/demand-dashboard.ts.
@@ -44,25 +45,7 @@ export interface UpcomingText {
   variants: readonly string[];
 }
 
-export const UPCOMING_TEXTS: readonly UpcomingText[] = [
-  {
-    slug: 'paratrisika',
-    title: 'Parātrīśikā',
-    variants: ['paratrisika', 'paratrishika', 'paratrimsika', 'paratrimshika', 'para-trisika'],
-  },
-  {
-    slug: 'isvarapratyabhijna-karika',
-    title: 'Īśvarapratyabhijñā Kārikā',
-    variants: [
-      'isvarapratyabhijna',
-      'ishvarapratyabhijna',
-      'isvara-pratyabhijna',
-      'ishvara-pratyabhijna',
-      'pratyabhijna karika',
-      'pratyabhijna-karika',
-    ],
-  },
-];
+export const UPCOMING_TEXTS: readonly UpcomingText[] = [];
 
 /**
  * Normalize a query or URL path for matching: lowercase, strip combining
@@ -84,8 +67,7 @@ export function normalizeUpcoming(s: string): string {
 /**
  * Match a free-text search query against the upcoming texts: simple
  * normalized substring containment of any variant. Returns the first
- * matching text or null. `matchUpcoming('Parātrīśikā 1.1')` hits the
- * `paratrisika` variant.
+ * matching text or null. Only registered staged texts produce a notice.
  */
 export function matchUpcoming(input: string): UpcomingText | null {
   const norm = normalizeUpcoming(input);
@@ -100,8 +82,8 @@ export function matchUpcoming(input: string): UpcomingText | null {
 
 /**
  * Match a 404'd URL path: only the FIRST THREE segments are considered, so
- * `/trika/paratrishika/1/1` and `/hi/trika/paratrisika` match but a deep
- * path that merely mentions a variant later does not. The 404 page's inline
+ * tradition- and locale-prefixed text paths can match but a deep path
+ * that merely mentions a variant later does not. The 404 page's inline
  * script mirrors this logic client-side (404.astro is prerendered static).
  */
 export function matchUpcomingPath(pathname: string): UpcomingText | null {

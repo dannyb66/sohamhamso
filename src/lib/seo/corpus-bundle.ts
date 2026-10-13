@@ -89,6 +89,7 @@ const versePageCache = new Map<string, VersePageData | null>();
 const lemmaBySlugCache = new Map<string, LemmaSummary>();
 const lemmaByIastCache = new Map<string, LemmaSummary>();
 const lemmaPageCache = new Map<string, LemmaPageData | null>();
+const lemmaLangCache = new Map<string, LangCode[]>();
 
 export function getTexts(): TextSummary[] {
   return listTexts();
@@ -186,10 +187,31 @@ function normalizeLemmaLangs(rows: Array<{ gloss_lang: string }>): LangCode[] {
   return langs;
 }
 
-export function getLemmaRoutes(): LemmaRoute[] {
+function getLemmaAvailableLangs(lemmaIast: string): LangCode[] {
+  const cached = lemmaLangCache.get(lemmaIast);
+  if (cached) return cached;
+  const rows = getDb()
+    .query<{ gloss_lang: string }, [string]>(`
+      SELECT DISTINCT g.gloss_lang
+      FROM word_glosses g
+      WHERE g.lemma_iast = ?
+        AND g.gloss_lang IS NOT NULL
+        AND TRIM(g.gloss_lang) != ''
+      ORDER BY g.gloss_lang ASC
+    `)
+    .all(lemmaIast);
+  const langs = normalizeLemmaLangs(rows);
+  lemmaLangCache.set(lemmaIast, langs);
+  return langs;
+}
+
+export function getLemmaRoutes(lang?: LangCode): LemmaRoute[] {
   ensureLemmaIndex();
+  // Localized routes must match the availability used by their hreflang
+  // cluster. An English fallback alone does not establish a locale variant.
   return [...lemmaBySlugCache.values()]
     .filter((lemma) => lemma.occurrenceCount >= 3)
+    .filter((lemma) => !lang || getLemmaAvailableLangs(lemma.lemmaIast).includes(lang))
     .map((lemma) => ({ slug: lemma.slug }));
 }
 
@@ -215,17 +237,7 @@ export function getLemmaPageCached(slug: string, lang: LangCode): LemmaPageData 
   }
 
   const db = getDb();
-  const availableLangRows = db
-    .query<{ gloss_lang: string }, [string]>(`
-      SELECT DISTINCT g.gloss_lang
-      FROM word_glosses g
-      WHERE g.lemma_iast = ?
-        AND g.gloss_lang IS NOT NULL
-        AND TRIM(g.gloss_lang) != ''
-      ORDER BY g.gloss_lang ASC
-    `)
-    .all(summary.lemmaIast);
-  const availableLangs = normalizeLemmaLangs(availableLangRows);
+  const availableLangs = getLemmaAvailableLangs(summary.lemmaIast);
 
   const glossRows = db
     .query<LemmaGlossRow, [string, string, string]>(`

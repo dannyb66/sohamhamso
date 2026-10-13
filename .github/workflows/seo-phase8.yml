@@ -126,18 +126,19 @@ jobs:
       #   - `::add-mask::` runs BEFORE any env write
       #   - the temp file is removed on the happy path
       - name: Mint GSC access token (OAuth refresh flow)
-        # NOTE: a step's own `env:` block is NOT visible to its own `if:` —
-        # only workflow/job-level env or env exported by a previous step via
-        # $GITHUB_ENV is. The `secrets` context IS available in step `if:`
-        # and is the documented pattern for "skip if optional secret unset".
-        # GHA does not log the secret value when used in a boolean expression.
-        if: steps.window.outputs.tier != 'none' && secrets.GSC_REFRESH_TOKEN != ''
+        # Secrets cannot be referenced in a step's `if:` expression. Keep
+        # credentials scoped to this step and check the optional token in shell.
+        if: steps.window.outputs.tier != 'none'
         env:
           GSC_OAUTH_CLIENT_ID: ${{ secrets.GSC_OAUTH_CLIENT_ID }}
           GSC_OAUTH_CLIENT_SECRET: ${{ secrets.GSC_OAUTH_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
         run: |
           set -euo pipefail
+          if [ -z "$GSC_REFRESH_TOKEN" ]; then
+            echo "GSC refresh token is unset; using manual checklist mode."
+            exit 0
+          fi
           HTTP_CODE=$(curl -sS -o /tmp/gsc_token.json -w "%{http_code}" \
             -d "client_id=$GSC_OAUTH_CLIENT_ID" \
             -d "client_secret=$GSC_OAUTH_CLIENT_SECRET" \

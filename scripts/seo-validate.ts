@@ -3,7 +3,8 @@ import { existsSync } from 'node:fs';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, extname, relative, resolve } from 'node:path';
 import { CANONICAL_TRADITIONS } from '../src/lib/aliases';
-import { ALL_LANGS } from '../src/lib/seo/i18n-routes';
+import { getDb } from '../src/lib/db';
+import { ALL_LANGS, NON_ENGLISH_LANGS, chapterIndexPath } from '../src/lib/seo/i18n-routes';
 
 export const DEFAULT_TITLE_RANGE = { min: 1, max: 80 } as const;
 export const DEFAULT_DESCRIPTION_RANGE = { min: 1, max: 220 } as const;
@@ -73,6 +74,8 @@ export interface ValidateBuildOptions {
   fix?: boolean;
   sampleLimit?: number;
   redirectSourcePatterns?: string[];
+  /** Corpus-backed SSR paths, shared across file inspections in one build. */
+  runtimeVersePaths?: ReadonlySet<string>;
 }
 
 export interface ValidateCliOptions extends ValidateBuildOptions {
@@ -190,7 +193,46 @@ export function inferRoutePath(distDir: string, filePath: string): string {
 }
 
 export function toPageUrl(routePath: string, siteOrigin: string): string {
-  return new URL(routePath === '/' ? '/' : routePath, `${normalizeOrigin(siteOrigin)}/`).toString();
+  const parts = normalizePathname(routePath).split('/').filter(Boolean);
+  // Localized static chapter indexes require a trailing slash on Cloudflare
+  // to avoid the overlapping SSR verse worker. Other canonicals stay bare.
+  const pagePath =
+    parts.length === 4 &&
+    NON_ENGLISH_LANGS.includes(parts[0] as (typeof NON_ENGLISH_LANGS)[number]) &&
+    KNOWN_TRADITIONS.has(parts[1]) &&
+    /^[1-9]\d*$/.test(parts[3])
+      ? chapterIndexPath(`/${parts.slice(1).join('/')}`, parts[0])
+      : routePath;
+  return new URL(pagePath, `${normalizeOrigin(siteOrigin)}/`).toString();
+}
+
+export function loadRuntimeVersePaths(distDir: string): ReadonlySet<string> {
+  const english = existsSync(
+    resolve(distDir, '_worker.js/pages/_tradition_/_text_/_chapter_/_verse_.astro.mjs'),
+  );
+  const localized = existsSync(
+    resolve(distDir, '_worker.js/pages/_lang_/_tradition_/_text_/_chapter_/_verse_.astro.mjs'),
+  );
+  const paths = new Set<string>();
+  if (!english && !localized) return paths;
+
+  // A route pattern alone would also admit nonexistent text/unit references.
+  // Validate against the same ingested corpus used by the build. SSR serves
+  // every supported locale, using translation fallback when needed.
+  const rows = getDb()
+    .query<{ tradition: string; slug: string; chapter: number; verse_num: number }, []>(`
+      SELECT t.tradition, t.slug, v.chapter, v.verse_num
+      FROM verses v JOIN texts t ON t.id = v.text_id
+    `)
+    .all();
+  for (const row of rows) {
+    const basePath = `/${row.tradition}/${row.slug}/${row.chapter}/${row.verse_num}`;
+    if (english) paths.add(basePath);
+    if (localized) {
+      for (const lang of NON_ENGLISH_LANGS) paths.add(`/${lang}${basePath}`);
+    }
+  }
+  return paths;
 }
 
 function decodeHtmlEntities(input: string): string {
@@ -536,6 +578,7 @@ export async function inspectHtmlFile(
   const issues: ValidationIssue[] = [];
   const expectedCanonical = pageUrl;
   const noindex = isNoindex(meta.robots);
+  const runtimeVersePaths = options.runtimeVersePaths ?? loadRuntimeVersePaths(options.distDir);
 
   if (meta.isRedirect) {
     if (!noindex) {
@@ -661,6 +704,7 @@ export async function inspectHtmlFile(
       if (!targetPath) continue;
       if (
         !fileExistsAny(distCandidatePaths(options.distDir, targetPath)) &&
+        !runtimeVersePaths.has(normalizePathname(targetPath)) &&
         !isRuntimeRoute(targetPath) &&
         !matchesRedirectSource(targetPath, options.redirectSourcePatterns ?? [])
       ) {
@@ -803,12 +847,18 @@ export async function validateBuild(options: ValidateBuildOptions): Promise<Vali
   const files = await collectHtmlFiles(distDir);
   const redirectSourcePatterns =
     options.redirectSourcePatterns ?? (await loadRedirectSourcePatterns(distDir));
+  const runtimeVersePaths = options.runtimeVersePaths ?? loadRuntimeVersePaths(distDir);
   const fileReports: ValidationFileReport[] = [];
 
   for (const group of chunk(files, 100)) {
     const inspected = await Promise.all(
       group.map((filePath) =>
-        inspectHtmlFile(filePath, { ...options, distDir, redirectSourcePatterns }),
+        inspectHtmlFile(filePath, {
+          ...options,
+          distDir,
+          redirectSourcePatterns,
+          runtimeVersePaths,
+        }),
       ),
     );
     fileReports.push(...inspected);
