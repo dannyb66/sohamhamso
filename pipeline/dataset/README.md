@@ -1,106 +1,44 @@
-# pipeline/dataset
+# Dataset pipeline
 
-Dataset publisher for sohamhamso. Emits a versioned CC-BY-SA 4.0 bundle from
-the local SQLite corpus at `db/sohamhamso.db` and (optionally) deposits it to
-Zenodo for a DOI.
-
-Spec reference: see plan
-`/Users/danny/.claude/plans/check-online-websites-aim-sparkling-pearl.md`,
-section **"V1 DX Spec → 1. Dataset schema (Zenodo + GitHub publish)"**. Output
-shape is taken verbatim from that section.
+Local bundle generation and optional external Zenodo publication. [Corpus and data platform](../../docs/CORPUS-AND-DATA-PLATFORM.md#dataset-export-and-release-procedure) is the authoritative format, filtering and release reference. [Security, provenance and licenses](../../docs/SECURITY-PROVENANCE-AND-LICENSES.md) explains source obligations.
 
 ## Files
 
-- `publish.ts` — build the dataset bundle from the local SQLite DB.
-- `zenodo-deposit.ts` — Zenodo API deposit (dry-run by default, V1 scaffold).
-- `README.md` — this file.
+- [publish.ts](publish.ts): emits CSV, per-text JSON and minimal TEI with attribution and SHA-256 checksums.
+- [zenodo-deposit.ts](zenodo-deposit.ts): prepares metadata/file inventory locally by default; `--execute` creates, uploads and publishes an external deposit.
 
-## Version scheme
+## Build and inspect locally
 
-`vYYYY.MM.DD` date tags (e.g. `v2026.07.15`). Pre-1.0 increments per text
-addition; post-1.0, MAJOR for breaking schema changes and MINOR for new text
-additions. The publisher rejects any version that does not match
-`/^v\d{4}\.\d{2}\.\d{2}$/`.
-
-## Publish a new release
-
-1. Make sure the corpus DB is current:
-
-   ```sh
-   bun pipeline/ingest/init-db.ts
-   bun pipeline/ingest/ingest.ts
-   ```
-
-2. Build the bundle. Version defaults to today (UTC) in `vYYYY.MM.DD` form.
-
-   ```sh
-   bun pipeline/dataset/publish.ts
-   # or pin the version + output dir explicitly:
-   bun pipeline/dataset/publish.ts --version v2026.05.31 --out dataset/build/
-   ```
-
-   The publisher writes to `dataset/build/sohamhamso-dataset-{version}/`:
-
-   ```
-   sohamhamso-dataset-vYYYY.MM.DD/
-   ├── README.md                  # pandas snippet, integrity instructions
-   ├── LICENSE-CC-BY-SA-4.0
-   ├── ATTRIBUTION.md             # copied from repo root
-   ├── CHANGELOG.md               # diffed against previous build in --out
-   ├── checksums.sha256
-   ├── texts.csv
-   ├── verses.csv
-   ├── translations.csv
-   ├── word_glosses.csv
-   ├── parallels.csv
-   ├── json/{text-slug}.json      # denormalized verse anatomy
-   └── tei/{text-slug}.xml        # minimal TEI (P5) per text
-   ```
-
-   CSV column order matches `db/schema.sql` 1:1.
-
-3. (Optional) deposit to Zenodo. Dry-run first to confirm metadata + file list,
-   then `--execute` to publish.
-
-   ```sh
-   export ZENODO_API_KEY=...
-   bun pipeline/dataset/zenodo-deposit.ts --dir dataset/build/sohamhamso-dataset-v2026.05.31/
-   # when satisfied:
-   bun pipeline/dataset/zenodo-deposit.ts --dir <...> --execute
-   ```
-
-   Use `--sandbox` to hit `sandbox.zenodo.org` instead of production. Each run
-   writes a `zenodo-deposit.json` provenance record into the bundle dir.
-
-## Integrity verification
-
-```sh
-cd dataset/build/sohamhamso-dataset-vYYYY.MM.DD
+```bash
+bun install
+bun run db:build
+bun pipeline/dataset/publish.ts --version v2026.10.12 --out /tmp/sohamhamso-dataset-review
+cd /tmp/sohamhamso-dataset-review/sohamhamso-dataset-v2026.10.12
 shasum -a 256 -c checksums.sha256
 ```
 
-Every non-checksum file in the bundle is listed. The publisher writes
-`checksums.sha256` **last** so the file itself is never included in the hash
-manifest.
+The publisher opens SQLite read-only and writes bundle artifacts only; it does not update the `dataset_releases` ledger or operational database state.
 
-## Schema source of truth
+The version defaults to the current UTC date and must match `vYYYY.MM.DD`; proposed post-1.0 semantic versioning is not implemented.
 
-CSV headers and column order must match `db/schema.sql`. If you change the
-schema, update the column lists at the top of `publish.ts` in the same commit
-and bump the dataset version's day component (or MAJOR after 1.0).
+The bundle contains README, `LICENSE-CC-BY-SA-4.0`, attribution, changelog, `checksums.sha256`, five CSVs (`texts`, `verses`, `translations`, `word_glosses`, `parallels`), and `json/{slug}.json`/`tei/{slug}.xml`. Headers are explicit lists in `publish.ts`, **not** a complete 1:1 export of current database columns. Verse CSV/JSON omit prose section metadata; chapter titles and the lemma index are not exported. JSON uses translation `text` and boolean `ai_assisted`; CSV uses `translation_text` and 0/1.
 
-## What ships, what does not
+## Filters and permission review
 
-- `texts`, `verses`, `word_glosses`, `parallels` — all rows ship as-is.
-- `translations` — only rows with `status IN ('reviewed','published')` ship.
-  `draft` rows are reviewer-internal per STATUS-CONTRACT.md and excluded from
-  both `translations.csv` and the per-verse JSON shards.
-- `verse_embeddings`, `subscribers`, `api_quota`, `dataset_releases` — never
-  included. PII / vector / operational data is out of scope for the published
-  dataset.
+Draft translations are excluded. YAML `text.pending_miri: true` excludes the entire text and its children, including parallels crossing a held boundary. At `4c94bf2` six texts are held; five texts with 377 units and 4,524 translations pass the automated filters.
 
-## Why no npm CSV / XML deps?
+Passing this filter does not resolve every source license. Two unheld texts retain NC-SA source terms and the Karpūrādi source attribution records permission restrictions. The generated CC-BY-SA license file cannot override stricter source terms. Review permission and attribution before distributing a bundle.
 
-The dataset is small (<10 MB through Phase 3) and the writers are <50 LoC
-each. Avoiding deps keeps `bun pipeline/dataset/publish.ts` self-contained
-and free of supply-chain surprises in the release pipeline.
+Embeddings, subscribers, videos, quota ledgers and other operational data do not ship. The checksum manifest is written last and excludes itself.
+
+## Zenodo dry run and publication boundary
+
+A dry run needs no real API key, makes no HTTP calls and writes a local provenance file:
+
+```bash
+bun pipeline/dataset/zenodo-deposit.ts --dir /tmp/sohamhamso-dataset-review/sohamhamso-dataset-v2026.10.12
+```
+
+`--execute` is an external publishing action requiring `ZENODO_API_KEY`; `--sandbox` selects the sandbox service. Each execution creates a new deposit. Inspect existing remote deposition state before retrying an interrupted execution. The locally added `zenodo-deposit.json` is outside the original checksum manifest.
+
+No actual Zenodo publication or DOI is established by this repository baseline. Placeholder DOI examples are pending information and must not be cited as real releases. Verify a published record independently before adding it to citation materials.

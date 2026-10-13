@@ -1,55 +1,63 @@
-# YouTube Pipeline — Mock Layer (D1)
+# YouTube pipeline mock layer
 
-The **zero-secret path**. With `MOCK_ALL=true`, every pipeline script swaps its
-external dependencies (Google Cloud TTS, YouTube Data API, R2) for canned,
-in-process substitutes. A fresh contributor can produce a **real MP4** with **no
-credentials**, exercising the real Remotion render, QA gates, filename builder,
-and DB write paths — only the network calls are stubbed.
+**Reference · `origin/main` (`4c94bf2`), checked 2026-10-12.** `MOCK_ALL=true` replaces external TTS, R2, YouTube insertion, and analytics calls with local fixtures. It can still write local files and lifecycle database rows. It is not interchangeable with `--dry-run`.
 
-**TTHW target: < 10 minutes** (time to first artifact for a fresh contributor).
+There are two different rendering paths:
+
+| Path | What is actually verified |
+| --- | --- |
+| Production render engines (`render-engine.ts`, `chapter-render-engine.ts`) in mock mode | Padded silent WAV byte blobs under `.mp4` names; assumed duration/loudness/codec metrics. Tests exercise status, filenames, hashes, sidecars, and errors without Remotion/Chromium. They do not produce playable MP4 or verify real media QA. |
+| Sample scripts (`youtube-render-sample.ts`, `youtube-render-chapter-samples.ts`) in mock mode | Actual Remotion/Chromium render with silent audio; decodable H.264/AAC video for visual inspection. Silent audio is not a passing production loudness result. No R2 or lifecycle-state writes. |
+
+## How to produce a real local visual sample
+
+After [root onboarding](../../../README.md#run-locally), run:
 
 ```bash
-# Zero-secret real MP4, no Google/YouTube/R2 keys required:
-MOCK_ALL=true bun scripts/youtube-render.ts --text-slug=siva-sutras --lang=en --limit=1
-# or the tts smoke:
+MOCK_ALL=true bun scripts/youtube-render-chapter-samples.ts \
+  --text-slug=siva-sutras --chapter=1 --limit=1 --out=samples-chapters-doc-preview
+```
+
+This writes a one-verse landscape MP4 and `.timing.json` beneath the repository. `--out` is joined beneath the current working directory; use a relative path. Dependencies must be installed, fonts must be readable, and the first run may download Chrome Headless Shell. The historical time-to-first-artifact target of ten minutes is not a measured guarantee.
+
+To preview the job without rendering or downloading Chromium:
+
+```bash
+bun scripts/youtube-render-chapter-samples.ts \
+  --dry-run --json --text-slug=siva-sutras --chapter=1 --limit=1
+```
+
+A speech-only mock writes WAV fixtures, not video:
+
+```bash
 MOCK_ALL=true bun scripts/youtube-tts-smoke.ts
 ```
 
----
+For lifecycle exercises, first set `YOUTUBE_DB_PATH` to a disposable state database. Without that override, scripts may write video state into the local corpus database. See the [isolated walkthrough](../../../docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md#how-to-inspect-without-external-side-effects).
 
-## What `MOCK_ALL=true` substitutes
+## Substitutions
 
-| Real dependency | Mock | Notes |
-|-----------------|------|-------|
-| Google Cloud TTS (audio) | `cannedSilentWav(seconds)` | Valid 16-bit mono 44.1kHz PCM WAV of silence; muxed under the visuals so the renderer has a real audio track. |
-| Rendered background / thumbnail | `cannedImagePng()` | Tiny valid 1x1 RGBA PNG; composited so the image pipeline runs for real. |
-| Remotion render | **real** | Still runs — produces a genuine MP4 from the canned WAV + PNG. |
-| R2 put (`AWS_*`/`R2_*`) | local temp dir write | No network; the artifact is written to a temp path. |
-| YouTube `videos.insert` | fake `youtube_video_id` | No upload; DB rows still flow through the lifecycle. |
-| `secrets.ts` chokepoint | no hard-fail | TTS/YouTube/R2 clients are never constructed, so missing secrets don't error. |
+| Integration | Mock behavior |
+| --- | --- |
+| Google TTS | `cannedSilentWav(seconds)`, valid silent PCM bytes |
+| Production Remotion render | Padded byte fixture and assumed probe metrics |
+| R2 put | Copy file beneath local work directory |
+| YouTube insertion | Synthetic video ID; local lifecycle state can still change |
+| Chapter upload sidecar | Canned timestamps exercise metadata construction |
+| Analytics API | Canned response through the real mapper/upsert |
+| Secret resolver | Empty placeholders rather than production credential failure |
 
-`--dry-run` and `MOCK_ALL` are orthogonal: `--dry-run` plans only (no work);
-`MOCK_ALL` does the real work against canned inputs. See
-`../CLI-CONVENTIONS.md` for the full flag spec.
+`cannedImagePng()` is an exported fixture utility, not an AI-generated background or proof that the production renderer exercises an image pipeline. The baseline compositions render text on configured colors.
 
----
-
-## Exports (`canned.ts`)
+## Fixture exports
 
 ```ts
-import { cannedSilentWav, cannedImagePng } from "./canned";
+import { cannedSilentWav, cannedImagePng } from './canned';
 
-cannedSilentWav(seconds = 1): Buffer  // complete, playable PCM WAV of silence
-cannedImagePng(): Buffer              // complete, valid 1x1 RGBA PNG
+cannedSilentWav(seconds = 1); // Buffer: valid 16-bit mono 44.1 kHz WAV
+cannedImagePng();             // Buffer: valid 1×1 RGBA PNG
 ```
 
-Both build their Buffers byte-by-byte with **no dependencies** — no network, no
-native modules, no zlib, no secrets. The WAV is a canonical 44-byte header plus
-zero-filled PCM samples (silence); its size is exactly
-`44 + sampleRate * 2 * seconds` bytes for mono 16-bit at 44.1kHz. The PNG is a
-frozen base64 literal decoding to an 8-bit RGBA 1x1 pixel (validated by
-`file(1)` as `PNG image data, 1 x 1, 8-bit/color RGBA`).
+The WAV has a 44-byte header plus zero-filled sample bytes. The PNG is a fixed base64 fixture. Neither requires network access or credentials. The test harness uses these fixtures to isolate orchestration; use real samples and provider-backed evaluation for media/speech conclusions.
 
-These functions are the substitution primitives; the scripts themselves branch
-on `process.env.MOCK_ALL === "true"` (via `secrets.ts` / the render engine) to
-decide whether to call the real client or the canned buffer.
+See [CLI conventions](../CLI-CONVENTIONS.md), [operator handbook](../../../scripts/youtube/README.md), and the [platform reference](../../../docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md).

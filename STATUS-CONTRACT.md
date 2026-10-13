@@ -1,5 +1,8 @@
 # Translation Status Contract
 
+> Implementation note (2026-10-12, baseline `4c94bf2`): this contract contains both current interfaces and proposed audits/review tooling. The corpus has 36,276 translations labeled `published`, but only 2,689 retained judge scores and no reviewer metadata. Publication status alone does not establish a recorded judge result or human review. See [AI systems and evaluation](docs/AI-SYSTEMS-AND-EVALUATION.md) for implemented fields, model identifiers, import paths and limitations. Proposed quarterly audits, expanded review states and audit-log behavior below are not verified completed capabilities.
+
+
 Public contract for how translation status values, the AI-assisted flag, and the badge UI relate. This is the canonical source for any developer rendering verse-anatomy data from our dataset or API.
 
 ## State table

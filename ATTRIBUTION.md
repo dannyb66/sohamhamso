@@ -1,20 +1,20 @@
 # Attribution
 
-Per-source and per-text attribution. Updated each release; per-text entries land as texts are ingested.
+Per-source and per-text attribution. Factual status refreshed against `origin/main` at `4c94bf2` on 2026-10-12. The terms below preserve the recorded source attribution; repository flags and export eligibility do not establish comprehensive rights clearance. See [security/provenance reference](docs/SECURITY-PROVENANCE-AND-LICENSES.md).
 
 ## Sanskrit source texts
 
 ### GRETIL (Göttingen Register of Electronic Texts in Indian Languages)
 - URL: https://gretil.sub.uni-goettingen.de/
-- License: per-file (mostly CC-BY 4.0; some files have stricter terms — header-parsed at ingestion)
+- License: per-file; preserve the specific source header. The Parātrīśikā and Īśvarapratyabhijñākārikā entries below record CC BY-NC-SA 4.0 rather than a general CC BY claim.
 - Citation: GRETIL, Universitätsbibliothek Göttingen, accessed YYYY-MM-DD
 - Per-text revisions tracked in `texts.source_revision` column
-- **Parātrīśikā (Parātriṃśikā)** — `data/corpus/paratrisika.yaml` (36 verses, Sanskrit only).
+- **Parātrīśikā (Parātriṃśikā)** — `data/corpus/paratrisika.yaml` (36 verses; baseline YAML includes Sanskrit and translations in all 12 reader languages).
   - Source file: https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_parAtriMzikA.xml (TEI version 2020-07-31, mass conversion of legacy `1_sanskr/6_sastra/3_phil/saiva/paratriu.htm`; both accessed 2026-06-12).
   - Data entry: Marino Faliero (July 1998); TEI normalization: Maximilian Mehner; legacy GRETIL conversion: Reinhold Grünendahl.
   - License (per TEI header): CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
   - IAST is the source of record; Devanagari + SLP1 in the YAML are mechanical Sanscript transliterations. Two legacy-encoding artifacts (verse 19 `ma.ṅdalo`, verse 29 `stha.ṅdilaṃ`) are preserved verbatim, un-emended.
-- **Īśvarapratyabhijñākārikā (Utpaladeva)** — `data/corpus/isvarapratyabhijna-karika.yaml` (190 kārikās, Sanskrit only; the interleaved vṛtti auto-commentary is excluded, reserved for a sibling text).
+- **Īśvarapratyabhijñākārikā (Utpaladeva)** — `data/corpus/isvarapratyabhijna-karika.yaml` (190 kārikās with baseline translations in all 12 reader languages; the interleaved vṛtti auto-commentary is excluded, reserved for a sibling text).
   - Source file: https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt (TEI version 2020-07-31, mass conversion of legacy `utipk_au.htm`; accessed 2026-06-12).
   - Data entry: Somadeva Vasudeva. Edition basis: Madhusudan Kaul Shastri, Srinagar 1921 (Kashmir Series of Texts and Studies 34), revised per Raffaele Torella, Roma 1994 (Serie Orientale Roma 71).
   - License (per GRETIL header): CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -23,7 +23,7 @@ Per-source and per-text attribution. Updated each release; per-text entries land
 
 ### Muktabodha Indological Research Institute (MIRI)
 - URL: https://muktabodha.org/ · library: https://muktalib7.com/
-- Status: written redistribution permission **requested — letter SENT 2026-06-12**, awaiting reply. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until this permission lands.
+- Status: repository attribution records a redistribution permission request as **letter SENT 2026-06-12**, awaiting reply; this is not independent verification of correspondence or a permission grant. No Muktabodha-derived text is published in our dataset or upstreamed to Ambuda until this permission lands.
 - Each Muktabodha-derived text carries `pending_miri: true` in its corpus YAML (`data/corpus/*.yaml`); the bundle hold is automated — `pipeline/dataset/publish.ts` reads the flag and excludes flagged texts (and all their verses/translations/glosses/parallels) from every dataset build until the flag is removed.
 - The permission request letter is drafted at [docs/MIRI-PERMISSION-REQUEST.md](docs/MIRI-PERMISSION-REQUEST.md).
 - For browse-only reader display, we operate under Muktabodha's scholarly-use terms.
@@ -64,7 +64,7 @@ All translators in this section died before 1956 OR works are unambiguously pre-
 ## Translation models
 
 AI-assisted translations use:
-- Anthropic Claude Sonnet (model + version recorded per translation in `translations.model` and `translations.model_version`)
+- Anthropic Claude model labels recorded per translation in `translations.model`/`translations.model_version`. Corpus rows include Sonnet and Opus labels, including `claude-opus-4-8` in Parātrīśikā. These stored labels do not independently prove an API request or judge execution. The current runner calls `claude-sonnet-4-5-20250929` while its display label is `claude-sonnet-4-6`; preserve both rather than attributing all translations to one model.
 - OpenAI text-embedding-3-large (semantic search vector embeddings)
 
 Model versions and prompt versions are recorded per translation. See [STATUS-CONTRACT.md](STATUS-CONTRACT.md) for the LLM-as-judge rubric.
@@ -83,14 +83,16 @@ Tracked via git history. Substantial contributors with consent are listed on the
 
 ## Dataset citations
 
-Each tagged dataset release publishes a Zenodo deposit with DOI. Recommended citation format:
+The publisher and Zenodo depositor support date-tagged releases; this baseline does not establish an actual published deposit or DOI. The depositor defaults to dry-run and requires explicit execution to publish. The citation below is a template, not a usable DOI citation; use a repository/version citation until a real deposit is verified. See [dataset pipeline](pipeline/dataset/README.md).
+
+Citation template:
 
 ```
 sohamhamso contributors. (YYYY). sohamhamso: Tantric Sanskrit canon dataset (vYYYY.MM.DD)
   [Data set]. Zenodo. https://doi.org/10.5281/zenodo.PLACEHOLDER
 ```
 
-BibTeX template available at `/cite` on the live site (V1.x).
+The `/cite` route provides citation material; verify any release identifier against a real deposit record before using it.
 
 ### Gītārthasaṃgraha (gitartha-samgraha)
 - **Text:** Gītārthasaṃgraha — Abhinavagupta's commentary on the Bhagavad Gītā (Kashmirian recension)

@@ -1,9 +1,10 @@
 # YouTube Pipeline — CLI Conventions (D3)
 
-Every `scripts/youtube-*.ts` entry point conforms to this shared flag spec, so
-an operator can run any of them the same way and pipe their output into other
-tools predictably. Argv is parsed manually (no commander dep), mirroring the
-existing `pipeline/embed/runner.ts` / `scripts/seo-*.ts` conventions.
+The lifecycle scripts share parsing helpers in `cli.ts`; script-specific
+`--help` remains the authoritative list of accepted flags and effects. Some
+sample, OAuth, and maintenance tools parse their own arguments, so do not
+assume every accepted shared flag has an effect in every script. This
+reference was checked against `origin/main` (`4c94bf2`) on 2026-10-12.
 
 Scripts covered: `youtube-render.ts`, `youtube-upload.ts`, `youtube-status.ts`,
 `youtube-revisit.ts`, `youtube-lease-sweep.ts`, `youtube-supersede-sweep.ts`,
@@ -26,14 +27,14 @@ script's `--help`: e.g. `--chapter=N` (backfill/samples), `--variant=LABEL`
 | Flag | Type | Meaning |
 |------|------|---------|
 | `--help` | bool | Print usage (flags, examples, exit codes) to stdout and exit 0. Every script implements this. |
-| `--json` | bool | Emit machine-readable JSON to stdout instead of human text. Logs/diagnostics go to stderr so stdout stays clean JSON. |
-| `--dry-run` | bool | Plan only — no side effects (no TTS spend, no Remotion render, no R2 writes, no `videos.insert`, no DB mutations). Prints what *would* happen. |
+| `--json` | bool | Request JSON summary; does not suppress effects. Shared logs use stderr, but sample-renderer/provider progress may also use stdout. |
+| `--dry-run` | bool | Suppress processing effects in scripts that implement it; some still open a writable SQLite handle or ensure schema. Use an isolated DB. Consult per-script help. |
 | `--limit=N` | int | Cap the number of rows processed this invocation. Cron A uses `--limit=50`. Default per-script (commonly all eligible). |
 | `--text-slug=SLUG` | string | Restrict to a single text (e.g. `siva-sutras`). Used by Cron A dispatch. |
 | `--lang=CODE` | string | Restrict to a single lang code (e.g. `en`). Used by Cron A dispatch. |
-| `--force` | bool | Re-process even when the determinism contract (`translation_md5` + `template_version`) matches. Use sparingly; supersedes the prior row for the audit trail. |
+| `--force` | bool | Parsed by the shared helper; behavior is script-specific. Do not assume every consumer uses it to override determinism. |
 
-Unknown flags are an error (exit 2). Flags use `--flag=value` form for values;
+The shared parser rejects unknown flags (exit 2); independently parsed tools may differ. Flags use `--flag=value` form for values;
 boolean flags take no value.
 
 ---
@@ -48,7 +49,7 @@ boolean flags take no value.
 | `3` | Config / gate failure (Zod validation, forbidden palette/iconography, license gate, `min_translation_status` floor not met, `--audio-only` row/sidecar gate). |
 
 Chapter nuance: `youtube-render-chapters.ts` exits **non-zero (1)** when any
-row reaches MAX_RETRY in the run — per-row failures are never silently exit 0,
+row reaches MAX_RETRY in the run — retry-exhausted failures cause a nonzero batch result,
 so the workflow's `if: failure()` issue step actually fires.
 
 ---
@@ -78,7 +79,9 @@ The held line and the `superseded awaiting backfill` count are
 operator-actionable contracts (uploader hold gate, verse-edit → backfill
 loop) — see `scripts/youtube/README.md` (Chapter videos).
 
-Human logs go to **stderr**; `--json` payloads go to **stdout**. This keeps
+Shared human logs go to **stderr**; `--json` payloads go to **stdout**.
+Render dependencies can print their own progress to stdout; check output
+before treating a full rendering command as clean JSON. Status output keeps
 `bun scripts/youtube-status.ts --json | jq …` clean even while the script logs
 progress.
 
@@ -92,9 +95,13 @@ substitute (see `pipeline/youtube/mocks/`). Behavior:
 - **No secrets required** — `secrets.ts` does not hard-fail; TTS/YouTube/R2
   clients are never constructed.
 - **Google TTS** → `cannedSilentWav(seconds)` returns a valid PCM WAV of silence.
-- **Background image / thumbnail** → `cannedImagePng()` returns a tiny valid PNG.
-- **Remotion** still runs and produces a **real MP4** from the canned WAV + PNG,
-  so the artifact, QA gates, and filename builder all exercise real code paths.
+- **Production render engines** write padded WAV byte fixtures under `.mp4`
+  filenames and use assumed probe values; no Remotion/Chromium runs there.
+  These fixtures verify orchestration, hashes, and state, not real media.
+- **Sample renderers** run actual Remotion/Chromium using silent audio and
+  produce decodable local MP4. Silence fails a real production loudness gate.
+- **PNG fixture** → `cannedImagePng()` is an exported tiny image helper, not
+  an exercised AI-background pipeline.
 - **R2 put** → writes to a local temp dir instead of the network.
 - **YouTube `videos.insert`** → returns a fake `youtube_video_id`; no upload.
   Chapter rows get a **canned timestamp sidecar** so the metadata/timestamp
@@ -102,9 +109,10 @@ substitute (see `pipeline/youtube/mocks/`). Behavior:
 - **YouTube Analytics API** → no call; a canned report flows through the real
   mapper + upsert, writing one fixture row.
 
-This is the Day-0 contributor path: `MOCK_ALL=true bun scripts/youtube-render.ts`
-(or the tts smoke) produces a real MP4 with **no credentials**. TTHW (time to
-first artifact for a fresh contributor) target: **< 10 minutes**.
+The production mock path requires an isolated `YOUTUBE_DB_PATH` because it
+mutates local lifecycle state. `youtube-tts-smoke.ts` produces audio fixtures,
+not video. The historical ten-minute onboarding target is not a measured
+latency claim. See the [mock reference](mocks/README.md).
 
 The chapter format honors the same Day-0 contract:
 
@@ -117,5 +125,6 @@ sidecars) through the real `Chapter` composition and `buildChapterProps`
 mapper from canned silent WAV — zero secrets, no R2/DB writes. Real-TTS
 samples are the second step and need only `GOOGLE_TTS_CREDENTIALS_JSON`.
 
-`--dry-run` and `MOCK_ALL` are orthogonal: `--dry-run` skips work entirely
-(plan only); `MOCK_ALL` does the work against canned inputs.
+`--dry-run` and `MOCK_ALL` are orthogonal: `--dry-run` suppresses processing
+effects where implemented; `MOCK_ALL` performs local work against fixtures
+and can mutate local files/state. `--json` controls presentation only.

@@ -4,19 +4,19 @@ Thank you for the interest. Read this in full before opening a PR.
 
 ## 1. Project overview
 
-sohamhamso is a non-profit, donation-funded reader for the Tantric / Kashmir Shaivism / Trika / Kaula corpus, with Sanskrit, transliteration, word-by-word glosses, and translations across eleven Indic languages. Auto-commentaries are sibling texts under the same anatomy, not a nested layer. The full project intent is in [`README.md`](./README.md); the methodology page on the live site (`/about/methodology`) is the source of truth for editorial and translation policy.
+sohamhamso is a non-profit, donation-funded reader for the Tantric / Kashmir Shaivism / Trika / Kaula corpus, with Sanskrit, transliteration, word-by-word glosses, and translations across eleven Indic languages. Auto-commentaries are sibling texts under the same anatomy, not a nested layer. Reader and AI-assisted media tooling share the corpus; the [documentation library](docs/README.md) maps data, AI, web and publishing boundaries. The full project intent is in [`README.md`](./README.md); the methodology page on the live site (`/about/methodology`) is the source of truth for editorial and translation policy.
 
 ## 2. Local development setup
 
 ```sh
-git clone https://github.com/sohamhamso/sohamhamso.git
+git clone https://github.com/dannyb66/sohamhamso.git
 cd sohamhamso
 bun install
-cp .env.example .env.local
-bun dev
+bun run db:build
+bun run dev
 ```
 
-Open `http://localhost:4321`. The local reader runs against a sample corpus shipped in `data/corpus/` and a build-time SQLite snapshot in `db/sohamhamso.db`. Turso credentials in `.env.local` are optional for read-only local work; set them only when you need to exercise the subscribe write path. The dev pepper fallback (`SUBSCRIBER_HASH_PEPPER`) is fine for local-only testing.
+Open `http://localhost:4321`. The local reader runs against the checked-in corpus in `data/corpus/` and a generated SQLite snapshot in `db/sohamhamso.db`. Turso credentials in `.env.local` are optional for read-only local work; set them only for a remote Turso test; local subscriber writes use SQLite. The dev pepper fallback (`SUBSCRIBER_HASH_PEPPER`) is fine for local-only testing.
 
 Minimum tooling: **Bun ≥ 1.1** (everything else installs via `bun install`).
 
@@ -24,22 +24,22 @@ Minimum tooling: **Bun ≥ 1.1** (everything else installs via `bun install`).
 
 | Command | What it runs |
 |---|---|
-| `bun test` | Vitest unit suite (`vitest.config.ts`) |
-| `bun e2e` | Playwright end-to-end suite (`playwright.config.ts`) |
-| `bun ingest -- --dry-run data/corpus/{slug}.yaml` | Validate a corpus YAML without writing to the DB |
+| `bun run test` | Vitest unit suite (`vitest.config.ts`) |
+| `bun run e2e` | Playwright end-to-end suite (`playwright.config.ts`) |
+| `bun -e 'import {parseTextYaml} from "./pipeline/ingest/ingest.ts"; console.log(parseTextYaml("data/corpus/siva-sutras.yaml").id)'` | Validate one corpus YAML through the pure exported parser, without DB writes |
 
-CI runs `bun test` and `bun e2e` on every PR. Run both locally before pushing.
+CI runs the configured Vitest and Playwright scripts on every PR. Run both locally before pushing.
 
 ## 4. Lint commands
 
 | Command | What it runs |
 |---|---|
 | `bun typecheck` | `tsc --noEmit` — fail on any new type error |
-| `bun run check` | `biome check .` — lint + format check, baseline 94 errors permitted, NET-NEW errors fail CI |
+| `bun run check` | `biome check .` — lint + format check, baseline 238 errors permitted, an error count above the baseline fails CI |
 | `bun run format` | `biome format --write .` — apply formatter fixes |
 | `bun run lint` | `biome lint .` — lint only, no format check |
 
-The Biome baseline (94 errors as of `2026-06-01`) is recorded in `.gstack/qa-reports/baseline-pass2.json` and gated by `.github/workflows/ci.yml`. Don't try to "fix" pre-existing lints in unrelated PRs; open a dedicated lint-sweep PR if you want to drive the baseline down.
+The configured Biome baseline (238 errors at the documentation baseline, `2026-10-12`) is recorded in `.gstack/qa-reports/baseline-pass2.json` and gated by `.github/workflows/ci.yml`. Don't try to "fix" pre-existing lints in unrelated PRs; open a dedicated lint-sweep PR if you want to drive the baseline down.
 
 ## 5. How to add a new text
 
@@ -47,9 +47,9 @@ The full runbook is in [`docs/INGESTION.md`](./docs/INGESTION.md) (12-step guide
 
 1. Create `data/corpus/{text-slug}.yaml`. Use an existing file as a template.
 2. Fill `source`, `source_revision`, `license`, and per-verse Devanāgarī. SLP1 and IAST are derived during ingest; do not hand-type them unless the source needs correction.
-3. Run `bun ingest data/corpus/{text-slug}.yaml`.
+3. Run `bun run ingest` to reconcile the full corpus, or use `--dir <directory>` with an isolated corpus directory and `--db <path>` for a disposable database. The CLI accepts only `--db` and `--dir`; it has no positional-file or dry-run option.
 4. Verify in the local reader at `/{tradition}/{text-slug}/1/1`.
-5. Confirm verse count matches the printed edition (see `verification.expected_verse_count` in the YAML).
+5. Confirm verse count matches the printed edition (see `text.expected_verse_count` in the YAML).
 6. Open a PR. The PR template asks for source, license, and a spot-check of three random verses.
 
 Per-text editorial policy (variant edition, emendations) is documented in `texts.source_revision` for V1. Full editorial-policy markdown lands in V1.x.
