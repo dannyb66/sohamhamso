@@ -92,6 +92,8 @@ The main SEO commands are:
 
 CI runs `seo:build` and `seo:validate` before the main test suite.
 
+The [build validator](../scripts/seo-validate.ts) checks server-rendered verse links against actual corpus units and requires the corresponding compiled runtime route; a matching URL shape alone does not make a link valid. Canonical checks follow `chapterIndexPath`: localized chapter indexes require a trailing slash to avoid Cloudflare worker shadowing, while English chapters and other page types retain their existing canonical policy.
+
 ## Known Limits
 
 - The current local `seo:validate` run passes, including the localized chrome links from `/{lang}/cite` into localized `/{lang}/about/*` pages.

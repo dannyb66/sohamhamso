@@ -1,9 +1,11 @@
+import { Database } from 'bun:sqlite';
 import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { mkdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
-import { inspectHtmlFile, validateBuild } from '../../scripts/seo-validate';
+import { inspectHtmlFile, loadRuntimeVersePaths, validateBuild } from '../../scripts/seo-validate';
+import { __setDbForTests } from '../../src/lib/db';
 
 const FIXTURE_ROOT = resolve(__dirname, '..', 'fixtures', 'seo');
 const SITE_ORIGIN = 'https://sohamhamso.org';
@@ -29,13 +31,45 @@ function makeTempDist(): string {
 }
 
 const tempDirs: string[] = [];
+let corpusDb: Database | null = null;
 
 afterEach(async () => {
+  if (corpusDb) {
+    __setDbForTests(null);
+    corpusDb.close();
+    corpusDb = null;
+  }
   while (tempDirs.length > 0) {
     const dir = tempDirs.pop();
     if (dir) await rm(dir, { recursive: true, force: true });
   }
 });
+
+async function seedRuntimeCorpus(distDir: string, english = true, localized = true): Promise<void> {
+  corpusDb = new Database(':memory:');
+  corpusDb.exec(readFileSync(resolve('db/schema.sql'), 'utf8'));
+  corpusDb.exec(`
+    INSERT INTO texts (id, slug, title_sa, title_en, tradition, license)
+    VALUES ('siva-sutras', 'siva-sutras', 'शिवसूत्राणि', 'Siva Sutras', 'trika', 'PD');
+    INSERT INTO verses (text_id, chapter, verse_num, devanagari)
+    VALUES ('siva-sutras', 1, 1, 'चैतन्यमात्मा');
+  `);
+  __setDbForTests(corpusDb);
+  if (english) {
+    await writeTempFile(
+      distDir,
+      '_worker.js/pages/_tradition_/_text_/_chapter_/_verse_.astro.mjs',
+      '// Fixture for the compiled English SSR route',
+    );
+  }
+  if (localized) {
+    await writeTempFile(
+      distDir,
+      '_worker.js/pages/_lang_/_tradition_/_text_/_chapter_/_verse_.astro.mjs',
+      '// Fixture for the compiled localized SSR route',
+    );
+  }
+}
 
 async function seedSupportFiles(distDir: string): Promise<void> {
   await writeTempBinary(distDir, 'og/siva-sutras-1-1.png');
@@ -61,6 +95,56 @@ async function seedSupportFiles(distDir: string): Promise<void> {
 }
 
 describe('validateBuild()', () => {
+  it('accepts existing SSR verse links without static HTML or localized translations', async () => {
+    const distDir = makeTempDist();
+    tempDirs.push(distDir);
+    await seedRuntimeCorpus(distDir);
+    await seedSupportFiles(distDir);
+    const page = resolve(distDir, 'about/methodology/index.html');
+    writeFileSync(
+      page,
+      readFileSync(page, 'utf8').replace(
+        '</body>',
+        '<a href="/as/trika/siva-sutras/1/1?ref=chapter#word-0">Assamese fallback</a></body>',
+      ),
+    );
+    const summary = await validateBuild({ distDir, siteOrigin: SITE_ORIGIN });
+    expect(summary.ok).toBe(true);
+    expect(summary.scannedFiles).toBe(1);
+  });
+
+  it.each([
+    '/trika/missing-text/1/1',
+    '/trika/siva-sutras/99/1',
+    '/as/trika/siva-sutras/1/99',
+    '/trika/siva-sutras/0/1',
+    '/zz/trika/siva-sutras/1/1',
+    '/en/trika/siva-sutras/1/1',
+    '/unknown/siva-sutras/1/1',
+  ])('still rejects nonexistent runtime targets: %s', async (href) => {
+    const distDir = makeTempDist();
+    tempDirs.push(distDir);
+    await seedRuntimeCorpus(distDir);
+    await seedSupportFiles(distDir);
+    const page = resolve(distDir, 'about/methodology/index.html');
+    writeFileSync(page, readFileSync(page, 'utf8').replace('/trika/siva-sutras/1/1', href));
+    const summary = await validateBuild({ distDir, siteOrigin: SITE_ORIGIN });
+    expect(summary.issues.filter((issue) => issue.rule === 'internal-links')).toEqual([
+      expect.objectContaining({ message: `Broken internal link: ${href}` }),
+    ]);
+  });
+
+  it('requires the compiled SSR route, rather than trusting corpus addresses alone', async () => {
+    const distDir = makeTempDist();
+    tempDirs.push(distDir);
+    await seedRuntimeCorpus(distDir, false, true);
+    expect(loadRuntimeVersePaths(distDir).has('/as/trika/siva-sutras/1/1')).toBe(true);
+    expect(loadRuntimeVersePaths(distDir).has('/trika/siva-sutras/1/1')).toBe(false);
+    await seedSupportFiles(distDir);
+    const summary = await validateBuild({ distDir, siteOrigin: SITE_ORIGIN });
+    expect(summary.issues.some((issue) => issue.rule === 'internal-links')).toBe(true);
+  });
+
   it('passes for a valid two-language cluster plus redirect stubs', async () => {
     const distDir = makeTempDist();
     tempDirs.push(distDir);
@@ -147,6 +231,39 @@ describe('validateBuild()', () => {
 });
 
 describe('inspectHtmlFile()', () => {
+  it.each([
+    ['as/shakta/mahanirvana-tantra/2.html', '/as/shakta/mahanirvana-tantra/2/', true],
+    ['hi/trika/siva-sutras/1/index.html', '/hi/trika/siva-sutras/1/', true],
+    ['hi/trika/siva-sutras/1.html', '/hi/trika/siva-sutras/1', false],
+    ['trika/siva-sutras/1.html', '/trika/siva-sutras/1', true],
+    ['trika/siva-sutras/1.html', '/trika/siva-sutras/1/', false],
+    ['hi/about/methodology.html', '/hi/about/methodology/', false],
+    ['hi/lemma/atman.html', '/hi/lemma/atman/', false],
+    ['hi/trika/siva-sutras/1/1.html', '/hi/trika/siva-sutras/1/1/', false],
+    ['hi/trika/siva-sutras/1.html', '/hi/trika/siva-sutras/2/', false],
+  ])('enforces the specific chapter canonical contract for %s', async (file, canonical, valid) => {
+    const distDir = makeTempDist();
+    tempDirs.push(distDir);
+    await writeTempFile(
+      distDir,
+      file,
+      `
+      <html lang="hi"><head>
+        <title>Chapter</title>
+        <meta name="description" content="Read the chapter." />
+        <link rel="canonical" href="${SITE_ORIGIN}${canonical}" />
+        <meta property="og:image" content="${SITE_ORIGIN}/og/chapter" />
+        <script type="application/ld+json">{"@type":"WebPage"}</script>
+      </head><body></body></html>
+    `,
+    );
+    const report = await inspectHtmlFile(resolve(distDir, file), {
+      distDir,
+      siteOrigin: SITE_ORIGIN,
+    });
+    expect(report.issues.some((issue) => issue.rule === 'canonical')).toBe(!valid);
+  });
+
   it('treats redirect stubs as redirect documents instead of normal pages', async () => {
     const distDir = makeTempDist();
     tempDirs.push(distDir);
