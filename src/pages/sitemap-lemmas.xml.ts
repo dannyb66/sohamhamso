@@ -5,8 +5,10 @@ import { xmlEscape } from '../lib/seo/xml-escape';
 export function GET() {
   const BUILD_DATE = new Date().toISOString().split('T')[0];
   const liveLangs = Array.from(liveLocaleSet());
-  const urls = getLemmaRoutes().flatMap((route) =>
-    liveLangs.map((lang) => `${SITE_URL}${xmlEscape(localePathFor(`/lemma/${route.slug}`, lang))}`),
+  const urls = liveLangs.flatMap((lang) =>
+    getLemmaRoutes(lang).map(
+      (route) => `${SITE_URL}${xmlEscape(localePathFor(`/lemma/${route.slug}`, lang))}`,
+    ),
   );
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>

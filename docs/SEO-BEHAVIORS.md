@@ -54,6 +54,7 @@ The SEO layer does not invent availability. If a translation or gloss is not pre
 
 - Standalone lemma pages are generated only for lemmas with `occurrenceCount >= 3`.
 - Standalone lemma pages live at `/lemma/[slug]` and `/{lang}/lemma/[slug]`.
+- Localized lemma pages and sitemap entries are generated only where that lemma has a gloss in the locale. They use the same cached language availability as hreflang; an English fallback does not create another indexable locale variant. English canonical pages remain available.
 - Lemmas below that threshold remain verse-local:
   - they stay in the verse anatomy / word sheet UI
   - the verse page emits inline `DefinedTerm` JSON-LD pointing at the term anchor on that verse

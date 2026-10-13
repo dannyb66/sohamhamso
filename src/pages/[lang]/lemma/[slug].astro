@@ -14,7 +14,7 @@ import {
 export async function getStaticPaths() {
   const paths: Array<{ params: { lang: string; slug: string } }> = [];
   for (const lang of NON_ENGLISH_LANGS) {
-    for (const route of getLemmaRoutes()) {
+    for (const route of getLemmaRoutes(lang)) {
       paths.push({ params: { lang, slug: route.slug } });
     }
   }
