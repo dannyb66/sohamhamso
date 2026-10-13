@@ -155,8 +155,14 @@ test.describe('Paratrīśikā — Hindi locale mirror', () => {
 
   test('language switcher offers a route back to English canonical', async ({ page }) => {
     await page.goto(HI_VERSE);
-    const link = page.locator('[aria-label="Also available in"] a').first();
+    const link = page
+      .getByRole('navigation', { name: 'Also available in' })
+      .getByRole('link', { name: 'EN', exact: true });
     await expect(link).toHaveAttribute('href', '/trika/paratrisika/1/1');
+    const englishUrl = new URL(PARA_VERSE, page.url()).href;
+    await link.click();
+    await expect(page).toHaveURL(englishUrl);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   });
 });
 
