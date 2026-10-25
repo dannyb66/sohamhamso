@@ -124,6 +124,8 @@ CREATE TABLE IF NOT EXISTS word_glosses (
   UNIQUE (verse_id, word_idx, gloss_lang)
 );
 CREATE INDEX IF NOT EXISTS idx_glosses_verse ON word_glosses(verse_id);
+-- Build-time lemma pages query by lemma and locale across the full corpus.
+CREATE INDEX IF NOT EXISTS idx_glosses_lemma_verse_lang ON word_glosses(lemma_iast, verse_id, gloss_lang);
 
 -- Materialized corpus-wide lemma index. Derived from word_glosses at build
 -- time (pipeline/ingest/lemma-index.ts:buildLemmaIndex), seeded to Turso.
@@ -181,12 +183,17 @@ CREATE INDEX IF NOT EXISTS idx_embeddings_verse ON verse_embeddings(verse_id);
 CREATE TABLE IF NOT EXISTS subscribers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   email_hash TEXT NOT NULL,  -- HMAC-SHA256(email, SUBSCRIBER_HASH_PEPPER env)
+  email TEXT,                -- temporary plaintext delivery fallback; remove after mailer stabilization
   language TEXT NOT NULL DEFAULT 'en',
   subscribed_at TEXT NOT NULL DEFAULT (datetime('now')),
   unsubscribe_token TEXT NOT NULL UNIQUE,
   region TEXT NOT NULL CHECK(region IN ('us','eu')),
   confirmed INTEGER NOT NULL DEFAULT 0 CHECK(confirmed IN (0,1)),
   confirmed_at TEXT,
+  email_ciphertext TEXT,
+  email_nonce TEXT,
+  email_sent_at TEXT,
+  email_failed_at TEXT,
   -- A given email may subscribe to multiple languages (one row per
   -- (email_hash, language) pair). Idempotent re-subscribes hit this
   -- unique key and are absorbed at the API layer.

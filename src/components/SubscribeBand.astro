@@ -4,9 +4,8 @@
  * Never a modal. Full-width band above the footer.
  * Single line on desktop, stacked on mobile.
  *
- * Posts to /api/subscribe. V1 endpoint acknowledges only; the daily-
- * verse curator workstream wires the actual Resend send + double-opt-in
- * + subscribers-DB write for V1.x.
+ * Posts to /api/subscribe, which stores the subscriber and sends the
+ * double-opt-in confirmation through the configured Resend adapter.
  *
  * Language availability tracks the SUBSCRIBE API's allowlist, not the
  * READER corpus — they're different dimensions. The reader has all 12

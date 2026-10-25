@@ -49,7 +49,8 @@ type DatabaseCtor = typeof import('bun:sqlite').Database;
 let _DatabaseCtor: DatabaseCtor | null = null;
 if (isBunRuntime()) {
   // Top-level await: resolved once at module init, so `getDb()` stays sync.
-  ({ Database: _DatabaseCtor } = await import('bun:sqlite'));
+  const sqliteModule = ['bun', 'sqlite'].join(':');
+  ({ Database: _DatabaseCtor } = await import(/* @vite-ignore */ sqliteModule));
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

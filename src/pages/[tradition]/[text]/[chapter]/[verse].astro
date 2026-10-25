@@ -10,29 +10,9 @@ import WordSheet from '../../../../components/WordSheet.solid';
 import Breadcrumbs from '../../../../components/seo/Breadcrumbs.astro';
 import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 /**
- * Verse-page route: /{tradition}/{text-slug}/{chapter}/{verse}
- *
- * SERVER-RENDERED (A6 phase 2): `prerender = false` — this route renders at
- * request time in the Cloudflare Pages worker instead of emitting one
- * static file per verse (226 verses × 12 locales ≈ +10k files was on a
- * collision course with CF Pages' 20k-file deploy limit).
- *
- * Runtime/data routing is EXPLICIT, not sniffed per-request:
- *   - bun (astro dev, tests, build host): `readVersePage()` →
- *     corpus-db.ts bun backend → bun:sqlite on db/sohamhamso.db.
- *   - workerd (deployed CF worker): same call → libsql `batch()` over
- *     HTTPS to the Turso corpus DB (TURSO_CORPUS_URL +
- *     TURSO_CORPUS_AUTH_TOKEN, set as CF Pages secrets). ONE round-trip
- *     for the whole page payload — see src/lib/verse-read.ts.
- *
- * NEVER import value bindings from src/lib/db.ts here — that's the
- * bun:sqlite reader and this module ships into the worker bundle (see
- * masthead-edge-compat.regression-1.test.ts for the failure mode).
- *
- * Alias handling: wrong-tradition/wrong-slug URLs 301 to canonical via
- * resolveVerseAlias() (the per-verse static redirect pages that
- * getStaticPaths used to emit are gone). public/_redirects wildcards
- * cover the same surface at the CDN before the worker is invoked.
+ * Verse HTML is assembled on request from build-generated static corpus assets.
+ * No database is queried by this route. Keep value imports from the legacy
+ * SQLite/Turso readers out of the public Worker.
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { computeIsShortVerse, isProseSection } from '../../../../lib/prose';
@@ -47,7 +27,9 @@ import {
   liveLocaleSet,
   localePathFor,
 } from '../../../../lib/seo';
-import { readVersePage, resolveVerseAlias } from '../../../../lib/verse-read';
+import { readStaticVersePage } from '../../../../lib/static-corpus-read';
+import { resolveVerseAlias } from '../../../../lib/slug-aliases';
+import type { VersePageRead } from '../../../../lib/verse-read';
 
 export const prerender = false;
 
@@ -62,14 +44,22 @@ const paramsValid =
 const chapterNum = paramsValid ? Number(chapter) : Number.NaN;
 const verseNum = paramsValid ? Number(verse) : Number.NaN;
 
-// 'unavailable' = corpus DB unreachable/misconfigured (styled 503);
+// 'unavailable' = generated corpus assets could not be read (styled 503);
 // 'not-found'   = the verse ref genuinely doesn't exist (styled 404).
 let state: 'ok' | 'not-found' | 'unavailable' = 'not-found';
-let read: Awaited<ReturnType<typeof readVersePage>> | null = null;
+let read: VersePageRead | null = null;
 
 if (paramsValid) {
   try {
-    read = await readVersePage(text!, chapterNum, verseNum, currentLang);
+    const runtime = (
+      Astro.locals as {
+        runtime?: { env?: { ASSETS?: { fetch: (request: Request) => Promise<Response> } } };
+      }
+    ).runtime;
+    read = await readStaticVersePage(text!, chapterNum, verseNum, currentLang, {
+      assets: runtime?.env?.ASSETS,
+      baseUrl: Astro.url,
+    });
   } catch (e) {
     console.error('[verse-ssr] corpus read failed:', e);
     state = 'unavailable';
@@ -465,7 +455,7 @@ const errorSeo =
         <>
           <h1 class="not-found__title">The reader is briefly unavailable.</h1>
           <p class="not-found__lede">
-            The verse is still in the corpus — our database didn&apos;t answer in time.
+            The verse is still in the corpus — the reading files could not be loaded.
             Try again in a moment.
           </p>
         </>

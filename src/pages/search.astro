@@ -13,8 +13,9 @@ import Masthead from '../components/Masthead.astro';
  * adapter lands the page just works.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
-import type { VerseHit } from '../lib/search';
+import type { VerseHit } from '../lib/search-types';
 import { buildChromeSeo } from '../lib/seo';
+import { staticLexicalSearch } from '../lib/static-search';
 import { matchUpcoming } from '../lib/upcoming-texts';
 
 export const prerender = false;
@@ -34,13 +35,17 @@ let searchError: string | null = null;
 if (q) {
   const t0 = performance.now();
   try {
-    const lib = await import('../lib/search.ts').catch(() => null);
-    if (lib && typeof lib.blendedSearch === 'function') {
-      const out = await lib.blendedSearch(q, lang, limit);
-      results = Array.isArray(out) ? out : [];
-    } else {
-      stub = true;
-    }
+    const runtime = (
+      Astro.locals as
+        | { runtime?: { env?: { ASSETS?: { fetch: (request: Request) => Promise<Response> } } } }
+        | undefined
+    )?.runtime;
+    const out = await staticLexicalSearch(q, lang, limit, {
+      assets: runtime?.env?.ASSETS,
+      baseUrl: Astro.url,
+    });
+    if (out === null) stub = true;
+    else results = out;
   } catch (e) {
     searchError = (e as Error)?.message ?? 'Search failed.';
   }
@@ -50,8 +55,7 @@ if (q) {
 // D7 remainder: when a zero-result query names a Phase 2 staged text, add a
 // quiet "{Title} is in preparation — get notified" line to the empty state.
 // (The demand-logging half lives in src/lib/search-miss.ts via /api/search.)
-const upcoming =
-  q && !stub && !searchError && results.length === 0 ? matchUpcoming(q) : null;
+const upcoming = q && !stub && !searchError && results.length === 0 ? matchUpcoming(q) : null;
 
 const verseHref = (h: VerseHit) => `/${h.tradition}/${h.text_slug}/${h.chapter}/${h.verse_num}`;
 const verseLabel = (h: VerseHit) => `${h.text_title} ${h.chapter}.${h.verse_num}`;

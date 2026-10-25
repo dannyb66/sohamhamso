@@ -19,6 +19,9 @@
  */
 
 import { type TextSummary, listTexts } from './db';
+import { SLUG_ALIASES } from './slug-aliases';
+
+export { SLUG_ALIASES } from './slug-aliases';
 
 /**
  * Curated slug alias map.
@@ -36,56 +39,6 @@ import { type TextSummary, listTexts } from './db';
  *   - long ū    → "u" or "uu" (kapūra ↔ karpura ↔ karpuura)
  *   - sandhi    → spelled-out compound (karpūrādi ↔ karpura-adi)
  */
-export const SLUG_ALIASES: Record<string, string> = {
-  // Pratyabhijñā-hr̥dayam: vocalic ṛ romanized as "ri" by lay readers
-  'pratyabhijna-hridayam': 'pratyabhijna-hrdayam',
-  // Śiva Sūtras: "sh" vs "s" for ś
-  'shiva-sutras': 'siva-sutras',
-  // Karpūrādi Stotra: split-compound and long-ū variants
-  'karpura-adi-stotra': 'karpuradi-stotra',
-  'karpuradi-stotram': 'karpuradi-stotra',
-  'karpuuradi-stotra': 'karpuradi-stotra',
-  // Vijñāna Bhairava Tantra: common 'vijnan' typo and short forms
-  'vijnan-bhairava-tantra': 'vijnana-bhairava-tantra',
-  'vijnana-bhairava': 'vijnana-bhairava-tantra',
-  // Spanda Kārikās: singular vs plural
-  'spanda-karika': 'spanda-karikas',
-  // Parātrīśikā: "sh" vs "s" for ś, the Parātriṃśikā title variant (ṃś → ms/msh),
-  // and the split compound. NOTE: do NOT alias 'paratrisika-vivarana' here — that
-  // slug is reserved for Abhinavagupta's Vivaraṇa as a future sibling commentary
-  // text (parent_text_id: paratrisika), not a romanization variant of the mūla.
-  paratrishika: 'paratrisika',
-  paratrimsika: 'paratrisika',
-  paratrimshika: 'paratrisika',
-  'para-trisika': 'paratrisika',
-  // Īśvarapratyabhijñā Kārikā: "sh" vs "s" for ś, split compound, plural, and the
-  // bare title without "karika". NOTE: do NOT alias 'isvarapratyabhijna-vrtti' or
-  // 'isvarapratyabhijna-vimarsini' here — those slugs are reserved for Utpaladeva's
-  // auto-commentary and Abhinavagupta's Vimarśinī as future sibling commentary
-  // texts (parent_text_id: isvarapratyabhijna-karika), not romanization variants.
-  'ishvarapratyabhijna-karika': 'isvarapratyabhijna-karika',
-  'isvara-pratyabhijna-karika': 'isvarapratyabhijna-karika',
-  'ishvara-pratyabhijna-karika': 'isvarapratyabhijna-karika',
-  'isvarapratyabhijna-karikas': 'isvarapratyabhijna-karika',
-  'ishvarapratyabhijna-karikas': 'isvarapratyabhijna-karika',
-  isvarapratyabhijna: 'isvarapratyabhijna-karika',
-  ishvarapratyabhijna: 'isvarapratyabhijna-karika',
-  // Gītārthasaṃgraha: Abhinavagupta's Gītā commentary. Spelling + sandhi variants.
-  gitarthasamgraha: 'gitartha-samgraha',
-  gitarthasangraha: 'gitartha-samgraha',
-  'gita-artha-samgraha': 'gitartha-samgraha',
-  'gitartha-sangraha': 'gitartha-samgraha',
-  bhagavadgitarthasamgraha: 'gitartha-samgraha',
-  // Tantrasāra (prose).
-  'tantra-sara': 'tantrasara',
-  tantrasaram: 'tantrasara',
-  // Mahānirvāṇa Tantra (Śākta; sample ullāsas 1–3).
-  'mahanirvana-tantram': 'mahanirvana-tantra',
-  'maha-nirvana-tantra': 'mahanirvana-tantra',
-  // Śivadṛṣṭi: deferred (mūla not separable from the sole digital witness M00081).
-  // When a clean mūla source lands, add: shivadrishti, siva-drsti, shiva-drishti
-  // → sivadrsti; and reserve sivadrsti-vrtti for Utpaladeva's Vṛtti sibling.
-};
 
 /**
  * Canonical traditions — the live URL prefixes backed by `texts.tradition`

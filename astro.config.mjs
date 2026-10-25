@@ -26,7 +26,10 @@ export default defineConfig({
   build: {
     format: 'file',
   },
-  adapter: cloudflare({ imageService: 'compile' }),
+  adapter: cloudflare({
+    imageService: 'compile',
+    routes: { extend: { exclude: [{ pattern: '/_data/*' }] } },
+  }),
   integrations: [solid()],
   devToolbar: { enabled: false },
   vite: {

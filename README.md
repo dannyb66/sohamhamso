@@ -10,7 +10,7 @@ Sohamhamso connects a mobile-first reader for the Tantric / Kashmir Shaivism / T
 
 The project is donation-funded and non-profit. Its editorial design treats auto-commentaries as sibling texts rather than commentary glued under a verse; current source extraction is described per text and should not be mistaken for a complete commentary corpus.
 
-Documentation baseline: **2026-10-12, verified `origin/main` at `4c94bf2`**. The [capability matrix](docs/CAPABILITY-MATRIX.md) distinguishes merged code, branches, uncommitted work and live verification. The [engineering case study](docs/STAFF-PRINCIPAL-POSITIONING.md) explains architectural judgment and its evidence.
+The broader documentation inventory was verified on **2026-10-12 at `4c94bf2`**; website runtime instructions were updated for the **2026-10-25 static corpus release**. The [capability matrix](docs/CAPABILITY-MATRIX.md) distinguishes release code, historical branches and live verification. The [engineering case study](docs/STAFF-PRINCIPAL-POSITIONING.md) explains architectural judgment and its evidence.
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Documentation baseline: **2026-10-12, verified `origin/main` at `4c94bf2`**. The
 
 ## Engineering overview
 
-The central platform contract is a multilingual corpus document with stable text/chapter/unit identity, original Sanskrit, source/license metadata, glosses and translation provenance. Zod validation and transactional ingestion build a reproducible SQLite database. Astro consumes it for build-time pages and uses an asynchronous libSQL adapter for request-time verse/search delivery. Translation, dataset and video tools reuse that data outside the request runtime.
+The central platform contract is a multilingual corpus document with stable text/chapter/unit identity, original Sanskrit, source/license metadata, glosses and translation provenance. Zod validation and transactional ingestion build a reproducible SQLite database. Astro consumes it for build-time pages; the build also exports static chapter, lemma and search assets for request-time verse/search delivery. Translation, dataset and video tools reuse the corpus outside the request runtime.
 
 Media generation combines speech synthesis and template-based Remotion/FFmpeg composition, with SQL lifecycle state, event history, leases, QA and publishing tools. This is AI-assisted media automation; no text-to-video model integration is established. [Architecture](docs/ARCHITECTURE.md) maps runtimes and responsibilities; [operations](docs/OPERATIONS-AND-QUALITY.md) explains how to verify and recover them.
 
@@ -45,7 +45,7 @@ Read-only probes on **2026-10-12** returned HTTP 200 and expected page titles fo
 | Homepage | `/`, `/hi` and other locale prefixes | Corpus index and daily spotlight; homepage checked live |
 | Reader | `/{tradition}/{text}/{chapter}/{verse}` | Example: [`/trika/siva-sutras/1/1`](https://sohamhamso.org/trika/siva-sutras/1/1); Sanskrit, IAST, glosses, translation |
 | Localized reader | `/{lang}/{tradition}/{text}/{chapter}/{verse}` | Example: [`/hi/trika/siva-sutras/1/1`](https://sohamhamso.org/hi/trika/siva-sutras/1/1); Hindi locale checked live |
-| Search | `/search`, `/api/search` | Lexical search; optional embedding-assisted path and fallbacks in code, no live vector coverage verified |
+| Search | `/search`, `/api/search` | Static lexical index; semantic/blended requests explicitly fall back to lexical results |
 | Texts index | `/texts`, localized equivalents | Counts from ingested corpus; configured route |
 | Subscribe | Homepage band and `/api/subscribe` | Opt-in/token persistence configured; accepted form does not establish confirmation/daily mail delivery |
 | Methodology | `/about/methodology` | Translation/editorial policy; checked live |
@@ -90,7 +90,7 @@ bun run db:build
 bun run dev
 ```
 
-Open `http://localhost:4321/trika/siva-sutras/1/1`. `db:build` reconstructs the ignored SQLite cache; `dev` does not create it automatically. `db:ensure` checks only whether the file exists, so re-run ingestion after corpus edits. Avoid `--force` on a database containing operator state. Follow the [reader tutorial](docs/tutorials/LOCAL-READER.md) for locale examples and troubleshooting.
+Open `http://localhost:4321/trika/siva-sutras/1/1`. `db:build` reconstructs the ignored SQLite cache. `dev` runs `db:ensure` and exports static corpus assets before starting Astro. `db:ensure` checks only whether the database exists, so re-run ingestion and restart `dev` after corpus edits. Avoid `--force` on a database containing operator state. Follow the [reader tutorial](docs/tutorials/LOCAL-READER.md) for locale examples and troubleshooting.
 
 Credentials-free checks:
 
@@ -104,9 +104,13 @@ bun pipeline/translate/runner.ts --lang en --text siva-sutras --dry-run --limit 
 
 Use `bun run test` to select Vitest; bare `bun test` selects Bun's native runner. Already translated content yields zero eligible translation rows. [AI docs](docs/AI-SYSTEMS-AND-EVALUATION.md) show an isolated fixture that exercises prompt construction. Browser tests need Playwright Chromium and use `bun run e2e`.
 
-Optional live translation requires `ANTHROPIC_API_KEY`; embeddings use `OPENAI_API_KEY`. Media rendering needs native browser/FFmpeg tooling, while TTS, R2 and YouTube publishing need their service credentials. Live commands incur API costs or external writes and are identified in the [video guide](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md). [`.env.example`](.env.example) covers baseline environment settings; the reader does not require copying it. Turso corpus/PII settings apply to edge requests, not credentials-free local reading. Node/Docker instructions are uncommitted development work and unavailable in this baseline.
+Optional live translation requires `ANTHROPIC_API_KEY`; embeddings use `OPENAI_API_KEY`. Media rendering needs native browser/FFmpeg tooling, while TTS, R2 and YouTube publishing need their service credentials. Live commands incur API costs or external writes and are identified in the [video guide](docs/AI-VIDEO-AND-YOUTUBE-PLATFORM.md). [`.env.example`](.env.example) covers baseline environment settings; the reader does not require copying it. Node/Docker instructions are uncommitted development work and unavailable in this baseline.
 
 ## Architecture
+
+**No Turso in the website runtime.** Texts, verses, translations, word glosses, and search indexes must be generated from the repository's corpus into static assets at build time. Do not restore Turso credentials, add a Turso fallback, or make public reading depend on a remote database. Local SQLite is a build and operator tool; Cloudflare D1 stores subscriber records only.
+
+`bun run build` and `bun run seo:build` export chapter bundles and search indexes into `dist/_data/corpus/` and verify their counts against SQLite. Deploy the generated assets together with the Worker. Verse pages still assemble HTML on request from those immutable assets; they do not query a database. A successful deployment must serve `/_data/corpus/manifest.json`, pass `/api/health/corpus`, and render both English and localized verse URLs. A working homepage alone does not verify the reader.
 
 Astro 5 uses `output: 'static'`, a Cloudflare adapter, and explicit `prerender = false` on verse/search/API routes. It does not use the removed `hybrid` config value or pre-render every verse. Solid.js hydrates small islands for settings, script selection, search and translation inspection. Native processing runs under Bun/Python on build/operator hosts.
 
@@ -119,12 +123,12 @@ Astro build      AI tooling    dataset export
     |                |         CSV/JSON/TEI
 Pages static + SSR   TTS/composition/render
     |                |          |
-Turso CORPUS/PII     QA + SQL state + R2
+Static corpus assets QA + SQL state + R2
                               |
                          upload/analytics
 ```
 
-Local SQLite combines logical tables for convenience. Merged edge code uses separate Turso corpus and PII configurations; corpus is read-mostly because sanitized search misses can be written. Media uses distinct corpus/state DB paths in scheduled workflows. Static-corpus/D1 subscriber storage, a scheduled daily mail Worker, Node standalone adapter and Docker are uncommitted work, not verified production architecture. [Architecture](docs/ARCHITECTURE.md) and [capability matrix](docs/CAPABILITY-MATRIX.md) explain the boundaries.
+Local SQLite combines logical tables for convenience. Public corpus reads use static chapter bundles and search indexes; subscription, confirmation, and unsubscribe requests use the `PII_DB` D1 binding. Media uses distinct corpus/state DB paths in scheduled workflows. Historical Turso scripts and dependencies are retained for legacy operator tooling only, and must not be imported into the website runtime. See [the deployment runbook](docs/D1-CUTOVER.md). A scheduled daily mail Worker, Node standalone adapter, and Docker remain separate development work.
 
 ## AI systems
 

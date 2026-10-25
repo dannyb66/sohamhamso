@@ -35,8 +35,8 @@ let db: Database;
 function makeInMemorySubscriberDb(memDb: Database): SubscriberDb {
   const insertStmt = memDb.prepare(
     `INSERT INTO subscribers
-       (email_hash, language, subscribed_at, unsubscribe_token, region)
-     VALUES (?, ?, ?, ?, ?)`,
+       (email_hash, email, language, subscribed_at, unsubscribe_token, region)
+     VALUES (?, ?, ?, ?, ?, ?)`,
   );
   const existsStmt = memDb.prepare(
     `SELECT 1 AS one FROM subscribers
@@ -48,6 +48,7 @@ function makeInMemorySubscriberDb(memDb: Database): SubscriberDb {
       try {
         insertStmt.run(
           row.email_hash,
+          row.email ?? null,
           row.language,
           row.subscribed_at,
           row.unsubscribe_token,
@@ -106,6 +107,7 @@ function call(req: Request): Promise<Response> {
 type SubscriberRow = {
   id: number;
   email_hash: string;
+  email: string | null;
   language: string;
   subscribed_at: string;
   unsubscribe_token: string;
@@ -216,6 +218,7 @@ describe('POST /api/subscribe — persistence', () => {
     const r = rows[0];
     expect(r.email_hash).toHaveLength(64); // SHA-256 hex
     expect(r.email_hash).toMatch(/^[0-9a-f]{64}$/);
+    expect(r.email).toBe('danny@example.com');
     expect(r.language).toBe('en');
     expect(r.region).toBe('us');
     // 32-char base64url token (24 random bytes, no padding).

@@ -1,5 +1,5 @@
 /**
- * POST /api/subscribe — daily-verse subscribe endpoint (V1.0).
+ * POST /api/subscribe — daily-verse subscribe endpoint.
  *
  * V1.0 BEHAVIOR (this file):
  *   - Validates email shape + language against the locked registry.
@@ -8,20 +8,12 @@
  *     → base64url, length 32).
  *   - Region: derived from the `cf-ipcountry` header (EU-27 → "eu",
  *     otherwise "us"). Default "us" when the header is absent.
- *   - Inserts into the local `subscribers` table with confirmed_at left
- *     null. Idempotent on (email_hash, language) — re-subscribes return
- *     200 with the same friendly message, no error.
- *   - Returns {ok: true, message: "Check your inbox to confirm"} on
- *     success. The "inbox" copy is forward-compatible with V1.x when
- *     the Worker actually sends the confirmation email.
- *
- * V1.x TODO (owned by the daily-verse curator workstream):
- *   1. Double opt-in: a Cloudflare Worker reads recently-subscribed rows
- *      and sends a confirmation email via Resend; the confirm endpoint
- *      sets `confirmed_at`.
- *   2. Send the verse-of-the-day at sunrise per region.
- *   3. Move writes to the pii Turso DB (separate from corpus per eng
- *      review). The local-dev path stays the single SQLite file.
+ *   - Inserts into the D1-backed `subscribers` table with confirmation
+ *     pending, retaining HMAC, encrypted, and temporary plaintext delivery
+ *     fields during mailer stabilization.
+ *   - Sends the double-opt-in confirmation through the Resend adapter.
+ *   - Idempotent on (email_hash, language) — re-subscribes reuse the original
+ *     confirmation token and return a friendly 200 response.
  *
  * Reference: plan §"Daily verse engagement loop" and the Eng Review
  * locked decision on HMAC-SHA256 with per-deployment pepper.
@@ -29,7 +21,18 @@
 
 import { createHmac, randomBytes } from 'node:crypto';
 import type { APIRoute } from 'astro';
-import { SubscriberUniqueViolation, getSubscriberDb, isEdgeRuntime } from '../../lib/subscriber-db';
+import {
+  type D1Database,
+  SubscriberUniqueViolation,
+  getSubscriberDb,
+  isEdgeRuntime,
+} from '../../lib/subscriber-db';
+import {
+  type SubscriberEmailEnv,
+  assertEmailDeliveryConfigured,
+  encryptSubscriberEmail,
+  sendSubscriberConfirmation,
+} from '../../lib/subscriber-email';
 
 // Server-rendered endpoint — Astro's default `output: 'static'` would
 // prerender this route and reject POST. The opt-out keeps the rest of
@@ -43,7 +46,7 @@ export const prerender = false;
 import { ACTIVE_LANGUAGES, KNOWN_LANGUAGES } from '../../lib/subscribe-langs';
 
 // RFC 5322-flavored email regex — pragmatic, not exhaustive. Server
-// stub only; the real Resend integration will do its own validation.
+// Pragmatic server-side validation; the provider performs final validation.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // EU-27 ISO-3166 alpha-2 codes. UK (GB) is intentionally NOT in this set
@@ -104,8 +107,8 @@ export class PepperNotConfiguredError extends Error {
 }
 
 let _pepperWarned = false;
-function loadPepper(): string {
-  const env = process.env.SUBSCRIBER_HASH_PEPPER;
+function loadPepper(boundValue?: string): string {
+  const env = boundValue ?? process.env.SUBSCRIBER_HASH_PEPPER;
   const edge = isEdgeRuntime();
 
   // Edge: HARD ERROR if unset or stuck on the dev default. The previous
@@ -177,7 +180,7 @@ function json(body: unknown, init: ResponseInit = {}): Response {
   });
 }
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, locals }) => {
   let email = '';
   let language = 'en';
 
@@ -221,29 +224,44 @@ export const POST: APIRoute = async ({ request }) => {
     );
   }
 
+  const env = (
+    locals as
+      | {
+          runtime?: {
+            env?: { PII_DB?: D1Database; SUBSCRIBER_HASH_PEPPER?: string } & SubscriberEmailEnv;
+          };
+        }
+      | undefined
+  )?.runtime?.env;
+  const edge = isEdgeRuntime();
   let pepper: string;
+  let encryptedEmail: { ciphertext: string; nonce: string };
   try {
-    pepper = loadPepper();
+    pepper = loadPepper(env?.SUBSCRIBER_HASH_PEPPER);
+    assertEmailDeliveryConfigured(env ?? {}, edge);
+    encryptedEmail = await encryptSubscriberEmail(email, env?.SUBSCRIBER_EMAIL_KEY, edge);
   } catch (err) {
-    if (err instanceof PepperNotConfiguredError) {
-      // biome-ignore lint/suspicious/noConsole: operator-facing 500
-      console.error('[subscribe]', err.message);
-      return json(
-        { ok: false, message: 'Server misconfigured. Please contact the operator.' },
-        { status: 500 },
-      );
-    }
-    throw err;
+    // biome-ignore lint/suspicious/noConsole: operator-facing configuration error
+    console.error('[subscribe]', err instanceof Error ? err.message : err);
+    return json(
+      { ok: false, message: 'Server misconfigured. Please contact the operator.' },
+      { status: 500 },
+    );
   }
   const email_hash = hashEmail(email, pepper);
   const unsubscribe_token = generateUnsubscribeToken();
   const region = regionForRequest(request.headers);
   const subscribed_at = new Date().toISOString();
 
+  const db = await getSubscriberDb(env);
+  let confirmationToken = unsubscribe_token;
+  let alreadyConfirmed = false;
   try {
-    const db = await getSubscriberDb();
     await db.insertSubscriber({
       email_hash,
+      email: email.toLowerCase().trim(),
+      email_ciphertext: encryptedEmail.ciphertext,
+      email_nonce: encryptedEmail.nonce,
       language,
       subscribed_at,
       unsubscribe_token,
@@ -251,25 +269,51 @@ export const POST: APIRoute = async ({ request }) => {
     });
   } catch (err) {
     if (err instanceof SubscriberUniqueViolation) {
-      // Idempotent: same email + same language already subscribed.
-      // Return success with the same copy — never leak the
-      // already-subscribed signal (enumeration defense).
-      return json({
-        ok: true,
-        message: "You're subscribed. The first verse arrives at sunrise.",
-      });
+      const existing = await db.findSubscriber?.(email_hash, language);
+      if (existing) {
+        confirmationToken = existing.unsubscribe_token;
+        alreadyConfirmed = existing.confirmed;
+      }
+    } else {
+      // biome-ignore lint/suspicious/noConsole: server-side error trace
+      console.error('[subscribe] insert failed', err);
+      return json(
+        { ok: false, message: 'Something went wrong on our end. Try again in a moment.' },
+        { status: 500 },
+      );
     }
-    // biome-ignore lint/suspicious/noConsole: server-side error trace
-    console.error('[subscribe] insert failed', err);
-    return json(
-      { ok: false, message: 'Something went wrong on our end. Try again in a moment.' },
-      { status: 500 },
-    );
+  }
+
+  if (!alreadyConfirmed) {
+    let sent = false;
+    try {
+      sent = await sendSubscriberConfirmation({
+        email,
+        language,
+        token: confirmationToken,
+        baseUrl: new URL(request.url).origin,
+        env: env ?? {},
+        requireConfigured: edge,
+      });
+      await db.markConfirmationDelivery?.(confirmationToken, sent);
+    } catch (error) {
+      await db.markConfirmationDelivery?.(confirmationToken, false).catch(() => {});
+      // biome-ignore lint/suspicious/noConsole: operator-facing delivery trace
+      console.error('[subscribe] confirmation delivery failed', error);
+    }
+    if (!sent && edge) {
+      return json(
+        { ok: false, message: 'We saved your request but could not send confirmation. Try again.' },
+        { status: 502 },
+      );
+    }
   }
 
   return json({
     ok: true,
-    message: "You're subscribed. The first verse arrives at sunrise.",
+    message: alreadyConfirmed
+      ? "You're already confirmed. The next verse arrives at sunrise."
+      : "You're subscribed pending confirmation. Check your inbox; after confirmation, the first verse arrives at sunrise.",
   });
 };
 

@@ -33,25 +33,13 @@ import OpenAI from 'openai';
 // uses a runtime-gated DYNAMIC import to keep the edge bundle clean.
 // Reference: `.gstack/launch/edge-audit-2026-06-01.md` §2a.
 import { type CorpusDb, getCorpusDb } from './corpus-db';
+import type { VerseHit } from './search-types';
+
+export type { VerseHit } from './search-types';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
 // ─────────────────────────────────────────────────────────────────────────────
-
-export interface VerseHit {
-  verse_id: number;
-  text_id: string;
-  text_slug: string;
-  text_title: string;
-  tradition: string;
-  chapter: number;
-  verse_num: number;
-  devanagari: string;
-  iast: string | null;
-  translation_excerpt: string | null;
-  score: number;
-  source: 'lexical' | 'semantic' | 'blended';
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Constants

@@ -25,34 +25,15 @@
  */
 
 import type { APIRoute } from 'astro';
+import { staticLexicalSearch } from '../../lib/static-search';
 
 export const prerender = false;
 
-// ─── Types ────────────────────────────────────────────────────────────
-// VerseHit is the single source of truth defined in src/lib/search.ts.
-// The API surfaces it as-is in the JSON response.
-export type { VerseHit } from '../../lib/search';
-import type { VerseHit } from '../../lib/search';
+// VerseHit remains the public response type; runtime reads come only from the
+// generated static index so this endpoint has no database dependency.
+export type { VerseHit } from '../../lib/search-types';
 
 type SearchType = 'lexical' | 'semantic' | 'blended';
-
-// ─── B2 helper bridge ─────────────────────────────────────────────────
-/**
- * Lazy, non-throwing dynamic import. If `src/lib/search.ts` doesn't
- * exist yet, returns null and the endpoint falls back to the stub.
- */
-async function loadSearchLib(): Promise<{
-  lexicalSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
-  semanticSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
-  blendedSearch?: (q: string, lang: string, limit: number) => Promise<VerseHit[]> | VerseHit[];
-} | null> {
-  try {
-    const mod = await import('../../lib/search.ts');
-    return mod;
-  } catch {
-    return null;
-  }
-}
 
 // ─── Response helpers ─────────────────────────────────────────────────
 function json(body: unknown, init: ResponseInit = {}): Response {
@@ -75,25 +56,6 @@ function err(message: string, status = 400): Response {
   );
 }
 
-// ─── Demand instrument ────────────────────────────────────────────────
-/**
- * Fire-and-forget search-miss logging (Phase 2 demand gate). Lazy import
- * mirrors `loadSearchLib()` — a missing module or a Turso hiccup must
- * never block or fail the search response. `logSearchMiss` itself never
- * rejects; the catch here only guards the dynamic import.
- */
-function recordMiss(q: string, lang: string, type: SearchType, locals: unknown): void {
-  const p = import('../../lib/search-miss')
-    .then((m) => m.logSearchMiss(q, lang, type))
-    .catch(() => {});
-  // On Cloudflare, keep the worker alive long enough for the write to
-  // land. Shape is sniffed defensively — absent in dev/tests is fine.
-  const ctx = (
-    locals as { runtime?: { ctx?: { waitUntil?: (p: Promise<unknown>) => void } } } | undefined
-  )?.runtime?.ctx;
-  ctx?.waitUntil?.(p);
-}
-
 // ─── GET ──────────────────────────────────────────────────────────────
 export const GET: APIRoute = async ({ url, locals }) => {
   const t0 = performance.now();
@@ -111,55 +73,34 @@ export const GET: APIRoute = async ({ url, locals }) => {
 
   const lang = (url.searchParams.get('lang') ?? 'en').toLowerCase();
 
-  const lib = await loadSearchLib();
-
-  let data: VerseHit[] = [];
-  let note: string | undefined;
-
-  if (!lib) {
-    note = 'search-stub';
-  } else {
-    try {
-      const fn =
-        type === 'blended'
-          ? lib.blendedSearch
-          : type === 'semantic'
-            ? lib.semanticSearch
-            : lib.lexicalSearch;
-      if (typeof fn === 'function') {
-        const out = await fn(qRaw, lang, limit);
-        data = Array.isArray(out) ? out.slice(0, limit) : [];
-        // Zero results from a REAL search run = unmet-demand signal.
-        // Stub / not-implemented paths are excluded — every query is a
-        // "miss" there and the data would be pure noise.
-        if (data.length === 0) recordMiss(qRaw, lang, type, locals);
-      } else {
-        note = `search-${type}-not-implemented`;
-      }
-    } catch (e) {
-      // Don't leak internals — log to console for debugging.
-      // eslint-disable-next-line no-console
-      console.error('[api/search]', e);
-      return err('Search failed.', 500);
-    }
-  }
+  const runtime = (
+    locals as
+      | {
+          runtime?: { env?: { ASSETS?: { fetch: (request: Request) => Promise<Response> } } };
+        }
+      | undefined
+  )?.runtime;
+  const staticResults = await staticLexicalSearch(qRaw, lang, limit, {
+    assets: runtime?.env?.ASSETS,
+    baseUrl: url,
+  });
+  if (staticResults === null) return err('Search index unavailable.', 503);
 
   const took_ms = Math.round(performance.now() - t0);
   return json(
     {
-      data,
+      data: staticResults,
       meta: {
-        count: data.length,
-        type,
+        count: staticResults.length,
+        type: 'lexical',
         took_ms,
-        ...(note ? { note } : {}),
+        note: type === 'lexical' ? 'static-index' : `static-index-${type}-fallback`,
       },
     },
     {
       status: 200,
       headers: {
-        // 30s shared cache + brief browser cache for repeated keystrokes.
-        'Cache-Control': 'public, max-age=10, s-maxage=30',
+        'Cache-Control': 'public, max-age=10, s-maxage=3600',
       },
     },
   );

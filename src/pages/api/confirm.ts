@@ -33,6 +33,7 @@
 
 import type { APIRoute } from 'astro';
 import { TOKEN_RE, getSubscriberConfirm } from '../../lib/subscriber-confirm';
+import type { D1Database } from '../../lib/subscriber-db';
 
 export const prerender = false;
 
@@ -47,7 +48,7 @@ function redirect(location: string): Response {
   });
 }
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, locals }) => {
   const token = (url.searchParams.get('token') ?? '').trim();
 
   // Enumeration defense: redirect (not 404) for both malformed and
@@ -59,7 +60,9 @@ export const GET: APIRoute = async ({ url }) => {
 
   let result: { status: 'confirmed' | 'unknown' };
   try {
-    const confirm = await getSubscriberConfirm();
+    const env = (locals as { runtime?: { env?: { PII_DB?: D1Database } } } | undefined)?.runtime
+      ?.env;
+    const confirm = await getSubscriberConfirm(env);
     result = await confirm.confirmByToken(token);
   } catch (err) {
     // Operator-facing trace — surfaces in CF Workers logs.

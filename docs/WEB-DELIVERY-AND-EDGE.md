@@ -1,21 +1,24 @@
 # Web delivery and edge
 
-Explanation and reference. Evidence baseline: `origin/main` at `4c94bf2`, inspected 2026-10-12. Configuration describes intended delivery; it does not prove which revision is running in production. See the [documentation index](README.md) for the dated capability inventory.
+> Website runtime update (2026-10-25): public reading, search, and preview images use generated static corpus assets; subscriber endpoints use Cloudflare D1. Turso is retired from website requests. Older topology descriptions below are historical. Follow [the current cutover runbook](D1-CUTOVER.md) and the README no-Turso policy.
+
+Explanation and reference, updated for the 2026-10-25 static corpus release. The broader inventory was inspected at `4c94bf2` on 2026-10-12. Configuration describes delivery behavior; it does not prove which revision is running in production. Follow [the cutover runbook](D1-CUTOVER.md) for current deployment checks.
 
 ## Rendering boundaries
 
-[astro.config.mjs](../astro.config.mjs) uses Astro 5, `output: 'static'`, the Cloudflare adapter, Solid integration, and Tailwind's Vite plugin. Static output still permits individual routes to export `prerender = false`. Calling the application wholly static would obscure its database-dependent reader pages.
+[astro.config.mjs](../astro.config.mjs) uses Astro 5, `output: 'static'`, the Cloudflare adapter, Solid integration, and Tailwind's Vite plugin. Static output still permits individual routes to export `prerender = false`. Corpus content is generated at build time; verse HTML is assembled on request from those static files.
 
 | Surface | Execution | Inputs and outputs |
 | --- | --- | --- |
 | Home, tradition/text/chapter indexes, locale pages, lemma pages, daily page | Build-time HTML | Local corpus SQLite, corpus SEO metadata, dictionaries → files in `dist/` |
-| Both verse route families | Request-time SSR | URL parameters + corpus backend → verse HTML, all-language reader payload, SEO metadata |
-| `/search` and `/api/search` | Request-time SSR/API | Query parameters → results HTML or JSON |
-| `/api/subscribe`, `/api/confirm`, `/api/unsubscribe`, confirmation landings | Request time | Form/query token → subscriber database operations and redirects |
-| `/og/...` and `/og/lemma/...` | Request-time image endpoints | Corpus/SEO payload + bundled fonts → social-card image |
+| Both verse route families | Request-time SSR | URL parameters + static chapter/lemma JSON → verse HTML, all-language reader payload, SEO metadata |
+| `/search` and `/api/search` | Request-time SSR/API | Query parameters + static language index → results HTML or JSON |
+| `/api/subscribe`, `/api/confirm`, `/api/unsubscribe` | Request time | Form/query token → D1 subscriber operations, confirmation mail and redirects |
+| Confirmation/unsubscribe landing pages | Build-time HTML | Static confirmation/error messages |
+| `/og/...` and `/og/lemma/...` | Request-time image endpoints | Static corpus/lemma payload + bundled fonts → social-card image |
 | Sitemaps and robots | Build-time endpoints | Corpus route catalogue and indexing policy → XML/text |
 
-The two reader implementations are [the English route](../src/pages/[tradition]/[text]/[chapter]/[verse].astro) and [the locale route](../src/pages/[lang]/[tradition]/[text]/[chapter]/[verse].astro). They validate reference parameters, call [readVersePage](../src/lib/verse-read.ts), resolve tradition/slug aliases before rendering, and return 301 for valid aliases, 404 for absent references, or styled 503 with `Retry-After: 30` for a corpus backend failure. A rendered 503 is materially different from an empty translation or a missing verse.
+The two reader implementations are [the English route](../src/pages/[tradition]/[text]/[chapter]/[verse].astro) and [the locale route](../src/pages/[lang]/[tradition]/[text]/[chapter]/[verse].astro). They validate reference parameters, call [readStaticVersePage](../src/lib/static-corpus-read.ts), resolve tradition/slug aliases before rendering, and return 301 for valid aliases, 404 for absent references, or styled 503 with `Retry-After: 30` for unavailable corpus assets. A rendered 503 is materially different from an empty translation or a missing verse.
 
 ```mermaid
 flowchart LR
@@ -23,10 +26,12 @@ flowchart LR
   Ingest --> SQLite[Build-host SQLite]
   SQLite --> Build[Astro build]
   Build --> Static[Static HTML and assets]
+  SQLite --> Export[Static corpus export]
+  Export --> Static
   Browser[Reader browser] --> Static
   Browser --> Worker[Pages Functions]
-  Worker --> Corpus[Turso corpus]
-  Worker --> PII[Turso subscribers]
+  Worker --> Static
+  Worker --> PII[D1 subscribers]
 ```
 
 The deployment-file budget motivated moving verses to SSR: multiplying every reference by 12 locales would approach Cloudflare Pages' documented-in-code 20,000-file gate. [check-dist-filecount.ts](../scripts/check-dist-filecount.ts) is the repository's enforceable budget, rather than a count inferred from the number of texts. See [decision 001](decisions/001-static-versus-ssr.md).
@@ -46,27 +51,27 @@ The configured locales are `en`, `hi`, `ta`, `te`, `bn`, `mr`, `gu`, `kn`, `ml`,
 | Successful verse SSR | `public, max-age=300, s-maxage=86400, stale-while-revalidate=604800` |
 | Verse 404 | `public, max-age=300` |
 | Verse backend unavailable | `no-store`, `Retry-After: 30` |
-| Successful search API | `public, max-age=10, s-maxage=30` |
+| Successful search API | `public, max-age=10, s-maxage=3600` |
 | Search error | `no-store` |
 | Confirm/unsubscribe redirects | `no-store, max-age=0` |
-| Semantic query embeddings | Process-local LRU, maximum 1,000 entries, 7-day TTL |
+| Static chapter, manifest, lemma and search reads | Process-local cache of successful immutable assets; failed reads may retry |
 
-Headers express browser/shared-cache policy. The verse source explicitly notes that Pages Function responses are **not automatically cached by Cloudflare's CDN**; the baseline does not establish a Cache API layer or configured cache rules. A worker instance's module-level database client and LRU are neither durable storage nor a distributed cache. Cloudflare KV mentioned in search comments is a future design, not the implemented embedding cache.
+Headers express browser/shared-cache policy. The verse source explicitly notes that Pages Function responses are **not automatically cached by Cloudflare's CDN**; headers alone do not establish a Cache API layer or configured cache rules. Successful corpus reads are cached within a Worker instance. That cache is neither durable storage nor a distributed cache. OG rendering separately uses the Cache API when available.
 
-If a shared edge cache is added, corpus updates require explicit invalidation: remote corpus seeding can alter data independently of a Pages deployment. The current cache TTL permits stale client/intermediary content; a deployment alone is not proof of a purge.
+Corpus updates require a fresh ingest, export and deployment of the assets together with the Worker. The exporter excludes `/_data/*` from Worker routing so Pages serves these files directly. Current cache TTLs permit stale client/intermediary content; a deployment alone is not proof of a purge.
 
 ## Runtime and search contracts
 
-[db.ts](../src/lib/db.ts) exposes synchronous Bun SQLite helpers for build-host reads. Its current implementation has a type-only `bun:sqlite` import and loads the constructor with guarded top-level-await dynamic import; older corpus adapter comments describing a static driver import are historical. [corpus-db.ts](../src/lib/corpus-db.ts) exposes async `all`, `get`, and optional `batch`; Bun delegates to local SQLite, whereas the edge uses `@libsql/client/web` and `TURSO_CORPUS_URL`/`TURSO_CORPUS_AUTH_TOKEN`. [subscriber-db.ts](../src/lib/subscriber-db.ts) isolates writable subscriber operations with the corresponding PII variables. Runtime-guarded dynamic imports prevent an edge request from evaluating Bun's native SQLite module.
+[db.ts](../src/lib/db.ts) exposes synchronous Bun SQLite helpers for build-host reads. Its type-only `bun:sqlite` import and guarded dynamic loading keep native SQLite out of edge execution. [static-corpus-read.ts](../src/lib/static-corpus-read.ts) reads generated manifest, chapter and lemma JSON through `ASSETS` at the edge and local `dist/_data/corpus/` files under Bun. [subscriber-db.ts](../src/lib/subscriber-db.ts) and [subscriber-confirm.ts](../src/lib/subscriber-confirm.ts) use the `PII_DB` D1 binding at the edge and SQLite locally. Legacy libSQL adapters must not be imported by website request handlers.
 
-`readVersePage` batches multiple SELECTs into one libSQL read exchange where supported; injected test backends without `batch` use sequential calls. This optimizes database round trips while keeping driver details out of the route. It is not a measured latency guarantee.
+`bun run dev` ensures a local database exists and exports corpus assets before starting Astro. `bun run build` and `bun run seo:build` export after Astro builds and verify public corpus counts against SQLite. `db:ensure` does not detect changed YAML: run ingestion again after source edits and regenerate assets. No website reader requires a remote database or model API key.
 
-[GET /api/search](../src/pages/api/search.ts) accepts required trimmed `q` up to 500 characters, `type` (`lexical`, `semantic`, `blended`), `lang` (default `en`), and `limit` (default 8, bounded at 50). Unknown types fall back to lexical; invalid limits fall back to 8. The response is `{ data: VerseHit[], meta: { count, type, took_ms, note? } }`. A missing search module/function may return an empty result with a note; a backend error returns 500 with a generic public error. Read `meta.note` when diagnosing an empty result.
+[GET /api/search](../src/pages/api/search.ts) accepts required trimmed `q` up to 500 characters, `type` (`lexical`, `semantic`, `blended`), `lang` (default `en`), and `limit` (default 8, bounded at 50). Unknown types fall back to lexical; invalid limits fall back to 8. The response is `{ data: VerseHit[], meta: { count, type, took_ms, note? } }`. An unavailable language index returns 503 with `no-store`. Successful results report `type: 'lexical'`; `meta.note` identifies static lookup or semantic/blended fallback.
 
-Lexical search can run without model credentials. Semantic query embedding may call OpenAI and incur API charges; it needs the configured embedding key and compatible stored vectors. [search.ts](../src/lib/search.ts) owns lexical/semantic/blended behavior and fallback details. Zero-result [search-miss logging](../src/lib/search-miss.ts) writes sanitized demand records through the corpus backend; consequently this backend is read-mostly, not an enforced read-only database boundary.
+[static-search.ts](../src/lib/static-search.ts) matches Sanskrit, transliteration and full published/reviewed translation text from generated indexes; response excerpts remain bounded. It makes no embedding calls and performs no corpus writes. Historical [search.ts](../src/lib/search.ts) and [search-miss.ts](../src/lib/search-miss.ts) remain operator/experimental code rather than public request dependencies.
 
 ## Verification and deployment variants
 
 The baseline supports Bun development/build and Cloudflare output. [verse SSR e2e tests](../tests/e2e/verse-ssr.spec.ts), [reader language tests](../tests/e2e/reader-lang-swap.spec.ts), [edge compatibility regression](../tests/unit/search-edge-compat.regression-1.test.ts), and [SEO locale route tests](../tests/unit/seo/i18n-routes.test.ts) exercise distinct parts of that contract. Playwright uses Chromium for both desktop and iPhone viewport projects; this does not establish Safari/WebKit compatibility.
 
-Uncommitted files inspected in the original working directory on 2026-10-12 propose static corpus JSON assets, D1 subscriber bindings, explicit Node target selection, and Docker packaging. The Dockerfile builds a Node adapter target but runs it using a Bun container. Those files are absent from this selected baseline; do not run their commands against this worktree or call them merged/deployed features. Their local cutover document's production language is an assertion requiring separate deployment evidence. Baseline operating instructions remain in [Operations](OPERATIONS-AND-QUALITY.md) and [Turso](TURSO.md).
+Static corpus and D1 subscriber code are included in this release. [Static runtime tests](../tests/unit/static-corpus-runtime.test.ts), [health checks](../tests/unit/static-corpus-health.test.ts), and [D1 tests](../tests/unit/subscriber-d1.test.ts) cover the new boundary. Follow [D1-CUTOVER.md](D1-CUTOVER.md) for deployment and live verification. Node/Docker and a separate daily email Worker remain outside this website release. [Turso](TURSO.md) is a historical runbook and must not be used to restore a website dependency.

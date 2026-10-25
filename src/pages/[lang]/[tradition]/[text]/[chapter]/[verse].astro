@@ -10,16 +10,9 @@ import WordSheet from '../../../../../components/WordSheet.solid';
 import Breadcrumbs from '../../../../../components/seo/Breadcrumbs.astro';
 import LangSwitcher from '../../../../../components/seo/LangSwitcher.astro';
 /**
- * Localized verse-page route: /{lang}/{tradition}/{text-slug}/{chapter}/{verse}
- *
- * SERVER-RENDERED (A6 phase 2) — twin of
- * `src/pages/[tradition]/[text]/[chapter]/[verse].astro`; see that file's
- * header comment for the full runtime/data-routing and caching notes.
- * Same contract: ONE batched corpus read per request via
- * `readVersePage()` (bun:sqlite in dev, libsql→Turso in the worker).
- *
- * NEVER import value bindings from src/lib/db.ts here — this module ships
- * into the worker bundle where bun:sqlite doesn't exist.
+ * Verse HTML is assembled on request from build-generated static corpus assets.
+ * No database is queried by this route. Keep value imports from the legacy
+ * SQLite/Turso readers out of the public Worker.
  */
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { computeIsShortVerse, isProseSection } from '../../../../../lib/prose';
@@ -35,7 +28,9 @@ import {
   liveLocaleSet,
   localePathFor,
 } from '../../../../../lib/seo';
-import { readVersePage, resolveVerseAlias } from '../../../../../lib/verse-read';
+import { readStaticVersePage } from '../../../../../lib/static-corpus-read';
+import { resolveVerseAlias } from '../../../../../lib/slug-aliases';
+import type { VersePageRead } from '../../../../../lib/verse-read';
 
 export const prerender = false;
 
@@ -43,8 +38,7 @@ const { lang, tradition, text, chapter, verse } = Astro.params;
 
 // Locale validation: this route only serves the 11 non-English locales
 // ('en' lives at the root route). Anything else is a genuine 404.
-const langValid =
-  !!lang && NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number]);
+const langValid = !!lang && NON_ENGLISH_LANGS.includes(lang as (typeof NON_ENGLISH_LANGS)[number]);
 const currentLang = (langValid ? lang : 'en') as LangCode;
 
 // Param validation: chapter/verse must be positive integers.
@@ -58,14 +52,23 @@ const paramsValid =
 const chapterNum = paramsValid ? Number(chapter) : Number.NaN;
 const verseNum = paramsValid ? Number(verse) : Number.NaN;
 
-// 'unavailable' = corpus DB unreachable/misconfigured (styled 503);
+// 'unavailable' = generated corpus assets could not be read (styled 503);
 // 'not-found'   = the verse ref genuinely doesn't exist (styled 404).
 let state: 'ok' | 'not-found' | 'unavailable' = 'not-found';
-let read: Awaited<ReturnType<typeof readVersePage>> | null = null;
+let read: VersePageRead | null = null;
 
 if (paramsValid) {
   try {
-    read = await readVersePage(text!, chapterNum, verseNum, currentLang);
+    const textSlug = text ?? '';
+    const runtime = (
+      Astro.locals as {
+        runtime?: { env?: { ASSETS?: { fetch: (request: Request) => Promise<Response> } } };
+      }
+    ).runtime;
+    read = await readStaticVersePage(textSlug, chapterNum, verseNum, currentLang, {
+      assets: runtime?.env?.ASSETS,
+      baseUrl: Astro.url,
+    });
   } catch (e) {
     console.error('[verse-ssr] corpus read failed:', e);
     state = 'unavailable';
@@ -414,7 +417,7 @@ const errorSeo =
         <>
           <h1 class="not-found__title">The reader is briefly unavailable.</h1>
           <p class="not-found__lede">
-            The verse is still in the corpus — our database didn&apos;t answer in time.
+            The verse is still in the corpus — the reading files could not be loaded.
             Try again in a moment.
           </p>
         </>

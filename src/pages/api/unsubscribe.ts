@@ -34,6 +34,7 @@
 
 import type { APIRoute } from 'astro';
 import { TOKEN_RE, getSubscriberConfirm } from '../../lib/subscriber-confirm';
+import type { D1Database } from '../../lib/subscriber-db';
 
 export const prerender = false;
 
@@ -48,7 +49,7 @@ function redirect(location: string): Response {
   });
 }
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, locals }) => {
   const token = (url.searchParams.get('token') ?? '').trim();
 
   // Strict enumeration defense: bad-shape tokens get the SAME
@@ -60,7 +61,9 @@ export const GET: APIRoute = async ({ url }) => {
   }
 
   try {
-    const confirm = await getSubscriberConfirm();
+    const env = (locals as { runtime?: { env?: { PII_DB?: D1Database } } } | undefined)?.runtime
+      ?.env;
+    const confirm = await getSubscriberConfirm(env);
     // We intentionally don't act on the `{deleted}` return value —
     // either case yields the same landing page. The boolean is
     // observable to the DB layer (and to tests) for diagnostic

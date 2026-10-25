@@ -5,8 +5,8 @@
   "private": true,
   "description": "The Tantric canon, read in eleven tongues. Modern mobile-first reader for Kashmir Shaivism / Trika / Kaula scriptures.",
   "scripts": {
-    "dev": "bun --bun astro dev",
-    "build": "bun run db:ensure && bun --bun astro build",
+    "dev": "bun run db:ensure && bun run static:export && bun --bun astro dev",
+    "build": "bun run db:ensure && bun --bun astro build && bun run static:export && bun run static:verify",
     "preview": "bun --bun astro preview",
     "start": "bun --bun astro dev",
     "typecheck": "tsc --noEmit",
@@ -33,7 +33,7 @@
     "seo:verify-phase0": "bun scripts/seo-verify-phase0.ts --json",
     "seo:validate": "bun scripts/seo-validate.ts",
     "seo:scaffold": "bun scripts/seo-scaffold-existing.ts",
-    "seo:build": "bun run db:ensure && bun run seo:og-cache && bun run seo:redirects && bun --bun astro build",
+    "seo:build": "bun run db:ensure && bun run seo:redirects && bun --bun astro build && bun run static:export && bun run static:verify",
     "seo:rebuild": "bun run seo:ingest && bun run seo:build && bun run seo:validate",
     "seo": "bun run seo:build && bun run seo:validate",
     "seo:preflight": "bun scripts/seo-preflight-invariants.ts",
@@ -66,7 +66,9 @@
     "youtube:test": "bash scripts/youtube-test.sh tests/unit/youtube",
     "youtube:integration": "bash scripts/youtube-test.sh tests/integration/youtube --config vitest.integration.config.ts",
     "youtube:render-indic-pilot": "bun scripts/youtube-render-indic-pilot.ts",
-    "youtube:update-seo": "bun scripts/youtube-update-seo.ts"
+    "youtube:update-seo": "bun scripts/youtube-update-seo.ts",
+    "static:export": "bun scripts/static-corpus-export.ts",
+    "static:verify": "bun scripts/static-corpus-verify.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.100.1",
