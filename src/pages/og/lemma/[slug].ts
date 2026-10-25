@@ -7,6 +7,7 @@
  * Route: /og/lemma/{slug}[?lang={code}]
  */
 
+import resvgWasm from '@resvg/resvg-wasm/index_bg.wasm';
 import type { APIRoute } from 'astro';
 import { type OgFunctionContext, handleLemmaOgRequest } from '../../../../functions/og/_shared';
 
@@ -20,8 +21,11 @@ export const GET: APIRoute = async ({ request, locals }) => {
   )?.runtime;
   const ctx: OgFunctionContext = {
     request,
-    env: runtime?.env ?? {
-      ASSETS: { fetch: (input: RequestInfo | URL) => fetch(input as RequestInfo) },
+    env: {
+      ...(runtime?.env ?? {
+        ASSETS: { fetch: (input: RequestInfo | URL) => fetch(input as RequestInfo) },
+      }),
+      RESVG_WASM: resvgWasm instanceof WebAssembly.Module ? resvgWasm : undefined,
     },
     waitUntil: runtime?.waitUntil ?? (() => {}),
   };

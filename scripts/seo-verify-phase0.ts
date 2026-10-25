@@ -162,7 +162,7 @@ async function runHandlerCheck(
           }
           const assetPath = resolve(
             process.cwd(),
-            'public',
+            requestUrl.pathname.startsWith('/_data/') ? 'dist' : 'public',
             requestUrl.pathname.replace(/^\//, ''),
           );
           if (!existsSync(assetPath)) return new Response('Not found', { status: 404 });
