@@ -65,7 +65,7 @@ if (paramsValid) {
         runtime?: { env?: { ASSETS?: { fetch: (request: Request) => Promise<Response> } } };
       }
     ).runtime;
-    read = staticRead ?? await readStaticVersePage(textSlug, chapterNum, verseNum, currentLang, {
+    read = await readStaticVersePage(textSlug, chapterNum, verseNum, currentLang, {
       assets: runtime?.env?.ASSETS,
       baseUrl: Astro.url,
     });
