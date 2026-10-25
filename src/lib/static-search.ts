@@ -29,7 +29,11 @@ async function loadShard(
 ): Promise<SearchShard | null> {
   const key = `${assets ? 'assets' : 'local'}:${lang}`;
   const existing = cache.get(key);
-  if (existing) return existing;
+  if (existing) {
+    cache.delete(key);
+    cache.set(key, existing);
+    return existing;
+  }
 
   const promise = (async () => {
     try {
@@ -66,8 +70,10 @@ async function loadShard(
     }
   })();
   cache.set(key, promise);
+  // Retain only the active locales rather than every full-text search shard.
+  while (cache.size > 2) cache.delete(cache.keys().next().value as string);
   void promise.then((value) => {
-    if (value === null) cache.delete(key);
+    if (value === null && cache.get(key) === promise) cache.delete(key);
   });
   return promise;
 }

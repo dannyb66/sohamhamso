@@ -3,7 +3,7 @@ import {
   __resetStaticCorpusCacheForTests,
   readStaticVersePage,
 } from '../../src/lib/static-corpus-read';
-import { __resetStaticSearchCacheForTests } from '../../src/lib/static-search';
+import { __resetStaticSearchCacheForTests, staticLexicalSearch } from '../../src/lib/static-search';
 import { GET as dailyCorpus } from '../../src/pages/api/corpus/daily';
 import { GET as search } from '../../src/pages/api/search';
 
@@ -131,6 +131,61 @@ beforeEach(() => {
 });
 
 describe('static corpus runtime', () => {
+  it('evicts old chapter payloads while preserving cross-chapter navigation', async () => {
+    let firstChapterReads = 0;
+    const source = {
+      async fetch(request: Request) {
+        const path = new URL(request.url).pathname;
+        if (path.endsWith('/manifest.json')) {
+          return Response.json({ texts: [{ ...text, chapters: [1, 2, 3, 4] }] });
+        }
+        const match = path.match(/siva-sutras\/(\d+)\.json$/);
+        if (!match) return new Response('Not found', { status: 404 });
+        const chapter = Number(match[1]);
+        if (chapter === 1) firstChapterReads += 1;
+        return Response.json({
+          text,
+          chapter,
+          verses: [verse(chapter, chapter, 1)],
+          translations: [],
+          glosses: [],
+          parallels: [],
+        });
+      },
+    };
+    for (const chapter of [1, 2, 3, 4, 1]) {
+      const result = await readStaticVersePage('siva-sutras', chapter, 1, 'en', {
+        assets: source,
+        baseUrl: new URL('https://sohamhamso.org'),
+      });
+      expect(result?.bundle?.verse.chapter).toBe(chapter);
+    }
+    expect(firstChapterReads).toBe(2);
+  });
+
+  it('evicts inactive full-text locale shards and reloads them when revisited', async () => {
+    const original = assets();
+    let englishReads = 0;
+    const source = {
+      async fetch(request: Request) {
+        const url = new URL(request.url);
+        if (url.pathname.endsWith('.json') && url.pathname.includes('/search/')) {
+          if (url.pathname.endsWith('/en.json')) englishReads += 1;
+          url.pathname = '/_data/corpus/search/en.json';
+        }
+        return original.fetch(new Request(url));
+      },
+    };
+    for (const lang of ['en', 'hi', 'ta', 'en']) {
+      const hits = await staticLexicalSearch('caitanyam', lang, 1, {
+        assets: source,
+        baseUrl: new URL('https://sohamhamso.org'),
+      });
+      expect(hits).toHaveLength(1);
+    }
+    expect(englishReads).toBe(2);
+  });
+
   it('recovers from an unavailable manifest without resetting the cache', async () => {
     const healthyAssets = assets();
     let available = false;

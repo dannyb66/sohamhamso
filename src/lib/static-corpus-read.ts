@@ -41,14 +41,21 @@ function cacheReadable<T>(
   values: Map<string, Promise<T | null>>,
   key: string,
   read: () => Promise<T | null>,
+  limit = 1,
 ): Promise<T | null> {
   const cached = values.get(key);
-  if (cached) return cached;
+  if (cached) {
+    values.delete(key);
+    values.set(key, cached);
+    return cached;
+  }
   const pending = read().then((value) => {
-    if (value === null) values.delete(key);
+    if (value === null && values.get(key) === pending) values.delete(key);
     return value;
   });
   values.set(key, pending);
+  // The full exported corpus is larger than an isolate's memory budget.
+  while (values.size > limit) values.delete(values.keys().next().value as string);
   return pending;
 }
 
@@ -102,12 +109,17 @@ async function loadBundle(
   baseUrl?: URL,
 ): Promise<Bundle | null> {
   const key = `${assets ? 'assets' : 'local'}:${textSlug}:${chapter}`;
-  return cacheReadable(cache, key, async () => {
-    return readStaticCorpusJson<Bundle>(`${encodeURIComponent(textSlug)}/${chapter}.json`, {
-      assets,
-      baseUrl,
-    });
-  });
+  return cacheReadable(
+    cache,
+    key,
+    async () => {
+      return readStaticCorpusJson<Bundle>(`${encodeURIComponent(textSlug)}/${chapter}.json`, {
+        assets,
+        baseUrl,
+      });
+    },
+    2,
+  );
 }
 
 export async function readStaticVersePage(
