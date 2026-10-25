@@ -1,6 +1,6 @@
 # Embedding pipeline
 
-Optional local batch embedding and runtime semantic retrieval. [AI systems and evaluation](../../docs/AI-SYSTEMS-AND-EVALUATION.md#embeddings-and-retrieval) is the authoritative explanation, including eligibility and invalidation limits. Runtime helpers are in [search.ts](../../src/lib/search.ts).
+Optional local batch embedding and semantic retrieval experiments. [AI systems and evaluation](../../docs/AI-SYSTEMS-AND-EVALUATION.md#embeddings-and-retrieval) explains eligibility and invalidation limits. Local helpers are in [search.ts](../../src/lib/search.ts). Public website search uses generated lexical indexes only; semantic/blended API requests explicitly fall back to lexical results. This pipeline does not publish a website vector index.
 
 ## Safe inventory
 
@@ -22,7 +22,7 @@ A live run requires a real `OPENAI_API_KEY`, omits `--dry-run`, incurs API costs
 
 The pending selector does not filter `status`; it can embed drafts. Multiple translator rows can contend for one vector key, and changed translation content does not invalidate a vector automatically. Review those limits before using a generated index as publication evidence.
 
-Runtime search probes for `verses_fts` and otherwise uses LIKE; semantic retrieval embeds a query and scans vectors by cosine similarity. Blended retrieval uses reciprocal rank fusion (`k=60`) and falls back to lexical results if semantic results are unavailable. Explicit semantic retrieval returns an empty list without a key/vectors. Query embeddings use an in-process 1,000-entry, 7-day LRU cache.
+The local search helpers probe for `verses_fts` and otherwise use LIKE; semantic retrieval embeds a query and scans vectors by cosine similarity. Blended retrieval uses reciprocal rank fusion (`k=60`) and falls back to lexical results if semantic results are unavailable. Explicit semantic retrieval returns an empty list without a key/vectors. Query embeddings use an in-process 1,000-entry, 7-day LRU cache. These helpers are not called by the public search endpoint or results page.
 
 ## Historical deployment proposals
 

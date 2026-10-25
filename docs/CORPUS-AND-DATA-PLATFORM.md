@@ -131,7 +131,7 @@ The comparator handles sandhi splits, compound alignment and lemma spelling conv
 
 The local SQLite schema includes corpus, vectors, subscribers, video state and operational tables for development. That co-location is not an instruction to export or expose all tables. [db.ts](../src/lib/db.ts) provides build/local reads; [corpus-db.ts](../src/lib/corpus-db.ts) provides an asynchronous local SQLite interface for tools and tests. Public reader, search and OG requests consume generated assets; subscriber requests use D1. Web reads filter translations to `reviewed`/`published`; media eligibility and pinned translation IDs provide a separate publishing boundary.
 
-Static corpus/D1 cutover work outside `4c94bf2` is not this baseline's implementation. Consult [architecture](ARCHITECTURE.md) and the dated capability inventory before treating another worktree's backend as merged or deployed.
+The storage boundaries above include the 2026-10-25 static corpus/D1 release; the corpus measurements retain their dated `4c94bf2` baseline. Consult [architecture](ARCHITECTURE.md) and [the deployment runbook](D1-CUTOVER.md) for current runtime and verification instructions.
 
 ## Dataset export and release procedure
 

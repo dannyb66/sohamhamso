@@ -2,9 +2,11 @@
 
 This explanation and operating reference describes merged code at `origin/main` **`4c94bf2`**, inspected **2026-10-12**. It distinguishes the implemented generation/evaluation mechanism, provenance present in corpus files, and proposed improvements. Runtime credentials and a checked-in pipeline do not establish that a live deployment has semantic search enabled or that every existing translation was generated with the current runner.
 
+Website update (2026-10-25): public search now uses generated lexical indexes only. The embedding/retrieval functions and diagram below describe local experiments and the earlier baseline, not the deployed search path. No semantic-search service is added by the Turso removal.
+
 ## System boundary
 
-The AI surface has three connected uses: Sanskrit-grounded translation with a model judge; embeddings for optional semantic retrieval; and speech synthesis in the [video platform](AI-VIDEO-AND-YOUTUBE-PLATFORM.md). Translation and embedding jobs run on a build/operator host. Reader pages display stored translations rather than generating interpretations per page request. Search can call an embedding API at request time when configured.
+The AI surface has three connected uses: Sanskrit-grounded translation with a model judge; embeddings for optional local semantic retrieval; and speech synthesis in the [video platform](AI-VIDEO-AND-YOUTUBE-PLATFORM.md). Translation and embedding jobs run on a build/operator host. Reader pages display stored translations rather than generating interpretations per page request. The local search helpers can call an embedding API when configured; public website search makes no embedding calls.
 
 ```mermaid
 flowchart LR
@@ -126,7 +128,7 @@ This opens/reads the local DB and prints an estimate without calling the provide
 
 The query vector cache is an **in-process LRU**, 1,000 entries with a 7-day TTL, keyed by trimmed lower-case query. Cloudflare KV caching, separate vectors DB and `vector_top_k()` appear in design comments, not in the implemented search path. Full scan is the current mechanism; no claimed sub-50-ms p95 or 100,000-row scale is established by a benchmark in this documentation.
 
-The [search API](../src/pages/api/search.ts) is `GET /api/search?q=…&type=lexical|semantic|blended&limit=…&lang=…`. Query text is required, trimmed and at most 500 characters; limit clamps to 1–50 with default 8. Unknown `type` values fall back to lexical, and language is lower-cased rather than enum-validated. Success returns `{data, meta:{count,type,took_ms,note?}}` with a 30-second cache header; errors use `no-store`. The default API type is lexical. Explicit `type=semantic` does not itself fall back to lexical; use `blended` for that behavior. Excerpts filter to public statuses, but a previously created vector can still reflect draft/older content: retrieval eligibility and embedding eligibility are distinct controls.
+The current [search API](../src/pages/api/search.ts) is `GET /api/search?q=…&type=lexical|semantic|blended&limit=…&lang=…`. Query text is required, trimmed and at most 500 characters; positive limits clamp to 1–50, and invalid limits use 8. Unknown `type` values fall back to lexical, and language is lower-cased rather than enum-validated. Success returns `{data, meta:{count,type,took_ms,note?}}` with `Cache-Control: public, max-age=10, s-maxage=3600`; errors use `no-store`. Every successful response reports `type: 'lexical'`. Semantic/blended requests use the same generated lexical index and identify the fallback in `meta.note`. The local semantic helper's previously created vectors can still reflect draft/older content; that experimental behavior is separate from public static-index filtering.
 
 ## Evaluation evidence and known limits
 
