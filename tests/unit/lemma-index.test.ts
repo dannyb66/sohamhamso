@@ -5,7 +5,7 @@
  *
  * WHY THIS EXISTS: the SSR verse route used to derive lemma → {slug,
  * occurrenceCount} by FULL-SCANNING `word_glosses` once per worker isolate
- * (see src/lib/verse-read.ts). Against Turso (billed per row read) that
+ * (see src/lib/verse-read.ts). Repeatedly scanning the old corpus that
  * burned ~180k rows on every cold isolate and exhausted the read quota.
  * The fix materializes the index at build time so the edge can read just
  * the handful of lemmas a verse actually uses.

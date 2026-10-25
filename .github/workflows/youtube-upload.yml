@@ -93,7 +93,7 @@ jobs:
         if: always()
         run: bash scripts/youtube-state-db.sh push
 
-      # Surface failures as a GitHub Issue (precedent: turso-backup.yml).
+      # Surface failures as a GitHub Issue.
       - name: Open issue on failure
         if: failure()
         uses: actions/github-script@v7

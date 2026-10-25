@@ -374,7 +374,7 @@ export async function probeAudioDurationS(audioPath: string): Promise<number> {
 
 /**
  * Upload a local file to R2 at `key` via `aws s3 cp` (S3-compatible, matching
- * scripts/turso-backup.sh). MOCK_ALL → copy into the work dir instead.
+ * the pipeline state-sync script). MOCK_ALL → copy into the work dir instead.
  * Returns the bytes written. (Exported for chapter-render-engine reuse.)
  */
 export async function uploadR2(localPath: string, key: string, workDir: string): Promise<number> {

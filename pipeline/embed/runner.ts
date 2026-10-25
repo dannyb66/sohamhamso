@@ -7,10 +7,8 @@
  * batch-embeds new (verse, lang) pairs via OpenAI `text-embedding-3-large`
  * (3072 dims), and stores Float32 BLOBs in `verse_embeddings`.
  *
- * Production architecture (per plan check-online-websites-aim-sparkling-pearl.md):
- *   - 3 Turso DBs: corpus + vectors + pii
- *   - vectors DB uses libSQL F32_BLOB(3072) + vector_top_k() index
- *   - this single-file SQLite is the dev mirror; the schema is identical
+ * This is an optional local pipeline. Production website search is lexical
+ * and does not consume these vectors.
  *
  * Cost model (text-embedding-3-large @ $0.13 / 1M tokens):
  *   25,000 verses × 50 tokens × 11 langs ≈ 14M tokens ≈ $1.80 full corpus.
@@ -141,8 +139,7 @@ function findPending(
 
 /**
  * Encode Float32 vector → Buffer for SQLite BLOB.
- * libSQL F32_BLOB uses the same little-endian Float32 layout, so this
- * blob is forward-compatible with the production vectors DB.
+ * Each component is stored in little-endian Float32 format.
  */
 function float32ToBuffer(arr: number[]): Buffer {
   const f32 = new Float32Array(arr);

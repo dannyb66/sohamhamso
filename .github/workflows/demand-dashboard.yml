@@ -39,12 +39,11 @@ jobs:
 
       - name: Demand dashboard
         env:
-          TURSO_PII_URL: ${{ secrets.TURSO_PII_URL }}
-          TURSO_PII_AUTH_TOKEN: ${{ secrets.TURSO_PII_AUTH_TOKEN }}
-          TURSO_CORPUS_URL: ${{ secrets.TURSO_CORPUS_URL }}
-          TURSO_CORPUS_AUTH_TOKEN: ${{ secrets.TURSO_CORPUS_AUTH_TOKEN }}
+          CF_D1_READ_TOKEN: ${{ secrets.CF_D1_READ_TOKEN }}
+          D1_PII_DATABASE_ID: ${{ vars.D1_PII_DATABASE_ID }}
+          D1_DEMAND_DATABASE_ID: ${{ vars.D1_DEMAND_DATABASE_ID }}
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
           GSC_ACCESS_TOKEN: ${{ secrets.GSC_ACCESS_TOKEN }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}

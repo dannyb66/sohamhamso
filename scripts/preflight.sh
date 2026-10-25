@@ -97,7 +97,7 @@ fi
 
 # ---------- security 2: required env vars are documented ----------
 step "Security 2/2: .env.example documents required vars"
-REQUIRED_VARS=(SUBSCRIBER_HASH_PEPPER TURSO_PII_URL TURSO_PII_AUTH_TOKEN)
+REQUIRED_VARS=(SUBSCRIBER_HASH_PEPPER SUBSCRIBER_EMAIL_KEY RESEND_API_KEY RESEND_FROM)
 missing_doc=()
 if [ ! -f .env.example ]; then
   fail ".env.example missing"

@@ -173,7 +173,7 @@ describe('GET /api/confirm — server failure mode', () => {
   it('redirects to /confirmed?error=server when the DB throws', async () => {
     const impl: SubscriberConfirm = {
       async confirmByToken() {
-        throw new Error('libsql connection failed');
+        throw new Error('database connection failed');
       },
       async deleteByToken() {
         return { deleted: false };

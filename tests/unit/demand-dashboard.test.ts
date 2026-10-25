@@ -1,16 +1,4 @@
-/**
- * Unit tests for the pure demand-instrument helpers:
- *   - src/lib/search-miss.ts   — query sanitizer + day bucket (privacy posture)
- *   - scripts/demand-dashboard.ts — PII COUNT(*)-only guard, Phase 2
- *     slug/alias matcher, window helpers
- *
- * No network, no DB: the runtime sections of the dashboard script only
- * execute when the script is invoked directly (`import.meta.main` guard),
- * and `logSearchMiss` is not exercised here (its corpus-db reach is
- * dynamic — see the module header in search-miss.ts).
- *
- * Run with: `bun --bun vitest run tests/unit/demand-dashboard.test.ts`
- */
+/** Pure demand-report privacy guards, sanitizers and text matching. No network or database writes. */
 import { describe, expect, it } from 'vitest';
 import {
   GROWTH_WINDOW_DAYS,

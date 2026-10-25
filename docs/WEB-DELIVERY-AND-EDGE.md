@@ -62,7 +62,7 @@ Corpus updates require a fresh ingest, export and deployment of the assets toget
 
 ## Runtime and search contracts
 
-[db.ts](../src/lib/db.ts) exposes synchronous Bun SQLite helpers for build-host reads. Its type-only `bun:sqlite` import and guarded dynamic loading keep native SQLite out of edge execution. [static-corpus-read.ts](../src/lib/static-corpus-read.ts) reads generated manifest, chapter and lemma JSON through `ASSETS` at the edge and local `dist/_data/corpus/` files under Bun. [subscriber-db.ts](../src/lib/subscriber-db.ts) and [subscriber-confirm.ts](../src/lib/subscriber-confirm.ts) use the `PII_DB` D1 binding at the edge and SQLite locally. Legacy libSQL adapters must not be imported by website request handlers.
+[db.ts](../src/lib/db.ts) exposes synchronous Bun SQLite helpers for build-host reads. Its type-only `bun:sqlite` import and guarded dynamic loading keep native SQLite out of edge execution. [static-corpus-read.ts](../src/lib/static-corpus-read.ts) reads generated manifest, chapter and lemma JSON through `ASSETS` at the edge and local `dist/_data/corpus/` files under Bun. [subscriber-db.ts](../src/lib/subscriber-db.ts) and [subscriber-confirm.ts](../src/lib/subscriber-confirm.ts) use the `PII_DB` D1 binding at the edge and SQLite locally. No remote corpus adapter or libSQL client is retained.
 
 `bun run dev` ensures a local database exists and exports corpus assets before starting Astro. `bun run build` and `bun run seo:build` export after Astro builds and verify public corpus counts against SQLite. `db:ensure` does not detect changed YAML: run ingestion again after source edits and regenerate assets. No website reader requires a remote database or model API key.
 

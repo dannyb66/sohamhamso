@@ -1,20 +1,12 @@
 -- ============================================================
--- Migration 003 — materialized lemma_index (Turso read-quota fix)
+-- Migration 003 — materialized lemma_index (build-time summaries)
 --
 -- Adds:
 --   lemma_index  corpus-wide lemma → {slug, occurrence_count}
 --
--- The SSR verse route used to derive this map by full-scanning
--- word_glosses once per worker isolate; against Turso (billed per row
--- read) that burned ~180k rows on every cold isolate and exhausted the
--- read quota. This table is materialized at build time
--- (pipeline/ingest/lemma-index.ts) and seeded to Turso
--- (scripts/turso-seed-lemma-index.ts) so the edge reads only the handful
--- of lemmas a verse uses, by primary key.
---
--- The table is DERIVED (not authored): the migration only creates the
--- empty table; rows are (re)built from word_glosses each deploy. Run this
--- with --turso BEFORE seeding lemma_index.
+-- Materialized at ingestion time by pipeline/ingest/lemma-index.ts.
+-- Static exports and local tools reuse the derived rows. The migration
+-- creates the table; ingestion rebuilds its contents from word_glosses.
 --
 -- db/schema.sql remains the canonical fresh-create and already contains
 -- this table; the guard stamps this migration as applied on

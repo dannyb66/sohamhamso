@@ -4,7 +4,7 @@
  *
  * One combined readout for the demand checkpoint in docs/INGESTION.md
  * (Step 1 — Discover → demand-gate note, 2026-06-10):
- *   [1/4] Subscribers      — count + 7-day growth (Turso PII DB, COUNTS ONLY)
+ *   [1/4] Subscribers      — count + 7-day growth (D1 PII DB, COUNTS ONLY)
  *   [2/4] CF Web Analytics — pageviews + visits (GraphQL RUM dataset)
  *   [3/4] GSC              — impressions + clicks (searchAnalytics/query)
  *   [4/4] Per-text demand  — search-miss counts + Phase 2 slug/alias
@@ -15,7 +15,7 @@
  * green while the operator wires secrets up incrementally.
  *
  * PRIVACY POSTURE (load-bearing — do not weaken):
- *   The Turso PII DB holds subscriber email hashes. This script issues
+ *   The D1 PII DB holds subscriber email hashes. This script issues
  *   COUNT(*)-only queries — `assertCountsOnlySql()` rejects any SQL that
  *   selects columns or references email/email_hash, enforced in code at
  *   the single query chokepoint, not by convention.
@@ -24,8 +24,9 @@
  *   bun scripts/demand-dashboard.ts
  *
  * Env vars (see .env.example):
- *   TURSO_PII_URL + TURSO_PII_AUTH_TOKEN       subscriber counts (read-only)
- *   TURSO_CORPUS_URL + TURSO_CORPUS_AUTH_TOKEN search_misses readout
+ *   CF_D1_READ_TOKEN + CF_ACCOUNT_ID           D1 read-only API access
+ *   D1_PII_DATABASE_ID                         subscriber counts
+ *   D1_DEMAND_DATABASE_ID                      optional existing search-miss records
  *   CF_ANALYTICS_TOKEN + CF_ACCOUNT_ID         CF Web Analytics pageviews
  *   CF_ZONE_ID                                 (optional) Phase 2 slug 404s
  *   GSC_ACCESS_TOKEN + GSC_SITE_URL            GSC impressions/clicks
@@ -35,6 +36,7 @@
  */
 
 import { appendFileSync } from 'node:fs';
+import { type D1ReadConfig, D1ReadError, readD1 } from './lib/d1-read';
 
 // ──────────────────────────────────────────────────────────────────────────
 // Windows
@@ -74,6 +76,13 @@ export function assertCountsOnlySql(sql: string): void {
   // Single statement only — no piggybacked second statement.
   if (sql.replace(/;\s*$/, '').includes(';')) {
     throw new Error(`PII guard: multi-statement SQL rejected: ${sql}`);
+  }
+  if (
+    !/^\s*SELECT\s+COUNT\(\*\)(?:\s+AS\s+\w+)?\s+FROM\s+subscribers(?:\s+WHERE\s+subscribed_at\s*>=\s*\?)?\s*;?\s*$/i.test(
+      sql,
+    )
+  ) {
+    throw new Error('PII guard: unsupported subscriber count query.');
   }
 }
 
@@ -173,52 +182,44 @@ function flushStepSummary(): void {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Turso helpers (libsql over HTTPS — same client the edge backends use)
+// D1 report configuration (use an account-scoped D1 Read token).
 // ──────────────────────────────────────────────────────────────────────────
 
-interface LibsqlLike {
-  execute(q: {
-    sql: string;
-    args: Array<string | number | null>;
-  }): Promise<{ rows: Record<string, unknown>[] }>;
-}
-
-async function makeTursoClient(url: string, authToken: string): Promise<LibsqlLike> {
-  const { createClient } = await import('@libsql/client/web');
-  return createClient({ url, authToken });
+function d1Config(databaseId: string | undefined): D1ReadConfig | null {
+  const accountId = process.env.CF_ACCOUNT_ID;
+  const token = process.env.CF_D1_READ_TOKEN;
+  return accountId && databaseId && token ? { accountId, databaseId, token } : null;
 }
 
 /** COUNT(*) chokepoint for the PII DB — every PII query goes through here. */
 async function piiCount(
-  client: LibsqlLike,
+  config: D1ReadConfig,
   sql: string,
   args: Array<string | number | null> = [],
 ): Promise<number> {
   assertCountsOnlySql(sql);
-  const res = await client.execute({ sql, args });
-  return Number(res.rows[0]?.n ?? 0);
+  const rows = await readD1<{ n: number }>(config, sql, args);
+  return Number(rows[0]?.n ?? 0);
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// [1/4] Subscribers (Turso PII — COUNTS ONLY)
+// [1/4] Subscribers (D1 PII — COUNTS ONLY)
 // ──────────────────────────────────────────────────────────────────────────
 
 async function sectionSubscribers(): Promise<void> {
   out('');
-  out('[1/4] Subscribers (Turso PII — counts only)');
+  out('[1/4] Subscribers (D1 PII — counts only)');
   out('-'.repeat(60));
-  const url = process.env.TURSO_PII_URL;
-  const token = process.env.TURSO_PII_AUTH_TOKEN;
-  if (!url || !token) {
-    out('  unavailable (missing env: TURSO_PII_URL / TURSO_PII_AUTH_TOKEN)');
+  const config = d1Config(process.env.D1_PII_DATABASE_ID);
+  if (!config) {
+    out('  unavailable (set CF_D1_READ_TOKEN, CF_ACCOUNT_ID and D1_PII_DATABASE_ID)');
     return;
   }
   try {
-    const client = await makeTursoClient(url, token);
-    const total = await piiCount(client, 'SELECT COUNT(*) AS n FROM subscribers');
+    const total = await piiCount(config, 'SELECT COUNT(*) AS n FROM subscribers');
     const since = isoDayAgo(GROWTH_WINDOW_DAYS);
     const recent = await piiCount(
-      client,
+      config,
       'SELECT COUNT(*) AS n FROM subscribers WHERE subscribed_at >= ?',
       [since],
     );
@@ -346,31 +347,31 @@ async function sectionPerTextDemand(): Promise<void> {
   out(`[4/4] Per-text demand (last ${MISS_WINDOW_DAYS}d)`);
   out('-'.repeat(60));
 
-  // ── Search misses (search_misses table, written by src/lib/search-miss.ts)
-  const url = process.env.TURSO_CORPUS_URL;
-  const token = process.env.TURSO_CORPUS_AUTH_TOKEN;
+  // ── Optional imported search-miss history; website query logging remains disabled.
+  const config = d1Config(process.env.D1_DEMAND_DATABASE_ID);
   let missRows: Array<{ value: string; n: number }> = [];
-  if (!url || !token) {
-    out('  Search misses: unavailable (missing env: TURSO_CORPUS_URL / TURSO_CORPUS_AUTH_TOKEN)');
+  if (!config) {
+    out(
+      '  Search misses: unavailable (set optional D1_DEMAND_DATABASE_ID and D1 read credentials)',
+    );
   } else {
     try {
-      const client = await makeTursoClient(url, token);
-      const res = await client.execute({
-        sql: `SELECT query, COUNT(*) AS n FROM search_misses
-              WHERE day >= ? GROUP BY query ORDER BY n DESC LIMIT 50`,
-        args: [isoDayAgo(MISS_WINDOW_DAYS)],
-      });
-      missRows = res.rows.map((r) => ({ value: String(r.query ?? ''), n: Number(r.n ?? 0) }));
+      const rows = await readD1<{ query: string; n: number }>(
+        config,
+        `SELECT query, COUNT(*) AS n FROM search_misses
+         WHERE day >= ? GROUP BY query ORDER BY n DESC LIMIT 50`,
+        [isoDayAgo(MISS_WINDOW_DAYS)],
+      );
+      missRows = rows.map((r) => ({ value: String(r.query ?? ''), n: Number(r.n ?? 0) }));
       const totalMisses = missRows.reduce((a, r) => a + r.n, 0);
       out(`  Search misses:            ${totalMisses} (distinct queries: ${missRows.length})`);
       for (const r of missRows.slice(0, 10)) {
         out(`    ${String(r.n).padStart(4)}  ${r.value}`);
       }
     } catch (e) {
-      // A fresh corpus DB has no search_misses table until the first miss
-      // lands — that's "no data yet", not an error worth a red run.
+      // An optional demand database may not have historical search misses — that's "no data yet", not an error worth a red run.
       const msg = (e as Error).message;
-      if (/no such table/i.test(msg)) {
+      if (e instanceof D1ReadError && e.tableMissing) {
         out('  Search misses:            0 (table not created yet — no misses recorded)');
       } else {
         out(`  Search misses: unavailable (query failed: ${msg.slice(0, 120)})`);

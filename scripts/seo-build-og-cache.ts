@@ -1,25 +1,8 @@
 /**
  * seo-build-og-cache — precompute verse OG payloads to static JSON.
  *
- * Why this exists:
- *   The OG handler (`functions/og/_shared.ts`) runs a libsql HTTP query
- *   against Turso on every cold OG request. PR #7 widened the per-request
- *   timeout from 500ms → 1500ms and memoized the libsql `/web` import,
- *   which fixed the structural 100% fallback bug. But the T+24h Phase 8
- *   measurement still saw 6% fallback (3/50 URLs) — tail-latency variance
- *   from cold worker isolates + cold Turso connections occasionally
- *   crossing the 1500ms budget on the largest texts (Vijnāna-bhairava-
- *   tantra, Pratyabhijñā-hṛdayam).
- *
- *   This script eliminates the DB round-trip entirely for the hot path.
- *   At build time we query the corpus once, write one JSON file per verse
- *   to `public/og-cache/<tradition>/<text>/<chapter>/<verse>.json`. CF
- *   Pages serves these as static assets from edge cache. The OG handler
- *   reads the JSON via `ASSETS.fetch(...)` (~5ms edge lookup) instead of
- *   the libsql round-trip (~500ms warm, 1500ms+ cold tail).
- *
- *   The DB-fallback path in `_shared.ts` is preserved unchanged for
- *   verses not yet in the cache (e.g. a fresh ingest between builds).
+ * Build-time output for the legacy OG cache. The deployed OG renderer reads
+ * generated corpus assets and never connects to a remote corpus database.
  *
  * Output shape:
  *   One JSON per verse, mirroring `getVerseAllLanguages` raw row shape:

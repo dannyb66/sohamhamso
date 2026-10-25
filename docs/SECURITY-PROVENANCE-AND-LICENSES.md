@@ -14,21 +14,21 @@ The token authorizes both confirmation and deletion via different routes; posses
 
 ## Mailer gap and retention
 
-[send-confirmations.ts](../pipeline/email/send-confirmations.ts) reads a `pending_email_plaintext` column, clears it after successful send or permanent provider failure, records tracking timestamps, and retries transient failures. Its selection is capped at 100 rows from a 24-hour subscription window. The baseline subscription handler does not populate that field, so the source establishes a sender component rather than a complete delivery path. Missing provider configuration is a no-op. Comments proposing stale-row garbage collection are not proof of a retention job.
+Confirmation email is sent inline by [subscriber-email.ts](../src/lib/subscriber-email.ts), with delivery timestamps stored in D1. The obsolete standalone confirmation sender has been removed. Database persistence and provider acceptance are separate outcomes; verify delivered email independently.
 
-Database backups may contain PII, secret tokens, and any mailer plaintext present. [The backup workflow](../.github/workflows/turso-backup.yml) retains artifacts for 90 days and optionally uploads to R2; access/retention must include those copies. Public dataset exports explicitly exclude subscriber, embedding, quota, and operational release tables. Deleting a live subscriber row does not automatically remove prior backups. Do not infer a jurisdictional residency guarantee from a `region` field selected using a country header.
+Database backups may contain PII, secret tokens and plaintext delivery fields. Historical artifacts and R2 exports require access and retention controls even after the old backup workflow is removed; see [legacy retention](TURSO.md). Public datasets exclude subscriber, embedding, quota and operational tables. Deleting a subscriber does not automatically delete historical backups. A region field is not a jurisdictional residency guarantee.
 
-Uncommitted D1 cutover code in the original working directory inspected 2026-10-12 adds encrypted subscriber email handling and a plaintext fallback during stabilization. That later design changes the privacy boundary and requires a fresh review; this baseline's hash-only subscribe behavior must not be used to describe those files as deployed or safe by inheritance.
+Current D1 subscriber storage includes encrypted email alongside a temporary normalized plaintext delivery fallback. Preserve encryption keys and hash peppers across releases; treat both database and backups as sensitive PII. Removing this fallback is a separate future migration, not part of the Turso cleanup.
 
 ## Search and output safety
 
-[Search-miss logging](../src/lib/search-miss.ts) records query text sanitized of controls, collapsed whitespace and capped at 80 characters, plus language/type and a UTC day bucket. It does not record IP, user agent, session, or subscriber links. Query strings can still contain sensitive information typed by users. The logger is best-effort and must not fail the response. The corpus adapter can execute these writes despite being described as read-only in its header; credential scope should match actual use.
+Public lexical search does not log queries. [Search-miss helpers](../src/lib/search-miss.ts) only sanitize historical query text and produce coarse day buckets. The optional D1 demand report reads existing sanitized history; no new logging, table creation, IP, user-agent, session or subscriber linkage is enabled.
 
 [Safe JSON helpers](../src/lib/safe-json.ts) and [SEO/XML tests](../tests/unit/seo/xml-escape.adversarial.test.ts) address embedding content in script/structured metadata. Source-provided attribution HTML and generated text should be reviewed at the ingestion boundary before publication. AI-generated strings are corpus content, not authorization to execute instructions, commands, or publishing actions.
 
 ## Credentials and OAuth
 
-[.env.example](../.env.example) distinguishes reader runtime credentials from operator/CI credentials. Turso account-level CLI tokens used for provisioning/backup differ from per-database runtime tokens. Keep CORPUS and PII secret scopes separate even when sharing infrastructure. Configuration permits the two URLs to point at the same database; source separation does not prove physical isolation or read-only authorization.
+[.env.example](../.env.example) separates D1 subscriber bindings and cryptographic/provider secrets from operator/CI credentials. Public corpus reads have no database credentials. D1 demand reports require a read-only account token and restrict subscriber queries to aggregate counts; deployment tokens should not be reused for the scheduled report.
 
 Media credentials pass through [pipeline/youtube/secrets.ts](../pipeline/youtube/secrets.ts); `MOCK_ALL=true` provides a credentials-free test path. [OAuth setup](../scripts/youtube-oauth-setup.ts) requests the union of `youtube.upload`, `yt-analytics.readonly`, and `youtube.force-ssl` for uploading, analytics, and metadata updates. Older “upload only” comments are stale. The setup writes the refresh token to `.secrets/yt-refresh.txt` and prints its path rather than its value. A refresh token can authorize channel mutations: protect the local file, GitHub secrets and workflow permissions, and verify granted scopes before live runs.
 
@@ -62,4 +62,4 @@ Media attribution must cover recording and visual inputs independently of script
 
 ## Verification entry points
 
-[Subscribe edge tests](../tests/unit/subscribe-edge-compat.test.ts), [confirm endpoint tests](../tests/unit/confirm-endpoint.test.ts), [draft visibility tests](../tests/unit/draft-visibility.test.ts), [OAuth setup](../scripts/youtube-oauth-setup.ts), and [Turso operating runbook](TURSO.md) let contributors inspect these boundaries. Tests with injected databases/providers establish local behavior; live secret scopes, backup access, delivered email and deployed worker configuration need separate evidence.
+[Subscribe edge tests](../tests/unit/subscribe-edge-compat.test.ts), [confirm endpoint tests](../tests/unit/confirm-endpoint.test.ts), [draft visibility tests](../tests/unit/draft-visibility.test.ts), [OAuth setup](../scripts/youtube-oauth-setup.ts), and [D1 operations runbook](D1-CUTOVER.md) let contributors inspect these boundaries. Tests with injected databases/providers establish local behavior; live secret scopes, backup access, delivered email and deployed worker configuration need separate evidence.

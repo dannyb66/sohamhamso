@@ -12,7 +12,7 @@ import LangSwitcher from '../../../../components/seo/LangSwitcher.astro';
 /**
  * Verse HTML is assembled on request from build-generated static corpus assets.
  * No database is queried by this route. Keep value imports from the legacy
- * SQLite/Turso readers out of the public Worker.
+ * local SQLite readers out of the public Worker.
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { computeIsShortVerse, isProseSection } from '../../../../lib/prose';

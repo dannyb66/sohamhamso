@@ -2,7 +2,7 @@
  * Double-opt-in confirmation email template.
  *
  * BUILDS a `{ subject, html, text }` payload that the Resend send
- * Worker (pipeline/email/send-confirmations.ts) POSTs to Resend's
+ * adapter (src/lib/subscriber-email.ts) POSTs to Resend's
  * `/emails` endpoint.
  *
  * DESIGN CONSTRAINTS (locked from the deployment plan):

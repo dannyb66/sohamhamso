@@ -85,7 +85,7 @@ export function getYoutubeOAuth(): {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Cloudflare R2 (S3-compatible, via AWS_* env per turso-backup pattern)
+// Cloudflare R2 (S3-compatible, via AWS_* env)
 // ─────────────────────────────────────────────────────────────────────────────
 
 export function getR2Creds(): {

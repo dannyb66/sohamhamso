@@ -378,7 +378,7 @@ bun scripts/youtube-status.ts --json   # machine — includes byFormat counts
 ```
 
 If a scheduled job fails, it opens a GitHub Issue (labels `youtube` +
-`youtube-<job>-failure`) per the `turso-backup.yml` precedent — investigate from
+`youtube-<job>-failure`) — investigate from
 the linked run logs.
 
 ## Safe onboarding and side-effect boundaries

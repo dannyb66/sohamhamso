@@ -15,7 +15,7 @@ function isBunRuntime(): boolean {
 /**
  * Public surface every subscribe-DB backend exposes. The handler in
  * `src/pages/api/subscribe.ts` only ever sees this shape — never the
- * underlying driver. Both methods are async so the bun and libsql paths
+ * underlying driver. Both methods are async so the SQLite and D1 paths
  * are interchangeable.
  */
 export interface SubscriberDb {
@@ -145,8 +145,7 @@ function isD1UniqueViolation(err: unknown): boolean {
  *
  * `db/sohamhamso.db` is the same file the corpus reader uses; locally
  * we keep a single SQLite file (the `subscribers` table is part of the
- * same schema for dev simplicity — production splits it onto the Turso
- * PII DB).
+ * same schema for dev simplicity — production uses the PII_DB D1 binding).
  * ──────────────────────────────────────────────────────────────────── */
 
 async function makeBunBackend(): Promise<SubscriberDb> {
@@ -270,8 +269,7 @@ let _injected: SubscriberDb | null = null;
 
 /**
  * Returns the singleton subscriber DB for this runtime. Memoizes the
- * factory promise so cold-start bootstrap (the libsql `CREATE TABLE`)
- * runs at most once per worker instance.
+ * factory promise so backend setup runs at most once per worker instance.
  *
  * Tests can pre-empt the routing by calling `__setSubscriberDbForTests`.
  */

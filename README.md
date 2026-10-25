@@ -108,7 +108,21 @@ Optional live translation requires `ANTHROPIC_API_KEY`; embeddings use `OPENAI_A
 
 ## Architecture
 
-**No Turso in the website runtime.** Texts, verses, translations, word glosses, and search indexes must be generated from the repository's corpus into static assets at build time. Do not restore Turso credentials, add a Turso fallback, or make public reading depend on a remote database. Local SQLite is a build and operator tool; Cloudflare D1 stores subscriber records only.
+### Database policy — no Turso
+
+Do not add Turso, libSQL clients, remote corpus credentials, seed jobs or backup
+workflows. Local ingestion and media jobs use SQLite; production subscriptions
+use the `PII_DB` Cloudflare D1 binding. Texts, translations, glosses and lexical
+search indexes are exported into the site at build time. Reading a text must
+never require a runtime database connection.
+
+Production search is lexical only. Optional local embedding tools do not enable
+semantic website search. Confirmation email is sent by the existing subscription
+handler; this cleanup does not change daily-email scheduling or YouTube jobs.
+
+The optional weekly demand report reads aggregate counts from D1 using a D1 Read
+token. Its configuration and legacy data-retention instructions are documented in
+[the database operations runbook](docs/D1-CUTOVER.md).
 
 `bun run build` and `bun run seo:build` export chapter bundles and search indexes into `dist/_data/corpus/` and verify their counts against SQLite. Deploy the generated assets together with the Worker. Verse pages still assemble HTML on request from those immutable assets; they do not query a database. A successful deployment must serve `/_data/corpus/manifest.json`, pass `/api/health/corpus`, and render both English and localized verse URLs. A working homepage alone does not verify the reader.
 
@@ -128,7 +142,7 @@ Static corpus assets QA + SQL state + R2
                          upload/analytics
 ```
 
-Local SQLite combines logical tables for convenience. Public corpus reads use static chapter bundles and search indexes; subscription, confirmation, and unsubscribe requests use the `PII_DB` D1 binding. Media uses distinct corpus/state DB paths in scheduled workflows. Historical Turso scripts and dependencies are retained for legacy operator tooling only, and must not be imported into the website runtime. See [the deployment runbook](docs/D1-CUTOVER.md). A scheduled daily mail Worker, Node standalone adapter, and Docker remain separate development work.
+Local SQLite combines logical tables for convenience. Public corpus reads use static chapter bundles and search indexes; subscription, confirmation, and unsubscribe requests use the `PII_DB` D1 binding. Media uses distinct corpus/state DB paths in scheduled workflows. No remote corpus adapter or libSQL dependency is retained. See [the deployment runbook](docs/D1-CUTOVER.md). The separately deployed D1 daily-email Worker is unchanged by this cleanup; Node/Docker work is not included.
 
 ## AI systems
 
@@ -227,7 +241,7 @@ For data reuse, additionally cite the source text/edition, bundle version and ch
 - **Vidyut** (vidyut-cheda / vidyut-prakriya): deterministic Sanskrit analysis tooling used by the separate morphology workflow.
 - **Ambuda**: open-source Sanskrit reading and analysis ecosystem, including Vidyut. No formal corpus-sharing partnership is established here.
 - **The Lakshman Joo lineage**: the living transmission that informs the project's editorial context. This project does not speak for any lineage.
-- **Astro, Solid, Sanscript, Zod, Bun, libSQL, Remotion and FFmpeg contributors**: implementation dependencies and rendering tools visible in [package.json](package.json) and pipeline source; dependency acknowledgements are not an endorsement or license replacement.
+- **Astro, Solid, Sanscript, Zod, Bun, SQLite, Remotion and FFmpeg contributors**: implementation dependencies and rendering tools visible in [package.json](package.json) and pipeline source; dependency acknowledgements are not an endorsement or license replacement.
 
 ## Documentation navigation
 

@@ -1,35 +1,7 @@
 /**
- * Async verse-page reads for the SSR verse routes (A6 phase 2).
- *
- * WHY THIS FILE EXISTS (separate from `src/lib/db.ts` and
- * `src/lib/seo/corpus-bundle.ts`):
- *   The two verse routes (`/[tradition]/[text]/[chapter]/[verse]` and the
- *   `/[lang]/...` twin) are `prerender = false` — they render at request
- *   time inside the Cloudflare Pages worker, where `bun:sqlite` does not
- *   exist. All reads here go through the `CorpusDb` abstraction
- *   (`src/lib/corpus-db.ts`), which routes to:
- *     - bun:sqlite against `db/sohamhamso.db` in bun (astro dev, tests),
- *     - `@libsql/client/web` against the Turso CORPUS DB in workerd
- *       (env: TURSO_CORPUS_URL + TURSO_CORPUS_AUTH_TOKEN as CF secrets).
- *   Environment detection is the explicit `process.versions.bun` sniff in
- *   corpus-db.ts (`isBunRuntime`) — never an implicit feature probe.
- *
- * LATENCY CONTRACT — ONE batched round-trip per page:
- *   The legacy build-time path (`getVerse()` in db.ts) runs ~6 sequential
- *   queries; that's free against a local file but would cost ~6 sequential
- *   HTTPS exchanges against Turso. `readVersePage()` instead issues a
- *   single `CorpusDb.batch()` of independent statements (each re-derives
- *   the verse id via a subquery, so no statement depends on another's
- *   result) and assembles the full page payload — verse + translations
- *   (all langs) + glosses (all langs) + parallels + prev/next + chapter
- *   count + language availability + per-text lemma occurrence counts —
- *   from that one exchange. The only other round-trip is the corpus-wide
- *   lemma index (slug + occurrence count per lemma), which is memoized at
- *   module scope: the corpus only changes on deploy, so one query per
- *   worker isolate is correct.
- *
- * Draft-visibility promise: identical to db.ts — `status IN ('published',
- * 'reviewed')` everywhere; drafts never reach public reads.
+ * Async local SQLite verse payload helpers, retained for tools and tests.
+ * Public verse routes read generated chapter bundles through static-corpus-read.ts.
+ * Queries include only reviewed/published translations.
  */
 
 export { resolveVerseAlias } from './slug-aliases';
@@ -129,13 +101,8 @@ export async function corpusBatch(
  * Resolve {slug, occurrenceCount} for just the lemmas a verse uses, by PK
  * against the build-time `lemma_index` table.
  *
- * WHY NOT A CORPUS-WIDE SCAN: the previous implementation full-scanned
- * `word_glosses` (GROUP BY lemma_iast) once per worker isolate to build the
- * whole map. Against Turso (billed per row read) that cost ~180k rows on
- * every cold isolate and exhausted the read quota. `lemma_index` is
- * materialized at build time (pipeline/ingest/lemma-index.ts) with the same
- * slug/ordering contract as the static `/lemma/` pages, so a per-page
- * `WHERE lemma_iast IN (...)` reads only the verse's handful of lemmas.
+ * The build-time lemma_index preserves the static lemma slug ordering and
+ * avoids rebuilding corpus-wide summaries for each local verse payload.
  */
 async function readLemmaSummaries(
   db: CorpusDb,
@@ -203,13 +170,12 @@ const TEXT_ID_SQL = '(SELECT t2.id FROM texts t2 WHERE t2.slug = ?)';
 /**
  * Fetch everything the verse page needs in ONE CorpusDb round-trip, plus
  * the memoized lemma index. Statements are independent (each re-resolves
- * ids via subqueries) so they can ride a single libsql `batch()`.
+ * ids via subqueries) so they can share a single local batch.
  *
  * Returns `{ texts, bundle: null }` when the verse ref doesn't resolve —
  * `texts` still lets the caller distinguish alias-redirect from 404.
  *
- * Throws on transport/config failure (CorpusNotConfiguredError, network);
- * callers map that to the styled 503.
+ * Throws when the local SQLite database is unavailable.
  */
 export async function readVersePage(
   textSlug: string,
