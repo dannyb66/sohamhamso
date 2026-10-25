@@ -94,6 +94,9 @@ if (outDir === join(root, 'dist', '_data', 'corpus') && existsSync(workerDirecto
     }
   }
   const routes = JSON.parse(readFileSync(join(root, 'dist', '_routes.json'), 'utf8'));
+  if ((routes.include?.length ?? 0) + (routes.exclude?.length ?? 0) > 100) {
+    throw new Error('Cloudflare Pages routing exceeds its combined 100-rule limit.');
+  }
   if (!routes.exclude?.includes('/_data/*')) {
     throw new Error('Generated corpus assets must be excluded from Worker routing.');
   }
