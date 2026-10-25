@@ -15,8 +15,7 @@
  *      redirect surface moved to resolveVerseAlias + public/_redirects).
  *   3. Neither route VALUE-imports from src/lib/db (type-only is fine —
  *      erased at compile time).
- *   4. Both routes read through src/lib/verse-read (the CorpusDb-backed
- *      batched read) and 301 aliases via resolveVerseAlias.
+ *   4. Both routes read generated static corpus assets and 301 aliases via resolveVerseAlias.
  *   5. verse-read.ts itself only TYPE-imports db.ts.
  *   6. SEO head parity: both routes still build the verse head via
  *      buildVerseSeo (canonical + hreflang + JSON-LD come from the same
@@ -84,8 +83,9 @@ for (const [label, path] of [
       }
     });
 
-    it('reads through verse-read.ts and resolves aliases in-handler', () => {
-      expect(src).toMatch(/readVersePage/);
+    it('reads generated corpus assets and resolves aliases in-handler', () => {
+      expect(src).toMatch(/readStaticVersePage/);
+      expect(valueImportsOf(src, /from\s+['"][^'"]*lib\/verse-read['"]/)).toHaveLength(0);
       expect(src).toMatch(/resolveVerseAlias/);
       expect(src).toMatch(/Astro\.redirect\(/);
       expect(src).toMatch(/301/);

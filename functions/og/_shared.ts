@@ -1,4 +1,3 @@
-import { type CorpusDb, CorpusNotConfiguredError, getCorpusDb } from '../../src/lib/corpus-db';
 import { FONT_ASSET_PATHS } from '../../src/lib/font-assets';
 import { getReadingModeByLang } from '../../src/lib/reading-modes';
 import {
@@ -8,22 +7,16 @@ import {
   type OgRouteValidationError,
   type VerseOgPayload,
   type VerseOgRoute,
-  buildVerseOgPayloadFromCache,
-  fetchLemmaOgPayload,
-  fetchVerseOgPayload,
   parseLemmaOgUrl,
   parseVerseOgUrl,
 } from '../../src/lib/seo/og-payload';
+import {
+  readStaticLemmaOgPayload,
+  readStaticVerseOgPayload,
+} from '../../src/lib/static-og-payload';
 
 const OG_SUCCESS_CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const OG_FALLBACK_CACHE_CONTROL = 'public, max-age=60';
-// 1500ms accommodates the libsql `/web` client's TLS handshake + first HTTP
-// round-trip on a cold worker isolate (warm probes complete in ~450ms, but
-// cold-start probes were blowing the previous 500ms budget — that's the
-// "100% fallback in production" bug Phase 8 caught). 1500ms still leaves
-// ample headroom inside the 2000ms render budget and the CF Workers
-// total-CPU limits.
-const OG_QUERY_TIMEOUT_MS = 1500;
 const OG_RENDER_TIMEOUT_MS = 2000;
 const OG_FALLBACK_ASSET_CANDIDATES = ['/og-default.png', '/og-default.svg'] as const;
 const OG_RUNTIME_WASM_ASSET = '/og-runtime/resvg-index_bg.wasm';
@@ -34,19 +27,8 @@ type OgSuccessRoute = VerseOgRoute | LemmaOgRoute;
 let _resvgModulePromise: Promise<typeof import('@resvg/resvg-wasm')> | null = null;
 let _resvgReadyPromise: Promise<typeof import('@resvg/resvg-wasm')> | null = null;
 let _ogFontBuffersPromise: Promise<Uint8Array[]> | null = null;
-// Module-scope memoization of the libsql `/web` import. Each `await import()`
-// call pays a non-trivial chunk-load cost on a cold worker isolate (~50-200ms
-// in workerd because the chunk must be parsed + linked). Without memoization
-// every OG request re-paid this cost, eating the query timeout budget. We
-// memoize the IMPORT (not the client) so the per-request `createClient(...)`
-// — which owns the AbortSignal closure — can still happen fresh per request
-// without cross-request signal contamination.
-let _libsqlClientImportPromise: Promise<typeof import('@libsql/client/web')> | null = null;
-
 export interface OgEnv {
   ASSETS: { fetch: typeof fetch };
-  TURSO_CORPUS_URL?: string;
-  TURSO_CORPUS_AUTH_TOKEN?: string;
   /** Pre-compiled WebAssembly.Module from wrangler.toml [wasm_modules].
    *  Avoids dynamic instantiation which is blocked in _worker.js context. */
   RESVG_WASM?: WebAssembly.Module;
@@ -61,68 +43,34 @@ export interface OgFunctionContext {
 export async function handleVerseOgRequest(context: OgFunctionContext): Promise<Response> {
   const route = parseVerseOgUrl(new URL(context.request.url));
   if (!route.ok) return errorResponse(route);
-  return serveOgPayload(context, route, fetchVerseOgPayload);
+  return serveOgPayload(context, route, readStaticVerseOgPayload);
 }
 
 export async function handleLemmaOgRequest(context: OgFunctionContext): Promise<Response> {
   const route = parseLemmaOgUrl(new URL(context.request.url));
   if (!route.ok) return errorResponse(route);
-  return serveOgPayload(context, route, fetchLemmaOgPayload);
+  return serveOgPayload(context, route, readStaticLemmaOgPayload);
 }
 
 async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRoute>(
   context: OgFunctionContext,
   route: R,
-  loader: (db: Awaited<ReturnType<typeof getCorpusDb>>, parsed: R) => Promise<T | null>,
+  loader: (parsed: R, options: { assets: OgEnv['ASSETS']; baseUrl: URL }) => Promise<T | null>,
 ): Promise<Response> {
   const cache = getDefaultCache();
   const cacheKey = new Request(route.cacheKeyUrl, { method: 'GET' });
   const cached = cache ? await cache.match(cacheKey) : undefined;
   if (cached) return cached;
 
-  // Static-asset precache lookup (verse routes only). `scripts/seo-build-og-cache.ts`
-  // writes one JSON per verse to `public/og-cache/<tradition>/<text>/<chapter>/<verse>.json`
-  // at build time. The OG handler reads it via `ASSETS.fetch(...)` from the
-  // edge cache (~5ms) instead of the libsql HTTPS round-trip (~500ms warm,
-  // 1500ms+ cold tail) — eliminating the DB-timeout failure mode that
-  // Phase 8 T+24h flagged at 6% fallback rate.
-  //
-  // On any cache-miss / parse-fail / lookup-error we fall through to the
-  // DB path below. The DB path is preserved unchanged so verses added
-  // between builds still resolve (rare; production rebuilds happen on
-  // every PR merge).
-  let payload: T | null = null;
-  if (route.kind === 'verse') {
-    payload = (await tryLoadFromOgCache(context, route as VerseOgRoute)) as T | null;
-  }
-
-  if (payload === null) {
-    // AbortController-backed timeout for the DB step. When TURSO env vars are
-    // present we route through a per-request libsql client whose custom `fetch`
-    // wires `controller.signal` into the upstream HTTP request — so an expired
-    // timer ACTUALLY tears down the socket instead of merely racing the response
-    // away (the prior `Promise.race` shape leaked subrequests under slow Turso).
-    const dbController = new AbortController();
-    const dbTimer = setTimeout(() => dbController.abort(), OG_QUERY_TIMEOUT_MS);
-    try {
-      const db = await getAbortableCorpusDb(dbController.signal);
-      try {
-        payload = await loader(db, route);
-      } catch (error) {
-        if (dbController.signal.aborted) {
-          throw new Error('OG payload query timed out.');
-        }
-        throw error;
-      }
-    } catch (error) {
-      clearTimeout(dbTimer);
-      if (error instanceof CorpusNotConfiguredError) {
-        return fallbackResponse(context, route.cacheKeyUrl, error.message);
-      }
-      const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
-      return fallbackResponse(context, route.cacheKeyUrl, message);
-    }
-    clearTimeout(dbTimer);
+  let payload: T | null;
+  try {
+    payload = await loader(route, {
+      assets: context.env.ASSETS,
+      baseUrl: new URL(context.request.url),
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
+    return fallbackResponse(context, route.cacheKeyUrl, message);
   }
 
   if (!payload) {
@@ -144,43 +92,8 @@ async function serveOgPayload<T extends OgSuccessPayload, R extends OgSuccessRou
     if (cache) context.waitUntil(cache.put(cacheKey, response.clone()));
     return response;
   } catch (error) {
-    if (error instanceof CorpusNotConfiguredError) {
-      return fallbackResponse(context, route.cacheKeyUrl, error.message);
-    }
     const message = error instanceof Error ? error.message : 'Unknown OG render failure.';
     return fallbackResponse(context, route.cacheKeyUrl, message);
-  }
-}
-
-/**
- * Static-asset lookup for the verse OG cache built by
- * `scripts/seo-build-og-cache.ts`. Returns the materialized
- * `VerseOgPayload` on hit, or `null` on any miss / parse failure / fetch
- * error so the caller falls through to the DB path.
- *
- * The asset path mirrors the OG route exactly:
- *   `/og-cache/<tradition>/<text>/<chapter>/<verse>.json`
- * Compact JSON, one verse + all 12 translations per file (~1-3KB).
- *
- * The requested→english fallback logic is applied here (delegated to
- * `buildVerseOgPayloadFromCache`) so the cache file stays language-
- * neutral and future query-shape changes don't require a cache rebuild.
- */
-async function tryLoadFromOgCache(
-  context: OgFunctionContext,
-  route: VerseOgRoute,
-): Promise<VerseOgPayload | null> {
-  try {
-    const cacheUrl = new URL(
-      `/og-cache/${route.tradition}/${route.textSlug}/${route.chapter}/${route.verse}.json`,
-      context.request.url,
-    );
-    const response = await context.env.ASSETS.fetch(cacheUrl);
-    if (!response.ok) return null;
-    const raw = (await response.json()) as unknown;
-    return buildVerseOgPayloadFromCache(raw, route);
-  } catch {
-    return null;
   }
 }
 
@@ -656,74 +569,6 @@ function getDefaultCache(): Cache | undefined {
   return (caches as CacheStorage & { default: Cache }).default;
 }
 
-/**
- * Build a `CorpusDb` whose underlying libsql HTTP requests honor the supplied
- * `AbortSignal`. When the OG request's `OG_QUERY_TIMEOUT_MS` timer fires, the
- * signal aborts, the libsql custom `fetch` propagates the abort to the upstream
- * Turso socket, and the in-flight subrequest is actually canceled — preventing
- * the worker subrequest pileup the audit flagged as a DoS amplification risk.
- *
- * Falls back to the shared `getCorpusDb()` singleton (which honors
- * `__setCorpusDbForTests` and the bun-runtime path) when no Turso env vars
- * are present. This preserves bun/SSG/test behavior unchanged.
- */
-async function getAbortableCorpusDb(signal: AbortSignal): Promise<CorpusDb> {
-  const url = typeof process !== 'undefined' ? process.env.TURSO_CORPUS_URL : undefined;
-  const authToken =
-    typeof process !== 'undefined' ? process.env.TURSO_CORPUS_AUTH_TOKEN : undefined;
-  if (!url || !authToken) {
-    return getCorpusDb();
-  }
-
-  // Per-request libsql client. The `createClient(...)` call itself is cheap;
-  // the expensive part is the dynamic `import('@libsql/client/web')` chunk
-  // load on a cold isolate, which we now memoize at module scope so only the
-  // FIRST request per isolate pays it. The per-request client (and its
-  // AbortSignal-aware custom fetch) is preserved — concurrent requests would
-  // cross-contaminate signals if we shared a single client.
-  _libsqlClientImportPromise ??= import('@libsql/client/web');
-  const { createClient } = await _libsqlClientImportPromise;
-  const client = createClient({
-    url,
-    authToken,
-    // Custom fetch closes over our `signal`. Merges with any libsql-supplied
-    // init (e.g. headers, body) so we don't clobber the driver's request shape.
-    fetch: ((input: RequestInfo | URL, init?: RequestInit) =>
-      fetch(input as RequestInfo, { ...(init ?? {}), signal })) as unknown as (
-      ...args: unknown[]
-    ) => Promise<Response>,
-  });
-
-  function adaptRow<T>(row: Record<string, unknown>): T {
-    if ('embedding' in row && row.embedding != null) {
-      const v = row.embedding;
-      let buf: Buffer;
-      if (Buffer.isBuffer(v)) buf = v;
-      else if (v instanceof ArrayBuffer) buf = Buffer.from(v);
-      else if (v instanceof Uint8Array) buf = Buffer.from(v.buffer, v.byteOffset, v.byteLength);
-      else if (typeof v === 'string') buf = Buffer.from(v, 'base64');
-      else throw new Error(`og corpus-db: unexpected BLOB type: ${typeof v}`);
-      return { ...row, embedding: buf } as T;
-    }
-    return row as T;
-  }
-
-  return {
-    async all<T>(sql: string, params: ReadonlyArray<string | number | null> = []): Promise<T[]> {
-      const res = await client.execute({ sql, args: [...params] });
-      return res.rows.map((r) => adaptRow<T>(r as unknown as Record<string, unknown>));
-    },
-    async get<T>(
-      sql: string,
-      params: ReadonlyArray<string | number | null> = [],
-    ): Promise<T | undefined> {
-      const res = await client.execute({ sql, args: [...params] });
-      if (res.rows.length === 0) return undefined;
-      return adaptRow<T>(res.rows[0] as unknown as Record<string, unknown>);
-    },
-  };
-}
-
 async function withTimeout<T>(promise: Promise<T>, ms: number, message: string): Promise<T> {
   let timeoutId: ReturnType<typeof setTimeout> | undefined;
   try {
@@ -737,21 +582,3 @@ async function withTimeout<T>(promise: Promise<T>, ms: number, message: string):
     if (timeoutId !== undefined) clearTimeout(timeoutId);
   }
 }
-
-/**
- * Test hook — reset the module-scope memoization of the libsql `/web` import.
- * Lets regression tests assert that the import is paid at most once across
- * multiple requests within the same isolate. Production code MUST NOT call
- * this; it exists so the cold-isolate timeout fix has explicit test coverage.
- */
-export function __resetLibsqlClientImportForTests(): void {
-  _libsqlClientImportPromise = null;
-}
-
-/** Test hook — read-only snapshot of whether the libsql import was paid. */
-export function __libsqlClientImportPaidForTests(): boolean {
-  return _libsqlClientImportPromise !== null;
-}
-
-/** Exported timeout constant so tests can assert the budget didn't regress. */
-export const __OG_QUERY_TIMEOUT_MS_FOR_TESTS = OG_QUERY_TIMEOUT_MS;

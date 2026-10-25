@@ -1,12 +1,14 @@
-# Turso — operational runbook
+# Turso — historical operational runbook
 
-> Provision, apply schema, back up, restore, rotate. Baseline: `origin/main` at `4c94bf2`, inspected 2026-10-12. These instructions operate remote databases and secrets; they are not a credentials-free tutorial. Cloud provisioning and deployment must be verified separately.
+> Website runtime update (2026-10-25): public reading, search, and preview images use generated static corpus assets; subscriber endpoints use Cloudflare D1. Turso is retired from website requests. Older topology descriptions below are historical. Follow [the current cutover runbook](D1-CUTOVER.md) and the README no-Turso policy.
+
+> Historical provisioning, schema, backup, restore and rotation procedures. Baseline: `origin/main` at `4c94bf2`, inspected 2026-10-12. The commands below describe the retired topology; **do not provision or restore Turso credentials for the website**. Retained databases/backups may still need operator review. Current deployment uses [static corpus assets and D1](D1-CUTOVER.md).
 >
 > Companion docs:
 > - Current boundaries: [database decision](decisions/002-database-boundaries.md) and [operations](OPERATIONS-AND-QUALITY.md)
 > - Historical deployment plan: `.gstack/launch/deployment-plan-2026-06-01.md` (not an authoritative inventory of deployed resources)
 > - Ingestion runbook: `docs/INGESTION.md`
-> - Edge auth model: `.env.example` (`TURSO_PII_URL`, `TURSO_PII_AUTH_TOKEN`)
+> - Current website environment: [`.env.example`](../.env.example); historical Turso variables below are not website requirements
 
 ---
 
@@ -171,4 +173,4 @@ bun scripts/turso-seed-corpus.ts --text siva-sutras
 
 [Seeder implementation](../scripts/turso-seed-corpus.ts) performs content/checksum comparisons and rejects destructive replacement/deletion without `--backup-confirmed`. Take and verify a fresh backup before using `--replace` or `--delete-only`; that flag is an operator assertion, not an automatic backup. Full-database seed mode requires empty targets. Row-ID conflicts need reconciliation or a verified full restore; do not bypass the check by editing IDs blindly. Seed before deploying index pages that link to new references, and verify a known verse on the remote-backed site.
 
-Uncommitted D1/static-corpus and Node/Docker files were inspected in the original working directory on 2026-10-12. They propose replacing this edge topology, but are absent from `4c94bf2`. This runbook remains the baseline explanation; do not retire Turso, disable backups, or route subscriber writes elsewhere based solely on a local cutover document's production assertions.
+The 2026-10-25 static corpus release replaces the website topology described above. Corpus assets are exported from local SQLite, subscriber endpoints use D1, and the website must not fall back to Turso. Use [D1-CUTOVER.md](D1-CUTOVER.md) for current verification and retirement/rollback guidance. Node/Docker work remains outside this website release.

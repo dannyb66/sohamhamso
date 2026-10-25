@@ -9,20 +9,21 @@
 
 import type { APIRoute } from 'astro';
 import { type OgFunctionContext, handleLemmaOgRequest } from '../../../../functions/og/_shared';
-import resvgWasm from '../../../../public/og-runtime/resvg-index_bg.wasm';
 
 export const prerender = false;
 
-export const GET: APIRoute = async ({ request }) => {
+export const GET: APIRoute = async ({ request, locals }) => {
+  const runtime = (
+    locals as
+      | { runtime?: { env?: OgFunctionContext['env']; waitUntil?: OgFunctionContext['waitUntil'] } }
+      | undefined
+  )?.runtime;
   const ctx: OgFunctionContext = {
     request,
-    env: {
+    env: runtime?.env ?? {
       ASSETS: { fetch: (input: RequestInfo | URL) => fetch(input as RequestInfo) },
-      TURSO_CORPUS_URL: process.env.TURSO_CORPUS_URL,
-      TURSO_CORPUS_AUTH_TOKEN: process.env.TURSO_CORPUS_AUTH_TOKEN,
-      RESVG_WASM: resvgWasm as WebAssembly.Module,
     },
-    waitUntil: () => {},
+    waitUntil: runtime?.waitUntil ?? (() => {}),
   };
   return handleLemmaOgRequest(ctx);
 };

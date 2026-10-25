@@ -32,7 +32,7 @@
  * 'reviewed')` everywhere; drafts never reach public reads.
  */
 
-import { SLUG_ALIASES } from './aliases';
+export { resolveVerseAlias } from './slug-aliases';
 import { type CorpusBatchStatement, type CorpusDb, getCorpusDb } from './corpus-db';
 import type { Parallel, Text, Translation, Verse, WordGloss } from './db';
 
@@ -186,21 +186,6 @@ export function __resetVerseReadCachesForTests(): void {}
  * for anything that reaches the function (e.g. astro dev, cache misses on
  * pairs the wildcards don't enumerate).
  */
-export function resolveVerseAlias(
-  tradition: string,
-  textSlug: string,
-  texts: ReadonlyArray<TextRef>,
-): { canonical: boolean; canonicalTradition: string; canonicalSlug: string } | null {
-  const canonicalSlug = SLUG_ALIASES[textSlug] ?? textSlug;
-  const t = texts.find((x) => x.slug === canonicalSlug);
-  if (!t) return null;
-  return {
-    canonical: t.tradition === tradition && t.slug === textSlug,
-    canonicalTradition: t.tradition,
-    canonicalSlug: t.slug,
-  };
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // The batched verse-page read
 // ─────────────────────────────────────────────────────────────────────────────
@@ -371,7 +356,18 @@ export async function readVersePage(
   if (translations.length === 0 && allTranslations.length > 0) {
     const available = new Set(allTranslations.map((t) => t.lang));
     const FALLBACK_LANG_ORDER = [
-      'en', 'hi', 'bn', 'ta', 'te', 'kn', 'ml', 'mr', 'gu', 'pa', 'or', 'as',
+      'en',
+      'hi',
+      'bn',
+      'ta',
+      'te',
+      'kn',
+      'ml',
+      'mr',
+      'gu',
+      'pa',
+      'or',
+      'as',
     ];
     const fallbackLang =
       FALLBACK_LANG_ORDER.find((l) => available.has(l)) ?? allTranslations[0].lang;

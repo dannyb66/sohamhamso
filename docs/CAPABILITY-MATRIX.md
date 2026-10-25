@@ -1,10 +1,13 @@
 # Capability and deployment matrix
 
-Snapshot date: **2026-10-12**. The documentation worktree was created from `origin/main` after `git fetch origin main`; `git ls-remote origin refs/heads/main` and `git rev-parse origin/main` agreed on **`4c94bf26b9e85747a22ed8ea271995a6b3828720`**. Documentation changes do not merge development branches, change runtime behavior or deploy a new build.
+> Website runtime update (2026-10-25): public reading, search, and preview images use generated static corpus assets; subscriber endpoints use Cloudflare D1. Turso is retired from website requests. Older topology descriptions below are historical. Follow [the current cutover runbook](D1-CUTOVER.md) and the README no-Turso policy.
+
+Historical inventory date: **2026-10-12**, verified at **`4c94bf26b9e85747a22ed8ea271995a6b3828720`**. Website capability rows were updated for the **2026-10-25 static corpus release**. Branch/worktree and media inventories below retain their original dated evidence. Documentation changes alone do not establish a deployed revision.
 
 ## Status vocabulary
 
 - **Merged:** implementation is in the verified main baseline. This is a code status, not a production assertion.
+- **Release implementation:** included in the static corpus release; production status requires the checks in [D1-CUTOVER.md](D1-CUTOVER.md).
 - **Branch-only:** implementation was inspected in a named commit outside main, even if an older related feature has landed through a squash merge.
 - **Uncommitted:** files or edits exist in another worktree and are not available in this baseline. Local filenames are evidence locations, not linked files promised by this checkout.
 - **Historical:** previous implementation, measurement or plan retained for explanation.
@@ -16,22 +19,22 @@ Snapshot date: **2026-10-12**. The documentation worktree was created from `orig
 
 | Subsystem | Implementation state | Evidence | Test or deployment status |
 |---|---|---|---|
-| Twelve-locale corpus reader | Merged | [reading modes](../src/lib/reading-modes.ts), [verse aggregate](../src/lib/verse-read.ts) | Local English/Hindi route smoke; live route titles observed |
+| Twelve-locale corpus reader | Release implementation | [reading modes](../src/lib/reading-modes.ts), [static reader](../src/lib/static-corpus-read.ts) | Static-runtime regressions; verify English and localized URLs after deployment |
 | 11 texts / 3,023 addressed units | Merged source data | [data reference](CORPUS-AND-DATA-PLATFORM.md), fresh ingest | Local reconstruction; no assertion of every live row |
 | Prose support | Merged | [schema](../src/lib/seo/corpus-schema.ts), [prose helper](../src/lib/prose.ts) | 748 Tantrasara blocks, distinct from verse count |
 | Static indexes plus request-time verses/search | Merged | [Astro config](../astro.config.mjs), [web reference](WEB-DELIVERY-AND-EDGE.md) | SSR route and import regressions; live pages observed |
-| Native SQLite/local and Turso/edge adapters | Merged | [corpus adapter](../src/lib/corpus-db.ts), [subscriber adapter](../src/lib/subscriber-db.ts) | Fresh local setup tested; no current live DB topology proven |
+| Local SQLite, static edge corpus and D1 subscribers | Release implementation | [exporter](../scripts/static-corpus-export.ts), [static reader](../src/lib/static-corpus-read.ts), [subscriber adapter](../src/lib/subscriber-db.ts) | No Turso website dependency; local/runtime and D1 adapter tests |
 | Materialized lemma index | Merged, main `ed1ed8b` | [index builder](../pipeline/ingest/lemma-index.ts), [lemma reads](../src/lib/db.ts) | 15,133 index rows from fresh ingest; quota reduction not remeasured |
-| OG JSON cache | Merged, main `dcc3c85` | [cache build](../scripts/seo-build-og-cache.ts) | Build-generated payload; current live OG image not separately audited |
-| Subscriber opt-in/token persistence | Merged | [subscribe](../src/pages/api/subscribe.ts), [security](SECURITY-PROVENANCE-AND-LICENSES.md) | Tests/configuration; no mailbox delivery tested |
-| Daily/confirmation email delivery | Partial merged scaffolding | [confirmation sender](../pipeline/email/send-confirmations.ts) | Address lookup/queue handoff gaps; no production email sent |
-| Static corpus plus D1 subscriber cutover | Uncommitted primary worktree | Local `scripts/static-corpus-export.ts`, `src/lib/static-corpus-read.ts`, `migrations/`, `docs/D1-CUTOVER.md` | Read-only inspection; no cutover, migration or deploy run |
-| Deliverable encrypted subscriber mail and daily Worker | Uncommitted primary worktree | Local `src/lib/subscriber-email.ts`, `workers/daily-verse/`, `docs/EMAIL.md` | Local proposal includes temporary plaintext fallback; not baseline behavior |
+| Static corpus OG payloads | Release implementation | [OG payload reader](../src/lib/static-og-payload.ts), [exporter](../scripts/static-corpus-export.ts) | Verse and lemma payloads use generated assets; verify live image endpoints after deployment |
+| Subscriber opt-in/token persistence | Release implementation | [subscribe](../src/pages/api/subscribe.ts), [D1 migrations](../migrations/) | D1 adapter and token tests; mailbox delivery requires a controlled production check |
+| Confirmation email delivery | Release implementation | [email adapter](../src/lib/subscriber-email.ts) | Resend confirmation with encrypted address and temporary plaintext fallback; daily Worker is outside this release |
+| Static corpus plus D1 subscriber cutover | Release implementation | [exporter](../scripts/static-corpus-export.ts), [static reader](../src/lib/static-corpus-read.ts), [cutover runbook](D1-CUTOVER.md) | Generated content counts verified locally; live health/read/search checks required |
+| Separate daily email Worker | Outside this release | Historical development proposal | Scheduling and daily delivery are not established by website confirmation tests |
 | Node standalone / Docker SQLite deployment | Uncommitted primary worktree | Local `astro.config.mjs`, `Dockerfile`, `docker-compose.sqlite.yml`, `src/lib/db-backend.ts` | No Node/container build performed; baseline has Cloudflare adapter only |
 | AI translation and judge | Merged | [runner](../pipeline/translate/runner.ts), [prompts](../pipeline/translate/prompts/v1-judge.md) | Isolated Tamil dry-run and tests; no new paid calls |
 | Translation fan-out and retries | Merged | [dispatch](../pipeline/translate/dispatch.ts) | Bounded concurrency/retry unit tests |
 | Vidyut morphology audit | Merged | [runner](../pipeline/morph/runner.py), [comparison](../pipeline/morph/compare.ts) | Comparison tests; not automatically wired into translation runner |
-| Embeddings / semantic blended search | Merged experimental path | [embed](../pipeline/embed/runner.ts), [search](../src/lib/search.ts) | Lexical/search regressions; no vector coverage or retrieval benchmark verified |
+| Embeddings / semantic blended search | Historical/operator experimental path | [embed](../pipeline/embed/runner.ts), [search](../src/lib/search.ts) | Public website uses static lexical search, with explicit semantic/blended fallback; no live vector search claimed |
 | Human reviewer workflow | Partial/planned | [status contract](../STATUS-CONTRACT.md), issue template | No reviewer metadata in selected corpus; review UI/audit program not established |
 | Centralized model rate-limit gateway | Planned | Runner/dispatch notes | No merged gateway verified |
 | CSV/JSON/TEI dataset export | Merged | [publisher](../pipeline/dataset/publish.ts) | Local 5-text bundle + checksums tested; source holds applied |

@@ -299,11 +299,10 @@ export function getLemmaPageCached(slug: string, lang: LangCode): LemmaPageData 
         ) AS english_gloss
       FROM verses v
       JOIN texts t ON t.id = v.text_id
-      WHERE EXISTS (
-        SELECT 1
+      WHERE v.id IN (
+        SELECT DISTINCT g.verse_id
         FROM word_glosses g
-        WHERE g.verse_id = v.id
-          AND g.lemma_iast = ?
+        WHERE g.lemma_iast = ?
       )
       ORDER BY v.id ASC
     `)

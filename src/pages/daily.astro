@@ -4,13 +4,10 @@ import Footer from '../components/Footer.astro';
 import Masthead from '../components/Masthead.astro';
 import SubscribeBand from '../components/SubscribeBand.astro';
 /**
- * /daily — placeholder for the daily-verse engagement loop.
+ * /daily — the daily-verse engagement loop.
  *
- * V1: shows the hardcoded featured verse (Vijñāna Bhairava 1.47) and
- * the subscribe band so visitors who follow the curated "Daily readings"
- * link have a place to land. V1.1 (daily-verse curator workstream)
- * replaces the hero with a server-side rotation and lights up the
- * email send via Resend.
+ * The page shows the featured reading and the subscribe band. The scheduled
+ * Worker rotates the email independently from this editorial landing page.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
@@ -56,8 +53,8 @@ const pageSeo = buildChromeSeo({
     <SubscribeBand />
 
     <p class="daily-note">
-      Verse rotation lands in V1.1 via the daily-verse curator workstream.
-      Until then, today's verse is fixed to Vijñāna Bhairava 1.47.
+      The inbox edition rotates through the static corpus once each day. Your
+      confirmation email contains the first link and an unsubscribe link.
     </p>
   </main>
 

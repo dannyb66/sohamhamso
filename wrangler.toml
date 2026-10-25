@@ -9,7 +9,7 @@
 #
 #   Without `nodejs_compat`, the Worker runtime rejects `node:crypto`
 #   (used by `src/pages/api/subscribe.ts` for `createHmac` + `randomBytes`)
-#   and the `@libsql/client/web` driver's internal `node:buffer` usage,
+#   and server-side cryptography used by subscriber confirmation,
 #   causing subscribe POSTs to 500 on first request in production.
 #
 # Compatibility date:
@@ -32,3 +32,8 @@ name = "sohamhamso"
 compatibility_date = "2026-06-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "PII_DB"
+database_name = "sohamhamso-pii"
+database_id = "59ca626f-e2c1-45a0-a434-0346ce1c5f20"

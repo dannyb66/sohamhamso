@@ -1,37 +1,4 @@
-/**
- * Subscriber DB factory — edge-compatible writable backend.
- *
- * WHY THIS FILE EXISTS (separate from `src/lib/db.ts`):
- *   `src/lib/db.ts` does `import { Database } from 'bun:sqlite'` at the
- *   TOP LEVEL. That's safe because every caller of `db.ts` runs in the
- *   bun runtime (corpus reads execute at `astro build` time, never at
- *   the edge). But `POST /api/subscribe` is a server-rendered endpoint
- *   that ships into the Cloudflare Pages Function bundle. If the
- *   subscribe handler reaches into `db.ts`, the bundler statically pulls
- *   `bun:sqlite` into the Worker — and Workers have neither bun nor a
- *   writable filesystem, so the bundle either fails at build or 500s on
- *   first request.
- *
- *   This file isolates the writable-DB concern. The `bun:sqlite` import
- *   is DYNAMIC and guarded by a runtime sniff, so the edge bundle never
- *   sees it as a static dependency. The libsql client is statically
- *   imported via the `/web` subpath, which exports a workerd-safe build
- *   (no node:* deps).
- *
- * ROUTING:
- *   - Bun runtime (local dev, tests, `bun --bun astro dev`): bun:sqlite
- *     opens the local `db/sohamhamso.db` file.
- *   - Edge runtime (Cloudflare Pages Function): `@libsql/client/web`
- *     talks to a Turso PII DB over HTTPS. Auth via env vars
- *     `TURSO_PII_URL` + `TURSO_PII_AUTH_TOKEN` (set as Cloudflare Pages
- *     secrets pre-launch — see `.env.example`).
- *
- * SCHEMA BOOTSTRAP:
- *   At the edge, the first request on a cold-start worker instance
- *   runs an idempotent `CREATE TABLE IF NOT EXISTS subscribers (...)`
- *   so a fresh Turso DB self-heals on first traffic. The bootstrap is
- *   memoized at module scope so it only fires once per worker instance.
- */
+/** Subscriber persistence: local SQLite for development; bound Cloudflare D1 at the edge. No Turso runtime path. */
 
 /**
  * Detect the runtime. `bun:sqlite` is only safe to import when we're in
@@ -39,6 +6,8 @@
  * not be referenced at all. `process.versions.bun` is the canonical
  * bun-only marker.
  */
+import { resolveDbBackend } from './db-backend';
+
 function isBunRuntime(): boolean {
   return typeof process !== 'undefined' && typeof process.versions?.bun === 'string';
 }
@@ -52,6 +21,9 @@ function isBunRuntime(): boolean {
 export interface SubscriberDb {
   insertSubscriber(row: {
     email_hash: string;
+    email?: string;
+    email_ciphertext?: string;
+    email_nonce?: string;
     language: string;
     region: 'us' | 'eu';
     unsubscribe_token: string;
@@ -64,7 +36,24 @@ export interface SubscriberDb {
    * UNIQUE constraint violation on insert.
    */
   isAlreadySubscribed(email_hash: string, language: string): Promise<boolean>;
+  findSubscriber?(
+    email_hash: string,
+    language: string,
+  ): Promise<{
+    unsubscribe_token: string;
+    confirmed: boolean;
+  } | null>;
+  markConfirmationDelivery?(token: string, sent: boolean): Promise<void>;
 }
+
+export type D1Database = {
+  prepare(sql: string): {
+    bind(...values: unknown[]): {
+      run(): Promise<unknown>;
+      all<T>(): Promise<{ results: T[] }>;
+    };
+  };
+};
 
 /**
  * Thrown by `insertSubscriber()` when the (email_hash, language) UNIQUE
@@ -77,6 +66,78 @@ export class SubscriberUniqueViolation extends Error {
     super(message);
     this.name = 'SubscriberUniqueViolation';
   }
+}
+
+function makeD1Backend(db: D1Database): SubscriberDb {
+  return {
+    async insertSubscriber(row) {
+      try {
+        await db
+          .prepare(
+            `INSERT INTO subscribers
+               (email_hash, email, email_ciphertext, email_nonce, language, subscribed_at, unsubscribe_token, region)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+          )
+          .bind(
+            row.email_hash,
+            row.email ?? null,
+            row.email_ciphertext ?? null,
+            row.email_nonce ?? null,
+            row.language,
+            row.subscribed_at,
+            row.unsubscribe_token,
+            row.region,
+          )
+          .run();
+      } catch (err) {
+        if (isD1UniqueViolation(err)) throw new SubscriberUniqueViolation();
+        throw err;
+      }
+    },
+    async isAlreadySubscribed(email_hash, language) {
+      const result = await db
+        .prepare('SELECT 1 AS one FROM subscribers WHERE email_hash = ? AND language = ? LIMIT 1')
+        .bind(email_hash, language)
+        .all<{ one: number }>();
+      return result.results.length > 0;
+    },
+    async findSubscriber(email_hash, language) {
+      const result = await db
+        .prepare(
+          'SELECT unsubscribe_token, confirmed FROM subscribers WHERE email_hash = ? AND language = ? LIMIT 1',
+        )
+        .bind(email_hash, language)
+        .all<{ unsubscribe_token: string; confirmed: number }>();
+      const row = result.results[0];
+      return row
+        ? { unsubscribe_token: row.unsubscribe_token, confirmed: row.confirmed === 1 }
+        : null;
+    },
+    async markConfirmationDelivery(token, sent) {
+      await db
+        .prepare(
+          sent
+            ? "UPDATE subscribers SET email_sent_at = datetime('now'), email_failed_at = NULL WHERE unsubscribe_token = ?"
+            : "UPDATE subscribers SET email_failed_at = datetime('now') WHERE unsubscribe_token = ?",
+        )
+        .bind(token)
+        .run();
+    },
+  };
+}
+
+function isD1UniqueViolation(err: unknown): boolean {
+  if (err == null || typeof err !== 'object') return false;
+  const e = err as { code?: unknown; message?: unknown; cause?: unknown };
+  if (typeof e.code === 'string' && /SQLITE_CONSTRAINT(?:_UNIQUE)?/.test(e.code)) return true;
+  if (typeof e.message === 'string' && /UNIQUE constraint failed/i.test(e.message)) return true;
+  if (e.cause != null && typeof e.cause === 'object') {
+    const cause = e.cause as { message?: unknown };
+    if (typeof cause.message === 'string' && /UNIQUE constraint failed/i.test(cause.message)) {
+      return true;
+    }
+  }
+  return false;
 }
 
 /* ─────────────────────────────────────────────────────────────────────
@@ -92,8 +153,8 @@ async function makeBunBackend(): Promise<SubscriberDb> {
   // DYNAMIC import — keeps `bun:sqlite` out of the edge bundle. The
   // bundler can't statically follow `await import(<string>)` of a bun
   // built-in, so the worker bundle never references it.
-  // biome-ignore lint/correctness/noUndeclaredDependencies: bun built-in
-  const { Database } = await import('bun:sqlite');
+  const sqliteModule = ['bun', 'sqlite'].join(':');
+  const { Database } = await import(/* @vite-ignore */ sqliteModule);
   const { existsSync } = await import('node:fs');
   const { dirname, resolve } = await import('node:path');
   const { fileURLToPath } = await import('node:url');
@@ -101,6 +162,9 @@ async function makeBunBackend(): Promise<SubscriberDb> {
   // Mirror the path resolution in `src/lib/db.ts` so dev opens the same
   // SQLite file the rest of the site reads from.
   function dbPath(): string {
+    // Keep writable PII storage independently movable from the read-only
+    // corpus file for a two-file self-hosted deployment.
+    if (process.env.SOHAMHAMSO_PII_DB_PATH) return process.env.SOHAMHAMSO_PII_DB_PATH;
     if (process.env.SOHAMHAMSO_DB_PATH) return process.env.SOHAMHAMSO_DB_PATH;
     const cwdPath = resolve(process.cwd(), 'db', 'sohamhamso.db');
     if (existsSync(cwdPath)) return cwdPath;
@@ -112,11 +176,16 @@ async function makeBunBackend(): Promise<SubscriberDb> {
   // WAL keeps the read-only corpus handle in `db.ts` happy alongside
   // this writer. Safe to set repeatedly.
   db.exec('PRAGMA journal_mode = WAL;');
+  bunSafeAlter(db, 'ALTER TABLE subscribers ADD COLUMN email_ciphertext TEXT;');
+  bunSafeAlter(db, 'ALTER TABLE subscribers ADD COLUMN email_nonce TEXT;');
+  bunSafeAlter(db, 'ALTER TABLE subscribers ADD COLUMN email TEXT;');
+  bunSafeAlter(db, 'ALTER TABLE subscribers ADD COLUMN email_sent_at TEXT;');
+  bunSafeAlter(db, 'ALTER TABLE subscribers ADD COLUMN email_failed_at TEXT;');
 
   const insertStmt = db.prepare(
     `INSERT INTO subscribers
-       (email_hash, language, subscribed_at, unsubscribe_token, region)
-     VALUES (?, ?, ?, ?, ?)`,
+       (email_hash, email, email_ciphertext, email_nonce, language, subscribed_at, unsubscribe_token, region)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
   );
   const existsStmt = db.prepare(
     `SELECT 1 AS one FROM subscribers
@@ -129,6 +198,9 @@ async function makeBunBackend(): Promise<SubscriberDb> {
       try {
         insertStmt.run(
           row.email_hash,
+          row.email ?? null,
+          row.email_ciphertext ?? null,
+          row.email_nonce ?? null,
           row.language,
           row.subscribed_at,
           row.unsubscribe_token,
@@ -145,7 +217,34 @@ async function makeBunBackend(): Promise<SubscriberDb> {
       const row = existsStmt.get(email_hash, language);
       return row != null;
     },
+    async findSubscriber(email_hash, language) {
+      const row = db
+        .prepare(
+          'SELECT unsubscribe_token, confirmed FROM subscribers WHERE email_hash = ? AND language = ? LIMIT 1',
+        )
+        .get(email_hash, language) as { unsubscribe_token: string; confirmed: number } | null;
+      return row
+        ? { unsubscribe_token: row.unsubscribe_token, confirmed: row.confirmed === 1 }
+        : null;
+    },
+    async markConfirmationDelivery(token, sent) {
+      db.prepare(
+        sent
+          ? "UPDATE subscribers SET email_sent_at = datetime('now'), email_failed_at = NULL WHERE unsubscribe_token = ?"
+          : "UPDATE subscribers SET email_failed_at = datetime('now') WHERE unsubscribe_token = ?",
+      ).run(token);
+    },
   };
+}
+
+// SQLite has no ADD COLUMN IF NOT EXISTS; local DBs may predate delivery fields.
+// biome-ignore lint/suspicious/noExplicitAny: bun:sqlite Database is dynamically imported.
+function bunSafeAlter(db: any, sql: string): void {
+  try {
+    db.exec(sql);
+  } catch (error) {
+    if (!(error instanceof Error) || !/duplicate column name/i.test(error.message)) throw error;
+  }
 }
 
 // `bun:sqlite` SQLiteError shape — we only need the `code` field but
@@ -158,121 +257,6 @@ function isBunUniqueViolation(err: unknown): boolean {
   }
   if (typeof e.message === 'string' && /UNIQUE constraint failed/i.test(e.message)) {
     return true;
-  }
-  return false;
-}
-
-/* ─────────────────────────────────────────────────────────────────────
- * Edge runtime backend (Cloudflare Pages Function → Turso over HTTPS).
- *
- * `@libsql/client/web` resolves to a workerd-safe build (no node:*).
- * Auth via env vars; both must be set as Cloudflare Pages secrets.
- * ──────────────────────────────────────────────────────────────────── */
-
-// The `subscribers` schema, copy-pasted from `db/schema.sql` so a fresh
-// Turso PII DB self-heals on first cold-start. Idempotent — re-runs are
-// no-ops. If you'd rather run a one-shot via `turso db shell` instead,
-// it's safe to remove this and document the manual step in `.env.example`.
-//
-// MUST be an array of single statements — libSQL HTTP `execute()` rejects
-// multi-statement SQL with `SQL_MANY_STATEMENTS`. We apply via `batch()`
-// (atomic, runs the whole bootstrap as one transaction) so a partial
-// success on a fresh DB doesn't leave us with a table-without-index.
-const SUBSCRIBERS_SCHEMA_STATEMENTS = [
-  `CREATE TABLE IF NOT EXISTS subscribers (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    email_hash TEXT NOT NULL,
-    language TEXT NOT NULL DEFAULT 'en',
-    subscribed_at TEXT NOT NULL DEFAULT (datetime('now')),
-    unsubscribe_token TEXT NOT NULL UNIQUE,
-    region TEXT NOT NULL CHECK(region IN ('us','eu')),
-    confirmed INTEGER NOT NULL DEFAULT 0 CHECK(confirmed IN (0,1)),
-    confirmed_at TEXT,
-    UNIQUE (email_hash, language)
-  )`,
-  `CREATE INDEX IF NOT EXISTS idx_subscribers_email_hash ON subscribers(email_hash)`,
-];
-
-async function makeEdgeBackend(): Promise<SubscriberDb> {
-  const url = process.env.TURSO_PII_URL;
-  const authToken = process.env.TURSO_PII_AUTH_TOKEN;
-  if (!url || url.length === 0) {
-    throw new Error(
-      'Server misconfigured: TURSO_PII_URL is not set. ' +
-        'Set it as a Cloudflare Pages secret: ' +
-        '`wrangler pages secret put TURSO_PII_URL --project sohamhamso`.',
-    );
-  }
-  if (!authToken || authToken.length === 0) {
-    throw new Error(
-      'Server misconfigured: TURSO_PII_AUTH_TOKEN is not set. ' +
-        'Set it as a Cloudflare Pages secret: ' +
-        '`wrangler pages secret put TURSO_PII_AUTH_TOKEN --project sohamhamso`.',
-    );
-  }
-
-  // The `/web` subpath is the workerd-safe entrypoint (verified via
-  // @libsql/client package.json `exports` map: `workerd` → `web.js`).
-  const { createClient } = await import('@libsql/client/web');
-  const client = createClient({ url, authToken });
-
-  // Cold-start bootstrap — first request on a fresh worker instance
-  // ensures the subscribers table + index exist. Subsequent requests
-  // on the same instance reuse the resolved promise (no extra round
-  // trips). MUST use `batch()` not `execute()` because libSQL HTTP
-  // rejects multi-statement SQL strings; the schema is 2 statements.
-  await client.batch(SUBSCRIBERS_SCHEMA_STATEMENTS, 'deferred');
-
-  return {
-    async insertSubscriber(row) {
-      try {
-        await client.execute({
-          sql: `INSERT INTO subscribers
-                  (email_hash, language, subscribed_at, unsubscribe_token, region)
-                VALUES (?, ?, ?, ?, ?)`,
-          args: [
-            row.email_hash,
-            row.language,
-            row.subscribed_at,
-            row.unsubscribe_token,
-            row.region,
-          ],
-        });
-      } catch (err) {
-        if (isLibsqlUniqueViolation(err)) {
-          throw new SubscriberUniqueViolation();
-        }
-        throw err;
-      }
-    },
-    async isAlreadySubscribed(email_hash, language) {
-      const res = await client.execute({
-        sql: `SELECT 1 AS one FROM subscribers
-              WHERE email_hash = ? AND language = ?
-              LIMIT 1`,
-        args: [email_hash, language],
-      });
-      return res.rows.length > 0;
-    },
-  };
-}
-
-// libsql surfaces SQLite errors with a `code` like 'SQLITE_CONSTRAINT'
-// and often a `proto.code` of 'SQLITE_CONSTRAINT_UNIQUE'; message also
-// carries the human-readable constraint name. Match all three shapes
-// defensively — the client lib has changed shape across minor versions.
-function isLibsqlUniqueViolation(err: unknown): boolean {
-  if (err == null || typeof err !== 'object') return false;
-  const e = err as { code?: unknown; rawCode?: unknown; message?: unknown; proto?: unknown };
-  if (typeof e.code === 'string' && /SQLITE_CONSTRAINT/.test(e.code)) {
-    if (e.code === 'SQLITE_CONSTRAINT_UNIQUE' || e.code === 'SQLITE_CONSTRAINT') return true;
-  }
-  if (typeof e.message === 'string' && /UNIQUE constraint failed/i.test(e.message)) {
-    return true;
-  }
-  if (e.proto != null && typeof e.proto === 'object') {
-    const p = e.proto as { code?: unknown };
-    if (typeof p.code === 'string' && /SQLITE_CONSTRAINT_UNIQUE|UNIQUE/.test(p.code)) return true;
   }
   return false;
 }
@@ -291,10 +275,16 @@ let _injected: SubscriberDb | null = null;
  *
  * Tests can pre-empt the routing by calling `__setSubscriberDbForTests`.
  */
-export function getSubscriberDb(): Promise<SubscriberDb> {
+export function getSubscriberDb(env?: { PII_DB?: D1Database }): Promise<SubscriberDb> {
   if (_injected) return Promise.resolve(_injected);
   if (_backendPromise) return _backendPromise;
-  _backendPromise = isBunRuntime() ? makeBunBackend() : makeEdgeBackend();
+  const backend = resolveDbBackend(process.env.SOHAMHAMSO_PII_DB_BACKEND, isBunRuntime());
+  if (backend === 'sqlite') _backendPromise = makeBunBackend();
+  else if (env?.PII_DB) _backendPromise = Promise.resolve(makeD1Backend(env.PII_DB));
+  else
+    _backendPromise = Promise.reject(
+      new Error('Server misconfigured: PII_DB D1 binding is unavailable.'),
+    );
   return _backendPromise;
 }
 
@@ -305,10 +295,9 @@ export function getSubscriberDb(): Promise<SubscriberDb> {
  */
 export function __setSubscriberDbForTests(db: SubscriberDb | null): void {
   _injected = db;
-  if (db !== null) {
-    // Drop any in-flight real backend so the test fake wins immediately.
-    _backendPromise = null;
-  }
+  // Drop any cached backend both when installing and clearing a fake so the
+  // next test resolves from the environment it explicitly provides.
+  _backendPromise = null;
 }
 
 /**

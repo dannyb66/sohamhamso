@@ -1,6 +1,6 @@
 # Run the multilingual reader locally
 
-You will build the database from source-controlled corpus files and open the English and Hindi reader without API keys. This tutorial uses the merged Cloudflare/Bun configuration; Node/Docker and D1 commands belong to uncommitted work and do not apply to this checkout.
+You will build the database from source-controlled corpus files, export static reader assets, and open the English and Hindi reader without API keys. This tutorial uses the Cloudflare/Bun configuration from the static corpus release. Production subscriber storage uses D1; reading locally requires no D1 or Turso credentials. Node/Docker remains outside this website release.
 
 ## What you need
 
@@ -25,7 +25,7 @@ bun run dev
 
 Open `http://localhost:4321/trika/siva-sutras/1/1` and `http://localhost:4321/hi/trika/siva-sutras/1/1`. You should see Sanskrit, transliteration and the selected translation. English has no locale prefix. The configured reader supports `en hi ta te bn mr gu kn ml pa or as`.
 
-Keep the server running while browsing. The local Bun adapter reads SQLite; opening a page does not call a translation or speech API. A first-run warning about Wrangler configuration is not a request to deploy or supply credentials.
+`dev` runs `db:ensure` and `static:export` before starting Astro. Reader requests use the generated files under `dist/_data/corpus/`; SQLite supplies the build/export input. Keep the server running while browsing. Opening a page does not call a database, translation or speech API. A first-run warning about Wrangler configuration is not a request to deploy or supply credentials.
 
 ## Step 3: Validate and inspect without external writes
 
@@ -42,17 +42,18 @@ The `parseTextYaml` command validates one YAML file without writing rows. The in
 
 ## Verification
 
-The walkthrough was tested on 2026-10-12 with a new database and no production credentials. See [verification report](../VERIFICATION-2026-10-12.md) for route checks and targeted tests. To run unit checks, use `bun run test`; bare `bun test` selects Bun's test runner and is not the intended Vitest entry point. Browser tests require Playwright Chromium (`bunx playwright install chromium`) and use port 4321 by default.
+The original walkthrough was tested on 2026-10-12; its [verification report](../VERIFICATION-2026-10-12.md) predates the static corpus cutover. Current `bun run build` also exports static assets and verifies their counts against SQLite. To run unit checks, use `bun run test`; bare `bun test` selects Bun's test runner and is not the intended Vitest entry point. Browser tests require Playwright Chromium (`bunx playwright install chromium`) and use port 4321 by default.
 
 ## Troubleshooting
 
 | Symptom | Action |
 |---|---|
-| Missing database | Run `bun run db:build` before `bun run dev`; `dev` does not initialize it automatically. |
+| Missing database | `bun run dev` initializes it through `db:ensure`; use `bun run db:build` explicitly to inspect ingest errors. |
+| Reader reports unavailable content | Restart `bun run dev` to regenerate `dist/_data/corpus/`; do not add Turso credentials. |
 | Native SQLite error under Node | Use Bun. The baseline has no Node deployment target. |
-| Port already in use | Run `bun run dev --host 127.0.0.1 --port 4327` and use that port in the URLs; configure test baseURL accordingly. |
+| Port already in use | Run `bun run db:ensure`, `bun run static:export`, then `bun --bun astro dev --host 127.0.0.1 --port 4327`; use that port in URLs and test baseURL. |
 | Locale page missing | Use the canonical `siva-sutras` slug and the supported two-letter locale; check [routing](../WEB-DELIVERY-AND-EDGE.md). |
-| Expected new corpus edit is absent | Re-run ingest. `db:ensure` only checks file existence, not corpus freshness. |
+| Expected new corpus edit is absent | Re-run `bun run ingest`, then restart `bun run dev` to export fresh assets. `db:ensure` only checks database existence. |
 | Optional API command asks for secrets | Return to the dry-run/mock command. Live generation, uploads, email and deploys are separate operator tasks. |
 
 ## What you built
