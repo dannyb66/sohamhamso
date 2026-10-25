@@ -3,8 +3,7 @@
  * sohamhamso — numbered SQL migration runner
  *
  * Applies pending migrations from `db/migrations/NNN_name.sql` (numeric
- * order) to (a) the local bun:sqlite DB and/or (b) Turso over libSQL HTTP
- * (same transport as scripts/turso-apply-schema-http.ts). Applied
+ * order) to the local bun:sqlite DB. Applied
  * migrations are tracked in a `schema_migrations` table, so re-running is
  * a no-op.
  *
@@ -22,8 +21,6 @@
  * Run:
  *   bun pipeline/ingest/migrations.ts                       # local, db/sohamhamso.db
  *   bun pipeline/ingest/migrations.ts --db /tmp/test.db     # local, custom path
- *   bun pipeline/ingest/migrations.ts --turso               # Turso (env-gated:
- *       TURSO_CORPUS_URL + TURSO_CORPUS_AUTH_TOKEN, e.g. .env.production.local)
  */
 
 import { Database } from 'bun:sqlite';
@@ -63,8 +60,7 @@ export interface ApplyResult {
 }
 
 /**
- * Split a migration file into executable statements. Same approach as
- * scripts/turso-apply-schema-http.ts: split on semicolon-followed-by-
+ * Split a migration file into executable statements: split on semicolon-followed-by-
  * newline, drop comment-only fragments.
  */
 export function splitSqlStatements(sql: string): string[] {
@@ -165,57 +161,12 @@ export function applyMigrationsLocal(
 }
 
 // ---------------------------------------------------------------
-// Turso (libSQL HTTP — per-DB auth token, same as turso-apply-schema-http)
-// ---------------------------------------------------------------
-
-export async function applyMigrationsTurso(
-  url: string,
-  authToken: string,
-  migrations: Migration[] = loadMigrations(),
-): Promise<ApplyResult> {
-  const { createClient } = await import('@libsql/client/web');
-  const client = createClient({ url, authToken });
-  const result: ApplyResult = { applied: [], skipped: [], alreadyApplied: [] };
-  try {
-    await client.execute(SCHEMA_MIGRATIONS_DDL);
-
-    const doneRows = await client.execute('SELECT id FROM schema_migrations');
-    const done = new Set(doneRows.rows.map((r) => String(r.id)));
-
-    for (const m of migrations) {
-      if (done.has(m.id)) {
-        result.alreadyApplied.push(m.id);
-        continue;
-      }
-      let guardHit = false;
-      if (m.guard) {
-        const probe = await client.execute(m.guard);
-        const first = probe.rows[0];
-        guardHit = Boolean(first && Object.values(first)[0]);
-      }
-      // batch() runs as a single transaction: statements + the ledger
-      // insert commit together or roll back together.
-      const stamp = {
-        sql: 'INSERT INTO schema_migrations (id) VALUES (?)',
-        args: [m.id],
-      };
-      await client.batch(guardHit ? [stamp] : [...m.statements, stamp], 'write');
-      (guardHit ? result.skipped : result.applied).push(m.id);
-    }
-  } finally {
-    client.close();
-  }
-  return result;
-}
-
-// ---------------------------------------------------------------
 // CLI
 // ---------------------------------------------------------------
 
 export interface MigrateOptions {
   dbPath?: string;
   migrationsDir?: string;
-  turso?: boolean;
 }
 
 export function parseArgs(argv: string[]): MigrateOptions {
@@ -224,7 +175,7 @@ export function parseArgs(argv: string[]): MigrateOptions {
     const a = argv[i];
     if (a === '--db' && argv[i + 1]) opts.dbPath = argv[++i];
     else if (a === '--dir' && argv[i + 1]) opts.migrationsDir = argv[++i];
-    else if (a === '--turso') opts.turso = true;
+    else throw new Error(`Unknown or incomplete migration argument: ${a}`);
   }
   return opts;
 }
@@ -243,21 +194,6 @@ export async function main() {
   if (migrations.length === 0) {
     console.log('No migration files found.');
     return;
-  }
-
-  if (opts.turso) {
-    const url = process.env.TURSO_CORPUS_URL;
-    const token = process.env.TURSO_CORPUS_AUTH_TOKEN;
-    if (!url || !token) {
-      console.error(
-        '--turso requires TURSO_CORPUS_URL and TURSO_CORPUS_AUTH_TOKEN ' +
-          '(source .env.production.local first).',
-      );
-      process.exit(1);
-    }
-    report(url, await applyMigrationsTurso(url, token, migrations));
-    // --turso targets Turso only unless --db is also given explicitly.
-    if (!opts.dbPath) return;
   }
 
   const dbPath = opts.dbPath ?? DEFAULT_DB_PATH;

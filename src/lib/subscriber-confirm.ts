@@ -9,7 +9,7 @@ function isBunRuntime(): boolean {
 
 /**
  * Public surface for confirm + unsubscribe verbs. Both methods are
- * async so the bun and libsql paths are interchangeable.
+ * async so the SQLite and D1 paths are interchangeable.
  *
  * RETURN SHAPE for `confirmByToken`:
  *   - `{ status: 'confirmed' }` — the row was found AND confirmed_at

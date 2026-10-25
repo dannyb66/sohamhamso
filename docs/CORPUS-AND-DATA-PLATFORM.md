@@ -109,7 +109,7 @@ bun pipeline/ingest/ingest.ts --db /tmp/sohamhamso-corpus-trial.db --dir data/co
 bun pipeline/ingest/migrations.ts --db /tmp/sohamhamso-corpus-trial.db
 ```
 
-The initializer applies [schema.sql](../db/schema.sql) idempotently. Existing columns need [numbered migrations](../db/migrations), rather than assuming `CREATE TABLE IF NOT EXISTS` upgrades a table. [migrations.ts](../pipeline/ingest/migrations.ts) sorts migrations, rejects duplicate numbers, records `schema_migrations`, and uses guard probes to converge fresh and older databases. Each migration and its ledger stamp commit together. `--turso` is a remote write, requires `TURSO_CORPUS_URL`/`TURSO_CORPUS_AUTH_TOKEN`, and is not part of local onboarding.
+The initializer applies [schema.sql](../db/schema.sql) idempotently. Existing columns need [numbered migrations](../db/migrations), rather than assuming `CREATE TABLE IF NOT EXISTS` upgrades a table. [migrations.ts](../pipeline/ingest/migrations.ts) sorts migrations, rejects duplicate numbers, records `schema_migrations`, and uses guard probes to converge fresh and older databases. Each migration and its ledger stamp commit together. Numbered migrations operate only on local SQLite; unsupported backend arguments fail before opening a database. Production subscriber migrations use D1 through the deployment runbook.
 
 Ingestion parses all files before processing and topologically sorts parent/commentary dependencies. A dependency cycle fails explicitly. Each text's upserts and reconciliation form one transaction; a later text can fail after earlier texts have committed, so the whole corpus run is not an atomic replacement.
 
@@ -129,9 +129,9 @@ The comparator handles sandhi splits, compound alignment and lemma spelling conv
 
 ## Storage responsibilities and consumers
 
-The local SQLite schema includes corpus, vectors, subscribers, video state and operational tables for development. That co-location is not an instruction to export or expose all tables. [db.ts](../src/lib/db.ts) provides build/local reads; [corpus-db.ts](../src/lib/corpus-db.ts) provides an asynchronous read interface for Bun and the configured Turso edge backend. Web reads filter translations to `reviewed`/`published`; media eligibility and pinned translation IDs provide a separate publishing boundary.
+The local SQLite schema includes corpus, vectors, subscribers, video state and operational tables for development. That co-location is not an instruction to export or expose all tables. [db.ts](../src/lib/db.ts) provides build/local reads; [corpus-db.ts](../src/lib/corpus-db.ts) provides an asynchronous local SQLite interface for tools and tests. Public reader, search and OG requests consume generated assets; subscriber requests use D1. Web reads filter translations to `reviewed`/`published`; media eligibility and pinned translation IDs provide a separate publishing boundary.
 
-Static corpus/D1 cutover work outside `4c94bf2` is not this baseline's implementation. Consult [architecture](ARCHITECTURE.md) and the dated capability inventory before treating another worktree's backend as merged or deployed.
+The storage boundaries above include the 2026-10-25 static corpus/D1 release; the corpus measurements retain their dated `4c94bf2` baseline. Consult [architecture](ARCHITECTURE.md) and [the deployment runbook](D1-CUTOVER.md) for current runtime and verification instructions.
 
 ## Dataset export and release procedure
 

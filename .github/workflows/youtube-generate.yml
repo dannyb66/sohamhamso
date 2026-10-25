@@ -5,7 +5,7 @@
 # Remotion → QA gates → R2 upload → DB update via `scripts/youtube-render.ts`.
 # Render is decoupled from upload (Cron B) so a YouTube quota event never blocks
 # render velocity. On failure, opens a GitHub Issue so the operator notices
-# without watching the Actions tab (precedent: turso-backup.yml).
+# without watching the Actions tab.
 #
 # Required GitHub secrets:
 #   GOOGLE_TTS_CREDENTIALS_JSON — Google Cloud TTS service-account JSON
@@ -131,7 +131,7 @@ jobs:
         run: bash scripts/youtube-state-db.sh push
 
       # Surface failures as a GitHub Issue — cheaper than wiring an external
-      # pager for a scheduled job (precedent: turso-backup.yml).
+      # pager for a scheduled job.
       - name: Open issue on failure
         if: failure()
         uses: actions/github-script@v7

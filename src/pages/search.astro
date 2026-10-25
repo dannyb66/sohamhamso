@@ -1,17 +1,6 @@
 ---
 import Masthead from '../components/Masthead.astro';
-/**
- * /search?q=... — full search results page.
- *
- * Server-side runs `blendedSearch` (B2) if available. If B2 hasn't
- * landed, renders a friendly placeholder so the route still works.
- *
- * SSR note: Astro is `output: 'static'`. This page renders at request
- * time only when an adapter is wired up; under pure static export it
- * will be prerendered with an empty query and the client should rely on
- * the SearchBox overlay instead. We opt-out of prerender so once an
- * adapter lands the page just works.
- */
+/** Results from the generated lexical index. No embedding or database service is used. */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { VerseHit } from '../lib/search-types';
 import { buildChromeSeo } from '../lib/seo';
@@ -115,7 +104,7 @@ const pageSeo = buildChromeSeo({
     ) : stub ? (
       <section class="search-page__stub">
         <p>
-          Semantic search arrives in V1.1. For now, try a verse permalink
+          Search matches words and transliteration variants. Try a verse permalink
           directly — e.g.{" "}
           <a href="/trika/siva-sutras/1/1">/trika/siva-sutras/1/1</a> — or
           <a href="/texts"> browse all texts</a>.
@@ -151,7 +140,7 @@ const pageSeo = buildChromeSeo({
           // once as a section header, with its matching verses listed beneath
           // (audit-2026-06-01 recommendation #7). Server already returns
           // results in a stable order; we only collapse the header — the
-          // underlying data shape from blendedSearch() is unchanged.
+          // underlying search result shape is unchanged.
           const groups: { slug: string; title: string; hits: VerseHit[] }[] = [];
           for (const h of results) {
             const last = groups[groups.length - 1];

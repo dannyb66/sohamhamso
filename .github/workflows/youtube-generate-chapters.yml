@@ -149,7 +149,7 @@ jobs:
         run: bash scripts/youtube-state-db.sh push
 
       # Surface failures as a GitHub Issue — cheaper than wiring an external
-      # pager for a scheduled job (precedent: turso-backup.yml).
+      # pager for a scheduled job.
       - name: Open issue on failure
         if: failure()
         uses: actions/github-script@v7

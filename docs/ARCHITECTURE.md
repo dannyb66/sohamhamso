@@ -53,7 +53,7 @@ Bun's synchronous `bun:sqlite` is confined to build/local code through guarded l
 
 ## Storage responsibilities
 
-Local development uses one SQLite file for corpus, embedding, subscriber and media tables. This convenience does not imply identical production access policies. Production corpus files are immutable build outputs in `dist/_data/corpus/`; only subscriber operations use D1. Legacy corpus/search adapters and Turso tooling remain for historical/operator use and must not enter the website runtime. Public search no longer writes search-miss records to a corpus database.
+Local development uses one SQLite file for corpus, embedding, subscriber and media tables. This convenience does not imply identical production access policies. Production corpus files are immutable build outputs in `dist/_data/corpus/`; only subscriber operations use D1. No remote corpus adapter or Turso tooling is retained. Local corpus/search helpers remain available for tools and tests. Public search no longer writes search-miss records to a corpus database.
 
 Video scripts use `YOUTUBE_DB_PATH` for durable worker state and `SOHAMHAMSO_DB_PATH` for corpus reads. Actions download and later persist state through an R2-backed snapshot workflow. R2 also holds rendered objects; object storage is not a relational queue. SQL lifecycle/event rows coordinate eligibility, leases, retries and uploads. Inspect the [CLI handbook](../scripts/youtube/README.md) before interpreting a local empty state database as an empty production queue.
 

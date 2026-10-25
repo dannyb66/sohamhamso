@@ -20,6 +20,7 @@ import {
   DEFAULT_MIGRATIONS_DIR,
   applyMigrationsLocal,
   loadMigrations,
+  parseArgs,
   splitSqlStatements,
 } from '../../pipeline/ingest/migrations';
 
@@ -243,5 +244,12 @@ describe('applyMigrationsLocal() — old DB upgrade path', () => {
     check.close();
     expect(ledger?.n).toBe(0);
     expect(cols?.n).toBe(0);
+  });
+});
+
+describe('migration CLI safety', () => {
+  it('rejects retired or unknown backend flags rather than modifying a local database', () => {
+    expect(() => parseArgs(['--turso'])).toThrow('Unknown or incomplete');
+    expect(() => parseArgs(['--db'])).toThrow('Unknown or incomplete');
   });
 });

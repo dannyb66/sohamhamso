@@ -8,7 +8,7 @@
  *
  * Sets rendering_lease_at when a row enters rendering (E4 crash recovery).
  * Records a pipeline_runs row per item. Opens no issues — the workflow's
- * if:failure() step handles that (turso-backup pattern).
+ * if:failure() step handles that.
  *
  * Conforms to CLI-CONVENTIONS: --help/--json/--dry-run/--limit/--text-slug/--lang/--force.
  */

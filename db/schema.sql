@@ -1,11 +1,9 @@
 -- ============================================================
 -- sohamhamso — local-dev SQLite schema
 --
--- Production architecture (see plan: check-online-websites-aim-sparkling-pearl.md):
---   3 Turso DBs — corpus / vectors / pii.
--- Local dev: single SQLite file `db/sohamhamso.db` containing the
--- same logical schema. Tables are grouped + commented with their
--- target production DB so migration is mechanical.
+-- Build/local SQLite contains corpus, optional embeddings and pipeline tables.
+-- Public content is exported as static assets; production subscriber writes
+-- use Cloudflare D1. This schema does not configure a remote corpus database.
 -- ============================================================
 
 
@@ -23,7 +21,7 @@ CREATE TABLE IF NOT EXISTS schema_migrations (
 
 
 -- ============================================================
--- CORPUS DB (production: turso/sohamhamso-corpus)
+-- CORPUS (local build source)
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS texts (
@@ -128,11 +126,8 @@ CREATE INDEX IF NOT EXISTS idx_glosses_verse ON word_glosses(verse_id);
 CREATE INDEX IF NOT EXISTS idx_glosses_lemma_verse_lang ON word_glosses(lemma_iast, verse_id, gloss_lang);
 
 -- Materialized corpus-wide lemma index. Derived from word_glosses at build
--- time (pipeline/ingest/lemma-index.ts:buildLemmaIndex), seeded to Turso.
--- WHY: the SSR verse route needs each verse's lemma → {slug, occurrence
--- count}. Deriving that by scanning word_glosses per request cost ~180k
--- Turso row-reads on every cold worker isolate (read-quota exhaustion).
--- This table lets the edge read just the verse's handful of lemmas by PK.
+-- time (pipeline/ingest/lemma-index.ts:buildLemmaIndex). Static exports and
+-- local payloads reuse this table without rescanning all word glosses.
 -- `slug` MUST equal seo/slug.ts:assignLemmaSlug applied in MIN(verse_id),
 -- lemma_iast order so it matches the static /lemma/ pages. occurrence_count
 -- = COUNT(DISTINCT verse_id) corpus-wide for the lemma.
@@ -156,17 +151,16 @@ CREATE INDEX IF NOT EXISTS idx_parallels_source ON parallels(source_verse_id);
 
 
 -- ============================================================
--- VECTORS DB (production: turso/sohamhamso-vectors)
--- For local dev, embeddings live here too. Production: separate DB.
--- In libSQL prod schema, `embedding` becomes F32_BLOB(3072) with
--- a vector index. Locally we keep it as raw BLOB.
+-- OPTIONAL LOCAL EMBEDDINGS
+-- The optional embedding runner stores Float32 BLOBs locally.
+-- These vectors are not consumed by production website search.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS verse_embeddings (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   verse_id INTEGER NOT NULL,  -- application-level FK (cross-DB in prod)
   lang TEXT NOT NULL,
-  embedding BLOB NOT NULL,  -- F32_BLOB(3072) in libSQL; BLOB in local SQLite
+  embedding BLOB NOT NULL,  -- little-endian Float32 components
   model TEXT DEFAULT 'text-embedding-3-large',
   created_at TEXT DEFAULT (datetime('now')),
   UNIQUE (verse_id, lang, model)
@@ -175,7 +169,7 @@ CREATE INDEX IF NOT EXISTS idx_embeddings_verse ON verse_embeddings(verse_id);
 
 
 -- ============================================================
--- PII DB (production: turso/sohamhamso-pii)
+-- SUBSCRIBERS (local development; production uses D1 migrations)
 -- Subscribers — HMAC-SHA256(email, pepper) per eng review.
 -- The pepper is loaded from SUBSCRIBER_HASH_PEPPER env at write time.
 -- ============================================================
@@ -203,7 +197,7 @@ CREATE INDEX IF NOT EXISTS idx_subscribers_email_hash ON subscribers(email_hash)
 
 
 -- ============================================================
--- RATE LIMIT (production: turso/sohamhamso-corpus or KV)
+-- LOCAL API QUOTA TRACKING
 -- Shared API quota tracking for rate-limit gateway.
 -- ============================================================
 
@@ -234,7 +228,7 @@ CREATE TABLE IF NOT EXISTS dataset_releases (
 -- ============================================================
 -- YOUTUBE SHORTS PIPELINE (Phase 1)
 -- Lifecycle + analytics + run-log + quota + events.
--- Additive, idempotent. Applied via scripts/turso-apply-schema.sh.
+-- Additive, idempotent. Applied by the local SQLite initializer.
 -- Determinism contract: translation_md5 + template_version
 -- (no input_hash — superseded per Eng review E1).
 -- ============================================================

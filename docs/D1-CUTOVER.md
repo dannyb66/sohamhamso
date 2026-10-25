@@ -72,7 +72,7 @@ After the production checks pass:
 
 1. Remove `TURSO_CORPUS_URL`, `TURSO_CORPUS_AUTH_TOKEN`, `TURSO_PII_URL`, and
    `TURSO_PII_AUTH_TOKEN` from Cloudflare Pages secrets.
-2. Disable Turso-only backup and dashboard workflows.
+2. Remove Turso-only backup workflows. The demand report now reads D1 aggregates.
 3. Keep the final exports through the agreed retention window, then delete or
    suspend the Turso databases in the Turso dashboard.
 
@@ -82,3 +82,34 @@ Rollback is a Pages deployment rollback, not a database switch. Static corpus
 assets are generated from the local SQLite source, and D1 remains the writable
 subscriber store. Never restore a build that writes new subscribers to Turso
 after D1 has accepted production traffic unless the D1 delta is reconciled.
+
+## Weekly demand report
+
+`bun scripts/demand-dashboard.ts` reads subscriber counts through the Cloudflare
+D1 administrative REST API. It permits only the total subscriber count and the
+count since a bound date; email fields, tokens, joins and UNION queries are not
+allowed. This is an operator report, not a website data service.
+
+Configure `CF_D1_READ_TOKEN` with Account > D1 > Read permissions. Set
+`CF_ACCOUNT_ID` and `D1_PII_DATABASE_ID` (the current subscriber database ID is
+listed in `wrangler.toml`). In GitHub Actions put the token in a repository
+secret and the IDs in repository variables. Do not reuse a deployment token
+with broader write permissions for the scheduled report. Missing credentials
+produce an explicit unavailable section, as before.
+
+`D1_DEMAND_DATABASE_ID` is optional and only reads existing sanitized
+`search_misses` history. No table is created and public search logging remains
+disabled. Cloudflare analytics and Search Console configuration are unchanged.
+
+## Retirement status (2026-10-25)
+
+Pages production and preview bindings and the separately deployed daily-verse
+Worker use D1, without legacy database bindings. GitHub repository secrets contain
+no Turso credentials. The old standalone confirmation sender had no deployment;
+the website sends confirmations inline through its current Resend adapter.
+
+Legacy corpus and PII read attempts returned provider `BLOCKED` errors. Their
+exports and reconciliation remain unavailable, so no legacy database or
+operator-local credential was deleted. Preserve them until a verified export
+and reconciliation are possible. No D1 data migration is needed for this code
+cleanup, and the existing daily-verse Worker and schedules are unchanged.

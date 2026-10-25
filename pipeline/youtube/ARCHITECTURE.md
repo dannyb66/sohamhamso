@@ -36,7 +36,7 @@ Implemented boundaries:
 | Chapter orchestration | `chapter-render-engine.ts`; live manifest check → per-verse TTS → render/encode → QA → MP4 and sidecar puts → approved |
 | Upload | `scripts/youtube-upload.ts`; downloaded artifact SHA-256 validation → metadata/sidecar → `videos.insert` |
 
-Mutable video state is not a Turso queue. Locally the video DB API falls back to `db/sohamhamso.db` if neither DB override is set; use an explicit disposable `YOUTUBE_DB_PATH` for exercises. A production-state file uploaded locally can clobber intervening Actions changes. Failed R2 pulls are treated as fresh state, so diagnose credential/network errors before accepting a seeded DB.
+Mutable video state uses SQLite. Locally the video DB API falls back to `db/sohamhamso.db` if neither DB override is set; use an explicit disposable `YOUTUBE_DB_PATH` for exercises. A production-state file uploaded locally can clobber intervening Actions changes. Failed R2 pulls are treated as fresh state, so diagnose credential/network errors before accepting a seeded DB.
 
 ## Artifact contract and integrity limits
 

@@ -1,36 +1,4 @@
-/**
- * Regression — production-launch-blocking bug (Agent 7, commit 00f7de1).
- *
- * The pre-launch edge audit found that `GET /api/search` was going to
- * 500 on the first request to Cloudflare Pages because the Worker
- * bundle statically pulled `bun:sqlite` (via
- * `src/pages/api/search.ts` → `src/lib/search.ts` → `src/lib/db.ts`).
- * The fix introduces `src/lib/corpus-db.ts` as a runtime-sniffed
- * factory that mirrors `src/lib/subscriber-db.ts`: bun-runtime
- * delegates to `db.ts` (via dynamic string-literal import), and
- * edge-runtime uses `@libsql/client/web` against the Turso CORPUS DB.
- *
- * This spec pins THREE invariants so the bug can't quietly come back:
- *
- *   1. `corpus-db.ts` exports the same factory shape as
- *      `subscriber-db.ts` — `getCorpusDb()`, `isEdgeRuntime()`, and a
- *      `__set*ForTests` injection hook. Shape parity is the contract
- *      the audit recommended for any future edge-runtime backend.
- *
- *   2. In the bun test process, `getCorpusDb()` returns a `CorpusDb`
- *      with both `all()` and `get()` methods, and BOTH return
- *      promises (so the search module's `await` shape works in
- *      either runtime without branching).
- *
- *   3. `@libsql/client/web` is importable on bare evaluation — same
- *      bundle-evaluation regression check used in
- *      `subscribe-edge-compat.test.ts`. If the `/web` subpath ever
- *      silently drops from the package exports map (or starts
- *      pulling `node:*` modules incompatible with workerd), this
- *      test fails loud BEFORE the broken bundle hits Cloudflare.
- *
- * Reference: `.gstack/launch/edge-audit-2026-06-01.md` §2a + §2c.
- */
+/** Local async corpus adapter contracts. Edge readers use generated assets. */
 
 import { mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -127,11 +95,6 @@ describe('corpus-db — shape parity with subscriber-db', () => {
 
 describe('corpus-db — bun runtime routing', () => {
   it('isEdgeRuntime() returns false in the bun test process', () => {
-    // Inverse sanity check (matches subscribe-edge-compat.test.ts):
-    // if this ever flips true under bun, both routing AND any
-    // edge-only error gates misfire — every dev request would
-    // either 500 on missing TURSO_CORPUS_URL or hit the libsql
-    // path against an unconfigured client.
     expect(isEdgeRuntime()).toBe(false);
   });
 
@@ -143,8 +106,7 @@ describe('corpus-db — bun runtime routing', () => {
 
     // The async contract is load-bearing — search.ts awaits both
     // verbs. If the bun path accidentally returned a sync value,
-    // the libsql path (genuinely async) would break shape parity
-    // at the edge.
+    // callers would lose the documented asynchronous API.
     const allProbe = db.all<{ id: number }>('SELECT 1 AS id');
     expect(allProbe).toBeInstanceOf(Promise);
     await expect(allProbe).resolves.toEqual([{ id: 1 }]);
@@ -154,23 +116,10 @@ describe('corpus-db — bun runtime routing', () => {
     await expect(getProbe).resolves.toEqual({ id: 2 });
   });
 
-  it('get() returns undefined for an empty result (matches libsql contract)', async () => {
+  it('get() returns undefined for an empty result (async adapter contract)', async () => {
     const db = await getCorpusDb();
     // `verses` is seeded empty in beforeAll — any SELECT returns 0 rows.
     const row = await db.get<{ id: number }>('SELECT id FROM verses LIMIT 1');
     expect(row).toBeUndefined();
-  });
-});
-
-describe('corpus-db — edge bundle dependency is importable', () => {
-  it('@libsql/client/web import does not throw on bare evaluation', async () => {
-    // Cheap regression for the bundle-evaluation failure mode:
-    // even if we never CALL createClient in this test process, the
-    // module must be importable. Mirror of
-    // `subscribe-edge-compat.test.ts:104` so both edge backends are
-    // covered by the same bundle-shape guarantee.
-    const mod = await import('@libsql/client/web');
-    expect(mod).toBeDefined();
-    expect(typeof mod.createClient).toBe('function');
   });
 });

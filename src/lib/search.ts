@@ -1,26 +1,8 @@
 /**
- * src/lib/search.ts
- *
- * Search helpers for sohamhamso reader.
- *
- * Exports three entrypoints used by Astro routes / API handlers:
- *   - lexicalSearch(query, lang, limit) — FTS5 if available, LIKE fallback
- *   - semanticSearch(query, lang)     — OpenAI embed + cosine scan
- *   - blendedSearch(query, lang)      — parallel lex+sem, RRF fusion (default)
- *
- * Production architecture (per plan check-online-websites-aim-sparkling-pearl.md):
- *   - 3 Turso DBs (corpus / vectors / pii)
- *   - vectors DB uses libSQL F32_BLOB(3072) + `vector_top_k()` index → <50ms p95
- *   - query-embedding cache: Cloudflare KV, 1k entries, 7-day TTL,
- *     key = `embed:${sha256(query)}`
- *
- * Local dev approximation:
- *   - one SQLite file with all tables
- *   - cosine similarity = full scan (fine to ~100k rows; <50ms with PRAGMA tuning)
- *   - query-embedding cache = in-memory LRU (lru-cache npm package)
- *
- * Graceful degradation: if OPENAI_API_KEY is missing, semantic + blended fall
- * back to lexical-only with `source: 'lexical'` so the UI never explodes.
+ * Optional local SQLite search helpers for tools and tests.
+ * Public search uses static-search.ts and remains lexical only.
+ * Local semantic helpers use embedding BLOBs and an in-memory query cache;
+ * they are not connected to website requests.
  */
 
 import { LRUCache } from 'lru-cache';
@@ -276,7 +258,7 @@ interface VerseMetaRow {
 }
 
 function bufferToFloat32(buf: Buffer): Float32Array {
-  // BLOB is little-endian Float32 (matches libSQL F32_BLOB layout).
+  // BLOB stores little-endian Float32 values.
   return new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
 }
 
@@ -311,7 +293,7 @@ export async function semanticSearch(query: string, lang = 'en', limit = 10): Pr
   const db = await getCorpusDb();
 
   // V1: full scan. Acceptable to ~100k rows under PRAGMA defaults.
-  // Production (libSQL): swap for `SELECT verse_id FROM vector_top_k(...)`.
+  // This optional local helper is not used for public search.
   const embedRows = await db.all<EmbedRow>(
     `
       SELECT verse_id, embedding

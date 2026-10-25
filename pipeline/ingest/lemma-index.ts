@@ -1,15 +1,9 @@
 /**
  * Build-time materialization of the corpus-wide lemma index.
  *
- * WHY THIS FILE EXISTS: the SSR verse route (src/lib/verse-read.ts) needs,
- * for each verse, the {slug, corpus-wide occurrence count} of every lemma
- * it glosses. Deriving that at request time meant full-scanning
- * `word_glosses` once per Cloudflare worker isolate — ~180k rows read from
- * Turso (billed per row) on every cold isolate, which exhausted the read
- * quota. We instead materialize the index ONCE at build time into the
- * `lemma_index` table; the edge then reads only the handful of lemmas a
- * verse uses, by primary key (see scripts/turso-seed-lemma-index.ts for
- * the Turso push).
+ * Materialize lemma slugs and occurrence counts once during ingestion.
+ * Static exports and local verse payloads reuse this table instead of
+ * scanning every word gloss repeatedly.
  *
  * CONSISTENCY CONTRACT: the `slug` written here MUST equal what the static
  * `/lemma/` pages compute (src/lib/seo/corpus-bundle.ts:ensureLemmaIndex),

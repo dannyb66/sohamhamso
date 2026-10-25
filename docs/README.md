@@ -11,7 +11,7 @@ Start with the [capability and deployment matrix](CAPABILITY-MATRIX.md). “Merg
 | New contributor | [Reader tutorial](tutorials/LOCAL-READER.md) | [Corpus runbook](INGESTION.md), [contribution rules](../CONTRIBUTING.md) | Run without credentials, validate a source, propose a correction |
 | AI contributor | [AI systems](AI-SYSTEMS-AND-EVALUATION.md) | [Translation pipeline](../pipeline/translate/README.md), [provenance decision](decisions/003-translation-provenance.md) | Understand grounding, evaluation and review limits |
 | Media operator | [Video platform](AI-VIDEO-AND-YOUTUBE-PLATFORM.md) | [CLI handbook](../scripts/youtube/README.md), [recovery decision](decisions/004-media-lifecycle-recovery.md) | Inspect state, use mocks, diagnose interrupted work |
-| Site operator | [Operations](OPERATIONS-AND-QUALITY.md) | [Turso runbook](TURSO.md), [edge delivery](WEB-DELIVERY-AND-EDGE.md) | Locate configuration, checks, failure handling and recovery |
+| Site operator | [Operations](OPERATIONS-AND-QUALITY.md) | [D1 deployment and retirement](D1-CUTOVER.md), [edge delivery](WEB-DELIVERY-AND-EDGE.md) | Locate configuration, checks, failure handling and recovery |
 | Engineering reviewer | [Architecture](ARCHITECTURE.md) | [Evolution](EVOLUTION-FROM-PROTOTYPE.md), [decisions](#decision-records), [verification](VERIFICATION-2026-10-12.md) | Assess boundaries and evidence without assuming scale |
 | Recruiter or candidate | [Career brief](STAFF-PRINCIPAL-POSITIONING.md) | [Keywords and application usage](ATS-KEYWORDS-AND-CAREER-USAGE.md) | Reuse concrete project evidence in application materials |
 
@@ -21,7 +21,7 @@ Start with the [capability and deployment matrix](CAPABILITY-MATRIX.md). “Merg
 
 ## How-to guides
 
-Use [ingestion](INGESTION.md) for corpus changes, [Turso](TURSO.md) for remote database operation, [video commands](../scripts/youtube/README.md) for media tasks, [observability setup](CF-OBSERVABILITY-SETUP.md) for Cloudflare measurement, and [Phase 8](../scripts/seo/PHASE8-README.md) for search visibility checks. Live API calls, uploads, email and deployment are operator actions; examples identify these separately from local validation.
+Use [ingestion](INGESTION.md) for corpus changes, [D1 deployment](D1-CUTOVER.md) for database operation and recovery, [video commands](../scripts/youtube/README.md) for media tasks, [observability setup](CF-OBSERVABILITY-SETUP.md) for Cloudflare measurement, and [Phase 8](../scripts/seo/PHASE8-README.md) for search visibility checks. Live API calls, uploads, email and deployment are operator actions; examples identify these separately from local validation.
 
 ## References
 

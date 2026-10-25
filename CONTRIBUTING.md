@@ -16,7 +16,7 @@ bun run db:build
 bun run dev
 ```
 
-Open `http://localhost:4321`. The local reader runs against the checked-in corpus in `data/corpus/` and a generated SQLite snapshot in `db/sohamhamso.db`. Turso credentials in `.env.local` are optional for read-only local work; set them only for a remote Turso test; local subscriber writes use SQLite. The dev pepper fallback (`SUBSCRIBER_HASH_PEPPER`) is fine for local-only testing.
+Open `http://localhost:4321`. The local reader runs against the checked-in corpus in `data/corpus/` and a generated SQLite snapshot in `db/sohamhamso.db`. Reading locally requires no remote database credentials; local subscriber writes use SQLite. The dev pepper fallback (`SUBSCRIBER_HASH_PEPPER`) is fine for local-only testing.
 
 Minimum tooling: **Bun ≥ 1.1** (everything else installs via `bun install`).
 

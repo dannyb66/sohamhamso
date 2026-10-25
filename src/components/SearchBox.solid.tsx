@@ -17,7 +17,7 @@
  * Behavior:
  *   • 120ms debounce on input → /api/search?type=lexical (fast, as-you-type)
  *   • Empty input shows recent searches + example queries
- *   • Enter → navigate to /search?q=... for the full blended search
+ *   • Enter → navigate to /search?q=... for the full lexical search
  *   • ESC closes, scrim closes
  *   • ↑/↓ navigate results, Enter on a result navigates to its verse
  *   • Recent searches: max 10 in localStorage `sohamhamso:recent-searches`
@@ -162,7 +162,7 @@ export default function SearchBox() {
     if (!trimmed) return;
     setRecent(pushRecent(trimmed));
     close();
-    // Full blended search happens on the results page.
+    // Full lexical search happens on the results page.
     window.location.href = `/search?q=${encodeURIComponent(trimmed)}`;
   };
 
@@ -368,7 +368,7 @@ export default function SearchBox() {
             </Show>
             <Show when={!loading() && !error() && results().length === 0}>
               <div class="searchbox__status" aria-live="polite">
-                No quick matches. Press Enter for a full semantic search.
+                No quick matches. Press Enter to see all keyword matches.
               </div>
             </Show>
             <Show when={results().length > 0}>

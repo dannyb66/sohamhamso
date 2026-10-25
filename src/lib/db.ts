@@ -7,7 +7,7 @@
  * All exported functions are PURE reads. No mutation. Prepared statements
  * are cached on the Database instance.
  *
- * Production: this same logical schema lives in Turso libSQL (corpus DB).
+ * Production: public corpus reads use generated static assets.
  * Local dev / static build: single SQLite file at `db/sohamhamso.db`.
  */
 
@@ -26,10 +26,8 @@ import { fileURLToPath } from 'node:url';
 //   1. THIS file — synchronous `bun:sqlite` against `db/sohamhamso.db`.
 //      Used at build time (`astro build` / getStaticPaths), in `astro dev`,
 //      and in tests. The ONLY runtime where it works is bun.
-//   2. `src/lib/corpus-db.ts` (+ `src/lib/verse-read.ts`) — async libsql
-//      over HTTPS against the Turso corpus DB. Used by request-time code
-//      in the deployed Cloudflare worker (SSR verse routes, /api/search,
-//      OG functions).
+//   2. `src/lib/static-corpus-read.ts` — generated assets in the deployed
+//      Cloudflare Worker. `corpus-db.ts` is an async local-only wrapper.
 //
 // Environment detection is EXPLICIT: `process.versions.bun` is the
 // canonical bun-only marker (same sniff as corpus-db.ts/subscriber-db.ts).
@@ -214,7 +212,7 @@ export function getDb(path?: string, readonly = true): Database {
       'db.ts: bun:sqlite is unavailable in this runtime. The synchronous ' +
         'SQLite reader only works in bun (build/dev/tests). Request-time ' +
         'code in the deployed worker must read through corpus-db.ts ' +
-        '(libsql → Turso) instead — see src/lib/verse-read.ts.',
+        'from generated assets instead — see src/lib/static-corpus-read.ts.',
     );
   }
   if (path !== undefined) {
@@ -244,7 +242,7 @@ export function __setDbForTests(db: Database | null): void {
 // The subscribe endpoint ships into a Cloudflare Pages Function bundle where
 // `bun:sqlite` (the top-level import in this file) is unavailable. The
 // writable path lives in its own module that dynamic-imports `bun:sqlite`
-// only in the bun runtime, and uses `@libsql/client/web` at the edge.
+// only in the bun runtime, and uses the bound D1 database at the edge.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ─────────────────────────────────────────────────────────────────────────────

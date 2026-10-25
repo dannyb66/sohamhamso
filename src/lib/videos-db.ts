@@ -8,7 +8,7 @@
  *
  * Runtime: Bun (`bun:sqlite`, synchronous). Phase 1 runs entirely in the
  * bun runtime (CI / local / GHA), so unlike subscriber-db there is no
- * edge/libsql fork — the sync driver is sufficient and simpler.
+ * edge database fork — the sync driver is sufficient and simpler.
  *
  * Determinism contract: a row is keyed by
  *   (text_id, chapter, verse_num, lang, short_index, translation_md5, template_version)
@@ -198,8 +198,8 @@ export function getVideosDb(path?: string, readonly = false): Database {
   // same file. Flipping a shared file to WAL out from under an already-open
   // rollback-journal reader breaks it with SQLITE_CANTOPEN ("unable to open
   // database file"). WAL also buys nothing here: this writable path is a
-  // single-process local/CI tool; production writes go to Turso (libSQL),
-  // not bun:sqlite. A busy_timeout is the useful, reader-safe pragma.
+  // single-process local/CI tool; scheduled jobs use an R2-synced SQLite file,
+  // with this same driver. A busy_timeout is the useful, reader-safe pragma.
   if (path !== undefined) {
     const db = new Database(path, openOpts);
     if (readonly) db.exec('PRAGMA query_only = ON;');

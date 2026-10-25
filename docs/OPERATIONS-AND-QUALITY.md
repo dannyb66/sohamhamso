@@ -71,7 +71,6 @@ Times below are configured UTC cron times, not a record of successful execution.
 | Workflow | Baseline trigger and responsibility |
 | --- | --- |
 | [Corpus/reader CI](../.github/workflows/ci.yml) | Push/PR checks; separate fresh-ingest and mocked media jobs |
-| [Turso backup](../.github/workflows/turso-backup.yml) | Sunday 03:00; PII default, SQL gzip artifact retained 90 days; optional R2 |
 | [Demand dashboard](../.github/workflows/demand-dashboard.yml) | Monday 06:00; aggregate search misses |
 | [Short generation](../.github/workflows/youtube-generate.yml) | Every six hours at minute 23; generation/rendering |
 | [Chapter generation](../.github/workflows/youtube-generate-chapters.yml) | 03:00 and 15:00; chapter backfill/render |
@@ -90,8 +89,8 @@ A calendar-specific cron expression recurs annually unless disabled; a dated lau
 | Scope | Configuration source | When required |
 | --- | --- | --- |
 | Local reader | Bun, local schema/YAML; optional `SOHAMHAMSO_DB_PATH` | No API credentials needed |
-| Cloudflare corpus SSR | `TURSO_CORPUS_URL`, `TURSO_CORPUS_AUTH_TOKEN` | Baseline deployed verse/search/OG reads |
-| Subscriber writes | `TURSO_PII_URL`, `TURSO_PII_AUTH_TOKEN`, `SUBSCRIBER_HASH_PEPPER` | Edge subscribe/confirm/unsubscribe |
+| Cloudflare corpus SSR | Generated `dist/_data/corpus/` bundles and the `ASSETS` binding | Public verse/search/OG reads; no database credentials |
+| Subscriber writes | `PII_DB`, `SUBSCRIBER_HASH_PEPPER`, `SUBSCRIBER_EMAIL_KEY`, `RESEND_API_KEY`, `RESEND_FROM` | D1 subscribe/confirm/unsubscribe and inline confirmation mail |
 | Translation/embeddings | Anthropic/OpenAI keys in pipeline documentation | Live model requests incur charges |
 | TTS/render/storage/upload | [YouTube secrets module](../pipeline/youtube/secrets.ts), [.env.example](../.env.example) | Provider calls, storage changes, OAuth publishing |
 | Cloud observability | [.env.example](../.env.example), Cloudflare/R2/GSC credentials | Live telemetry queries/setup |
@@ -103,19 +102,19 @@ Do not copy secrets into shell transcripts, documentation, screenshots, or commi
 | Symptom | Check and recovery |
 | --- | --- |
 | Build has stale corpus | Existing DB bypassed `db:ensure`; re-ingest, compare counts, validate expected references |
-| Verse 503 | Read worker logs, verify CORPUS variables and remote seed; do not relabel as 404 |
-| New text index exists but verse 404 | Static build and remote corpus may disagree; seed the same baseline before linking it |
-| Subscribe 500 | Check pepper guard, PII credentials/table, logs; avoid printing tokens/hashes |
-| Subscribe succeeds but mail never arrives | Baseline subscribe does not populate mailer's plaintext queue; success copy is not proof of delivery |
-| Search empty | Inspect `meta.note`, lexical coverage, embedding configuration, and stored vector compatibility |
+| Verse 503 | Verify deployed manifest/chapter assets, routing exclusions, revision and Worker logs |
+| New text index exists but verse 404 | Verify the generated manifest and chapter bundle contain the reference; rebuild and deploy matching code/assets |
+| Subscribe 500 | Check `PII_DB`, migrations, pepper/encryption configuration and logs without printing subscriber data |
+| Subscribe succeeds but mail never arrives | Inspect inline Resend configuration and send tracking; subscription persistence alone does not prove delivery |
+| Search empty | Inspect `meta.note`, query language and generated lexical index coverage; production search is lexical only |
 | Media stuck in rendering/uploading | Inspect status/events and lease timestamps; use lease sweep rather than force-changing lifecycle columns |
-| Backup missing | Inspect backup workflow failure issue, account token/auth, gzip integrity, artifact retention |
-| SEO live result differs from build | Inspect SSR routes, deployed revision, remote corpus, response headers and cache staleness |
+| Backup missing | Follow the D1 deployment runbook and separate media snapshot recovery instructions |
+| SEO live result differs from build | Compare deployed code/assets, headers and cache state |
 
-[TURSO.md](TURSO.md) owns backup/restore/seeding detail. Restore into a new database, verify rows and representative routes, then cut over configuration; retaining a known-good backup is a separate responsibility from rebuilding corpus YAML. PII and media snapshots are not interchangeable with public dataset releases.
+[D1-CUTOVER.md](D1-CUTOVER.md) owns current database deployment and recovery. Preserve legacy exports and credentials until reconciliation is possible; [the retirement record](TURSO.md) documents blocked legacy reads. PII and media snapshots are not interchangeable with public datasets.
 
 ## Current limits and later work
 
-The standalone [confirmation sender](../pipeline/email/send-confirmations.ts) has retry tracking and a scheduled handler, but needs `pending_email_plaintext` populated by a subscription flow, which the baseline does not do. Missing Resend configuration causes a no-op. This source does not establish a deployed daily sunrise sender or end-to-end opt-in delivery.
+The website sends confirmation mail inline through [subscriber-email.ts](../src/lib/subscriber-email.ts). The obsolete standalone confirmation sender has been removed. The separately deployed D1 daily-verse Worker and its schedules are unchanged by this cleanup.
 
-The original dirty worktree inspected 2026-10-12 adds D1/static-corpus health/parity tools, a standalone daily worker, Node target support and Docker. They are uncommitted relative to this baseline. Keep their migration instructions out of the baseline walkthrough until merged and verified; retire old workflow assumptions only after cutover evidence exists.
+Static corpus and D1 subscriber delivery are deployed. Node/Docker development work remains outside this release. Verify delivered email separately from database persistence and avoid changing the existing daily Worker while retiring unused tooling.

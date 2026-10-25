@@ -1,27 +1,4 @@
-/**
- * Regression — production-launch-blocking bug.
- *
- * Verifies the subscribe write path is edge-compatible:
- *
- *   1. In the bun runtime (this test process), `getSubscriberDb()`
- *      returns a `SubscriberDb` backed by `bun:sqlite`. The handler
- *      can `insertSubscriber({...})` and `isAlreadySubscribed(...)`
- *      end-to-end without ever touching a network DB.
- *
- *   2. `isEdgeRuntime()` is `false` here (we ARE bun) — the inverse
- *      sanity check that the runtime sniff isn't accidentally
- *      reporting edge in the bun process.
- *
- *   3. Bare evaluation of `@libsql/client/web` does not throw. This
- *      catches the regression where the edge bundle would silently
- *      break because the libsql package was missing the `/web`
- *      subpath or pulled `node:*` modules incompatible with workerd.
- *
- * Out of scope: actually exercising the libsql round-trip — that
- * requires a live Turso instance. The shape contract above is what
- * the deployment plan called out, and is enough to keep the
- * Cloudflare bundle green pre-launch.
- */
+/** Subscriber SQLite/D1 adapter contracts. */
 
 import { mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -101,14 +78,4 @@ describe('subscriber-db — bun runtime routing', () => {
     await probe.catch(() => {});
   });
 
-  it('@libsql/client/web import does not throw on bare evaluation', async () => {
-    // Cheap regression for the bundle-evaluation failure mode: even if
-    // we never CALL createClient in this test process, the module must
-    // be importable. If `/web` ever silently drops from the package
-    // exports map (or starts pulling node:* under the hood), this test
-    // fails loud BEFORE the broken bundle hits Cloudflare.
-    const mod = await import('@libsql/client/web');
-    expect(mod).toBeDefined();
-    expect(typeof mod.createClient).toBe('function');
-  });
 });
