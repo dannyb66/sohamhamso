@@ -128,11 +128,13 @@ export function initAnalytics(): void {
   let choice: AnalyticsConsent | null = parseConsent(readStorage(ANALYTICS_CONSENT_KEY));
 
   // Page-level dimensions, attached explicitly to every event we send.
-  // Verified against live gtag.js (2026-11-23): values given to
-  // gtag('set', {...}) or as extra `config` fields are NOT forwarded as
-  // event parameters, so each gtag('event') call must carry them itself.
-  // Enhanced-measurement events (scroll, click, view_search_results) are
-  // sent by gtag.js and therefore do not carry these dimensions.
+  // Verified against the live tag on 2026-11-23: this property's Google tag
+  // is served as a Tag Manager container, which sends page_view itself and
+  // ignores on-page gtag('set', {...}) values and extra `config` fields
+  // (including send_page_view: false). Only parameters passed directly to
+  // gtag('event', ...) arrive. So the automatic page_view and the
+  // enhanced-measurement events carry no custom dimensions; the
+  // `page_context` event below (one per page load) and every custom event do.
   let dimensions: Record<string, string> = {
     ...derivePageContext(location.pathname),
     page_lang: document.documentElement.lang || 'en',
@@ -154,10 +156,8 @@ export function initAnalytics(): void {
     gtag('config', measurementId, {
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
-      // Sent below with the page dimensions attached.
-      send_page_view: false,
     });
-    gtag('event', 'page_view', { ...dimensions });
+    gtag('event', 'page_context', { ...dimensions });
     const script = document.createElement('script');
     script.async = true;
     script.src = GTAG_SRC + encodeURIComponent(measurementId);
