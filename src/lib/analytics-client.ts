@@ -127,12 +127,18 @@ export function initAnalytics(): void {
   // this page when localStorage is unavailable (private mode, blocked).
   let choice: AnalyticsConsent | null = parseConsent(readStorage(ANALYTICS_CONSENT_KEY));
 
-  const pageDimensions = () => ({
+  // Page-level dimensions, attached explicitly to every event we send.
+  // Verified against live gtag.js (2026-11-23): values given to
+  // gtag('set', {...}) or as extra `config` fields are NOT forwarded as
+  // event parameters, so each gtag('event') call must carry them itself.
+  // Enhanced-measurement events (scroll, click, view_search_results) are
+  // sent by gtag.js and therefore do not carry these dimensions.
+  let dimensions: Record<string, string> = {
     ...derivePageContext(location.pathname),
     page_lang: document.documentElement.lang || 'en',
     reader_lang: readStorage('sohamhamso:reader-lang') || 'en',
     reading_script: readStorage('sohamhamso:script') || 'default',
-  });
+  };
 
   const load = () => {
     // Check the current choice, not the one at scheduling time: the idle
@@ -144,12 +150,14 @@ export function initAnalytics(): void {
     gtag('consent', 'update', { analytics_storage: 'granted' });
     if (injected) return; // re-grant after a withdrawal on the same page
     injected = true;
-    gtag('set', pageDimensions());
     gtag('js', new Date());
     gtag('config', measurementId, {
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
+      // Sent below with the page dimensions attached.
+      send_page_view: false,
     });
+    gtag('event', 'page_view', { ...dimensions });
     const script = document.createElement('script');
     script.async = true;
     script.src = GTAG_SRC + encodeURIComponent(measurementId);
@@ -159,7 +167,7 @@ export function initAnalytics(): void {
 
   const track = (name: string, params: Record<string, unknown> = {}) => {
     if (!active) return;
-    gtag('event', name, params);
+    gtag('event', name, { ...dimensions, ...params });
   };
 
   const hideBanner = () => banner.setAttribute('hidden', '');
@@ -204,10 +212,11 @@ export function initAnalytics(): void {
     if (!active || typeof lang !== 'string') return;
     // Update the page-level dimensions first so this event (and any that
     // follow on this page) carries the new choice.
-    gtag('set', {
+    dimensions = {
+      ...dimensions,
       reader_lang: lang,
       reading_script: readStorage('sohamhamso:script') || 'default',
-    });
+    };
     track('reader_lang_change');
   });
   document.addEventListener('sohamhamso:translations-changed', (event) => {
