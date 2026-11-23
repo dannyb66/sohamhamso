@@ -21,7 +21,7 @@ Start with the [capability and deployment matrix](CAPABILITY-MATRIX.md). “Merg
 
 ## How-to guides
 
-Use [ingestion](INGESTION.md) for corpus changes, [D1 deployment](D1-CUTOVER.md) for database operation and recovery, [video commands](../scripts/youtube/README.md) for media tasks, [observability setup](CF-OBSERVABILITY-SETUP.md) for Cloudflare measurement, and [Phase 8](../scripts/seo/PHASE8-README.md) for search visibility checks. Live API calls, uploads, email and deployment are operator actions; examples identify these separately from local validation.
+Use [ingestion](INGESTION.md) for corpus changes, [D1 deployment](D1-CUTOVER.md) for database operation and recovery, [video commands](../scripts/youtube/README.md) for media tasks, [observability setup](CF-OBSERVABILITY-SETUP.md) for Cloudflare measurement, [GA4 setup](GA4-SETUP.md) for opt-in Google Analytics, and [Phase 8](../scripts/seo/PHASE8-README.md) for search visibility checks. Live API calls, uploads, email and deployment are operator actions; examples identify these separately from local validation.
 
 ## References
 
@@ -44,6 +44,7 @@ These are **reconstructed explanations dated 2026-10-12**, not claims that a for
 2. [Database boundaries](decisions/002-database-boundaries.md)
 3. [Translation provenance](decisions/003-translation-provenance.md)
 4. [Media lifecycle and recovery](decisions/004-media-lifecycle-recovery.md)
+5. [Opt-in Google Analytics](decisions/005-opt-in-google-analytics.md) (contemporaneous, 2026-11-23)
 
 ## Historical material and maintenance
 

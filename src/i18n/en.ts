@@ -221,6 +221,15 @@ export const en = {
   // 'wordsheet.morph_label': 'Morphology',
   // 'wordsheet.more_occurrences': 'more occurrences →',
   // 'translation_drawer.empty': 'Not yet translated to',
+
+  // ── Analytics consent banner (AnalyticsConsent.astro) ──────────────────
+  // Rendered only on production builds with PUBLIC_GA_MEASUREMENT_ID set.
+  // Locale JSONs fall back to these English strings until translated.
+  'consent.copy':
+    'May we count your visit with Google Analytics? It sets cookies and sends usage data to Google. Reading works the same either way.',
+  'consent.accept': 'Allow analytics',
+  'consent.decline': 'No thanks',
+  'consent.details': 'Privacy details',
 } as const;
 
 /** Union of every chrome i18n key. */

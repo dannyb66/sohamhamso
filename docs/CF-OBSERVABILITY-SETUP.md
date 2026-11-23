@@ -1,5 +1,13 @@
 # Cloudflare Observability — Post-Launch Setup
 
+> **Update 2026-11-23:** an opt-in Google Analytics 4 layer now exists
+> ([setup](GA4-SETUP.md), [decision 005](decisions/005-opt-in-google-analytics.md)).
+> Zone-level Web Analytics below remains the always-on, cookieless
+> baseline. Statements in this runbook that it is the *only* analytics
+> surface, and that `BaseLayout.astro` carries no analytics script,
+> describe the June 2026 launch state; `/about/privacy` now documents
+> both.
+
 Operator runbook for enabling Cloudflare Web Analytics and a 72h Logpush
 sink to R2 immediately after launch.
 

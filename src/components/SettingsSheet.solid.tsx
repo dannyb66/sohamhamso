@@ -36,6 +36,8 @@
  * 44px touch targets. Respects prefers-reduced-motion.
  */
 import { For, Show, createSignal, onCleanup, onMount } from 'solid-js';
+import { ANALYTICS_CONSENT_EVENT } from '../lib/analytics';
+import type { SohamhamsoAnalyticsApi } from '../lib/analytics-client';
 import { READING_MODES } from '../lib/reading-modes';
 
 // ─── Option registries ────────────────────────────────────────────────
@@ -213,6 +215,19 @@ function saveSettings(s: Settings) {
 export default function SettingsSheet() {
   const [open, setOpen] = createSignal(false);
   const [settings, setSettings] = createSignal<Settings>({ ...DEFAULTS });
+  // Analytics consent row. `null` = GA not configured on this page (no
+  // measurement ID at build time, or the page opted out) → row hidden.
+  const [analytics, setAnalytics] = createSignal<{ allowed: boolean; gpc: boolean } | null>(null);
+  const analyticsApi = (): SohamhamsoAnalyticsApi | undefined =>
+    typeof window === 'undefined' ? undefined : window.sohamhamsoAnalytics;
+  const privacyHref = () => {
+    const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang;
+    return !lang || lang === 'en' ? '/about/privacy#analytics' : `/${lang}/about/privacy#analytics`;
+  };
+  const syncAnalytics = () => {
+    const api = analyticsApi();
+    setAnalytics(api ? { allowed: api.getConsent() === 'granted', gpc: api.gpc } : null);
+  };
 
   let sheetEl: HTMLDialogElement | undefined;
   const titleId = 'settings-sheet-title';
@@ -273,6 +288,7 @@ export default function SettingsSheet() {
 
   const openSheet = () => {
     lastFocused = (document.activeElement as HTMLElement | null) ?? null;
+    syncAnalytics();
     setOpen(true);
     lockBodyScroll();
     // After paint, move focus into the sheet.
@@ -373,7 +389,9 @@ export default function SettingsSheet() {
     applySettings(initial);
     document.addEventListener('sohamhamso:open-settings', handleOpenRequest);
     document.addEventListener('sohamhamso:settings-changed', handleExternalChange);
+    document.addEventListener(ANALYTICS_CONSENT_EVENT, syncAnalytics);
     document.addEventListener('keydown', handleKey);
+    syncAnalytics();
     // Track the system color scheme so `theme: 'auto'` re-renders when
     // the OS flips. Listener is live for the lifetime of the island,
     // not gated on `open()`, so the page stays in sync even when the
@@ -390,6 +408,7 @@ export default function SettingsSheet() {
     if (typeof document === 'undefined') return;
     document.removeEventListener('sohamhamso:open-settings', handleOpenRequest);
     document.removeEventListener('sohamhamso:settings-changed', handleExternalChange);
+    document.removeEventListener(ANALYTICS_CONSENT_EVENT, syncAnalytics);
     document.removeEventListener('keydown', handleKey);
     if (mql && mqlHandler) mql.removeEventListener('change', mqlHandler);
     mql = null;
@@ -585,6 +604,34 @@ export default function SettingsSheet() {
               <For each={SCRIPTS}>{(s) => <option value={s.id}>{s.label}</option>}</For>
             </select>
           </fieldset>
+
+          {/* Analytics consent — only when GA is configured for this page.
+              Not part of "Reset to defaults": consent is a separate choice. */}
+          <Show when={analytics()}>
+            {(state) => (
+              <fieldset class="settings__fs">
+                <legend>Analytics</legend>
+                <label class="settings__radio">
+                  <input
+                    type="checkbox"
+                    data-analytics-consent-toggle
+                    checked={state().allowed}
+                    disabled={state().gpc}
+                    onChange={(e) =>
+                      analyticsApi()?.setConsent(e.currentTarget.checked ? 'granted' : 'denied')
+                    }
+                  />
+                  <span>Allow Google Analytics</span>
+                </label>
+                <p class="settings__note">
+                  {state().gpc
+                    ? 'Your browser sends a Global Privacy Control signal, so analytics stays off. '
+                    : 'Counts visits and reading choices to guide which texts and languages come next. '}
+                  <a href={privacyHref()}>Privacy details</a>
+                </p>
+              </fieldset>
+            )}
+          </Show>
 
           <button type="button" class="settings__reset" onClick={reset}>
             Reset to defaults
@@ -819,6 +866,16 @@ export default function SettingsSheet() {
             color: var(--color-ink);
             border: 1px solid var(--color-rule);
             border-radius: 4px;
+          }
+          .settings__note {
+            margin: 0;
+            font-family: var(--font-chrome);
+            font-size: var(--text-xs);
+            line-height: 1.5;
+            color: var(--color-ink-muted);
+          }
+          .settings__note a {
+            color: var(--color-accent);
           }
           .settings__reset {
             justify-self: start;

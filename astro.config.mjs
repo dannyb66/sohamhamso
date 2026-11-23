@@ -34,6 +34,10 @@ export default defineConfig({
   devToolbar: { enabled: false },
   vite: {
     plugins: [tailwindcss()],
+    // Lets a second dev server (playwright.config.ts, analytics-on twin)
+    // keep its own pre-bundled deps instead of racing the first server
+    // for node_modules/.vite. Unset → Vite's default.
+    cacheDir: process.env.ASTRO_VITE_CACHE_DIR || undefined,
   },
   i18n: {
     defaultLocale: 'en',

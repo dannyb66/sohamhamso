@@ -1,4 +1,5 @@
 ---
+import Analytics from '../components/Analytics.astro';
 import I18nSwap from '../components/I18nSwap.solid.tsx';
 import ReaderLangSwap from '../components/ReaderLangSwap.solid.tsx';
 import SearchBox from '../components/SearchBox.solid.tsx';
@@ -11,6 +12,12 @@ import type { HreflangEntry } from '../lib/seo';
 import { type JsonLdNode, buildWebPageJsonLd } from '../lib/seo/jsonld';
 
 interface Props {
+  /**
+   * Opt-in GA4 (consent-first). Defaults to on; it still renders nothing
+   * unless PUBLIC_GA_MEASUREMENT_ID is set at build time. Pass `false` on
+   * pages that promise no tracking (email confirm / unsubscribe landings).
+   */
+  analytics?: boolean;
   canonical?: string;
   title?: string;
   description?: string;
@@ -27,6 +34,7 @@ interface Props {
   ogImageUrl?: string;
 }
 const {
+  analytics = true,
   canonical,
   title = 'sohamhamso — The Tantric canon, read in eleven tongues',
   description = 'Modern reader for the Tantric, Kashmir Shaivism, Trika, and Kaula Sanskrit canon. Translations in eleven Indian languages.',
@@ -143,11 +151,53 @@ const preloadedFonts = CORE_PRELOADED_FONT_ASSETS;
   <SearchBox client:idle />
   <I18nSwap client:idle />
   <ReaderLangSwap client:idle />
-  <AcceptLanguageBanner currentLang={currentLangCode} localeBasePath={localeBasePath} localeTrailingSlash={localeTrailingSlash} />
+  <!--
+    Bottom-right floating stack: the Accept-Language suggestion and the
+    analytics consent banner can both be visible on a first visit, so they
+    share one fixed container instead of overlapping.
+  -->
+  <div class="floating-stack">
+    <AcceptLanguageBanner currentLang={currentLangCode} localeBasePath={localeBasePath} localeTrailingSlash={localeTrailingSlash} />
+    <Analytics enabled={analytics} lang={lang} />
+  </div>
 </body>
 </html>
 
 <style is:global>
   @import "../styles/fonts.css";
   @import "../styles/global.css";
+</style>
+
+<style>
+  .floating-stack {
+    position: fixed;
+    right: var(--spacing-4);
+    bottom: calc(var(--spacing-4) + env(safe-area-inset-bottom));
+    z-index: 45;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-3);
+    pointer-events: none;
+  }
+
+  .floating-stack > :global(*) {
+    pointer-events: auto;
+  }
+
+  /* Below 1024px the TranslationDrawer's 44px floating trigger sits at the
+     same bottom-right anchor (z-index 50); stack the banners above it. */
+  @media (max-width: 1023px) {
+    :global(body:has(.td-trigger)) .floating-stack {
+      bottom: calc(var(--spacing-4) + 44px + var(--spacing-3) + env(safe-area-inset-bottom));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .floating-stack {
+      right: var(--spacing-3);
+      left: var(--spacing-3);
+      align-items: stretch;
+    }
+  }
 </style>
