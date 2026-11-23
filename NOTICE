@@ -37,6 +37,14 @@ of individual files):
     vitest.config.ts      — unit-test config
     wrangler.toml         — Cloudflare Pages config (when present)
 
+  All rights reserved (books)
+  ---------------------------
+    books/                — published and in-progress book files (Tripura
+                            Rahasya series): manuscripts, interiors, covers,
+                            metadata and build scripts. © Soham Hamso, all
+                            rights reserved; not covered by MIT or
+                            CC-BY-SA 4.0. See books/LICENSE.md.
+
 Upstream per-source licenses (per `ATTRIBUTION.md`) may impose additional
 or alternative terms on specific files within `data/` and `dataset/`. The
 most-restrictive applicable license governs. When in doubt about a
