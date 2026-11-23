@@ -95,11 +95,7 @@ test.describe('analytics consent flow', () => {
     expect(config).toEqual([
       'config',
       'G-E2ETEST000',
-      {
-        allow_google_signals: false,
-        allow_ad_personalization_signals: false,
-        send_page_view: false,
-      },
+      { allow_google_signals: false, allow_ad_personalization_signals: false },
     ]);
 
     // Returning visit: no banner, gtag loads on idle.
@@ -148,10 +144,11 @@ test.describe('analytics consent flow', () => {
         new CustomEvent('sohamhamso:translations-changed', { detail: { selected: ['hi', 'ta'] } }),
       ),
     );
-    expect(await eventNames()).toEqual(['page_view', 'parallel_translations_change']);
+    expect(await eventNames()).toEqual(['page_context', 'parallel_translations_change']);
 
-    // gtag('set') does not reach GA4 events, so every event must carry the
-    // page dimensions itself.
+    // The live tag ignores gtag('set') and extra config fields, so every
+    // event must carry the page dimensions itself; page_view is left to the
+    // tag (no explicit page_view, or views would be double-counted).
     const events = await page.evaluate(() =>
       (window.dataLayer ?? [])
         .map((entry) => Array.from(entry as ArrayLike<unknown>))
