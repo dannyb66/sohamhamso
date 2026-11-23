@@ -79,11 +79,17 @@ Custom metric (scope Event, unit Standard): `parallel_count`.
 
 Custom dimensions only populate from the moment they are registered.
 
-The runtime attaches these parameters to each event it sends (`page_view`
-and the custom events below). Enhanced-measurement events (`scroll`,
-`click`, `view_search_results`, `file_download`) are emitted by gtag.js
-itself and do **not** carry them — `gtag('set', …)` was verified on
-2026-11-23 not to propagate custom parameters to GA4 events.
+The runtime attaches these parameters to each event it sends: a
+`page_context` event once per page load, and the custom events below.
+The Google tag for this property is served as a Tag Manager container
+(GTM-57NMP95W). Verified on 2026-11-23, it sends `page_view` itself and
+ignores on-page `gtag('set', …)` values and extra `config` fields
+(including `send_page_view: false`), so `page_view` and the
+enhanced-measurement events (`scroll`, `click`, `view_search_results`,
+`file_download`) carry **no** custom dimensions. For "views by
+language/text/tradition", report on the `page_context` event count, not
+`page_view`. Signals and ad personalization are enforced by the property
+settings above, not by the tag's `config` flags.
 
 Live property (created 2026-11-23): account `sohamhamso` (417276167),
 property `sohamhamso.org` (565584164), web stream measurement ID
@@ -94,6 +100,7 @@ property `sohamhamso.org` (565584164), web stream measurement ID
 | Event | When |
 |---|---|
 | `page_view`, `scroll`, `user_engagement`, `view_search_results`, `click` | Enhanced measurement (automatic) |
+| `page_context` | Once per page load after consent; carries all page dimensions (use it, not `page_view`, for per-dimension view counts) |
 | `reader_lang_change` | Reader language / reading mode changed (carries updated `reader_lang`, `reading_script`) |
 | `parallel_translations_change` | Parallel-translation drawer selection changed |
 | `settings_open` | Reading settings sheet opened |
