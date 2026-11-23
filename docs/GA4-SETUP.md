@@ -79,6 +79,16 @@ Custom metric (scope Event, unit Standard): `parallel_count`.
 
 Custom dimensions only populate from the moment they are registered.
 
+The runtime attaches these parameters to each event it sends (`page_view`
+and the custom events below). Enhanced-measurement events (`scroll`,
+`click`, `view_search_results`, `file_download`) are emitted by gtag.js
+itself and do **not** carry them — `gtag('set', …)` was verified on
+2026-11-23 not to propagate custom parameters to GA4 events.
+
+Live property (created 2026-11-23): account `sohamhamso` (417276167),
+property `sohamhamso.org` (565584164), web stream measurement ID
+`G-RYTJWE8GEJ`, owned by the deepakbasavaraju7 Google account.
+
 ## 4. Events
 
 | Event | When |
