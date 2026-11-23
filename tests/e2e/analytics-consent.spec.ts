@@ -95,7 +95,11 @@ test.describe('analytics consent flow', () => {
     expect(config).toEqual([
       'config',
       'G-E2ETEST000',
-      { allow_google_signals: false, allow_ad_personalization_signals: false },
+      {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+        send_page_view: false,
+      },
     ]);
 
     // Returning visit: no banner, gtag loads on idle.
@@ -144,7 +148,34 @@ test.describe('analytics consent flow', () => {
         new CustomEvent('sohamhamso:translations-changed', { detail: { selected: ['hi', 'ta'] } }),
       ),
     );
-    expect(await eventNames()).toEqual(['parallel_translations_change']);
+    expect(await eventNames()).toEqual(['page_view', 'parallel_translations_change']);
+
+    // gtag('set') does not reach GA4 events, so every event must carry the
+    // page dimensions itself.
+    const events = await page.evaluate(() =>
+      (window.dataLayer ?? [])
+        .map((entry) => Array.from(entry as ArrayLike<unknown>))
+        .filter((args) => args[0] === 'event'),
+    );
+    expect(events[0]?.[2]).toMatchObject({
+      content_group: 'about',
+      page_lang: 'en',
+      reader_lang: 'en',
+      reading_script: 'default',
+    });
+    expect(events[1]?.[2]).toMatchObject({
+      content_group: 'about',
+      page_lang: 'en',
+      parallel_count: 2,
+      parallel_langs: 'hi,ta',
+    });
+    expect(
+      await page.evaluate(() =>
+        (window.dataLayer ?? []).some(
+          (entry) => Array.from(entry as ArrayLike<unknown>)[0] === 'set',
+        ),
+      ),
+    ).toBe(false);
   });
 
   test('settings toggle withdraws consent and clears GA cookies', async ({ page }) => {
