@@ -1,0 +1,30 @@
+---
+/**
+ * Analytics.astro — build-time gate for the opt-in GA4 integration.
+ *
+ * Renders nothing unless BOTH hold:
+ *   - `PUBLIC_GA_MEASUREMENT_ID` is a valid GA4 ID at build time. Set it in
+ *     the Cloudflare Pages *Production* environment only, so dev, CI and
+ *     preview deployments never load or report analytics.
+ *   - the page has not opted out (`<BaseLayout analytics={false}>`), e.g.
+ *     the email confirm/unsubscribe landings.
+ *
+ * See docs/GA4-SETUP.md and /about/privacy.
+ */
+import { isValidMeasurementId } from '../lib/analytics';
+import AnalyticsConsent from './AnalyticsConsent.astro';
+
+interface Props {
+  enabled?: boolean;
+  lang?: string;
+}
+
+const { enabled = true, lang = 'en' } = Astro.props;
+const measurementId: unknown = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+---
+
+{
+  enabled && isValidMeasurementId(measurementId) ? (
+    <AnalyticsConsent lang={lang} measurementId={measurementId} />
+  ) : null
+}

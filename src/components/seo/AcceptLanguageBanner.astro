@@ -109,11 +109,9 @@ const localeLabels = Object.fromEntries(
 }
 
 <style>
+  /* Positioned by BaseLayout's `.floating-stack` (shared with the analytics
+     consent banner). */
   .lang-banner {
-    position: fixed;
-    right: var(--spacing-4);
-    bottom: calc(var(--spacing-4) + env(safe-area-inset-bottom));
-    z-index: 45;
     display: grid;
     gap: var(--spacing-3);
     width: min(26rem, calc(100vw - var(--spacing-6)));
@@ -163,8 +161,6 @@ const localeLabels = Object.fromEntries(
 
   @media (max-width: 640px) {
     .lang-banner {
-      right: var(--spacing-3);
-      left: var(--spacing-3);
       width: auto;
     }
   }

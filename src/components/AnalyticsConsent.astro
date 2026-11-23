@@ -1,0 +1,103 @@
+---
+/**
+ * AnalyticsConsent.astro — consent banner + client runtime for GA4.
+ *
+ * Only ever rendered through `Analytics.astro`, which has already validated
+ * the measurement ID. The banner ships `hidden`; the client runtime reveals
+ * it only for visitors who have not chosen yet and do not send a Global
+ * Privacy Control signal. Nothing is requested from Google before the
+ * visitor clicks "Allow analytics" (or allowed it on an earlier visit).
+ */
+import { localePathFor } from '../lib/seo';
+
+interface Props {
+  lang: string;
+  measurementId: string;
+}
+
+const { lang, measurementId } = Astro.props;
+const privacyHref = `${localePathFor('/about/privacy', lang)}#analytics`;
+---
+
+<aside
+  class="consent-banner"
+  hidden
+  aria-label="Analytics consent"
+  data-consent-banner
+  data-ga-id={measurementId}
+>
+  <p class="consent-banner__copy">
+    <span data-i18n="consent.copy">
+      May we count your visit with Google Analytics? It sets cookies and sends usage data to Google. Reading works the same either way.
+    </span>
+    {' '}
+    <a href={privacyHref} class="consent-banner__link" data-i18n="consent.details">Privacy details</a>
+  </p>
+  <div class="consent-banner__actions">
+    <button type="button" class="consent-banner__accept" data-consent-accept data-i18n="consent.accept">
+      Allow analytics
+    </button>
+    <button type="button" class="consent-banner__decline" data-consent-decline data-i18n="consent.decline">
+      No thanks
+    </button>
+  </div>
+</aside>
+
+<script>
+  import { initAnalytics } from '../lib/analytics-client';
+
+  initAnalytics();
+</script>
+
+<style>
+  .consent-banner {
+    display: grid;
+    gap: var(--spacing-3);
+    width: min(26rem, calc(100vw - var(--spacing-6)));
+    padding: var(--spacing-4);
+    background: color-mix(in srgb, var(--color-surface) 92%, var(--color-bg) 8%);
+    border: 1px solid var(--color-rule);
+    border-radius: 12px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .consent-banner__copy {
+    margin: 0;
+    font-family: var(--font-iast);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+
+  .consent-banner__link {
+    color: var(--color-accent);
+  }
+
+  .consent-banner__actions {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+  }
+
+  /* Equal visual weight for both choices: refusing must be as easy as
+     accepting. */
+  .consent-banner__accept,
+  .consent-banner__decline {
+    appearance: none;
+    min-height: 40px;
+    border-radius: 999px;
+    padding: 0 14px;
+    font-family: var(--font-chrome);
+    font-size: var(--text-xs);
+    cursor: pointer;
+    border: 1px solid var(--color-ink-muted);
+    background: transparent;
+    color: var(--color-ink);
+  }
+
+  @media (max-width: 640px) {
+    .consent-banner {
+      width: auto;
+    }
+  }
+</style>
