@@ -12,13 +12,13 @@ import { formatMoney } from '../../lib/donate/amounts';
  * offers an optional "cover the fees" top-up and an optional public-ledger
  * name. Stripe.js loads only when a form is shown.
  */
-import { donateConfig } from '../../lib/donate/config';
+import { donateConfig, upiEnabled as upiFlag } from '../../lib/donate/config';
 
 const { india, global: intl, githubSponsorsUrl, contactUrl, ledgerUrl } = donateConfig;
 
 const publishableKey = (import.meta.env.PUBLIC_STRIPE_PUBLISHABLE_KEY ?? '').trim();
 const embedded = publishableKey.startsWith('pk_');
-const upiEnabled = embedded && india.enabled;
+const upiEnabled = embedded && upiFlag();
 const cardEnabled = embedded || intl.fallbackPaymentLinkUrl !== '';
 
 const rails = [

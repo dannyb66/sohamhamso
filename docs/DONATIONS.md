@@ -64,8 +64,12 @@ tests/e2e/donate.spec.ts                browser tests with Stripe.js stubbed (ne
 ## 4. Setup checklist
 
 ### 4.1 India (UPI through Stripe)
+**Status (24 Nov 2026):** sandbox UPI works end to end on Preview. **Live UPI was rejected by Stripe** ("Ineligible", no reason shown), so Production must not set `PUBLIC_DONATE_UPI` until Stripe enables it (ask Stripe support for the reason and whether an appeal or business details would change it).
+
+The UPI tab only renders, and `/api/donate/intent` only accepts INR, when the build has `PUBLIC_DONATE_UPI=1` (a Pages secret; Preview has it).
+
 1. Dashboard → Settings → **Payment methods → UPI → Enable**, in both the sandbox and live. The account's industry must not be a UPI-prohibited MCC (8661 "Religious Organizations" is prohibited; this account is "Other educational services").
-2. Nothing else to configure: the INR form requests UPI explicitly.
+2. Once live shows **Enabled**, add the `PUBLIC_DONATE_UPI` secret with value `1` to **Production** and redeploy.
 3. Before announcing: a live **₹101 UPI payment from Google Pay or PhonePe**, on desktop (QR) and on a phone (app switch). Check the ledger row appears in INR, then refund it.
 
 ### 4.2 Stripe (US account, maintainer)

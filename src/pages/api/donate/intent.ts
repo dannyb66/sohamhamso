@@ -18,7 +18,7 @@ import {
   donationTotalMinor,
   isDonateCurrency,
 } from '../../../lib/donate/amounts';
-import { donateBounds, donateConfig } from '../../../lib/donate/config';
+import { donateBounds, upiEnabled } from '../../../lib/donate/config';
 import { StripeApiError, createDonationIntent } from '../../../lib/donate/stripe';
 
 export const prerender = false;
@@ -53,7 +53,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
   }
 
   const currency = body.currency === undefined ? 'usd' : body.currency;
-  if (!isDonateCurrency(currency) || (currency === 'inr' && !donateConfig.india.enabled)) {
+  if (!isDonateCurrency(currency) || (currency === 'inr' && !upiEnabled())) {
     return json({ ok: false, message: 'Unsupported currency.' }, 400);
   }
   const bounds = donateBounds(currency);

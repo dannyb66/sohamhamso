@@ -1,3 +1,4 @@
+/// <reference types="astro/client" />
 /**
  * Public donation configuration for /donate.
  *
@@ -62,6 +63,18 @@ export const donateConfig: DonateConfig = {
   contactUrl: '', // TODO(donations): mailto:… — used for large gifts and refunds
   ledgerUrl: '',
 };
+
+/**
+ * UPI needs Stripe's per-account approval (live UPI was rejected for this
+ * account on 24 Nov 2026), so the UPI tab ships hidden and is switched on per
+ * environment with PUBLIC_DONATE_UPI=1 (a Pages secret, read at build time).
+ * Preview has it (sandbox UPI works); set it on Production only once
+ * Dashboard → Payment methods shows UPI as Enabled in live mode.
+ */
+export function upiEnabled(): boolean {
+  const flag = String(import.meta.env.PUBLIC_DONATE_UPI ?? '').trim();
+  return donateConfig.india.enabled && flag === '1';
+}
 
 /** Gift bounds in major units for a currency (used by browser and server). */
 export function donateBounds(currency: 'usd' | 'inr'): { min: number; max: number } {

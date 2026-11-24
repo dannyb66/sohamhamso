@@ -6,7 +6,7 @@ import { type Page, type Route, expect, test } from '@playwright/test';
  * the browser sends (currency, base amount), confirm, thank-you and errors.
  *
  * Requires the dev server to run with PUBLIC_STRIPE_PUBLISHABLE_KEY set to
- * any pk_test_… value; skipped otherwise. The real Stripe flow is covered by
+ * any pk_test_… value and PUBLIC_DONATE_UPI=1; skipped otherwise. The real Stripe flow is covered by
  * the manual preview checklist in docs/DONATIONS.md.
  */
 
@@ -68,7 +68,8 @@ async function stubStripe(page: Page): Promise<void> {
 }
 
 async function hasEmbeddedCheckout(page: Page): Promise<boolean> {
-  return (await page.locator('[data-rail-form]').count()) > 0;
+  // Both rails present: publishable key set and PUBLIC_DONATE_UPI=1.
+  return (await page.locator('[data-rail-form]').count()) > 1;
 }
 
 test.describe('donate page (Stripe stubbed)', () => {
@@ -83,7 +84,10 @@ test.describe('donate page (Stripe stubbed)', () => {
       await route.fulfill({ json: { ok: true, clientSecret: 'pi_test_secret_x' } });
     });
     await page.goto('/donate?method=upi&src=e2e');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
 
     const tab = page.getByRole('tab', { name: 'UPI · India' });
     await expect(tab).toHaveAttribute('aria-selected', 'true');
@@ -138,7 +142,10 @@ test.describe('donate page (Stripe stubbed)', () => {
       await route.fulfill({ json: { ok: true, clientSecret: 'pi_test_secret_y' } });
     });
     await page.goto('/donate?method=card');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
 
     const panel = page.locator('[data-panel="card"]');
     await expect(page.getByRole('tab', { name: 'Card · Apple Pay · Google Pay' })).toHaveAttribute(
@@ -162,7 +169,10 @@ test.describe('donate page (Stripe stubbed)', () => {
 
   test('switching tabs keeps each rail independent', async ({ page }) => {
     await page.goto('/donate?method=card');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
     await page.getByRole('tab', { name: 'UPI · India' }).click();
     await expect(page.locator('[data-panel="upi"]')).toBeVisible();
     await expect(page.locator('[data-panel="card"]')).toBeHidden();
@@ -176,7 +186,10 @@ test.describe('donate page (Stripe stubbed)', () => {
     const page = await ctx.newPage();
     await stubStripe(page);
     await page.goto('/donate');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
     await expect(page.getByRole('tab', { name: 'UPI · India' })).toHaveAttribute(
       'aria-selected',
       'true',
@@ -189,7 +202,10 @@ test.describe('donate page (Stripe stubbed)', () => {
       route.fulfill({ json: { ok: true, clientSecret: 'pi_test_secret_z' } }),
     );
     await page.goto('/donate?method=upi');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
     const panel = page.locator('[data-panel="upi"]');
     await expect(panel.locator('[data-submit]')).toBeEnabled(); // Stripe stub loaded
     await page.evaluate(() => {
@@ -207,7 +223,10 @@ test.describe('donate page (Stripe stubbed)', () => {
 
   test('server errors surface to the donor (real endpoint, no secret key)', async ({ page }) => {
     await page.goto('/donate?method=upi');
-    test.skip(!(await hasEmbeddedCheckout(page)), 'PUBLIC_STRIPE_PUBLISHABLE_KEY not set');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
     const panel = page.locator('[data-panel="upi"]');
     await expect(panel.locator('[data-submit]')).toBeEnabled();
     await panel.locator('[data-submit]').click();

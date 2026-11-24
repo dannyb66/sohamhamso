@@ -13,7 +13,7 @@ import { resolve } from 'node:path';
  *
  * Run with: `bun --bun vitest run tests/unit/donate.test.ts`
  */
-import { describe, expect, it, vi } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import {
   checkBaseCents,
   checkBaseMinor,
@@ -398,6 +398,12 @@ describe('POST /api/donate/intent', () => {
 });
 
 describe('POST /api/donate/intent (INR / UPI)', () => {
+  beforeAll(() => {
+    vi.stubEnv('PUBLIC_DONATE_UPI', '1');
+  });
+  afterAll(() => {
+    vi.unstubAllEnvs();
+  });
   const good = {
     currency: 'inr',
     baseCents: 50100,
@@ -442,5 +448,17 @@ describe('POST /api/donate/intent (INR / UPI)', () => {
     expect((await intentPOST(intentCtx({ ...good, baseCents: 10000001 }))).status).toBe(400);
     expect((await intentPOST(intentCtx({ ...good, currency: 'eur' }))).status).toBe(400);
     expect((await intentPOST(intentCtx({ ...good, currency: 5 }))).status).toBe(400);
+  });
+});
+
+describe('UPI flag', () => {
+  it('rejects INR intents unless PUBLIC_DONATE_UPI=1', async () => {
+    vi.stubEnv('PUBLIC_DONATE_UPI', '');
+    const res = await intentPOST(
+      intentCtx({ currency: 'inr', baseCents: 50100, idempotencyKey: 'abcdef0123456789' }),
+    );
+    expect(res.status).toBe(400);
+    expect((await res.json()).message).toBe('Unsupported currency.');
+    vi.unstubAllEnvs();
   });
 });
