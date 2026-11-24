@@ -19,6 +19,7 @@ export const ENGLISH_ONLY_NOINDEX_CHROME_BASE_PATHS = [
   '/confirmed',
   '/unsubscribed',
   '/sample',
+  '/donate/thanks',
 ] as const;
 
 export const CHROME_SITEMAP_BASE_PATHS = ['/', ...LOCALIZED_CHROME_BASE_PATHS] as const;

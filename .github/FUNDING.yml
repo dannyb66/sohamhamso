@@ -1,0 +1,6 @@
+# Shows the "Sponsor" button on this repository.
+# Uncomment `github:` once the account below has an active GitHub Sponsors
+# profile (decide: dannyb66, or a sohamhamso org). Until then only the
+# custom link renders.
+# github: [dannyb66]
+custom: ["https://sohamhamso.org/donate?src=repo"]

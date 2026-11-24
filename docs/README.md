@@ -23,6 +23,9 @@ Start with the [capability and deployment matrix](CAPABILITY-MATRIX.md). “Merg
 
 Use [ingestion](INGESTION.md) for corpus changes, [D1 deployment](D1-CUTOVER.md) for database operation and recovery, [video commands](../scripts/youtube/README.md) for media tasks, [observability setup](CF-OBSERVABILITY-SETUP.md) for Cloudflare measurement, [GA4 setup](GA4-SETUP.md) for opt-in Google Analytics, and [Phase 8](../scripts/seo/PHASE8-README.md) for search visibility checks. Live API calls, uploads, email and deployment are operator actions; examples identify these separately from local validation.
 
+- [Donations](DONATIONS.md): Stripe (card, wallets, US bank, UPI) and GitHub Sponsors setup, the public ledger, YouTube Partner Program setup and rollout order.
+- [YouTube support kit](YOUTUBE-SUPPORT-KIT.md): description, pinned-comment, QR and outro templates for asking viewers to support the project.
+
 ## References
 
 - [Corpus and data platform](CORPUS-AND-DATA-PLATFORM.md): YAML, schema, ingestion, morphology, migrations and exports.
