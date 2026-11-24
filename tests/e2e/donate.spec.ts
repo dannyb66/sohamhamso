@@ -18,6 +18,10 @@ const FAKE_STRIPE = `
       _registerWrapper() {},
       registerAppInfo() {},
       elements(opts) {
+        // Mirror Stripe.js (Endive): the legacy option throws.
+        if (opts && 'paymentMethodTypes' in opts) {
+          throw new Error('IntegrationError: paymentMethodTypes is no longer supported');
+        }
         window.__stripe.elementsOpts = opts;
         return {
           update(u) { window.__stripe.updates.push(u); },
@@ -47,7 +51,12 @@ const FAKE_STRIPE = `
 })();`;
 
 type StubState = {
-  elementsOpts: { mode: string; currency: string; amount: number; paymentMethodTypes?: string[] };
+  elementsOpts: {
+    mode: string;
+    currency: string;
+    amount: number;
+    allowedPaymentMethodTypes?: string[];
+  };
   confirmResult: unknown;
 };
 type StubWindow = Window & { __stripe: StubState };
@@ -86,7 +95,7 @@ test.describe('donate page (Stripe stubbed)', () => {
     await expect(panel.locator('[data-fake="expressCheckout"]')).toHaveCount(0);
     const opts = await page.evaluate(() => (window as unknown as StubWindow).__stripe.elementsOpts);
     expect(opts).toMatchObject({ mode: 'payment', currency: 'inr', amount: 50100 });
-    expect(opts.paymentMethodTypes).toEqual(['upi']);
+    expect(opts.allowedPaymentMethodTypes).toEqual(['upi']);
 
     const submit = panel.locator('[data-submit]');
     await expect(submit).toBeEnabled();
@@ -140,7 +149,7 @@ test.describe('donate page (Stripe stubbed)', () => {
     await expect(panel.locator('[data-fake="payment"]')).toBeVisible();
     const opts = await page.evaluate(() => (window as unknown as StubWindow).__stripe.elementsOpts);
     expect(opts).toMatchObject({ mode: 'payment', currency: 'usd', amount: 1100 });
-    expect(opts.paymentMethodTypes).toBeUndefined();
+    expect(opts.allowedPaymentMethodTypes).toBeUndefined();
 
     const submit = panel.locator('[data-submit]');
     await expect(submit).toHaveText('Give $11');

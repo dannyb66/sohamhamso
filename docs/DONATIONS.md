@@ -42,7 +42,7 @@ These are deliberately **not** used:
   - an inline thank-you; `/donate/thanks` handles the methods that do redirect.
 - **Attribution:** `?src=` (`yt`, `yt-pin`, `yt-qr`, `repo`, …) flows into PaymentIntent metadata and from there into the ledger's `source`.
 - **Performance:** Stripe.js loads once, only when a tab is shown.
-- **Currency rule:** the browser's Elements options and the server's PaymentIntent must agree: `inr` ↔ `payment_method_types: ['upi']`, `usd` ↔ automatic payment methods. Both read `donateBounds()` / `donationTotalMinor()` so amounts always match.
+- **Currency rule:** the browser's Elements options and the server's PaymentIntent must agree: `inr` ↔ Elements `allowedPaymentMethodTypes: ['upi']` + PaymentIntent `allowed_payment_method_types: ['upi']`, `usd` ↔ automatic payment methods. (Stripe.js Endive rejects the old `paymentMethodTypes`; API Endive removes `payment_method_types`.) Both read `donateBounds()` / `donationTotalMinor()` so amounts always match.
 
 ## 3. Code map
 

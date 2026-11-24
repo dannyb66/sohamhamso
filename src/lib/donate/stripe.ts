@@ -68,9 +68,11 @@ export async function createDonationIntent(
     currency,
     // usd: cards, Apple Pay, Google Pay, Link, ACH and Instant Bank Payments
     // are switched on/off in Dashboard → Settings → Payment methods.
-    // inr: UPI only. Must match the browser's Elements `paymentMethodTypes`.
+    // inr: UPI only. Must match the browser's Elements `allowedPaymentMethodTypes`.
+    // allowed_payment_method_types (API ≥ 2026-07-29.dahlia) replaces
+    // payment_method_types, which API 2026-09-30.endive removes.
     ...(currency === 'inr'
-      ? { payment_method_types: ['upi'] }
+      ? { allowed_payment_method_types: ['upi'] }
       : { automatic_payment_methods: { enabled: true } }),
     description: 'Donation to sohamhamso',
     metadata: {

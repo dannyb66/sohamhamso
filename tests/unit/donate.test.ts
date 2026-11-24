@@ -144,6 +144,7 @@ describe('stripe client', () => {
     expect(body.get('currency')).toBe('usd');
     expect(body.get('automatic_payment_methods[enabled]')).toBe('true');
     expect(body.get('payment_method_types[0]')).toBeNull();
+    expect(body.get('allowed_payment_method_types[0]')).toBeNull();
     expect(body.get('metadata[kind]')).toBe('donation');
     expect(body.get('metadata[cover_fees]')).toBe('yes');
   });
@@ -170,7 +171,8 @@ describe('stripe client', () => {
     const body = new URLSearchParams(String(init.body));
     expect(body.get('currency')).toBe('inr');
     expect(body.get('amount')).toBe('52461');
-    expect(body.get('payment_method_types[0]')).toBe('upi');
+    expect(body.get('allowed_payment_method_types[0]')).toBe('upi');
+    expect(body.get('payment_method_types[0]')).toBeNull(); // removed in API endive
     expect(body.get('automatic_payment_methods[enabled]')).toBeNull();
     expect(body.get('metadata[currency]')).toBe('inr');
     expect(body.get('metadata[base_minor]')).toBe('50100');
@@ -416,7 +418,7 @@ describe('POST /api/donate/intent (INR / UPI)', () => {
     const body = new URLSearchParams(String((spy.mock.calls[0]?.[1] as RequestInit).body));
     expect(body.get('currency')).toBe('inr');
     expect(body.get('amount')).toBe('52461');
-    expect(body.get('payment_method_types[0]')).toBe('upi');
+    expect(body.get('allowed_payment_method_types[0]')).toBe('upi');
     expect(body.get('metadata[ledger_name]')).toBe('Asha');
     spy.mockRestore();
   });

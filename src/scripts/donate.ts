@@ -8,7 +8,7 @@
  *   optional fee cover, optional ledger name, Payment Element (+ Express
  *   Checkout for card). On submit the server creates the PaymentIntent in
  *   the rail's currency and the browser confirms it.
- *     upi  → INR, `paymentMethodTypes: ['upi']` (QR on desktop, app switch
+ *     upi  → INR, `allowedPaymentMethodTypes: ['upi']` (QR on desktop, app switch
  *            on mobile; mobile returns via /donate/thanks)
  *     card → USD, automatic payment methods (card, wallets, Link, ACH)
  * - Stripe.js is loaded once, lazily, when the first rail is shown.
@@ -305,9 +305,11 @@ function initRail(form: HTMLFormElement, pk: string): { activate: () => void } |
             borderRadius: '6px',
           },
         },
-        // Must match the server's PaymentIntent (stripe.ts).
-        ...(currency === 'inr' ? { paymentMethodTypes: ['upi'] } : {}),
       };
+      // Must match the server's PaymentIntent (stripe.ts). Assigned (not spread)
+      // so the type checker validates the option name: Stripe.js (Endive)
+      // rejects the old `paymentMethodTypes` outright.
+      if (currency === 'inr') options.allowedPaymentMethodTypes = ['upi'];
       elements = stripe.elements(options);
 
       if (withExpress && expressMount) {
