@@ -13,6 +13,7 @@
 
 import { readFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
+import { ENGLISH_ONLY_NOINDEX_CHROME_BASE_PATHS } from '../src/lib/seo/chrome-pages';
 import { ALL_LANGS, isLangCode, liveLocaleSet } from '../src/lib/seo/i18n-routes';
 import { collectHtmlFiles, inferRoutePath } from './seo-validate';
 
@@ -81,9 +82,13 @@ export function classifyUrl(rel: string): UrlKind {
 
 /**
  * Paths that are intentionally noindex and should be skipped by this sweep.
- * These are system/utility pages, not content pages.
+ * These are system/utility pages, not content pages. Derived from the site's
+ * own list of English-only noindex chrome pages so the two can't drift.
  */
-export const ALLOWED_NOINDEX_ROUTES = new Set(['/404', '/sample']);
+export const ALLOWED_NOINDEX_ROUTES = new Set<string>([
+  '/404',
+  ...ENGLISH_ONLY_NOINDEX_CHROME_BASE_PATHS,
+]);
 
 /** Returns true if the HTML string contains a redirect meta-refresh tag. */
 export function isRedirectPage(html: string): boolean {
