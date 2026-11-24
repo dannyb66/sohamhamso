@@ -225,6 +225,12 @@ describe('seo-dist-noindex-sweep: ALLOWED_NOINDEX_ROUTES', () => {
   it('does not contain ordinary content routes', () => {
     expect(ALLOWED_NOINDEX_ROUTES.has('/trika/siva-sutras')).toBe(false);
   });
+
+  it('allows every English-only noindex chrome page (e.g. /donate/thanks)', () => {
+    expect(ALLOWED_NOINDEX_ROUTES.has('/donate/thanks')).toBe(true);
+    expect(ALLOWED_NOINDEX_ROUTES.has('/confirmed')).toBe(true);
+    expect(ALLOWED_NOINDEX_ROUTES.has('/donate')).toBe(false);
+  });
 });
 
 // ---------------------------------------------------------------------------

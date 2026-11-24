@@ -1,12 +1,14 @@
 ---
 import Footer from '../components/Footer.astro';
 import Masthead from '../components/Masthead.astro';
+import DonatePanel from '../components/donate/DonatePanel.astro';
 /**
  * /donate — non-profit donation page.
  *
  * Honest about what funds do and what stage the project is at. No
- * impact metrics we can't substantiate. Payment links are placeholders
- * until accounts are set up.
+ * impact metrics we can't substantiate. Giving options render from
+ * DonatePanel (config: src/lib/donate/config.ts); each rail stays hidden
+ * until configured. See docs/DONATIONS.md.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { buildChromeSeo, getChromeAvailableLangs } from '../lib/seo';
@@ -81,19 +83,11 @@ const pageSeo = buildChromeSeo({
         </li>
       </ol>
 
-      <h2 id="how-to-give">How to give</h2>
+      <DonatePanel />
+
+      <h2 id="other-ways">Other ways to help</h2>
       <p>
-        We are still setting these up. Links will land here as accounts
-        open; the page is honest about its placeholder state rather than
-        promising channels that do not yet exist.
-      </p>
-      <ul>
-        <li><strong>GitHub Sponsors</strong> — <em>account pending</em></li>
-        <li><strong>Open Collective</strong> — <em>account pending</em></li>
-        <li><strong>Direct (Stripe / PayPal)</strong> — <em>TBD</em></li>
-      </ul>
-      <p>
-        In the meantime, the most useful contribution is non-monetary:
+        Money isn’t the only way to help:
         file issues on
         <a href="https://github.com/sohamhamso/sohamhamso/issues">GitHub</a>,
         flag translation errors, or — if you read Sanskrit and would
@@ -109,7 +103,7 @@ const pageSeo = buildChromeSeo({
       </ul>
 
       <p class="provenance">
-        Last revised: 2026-05-31.
+        Last revised: 2026-11-23.
       </p>
     </article>
   </main>

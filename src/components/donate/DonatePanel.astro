@@ -1,0 +1,221 @@
+---
+import { formatMoney } from '../../lib/donate/amounts';
+/**
+ * DonatePanel: "How to give" block on /donate and /[lang]/donate.
+ *
+ * Everything runs through Stripe (embedded Elements, deferred-intent flow):
+ *   - UPI (India): Payment Element in INR, UPI only. QR on desktop, app
+ *     switch on mobile. Settles in USD to the maintainer's Stripe balance.
+ *   - Card / Apple Pay / Google Pay / Link / US bank: Express Checkout +
+ *     Payment Element in USD.
+ * Location only picks the default tab; donors can always switch. Each form
+ * offers an optional "cover the fees" top-up and an optional public-ledger
+ * name. Stripe.js loads only when a form is shown.
+ */
+import { donateConfig, upiEnabled as upiFlag } from '../../lib/donate/config';
+
+const { india, global: intl, githubSponsorsUrl, contactUrl, ledgerUrl } = donateConfig;
+
+const publishableKey = (import.meta.env.PUBLIC_STRIPE_PUBLISHABLE_KEY ?? '').trim();
+const embedded = publishableKey.startsWith('pk_');
+const upiEnabled = embedded && upiFlag();
+const cardEnabled = embedded || intl.fallbackPaymentLinkUrl !== '';
+
+const rails = [
+  upiEnabled && {
+    method: 'upi',
+    currency: 'inr',
+    tab: 'UPI · India',
+    hint: 'Pay from any UPI app (Google Pay, PhonePe, Paytm, BHIM or your bank). On a computer you scan a QR code; on a phone your UPI app opens.',
+    presets: india.presets,
+    defaultPreset: india.defaultPreset,
+    min: india.minRupees,
+    max: india.maxRupees,
+    symbol: '₹',
+    amountLabel: 'Amount in rupees',
+    express: false,
+    payLine: 'or pay by UPI',
+    fine: 'Payments are processed by Stripe. Your UPI app shows the maintainer\'s legal name with "SOHAMHAMSO.ORG".',
+  },
+  embedded && {
+    method: 'card',
+    currency: 'usd',
+    tab: 'Card · Apple Pay · Google Pay',
+    hint: '',
+    presets: intl.presets,
+    defaultPreset: intl.defaultPreset,
+    min: intl.minDollars,
+    max: intl.maxDollars,
+    symbol: '$',
+    amountLabel: 'Amount in US dollars',
+    express: true,
+    payLine: 'or pay by card or bank',
+    fine: 'Payments are processed by Stripe. Paying from a US bank account costs the project the least.',
+  },
+].filter(Boolean) as {
+  method: 'upi' | 'card';
+  currency: 'inr' | 'usd';
+  tab: string;
+  hint: string;
+  presets: number[];
+  defaultPreset: number;
+  min: number;
+  max: number;
+  symbol: string;
+  amountLabel: string;
+  express: boolean;
+  payLine: string;
+  fine: string;
+}[];
+const showTabs = rails.length > 1;
+---
+
+<section class="donate" data-donate data-pk={embedded ? publishableKey : ''} aria-labelledby="how-to-give">
+  <h2 id="how-to-give">How to give</h2>
+  <p class="donate-lede">One-time gifts only. No account, no subscription.</p>
+
+  {showTabs && (
+    <div class="donate-tabs" role="tablist" aria-label="Payment method" data-tabs hidden>
+      {rails.map((r) => (
+        <button type="button" role="tab" id={`donate-tab-${r.method}`} aria-controls={`donate-panel-${r.method}`} aria-selected="false" data-method={r.method}>
+          {r.tab}
+        </button>
+      ))}
+    </div>
+  )}
+
+  {rails.map((r) => (
+    <div role={showTabs ? 'tabpanel' : undefined} id={`donate-panel-${r.method}`} aria-labelledby={showTabs ? `donate-tab-${r.method}` : undefined} class="donate-panel" data-panel={r.method}>
+      {!showTabs && <h3 class="donate-panel-title">{r.tab}</h3>}
+      {r.hint && <p class="donate-hint">{r.hint}</p>}
+      <form class="donate-form" data-rail-form data-method={r.method} data-currency={r.currency} data-min={r.min} data-max={r.max} data-express={r.express ? '1' : ''} novalidate>
+        <div class="donate-chips" role="group" aria-label={r.amountLabel}>
+          {r.presets.map((d) => (
+            <button type="button" class="donate-chip" data-minor={d * 100} aria-pressed={d === r.defaultPreset ? 'true' : 'false'}>
+              {formatMoney(d * 100, r.currency)}
+            </button>
+          ))}
+          <label class="donate-custom">
+            <span class="visually-hidden">Other amount</span>
+            <span aria-hidden="true">{r.symbol}</span>
+            <input type="text" inputmode="decimal" autocomplete="off" placeholder="Other" data-custom />
+          </label>
+        </div>
+
+        <label class="donate-check">
+          <input type="checkbox" data-cover-fees />
+          <span>Add <span data-fee-amount></span> so the project receives the full gift after fees</span>
+        </label>
+
+        <details class="donate-more">
+          <summary>Add your name to the public ledger (optional)</summary>
+          <label class="donate-field">
+            <span>Name to show</span>
+            <input type="text" maxlength="60" autocomplete="name" data-ledger-name />
+          </label>
+          <p class="donate-fine">Leave blank to appear as "Anonymous". Your email and UPI ID are never published.</p>
+        </details>
+
+        {r.express && <div class="donate-express" data-express-element></div>}
+        {r.express && <p class="donate-or" data-express-divider hidden><span>{r.payLine}</span></p>}
+        <div class="donate-payment" data-payment-element>
+          <p class="donate-fine" data-stripe-loading>Loading secure payment form…</p>
+        </div>
+
+        <button type="submit" class="donate-btn donate-btn-primary donate-submit" data-submit disabled>
+          Give <span data-total>{formatMoney(r.defaultPreset * 100, r.currency)}</span>
+        </button>
+        <p class="donate-error" role="alert" data-error hidden></p>
+        <p class="donate-fine">{r.fine}</p>
+      </form>
+
+      <div class="donate-thanks" data-thanks role="status" aria-live="polite" tabindex="-1" hidden>
+        <p><strong>🙏 Thank you.</strong> <span data-thanks-text>Your gift went through. A receipt is on its way to your email.</span></p>
+        {ledgerUrl && <p class="donate-fine">It will appear on the <a href={ledgerUrl}>public ledger</a>.</p>}
+      </div>
+
+      {r.method === 'card' && githubSponsorsUrl && (
+        <p class="donate-alt">
+          On GitHub? <a href={githubSponsorsUrl} rel="noopener">Give through GitHub Sponsors</a>. GitHub charges no fees on gifts from personal accounts.
+        </p>
+      )}
+      {r.method === 'card' && contactUrl && (
+        <p class="donate-alt">Giving $500 or more? <a href={contactUrl}>Write to us</a> for bank-transfer details with no card fees.</p>
+      )}
+    </div>
+  ))}
+
+  {!embedded && intl.fallbackPaymentLinkUrl && (
+    <p><a class="donate-btn donate-btn-primary" href={intl.fallbackPaymentLinkUrl} rel="noopener">Give by card</a></p>
+  )}
+
+  {!cardEnabled && !upiEnabled && (
+    <p class="donate-hint">Giving options are being set up. Please check back soon.</p>
+  )}
+
+  {embedded && (
+    <noscript><p class="donate-hint">The secure payment form needs JavaScript. Please enable it to give.</p></noscript>
+  )}
+
+  <p class="donate-fine donate-legal">
+    Gifts are voluntary and you receive nothing in return. They are not tax-deductible.
+    {contactUrl && <>Gave the wrong amount? <a href={contactUrl}>Write to us</a> within 30 days for a refund.</>}
+  </p>
+</section>
+
+<script>
+  import { initDonate } from '../../scripts/donate';
+  initDonate();
+</script>
+
+<style>
+  .donate { margin-top: var(--spacing-7); font-family: var(--font-chrome); }
+  .donate h2 { font-family: var(--font-iast); font-size: 1.25rem; margin: 0 0 var(--spacing-2); }
+  .donate-lede, .donate-hint, .donate-alt { color: var(--color-ink-muted); margin: 0 0 var(--spacing-4); }
+  .donate-tabs { display: flex; flex-wrap: wrap; gap: var(--spacing-2); border-bottom: 1px solid var(--color-rule); margin-bottom: var(--spacing-4); }
+  .donate-tabs [role='tab'] {
+    background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-ink-muted);
+    font: inherit; padding: var(--spacing-2) var(--spacing-3); cursor: pointer;
+  }
+  .donate-tabs [role='tab'][aria-selected='true'] { color: var(--color-ink); border-bottom-color: var(--color-accent); }
+  .donate-panel { padding-bottom: var(--spacing-5); }
+  .donate-panel + .donate-panel .donate-panel-title { margin-top: var(--spacing-6); }
+  .donate-panel-title { font-size: 1rem; margin: 0 0 var(--spacing-3); }
+  .donate-chips { display: flex; flex-wrap: wrap; gap: var(--spacing-2); margin-bottom: var(--spacing-4); }
+  .donate-chip, .donate-custom {
+    border: 1px solid var(--color-rule); background: var(--color-surface); color: var(--color-ink);
+    border-radius: 999px; padding: var(--spacing-2) var(--spacing-4); font: inherit; cursor: pointer;
+  }
+  .donate-chip[aria-pressed='true'], .donate-custom:focus-within { border-color: var(--color-accent); box-shadow: inset 0 0 0 1px var(--color-accent); }
+  .donate-custom { display: inline-flex; align-items: center; gap: var(--spacing-1); cursor: text; }
+  .donate-custom input { width: 5.5rem; border: 0; background: transparent; color: inherit; font: inherit; outline: none; }
+  .donate-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--spacing-1);
+    padding: var(--spacing-3) var(--spacing-4); border-radius: 8px; border: 1px solid var(--color-rule);
+    color: var(--color-ink); background: var(--color-surface); text-decoration: none; font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .donate-btn-primary { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-bg); }
+  .donate-btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+  .donate-submit { width: 100%; margin-top: var(--spacing-4); }
+  .donate-link-btn { background: none; border: 0; padding: 0; color: var(--color-accent); font: inherit; text-decoration: underline; cursor: pointer; }
+  .donate-check { display: flex; gap: var(--spacing-2); align-items: flex-start; margin-bottom: var(--spacing-3); cursor: pointer; }
+  .donate-check input { margin-top: 0.3em; accent-color: var(--color-accent); }
+  .donate-more { margin-bottom: var(--spacing-4); }
+  .donate-more summary { cursor: pointer; color: var(--color-ink-muted); }
+  .donate-field { display: grid; gap: var(--spacing-1); margin-top: var(--spacing-2); }
+  .donate-field input {
+    padding: var(--spacing-2) var(--spacing-3); border: 1px solid var(--color-rule); border-radius: 6px;
+    background: var(--color-surface); color: var(--color-ink); font: inherit;
+  }
+  .donate-express { margin-bottom: var(--spacing-3); }
+  .donate-or { display: flex; align-items: center; gap: var(--spacing-3); color: var(--color-ink-muted); font-size: 0.875rem; margin: var(--spacing-3) 0; }
+  .donate-or::before, .donate-or::after { content: ''; flex: 1; border-top: 1px solid var(--color-rule); }
+  .donate-error { color: var(--color-error); margin-top: var(--spacing-3); }
+  .donate-thanks { border: 1px solid var(--color-success); border-radius: 8px; padding: var(--spacing-4); margin: var(--spacing-4) 0; }
+  .donate-thanks p { margin: 0 0 var(--spacing-2); }
+  .donate-fine { color: var(--color-ink-muted); font-size: 0.875rem; }
+  .donate-legal { margin-top: var(--spacing-5); padding-top: var(--spacing-4); border-top: 1px solid var(--color-rule); }
+  .donate :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  [hidden] { display: none !important; }
+</style>

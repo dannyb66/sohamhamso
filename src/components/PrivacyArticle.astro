@@ -10,6 +10,7 @@
  * Keep this page in step with what the code does:
  *   - Optional GA4: src/components/Analytics.astro, src/lib/analytics-client.ts
  *   - Property settings (retention, Signals): docs/GA4-SETUP.md
+ *   - Donations (Stripe.js on /donate, public ledger): docs/DONATIONS.md
  * The page promises that material changes are visible in Git history.
  */
 import { localePathFor } from '../lib/seo';
@@ -19,7 +20,8 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const updated = '2026-11-23';
+const updated = '2026-11-24';
+const donateHref = localePathFor('/donate', lang);
 const colophonHref = localePathFor('/about/colophon', lang);
 ---
 
@@ -28,8 +30,8 @@ const colophonHref = localePathFor('/about/colophon', lang);
     <h1>Privacy</h1>
     <p class="lede">
       sohamhamso is a static reader. We collect almost nothing by default.
-      This page explains the two exceptions — opt-in email and opt-in
-      analytics — and how to turn each off.
+      This page explains the exceptions — opt-in email, opt-in analytics
+      and the payment form on the donate page — and how each works.
     </p>
 
     <h2 id="what-we-collect">What we collect</h2>
@@ -57,6 +59,12 @@ const colophonHref = localePathFor('/about/colophon', lang);
       below.
     </p>
 
+    <p>
+      The third is the payment form on the <a href={donateHref}>donate
+      page</a>, which is run by Stripe. See <a href="#donations">Donations</a>
+      below.
+    </p>
+
     <h2 id="what-we-dont">What we don't use</h2>
     <ul>
       <li>
@@ -64,10 +72,15 @@ const colophonHref = localePathFor('/about/colophon', lang);
         after you choose “Allow analytics”. No Plausible, no Fathom.
       </li>
       <li>No advertising or remarketing networks.</li>
-      <li>No third-party social embeds.</li>
+      <li>
+        No third-party social embeds. The only third-party script outside
+        analytics is Stripe's payment form, and it loads only on the donate
+        page.
+      </li>
       <li>No fingerprinting, session replay, or A/B testing tools.</li>
       <li>
-        No cookies unless you allow analytics. Your reading settings (theme,
+        No cookies unless you allow analytics, apart from Stripe's
+        fraud-prevention cookies on the donate page. Your reading settings (theme,
         script, languages) are kept in your browser's local storage; they
         are never sent to us, and reach Google only as described below if
         you allow analytics.
@@ -120,6 +133,24 @@ const colophonHref = localePathFor('/about/colophon', lang);
       site. The email confirmation and unsubscribe pages never load
       analytics. Google processes this data under its own
       <a href="https://policies.google.com/privacy" rel="noopener noreferrer">privacy policy</a>.
+    </p>
+
+    <h2 id="donations">Donations</h2>
+    <p>
+      Gifts are processed by <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe</a>.
+      When you open the donate page, Stripe's script loads in your browser
+      and sets its own fraud-prevention cookies (<code>__stripe_mid</code>,
+      <code>__stripe_sid</code>) to help block stolen cards. Card numbers,
+      bank details and UPI IDs go straight to Stripe and never reach our
+      servers. Stripe emails you a receipt if you give your email address
+      in the payment form.
+    </p>
+    <p>
+      For each completed gift we keep a ledger row with the date, amount,
+      currency, the page or video that sent you (for example
+      <code>yt</code>), and the name you typed for the public ledger, if
+      any. Without a name you appear as “Anonymous”. Your email address,
+      UPI ID and Stripe payment reference are never published.
     </p>
 
     <h2 id="server-side-analytics">Server-side request data</h2>

@@ -37,3 +37,13 @@ pages_build_output_dir = "dist"
 binding = "PII_DB"
 database_name = "sohamhamso-pii"
 database_id = "59ca626f-e2c1-45a0-a434-0346ce1c5f20"
+
+# Public donation ledger (see docs/DONATIONS.md → "Ledger"). Kept out of
+# PII_DB on purpose: this data is meant to be public. Schema lives in
+# migrations-ledger/ (applied 2026-11-23 via the D1 console; d1_migrations
+# marks 0001 as applied, so `wrangler d1 migrations apply` is a no-op).
+[[d1_databases]]
+binding = "LEDGER_DB"
+database_name = "sohamhamso-ledger"
+database_id = "070ea9ac-45ac-44e0-bcae-792d1aae0613"
+migrations_dir = "migrations-ledger"

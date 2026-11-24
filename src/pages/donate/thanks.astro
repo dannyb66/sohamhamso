@@ -1,0 +1,76 @@
+---
+import Footer from '../../components/Footer.astro';
+import Masthead from '../../components/Masthead.astro';
+/**
+ * /donate/thanks: return_url for Stripe payment methods that redirect
+ * (most card and wallet gifts finish inline on /donate and never land here).
+ * Reads `payment_intent_client_secret` client-side and shows the real status.
+ * Noindex, English-only, prerendered.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildChromeSeo } from '../../lib/seo';
+
+const currentLang = 'en' as const;
+const pageSeo = buildChromeSeo({
+  basePath: '/donate/thanks',
+  description: 'Thank you for supporting sohamhamso.',
+  lang: currentLang,
+  noindex: true,
+  title: 'Thank you — sohamhamso',
+});
+const publishableKey = (import.meta.env.PUBLIC_STRIPE_PUBLISHABLE_KEY ?? '').trim();
+---
+
+<BaseLayout
+  canonical={pageSeo.canonical}
+  description={pageSeo.description}
+  hreflang={pageSeo.hreflang}
+  jsonLd={pageSeo.jsonLd}
+  lang={currentLang}
+  noindex={pageSeo.noindex}
+  title={pageSeo.title}
+>
+  <Masthead currentLang="EN" />
+  <main id="main" class="reader">
+    <article data-thanks data-pk={publishableKey}>
+      <h1 data-thanks-title>Thank you 🙏</h1>
+      <p class="lede" data-thanks-body>Your gift helps keep sohamhamso free for everyone.</p>
+      <p>
+        Keep reading at <a href="/">sohamhamso.org</a>, or start with the
+        <a href="/texts">texts</a>.
+      </p>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-thanks]');
+  const params = new URLSearchParams(location.search);
+  const secret = params.get('payment_intent_client_secret');
+  const pk = root?.dataset.pk ?? '';
+  const title = root?.querySelector<HTMLElement>('[data-thanks-title]');
+  const body = root?.querySelector<HTMLElement>('[data-thanks-body]');
+  if (secret && pk && title && body) {
+    import('@stripe/stripe-js')
+      .then(({ loadStripe }) => loadStripe(pk))
+      .then((stripe) => stripe?.retrievePaymentIntent(secret))
+      .then((res) => {
+        const status = res?.paymentIntent?.status;
+        if (status === 'processing') {
+          body.textContent =
+            'Your bank payment is processing. It usually clears in a few business days, and Stripe will email you a receipt.';
+        } else if (status === 'requires_payment_method' || status === 'canceled') {
+          title.textContent = "The payment didn't go through";
+          body.innerHTML = 'Nothing was charged. <a href="/donate">Try again</a> with another method.';
+        }
+      })
+      .catch(() => {});
+  }
+</script>
+
+<style>
+  article h1 { font-family: var(--font-iast); font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem); margin: 0 0 var(--spacing-2); }
+  article p { font-family: var(--font-iast); line-height: 1.65; color: var(--color-ink); }
+  .lede { color: var(--color-ink-muted); font-size: 1.0625rem; }
+</style>
