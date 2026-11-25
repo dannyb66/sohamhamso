@@ -99,7 +99,10 @@ export function formatMoney(minor: number, currency: DonateCurrency = 'usd'): st
       maximumFractionDigits: 2,
     })}`;
   }
-  return whole ? `$${major}` : `$${major.toFixed(2)}`;
+  return `$${major.toLocaleString('en-US', {
+    minimumFractionDigits: whole ? 0 : 2,
+    maximumFractionDigits: 2,
+  })}`;
 }
 
 export const formatUsd = (cents: number) => formatMoney(cents, 'usd');

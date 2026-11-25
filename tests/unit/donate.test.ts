@@ -67,6 +67,11 @@ describe('amounts', () => {
     expect(parseDollarsToCents('abc')).toBeNull();
     expect(formatUsd(1100)).toBe('$11');
     expect(formatUsd(1164)).toBe('$11.64');
+    expect(formatUsd(500000)).toBe('$5,000');
+    expect(checkBaseCents(500001, 3, 5000)).toEqual({
+      ok: false,
+      message: 'For gifts over $5,000, please contact us.',
+    });
   });
 
   it('sanitises ledger names and sources', () => {

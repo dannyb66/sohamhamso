@@ -176,6 +176,14 @@ function initRail(form: HTMLFormElement, pk: string): { activate: () => void } |
     if (feeLabel) feeLabel.textContent = fmt(feeCoverMinor(Math.max(baseMinor, 0), currency));
     if (totalLabel) totalLabel.textContent = fmt(valid() ? total() : Math.max(baseMinor, 0));
     if (submit) submit.disabled = busy || !valid() || !ready;
+    // Wallet sheets (Google Pay, Apple Pay) open the moment their button is
+    // clicked, before our click handler runs, so an invalid amount must stop
+    // the click from reaching the button at all.
+    if (expressMount) {
+      const blocked = busy || !valid();
+      expressMount.classList.toggle('donate-express-disabled', blocked);
+      expressMount.setAttribute('aria-disabled', String(blocked));
+    }
     if (newIntent) idempotencyKey = uuid(); // new amount → new intent
     if (elements && valid()) elements.update({ amount: total() });
   }

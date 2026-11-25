@@ -207,7 +207,10 @@ const showTabs = rails.length > 1;
     padding: var(--spacing-2) var(--spacing-3); border: 1px solid var(--color-rule); border-radius: 6px;
     background: var(--color-surface); color: var(--color-ink); font: inherit;
   }
-  .donate-express { margin-bottom: var(--spacing-3); }
+  .donate-express { margin-bottom: var(--spacing-3); transition: opacity 0.15s; }
+  .donate-express-disabled { pointer-events: none; opacity: 0.45; }
+  /* Stripe injects the wallet iframe without our scope attribute. */
+  .donate-express-disabled :global(*) { pointer-events: none !important; }
   .donate-or { display: flex; align-items: center; gap: var(--spacing-3); color: var(--color-ink-muted); font-size: 0.875rem; margin: var(--spacing-3) 0; }
   .donate-or::before, .donate-or::after { content: ''; flex: 1; border-top: 1px solid var(--color-rule); }
   .donate-error { color: var(--color-error); margin-top: var(--spacing-3); }
