@@ -167,6 +167,25 @@ test.describe('donate page (Stripe stubbed)', () => {
     expect(intents[0]).toMatchObject({ currency: 'usd', baseCents: 1100, coverFees: true });
   });
 
+  test('wallet buttons are disabled while the amount is invalid', async ({ page }) => {
+    await page.goto('/donate?method=card');
+    test.skip(
+      !(await hasEmbeddedCheckout(page)),
+      'PUBLIC_STRIPE_PUBLISHABLE_KEY / PUBLIC_DONATE_UPI not set',
+    );
+    const panel = page.locator('[data-panel="card"]');
+    const express = panel.locator('[data-express-element]');
+    await expect(panel.locator('[data-fake="expressCheckout"]')).toHaveCount(1);
+    await expect(express).toHaveAttribute('aria-disabled', 'false');
+    await panel.locator('[data-custom]').fill('1');
+    await expect(panel.locator('[data-error]')).toHaveText('The minimum gift is $3.');
+    await expect(express).toHaveAttribute('aria-disabled', 'true');
+    await expect(express).toHaveCSS('pointer-events', 'none');
+    await panel.locator('[data-custom]').fill('3');
+    await expect(express).toHaveAttribute('aria-disabled', 'false');
+    await expect(panel.locator('[data-submit]')).toHaveText('Give $3');
+  });
+
   test('switching tabs keeps each rail independent', async ({ page }) => {
     await page.goto('/donate?method=card');
     test.skip(
